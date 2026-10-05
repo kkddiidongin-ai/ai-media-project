@@ -580,7 +580,8 @@
       "Claude API"
     ],
     "facts": [
-      "CodeRabbit, JetBrains, Resolve AI, Warp가 claude-api 스킬을 기본 탑재했습니다. 3월 Claude Code에서 처음 소개된 이 스킬은 실제 서비스용 Claude API 코드를 쓰도록 돕습니다."
+      "claude-api 스킬은 3월 Claude Code에서 처음 소개됐으며, 실제 서비스용 Claude API 코드를 쓰도록 돕습니다.",
+      "이제 CodeRabbit, JetBrains, Resolve AI, Warp가 이 스킬을 기본으로 넣었습니다."
     ],
     "whyItMatters": "'스킬'이 특정 회사 도구를 넘어 다른 도구에서도 쓰는 공용 형식이 되고 있습니다.",
     "whatChanges": "JetBrains IDE나 Warp 사용자는 Claude API 연동 코드를 만들 때 최신 사용법이 반영된 결과를 받을 수 있습니다.",
@@ -589,7 +590,7 @@
     "editorialDepth": "short",
     "eventDate": "2026-04-28",
     "publishedAt": "2026-10-01",
-    "updatedAt": "2026-10-01",
+    "updatedAt": "2026-10-05",
     "candidateId": "8d8ea809861f",
     "sourceType": "official",
     "sourceName": "Claude (claude.com blog)",
@@ -1066,7 +1067,8 @@
     ],
     "products": [],
     "facts": [
-      "Anthropic이 시드니 사무소를 열고 Theo Hourmouzis를 호주·뉴질랜드 총괄로 선임했으며, CBA, Canva, Xero와 협력한다고 밝혔습니다."
+      "Anthropic이 시드니 사무소를 열고, Theo Hourmouzis를 호주·뉴질랜드 총괄로 선임했습니다.",
+      "현지 기업 CBA, Canva, Xero와 협력한다고 밝혔습니다."
     ],
     "whyItMatters": "3월 호주 정부와의 AI 안전 MOU에 이어 현지 법인을 세웠습니다.",
     "whatChanges": "호주 거점이라 국내 서비스 변화는 없지만, 같은 해 서울 사무소도 열려, 아시아·태평양 지원 체계가 넓어지고 있습니다.",
@@ -1075,7 +1077,7 @@
     "editorialDepth": "short",
     "eventDate": "2026-04-27",
     "publishedAt": "2026-10-01",
-    "updatedAt": "2026-10-01",
+    "updatedAt": "2026-10-05",
     "candidateId": "73bb127227d2",
     "sourceType": "official",
     "sourceName": "Anthropic",
@@ -1111,7 +1113,8 @@
       "GitHub Actions"
     ],
     "facts": [
-      "GitHub은 2026년 6월 1일부터 GitHub Copilot 코드 리뷰가 GitHub Actions 사용 시간(minutes)을 소비하기 시작한다고 공지했습니다."
+      "6월 1일부터 Copilot 코드 리뷰가 실행될 때 GitHub Actions 사용 시간(minutes)이 함께 차감됩니다.",
+      "GitHub은 코드 리뷰가 PR마다 실행되는 에이전트 기반 리뷰라는 점을 들어 이 변경을 미리 공지했습니다."
     ],
     "whyItMatters": "에이전트가 리뷰하면서 실제 실행 환경을 쓰기 때문에, 그 비용을 사용자에게 넘기는 변화입니다. 같은 날 발표된 AI Credits 과금 전환과 함께 봐야 합니다.",
     "whatChanges": "PR이 많은 저장소는 6월부터 Actions 사용 시간이 더 빨리 소진될 수 있습니다. 리뷰 자동 요청 범위를 점검하세요.",
@@ -1120,7 +1123,7 @@
     "editorialDepth": "short",
     "eventDate": "2026-04-27",
     "publishedAt": "2026-10-01",
-    "updatedAt": "2026-10-01",
+    "updatedAt": "2026-10-05",
     "candidateId": "9ad4cddc77db",
     "sourceType": "official",
     "sourceName": "GitHub Changelog",
@@ -5715,7 +5718,8 @@
       "Copilot Studio"
     ],
     "facts": [
-      "마이크로소프트가 Copilot Studio에서 멀티 에이전트 시스템을 정식 제공하고, 프롬프트 편집기와 관리 통제 기능도 개선했다고 밝혔습니다."
+      "여러 에이전트가 역할을 나눠 함께 일하는 멀티 에이전트 구성을 Copilot Studio에서 정식으로 쓸 수 있게 됐습니다.",
+      "프롬프트 편집기와 관리 통제(거버넌스) 기능도 함께 개선됐다고 마이크로소프트가 밝혔습니다."
     ],
     "whyItMatters": "에이전트 하나가 모든 일을 하는 대신, 여러 에이전트에게 역할을 나누는 방식이 기업용 도구에 기본 기능으로 들어갔습니다.",
     "whatChanges": "Copilot Studio를 쓰는 회사는 접수·분류·처리 에이전트를 나눠 연결하는 업무 흐름을 만들 수 있습니다.",
@@ -5724,7 +5728,7 @@
     "editorialDepth": "short",
     "eventDate": "2026-04-01",
     "publishedAt": "2026-10-01",
-    "updatedAt": "2026-10-01",
+    "updatedAt": "2026-10-05",
     "candidateId": "224e02a743f1",
     "sourceType": "official",
     "sourceName": "Microsoft 365 Blog",

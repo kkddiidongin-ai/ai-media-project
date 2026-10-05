@@ -19,7 +19,7 @@
 
 1. **후보 선정** (ChatGPT): 공식 원문이 있는 발표만. 일자가 확인되지 않으면 싣지 않는다.
 2. **사실·출처 최종 검수** (ChatGPT): 수치·날짜·가격·제품명을 원문과 대조. 원문 URL·발표일·확인일 확정.
-3. **등급 결정**: 위 표 기준으로 SHORT / STANDARD / DEEP.
+3. **등급 결정** (ChatGPT): 위 표 기준으로 SHORT / STANDARD / DEEP 중 하나를 확정해 원고에 적는다. 자동 판정에 맡기지 않는다.
 4. **데이터 입력** (Claude Code) — 아래 3절.
 5. **slug 중복 확인**: `grep -rn '"slug": "<slug>"' ingest/editorial` 결과가 없어야 한다 (publish도 중복이면 멈춘다).
 6~8. **publish → validation → build**: `npm run publish:daily`
@@ -49,13 +49,15 @@ id는 `node -e "import('./scripts/ingest/lib.mjs').then(m=>console.log(m.candida
 { "c": "<후보 id>", "slug": "<영문-소문자-하이픈>", "title": "<제목>", "summary": "<한 문장 리드>",
   "cat": "MODEL_RELEASE", "topics": ["anthropic", "claude"], "companies": ["Anthropic"], "products": ["…"],
   "facts": ["<핵심 사실>", "…"], "why": "<왜 중요한가 = AI마중 해석>", "change": "<그래서 나한테는? 누구에게 무엇이>",
-  "prio": 2, "secondary": ["<추가 출처 후보 id>"] }
+  "prio": 2, "secondary": ["<추가 출처 후보 id>"], "editorialDepth": "SHORT" }
 ```
 - `cat`은 `scripts/ingest/publish.mjs`의 CATEGORIES, `topics`는 `content/topics.json`에 있는 값만.
 - 원문 발표일과 사건일이 다르면 `"eventDate": "YYYY-MM-DD"`를 넣는다.
 - 추가 출처도 후보 기록으로 넣고 id를 `secondary`에 적는다.
-- **등급은 자동 지정**: 심층 파일이 있으면 DEEP, 없으면 `prio 3 · 사실 1개 · 추가 출처 없음`은 SHORT, 그 밖은 STANDARD.
-  STANDARD로 낼 기사는 사실 2개 이상·이전 상태·영향을 갖춰 쓴다.
+- **`editorialDepth`: `SHORT` | `STANDARD` | `DEEP` — 신규 기사는 반드시 적는다.** 다른 값이면 publish가 멈춘다.
+  `DEEP`은 `deep/<slug>.json`이 있어야 하고, 심층 파일이 있는데 `DEEP`이 아니어도 멈춘다 (값만 DEEP으로 적어 심층 기사가 되지 않음).
+  STANDARD는 사실 2개 이상·이전 상태·영향을 갖춰 쓴다. 갖출 근거가 없으면 SHORT로 낸다 (등급에 글을 맞추지 않는다).
+- 값이 없는 과거 기사만 예전 자동 판정(`prio 3 · 사실 1개 · 추가 출처 없음` → SHORT, 그 밖 → STANDARD)을 쓴다.
 
 **(3) DEEP 심층 파일** — `ingest/editorial/deep/<slug>.json`
 

@@ -1,7 +1,7 @@
 {
   "generatedAt": "2026-10-05",
   "generator": "scripts/qa/audit-quality.mjs",
-  "count": 265,
+  "count": 244,
   "items": [
     {
       "slug": "openai-dots-proactive-assistants",
@@ -50,7 +50,7 @@
       "currentDepth": "standard",
       "status": "REVIEW",
       "priority": "P2",
-      "reason": "사실이 제목을 거의 되풀이 · 일반 기사인데 핵심 사실 1개 · 일반 기사인데 단신 수준 분량",
+      "reason": "일반 기사인데 핵심 사실 1개 · 일반 기사인데 단신 수준 분량",
       "needsSourceRecheck": true
     },
     {
@@ -120,7 +120,7 @@
       "currentDepth": "standard",
       "status": "REVIEW",
       "priority": "P2",
-      "reason": "일반 기사인데 핵심 사실 1개 · 일반 기사 권장 분량(400자) 미달 · 이전 상태·변화 맥락 약함",
+      "reason": "사실이 제목을 거의 되풀이 · 일반 기사인데 핵심 사실 1개 · 일반 기사 권장 분량(400자) 미달 · 이전 상태·변화 맥락 약함",
       "needsSourceRecheck": true
     },
     {
@@ -240,7 +240,7 @@
       "currentDepth": "standard",
       "status": "REVIEW",
       "priority": "P2",
-      "reason": "사실이 제목을 거의 되풀이 · 일반 기사인데 핵심 사실 1개 · 일반 기사 권장 분량(400자) 미달 · 이전 상태·변화 맥락 약함",
+      "reason": "일반 기사인데 핵심 사실 1개 · 일반 기사 권장 분량(400자) 미달 · 이전 상태·변화 맥락 약함",
       "needsSourceRecheck": true
     },
     {
@@ -390,7 +390,7 @@
       "currentDepth": "standard",
       "status": "REVIEW",
       "priority": "P2",
-      "reason": "사실이 제목을 거의 되풀이 · 일반 기사인데 핵심 사실 1개 · 일반 기사 권장 분량(400자) 미달",
+      "reason": "일반 기사인데 핵심 사실 1개 · 일반 기사 권장 분량(400자) 미달",
       "needsSourceRecheck": true
     },
     {
@@ -1014,6 +1014,16 @@
       "needsSourceRecheck": true
     },
     {
+      "slug": "meta-muse-for-small-business",
+      "date": "2026-09-29",
+      "company": "Meta",
+      "currentDepth": "short",
+      "status": "REVIEW",
+      "priority": "P3",
+      "reason": "사실이 제목을 거의 되풀이",
+      "needsSourceRecheck": false
+    },
+    {
       "slug": "gemini-3-8-live-avatar",
       "date": "2026-09-24",
       "company": "Google DeepMind",
@@ -1182,16 +1192,6 @@
       "priority": "P3",
       "reason": "일반 기사인데 핵심 사실 1개 · 일반 기사인데 단신 수준 분량",
       "needsSourceRecheck": true
-    },
-    {
-      "slug": "nvidia-crowdstrike-safemind",
-      "date": "2026-09-01",
-      "company": "NVIDIA",
-      "currentDepth": "short",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "사실이 제목을 거의 되풀이",
-      "needsSourceRecheck": false
     },
     {
       "slug": "google-drive-gemini-data-classification",
@@ -1404,9 +1404,9 @@
       "needsSourceRecheck": true
     },
     {
-      "slug": "claude-opus-5-github-copilot",
+      "slug": "facebook-verified-free-badge",
       "date": "2026-07-24",
-      "company": "GitHub",
+      "company": "Meta",
       "currentDepth": "short",
       "status": "REVIEW",
       "priority": "P3",
@@ -1454,16 +1454,6 @@
       "needsSourceRecheck": true
     },
     {
-      "slug": "chatgpt-small-business-program",
-      "date": "2026-07-21",
-      "company": "OpenAI",
-      "currentDepth": "short",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "사실이 제목을 거의 되풀이",
-      "needsSourceRecheck": true
-    },
-    {
       "slug": "anthropic-rare-disease-research-grants",
       "date": "2026-07-20",
       "company": "Anthropic",
@@ -1502,16 +1492,6 @@
       "priority": "P3",
       "reason": "왜 중요한가가 지나치게 짧음",
       "needsSourceRecheck": true
-    },
-    {
-      "slug": "alphaevolve-google-cloud-rollout",
-      "date": "2026-07-09",
-      "company": "Google",
-      "currentDepth": "short",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "사실이 제목을 거의 되풀이",
-      "needsSourceRecheck": false
     },
     {
       "slug": "gpt-5-6-family-github-copilot",
@@ -1562,16 +1542,6 @@
       "priority": "P3",
       "reason": "일반 기사 권장 분량(400자) 미달",
       "needsSourceRecheck": true
-    },
-    {
-      "slug": "claude-enterprise-analytics-cost-controls",
-      "date": "2026-07-01",
-      "company": "Anthropic",
-      "currentDepth": "short",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "사실이 제목을 거의 되풀이",
-      "needsSourceRecheck": false
     },
     {
       "slug": "copilot-vision-browser-tools-ga",
@@ -1634,16 +1604,6 @@
       "needsSourceRecheck": true
     },
     {
-      "slug": "copilot-for-jira-ga",
-      "date": "2026-06-25",
-      "company": "GitHub",
-      "currentDepth": "short",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "사실이 제목을 거의 되풀이",
-      "needsSourceRecheck": false
-    },
-    {
       "slug": "google-classroom-read-along-gemini",
       "date": "2026-06-25",
       "company": "Google",
@@ -1661,26 +1621,6 @@
       "status": "REVIEW",
       "priority": "P3",
       "reason": "일반 기사인데 핵심 사실 1개 · 일반 기사인데 단신 수준 분량",
-      "needsSourceRecheck": true
-    },
-    {
-      "slug": "claude-tag-teams",
-      "date": "2026-06-23",
-      "company": "Anthropic",
-      "currentDepth": "short",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "사실이 제목을 거의 되풀이",
-      "needsSourceRecheck": false
-    },
-    {
-      "slug": "chatgpt-enterprise-spend-controls",
-      "date": "2026-06-18",
-      "company": "OpenAI",
-      "currentDepth": "short",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "사실이 제목을 거의 되풀이",
       "needsSourceRecheck": true
     },
     {
@@ -1844,26 +1784,6 @@
       "needsSourceRecheck": true
     },
     {
-      "slug": "claude-apple-foundation-models-swift",
-      "date": "2026-06-07",
-      "company": "Anthropic",
-      "currentDepth": "short",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "사실이 제목을 거의 되풀이",
-      "needsSourceRecheck": false
-    },
-    {
-      "slug": "copilot-1m-context-reasoning-levels",
-      "date": "2026-06-04",
-      "company": "GitHub",
-      "currentDepth": "short",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "사실이 제목을 거의 되풀이",
-      "needsSourceRecheck": false
-    },
-    {
       "slug": "facebook-creator-assistant-ai-translations",
       "date": "2026-06-04",
       "company": "Meta",
@@ -1874,16 +1794,6 @@
       "needsSourceRecheck": true
     },
     {
-      "slug": "anthropic-mapping-ai-cyber-threats-mitre",
-      "date": "2026-06-03",
-      "company": "Anthropic",
-      "currentDepth": "short",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "사실이 제목을 거의 되풀이",
-      "needsSourceRecheck": false
-    },
-    {
       "slug": "gemma-4-12b-multimodal",
       "date": "2026-06-03",
       "company": "Google",
@@ -1891,16 +1801,6 @@
       "status": "REVIEW",
       "priority": "P3",
       "reason": "일반 기사 권장 분량(400자) 미달",
-      "needsSourceRecheck": true
-    },
-    {
-      "slug": "gpt-rosalind-new-capabilities",
-      "date": "2026-06-03",
-      "company": "OpenAI",
-      "currentDepth": "short",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "사실이 제목을 거의 되풀이",
       "needsSourceRecheck": true
     },
     {
@@ -1924,19 +1824,9 @@
       "needsSourceRecheck": true
     },
     {
-      "slug": "github-copilot-app-desktop",
+      "slug": "project-glasswing-expansion",
       "date": "2026-06-02",
-      "company": "GitHub",
-      "currentDepth": "short",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "사실이 제목을 거의 되풀이",
-      "needsSourceRecheck": false
-    },
-    {
-      "slug": "claude-opus-4-8-github-copilot",
-      "date": "2026-05-28",
-      "company": "GitHub",
+      "company": "Anthropic",
       "currentDepth": "short",
       "status": "REVIEW",
       "priority": "P3",
@@ -1962,6 +1852,16 @@
       "priority": "P3",
       "reason": "일반 기사 권장 분량(400자) 미달 · 이전 상태·변화 맥락 약함",
       "needsSourceRecheck": true
+    },
+    {
+      "slug": "anthropic-milan-office",
+      "date": "2026-05-27",
+      "company": "Anthropic",
+      "currentDepth": "short",
+      "status": "REVIEW",
+      "priority": "P3",
+      "reason": "사실이 제목을 거의 되풀이",
+      "needsSourceRecheck": false
     },
     {
       "slug": "copilot-memory-controls-preferences",
@@ -1991,7 +1891,7 @@
       "status": "REVIEW",
       "priority": "P3",
       "reason": "사실이 제목을 거의 되풀이",
-      "needsSourceRecheck": false
+      "needsSourceRecheck": true
     },
     {
       "slug": "gemini-api-managed-agents",
@@ -2001,7 +1901,7 @@
       "status": "REVIEW",
       "priority": "P3",
       "reason": "사실이 제목을 거의 되풀이",
-      "needsSourceRecheck": false
+      "needsSourceRecheck": true
     },
     {
       "slug": "claude-managed-agents-dreaming-outcomes",
@@ -2074,14 +1974,14 @@
       "needsSourceRecheck": true
     },
     {
-      "slug": "github-mcp-server-secret-scanning-ga",
-      "date": "2026-05-05",
-      "company": "GitHub",
+      "slug": "openai-realtime-voice-models-api",
+      "date": "2026-05-07",
+      "company": "OpenAI",
       "currentDepth": "short",
       "status": "REVIEW",
       "priority": "P3",
       "reason": "사실이 제목을 거의 되풀이",
-      "needsSourceRecheck": false
+      "needsSourceRecheck": true
     },
     {
       "slug": "nvidia-servicenow-autonomous-agents",
@@ -2091,16 +1991,6 @@
       "status": "REVIEW",
       "priority": "P3",
       "reason": "일반 기사 권장 분량(400자) 미달",
-      "needsSourceRecheck": true
-    },
-    {
-      "slug": "openai-european-youth-safety-blueprint",
-      "date": "2026-05-05",
-      "company": "OpenAI",
-      "currentDepth": "short",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "사실이 제목을 거의 되풀이",
       "needsSourceRecheck": true
     },
     {
@@ -2114,48 +2004,8 @@
       "needsSourceRecheck": true
     },
     {
-      "slug": "claude-api-skill-coderabbit-jetbrains-warp",
-      "date": "2026-04-28",
-      "company": "Anthropic",
-      "currentDepth": "short",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "사실이 제목을 거의 되풀이",
-      "needsSourceRecheck": false
-    },
-    {
-      "slug": "anthropic-sydney-office",
+      "slug": "openai-fedramp-moderate",
       "date": "2026-04-27",
-      "company": "Anthropic",
-      "currentDepth": "short",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "사실이 제목을 거의 되풀이",
-      "needsSourceRecheck": false
-    },
-    {
-      "slug": "copilot-code-review-actions-minutes",
-      "date": "2026-04-27",
-      "company": "GitHub",
-      "currentDepth": "short",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "사실이 제목을 거의 되풀이",
-      "needsSourceRecheck": false
-    },
-    {
-      "slug": "openai-symphony-orchestration-spec",
-      "date": "2026-04-27",
-      "company": "OpenAI",
-      "currentDepth": "short",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "사실이 제목을 거의 되풀이",
-      "needsSourceRecheck": true
-    },
-    {
-      "slug": "chatgpt-for-clinicians-free",
-      "date": "2026-04-22",
       "company": "OpenAI",
       "currentDepth": "short",
       "status": "REVIEW",
@@ -2191,7 +2041,7 @@
       "status": "REVIEW",
       "priority": "P3",
       "reason": "사실이 제목을 거의 되풀이",
-      "needsSourceRecheck": false
+      "needsSourceRecheck": true
     },
     {
       "slug": "gemini-3-1-flash-tts",
@@ -2202,6 +2052,16 @@
       "priority": "P3",
       "reason": "일반 기사인데 핵심 사실 1개 · 일반 기사인데 단신 수준 분량",
       "needsSourceRecheck": true
+    },
+    {
+      "slug": "gemini-app-notebooks",
+      "date": "2026-04-08",
+      "company": "Google",
+      "currentDepth": "short",
+      "status": "REVIEW",
+      "priority": "P3",
+      "reason": "사실이 제목을 거의 되풀이",
+      "needsSourceRecheck": false
     },
     {
       "slug": "samsung-bixby-agentic-interview",
@@ -2244,16 +2104,6 @@
       "needsSourceRecheck": true
     },
     {
-      "slug": "codex-pay-as-you-go-teams",
-      "date": "2026-04-02",
-      "company": "OpenAI",
-      "currentDepth": "short",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "사실이 제목을 거의 되풀이",
-      "needsSourceRecheck": true
-    },
-    {
       "slug": "copilot-cloud-agent-rename",
       "date": "2026-04-01",
       "company": "GitHub",
@@ -2264,9 +2114,9 @@
       "needsSourceRecheck": true
     },
     {
-      "slug": "copilot-studio-multi-agent-ga",
-      "date": "2026-04-01",
-      "company": "Microsoft",
+      "slug": "australia-anthropic-safety-mou",
+      "date": "2026-03-31",
+      "company": "Anthropic",
       "currentDepth": "short",
       "status": "REVIEW",
       "priority": "P3",
@@ -2302,26 +2152,6 @@
       "priority": "P3",
       "reason": "일반 기사인데 핵심 사실 1개 · 일반 기사인데 단신 수준 분량",
       "needsSourceRecheck": true
-    },
-    {
-      "slug": "copilot-student-plan",
-      "date": "2026-03-13",
-      "company": "GitHub",
-      "currentDepth": "short",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "사실이 제목을 거의 되풀이",
-      "needsSourceRecheck": false
-    },
-    {
-      "slug": "claude-partner-network-100m",
-      "date": "2026-03-12",
-      "company": "Anthropic",
-      "currentDepth": "short",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "사실이 제목을 거의 되풀이",
-      "needsSourceRecheck": false
     },
     {
       "slug": "copilot-jetbrains-agentic-ga",
@@ -2394,6 +2224,16 @@
       "needsSourceRecheck": true
     },
     {
+      "slug": "notebooklm-cinematic-video-overviews",
+      "date": "2026-03-04",
+      "company": "Google",
+      "currentDepth": "short",
+      "status": "REVIEW",
+      "priority": "P3",
+      "reason": "사실이 제목을 거의 되풀이",
+      "needsSourceRecheck": false
+    },
+    {
       "slug": "gemini-3-1-flash-lite",
       "date": "2026-03-03",
       "company": "Google",
@@ -2424,16 +2264,6 @@
       "needsSourceRecheck": true
     },
     {
-      "slug": "copilot-content-exclusion-api",
-      "date": "2026-02-26",
-      "company": "GitHub",
-      "currentDepth": "short",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "사실이 제목을 거의 되풀이",
-      "needsSourceRecheck": false
-    },
-    {
       "slug": "claude-cowork-plugins-enterprise",
       "date": "2026-02-23",
       "company": "Anthropic",
@@ -2444,29 +2274,9 @@
       "needsSourceRecheck": true
     },
     {
-      "slug": "gemini-3-1-pro-in-copilot",
-      "date": "2026-02-19",
-      "company": "GitHub",
-      "currentDepth": "short",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "사실이 제목을 거의 되풀이",
-      "needsSourceRecheck": false
-    },
-    {
-      "slug": "claude-sonnet-4-6-in-copilot",
-      "date": "2026-02-17",
-      "company": "GitHub",
-      "currentDepth": "short",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "사실이 제목을 거의 되풀이",
-      "needsSourceRecheck": false
-    },
-    {
-      "slug": "rwanda-anthropic-mou",
-      "date": "2026-02-17",
-      "company": "Anthropic",
+      "slug": "google-ai-impact-summit-2026",
+      "date": "2026-02-18",
+      "company": "Google",
       "currentDepth": "short",
       "status": "REVIEW",
       "priority": "P3",
@@ -2482,16 +2292,6 @@
       "priority": "P3",
       "reason": "일반 기사 권장 분량(400자) 미달",
       "needsSourceRecheck": true
-    },
-    {
-      "slug": "claude-enterprise-self-serve",
-      "date": "2026-02-11",
-      "company": "Anthropic",
-      "currentDepth": "short",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "사실이 제목을 거의 되풀이",
-      "needsSourceRecheck": false
     },
     {
       "slug": "gpt-5-3-codex-in-copilot",
@@ -2584,7 +2384,7 @@
       "needsSourceRecheck": true
     },
     {
-      "slug": "horizon-1000-gates-openai",
+      "slug": "servicenow-openai-frontier-models",
       "date": "2026-01-20",
       "company": "OpenAI",
       "currentDepth": "short",
@@ -2601,16 +2401,6 @@
       "status": "REVIEW",
       "priority": "P3",
       "reason": "일반 기사 권장 분량(400자) 미달",
-      "needsSourceRecheck": true
-    },
-    {
-      "slug": "openai-invests-merge-labs",
-      "date": "2026-01-15",
-      "company": "OpenAI",
-      "currentDepth": "short",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "사실이 제목을 거의 되풀이",
       "needsSourceRecheck": true
     },
     {
@@ -2634,6 +2424,16 @@
       "needsSourceRecheck": true
     },
     {
+      "slug": "kaggle-community-benchmarks",
+      "date": "2026-01-14",
+      "company": "Google",
+      "currentDepth": "short",
+      "status": "REVIEW",
+      "priority": "P3",
+      "reason": "사실이 제목을 거의 되풀이",
+      "needsSourceRecheck": false
+    },
+    {
       "slug": "copilot-model-deprecations-january",
       "date": "2026-01-13",
       "company": "GitHub",
@@ -2642,16 +2442,6 @@
       "priority": "P3",
       "reason": "일반 기사 권장 분량(400자) 미달",
       "needsSourceRecheck": true
-    },
-    {
-      "slug": "gemini-3-flash-in-copilot-ides",
-      "date": "2026-01-06",
-      "company": "GitHub",
-      "currentDepth": "short",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "사실이 제목을 거의 되풀이",
-      "needsSourceRecheck": false
     }
   ]
 }

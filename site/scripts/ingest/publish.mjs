@@ -109,6 +109,12 @@ for (const file of fs.readdirSync(EDITORIAL_DIR).filter((f) => f.endsWith(".json
       facts: d.facts, whyItMatters: d.why, whatChanges: d.change, priority: d.prio ?? 3, secondarySources: secondary,
     };
     const deep = deepBySlug.get(d.slug);
+    // 편집자가 정한 등급(선택): "DEEP" | "STANDARD" | "SHORT". DEEP은 deep/<slug>.json이 있어야만 인정한다
+    if (d.editorialDepth !== undefined) {
+      if (!["DEEP", "STANDARD", "SHORT"].includes(d.editorialDepth)) errors.push(`${file} ${d.slug}: editorialDepth는 DEEP·STANDARD·SHORT 중 하나 (${d.editorialDepth})`);
+      else if ((d.editorialDepth === "DEEP") !== !!deep)
+        errors.push(`${file} ${d.slug}: editorialDepth ${d.editorialDepth}인데 deep/${d.slug}.json이 ${deep ? "있음" : "없음"}`);
+    }
     if (deep) {
       deepBySlug.delete(d.slug);
       const known = new Set([c.url, ...secondary.map((x) => x.sourceUrl)]);
@@ -131,7 +137,11 @@ for (const file of fs.readdirSync(EDITORIAL_DIR).filter((f) => f.endsWith(".json
     const changed = !prev || JSON.stringify(Object.fromEntries(Object.keys(body).map((k) => [k, prev[k]]))) !== JSON.stringify(body);
     // 내부 분류(화면 노출 없음). 비교 뒤에 붙여 등급 표시만으로 updatedAt이 바뀌지 않게 한다
     // short: 우선순위 3·사실 1개·추가 출처 없음인 단신 / standard: 그 밖의 일반 기사
-    if (!deep) body.editorialDepth = body.priority === 3 && body.facts.length === 1 && secondary.length === 0 ? "short" : "standard";
+    // 명시값이 있으면 그대로, 없으면(과거 데이터) 기존 자동 판정
+    if (!deep)
+      body.editorialDepth = ["STANDARD", "SHORT"].includes(d.editorialDepth)
+        ? d.editorialDepth.toLowerCase()
+        : body.priority === 3 && body.facts.length === 1 && secondary.length === 0 ? "short" : "standard";
     stories.push({
       id: `s-${eventDate.replace(/-/g, "")}-${c.id.slice(0, 6)}`,
       slug: d.slug,

@@ -30,6 +30,17 @@ function overlap(a, b) {
   for (const x of A) if (B.has(x)) n++;
   return n / Math.min(A.size, B.size);
 }
+// 사실 문장 가운데 제목에 없는 내용의 비율 (0이면 제목을 그대로 되풀이, 1이면 전부 새 정보)
+function novelty(title, text) {
+  const grams = (t) => { const x = norm(t); const g = new Set(); for (let i = 0; i < x.length - 1; i++) g.add(x.slice(i, i + 2)); return g; };
+  const T = grams(title), F = grams(text);
+  if (!F.size) return 0;
+  let n = 0;
+  for (const g of F) if (!T.has(g)) n++;
+  return n / F.size;
+}
+// 저장된 원문 요약에 더 쓸 사실이 없어, 보강하려면 원문을 다시 읽어야 하는 기사 (2026-10-05 확인)
+const STORED_INFO_EXHAUSTED = new Set(["gemini-api-managed-agents", "copilot-for-eclipse-open-source", "gh-skill-agent-skills-cli", "claude-tag-teams"]);
 const hasSpecific = (t) => /\d|[A-Z][A-Za-z]+/.test(t); // 숫자·고유명(제품·회사)이 하나라도 있는지
 
 function audit(s) {
@@ -57,7 +68,7 @@ function audit(s) {
     const all = [s.summary, factText, s.whyItMatters, s.whatChanges].join("");
     // 무엇이 있었나: 요약·사실이 제목을 되풀이하는지
     if (overlap(s.title, s.summary) > 0.8 && overlap(s.title, factText) > 0.8) fail.push("요약·사실이 제목 반복 수준");
-    else if (overlap(s.title, factText) > 0.85 && facts.length === 1) review.push("사실이 제목을 거의 되풀이");
+    else if (novelty(s.title, factText) < 0.5) review.push("사실이 제목을 거의 되풀이");
     if (!factText.trim()) fail.push("핵심 사실 비어 있음");
     if (!hasSpecific(factText)) review.push("구체적 사실(수치·제품·조건) 없음");
     // 영향: '변화 없음'만 말하는지
@@ -66,7 +77,7 @@ function audit(s) {
     // '개발자용 변화입니다.'처럼 누구에게 무엇이 달라지는지 말하지 않는 한 줄
     const weakImpact = (s.whatChanges ?? "").trim().length < 25;
     if (weakImpact) review.push("그래서 나한테는?이 한 줄 미만");
-    if (weakImpact && overlap(s.title, factText) > 0.85) fail.push("사실은 제목 반복, 영향 설명도 없음");
+    if (weakImpact && novelty(s.title, factText) < 0.5) fail.push("사실은 제목 반복, 영향 설명도 없음");
     if (depth === "short") {
       if (all.length < 120 && facts.length <= 1) fail.push("단신치고도 본문이 거의 없음");
       else if (all.length < 150) review.push("단신 권장 분량(150자) 미달");
@@ -84,7 +95,7 @@ function audit(s) {
   const priority = status === "FAIL" ? "P1" : status === "REVIEW" ? (depth === "deep" || s.priority <= 2 ? "P2" : "P3") : null;
   // 원문을 다시 읽어야만 보강할 수 있는지 (구조·제목 반복 문제는 저장된 내용으로 고칠 수 있음)
   const structural = /섹션 없음|제목 반복|되풀이|editorialDepth/;
-  const needsSourceRecheck = [...fail, ...review].some((r) => !structural.test(r)) || blocked;
+  const needsSourceRecheck = [...fail, ...review].some((r) => !structural.test(r)) || blocked || STORED_INFO_EXHAUSTED.has(s.slug);
   return { status, priority, reasons: [...fail, ...review], needsSourceRecheck, blocked };
 }
 
