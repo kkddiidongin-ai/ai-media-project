@@ -1,0 +1,60 @@
+{
+  "slug": "apple-private-cloud-compute-nvidia-google",
+  "lead": "애플이 WWDC에서 Apple Intelligence의 서버 처리 시스템 'Private Cloud Compute(PCC)'를 애플 데이터센터 밖, 구글 클라우드로 넓혔다고 엔비디아가 밝혔습니다. 엔비디아의 기밀 컴퓨팅 GPU(Blackwell)가 애플과 구글이 Gemini 기술로 함께 만든 Apple Foundation Models의 서버 추론을 맡습니다. 같은 주 구글은 애플 개발자가 Foundation Models 프레임워크와 Xcode에서 Gemini를 쓸 수 있게 했다고 발표했습니다.",
+  "facts": [
+    "6월 9일 엔비디아가 자사 기밀 컴퓨팅 GPU가 애플 PCC의 기밀 추론에 쓰이며, PCC가 구글 클라우드로 확장된다고 밝혔습니다.",
+    "엔비디아 GPU는 애플과 구글이 Gemini 모델 계열 기술로 만든 Apple Foundation Models의 서버 측 추론을 지원합니다.",
+    "엔비디아는 기밀 컴퓨팅 덕분에 '시스템을 만든 사람조차' 사용자 데이터·대화를 볼 수 없다고 설명했습니다.",
+    "iOS 27 등 애플 OS 27 버전부터 Foundation Models 프레임워크가 외부 클라우드 모델에 열리고, Gemini는 Firebase Apple SDK로 연결됩니다(프리뷰).",
+    "Xcode의 Intelligence 설정에서 Gemini를 연결해 코드 리뷰·버그 수정 같은 에이전트 작업을 할 수 있게 됐습니다."
+  ],
+  "sections": [
+    {
+      "role": "what",
+      "heading": "무엇이 바뀌나",
+      "paragraphs": [
+        "PCC는 아이폰 등에서 기기 안으로 처리하기 어려운 Apple Intelligence 요청을 서버에서 처리하는 애플의 시스템입니다. 지금까지는 애플 데이터센터에서 돌았는데, 이제 구글 클라우드에서 엔비디아 Blackwell GPU로도 돌게 됩니다. 엔비디아는 이를 '차세대 Apple Intelligence 기능 일부'를 지원하는 것이라고 표현했습니다.",
+        "엔비디아가 설명한 기밀 컴퓨팅의 핵심은 네 가지입니다."
+      ],
+      "bullets": [
+        "하드웨어 기반 신뢰: 진짜이며 변조되지 않은 GPU인지 확인",
+        "암호화된 통신 경로: 부품 사이를 오가는 데이터 보호",
+        "원격 증명: 민감한 데이터를 보내기 전에 서버 상태가 안전한지 소프트웨어가 확인",
+        "GPU 성능 유지: 보안 때문에 GPU 가속을 포기하지 않고 추론·학습 가능"
+      ]
+    },
+    {
+      "role": "change",
+      "heading": "개발자 쪽 변화: 애플 앱에서 Gemini",
+      "paragraphs": [
+        "구글에 따르면 애플은 WWDC에서 Foundation Models 프레임워크를 외부 클라우드 모델 회사에 열었습니다. 같은 API 뒤에 기기 안 애플 모델과 클라우드 Gemini 모델이 함께 놓여, 개발자는 모델 인스턴스만 바꿔 로컬과 클라우드 처리를 오갈 수 있습니다. 별도 서버 없이 Firebase AI Logic으로 연결하며, 발표 시점에는 프리뷰입니다.",
+        "Xcode에도 Gemini가 들어가, 개인 개발자는 AI Studio의 Gemini API 키(무료 등급 포함)로, 기업은 Gemini Enterprise Agent Platform의 키로 연결할 수 있습니다."
+      ]
+    },
+    {
+      "role": "point",
+      "heading": "봐야 할 지점",
+      "paragraphs": [
+        "애플은 Apple Intelligence의 개인정보 보호를 '애플이 직접 운영하는 서버'로 설명해 왔습니다. 이제 일부 처리가 구글 클라우드의 엔비디아 GPU에서 이뤄지면서, 그 약속을 지키는 수단이 '누가 운영하느냐'에서 '하드웨어가 보장하는 기밀 처리'로 옮겨가고 있습니다. 엔비디아는 시스템 구축자조차 데이터를 볼 수 없다고 설명했지만, 이는 엔비디아의 설명이며 이 사이트가 애플의 공식 설명 원문을 확인한 것은 아닙니다.",
+        "경쟁 관계의 세 회사가 한 서비스에서 맞물린 점도 눈에 띕니다. 애플의 기기와 서비스, 구글의 모델 기술과 클라우드, 엔비디아의 GPU가 Apple Intelligence 하나에 함께 들어갔습니다."
+      ]
+    },
+    {
+      "role": "users",
+      "heading": "누구에게 무엇이 달라지나",
+      "bullets": [
+        "아이폰·맥 사용자: 겉으로 바뀌는 것은 없지만, 일부 AI 요청이 처리되는 장소가 늘어납니다. 애플의 개인정보 안내에서 처리 방식을 확인할 수 있습니다.",
+        "애플 앱 개발자: OS 27 버전부터 Foundation Models 프레임워크로 Gemini를 호출하고, Xcode에서 Gemini 에이전트를 쓸 수 있습니다(프리뷰).",
+        "한국 사용자: Apple Intelligence의 한국어 기능 범위는 이 발표들에 나오지 않습니다."
+      ]
+    },
+    {
+      "role": "open",
+      "heading": "확인하지 못한 것",
+      "bullets": [
+        "어떤 Apple Intelligence 기능이 구글 클라우드에서 처리되는지 구체적인 목록은 공개되지 않았습니다.",
+        "애플의 공식 발표 원문은 이 사이트가 직접 확인하지 않았고, 엔비디아·구글의 공식 글을 기준으로 정리했습니다."
+      ]
+    }
+  ]
+}

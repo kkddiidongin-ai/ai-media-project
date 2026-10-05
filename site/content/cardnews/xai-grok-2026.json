@@ -1,0 +1,52 @@
+{
+  "slug": "xai-grok-2026",
+  "publishedAt": "2026-10-01",
+  "demo": false,
+  "title": "xAI는 올해 무엇을 냈나: Grok 4.5→4.7",
+  "summary": "회사 뉴스 페이지는 수집할 수 없지만, 개발자 문서와 GitHub·AWS 발표로 xAI의 2026년을 따라갔습니다.",
+  "topics": [
+    "xai",
+    "grok",
+    "ai-coding"
+  ],
+  "storySlugs": [
+    "grok-code-fast-1-copilot-free",
+    "copilot-deprecates-grok-code-fast-1",
+    "xai-grok-build-beta",
+    "xai-grok-4-5-api",
+    "xai-grok-4-6",
+    "xai-grok-4-7"
+  ],
+  "slides": [
+    {
+      "kicker": "AI MEDIA 카드뉴스",
+      "title": "xAI의 2026년, 공식 문서로 따라가기",
+      "body": "xai.com 뉴스는 수집을 막고 있어, 개발자 문서·GitHub·AWS 공식 발표로 정리했습니다."
+    },
+    {
+      "kicker": "3월",
+      "title": "무료 Copilot에 Grok 모델",
+      "body": "Grok Code Fast 1이 Copilot Free의 자동 모델 선택에 들어갔습니다."
+    },
+    {
+      "kicker": "5월",
+      "title": "Copilot에서 빠지고, 자체 도구로",
+      "body": "5월 15일 Copilot 지원 종료. 같은 달 터미널 코딩 에이전트 Grok Build 베타 공개."
+    },
+    {
+      "kicker": "7월",
+      "title": "Grok 4.5: 100만 토큰당 2달러·6달러",
+      "body": "입력·출력 가격과 추론 강도 선택. 3주 뒤 GitHub Copilot에 다시 들어갔습니다."
+    },
+    {
+      "kicker": "8월 → 9월",
+      "title": "4.6, 그리고 4.7",
+      "body": "50만 토큰 맥락. 20만 토큰을 넘으면 단가 2배. 4.7은 아마존 베드록에도 올라갔습니다."
+    },
+    {
+      "kicker": "그래서 나한테는?",
+      "title": "긴 문서는 나눠 넣기",
+      "body": "Grok API로 긴 문서를 처리한다면 20만 토큰 구간을 넘지 않게 나누는 것이 비용상 유리할 수 있습니다."
+    }
+  ]
+}

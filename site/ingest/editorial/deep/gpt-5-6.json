@@ -1,0 +1,78 @@
+{
+  "slug": "gpt-5-6",
+  "lead": "OpenAI가 GPT-5.6을 정식 출시하면서 한 세대를 세 등급으로 나눴습니다. 최상위 Sol, 균형형 Terra, 대량 작업용 Luna입니다. 같은 날 GPT-5.6은 Microsoft 365 Copilot의 Word·Excel·PowerPoint·채팅·Cowork 우선 모델이 됐습니다. API에는 프로그래밍 방식 도구 호출, 명시적 캐시 제어, 멀티 에이전트(베타) 같은 에이전트 기능이 함께 들어왔고, 이후 7~8월 가격 인하가 이어졌습니다.",
+  "facts": [
+    "7월 9일 OpenAI가 GPT-5.6 계열(Sol·Terra·Luna)을 Responses·Chat Completions·Batch API에 출시했습니다. gpt-5.6 별칭은 Sol로 연결됩니다.",
+    "같은 날 GPT-5.6은 Microsoft 365 Copilot의 Word·Excel·PowerPoint·채팅·Cowork 우선 모델이 됐다고 발표됐습니다.",
+    "API에 프로그래밍 방식 도구 호출, 명시적 프롬프트 캐시 제어, 추론 유지, max 추론 강도, Pro 모드, 멀티 에이전트 오케스트레이션(베타)이 추가됐습니다.",
+    "7월 30일 Luna는 80%, Terra는 20% 가격을 내렸고, 기존 Priority Processing은 '2배 가격에 최대 2.5배 빠른' Fast 모드로 바뀌었습니다.",
+    "8월 21일 Sol 가격이 100만 토큰당 입력 4달러·출력 20달러로 내려갔고(입력 20%·출력 33% 인하), 이 프로모션 가격은 최소 11월 21일까지 유지된다고 밝혔습니다."
+  ],
+  "sections": [
+    {
+      "role": "what",
+      "heading": "세 등급과 새 API 기능",
+      "bullets": [
+        "Sol: 최상위 능력. 이전 GPT-5 계열의 접미사 없는 모델에 해당. 맥락 105만 토큰(입력 최대 92만2천), 출력 12만8천, 추론 강도 none~max(기본 medium)",
+        "Terra: 지능과 비용의 균형",
+        "Luna: 효율적인 대량 작업용",
+        "프로그래밍 방식 도구 호출, 명시적 캐시 제어, 추론 유지, Pro 모드, 멀티 에이전트(베타)",
+        "이미지: 원본 크기 그대로 입력(original·auto 디테일)"
+      ]
+    },
+    {
+      "role": "change",
+      "heading": "출시 뒤 이어진 가격 변화 (OpenAI 변경 기록 기준)",
+      "bullets": [
+        "7월 30일: Luna 80% 인하, Terra 20% 인하. Priority Processing → Fast 모드(Sol 기준 표준의 2배 가격, 최대 2.5배 속도). 기존 priority 요청은 자동으로 Fast 모드 적용",
+        "8월 5일: Fast 모드가 27만2천 토큰 넘는 긴 맥락 요청도 지원",
+        "8월 13일: Sol 전용 'Ultrafast' 모드(표준 대비 최대 14배 속도) 제한 프리뷰 발표",
+        "8월 21일: Sol 입력 4달러·출력 20달러로 인하, 최소 11월 21일까지 유지",
+        "공통: 입력 27만2천 토큰 초과 시 요청 전체에 입력 2배·출력 1.5배"
+      ]
+    },
+    {
+      "role": "point",
+      "heading": "봐야 할 지점",
+      "paragraphs": [
+        "'최상위–균형–경량' 세 등급 구조가 OpenAI의 기본 틀이 됐습니다. 이 사이트 기록상 9월 GPT-6도 Astra·Sol·Luna로 나뉘었습니다. 사용자는 모델 이름보다 등급을 보고 고르게 되고, 어떤 작업을 어느 등급에 맡기느냐가 비용을 좌우합니다.",
+        "출시 뒤 한 달 반 사이 가격과 속도 옵션이 계속 바뀐 점도 기록해 둘 만합니다. 같은 모델이라도 표준·Batch·Flex·Fast·Ultrafast 처리 방식에 따라 가격과 속도가 달라지는 구조가 됐습니다. 회사에서 쓰는 오피스 AI의 기본 모델이 같은 날 바뀌었다는 점도, 사용자가 모르는 사이 결과물이 달라질 수 있다는 뜻입니다."
+      ]
+    },
+    {
+      "role": "users",
+      "heading": "누구에게 무엇이 달라지나",
+      "bullets": [
+        "M365 Copilot을 쓰는 직장인: 문서 작성·요약에 쓰이는 기본 모델이 GPT-5.6으로 바뀌어 결과물 스타일이 달라질 수 있습니다.",
+        "API 개발자: 등급별로 작업을 나누고, 급하지 않은 작업은 Batch·Flex, 급한 작업만 Fast로 돌리는 조합을 검토할 만합니다.",
+        "ChatGPT 사용자: 이 사이트 기록상 8월 6일 무료 사용자에게 GPT-5.6 Luna가 일상 대화용으로 제공됐습니다."
+      ]
+    },
+    {
+      "role": "open",
+      "heading": "확인하지 못한 것",
+      "bullets": [
+        "OpenAI 발표 원문(openai.com) 두 건은 이 사이트의 자동 확인 도구 접근이 막혀(403) 읽지 못했습니다. 성능 수치는 넣지 않았고, 사양과 가격은 OpenAI 모델 문서·변경 기록을 기준으로 정리했습니다.",
+        "출시 당시 Sol·Terra·Luna의 처음 가격은 이 사이트가 확인한 문서 범위에 없습니다. 위 가격은 이후 변경분입니다."
+      ]
+    }
+  ],
+  "references": [
+    {
+      "sourceName": "OpenAI API 문서",
+      "sourceTitle": "GPT-5.6 Sol (Models)",
+      "sourceUrl": "https://developers.openai.com/api/docs/models/gpt-5.6-sol",
+      "sourcePublishedAt": "",
+      "checkedAt": "2026-10-02",
+      "note": "맥락·출력 한도, 추론 강도, 현재 프로모션 가격(입력 4달러·출력 20달러, 11월 21일까지), 긴 맥락 할증"
+    },
+    {
+      "sourceName": "OpenAI API 문서",
+      "sourceTitle": "Changelog",
+      "sourceUrl": "https://developers.openai.com/api/docs/changelog",
+      "sourcePublishedAt": "",
+      "checkedAt": "2026-10-02",
+      "note": "7월 9일 출시 기능, 7월 30일 Luna·Terra 인하와 Fast 모드, 8월 5·13·21일 변경"
+    }
+  ]
+}

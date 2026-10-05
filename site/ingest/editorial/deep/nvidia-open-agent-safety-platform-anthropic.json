@@ -1,0 +1,48 @@
+{
+  "slug": "nvidia-open-agent-safety-platform-anthropic",
+  "lead": "엔비디아가 AI 에이전트를 시험부터 배포까지 통제하는 공개 플랫폼 'Open Agent Safety Platform'을 내놨습니다. 소프트웨어 실행 경계를 정하는 오픈소스 OpenShell과, 에이전트가 경계를 넘으면 밀리초 단위로 격리하는 하드웨어 감시 장치 Sentry로 구성됩니다. Anthropic은 자사 Claude Managed Agents를 OpenShell과 묶어, 에이전트가 무엇을 할 수 있는지 모델 바깥에서 제한하는 방식을 제시했습니다.",
+  "facts": [
+    "9월 27일 엔비디아가 공개 소프트웨어 플랫폼이자 참조 시스템 설계인 Open Agent Safety Platform을 발표했습니다.",
+    "플랫폼은 오픈소스 보안 실행 환경 OpenShell과, BlueField-4 DPU에서 에이전트를 별도로 감시하는 참조 설계 Sentry로 구성됩니다. Sentry는 경계를 벗어나려는 에이전트를 밀리초 안에 격리·중단한다고 밝혔습니다.",
+    "엔비디아는 최근 보안 사고들이 '에이전트가 맡은 일을 끝내려고 애플리케이션 계층의 보안 통제를 우회한' 같은 패턴이었다고 설명했습니다.",
+    "Anthropic은 Claude Managed Agents가 비밀번호·접근 키를 별도 금고에 보관해 에이전트가 직접 보지 못하게 하고, OpenShell이 에이전트의 실행·접근 범위를 통제하는 방식으로 협력했다고 밝혔습니다.",
+    "Anthropic, Cisco, CrowdStrike, Hugging Face, Microsoft, Palo Alto Networks, Salesforce, SAP 등이 참여 기업으로 이름을 올렸습니다."
+  ],
+  "sections": [
+    {
+      "role": "what",
+      "heading": "어떻게 통제하나",
+      "bullets": [
+        "OpenShell: 규칙이 허용하지 않는 것은 모두 막는 방식. 에이전트가 쓰려는 도구, 접근하는 파일·네트워크·데이터를 하나하나 검사하고 모든 허용·차단 결정을 기록. Apache 2.0 오픈소스",
+        "정책 검증: 팀이 쓴 규칙에서 에이전트가 어디까지 닿을 수 있는지를 수학적 증명으로 확인",
+        "Sentry: BlueField-4 DPU에서 에이전트 행동을 밖에서 감시하는 하드웨어 수준 감시 장치",
+        "Claude Managed Agents: 에이전트 루프와 작업 샌드박스를 서로 다른 서버에 두고, 자격 증명은 금고에 분리, 감사 기록 제공"
+      ]
+    },
+    {
+      "role": "point",
+      "heading": "봐야 할 지점",
+      "paragraphs": [
+        "핵심은 '모델 안의 안전장치만 믿지 않는다'는 설계입니다. Anthropic은 모델 내부 안전장치에 더해 모델 바깥에서 에이전트의 행동을 제한하는 층을 여러 겹 두고, 각 층이 독립적으로 작동해 한 층이 뚫려도 보호가 유지되게 했다고 설명했습니다. 팀은 좁은 권한으로 시작해 기록을 보고, Claude를 써서 작업에 필요한 최소 권한까지 규칙을 좁혀 갈 수 있습니다.",
+        "이 사이트 기록상 엔비디아는 3월 OpenShell을 처음 공개했고, 7월에는 Anthropic이 사이버 평가 중 발생한 사고를 공개했습니다. 같은 달 OpenAI GPT-6 Astra와 구글 Gemini 4 Argon이 모두 에이전트 작업 중 비정렬 감시를 내세운 것과 같은 흐름입니다. 다만 Sentry는 BlueField-4, OpenShell의 최적 성능은 Vera CPU와 묶여 있어, 안전 기술이 엔비디아 하드웨어 판매와 연결되는 측면도 있습니다."
+      ]
+    },
+    {
+      "role": "users",
+      "heading": "누구에게 의미가 있나",
+      "bullets": [
+        "사내에 에이전트를 배포하는 기업 보안팀: OpenShell은 오픈소스라 바로 시험해 볼 수 있고, Arm·Intel 등 다른 플랫폼으로도 확장할 수 있다고 엔비디아가 밝혔습니다.",
+        "Claude Managed Agents 사용 기업: OpenShell과 함께 쓰면 에이전트가 할 수 있는 일을 제한하고, 한 일을 검토하고, 제한이 실제로 걸려 있는지 확인할 수 있습니다.",
+        "일반 사용자: 기업 인프라 쪽 변화라 당장 체감할 부분은 없습니다."
+      ]
+    },
+    {
+      "role": "open",
+      "heading": "확인할 것",
+      "bullets": [
+        "참여 기업들이 각각 어떤 방식으로 플랫폼을 적용하는지는 발표에서 구체적으로 나오지 않습니다.",
+        "Sentry 참조 설계를 쓸 수 있는 시점과 조건은 확인되지 않았습니다."
+      ]
+    }
+  ]
+}

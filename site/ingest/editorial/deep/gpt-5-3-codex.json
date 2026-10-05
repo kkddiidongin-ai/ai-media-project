@@ -1,0 +1,77 @@
+{
+  "slug": "gpt-5-3-codex",
+  "lead": "OpenAI가 코딩 에이전트 Codex에 맞춘 모델 GPT-5.3-Codex를 내놨습니다. 최상위 코딩 성능에 일반 추론을 더해 오래 걸리는 실제 기술 작업을 맡기도록 만들었다는 것이 회사 설명입니다. 처음에는 Codex 안에서 쓰였고, API에는 약 3주 뒤인 2월 24일 Responses API로 풀렸습니다. 같은 날 Anthropic은 Claude Opus 4.6을 내놨습니다.",
+  "facts": [
+    "2월 5일 OpenAI가 GPT-5.3-Codex를 공개했습니다.",
+    "OpenAI API 변경 기록에 따르면 2월 24일 Responses API에 gpt-5.3-codex가 추가됐습니다.",
+    "OpenAI 모델 문서 기준 맥락 창은 40만 토큰(입력 최대 27만2천), 출력은 최대 12만8천 토큰입니다.",
+    "API 가격은 100만 토큰당 입력 1.75달러(캐시 입력 0.175달러), 출력 14달러입니다(10월 2일 모델 문서 기준).",
+    "추론 강도는 low·medium·high·xhigh 네 단계로 설정할 수 있습니다."
+  ],
+  "sections": [
+    {
+      "role": "what",
+      "heading": "어떤 모델인가",
+      "paragraphs": [
+        "GPT-5.3-Codex는 Codex나 비슷한 환경에서 '에이전트 코딩'을 하도록 최적화된 모델입니다. 사람이 한 줄씩 지시하는 대신, 저장소를 읽고 고치고 테스트를 돌리는 긴 작업을 맡기는 용도입니다. OpenAI 모델 문서는 이 모델을 '지금까지 가장 뛰어난 에이전트 코딩 모델'로 소개하고 있습니다(문서 작성 시점 기준 표현)."
+      ],
+      "bullets": [
+        "입력: 텍스트·이미지 / 출력: 텍스트",
+        "맥락 40만 토큰, 입력 최대 27만2천, 출력 최대 12만8천",
+        "지식 기준일: 2025년 8월 31일",
+        "추론 강도: low, medium, high, xhigh"
+      ]
+    },
+    {
+      "role": "change",
+      "heading": "Codex 먼저, API는 나중에",
+      "paragraphs": [
+        "공개 당일에는 Codex 제품 안에서 먼저 쓰였고, 개발자가 API로 직접 호출할 수 있게 된 것은 2월 24일입니다. 같은 날 OpenAI는 Responses API에 웹소켓 모드와, 중간 설명과 최종 답을 구분하는 'phase' 표시도 추가했습니다. 긴 에이전트 작업을 API로 다루기 위한 기능들입니다.",
+        "API 가격은 입력 1.75달러·출력 14달러(100만 토큰당)로, 모델 문서의 비교표에 나오는 GPT-5.2와 같은 단가입니다."
+      ]
+    },
+    {
+      "role": "point",
+      "heading": "봐야 할 지점",
+      "paragraphs": [
+        "같은 날 Anthropic이 Claude Opus 4.6을 내놓으면서, 2026년 코딩 모델 경쟁은 두 회사가 같은 날 맞붙는 장면으로 시작했습니다. 둘 다 '긴 작업을 맡길 수 있는 코딩 에이전트'를 내세웠다는 점이 공통점입니다.",
+        "제품 우선 출시도 눈여겨볼 대목입니다. 모델을 먼저 자사 제품(Codex)에 넣고 API는 뒤에 여는 순서는, 사용자 경험과 안전장치를 자사 환경에서 먼저 확인하려는 방식으로 볼 수 있습니다. 이 사이트 기록상 GitHub은 3월 18일 이 모델을 기업용 '장기 지원(LTS) 모델'의 첫 대상으로 정했습니다."
+      ]
+    },
+    {
+      "role": "users",
+      "heading": "누구에게 해당되나",
+      "bullets": [
+        "Codex 사용자: 더 긴 작업을 한 번에 맡겨 볼 수 있습니다.",
+        "API 개발자: 2월 24일부터 Responses API로 쓸 수 있습니다. 입력 27만2천 토큰이 한도라 큰 저장소는 나눠 넣어야 합니다.",
+        "일반 사용자: 직접적인 변화는 없습니다."
+      ]
+    },
+    {
+      "role": "open",
+      "heading": "확인하지 못한 것",
+      "bullets": [
+        "OpenAI 발표 원문(openai.com)은 이 사이트의 자동 확인 도구 접근이 차단돼(403), 성능 수치와 벤치마크는 이 글에 넣지 않았습니다. 사양과 가격은 OpenAI 개발자 문서를 기준으로 했습니다.",
+        "이후 GPT-5.4, GPT-5.5, GPT-5.6, GPT-6 계열이 잇달아 나와, 지금 새로 고른다면 최신 모델과 비교가 필요합니다."
+      ]
+    }
+  ],
+  "references": [
+    {
+      "sourceName": "OpenAI API 문서",
+      "sourceTitle": "GPT-5.3-Codex (Models)",
+      "sourceUrl": "https://developers.openai.com/api/docs/models/gpt-5.3-codex",
+      "sourcePublishedAt": "",
+      "checkedAt": "2026-10-02",
+      "note": "맥락·출력 한도, 추론 강도, 지식 기준일, 가격"
+    },
+    {
+      "sourceName": "OpenAI API 문서",
+      "sourceTitle": "Changelog",
+      "sourceUrl": "https://developers.openai.com/api/docs/changelog",
+      "sourcePublishedAt": "",
+      "checkedAt": "2026-10-02",
+      "note": "2월 24일 Responses API에 gpt-5.3-codex 추가, 웹소켓 모드·phase 출시"
+    }
+  ]
+}

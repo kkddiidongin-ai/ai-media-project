@@ -1,0 +1,114 @@
+{
+  "slug": "copilot-retirements-2026",
+  "publishedAt": "2026-10-01",
+  "checkedAt": "2026-10-01",
+  "category": "LIFECYCLE",
+  "title": "들어온 만큼 빠졌다: Copilot 모델·서비스 종료 기록",
+  "summary": "2026년 GitHub이 공지한 Copilot 모델 지원 종료와 AI 서비스 종료를 날짜순으로 모았습니다.",
+  "point": "1월에 '최신'이던 모델 상당수가 반년 안에 사라졌고, GitHub Models와 Spark처럼 서비스 자체가 닫힌 경우도 있습니다. 자동화나 사내 도구에 모델 이름을 고정해 두었다면, 종료 공지를 정기적으로 확인하는 일이 필요해졌습니다.",
+  "type": "list",
+  "unit": "종료일 (공지 기준)",
+  "basis": "GitHub Changelog 공지의 실제 종료일 기준. 예고만 있고 종료일이 없는 공지는 예고일로 표시. 일부 기능만 남기는 '대부분의 기능에서 종료'도 종료로 셈.",
+  "topics": [
+    "copilot",
+    "ai-coding"
+  ],
+  "items": [
+    {
+      "label": "Gemini 3 Pro",
+      "display": "종료",
+      "date": "2026-03-26",
+      "note": "Chat·인라인 편집·에이전트 모드·코드 완성 전부",
+      "storySlug": "copilot-deprecates-gemini-3-pro-gpt-5-1"
+    },
+    {
+      "label": "GPT-5.1 · GPT-5.1 Codex 계열",
+      "display": "종료",
+      "date": "2026-04-03",
+      "storySlug": "copilot-deprecates-gpt-5-1-sonnet-4"
+    },
+    {
+      "label": "Claude Sonnet 4",
+      "display": "종료",
+      "date": "2026-05-06",
+      "note": "5월 1일에서 6일로 조정",
+      "storySlug": "copilot-deprecates-gpt-5-1-sonnet-4"
+    },
+    {
+      "label": "Grok Code Fast 1",
+      "display": "종료",
+      "date": "2026-05-15",
+      "storySlug": "copilot-deprecates-grok-code-fast-1"
+    },
+    {
+      "label": "GPT-4.1 (기본 모델에서 교체)",
+      "display": "종료",
+      "date": "2026-06-01",
+      "note": "5월 18일 기본 모델이 GPT-5.3-Codex로 바뀜",
+      "storySlug": "copilot-base-model-gpt-5-3-codex"
+    },
+    {
+      "label": "GitHub Models (서비스)",
+      "display": "완전 종료",
+      "date": "2026-07-30",
+      "note": "플레이그라운드·카탈로그·추론 API·BYOK",
+      "storySlug": "github-models-retired"
+    },
+    {
+      "label": "GitHub Spark (서비스)",
+      "display": "이용 종료",
+      "date": "2026-08-31",
+      "note": "8월 4일부터 신규 사용자·새 앱 생성 중단",
+      "storySlug": "github-spark-deprecation"
+    },
+    {
+      "label": "일부 Copilot 모델 (9월 1일 공지분)",
+      "display": "종료",
+      "date": "2026-09-01",
+      "storySlug": "copilot-global-model-policy-ga"
+    }
+  ],
+  "sources": [
+    {
+      "name": "GitHub Changelog",
+      "url": "https://github.blog/changelog/2026-03-02-upcoming-deprecation-of-gemini-3-pro-and-gpt-5-1-models"
+    },
+    {
+      "name": "GitHub Changelog",
+      "url": "https://github.blog/changelog/2026-04-03-gpt-5-1-codex-gpt-5-1-codex-max-and-gpt-5-1-codex-mini-deprecated"
+    },
+    {
+      "name": "GitHub Changelog",
+      "url": "https://github.blog/changelog/2026-05-08-upcoming-deprecation-of-grok-code-fast-1"
+    },
+    {
+      "name": "GitHub Changelog",
+      "url": "https://github.blog/changelog/2026-05-17-gpt-5-3-codex-is-now-the-base-model-for-copilot-business-and-enterprise"
+    },
+    {
+      "name": "GitHub Changelog",
+      "url": "https://github.blog/changelog/2026-07-30-github-models-is-now-retired"
+    },
+    {
+      "name": "GitHub Changelog",
+      "url": "https://github.blog/changelog/2026-08-04-upcoming-deprecation-of-github-spark-on-github-com"
+    },
+    {
+      "name": "GitHub Changelog",
+      "url": "https://github.blog/changelog/2026-08-26-global-model-policy-generally-available"
+    },
+    {
+      "name": "GitHub Changelog",
+      "url": "https://github.blog/changelog/2026-06-02-gpt-4-1-deprecated"
+    },
+    {
+      "name": "GitHub Changelog",
+      "url": "https://github.blog/changelog/2026-08-31-selected-github-copilot-models-deprecated"
+    }
+  ],
+  "relatedStories": [
+    "copilot-deprecates-gemini-3-pro-gpt-5-1",
+    "github-models-retired",
+    "github-spark-deprecation"
+  ]
+}

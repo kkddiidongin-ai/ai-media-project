@@ -1,0 +1,161 @@
+{
+  "slug": "api-price-flagship-2026-10",
+  "publishedAt": "2026-10-01",
+  "checkedAt": "2026-10-02",
+  "category": "PRICE",
+  "title": "GPT-6 Astra와 Claude Fable 5.1, 출력 100만 토큰에 50달러로 같았다",
+  "summary": "3사 공식 API 가격표에서 주요 모델의 표준 가격을 옮겼습니다. 막대는 출력 가격, 괄호는 입력 가격입니다.",
+  "point": "최상위 모델 가격은 두 회사가 같았고, 그 아래 등급(Sol·Sonnet·Opus 5.5)이 출력 10~20달러에 몰려 있습니다. 2026년 가을의 경쟁은 '더 똑똑한 모델'보다 '비슷한 일을 더 싸게'에 가까웠습니다. 다만 표의 단가만으로 고르지 말고, 긴 입력 할증·토큰 수·작업당 시도 횟수를 함께 따져야 실제 비용이 나옵니다.",
+  "type": "bar",
+  "unit": "달러 / 출력 100만 토큰",
+  "basis": "각 회사 1st-party API의 표준(standard) 요금, 미국 달러, 2026-10-02 공식 가격 문서 재확인. 배치·캐시·지역 처리 할증은 제외. 긴 맥락 할증 기준이 회사마다 달라 메모에 따로 적었습니다. 토큰을 세는 방식도 회사마다 다릅니다(Anthropic은 4.7 이후 모델이 같은 글에서 약 30% 더 많은 토큰을 만든다고 명시).",
+  "topics": [
+    "openai",
+    "anthropic",
+    "google",
+    "gemini",
+    "claude"
+  ],
+  "items": [
+    {
+      "label": "GPT-6 Astra",
+      "group": "OpenAI",
+      "value": 50,
+      "display": "$50 (입력 $10)",
+      "note": "입력 27만2천 토큰 초과 시 입력 2배·출력 1.5배($75)",
+      "sourceName": "OpenAI API 가격",
+      "sourceUrl": "https://developers.openai.com/api/docs/pricing"
+    },
+    {
+      "label": "Claude Fable 5.1",
+      "group": "Anthropic",
+      "value": 50,
+      "display": "$50 (입력 $10)",
+      "sourceName": "Claude API 가격",
+      "sourceUrl": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "note": "100만 토큰까지 같은 가격"
+    },
+    {
+      "label": "Claude Opus 5.5",
+      "group": "Anthropic",
+      "value": 20,
+      "display": "$20 (입력 $4)",
+      "sourceName": "Claude API 가격",
+      "sourceUrl": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "note": "100만 토큰까지 같은 가격"
+    },
+    {
+      "label": "Gemini 3.1 Pro Preview",
+      "group": "Google",
+      "value": 12,
+      "display": "$12 (입력 $2)",
+      "note": "프롬프트 20만 토큰 초과 시 입력 $4·출력 $18 (프리뷰 모델)",
+      "sourceName": "Gemini API 가격",
+      "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing"
+    },
+    {
+      "label": "GPT-6.1 Sol",
+      "group": "OpenAI",
+      "value": 10,
+      "display": "$10 (입력 $2)",
+      "note": "입력 27만2천 토큰 초과 시 입력 2배·출력 1.5배($15)",
+      "sourceName": "OpenAI API 가격",
+      "sourceUrl": "https://developers.openai.com/api/docs/pricing"
+    },
+    {
+      "label": "Claude Sonnet 5.5",
+      "group": "Anthropic",
+      "value": 10,
+      "display": "$10 (입력 $2)",
+      "sourceName": "Claude API 가격",
+      "sourceUrl": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "note": "100만 토큰까지 같은 가격"
+    },
+    {
+      "label": "Gemini 3.8 Flash",
+      "group": "Google",
+      "value": 3.75,
+      "display": "$3.75 (입력 $0.75)",
+      "note": "2026-12-31까지 적용 가격, 2027-01-01부터 입력 $1.50·출력 $7.50",
+      "sourceName": "Gemini API 가격",
+      "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing"
+    },
+    {
+      "label": "GPT-6 Luna",
+      "group": "OpenAI",
+      "value": 0.5,
+      "display": "$0.50 (입력 $0.10)",
+      "sourceName": "OpenAI API 가격",
+      "sourceUrl": "https://developers.openai.com/api/docs/pricing",
+      "note": "입력 27만2천 토큰 초과 시 입력 2배·출력 1.5배($0.75)"
+    }
+  ],
+  "sources": [
+    {
+      "name": "OpenAI API Pricing",
+      "url": "https://developers.openai.com/api/docs/pricing"
+    },
+    {
+      "name": "Claude API Pricing",
+      "url": "https://platform.claude.com/docs/en/about-claude/pricing"
+    },
+    {
+      "name": "Gemini API Pricing",
+      "url": "https://ai.google.dev/gemini-api/docs/pricing"
+    }
+  ],
+  "relatedStories": [
+    "gpt-6-sol-luna",
+    "claude-opus-5-5",
+    "gemini-3-8-flash-cyber",
+    "claude-fable-5-mythos-5"
+  ],
+  "oneLine": "최상위 모델의 출력 가격은 OpenAI와 Anthropic이 100만 토큰당 50달러로 같았고, 그 아래 등급은 10~20달러, 가장 싼 모델은 1달러 미만이었습니다. 같은 '대표 모델'이라도 등급에 따라 100배 차이가 납니다.",
+  "analysis": [
+    {
+      "role": "compare",
+      "heading": "이 차트가 비교하는 것",
+      "paragraphs": [
+        "세 회사(OpenAI·Anthropic·구글)가 자사 API 가격 문서에 올린 표준 요금 중, 대표 등급 모델 8개의 '출력 100만 토큰당 가격'을 막대로 놓았습니다. 괄호 안은 입력 가격입니다. 출력 가격을 기준으로 삼은 이유는, 에이전트·코딩 작업에서 답을 길게 쓰는 경우가 많아 비용 차이가 가장 크게 드러나기 때문입니다.",
+        "배치(급하지 않은 일괄 처리), 캐시, 지역 처리 할증은 넣지 않았습니다. 배치 요금은 세 회사 모두 표준의 절반 수준으로, OpenAI는 Batch·Flex, Anthropic은 Batch API(50% 할인), 구글은 Batch 요금을 따로 둡니다."
+      ]
+    },
+    {
+      "role": "see",
+      "heading": "숫자에서 보이는 것",
+      "bullets": [
+        "세 덩어리로 나뉩니다. 50달러(GPT-6 Astra, Claude Fable 5.1), 10~20달러(Opus 5.5 20달러, Gemini 3.1 Pro 12달러, GPT-6.1 Sol·Sonnet 5.5 10달러), 5달러 미만(Gemini 3.8 Flash 3.75달러, GPT-6 Luna 0.5달러).",
+        "가장 비싼 모델과 가장 싼 모델의 출력 단가 차이는 100배입니다(50달러 대 0.5달러).",
+        "입력 대 출력 가격 비율은 대부분 1:5입니다(예: 10달러/50달러, 2달러/10달러). Gemini 3.1 Pro만 1:6입니다.",
+        "OpenAI의 GPT-6.1 Sol은 Astra 가격의 정확히 5분의 1로 책정됐습니다."
+      ]
+    },
+    {
+      "role": "why",
+      "heading": "왜 이렇게 나뉘었나",
+      "paragraphs": [
+        "세 회사 모두 한 세대 모델을 여러 등급으로 나눠 팝니다. OpenAI는 Astra·Sol·Luna, Anthropic은 Fable·Opus·Sonnet·Haiku, 구글은 Pro·Flash 계열입니다. 가격도 모델 하나하나가 아니라 등급별로 정해지는 모습입니다. 그래서 회사가 달라도 같은 등급끼리는 가격이 비슷하게 모입니다.",
+        "등급 사이 경쟁도 보입니다. OpenAI는 GPT-6.1 Sol을 'Astra에 가까운 지능을 5분의 1 가격에' 제공한다고 밝혔고, Anthropic은 Opus 5.5 가격을 Opus 5(입력 5달러·출력 25달러)보다 낮췄습니다. 같은 성능을 더 싸게 주는 쪽으로 경쟁이 옮겨가고 있다는 신호로 읽을 수 있습니다(AI MEDIA 해석)."
+      ]
+    },
+    {
+      "role": "read",
+      "heading": "해석할 때 꼭 볼 것",
+      "bullets": [
+        "긴 입력 규칙이 다릅니다. OpenAI는 입력 27만2천 토큰을 넘으면 입력 2배·출력 1.5배, 구글 Gemini 3.1 Pro는 20만 토큰을 넘으면 입력 2배·출력 1.5배입니다. Anthropic은 Claude 4.6 이후 모델이 100만 토큰 전체를 같은 가격으로 받습니다.",
+        "토큰 수가 다릅니다. Anthropic은 4.7 이후 모델의 토크나이저가 같은 글에서 약 30% 더 많은 토큰을 만든다고 명시했습니다. 단가가 같아도 실제 청구액은 다를 수 있습니다.",
+        "기한이 있는 가격이 있습니다. Gemini 3.8 Flash는 2026년 12월 31일까지 적용되는 가격이고, 2027년 1월 1일부터 2배가 됩니다.",
+        "단가와 작업당 비용은 다릅니다. 더 싼 모델이 여러 번 시도해야 끝나면 오히려 비쌀 수 있고, 추론을 깊게 하는 모델은 같은 작업에 토큰을 더 씁니다."
+      ]
+    },
+    {
+      "role": "caution",
+      "heading": "주의해서 볼 점",
+      "bullets": [
+        "구글의 최신 최상위 모델 Gemini 4 Argon은 9월 30일 발표됐지만, 10월 2일 확인한 Gemini API 가격 문서에는 아직 없습니다. 그래서 구글의 최상위 등급으로 프리뷰 모델인 Gemini 3.1 Pro를 넣었습니다.",
+        "xAI(Grok)는 이 차트에 없습니다. Grok 4.7은 입력 2달러·출력 6달러로 별도 차트에서 다룹니다.",
+        "가격은 자주 바뀝니다. 이 차트는 10월 2일 기준이며, 쓰기 전 각 회사 가격 문서를 다시 확인해야 합니다."
+      ]
+    }
+  ]
+}

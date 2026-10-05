@@ -1,0 +1,61 @@
+{
+  "slug": "xai-grok-build-beta",
+  "lead": "xAI가 터미널 코딩 에이전트 'Grok Build'를 베타로 내놨습니다. 전체 화면 대화형 TUI로 쓰거나, 스크립트에서 화면 없이 실행하거나, Agent Client Protocol(ACP)로 다른 앱에 넣어 쓸 수 있습니다. 5월 19일에는 에이전트 코딩용으로 학습한 전용 모델 grok-build-0.1을 조기 접근으로 공개했습니다. Claude Code, Codex, Copilot CLI가 경쟁하는 시장에 xAI도 들어온 것입니다.",
+  "facts": [
+    "5월 14일 xAI 개발자 문서에 Grok Build 베타 공개가 올라왔습니다.",
+    "대화형 TUI, 스크립트·봇용 헤드리스 실행(grok -p), Agent Client Protocol을 통한 다른 앱 연동 세 가지 방식으로 쓸 수 있습니다.",
+    "macOS·Linux·WSL과 Windows(PowerShell)에서 명령 한 줄로 설치합니다.",
+    "5월 19일 에이전트 코딩용으로 학습한 모델 grok-build-0.1이 조기 접근으로 공개됐습니다.",
+    "설정 파일에 다른 회사의 모델도 등록해 쓸 수 있습니다."
+  ],
+  "sections": [
+    {
+      "role": "what",
+      "heading": "어떻게 쓰나",
+      "paragraphs": [
+        "xAI 문서는 Grok Build를 '강력하고 확장 가능한 코딩 에이전트'로 소개합니다. 프로젝트 폴더에서 grok을 실행하면 처음에 브라우저로 인증하고, 브라우저가 없는 환경에서는 API 키를 씁니다. '이 저장소를 설명해 줘', '@파일 이 파일을 설명해 줘' 같은 요청으로 시작할 수 있습니다."
+      ],
+      "bullets": [
+        "TUI: 마우스로도 조작하는 전체 화면 코딩 환경",
+        "헤드리스: grok -p로 스크립트·자동화에 넣고, 스트리밍 JSON으로 결과 받기",
+        "ACP: 다른 앱이나 오케스트레이터에 에이전트로 연결",
+        "사용자 지정 모델: ~/.grok/config.toml에 다른 API의 모델을 등록, /model로 전환",
+        "확장: 스킬, 플러그인, 훅, MCP 서버를 grok inspect로 확인"
+      ]
+    },
+    {
+      "role": "point",
+      "heading": "봐야 할 지점",
+      "paragraphs": [
+        "터미널 코딩 에이전트는 이제 주요 AI 회사가 모두 갖춰야 하는 제품이 됐습니다. 이 사이트 기록상 GitHub Copilot CLI가 2월 정식 출시됐고, Anthropic의 Claude Code와 OpenAI의 Codex가 먼저 자리를 잡았습니다. xAI는 도구와 함께 코딩 전용 모델(grok-build-0.1)을 따로 학습시켜 내놨습니다.",
+        "다른 회사 모델도 등록해 쓸 수 있게 한 점은 눈여겨볼 만합니다. 자사 모델만 쓰게 묶는 대신 도구 자체의 사용자를 늘리려는 선택입니다. 문서에서 회사 이름이 'SpaceXAI'로 표기돼 있다는 점도 기록해 둘 만합니다."
+      ]
+    },
+    {
+      "role": "users",
+      "heading": "써 보려면",
+      "bullets": [
+        "xAI API 사용자: 공식 문서의 설치 명령으로 바로 시험해 볼 수 있습니다. 인터넷에서 받은 설치 스크립트를 바로 실행하는 방식이므로, 회사 PC라면 보안 정책을 먼저 확인하는 것이 좋습니다.",
+        "이미 다른 코딩 에이전트를 쓰는 개발자: 같은 저장소에서 결과를 비교해 볼 수 있습니다. 사용자 지정 모델 설정으로 익숙한 모델을 그대로 쓸 수도 있습니다."
+      ]
+    },
+    {
+      "role": "open",
+      "heading": "이후 변화와 확인하지 못한 것",
+      "bullets": [
+        "grok-build-0.1의 가격과 성능 수치는 이 사이트가 확인한 문서에 나오지 않습니다.",
+        "이 사이트 기록상 9월에는 Grok 4.7이 나왔고, xAI 문서에 따르면 더 빠른 'Grok 4.7 Fast'는 공개 API가 아닌 Cursor와 Grok Build에서만 쓸 수 있습니다."
+      ]
+    }
+  ],
+  "references": [
+    {
+      "sourceName": "xAI Docs",
+      "sourceTitle": "Grok Build: SpaceXAI's Coding Agent",
+      "sourceUrl": "https://docs.x.ai/build/overview",
+      "sourcePublishedAt": "",
+      "checkedAt": "2026-10-02",
+      "note": "TUI·헤드리스·ACP 사용법, 설치, 사용자 지정 모델 설정"
+    }
+  ]
+}

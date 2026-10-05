@@ -1,0 +1,1406 @@
+[
+  {
+    "c": "c95ee583af21",
+    "slug": "xai-grok-4-5-api",
+    "title": "xAI 'Grok 4.5' API 출시… 입력 100만 토큰당 2달러, 추론 강도 선택",
+    "summary": "코딩·에이전트·지식 업무용 모델을 API로 냈고, 3주 뒤 GitHub Copilot에도 들어갔습니다.",
+    "cat": "MODEL_RELEASE",
+    "topics": [
+      "xai",
+      "grok",
+      "ai-coding"
+    ],
+    "companies": [
+      "xAI",
+      "GitHub"
+    ],
+    "products": [
+      "Grok 4.5",
+      "GitHub Copilot"
+    ],
+    "facts": [
+      "xAI 개발자 문서에 따르면 코딩, 에이전트 작업, 지식 업무용 모델 Grok 4.5가 xAI API에 출시됐습니다. 가격은 입력 100만 토큰당 2달러, 출력 100만 토큰당 6달러이며, 추론 강도를 low·medium·high(기본 high)로 설정할 수 있습니다.",
+      "7월 17일 EU 사용자도 API 콘솔에서 Grok 4.5를 쓸 수 있게 됐습니다.",
+      "7월 28일 GitHub은 xAI의 최신 추론 모델 Grok 4.5를 Copilot에 순차 제공한다고 밝혔습니다."
+    ],
+    "why": "5월 Copilot에서 빠졌던 xAI 모델이 두 달 만에 새 버전으로 돌아왔습니다. 문서에는 회사명이 'SpaceXAI'로 표기됩니다.",
+    "change": "Copilot 사용자는 모델 선택에서 Grok 4.5를 고를 수 있습니다. API로 쓴다면 추론 강도를 낮춰 비용과 속도를 조절할 수 있습니다.",
+    "prio": 2,
+    "secondary": [
+      "c3421a5ddff8",
+      "20a45b93c590"
+    ]
+  },
+  {
+    "c": "438bada49fab",
+    "slug": "xai-grok-voice-think-fast-2",
+    "title": "xAI 음성 모델 'Grok Voice Think Fast 2.0'… 8월 5일부터 기본 음성 모델로",
+    "summary": "음성 대화(Speech to Speech) API의 새 모델입니다.",
+    "cat": "VOICE",
+    "topics": [
+      "xai",
+      "grok",
+      "voice-ai"
+    ],
+    "companies": [
+      "xAI"
+    ],
+    "products": [
+      "grok-voice-think-fast-2.0"
+    ],
+    "facts": [
+      "xAI는 Speech to Speech용 grok-voice-think-fast-2.0을 공개했으며, 8월 5일부터 grok-voice-latest가 이 모델로 연결된다고 밝혔습니다."
+    ],
+    "why": "'latest' 별칭을 쓰는 서비스는 날짜에 맞춰 모델이 자동으로 바뀝니다. 음성 품질과 응답 방식이 달라질 수 있습니다.",
+    "change": "xAI 음성 API를 쓰는 개발자는 8월 5일 전후로 응답을 비교해 보고, 필요하면 모델 이름을 고정하세요.",
+    "prio": 3
+  },
+  {
+    "c": "87b601463a66",
+    "slug": "xai-grok-imagine-video-1-5",
+    "title": "xAI 'grok-imagine-video-1.5', 텍스트·이미지·참조 영상 생성과 1080p 지원",
+    "summary": "영상 생성 모델이 여러 입력 방식을 지원하게 됐습니다.",
+    "cat": "VIDEO",
+    "topics": [
+      "xai",
+      "grok",
+      "ai-video"
+    ],
+    "companies": [
+      "xAI"
+    ],
+    "products": [
+      "grok-imagine-video-1.5"
+    ],
+    "facts": [
+      "xAI는 grok-imagine-video-1.5가 텍스트→영상, 이미지→영상, 참조→영상(선택적 기본 음성 포함)을 지원하고, 텍스트·이미지 기반 생성에서 기본 1080p를 지원한다고 밝혔습니다. 텍스트→영상은 내부적으로 텍스트→이미지 후 이미지→영상으로 처리된다고 설명했습니다."
+    ],
+    "why": "구글 Veo·Omni, OpenAI Sora와 경쟁하는 영상 생성에 xAI도 API 형태로 참여하고 있습니다.",
+    "change": "직접적인 변화는 없지만, 실존 인물 영상은 동의 없이 만들지 마세요.",
+    "prio": 3
+  },
+  {
+    "c": "281a7d3afe46",
+    "slug": "gpt-5-6-family-github-copilot",
+    "title": "GPT-5.6 Sol·Terra·Luna, GitHub Copilot에… 작업에 맞춰 세 가지 중 선택",
+    "summary": "OpenAI 발표 다음 날 Copilot에 들어왔고, 3주 뒤 Luna·Terra 가격이 내려갔습니다.",
+    "cat": "AI_CODING",
+    "topics": [
+      "copilot",
+      "openai",
+      "ai-coding"
+    ],
+    "companies": [
+      "GitHub",
+      "OpenAI"
+    ],
+    "products": [
+      "GPT-5.6 Sol",
+      "GPT-5.6 Terra",
+      "GPT-5.6 Luna"
+    ],
+    "facts": [
+      "OpenAI의 GPT-5.6 계열이 GitHub Copilot에 순차 제공됐습니다. Sol, Terra, Luna 세 가지로 나뉘어 작업에 맞는 모델을 고를 수 있습니다.",
+      "7월 30일 OpenAI는 GPT-5.6 Luna와 Terra 가격을 낮췄다고 밝혔습니다."
+    ],
+    "why": "한 모델을 크기별로 나눠 '성능 대 비용'을 사용자가 고르게 하는 방식이 표준이 됐습니다. 9월 GPT-6도 Sol·Luna로 나뉘어 나왔습니다.",
+    "change": "Copilot 사용자는 간단한 수정엔 Luna, 복잡한 작업엔 Sol을 골라 크레딧을 아낄 수 있습니다.",
+    "prio": 3,
+    "secondary": [
+      "fc362ba711f5"
+    ]
+  },
+  {
+    "c": "67c184ed18ef",
+    "slug": "claude-opus-5-github-copilot",
+    "title": "Claude Opus 5, GitHub Copilot에 제공",
+    "summary": "Anthropic 발표 당일 Copilot에 들어왔습니다.",
+    "cat": "AI_CODING",
+    "topics": [
+      "copilot",
+      "claude",
+      "ai-coding"
+    ],
+    "companies": [
+      "GitHub",
+      "Anthropic"
+    ],
+    "products": [
+      "Claude Opus 5",
+      "GitHub Copilot"
+    ],
+    "facts": [
+      "Anthropic의 최신 Opus 모델 Claude Opus 5가 GitHub Copilot에 제공됐습니다. GitHub은 신중한 추론, 효과적인 도구 사용, 안정성이 필요한 복잡하고 긴 코딩 작업용이라고 설명했습니다."
+    ],
+    "why": "Opus 4.7(4월)→4.8(5월)→5(7월)로 석 달 만에 세 번 바뀌었습니다.",
+    "change": "Copilot에서 Opus 계열을 쓴다면 Opus 5로 바꿀 수 있습니다. 크레딧 차감 배수를 먼저 확인하세요.",
+    "prio": 3
+  },
+  {
+    "c": "f7b1eaa8826e",
+    "slug": "kimi-k2-7-code-github-copilot",
+    "title": "Copilot 첫 공개 가중치 모델 'Kimi K2.7 Code' 정식 제공",
+    "summary": "중국 Moonshot AI의 공개 모델이 Copilot 모델 선택 목록에 들어왔습니다.",
+    "cat": "AI_CODING",
+    "topics": [
+      "copilot",
+      "open-models",
+      "ai-coding"
+    ],
+    "companies": [
+      "GitHub",
+      "Moonshot AI"
+    ],
+    "products": [
+      "Kimi K2.7 Code",
+      "GitHub Copilot"
+    ],
+    "facts": [
+      "GitHub은 공개 가중치 모델 Kimi K2.7 Code를 Copilot에 정식 제공하며, Copilot 모델 선택 목록에 들어간 첫 공개 가중치 모델이라고 밝혔습니다.",
+      "7월 8일 Kimi K2.7이 Copilot Business와 Enterprise에서도 제공됐습니다."
+    ],
+    "why": "미국 회사 모델만 있던 Copilot에 공개 모델이 처음 들어왔습니다. 기업에서는 개발사 국적을 도입 기준으로 삼는 경우도 있어 관리자 판단이 필요합니다.",
+    "change": "회사 Copilot 관리자는 이 모델을 허용할지 정책에서 정할 수 있습니다.",
+    "prio": 3,
+    "secondary": [
+      "d4caa9e3147d"
+    ]
+  },
+  {
+    "c": "5b541b9a66cd",
+    "slug": "github-copilot-app-all-plans",
+    "title": "GitHub Copilot 앱, 모든 Copilot 요금제로 확대",
+    "summary": "무료 요금제를 포함해 누구나 데스크톱 앱을 쓸 수 있습니다.",
+    "cat": "AI_CODING",
+    "topics": [
+      "copilot",
+      "ai-coding",
+      "ai-agent"
+    ],
+    "companies": [
+      "GitHub"
+    ],
+    "products": [
+      "GitHub Copilot app"
+    ],
+    "facts": [
+      "GitHub Copilot 앱을 모든 Copilot 요금제에서 쓸 수 있게 됐습니다. macOS, Windows, Linux를 지원합니다.",
+      "7월 14일 Copilot 앱에서 진행 중인 코드 변경의 보안 검토를 실행하는 /security-review 명령이 공개 프리뷰로 추가됐습니다."
+    ],
+    "why": "6월 정식 출시 후 3주 만에 무료 사용자까지 열었습니다.",
+    "change": "Copilot Free 사용자도 데스크톱 앱으로 에이전트 작업을 시작할 수 있습니다.",
+    "prio": 3,
+    "secondary": [
+      "ed3a2198d15e"
+    ]
+  },
+  {
+    "c": "570402ed1c5f",
+    "slug": "github-models-retired",
+    "title": "GitHub Models 서비스 완전 종료",
+    "summary": "플레이그라운드, 모델 카탈로그, 추론 API가 모두 닫혔습니다.",
+    "cat": "PRODUCT_UPDATE",
+    "topics": [
+      "copilot",
+      "open-models"
+    ],
+    "companies": [
+      "GitHub"
+    ],
+    "products": [
+      "GitHub Models"
+    ],
+    "facts": [
+      "GitHub은 7월 1일 GitHub Models를 7월 30일 완전히 종료한다고 공지했습니다.",
+      "7월 30일 플레이그라운드, 모델 카탈로그, 추론 API, BYOK가 모든 고객에게 중단됐습니다."
+    ],
+    "why": "6월 신규 고객 차단에 이어 완전히 종료됐습니다. 모델 선택은 Copilot 안으로 통합됐습니다.",
+    "change": "GitHub Models API를 쓰던 코드는 더 이상 동작하지 않습니다. 다른 모델 제공 경로로 바꿔야 합니다.",
+    "prio": 3,
+    "secondary": [
+      "87c518803758"
+    ]
+  },
+  {
+    "c": "65e0a5db5254",
+    "slug": "copilot-default-model-enablement-policy",
+    "title": "Copilot Business·Enterprise, 새 정식 모델 '기본 허용' 정책 도입",
+    "summary": "관리자가 새 모델을 하나씩 켜지 않아도 됩니다.",
+    "cat": "PRODUCT_UPDATE",
+    "topics": [
+      "copilot",
+      "ai-coding"
+    ],
+    "companies": [
+      "GitHub"
+    ],
+    "products": [
+      "GitHub Copilot"
+    ],
+    "facts": [
+      "GitHub은 Copilot Business와 Enterprise에서 정식(GA) 모델을 기본으로 허용하는 전역 정책을 도입해, 관리자가 새 모델을 일일이 켜지 않아도 되게 했습니다.",
+      "7월 31일에는 9월 1일 모든 Copilot 기능에서 지원 종료될 모델 목록을 공지했습니다."
+    ],
+    "why": "새 모델이 몇 주마다 나오면서, 모델 허용·종료 관리가 회사 관리자의 정기 업무가 됐습니다.",
+    "change": "회사 관리자는 기본 허용 정책을 켤지, 직접 검토 후 켤지 정해야 합니다.",
+    "prio": 3,
+    "secondary": [
+      "a1611ce346df"
+    ]
+  },
+  {
+    "c": "774ebb0256c8",
+    "slug": "copilot-vision-browser-tools-ga",
+    "title": "Copilot '비전'·VS Code 브라우저 도구 정식 제공",
+    "summary": "이미지·PDF를 넣어 질문하고, 에이전트가 브라우저를 직접 씁니다.",
+    "cat": "AI_CODING",
+    "topics": [
+      "copilot",
+      "ai-coding",
+      "ai-agent"
+    ],
+    "companies": [
+      "GitHub"
+    ],
+    "products": [
+      "GitHub Copilot",
+      "Visual Studio Code"
+    ],
+    "facts": [
+      "Copilot vision이 정식 제공돼, 채팅에 이미지와 PDF를 첨부하면 Copilot이 코드와 함께 이를 분석할 수 있게 됐습니다.",
+      "같은 날 VS Code의 GitHub Copilot 브라우저 도구도 정식 제공됐습니다. GitHub은 사용자가 통제하는 권한과 네트워크 도메인 제한을 설명했습니다."
+    ],
+    "why": "디자인 시안 스크린샷을 보고 화면을 만들거나, 에이전트가 브라우저로 결과를 직접 확인하는 작업이 기본 기능이 됐습니다.",
+    "change": "UI 버그 스크린샷을 붙여 '이 화면 고쳐줘'라고 요청할 수 있습니다. 브라우저 도구가 접근할 도메인은 제한해 두세요.",
+    "prio": 3,
+    "secondary": [
+      "f1e729411b90"
+    ]
+  },
+  {
+    "c": "4071a63c6a0f",
+    "slug": "codeql-ai-prompt-injection-detection",
+    "title": "CodeQL 2.26.0, 'AI 프롬프트 인젝션' 탐지 추가",
+    "summary": "코드 안의 AI 프롬프트 인젝션 취약점을 정적 분석으로 찾습니다.",
+    "cat": "SECURITY",
+    "topics": [
+      "copilot",
+      "ai-security",
+      "ai-coding"
+    ],
+    "companies": [
+      "GitHub"
+    ],
+    "products": [
+      "CodeQL"
+    ],
+    "facts": [
+      "GitHub 코드 스캐닝 엔진 CodeQL 2.26.0이 Kotlin 2.4.0 지원과 함께 AI 프롬프트 인젝션 탐지를 추가했습니다.",
+      "7월 14일에는 PR에서 AI 보안 탐지 결과를 보여주는 코드 스캐닝 기능이 추가됐습니다."
+    ],
+    "why": "AI 기능을 넣은 앱이 늘면서, 외부 입력이 AI 지시로 바뀌는 프롬프트 인젝션이 새로운 '코드 취약점' 유형으로 자리 잡았습니다.",
+    "change": "AI 기능이 있는 서비스를 개발한다면 코드 스캐닝에서 프롬프트 인젝션 경고를 확인하세요.",
+    "prio": 3,
+    "secondary": [
+      "77d490ebaf47"
+    ]
+  },
+  {
+    "c": "c3556096c82e",
+    "slug": "github-code-quality-ga",
+    "title": "GitHub 'Code Quality' 정식 출시… AI가 늘린 코드의 품질 관리",
+    "summary": "Enterprise Cloud와 Team 요금제에서 씁니다.",
+    "cat": "AI_CODING",
+    "topics": [
+      "copilot",
+      "ai-coding"
+    ],
+    "companies": [
+      "GitHub"
+    ],
+    "products": [
+      "GitHub Code Quality"
+    ],
+    "facts": [
+      "GitHub Code Quality가 GitHub Enterprise Cloud와 GitHub Team에서 정식 출시됐습니다. GitHub은 AI가 코드 생산량을 늘리면서 생긴 품질 관리 문제를 해결한다고 설명했습니다."
+    ],
+    "why": "AI가 코드를 빨리 쓸수록 '유지보수하기 어려운 코드'도 빨리 쌓입니다. 품질 관리가 별도 제품이 됐습니다.",
+    "change": "팀 요금제 이상이라면 저장소의 코드 품질 지표를 켜서 AI가 쓴 코드를 점검할 수 있습니다.",
+    "prio": 3
+  },
+  {
+    "c": "d1636ce0d6d1",
+    "slug": "copilot-cloud-agent-linear-ga",
+    "title": "Linear 이슈를 Copilot 클라우드 에이전트에 배정… 정식 출시",
+    "summary": "Jira에 이어 Linear에서도 AI에게 일을 맡깁니다.",
+    "cat": "AI_AGENT",
+    "topics": [
+      "copilot",
+      "ai-agent",
+      "ai-work"
+    ],
+    "companies": [
+      "GitHub",
+      "Linear"
+    ],
+    "products": [
+      "Copilot cloud agent",
+      "Linear"
+    ],
+    "facts": [
+      "Linear의 이슈를 GitHub Copilot 클라우드 에이전트에 배정할 수 있게 됐습니다 (정식 출시). 배정하면 에이전트가 이슈 내용을 분석하고 작업을 진행합니다.",
+      "7월 29일 Copilot 코드 리뷰의 에이전트 스킬과 MCP 서버 지원도 정식 제공됐습니다."
+    ],
+    "why": "업무 관리 도구마다 'AI에게 배정' 버튼이 붙는 흐름입니다.",
+    "change": "Linear를 쓰는 팀은 단순 이슈를 Copilot에 배정하고 PR만 검토할 수 있습니다.",
+    "prio": 3,
+    "secondary": [
+      "6683db9728fe"
+    ]
+  },
+  {
+    "c": "905ece25f451",
+    "slug": "copilot-jetbrains-codex-agent-provider",
+    "title": "JetBrains용 Copilot, Codex를 에이전트 제공자로 추가",
+    "summary": "6월 Claude에 이어 Codex도 JetBrains Copilot 안에서 고를 수 있습니다.",
+    "cat": "AI_CODING",
+    "topics": [
+      "copilot",
+      "openai",
+      "ai-coding",
+      "ai-agent"
+    ],
+    "companies": [
+      "GitHub",
+      "OpenAI",
+      "JetBrains"
+    ],
+    "products": [
+      "Codex",
+      "GitHub Copilot"
+    ],
+    "facts": [
+      "JetBrains IDE용 GitHub Copilot 업데이트에서 Codex가 새 에이전트 제공자로 공개 프리뷰에 추가됐고, Hooks 지원과 MCP 서버 관리, 사용자 지정 모델 지원이 확대됐습니다."
+    ],
+    "why": "Copilot이 자체 에이전트만이 아니라 Claude·Codex를 함께 고르는 통합 창구가 되고 있습니다.",
+    "change": "JetBrains 사용자는 같은 화면에서 Copilot, Claude, Codex 에이전트를 바꿔가며 쓸 수 있습니다.",
+    "prio": 3
+  },
+  {
+    "c": "0004568882bf",
+    "slug": "claude-cowork-web-mobile",
+    "title": "Claude Cowork, 웹·모바일로 확대… \"노트북을 덮어도 일은 계속\"",
+    "summary": "데스크톱 앱에서만 쓰던 Cowork를 브라우저와 휴대폰에서도 씁니다.",
+    "cat": "AI_AGENT",
+    "topics": [
+      "anthropic",
+      "claude",
+      "ai-agent",
+      "ai-work"
+    ],
+    "companies": [
+      "Anthropic"
+    ],
+    "products": [
+      "Claude Cowork"
+    ],
+    "facts": [
+      "Anthropic은 Claude Cowork를 웹과 모바일로 확대한다고 밝혔습니다. 작업을 맡기고 노트북을 닫아도 일이 계속되며, 모든 결정은 사용자에게 돌아온다고 설명했습니다."
+    ],
+    "why": "에이전트 작업이 '내 컴퓨터가 켜져 있어야 하는 일'에서 클라우드에서 도는 일로 바뀌었습니다. 9월 Cowork와 채팅이 하나로 합쳐집니다.",
+    "change": "출근길에 휴대폰으로 자료 정리를 맡기고, 도착해서 결과를 확인하는 식으로 쓸 수 있습니다.",
+    "prio": 2
+  },
+  {
+    "c": "f3f75487feeb",
+    "slug": "claude-code-cowork-government",
+    "title": "Claude Code·Cowork, 정부용 'Claude for Government Desktop'에 공개 베타",
+    "summary": "공공기관용 환경에서도 Claude의 에이전트 도구를 씁니다.",
+    "cat": "AI_AGENT",
+    "topics": [
+      "anthropic",
+      "claude",
+      "ai-agent",
+      "ai-regulation"
+    ],
+    "companies": [
+      "Anthropic"
+    ],
+    "products": [
+      "Claude Code",
+      "Claude Cowork",
+      "Claude for Government"
+    ],
+    "facts": [
+      "Anthropic은 Claude Code와 Claude Cowork를 Claude for Government Desktop에서 공개 베타로 제공한다고 밝혔습니다.",
+      "같은 날 캐나다 앨버타 주정부가 Opus와 Sonnet 모델을 쓴 Claude Code로 자체 시스템을 검토해 취약점을 찾고 고쳐왔다고 소개했습니다."
+    ],
+    "why": "공공기관이 AI 에이전트로 자체 시스템의 보안 점검을 하는 사례가 나왔습니다.",
+    "change": "정부용 환경이라 국내 기관은 해당되지 않습니다. 공공기관이 에이전트로 보안 점검을 한 앨버타 사례는 참고할 만합니다.",
+    "prio": 3,
+    "secondary": [
+      "81d3f5c40586"
+    ]
+  },
+  {
+    "c": "e170951e0600",
+    "slug": "claude-enterprise-analytics-cost-controls",
+    "title": "Claude Enterprise, 관리자 분석·모델별 권한·지출 알림 추가",
+    "summary": "도입 현황을 보고, 비용을 관리하고, 가드레일을 설정합니다.",
+    "cat": "PRODUCT_UPDATE",
+    "topics": [
+      "anthropic",
+      "claude",
+      "ai-work"
+    ],
+    "companies": [
+      "Anthropic"
+    ],
+    "products": [
+      "Claude Enterprise"
+    ],
+    "facts": [
+      "Anthropic은 Claude Enterprise에 더 풍부한 관리자 분석, 모델 단위 사용 권한, 지출 알림을 추가해 관리자가 도입 현황을 추적하고 비용을 관리하며 조직에 맞는 가드레일을 설정할 수 있게 했다고 밝혔습니다."
+    ],
+    "why": "6월 ChatGPT Enterprise, GitHub Copilot에 이어 Claude도 기업 비용 통제 기능을 강화했습니다.",
+    "change": "회사 관리자는 가장 비싼 모델은 일부 팀에만 허용하는 식으로 권한을 나눌 수 있습니다.",
+    "prio": 3
+  },
+  {
+    "c": "f88b9ddbe0d1",
+    "slug": "claude-voice-mode-opus-tools",
+    "title": "Claude 음성 모드, Opus·Sonnet·Haiku로 동작… 연결 도구 사용·지원 언어 확대",
+    "summary": "말로 어려운 문제를 함께 생각하는 용도로 바뀌었습니다.",
+    "cat": "VOICE",
+    "topics": [
+      "anthropic",
+      "claude",
+      "voice-ai"
+    ],
+    "companies": [
+      "Anthropic"
+    ],
+    "products": [
+      "Claude"
+    ],
+    "facts": [
+      "Anthropic은 음성 모드가 Claude Opus, Sonnet, Haiku로 동작하고, 사용자가 연결한 도구에 접근하며, 훨씬 많은 언어를 지원하게 됐다고 밝혔습니다."
+    ],
+    "why": "같은 달 OpenAI도 새 음성 모델 GPT-Live를 냈습니다. 음성 AI가 가벼운 대화에서 '도구를 쓰는 비서'로 바뀌고 있습니다.",
+    "change": "운전·산책 중에 연결된 캘린더나 문서를 바탕으로 음성으로 일정을 정리해 볼 수 있습니다. 한국어 지원 수준은 직접 확인하세요.",
+    "prio": 3
+  },
+  {
+    "c": "29f865834c6b",
+    "slug": "claude-usage-reflection-feature",
+    "title": "Claude, 내 사용 습관을 돌아보는 기능… \"목표와 맞게 쓰고 있나\"",
+    "summary": "Claude를 어떻게 쓰는지 추적·시각화합니다.",
+    "cat": "CONSUMER",
+    "topics": [
+      "anthropic",
+      "claude"
+    ],
+    "companies": [
+      "Anthropic"
+    ],
+    "products": [
+      "Claude"
+    ],
+    "facts": [
+      "Anthropic은 사용자가 Claude를 어떻게 쓰는지 추적·시각화하고, 그 시간이 자신의 목표와 맞는지 판단할 수 있게 하는 새 기능을 발표했습니다."
+    ],
+    "why": "AI 의존과 과다 사용에 대한 우려 속에서, 회사가 '덜 쓰게 될 수도 있는' 기능을 직접 냈습니다.",
+    "change": "Claude를 매일 쓴다면 사용 패턴을 보고 공부·업무·잡담 비중을 점검해 볼 수 있습니다.",
+    "prio": 3
+  },
+  {
+    "c": "0be88df60680",
+    "slug": "mcp-2026-07-28-spec",
+    "title": "MCP 새 규격(2026-07-28) 공개… 상태 없는 코어·인증 강화",
+    "summary": "AI 도구 연결 표준 MCP가 큰 개편을 했고, Claude 제품에 곧 적용됩니다.",
+    "cat": "AI_AGENT",
+    "topics": [
+      "anthropic",
+      "claude",
+      "ai-agent",
+      "ai-security"
+    ],
+    "companies": [
+      "Anthropic",
+      "GitHub"
+    ],
+    "products": [
+      "Model Context Protocol"
+    ],
+    "facts": [
+      "Anthropic은 MCP 2026-07-28 규격이 공개돼 Model Context Protocol이 상태 없는(stateless) 코어, 표준화된 확장, 강화된 인증 구조로 바뀌었으며, Claude 제품 전반에 곧 적용된다고 밝혔습니다.",
+      "GitHub도 7월 23일 GitHub MCP 서버가 다음 MCP 규격을 지원한다고 밝혔습니다."
+    ],
+    "why": "AI가 외부 도구를 쓰는 사실상의 표준이 대규모 서비스 운영과 보안에 맞게 다시 설계됐습니다.",
+    "change": "MCP 서버를 운영하는 개발자는 새 규격의 인증 방식을 확인하고 업데이트 계획을 세워야 합니다.",
+    "prio": 2,
+    "secondary": [
+      "53c15e4668db"
+    ]
+  },
+  {
+    "c": "32c6c3db7485",
+    "slug": "fable-5-cyber-safeguards-jailbreak-framework",
+    "title": "Anthropic, Fable 5 사이버 안전장치 범위와 '탈옥 심각도' 기준 초안 공개",
+    "summary": "무엇을 막고 무엇을 막지 않는지 공개했습니다.",
+    "cat": "SECURITY",
+    "topics": [
+      "anthropic",
+      "claude",
+      "ai-security"
+    ],
+    "companies": [
+      "Anthropic"
+    ],
+    "products": [
+      "Claude Fable 5"
+    ],
+    "facts": [
+      "Anthropic은 사이버 분류기가 무엇을 차단하고 차단하지 않는지 설명하고, 탈옥(jailbreak) 심각도 프레임워크의 첫 초안을 공개했습니다."
+    ],
+    "why": "7월 1일 Fable 5 재배포 직후 나온 설명입니다. 안전장치의 범위를 공개하면 정당한 보안 연구자가 예측 가능하게 쓸 수 있습니다.",
+    "change": "보안 업무에 Claude를 쓴다면 차단 범위를 미리 확인해 작업 계획을 세울 수 있습니다.",
+    "prio": 3
+  },
+  {
+    "c": "156ca7b7665f",
+    "slug": "anthropic-economic-index-connector",
+    "title": "Anthropic 경제 지수 데이터를 Claude에서 바로 탐색하는 커넥터",
+    "summary": "AI가 일에 쓰이는 방식에 관한 데이터를 누구나 분석할 수 있습니다.",
+    "cat": "RESEARCH",
+    "topics": [
+      "anthropic",
+      "claude",
+      "ai-work",
+      "ai-research"
+    ],
+    "companies": [
+      "Anthropic"
+    ],
+    "products": [
+      "Anthropic Economic Index"
+    ],
+    "facts": [
+      "Anthropic은 누구나 Anthropic Economic Index 데이터를 직접 탐색할 수 있게 하는 Claude용 커넥터를 출시했습니다.",
+      "같은 날 Economic Futures 연구 기금의 연구 의제도 공개했습니다."
+    ],
+    "why": "AI가 일자리에 미치는 영향을 회사 보고서로만 보지 않고 원자료로 확인할 수 있게 했습니다.",
+    "change": "관심 있는 직업군의 AI 사용 데이터를 Claude에게 물어 직접 살펴볼 수 있습니다.",
+    "prio": 3,
+    "secondary": [
+      "3c1d014c2c05"
+    ]
+  },
+  {
+    "c": "0855102ac2f6",
+    "slug": "anthropic-rare-disease-research-grants",
+    "title": "Anthropic, 희귀 유전질환 연구에 최대 5만 달러 Claude 크레딧 지원",
+    "summary": "AI for Science 프로그램의 일부입니다.",
+    "cat": "RESEARCH",
+    "topics": [
+      "anthropic",
+      "claude",
+      "ai-health"
+    ],
+    "companies": [
+      "Anthropic"
+    ],
+    "products": [
+      "Claude"
+    ],
+    "facts": [
+      "Anthropic은 AI for Science 프로그램의 하나로 희귀 유전질환을 연구하는 연구자가 6개월간 최대 5만 달러의 Claude 크레딧을 신청할 수 있다고 밝혔습니다.",
+      "7월 14일에는 캐나다 연구기관에 1천만 달러를 지원한다고 발표했습니다."
+    ],
+    "why": "6월 'Claude Science' 출시 이후 과학 연구 지원을 늘리고 있습니다.",
+    "change": "희귀질환 연구자는 지원 조건을 확인해 볼 수 있습니다.",
+    "prio": 3,
+    "secondary": [
+      "142f89762aff"
+    ]
+  },
+  {
+    "c": "16942371b029",
+    "slug": "anthropic-cognizant-ust-partnerships",
+    "title": "코그니잔트·UST, Claude 도입 확대… 각각 3만 명·2만 명 교육",
+    "summary": "IT 서비스 대기업의 Claude 파트너 합류가 이어졌습니다.",
+    "cat": "BUSINESS",
+    "topics": [
+      "anthropic",
+      "claude",
+      "ai-work"
+    ],
+    "companies": [
+      "Anthropic",
+      "Cognizant",
+      "UST"
+    ],
+    "products": [
+      "Claude"
+    ],
+    "facts": [
+      "코그니잔트가 자사 플랫폼 전반에 Claude를 넣고 3만 명 이상을 교육했으며, Claude Partner Network의 Global Premier Partner가 됐다고 Anthropic이 밝혔습니다.",
+      "7월 9일 UST는 엔지니어 2만 명을 Claude로 교육하고 반도체, 자동차, IoT, 의료, 통신, 금융 업무에 도입한다고 밝혔습니다."
+    ],
+    "why": "5월 PwC·KPMG, 6월 DXC·TCS에 이어 대형 IT 서비스 기업 확보가 계속됐습니다.",
+    "change": "IT 서비스 회사 협력이라 개인 변화는 없지만, 이들에게 시스템을 맡긴 기업이라면 AI 활용 범위를 확인해 볼 만합니다.",
+    "prio": 3,
+    "secondary": [
+      "54bcdd61988c"
+    ]
+  },
+  {
+    "c": "a185af3deb5d",
+    "slug": "anthropic-public-first-action-20m",
+    "title": "Anthropic, 정책 단체 'Public First Action'에 2천만 달러 추가 기부… 누적 4천만 달러",
+    "summary": "AI 정책 관련 단체에 대한 지원을 늘렸습니다.",
+    "cat": "REGULATION",
+    "topics": [
+      "anthropic",
+      "ai-regulation"
+    ],
+    "companies": [
+      "Anthropic",
+      "Public First Action"
+    ],
+    "products": [],
+    "facts": [
+      "Anthropic은 Public First Action에 2천만 달러를 추가로 기부해 누적 지원액이 4천만 달러가 됐다고 밝혔습니다.",
+      "7월 9일에는 전 연준 의장 벤 버냉키가 Anthropic 장기이익신탁에 합류했다고 발표했습니다."
+    ],
+    "why": "AI 회사들이 정책 논쟁에 직접 자금을 대고 있습니다. OpenAI도 6월 정치 활동 원칙을 밝혔습니다.",
+    "change": "기부 소식이라 서비스 변화는 없지만, AI 회사가 정책 논쟁에 자금을 대는 방식은 투명성 측면에서 따져볼 대목입니다.",
+    "prio": 3,
+    "secondary": [
+      "bd15bd064f1c"
+    ]
+  },
+  {
+    "c": "41b85c9cdb7a",
+    "slug": "openai-government-national-security-principles",
+    "title": "OpenAI, 정부·국가안보 협력 원칙 공개",
+    "summary": "책임 있는 사용, 민주적 책임성, 공공 안전을 원칙으로 내세웠습니다.",
+    "cat": "REGULATION",
+    "topics": [
+      "openai",
+      "ai-regulation"
+    ],
+    "companies": [
+      "OpenAI"
+    ],
+    "products": [],
+    "facts": [
+      "OpenAI가 책임 있는 AI 사용, 민주적 책임성, 공공 안전을 원칙으로 하는 정부·국가안보 파트너십 접근 방식을 설명했습니다.",
+      "7월 15일에는 주(州) 법이 국가 차원의 틀을 만드는 데 기여하는 '역(逆) 연방주의' 방식의 AI 거버넌스를 제안했습니다."
+    ],
+    "why": "6월 연방 단일 규제를 요구했던 것과 달리, 주 법의 역할을 인정하는 쪽으로 무게가 옮겨졌습니다. 8월 캘리포니아 청소년 법안 지지로 이어집니다.",
+    "change": "원칙 발표라 서비스 변화는 없지만, 군·정보기관의 AI 사용 기준을 논의할 때 참고할 회사 측 입장입니다.",
+    "prio": 3,
+    "secondary": [
+      "1e97faa490fa"
+    ]
+  },
+  {
+    "c": "ee230258f27f",
+    "slug": "openai-gpt-red-automated-red-teaming",
+    "title": "OpenAI 'GPT-Red'… 자기 대전으로 공격을 찾아내는 자동 레드팀",
+    "summary": "AI가 스스로 공격하고 방어하며 프롬프트 인젝션 내성을 높입니다.",
+    "cat": "SECURITY",
+    "topics": [
+      "openai",
+      "ai-security",
+      "ai-research"
+    ],
+    "companies": [
+      "OpenAI"
+    ],
+    "products": [
+      "GPT-Red"
+    ],
+    "facts": [
+      "OpenAI가 자기 대전(self-play)으로 AI 안전, 정렬, 프롬프트 인젝션 내성을 높이는 자동 레드팀 시스템 GPT-Red를 소개했습니다.",
+      "7월 9일에는 GPT-5.5 대상 생물 분야 버그 바운티 프로그램의 세부 내용을 공개했습니다."
+    ],
+    "why": "사람이 직접 공격을 시도하던 레드팀 작업을 AI가 대규모로 대신하는 방향입니다.",
+    "change": "내부 안전 시스템이라 사용자 기능 변화는 없지만, 프롬프트 인젝션 같은 공격에 대한 모델 내성이 높아지는 방향입니다.",
+    "prio": 3,
+    "secondary": [
+      "8fd74bd3f519"
+    ]
+  },
+  {
+    "c": "14fd05ad34f9",
+    "slug": "chatgpt-academic-researchers-free",
+    "title": "OpenAI, 대학 연구자 10만 명에게 최상위 ChatGPT 모델 무료 제공",
+    "summary": "'ChatGPT for Academic Researchers' 프로그램입니다.",
+    "cat": "CONSUMER",
+    "topics": [
+      "openai",
+      "chatgpt",
+      "ai-research"
+    ],
+    "companies": [
+      "OpenAI"
+    ],
+    "products": [
+      "ChatGPT for Academic Researchers"
+    ],
+    "facts": [
+      "OpenAI가 학술 연구자 10만 명에게 ChatGPT의 가장 진보한 모델을 무료로 제공해 과학 연구와 협업, 발견을 가속하겠다고 밝혔습니다."
+    ],
+    "why": "같은 달 Claude for Teachers처럼 교육·연구자를 무료로 먼저 확보하는 경쟁입니다. 대상 국가와 자격은 프로그램 조건을 확인해야 합니다.",
+    "change": "대학 연구자라면 자격 조건과 신청 방법을 확인해 볼 수 있습니다.",
+    "prio": 3
+  },
+  {
+    "c": "3ebda52fc80e",
+    "slug": "openai-cfo-ai-scorecard",
+    "title": "OpenAI CFO \"AI 투자 성과는 '성공한 작업당 비용'으로 재야\"",
+    "summary": "AI 도입 효과를 측정하는 실무 지표를 제안했습니다.",
+    "cat": "BUSINESS",
+    "topics": [
+      "openai",
+      "ai-work"
+    ],
+    "companies": [
+      "OpenAI"
+    ],
+    "products": [],
+    "facts": [
+      "OpenAI CFO 사라 프라이어가 유용한 작업량, 성공한 작업당 비용, 신뢰성, 컴퓨팅 대비 수익으로 AI 투자 효과를 측정하는 'AI 시대 성적표'를 제안했습니다."
+    ],
+    "why": "'AI를 도입했는데 효과가 있나'라는 기업 질문에 AI 회사가 측정 기준을 내놨습니다. 판매자가 제안한 지표라는 점은 감안해야 합니다.",
+    "change": "회사에서 AI 도입 효과를 보고해야 한다면 '작업당 비용' 지표를 참고할 수 있습니다.",
+    "prio": 3
+  },
+  {
+    "c": "c5ad624a6ffb",
+    "slug": "openai-cambodia-scam-operation",
+    "title": "OpenAI, ChatGPT를 쓴 캄보디아 기반 사기 조직 차단",
+    "summary": "투자·로맨스·도박·사칭 사기에 ChatGPT를 쓴 조직을 적발했습니다.",
+    "cat": "SECURITY",
+    "topics": [
+      "openai",
+      "chatgpt",
+      "ai-security"
+    ],
+    "companies": [
+      "OpenAI"
+    ],
+    "products": [
+      "ChatGPT"
+    ],
+    "facts": [
+      "OpenAI가 투자, 로맨스, 도박, 사칭 사기에 ChatGPT를 활용한 캄보디아 기반 범죄 조직의 활동을 차단했다고 밝혔습니다."
+    ],
+    "why": "동남아 기반 사기 조직은 한국인 피해 사례도 많은 유형입니다. AI가 사기 메시지를 더 자연스럽게 만드는 데 쓰이고 있습니다.",
+    "change": "모르는 사람이 메신저로 투자·연애를 권하면 대화가 자연스러워도 사기를 의심하세요.",
+    "prio": 2
+  },
+  {
+    "c": "bd6ce42035f5",
+    "slug": "openai-project-camellia-georgia",
+    "title": "OpenAI '프로젝트 카멜리아'… 미국 조지아 에핑엄 카운티 AI 인프라",
+    "summary": "에너지, 지역 투자, 일자리, Codex 접근을 약속했습니다.",
+    "cat": "CHIPS_INFRA",
+    "topics": [
+      "openai",
+      "ai-chip"
+    ],
+    "companies": [
+      "OpenAI"
+    ],
+    "products": [
+      "Stargate"
+    ],
+    "facts": [
+      "OpenAI가 조지아주 에핑엄 카운티에서 Project Camellia를 발표하며 책임 있는 에너지 사용, 지역사회 투자, 일자리, Codex 접근을 약속했다고 밝혔습니다."
+    ],
+    "why": "1월 Stargate Community 계획처럼, 데이터센터를 짓는 지역에 혜택을 약속하는 방식이 이어지고 있습니다.",
+    "change": "미국 지역 투자라 국내 변화는 없지만, 데이터센터 유치 지역에 일자리·Codex 접근을 약속하는 방식이 반복되고 있습니다.",
+    "prio": 3
+  },
+  {
+    "c": "b86dc435d64a",
+    "slug": "openai-responsible-ai-europe",
+    "title": "OpenAI, EU AI법 대응 안전·투명성·출처 표시 관행 설명",
+    "summary": "EU AI법 시행에 맞춰 유럽 거버넌스 지원 방식을 정리했습니다.",
+    "cat": "REGULATION",
+    "topics": [
+      "openai",
+      "ai-regulation"
+    ],
+    "companies": [
+      "OpenAI"
+    ],
+    "products": [],
+    "facts": [
+      "OpenAI는 자사의 안전, 보안, 투명성, 출처 표시 관행이 유럽의 책임 있는 AI 거버넌스를 어떻게 지원하는지 설명하며, EU AI법 진행에 맞춰 작업을 이어가겠다고 밝혔습니다."
+    ],
+    "why": "EU AI법의 범용 AI 의무가 본격 적용되는 시기입니다. 같은 주 메타는 EU 투명성 실천 강령에 서명했습니다.",
+    "change": "유럽 규제 대응 설명이라 국내 변화는 없지만, 한국 AI기본법 대응을 준비하는 기업에도 문서 구성 참고가 됩니다.",
+    "prio": 3
+  },
+  {
+    "c": "40359dbf5a24",
+    "slug": "openai-board-velez-vince",
+    "title": "누뱅크 창업자·BNY CEO, OpenAI 재단·OpenAI Group 이사회 합류",
+    "summary": "금융·기술 경영진을 이사로 영입했습니다.",
+    "cat": "BUSINESS",
+    "topics": [
+      "openai"
+    ],
+    "companies": [
+      "OpenAI"
+    ],
+    "products": [],
+    "facts": [
+      "OpenAI는 David Vélez와 Robin Vince가 OpenAI 재단과 OpenAI Group PBC 이사회에 합류한다고 밝혔습니다."
+    ],
+    "why": "공익법인(PBC) 전환 이후 이사회 구성이 금융·거버넌스 쪽으로 넓어지고 있습니다.",
+    "change": "서비스 변화는 없지만, 공익법인 전환 후 이사회 구성을 보면 회사가 어떤 전문성을 중시하는지 알 수 있습니다.",
+    "prio": 3
+  },
+  {
+    "c": "cc8e132c6199",
+    "slug": "openai-arc-agi-3-two-settings",
+    "title": "OpenAI \"설정 두 개 켰더니 ARC-AGI-3 점수 3배\"… 추론 유지·압축",
+    "summary": "같은 모델이라도 API 설정에 따라 성능이 크게 달라질 수 있다는 사례입니다.",
+    "cat": "BENCHMARK",
+    "topics": [
+      "openai",
+      "ai-research"
+    ],
+    "companies": [
+      "OpenAI"
+    ],
+    "products": [
+      "GPT-5.6"
+    ],
+    "facts": [
+      "OpenAI는 추론 내용을 유지하고 압축(compaction)을 켜는 두 가지 API 설정으로 GPT-5.6의 ARC-AGI-3 점수와 효율이 크게 올랐다고 설명했습니다."
+    ],
+    "why": "벤치마크 점수가 모델만이 아니라 '어떻게 돌리느냐'에 좌우된다는 점을 보여줍니다. 점수 비교 시 설정 조건을 함께 봐야 합니다.",
+    "change": "GPT-5.6 API로 긴 작업을 돌린다면 두 설정을 켜고 결과를 비교해 볼 만합니다.",
+    "prio": 3
+  },
+  {
+    "c": "8fe39edff791",
+    "slug": "openai-teens-safe-ai-access",
+    "title": "OpenAI \"청소년도 안전한 AI를 쓸 권리가 있다\"… 연령별 보호·학습 도구·보호자 통제",
+    "summary": "청소년 보호 방안을 종합해 설명했습니다.",
+    "cat": "SECURITY",
+    "topics": [
+      "openai",
+      "chatgpt",
+      "ai-regulation"
+    ],
+    "companies": [
+      "OpenAI"
+    ],
+    "products": [
+      "ChatGPT"
+    ],
+    "facts": [
+      "OpenAI가 연령에 맞는 보호 장치, 학습 도구, 보호자 통제, 전문가 협력으로 ChatGPT를 청소년에게 더 안전하게 만드는 방안을 설명했습니다."
+    ],
+    "why": "한 달 뒤 'ChatGPT for Teens'가 출시됐습니다. 그 사전 설명 성격의 글입니다.",
+    "change": "자녀가 ChatGPT를 쓴다면 보호자 연결 기능을 설정해 둘 수 있습니다.",
+    "prio": 3
+  },
+  {
+    "c": "f7eb2a868aac",
+    "slug": "gemini-api-managed-agents-expansion",
+    "title": "Gemini API Managed Agents에 백그라운드 작업·원격 MCP·후크 추가",
+    "summary": "5월 공개한 Managed Agents를 두 차례 확장했습니다.",
+    "cat": "AI_AGENT",
+    "topics": [
+      "google",
+      "gemini",
+      "ai-agent"
+    ],
+    "companies": [
+      "Google"
+    ],
+    "products": [
+      "Gemini API",
+      "Managed Agents"
+    ],
+    "facts": [
+      "구글은 Gemini API Managed Agents에 백그라운드 작업, 원격 MCP 등 새 기능을 추가했다고 밝혔습니다.",
+      "7월 28일에는 Gemini 3.6 Flash 지원, 후크(hooks) 등 기능을 더 추가했습니다."
+    ],
+    "why": "Anthropic Managed Agents와 같은 이름, 같은 방향의 경쟁입니다. 에이전트 실행 환경을 누가 더 쉽게 제공하느냐의 싸움입니다.",
+    "change": "Gemini로 에이전트를 만드는 개발자는 오래 걸리는 작업을 백그라운드로 돌릴 수 있습니다.",
+    "prio": 3,
+    "secondary": [
+      "d81cfe08f75c"
+    ]
+  },
+  {
+    "c": "6ce7d222421d",
+    "slug": "lyria-3-5-flow-music",
+    "title": "구글 음악 생성 모델 'Lyria 3.5', Flow Music에 탑재",
+    "summary": "음악성, 가사, 보컬 품질과 창작 통제를 개선했습니다.",
+    "cat": "VOICE",
+    "topics": [
+      "google",
+      "gemini",
+      "voice-ai",
+      "ai-copyright"
+    ],
+    "companies": [
+      "Google"
+    ],
+    "products": [
+      "Lyria 3.5",
+      "Google Flow Music"
+    ],
+    "facts": [
+      "구글은 음악성, 가사, 보컬 품질이 크게 나아진 최신 음악 생성 모델 Lyria 3.5를 Google Flow Music에 출시한다고 밝혔습니다."
+    ],
+    "why": "3월 Lyria 3 Pro 이후 넉 달 만의 업데이트입니다. AI 음악의 저작권과 아티스트 보상 문제가 함께 커지고 있습니다.",
+    "change": "AI로 만든 음악을 상업적으로 쓰려면 이용 약관의 권리 조건을 먼저 확인하세요.",
+    "prio": 3,
+    "secondary": [
+      "42b77c184ced"
+    ]
+  },
+  {
+    "c": "3703e1a8e642",
+    "slug": "gemini-docs-comments-visuals",
+    "title": "구글 문서 Gemini, 댓글 요약·처리와 이미지·도표 생성",
+    "summary": "공동 작업 문서의 피드백 정리와 시각 자료 만들기를 돕습니다.",
+    "cat": "WORK",
+    "topics": [
+      "google",
+      "gemini",
+      "ai-work",
+      "ai-image"
+    ],
+    "companies": [
+      "Google"
+    ],
+    "products": [
+      "Google Docs",
+      "Gemini"
+    ],
+    "facts": [
+      "구글 문서에 Gemini 기반 댓글 기능이 도입돼, 댓글 스레드를 요약하고 핵심 주제를 뽑거나 해결되지 않은 문제를 찾고 댓글에 따라 수정할 수 있게 됐습니다.",
+      "같은 날 문서 맥락을 바탕으로 이미지, 도표, 인포그래픽을 만들고 편집하는 기능도 추가됐습니다."
+    ],
+    "why": "여러 사람이 단 댓글을 정리하는 일은 협업 문서에서 가장 시간이 드는 작업 중 하나입니다.",
+    "change": "댓글이 많은 문서에서 '해결 안 된 의견만 정리해줘'라고 요청해 볼 수 있습니다.",
+    "prio": 3,
+    "secondary": [
+      "a00c81ddac14"
+    ]
+  },
+  {
+    "c": "f26bc3ce0ff7",
+    "slug": "gemini-forms-quiz-generation",
+    "title": "구글 설문지 Gemini, 드라이브 자료로 퀴즈 자동 생성",
+    "summary": "문서·슬라이드·PDF를 근거로 퀴즈를 만듭니다.",
+    "cat": "WORK",
+    "topics": [
+      "google",
+      "gemini"
+    ],
+    "companies": [
+      "Google"
+    ],
+    "products": [
+      "Google Forms",
+      "Gemini"
+    ],
+    "facts": [
+      "구글 설문지의 'Help me create'가 퀴즈 생성을 지원해, 프롬프트와 드라이브의 문서·슬라이드·PDF를 근거로 퀴즈를 만들 수 있게 됐습니다."
+    ],
+    "why": "교사·교육 담당자의 반복 업무를 줄이는 기능입니다. 6월 클래스룸 기능 확대와 이어집니다.",
+    "change": "수업 자료를 넣고 퀴즈를 만든 뒤 정답과 해설을 꼭 검토하세요.",
+    "prio": 3
+  },
+  {
+    "c": "4c86b0bdc7f8",
+    "slug": "gemini-omni-in-google-vids",
+    "title": "구글 Vids에 Gemini Omni… 고품질 영상 생성·말로 영상 편집·내 아바타 출연",
+    "summary": "업무용 영상 도구에 최신 영상 모델을 넣었습니다.",
+    "cat": "VIDEO",
+    "topics": [
+      "google",
+      "gemini",
+      "ai-video"
+    ],
+    "companies": [
+      "Google"
+    ],
+    "products": [
+      "Google Vids",
+      "Gemini Omni"
+    ],
+    "facts": [
+      "Google Vids에서 Gemini Omni를 쓸 수 있게 돼 더 높은 품질의 영상을 만들고, 말로 기존 영상을 편집할 수 있게 됐습니다.",
+      "같은 날 개인 아바타로 AI 영상 클립에 직접 출연하는 기능도 발표했습니다."
+    ],
+    "why": "5월 I/O에서 발표한 Gemini Omni가 업무 도구로 들어왔습니다. 내 얼굴 아바타는 편리하지만 오용 방지 장치가 중요합니다.",
+    "change": "개인 아바타를 만들 때 공유 범위와 삭제 방법을 먼저 확인하세요.",
+    "prio": 3,
+    "secondary": [
+      "9d4034fb3544"
+    ]
+  },
+  {
+    "c": "c9a7e41ab886",
+    "slug": "alphaevolve-google-cloud-rollout",
+    "title": "구글, 'AlphaEvolve'를 구글 클라우드 고객에게 넓게 제공",
+    "summary": "최적 알고리즘을 찾는 코딩 에이전트를 기업 문제에 씁니다.",
+    "cat": "AI_AGENT",
+    "topics": [
+      "google",
+      "gemini",
+      "ai-agent",
+      "ai-coding"
+    ],
+    "companies": [
+      "Google"
+    ],
+    "products": [
+      "AlphaEvolve",
+      "Google Cloud"
+    ],
+    "facts": [
+      "구글은 칩 설계, 물류 경로, 의학 연구 등에서 가장 효율적인 알고리즘을 찾는 AlphaEvolve를 구글 클라우드 고객에게 넓게 제공한다고 밝혔습니다."
+    ],
+    "why": "5월 연구 성과 소개에 이어 상용 서비스가 됐습니다. 딥마인드 연구가 클라우드 매출로 이어지는 사례입니다.",
+    "change": "구글 클라우드 기업 고객 대상입니다. 물류·칩 설계처럼 최적화 문제가 많은 회사라면 적용 사례를 확인해 볼 수 있습니다.",
+    "prio": 3
+  },
+  {
+    "c": "482712912042",
+    "slug": "genesis-mission-google-microsoft-openai",
+    "title": "미 정부 과학 프로젝트 '제네시스 미션'에 구글 4천만 달러… MS·OpenAI도 참여",
+    "summary": "AI로 국가 과학 연구를 가속하는 계획에 빅테크가 잇따라 참여했습니다.",
+    "cat": "RESEARCH",
+    "topics": [
+      "google",
+      "microsoft",
+      "openai",
+      "ai-research"
+    ],
+    "companies": [
+      "Google",
+      "Microsoft",
+      "OpenAI"
+    ],
+    "products": [],
+    "facts": [
+      "구글은 제네시스 미션(Genesis Mission)에 4천만 달러 규모의 AI 토큰과 크레딧을 제공한다고 밝혔습니다.",
+      "같은 날 마이크로소프트는 제네시스 미션 지원 계획을, OpenAI는 국가 과학의 다음 시대를 위한 계획을 발표했습니다."
+    ],
+    "why": "미국 정부 주도 과학 AI 프로젝트에 주요 AI 회사가 같은 날 동시에 참여를 발표했습니다.",
+    "change": "미국 정부 프로젝트라 국내 변화는 없지만, 국가 과학 연구에 AI 회사 크레딧을 붙이는 방식은 다른 나라 정책에도 참고가 됩니다.",
+    "prio": 3,
+    "secondary": [
+      "c02bbc626b33",
+      "fc3528d001b5"
+    ]
+  },
+  {
+    "c": "e723c4e75250",
+    "slug": "deepmind-isomorphic-bioresilience",
+    "title": "구글 딥마인드·아이소모픽 랩스, 생물 분야 AI 위험 대응 원칙 공개",
+    "summary": "생명과학 AI 모델의 악용을 막는 공동 접근법입니다.",
+    "cat": "SECURITY",
+    "topics": [
+      "google",
+      "ai-security",
+      "ai-health"
+    ],
+    "companies": [
+      "Google DeepMind",
+      "Isomorphic Labs"
+    ],
+    "products": [],
+    "facts": [
+      "Google DeepMind와 Isomorphic Labs가 생물학적 회복력(bioresilience)과 AI 모델에 대한 공동 접근법을 공유했습니다."
+    ],
+    "why": "OpenAI의 생물방어 계획(5~6월)처럼, 생명과학 AI의 이중 용도 위험에 대한 회사별 원칙이 나오고 있습니다.",
+    "change": "원칙 발표라 서비스 변화는 없지만, 생명과학 AI의 악용 방지 기준을 비교할 때 OpenAI 생물방어 계획과 함께 볼 자료입니다.",
+    "prio": 3
+  },
+  {
+    "c": "94ab2433edda",
+    "slug": "galaxy-z-fold8-ultra-unpacked",
+    "title": "갤럭시 Z 폴드8 울트라·폴드8·플립8 공개… 에이전트형 AI와 AI 안경",
+    "summary": "7월 22일 런던 언팩에서 8세대 폴더블과 지능형 안경을 선보였습니다.",
+    "cat": "CONSUMER",
+    "topics": [
+      "samsung",
+      "ai-agent"
+    ],
+    "companies": [
+      "Samsung Electronics"
+    ],
+    "products": [
+      "Galaxy Z Fold8 Ultra",
+      "Galaxy Z Fold8",
+      "Galaxy Z Flip8"
+    ],
+    "facts": [
+      "삼성전자가 런던에서 열린 갤럭시 언팩 2026년 7월 행사에서 사용자를 이해하는 에이전트형 AI와 생활 방식별 하드웨어를 결합한 8세대 갤럭시 Z 시리즈(Z 폴드8 울트라, Z 폴드8, Z 플립8)를 공개했습니다.",
+      "같은 행사에서 AI 안경을 차세대 모바일 AI 인터페이스로 만드는 첫 단계로 지능형 안경(intelligent eyewear)을 소개했습니다."
+    ],
+    "why": "5월 구글 I/O에서 첫 공개된 삼성·구글 AI 안경이 갤럭시 생태계 제품으로 언팩에 올랐습니다.",
+    "change": "폴더블 구매를 고려한다면 AI 기능별로 기기 안 처리와 서버 처리 여부를 확인해 보세요.",
+    "prio": 2,
+    "secondary": [
+      "2c05a57f9352"
+    ]
+  },
+  {
+    "c": "68b1a485099e",
+    "slug": "samsung-health-assistant-beta",
+    "title": "삼성 헬스 'Health Assistant' 베타… 건강 데이터를 연결한 AI 개인 비서(미국)",
+    "summary": "건강 기록을 바탕으로 질문에 답하는 AI 기능입니다.",
+    "cat": "CONSUMER",
+    "topics": [
+      "samsung",
+      "ai-health"
+    ],
+    "companies": [
+      "Samsung Electronics"
+    ],
+    "products": [
+      "Samsung Health Assistant"
+    ],
+    "facts": [
+      "삼성전자는 삼성 헬스의 AI 개인 건강 비서 Health Assistant를 미국의 자격 요건을 갖춘 사용자에게 베타로 제공한다고 밝혔습니다. 건강 데이터를 연결해 질문하고 개인화된 정보를 얻을 수 있다고 설명했습니다."
+    ],
+    "why": "같은 주 ChatGPT도 미국에서 의료 기록·Apple Health 연결을 시작했습니다. 건강 데이터를 AI에 맡기는 경쟁입니다.",
+    "change": "한국 출시는 발표되지 않았습니다. 건강 데이터 연결 시 공유 범위를 꼭 확인하세요.",
+    "prio": 3
+  },
+  {
+    "c": "283f6bfac4a5",
+    "slug": "samsung-broadcom-memory-foundry-mou",
+    "title": "삼성전자·브로드컴, 메모리·파운드리 전략 협력 MOU",
+    "summary": "차세대 AI 인프라를 위한 협력을 넓혔습니다.",
+    "cat": "CHIPS_INFRA",
+    "topics": [
+      "samsung",
+      "ai-chip"
+    ],
+    "companies": [
+      "Samsung Electronics",
+      "Broadcom"
+    ],
+    "products": [],
+    "facts": [
+      "삼성전자와 브로드컴이 차세대 AI 인프라를 위해 메모리와 파운드리 기술 전반의 전략적 협력을 확대하는 MOU를 맺었다고 발표했습니다.",
+      "7월 8일 삼성전자는 차세대 AI·HPC 서버용 PCIe 6.0 기반 기업용 SSD PM1763 양산을 시작했다고 밝혔습니다."
+    ],
+    "why": "브로드컴은 구글·메타·OpenAI의 맞춤형 AI 칩 설계 파트너입니다. 삼성이 이 공급망에 메모리와 생산을 함께 넣으려는 행보입니다.",
+    "change": "소비자 변화는 없지만, 맞춤형 AI 칩 공급망에 삼성이 메모리·생산으로 들어가는지 지켜볼 대목입니다.",
+    "prio": 2,
+    "secondary": [
+      "f9b8bd0f502c"
+    ]
+  },
+  {
+    "c": "b253e20876a0",
+    "slug": "facebook-verified-free-badge",
+    "title": "'Facebook Verified'… 실제 사람임을 확인하는 무료 배지",
+    "summary": "AI 계정과 가짜 계정이 늘어나는 가운데 실존 인물 인증을 무료로 제공합니다.",
+    "cat": "SECURITY",
+    "topics": [
+      "meta",
+      "ai-security"
+    ],
+    "companies": [
+      "Meta"
+    ],
+    "products": [
+      "Facebook Verified"
+    ],
+    "facts": [
+      "메타가 프로필 뒤에 실제 사람이 있음을 확인해 주는 무료 배지 Facebook Verified를 출시했습니다."
+    ],
+    "why": "AI로 만든 계정과 사칭이 늘면서 '사람임을 증명'하는 기능이 기본 서비스가 되고 있습니다.",
+    "change": "국내 제공 여부와 인증 방식은 페이스북 안내를 확인하세요. 인증 배지만 믿지 말고 요청 내용도 따져보세요.",
+    "prio": 3
+  },
+  {
+    "c": "4644e7383fba",
+    "slug": "meta-blackrock-el-paso-data-center",
+    "title": "메타·블랙록, 텍사스 엘패소 데이터센터 합작… 캐나다 첫 1GW 센터도 착공",
+    "summary": "데이터센터 건설 자금을 외부 투자와 나누는 방식입니다.",
+    "cat": "CHIPS_INFRA",
+    "topics": [
+      "meta",
+      "ai-chip"
+    ],
+    "companies": [
+      "Meta",
+      "BlackRock"
+    ],
+    "products": [],
+    "facts": [
+      "메타와 블랙록이 텍사스 엘패소 데이터센터 캠퍼스의 개발·운영 자금을 조달하는 합작 사업을 발표했습니다.",
+      "7월 8일 메타는 캐나다 앨버타 스터전 카운티에 1GW급 AI 최적화 데이터센터를 착공한다고 밝혔습니다. 캐나다 첫 데이터센터이자 전 세계 33번째입니다."
+    ],
+    "why": "5월 블랙스톤-구글 TPU 합작처럼, 사모펀드 자금이 AI 데이터센터 건설에 들어오고 있습니다.",
+    "change": "서비스 변화는 없지만, 데이터센터 건설비를 외부 투자와 나누는 방식이 늘면서 AI 인프라가 금융 상품이 되고 있습니다.",
+    "prio": 3,
+    "secondary": [
+      "74dc15720d83"
+    ]
+  },
+  {
+    "c": "13e7261c0b19",
+    "slug": "meta-ai-glasses-impact-grants",
+    "title": "메타 'AI 안경 임팩트 지원금'… 미국 30개 기관 선정",
+    "summary": "AI 안경으로 일·학습·독립생활을 돕는 기관을 지원합니다.",
+    "cat": "CONSUMER",
+    "topics": [
+      "meta"
+    ],
+    "companies": [
+      "Meta"
+    ],
+    "products": [
+      "Meta AI glasses"
+    ],
+    "facts": [
+      "메타가 Meta AI 안경으로 사람들이 더 안전하게 일하고, 더 빨리 배우고, 더 독립적으로 살도록 돕는 미국 내 30개 기관에 AI Glasses Impact Grants를 지급했다고 밝혔습니다."
+    ],
+    "why": "5~6월 접근성 기능, 참전용사 기부에 이어 AI 안경의 공익적 쓰임새를 넓히고 있습니다.",
+    "change": "미국 기관 대상 지원금이라 국내 신청은 불가합니다. 수혜 기관 사례로 AI 안경의 업무·교육 활용법을 볼 수 있습니다.",
+    "prio": 3
+  },
+  {
+    "c": "990573e03bc3",
+    "slug": "nvidia-jetson-thor-t3000-t2000",
+    "title": "엔비디아 Jetson Thor 'T3000·T2000'… 대중형 로봇용 AI 컴퓨터",
+    "summary": "로봇과 엣지 기기에서 파운데이션 모델을 돌리는 소형 모듈입니다.",
+    "cat": "ROBOTICS",
+    "topics": [
+      "nvidia",
+      "robotics",
+      "ai-chip"
+    ],
+    "companies": [
+      "NVIDIA"
+    ],
+    "products": [
+      "Jetson Thor T3000",
+      "Jetson Thor T2000"
+    ],
+    "facts": [
+      "엔비디아가 범용 로봇과 자율 기계의 대중 시장 보급을 위해 Thor 아키텍처 기반 새 모듈 T3000과 T2000을 발표했습니다."
+    ],
+    "why": "로봇이 연구실에서 실제 시장으로 나오면서, 저전력 소형 AI 컴퓨터 수요가 커지고 있습니다.",
+    "change": "로봇·장비 개발사 대상 제품입니다. 가격과 출시 시점은 엔비디아 공지에서 확인할 수 있습니다.",
+    "prio": 3
+  },
+  {
+    "c": "01fe34145aaf",
+    "slug": "nemotron-3-ultra-langchain-deep-agents",
+    "title": "엔비디아 'Nemotron 3 Ultra', LangChain 에이전트 하네스에서 공개 모델 최고 정확도",
+    "summary": "공개 모델이 비공개 최상위 모델보다 낮은 비용으로 경쟁한다는 주장입니다.",
+    "cat": "BENCHMARK",
+    "topics": [
+      "nvidia",
+      "open-models",
+      "ai-agent"
+    ],
+    "companies": [
+      "NVIDIA",
+      "LangChain"
+    ],
+    "products": [
+      "Nemotron 3 Ultra",
+      "Deep Agents"
+    ],
+    "facts": [
+      "엔비디아는 LangChain이 Deep Agents 하네스를 Nemotron 3 Ultra에 맞춰 조정한 결과 공개 모델 중 가장 높은 정확도를 냈고, 비공개 최상위 모델보다 낮은 비용으로 더 많은 작업을 처리했다고 밝혔습니다."
+    ],
+    "why": "에이전트 성능이 모델뿐 아니라 '하네스'(실행 틀) 조정에 좌우된다는 점을 보여줍니다. 결과는 엔비디아 발표 기준입니다.",
+    "change": "개발자 대상 결과입니다. LangChain으로 에이전트를 만드는 팀이라면 공개 모델로 비용을 비교해 볼 수 있습니다.",
+    "prio": 3
+  },
+  {
+    "c": "c87b2e5fb45e",
+    "slug": "open-secure-ai-alliance",
+    "title": "'오픈 시큐어 AI 연합' 출범… 엔비디아 등 업계가 공개 AI 보안에 협력",
+    "summary": "오픈소스 AI의 안전과 보안을 위한 업계 연합입니다.",
+    "cat": "SECURITY",
+    "topics": [
+      "nvidia",
+      "open-models",
+      "ai-security"
+    ],
+    "companies": [
+      "NVIDIA"
+    ],
+    "products": [],
+    "facts": [
+      "엔비디아는 업계 리더들이 AI 안전과 보안을 위해 Open Secure AI Alliance를 결성했다고 밝혔습니다."
+    ],
+    "why": "같은 날 Anthropic 아모데이 CEO가 공개 가중치 모델에 대한 입장을 밝히는 등, 공개 모델 안전 논쟁이 이어졌습니다.",
+    "change": "업계 연합 발표라 서비스 변화는 없지만, 공개 모델을 쓰는 기업이라면 연합이 내놓을 보안 기준을 지켜볼 만합니다.",
+    "prio": 3
+  },
+  {
+    "c": "9f661bf376d1",
+    "slug": "mistral-robostral-navigate",
+    "title": "미스트랄 'Robostral Navigate'… 카메라 하나로 길 찾는 8B 로봇 모델",
+    "summary": "깊이 센서나 라이다 없이 RGB 카메라 한 대만 씁니다.",
+    "cat": "ROBOTICS",
+    "topics": [
+      "mistral",
+      "robotics",
+      "open-models"
+    ],
+    "companies": [
+      "Mistral AI"
+    ],
+    "products": [
+      "Robostral Navigate"
+    ],
+    "facts": [
+      "미스트랄은 RGB 카메라 하나만으로 R2R-CE 벤치마크에서 76.6%를 기록한 8B 모델 Robostral Navigate를 소개했습니다. 깊이 센서, 라이다, 다중 카메라가 필요 없다고 밝혔습니다."
+    ],
+    "why": "센서를 줄이면 로봇 가격이 내려갑니다. 미스트랄이 5월 물리 AI에 이어 로봇 분야로 넓히고 있습니다.",
+    "change": "로봇 연구용 모델입니다. 센서를 줄인 로봇이 늘면 서비스 로봇 가격이 내려갈 수 있지만, 상용 제품은 아직입니다.",
+    "prio": 3
+  },
+  {
+    "c": "77ccb073c59f",
+    "slug": "google-atl-saathi-india",
+    "title": "구글, 인도 학교 로봇 실습실 교사용 AI 도구 'ATL Saathi'",
+    "summary": "Gemini 기반으로 인도 교육자를 지원합니다.",
+    "cat": "CONSUMER",
+    "topics": [
+      "google",
+      "gemini"
+    ],
+    "companies": [
+      "Google",
+      "Atal Innovation Mission"
+    ],
+    "products": [
+      "ATL Saathi"
+    ],
+    "facts": [
+      "구글과 인도 Atal Innovation Mission이 로봇 실습실 교육자를 돕는 Gemini 기반 AI 도구 ATL Saathi를 출시했다고 Google DeepMind가 밝혔습니다."
+    ],
+    "why": "정부 교육 프로그램과 결합한 AI 도구 사례입니다.",
+    "change": "인도 교사 대상 도구라 국내 교사는 쓸 수 없습니다. 정부 교육 프로그램과 AI 도구를 묶는 방식의 사례입니다.",
+    "prio": 3
+  }
+]

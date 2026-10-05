@@ -1,0 +1,62 @@
+{
+  "slug": "claude-office-ga-outlook-beta",
+  "lead": "Anthropic이 Claude for Excel·PowerPoint·Word를 정식 출시하고, Claude for Outlook을 모든 유료 요금제에 공개 베타로 열었습니다. 네 앱을 오가도 하나의 대화 맥락이 이어지는 것이 핵심입니다. 아웃룩에서 메일을 분류하고, 첨부 파일을 워드에서 메모로 쓰고, 엑셀에서 분석하고, 파워포인트로 옮기는 과정을 다시 설명하지 않고 이어 갈 수 있습니다.",
+  "facts": [
+    "5월 6일 Anthropic이 Claude for Excel·PowerPoint·Word를 정식 출시했습니다.",
+    "Claude for Outlook은 모든 유료 요금제에서 공개 베타로 제공됩니다.",
+    "엑셀에서 가정을 바꾸면 열려 있는 파워포인트 차트와 워드 메모의 숫자도 자동으로 바뀐다고 밝혔습니다.",
+    "아웃룩에서 Claude가 쓴 답장과 일정 초대는 초안으로만 만들어지고, 사용자가 보내기를 눌러야 나갑니다.",
+    "Enterprise 관리자는 OpenTelemetry로 프롬프트·도구 호출·문서 참조를 자체 수집기로 보낼 수 있고, 기존 LLM 게이트웨이를 거쳐 Bedrock·Vertex AI·Foundry의 Claude로 연결할 수도 있습니다."
+  ],
+  "sections": [
+    {
+      "role": "what",
+      "heading": "네 앱을 잇는 하나의 대화",
+      "paragraphs": [
+        "Anthropic은 '대부분의 일은 한 앱 안에 있지 않다'며 Claude가 사용자와 함께 앱 사이를 옮겨 다니게 했다고 설명했습니다. 스프레드시트·발표 자료·메모를 나란히 열어 두면 변경이 서로 흘러가고, 대화는 파일마다 저장돼 다음 날 다시 열어도 이어서 작업할 수 있습니다. 키보드나 음성으로 지시할 수 있습니다."
+      ],
+      "bullets": [
+        "Outlook(베타): 받은편지함 분류(답해야 할 것, Claude가 초안을 쓸 수 있는 것, 무시할 것), 받는 사람·제목·본문을 채운 답장 초안, 참석자 일정을 확인한 회의 초대",
+        "Word: 팀 템플릿에 맞춘 메모 초안",
+        "Excel: 분석 작성, 가정 변경 시 연결된 자료 자동 갱신",
+        "PowerPoint: 분석을 발표 자료로"
+      ]
+    },
+    {
+      "role": "change",
+      "heading": "기업 배포를 위한 장치",
+      "bullets": [
+        "Microsoft AppSource 목록 하나로 Excel·PowerPoint·Word, 별도 목록으로 Outlook 베타. 마이크로소프트 관리 센터에서 배포",
+        "OpenTelemetry: 프롬프트, 도구 호출, 문서 참조를 자체 수집기로 전송(Enterprise)",
+        "Analytics API: 사용자별·앱별·일별 활동",
+        "연결 방식: Claude 계정, 또는 기존 LLM 게이트웨이를 통해 Bedrock·Vertex AI·Foundry의 Claude 모델"
+      ]
+    },
+    {
+      "role": "point",
+      "heading": "봐야 할 지점",
+      "paragraphs": [
+        "오피스 AI 선택지가 겹치는 구도가 분명해졌습니다. 마이크로소프트는 4월 Word·Excel·PowerPoint의 Copilot 에이전트 기능을 기본 경험으로 바꿨고, Microsoft 365 Copilot 안에서도 Claude 모델을 쓸 수 있습니다. 그런데 Anthropic은 같은 앱 안에 자체 추가 기능(add-in)으로 Claude를 넣었습니다. 회사는 Copilot과 Claude 추가 기능 중 무엇을, 혹은 둘 다를 쓸지 정해야 합니다.",
+        "아웃룩 기능에서 '보내기는 사람만'이라는 원칙을 분명히 한 점이 중요합니다. 메일과 일정 초대는 잘못 나가면 되돌리기 어렵기 때문에, Claude는 초안까지만 만들고 발송은 사용자가 직접 하도록 했습니다."
+      ]
+    },
+    {
+      "role": "users",
+      "heading": "누구에게 무엇이 달라지나",
+      "bullets": [
+        "유료 요금제 사용자(Mac·Windows): 오피스 앱에 Claude 추가 기능을 설치해 쓸 수 있습니다. 아웃룩은 베타입니다.",
+        "직장인: 메일 분류와 답장 초안을 맡길 수 있지만, 초안은 보내기 전에 꼭 직접 읽어야 합니다.",
+        "회사 IT 관리자: 관리 센터에서 배포하고, OpenTelemetry로 Claude가 문서에서 한 일을 보안팀이 볼 수 있게 설정할 수 있습니다."
+      ]
+    },
+    {
+      "role": "open",
+      "heading": "발표에 없는 것",
+      "bullets": [
+        "Outlook 베타의 정식 출시 시점은 나오지 않았습니다.",
+        "한국어 메일·문서에서의 품질은 직접 써 봐야 알 수 있습니다.",
+        "추가 기능 사용이 요금제 사용 한도에서 어떻게 차감되는지는 이 글에 나오지 않습니다."
+      ]
+    }
+  ]
+}

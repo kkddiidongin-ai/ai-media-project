@@ -1,0 +1,239 @@
+{
+  "slug": "copilot-models-added-2026",
+  "publishedAt": "2026-10-01",
+  "checkedAt": "2026-10-01",
+  "category": "MODEL_RELEASE",
+  "title": "GitHub Copilot 새 모델 공지, 7개월 동안 20건 넘게",
+  "summary": "3월부터 9월까지 GitHub 공식 변경 기록(Changelog)에 'Copilot에서 쓸 수 있다'고 공지된 주요 모델을 날짜순으로 모았습니다.",
+  "point": "평균 열흘에 한 번꼴로 새 모델이 Copilot 선택 목록에 들어왔습니다. OpenAI·Anthropic·Google 외에 마이크로소프트 자체 모델(MAI), xAI(Grok), 중국 Moonshot AI의 공개 모델(Kimi)까지 들어온 것이 2026년의 변화입니다. 같은 기간 빠진 모델도 많아, '어떤 모델을 쓰나'는 이제 한 번 정하고 끝나는 선택이 아닙니다.",
+  "type": "list",
+  "unit": "공지일 (모델 · 개발사)",
+  "basis": "GitHub Changelog의 '정식 제공(GA)' 또는 '순차 제공(rolling out)' 공지일 기준. 프리뷰·특정 요금제 한정 확대·같은 모델의 추가 화면 확대는 제외. 한 줄에 같은 날 공지된 모델을 묶은 경우가 있음.",
+  "topics": [
+    "copilot",
+    "ai-coding",
+    "openai",
+    "claude",
+    "gemini",
+    "xai"
+  ],
+  "items": [
+    {
+      "label": "GPT-5.4",
+      "display": "OpenAI",
+      "date": "2026-03-05",
+      "storySlug": "gpt-5-4-in-copilot"
+    },
+    {
+      "label": "GPT-5.4 mini",
+      "display": "OpenAI",
+      "date": "2026-03-17",
+      "storySlug": "gpt-5-4-in-copilot"
+    },
+    {
+      "label": "Claude Opus 4.7",
+      "display": "Anthropic",
+      "date": "2026-04-16",
+      "storySlug": "copilot-opus-4-7-ga-multiplier"
+    },
+    {
+      "label": "GPT-5.5",
+      "display": "OpenAI",
+      "date": "2026-04-24",
+      "storySlug": "gpt-5-5-github-copilot"
+    },
+    {
+      "label": "Gemini 3.5 Flash",
+      "display": "Google",
+      "date": "2026-05-19",
+      "storySlug": "gemini-3-5-flash-github-copilot"
+    },
+    {
+      "label": "Claude Opus 4.8",
+      "display": "Anthropic",
+      "date": "2026-05-28",
+      "storySlug": "claude-opus-4-8-github-copilot"
+    },
+    {
+      "label": "MAI-Code-1-Flash",
+      "display": "Microsoft",
+      "date": "2026-06-02",
+      "storySlug": "mai-code-1-flash-copilot"
+    },
+    {
+      "label": "Kimi K2.7 Code (첫 공개 가중치 모델)",
+      "display": "Moonshot AI",
+      "date": "2026-07-01",
+      "storySlug": "kimi-k2-7-code-github-copilot"
+    },
+    {
+      "label": "GPT-5.6 Sol·Terra·Luna",
+      "display": "OpenAI",
+      "date": "2026-07-09",
+      "storySlug": "gpt-5-6-family-github-copilot"
+    },
+    {
+      "label": "Claude Opus 5",
+      "display": "Anthropic",
+      "date": "2026-07-24",
+      "storySlug": "claude-opus-5-github-copilot"
+    },
+    {
+      "label": "Grok 4.5",
+      "display": "xAI",
+      "date": "2026-07-28",
+      "storySlug": "xai-grok-4-5-api"
+    },
+    {
+      "label": "Kimi K3",
+      "display": "Moonshot AI",
+      "date": "2026-08-06",
+      "storySlug": "kimi-k3-github-copilot"
+    },
+    {
+      "label": "MAI-Code-1.1-Flash",
+      "display": "Microsoft",
+      "date": "2026-08-11",
+      "storySlug": "mai-code-1-1-flash-copilot"
+    },
+    {
+      "label": "Grok 4.6",
+      "display": "xAI",
+      "date": "2026-08-14",
+      "storySlug": "xai-grok-4-6"
+    },
+    {
+      "label": "Claude Fable 5.1",
+      "display": "Anthropic",
+      "date": "2026-09-01",
+      "storySlug": "claude-fable-5-1-github-copilot"
+    },
+    {
+      "label": "Gemini 3.8 Flash",
+      "display": "Google",
+      "date": "2026-09-03",
+      "storySlug": "claude-fable-5-1-github-copilot"
+    },
+    {
+      "label": "GPT-6 Astra",
+      "display": "OpenAI",
+      "date": "2026-09-04",
+      "storySlug": "openai-path-to-astra-critical-cyber"
+    },
+    {
+      "label": "Grok 4.7",
+      "display": "xAI",
+      "date": "2026-09-21",
+      "storySlug": "xai-grok-4-7"
+    },
+    {
+      "label": "Claude Opus 5.5 · GPT-6 Sol·Luna",
+      "display": "Anthropic·OpenAI",
+      "date": "2026-09-22",
+      "storySlug": "claude-fable-5-1-github-copilot"
+    },
+    {
+      "label": "Claude Sonnet 5.5",
+      "display": "Anthropic",
+      "date": "2026-09-28",
+      "storySlug": "claude-fable-5-1-github-copilot"
+    },
+    {
+      "label": "GPT-6.1 Sol",
+      "display": "OpenAI",
+      "date": "2026-09-29",
+      "storySlug": "claude-fable-5-1-github-copilot"
+    }
+  ],
+  "sources": [
+    {
+      "name": "GitHub Changelog",
+      "url": "https://github.blog/changelog/2026-03-05-gpt-5-4-is-generally-available-in-github-copilot"
+    },
+    {
+      "name": "GitHub Changelog",
+      "url": "https://github.blog/changelog/2026-03-17-gpt-5-4-mini-is-now-generally-available-for-github-copilot"
+    },
+    {
+      "name": "GitHub Changelog",
+      "url": "https://github.blog/changelog/2026-04-16-claude-opus-4-7-is-generally-available"
+    },
+    {
+      "name": "GitHub Changelog",
+      "url": "https://github.blog/changelog/2026-04-24-gpt-5-5-is-generally-available-for-github-copilot"
+    },
+    {
+      "name": "GitHub Changelog",
+      "url": "https://github.blog/changelog/2026-05-19-gemini-3-5-flash-is-generally-available-for-github-copilot"
+    },
+    {
+      "name": "GitHub Changelog",
+      "url": "https://github.blog/changelog/2026-05-28-claude-opus-4-8-is-generally-available-for-github-copilot"
+    },
+    {
+      "name": "GitHub Changelog",
+      "url": "https://github.blog/changelog/2026-06-02-mai-code-1-flash-is-now-available-for-github-copilot"
+    },
+    {
+      "name": "GitHub Changelog",
+      "url": "https://github.blog/changelog/2026-07-01-kimi-k2-7-is-now-available-in-github-copilot"
+    },
+    {
+      "name": "GitHub Changelog",
+      "url": "https://github.blog/changelog/2026-07-09-openais-gpt-5-6-sol-terra-and-luna-are-now-available-in-github-copilot"
+    },
+    {
+      "name": "GitHub Changelog",
+      "url": "https://github.blog/changelog/2026-07-24-claude-opus-5-is-now-available-in-github-copilot"
+    },
+    {
+      "name": "GitHub Changelog",
+      "url": "https://github.blog/changelog/2026-07-28-grok-4-5-is-now-available-in-github-copilot"
+    },
+    {
+      "name": "GitHub Changelog",
+      "url": "https://github.blog/changelog/2026-08-06-kimi-k3-is-now-available-in-github-copilot"
+    },
+    {
+      "name": "GitHub Changelog",
+      "url": "https://github.blog/changelog/2026-08-11-mai-code-1-1-flash-available-in-github-copilot"
+    },
+    {
+      "name": "GitHub Changelog",
+      "url": "https://github.blog/changelog/2026-08-14-grok-4-6-is-now-available-in-github-copilot"
+    },
+    {
+      "name": "GitHub Changelog",
+      "url": "https://github.blog/changelog/2026-09-01-claude-fable-5-1-generally-available-in-github-copilot"
+    },
+    {
+      "name": "GitHub Changelog",
+      "url": "https://github.blog/changelog/2026-09-03-gemini-3-8-flash-is-now-available-in-github-copilot"
+    },
+    {
+      "name": "GitHub Changelog",
+      "url": "https://github.blog/changelog/2026-09-04-gpt-6-astra-is-generally-available-in-github-copilot"
+    },
+    {
+      "name": "GitHub Changelog",
+      "url": "https://github.blog/changelog/2026-09-21-grok-4-7-is-now-available-in-github-copilot"
+    },
+    {
+      "name": "GitHub Changelog",
+      "url": "https://github.blog/changelog/2026-09-22-claude-opus-5-5-is-now-available-in-github-copilot"
+    },
+    {
+      "name": "GitHub Changelog",
+      "url": "https://github.blog/changelog/2026-09-28-claude-sonnet-5-5-in-github-copilot"
+    },
+    {
+      "name": "GitHub Changelog",
+      "url": "https://github.blog/changelog/2026-09-29-gpt-6-1-sol-in-github-copilot"
+    }
+  ],
+  "relatedStories": [
+    "copilot-usage-based-billing-live",
+    "claude-fable-5-1-github-copilot",
+    "kimi-k2-7-code-github-copilot"
+  ]
+}

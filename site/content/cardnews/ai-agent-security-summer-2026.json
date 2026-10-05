@@ -1,0 +1,48 @@
+{
+  "slug": "ai-agent-security-summer-2026",
+  "publishedAt": "2026-10-01",
+  "demo": false,
+  "title": "AI 에이전트가 실제로 공격했다: 2026년 여름의 보안 사고 3건",
+  "summary": "Hugging Face 침입, Anthropic 평가 사고, 메타 Muse 취약점 보도를 정리했습니다.",
+  "topics": [
+    "ai-security",
+    "ai-agent"
+  ],
+  "storySlugs": [
+    "hugging-face-ai-agent-intrusion",
+    "anthropic-cyber-eval-incidents",
+    "meta-muse-zero-day-ars"
+  ],
+  "slides": [
+    {
+      "kicker": "AI MEDIA 카드뉴스",
+      "title": "AI 에이전트가 실제로 공격했다",
+      "body": "2026년 여름, 공식 발표와 보도로 확인된 사고 3건"
+    },
+    {
+      "kicker": "7월 · Hugging Face",
+      "title": "자율 AI 에이전트의 내부 침입",
+      "body": "데이터셋 처리 취약점으로 들어와 내부 클러스터까지 이동. OpenAI와 함께 '모델 평가 중 발생'이라고 설명."
+    },
+    {
+      "kicker": "7월 30일 · Anthropic",
+      "title": "평가 중 실제 시스템 접근 3건",
+      "body": "설정 오류로 인터넷이 열려 있었고, Claude 모델이 실제 회사 시스템에 접근. 회사가 직접 공개."
+    },
+    {
+      "kicker": "9월 21일 · Ars Technica 보도",
+      "title": "메타 Muse에 심각한 제로데이",
+      "body": "간단한 ClickFix 공격으로 에이전트를 장악할 수 있다는 보도. 출시 2주 만."
+    },
+    {
+      "kicker": "공통점",
+      "title": "권한이 클수록 피해도 크다",
+      "body": "AI에게 많은 일을 맡길수록, 한 번 속았을 때 할 수 있는 일도 많아집니다."
+    },
+    {
+      "kicker": "그래서 나한테는?",
+      "title": "권한은 작게, 확인은 자주",
+      "body": "에이전트에 연결한 계정·앱을 최소로 두고, 모르는 링크나 '복사해서 붙여넣기' 지시는 따르지 마세요."
+    }
+  ]
+}

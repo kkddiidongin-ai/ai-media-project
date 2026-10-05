@@ -1,0 +1,80 @@
+{
+  "slug": "nvidia-ces-2026-rubin",
+  "lead": "엔비디아가 CES 2026에서 Blackwell의 다음 세대인 'Rubin' 플랫폼이 이미 본격 생산에 들어갔다고 밝혔습니다. 회사가 내건 목표는 AI 답변 한 단위(토큰)를 만드는 비용을 이전 세대의 약 10분의 1로 낮추는 것입니다. 2026년 내내 이어진 데이터센터 투자 경쟁과 AI 서비스 요금을 읽는 기준점이 되는 발표입니다.",
+  "facts": [
+    "1월 5일 젠슨 황 CEO가 라스베이거스 CES 2026 특별 발표에서 Rubin 플랫폼을 공개했습니다.",
+    "Rubin은 칩 6종(Vera CPU·Rubin GPU·NVLink 6 스위치·ConnectX-9·BlueField-4·Spectrum-6)을 함께 설계한 플랫폼이며, 엔비디아는 '본격 생산 중'이라고 밝혔습니다.",
+    "엔비디아는 토큰 생성 비용을 이전 세대(Blackwell)의 약 10분의 1로 낮춘다고 주장했습니다.",
+    "Rubin 기반 DGX SuperPOD 시스템은 2026년 하반기 출시 예정이라고 밝혔습니다.",
+    "같은 무대에서 자율주행용 공개 추론 모델 'Alpamayo'와 의료·기후·로봇 등 6개 분야 공개 모델 묶음도 소개했습니다."
+  ],
+  "sections": [
+    {
+      "role": "what",
+      "heading": "CES 무대에서 나온 것",
+      "paragraphs": [
+        "젠슨 황 CEO는 1월 5일 라스베이거스 퐁텐블로 호텔에서 열린 엔비디아 CES 2026 특별 발표를 맡았습니다. 핵심은 세 가지였습니다. 차세대 AI 컴퓨팅 플랫폼 Rubin, 엔비디아가 직접 만든 공개 모델들, 그리고 자율주행입니다.",
+        "Rubin은 천문학자 베라 루빈의 이름을 땄고, 2025년의 주력이던 Blackwell 아키텍처의 후속입니다. 엔비디아는 이번 플랫폼이 이미 '본격 생산(full production)' 단계에 있다고 밝혔습니다."
+      ]
+    },
+    {
+      "role": "change",
+      "heading": "칩 하나가 아니라 '칩 6종 묶음'",
+      "paragraphs": [
+        "Rubin의 특징은 GPU 한 개의 성능보다, 데이터센터에 들어가는 부품 여섯 가지를 처음부터 함께 설계했다는 점입니다. 엔비디아는 이를 'extreme codesign'이라고 불렀습니다. 공식 블로그에 적힌 구성과 수치는 다음과 같습니다."
+      ],
+      "bullets": [
+        "Rubin GPU: AI 추론 성능 50페타플롭스(NVFP4 기준)",
+        "Vera CPU: 엔비디아 자체 설계 Olympus 코어 88개, Armv9.2 호환",
+        "NVLink 6: GPU당 3.6TB/s, Vera Rubin NVL72 랙 하나에 260TB/s",
+        "네트워크·보안 칩: ConnectX-9 SuperNIC, BlueField-4 DPU, Spectrum-6 이더넷 스위치",
+        "랙 단위: Vera Rubin NVL72 한 대에 Vera CPU 36개, Rubin GPU 72개, BlueField-4 18개",
+        "DGX SuperPOD: NVL72 14대(GPU 1,008개)를 묶어 FP4 기준 50.4엑사플롭스, 고속 메모리 1,046TB"
+      ]
+    },
+    {
+      "role": "before",
+      "heading": "이전 세대와 비교하면",
+      "paragraphs": [
+        "엔비디아가 직접 비교한 기준은 Blackwell입니다. 회사는 Rubin으로 추론 토큰 비용을 이전 세대보다 최대 10분의 1로 줄인다고 했고, 8개 GPU짜리 DGX Rubin NVL8은 Blackwell 시스템보다 NVFP4 연산 성능이 5.5배라고 밝혔습니다.",
+        "운영 소프트웨어도 이어집니다. Blackwell 기반 DGX에 쓰던 데이터센터 관리 소프트웨어 Mission Control을 Rubin 시스템에서도 쓸 수 있게 한다고 했습니다. 다만 이 비교 수치는 모두 엔비디아 발표 기준이며, 어떤 모델과 조건에서 잰 값인지는 발표에 자세히 나오지 않습니다."
+      ]
+    },
+    {
+      "role": "point",
+      "heading": "봐야 할 지점",
+      "paragraphs": [
+        "경쟁의 단위가 '칩'에서 '랙과 데이터센터'로 옮겨갔다는 점이 핵심입니다. CPU, 네트워크, 저장장치까지 한 회사가 묶어 설계하면, 고객은 부품을 따로 고르기보다 엔비디아 전체 시스템을 사게 됩니다. 같은 해 8월 엔비디아는 Vera CPU 대량 출하를 시작했다고 밝혔고, 9월에는 Vera Rubin NVL72가 MLPerf 추론 벤치마크에서 선두 성능을 냈다고 발표했습니다. CES 발표가 일정대로 이어진 셈입니다.",
+        "또 하나는 공개 모델입니다. 엔비디아는 의료(Clara), 기후(Earth-2), 추론(Nemotron), 로봇 시뮬레이션(Cosmos), 휴머노이드(GR00T), 자율주행(Alpamayo)까지 6개 분야 모델을 '모두 공개'로 낸다고 했습니다. 칩을 파는 회사가 그 칩 위에서 돌 모델까지 무료로 풀어, 자사 하드웨어 수요를 넓히는 구조입니다."
+      ]
+    },
+    {
+      "role": "users",
+      "heading": "누구에게 무엇이 달라지나",
+      "bullets": [
+        "일반 사용자: 당장 쓰는 앱이 바뀌지는 않습니다. 데이터센터 장비가 바뀐 효과가 AI 서비스의 속도·요금에 반영되기까지는 시차가 있습니다.",
+        "기업 IT·클라우드 담당자: Rubin 기반 DGX SuperPOD는 2026년 하반기 출시 예정입니다. 클라우드로 쓸 경우 각 클라우드 사업자의 Rubin 인스턴스 출시 공지를 따로 확인해야 합니다.",
+        "자율주행·로봇 개발자: 자율주행용 공개 추론 모델 Alpamayo R1과 시뮬레이션 설계도 AlpaSim이 공개돼, 직접 내려받아 시험할 수 있습니다."
+      ]
+    },
+    {
+      "role": "open",
+      "heading": "아직 확인할 것",
+      "bullets": [
+        "'토큰 비용 10분의 1'이 어떤 모델·작업·설정 기준인지는 발표에 나오지 않습니다.",
+        "실제 클라우드 이용 가격과 국내 데이터센터 도입 일정은 발표되지 않았습니다.",
+        "Alpamayo를 쓴 첫 승용차로 소개된 메르세데스-벤츠 CLA의 기능은 '올해 미국'이 대상으로, 한국 적용 여부는 언급이 없습니다."
+      ]
+    }
+  ],
+  "references": [
+    {
+      "sourceName": "NVIDIA Blog",
+      "sourceTitle": "NVIDIA DGX SuperPOD Sets the Stage for Rubin-Based Systems",
+      "sourceUrl": "https://blogs.nvidia.com/blog/dgx-superpod-rubin/",
+      "sourcePublishedAt": "2026-01-05",
+      "checkedAt": "2026-10-02",
+      "note": "칩 6종 사양, NVL72·SuperPOD 구성 수치, 하반기 출시, Blackwell 대비 수치"
+    }
+  ]
+}

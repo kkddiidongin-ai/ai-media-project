@@ -1,0 +1,333 @@
+[
+  {
+    "slug": "openai",
+    "name": "OpenAI",
+    "kind": "company",
+    "description": "ChatGPT와 GPT 모델을 만드는 회사",
+    "aliases": [
+      "오픈AI",
+      "오픈에이아이"
+    ]
+  },
+  {
+    "slug": "chatgpt",
+    "name": "ChatGPT",
+    "kind": "product",
+    "description": "OpenAI의 대화형 AI 서비스",
+    "aliases": [
+      "챗GPT",
+      "챗지피티"
+    ]
+  },
+  {
+    "slug": "anthropic",
+    "name": "Anthropic",
+    "kind": "company",
+    "description": "Claude를 만드는 회사",
+    "aliases": [
+      "앤트로픽",
+      "앤스로픽"
+    ]
+  },
+  {
+    "slug": "claude",
+    "name": "Claude",
+    "kind": "product",
+    "description": "Anthropic의 AI 모델·서비스",
+    "aliases": [
+      "클로드"
+    ]
+  },
+  {
+    "slug": "google",
+    "name": "Google",
+    "kind": "company",
+    "description": "Google과 Google DeepMind",
+    "aliases": [
+      "구글",
+      "딥마인드",
+      "DeepMind"
+    ]
+  },
+  {
+    "slug": "gemini",
+    "name": "Gemini",
+    "kind": "product",
+    "description": "Google의 AI 모델·앱",
+    "aliases": [
+      "제미나이",
+      "제미니"
+    ]
+  },
+  {
+    "slug": "microsoft",
+    "name": "Microsoft",
+    "kind": "company",
+    "description": "Azure·Copilot·Maia를 운영하는 회사",
+    "aliases": [
+      "마이크로소프트",
+      "MS"
+    ]
+  },
+  {
+    "slug": "copilot",
+    "name": "Copilot",
+    "kind": "product",
+    "description": "Microsoft·GitHub의 Copilot 제품군",
+    "aliases": [
+      "코파일럿",
+      "GitHub Copilot",
+      "깃허브"
+    ]
+  },
+  {
+    "slug": "meta",
+    "name": "Meta",
+    "kind": "company",
+    "description": "Llama, Meta AI, AI 안경을 만드는 회사",
+    "aliases": [
+      "메타",
+      "Llama",
+      "라마"
+    ]
+  },
+  {
+    "slug": "nvidia",
+    "name": "NVIDIA",
+    "kind": "company",
+    "description": "AI 반도체·플랫폼 회사",
+    "aliases": [
+      "엔비디아"
+    ]
+  },
+  {
+    "slug": "xai",
+    "name": "xAI",
+    "kind": "company",
+    "description": "Grok을 만드는 회사 (xAI 개발자 문서의 릴리스 노트와 다른 회사 공식 발표 기반)",
+    "aliases": [
+      "xAI",
+      "엑스에이아이",
+      "SpaceXAI"
+    ]
+  },
+  {
+    "slug": "grok",
+    "name": "Grok",
+    "kind": "product",
+    "description": "xAI의 AI 모델·서비스",
+    "aliases": [
+      "그록",
+      "Grok"
+    ]
+  },
+  {
+    "slug": "perplexity",
+    "name": "Perplexity",
+    "kind": "company",
+    "description": "AI 검색 서비스 회사 (공식 사이트 수집 불가, 다른 공식 발표에 나온 경우만)",
+    "aliases": [
+      "퍼플렉시티",
+      "Perplexity"
+    ]
+  },
+  {
+    "slug": "amazon",
+    "name": "Amazon",
+    "kind": "company",
+    "description": "AWS·Bedrock·Alexa의 아마존",
+    "aliases": [
+      "아마존",
+      "AWS",
+      "베드록"
+    ]
+  },
+  {
+    "slug": "apple",
+    "name": "Apple",
+    "kind": "company",
+    "description": "아이폰·맥과 Apple Intelligence의 애플",
+    "aliases": [
+      "애플",
+      "아이폰"
+    ]
+  },
+  {
+    "slug": "samsung",
+    "name": "Samsung",
+    "kind": "company",
+    "description": "갤럭시 AI와 AI 반도체·가전의 삼성",
+    "aliases": [
+      "삼성",
+      "삼성전자",
+      "갤럭시",
+      "Galaxy"
+    ]
+  },
+  {
+    "slug": "mistral",
+    "name": "Mistral",
+    "kind": "company",
+    "description": "프랑스의 AI 모델 회사",
+    "aliases": [
+      "미스트랄"
+    ]
+  },
+  {
+    "slug": "ai-agent",
+    "name": "AI Agent",
+    "kind": "theme",
+    "description": "스스로 여러 단계를 실행하는 AI",
+    "aliases": [
+      "에이전트",
+      "agent"
+    ]
+  },
+  {
+    "slug": "ai-coding",
+    "name": "AI Coding",
+    "kind": "theme",
+    "description": "코드를 쓰고 고치는 AI",
+    "aliases": [
+      "코딩",
+      "Codex",
+      "코덱스"
+    ]
+  },
+  {
+    "slug": "ai-search",
+    "name": "AI Search",
+    "kind": "theme",
+    "description": "검색에 들어간 AI",
+    "aliases": [
+      "검색"
+    ]
+  },
+  {
+    "slug": "ai-video",
+    "name": "AI Video",
+    "kind": "theme",
+    "description": "영상을 만드는 AI",
+    "aliases": [
+      "영상",
+      "동영상",
+      "Veo",
+      "Sora"
+    ]
+  },
+  {
+    "slug": "ai-image",
+    "name": "AI Image",
+    "kind": "theme",
+    "description": "이미지를 만들고 이해하는 AI",
+    "aliases": [
+      "이미지",
+      "그림"
+    ]
+  },
+  {
+    "slug": "voice-ai",
+    "name": "Voice AI",
+    "kind": "theme",
+    "description": "말로 대화하는 AI",
+    "aliases": [
+      "음성",
+      "보이스"
+    ]
+  },
+  {
+    "slug": "robotics",
+    "name": "Robotics",
+    "kind": "theme",
+    "description": "로봇·자율주행·물리 세계의 AI",
+    "aliases": [
+      "로봇",
+      "자율주행",
+      "로보틱스"
+    ]
+  },
+  {
+    "slug": "ai-chip",
+    "name": "AI Chip",
+    "kind": "theme",
+    "description": "AI 반도체·데이터센터·전력",
+    "aliases": [
+      "반도체",
+      "칩",
+      "GPU",
+      "데이터센터",
+      "TPU"
+    ]
+  },
+  {
+    "slug": "ai-regulation",
+    "name": "AI Regulation",
+    "kind": "theme",
+    "description": "정부·법·정책",
+    "aliases": [
+      "규제",
+      "정책",
+      "법"
+    ]
+  },
+  {
+    "slug": "ai-copyright",
+    "name": "AI Copyright",
+    "kind": "theme",
+    "description": "저작권·라이선스·콘텐츠 계약",
+    "aliases": [
+      "저작권"
+    ]
+  },
+  {
+    "slug": "ai-security",
+    "name": "AI Security",
+    "kind": "theme",
+    "description": "보안·안전·악용 방지",
+    "aliases": [
+      "보안",
+      "안전"
+    ]
+  },
+  {
+    "slug": "ai-research",
+    "name": "AI Research",
+    "kind": "theme",
+    "description": "연구 결과·과학",
+    "aliases": [
+      "연구"
+    ]
+  },
+  {
+    "slug": "open-models",
+    "name": "Open Models",
+    "kind": "theme",
+    "description": "누구나 내려받아 쓸 수 있는 공개 모델",
+    "aliases": [
+      "오픈소스",
+      "공개 모델",
+      "오픈 모델"
+    ]
+  },
+  {
+    "slug": "ai-health",
+    "name": "AI Health",
+    "kind": "theme",
+    "description": "건강·의료에 쓰이는 AI",
+    "aliases": [
+      "헬스",
+      "의료",
+      "건강"
+    ]
+  },
+  {
+    "slug": "ai-work",
+    "name": "AI at Work",
+    "kind": "theme",
+    "description": "회사·업무에서 쓰는 AI",
+    "aliases": [
+      "업무",
+      "생산성"
+    ]
+  }
+]

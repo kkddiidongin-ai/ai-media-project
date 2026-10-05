@@ -1,0 +1,154 @@
+{
+  "slug": "cyber-models-timeline-2026",
+  "publishedAt": "2026-10-01",
+  "checkedAt": "2026-10-01",
+  "category": "SECURITY",
+  "title": "'보안 전용 AI 모델'의 해: 3사가 낸 사이버 모델·프로그램",
+  "summary": "OpenAI·Anthropic·Google이 2026년 공식 발표한 사이버보안 특화 모델과 방어자 전용 프로그램을 날짜순으로 모았습니다.",
+  "point": "2월 OpenAI의 '검증된 방어자 전용' 프로그램 이후, 세 회사 모두 보안용 모델을 따로 만들거나 접근을 제한하는 방식을 택했습니다. 9월 GPT-6 Astra는 OpenAI 기준으로 사이버 능력 '위험(Critical)' 등급에 처음 도달했습니다. 공격과 방어에 같은 능력이 쓰인다는 점이 이 경쟁의 핵심입니다.",
+  "type": "timeline",
+  "unit": "발표일",
+  "basis": "각 회사 공식 발표 중 사이버보안 특화 모델 출시 또는 방어자 전용 접근 프로그램 발표만 포함. 일반 모델의 보안 기능 개선은 제외. 선정은 AI MEDIA 편집 판단.",
+  "topics": [
+    "ai-security",
+    "openai",
+    "anthropic",
+    "google"
+  ],
+  "items": [
+    {
+      "storySlug": "openai-trusted-access-for-cyber",
+      "group": "OpenAI"
+    },
+    {
+      "storySlug": "openai-gpt-5-4-cyber-trusted-access",
+      "group": "OpenAI"
+    },
+    {
+      "storySlug": "openai-gpt-5-5-cyber-trusted-access",
+      "group": "OpenAI"
+    },
+    {
+      "storySlug": "project-glasswing-expansion",
+      "group": "Anthropic"
+    },
+    {
+      "storySlug": "openai-daybreak-security",
+      "group": "OpenAI"
+    },
+    {
+      "storySlug": "gemini-3-6-flash",
+      "group": "Google"
+    },
+    {
+      "storySlug": "openai-gpt-5-6-cyber-daybreak-red",
+      "group": "OpenAI"
+    },
+    {
+      "storySlug": "claude-mythos-5-cyber-defenders",
+      "group": "Anthropic"
+    },
+    {
+      "storySlug": "gemini-3-8-flash-cyber",
+      "group": "Google"
+    },
+    {
+      "storySlug": "gpt-6-astra",
+      "group": "OpenAI"
+    }
+  ],
+  "sources": [
+    {
+      "name": "OpenAI",
+      "url": "https://openai.com/index/trusted-access-for-cyber"
+    },
+    {
+      "name": "OpenAI",
+      "url": "https://openai.com/index/scaling-trusted-access-for-cyber-defense"
+    },
+    {
+      "name": "OpenAI",
+      "url": "https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber"
+    },
+    {
+      "name": "Anthropic",
+      "url": "https://www.anthropic.com/news/expanding-project-glasswing"
+    },
+    {
+      "name": "OpenAI",
+      "url": "https://openai.com/index/daybreak-securing-the-world"
+    },
+    {
+      "name": "Google (The Keyword · AI)",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber/"
+    },
+    {
+      "name": "OpenAI",
+      "url": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows"
+    },
+    {
+      "name": "Claude (claude.com blog)",
+      "url": "https://claude.com/blog/bringing-claude-mythos-5-to-more-defenders"
+    },
+    {
+      "name": "Google (The Keyword · AI)",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/"
+    },
+    {
+      "name": "OpenAI",
+      "url": "https://openai.com/index/gpt-6-astra"
+    }
+  ],
+  "relatedStories": [
+    "gpt-6-astra",
+    "openai-daybreak-security",
+    "claude-mythos-5-cyber-defenders"
+  ],
+  "oneLine": "2026년 OpenAI·Anthropic·구글이 낸 사이버보안 특화 모델과 방어자 전용 프로그램 10건을 보면, 세 회사 모두 '가장 강한 보안 능력은 검증된 방어자에게만'이라는 같은 방식으로 수렴했습니다.",
+  "analysis": [
+    {
+      "role": "compare",
+      "heading": "이 차트가 모은 것",
+      "paragraphs": [
+        "세 회사의 공식 발표 가운데 사이버보안 특화 모델 출시나 방어자 전용 접근 프로그램 발표만 날짜순으로 모았습니다. 일반 모델의 보안 기능 개선은 넣지 않았습니다."
+      ],
+      "bullets": [
+        "OpenAI(6건): 2월 Trusted Access for Cyber → 4월 GPT-5.4-Cyber → 5월 GPT-5.5-Cyber → 6월 Daybreak → 8월 GPT-5.6-Cyber(Daybreak Red) → 9월 GPT-6 Astra",
+        "Anthropic(2건): 6월 Project Glasswing 확대 → 8월 Claude Mythos 5 방어 팀 제공 확대",
+        "구글(2건): 7월 3.5 Flash Cyber(CodeMender와 함께) → 9월 3.8 Flash Cyber(Fairwind 프로그램)"
+      ]
+    },
+    {
+      "role": "see",
+      "heading": "날짜에서 보이는 것",
+      "paragraphs": [
+        "OpenAI는 거의 매 모델 세대마다 '-Cyber' 버전을 따로 냈고, 구글은 7월부터 Flash 계열에 보안 전용 모델을 붙였습니다. Anthropic은 '-Cyber' 같은 보안 전용 모델 대신, 기존 모델(Mythos 5)을 방어 팀이 쓰도록 프로그램을 넓히는 방식을 택했습니다. 9월에는 OpenAI가 GPT-6 Astra를 자사 기준 사이버 능력 'Critical' 등급에 처음 도달한 모델로 소개했습니다."
+      ]
+    },
+    {
+      "role": "why",
+      "heading": "왜 '방어자 전용'인가",
+      "paragraphs": [
+        "취약점을 찾고 고치는 능력은 그대로 공격에도 쓰일 수 있습니다. 세 회사는 가장 강한 능력을 신원이 확인된 보안 전문가에게만 열거나, 일반 모델에는 보안 관련 제한을 거는 방식으로 이 문제를 다루고 있습니다(AI MEDIA 해석). 9월 30일 구글이 Gemini 4 Argon을 Fairwind 프로그램의 방어자에게 먼저 배포한 것도 같은 방식입니다."
+      ]
+    },
+    {
+      "role": "read",
+      "heading": "해석할 때 중요한 점",
+      "bullets": [
+        "'Cyber' 모델과 접근 프로그램은 같은 것이 아닙니다. 프로그램은 누가 쓸 수 있는지를, 모델은 무엇을 할 수 있는지를 정합니다.",
+        "'Critical' 등급은 OpenAI가 자체 대비 프레임워크로 매긴 것으로, 다른 회사 모델과 같은 잣대로 비교할 수 없습니다.",
+        "건수가 많다고 능력이 앞선다는 뜻은 아닙니다. 회사마다 발표 단위가 다릅니다."
+      ]
+    },
+    {
+      "role": "caution",
+      "heading": "주의해서 볼 점",
+      "bullets": [
+        "이 사이트가 수집한 세 회사의 공식 발표만 담았습니다. 보안 전문 기업의 AI 모델이나 다른 AI 회사의 발표는 빠져 있습니다.",
+        "범용 모델인 Gemini 4 Argon(9월 30일)은 보안 특화 모델이 아니어서 목록에 넣지 않았습니다.",
+        "openai.com 원문 일부는 이 사이트가 직접 확인하지 못해, OpenAI 항목은 공개된 요약과 개발자 문서에 기댑니다."
+      ]
+    }
+  ]
+}

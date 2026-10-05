@@ -1,0 +1,67 @@
+{
+  "slug": "gemini-3-1-pro",
+  "lead": "구글이 Gemini 3 Pro의 후속인 Gemini 3.1 Pro를 프리뷰로 내놨습니다. 일주일 전 업그레이드한 Deep Think의 바탕이 된 '핵심 지능'을 일반 제품에 넣은 것이라고 설명했고, 새로운 논리 패턴을 푸는 ARC-AGI-2에서 3 Pro의 두 배가 넘는 77.1%를 기록했다고 밝혔습니다. Gemini 앱, NotebookLM, Gemini API, Vertex AI에 함께 풀렸습니다.",
+  "facts": [
+    "2월 19일 구글이 Gemini 3.1 Pro를 프리뷰로 공개했습니다.",
+    "ARC-AGI-2에서 검증 점수 77.1%를 기록해 Gemini 3 Pro의 두 배가 넘는다고 밝혔습니다.",
+    "개발자는 AI Studio의 Gemini API, Gemini CLI, Antigravity, Android Studio에서, 기업은 Vertex AI·Gemini Enterprise에서 쓸 수 있습니다.",
+    "Gemini 앱에서는 Google AI Pro·Ultra 사용자에게 더 높은 한도로 제공되고, NotebookLM에서는 Pro·Ultra 사용자 전용입니다.",
+    "10월 2일 확인한 Gemini API 가격표 기준 100만 토큰당 입력 2달러·출력 12달러(20만 토큰 이하 프롬프트)입니다."
+  ],
+  "sections": [
+    {
+      "role": "what",
+      "heading": "무엇이 나왔나",
+      "paragraphs": [
+        "구글은 3.1 Pro를 '단순한 답으로는 부족한 작업'을 위한 모델로 소개했습니다. 복잡한 주제를 시각적으로 설명하거나, 흩어진 데이터를 한 화면으로 모으거나, 창작 프로젝트를 코드로 구현하는 일을 예로 들었습니다.",
+        "구글이 보여 준 예시는 대부분 코드 생성입니다. 텍스트만으로 웹에 바로 쓸 수 있는 애니메이션 SVG를 만들고, 공개 원격측정 데이터를 연결해 국제우주정거장 궤도를 보여 주는 대시보드를 만들고, 손동작으로 조작하는 3D 찌르레기 떼 군무를 구현했다는 것입니다."
+      ]
+    },
+    {
+      "role": "change",
+      "heading": "어디서, 어떤 조건으로",
+      "bullets": [
+        "개발자(프리뷰): Gemini API(AI Studio), Gemini CLI, Antigravity, Android Studio",
+        "기업: Vertex AI, Gemini Enterprise",
+        "일반 사용자: Gemini 앱(Pro·Ultra는 더 높은 한도), NotebookLM(Pro·Ultra 전용)",
+        "API 가격(10월 2일 가격표 기준, 100만 토큰당): 20만 토큰 이하 입력 2달러·출력 12달러, 20만 토큰 초과 입력 4달러·출력 18달러. 무료 등급은 없음"
+      ]
+    },
+    {
+      "role": "point",
+      "heading": "봐야 할 지점",
+      "paragraphs": [
+        "구글은 Deep Think 업그레이드(2월 12일)와 3.1 Pro(2월 19일)를 '같은 지능 향상'의 두 얼굴로 묶었습니다. 오래 생각하는 특화 모드를 먼저 최상위 구독자에게 보여 주고, 그 바탕이 된 모델을 일주일 뒤 넓게 푸는 순서입니다.",
+        "2월은 주요 모델이 몇 주 간격으로 쏟아진 달이었습니다. 이 사이트 기록상 Claude Opus 4.6과 GPT-5.3-Codex(2월 5일), Claude Sonnet 4.6(2월 17일)에 이어 Gemini 3.1 Pro가 나왔습니다. 구글이 '프리뷰'로 내놓으며 정식 출시 전에 에이전트 작업 등을 더 다듬겠다고 밝힌 것도, 빠른 출시와 안정성 사이의 균형을 보여 줍니다."
+      ]
+    },
+    {
+      "role": "users",
+      "heading": "누구에게 무엇이 달라지나",
+      "bullets": [
+        "Gemini 앱 Pro·Ultra 구독자: 3.1 Pro를 더 높은 한도로 고를 수 있습니다.",
+        "NotebookLM 사용자: 3.1 Pro는 Pro·Ultra 요금제에서만 적용됩니다.",
+        "개발자: 프리뷰 모델이라 동작이 바뀔 수 있습니다. 실제 서비스에 넣을 때는 모델명(gemini-3.1-pro-preview)과 변경 공지를 함께 관리하는 것이 안전합니다."
+      ]
+    },
+    {
+      "role": "open",
+      "heading": "현재 기준으로 확인할 것",
+      "bullets": [
+        "구글은 '곧' 정식 출시하겠다고 했지만, 10월 2일 확인한 API 가격표에는 여전히 'Gemini 3.1 Pro Preview'로 올라 있습니다.",
+        "이 사이트 기록상 이후 Gemini 3.5(5월 19일), Gemini 4 Argon(9월 30일)이 발표됐습니다. 지금 새로 시작한다면 최신 모델과 비교해 고르는 것이 맞습니다.",
+        "ARC-AGI-2 외 성능 수치는 이 발표에 자세히 나오지 않습니다."
+      ]
+    }
+  ],
+  "references": [
+    {
+      "sourceName": "Gemini API 문서",
+      "sourceTitle": "Gemini Developer API pricing",
+      "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
+      "sourcePublishedAt": "",
+      "checkedAt": "2026-10-02",
+      "note": "Gemini 3.1 Pro Preview 표준 가격(20만 토큰 기준 구간별), 무료 등급 미제공"
+    }
+  ]
+}

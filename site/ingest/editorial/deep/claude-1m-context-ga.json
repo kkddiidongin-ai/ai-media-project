@@ -1,0 +1,78 @@
+{
+  "slug": "claude-1m-context-ga",
+  "lead": "Anthropic이 Claude Opus 4.6과 Sonnet 4.6의 100만 토큰 맥락을 정식 제공으로 바꾸고, 긴 맥락 할증을 없앴습니다. 90만 토큰 요청도 9천 토큰 요청과 같은 단가로 계산됩니다. 한 번에 넣을 수 있는 이미지·PDF 페이지는 100개에서 600개로 늘었고, Claude Code의 Max·Team·Enterprise 사용자는 Opus 4.6에서 100만 토큰을 기본으로 씁니다.",
+  "facts": [
+    "3월 12일 Anthropic이 Opus 4.6·Sonnet 4.6의 100만 토큰 맥락을 정식 제공(GA)했습니다.",
+    "100만 토큰 전체에 표준 가격이 적용됩니다. Opus 4.6은 100만 토큰당 입력 5달러·출력 25달러, Sonnet 4.6은 3달러·15달러입니다.",
+    "모든 맥락 길이에서 계정의 표준 처리 한도가 그대로 적용되고, 베타 헤더 없이 20만 토큰 넘는 요청이 자동으로 처리됩니다.",
+    "요청 하나에 넣을 수 있는 이미지·PDF 페이지가 100개에서 600개로 늘었습니다.",
+    "Claude Code의 Max·Team·Enterprise 사용자는 Opus 4.6 세션에서 100만 토큰 맥락을 자동으로 씁니다. 이전에는 추가 사용량이 필요했습니다."
+  ],
+  "sections": [
+    {
+      "role": "what",
+      "heading": "무엇이 바뀌었나",
+      "paragraphs": [
+        "2월 Opus 4.6과 Sonnet 4.6이 나왔을 때 100만 토큰 맥락은 베타였고, 20만 토큰을 넘는 프롬프트에는 더 높은 단가가 붙었습니다. 정식 제공으로 바뀌며 이 할증이 사라졌습니다.",
+        "Anthropic은 '배수 없음'을 강조했습니다. 같은 모델이면 짧은 요청이든 긴 요청이든 토큰당 가격이 같다는 뜻입니다. 이미 베타 헤더를 보내던 코드는 헤더가 무시될 뿐 고칠 필요가 없다고 했습니다."
+      ],
+      "bullets": [
+        "가격: 긴 맥락 할증 폐지, 전 구간 표준 가격",
+        "처리 한도: 맥락 길이와 관계없이 표준 한도",
+        "미디어: 요청당 이미지·PDF 페이지 100 → 600 (Claude Platform, Microsoft Foundry, Vertex AI)",
+        "Claude Code: Max·Team·Enterprise의 Opus 4.6 세션은 100만 토큰 기본값"
+      ]
+    },
+    {
+      "role": "change",
+      "heading": "긴 맥락의 '품질'",
+      "paragraphs": [
+        "Anthropic은 맥락이 길어도 필요한 정보를 찾아내야 의미가 있다며, Opus 4.6이 100만 토큰 길이의 정보 찾기 시험 MRCR v2에서 78.3%로 같은 길이의 최첨단 모델 가운데 가장 높다고 밝혔습니다(회사 발표 기준).",
+        "고객 사례로는 Claude Code가 로그·데이터베이스·코드 검색에 10만 토큰 넘게 쓰다가 압축(compaction)되며 세부 정보를 잃던 문제가 줄었다는 것, 큰 코드 변경을 쪼개지 않고 한 번에 리뷰하게 됐다는 것, 400쪽 증언 기록을 한 번에 다루게 됐다는 것 등을 들었습니다."
+      ]
+    },
+    {
+      "role": "point",
+      "heading": "봐야 할 지점",
+      "paragraphs": [
+        "긴 맥락 경쟁의 조건이 '얼마나 길게'에서 '추가 요금 없이'로 옮겨갔습니다. 이 사이트 기록상 일주일 전(3월 5일) OpenAI는 100만 토큰 맥락의 GPT-5.4를 냈는데, OpenAI 모델 문서 기준 GPT-5.4는 입력 27만2천 토큰을 넘으면 입력 2배·출력 1.5배 단가가 붙습니다. 같은 100만 토큰이라도 가격 구조는 다릅니다.",
+        "다만 할증이 없어도 긴 요청은 그만큼 토큰을 많이 쓰므로 비용 자체는 커집니다. 맥락을 길게 넣는 것이 편해진 만큼, 필요한 자료만 골라 넣는 습관이 비용 관리에 여전히 중요합니다."
+      ]
+    },
+    {
+      "role": "users",
+      "heading": "누구에게 무엇이 달라지나",
+      "bullets": [
+        "API 개발자: 20만 토큰 넘는 요청의 단가가 내려갔습니다. 이전에 긴 문서를 쪼개 보내던 작업을 한 번에 보내 비용과 품질을 비교해 볼 만합니다.",
+        "Claude Code 사용자(Max·Team·Enterprise): Opus 4.6 세션이 자동으로 100만 토큰을 쓰므로 압축이 덜 일어납니다.",
+        "클라우드 이용 기업: Amazon Bedrock, Vertex AI, Microsoft Foundry에서도 100만 토큰 맥락을 쓸 수 있습니다."
+      ]
+    },
+    {
+      "role": "open",
+      "heading": "확인할 것",
+      "bullets": [
+        "Pro 요금제의 Claude Code나 claude.ai 대화창에서 100만 토큰이 어떻게 적용되는지는 이 발표에 나오지 않습니다.",
+        "10월 2일 확인한 Claude 가격 문서에도 4.6 이후 모델은 100만 토큰 전체를 표준 가격으로 쓰는 것으로 나와, 이 조건이 이후 모델에도 이어지고 있습니다."
+      ]
+    }
+  ],
+  "references": [
+    {
+      "sourceName": "OpenAI API 문서",
+      "sourceTitle": "GPT-5.4 (Models)",
+      "sourceUrl": "https://developers.openai.com/api/docs/models/gpt-5.4",
+      "sourcePublishedAt": "",
+      "checkedAt": "2026-10-02",
+      "note": "비교용: GPT-5.4의 27만2천 토큰 초과 시 입력 2배·출력 1.5배 단가"
+    },
+    {
+      "sourceName": "Claude API 문서",
+      "sourceTitle": "Pricing",
+      "sourceUrl": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "sourcePublishedAt": "",
+      "checkedAt": "2026-10-02",
+      "note": "현재 긴 맥락 가격 정책(4.6 이후 100만 토큰 표준 가격)"
+    }
+  ]
+}

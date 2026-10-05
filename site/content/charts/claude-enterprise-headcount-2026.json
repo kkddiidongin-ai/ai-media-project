@@ -1,0 +1,107 @@
+{
+  "slug": "claude-enterprise-headcount-2026",
+  "publishedAt": "2026-10-01",
+  "checkedAt": "2026-10-01",
+  "category": "ENTERPRISE",
+  "title": "Claude를 들인 대기업들, 발표문에 적힌 인원",
+  "summary": "Anthropic 공식 발표에 나온 대형 기업·파트너의 Claude 도입·교육 인원을 모았습니다.",
+  "point": "숫자가 큰 곳은 대부분 회계·컨설팅·IT 서비스 회사입니다. 자기 회사에 먼저 들이고, 그 경험으로 고객사 도입을 돕는 구조입니다. 다만 '제공', '도입', '교육'은 같은 뜻이 아니어서 숫자를 서로 비교하거나 더하면 안 됩니다.",
+  "type": "list",
+  "unit": "발표문 표기 그대로 (명)",
+  "basis": "Anthropic(또는 claude.com) 공식 발표문의 표현 기준. '제공(available to)', '도입(deploy)', '교육(train)'이 섞여 있어 막대로 비교하지 않음. 실제 사용자 수와는 다를 수 있음.",
+  "topics": [
+    "anthropic",
+    "claude",
+    "ai-work"
+  ],
+  "items": [
+    {
+      "label": "KPMG",
+      "display": "27만6천 명 이상",
+      "note": "Claude 제공 + 세무·법률 플랫폼 탑재",
+      "date": "2026-05-19",
+      "storySlug": "kpmg-integrates-claude"
+    },
+    {
+      "label": "TCS",
+      "display": "5만 명",
+      "note": "56개국 직원에게 제공",
+      "date": "2026-06-12",
+      "storySlug": "dxc-tcs-claude-regulated-industries"
+    },
+    {
+      "label": "NEC",
+      "display": "3만 명",
+      "note": "도입 + 첫 일본 글로벌 파트너",
+      "date": "2026-04-24",
+      "storySlug": "anthropic-nec-japan-partnership"
+    },
+    {
+      "label": "PwC",
+      "display": "3만 명",
+      "note": "교육 (전사 도입과 함께 발표)",
+      "date": "2026-05-14",
+      "storySlug": "pwc-deploys-claude"
+    },
+    {
+      "label": "코그니잔트",
+      "display": "3만 명 이상",
+      "note": "교육",
+      "date": "2026-07-27",
+      "storySlug": "anthropic-cognizant-ust-partnerships"
+    },
+    {
+      "label": "UST",
+      "display": "2만 명",
+      "note": "엔지니어 교육",
+      "date": "2026-07-09",
+      "storySlug": "anthropic-cognizant-ust-partnerships"
+    },
+    {
+      "label": "베인앤드컴퍼니",
+      "display": "1만9천 명",
+      "note": "직원 도입",
+      "date": "2026-08-24",
+      "storySlug": "bain-claude-global-premier-partner"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Anthropic",
+      "url": "https://www.anthropic.com/news/anthropic-kpmg"
+    },
+    {
+      "name": "Anthropic",
+      "url": "https://www.anthropic.com/news/dxc-anthropic-alliance"
+    },
+    {
+      "name": "Anthropic",
+      "url": "https://www.anthropic.com/news/anthropic-nec"
+    },
+    {
+      "name": "Anthropic",
+      "url": "https://www.anthropic.com/news/pwc-expanded-partnership"
+    },
+    {
+      "name": "Anthropic",
+      "url": "https://www.anthropic.com/news/cognizant-anthropic"
+    },
+    {
+      "name": "Claude (claude.com blog)",
+      "url": "https://claude.com/blog/bain-company-joins-the-claude-partner-network-as-a-global-premier-partner"
+    },
+    {
+      "name": "Anthropic",
+      "url": "https://www.anthropic.com/news/tcs-anthropic-partnership"
+    },
+    {
+      "name": "Anthropic",
+      "url": "https://www.anthropic.com/news/ust-claude"
+    }
+  ],
+  "relatedStories": [
+    "kpmg-integrates-claude",
+    "pwc-deploys-claude",
+    "anthropic-seoul-office"
+  ]
+}

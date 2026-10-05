@@ -1,0 +1,114 @@
+{
+  "slug": "grok-api-price-2026",
+  "publishedAt": "2026-10-01",
+  "checkedAt": "2026-10-01",
+  "category": "PRICE",
+  "title": "Grok 4.5→4.7, 기본 가격은 그대로… 긴 입력은 2배",
+  "summary": "xAI 개발자 문서의 릴리스 노트에 적힌 Grok 4.5·4.6·4.7의 출력 100만 토큰당 가격입니다.",
+  "point": "Grok 4.5·4.6·4.7 세 모델 내내 기본 가격(입력 2달러·출력 6달러)은 바뀌지 않았습니다. 대신 4.6부터 입력이 20만 토큰을 넘으면 단가가 2배가 되는 구간 요금이 붙었습니다. 맥락 창이 50만 토큰으로 커진 만큼, '많이 넣을 수 있다'와 '싸게 넣을 수 있다'는 다른 이야기가 됐습니다.",
+  "type": "bar",
+  "unit": "출력 100만 토큰당 미국 달러",
+  "basis": "xAI API 릴리스 노트(docs.x.ai)에 적힌 표준 가격. 4.5는 구간 요금 언급 없음. 캐시 입력·배치·지역 요금 제외. 2026-10-01 기준 문서 확인.",
+  "topics": [
+    "xai",
+    "grok"
+  ],
+  "items": [
+    {
+      "label": "Grok 4.5",
+      "group": "xAI",
+      "value": 6,
+      "display": "$6 (입력 $2)",
+      "date": "2026-07-08",
+      "storySlug": "xai-grok-4-5-api"
+    },
+    {
+      "label": "Grok 4.6 · 20만 토큰 이하",
+      "group": "xAI",
+      "value": 6,
+      "display": "$6 (입력 $2)",
+      "date": "2026-08-12",
+      "storySlug": "xai-grok-4-6"
+    },
+    {
+      "label": "Grok 4.6 · 20만 토큰 초과",
+      "group": "xAI",
+      "value": 12,
+      "display": "$12 (입력 $4)",
+      "date": "2026-08-12",
+      "storySlug": "xai-grok-4-6"
+    },
+    {
+      "label": "Grok 4.7 · 20만 토큰 이하",
+      "group": "xAI",
+      "value": 6,
+      "display": "$6 (입력 $2)",
+      "date": "2026-09-21",
+      "storySlug": "xai-grok-4-7"
+    },
+    {
+      "label": "Grok 4.7 · 20만 토큰 초과",
+      "group": "xAI",
+      "value": 12,
+      "display": "$12 (입력 $4)",
+      "date": "2026-09-21",
+      "storySlug": "xai-grok-4-7"
+    }
+  ],
+  "sources": [
+    {
+      "name": "xAI API Release Notes (docs.x.ai)",
+      "url": "https://docs.x.ai/developers/release-notes"
+    }
+  ],
+  "relatedStories": [
+    "xai-grok-4-5-api",
+    "xai-grok-4-6",
+    "xai-grok-4-7"
+  ],
+  "oneLine": "Grok 4.5에서 4.7까지 xAI는 기본 가격(입력 2달러·출력 6달러)을 그대로 두고, 4.6부터 입력 20만 토큰을 넘으면 단가를 두 배로 받는 구간 요금을 붙였습니다.",
+  "analysis": [
+    {
+      "role": "compare",
+      "heading": "이 차트가 모은 것",
+      "paragraphs": [
+        "xAI 개발자 문서의 릴리스 노트에 적힌 Grok 4.5·4.6·4.7의 표준 가격을 출력 100만 토큰당 달러로 나란히 놓았습니다. 괄호 안은 같은 구간의 입력 가격입니다."
+      ],
+      "bullets": [
+        "Grok 4.5(7월 8일): 출력 6달러·입력 2달러, 구간 요금 언급 없음",
+        "Grok 4.6(8월 12일): 20만 토큰 이하 6달러·2달러, 초과 12달러·4달러",
+        "Grok 4.7(9월 21일): 4.6과 같은 구간 요금"
+      ]
+    },
+    {
+      "role": "see",
+      "heading": "숫자에서 보이는 것",
+      "paragraphs": [
+        "세 세대 동안 기본 가격은 한 번도 바뀌지 않았습니다. 바뀐 것은 긴 입력의 가격입니다. 맥락 창이 50만 토큰으로 커진 만큼, 20만 토큰을 넘게 넣는 요청은 단가가 두 배가 됩니다."
+      ]
+    },
+    {
+      "role": "why",
+      "heading": "왜 구간 요금인가",
+      "paragraphs": [
+        "긴 입력은 처리 비용이 커서, 많은 회사가 일정 길이를 넘으면 단가를 올리는 방식을 쓰고 있습니다(AI MEDIA 해석). 9월 나온 OpenAI GPT-6 Astra도 27만2천 토큰을 넘는 프롬프트에 요청 전체 할증을 붙입니다."
+      ]
+    },
+    {
+      "role": "read",
+      "heading": "해석할 때 중요한 점",
+      "bullets": [
+        "같은 단가라도 작업 비용은 같지 않습니다. 이 사이트 기록상 Grok 4.7은 작업당 출력 토큰이 4.6의 약 2배라는 측정이 있어(AWS 글이 인용한 Artificial Analysis 측정), 실제 청구액은 늘 수 있습니다.",
+        "캐시 입력, 배치, 지역별 요금은 차트에서 뺐습니다."
+      ]
+    },
+    {
+      "role": "caution",
+      "heading": "주의해서 볼 점",
+      "bullets": [
+        "2026년 10월 1일 확인한 문서 기준입니다. 가격은 예고 없이 바뀔 수 있으니 사용 전 xAI 문서를 다시 확인해야 합니다.",
+        "GitHub Copilot·Amazon Bedrock 등 다른 경로로 쓸 때의 가격은 이 차트와 다릅니다."
+      ]
+    }
+  ]
+}

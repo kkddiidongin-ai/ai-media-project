@@ -1,0 +1,65 @@
+{
+  "slug": "veo-3-1-ingredients-to-video",
+  "lead": "구글이 영상 생성 모델 Veo 3.1의 'Ingredients to Video' 기능을 개선했습니다. 참고 이미지(재료)를 넣어 영상을 만들 때 인물·배경·물건이 장면마다 덜 바뀌게 했고, 쇼츠용 세로(9:16) 영상을 바로 만들 수 있게 했습니다. 1080p·4K 업스케일은 Flow, Gemini API, Vertex AI에서만 됩니다.",
+  "facts": [
+    "1월 13일 구글이 Veo 3.1 Ingredients to Video 개선판을 발표했습니다.",
+    "참고 이미지 속 인물의 얼굴·모습, 배경과 물건이 장면이 바뀌어도 유지되도록 일관성을 높였다고 밝혔습니다.",
+    "Ingredients to Video에서 처음으로 세로 9:16 영상을 잘라내지 않고 직접 생성합니다.",
+    "1080p 화질을 개선하고 4K 업스케일을 추가했지만, 이 기능은 Flow·Gemini API·Vertex AI에서만 제공됩니다.",
+    "Gemini 앱, YouTube Shorts·YouTube Create 앱, Flow, Google Vids, Gemini API, Vertex AI에 적용됩니다."
+  ],
+  "sections": [
+    {
+      "role": "what",
+      "heading": "무엇이 바뀌었나",
+      "paragraphs": [
+        "Ingredients to Video는 이미지 여러 장을 '재료'로 넣고 이를 섞어 영상을 만드는 기능입니다. 구글은 이번 개선으로 짧은 프롬프트로도 움직임과 대사가 더 풍부한 영상이 나오고, 같은 캐릭터를 다른 배경에 등장시켜도 모습이 유지된다고 설명했습니다.",
+        "배경·물건·질감을 여러 장면에 재사용하고, 캐릭터와 사물, 스타일이 다른 배경을 하나의 클립으로 합치는 것도 개선 항목으로 들었습니다. 재료 이미지는 Nano Banana Pro(Gemini 3 Pro Image)로 만들어 쓰라고 권했습니다."
+      ],
+      "bullets": [
+        "인물 일관성: 배경이 바뀌어도 같은 캐릭터 유지",
+        "배경·사물 일관성: 장면 간 재사용 가능",
+        "세로 9:16: Ingredients to Video 첫 지원, 가로 영상을 잘라내지 않음",
+        "화질: 1080p 개선, 4K 업스케일 추가"
+      ]
+    },
+    {
+      "role": "change",
+      "heading": "어디서 무엇을 쓸 수 있나",
+      "paragraphs": [
+        "같은 기능이라도 제품마다 제공 범위가 다릅니다. 구글 발표를 정리하면 다음과 같습니다."
+      ],
+      "bullets": [
+        "Gemini 앱: 개선된 Ingredients to Video와 세로 모드, 발표 당일부터",
+        "YouTube Shorts·YouTube Create 앱: Ingredients to Video 첫 도입",
+        "Flow·Gemini API·Vertex AI·Google Vids: 개선판과 세로 형식 순차 적용",
+        "1080p·4K: Flow·Gemini API·Vertex AI에서만"
+      ]
+    },
+    {
+      "role": "point",
+      "heading": "왜 '일관성'이 핵심인가",
+      "paragraphs": [
+        "AI 영상을 실제 콘텐츠 제작에 쓰기 어려운 가장 큰 이유는 장면마다 인물 얼굴이나 소품이 조금씩 달라지는 것이었습니다. 한 캐릭터로 여러 컷을 이어 붙여야 하는 광고·숏폼 시리즈에서는 이 문제가 작업을 다시 하게 만듭니다. 이번 개선은 그 지점을 겨냥했습니다.",
+        "세로 영상 직접 생성은 쇼츠 같은 짧은 영상 플랫폼을 의식한 변화입니다. 구글이 YouTube Shorts에 Ingredients to Video를 처음 넣은 것도 같은 맥락입니다. 다만 일관성이 '이전보다 좋아졌다'는 것은 구글 설명이며, 개선 정도를 보여주는 수치는 발표에 없습니다."
+      ]
+    },
+    {
+      "role": "users",
+      "heading": "누구에게 쓸모 있나",
+      "bullets": [
+        "숏폼 제작자: Gemini 앱이나 YouTube Create 앱에서 같은 캐릭터로 여러 장면을 만드는 작업을 다시 시험해 볼 만합니다.",
+        "영상·광고 실무자: 납품용 고화질이 필요하면 Flow나 API의 1080p·4K 옵션을 써야 합니다.",
+        "개발자: Gemini API·Vertex AI에서 개선판과 세로 형식을 쓸 수 있습니다."
+      ]
+    },
+    {
+      "role": "open",
+      "heading": "확인이 필요한 것",
+      "bullets": [
+        "요금제별 생성 횟수·길이 제한과 API 가격 변화는 이 발표에 나오지 않습니다.",
+        "구글 도구로 만든 영상에는 SynthID 워터마크가 들어가며, Gemini 앱에서 영상이 구글 AI로 만들어졌는지 확인할 수 있습니다. 다른 회사 도구로 만든 영상까지 판별되는 것은 아닙니다."
+      ]
+    }
+  ]
+}

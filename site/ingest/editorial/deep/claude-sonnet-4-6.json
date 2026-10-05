@@ -1,0 +1,68 @@
+{
+  "slug": "claude-sonnet-4-6",
+  "lead": "Anthropic이 중간 등급 모델 Claude Sonnet 4.6을 내놓고, claude.ai와 Claude Cowork의 무료·Pro 요금제 기본 모델로 바꿨습니다. 가격은 Sonnet 4.5와 같은 100만 토큰당 입력 3달러·출력 15달러를 유지했고, 100만 토큰 맥락을 베타로 지원합니다. 회사는 예전엔 Opus급이 필요했던 작업을 Sonnet 가격으로 할 수 있다고 강조했습니다.",
+  "facts": [
+    "2월 17일 Anthropic이 Claude Sonnet 4.6을 공개했습니다.",
+    "claude.ai와 Claude Cowork에서 무료·Pro 요금제의 기본 모델이 Sonnet 4.6으로 바뀌었습니다.",
+    "API 가격은 Sonnet 4.5와 같은 100만 토큰당 입력 3달러·출력 15달러부터이며, 100만 토큰 맥락은 베타입니다.",
+    "Claude Code 초기 시험에서 사용자들은 약 70%의 경우 Sonnet 4.5보다, 59%의 경우 Opus 4.5보다 Sonnet 4.6을 선호했다고 밝혔습니다.",
+    "컴퓨터 사용 능력과 프롬프트 주입 저항력이 Sonnet 4.5보다 크게 좋아졌다고 회사는 설명했습니다."
+  ],
+  "sections": [
+    {
+      "role": "what",
+      "heading": "무엇이 바뀌었나",
+      "paragraphs": [
+        "Anthropic은 Sonnet 4.6을 코딩, 컴퓨터 사용, 긴 맥락 추론, 에이전트 계획, 지식 업무, 디자인 전반에 걸친 '전면 업그레이드'라고 설명했습니다. 가장 많이 쓰이는 중간 등급 모델이 바뀌었다는 점에서, 상위 모델 출시보다 일반 사용자가 체감하는 범위가 넓습니다.",
+        "기본 모델 교체가 핵심입니다. 무료·Pro 사용자는 따로 고르지 않아도 claude.ai와 Cowork에서 Sonnet 4.6을 쓰게 됩니다."
+      ]
+    },
+    {
+      "role": "change",
+      "heading": "회사가 밝힌 개선 내용 (Anthropic 발표 기준)",
+      "bullets": [
+        "Claude Code 선호도: Sonnet 4.5 대비 약 70%, 11월 최상위 모델 Opus 4.5 대비 59%",
+        "사용자 평가: 과도한 설계와 '게으름'이 줄고, 성공했다는 거짓 보고와 환각이 적으며, 여러 단계 작업을 끝까지 수행",
+        "문서 이해 평가 OfficeQA에서 Opus 4.6과 같은 성능",
+        "컴퓨터 사용 평가 OSWorld-Verified에서 이전 Sonnet보다 꾸준히 상승",
+        "시뮬레이션 사업 운영 평가 Vending-Bench Arena에서 초반 10개월 투자 후 수익 전환 전략으로 Sonnet 4.5를 앞섬"
+      ]
+    },
+    {
+      "role": "point",
+      "heading": "봐야 할 지점",
+      "paragraphs": [
+        "핵심은 가격 대비 성능입니다. Sonnet 4.6은 Opus 계열(출시 당시 입력 5달러·출력 25달러)보다 싼 가격에 Opus 4.5보다 선호된다는 결과를 내세웠습니다. Opus를 주로 쓰던 개발자에게 비용을 줄일 선택지가 생긴 셈입니다. 다만 선호도 수치는 Anthropic의 초기 시험 결과이고, 시험 방식은 발표에 자세히 나오지 않습니다.",
+        "컴퓨터 사용도 주목할 부분입니다. API가 없는 오래된 사내 시스템을 사람처럼 화면을 보고 조작하는 기능인데, Anthropic은 여전히 가장 숙련된 사람보다는 못하다고 인정했습니다. 웹페이지에 숨긴 지시로 모델을 조종하는 프롬프트 주입 위험도 함께 언급하며, 저항력이 Sonnet 4.5보다 크게 좋아져 Opus 4.6과 비슷한 수준이라고 했습니다."
+      ]
+    },
+    {
+      "role": "users",
+      "heading": "누구에게 무엇이 달라지나",
+      "bullets": [
+        "무료·Pro 사용자: claude.ai와 Cowork의 기본 모델이 자동으로 Sonnet 4.6이 됩니다.",
+        "개발자: 같은 가격으로 모델만 바꾸면 됩니다. Opus를 쓰던 코딩 작업 일부를 Sonnet 4.6으로 옮겨 비용을 비교해 볼 만합니다.",
+        "긴 문서·코드베이스 작업: 100만 토큰 맥락은 출시 당시 베타였고, 3월 12일 정식 제공으로 바뀌었습니다."
+      ]
+    },
+    {
+      "role": "open",
+      "heading": "이후 바뀐 점과 미확인 사항",
+      "bullets": [
+        "현재 기준: 이 사이트 기록상 3월 12일 Sonnet 4.6의 100만 토큰 맥락이 정식 제공되며 긴 맥락 할증 없이 표준 가격이 적용됐습니다. 출시 당시 베타 조건과 다릅니다.",
+        "이 사이트 기록상 6월 30일 Claude Sonnet 5가 나왔습니다. 현재 기본 모델이 무엇인지는 claude.ai에서 확인해야 합니다.",
+        "한국어 작업 성능은 따로 발표되지 않았습니다."
+      ]
+    }
+  ],
+  "references": [
+    {
+      "sourceName": "Claude API 문서",
+      "sourceTitle": "Pricing",
+      "sourceUrl": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "sourcePublishedAt": "",
+      "checkedAt": "2026-10-02",
+      "note": "현재 긴 맥락 가격 정책(4.6 이후 100만 토큰 표준 가격)"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "slug": "ai-funding-2026",
+  "publishedAt": "2026-10-01",
+  "checkedAt": "2026-10-01",
+  "category": "INVESTMENT",
+  "title": "2026년 상반기, AI 모델 회사 두 곳이 공식 발표한 투자금만 2,170억 달러",
+  "summary": "OpenAI와 Anthropic이 2026년에 공식 발표한 신규 자금 조달 규모입니다.",
+  "point": "Anthropic의 기업가치는 2월 3,800억 달러에서 5월 9,650억 달러로 석 달여 만에 2.5배가 됐습니다. 이 돈의 대부분은 칩과 데이터센터로 갑니다. 투자금 규모와 실제 매출은 다른 숫자라는 점을 함께 봐야 합니다.",
+  "type": "bar",
+  "unit": "억 달러 (신규 조달액)",
+  "basis": "각 회사 공식 발표문에 적힌 신규 조달 금액. 기업가치는 Anthropic만 발표문에 명시돼 메모로 표시. 비공개·미발표 투자와 다른 회사(xAI 등)는 공식 원문을 수집하지 못해 제외. OpenAI의 2월 27일 1,100억 달러 발표와 3월 31일 1,220억 달러 발표의 관계(포함 여부)는 원문에 명시되지 않아 3월 발표만 셈.",
+  "topics": [
+    "openai",
+    "anthropic"
+  ],
+  "items": [
+    {
+      "label": "OpenAI (3월)",
+      "group": "OpenAI",
+      "value": 1220,
+      "display": "1,220억 달러",
+      "date": "2026-03-31",
+      "storySlug": "openai-raises-122b",
+      "note": "2월 27일엔 1,100억 달러 투자를 별도 발표. 두 발표가 같은 자금인지는 원문에 없어 더하지 않음"
+    },
+    {
+      "label": "Anthropic 시리즈 H (5월)",
+      "group": "Anthropic",
+      "value": 650,
+      "display": "650억 달러",
+      "note": "기업가치 9,650억 달러",
+      "date": "2026-05-28",
+      "storySlug": "anthropic-series-h-65b"
+    },
+    {
+      "label": "Anthropic 시리즈 G (2월)",
+      "group": "Anthropic",
+      "value": 300,
+      "display": "300억 달러",
+      "note": "투자 후 기업가치 3,800억 달러",
+      "date": "2026-02-12",
+      "storySlug": "anthropic-series-g-30b"
+    }
+  ],
+  "sources": [
+    {
+      "name": "OpenAI — Accelerating the next phase of AI",
+      "url": "https://openai.com/index/accelerating-the-next-phase-ai"
+    },
+    {
+      "name": "Anthropic — Series G",
+      "url": "https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation"
+    },
+    {
+      "name": "Anthropic — Series H",
+      "url": "https://www.anthropic.com/news/series-h"
+    },
+    {
+      "name": "OpenAI",
+      "url": "https://openai.com/index/scaling-ai-for-everyone"
+    }
+  ],
+  "relatedStories": [
+    "openai-raises-122b",
+    "anthropic-series-g-30b",
+    "anthropic-series-h-65b",
+    "anthropic-draft-s1",
+    "openai-110b-investment-feb"
+  ]
+}

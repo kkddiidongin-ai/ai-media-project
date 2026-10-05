@@ -1,0 +1,70 @@
+{
+  "slug": "gpt-5-4-mini-nano",
+  "lead": "OpenAI가 GPT-5.4의 작고 빠른 버전인 GPT-5.4 mini와 nano를 API에 내놨습니다. mini는 GPT-5.4급 능력을 대량 작업용으로 줄인 모델이고, nano는 속도와 비용이 가장 중요한 단순 대량 작업용입니다. 가격은 GPT-5.4(입력 2.5달러)보다 크게 낮아, mini는 입력 0.75달러, nano는 0.2달러입니다(100만 토큰당).",
+  "facts": [
+    "3월 17일 OpenAI가 GPT-5.4 mini와 GPT-5.4 nano를 Chat Completions·Responses API에 출시했습니다.",
+    "GPT-5.4 mini는 도구 검색, 내장 컴퓨터 사용, 압축(compaction)을 지원합니다.",
+    "GPT-5.4 nano는 압축은 지원하지만 도구 검색과 컴퓨터 사용은 지원하지 않습니다.",
+    "OpenAI 모델 문서 기준 mini의 맥락 창은 40만 토큰(입력 최대 27만2천), 출력은 최대 12만8천 토큰입니다.",
+    "100만 토큰당 가격은 mini가 입력 0.75달러·출력 4.5달러, nano가 입력 0.2달러·출력 1.25달러입니다."
+  ],
+  "sections": [
+    {
+      "role": "what",
+      "heading": "두 모델의 차이",
+      "bullets": [
+        "GPT-5.4 mini: GPT-5.4의 강점을 더 빠르고 효율적인 모델로. 코딩, 컴퓨터 사용, 하위 에이전트용. 도구 검색·컴퓨터 사용·압축 지원",
+        "GPT-5.4 nano: 속도와 비용이 가장 중요한 단순 대량 작업용. 압축만 지원",
+        "mini 가격: 입력 0.75달러(캐시 0.075달러) / 출력 4.5달러",
+        "nano 가격: 입력 0.2달러(캐시 0.02달러) / 출력 1.25달러",
+        "mini 추론 강도: none(기본값)부터 xhigh까지"
+      ]
+    },
+    {
+      "role": "point",
+      "heading": "봐야 할 지점",
+      "paragraphs": [
+        "OpenAI 모델 문서는 mini를 '코딩, 컴퓨터 사용, 하위 에이전트를 위한 가장 강한 mini 모델'로 소개합니다. '하위 에이전트용'이라는 표현이 핵심입니다. 큰 모델 하나가 모든 일을 하는 대신, 큰 모델이 계획하고 작은 모델 여러 개가 세부 작업을 나눠 맡는 구조가 에이전트의 기본 형태가 되고 있습니다. 하위 작업을 맡는 모델은 많이, 자주 불리므로 단가가 낮아야 합니다.",
+        "가격 차이는 큽니다. 출력 기준으로 GPT-5.4(15달러)와 비교하면 mini는 약 3분의 1, nano는 12분의 1 수준입니다. 어떤 작업을 어느 모델에 보내느냐가 비용을 좌우하므로, 같은 작업을 세 모델로 돌려 품질 차이를 확인해 보는 것이 출발점입니다."
+      ],
+      "bullets": []
+    },
+    {
+      "role": "users",
+      "heading": "개발자에게",
+      "bullets": [
+        "분류·추출·간단한 요약처럼 대량으로 반복하는 작업: nano부터 시험해 볼 만합니다.",
+        "화면 조작이나 많은 도구를 다루는 하위 에이전트: 도구 검색·컴퓨터 사용을 지원하는 mini가 맞습니다. nano는 이 기능이 없습니다.",
+        "데이터 상주(지역 처리) 엔드포인트를 쓰면 mini도 10% 할증이 붙습니다.",
+        "ChatGPT만 쓰는 사용자: API용 모델 출시라 ChatGPT 화면에서 달라지는 점은 이 발표에 없습니다."
+      ]
+    },
+    {
+      "role": "open",
+      "heading": "확인하지 못한 것",
+      "bullets": [
+        "OpenAI 발표 원문(openai.com)은 이 사이트의 자동 확인 도구 접근이 차단돼(403), 성능 비교 수치는 넣지 않았습니다. 모델 사양과 가격은 OpenAI 모델 문서와 변경 기록에서 가져왔습니다.",
+        "nano의 맥락 창 크기는 이 사이트가 확인한 문서 범위에 나오지 않습니다.",
+        "이후 GPT-5.6 Luna, GPT-6 Luna 같은 더 새로운 경량 모델이 나와, 지금 고른다면 함께 비교해야 합니다."
+      ]
+    }
+  ],
+  "references": [
+    {
+      "sourceName": "OpenAI API 문서",
+      "sourceTitle": "GPT-5.4 Mini (Models)",
+      "sourceUrl": "https://developers.openai.com/api/docs/models/gpt-5.4-mini",
+      "sourcePublishedAt": "",
+      "checkedAt": "2026-10-02",
+      "note": "mini 맥락·출력 한도, 추론 강도, 가격, 비교표의 nano 가격"
+    },
+    {
+      "sourceName": "OpenAI API 문서",
+      "sourceTitle": "Changelog",
+      "sourceUrl": "https://developers.openai.com/api/docs/changelog",
+      "sourcePublishedAt": "",
+      "checkedAt": "2026-10-02",
+      "note": "3월 17일 mini·nano 출시, 모델별 지원 기능(도구 검색·컴퓨터 사용·압축)"
+    }
+  ]
+}

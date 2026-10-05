@@ -1,0 +1,6 @@
+# Vercel CLI 업로드 제외 (빌드는 Vercel에서 다시 한다)
+.next
+out
+node_modules
+ingest/log
+*.tsbuildinfo

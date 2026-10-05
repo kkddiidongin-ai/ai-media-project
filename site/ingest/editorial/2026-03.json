@@ -1,0 +1,710 @@
+[
+  {
+    "c": "dff56ece1971",
+    "slug": "gpt-5-3-instant",
+    "title": "ChatGPT 기본 대화 모델 'GPT-5.3 Instant' 공개",
+    "summary": "일상 대화를 더 매끄럽고 쓸모 있게 만드는 데 초점을 맞춘 업데이트입니다.",
+    "cat": "MODEL_RELEASE",
+    "topics": [
+      "openai",
+      "chatgpt"
+    ],
+    "companies": [
+      "OpenAI"
+    ],
+    "products": [
+      "GPT-5.3 Instant"
+    ],
+    "facts": [
+      "OpenAI가 2026년 3월 3일 'GPT-5.3 Instant: Smoother, more useful everyday conversations'를 발표하고 시스템 카드를 함께 공개했습니다."
+    ],
+    "why": "Instant 등급은 ChatGPT에서 가장 많은 사람이 매일 쓰는 모델입니다. 화려한 최상위 모델보다 체감 변화가 큽니다.",
+    "change": "평소 쓰던 ChatGPT의 말투나 답변 길이가 달라졌다고 느낄 수 있습니다.",
+    "prio": 2
+  },
+  {
+    "c": "778534f65631",
+    "slug": "gpt-5-4",
+    "title": "OpenAI 'GPT-5.4' 출시… 100만 토큰 맥락, 업무용 최상위 모델",
+    "summary": "코딩, 컴퓨터 사용, 도구 검색을 강화하고 100만 토큰 컨텍스트를 지원합니다.",
+    "cat": "MODEL_RELEASE",
+    "topics": [
+      "openai",
+      "chatgpt",
+      "ai-coding",
+      "ai-agent"
+    ],
+    "companies": [
+      "OpenAI"
+    ],
+    "products": [
+      "GPT-5.4",
+      "GPT-5.4 Thinking"
+    ],
+    "facts": [
+      "OpenAI는 GPT-5.4를 전문 업무용으로 가장 유능하고 효율적인 최상위 모델이라고 소개했습니다.",
+      "코딩, 컴퓨터 사용, 도구 검색 성능과 100만 토큰 컨텍스트를 내세웠습니다."
+    ],
+    "why": "100만 토큰은 긴 계약서나 보고서 여러 개를 한 번에 넣을 수 있는 분량입니다. 같은 날 Excel용 ChatGPT도 이 모델을 기반으로 나왔습니다.",
+    "change": "긴 문서를 통째로 넣고 질문하는 작업이 쉬워집니다. 다만 길게 넣을수록 중간 내용을 놓치는 경우가 있으니 중요한 부분은 따로 확인하세요.",
+    "prio": 1
+  },
+  {
+    "c": "70299260bcc5",
+    "slug": "chatgpt-for-excel",
+    "title": "'ChatGPT for Excel' 출시… 금융 데이터 연동까지",
+    "summary": "GPT-5.4 기반으로 엑셀 안에서 모델링·리서치·분석을 돕습니다.",
+    "cat": "WORK",
+    "topics": [
+      "openai",
+      "chatgpt",
+      "ai-work"
+    ],
+    "companies": [
+      "OpenAI",
+      "Microsoft"
+    ],
+    "products": [
+      "ChatGPT for Excel",
+      "GPT-5.4"
+    ],
+    "facts": [
+      "OpenAI가 ChatGPT for Excel과 새 금융 앱 연동을 발표했습니다.",
+      "GPT-5.4 기반이며, 규제가 있는 환경에서의 모델링·리서치·분석을 겨냥했습니다."
+    ],
+    "why": "사무직이 가장 오래 머무는 프로그램 중 하나인 엑셀 안으로 ChatGPT가 직접 들어왔습니다.",
+    "change": "엑셀 수식·분석을 자주 다룬다면 직접 써볼 만한 변화입니다. 숫자가 맞는지는 원본 데이터와 꼭 대조하세요.",
+    "prio": 1
+  },
+  {
+    "c": "b64f004014dc",
+    "slug": "gemini-3-1-flash-lite",
+    "title": "구글 'Gemini 3.1 Flash-Lite'… Gemini 3 중 가장 빠르고 저렴",
+    "summary": "대량 처리용으로 비용과 속도에 초점을 맞춘 모델입니다.",
+    "cat": "MODEL_RELEASE",
+    "topics": [
+      "google",
+      "gemini"
+    ],
+    "companies": [
+      "Google",
+      "Google DeepMind"
+    ],
+    "products": [
+      "Gemini 3.1 Flash-Lite"
+    ],
+    "facts": [
+      "구글은 Gemini 3.1 Flash-Lite를 Gemini 3 시리즈 중 가장 빠르고 비용 효율적인 모델이라고 밝혔습니다."
+    ],
+    "why": "AI를 서비스에 넣는 회사 입장에서는 최고 성능보다 '싸고 빠른 모델'이 실제 비용을 결정합니다.",
+    "change": "개발자용 변화입니다. AI 기능이 들어간 앱의 가격이나 무료 한도가 넓어지는 바탕이 될 수 있습니다.",
+    "prio": 3,
+    "secondary": [
+      "25ba8a02b810"
+    ]
+  },
+  {
+    "c": "7edb73eb9c54",
+    "slug": "anthropic-department-of-war-update",
+    "title": "Anthropic 아모데이 CEO, 국방부와의 갈등 '현재 상황' 성명",
+    "summary": "2월 말 '공급망 위험' 지정 지시 이후 이어진 상황에 대한 CEO 명의의 성명입니다.",
+    "cat": "REGULATION",
+    "topics": [
+      "anthropic",
+      "ai-regulation"
+    ],
+    "companies": [
+      "Anthropic",
+      "U.S. Department of War"
+    ],
+    "products": [],
+    "facts": [
+      "Anthropic이 2026년 3월 5일 다리오 아모데이 CEO 명의로 'Where things stand with the Department of War' 성명을 냈습니다."
+    ],
+    "why": "AI 회사와 정부 사이의 사용 조건 분쟁이 한 번의 발표로 끝나지 않고 이어지고 있다는 점을 보여줍니다.",
+    "change": "일반 사용자에게 직접적인 변화는 없지만, 이 분쟁의 결과는 AI 회사가 정부 고객에게 사용 제한을 걸 수 있는지에 대한 선례가 됩니다.",
+    "prio": 2
+  },
+  {
+    "c": "f15850658adf",
+    "slug": "codex-security-preview",
+    "title": "OpenAI, 보안 취약점을 찾아 고치는 'Codex Security' 프리뷰",
+    "summary": "프로젝트 맥락을 분석해 취약점을 찾고, 검증하고, 패치까지 제안하는 보안 에이전트입니다.",
+    "cat": "SECURITY",
+    "topics": [
+      "openai",
+      "ai-security",
+      "ai-coding",
+      "ai-agent"
+    ],
+    "companies": [
+      "OpenAI"
+    ],
+    "products": [
+      "Codex Security"
+    ],
+    "facts": [
+      "Codex Security는 프로젝트 맥락을 분석해 복잡한 취약점을 탐지·검증·패치하는 AI 보안 에이전트로, 연구 프리뷰로 공개됐습니다."
+    ],
+    "why": "같은 주 Anthropic도 Claude로 Firefox 취약점을 찾은 결과를 공개했습니다. AI가 보안 점검 인력의 일을 실제로 나눠 맡기 시작했습니다.",
+    "change": "개발팀이라면 AI 보안 점검을 도입할 선택지가 늘었습니다. 오탐·누락이 있을 수 있으니 기존 점검을 대체하기보다 보완으로 쓰는 것이 안전합니다.",
+    "prio": 2
+  },
+  {
+    "c": "d37d7ec81f2f",
+    "slug": "claude-finds-firefox-vulnerabilities",
+    "title": "Claude Opus 4.6, 2주 만에 Firefox 취약점 22개 발견",
+    "summary": "Anthropic과 Mozilla의 협력 결과입니다. 그중 14개는 심각도 '높음'이었습니다.",
+    "cat": "SECURITY",
+    "topics": [
+      "anthropic",
+      "claude",
+      "ai-security"
+    ],
+    "companies": [
+      "Anthropic",
+      "Mozilla"
+    ],
+    "products": [
+      "Claude Opus 4.6",
+      "Firefox"
+    ],
+    "facts": [
+      "Claude Opus 4.6이 2주 동안 Firefox 취약점 22개를 찾았고, 14개가 높은 심각도로 분류됐습니다.",
+      "개념 증명(PoC)과 패치 후보도 Mozilla에 함께 전달했다고 밝혔습니다."
+    ],
+    "why": "AI가 실제 대형 오픈소스에서 심각한 취약점을 찾아냈다는 구체적인 숫자입니다. 방어에 쓰일 수 있는 만큼 공격에도 쓰일 수 있다는 뜻이기도 합니다.",
+    "change": "브라우저와 앱 업데이트를 미루지 말아야 할 이유가 하나 더 생겼습니다. 취약점을 찾는 속도가 빨라지면 패치 주기도 빨라집니다.",
+    "prio": 2
+  },
+  {
+    "c": "bdffd4a95bf1",
+    "slug": "openai-acquires-promptfoo",
+    "title": "OpenAI, AI 보안 플랫폼 Promptfoo 인수",
+    "summary": "개발 단계에서 AI 시스템의 취약점을 찾고 고치도록 돕는 회사입니다.",
+    "cat": "BUSINESS",
+    "topics": [
+      "openai",
+      "ai-security"
+    ],
+    "companies": [
+      "OpenAI",
+      "Promptfoo"
+    ],
+    "products": [
+      "Promptfoo"
+    ],
+    "facts": [
+      "OpenAI가 기업이 개발 중인 AI 시스템의 취약점을 찾아 고치도록 돕는 Promptfoo를 인수한다고 밝혔습니다."
+    ],
+    "why": "에이전트를 기업에 팔려면 '안전하게 테스트했다'는 증거가 필요합니다. 모델 회사가 평가·보안 도구 회사를 사들이는 흐름입니다.",
+    "change": "서비스 이용 방식은 그대로지만, Promptfoo를 쓰던 개발자는 인수 후 오픈소스 유지 방침과 라이선스 공지를 확인하세요.",
+    "prio": 3
+  },
+  {
+    "c": "07cc13a09829",
+    "slug": "google-closes-wiz-acquisition",
+    "title": "구글, 클라우드 보안 기업 Wiz 인수 완료",
+    "summary": "구글 클라우드 보안 사업을 키우기 위한 인수가 마무리됐습니다.",
+    "cat": "BUSINESS",
+    "topics": [
+      "google",
+      "ai-security"
+    ],
+    "companies": [
+      "Google",
+      "Wiz"
+    ],
+    "products": [
+      "Google Cloud",
+      "Wiz"
+    ],
+    "facts": [
+      "구글이 2026년 3월 11일 Wiz 인수를 완료했다고 발표했습니다."
+    ],
+    "why": "클라우드와 AI 서비스가 커질수록 보안이 판매 경쟁력이 됩니다. 구글은 이번 인수를 클라우드 사업 안에서 발표했습니다.",
+    "change": "개인 사용자 변화는 없지만, Wiz를 쓰는 기업 보안팀은 구글 클라우드 통합에 따른 계약·지원 변경 공지를 확인하세요.",
+    "prio": 3
+  },
+  {
+    "c": "6fb92c35c7b6",
+    "slug": "nvidia-thinking-machines-gigawatt",
+    "title": "엔비디아-Thinking Machines Lab, 1GW 이상 Vera Rubin 시스템 배치 협력",
+    "summary": "프런티어 모델 학습을 위한 다년간 파트너십으로, 내년 초 배치를 목표로 합니다.",
+    "cat": "CHIPS_INFRA",
+    "topics": [
+      "nvidia",
+      "ai-chip"
+    ],
+    "companies": [
+      "NVIDIA",
+      "Thinking Machines Lab"
+    ],
+    "products": [
+      "Vera Rubin"
+    ],
+    "facts": [
+      "두 회사가 최소 1GW 규모의 차세대 Vera Rubin 시스템을 배치하는 다년간 전략적 파트너십을 발표했습니다.",
+      "Vera Rubin 플랫폼 배치는 내년 초를 목표로 한다고 밝혔습니다."
+    ],
+    "why": "신생 AI 연구 회사도 기가와트 단위의 컴퓨팅을 계약하는 시대가 됐습니다. 프런티어 모델 경쟁의 진입 비용을 보여줍니다.",
+    "change": "소비자 변화는 없지만, 신생 AI 연구소도 기가와트급 컴퓨팅을 확보하는 경쟁에 들어왔다는 지표입니다.",
+    "prio": 3
+  },
+  {
+    "c": "86f43444a642",
+    "slug": "meta-mtia-four-generations",
+    "title": "메타, 자체 AI 칩 MTIA 확대… 2년 안에 4세대 더 출시",
+    "summary": "엔비디아·AMD 계약과 함께 자체 칩도 계속 키운다는 계획입니다.",
+    "cat": "CHIPS_INFRA",
+    "topics": [
+      "meta",
+      "ai-chip"
+    ],
+    "companies": [
+      "Meta"
+    ],
+    "products": [
+      "MTIA"
+    ],
+    "facts": [
+      "메타는 자체 칩 MTIA가 AI 인프라 전략의 중심이며, 앞으로 2년 동안 새로운 MTIA 칩 4세대를 내놓을 예정이라고 밝혔습니다."
+    ],
+    "why": "2월 엔비디아·AMD와의 대형 계약에 이어 자체 칩 계획까지 내놨습니다. 같은 달 Arm과의 데이터센터 CPU 협력도 발표했습니다.",
+    "change": "메타 앱 사용 방식은 그대로지만, 자체 칩 비중이 커지면 메타의 AI 기능 운영 비용과 출시 속도에 영향을 줄 수 있습니다.",
+    "prio": 3
+  },
+  {
+    "c": "51cbf24b7b8c",
+    "slug": "nvidia-nemotron-3-super",
+    "title": "엔비디아 공개 모델 'Nemotron 3 Super'… 에이전트용 1,200억 파라미터",
+    "summary": "활성 파라미터 120억으로 복잡한 에이전트 시스템을 대규모로 돌리도록 설계했습니다.",
+    "cat": "MODEL_RELEASE",
+    "topics": [
+      "nvidia",
+      "open-models",
+      "ai-agent",
+      "perplexity"
+    ],
+    "companies": [
+      "NVIDIA",
+      "Perplexity"
+    ],
+    "products": [
+      "Nemotron 3 Super"
+    ],
+    "facts": [
+      "Nemotron 3 Super는 1,200억 파라미터(활성 120억)의 공개 모델입니다.",
+      "엔비디아는 에이전트 AI 처리량이 5배 높다고 밝혔고, Perplexity가 사용자에게 이 모델을 제공한다고 소개했습니다."
+    ],
+    "why": "칩 회사인 엔비디아가 공개 모델까지 직접 내놓으며 '공개 모델 생태계'를 자기 하드웨어 쪽으로 끌어오고 있습니다.",
+    "change": "개발자와 기업용입니다. 공개 모델로 에이전트를 만드는 곳에 선택지가 늘었습니다.",
+    "prio": 3
+  },
+  {
+    "c": "54d20a4e93ab",
+    "slug": "the-anthropic-institute",
+    "title": "Anthropic, 강력한 AI의 사회적 문제를 다루는 'The Anthropic Institute' 설립",
+    "summary": "강력한 AI가 사회에 가져올 가장 큰 과제에 대응하기 위한 새 조직입니다.",
+    "cat": "RESEARCH",
+    "topics": [
+      "anthropic",
+      "ai-research",
+      "ai-regulation"
+    ],
+    "companies": [
+      "Anthropic"
+    ],
+    "products": [],
+    "facts": [
+      "Anthropic이 강력한 AI가 사회에 가져올 가장 중요한 과제에 대응하기 위해 The Anthropic Institute를 출범했습니다."
+    ],
+    "why": "모델 회사가 기술 개발과 별도로 사회적 영향 연구 조직을 세우는 흐름입니다.",
+    "change": "일반 사용자에게 직접 변화는 없습니다.",
+    "prio": 3
+  },
+  {
+    "c": "6bb878120c8d",
+    "slug": "claude-partner-network-100m",
+    "title": "Anthropic, 1억 달러 규모 'Claude Partner Network' 출범",
+    "summary": "기업의 Claude 도입을 돕는 파트너사를 위한 프로그램입니다.",
+    "cat": "BUSINESS",
+    "topics": [
+      "anthropic",
+      "claude",
+      "ai-work"
+    ],
+    "companies": [
+      "Anthropic"
+    ],
+    "products": [
+      "Claude Partner Network"
+    ],
+    "facts": [
+      "Anthropic이 기업의 Claude 도입을 돕는 파트너 조직을 위한 Claude Partner Network를 출범하며 1억 달러를 투입한다고 밝혔습니다."
+    ],
+    "why": "기업 AI 도입은 모델만으로 되지 않고 컨설팅·구축 회사가 필요합니다. 기업 시장 경쟁이 '파트너 생태계' 경쟁으로 번지고 있습니다.",
+    "change": "개인 사용자 변화는 없지만, Claude 도입을 돕는 컨설팅·IT 기업이라면 파트너 지원 조건을 확인할 수 있습니다.",
+    "prio": 3
+  },
+  {
+    "c": "c3d41e50070e",
+    "slug": "gpt-5-4-mini-nano",
+    "title": "'GPT-5.4 mini·nano' 출시… 더 작고 빠른 버전",
+    "summary": "코딩, 도구 사용, 대량 API 작업과 하위 에이전트용으로 최적화했습니다.",
+    "cat": "MODEL_RELEASE",
+    "topics": [
+      "openai",
+      "ai-agent"
+    ],
+    "companies": [
+      "OpenAI"
+    ],
+    "products": [
+      "GPT-5.4 mini",
+      "GPT-5.4 nano"
+    ],
+    "facts": [
+      "GPT-5.4 mini와 nano는 코딩, 도구 사용, 멀티모달 추론, 대량 API 작업과 하위 에이전트 작업에 맞춘 GPT-5.4의 작고 빠른 버전입니다."
+    ],
+    "why": "에이전트는 큰 모델 하나가 아니라 작은 모델 여러 개가 일을 나눠 하는 구조로 가고 있습니다. '하위 에이전트용'이라는 설명이 그 흐름을 보여줍니다.",
+    "change": "개발자는 비용을 낮추면서 여러 단계를 자동화할 수 있습니다.",
+    "prio": 2
+  },
+  {
+    "c": "42efb0942a15",
+    "slug": "google-ai-studio-full-stack-vibe-coding",
+    "title": "Google AI Studio에 '풀스택 바이브 코딩'… Antigravity 에이전트와 Firebase 연동",
+    "summary": "말로 설명해서 실제 웹 앱을 만드는 기능을 AI Studio에 넣었습니다.",
+    "cat": "AI_CODING",
+    "topics": [
+      "google",
+      "gemini",
+      "ai-coding",
+      "ai-agent"
+    ],
+    "companies": [
+      "Google"
+    ],
+    "products": [
+      "Google AI Studio",
+      "Antigravity",
+      "Firebase"
+    ],
+    "facts": [
+      "Google AI Studio에 Antigravity 코딩 에이전트와 Firebase 연동이 들어가, 최신 웹용 실제 앱을 만들 수 있게 됐습니다."
+    ],
+    "why": "코딩을 모르는 사람도 '말로 앱을 만드는' 도구가 대형 회사 제품 안으로 들어왔습니다. 데이터 저장(Firebase)까지 붙었다는 점이 장난감과 실제 앱의 차이입니다.",
+    "change": "간단한 업무용 웹 앱을 직접 만들어볼 수 있습니다. 개인정보를 다루는 앱이라면 보안 설정을 반드시 확인하세요.",
+    "prio": 2
+  },
+  {
+    "c": "625785a3d5f5",
+    "slug": "openai-acquires-astral",
+    "title": "OpenAI, 파이썬 개발 도구 회사 Astral 인수",
+    "summary": "차세대 파이썬 개발 도구로 Codex 성장을 가속하겠다는 목적입니다.",
+    "cat": "BUSINESS",
+    "topics": [
+      "openai",
+      "ai-coding"
+    ],
+    "companies": [
+      "OpenAI",
+      "Astral"
+    ],
+    "products": [
+      "Codex"
+    ],
+    "facts": [
+      "OpenAI가 Astral 인수를 발표하며 차세대 파이썬 개발 도구로 Codex의 성장을 가속한다고 밝혔습니다."
+    ],
+    "why": "코딩 에이전트 경쟁이 모델 성능을 넘어 개발 도구 생태계 확보로 이어지고 있습니다.",
+    "change": "파이썬 개발자라면 앞으로 Codex와 파이썬 도구의 결합이 강해질 수 있습니다.",
+    "prio": 3
+  },
+  {
+    "c": "49a9730ea52b",
+    "slug": "chatgpt-shopping-agentic-commerce",
+    "title": "ChatGPT 쇼핑 강화… 상품 비교와 판매자 연동",
+    "summary": "Agentic Commerce Protocol 기반으로 상품 탐색, 나란히 비교, 판매자 연결을 넣었습니다.",
+    "cat": "CONSUMER",
+    "topics": [
+      "openai",
+      "chatgpt",
+      "ai-search",
+      "ai-agent"
+    ],
+    "companies": [
+      "OpenAI"
+    ],
+    "products": [
+      "ChatGPT",
+      "Agentic Commerce Protocol"
+    ],
+    "facts": [
+      "ChatGPT가 Agentic Commerce Protocol을 바탕으로 시각적인 쇼핑 화면, 상품 나란히 비교, 판매자 연동을 도입했습니다."
+    ],
+    "why": "검색 광고·쇼핑으로 돈을 벌던 구조에 ChatGPT가 직접 들어왔습니다. 1월 광고 시험 계획과 같은 방향입니다.",
+    "change": "ChatGPT에서 상품을 비교할 때, 그 추천이 어떤 기준과 판매자 연동에서 나왔는지 함께 살펴보세요.",
+    "prio": 2
+  },
+  {
+    "c": "21b92d96e26d",
+    "slug": "gemini-import-memories-from-other-ai",
+    "title": "Gemini, 다른 AI 앱의 메모리·대화 기록 가져오기 지원",
+    "summary": "다른 챗봇을 쓰다가 넘어와도 처음부터 다시 시작하지 않도록 했습니다.",
+    "cat": "PRODUCT_UPDATE",
+    "topics": [
+      "google",
+      "gemini"
+    ],
+    "companies": [
+      "Google"
+    ],
+    "products": [
+      "Gemini app"
+    ],
+    "facts": [
+      "Gemini 앱이 다른 AI 채팅 앱에서 쓰던 메모리와 대화 기록을 가져와 처음부터 시작하지 않고 옮겨올 수 있게 했습니다."
+    ],
+    "why": "AI 비서의 '기억'이 쌓일수록 다른 서비스로 옮기기 어려워집니다. 구글은 그 장벽을 낮춰 사용자를 데려오려 합니다.",
+    "change": "다른 서비스에서 Gemini로 옮길 생각이 있다면 기록을 가져올 수 있습니다. 가져가는 대화에 개인정보가 섞여 있지 않은지 먼저 살펴보세요.",
+    "prio": 2
+  },
+  {
+    "c": "ea9b25d6e3af",
+    "slug": "gemini-3-1-flash-live",
+    "title": "음성 대화 모델 'Gemini 3.1 Flash Live', 구글 제품 전반에 적용",
+    "summary": "음성 AI 대화를 더 자연스럽고 안정적으로 만드는 모델입니다.",
+    "cat": "VOICE",
+    "topics": [
+      "google",
+      "gemini",
+      "voice-ai"
+    ],
+    "companies": [
+      "Google",
+      "Google DeepMind"
+    ],
+    "products": [
+      "Gemini 3.1 Flash Live"
+    ],
+    "facts": [
+      "Gemini 3.1 Flash Live가 구글 제품 전반에서 제공되기 시작했고, 개발자는 실시간 대화형 에이전트를 만들 수 있습니다."
+    ],
+    "why": "음성은 타이핑이 불편한 사람에게 AI를 쓰는 가장 쉬운 길입니다. 대화의 끊김과 오작동이 줄어드는지가 핵심입니다.",
+    "change": "Gemini Live로 말로 대화할 때 반응이 자연스러워졌는지 직접 확인해 볼 만합니다.",
+    "prio": 2,
+    "secondary": [
+      "a64722202630",
+      "c6e066999770"
+    ]
+  },
+  {
+    "c": "1ace93f90059",
+    "slug": "lyria-3-pro",
+    "title": "'Lyria 3 Pro'로 더 긴 곡 생성… 더 많은 구글 제품에",
+    "summary": "2월 Gemini 앱에 들어간 음악 생성 모델을 전문가용 도구로 넓혔습니다.",
+    "cat": "PRODUCT_UPDATE",
+    "topics": [
+      "google",
+      "gemini"
+    ],
+    "companies": [
+      "Google",
+      "Google DeepMind"
+    ],
+    "products": [
+      "Lyria 3 Pro"
+    ],
+    "facts": [
+      "구글이 Lyria 3를 전문가들이 일상적으로 작업하는 도구로 확대한다고 밝혔습니다.",
+      "제목에서 더 긴 곡 생성과 더 많은 구글 제품 적용을 내세웠고, 같은 날 개발자용 Lyria 3도 공개했습니다."
+    ],
+    "why": "30초 곡 생성에서 시작한 기능이 한 달 만에 전문가용 긴 곡으로 확장됐습니다.",
+    "change": "영상 제작자라면 배경음악 제작 도구로 시험해 볼 만합니다. 상업 이용 조건은 따로 확인하세요.",
+    "prio": 3,
+    "secondary": [
+      "dd5ffeb6b8e0",
+      "66b8b8b00d62"
+    ]
+  },
+  {
+    "c": "54419a252b09",
+    "slug": "veo-3-1-lite",
+    "title": "구글, 가장 저렴한 영상 생성 모델 'Veo 3.1 Lite'",
+    "summary": "Gemini API 유료 프리뷰로 제공하고 AI Studio에서 시험할 수 있습니다.",
+    "cat": "VIDEO",
+    "topics": [
+      "google",
+      "gemini",
+      "ai-video"
+    ],
+    "companies": [
+      "Google"
+    ],
+    "products": [
+      "Veo 3.1 Lite"
+    ],
+    "facts": [
+      "구글은 Veo 3.1 Lite를 가장 비용 효율적인 영상 생성 모델이라고 소개했습니다.",
+      "Gemini API에서 유료 프리뷰로, Google AI Studio에서 시험용으로 제공됩니다."
+    ],
+    "why": "영상 생성은 비용이 가장 큰 걸림돌입니다. 저가 모델이 나오면 영상 생성 기능을 넣는 앱이 늘어납니다.",
+    "change": "개발자용 변화입니다.",
+    "prio": 3
+  },
+  {
+    "c": "092ef1a3b234",
+    "slug": "openai-raises-122b",
+    "title": "OpenAI, 1,220억 달러 신규 투자 유치",
+    "summary": "프런티어 AI 확장, 차세대 컴퓨팅 투자, ChatGPT·Codex·기업용 수요 대응에 쓴다고 밝혔습니다.",
+    "cat": "INVESTMENT",
+    "topics": [
+      "openai",
+      "chatgpt",
+      "ai-chip"
+    ],
+    "companies": [
+      "OpenAI"
+    ],
+    "products": [
+      "ChatGPT",
+      "Codex"
+    ],
+    "facts": [
+      "OpenAI가 1,220억 달러의 신규 자금을 조달했으며, 프런티어 AI의 글로벌 확장, 차세대 컴퓨팅 투자, ChatGPT·Codex·기업용 AI 수요 대응에 쓴다고 밝혔습니다."
+    ],
+    "why": "2월 Anthropic의 300억 달러에 이어 AI 회사 투자 규모가 계속 커지고 있습니다. 대부분 데이터센터와 칩에 들어갈 돈입니다.",
+    "change": "직접적인 변화는 없지만, 컴퓨팅이 늘면 사용 한도 완화나 새 기능 출시로 이어질 수 있습니다.",
+    "prio": 1
+  },
+  {
+    "c": "7db2579a45ab",
+    "slug": "ray-ban-meta-prescription",
+    "title": "메타, 처음으로 '도수 렌즈용' AI 안경 출시",
+    "summary": "안경을 종일 써야 하는 사람을 위한 새 Ray-Ban Meta 제품입니다.",
+    "cat": "CONSUMER",
+    "topics": [
+      "meta"
+    ],
+    "companies": [
+      "Meta",
+      "Ray-Ban"
+    ],
+    "products": [
+      "Ray-Ban Meta"
+    ],
+    "facts": [
+      "메타가 도수 안경을 쓰는 사람과 종일 안경을 쓰는 사람을 위해 설계한 새 Ray-Ban Meta 안경을 발표했습니다."
+    ],
+    "why": "AI 안경이 액세서리에서 '매일 쓰는 안경'으로 들어가려면 도수 렌즈 지원이 필수입니다.",
+    "change": "국내 출시 여부와 렌즈 지원 범위는 따로 확인이 필요합니다.",
+    "prio": 3
+  },
+  {
+    "c": "b421def96e56",
+    "slug": "github-copilot-data-training-opt-out",
+    "title": "GitHub Copilot, 4월 24일부터 개인 요금제 대화 데이터를 학습에 사용 (거부 가능)",
+    "summary": "Free·Pro·Pro+ 사용자의 입력·출력·코드 조각을 모델 개선에 쓰며, 원하지 않으면 직접 거부해야 합니다.",
+    "cat": "SECURITY",
+    "topics": [
+      "copilot",
+      "microsoft",
+      "ai-coding",
+      "ai-security"
+    ],
+    "companies": [
+      "GitHub",
+      "Microsoft"
+    ],
+    "products": [
+      "GitHub Copilot"
+    ],
+    "facts": [
+      "4월 24일부터 Copilot Free, Pro, Pro+ 사용자의 상호작용 데이터(입력, 출력, 코드 조각, 관련 맥락)가 AI 모델 학습·개선에 사용됩니다.",
+      "사용자가 거부(opt-out)하지 않으면 적용됩니다."
+    ],
+    "why": "기본값이 '학습에 사용'이고 사용자가 직접 꺼야 하는 방식입니다. 개인 요금제로 회사 코드를 다루는 사람에게는 중요한 변화입니다.",
+    "change": "Copilot 개인 요금제를 쓴다면 설정에서 데이터 사용 동의 상태를 지금 확인하세요. 회사 코드는 회사 계정·정책을 따르는 것이 안전합니다.",
+    "prio": 1
+  },
+  {
+    "c": "24e1d47edb54",
+    "slug": "mistral-small-4",
+    "title": "미스트랄, 'Mistral Small 4' 출시",
+    "summary": "미스트랄이 소형 모델의 새 세대를 내놨습니다. 같은 날 엔비디아와의 공개 모델 협력도 발표했습니다.",
+    "cat": "MODEL_RELEASE",
+    "topics": [
+      "mistral",
+      "open-models"
+    ],
+    "companies": [
+      "Mistral AI",
+      "NVIDIA"
+    ],
+    "products": [
+      "Mistral Small 4"
+    ],
+    "facts": [
+      "미스트랄이 2026년 3월 16일 'Introducing Mistral Small 4'를 발표했습니다.",
+      "같은 날 'Mistral AI partners with NVIDIA to accelerate open frontier models'로 엔비디아와 공개 프런티어 모델 협력을 발표했습니다."
+    ],
+    "why": "미국 빅테크 밖에서 공개 모델을 꾸준히 내는 몇 안 되는 회사입니다. 유럽 기업·기관의 '데이터 주권' 수요와 연결됩니다.",
+    "change": "공개 모델로 사내 AI를 만드는 곳에 선택지가 하나 늘었습니다. 세부 사양은 공식 페이지에서 확인하세요.",
+    "prio": 3,
+    "secondary": [
+      "6c7caa13ac60"
+    ]
+  },
+  {
+    "c": "9f828ccdfb47",
+    "slug": "claude-1m-context-ga",
+    "title": "Claude Opus 4.6·Sonnet 4.6, 100만 토큰 맥락 정식 제공… 추가 요금 없음",
+    "summary": "긴 문서 할증 없이 100만 토큰 전체에 표준 가격을 적용합니다.",
+    "cat": "PRODUCT_UPDATE",
+    "topics": [
+      "anthropic",
+      "claude"
+    ],
+    "companies": [
+      "Anthropic"
+    ],
+    "products": [
+      "Claude Opus 4.6",
+      "Claude Sonnet 4.6"
+    ],
+    "facts": [
+      "Opus 4.6과 Sonnet 4.6에서 100만 토큰 컨텍스트가 정식 제공되며, 긴 맥락 할증 없이 전체 구간에 표준 가격이 적용됩니다.",
+      "한 번에 넣을 수 있는 이미지·PDF 페이지가 600개로 늘었습니다."
+    ],
+    "why": "일주일 전 GPT-5.4도 100만 토큰을 내세웠습니다. 긴 문서 처리에서 '추가 요금 없음'이 경쟁 조건이 됐습니다.",
+    "change": "긴 보고서나 계약서 묶음을 한 번에 넣어볼 수 있습니다. 길게 넣을수록 놓치는 부분이 없는지 확인하세요.",
+    "prio": 2
+  },
+  {
+    "c": "44f958dd6da7",
+    "slug": "claude-computer-use-dispatch",
+    "title": "Claude가 내 컴퓨터에서 앱·브라우저를 직접 조작… 휴대폰에서 'Dispatch'로 지시",
+    "summary": "macOS 연구 프리뷰로, 앱을 열고 브라우저를 탐색하고 개발 도구를 실행합니다.",
+    "cat": "AI_AGENT",
+    "topics": [
+      "anthropic",
+      "claude",
+      "ai-agent"
+    ],
+    "companies": [
+      "Anthropic"
+    ],
+    "products": [
+      "Claude",
+      "Dispatch"
+    ],
+    "facts": [
+      "Claude가 앱을 열고, 브라우저를 탐색하고, 개발 도구를 실행해 작업을 끝내며, 휴대폰에서 Dispatch로 일을 맡길 수 있습니다. macOS 연구 프리뷰입니다."
+    ],
+    "why": "AI가 대화창 밖으로 나와 실제 컴퓨터를 조작하는 기능이 일반 사용자 제품에 들어왔습니다.",
+    "change": "맥 사용자라면 써볼 수 있습니다. 결제·삭제처럼 되돌리기 어려운 작업은 AI가 실행하기 전에 확인 절차를 두세요.",
+    "prio": 2
+  }
+]

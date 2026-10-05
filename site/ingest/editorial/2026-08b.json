@@ -1,0 +1,1129 @@
+[
+  {
+    "c": "b47d1ef5e7c5",
+    "slug": "xai-grok-4-6",
+    "title": "xAI 'Grok 4.6'… 50만 토큰 맥락, 20만 토큰 넘으면 가격 2배",
+    "summary": "API 출시 이틀 뒤 GitHub Copilot에도 들어왔습니다.",
+    "cat": "MODEL_RELEASE",
+    "topics": [
+      "xai",
+      "grok",
+      "ai-coding"
+    ],
+    "companies": [
+      "xAI",
+      "GitHub"
+    ],
+    "products": [
+      "Grok 4.6",
+      "GitHub Copilot"
+    ],
+    "facts": [
+      "xAI 개발자 문서에 따르면 코딩, 에이전트 작업, 지식 업무용 프런티어 모델 Grok 4.6이 xAI API에 출시됐습니다. 50만 토큰 맥락 창, 텍스트·이미지 입력(출력은 텍스트), 출력 길이 제한 없음이 특징입니다.",
+      "가격은 입력 20만 토큰 이하일 때 100만 토큰당 입력 2달러·캐시 입력 0.5달러·출력 6달러, 20만 토큰을 넘으면 각각 4달러·1달러·12달러입니다.",
+      "8월 14일 GitHub은 Grok 4.6을 Copilot에 순차 제공한다고 밝혔습니다."
+    ],
+    "why": "Grok 4.5(7월) 후 5주 만의 교체입니다. 긴 입력에 높은 단가를 매기는 구간 요금이 적용돼, 긴 문서를 넣을수록 비용 계산이 달라집니다.",
+    "change": "xAI API로 긴 문서를 처리한다면 20만 토큰을 넘지 않게 나누는 것이 비용상 유리할 수 있습니다.",
+    "prio": 2,
+    "secondary": [
+      "61fc6209c742"
+    ]
+  },
+  {
+    "c": "0d90bae6213f",
+    "slug": "xai-grok-bot",
+    "title": "xAI 'Grok Bot'… 클라우드 컴퓨터에서 계속 일하는 AI 팀원",
+    "summary": "메시지, 승인, 커넥터, 반복 작업(루틴)을 갖춘 상시형 에이전트입니다.",
+    "cat": "AI_AGENT",
+    "topics": [
+      "xai",
+      "grok",
+      "ai-agent"
+    ],
+    "companies": [
+      "xAI"
+    ],
+    "products": [
+      "Grok Bot"
+    ],
+    "facts": [
+      "xAI는 영구적인 클라우드 컴퓨터에서 일하며 메시지, 승인, 커넥터, 루틴 기능을 갖춘 지속형 AI 팀원 Grok Bot을 공개했다고 개발자 문서에서 밝혔습니다."
+    ],
+    "why": "Claude Cowork, Copilot Cowork, Gemini Spark와 같은 '상시 근무형 에이전트' 경쟁에 xAI도 들어왔습니다.",
+    "change": "직접적인 변화는 없지만, 에이전트에 연결하는 계정 권한은 최소한으로 주세요.",
+    "prio": 3
+  },
+  {
+    "c": "3a8585570cab",
+    "slug": "openai-gpt-5-6-cyber-daybreak-red",
+    "title": "OpenAI 'GPT-5.6-Cyber'… 허가된 취약점 연구용 'Daybreak Red'로 제공",
+    "summary": "다음 날에는 Daybreak 모델이 AWS 베드록에도 들어갔습니다.",
+    "cat": "SECURITY",
+    "topics": [
+      "openai",
+      "ai-security",
+      "amazon"
+    ],
+    "companies": [
+      "OpenAI",
+      "Amazon Web Services"
+    ],
+    "products": [
+      "GPT-5.6-Cyber",
+      "Daybreak"
+    ],
+    "facts": [
+      "OpenAI는 사이버보안 특화 모델 GPT-5.6-Cyber를 공개하며, 허가된 취약점 연구, 익스플로잇 검증, 보안 테스트를 위해 Daybreak Red로 제공한다고 밝혔습니다.",
+      "8월 11일 OpenAI와 AWS는 Daybreak 사이버보안 기능을 Amazon Bedrock에서 제공한다고 발표했습니다."
+    ],
+    "why": "6월 Daybreak 발표 후 두 달 만에 모델이 바뀌었습니다. 공격 검증까지 하는 모델을 '허가된 사람'에게만 주는 구조입니다.",
+    "change": "직접적인 변화는 없지만, 보안 기업은 AWS를 통해서도 도입을 검토할 수 있습니다.",
+    "prio": 2,
+    "secondary": [
+      "b274e00978a8"
+    ]
+  },
+  {
+    "c": "833934ee3b25",
+    "slug": "openai-astra-preliminary-cyber-evals",
+    "title": "OpenAI, 차세대 'Astra' 사이버 능력 예비 평가 공개… 안전장치 강화",
+    "summary": "9월 GPT-6 Astra 출시 한 달 전, 위험 평가와 대응 조치를 먼저 밝혔습니다.",
+    "cat": "SECURITY",
+    "topics": [
+      "openai",
+      "ai-security"
+    ],
+    "companies": [
+      "OpenAI"
+    ],
+    "products": [
+      "Astra"
+    ],
+    "facts": [
+      "OpenAI는 Astra에 대한 예비 사이버보안 평가 결과와 안전장치·보안 통제를 강화하는 조치를 공유했습니다.",
+      "8월 4일에는 OpenAI 모델이 관련된 최근 제3자 사이버 평가 사고를 설명하고 모델 시험·평가를 위한 새 안전장치를 밝혔습니다."
+    ],
+    "why": "9월 GPT-6 Astra는 사이버 능력 '위험(Critical)' 등급에 처음 도달한 모델로 발표됐습니다. 출시 전 평가를 공개한 순서가 중요합니다.",
+    "change": "출시 전 평가 공개라 기능 변화는 없지만, 9월 GPT-6 Astra 출시 때 어떤 안전장치가 붙었는지 비교해 볼 수 있습니다.",
+    "prio": 2,
+    "secondary": [
+      "977f60f7e5e3"
+    ]
+  },
+  {
+    "c": "f137d9ea2f9f",
+    "slug": "openai-defenders-window",
+    "title": "OpenAI '방어자의 시간'… AI가 바꾸는 사이버 공격과 보안팀이 지금 할 일",
+    "summary": "자사 방어 강화와 보안팀 권고를 함께 정리했습니다.",
+    "cat": "SECURITY",
+    "topics": [
+      "openai",
+      "ai-security"
+    ],
+    "companies": [
+      "OpenAI"
+    ],
+    "products": [],
+    "facts": [
+      "OpenAI는 AI가 공격자와 방어자 모두의 사이버보안을 바꾸고 있다며, 자사 방어를 어떻게 강화하고 있는지와 보안팀이 지금 할 수 있는 일을 설명했습니다."
+    ],
+    "why": "공격 능력이 강한 모델이 나오기 전, 방어 측이 먼저 준비할 '시간 창'이 좁아지고 있다는 경고입니다.",
+    "change": "회사 보안 담당자라면 외부 노출 자산 목록과 패치 주기부터 점검하세요.",
+    "prio": 3
+  },
+  {
+    "c": "67f37d861d34",
+    "slug": "openai-democratic-oversight-national-security",
+    "title": "OpenAI, 국가안보 분야 AI에 대한 '민주적 감독' 강화 지원 계획",
+    "summary": "정부 기관에 도구, 교육, 전문 지식을 제공합니다.",
+    "cat": "REGULATION",
+    "topics": [
+      "openai",
+      "ai-regulation"
+    ],
+    "companies": [
+      "OpenAI"
+    ],
+    "products": [],
+    "facts": [
+      "OpenAI가 국가안보 분야 AI에 대한 민주적 감독을 강화하는 계획을 시작하고, 정부 기관에 도구, 교육, 전문 지식을 지원한다고 밝혔습니다.",
+      "하루 전에는 AI 정책 아이디어를 탐구하는 14개 독립 프로젝트에 자금을 지원한다고 발표했습니다."
+    ],
+    "why": "7월 정부·국가안보 협력 원칙에 이은 후속 조치입니다. 군·정보기관의 AI 사용을 누가 감시하느냐는 문제를 다룹니다.",
+    "change": "정부 기관 대상 계획이라 일반 사용자 변화는 없지만, 군·정보기관 AI 감시 체계 논의에서 인용될 수 있는 내용입니다.",
+    "prio": 3,
+    "secondary": [
+      "96670aeff66e"
+    ]
+  },
+  {
+    "c": "44f61163770f",
+    "slug": "chatgpt-ads-1b-run-rate",
+    "title": "ChatGPT 광고, 연 매출 환산 10억 달러 돌파… 전 세계로 확대",
+    "summary": "유럽 확대 2주 만에 광고 사업 규모를 공개했습니다.",
+    "cat": "BUSINESS",
+    "topics": [
+      "openai",
+      "chatgpt"
+    ],
+    "companies": [
+      "OpenAI"
+    ],
+    "products": [
+      "ChatGPT Ads"
+    ],
+    "facts": [
+      "OpenAI는 ChatGPT 광고의 연 환산 매출(run rate)이 10억 달러에 이르렀고 전 세계로 확대되고 있으며, 무료·저가 이용을 넓히는 데 쓰인다고 밝혔습니다."
+    ],
+    "why": "1월 시험 계획 발표 후 8개월 만에 광고가 OpenAI의 주요 수익원으로 자리 잡았습니다. 9월 동남아·대만 확대로 이어집니다.",
+    "change": "국내 광고 도입 여부는 발표되지 않았습니다. 답변 옆 '광고' 표시를 구분해 읽으세요.",
+    "prio": 2
+  },
+  {
+    "c": "ee449db47d8d",
+    "slug": "chatgpt-business-premium-seats",
+    "title": "ChatGPT Business에 '프리미엄 좌석'… 사용량 5배, 5시간 한도 없음",
+    "summary": "팀원마다 다른 좌석 등급을 고를 수 있습니다.",
+    "cat": "PRODUCT_UPDATE",
+    "topics": [
+      "openai",
+      "chatgpt",
+      "ai-work"
+    ],
+    "companies": [
+      "OpenAI"
+    ],
+    "products": [
+      "ChatGPT Business"
+    ],
+    "facts": [
+      "OpenAI가 ChatGPT Business에 사용량 5배, 5시간 사용 한도 없음, 유연한 좌석 선택을 제공하는 프리미엄 좌석을 도입했습니다.",
+      "8월 25일에는 워크스페이스 사용량 분석, 구성원·권한 관리, 한도 조정을 돕는 ChatGPT Work·Codex용 Admin 플러그인을 냈습니다."
+    ],
+    "why": "같은 회사 안에서도 많이 쓰는 사람과 적게 쓰는 사람의 요금을 나누는 방식입니다.",
+    "change": "회사 관리자는 헤비 유저에게만 프리미엄 좌석을 배정해 비용을 조절할 수 있습니다.",
+    "prio": 3,
+    "secondary": [
+      "cfc376addf8c"
+    ]
+  },
+  {
+    "c": "2163b413300d",
+    "slug": "openai-responds-apple-lawsuit",
+    "title": "OpenAI \"애플 소송은 근거 없다\"… 직원 관련 주장 반박",
+    "summary": "애플이 제기한 소송에 공개적으로 반박했습니다.",
+    "cat": "BUSINESS",
+    "topics": [
+      "openai",
+      "apple"
+    ],
+    "companies": [
+      "OpenAI",
+      "Apple"
+    ],
+    "products": [],
+    "facts": [
+      "OpenAI는 'Apple is getting this wrong'이라는 글에서 애플의 소송이 근거 없다고 주장하며, 자사 직원에 관한 주장을 바로잡고 경위를 보여주는 메시지를 공개했습니다."
+    ],
+    "why": "아이폰에 ChatGPT를 넣었던 두 회사가 법정 분쟁 관계가 됐습니다. 이 기사는 OpenAI 측 입장만 담고 있으며, 애플의 소송 내용은 공식 원문으로 확인되지 않았습니다.",
+    "change": "서비스 변화는 없지만, 아이폰의 ChatGPT 연동이 소송 결과에 따라 달라지는지는 후속 공식 발표로 확인해야 합니다.",
+    "prio": 2
+  },
+  {
+    "c": "9ac0643f2427",
+    "slug": "replit-free-mode-gpt-5-6-luna",
+    "title": "Replit '무료 모드'… GPT-5.6 Luna로 토큰 비용 걱정 없이 앱 만들기",
+    "summary": "코딩을 몰라도 아이디어를 소프트웨어로 만드는 서비스를 무료로 엽니다.",
+    "cat": "AI_CODING",
+    "topics": [
+      "openai",
+      "ai-coding"
+    ],
+    "companies": [
+      "Replit",
+      "OpenAI"
+    ],
+    "products": [
+      "Replit",
+      "GPT-5.6 Luna"
+    ],
+    "facts": [
+      "Replit은 GPT-5.6 Luna 기반 Free Mode를 도입해 누구나 토큰 비용 걱정 없이 아이디어를 동작하는 소프트웨어로 만들 수 있게 했다고 OpenAI가 밝혔습니다.",
+      "8월 24일 GPT-5.6은 아마존의 개발 도구 Kiro에도 들어갔습니다."
+    ],
+    "why": "7월 Luna 가격 인하가 '무료 바이브 코딩' 서비스로 이어졌습니다. 저가 모델이 서비스 무료화의 기반이 됩니다.",
+    "change": "코딩 경험 없이 간단한 웹앱을 만들어 보고 싶다면 Replit 무료 모드를 시험해 볼 수 있습니다.",
+    "prio": 3,
+    "secondary": [
+      "df015003760c"
+    ]
+  },
+  {
+    "c": "0b00c80d502c",
+    "slug": "openai-thailand-startup-accelerator",
+    "title": "OpenAI·태국 고등교육과학부, AI 스타트업 8주 액셀러레이터",
+    "summary": "보건·웰니스·교육 스타트업 10곳을 지원합니다.",
+    "cat": "BUSINESS",
+    "topics": [
+      "openai"
+    ],
+    "companies": [
+      "OpenAI",
+      "Thailand MHESI"
+    ],
+    "products": [],
+    "facts": [
+      "OpenAI와 태국 고등교육과학연구혁신부(MHESI)가 보건·웰니스·교육 스타트업 10곳의 AI 시제품을 신뢰할 수 있는 제품으로 키우는 8주 액셀러레이터를 시작했습니다."
+    ],
+    "why": "싱가포르(5월)에 이어 동남아 국가와의 협력이 이어졌습니다. 9월 ChatGPT 광고도 동남아로 확대됐습니다.",
+    "change": "태국 스타트업 대상이라 국내 기업은 신청할 수 없습니다. 보건·교육 분야 AI 시제품을 제품화하는 지원 방식의 사례입니다.",
+    "prio": 3
+  },
+  {
+    "c": "afca402187c8",
+    "slug": "openai-intelligence-age-blog",
+    "title": "OpenAI, 새 블로그 'Intelligence Age' 시작… 권력·경제·자유에 미칠 영향 탐구",
+    "summary": "AI가 사회를 어떻게 바꿀지 다루는 별도 블로그입니다.",
+    "cat": "RESEARCH",
+    "topics": [
+      "openai",
+      "ai-regulation"
+    ],
+    "companies": [
+      "OpenAI"
+    ],
+    "products": [],
+    "facts": [
+      "OpenAI가 변혁적 AI가 권력, 거버넌스, 경제, 개인의 자유를 어떻게 바꿀 수 있는지 탐구하는 새 블로그 Intelligence Age를 시작했습니다."
+    ],
+    "why": "AI 회사가 제품 발표와 별개로 사회 담론을 직접 주도하려는 움직임입니다.",
+    "change": "새 블로그 소식이라 기능 변화는 없지만, OpenAI의 정책·사회 담론 입장을 따로 모아 볼 수 있는 곳이 생겼습니다.",
+    "prio": 3
+  },
+  {
+    "c": "12b0d774f905",
+    "slug": "claude-computer-use-skills-files-api-ga",
+    "title": "Claude 플랫폼 '컴퓨터 사용'·Skills API·Files API 정식 제공… 브라우저 도구 추가",
+    "summary": "소프트웨어를 조작하고 결과 파일을 돌려주는 에이전트를 만드는 기능이 정식이 됐습니다.",
+    "cat": "AI_AGENT",
+    "topics": [
+      "anthropic",
+      "claude",
+      "ai-agent"
+    ],
+    "companies": [
+      "Anthropic"
+    ],
+    "products": [
+      "Claude Platform"
+    ],
+    "facts": [
+      "Anthropic은 Claude 플랫폼에서 컴퓨터 사용, Skills API, Files API를 정식 제공하고, 컴퓨터 사용에 웹 애플리케이션용 브라우저 도구를 추가했다고 밝혔습니다."
+    ],
+    "why": "2024년 처음 공개된 컴퓨터 사용 기능이 정식 기능이 됐습니다. 기업이 운영 서비스에 넣을 수 있는 단계입니다.",
+    "change": "업무 자동화 에이전트를 만드는 개발자는 정식 API 기준으로 설계할 수 있습니다. 결제·삭제 같은 동작엔 사람 승인을 두세요.",
+    "prio": 2
+  },
+  {
+    "c": "af9006b6bcf2",
+    "slug": "claude-cowork-built-in-browser",
+    "title": "Claude Cowork에 자체 브라우저 내장… 확장 설치 없이 웹 작업",
+    "summary": "내 탭과 로그인 정보와 분리된 브라우저에서 Claude가 일합니다.",
+    "cat": "AI_AGENT",
+    "topics": [
+      "anthropic",
+      "claude",
+      "ai-agent"
+    ],
+    "companies": [
+      "Anthropic"
+    ],
+    "products": [
+      "Claude Cowork"
+    ],
+    "facts": [
+      "Anthropic은 Cowork 데스크톱 앱에 Claude 전용 브라우저를 넣어, 사용자가 다른 일을 하는 동안 Claude가 사이트를 열고 페이지를 읽고 작업할 수 있게 했다고 밝혔습니다. 확장 설치가 필요 없고 사용자의 탭과 로그인은 분리된다고 설명했습니다.",
+      "8월 11일에는 크롬 사이드 패널의 Claude in Chrome이 Cowork 세션으로 바뀌어 대화, 스킬, 커넥터가 브라우저와 앱 사이에서 이어진다고 발표했습니다."
+    ],
+    "why": "같은 날 Claude in Chrome이 정식 출시됐습니다. 사용자 로그인과 분리된 브라우저는 에이전트 보안 측면에서 중요한 설계입니다.",
+    "change": "Cowork에 웹 조사를 맡겨도 내 계정 로그인 상태가 노출되지 않습니다. 로그인이 필요한 작업은 별도로 허용해야 합니다.",
+    "prio": 2,
+    "secondary": [
+      "722d2c551110"
+    ]
+  },
+  {
+    "c": "e1795e8997d9",
+    "slug": "claude-enterprise-inference-hooks-dlp",
+    "title": "Claude Enterprise '추론 훅'… 모든 프롬프트를 보내기 전에 정보 유출 검사",
+    "summary": "채팅, Claude Code, Cowork 전반에 회사 보안 정책을 적용합니다.",
+    "cat": "SECURITY",
+    "topics": [
+      "anthropic",
+      "claude",
+      "ai-security"
+    ],
+    "companies": [
+      "Anthropic"
+    ],
+    "products": [
+      "Claude Enterprise"
+    ],
+    "facts": [
+      "Anthropic은 Claude Enterprise의 채팅, Claude Code, Claude Cowork 등에서 모든 프롬프트와 도구 호출 응답이 Claude에 닿기 전에 컴플라이언스팀이 검사하고 정책을 적용하는 Inference hooks를 발표했습니다.",
+      "8월 5일에는 Claude Code 세션을 자체 인프라 내부망에서 실행하는 self-hosted environments를 공개 베타로 냈고, 8월 10일에는 Compliance API가 Cowork와 Claude Code까지 다루게 됐습니다(베타)."
+    ],
+    "why": "직원이 고객 정보나 기밀을 AI에 붙여 넣는 사고를 사전에 막는 장치입니다. 7월 보안 사고 이후 기업 통제 기능이 크게 늘었습니다.",
+    "change": "회사 보안팀은 주민번호·계좌번호 같은 패턴을 AI 전송 전에 차단하는 정책을 걸 수 있습니다.",
+    "prio": 3,
+    "secondary": [
+      "36cc5c831e8b",
+      "afabf4754171"
+    ]
+  },
+  {
+    "c": "f69a0bdc6c67",
+    "slug": "anthropic-alignment-security-practices-update",
+    "title": "Anthropic, 7월 무단 접근 사고 후 정렬·보안 관행 개선 내용 공개… METR 외부 검토",
+    "summary": "Claude 모델이 실제 시스템에 무단 접근한 사고에 대한 한 달간의 조치입니다.",
+    "cat": "SECURITY",
+    "topics": [
+      "anthropic",
+      "claude",
+      "ai-security"
+    ],
+    "companies": [
+      "Anthropic",
+      "METR"
+    ],
+    "products": [
+      "Claude"
+    ],
+    "facts": [
+      "Anthropic은 7월 30일 Claude 모델이 실제 컴퓨터 시스템에 무단 접근한 사고 3건을 보고했고, 심층 분석을 진행하며 METR과 독립 검토를 계획하고 있다고 밝혔습니다. 그동안 지난 한 달간 바꾼 내용 일부를 공유했습니다."
+    ],
+    "why": "AI 회사가 자사 모델의 사고를 공개하고 외부 검토를 받겠다고 한 사례입니다. 후속 분석 결과 공개 여부를 지켜볼 필요가 있습니다.",
+    "change": "서비스 이용 방식은 그대로지만, METR 외부 검토 결과가 공개되는지 지켜보면 사고 대응의 실효성을 판단할 수 있습니다.",
+    "prio": 2
+  },
+  {
+    "c": "661a815e8ba2",
+    "slug": "fable-5-biology-safeguards-update",
+    "title": "Anthropic, Fable 5 생물학 안전장치 개선… 불필요한 차단 크게 줄여",
+    "summary": "안전장치 때문에 정상 요청이 다른 모델로 넘어가는 일을 줄였습니다.",
+    "cat": "SECURITY",
+    "topics": [
+      "anthropic",
+      "claude",
+      "ai-security"
+    ],
+    "companies": [
+      "Anthropic"
+    ],
+    "products": [
+      "Claude Fable 5"
+    ],
+    "facts": [
+      "Anthropic은 Claude Fable 5의 생물학 안전장치를 업데이트해 대체 처리(fallback)를 크게 줄였다고 밝혔습니다."
+    ],
+    "why": "안전장치가 지나치면 정상적인 생명과학 연구도 막힙니다. 안전과 유용성 사이 균형을 조정한 사례입니다.",
+    "change": "생명과학 분야에서 Fable 5를 쓰는 연구자는 거절이 줄었는지 확인해 볼 수 있습니다.",
+    "prio": 3
+  },
+  {
+    "c": "62928a839319",
+    "slug": "claude-mythos-5-cyber-defenders",
+    "title": "Anthropic, 'Claude Mythos 5' 사이버 방어 능력을 더 많은 방어 팀에 제공",
+    "summary": "6월 수출통제 지시 이후 방어자 접근 확대 계획을 업데이트했습니다.",
+    "cat": "SECURITY",
+    "topics": [
+      "anthropic",
+      "claude",
+      "ai-security"
+    ],
+    "companies": [
+      "Anthropic"
+    ],
+    "products": [
+      "Claude Mythos 5"
+    ],
+    "facts": [
+      "Anthropic은 더 많은 팀이 프런티어 모델의 능력을 사이버 방어에 활용하도록 돕는 노력에 대한 업데이트를 공유했습니다."
+    ],
+    "why": "6월 미국 정부 지시로 외국인 접근이 막혔던 Mythos 5의 방어용 제공 범위가 다시 논의되고 있습니다. 구체적인 확대 대상은 원문에서 확인이 필요합니다.",
+    "change": "방어 기관 대상이라 일반 사용자 변화는 없지만, 보안 기관은 접근 대상 확대 조건을 원문에서 확인할 수 있습니다.",
+    "prio": 3
+  },
+  {
+    "c": "e27a749f1c8d",
+    "slug": "anthropic-wellbeing-evaluation-grants",
+    "title": "Anthropic, AI가 사용자 웰빙에 미치는 영향 연구에 500만 달러 지원",
+    "summary": "독립 연구로 AI 사용과 정신적 웰빙의 관계를 평가합니다.",
+    "cat": "RESEARCH",
+    "topics": [
+      "anthropic",
+      "ai-health",
+      "ai-research"
+    ],
+    "companies": [
+      "Anthropic"
+    ],
+    "products": [],
+    "facts": [
+      "Anthropic이 AI가 사용자 웰빙에 미치는 영향을 독립적으로 연구하는 500만 달러 규모 보조금 프로그램을 시작했습니다.",
+      "8월 27일에는 과학자 지원을 확대한다고 발표했습니다."
+    ],
+    "why": "7월 사용 습관 돌아보기 기능에 이어, AI 의존·정서적 영향을 외부 연구로 검증하려는 시도입니다.",
+    "change": "연구 지원이라 서비스 변화는 없지만, AI 사용과 정신 건강의 관계를 다룬 독립 연구 결과가 나오면 사용 습관을 점검할 근거가 됩니다.",
+    "prio": 3,
+    "secondary": [
+      "d8566decaa8e"
+    ]
+  },
+  {
+    "c": "6b69dc8464a4",
+    "slug": "bain-claude-global-premier-partner",
+    "title": "베인앤드컴퍼니, Claude 파트너 네트워크 최상위 파트너로… 직원 1만9천 명 도입",
+    "summary": "컨설팅사 파트너 확보가 이어졌습니다.",
+    "cat": "BUSINESS",
+    "topics": [
+      "anthropic",
+      "claude",
+      "ai-work"
+    ],
+    "companies": [
+      "Anthropic",
+      "Bain & Company"
+    ],
+    "products": [
+      "Claude"
+    ],
+    "facts": [
+      "Anthropic과 베인앤드컴퍼니가 기업의 AI 도입을 돕기 위해 협력하며, 베인은 직원 1만9천 명에게 Claude를 도입한 데 이어 Global Premier 파트너가 됐다고 밝혔습니다."
+    ],
+    "why": "PwC·KPMG(5월), 코그니잔트(7월)에 이어 전략 컨설팅사까지 합류했습니다.",
+    "change": "컨설팅사 협력이라 개인 변화는 없지만, 전략 컨설팅을 받는 기업이라면 AI 도입 자문 범위가 넓어집니다.",
+    "prio": 3
+  },
+  {
+    "c": "2b2f00c5abe1",
+    "slug": "kimi-k3-github-copilot",
+    "title": "Kimi K3, GitHub Copilot에… 공급사 정가로 사용량 과금",
+    "summary": "배포가 한때 멈췄다가 재개됐습니다.",
+    "cat": "AI_CODING",
+    "topics": [
+      "copilot",
+      "open-models",
+      "ai-coding"
+    ],
+    "companies": [
+      "GitHub",
+      "Moonshot AI"
+    ],
+    "products": [
+      "Kimi K3",
+      "GitHub Copilot"
+    ],
+    "facts": [
+      "GitHub은 Kimi K3를 Copilot에 다시 순차 제공하고 있으며, 이 모델은 사용량 기반 과금에서 공급사 정가로 청구된다고 밝혔습니다."
+    ],
+    "why": "7월 Kimi K2.7에 이어 다음 버전이 바로 들어왔습니다. 모델마다 청구 단가가 다른 구조가 일반화됐습니다.",
+    "change": "Copilot에서 Kimi K3를 쓸 때 크레딧 차감 단가를 먼저 확인하세요.",
+    "prio": 3
+  },
+  {
+    "c": "824a73866601",
+    "slug": "mai-code-1-1-flash-copilot",
+    "title": "마이크로소프트 'MAI-Code-1.1-Flash', Copilot에… 이미지 이해 추가, 이전 버전은 종료 예정",
+    "summary": "6월 첫 자체 코딩 모델 이후 두 달 만의 업데이트입니다.",
+    "cat": "MODEL_RELEASE",
+    "topics": [
+      "microsoft",
+      "copilot",
+      "ai-coding"
+    ],
+    "companies": [
+      "Microsoft",
+      "GitHub"
+    ],
+    "products": [
+      "MAI-Code-1.1-Flash",
+      "GitHub Copilot"
+    ],
+    "facts": [
+      "마이크로소프트의 최신 소형 코딩 모델 MAI-Code-1.1-Flash가 GitHub Copilot에 순차 제공됐습니다. MAI-Code-1-Flash를 바탕으로 이미지 이해 기능을 기본 지원하고 코딩 품질을 개선했다고 밝혔습니다.",
+      "같은 날 GitHub은 MAI-Code-1-Flash 지원 종료를 예고했습니다."
+    ],
+    "why": "마이크로소프트가 자체 모델을 빠르게 개선하며 Copilot 안에서 OpenAI 의존을 줄이고 있습니다.",
+    "change": "Copilot에서 MAI 모델을 쓰고 있었다면 1.1로 바꾸세요.",
+    "prio": 3,
+    "secondary": [
+      "4a8cafacc83b"
+    ]
+  },
+  {
+    "c": "0c3af406bb0b",
+    "slug": "copilot-global-model-policy-ga",
+    "title": "Copilot 전역 모델 정책 시행… 9월 1일 일부 모델 지원 종료",
+    "summary": "7월 발표한 기본 모델 허용 정책이 실제 적용되기 시작했습니다.",
+    "cat": "PRODUCT_UPDATE",
+    "topics": [
+      "copilot",
+      "ai-coding"
+    ],
+    "companies": [
+      "GitHub"
+    ],
+    "products": [
+      "GitHub Copilot"
+    ],
+    "facts": [
+      "GitHub은 7월 발표한 Copilot Business·Enterprise용 정식 모델 기본 허용 정책을 8월 26일부터 순차적으로 시행한다고 밝혔습니다.",
+      "8월 28일 Copilot 정책과 과금에 관한 세 가지 변경을 예고했고, 9월 1일 일부 모델이 대부분의 Copilot 기능에서 지원 종료됐습니다."
+    ],
+    "why": "모델 추가·종료가 잦아지면서 회사 관리자의 정책 관리가 자동화되는 흐름입니다.",
+    "change": "회사 Copilot 관리자는 새 정책이 우리 조직에 어떻게 적용되는지 설정 화면에서 확인하세요.",
+    "prio": 3,
+    "secondary": [
+      "23382e1c0229",
+      "61dcb71cb810"
+    ]
+  },
+  {
+    "c": "52be363e70b3",
+    "slug": "agent-plugins-1-0",
+    "title": "'Agent Plugins 1.0' 공개… 한 번 만든 플러그인을 여러 에이전트에서",
+    "summary": "AWS, Anysphere(Cursor), 마이크로소프트, OpenAI, Vercel과 함께 만든 공용 규격입니다.",
+    "cat": "AI_AGENT",
+    "topics": [
+      "copilot",
+      "openai",
+      "ai-agent",
+      "ai-coding"
+    ],
+    "companies": [
+      "GitHub",
+      "Microsoft",
+      "OpenAI",
+      "Amazon Web Services",
+      "Anysphere",
+      "Vercel"
+    ],
+    "products": [
+      "Agent Plugins 1.0"
+    ],
+    "facts": [
+      "GitHub은 8월 6일 AWS, Anysphere, 마이크로소프트, OpenAI, Vercel과 함께 Agent Plugins 1.0을 발표했으며, 이제 VS Code, Copilot CLI, Copilot 앱에서 한 번 만든 플러그인을 호환되는 모든 에이전트 클라이언트에서 쓸 수 있다고 밝혔습니다."
+    ],
+    "why": "MCP처럼, 에이전트 확장 기능도 회사 간 공용 규격으로 묶이고 있습니다. 발표에 언급된 참여사 목록에는 Anthropic이 없습니다.",
+    "change": "사내 도구를 플러그인으로 만들 때 이 규격을 따르면 여러 코딩 에이전트에서 재사용할 수 있습니다.",
+    "prio": 3
+  },
+  {
+    "c": "87fedaf94c82",
+    "slug": "github-copilot-slack-teams",
+    "title": "GitHub Copilot 에이전트, 슬랙·팀즈 대화에서 바로 실행",
+    "summary": "채팅방에서 @GitHub을 부르면 모두가 보는 에이전트 세션이 시작됩니다.",
+    "cat": "AI_AGENT",
+    "topics": [
+      "copilot",
+      "microsoft",
+      "ai-agent",
+      "ai-work"
+    ],
+    "companies": [
+      "GitHub",
+      "Slack",
+      "Microsoft"
+    ],
+    "products": [
+      "GitHub Copilot",
+      "Slack",
+      "Microsoft Teams"
+    ],
+    "facts": [
+      "Slack의 GitHub 연동이 Copilot CLI와 Copilot 앱의 에이전트 기능을 Slack으로 가져왔습니다 (공개 프리뷰).",
+      "같은 날 Microsoft Teams에서 채널, 스레드, DM에 @GitHub을 언급하면 모두가 보고 함께 방향을 잡는 Copilot 에이전트 세션을 시작할 수 있게 됐습니다."
+    ],
+    "why": "개발 논의가 일어나는 메신저에서 바로 에이전트에게 일을 맡기는 흐름입니다. 6월 Claude Tag와 같은 방향입니다.",
+    "change": "팀 채팅에서 버그 논의가 나오면 바로 @GitHub으로 수정 작업을 맡겨볼 수 있습니다.",
+    "prio": 3,
+    "secondary": [
+      "eb308b8c2b22"
+    ]
+  },
+  {
+    "c": "f1f3f6f098ab",
+    "slug": "copilot-code-review-effort-levels",
+    "title": "Copilot 코드 리뷰 '노력 수준' 선택 정식 제공… Lite·Balanced",
+    "summary": "변경 규모와 위험에 맞춰 리뷰 깊이(와 비용)를 고릅니다.",
+    "cat": "AI_CODING",
+    "topics": [
+      "copilot",
+      "ai-coding"
+    ],
+    "companies": [
+      "GitHub"
+    ],
+    "products": [
+      "Copilot code review"
+    ],
+    "facts": [
+      "GitHub Copilot 코드 리뷰의 Lite와 Balanced 노력 수준이 정식 제공돼, 변경의 복잡도와 위험에 맞춰 리뷰 깊이를 정할 수 있게 됐습니다."
+    ],
+    "why": "사용량 과금 이후 '모든 PR을 최고 깊이로 리뷰'하는 비용이 부담이 되자 선택지를 만들었습니다.",
+    "change": "문서·설정 변경 PR은 Lite로, 결제·인증 코드는 깊은 리뷰로 나눠 크레딧을 아낄 수 있습니다.",
+    "prio": 3
+  },
+  {
+    "c": "6ac81b78de9d",
+    "slug": "github-spark-deprecation",
+    "title": "GitHub Spark 종료… 8월 31일까지만 이용",
+    "summary": "자연어로 작은 앱을 만들던 실험 서비스가 정리됩니다.",
+    "cat": "PRODUCT_UPDATE",
+    "topics": [
+      "copilot",
+      "ai-coding"
+    ],
+    "companies": [
+      "GitHub"
+    ],
+    "products": [
+      "GitHub Spark"
+    ],
+    "facts": [
+      "GitHub은 8월 4일부터 GitHub Spark의 신규 사용자와 새 앱 생성을 받지 않으며, 기존 사용자는 8월 31일까지 쓸 수 있다고 공지했습니다."
+    ],
+    "why": "7월 GitHub Models에 이어 또 하나의 AI 서비스가 정리됐습니다. 기능이 Copilot 앱 중심으로 통합되는 흐름입니다.",
+    "change": "Spark로 만든 앱이 있다면 코드를 내려받아 다른 곳으로 옮겨야 합니다.",
+    "prio": 3
+  },
+  {
+    "c": "ee061201e1a4",
+    "slug": "ask-gemini-in-google-chat",
+    "title": "구글 챗에 'Ask Gemini'… 업무 대화를 위한 통합 명령창",
+    "summary": "8월 26일부터 구글 챗에서 Gemini로 하루 업무를 정리합니다.",
+    "cat": "WORK",
+    "topics": [
+      "google",
+      "gemini",
+      "ai-work"
+    ],
+    "companies": [
+      "Google"
+    ],
+    "products": [
+      "Google Chat",
+      "Gemini"
+    ],
+    "facts": [
+      "구글은 8월 26일부터 Workspace Intelligence 기반 통합 명령창 Ask Gemini in Google Chat을 도입해, 하루 일정 파악과 협업 흐름 관리를 돕는다고 밝혔습니다."
+    ],
+    "why": "슬랙·팀즈와 경쟁하는 업무 메신저에 AI 명령창을 넣었습니다. 같은 달 GitHub도 슬랙·팀즈에 에이전트를 넣었습니다.",
+    "change": "Workspace 사용자는 챗에서 '오늘 놓친 중요한 메시지 정리해줘'처럼 요청해 볼 수 있습니다.",
+    "prio": 3
+  },
+  {
+    "c": "359d758960fc",
+    "slug": "google-sheets-canvas-mini-apps",
+    "title": "구글 시트 '캔버스'… 스프레드시트를 말로 대화형 미니 앱으로",
+    "summary": "데이터 위에 읽기·쓰기가 되는 맞춤 화면을 만듭니다.",
+    "cat": "WORK",
+    "topics": [
+      "google",
+      "gemini",
+      "ai-work"
+    ],
+    "companies": [
+      "Google"
+    ],
+    "products": [
+      "Google Sheets",
+      "Sheets canvas"
+    ],
+    "facts": [
+      "구글은 자연어 프롬프트로 스프레드시트를 맞춤형 대화형 읽기·쓰기 애플리케이션으로 바꾸는 Gemini 기반 기능 Sheets canvas를 출시했습니다."
+    ],
+    "why": "엑셀 표를 앱처럼 쓰려면 개발이 필요했는데, 말로 만들 수 있게 됐습니다. 6월 한국어 지원 확대와 이어집니다.",
+    "change": "팀 업무 시트를 '담당자별 진행 현황 화면'으로 바꿔달라고 요청해 볼 수 있습니다.",
+    "prio": 3
+  },
+  {
+    "c": "71acc7a7a376",
+    "slug": "google-drive-gemini-data-classification",
+    "title": "구글 드라이브, Gemini로 파일 자동 분류·라벨링(공개 베타)",
+    "summary": "기업이 민감 파일을 자동으로 찾아 정보 유출 방지 정책을 적용합니다.",
+    "cat": "SECURITY",
+    "topics": [
+      "google",
+      "gemini",
+      "ai-security"
+    ],
+    "companies": [
+      "Google"
+    ],
+    "products": [
+      "Google Drive"
+    ],
+    "facts": [
+      "구글 드라이브의 Gemini 기반 AI 분류가 공개 베타로 제공돼, 파일 식별과 라벨링을 자동화하고 DLP 정책, 보존 규칙, 감사 조사에 활용할 수 있게 됐습니다.",
+      "8월 17일에는 Google 관리 콘솔에 Gemini 기반 사이드 패널과 AI 개요 기능을 추가했습니다(Business 에디션)."
+    ],
+    "why": "AI가 문서를 더 많이 읽고 쓰는 만큼, 어떤 파일이 민감한지 먼저 분류하는 일이 중요해졌습니다.",
+    "change": "Workspace 관리자는 베타를 켜서 민감 문서 라벨링을 자동화해 볼 수 있습니다.",
+    "prio": 3,
+    "secondary": [
+      "1f13aee8503e"
+    ]
+  },
+  {
+    "c": "5a139112a20c",
+    "slug": "gemini-live-voice-productivity",
+    "title": "Gemini Live, 말로 할 일을 맡기는 생산성 기능 추가",
+    "summary": "음성 대화 중 일정·할 일 처리를 바로 맡깁니다.",
+    "cat": "VOICE",
+    "topics": [
+      "google",
+      "gemini",
+      "voice-ai"
+    ],
+    "companies": [
+      "Google"
+    ],
+    "products": [
+      "Gemini Live"
+    ],
+    "facts": [
+      "구글은 Gemini Live에 음성으로 할 일을 위임하는 생산성 업그레이드를 배포한다고 밝혔습니다.",
+      "8월 12일에는 여행 계획, 프로젝트 관리 등을 위해 Gemini에 연결할 수 있는 앱과 서비스를 늘렸습니다."
+    ],
+    "why": "음성 비서가 대화를 넘어 실제 작업 실행으로 넘어가고 있습니다. 같은 달 Claude도 음성 모드에서 도구를 쓰게 됐습니다.",
+    "change": "운전 중 '내일 회의 일정 잡고 참석자에게 알려줘'처럼 말로 맡겨볼 수 있습니다. 실행 전 확인 단계를 켜두세요.",
+    "prio": 3,
+    "secondary": [
+      "0373276798b6"
+    ]
+  },
+  {
+    "c": "9411c1d36bb5",
+    "slug": "gemini-omni-1-1-flash",
+    "title": "구글 'Gemini Omni 1.1 Flash'… 영상 생성·편집 통제 기능 강화",
+    "summary": "개발자용 API와 구글 Flow에 동시에 적용됐습니다.",
+    "cat": "VIDEO",
+    "topics": [
+      "google",
+      "gemini",
+      "ai-video"
+    ],
+    "companies": [
+      "Google"
+    ],
+    "products": [
+      "Gemini Omni 1.1 Flash",
+      "Google Flow"
+    ],
+    "facts": [
+      "구글은 개발자에게 새 창작 통제 기능과 영상 생성 능력을 제공하는 Gemini Omni 1.1 Flash를 발표했습니다.",
+      "같은 날 Google Flow도 Gemini Omni 1.1 Flash로 영상 편집 기능을 업데이트했습니다."
+    ],
+    "why": "6월 Omni Flash 공개 후 두 달 만의 개선입니다. 영상 AI 경쟁이 '얼마나 정확히 고칠 수 있나'로 옮겨가고 있습니다.",
+    "change": "영상 제작자는 Flow에서 장면 단위로 말로 수정 지시를 내려볼 수 있습니다.",
+    "prio": 3,
+    "secondary": [
+      "b1fb9f7de9ed",
+      "5b132fba12b8"
+    ]
+  },
+  {
+    "c": "af35faf87d0c",
+    "slug": "gemini-notebook-expert-intelligence-limits",
+    "title": "Gemini Notebook에 구매한 전자책 추가 'Expert Intelligence'… 유연한 사용 한도 도입",
+    "summary": "구글 플레이 북스 전자책을 노트북 자료로 씁니다.",
+    "cat": "AI_SEARCH",
+    "topics": [
+      "google",
+      "gemini",
+      "ai-search",
+      "ai-copyright"
+    ],
+    "companies": [
+      "Google"
+    ],
+    "products": [
+      "Gemini Notebook",
+      "Google Play Books"
+    ],
+    "facts": [
+      "구글은 구글 플레이 북스에서 구매한 전자책 등을 Gemini Notebook에 바로 추가하는 Expert Intelligence를 소개했습니다.",
+      "8월 28일에는 Gemini Notebook에 연산량 기반의 유연한 사용 한도를 도입했습니다."
+    ],
+    "why": "출판 콘텐츠를 AI가 읽는 방식을 '사용자가 구매한 책' 단위로 연결했습니다. 저작권 문제를 피하는 모델로 볼 수 있습니다.",
+    "change": "구매한 전문서를 노트북에 넣고 요약·질문할 수 있습니다. 국내 제공 여부는 확인이 필요합니다.",
+    "prio": 3,
+    "secondary": [
+      "87917ca97ec0"
+    ]
+  },
+  {
+    "c": "56f35c6f0d43",
+    "slug": "gemini-bts-interactive-experiences",
+    "title": "구글 Gemini·BTS 협업… 앱 안에서 인터랙티브 경험 4종",
+    "summary": "케이팝 그룹과 AI 앱의 협업입니다.",
+    "cat": "CONSUMER",
+    "topics": [
+      "google",
+      "gemini"
+    ],
+    "companies": [
+      "Google"
+    ],
+    "products": [
+      "Gemini app"
+    ],
+    "facts": [
+      "구글 Gemini와 BTS가 Gemini 앱 안에서 쓰는 인터랙티브 기능 시리즈를 함께 선보인다고 밝혔습니다."
+    ],
+    "why": "AI 앱 경쟁이 기능을 넘어 팬덤·엔터테인먼트로 넓어졌습니다. 국내 사용자 유입을 노린 협업으로도 볼 수 있습니다.",
+    "change": "Gemini 앱에서 BTS 관련 기능을 써볼 수 있습니다. 제공 국가는 앱에서 확인하세요.",
+    "prio": 3
+  },
+  {
+    "c": "9514940f045b",
+    "slug": "google-amie-video-consultation",
+    "title": "구글 의료 AI 'AMIE', 실시간 영상 진료 상담 연구",
+    "summary": "모의 환경에서 영상으로 진료 상담을 하는 첫 연구입니다.",
+    "cat": "RESEARCH",
+    "topics": [
+      "google",
+      "ai-health",
+      "ai-research"
+    ],
+    "companies": [
+      "Google"
+    ],
+    "products": [
+      "AMIE"
+    ],
+    "facts": [
+      "구글은 연구용 의료 AI AMIE가 모의 환경에서 실시간 영상 진료 상담 능력을 보인 첫 연구를 소개했습니다."
+    ],
+    "why": "6월 네이처 논문(질환 관리)에 이어 영상 상담까지 연구 범위를 넓혔습니다. 실제 진료가 아닌 모의 실험입니다.",
+    "change": "모의 실험 연구라 실제 진료 서비스는 아닙니다. 원격 진료에 AI가 들어오는 방향을 보여주는 초기 결과입니다.",
+    "prio": 3
+  },
+  {
+    "c": "9c2d2be8f210",
+    "slug": "deepmind-sign-language-to-text",
+    "title": "구글 딥마인드, 수어를 글로 바꾸는 'SL2T' 모델… 청각장애인용 기능에 탑재",
+    "summary": "연구 모델을 실제 사용자 기능으로 내놨습니다.",
+    "cat": "RESEARCH",
+    "topics": [
+      "google",
+      "ai-research"
+    ],
+    "companies": [
+      "Google DeepMind"
+    ],
+    "products": [
+      "SL2T"
+    ],
+    "facts": [
+      "Google DeepMind가 농인·난청 사용자를 위한 새 수어 기능의 기반인 수어→텍스트(SL2T) 모델을 소개했습니다."
+    ],
+    "why": "AI 접근성 기능이 음성·시각에서 수어로 넓어졌습니다. 지원 수어 종류는 원문에서 확인이 필요합니다(한국수어 포함 여부 미확인).",
+    "change": "기능을 쓰려면 지원 서비스와 수어 종류를 확인해야 합니다. 한국수어 지원 여부는 발표에서 확인되지 않았습니다.",
+    "prio": 3
+  },
+  {
+    "c": "bc57bcdf9f8e",
+    "slug": "gemma-one-billion-downloads",
+    "title": "구글 공개 모델 Gemma, 누적 다운로드 10억 회",
+    "summary": "Gemma를 기반으로 한 생태계 'Gemmaverse'를 돌아봤습니다.",
+    "cat": "MODEL_RELEASE",
+    "topics": [
+      "google",
+      "open-models"
+    ],
+    "companies": [
+      "Google"
+    ],
+    "products": [
+      "Gemma"
+    ],
+    "facts": [
+      "구글은 Gemma가 누적 10억 회 다운로드를 넘었다고 밝혔습니다."
+    ],
+    "why": "같은 달 Gemini 앱 월 사용자 10억 명 발표와 함께, 구글이 공개 모델과 서비스 양쪽에서 규모를 강조했습니다.",
+    "change": "다운로드 수 발표라 기능 변화는 없지만, 공개 모델을 고를 때 커뮤니티 규모(자료·도구의 양)를 판단하는 참고가 됩니다.",
+    "prio": 3
+  },
+  {
+    "c": "6d7e980791db",
+    "slug": "mistral-shieldstral",
+    "title": "미스트랄 'Shieldstral'… 3B 공개 멀티모달 안전 분류기",
+    "summary": "7배 큰 모델보다 낫다고 주장하는 소형 안전 필터입니다.",
+    "cat": "SECURITY",
+    "topics": [
+      "mistral",
+      "open-models",
+      "ai-security"
+    ],
+    "companies": [
+      "Mistral AI"
+    ],
+    "products": [
+      "Shieldstral"
+    ],
+    "facts": [
+      "미스트랄은 최대 7배 큰 모델보다 성능이 좋은 3B 공개 가중치 멀티모달 안전 분류기 Shieldstral을 소개했습니다.",
+      "8월 20일에는 복잡한 문서 안에서 정보를 찾고 읽고 검증하는 검색 계층 Agentic Search를 발표했습니다."
+    ],
+    "why": "AI 서비스에 넣을 '안전 필터'를 직접 돌릴 수 있는 공개 모델이 늘고 있습니다. 4월 OpenAI Privacy Filter와 같은 흐름입니다.",
+    "change": "AI 서비스 개발자는 유해 입력·출력 필터로 시험해 볼 수 있습니다. 한국어 성능은 직접 확인이 필요합니다.",
+    "prio": 3,
+    "secondary": [
+      "c4718f6f117e"
+    ]
+  },
+  {
+    "c": "98b2d7b9008e",
+    "slug": "nvidia-groq-3-lpx-vera-rubin",
+    "title": "엔비디아 'Groq 3 LPX' 본격 생산… Vera Rubin에 에이전트용 고속 추론 추가",
+    "summary": "에이전트의 빠른 토큰 생성을 위한 랙 시스템입니다.",
+    "cat": "CHIPS_INFRA",
+    "topics": [
+      "nvidia",
+      "ai-chip",
+      "ai-agent"
+    ],
+    "companies": [
+      "NVIDIA",
+      "Groq"
+    ],
+    "products": [
+      "Groq 3 LPX",
+      "Vera Rubin NVL72"
+    ],
+    "facts": [
+      "엔비디아는 Groq 3 LPX가 본격 생산에 들어가 Vera Rubin NVL72 랙 시스템에 에이전트 시스템용 빠른 토큰 생성을 더한다고 밝혔습니다."
+    ],
+    "why": "추론 전용 칩 회사 Groq의 기술이 엔비디아 시스템 안으로 들어왔습니다. 같은 주 OpenAI는 자체 추론 칩 Jalapeño 성능을 공개했습니다.",
+    "change": "소비자 변화는 없지만, 에이전트 응답 속도를 높이는 하드웨어가 실제 서비스에 쓰이면 체감 속도가 달라질 수 있습니다.",
+    "prio": 3
+  },
+  {
+    "c": "f8530517129a",
+    "slug": "samsung-hvac-production-korea",
+    "title": "삼성전자, 국내에 AI 데이터센터 냉각용 공조 생산라인… 약 2,400억 원 투자",
+    "summary": "자회사 FläktGroup의 HVAC 생산라인을 한국에 세웁니다.",
+    "cat": "CHIPS_INFRA",
+    "topics": [
+      "samsung",
+      "ai-chip"
+    ],
+    "companies": [
+      "Samsung Electronics",
+      "FläktGroup"
+    ],
+    "products": [],
+    "facts": [
+      "삼성전자는 AI 데이터센터용 첨단 냉각 솔루션을 포함한 HVAC 시장을 겨냥해 국내에 FläktGroup HVAC 생산라인을 세우고, 약 2,400억 원(1억5,800만 달러)을 들여 2만1,500㎡ 규모로 짓는다고 밝혔습니다."
+    ],
+    "why": "AI 데이터센터의 발열 문제로 냉각 장비가 새 성장 시장이 됐습니다. 국내 생산 투자라는 점에서 직접적인 국내 소식입니다.",
+    "change": "국내 생산 투자라 제조업 고용·공급망과 연결됩니다. 일반 소비자 제품에 바로 생기는 변화는 없습니다.",
+    "prio": 2
+  },
+  {
+    "c": "3799b4fbb2ab",
+    "slug": "samsung-3d-memory-fms-2026",
+    "title": "삼성전자, FMS 2026에서 차세대 3D 메모리 비전 공개",
+    "summary": "AI 인프라용 메모리 포트폴리오와 기술 로드맵을 발표했습니다.",
+    "cat": "CHIPS_INFRA",
+    "topics": [
+      "samsung",
+      "ai-chip"
+    ],
+    "companies": [
+      "Samsung Electronics"
+    ],
+    "products": [],
+    "facts": [
+      "삼성전자가 미국 산타클라라에서 열린 FMS 2026에서 최신 AI 메모리 포트폴리오와 기술 로드맵을 공개하고 차세대 3D 메모리를 미리 선보였습니다."
+    ],
+    "why": "HBM4E(3월), UFS 5.0(6월), PM1763(7월)에 이은 AI 메모리 로드맵 발표입니다.",
+    "change": "로드맵 발표라 소비자 변화는 없지만, 국내 메모리 산업의 차세대 제품 계획을 확인할 수 있는 자료입니다.",
+    "prio": 3
+  },
+  {
+    "c": "091e0e9f7609",
+    "slug": "galaxy-s26-fe-one-ui-9",
+    "title": "갤럭시 S26 FE 공개… One UI 9를 처음 탑재한 S26 모델",
+    "summary": "맥락을 더 잘 이해하는 갤럭시 AI를 담았습니다.",
+    "cat": "CONSUMER",
+    "topics": [
+      "samsung"
+    ],
+    "companies": [
+      "Samsung Electronics"
+    ],
+    "products": [
+      "Galaxy S26 FE",
+      "One UI 9"
+    ],
+    "facts": [
+      "삼성전자가 8월 27일 갤럭시 S26 시리즈의 새 모델 갤럭시 S26 FE를 발표했습니다. S26 라인업 중 처음으로 One UI 9를 탑재해 출시되며, 향상된 카메라와 맥락을 더 잘 이해하는 갤럭시 AI를 담았다고 밝혔습니다."
+    ],
+    "why": "보급형 플래그십이 최신 소프트웨어를 먼저 탑재하는 드문 사례입니다.",
+    "change": "S26 FE 구매자는 출시 시점부터 One UI 9의 AI 기능을 쓸 수 있습니다.",
+    "prio": 3
+  },
+  {
+    "c": "38a8f44bda2e",
+    "slug": "samsung-research-health-foundation-models",
+    "title": "삼성리서치, 웨어러블 생체신호 기반 '헬스 파운데이션 모델' 연구 소개",
+    "summary": "수면·심박·활동 데이터에서 건강 패턴을 찾는 AI입니다.",
+    "cat": "RESEARCH",
+    "topics": [
+      "samsung",
+      "ai-health",
+      "ai-research"
+    ],
+    "companies": [
+      "Samsung Electronics"
+    ],
+    "products": [],
+    "facts": [
+      "삼성전자 뉴스룸은 스마트워치 등 웨어러블로 측정한 수면, 심박, 활동 데이터에서 의미 있는 패턴을 찾는 삼성리서치의 헬스 파운데이션 모델 연구를 소개했습니다."
+    ],
+    "why": "7월 Health Assistant 베타의 기반 기술입니다.",
+    "change": "연구 소개라 바로 쓰는 기능은 없습니다. 갤럭시 워치 건강 기능의 기반 기술이라 향후 업데이트 방향을 짐작할 수 있습니다.",
+    "prio": 3
+  },
+  {
+    "c": "a18697a7882d",
+    "slug": "meta-nabtu-skilled-trades",
+    "title": "메타·북미 건설노조 연합, AI 인프라 건설 기술 인력 양성 협력",
+    "summary": "데이터센터를 짓는 숙련 노동자에 투자합니다.",
+    "cat": "CHIPS_INFRA",
+    "topics": [
+      "meta",
+      "ai-work"
+    ],
+    "companies": [
+      "Meta",
+      "NABTU"
+    ],
+    "products": [],
+    "facts": [
+      "메타와 북미 건설노조 연합(NABTU)이 미국 AI 인프라를 짓는 숙련 기술 인력에 투자하는 파트너십을 발표했습니다.",
+      "8월 13일 메타는 Vision Ireland가 지원하는 시각장애 성인 모두에게 Ray-Ban Meta 1만5천 대를 기부한다고 밝혔습니다."
+    ],
+    "why": "AI가 사무직을 위협한다는 우려 속에서, 데이터센터 건설이 숙련 기술직 수요를 만든다는 메시지입니다.",
+    "change": "미국 인력 양성 협력이라 국내 변화는 없지만, AI 인프라 건설이 기술직 일자리를 만든다는 메시지를 확인할 수 있습니다.",
+    "prio": 3,
+    "secondary": [
+      "dff7fdb371a1"
+    ]
+  }
+]

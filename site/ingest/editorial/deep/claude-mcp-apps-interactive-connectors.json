@@ -1,0 +1,50 @@
+{
+  "slug": "claude-mcp-apps-interactive-connectors",
+  "lead": "Claude 대화창 안에서 Asana 일정표를 만들고, Slack 메시지를 미리 보고 보내고, Figma에서 도표를 그릴 수 있게 됐습니다. Anthropic이 연결된 업무 앱의 실제 화면을 대화 속에 띄우는 'MCP Apps'를 내놓으면서입니다. 지금까지 AI가 다른 앱을 대신 조작하고 결과를 글로 알려 줬다면, 이제는 그 앱 화면을 보면서 함께 고칠 수 있습니다.",
+  "facts": [
+    "1월 25일 Anthropic이 MCP Apps 기반 '대화형 커넥터'를 Claude에 도입했습니다.",
+    "출시 시점 지원 앱은 Amplitude, Asana, Box, Canva, Clay, Figma, Hex, monday.com, Slack이며, Salesforce가 곧 추가된다고 밝혔습니다.",
+    "MCP Apps는 AI 앱과 도구를 연결하는 공개 표준 MCP의 첫 공식 확장으로, Claude뿐 아니라 이를 지원하는 모든 AI 제품에서 MCP 서버가 대화형 화면을 띄울 수 있게 합니다.",
+    "웹·데스크톱·모바일의 Free, Pro, Max, Team, Enterprise 요금제에서 쓸 수 있고, Claude Cowork에서도 지원됩니다.",
+    "claude.ai/directory의 '추천' 항목에서 앱을 연결해 시작할 수 있습니다."
+  ],
+  "sections": [
+    {
+      "role": "what",
+      "heading": "대화 안에서 할 수 있는 일",
+      "bullets": [
+        "Asana: 대화 내용을 프로젝트·작업·일정표로",
+        "Slack: 대화 검색, 메시지 초안 작성과 서식 미리보기, 확인 후 전송",
+        "Figma: 글과 이미지를 FigJam 순서도·간트 차트로",
+        "Canva: 발표 개요를 만들고 브랜드·디자인을 실시간으로 조정",
+        "Amplitude·Hex: 분석 차트를 만들고 조건을 바꿔 가며 탐색",
+        "Box: 파일 검색과 문서 미리보기, 내용 질문"
+      ]
+    },
+    {
+      "role": "point",
+      "heading": "봐야 할 지점",
+      "paragraphs": [
+        "AI 비서가 '결과를 말로 전하는' 단계에서 '앱 화면을 대화 속에 가져오는' 단계로 넘어갔습니다. 사람이 결과를 눈으로 확인하고 바로 고칠 수 있어, AI가 대신 한 작업을 믿고 맡기기 쉬워집니다. Slack 메시지를 보내기 전에 서식 미리보기로 검토하게 한 것이 그 예입니다.",
+        "Anthropic이 이를 Claude 전용이 아니라 MCP의 공개 확장으로 낸 점도 중요합니다. 앱 개발사가 한 번 만들면 여러 AI 제품에서 쓸 수 있어, MCP를 업계 표준으로 굳히려는 전략으로 읽힙니다. 이 사이트 기록상 이후 7월 MCP 새 규격이 나왔고, 9월에는 커넥터·플러그인 2,000개 이상을 모은 Claude Marketplace가 열렸습니다."
+      ]
+    },
+    {
+      "role": "users",
+      "heading": "누구에게 무엇이 달라지나",
+      "bullets": [
+        "업무용으로 Claude를 쓰는 사람: 이미 쓰는 앱이 목록에 있다면 연결해 탭 전환을 줄일 수 있습니다. 무료 요금제에서도 쓸 수 있습니다.",
+        "회사 관리자: 커넥터가 대신 메시지를 보내거나 작업을 만들 수 있으므로, 어떤 앱 연결을 허용할지 정해 두는 것이 좋습니다.",
+        "앱 개발사: MCP 서버에 대화형 화면을 붙이면 Claude 외의 지원 AI 제품에서도 쓸 수 있습니다."
+      ]
+    },
+    {
+      "role": "open",
+      "heading": "확인할 것",
+      "bullets": [
+        "국내 업무 앱의 지원 여부는 발표에 없습니다.",
+        "Claude 외에 MCP Apps를 지원하는 AI 제품 목록은 이 글에 나오지 않습니다."
+      ]
+    }
+  ]
+}

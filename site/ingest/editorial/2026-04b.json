@@ -1,0 +1,1642 @@
+[
+  {
+    "c": "ac50c6af6789",
+    "slug": "claude-cowork-ga-all-paid-plans",
+    "title": "Claude Cowork, 모든 유료 요금제에 정식 출시… 기업용 기능 강화",
+    "summary": "연구 프리뷰였던 Cowork가 정식 제품이 됐습니다.",
+    "cat": "AI_AGENT",
+    "topics": [
+      "anthropic",
+      "claude",
+      "ai-agent",
+      "ai-work"
+    ],
+    "companies": [
+      "Anthropic"
+    ],
+    "products": [
+      "Claude Cowork"
+    ],
+    "facts": [
+      "Anthropic은 Claude Cowork를 모든 유료 요금제에 정식 출시했다고 밝혔습니다. 회사 안에서 업무 처리, 프로젝트 결과물 초안 작성, 팀 상황 공유에 쓰이고 있다고 설명했습니다."
+    ],
+    "why": "1월 연구 프리뷰로 나온 '일 맡기기' 도구가 석 달 만에 정식 제품이 됐습니다. 같은 달 마이크로소프트도 Copilot Cowork를 넓혀, 두 회사가 같은 이름의 기능으로 경쟁하는 구도입니다.",
+    "change": "Claude Pro 이상 사용자는 Cowork로 문서 정리, 자료 조사 같은 여러 단계 업무를 맡길 수 있습니다. 파일 접근 권한은 필요한 폴더로만 좁혀 주세요.",
+    "prio": 2
+  },
+  {
+    "c": "07818887844d",
+    "slug": "claude-code-routines",
+    "title": "Claude Code '루틴'… 백로그 처리·PR 리뷰를 클라우드에서 반복 실행",
+    "summary": "반복 작업을 정의해 두면 이벤트에 맞춰 Claude Code가 알아서 실행합니다.",
+    "cat": "AI_CODING",
+    "topics": [
+      "anthropic",
+      "claude",
+      "ai-coding",
+      "ai-agent"
+    ],
+    "companies": [
+      "Anthropic"
+    ],
+    "products": [
+      "Claude Code"
+    ],
+    "facts": [
+      "Anthropic은 Claude Code에서 백로그 처리, PR 리뷰, 이벤트 대응 같은 반복 작업을 정의하고 클라우드에서 실행하는 routines 기능을 소개했습니다.",
+      "같은 날 여러 Claude Code 작업을 동시에 돌리도록 데스크톱 앱을 새로 설계했다고 발표했습니다."
+    ],
+    "why": "사람이 매번 명령하지 않아도 정해진 일을 하는 '상시 근무형' 에이전트로 넘어가고 있습니다.",
+    "change": "개발팀은 '새 이슈가 오면 초안 PR 만들기' 같은 반복 작업을 루틴으로 걸어둘 수 있습니다. 자동 실행 범위와 권한을 먼저 정하세요.",
+    "prio": 2,
+    "secondary": [
+      "045952ff4e71"
+    ]
+  },
+  {
+    "c": "7d87eee20208",
+    "slug": "claude-managed-agents",
+    "title": "Anthropic 'Claude Managed Agents'… 클라우드 에이전트 구축용 API 묶음",
+    "summary": "에이전트를 만들고 대규모로 배포하는 API를 공개했고, 2주 뒤 메모리 기능을 더했습니다.",
+    "cat": "AI_AGENT",
+    "topics": [
+      "anthropic",
+      "claude",
+      "ai-agent"
+    ],
+    "companies": [
+      "Anthropic"
+    ],
+    "products": [
+      "Claude Managed Agents"
+    ],
+    "facts": [
+      "Claude Managed Agents는 클라우드에서 돌아가는 에이전트를 대규모로 만들고 배포하기 위한 Anthropic의 조합형 API 모음입니다.",
+      "4월 22일에는 에이전트가 세션을 넘어 배우고, 시간이 지나며 개선되고, 배운 것을 공유할 수 있는 내장 메모리 계층을 추가했습니다."
+    ],
+    "why": "에이전트를 직접 서버에 올리고 관리하는 부담을 AI 회사가 대신 지는 방향입니다. 5월에는 구글도 Gemini API에 같은 이름의 'Managed Agents'를 냈습니다.",
+    "change": "에이전트 서비스를 만드는 개발자는 실행 환경을 직접 구축하지 않고 API로 시작할 수 있습니다. 메모리에 무엇이 저장되는지 설계 단계에서 정해 두세요.",
+    "prio": 2,
+    "secondary": [
+      "95659f73008c"
+    ]
+  },
+  {
+    "c": "f5105735d1ca",
+    "slug": "claude-for-creative-work",
+    "title": "'Claude for Creative Work'… 어도비·블렌더·오토데스크 안에서 작업",
+    "summary": "디자인·3D·음악 제작 도구용 커넥터를 새로 냈습니다.",
+    "cat": "IMAGE",
+    "topics": [
+      "anthropic",
+      "claude",
+      "ai-image"
+    ],
+    "companies": [
+      "Anthropic",
+      "Adobe",
+      "Autodesk"
+    ],
+    "products": [
+      "Claude"
+    ],
+    "facts": [
+      "Anthropic은 Claude가 Adobe Creative Cloud, Blender, Autodesk Fusion, SketchUp, 음악 제작 도구 안에서 작업할 수 있게 하는 새 커넥터를 발표했습니다."
+    ],
+    "why": "이미지를 직접 생성하는 대신, 창작자가 이미 쓰는 전문 도구를 대신 조작하는 방향입니다. 결과물의 저작권이 사용자 작업 파일에 남는다는 차이가 있습니다.",
+    "change": "블렌더나 스케치업 사용자는 반복 모델링 작업을 Claude에 말로 맡겨볼 수 있습니다.",
+    "prio": 2
+  },
+  {
+    "c": "d445c27e7949",
+    "slug": "anthropic-nec-japan-partnership",
+    "title": "NEC, 임직원 3만 명에 Claude 도입… Anthropic의 첫 일본 글로벌 파트너",
+    "summary": "주요 산업용 AI 제품도 함께 개발합니다.",
+    "cat": "BUSINESS",
+    "topics": [
+      "anthropic",
+      "claude",
+      "ai-work"
+    ],
+    "companies": [
+      "Anthropic",
+      "NEC"
+    ],
+    "products": [
+      "Claude"
+    ],
+    "facts": [
+      "NEC가 직원 3만 명에게 Claude를 도입하고, Anthropic의 첫 일본 기반 글로벌 파트너가 되어 주요 산업용 AI 제품을 공동 개발한다고 Anthropic이 밝혔습니다."
+    ],
+    "why": "아시아 대기업이 전사 단위로 Claude를 도입한 사례입니다. 6월 서울 사무소 개소와 국내 기업 협력 발표로 이어지는 아시아 확장 흐름입니다.",
+    "change": "일본 기업 협력이라 국내 변화는 없지만, 아시아 대기업의 전사 도입 사례로, 국내 기업 도입 논의에 비교 자료가 됩니다.",
+    "prio": 3
+  },
+  {
+    "c": "73bb127227d2",
+    "slug": "anthropic-sydney-office",
+    "title": "Anthropic 시드니 사무소 개소… CBA·Canva·Xero와 협력",
+    "summary": "호주·뉴질랜드 총괄로 Theo Hourmouzis를 선임했습니다.",
+    "cat": "BUSINESS",
+    "topics": [
+      "anthropic"
+    ],
+    "companies": [
+      "Anthropic",
+      "Canva"
+    ],
+    "products": [],
+    "facts": [
+      "Anthropic이 시드니 사무소를 열고 Theo Hourmouzis를 호주·뉴질랜드 총괄로 선임했으며, CBA, Canva, Xero와 협력한다고 밝혔습니다."
+    ],
+    "why": "3월 호주 정부와의 AI 안전 MOU에 이어 현지 법인을 세웠습니다.",
+    "change": "호주 거점이라 국내 서비스 변화는 없지만, 같은 해 서울 사무소도 열려, 아시아·태평양 지원 체계가 넓어지고 있습니다.",
+    "prio": 3
+  },
+  {
+    "c": "e2958bff72cc",
+    "slug": "anthropic-board-narasimhan",
+    "title": "노바티스 CEO, Anthropic 이사회 합류… 장기이익신탁 지명 이사가 과반",
+    "summary": "Anthropic 지배구조에서 공익 목적 신탁의 영향력이 커졌습니다.",
+    "cat": "BUSINESS",
+    "topics": [
+      "anthropic"
+    ],
+    "companies": [
+      "Anthropic",
+      "Novartis"
+    ],
+    "products": [],
+    "facts": [
+      "Anthropic의 장기이익신탁(Long-Term Benefit Trust)이 노바티스 CEO Vas Narasimhan을 이사로 지명했고, 이로써 신탁이 지명한 이사가 이사회 과반이 됐다고 밝혔습니다."
+    ],
+    "why": "AI 회사를 누가 통제하느냐는 안전 논쟁의 핵심입니다. 투자자가 아닌 공익 목적 신탁이 이사회 과반을 지명하는 구조가 됐습니다.",
+    "change": "서비스 변화는 없지만, 회사의 안전 관련 결정 구조가 바뀐 소식이라, 지배구조에 관심 있는 사람이 볼 대목입니다.",
+    "prio": 3
+  },
+  {
+    "c": "2857c8644202",
+    "slug": "anthropic-election-safeguards-2026",
+    "title": "Anthropic, 미국 중간선거 앞두고 Claude의 선거 대응 방식 공개",
+    "summary": "정치적 중립성 평가 결과와 투표 정보 안내 방식을 설명했습니다.",
+    "cat": "SECURITY",
+    "topics": [
+      "anthropic",
+      "claude",
+      "ai-regulation"
+    ],
+    "companies": [
+      "Anthropic"
+    ],
+    "products": [
+      "Claude"
+    ],
+    "facts": [
+      "Anthropic은 2026년 미국 중간선거를 앞두고 Claude가 선거 관련 요청을 처리하는 방식과, 정치적 공정성 및 투표 정보 접근에 관한 새 결과를 공유했습니다."
+    ],
+    "why": "2월 메타에 이어 AI 회사들이 선거를 앞두고 대응 원칙을 내고 있습니다. AI가 특정 후보나 정당에 기울지 않는지가 핵심 쟁점입니다.",
+    "change": "투표 장소·일정 같은 정보는 AI 답변 대신 선거관리기관 공식 안내로 확인하세요.",
+    "prio": 3
+  },
+  {
+    "c": "2684823b7201",
+    "slug": "claude-advisor-strategy-opus-sonnet",
+    "title": "Anthropic '어드바이저 전략'… Opus가 조언하고 Sonnet·Haiku가 실행",
+    "summary": "큰 모델과 작은 모델을 짝지어 비용을 낮추는 설계 방법입니다.",
+    "cat": "AI_AGENT",
+    "topics": [
+      "anthropic",
+      "claude",
+      "ai-agent"
+    ],
+    "companies": [
+      "Anthropic"
+    ],
+    "products": [
+      "Claude Opus",
+      "Claude Sonnet",
+      "Claude Haiku"
+    ],
+    "facts": [
+      "Anthropic은 Opus를 조언자로, Sonnet이나 Haiku를 실행자로 짝지으면 적은 비용으로 Opus 수준의 지능을 에이전트에 줄 수 있다고 소개했습니다."
+    ],
+    "why": "가장 비싼 모델을 모든 단계에 쓰지 않고, 판단이 필요한 순간에만 쓰는 방식입니다. 에이전트 운영비를 결정하는 핵심 설계입니다.",
+    "change": "에이전트를 만드는 개발자는 계획·검토 단계만 상위 모델에 맡기고 반복 실행은 작은 모델로 돌려 비용을 비교해 볼 수 있습니다.",
+    "prio": 3
+  },
+  {
+    "c": "89e2f7218e30",
+    "slug": "anthropic-security-ai-accelerated-offense",
+    "title": "Anthropic \"AI가 공격을 가속하는 시대\"… 보안 조직을 위한 첫 권고",
+    "summary": "자사 연구와 보안 실무에서 나온 방어 권고안을 공유했습니다.",
+    "cat": "SECURITY",
+    "topics": [
+      "anthropic",
+      "ai-security"
+    ],
+    "companies": [
+      "Anthropic"
+    ],
+    "products": [],
+    "facts": [
+      "Anthropic은 자사의 연구 결과와 보안 실무를 바탕으로, AI로 빨라진 공격에 대비해 방어를 강화하기 위한 첫 권고안을 공유했습니다."
+    ],
+    "why": "AI가 취약점을 찾는 속도가 빨라지면 패치 주기도 빨라져야 합니다. 같은 주 OpenAI도 사이버 방어 프로그램을 확대했습니다.",
+    "change": "회사 보안 담당자라면 외부 노출 서비스의 패치 주기와 비밀키 관리부터 점검해 보세요.",
+    "prio": 3
+  },
+  {
+    "c": "8d8ea809861f",
+    "slug": "claude-api-skill-coderabbit-jetbrains-warp",
+    "title": "claude-api 스킬, CodeRabbit·JetBrains·Resolve AI·Warp에 기본 탑재",
+    "summary": "Claude API 코드를 바로 쓸 수 있게 해주는 스킬이 다른 개발 도구로 퍼졌습니다.",
+    "cat": "AI_CODING",
+    "topics": [
+      "anthropic",
+      "claude",
+      "ai-coding"
+    ],
+    "companies": [
+      "Anthropic",
+      "JetBrains"
+    ],
+    "products": [
+      "Claude API"
+    ],
+    "facts": [
+      "CodeRabbit, JetBrains, Resolve AI, Warp가 claude-api 스킬을 기본 탑재했습니다. 3월 Claude Code에서 처음 소개된 이 스킬은 실제 서비스용 Claude API 코드를 쓰도록 돕습니다."
+    ],
+    "why": "'스킬'이 특정 회사 도구를 넘어 다른 도구에서도 쓰는 공용 형식이 되고 있습니다.",
+    "change": "JetBrains IDE나 Warp 사용자는 Claude API 연동 코드를 만들 때 최신 사용법이 반영된 결과를 받을 수 있습니다.",
+    "prio": 3
+  },
+  {
+    "c": "88ece0f5d540",
+    "slug": "openai-gpt-5-4-cyber-trusted-access",
+    "title": "OpenAI 'GPT-5.4-Cyber'… 검증된 보안 전문가에게만 제공",
+    "summary": "사이버 방어 프로그램을 넓히고, 이틀 뒤 1천만 달러 API 지원금도 발표했습니다.",
+    "cat": "SECURITY",
+    "topics": [
+      "openai",
+      "ai-security"
+    ],
+    "companies": [
+      "OpenAI"
+    ],
+    "products": [
+      "GPT-5.4-Cyber"
+    ],
+    "facts": [
+      "OpenAI가 Trusted Access for Cyber 프로그램을 확대해 검증된 방어자에게 GPT-5.4-Cyber를 제공하고 안전장치를 강화한다고 밝혔습니다.",
+      "4월 16일에는 주요 보안 기업과 기업들이 이 프로그램에 합류했으며, 1천만 달러 규모의 API 지원금을 제공한다고 발표했습니다."
+    ],
+    "why": "공격에도 쓰일 수 있는 보안 특화 모델을 '누구에게 줄 것인가'를 선별하는 방식입니다. 6월 GPT-5.5-Cyber, 9월 GPT-6 Astra로 이어집니다.",
+    "change": "보안 기업은 프로그램에 신청해 방어용 모델에 접근할 수 있습니다. 일반 사용자 변화는 없습니다.",
+    "prio": 2,
+    "secondary": [
+      "75a4499fe0eb"
+    ]
+  },
+  {
+    "c": "6d737041e91d",
+    "slug": "openai-cybersecurity-action-plan",
+    "title": "OpenAI '지능 시대의 사이버보안' 5대 실행 계획",
+    "summary": "AI 기반 방어를 널리 보급하고 핵심 시스템을 보호하는 계획입니다.",
+    "cat": "SECURITY",
+    "topics": [
+      "openai",
+      "ai-security",
+      "ai-regulation"
+    ],
+    "companies": [
+      "OpenAI"
+    ],
+    "products": [],
+    "facts": [
+      "OpenAI가 AI 기반 사이버 방어의 보급과 핵심 시스템 보호를 중심으로 한 다섯 가지 사이버보안 실행 계획을 발표했습니다."
+    ],
+    "why": "AI 회사가 자사 제품 안전을 넘어 사회 전체 사이버 방어 정책을 제안하기 시작했습니다.",
+    "change": "정책 제안이라 당장 바뀌는 기능은 없습니다. 기업 보안 담당자라면 제안된 5대 항목을 사내 점검 목록과 비교해 볼 수 있습니다.",
+    "prio": 3
+  },
+  {
+    "c": "42d64f92ad88",
+    "slug": "openai-axios-supply-chain-response",
+    "title": "OpenAI, Axios 공급망 공격 대응… macOS 서명 인증서 교체 \"사용자 데이터 유출 없음\"",
+    "summary": "개발 도구 공급망 공격 여파로 맥 앱 인증서를 바꾸고 앱을 업데이트했습니다.",
+    "cat": "SECURITY",
+    "topics": [
+      "openai",
+      "chatgpt",
+      "ai-security"
+    ],
+    "companies": [
+      "OpenAI"
+    ],
+    "products": [
+      "ChatGPT for macOS"
+    ],
+    "facts": [
+      "OpenAI는 Axios 공급망 공격에 대응해 macOS 코드 서명 인증서를 교체하고 앱을 업데이트했으며, 사용자 데이터가 유출되지 않았음을 확인했다고 밝혔습니다."
+    ],
+    "why": "AI 회사도 널리 쓰는 오픈소스 라이브러리 공격의 영향을 받습니다. 인증서 교체는 가짜 앱을 막기 위한 조치입니다.",
+    "change": "맥에서 ChatGPT 앱을 쓴다면 최신 버전으로 업데이트하고, 공식 경로가 아닌 곳에서 받은 설치 파일은 지우세요.",
+    "prio": 2
+  },
+  {
+    "c": "e2bf2733d05a",
+    "slug": "openai-privacy-filter",
+    "title": "OpenAI 'Privacy Filter' 공개… 글 속 개인정보를 찾아 가리는 공개 가중치 모델",
+    "summary": "누구나 내려받아 쓸 수 있는 개인정보 탐지·삭제 모델입니다.",
+    "cat": "SECURITY",
+    "topics": [
+      "openai",
+      "open-models",
+      "ai-security"
+    ],
+    "companies": [
+      "OpenAI"
+    ],
+    "products": [
+      "OpenAI Privacy Filter"
+    ],
+    "facts": [
+      "OpenAI Privacy Filter는 텍스트 속 개인 식별 정보(PII)를 높은 정확도로 찾아 가리는 공개 가중치(open-weight) 모델이라고 OpenAI가 밝혔습니다."
+    ],
+    "why": "AI에 문서를 넣기 전에 이름·전화번호 같은 정보를 걸러내는 단계가 필요합니다. 내 서버에서 돌릴 수 있는 모델이라 데이터를 밖으로 보내지 않아도 됩니다.",
+    "change": "고객 데이터를 다루는 개발자는 AI 처리 전에 이 모델로 개인정보를 가리는 단계를 넣을 수 있습니다. 한국어 정보 탐지 성능은 직접 확인이 필요합니다.",
+    "prio": 2
+  },
+  {
+    "c": "54bfe59297d4",
+    "slug": "openai-child-safety-blueprint",
+    "title": "OpenAI '아동 안전 청사진'… 연령에 맞는 설계와 안전장치 로드맵",
+    "summary": "어린이·청소년 보호를 위한 AI 개발 원칙을 냈습니다.",
+    "cat": "REGULATION",
+    "topics": [
+      "openai",
+      "ai-regulation",
+      "ai-security"
+    ],
+    "companies": [
+      "OpenAI"
+    ],
+    "products": [],
+    "facts": [
+      "OpenAI가 안전장치, 연령에 맞는 설계, 외부 협력으로 어린이·청소년을 보호하는 AI 개발 로드맵인 Child Safety Blueprint를 발표했습니다."
+    ],
+    "why": "3월 일본판 청소년 안전 청사진에 이은 전체 원칙 문서입니다. 8월 'ChatGPT for Teens' 출시로 이어집니다.",
+    "change": "원칙 발표라 즉시 바뀐 기능은 없습니다. 자녀가 ChatGPT를 쓴다면 연령 설정과 보호자 기능을 직접 확인해 두세요.",
+    "prio": 3
+  },
+  {
+    "c": "703e1a7c3252",
+    "slug": "openai-safety-fellowship",
+    "title": "OpenAI '안전 펠로십'… 외부 독립 안전·정렬 연구 지원",
+    "summary": "차세대 안전 연구 인력을 키우는 시범 프로그램입니다.",
+    "cat": "RESEARCH",
+    "topics": [
+      "openai",
+      "ai-research",
+      "ai-security"
+    ],
+    "companies": [
+      "OpenAI"
+    ],
+    "products": [],
+    "facts": [
+      "OpenAI가 독립적인 안전·정렬 연구를 지원하고 차세대 인재를 키우기 위한 시범 프로그램 OpenAI Safety Fellowship을 발표했습니다."
+    ],
+    "why": "2월 750만 달러 정렬 연구 지원에 이은 외부 연구자 지원입니다.",
+    "change": "AI 안전 연구에 관심 있는 연구자라면 지원 조건을 확인해 볼 수 있습니다.",
+    "prio": 3
+  },
+  {
+    "c": "e6284b864c34",
+    "slug": "openai-community-safety",
+    "title": "OpenAI, ChatGPT의 '지역사회 안전' 보호 방식 설명",
+    "summary": "모델 안전장치, 악용 탐지, 정책 집행, 외부 전문가 협력을 정리했습니다.",
+    "cat": "SECURITY",
+    "topics": [
+      "openai",
+      "chatgpt",
+      "ai-security"
+    ],
+    "companies": [
+      "OpenAI"
+    ],
+    "products": [
+      "ChatGPT"
+    ],
+    "facts": [
+      "OpenAI가 모델 안전장치, 악용 탐지, 정책 집행, 안전 전문가와의 협력을 통해 ChatGPT에서 지역사회 안전을 지키는 방식을 설명했습니다."
+    ],
+    "why": "AI가 폭력이나 범죄 계획에 쓰일 수 있다는 우려에 대한 공식 설명입니다.",
+    "change": "설명 글이라 새 기능은 없습니다. ChatGPT가 위험 요청을 어떤 기준으로 거절·신고하는지 알고 싶다면 원문을 참고하세요.",
+    "prio": 3
+  },
+  {
+    "c": "6ce07af346a4",
+    "slug": "openai-goblin-outputs-root-cause",
+    "title": "OpenAI \"고블린은 어디서 왔나\"… GPT-5의 이상한 말버릇 원인과 수정 과정 공개",
+    "summary": "모델 성격 설정 때문에 생긴 이상 출력이 어떻게 퍼졌는지 설명했습니다.",
+    "cat": "RESEARCH",
+    "topics": [
+      "openai",
+      "chatgpt",
+      "ai-research"
+    ],
+    "companies": [
+      "OpenAI"
+    ],
+    "products": [
+      "GPT-5"
+    ],
+    "facts": [
+      "OpenAI는 '고블린' 출력이 AI 모델에서 퍼진 경위를 시간 순서, 근본 원인, 수정 방법과 함께 설명하며, GPT-5 동작에서 성격 설정과 관련된 특이 현상이었다고 밝혔습니다."
+    ],
+    "why": "AI의 '말버릇'이 학습 과정에서 의도치 않게 생기고 퍼질 수 있다는 사례를 회사가 직접 공개했습니다.",
+    "change": "직접적인 변화는 없지만, AI 답변에서 이상하게 반복되는 표현을 발견하면 피드백으로 신고할 수 있습니다.",
+    "prio": 3
+  },
+  {
+    "c": "3fd9feef2846",
+    "slug": "openai-ai-jobs-transition-model",
+    "title": "OpenAI, 직업 921개·미국 일자리 1억4,800만 개 분석… 'AI 일자리 전환' 모델",
+    "summary": "자동화 위험, 재편, 성장, 영향 적음으로 직업을 나눴습니다.",
+    "cat": "RESEARCH",
+    "topics": [
+      "openai",
+      "ai-work",
+      "ai-research"
+    ],
+    "companies": [
+      "OpenAI"
+    ],
+    "products": [],
+    "facts": [
+      "OpenAI가 921개 직업과 미국 일자리 1억4,800만 개를 분석해 자동화 위험, 재편, 성장, AI 영향이 적은 직업을 구분하는 새 프레임워크를 발표했습니다."
+    ],
+    "why": "'AI가 일자리를 없앤다/만든다'는 막연한 논쟁을 직업 단위로 쪼개 보려는 시도입니다. 다만 AI 회사가 직접 낸 분석이라는 점은 감안해야 합니다.",
+    "change": "내 직업이 어느 분류에 속하는지 원문 자료에서 확인해 볼 수 있습니다. 미국 직업 분류 기준이라 한국 상황과는 차이가 있습니다.",
+    "prio": 2
+  },
+  {
+    "c": "627413d21cd7",
+    "slug": "openai-acquires-tbpn",
+    "title": "OpenAI, 기술 토크쇼 TBPN 인수",
+    "summary": "AI에 관한 대화를 넓히고 독립 미디어를 지원하겠다고 밝혔습니다.",
+    "cat": "BUSINESS",
+    "topics": [
+      "openai"
+    ],
+    "companies": [
+      "OpenAI",
+      "TBPN"
+    ],
+    "products": [],
+    "facts": [
+      "OpenAI는 AI에 관한 대화를 넓히고 독립 미디어를 지원하기 위해 TBPN을 인수한다고 밝혔습니다."
+    ],
+    "why": "AI 회사가 기술 미디어를 직접 소유하게 됐습니다. 인수 후 보도의 독립성을 어떻게 지키는지가 관건입니다.",
+    "change": "직접적인 변화는 없지만, TBPN 콘텐츠를 볼 때 OpenAI 소유라는 점을 감안하세요.",
+    "prio": 3
+  },
+  {
+    "c": "b681370c7a53",
+    "slug": "codex-pay-as-you-go-teams",
+    "title": "Codex, ChatGPT Business·Enterprise에 종량제 요금 도입",
+    "summary": "팀이 작게 시작해 사용량만큼 내는 방식이 생겼습니다.",
+    "cat": "PRODUCT_UPDATE",
+    "topics": [
+      "openai",
+      "ai-coding"
+    ],
+    "companies": [
+      "OpenAI"
+    ],
+    "products": [
+      "Codex",
+      "ChatGPT Business",
+      "ChatGPT Enterprise"
+    ],
+    "facts": [
+      "Codex가 ChatGPT Business와 Enterprise에 종량제(pay-as-you-go) 요금을 도입해, 팀이 도입을 시작하고 늘리기 쉬운 선택지를 제공한다고 OpenAI가 밝혔습니다."
+    ],
+    "why": "좌석당 정액제 대신 쓴 만큼 내는 방식은 시험 도입 부담을 줄입니다. 같은 달 GitHub Copilot도 사용량 기반 과금 전환을 발표했습니다.",
+    "change": "회사에서 Codex를 일부 팀만 시험해 보려면 종량제가 유리할 수 있습니다. 월 상한을 함께 정하세요.",
+    "prio": 3
+  },
+  {
+    "c": "d9639e2fcb88",
+    "slug": "codex-labs-enterprise-4m-wau",
+    "title": "OpenAI 'Codex Labs' 출범… 액센츄어·PwC·인포시스와 기업 확산, 주간 사용자 400만",
+    "summary": "기업이 개발 전 과정에 Codex를 도입하도록 돕는 프로그램입니다.",
+    "cat": "BUSINESS",
+    "topics": [
+      "openai",
+      "ai-coding",
+      "ai-work"
+    ],
+    "companies": [
+      "OpenAI",
+      "Accenture",
+      "PwC",
+      "Infosys"
+    ],
+    "products": [
+      "Codex",
+      "Codex Labs"
+    ],
+    "facts": [
+      "OpenAI가 Codex Labs를 출범하고 액센츄어, PwC, 인포시스 등과 협력해 기업의 개발 전 과정에 Codex 도입을 돕는다고 밝혔습니다. Codex 주간 활성 사용자는 400만 명에 이르렀다고 발표했습니다."
+    ],
+    "why": "코딩 에이전트가 개인 개발자 도구에서 대형 컨설팅사를 통한 기업 도입 단계로 넘어갔습니다.",
+    "change": "기업 고객 프로그램이라 개인 사용 방식은 그대로지만, 주간 400만 명이라는 수치는 코딩 에이전트가 주류 도구가 됐다는 지표입니다.",
+    "prio": 2
+  },
+  {
+    "c": "f5300dfb721c",
+    "slug": "openai-agents-sdk-sandbox",
+    "title": "OpenAI Agents SDK 개편… 샌드박스 실행 기본 내장",
+    "summary": "파일과 도구를 오래 다루는 에이전트를 안전하게 만들도록 돕습니다.",
+    "cat": "AI_AGENT",
+    "topics": [
+      "openai",
+      "ai-agent"
+    ],
+    "companies": [
+      "OpenAI"
+    ],
+    "products": [
+      "Agents SDK"
+    ],
+    "facts": [
+      "OpenAI가 Agents SDK에 기본 샌드박스 실행과 모델에 맞춘 실행 틀(harness)을 넣어, 파일과 도구를 다루는 장시간 에이전트를 안전하게 만들 수 있게 했다고 밝혔습니다."
+    ],
+    "why": "에이전트가 코드를 실행할 때 내 컴퓨터 전체가 아니라 격리된 공간에서만 움직이게 하는 것이 기본 안전 설계가 됐습니다.",
+    "change": "Agents SDK로 서비스를 만드는 개발자는 별도 격리 환경을 직접 구성하지 않아도 됩니다.",
+    "prio": 3
+  },
+  {
+    "c": "29e3d13268b3",
+    "slug": "openai-symphony-orchestration-spec",
+    "title": "OpenAI 'Symphony' 공개… 이슈 트래커를 상시 가동 에이전트 시스템으로",
+    "summary": "Codex 작업 조율을 위한 오픈소스 규격입니다.",
+    "cat": "AI_CODING",
+    "topics": [
+      "openai",
+      "ai-coding",
+      "ai-agent"
+    ],
+    "companies": [
+      "OpenAI"
+    ],
+    "products": [
+      "Symphony",
+      "Codex"
+    ],
+    "facts": [
+      "OpenAI가 Codex 작업 조율을 위한 오픈소스 규격 Symphony를 소개했습니다. 이슈 트래커를 상시 가동되는 에이전트 시스템으로 바꿔 업무 전환을 줄인다고 설명했습니다."
+    ],
+    "why": "이슈를 등록하면 에이전트가 알아서 가져가 처리하는 구조가 규격으로 공개됐습니다. 같은 달 GitHub의 Jira 연동, Claude Code 루틴과 같은 방향입니다.",
+    "change": "직접적인 변화는 없지만, 팀 단위 에이전트 운영을 설계할 때 참고할 공개 규격입니다.",
+    "prio": 3
+  },
+  {
+    "c": "b9cfd90c4451",
+    "slug": "chatgpt-for-clinicians-free",
+    "title": "'ChatGPT for Clinicians', 미국 의사·전문간호사·약사에게 무료",
+    "summary": "인증된 미국 의료인에게 진료·기록·연구 지원용 ChatGPT를 무료로 제공합니다.",
+    "cat": "CONSUMER",
+    "topics": [
+      "openai",
+      "chatgpt",
+      "ai-health"
+    ],
+    "companies": [
+      "OpenAI"
+    ],
+    "products": [
+      "ChatGPT for Clinicians"
+    ],
+    "facts": [
+      "OpenAI가 인증된 미국 의사, 전문간호사, 약사에게 ChatGPT for Clinicians를 무료로 제공해 진료, 기록, 연구를 지원한다고 밝혔습니다."
+    ],
+    "why": "1월 'OpenAI for Healthcare'의 후속입니다. 의료인을 무료로 먼저 끌어들이는 전략입니다. 한국 의료인 대상 제공은 발표되지 않았습니다.",
+    "change": "미국 의료인 대상이라 국내 의료진은 해당되지 않습니다. 국내 제공이 발표되면 자격 조건부터 확인하세요.",
+    "prio": 3
+  },
+  {
+    "c": "bc680bc14e9f",
+    "slug": "openai-fedramp-moderate",
+    "title": "ChatGPT Enterprise·OpenAI API, 미 연방 보안인증 FedRAMP Moderate 획득",
+    "summary": "미국 연방기관이 보안 기준에 맞춰 OpenAI를 쓸 수 있게 됐습니다.",
+    "cat": "REGULATION",
+    "topics": [
+      "openai",
+      "chatgpt",
+      "ai-security"
+    ],
+    "companies": [
+      "OpenAI"
+    ],
+    "products": [
+      "ChatGPT Enterprise",
+      "OpenAI API"
+    ],
+    "facts": [
+      "OpenAI가 ChatGPT Enterprise와 OpenAI API에 대해 FedRAMP Moderate 인증을 받아 미국 연방기관이 안전하게 도입할 수 있게 됐다고 밝혔습니다."
+    ],
+    "why": "정부 기관 도입에는 보안 인증이 필수입니다. 같은 달 GitHub Copilot도 FedRAMP 인증 모델 옵션을 냈습니다.",
+    "change": "미국 연방 인증이라 국내 기관 도입 조건은 그대로지만, 국내 공공기관 도입은 별도의 국내 보안 인증 기준을 따릅니다.",
+    "prio": 3
+  },
+  {
+    "c": "f3e62d489285",
+    "slug": "cloudflare-agent-cloud-openai",
+    "title": "클라우드플레어 'Agent Cloud'에 GPT-5.4·Codex 탑재",
+    "summary": "기업이 클라우드플레어 위에서 에이전트를 만들고 배포합니다.",
+    "cat": "BUSINESS",
+    "topics": [
+      "openai",
+      "ai-agent"
+    ],
+    "companies": [
+      "Cloudflare",
+      "OpenAI"
+    ],
+    "products": [
+      "Agent Cloud",
+      "GPT-5.4",
+      "Codex"
+    ],
+    "facts": [
+      "클라우드플레어가 OpenAI의 GPT-5.4와 Codex를 Agent Cloud에 넣어, 기업이 실제 업무용 AI 에이전트를 빠르고 안전하게 만들고 배포할 수 있게 했다고 OpenAI가 밝혔습니다."
+    ],
+    "why": "OpenAI 모델이 마이크로소프트 외 클라우드로 넓어지는 흐름입니다. 같은 달 말에는 AWS에서도 제공되기 시작했습니다.",
+    "change": "개발자·기업 대상입니다. 클라우드플레어를 쓰는 회사라면 같은 플랫폼에서 OpenAI 모델 기반 에이전트를 배포할 수 있습니다.",
+    "prio": 3
+  },
+  {
+    "c": "0889e6f0be8e",
+    "slug": "openai-stargate-compute-scale",
+    "title": "OpenAI, 스타게이트 확장… 새 데이터센터 용량 추가",
+    "summary": "늘어나는 AI 수요에 맞춰 컴퓨팅 인프라를 키운다고 밝혔습니다.",
+    "cat": "CHIPS_INFRA",
+    "topics": [
+      "openai",
+      "ai-chip"
+    ],
+    "companies": [
+      "OpenAI"
+    ],
+    "products": [
+      "Stargate"
+    ],
+    "facts": [
+      "OpenAI가 증가하는 AI 수요를 맞추기 위해 스타게이트를 확장하고 새 데이터센터 용량을 추가한다고 밝혔습니다."
+    ],
+    "why": "모델 경쟁이 곧 전력·데이터센터 확보 경쟁이라는 점을 보여줍니다. 같은 달 Anthropic도 AWS와 대규모 컴퓨팅 약정을 맺었습니다.",
+    "change": "서비스 이용 방식은 그대로지만, 데이터센터 용량은 장기적으로 사용 한도와 응답 속도에 영향을 주는 요소입니다.",
+    "prio": 3
+  },
+  {
+    "c": "784c08ca0538",
+    "slug": "copilot-opus-4-7-ga-multiplier",
+    "title": "Claude Opus 4.7, GitHub Copilot 정식 제공… 프로모션 후 요청 배수 15배",
+    "summary": "출시 당일 Copilot에 들어왔지만, 할인 기간이 끝나며 비용이 크게 올랐습니다.",
+    "cat": "AI_CODING",
+    "topics": [
+      "copilot",
+      "claude",
+      "ai-coding"
+    ],
+    "companies": [
+      "GitHub",
+      "Anthropic"
+    ],
+    "products": [
+      "Claude Opus 4.7",
+      "GitHub Copilot"
+    ],
+    "facts": [
+      "Anthropic의 최신 Opus 모델인 Claude Opus 4.7이 GitHub Copilot에 순차 제공됐습니다.",
+      "GitHub은 5월 1일 공지에서 프로모션 가격이 4월 30일 끝났고, 프리미엄 요청 배수가 15배로 바뀌었다고 밝혔습니다."
+    ],
+    "why": "같은 모델이라도 도구 안에서 '얼마나 비싸게 계산되는지'가 바뀝니다. 배수 15배는 한 번 쓰면 일반 요청 15번 분량이 차감된다는 뜻입니다.",
+    "change": "Copilot에서 Opus 4.7을 자주 썼다면 월 할당량이 훨씬 빨리 소진될 수 있습니다. 어려운 작업에만 고르세요.",
+    "prio": 2
+  },
+  {
+    "c": "43941ed10bb5",
+    "slug": "gpt-5-5-github-copilot",
+    "title": "GPT-5.5, GitHub Copilot 정식 제공… \"복잡한 다단계 에이전트 코딩에서 최고 성능\"",
+    "summary": "OpenAI 발표 다음 날 Copilot에 순차 제공됐습니다.",
+    "cat": "AI_CODING",
+    "topics": [
+      "copilot",
+      "openai",
+      "ai-coding"
+    ],
+    "companies": [
+      "GitHub",
+      "OpenAI"
+    ],
+    "products": [
+      "GPT-5.5",
+      "GitHub Copilot"
+    ],
+    "facts": [
+      "GPT-5.5가 GitHub Copilot에 순차 제공됐습니다. GitHub은 초기 테스트에서 복잡한 다단계 에이전트 코딩 작업에서 가장 강한 성능을 보였다고 밝혔습니다."
+    ],
+    "why": "새 모델의 첫 실사용 무대가 개발 도구라는 흐름이 이어졌습니다.",
+    "change": "Copilot 사용자는 모델 선택에서 GPT-5.5를 고를 수 있습니다. 요청 배수는 모델마다 다르니 확인하세요.",
+    "prio": 3
+  },
+  {
+    "c": "6e76360046a2",
+    "slug": "copilot-cloud-agent-rename",
+    "title": "'Copilot 코딩 에이전트'→'클라우드 에이전트'… PR 밖에서도 조사·계획·코딩",
+    "summary": "이름을 바꾸며 쓰임새를 넓혔습니다.",
+    "cat": "AI_AGENT",
+    "topics": [
+      "copilot",
+      "ai-agent",
+      "ai-coding"
+    ],
+    "companies": [
+      "GitHub"
+    ],
+    "products": [
+      "Copilot cloud agent"
+    ],
+    "facts": [
+      "GitHub은 Copilot coding agent의 이름을 Copilot cloud agent로 바꾸고, PR 작업에만 쓰이던 기능을 조사·계획·코딩 등 더 넓은 용도로 확장했다고 밝혔습니다."
+    ],
+    "why": "코드 작성 도우미가 '클라우드에서 일하는 동료'로 위치가 바뀌었습니다. 4월 8일에는 GitHub 모바일에서도 같은 기능이 열렸습니다.",
+    "change": "휴대폰에서 이슈를 보고 바로 클라우드 에이전트에 조사나 수정을 맡길 수 있습니다.",
+    "prio": 3,
+    "secondary": [
+      "17866bf2da51"
+    ]
+  },
+  {
+    "c": "0e8c449157a4",
+    "slug": "dependabot-alerts-assign-ai-agents",
+    "title": "Dependabot 보안 경고를 AI 에이전트에 배정… Copilot·Claude·Codex 지원",
+    "summary": "버전 올리기로 끝나지 않는 취약점 수정을 에이전트에게 맡깁니다.",
+    "cat": "SECURITY",
+    "topics": [
+      "copilot",
+      "claude",
+      "ai-security",
+      "ai-coding"
+    ],
+    "companies": [
+      "GitHub",
+      "Anthropic",
+      "OpenAI"
+    ],
+    "products": [
+      "Dependabot",
+      "GitHub Copilot"
+    ],
+    "facts": [
+      "GitHub은 Dependabot 경고를 Copilot, Claude 등 AI 코딩 에이전트에 배정해 수정하게 하는 기능을 정식 제공한다고 밝혔습니다. 일부 의존성 취약점은 버전 업데이트만으로 해결되지 않고 프로젝트 전반의 코드 변경이 필요하기 때문이라고 설명했습니다."
+    ],
+    "why": "쌓여만 가던 보안 경고 처리가 에이전트의 대표적인 쓰임새가 됐습니다.",
+    "change": "저장소 관리자는 쌓인 Dependabot 경고를 에이전트에 배정하고 결과 PR만 검토할 수 있습니다.",
+    "prio": 2
+  },
+  {
+    "c": "79326fb47e59",
+    "slug": "github-claude-codex-agents-model-selection",
+    "title": "github.com의 Claude·Codex 에이전트도 모델 선택 가능",
+    "summary": "외부 코딩 에이전트를 실행할 때 쓸 모델을 고릅니다.",
+    "cat": "AI_CODING",
+    "topics": [
+      "copilot",
+      "claude",
+      "openai",
+      "ai-coding"
+    ],
+    "companies": [
+      "GitHub",
+      "Anthropic",
+      "OpenAI"
+    ],
+    "products": [
+      "Claude",
+      "Codex"
+    ],
+    "facts": [
+      "github.com에서 외부 코딩 에이전트인 Claude와 Codex를 실행할 때도 Copilot 클라우드 에이전트처럼 모델을 선택할 수 있게 됐습니다."
+    ],
+    "why": "GitHub이 여러 회사 에이전트를 같은 화면에서 고르는 '에이전트 장터'로 바뀌고 있습니다.",
+    "change": "가벼운 작업엔 작은 모델, 복잡한 작업엔 큰 모델을 골라 비용을 아낄 수 있습니다.",
+    "prio": 3
+  },
+  {
+    "c": "deb2c72b4768",
+    "slug": "copilot-cli-byok-local-models",
+    "title": "Copilot CLI, 자체 API 키와 로컬 모델 지원",
+    "summary": "GitHub 서버 대신 내 모델 공급자나 내 컴퓨터 모델을 연결합니다.",
+    "cat": "AI_CODING",
+    "topics": [
+      "copilot",
+      "ai-coding",
+      "open-models"
+    ],
+    "companies": [
+      "GitHub"
+    ],
+    "products": [
+      "GitHub Copilot CLI"
+    ],
+    "facts": [
+      "GitHub Copilot CLI가 사용자의 모델 공급자를 연결(BYOK)하거나 완전히 로컬에서 도는 모델을 쓸 수 있게 됐습니다.",
+      "4월 22일에는 Copilot Business·Enterprise 사용자도 VS Code에서 BYOK를 쓸 수 있게 됐습니다."
+    ],
+    "why": "코드를 외부 서버로 보내기 어려운 회사도 Copilot 도구를 쓸 길이 열렸습니다.",
+    "change": "보안 때문에 클라우드 AI를 못 쓰던 팀은 사내 모델이나 로컬 모델로 Copilot CLI를 시험해 볼 수 있습니다.",
+    "prio": 3,
+    "secondary": [
+      "1af3f7270595"
+    ]
+  },
+  {
+    "c": "eb041235b68c",
+    "slug": "copilot-cli-remote-control",
+    "title": "Copilot CLI 원격 제어… 실행 중인 세션을 웹·모바일에서 확인하고 조종",
+    "summary": "copilot --remote 명령으로 터미널 작업을 밖에서 살펴봅니다.",
+    "cat": "AI_CODING",
+    "topics": [
+      "copilot",
+      "ai-coding",
+      "ai-agent"
+    ],
+    "companies": [
+      "GitHub"
+    ],
+    "products": [
+      "GitHub Copilot CLI"
+    ],
+    "facts": [
+      "GitHub은 copilot --remote를 공개 프리뷰로 출시해, 실행 중인 Copilot CLI 세션을 웹과 모바일에서 바로 확인하고 조종할 수 있게 했습니다."
+    ],
+    "why": "에이전트에게 긴 작업을 맡기고 자리를 비워도 중간에 확인·개입할 수 있게 됩니다.",
+    "change": "긴 작업을 터미널에 걸어두고 휴대폰으로 진행 상황을 확인할 수 있습니다.",
+    "prio": 3
+  },
+  {
+    "c": "d78d9c56ed3e",
+    "slug": "gh-skill-agent-skills-cli",
+    "title": "GitHub CLI 'gh skill'… 에이전트 스킬을 찾고 설치하고 관리",
+    "summary": "AI 코딩 에이전트용 스킬을 명령어 하나로 다룹니다.",
+    "cat": "AI_CODING",
+    "topics": [
+      "copilot",
+      "ai-coding",
+      "ai-agent"
+    ],
+    "companies": [
+      "GitHub"
+    ],
+    "products": [
+      "GitHub CLI"
+    ],
+    "facts": [
+      "GitHub이 에이전트 스킬을 쉽게 찾고 설치하고 관리하는 GitHub CLI 새 명령 gh skill을 출시했습니다."
+    ],
+    "why": "'스킬'이 패키지처럼 설치·관리하는 단위가 됐습니다. 출처가 불분명한 스킬은 보안 위험이 될 수 있습니다.",
+    "change": "스킬을 설치할 때는 제작자와 내용을 확인하세요. 스킬은 에이전트에게 지시를 내리는 파일입니다.",
+    "prio": 3
+  },
+  {
+    "c": "d95ca1bf8a88",
+    "slug": "copilot-data-residency-fedramp",
+    "title": "GitHub Copilot, 미국·EU 데이터 상주와 FedRAMP 인증 모델 제공",
+    "summary": "데이터를 특정 지역 안에서만 처리해야 하는 기업을 위한 옵션입니다.",
+    "cat": "SECURITY",
+    "topics": [
+      "copilot",
+      "ai-security",
+      "ai-regulation"
+    ],
+    "companies": [
+      "GitHub"
+    ],
+    "products": [
+      "GitHub Copilot"
+    ],
+    "facts": [
+      "GitHub Copilot에서 미국과 EU 데이터 상주(data residency) 옵션과 FedRAMP 인증 모델을 쓸 수 있게 됐다고 GitHub이 밝혔습니다."
+    ],
+    "why": "규제가 있는 업종은 '데이터가 어느 나라에서 처리되는가'가 도입 조건입니다.",
+    "change": "한국 리전 옵션은 이 발표에 포함되지 않았습니다. 국내 규제 대상 기업은 처리 지역을 확인해야 합니다.",
+    "prio": 3
+  },
+  {
+    "c": "c43e3df17a46",
+    "slug": "copilot-limits-pause-trials-signups",
+    "title": "GitHub Copilot, 사용 한도 강화·Pro 체험 중단·Business 셀프 가입 중단",
+    "summary": "사용량 급증으로 4월 내내 가입과 사용을 조이는 조치가 이어졌습니다.",
+    "cat": "PRODUCT_UPDATE",
+    "topics": [
+      "copilot",
+      "ai-coding"
+    ],
+    "companies": [
+      "GitHub"
+    ],
+    "products": [
+      "GitHub Copilot"
+    ],
+    "facts": [
+      "4월 10일 GitHub은 동시 사용과 과도한 사용 패턴 증가를 이유로 새 한도를 적용하고 Copilot Pro+에서 Opus 4.6 Fast를 없앤다고 밝혔습니다.",
+      "같은 날 새 Copilot Pro 체험을 중단했고, 4월 13일에는 조사가 진행되는 동안 기존 체험까지 모두 중단했습니다.",
+      "4월 20일 개인 요금제 변경을 공지했고, 4월 22일에는 일부 조직의 Copilot Business 셀프 가입을 중단했습니다."
+    ],
+    "why": "에이전트 사용이 늘면서 정액 요금으로는 비용을 감당하기 어려워졌습니다. 4월 27일 발표된 6월 사용량 기반 과금 전환의 배경입니다.",
+    "change": "Copilot 체험을 하려던 사용자는 재개 공지를 기다려야 했습니다. 기존 사용자는 한도 초과 메시지가 늘 수 있습니다.",
+    "prio": 2,
+    "secondary": [
+      "25b2164f79d7",
+      "9d113f573ea9",
+      "a17465e680f2"
+    ]
+  },
+  {
+    "c": "9ad4cddc77db",
+    "slug": "copilot-code-review-actions-minutes",
+    "title": "Copilot 코드 리뷰, 6월 1일부터 GitHub Actions 사용 시간 차감",
+    "summary": "리뷰 에이전트가 쓰는 실행 환경 비용이 별도로 계산됩니다.",
+    "cat": "PRODUCT_UPDATE",
+    "topics": [
+      "copilot",
+      "ai-coding"
+    ],
+    "companies": [
+      "GitHub"
+    ],
+    "products": [
+      "Copilot code review",
+      "GitHub Actions"
+    ],
+    "facts": [
+      "GitHub은 2026년 6월 1일부터 GitHub Copilot 코드 리뷰가 GitHub Actions 사용 시간(minutes)을 소비하기 시작한다고 공지했습니다."
+    ],
+    "why": "에이전트가 리뷰하면서 실제 실행 환경을 쓰기 때문에, 그 비용을 사용자에게 넘기는 변화입니다. 같은 날 발표된 AI Credits 과금 전환과 함께 봐야 합니다.",
+    "change": "PR이 많은 저장소는 6월부터 Actions 사용 시간이 더 빨리 소진될 수 있습니다. 리뷰 자동 요청 범위를 점검하세요.",
+    "prio": 3
+  },
+  {
+    "c": "52a8bedc4961",
+    "slug": "copilot-deprecates-gpt-5-1-sonnet-4",
+    "title": "GitHub Copilot, GPT-5.1 계열 지원 종료·Claude Sonnet 4는 5월 6일 종료",
+    "summary": "구형 모델 정리가 이어졌습니다.",
+    "cat": "PRODUCT_UPDATE",
+    "topics": [
+      "copilot",
+      "openai",
+      "claude"
+    ],
+    "companies": [
+      "GitHub",
+      "OpenAI",
+      "Anthropic"
+    ],
+    "products": [
+      "GPT-5.1",
+      "GPT-5.1 Codex",
+      "Claude Sonnet 4"
+    ],
+    "facts": [
+      "GitHub은 GPT-5.1, GPT-5.1 Codex, GPT-5.1-Codex-Max, GPT-5.1-Codex-Mini를 모든 Copilot 기능에서 지원 종료했습니다.",
+      "Claude Sonnet 4 지원 종료도 예고했으며, 종료일은 5월 1일에서 5월 6일로 조정됐습니다."
+    ],
+    "why": "새 모델이 몇 주 단위로 나오면서 구형 모델은 반년도 안 돼 사라집니다.",
+    "change": "자동화 설정에서 이 모델들을 직접 지정해 뒀다면 다른 모델로 바꿔야 합니다.",
+    "prio": 3,
+    "secondary": [
+      "6c0a0e235cfd"
+    ]
+  },
+  {
+    "c": "252bc385cc46",
+    "slug": "vscode-weekly-releases-autopilot",
+    "title": "VS Code, 매주 안정판 출시로 전환… '오토파일럿' 등 3월 업데이트",
+    "summary": "v1.111~1.115까지 다섯 번의 릴리스를 한 번에 정리했습니다.",
+    "cat": "AI_CODING",
+    "topics": [
+      "copilot",
+      "microsoft",
+      "ai-coding"
+    ],
+    "companies": [
+      "Microsoft",
+      "GitHub"
+    ],
+    "products": [
+      "Visual Studio Code",
+      "GitHub Copilot"
+    ],
+    "facts": [
+      "VS Code가 매주 안정판을 내는 방식으로 바뀌었고, 3월~4월 초 v1.111부터 v1.115까지의 변경 사항에는 완전 자동 실행을 위한 Autopilot 등이 포함됐다고 GitHub이 밝혔습니다."
+    ],
+    "why": "AI 기능 경쟁 속도에 맞춰 개발 도구의 출시 주기도 월 단위에서 주 단위로 짧아졌습니다.",
+    "change": "VS Code는 매주 업데이트됩니다. 자동 실행 기능은 기본 설정과 승인 범위를 확인한 뒤 켜세요.",
+    "prio": 3
+  },
+  {
+    "c": "224e02a743f1",
+    "slug": "copilot-studio-multi-agent-ga",
+    "title": "Copilot Studio, 멀티 에이전트 시스템 정식 제공",
+    "summary": "여러 에이전트가 역할을 나눠 일하는 구조를 기업이 직접 만듭니다.",
+    "cat": "AI_AGENT",
+    "topics": [
+      "microsoft",
+      "copilot",
+      "ai-agent"
+    ],
+    "companies": [
+      "Microsoft"
+    ],
+    "products": [
+      "Copilot Studio"
+    ],
+    "facts": [
+      "마이크로소프트가 Copilot Studio에서 멀티 에이전트 시스템을 정식 제공하고, 프롬프트 편집기와 관리 통제 기능도 개선했다고 밝혔습니다."
+    ],
+    "why": "에이전트 하나가 모든 일을 하는 대신, 여러 에이전트에게 역할을 나누는 방식이 기업용 도구에 기본 기능으로 들어갔습니다.",
+    "change": "Copilot Studio를 쓰는 회사는 접수·분류·처리 에이전트를 나눠 연결하는 업무 흐름을 만들 수 있습니다.",
+    "prio": 3
+  },
+  {
+    "c": "9bfbd2c6ec5f",
+    "slug": "m365-copilot-agentic-word-excel-ppt-ga",
+    "title": "워드·엑셀·파워포인트 Copilot의 에이전트 기능 정식 제공",
+    "summary": "초안부터 마무리까지 Copilot이 직접 문서를 수정합니다.",
+    "cat": "WORK",
+    "topics": [
+      "microsoft",
+      "copilot",
+      "ai-work",
+      "ai-agent"
+    ],
+    "companies": [
+      "Microsoft"
+    ],
+    "products": [
+      "Microsoft 365 Copilot",
+      "Word",
+      "Excel",
+      "PowerPoint"
+    ],
+    "facts": [
+      "마이크로소프트는 Word, Excel, PowerPoint에서 Copilot의 에이전트 기능을 정식 제공한다고 밝혔습니다. Copilot이 직접 작업을 실행하되 통제권은 사용자에게 있다고 설명했습니다.",
+      "4월 13일에는 자주 쓰는 업무 앱을 Copilot 대화 안으로 가져와 바로 실행하는 에이전트 기능도 발표했습니다."
+    ],
+    "why": "오피스 AI가 '제안'에서 '직접 수정'으로 넘어갔습니다. 3월 발표한 Wave 3의 실제 적용입니다.",
+    "change": "M365 Copilot 사용자는 '이 표를 정리해서 차트까지 만들어줘'처럼 결과물 단위로 일을 맡길 수 있습니다. 변경 내역은 꼭 확인하세요.",
+    "prio": 2,
+    "secondary": [
+      "da8384b34c46"
+    ]
+  },
+  {
+    "c": "d94b241dbe50",
+    "slug": "gemini-api-flex-priority-prepay",
+    "title": "Gemini API 'Flex'·'Priority' 요금 단계와 선불 결제 도입",
+    "summary": "비용과 응답 속도 중 무엇을 우선할지 고르고, 미리 결제해 지출을 통제합니다.",
+    "cat": "PRODUCT_UPDATE",
+    "topics": [
+      "google",
+      "gemini"
+    ],
+    "companies": [
+      "Google"
+    ],
+    "products": [
+      "Gemini API",
+      "Google AI Studio"
+    ],
+    "facts": [
+      "구글이 Gemini API에 비용과 지연 시간의 균형을 맞추는 두 가지 새 추론 단계 Flex와 Priority를 도입했습니다.",
+      "4월 15일에는 Google AI Studio에서 Gemini API 선불 결제를 시작해 지출을 더 통제할 수 있게 했습니다."
+    ],
+    "why": "급하지 않은 작업은 싸게, 급한 작업은 비싸게 처리하는 요금 구조입니다. 3월 지출 상한에 이어 비용 통제 수단이 늘었습니다.",
+    "change": "야간 일괄 처리처럼 급하지 않은 작업은 Flex로 돌려 비용을 줄일 수 있습니다. 선불 결제로 예산 초과를 막을 수 있습니다.",
+    "prio": 2,
+    "secondary": [
+      "2a0b7d16928b"
+    ]
+  },
+  {
+    "c": "7e384f107dcd",
+    "slug": "google-ai-subscription-ai-studio-limits",
+    "title": "Google AI Pro·Ultra 구독자, AI Studio 사용 한도 상향… 나노 바나나 프로 포함",
+    "summary": "구독만으로 AI Studio 바이브 코딩을 더 많이 쓸 수 있습니다.",
+    "cat": "PRODUCT_UPDATE",
+    "topics": [
+      "google",
+      "gemini",
+      "ai-coding"
+    ],
+    "companies": [
+      "Google"
+    ],
+    "products": [
+      "Google AI Studio",
+      "Google AI Pro",
+      "Nano Banana Pro"
+    ],
+    "facts": [
+      "구글은 Google AI Pro와 Ultra 구독자가 Google AI Studio에서 더 높은 사용 한도를 받고, Nano Banana Pro와 Gemini Pro 모델에도 접근할 수 있다고 밝혔습니다."
+    ],
+    "why": "개발자용 도구(AI Studio)와 소비자 구독을 연결했습니다. API 키 없이도 구독자가 앱 만들기를 시도할 수 있게 됩니다.",
+    "change": "Google AI Pro 구독자라면 AI Studio에서 별도 결제 없이 더 많이 실험해 볼 수 있습니다.",
+    "prio": 3
+  },
+  {
+    "c": "5a9fd01a6c6a",
+    "slug": "gemini-app-notebooks",
+    "title": "Gemini 앱에 '노트북'… NotebookLM과 연결된 프로젝트 공간",
+    "summary": "자료와 대화를 프로젝트 단위로 묶어 관리합니다.",
+    "cat": "PRODUCT_UPDATE",
+    "topics": [
+      "google",
+      "gemini"
+    ],
+    "companies": [
+      "Google"
+    ],
+    "products": [
+      "Gemini app",
+      "NotebookLM"
+    ],
+    "facts": [
+      "구글은 Gemini 앱과 NotebookLM을 연결하는 프로젝트 공간인 Gemini 노트북을 소개했습니다."
+    ],
+    "why": "두 제품을 하나로 합치는 첫 단계였습니다. 7월 NotebookLM은 'Gemini Notebook'으로 이름이 바뀌었습니다.",
+    "change": "Gemini 앱에서 하던 대화와 NotebookLM 자료를 한 프로젝트로 묶어 이어서 작업할 수 있습니다.",
+    "prio": 3
+  },
+  {
+    "c": "f21e5b22f39a",
+    "slug": "gemini-interactive-simulations",
+    "title": "Gemini 앱, 질문을 인터랙티브 시뮬레이션·모델로 만들어 준다",
+    "summary": "복잡한 주제를 직접 조작해 보는 시각화로 바꿔 줍니다.",
+    "cat": "CONSUMER",
+    "topics": [
+      "google",
+      "gemini"
+    ],
+    "companies": [
+      "Google"
+    ],
+    "products": [
+      "Gemini app"
+    ],
+    "facts": [
+      "구글은 Gemini 앱이 질문과 복잡한 주제를 맞춤형 인터랙티브 시각화로 바꿀 수 있게 됐다고 밝혔습니다."
+    ],
+    "why": "3월 ChatGPT와 Claude가 시각 설명 기능을 낸 데 이어 Gemini도 같은 기능을 냈습니다. 학습용 AI의 기본 기능이 되고 있습니다.",
+    "change": "'행성 궤도가 어떻게 바뀌는지 보여줘'처럼 요청하면 조작 가능한 시각 자료를 받을 수 있습니다.",
+    "prio": 3
+  },
+  {
+    "c": "79eaecd4404b",
+    "slug": "nano-banana-2-personal-context-photos",
+    "title": "나노 바나나 2, 구글 포토와 개인 맥락으로 '내 삶'이 담긴 이미지 생성",
+    "summary": "Gemini 앱의 이미지 생성이 사용자의 사진과 정보를 참고합니다.",
+    "cat": "IMAGE",
+    "topics": [
+      "google",
+      "gemini",
+      "ai-image"
+    ],
+    "companies": [
+      "Google"
+    ],
+    "products": [
+      "Nano Banana 2",
+      "Google Photos",
+      "Gemini app"
+    ],
+    "facts": [
+      "구글은 Nano Banana 2가 사용자의 개인 맥락과 구글 포토를 활용해 사용자의 삶을 반영한 이미지를 만든다고 밝혔습니다."
+    ],
+    "why": "편리한 만큼 내 사진이 AI 생성에 어떻게 쓰이는지 알아야 합니다.",
+    "change": "이 기능을 쓰려면 구글 포토 접근 권한을 허용해야 합니다. 원치 않으면 연결을 끄세요.",
+    "prio": 3
+  },
+  {
+    "c": "416667b50935",
+    "slug": "gemini-generate-files",
+    "title": "Gemini에서 프롬프트 한 번으로 문서·시트·PDF 파일 생성",
+    "summary": "브레인스토밍 결과를 바로 완성된 파일로 받습니다.",
+    "cat": "WORK",
+    "topics": [
+      "google",
+      "gemini",
+      "ai-work"
+    ],
+    "companies": [
+      "Google"
+    ],
+    "products": [
+      "Gemini app"
+    ],
+    "facts": [
+      "구글은 Gemini에서 프롬프트 하나로 브레인스토밍을 문서, 시트, PDF 파일로 만들 수 있게 됐다고 밝혔습니다."
+    ],
+    "why": "답변을 복사해 붙이는 단계가 사라지고, 결과물이 바로 파일이 됩니다.",
+    "change": "회의 메모를 붙여 넣고 '보고서 PDF로 만들어줘'라고 요청할 수 있습니다.",
+    "prio": 3
+  },
+  {
+    "c": "c7547ad69756",
+    "slug": "colab-learn-mode",
+    "title": "구글 Colab 'Learn Mode'… 코드를 대신 쓰지 않고 가르쳐 주는 튜터",
+    "summary": "Colab의 Gemini 에이전트가 학습을 돕는 방식으로 동작합니다.",
+    "cat": "AI_CODING",
+    "topics": [
+      "google",
+      "gemini",
+      "ai-coding"
+    ],
+    "companies": [
+      "Google"
+    ],
+    "products": [
+      "Google Colab"
+    ],
+    "facts": [
+      "구글은 Colab의 Gemini 에이전트에 두 가지 개선을 더해, Colab의 동작 방식을 더 통제하고 학습을 돕는 Learn Mode를 소개했습니다."
+    ],
+    "why": "AI가 코드를 대신 써주면 배우는 사람은 실력이 늘지 않는다는 우려에 대한 대응입니다.",
+    "change": "코딩을 배우는 학생은 Learn Mode를 켜서 답 대신 단계별 설명을 받을 수 있습니다.",
+    "prio": 3
+  },
+  {
+    "c": "4d314a0786e8",
+    "slug": "gemini-robotics-er-1-6",
+    "title": "구글 딥마인드 'Gemini Robotics-ER 1.6'… 로봇의 공간 추론 강화",
+    "summary": "여러 시점의 정보를 이해해 실제 환경에서 작업하는 로봇용 추론 모델입니다.",
+    "cat": "ROBOTICS",
+    "topics": [
+      "google",
+      "gemini",
+      "robotics"
+    ],
+    "companies": [
+      "Google DeepMind"
+    ],
+    "products": [
+      "Gemini Robotics-ER 1.6"
+    ],
+    "facts": [
+      "Google DeepMind가 공간 추론과 다중 시점 이해를 강화한 로봇용 추론 모델 Gemini Robotics-ER 1.6을 발표했습니다."
+    ],
+    "why": "로봇이 '어디에 무엇이 있는지' 이해하는 능력이 실제 작업의 핵심입니다. 7월 Gemini Robotics 2로 이어집니다.",
+    "change": "로봇 개발자 대상 모델입니다. 가정·공장용 로봇이 실제로 나오기까지는 시간이 더 걸립니다.",
+    "prio": 3,
+    "secondary": [
+      "3d57a105910a"
+    ]
+  },
+  {
+    "c": "7dc972cddad8",
+    "slug": "deepmind-ai-co-clinician",
+    "title": "구글 딥마인드 'AI 공동 진료의' 연구",
+    "summary": "AI가 의료진과 함께 진료하는 방식을 연구합니다.",
+    "cat": "RESEARCH",
+    "topics": [
+      "google",
+      "ai-health",
+      "ai-research"
+    ],
+    "companies": [
+      "Google DeepMind"
+    ],
+    "products": [],
+    "facts": [
+      "Google DeepMind가 AI로 보강된 진료와 AI 공동 진료의(co-clinician) 개발에 관한 연구를 소개했습니다."
+    ],
+    "why": "AI가 의사를 대체하는 대신 '함께 진료하는' 모델을 연구 단계에서 제시했습니다.",
+    "change": "직접적인 변화는 없지만, 연구 단계입니다.",
+    "prio": 3
+  },
+  {
+    "c": "246f49f1cf27",
+    "slug": "deepmind-decoupled-diloco",
+    "title": "구글 딥마인드 'Decoupled DiLoCo'… 멀리 떨어진 데이터센터로 나눠 학습",
+    "summary": "분산 AI 학습을 장애에 강하게 만드는 방법입니다.",
+    "cat": "RESEARCH",
+    "topics": [
+      "google",
+      "ai-research",
+      "ai-chip"
+    ],
+    "companies": [
+      "Google DeepMind"
+    ],
+    "products": [],
+    "facts": [
+      "Google DeepMind가 회복력 있는 분산 AI 학습 방법 Decoupled DiLoCo를 발표했습니다."
+    ],
+    "why": "한 곳에 거대한 데이터센터를 짓지 않고 여러 곳에 나눠 학습할 수 있다면 전력·부지 문제를 덜 수 있습니다.",
+    "change": "연구 결과라 서비스 변화는 없지만, AI 학습을 여러 지역에 나누는 기술은 데이터센터 입지·전력 문제와 연결됩니다.",
+    "prio": 3
+  },
+  {
+    "c": "0bf6bb0f2394",
+    "slug": "google-mental-health-update-april",
+    "title": "구글, 정신건강 관련 검색·AI 응답 개선",
+    "summary": "도움이 필요한 사람을 적절한 정보로 연결하는 변화를 발표했습니다.",
+    "cat": "CONSUMER",
+    "topics": [
+      "google",
+      "ai-health",
+      "ai-search"
+    ],
+    "companies": [
+      "Google"
+    ],
+    "products": [
+      "Google Search"
+    ],
+    "facts": [
+      "구글은 정신건강 관련 작업의 진행 상황과 함께, 사람들을 적절한 정보에 더 잘 연결하기 위한 새 변화를 공유했습니다."
+    ],
+    "why": "AI 답변이 위기 상황의 사람에게 어떻게 반응하는지가 주요 안전 과제가 됐습니다.",
+    "change": "힘든 상황이라면 AI 대신 전문 상담(한국: 자살예방상담전화 109)에 연락하세요.",
+    "prio": 3
+  },
+  {
+    "c": "db3f81275249",
+    "slug": "stitch-design-md-open-source",
+    "title": "구글 Stitch의 'DESIGN.md' 형식 오픈소스 공개",
+    "summary": "디자인 규칙을 AI 도구들이 함께 읽는 공용 파일 형식입니다.",
+    "cat": "AI_CODING",
+    "topics": [
+      "google",
+      "ai-coding",
+      "ai-image"
+    ],
+    "companies": [
+      "Google"
+    ],
+    "products": [
+      "Stitch",
+      "DESIGN.md"
+    ],
+    "facts": [
+      "구글은 DESIGN.md 초안 규격을 오픈소스로 공개해 어떤 도구나 플랫폼에서도 쓸 수 있게 했다고 밝혔습니다."
+    ],
+    "why": "AGENTS.md처럼, AI 도구가 읽는 공용 설명 파일이 디자인 영역에도 생겼습니다.",
+    "change": "디자인 시스템을 관리하는 팀은 DESIGN.md로 색·글꼴 규칙을 AI 도구에 한 번에 전달할 수 있습니다.",
+    "prio": 3
+  },
+  {
+    "c": "98db98d5d843",
+    "slug": "google-austria-data-center",
+    "title": "구글, 오스트리아 첫 데이터센터 건설… 직접 고용 100명",
+    "summary": "알프스 지역의 첫 구글 데이터센터입니다.",
+    "cat": "CHIPS_INFRA",
+    "topics": [
+      "google",
+      "ai-chip"
+    ],
+    "companies": [
+      "Google"
+    ],
+    "products": [],
+    "facts": [
+      "구글이 오스트리아 크론슈토르프에 첫 데이터센터를 짓는다고 발표하며, 직접 일자리 100개가 생긴다고 밝혔습니다."
+    ],
+    "why": "유럽 내 데이터 처리 수요와 데이터 주권 요구에 맞춘 투자입니다.",
+    "change": "오스트리아 투자라 국내 변화는 없지만, 유럽 내 데이터 처리 요구에 맞춘 투자 흐름의 하나입니다.",
+    "prio": 3
+  },
+  {
+    "c": "ba582ba17a80",
+    "slug": "meta-broadcom-custom-silicon",
+    "title": "메타, 브로드컴과 여러 세대 맞춤형 AI 칩 공동 개발",
+    "summary": "장기 AI 계획을 위한 컴퓨팅 기반을 자체 칩으로 확보합니다.",
+    "cat": "CHIPS_INFRA",
+    "topics": [
+      "meta",
+      "ai-chip"
+    ],
+    "companies": [
+      "Meta",
+      "Broadcom"
+    ],
+    "products": [
+      "MTIA"
+    ],
+    "facts": [
+      "메타가 브로드컴과 여러 세대에 걸친 맞춤형 실리콘을 공동 개발하는 파트너십을 맺었다고 밝혔습니다."
+    ],
+    "why": "3월 MTIA 로드맵 발표에 이은 구체적인 생산 파트너 발표입니다. OpenAI도 6월 브로드컴과 만든 칩을 공개했습니다.",
+    "change": "메타 앱 이용 방식은 그대로지만, 자체 칩 확대는 장기적으로 메타 AI 기능의 운영 비용과 연결됩니다.",
+    "prio": 2
+  },
+  {
+    "c": "fe771eec13ba",
+    "slug": "meta-aws-graviton",
+    "title": "메타, AWS 그래비톤 CPU 코어 수천만 개 도입… 에이전트 AI용",
+    "summary": "에이전트 작업을 위해 AWS의 Arm 기반 CPU를 대규모로 씁니다.",
+    "cat": "CHIPS_INFRA",
+    "topics": [
+      "meta",
+      "amazon",
+      "ai-chip",
+      "ai-agent"
+    ],
+    "companies": [
+      "Meta",
+      "Amazon Web Services"
+    ],
+    "products": [
+      "AWS Graviton"
+    ],
+    "facts": [
+      "메타가 AWS와 계약해 수천만 개의 AWS Graviton 코어를 컴퓨팅 자원에 추가하고 에이전트 AI 작업을 지원한다고 밝혔습니다."
+    ],
+    "why": "에이전트는 GPU뿐 아니라 도구 실행·코드 실행에 쓰는 CPU도 많이 씁니다. 8월 엔비디아가 에이전트용 CPU 'Vera'를 낸 것도 같은 흐름입니다.",
+    "change": "서비스 변화는 없지만, 에이전트 작업에 GPU뿐 아니라 CPU 수요도 커지고 있다는 점을 보여주는 계약입니다.",
+    "prio": 3
+  },
+  {
+    "c": "c845c405d5b0",
+    "slug": "meta-space-solar-long-duration-storage",
+    "title": "메타, 우주 태양광·장기 저장 배터리 기업과 전력 파트너십",
+    "summary": "AI 데이터센터 전력을 위한 새 발전·저장 기술에 투자합니다.",
+    "cat": "CHIPS_INFRA",
+    "topics": [
+      "meta",
+      "ai-chip"
+    ],
+    "companies": [
+      "Meta"
+    ],
+    "products": [],
+    "facts": [
+      "메타가 AI 인프라와 데이터센터에 필요한 안정적인 전력을 위해 우주 태양광 발전과 장기 에너지 저장 분야의 두 가지 파트너십을 발표했습니다."
+    ],
+    "why": "AI 경쟁이 전력 확보 경쟁으로 번지며, 아직 실험 단계인 에너지 기술까지 투자 대상이 됐습니다.",
+    "change": "소비자 변화는 없지만, AI 데이터센터 전력 확보가 실험 단계 에너지 기술 투자로까지 넓어졌다는 점을 볼 수 있습니다.",
+    "prio": 3
+  },
+  {
+    "c": "be0d9acd6ce3",
+    "slug": "nvidia-nemotron-3-nano-omni",
+    "title": "엔비디아 'Nemotron 3 Nano Omni'… 시각·음성·언어를 하나로 묶은 공개 모델",
+    "summary": "에이전트가 여러 모델을 오가지 않아도 되게 한 멀티모달 모델입니다.",
+    "cat": "MODEL_RELEASE",
+    "topics": [
+      "nvidia",
+      "open-models",
+      "ai-agent"
+    ],
+    "companies": [
+      "NVIDIA"
+    ],
+    "products": [
+      "Nemotron 3 Nano Omni"
+    ],
+    "facts": [
+      "엔비디아가 시각, 음성, 언어 기능을 하나로 합친 공개 멀티모달 모델 Nemotron 3 Nano Omni를 공개하며, 에이전트를 최대 9배 효율적으로 만든다고 주장했습니다."
+    ],
+    "why": "에이전트가 영상·음성·글 모델을 따로 호출하면 느리고 맥락이 끊깁니다. 하나의 작은 모델로 묶는 흐름입니다.",
+    "change": "직접 모델을 돌리는 개발자는 Hugging Face에서 내려받아 시험해 볼 수 있습니다. '9배'는 엔비디아 자체 주장입니다.",
+    "prio": 3,
+    "secondary": [
+      "5b7c46b20d14"
+    ]
+  },
+  {
+    "c": "6196515e7a8d",
+    "slug": "galaxy-book6-enterprise-edition",
+    "title": "삼성 '갤럭시 북6 엔터프라이즈 에디션'… 첫 기업 전용 갤럭시 북",
+    "summary": "인텔 코어 울트라 시리즈 3를 탑재한 기업용 노트북입니다.",
+    "cat": "CONSUMER",
+    "topics": [
+      "samsung"
+    ],
+    "companies": [
+      "Samsung Electronics",
+      "Intel"
+    ],
+    "products": [
+      "Galaxy Book6 Enterprise Edition"
+    ],
+    "facts": [
+      "삼성전자가 기업 환경을 위해 설계한 첫 갤럭시 북인 Galaxy Book6 Enterprise Edition을 공개했으며, 최신 인텔 코어 울트라 시리즈 3 프로세서를 탑재했다고 밝혔습니다."
+    ],
+    "why": "AI PC가 기업 IT 관리 환경에 맞춘 제품으로 세분화되고 있습니다.",
+    "change": "기업 IT 부서 대상 제품입니다. 회사 노트북 교체를 검토 중이라면 관리 기능과 인텔 프로세서 사양을 비교해 볼 수 있습니다.",
+    "prio": 3
+  },
+  {
+    "c": "fb9609798262",
+    "slug": "galaxy-s26-realtime-audio-eraser",
+    "title": "갤럭시 S26 '오디오 지우개', 실시간으로 확장",
+    "summary": "저장된 영상 편집용이던 소음 제거 기능이 더 빠른 실시간 기능으로 강화됐습니다.",
+    "cat": "VOICE",
+    "topics": [
+      "samsung",
+      "voice-ai"
+    ],
+    "companies": [
+      "Samsung Electronics"
+    ],
+    "products": [
+      "Galaxy S26",
+      "Audio Eraser"
+    ],
+    "facts": [
+      "삼성전자는 영상 속 불필요한 소음을 줄이고 원하는 소리를 키우는 오디오 지우개가 갤럭시 S25에서 저장된 콘텐츠 편집용으로 처음 나왔고, 이후 갤러리·음성 녹음 같은 기본 앱의 재생 조정으로 넓어졌으며, S26 시리즈에서 더 빠른 실시간 기능으로 강화됐다고 밝혔습니다."
+    ],
+    "why": "생성형 AI보다 덜 화려하지만, 매일 쓰는 실용 AI 기능의 사례입니다.",
+    "change": "S26 사용자는 갤러리 등 기본 앱에서 영상을 재생하며 배경 소음을 줄여볼 수 있습니다.",
+    "prio": 3
+  },
+  {
+    "c": "4d36ddb20bbc",
+    "slug": "samsung-bixby-agentic-interview",
+    "title": "삼성 \"빅스비가 모든 삼성 기기의 출발점이 될 것\"… 에이전트형 AI 방향",
+    "summary": "빅스비 담당 임원 인터뷰에서 에이전트형 AI 전략을 설명했습니다.",
+    "cat": "AI_AGENT",
+    "topics": [
+      "samsung",
+      "ai-agent",
+      "voice-ai"
+    ],
+    "companies": [
+      "Samsung Electronics"
+    ],
+    "products": [
+      "Bixby"
+    ],
+    "facts": [
+      "삼성전자 뉴스룸 인터뷰에서 언어 AI 총괄 Jisun Park은 AI가 단순 명령 실행을 넘어 의도와 맥락을 이해하고 스스로 행동하는 에이전트형으로 바뀌고 있다며, 빅스비가 모든 삼성 기기의 출발점이 될 것이라고 말했습니다.",
+      "새 빅스비는 3월 31일 공식 출시됐다고 뉴스룸은 밝혔습니다."
+    ],
+    "why": "2월 발표한 새 빅스비의 전략적 위치를 회사가 직접 설명했습니다. 휴대폰을 넘어 가전까지 하나의 비서로 묶겠다는 방향입니다.",
+    "change": "삼성 가전을 여러 개 쓰고 있다면 빅스비로 기기를 묶어 제어하는 기능이 늘어날 수 있습니다.",
+    "prio": 3
+  },
+  {
+    "c": "c401ee87a219",
+    "slug": "mistral-workflows-preview",
+    "title": "미스트랄 'Workflows' 공개 프리뷰",
+    "summary": "회사 핵심 업무를 돌리는 자동화 기능입니다.",
+    "cat": "AI_AGENT",
+    "topics": [
+      "mistral",
+      "ai-agent",
+      "ai-work"
+    ],
+    "companies": [
+      "Mistral AI"
+    ],
+    "products": [
+      "Mistral Workflows"
+    ],
+    "facts": [
+      "미스트랄이 사업 운영 업무를 위한 Workflows를 공개 프리뷰로 출시했습니다."
+    ],
+    "why": "모델 회사들이 모두 '업무 자동화 플랫폼'으로 사업을 넓히고 있습니다.",
+    "change": "기업 대상 공개 프리뷰입니다. 미스트랄을 쓰는 회사라면 반복 업무 자동화 기능을 시험해 볼 수 있습니다.",
+    "prio": 3
+  },
+  {
+    "c": "aa892ef06770",
+    "slug": "safetensors-joins-pytorch-foundation",
+    "title": "모델 파일 형식 'Safetensors', PyTorch 재단에 합류",
+    "summary": "Hugging Face가 만든 안전한 모델 저장 형식이 중립 재단으로 갔습니다.",
+    "cat": "RESEARCH",
+    "topics": [
+      "open-models",
+      "ai-security"
+    ],
+    "companies": [
+      "Hugging Face",
+      "PyTorch Foundation"
+    ],
+    "products": [
+      "Safetensors"
+    ],
+    "facts": [
+      "Hugging Face는 Safetensors가 PyTorch 재단에 합류한다고 발표했습니다."
+    ],
+    "why": "Safetensors는 모델 파일을 열 때 악성 코드가 실행되는 위험을 막는 형식입니다. 특정 회사가 아닌 재단이 관리하게 되면서 업계 표준으로 굳어집니다.",
+    "change": "공개 모델을 내려받을 때 .safetensors 형식을 우선 고르는 것이 안전합니다.",
+    "prio": 3
+  }
+]

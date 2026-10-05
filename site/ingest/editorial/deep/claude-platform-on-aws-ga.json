@@ -1,0 +1,51 @@
+{
+  "slug": "claude-platform-on-aws-ga",
+  "lead": "AWS 고객이 AWS 계정·권한·결제 그대로 Anthropic의 Claude Platform 전체 기능을 쓰는 'Claude Platform on AWS'가 정식 출시됐습니다. 아마존 베드록에서도 Claude를 쓸 수 있었지만, 이번 상품은 Anthropic이 직접 운영해 새 기능이 나오는 날 바로 쓸 수 있다는 점이 다릅니다. 대신 데이터는 AWS 경계 밖, Anthropic 쪽에서 처리됩니다.",
+  "facts": [
+    "5월 10일 Anthropic이 Claude Platform on AWS를 정식 출시했습니다.",
+    "인증은 AWS IAM, 감사 기록은 CloudTrail, 결제는 AWS 청구서 하나로 처리되며 기존 AWS 약정 사용액에서 차감됩니다.",
+    "Anthropic이 서비스를 운영하고 데이터는 AWS 경계 밖에서 처리됩니다. 베드록의 Claude는 AWS가 데이터 처리자로 AWS 안에서 운영됩니다.",
+    "Claude Managed Agents, 웹 검색, 코드 실행, Files API, Skills, MCP 커넥터 등 Claude API 기능을 출시 당일부터 그대로 쓸 수 있습니다.",
+    "대부분의 AWS 상용 리전에서 제공되며, 추론 지역은 글로벌과 미국을 지원합니다."
+  ],
+  "sections": [
+    {
+      "role": "what",
+      "heading": "베드록과 무엇이 다른가",
+      "paragraphs": [
+        "AWS에서 Claude를 쓰는 길이 둘이 됐습니다. 핵심 차이는 '누가 운영하느냐'와 '데이터가 어디서 처리되느냐'입니다."
+      ],
+      "bullets": [
+        "Claude Platform on AWS: Anthropic이 운영, 데이터는 AWS 경계 밖에서 처리. Claude API의 모든 기능과 베타를 출시 당일 제공. Claude Console도 사용",
+        "Claude on Amazon Bedrock: AWS가 데이터 처리자, AWS 인프라 안에서만 처리. 엄격한 지역 데이터 상주 요구가 있는 기업에 적합",
+        "공통: AWS 계정으로 시작, AWS 결제",
+        "출시 시점 모델: Claude Opus 4.7, Sonnet 4.6, Haiku 4.5. 새 모델은 출시와 함께 추가"
+      ]
+    },
+    {
+      "role": "point",
+      "heading": "봐야 할 지점",
+      "paragraphs": [
+        "기업의 AI 도입에서 가장 큰 장벽 중 하나는 새 공급사와의 계약·보안 심사입니다. 이 상품은 기존 AWS 계약과 예산, 권한 체계 안에서 Claude 전체 기능을 쓰게 해 그 장벽을 낮췄습니다. 이 사이트 기록상 4월 20일 Anthropic과 아마존의 1,000억 달러 이상 컴퓨팅 약정 발표 때 예고된 상품입니다.",
+        "다만 '데이터가 AWS 경계 밖에서 처리된다'는 점은 반드시 확인해야 할 조건입니다. AWS 계정으로 쓰니 AWS 안에서 처리된다고 오해하기 쉽지만, 실제 처리자는 Anthropic입니다. 규제 산업이나 데이터 상주 요구가 엄격한 조직은 베드록을, 최신 기능이 중요한 조직은 이 상품을 고르라는 것이 Anthropic의 설명입니다."
+      ]
+    },
+    {
+      "role": "users",
+      "heading": "AWS를 쓰는 회사라면",
+      "bullets": [
+        "개발팀: 별도 Anthropic 계약 없이 AWS 자격 증명과 IAM 정책으로 Claude Platform을 쓸 수 있습니다.",
+        "보안·법무팀: 데이터 처리자가 Anthropic이라는 점을 사내 데이터 정책과 맞춰 봐야 합니다.",
+        "베드록 사설 할인(private offer)이 있는 기업: 시작 전에 Anthropic·AWS 담당자에게 연락하라고 안내했습니다. 할인은 소급 적용되지 않습니다."
+      ]
+    },
+    {
+      "role": "open",
+      "heading": "이후 변화와 확인할 것",
+      "bullets": [
+        "추론 지역은 글로벌·미국만 지원해, 아시아 지역 처리는 이 상품으로 할 수 없었습니다. 이 사이트 기록상 9월 30일에는 베드록에서 Claude Opus 5·Sonnet 5를 서울 리전 안에서 처리할 수 있게 됐습니다.",
+        "가격이 Claude API 직접 계약과 같은지는 이 글에 명시되지 않았습니다."
+      ]
+    }
+  ]
+}

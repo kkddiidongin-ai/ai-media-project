@@ -1,0 +1,114 @@
+{
+  "slug": "gpt-6-sol-luna",
+  "lead": "OpenAI가 9월 초 최상위 모델 GPT-6 Astra에 이어, 일상 업무용 GPT-6 Sol과 가장 저렴한 GPT-6 Luna를 내놨습니다. 일주일 뒤에는 Astra에 가까운 성능을 Astra 표준 API 가격의 5분의 1에 제공한다는 GPT-6.1 Sol이 나왔습니다. 같은 'GPT-6'이라도 어떤 등급을 고르느냐에 따라 비용이 최대 100배 차이 나는 구조가 됐습니다.",
+  "facts": [
+    "9월 22일 OpenAI가 성능과 비용의 균형을 다르게 잡은 GPT-6 Sol과 GPT-6 Luna를 공개했습니다.",
+    "같은 날 GitHub Copilot에 들어왔고, Sol은 Pro+·Max·Business·Enterprise, Luna는 Pro부터 쓸 수 있습니다.",
+    "GPT-6 Sol의 출시 가격은 OpenAI API 변경 기록 기준 100만 토큰당 입력 2달러·출력 10달러이고, 9월 29일 나온 GPT-6.1 Sol도 같은 가격입니다. GPT-6 Astra(10달러·50달러)의 5분의 1입니다.",
+    "GPT-6 Luna는 입력 0.1달러·출력 0.5달러로 GPT-6 계열에서 가장 쌉니다.",
+    "입력이 27만2천 토큰을 넘는 긴 맥락에서는 입력 단가가 2배, 출력 단가가 1.5배가 됩니다."
+  ],
+  "sections": [
+    {
+      "role": "what",
+      "heading": "GPT-6 세대의 세 등급",
+      "paragraphs": [
+        "OpenAI는 9월 3일 GPT-6 Astra를 먼저 내놓고, 9월 22일 GPT-6 Sol과 GPT-6 Luna를 추가했습니다. OpenAI는 두 모델을 '최신 지능을 일상 업무로 가져오되, 능력과 비용의 균형을 다르게 잡은 모델'이라고 소개했습니다.",
+        "GitHub은 같은 날 Copilot에 두 모델을 넣으며 역할을 이렇게 설명했습니다. Sol은 여러 단계 검증이 필요한 개발 작업에 맞는 '균형형', Luna는 작고 빠른 작업용으로 GPT-6 계열에서 가장 싼 '경량형'입니다."
+      ]
+    },
+    {
+      "role": "change",
+      "heading": "가격으로 보면 (OpenAI API 가격표, 100만 토큰당)",
+      "paragraphs": [
+        "9월 22일 OpenAI API 변경 기록과 10월 2일 확인한 공식 가격표의 표준(Standard) 요금입니다. 현재 가격표에는 GPT-6 Sol 대신 업그레이드판인 GPT-6.1 Sol이 올라 있고, 두 모델의 입력·출력 단가는 같습니다."
+      ],
+      "bullets": [
+        "GPT-6 Astra: 입력 10달러 / 출력 50달러",
+        "GPT-6 Sol(9월 22일 출시 당시): 입력 2달러(캐시 입력 0.2달러) / 출력 10달러",
+        "GPT-6.1 Sol(현재 가격표): 입력 2달러(캐시 입력 0.1달러) / 출력 10달러",
+        "GPT-6 Luna: 입력 0.1달러(캐시 입력 0.01달러) / 출력 0.5달러",
+        "긴 맥락(입력 27만2천 토큰 초과): 입력 2배, 출력 1.5배 (예: Astra 출력 50→75달러)",
+        "급하지 않은 작업용 Batch·Flex는 표준의 절반, 더 빠른 Fast는 2배"
+      ]
+    },
+    {
+      "role": "before",
+      "heading": "일주일 만의 업그레이드, GPT-6.1 Sol",
+      "paragraphs": [
+        "9월 29일 OpenAI는 GPT-6.1 Sol을 공개하며 'Astra에 가까운 지능을 Astra 표준 API 가격의 5분의 1에' 제공한다고 밝혔습니다. 같은 날 GitHub Copilot과 아마존 베드록에도 들어갔습니다.",
+        "AWS가 OpenAI 발표를 인용해 전한 수치는 이렇습니다. GPT-6.1 Sol은 코딩 평가 DeepSWE v1.1에서 GPT-6 Astra와 같은 점수를 작업당 약 5분의 1 비용으로 냈고, GPT-6 Sol의 최고 점수보다 6.4%p 높았다고 합니다. GitHub은 초기 시험에서 이전 GPT-6·GPT-5.6 모델보다 눈에 띄게 적은 토큰과 단계로 작업을 마쳤다고 밝혔습니다. 모두 회사 측 발표 기준입니다."
+      ]
+    },
+    {
+      "role": "point",
+      "heading": "봐야 할 지점",
+      "paragraphs": [
+        "한 세대 모델을 '최상위–균형–경량' 세 등급으로 나누는 방식이 굳어졌습니다. 7월 GPT-5.6도 Sol·Terra·Luna로 나뉘었습니다. 사용자는 모델 이름보다 등급을 보고 고르게 되고, 같은 일을 어떤 등급에 맡기느냐가 비용을 좌우합니다. 표준 가격만 봐도 Astra 출력 단가는 Luna의 100배입니다.",
+        "또 하나는 '토큰 가격'과 '작업 비용'의 차이입니다. AWS 글은 에이전트 비용이 토큰 단가뿐 아니라 일을 끝내기까지 몇 번 시도하느냐에 달려 있다고 설명했습니다. 단가가 싸도 여러 번 헤매면 비싸지고, 비싼 모델이라도 한 번에 끝내면 쌀 수 있다는 뜻입니다. GPT-6.1 Sol의 '5분의 1'도 같은 성능이라는 회사 주장이 맞을 때 의미가 있습니다."
+      ]
+    },
+    {
+      "role": "users",
+      "heading": "누구에게 무엇이 달라지나",
+      "bullets": [
+        "개발자(API): 단순 분류·요약은 Luna, 일반 코딩·에이전트는 6.1 Sol, 가장 어려운 작업만 Astra로 나누면 비용을 크게 줄일 수 있습니다. 입력이 27만2천 토큰을 넘지 않게 나누는 것도 방법입니다.",
+        "GitHub Copilot 사용자: Pro 요금제는 Luna만, Pro+ 이상은 Sol도 쓸 수 있습니다. 사용량 과금이라 모델별 차감 속도가 다릅니다.",
+        "AWS를 쓰는 기업: 6.1 Sol은 베드록에서도 쓸 수 있고, AWS는 추론 데이터가 학습에 쓰이지 않는다고 밝혔습니다.",
+        "ChatGPT 사용자: ChatGPT 안에서 어떤 요금제에 어떤 모델이 기본으로 쓰이는지는 이 사이트가 확인한 공식 자료에 나오지 않습니다."
+      ]
+    },
+    {
+      "role": "open",
+      "heading": "아직 확인할 것",
+      "bullets": [
+        "OpenAI 발표 원문(openai.com)은 이 사이트의 자동 확인 도구 접근이 차단돼(403), 성능 설명은 OpenAI 발표 요약과 GitHub·AWS의 공식 글을 기준으로 정리했습니다.",
+        "9월 25일 OpenAI는 GPT-6 Sol·Luna의 이미지 인코딩 버그를 고쳤다고 밝혔습니다. 이미지 이해 성능이 떨어져 있었다는 뜻으로, 출시 직후 이미지 입력으로 평가한 결과는 다시 확인이 필요합니다.",
+        "Astra와 같다는 성능 비교는 OpenAI 자체 평가이며, 독립 검증 결과는 아직 없습니다.",
+        "데이터 상주(지역 처리) 엔드포인트는 10% 할증이 붙지만, 한국 지역 처리 제공 여부는 가격표에 없습니다."
+      ]
+    }
+  ],
+  "references": [
+    {
+      "sourceName": "GitHub Changelog",
+      "sourceTitle": "OpenAI’s GPT-6 Sol and GPT-6 Luna now available",
+      "sourceUrl": "https://github.blog/changelog/2026-09-22-openais-gpt-6-sol-and-gpt-6-luna-now-available",
+      "sourcePublishedAt": "2026-09-22",
+      "checkedAt": "2026-10-02",
+      "note": "두 모델의 역할 설명, Copilot 요금제별 제공 범위"
+    },
+    {
+      "sourceName": "OpenAI API 문서",
+      "sourceTitle": "Changelog",
+      "sourceUrl": "https://developers.openai.com/api/docs/changelog",
+      "sourcePublishedAt": "",
+      "checkedAt": "2026-10-02",
+      "note": "9월 22일 GPT-6 Sol·Luna 출시 가격, 9월 25일 이미지 인코딩 버그 수정, 9월 29일 GPT-6.1 Sol 가격"
+    },
+    {
+      "sourceName": "OpenAI API 문서",
+      "sourceTitle": "Pricing",
+      "sourceUrl": "https://developers.openai.com/api/docs/pricing",
+      "sourcePublishedAt": "",
+      "checkedAt": "2026-10-02",
+      "note": "Astra·6.1 Sol·Luna 표준·Batch·Flex·Fast 가격, 긴 맥락 할증, 지역 처리 10% 할증"
+    },
+    {
+      "sourceName": "GitHub Changelog",
+      "sourceTitle": "GPT-6.1 Sol in GitHub Copilot",
+      "sourceUrl": "https://github.blog/changelog/2026-09-29-gpt-6-1-sol-in-github-copilot",
+      "sourcePublishedAt": "2026-09-29",
+      "checkedAt": "2026-10-02",
+      "note": "6.1 Sol의 토큰·단계 효율에 대한 GitHub 초기 시험 설명"
+    },
+    {
+      "sourceName": "AWS Machine Learning Blog",
+      "sourceTitle": "Bring near-Astra intelligence to everyday work with GPT-6.1 Sol on Amazon Bedrock",
+      "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/bring-near-astra-intelligence-to-everyday-work-with-gpt-6-1-sol-on-amazon-bedrock/",
+      "sourcePublishedAt": "2026-09-29",
+      "checkedAt": "2026-10-02",
+      "note": "OpenAI 발표 인용: DeepSWE v1.1 비교, 베드록 데이터 처리"
+    }
+  ]
+}

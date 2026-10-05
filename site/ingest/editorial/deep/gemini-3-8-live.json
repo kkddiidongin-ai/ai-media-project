@@ -1,0 +1,49 @@
+{
+  "slug": "gemini-3-8-live",
+  "lead": "구글이 실시간 음성 대화 모델 두 가지를 내놨습니다. 비용 효율과 규모에 맞춘 Gemini 3.8 Live, 그리고 말하면서 동시에 깊이 생각하는 Gemini 3.8 Live Extended Thinking입니다. 대화를 끊지 않고 뒤에서 도구를 실행하고, 97개 언어를 대화 중에 자동으로 오갑니다. 열흘 뒤에는 입 모양과 표정을 맞춘 실시간 영상 아바타를 붙인 'Live Avatar'가 기업용으로 나왔습니다.",
+  "facts": [
+    "9월 15일 구글이 Gemini 3.8 Live와 Gemini 3.8 Live Extended Thinking을 발표했습니다. Gemini API, Google Workspace, Gemini 앱에서 쓸 수 있습니다.",
+    "Extended Thinking은 Artificial Analysis 음성-음성 품질 지수 82.6으로 전체 1위, τ-Voice 68.6%, Big Bench Audio 97.7%를 기록했다고 구글이 밝혔습니다.",
+    "두 모델은 97개 언어를 대화 중에 자동 감지·전환하고, 도구와 API 호출을 대화를 이어 가며 백그라운드에서 실행합니다.",
+    "Extended Thinking은 생각과 말하기를 동시에 하며, '확인해 볼게요' 같은 말로 먼저 응답하고 진행 상황을 말로 알려 줍니다.",
+    "9월 24일 입 모양·표정을 맞춘 실시간 영상 아바타 'Live Avatar'가 Gemini Enterprise에 나왔고, 모든 음성·영상 출력에는 SynthID 워터마크가 들어갑니다."
+  ],
+  "sections": [
+    {
+      "role": "what",
+      "heading": "두 모델의 역할",
+      "bullets": [
+        "Gemini 3.8 Live: 규모와 비용 효율 중심. 자연스러운 대화와 실시간 시각 정보 반영. Speech Agent Arena 2위",
+        "Gemini 3.8 Live Extended Thinking: 복잡한 작업용, 여러 단계 추론. 말하면서 생각하고 진행 상황을 말로 안내",
+        "공통: 97개 언어 자동 전환, 백그라운드 도구 실행, 끼어들기 대응",
+        "Live Avatar(9월 24일, Gemini Enterprise): 입 모양·표정 동기화된 실시간 영상, 97개 언어에서 입 모양 유지, 참고 이미지로 맞춤 아바타(허가 기업 한정)"
+      ]
+    },
+    {
+      "role": "point",
+      "heading": "봐야 할 지점",
+      "paragraphs": [
+        "음성 AI가 '빠른 응답'과 '깊은 생각' 중 하나를 고르는 구조로 바뀌고 있습니다. 대화에서는 몇 초의 침묵도 어색하기 때문에, Extended Thinking은 생각하는 동안 말로 먼저 반응하고 진행 상황을 알려 주는 방식으로 이 문제를 풀었습니다. 이 사이트 기록상 3월 Gemini 3.1 Flash Live 이후 반년 만에 음성 모델이 '대화 중에 일을 처리하는' 에이전트로 한 단계 나아갔습니다.",
+        "Live Avatar는 '얼굴 있는 AI 대화'로 넘어가는 신호입니다. 고객 상담이나 호텔 체크인 같은 기업용 장면을 겨냥했지만, 실제 사람과 구분이 어려운 영상 아바타는 사칭 위험도 키웁니다. 구글은 모든 출력에 SynthID 워터마크를 넣고, 참고 이미지로 맞춤 아바타를 만드는 기능은 허가된 기업에만 열었습니다."
+      ]
+    },
+    {
+      "role": "users",
+      "heading": "누구에게 무엇이 달라지나",
+      "bullets": [
+        "Gemini 앱·Workspace 사용자: 음성으로 복잡한 작업을 맡길 때 Extended Thinking 쪽이 유리할 수 있습니다.",
+        "음성 에이전트를 만드는 기업: Gemini API에서 두 모델 중 비용과 지능의 균형을 골라 쓸 수 있습니다.",
+        "상담원 대체 서비스를 보는 기업: Live Avatar는 Gemini Enterprise 전용이며, 고객에게 AI임을 알리는 방식을 함께 설계해야 합니다."
+      ]
+    },
+    {
+      "role": "open",
+      "heading": "확인할 것",
+      "bullets": [
+        "두 모델의 API 가격은 발표 글에 '경쟁력 있다'고만 나오고 수치가 없습니다.",
+        "한국어 음성 대화의 품질은 따로 공개되지 않았습니다.",
+        "평가 수치는 구글 발표 기준입니다."
+      ]
+    }
+  ]
+}

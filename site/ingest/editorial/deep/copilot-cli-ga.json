@@ -1,0 +1,53 @@
+{
+  "slug": "copilot-cli-ga",
+  "lead": "GitHub이 터미널에서 일하는 코딩 에이전트 Copilot CLI를 정식 출시하고 Pro·Pro+·Business·Enterprise 모든 Copilot 구독자에게 열었습니다. 2025년 9월 공개 프리뷰 이후 계획 모드, 완전 자율 'Autopilot' 모드, 전문 하위 에이전트, 클라우드 위임, 세션 간 기억이 더해져 단순 채팅 도구에서 에이전트 개발 환경이 됐다는 것이 GitHub 설명입니다.",
+  "facts": [
+    "2월 25일 GitHub Copilot CLI가 정식 출시됐습니다(GA).",
+    "Copilot Pro·Pro+·Business·Enterprise 구독자가 쓸 수 있고, Business·Enterprise는 관리자가 정책 페이지에서 켜야 합니다.",
+    "출시 당시 Claude Opus 4.6·Sonnet 4.6, GPT-5.3-Codex, Gemini 3 Pro 등을 고를 수 있었고, GPT-5 mini와 GPT-4.1은 프리미엄 요청 차감 없이 포함됐습니다.",
+    "계획 모드(Shift+Tab), 승인 없이 끝까지 실행하는 Autopilot 모드, 프롬프트 앞에 &를 붙여 클라우드 에이전트에 넘기는 기능이 있습니다.",
+    "macOS·Linux·Windows에서 npm, Homebrew, WinGet 등으로 설치할 수 있습니다."
+  ],
+  "sections": [
+    {
+      "role": "what",
+      "heading": "무엇을 할 수 있나",
+      "paragraphs": [
+        "GitHub은 Copilot CLI를 '채팅 인터페이스 이상'이라고 설명했습니다. 복잡한 작업을 계획하고, 여러 단계를 실행하며, 파일을 고치고, 테스트를 돌려 일이 끝날 때까지 반복합니다. 모든 행동을 일일이 승인할지, 완전히 맡길지는 사용자가 정합니다."
+      ],
+      "bullets": [
+        "계획 모드: 코드를 쓰기 전에 질문하고 구현 계획을 세워 승인받음",
+        "Autopilot 모드: 승인 없이 도구 실행·명령·반복을 이어감",
+        "전문 에이전트 자동 위임: 코드베이스 분석(Explore), 빌드·테스트(Task), 변경 검토(Code Review), 계획(Plan). 여러 개 병렬 실행",
+        "클라우드 위임: & 접두어로 작업을 클라우드 코딩 에이전트에 넘기고 /resume으로 오감",
+        "확장: MCP 서버, 플러그인, 마크다운 스킬, 사용자 정의 에이전트, 실행 전후 훅(hook)",
+        "기억: 맥락이 95%에 가까워지면 자동 압축, 저장소 관례 기억, 세션 간 기억"
+      ]
+    },
+    {
+      "role": "point",
+      "heading": "봐야 할 지점",
+      "paragraphs": [
+        "터미널 에이전트가 코딩 도구의 주요 형태가 됐다는 신호입니다. Anthropic의 Claude Code, OpenAI의 Codex CLI가 먼저 자리 잡은 영역에 GitHub도 정식 제품으로 들어왔습니다. 차별점은 여러 회사 모델을 한 도구에서 고르고 세션 중에도 /model로 바꿀 수 있다는 것, 그리고 GitHub 저장소·클라우드 에이전트와 바로 이어진다는 것입니다.",
+        "기업용 통제 기능도 함께 강조됐습니다. 관리자가 쓸 수 있는 모델을 정책으로 제한하고, 실행 전 훅(preToolUse)으로 파일 접근이나 명령 인자를 막는 식입니다. Autopilot처럼 승인 없이 도는 모드가 생긴 만큼, 조직 차원의 안전장치를 같이 내놓은 것입니다."
+      ]
+    },
+    {
+      "role": "users",
+      "heading": "써 보려면",
+      "bullets": [
+        "개인 구독자(Pro·Pro+): 설치 후 copilot을 실행해 GitHub 계정으로 인증하고, /init으로 프로젝트용 지침을 만들면 시작할 수 있습니다.",
+        "회사 구독자(Business·Enterprise): 관리자가 Copilot 정책 페이지에서 CLI를 켜야 보입니다.",
+        "비용: 출시 당시 GPT-5 mini·GPT-4.1은 추가 차감이 없었고, 다른 모델은 프리미엄 요청을 썼습니다."
+      ]
+    },
+    {
+      "role": "open",
+      "heading": "이후 바뀐 점",
+      "bullets": [
+        "이 사이트 기록상 GitHub Copilot은 6월 1일 사용량 기반 과금으로 바뀌었습니다. 모델별 차감 방식은 현재 요금 안내에서 다시 확인해야 합니다.",
+        "출시 당시 선택 가능했던 모델 목록은 이후 계속 바뀌었습니다. 현재 목록은 CLI의 /model에서 확인할 수 있습니다."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "slug": "claude-marketplace",
+  "lead": "Anthropic이 Claude와 함께 쓰는 도구를 한곳에서 찾고 사는 'Claude Marketplace'를 열었습니다. 커넥터·플러그인 2,000개 이상, Claude 기반 에이전트와 제품, 컨설팅 파트너가 모였습니다. 가장 눈에 띄는 점은 결제 방식입니다. Anthropic과 사용 약정을 맺은 기업은 그 약정액 일부로 다른 회사의 소프트웨어를 살 수 있습니다.",
+  "facts": [
+    "9월 22일 Anthropic이 Claude Marketplace를 공개했습니다. 플러그인·커넥터, 에이전트·제품, 서비스 파트너를 한곳에 모았습니다.",
+    "커넥터와 플러그인은 Atlassian, Google, Microsoft, Notion, Salesforce 등 2,000개 이상이 등록돼 있다고 밝혔습니다.",
+    "Anthropic 사용 약정이 있는 기업은 약정액 일부로 CrowdStrike, Cursor, Harvey, Legora, Lovable, Snowflake 등의 Claude 기반 소프트웨어를 살 수 있습니다.",
+    "같은 날 Anthropic은 CodeRabbit이 약정액으로 Vercel 요금제를 올리고, Power Digital과 ThoughtSpot이 Snowflake 사용량을 늘린 사례를 소개했습니다. CodeRabbit은 일주일 안에 계약을 마쳤다고 밝혔습니다.",
+    "개발사는 MCP와 Agent Skills로 커넥터·플러그인을 만들어 올리거나, 에이전트·제품 등재를 신청하거나, Claude Partner Network에 가입해 이름을 올릴 수 있습니다."
+  ],
+  "sections": [
+    {
+      "role": "what",
+      "heading": "세 가지 진열대",
+      "bullets": [
+        "커넥터·플러그인: 2,000개 이상. 업무 앱의 데이터와 맥락을 Claude에 연결",
+        "에이전트·제품: Claude로 만든 다른 회사 소프트웨어. Anthropic 약정액 일부로 구매 가능",
+        "서비스 파트너: Accenture, BCG, Deloitte 등 컨설팅·시스템 통합 회사(Claude Partner Network)"
+      ]
+    },
+    {
+      "role": "change",
+      "heading": "결제 구조가 바뀐 점",
+      "paragraphs": [
+        "기업에서 새 소프트웨어를 사려면 보통 예산 요청, 구매 심사, 계약을 따로 거칩니다. 마켓플레이스는 이미 승인된 Anthropic 약정 예산을 다른 회사 도구에 돌려쓸 수 있게 해 이 과정을 줄였습니다. Power Digital 임원은 요청했을 때 이미 계약서가 작성되고 있었다고 말했습니다. Snowflake처럼 Claude를 데이터 옆에서 돌리는 회사, Vercel처럼 에이전트 실행 환경을 파는 회사가 판매자로 들어왔습니다."
+      ]
+    },
+    {
+      "role": "point",
+      "heading": "봐야 할 지점",
+      "paragraphs": [
+        "AI 회사가 '모델 판매자'에서 '기업 소프트웨어 유통 창구'로 넓어지고 있습니다. 클라우드 업체들이 기업의 클라우드 약정액으로 마켓플레이스 소프트웨어를 사게 해 온 방식을 AI 모델 회사가 가져온 셈입니다. 약정이 클수록 그 안에서 쓸 수 있는 도구가 많아지므로, 기업 고객을 Claude 생태계에 더 오래 묶어 두는 효과도 있습니다.",
+        "판매자 쪽에서도 의미가 있습니다. ThoughtSpot은 자사 AI 분석가 Spotter를 마켓플레이스에서 직접 팔고 싶다고 밝혔습니다. 이 사이트 기록상 Anthropic은 5월 기업 AI 서비스 회사 설립을 발표했고, 이번 마켓플레이스에는 컨설팅 파트너도 함께 진열했습니다."
+      ]
+    },
+    {
+      "role": "users",
+      "heading": "누구에게 의미가 있나",
+      "bullets": [
+        "Claude를 쓰는 회사: 업무 앱용 커넥터를 찾을 수 있습니다. 설치 전 커넥터가 읽고 쓸 수 있는 데이터 범위를 확인하세요.",
+        "Anthropic 약정 고객: 구매 담당 부서와 함께 약정액을 다른 도구에 쓸 수 있는지, 비율이 얼마인지 확인할 필요가 있습니다.",
+        "한국 스타트업·개발사: MCP로 커넥터를 만들면 등재를 신청할 수 있지만, 국내 결제·세금 처리 방식은 발표에 없습니다."
+      ]
+    },
+    {
+      "role": "open",
+      "heading": "확인할 것",
+      "bullets": [
+        "약정액 중 '일부'가 몇 퍼센트인지는 공개되지 않았습니다.",
+        "등재된 커넥터·플러그인에 대한 Anthropic의 보안 심사 기준은 발표 글에 나오지 않습니다."
+      ]
+    }
+  ]
+}

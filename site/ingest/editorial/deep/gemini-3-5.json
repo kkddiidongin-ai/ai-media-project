@@ -1,0 +1,70 @@
+{
+  "slug": "gemini-3-5",
+  "lead": "구글이 I/O 2026에서 새 모델 시리즈 Gemini 3.5를 발표하고 첫 모델로 Gemini 3.5 Flash를 내놨습니다. 구글이 내건 문구는 '최상위 지능에 실행력을 더했다'입니다. 3.5 Flash는 같은 날부터 전 세계 Gemini 앱과 검색 AI 모드의 기본 모델이 됐고, 구글은 코딩·에이전트 평가에서 상위 모델인 Gemini 3.1 Pro를 앞섰다고 밝혔습니다. 3.5 Pro는 '다음 달' 내놓겠다고 했습니다.",
+  "facts": [
+    "5월 19일 구글이 I/O에서 Gemini 3.5 시리즈를 발표하고 3.5 Flash를 정식 출시했습니다.",
+    "3.5 Flash는 전 세계 Gemini 앱과 검색 AI 모드의 기본 모델이 됐고, Antigravity, Gemini API(AI Studio·Android Studio), Gemini Enterprise에서도 쓸 수 있습니다.",
+    "구글은 3.5 Flash가 Terminal-Bench 2.1(76.2%), GDPval-AA(1656 Elo), MCP Atlas(83.6%)에서 Gemini 3.1 Pro를 앞섰다고 밝혔습니다.",
+    "출력 속도(초당 토큰)는 다른 최상위 모델보다 4배 빠르고, 비용은 흔히 절반 이하라고 주장했습니다.",
+    "10월 2일 확인한 Gemini API 가격표 기준 3.5 Flash는 100만 토큰당 입력 1.5달러·출력 9달러이며 무료 등급이 있습니다."
+  ],
+  "sections": [
+    {
+      "role": "what",
+      "heading": "무엇이 나왔나",
+      "paragraphs": [
+        "구글은 3.5 Flash가 여러 면에서 대형 최상위 모델과 겨루는 지능을 Flash 계열 속도로 낸다며, '지금까지 가장 강한 에이전트·코딩 모델'이라고 소개했습니다. 오래 걸리는 에이전트 작업에 맞다는 것이 핵심 메시지입니다. Antigravity와 결합하면 여러 하위 에이전트를 띄워 큰 문제를 나눠 푼다고 했습니다."
+      ],
+      "bullets": [
+        "코딩·에이전트: Terminal-Bench 2.1 76.2%, GDPval-AA 1656 Elo, MCP Atlas 83.6%",
+        "멀티모달: CharXiv Reasoning 84.2%",
+        "속도: 초당 출력 토큰 기준 다른 최상위 모델의 4배",
+        "기업 사례(구글 소개): Shopify 판매자 성장 예측, Macquarie Bank 100쪽 넘는 서류 기반 고객 온보딩 시범, Salesforce Agentforce 통합"
+      ]
+    },
+    {
+      "role": "change",
+      "heading": "함께 발표된 것",
+      "paragraphs": [
+        "구글은 3.5 Flash로 움직이는 개인 AI 에이전트 'Gemini Spark'를 공개했습니다. 24시간 돌며 사용자의 지시 아래 대신 행동하는 에이전트로, 발표 당일 신뢰 테스터에게 먼저 열고 다음 주 미국 Google AI Ultra 구독자에게 베타로 제공하겠다고 했습니다. 검색에도 사용자 대신 계속 정보를 모으는 '정보 에이전트'가 들어온다고 밝혔습니다.",
+        "안전 면에서는 사이버·화생방(CBRN) 안전장치를 강화해 해로운 내용을 덜 만들면서도 안전한 질문을 잘못 거절하는 일도 줄였다고 했습니다. 답하기 전 모델 내부 추론을 확인하는 해석 가능성 도구도 썼다고 밝혔습니다."
+      ]
+    },
+    {
+      "role": "point",
+      "heading": "봐야 할 지점",
+      "paragraphs": [
+        "모델 발표의 핵심 문구가 '더 똑똑하다'에서 '일을 대신 한다'로 바뀌었습니다. 구글이 앞세운 평가 대부분이 터미널 작업, 실무 과제, 도구 연결(MCP) 같은 실행 능력이고, 같은 날 24시간 에이전트 Gemini Spark를 함께 내놓았습니다.",
+        "Flash 등급을 시리즈 첫 모델이자 수십억 명의 기본 모델로 내세운 점도 눈여겨볼 만합니다. 비싼 최상위 모델보다 빠르고 싼 모델의 실행력을 끌어올려 기본값으로 까는 전략입니다. 다만 '최상위 모델보다 4배 빠르고 절반 이하 비용'은 구글이 정한 비교 조건의 수치이며, 어떤 모델과 비교했는지는 발표에 구체적으로 나오지 않습니다."
+      ]
+    },
+    {
+      "role": "users",
+      "heading": "누구에게 무엇이 달라지나",
+      "bullets": [
+        "Gemini 앱·검색 사용자: 따로 고르지 않아도 3.5 Flash로 답을 받게 됐습니다.",
+        "개발자: API에 무료 등급이 있어 시험해 보기 쉽고, 유료 단가는 입력 1.5달러·출력 9달러입니다(10월 2일 가격표 기준).",
+        "Ultra 구독자(미국): Gemini Spark 베타 대상입니다. 대신 행동하는 에이전트인 만큼 권한을 어디까지 줄지 먼저 정해야 합니다."
+      ]
+    },
+    {
+      "role": "open",
+      "heading": "이후 변화와 확인할 것",
+      "bullets": [
+        "10월 2일 확인한 가격표는 3.5 Flash를 '이전 Flash 모델'로 소개하고 있습니다. 이 사이트 기록상 이후 Gemini 3.6 Flash(7월), 3.7 Flash(8월), 3.8 Flash(9월)가 나왔습니다.",
+        "3.5 Pro의 '다음 달' 출시가 실제로 언제 이뤄졌는지는 이 발표로 확인되지 않습니다.",
+        "한국에서 Gemini Spark를 쓸 수 있는 시점은 발표에 없습니다."
+      ]
+    }
+  ],
+  "references": [
+    {
+      "sourceName": "Gemini API 문서",
+      "sourceTitle": "Gemini Developer API pricing",
+      "sourceUrl": "https://ai.google.dev/gemini-api/docs/pricing",
+      "sourcePublishedAt": "",
+      "checkedAt": "2026-10-02",
+      "note": "Gemini 3.5 Flash 무료·유료 등급 가격"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "slug": "new-microsoft-copilot-home-code-autopilot",
+  "lead": "마이크로소프트가 Microsoft 365 Copilot을 세 가지 축으로 다시 짰습니다. 채팅과 Cowork를 합친 시작 화면 'Home', 누구나 말로 앱·대시보드·자동화를 만드는 'Code', 사용자가 없을 때도 계속 일하는 개인 에이전트 'Autopilot'(6월 Scout에서 이름 변경)입니다. 요금은 고정 구독(USL)과 사용량 기반 과금(UBB)으로 나뉘고, Cowork·Code·Autopilot 같은 긴 에이전트 작업과 Astra·Fable 같은 최상위 모델은 사용량 과금으로 갑니다.",
+  "facts": [
+    "9월 25일 마이크로소프트가 Home, Code, Autopilot을 갖춘 새 Copilot을 발표했습니다. Home과 Code는 몇 주 안에 Frontier 프로그램부터, Autopilot은 이달 말 비공개 프리뷰로 확대됩니다.",
+    "Home에서는 Chat과 Cowork가 합쳐지고, 'Office in Copilot'으로 Word·Excel·PowerPoint의 편집 가능한 실제 파일을 대화 안에서 만들고 팀과 함께 고칩니다.",
+    "Code는 GitHub Copilot과 같은 기반 기술로 앱·트래커·대시보드·자동화를 만들며, 샌드박스에서 실행되고 회사 테넌트 안에 호스팅할 수 있습니다. 올해 말 Microsoft 365 Premium·Pro 구독자에게 프리뷰로 제공됩니다.",
+    "Autopilot은 자체 신원·기억·컴퓨터·작업 공간을 가진 클라우드 에이전트로, Teams·Outlook에서 동료처럼 @멘션해 일을 맡길 수 있습니다.",
+    "일상 AI는 고정 구독(USL), Cowork·Code·Autopilot과 Astra·Fable 같은 최상위 모델은 사용량 기반 과금(UBB)으로 나뉘며, 관리자용 비용 관리(FinOps for AI) 기능이 함께 나왔습니다."
+  ],
+  "sections": [
+    {
+      "role": "what",
+      "heading": "세 가지 축",
+      "bullets": [
+        "Home: Chat(빠른 질문)과 Cowork(맡기는 일)를 한 화면에. 곧 모드를 고르지 않아도 Copilot이 Chat·Cowork·Code로 알아서 배분",
+        "Code: 문서·스프레드시트·슬라이드에 이어 '작은 맞춤 솔루션'을 지식 노동의 네 번째 단위로 제시. Copilot Managed Runtime(프리뷰)으로 회사 환경 안에서 실행",
+        "Autopilot: 이름·역할·목표를 주면 채널을 지켜보고 후속 조치를 하며 며칠 뒤 일을 다시 이어 감",
+        "업무 맥락 확대: Power BI 의미 모델을 연결하는 Fabric IQ 정식 출시, Dynamics 365·Power Platform 데이터 연동 공개 프리뷰",
+        "예고: 메일·일정·Teams를 아우르는 'Today'(10월 비공개 프리뷰), Teams 채널 맥락을 공유하는 @Copilot"
+      ]
+    },
+    {
+      "role": "point",
+      "heading": "봐야 할 지점",
+      "paragraphs": [
+        "같은 9월 Anthropic도 Cowork와 채팅을 하나로 합쳤습니다. 두 회사 모두 '질문하는 창'과 '일을 맡기는 창'을 따로 두지 않기로 한 것이고, 문서·발표 자료를 AI 화면 안에서 바로 만드는 방향까지 같습니다. 이 사이트 기록상 마이크로소프트는 3월 Copilot Cowork를 내고 6월 정식 출시한 뒤 석 달 만에 이를 Home으로 흡수했습니다.",
+        "요금 구조의 변화가 더 실질적입니다. 6월 GitHub Copilot의 사용량 기반 과금 전환에 이어, Microsoft 365 Copilot에서도 '고정 구독으로 쓰는 일상 AI'와 '쓴 만큼 내는 에이전트 작업'이 분리됐습니다. 에이전트가 오래 일할수록 비용이 늘어나는 구조여서, 관리자가 모델 종류와 지출 한도를 그룹별로 정하는 기능을 함께 내놓았습니다."
+      ]
+    },
+    {
+      "role": "users",
+      "heading": "누구에게 무엇이 달라지나",
+      "bullets": [
+        "회사에서 Microsoft 365 Copilot을 쓰는 직원: Frontier 프로그램 참여 조직부터 화면이 바뀝니다. Cowork·Code 사용분은 크레딧으로 차감될 수 있어, 사용량과 잔액을 Copilot 안에서 확인할 수 있습니다.",
+        "IT 관리자: 플러그인 승인, 그룹별 모델 허용, 지출 정책을 Agent 365에서 관리합니다. Autopilot처럼 혼자 움직이는 에이전트는 권한 범위를 먼저 정해야 합니다.",
+        "개인 Microsoft 365 Premium·Pro 구독자: Code는 올해 말 프리뷰 예정이고, 나머지 기능의 개인 요금제 제공 시점은 이 글에 없습니다."
+      ]
+    },
+    {
+      "role": "open",
+      "heading": "확인할 것",
+      "bullets": [
+        "사용량 과금의 단가와 크레딧 환산 기준은 별도 가격 글을 확인해야 합니다.",
+        "한국어 지원과 국내 테넌트 제공 시점은 발표에 나오지 않습니다.",
+        "세부 내용은 11월 17~20일 Microsoft Ignite에서 추가로 공개된다고 밝혔습니다."
+      ]
+    }
+  ]
+}

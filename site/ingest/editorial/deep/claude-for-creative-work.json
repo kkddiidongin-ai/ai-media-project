@@ -1,0 +1,61 @@
+{
+  "slug": "claude-for-creative-work",
+  "lead": "Anthropic이 Claude가 창작자들이 이미 쓰는 전문 도구 안에서 일하도록 하는 커넥터 묶음을 내놨습니다. Adobe Creative Cloud, Blender, Autodesk Fusion, SketchUp, Ableton, Splice 등입니다. 이미지를 직접 만들어 내는 대신, 사람이 쓰는 도구를 대신 조작하고 반복 작업을 덜어 주는 방향입니다.",
+  "facts": [
+    "4월 28일 Anthropic이 창작 도구용 커넥터 묶음 'Claude for Creative Work'를 발표했습니다.",
+    "Adobe 커넥터는 Photoshop·Premiere·Express 등 Creative Cloud의 50개 넘는 도구를 쓰게 하고, Autodesk Fusion 커넥터는 대화로 3D 모델을 만들고 고치게 합니다.",
+    "Blender 커넥터는 Blender 개발진이 직접 만든 MCP 커넥터로, MCP 기반이라 Claude 외 다른 AI도 쓸 수 있습니다.",
+    "Anthropic은 Blender 프로젝트에 기부했고, 5월 1일 갱신에서 개발 기금이 아닌 일회성 기부로 받기로 했다고 정정했습니다.",
+    "로드아일랜드 디자인스쿨, 링링 예술디자인대, 런던 골드스미스대의 관련 과정 학생·교수진에게 Claude와 커넥터를 제공합니다."
+  ],
+  "sections": [
+    {
+      "role": "what",
+      "heading": "새 커넥터",
+      "bullets": [
+        "Adobe for creativity: Creative Cloud 50개 이상 도구로 이미지·영상·디자인 작업",
+        "Affinity by Canva: 일괄 이미지 조정, 레이어 이름 변경, 파일 내보내기 자동화",
+        "Autodesk Fusion: 대화로 3D 모델 생성·수정(Fusion 구독자)",
+        "Blender: Python API에 자연어로 접근, 장면 분석·디버깅, 일괄 변경 스크립트",
+        "SketchUp: 방·가구·부지 설명으로 3D 모델링 출발점 만들기",
+        "Ableton(문서 기반 답변), Splice(저작권료 없는 샘플 검색), Resolume(실시간 공연 영상 제어)"
+      ]
+    },
+    {
+      "role": "change",
+      "heading": "Anthropic이 제시한 쓰임새",
+      "bullets": [
+        "복잡한 소프트웨어 개인 교사: 모디파이어 스택, 합성 기법 설명",
+        "코드로 도구 확장: Claude Code로 셰이더, 절차적 애니메이션, 파라메트릭 모델 스크립트 작성",
+        "도구 간 연결: 형식 변환과 자산 동기화로 디자인·3D·오디오 작업 사이 수작업 줄이기",
+        "반복 제작 업무: 일괄 처리, 프로젝트 기본 구조 세팅, 장면 전체에 절차적 변경 적용"
+      ]
+    },
+    {
+      "role": "point",
+      "heading": "봐야 할 지점",
+      "paragraphs": [
+        "이미지 생성 AI와는 다른 접근입니다. Claude가 직접 그림을 만드는 것이 아니라, Photoshop이나 Blender 같은 도구를 대신 조작합니다. 결과물은 사용자의 작업 파일 안에 남고, 사람의 판단과 손질이 중심에 놓입니다. Anthropic도 'Claude가 안목이나 상상력을 대신할 수는 없다'고 전제했습니다.",
+        "Blender 사례는 오픈소스와의 관계 면에서 눈여겨볼 만합니다. Blender 개발진이 직접 커넥터를 만들었고, MCP 표준이라 다른 AI 모델도 쓸 수 있습니다. 기부 방식이 발표 사흘 뒤 정정된 것도 기록할 부분입니다. Blender가 개발 기금이 아니라 일회성 기부로 받기로 해, Anthropic이 협력 관계를 설명한 표현까지 고쳤습니다."
+      ]
+    },
+    {
+      "role": "users",
+      "heading": "누구에게 쓸모 있나",
+      "bullets": [
+        "3D 작업자(Blender·SketchUp·Fusion): 반복 모델링이나 장면 일괄 수정을 말로 맡겨 볼 수 있습니다.",
+        "디자이너·영상 편집자: Adobe 도구 작업을 Claude 대화에서 시작할 수 있습니다. 각 도구의 구독이 따로 필요합니다.",
+        "음악 제작자: Splice 샘플 검색, Ableton 사용법 질문에 쓸 수 있습니다."
+      ]
+    },
+    {
+      "role": "open",
+      "heading": "발표에 없는 것",
+      "bullets": [
+        "커넥터별로 어떤 Claude 요금제에서 쓸 수 있는지는 이 글에 정리돼 있지 않습니다.",
+        "Adobe 도구로 만든 결과물의 상업적 이용 조건은 각 도구의 이용약관을 따릅니다.",
+        "Blender 기부 금액은 공개되지 않았습니다."
+      ]
+    }
+  ]
+}
