@@ -1,8 +1,18 @@
 {
   "generatedAt": "2026-10-05",
   "generator": "scripts/qa/audit-quality.mjs",
-  "count": 244,
+  "count": 245,
   "items": [
+    {
+      "slug": "gpt-6-model-practical-guide",
+      "date": "2026-10-02",
+      "company": "OpenAI",
+      "currentDepth": "deep",
+      "status": "REVIEW",
+      "priority": "P2",
+      "reason": "원문 접근 차단 출처인데 추가 확인 자료 없음",
+      "needsSourceRecheck": true
+    },
     {
       "slug": "openai-dots-proactive-assistants",
       "date": "2026-09-29",
@@ -40,7 +50,7 @@
       "currentDepth": "standard",
       "status": "REVIEW",
       "priority": "P2",
-      "reason": "그래서 나한테는?이 한 줄 미만 · 일반 기사인데 핵심 사실 1개 · 일반 기사인데 단신 수준 분량",
+      "reason": "일반 기사인데 핵심 사실 1개 · 일반 기사인데 단신 수준 분량",
       "needsSourceRecheck": true
     },
     {
@@ -180,7 +190,7 @@
       "currentDepth": "standard",
       "status": "REVIEW",
       "priority": "P2",
-      "reason": "일반 기사인데 핵심 사실 1개 · 일반 기사인데 단신 수준 분량",
+      "reason": "일반 기사인데 핵심 사실 1개 · 일반 기사 권장 분량(400자) 미달",
       "needsSourceRecheck": true
     },
     {
