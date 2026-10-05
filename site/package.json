@@ -13,7 +13,9 @@
     "qa:content": "node scripts/qa/check-content.mjs",
     "qa:sources": "node scripts/qa/check-sources.mjs",
     "qa:routes": "node scripts/qa/check-routes.mjs",
-    "postbuild": "node scripts/postbuild-fix-segments.mjs"
+    "postbuild": "node scripts/postbuild-fix-segments.mjs",
+    "publish:daily": "npm run publish:stories && npm run qa:content && npx tsc --noEmit && npm run lint && npm run build && npm run qa:routes",
+    "qa:quality": "node scripts/qa/audit-quality.mjs"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",

@@ -38,6 +38,14 @@ for (const f of dir("content/stories")) {
 }
 
 const seen = { slug: new Map(), url: new Map(), cand: new Map() };
+// 명백한 편집 오류 (DAILY_PUBLISHING.md 기준): 등급 없음 · 출처 없음 · 본문이 제목 그대로 · 사실·영향이 빈 기사
+const flat = (t) => (t ?? "").replace(/[\s'"‘’“”·…,.!?]/g, "");
+for (const s of stories) {
+  if (!["deep", "standard", "short"].includes(s.editorialDepth)) errors.push(`${s.slug}: editorialDepth 없음`);
+  if (!/^https?:\/\//.test(s.sourceUrl ?? "")) errors.push(`${s.slug}: 원문 출처 없음`);
+  if (flat(s.summary) === flat(s.title) || (s.facts ?? []).some((x) => flat(x) === flat(s.title))) errors.push(`${s.slug}: 요약·사실이 제목과 같음`);
+  if (!(s.facts ?? []).some((x) => x.trim().length >= 20) || (s.whatChanges ?? "").trim().length < 10) errors.push(`${s.slug}: 핵심 사실 또는 '그래서 나한테는?'이 사실상 비어 있음`);
+}
 for (const s of stories) {
   for (const [k, v] of [["slug", s.slug], ["url", s.sourceUrl], ["cand", s.candidateId]]) {
     if (seen[k].has(v)) errors.push(`중복 ${k}: ${v} (${seen[k].get(v)}, ${s.slug})`);
