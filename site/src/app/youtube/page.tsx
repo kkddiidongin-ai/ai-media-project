@@ -8,7 +8,7 @@ import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
   title: "YouTube",
-  description: "AI MEDIA 콘텐츠를 영상으로 확장하는 채널을 준비하고 있습니다.",
+  description: "AI마중 콘텐츠를 영상으로 확장하는 채널을 준비하고 있습니다.",
   path: "/youtube/",
   noindex: true,
 });
@@ -28,7 +28,7 @@ export default function YoutubePage() {
   return (
     <Wrap>
       <PageHead kicker="보면서 이해하는 AI" title="YouTube" badge={<Badge tone="amber">{comingSoonLabel}</Badge>}>
-        <p>AI MEDIA 채널은 아직 열지 않았습니다. 다른 사람의 영상을 가져와 이 자리를 채우지 않습니다.</p>
+        <p>AI마중 채널은 아직 열지 않았습니다. 다른 사람의 영상을 가져와 이 자리를 채우지 않습니다.</p>
       </PageHead>
       <section aria-labelledby="yt-plan">
         <SectionLabel>

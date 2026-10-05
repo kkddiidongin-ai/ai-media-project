@@ -18,12 +18,13 @@ export function pageMetadata({ title, description, path, noindex, type = "websit
   const desc = description ?? siteConfig.description;
   const hideFromSearch = siteConfig.isPreview || noindex;
   return {
-    title,
+    // title이 없으면 키 자체를 빼야 layout의 기본 title(브랜드명 — 메시지)이 쓰인다 (undefined를 넣으면 <title>이 사라짐)
+    ...(title ? { title } : {}),
     description: desc,
     alternates: { canonical: path },
     openGraph: {
       type,
-      title: title ? `${title} | ${siteConfig.name}` : siteConfig.name,
+      title: title ? `${title} | ${siteConfig.name}` : `${siteConfig.name} — ${siteConfig.descriptor}`,
       description: desc,
       url: path,
       siteName: siteConfig.name,

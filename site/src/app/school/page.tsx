@@ -6,7 +6,7 @@ import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
   title: "AI강의",
-  description: "AI MEDIA에 쌓인 뉴스·차트·활용 사례를 바탕으로 한 AI 교육을 준비하고 있습니다.",
+  description: "AI마중에 쌓인 뉴스·차트·활용 사례를 바탕으로 한 AI 교육을 준비하고 있습니다.",
   path: "/school/",
   noindex: true,
 });
@@ -20,7 +20,7 @@ export default function SchoolPage() {
     { t: "뉴스", d: `날짜별로 확인한 AI 변화 ${stories}건이 쌓여 있습니다. 강의는 '요즘 무엇이 바뀌었나'를 이 기록에서 시작합니다.`, href: "/newsletters/" },
     { t: "AI차트", d: `가격·투자·모델 출시처럼 숫자로 봐야 하는 흐름 ${charts}개를 정리했습니다. 강의 자료의 근거가 됩니다.`, href: "/chart/" },
     { t: "주제별 아카이브", d: `${topics}개 주제로 묶인 타임라인은 '내 일에 필요한 AI만 골라 배우는' 커리큘럼의 뼈대가 됩니다.`, href: "/topics/" },
-    { t: "직접 해본 활용 사례", d: "AI MEDIA가 직접 실험한 콘텐츠(직접 해봄·오래 써보기·주장 확인)는 아직 발행 전입니다. 실험 결과가 쌓이면 실습 강의로 연결합니다.", href: "/method/" },
+    { t: "직접 해본 활용 사례", d: "AI마중이 직접 실험한 콘텐츠(직접 해봄·오래 써보기·주장 확인)는 아직 발행 전입니다. 실험 결과가 쌓이면 실습 강의로 연결합니다.", href: "/method/" },
   ];
   return (
     <Wrap>

@@ -159,7 +159,7 @@ export function ChartBody({ chart, number, headingLevel = "h2" }: { chart: Chart
 
       <section className={`${chart.analysis?.length && headingLevel === "h1" ? "mt-8" : "mt-5"} border-l-2 border-accent pl-4`}>
         <h3 className="mb-1 text-[12px] font-extrabold tracking-[0.06em] text-accent">
-          AI MEDIA POINT <span className="font-semibold text-muted">· 해석</span>
+          AI마중 POINT <span className="font-semibold text-muted">· 해석</span>
         </h3>
         <p className="text-[14.5px] leading-[1.75] text-ink">{chart.point}</p>
       </section>

@@ -20,7 +20,7 @@ const sans = Noto_Sans_KR({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} — ${siteConfig.tagline}`,
+    default: `${siteConfig.name} — ${siteConfig.descriptor}`,
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     type: "website",
     siteName: siteConfig.name,
     locale: siteConfig.locale,
-    title: siteConfig.name,
+    title: `${siteConfig.name} — ${siteConfig.descriptor}`,
     description: siteConfig.description,
   },
   robots: siteConfig.isPreview ? { index: false, follow: false } : undefined,

@@ -148,7 +148,7 @@ function DeepSection({ sec, level }: { sec: StorySection; level: "h2" | "h3" }) 
   if (sec.role === "point")
     return (
       <section className="mt-8 border-l-2 border-accent pl-4 sm:pl-5">
-        <p className="text-[11px] font-extrabold tracking-[0.08em] text-accent">AI MEDIA POINT · 해석</p>
+        <p className="text-[11px] font-extrabold tracking-[0.08em] text-accent">AI마중 POINT · 해석</p>
         <H className="mb-2.5 mt-1 text-[17px] font-bold leading-snug text-ink">{sec.heading}</H>
         {body}
       </section>
@@ -263,7 +263,7 @@ export function StoryBody({
         <>
           <section className="mt-5 border-l-2 border-accent pl-4">
             <h3 className="mb-1 text-[12px] font-extrabold tracking-[0.06em] text-accent">
-              왜 중요한가 <span className="font-semibold text-muted">· AI MEDIA 해석</span>
+              왜 중요한가 <span className="font-semibold text-muted">· AI마중 해석</span>
             </h3>
             <p className="text-[14.5px] leading-[1.75] text-ink">{s.whyItMatters}</p>
           </section>

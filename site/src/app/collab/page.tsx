@@ -6,7 +6,7 @@ import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
   title: "협업문의",
-  description: "AI MEDIA와 함께할 수 있는 콘텐츠 협업, AI 서비스 검증, 교육·강의, 기업 협업을 안내합니다.",
+  description: "AI마중과 함께할 수 있는 콘텐츠 협업, AI 서비스 검증, 교육·강의, 기업 협업을 안내합니다.",
   path: "/collab/",
 });
 
@@ -39,7 +39,7 @@ export default function CollabPage() {
 
       <section aria-labelledby="c-about">
         <SectionLabel>
-          <span id="c-about">AI MEDIA는 이런 매체입니다</span>
+          <span id="c-about">AI마중은 이런 매체입니다</span>
         </SectionLabel>
         <DarkCard className="space-y-3 px-5 py-5 text-[14px] leading-relaxed text-night-text">
           <p>
@@ -49,7 +49,7 @@ export default function CollabPage() {
             <strong className="text-night-accent">&lsquo;그래서 나한테 뭐가 달라지는데?&rsquo;</strong> 기술 설명보다 일과 생활에서 무엇이 바뀌는지를 먼저 씁니다.
           </p>
           <p>
-            <strong className="text-night-accent">지금까지의 기록.</strong> 2026년 1월부터 공식 원문으로 확인한 AI 사건 {stories}건, 뉴스레터 {issues}호를 정리했습니다. (공개 전 미리보기 단계로, 독자 수·구독자 수 같은 실적은 아직 없습니다.)
+            <strong className="text-night-accent">지금까지의 기록.</strong> 2026년 1월부터 공식 원문으로 확인한 AI 사건 {stories}건, 뉴스레터 {issues}호를 정리했습니다. (독자 수·구독자 수 같은 실적은 아직 공개하지 않습니다.)
           </p>
         </DarkCard>
       </section>
@@ -127,7 +127,7 @@ export default function CollabPage() {
             </a>
           ) : (
             <p className="mt-5 inline-block rounded-full border border-dashed border-night-line px-6 py-3 text-[14px] text-night-muted">
-              문의 메일 주소 준비 중 (공개 전 미리보기)
+              문의 메일 주소 준비 중
             </p>
           )}
         </DarkCard>

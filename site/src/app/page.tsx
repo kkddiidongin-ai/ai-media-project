@@ -32,6 +32,13 @@ export default function HomePage() {
     <>
       <h1 className="sr-only">{siteConfig.name} — 최신 AI 뉴스레터</h1>
 
+      {/* 브랜드 소개 한 줄: 왜 '마중'인지 (헤더의 브랜드명·메시지 바로 아래) */}
+      <Wrap className="pt-[22px]">
+        <p className="text-[14px] leading-[1.7] text-night-muted">
+          <strong className="font-bold text-night-text">{siteConfig.descriptor}</strong> {siteConfig.intro}
+        </p>
+      </Wrap>
+
       {latest ? (
         <Wrap className="pt-[26px]">
           {/* 오늘의 AI 뉴스레터 */}

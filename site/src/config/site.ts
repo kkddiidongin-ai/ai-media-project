@@ -1,26 +1,27 @@
 /**
  * 사이트 전체 설정 — 브랜드명·태그라인·URL은 여기서만 바꾼다.
- * 브랜드명은 아직 확정되지 않았다 (brand/naming-deep-dive.md). 아래 name은 임시값이다.
+ * 브랜드명 확정: AI마중 (2026-10-05).
  */
 export const siteConfig = {
-  /** 임시 브랜드명. 확정되면 이 값만 바꾼다. */
-  name: "AI 실용 미디어(가칭)",
+  name: "AI마중",
   /** 헤더 로고 자리에 쓰는 짧은 이름 */
-  shortName: "AI 실용 미디어",
-  /** 브랜드명 아래 작은 설명 */
-  descriptor: "공식 원문으로 확인한 AI 변화",
-  /** 대표 태그라인 (가안) */
-  tagline: "AI, 확인한 만큼만 말합니다",
+  shortName: "AI마중",
+  /** 메인 브랜드 메시지 — 헤더의 브랜드명 아래, 기본 title에 쓴다 */
+  descriptor: "AI의 변화를 먼저 마중 나갑니다.",
+  /** '마중'의 뜻을 풀어 주는 설명 (홈 첫 화면·소개) */
+  intro: "매일 쏟아지는 AI 소식을 그대로 전하지 않습니다. 중요한 변화를 먼저 살펴보고, 직접 확인한 만큼 쉽게 전합니다.",
+  /** 편집 원칙 (소개·편집 원칙 페이지) */
+  tagline: "AI, 해본 만큼만 말합니다.",
   description:
-    "OpenAI, Anthropic, Google 등 AI 회사들의 공식 발표를 날짜별로 확인하고, '그래서 나한테 뭐가 달라지는지'를 쉽게 정리하는 AI 미디어입니다.",
-  /** canonical·sitemap·OG에 쓰인다. 지금은 Vercel 기본 주소(Phase 6.4.3 공개 미리보기). 도메인이 정해지면 바꾼다. */
+    "AI의 변화를 먼저 마중 나가는 AI 미디어. OpenAI, Anthropic, Google 등 AI 회사들의 공식 발표를 날짜별로 확인하고, '그래서 나한테 뭐가 달라지는지'를 쉽게 정리합니다.",
+  /** canonical·sitemap·OG에 쓰인다. 지금은 Vercel 기본 주소. 도메인이 정해지면 바꾼다. */
   url: "https://ai-media-project-eight.vercel.app",
   locale: "ko_KR",
   /**
-   * 공개 전 미리보기: 화면 아래 얇은 안내 줄을 띄우고 검색엔진 색인을 막는다 (robots noindex, robots.txt Disallow).
-   * 배포·도메인이 정해져 실제 공개할 때 false로 바꾼다.
+   * true면 공개 전 미리보기: 화면 아래 얇은 안내 줄을 띄우고 검색엔진 색인을 막는다 (robots noindex, robots.txt Disallow).
+   * 2026-10-05 정식 공개로 false.
    */
-  isPreview: true,
+  isPreview: false,
   operator: {
     name: "김동인",
   },
