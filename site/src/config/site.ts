@@ -13,8 +13,8 @@ export const siteConfig = {
   tagline: "AI, 확인한 만큼만 말합니다",
   description:
     "OpenAI, Anthropic, Google 등 AI 회사들의 공식 발표를 날짜별로 확인하고, '그래서 나한테 뭐가 달라지는지'를 쉽게 정리하는 AI 미디어입니다.",
-  /** 배포 도메인이 정해지면 바꾼다. canonical·sitemap·OG에 쓰인다. */
-  url: "https://example.com",
+  /** canonical·sitemap·OG에 쓰인다. 지금은 Vercel 기본 주소(Phase 6.4.3 공개 미리보기). 도메인이 정해지면 바꾼다. */
+  url: "https://ai-media-project-eight.vercel.app",
   locale: "ko_KR",
   /**
    * 공개 전 미리보기: 화면 아래 얇은 안내 줄을 띄우고 검색엔진 색인을 막는다 (robots noindex, robots.txt Disallow).

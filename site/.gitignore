@@ -42,3 +42,6 @@ next-env.d.ts
 
 # pipeline run logs, source-gate and link-check reports (local QA output)
 /ingest/log/
+
+.vercel
+.env*
