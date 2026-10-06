@@ -44,8 +44,8 @@
   {
     "id": "s-20260129-f582e0",
     "slug": "chatgpt-retires-gpt-4o",
-    "title": "ChatGPT에서 GPT-4o·GPT-4.1·o4-mini가 2월 13일 사라진다",
-    "summary": "이미 예고된 GPT-5 은퇴와 함께 예전 모델들이 ChatGPT에서 빠집니다. API는 당장 변화가 없습니다.",
+    "title": "ChatGPT에서 GPT-4o·GPT-4.1·GPT-4.1 mini·o4-mini가 2월 13일 사라진다",
+    "summary": "이미 예고된 GPT-5 Instant·Thinking 종료와 같은 날 진행되며, 당시 API에는 변경이 없었습니다. 기업용 Custom GPT 안의 GPT-4o는 후속 조치로 4월 3일까지 유지됐습니다.",
     "category": "PRODUCT_UPDATE",
     "topics": [
       "openai",
@@ -62,18 +62,20 @@
       "GPT-5"
     ],
     "facts": [
-      "2026년 2월 13일, ChatGPT에서 GPT-4o, GPT-4.1, GPT-4.1 mini, OpenAI o4-mini가 제공 중단됩니다.",
-      "이미 발표된 GPT-5(Instant, Thinking, Pro) 은퇴와 같은 날입니다.",
-      "API에는 현재 변경 사항이 없다고 밝혔습니다."
+      "OpenAI는 2026년 2월 13일 ChatGPT에서 GPT-4o, GPT-4.1, GPT-4.1 mini, OpenAI o4-mini를 종료한다고 발표했습니다.",
+      "이전에 발표된 GPT-5 Instant와 Thinking 종료도 같은 날 진행됐으며, 당시 API에는 변경이 없었습니다.",
+      "GPT-4o는 GPT-5 출시 과정에서 한 번 종료 예정이었다가 Plus·Pro 사용자 피드백으로 다시 제공된 적이 있습니다.",
+      "OpenAI는 GPT-4o의 대화 스타일과 창의적 아이디어 발상에 대한 피드백이 GPT-5.1·GPT-5.2의 성격과 맞춤 설정 개선에 반영됐다고 설명했습니다.",
+      "후속 조치로 Business·Enterprise·Edu에서는 Custom GPT 안의 GPT-4o가 2026년 4월 3일까지 유지됐습니다."
     ],
-    "whyItMatters": "GPT-4o는 오랫동안 많은 사람이 익숙하게 쓴 모델입니다. 모델 교체가 사용자 선택이 아니라 회사 일정으로 이뤄진다는 점을 보여줍니다.",
-    "whatChanges": "GPT-4o로 맞춰 둔 사용 습관(말투, 프롬프트)이 있다면 새 모델에서 결과가 달라질 수 있습니다. 자주 쓰는 프롬프트는 미리 새 모델로 다시 시험해 보세요.",
+    "whyItMatters": "모델 종료는 단순한 목록 정리가 아니라, 기존 대화와 업무 흐름이 새 모델로 옮겨 가는 변화입니다. 이전에 한 번 종료를 미뤘던 GPT-4o까지 이번에 정리됐다는 점이 다릅니다. 다만 당시 API에는 변화가 없었다는 점을 구분해야 합니다.",
+    "whatChanges": "ChatGPT에서 GPT-4o 등을 골라 쓰던 사람은 2월 13일부터 다른 모델로 옮겨야 했습니다. 기업용 Custom GPT의 GPT-4o는 4월 3일까지 유지됐고, API로 쓰던 서비스는 당시 영향을 받지 않았습니다.",
     "priority": 1,
     "secondarySources": [],
     "editorialDepth": "standard",
     "eventDate": "2026-01-29",
     "publishedAt": "2026-10-01",
-    "updatedAt": "2026-10-01",
+    "updatedAt": "2026-10-06",
     "candidateId": "f582e053a20e",
     "sourceType": "official",
     "sourceName": "OpenAI",
@@ -2938,7 +2940,7 @@
     "id": "s-20260107-164e98",
     "slug": "chatgpt-health-launch",
     "title": "ChatGPT에 건강 전용 공간 'ChatGPT Health'가 생겼다",
-    "summary": "건강 데이터와 앱을 연결해서 쓰는 별도 공간입니다. OpenAI는 개인정보 보호와 의사 의견을 반영한 설계를 강조했습니다.",
+    "summary": "OpenAI가 건강·웰니스 대화를 일반 대화와 분리해 다루는 전용 공간 ChatGPT Health를 발표했습니다. 의료 기록과 웰니스 앱을 연결하도록 설계됐고, 실제 미국 출시는 7월에 시작됐습니다.",
     "category": "CONSUMER",
     "topics": [
       "openai",
@@ -2952,17 +2954,20 @@
       "ChatGPT Health"
     ],
     "facts": [
-      "ChatGPT Health는 건강 데이터와 건강 앱을 연결하는 전용 화면입니다.",
-      "OpenAI는 개인정보 보호 장치와 의사의 조언을 반영한 설계라고 설명했습니다."
+      "ChatGPT Health는 건강·웰니스용 전용 공간으로, 일반 ChatGPT 대화와 건강 대화를 분리합니다.",
+      "OpenAI는 건강 정보를 위해 전용 암호화와 격리 구조를 쓴다고 설명했습니다.",
+      "의료 기록과 웰니스 앱을 연결해, 개인 건강 정보를 바탕으로 더 관련성 높은 대화를 제공하도록 설계됐습니다.",
+      "OpenAI는 의사들과 협력해 설계했으며, 의료진을 대체하는 것이 아니라 건강 이해와 진료 상담 준비 등을 돕는 서비스라고 설명했습니다.",
+      "1월 발표 이후, 2026년 7월 23일 후속 업데이트로 미국 18세 이상 사용자 대상 웹·iOS 출시가 시작됐습니다."
     ],
-    "whyItMatters": "많은 사람이 이미 ChatGPT에 건강 질문을 하고 있습니다. 회사가 이를 별도 제품으로 만든 것은 '건강 상담'을 공식 사용처로 인정했다는 뜻입니다.",
-    "whatChanges": "건강 기록을 연결하면 더 맞춤형 답을 받을 수 있지만, 민감한 정보를 넘기는 일입니다. 연결 전에 어떤 데이터가 공유되는지 설정을 먼저 확인하세요. 진단과 처방은 여전히 의사에게 받아야 합니다.",
+    "whyItMatters": "일반 건강 질문 기능이 아니라, 민감한 건강 데이터를 별도 보호 구조에서 연결하는 전용 제품 공간을 만든 것이 변화의 핵심입니다. 이전에는 건강 질문도 일반 대화 안에서 했다면, 이제 별도 공간과 보호 구조로 분리됩니다. 1월은 발표 시점이고, 실제 미국 출시는 7월이라는 점을 구분해야 합니다.",
+    "whatChanges": "1월 발표 당시에는 바로 쓸 수 없었고, 7월부터 미국 18세 이상 사용자에게 출시됐습니다. 건강 정보는 의료진 상담을 대신하지 않습니다.",
     "priority": 1,
     "secondarySources": [],
     "editorialDepth": "standard",
     "eventDate": "2026-01-07",
     "publishedAt": "2026-10-01",
-    "updatedAt": "2026-10-01",
+    "updatedAt": "2026-10-06",
     "candidateId": "164e984cf638",
     "sourceType": "official",
     "sourceName": "OpenAI",

@@ -196,7 +196,7 @@
     "id": "s-20260828-092c8d",
     "slug": "openai-ends-cursor-contract-spacex",
     "title": "SpaceX의 Cursor 인수 뒤 OpenAI \"Cursor에 모델 공급 계약 종료\"",
-    "summary": "인기 AI 코딩 도구 Cursor가 SpaceX에 인수된 뒤 OpenAI가 모델 공급을 단계적으로 끝내기로 했습니다.",
+    "summary": "OpenAI가 SpaceX에 인수된 Cursor와의 모델 공급 계약을 끝낼 의향을 통보했다고 밝혔습니다. 제안한 종료일은 11월 12일이며, 앞으로 나올 모델은 Cursor에 제공하지 않습니다.",
     "category": "BUSINESS",
     "topics": [
       "openai",
@@ -211,16 +211,20 @@
       "Cursor"
     ],
     "facts": [
-      "OpenAI는 Cursor가 SpaceX에 인수된 뒤, Cursor에 OpenAI 모델을 제공하던 계약을 단계적으로 종료하기로 결정했다고 밝혔습니다."
+      "OpenAI는 SpaceX에 Cursor 모델 공급 계약을 종료할 의향을 통보했다고 밝혔으며, 제안한 종료일은 2026년 11월 12일입니다.",
+      "OpenAI는 계약상 허용된 최대 통지 기간을 적용하고, 기존 모델 접근은 계약 종료 가능 시점까지 최대한 유지하되 미래 모델은 Cursor에 제공하지 않겠다고 밝혔습니다.",
+      "OpenAI는 Cursor와 약 4년간 협력해 왔다고 밝혔습니다.",
+      "OpenAI는 결정 이유로 SpaceX가 자사 서비스 약관을 지킬 것이라고 확신할 수 없다는 점과, 곧 나올 Astra의 이용 조건 준수를 들었습니다.",
+      "OpenAI에 따르면 Cursor와의 맞춤 계약에는 경영권 변경 이후 계약을 취소할 수 있는 제한된 기간이 있었습니다."
     ],
-    "whyItMatters": "AI 코딩 도구가 어떤 모델을 쓸 수 있는지가 회사 간 관계에 따라 바뀔 수 있다는 것을 보여줍니다. 5월 Anthropic은 SpaceX와 컴퓨팅 계약을 맺은 바 있습니다.",
-    "whatChanges": "Cursor에서 OpenAI 모델을 쓰고 있다면 대체 모델 설정을 확인해 두세요.",
+    "whyItMatters": "즉시 차단이 아니라 11월 12일까지 최대 통지 기간을 두되 미래 모델은 공급하지 않는 구조가 핵심입니다. 4년간 이어진 공급 관계가 인수라는 경영권 변화로 끝나는 사례입니다. SpaceX의 약관 준수에 대한 판단은 OpenAI 측 설명입니다.",
+    "whatChanges": "Cursor 사용자는 11월 12일 이후 OpenAI 모델을 Cursor에서 계속 쓸 수 있을지 확인해야 하고, 새 OpenAI 모델은 Cursor에서 쓸 수 없게 됩니다.",
     "priority": 1,
     "secondarySources": [],
     "editorialDepth": "standard",
     "eventDate": "2026-08-28",
     "publishedAt": "2026-10-01",
-    "updatedAt": "2026-10-01",
+    "updatedAt": "2026-10-06",
     "candidateId": "092c8de02e8b",
     "sourceType": "official",
     "sourceName": "OpenAI",
@@ -1972,7 +1976,7 @@
     "id": "s-20260818-01003c",
     "slug": "chatgpt-for-teens",
     "title": "'ChatGPT for Teens' 출시… 학습 중심, 보호 장치 내장",
-    "summary": "청소년용 별도 ChatGPT로, 부모용 관리 기능도 함께 제공합니다.",
+    "summary": "OpenAI가 13~17세 사용자를 위한 ChatGPT for Teens를 순차 출시하기 시작했습니다. 나이를 밝히거나 18세 미만으로 추정되면 학습 중심 기능과 연령별 보호장치가 자동으로 적용됩니다.",
     "category": "CONSUMER",
     "topics": [
       "openai",
@@ -1987,16 +1991,20 @@
       "ChatGPT for Teens"
     ],
     "facts": [
-      "ChatGPT for Teens는 청소년의 학습과 비판적 사고를 돕도록 만든 제품으로, 강화된 보호 장치, 건강한 사용 기능, 부모용 추가 관리 기능을 갖췄습니다."
+      "ChatGPT for Teens는 13~17세 사용자용 경험으로, 사용자가 13~17세라고 밝히거나 시스템이 18세 미만으로 추정하면 자동으로 적용됩니다.",
+      "대상 청소년 계정의 Free와 유료 개인 플랜에 전 세계 순차 출시를 시작했으며, OpenAI는 모든 대상 계정에 바로 보이지 않을 수 있다고 안내했습니다.",
+      "Study Mode를 포함하고, 숙제를 바로 대신 풀려는 상황을 감지해 단계적 학습으로 이끄는 '숙제 알림'을 추가했습니다. 휴식 알림과 민감한 이미지 업로드 알림도 들어갑니다.",
+      "자해, 폭력, 섭식장애, 위험한 활동, 노골적인 성적·폭력적 콘텐츠 등 고위험 영역에 연령별 보호장치를 적용합니다.",
+      "연결된 부모 계정은 Quiet Hours와 일부 설정을 관리할 수 있고, 제한된 고위험 상황에서는 안전 알림을 받을 수 있으며, 섭식장애 관련 알림도 추가됐습니다."
     ],
-    "whyItMatters": "1월 나이 예측에서 시작해 8월에는 청소년 전용 제품까지 나왔습니다. 같은 달 OpenAI는 캘리포니아 청소년 AI 안전 법안 지지도 밝혔습니다.",
-    "whatChanges": "자녀가 ChatGPT를 쓴다면 청소년용 계정과 부모 관리 기능을 확인해 보세요. 국내 제공 여부는 따로 확인이 필요합니다.",
+    "whyItMatters": "별도 청소년용 모델 하나를 내놓은 것이라기보다, 나이 판정에 따라 학습 방식과 안전 기본값을 자동으로 바꾸는 제품 경험에 가깝습니다. 이전에는 청소년도 일반 ChatGPT와 같은 기본값으로 썼다면, 이제 연령에 따라 기본 동작이 달라집니다.",
+    "whatChanges": "13~17세 자녀가 ChatGPT를 쓴다면 부모 계정을 연결해 Quiet Hours 같은 설정을 관리할 수 있습니다. 나이 추정으로 적용되므로, 성인이 청소년으로 잘못 분류될 가능성도 염두에 둬야 합니다.",
     "priority": 1,
     "secondarySources": [],
     "editorialDepth": "standard",
     "eventDate": "2026-08-18",
     "publishedAt": "2026-10-01",
-    "updatedAt": "2026-10-01",
+    "updatedAt": "2026-10-06",
     "candidateId": "01003c6680bc",
     "sourceType": "official",
     "sourceName": "OpenAI",

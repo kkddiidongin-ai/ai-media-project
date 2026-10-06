@@ -1,7 +1,7 @@
 {
   "generatedAt": "2026-10-06",
   "generator": "scripts/qa/audit-quality.mjs",
-  "count": 231,
+  "count": 221,
   "items": [
     {
       "slug": "openai-textgrain-text-watermark",
@@ -124,16 +124,6 @@
       "needsSourceRecheck": true
     },
     {
-      "slug": "openai-navier-stokes-claim",
-      "date": "2026-09-08",
-      "company": "OpenAI",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P2",
-      "reason": "사실이 제목을 거의 되풀이 · 일반 기사인데 핵심 사실 1개 · 일반 기사 권장 분량(400자) 미달 · 이전 상태·변화 맥락 약함",
-      "needsSourceRecheck": true
-    },
-    {
       "slug": "ars-microsoft-patch-ai-attacks",
       "date": "2026-09-08",
       "company": "Microsoft",
@@ -174,16 +164,6 @@
       "needsSourceRecheck": true
     },
     {
-      "slug": "openai-path-to-astra-critical-cyber",
-      "date": "2026-09-01",
-      "company": "OpenAI",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P2",
-      "reason": "일반 기사 권장 분량(400자) 미달",
-      "needsSourceRecheck": true
-    },
-    {
       "slug": "chatgpt-ads-1b-run-rate",
       "date": "2026-08-31",
       "company": "OpenAI",
@@ -191,16 +171,6 @@
       "status": "REVIEW",
       "priority": "P2",
       "reason": "일반 기사인데 핵심 사실 1개 · 일반 기사 권장 분량(400자) 미달",
-      "needsSourceRecheck": true
-    },
-    {
-      "slug": "openai-ends-cursor-contract-spacex",
-      "date": "2026-08-28",
-      "company": "OpenAI",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P2",
-      "reason": "일반 기사인데 핵심 사실 1개 · 일반 기사 권장 분량(400자) 미달 · 이전 상태·변화 맥락 약함",
       "needsSourceRecheck": true
     },
     {
@@ -221,16 +191,6 @@
       "status": "REVIEW",
       "priority": "P2",
       "reason": "일반 기사 권장 분량(400자) 미달",
-      "needsSourceRecheck": true
-    },
-    {
-      "slug": "chatgpt-for-teens",
-      "date": "2026-08-18",
-      "company": "OpenAI",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P2",
-      "reason": "일반 기사인데 핵심 사실 1개 · 일반 기사 권장 분량(400자) 미달",
       "needsSourceRecheck": true
     },
     {
@@ -644,16 +604,6 @@
       "needsSourceRecheck": true
     },
     {
-      "slug": "samsung-hbm4e-gtc",
-      "date": "2026-03-17",
-      "company": "Samsung Electronics",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P2",
-      "reason": "일반 기사인데 핵심 사실 1개 · 일반 기사 권장 분량(400자) 미달",
-      "needsSourceRecheck": true
-    },
-    {
       "slug": "codex-security-preview",
       "date": "2026-03-06",
       "company": "OpenAI",
@@ -661,16 +611,6 @@
       "status": "REVIEW",
       "priority": "P2",
       "reason": "일반 기사인데 핵심 사실 1개 · 일반 기사 권장 분량(400자) 미달",
-      "needsSourceRecheck": true
-    },
-    {
-      "slug": "chatgpt-for-excel",
-      "date": "2026-03-05",
-      "company": "OpenAI",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P2",
-      "reason": "일반 기사인데 단신 수준 분량",
       "needsSourceRecheck": true
     },
     {
@@ -744,16 +684,6 @@
       "needsSourceRecheck": true
     },
     {
-      "slug": "galaxy-s26-galaxy-ai",
-      "date": "2026-02-26",
-      "company": "Samsung Electronics",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P2",
-      "reason": "일반 기사 권장 분량(400자) 미달",
-      "needsSourceRecheck": true
-    },
-    {
       "slug": "openai-drops-swe-bench-verified",
       "date": "2026-02-23",
       "company": "OpenAI",
@@ -761,16 +691,6 @@
       "status": "REVIEW",
       "priority": "P2",
       "reason": "일반 기사 권장 분량(400자) 미달 · 이전 상태·변화 맥락 약함",
-      "needsSourceRecheck": true
-    },
-    {
-      "slug": "new-bixby-one-ui-8-5",
-      "date": "2026-02-20",
-      "company": "Samsung Electronics",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P2",
-      "reason": "구체적 사실(수치·제품·조건) 없음 · 일반 기사인데 핵심 사실 1개 · 일반 기사인데 단신 수준 분량",
       "needsSourceRecheck": true
     },
     {
@@ -824,16 +744,6 @@
       "needsSourceRecheck": true
     },
     {
-      "slug": "chatgpt-retires-gpt-4o",
-      "date": "2026-01-29",
-      "company": "OpenAI",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P2",
-      "reason": "일반 기사 권장 분량(400자) 미달",
-      "needsSourceRecheck": true
-    },
-    {
       "slug": "chatgpt-age-prediction",
       "date": "2026-01-20",
       "company": "OpenAI",
@@ -866,16 +776,6 @@
     {
       "slug": "openai-cerebras-750mw",
       "date": "2026-01-14",
-      "company": "OpenAI",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P2",
-      "reason": "일반 기사 권장 분량(400자) 미달 · 이전 상태·변화 맥락 약함",
-      "needsSourceRecheck": true
-    },
-    {
-      "slug": "chatgpt-health-launch",
-      "date": "2026-01-07",
       "company": "OpenAI",
       "currentDepth": "standard",
       "status": "REVIEW",

@@ -244,7 +244,7 @@
     "c": "309be27bdcfe",
     "slug": "openai-path-to-astra-critical-cyber",
     "title": "OpenAI \"Astra, 대비 체계상 사이버 '위험(Critical)' 기준 첫 도달\"… 출시 전 안전장치 설명",
-    "summary": "GPT-6 Astra 출시 직전 위험 판단과 대응을 공개했습니다.",
+    "summary": "OpenAI가 Astra를 자체 대비 체계(Preparedness Framework)의 사이버보안 'Critical' 기준을 충족한 첫 모델로 판단했다고 밝히고, 그 근거가 된 평가와 출시 전 안전장치를 공개했습니다.",
     "cat": "SECURITY",
     "topics": [
       "openai",
@@ -257,15 +257,19 @@
       "GPT-6 Astra"
     ],
     "facts": [
-      "OpenAI는 Astra가 Preparedness Framework에서 사이버보안 능력 'Critical' 기준을 충족한 첫 OpenAI 모델이며, 출시를 위해 더 강한 안전장치를 적용했다고 밝혔습니다.",
-      "9월 4일 GPT-6 Astra는 GitHub Copilot에도 정식 제공됐습니다."
+      "OpenAI는 Astra가 Preparedness Framework의 사이버보안 Critical 기준을 충족한다고 판단했으며, 이 수준으로 지정한 첫 모델이라고 밝혔습니다. 이 기준에는 적절한 도구·권한이 있을 때 보안이 강화된 실제 핵심 시스템에서 제로데이 공격 코드를 만들거나, 고수준 목표만으로 새로운 사이버 공격 전략을 끝까지 수행하는 능력이 포함됩니다.",
+      "OpenAI에 따르면 Astra는 ExploitBench에서 100%를 기록했고, 최근 공개된 심각도 높은 V8 취약점 20개로 만든 내부 벤치마크 평가 중에는 공격 체인의 일부로 제로데이 2개를 발견·사용했습니다. 이 수치는 기본 운영 환경이 아니라 Daybreak Blue 접근에서의 능력을 반영합니다.",
+      "사이버 탈옥 평가에서 거절률은 Astra 91.5%, GPT-5.6 Sol 59%였다고 OpenAI가 밝혔습니다.",
+      "OpenAI는 안전장치 강화를 위해 Astra 개발·출시 일부를 늦췄으며, 고급 사이버보안 작업 흐름은 처음에 소수 알파 테스터에게 제공한 뒤 Daybreak Blue로 넓힐 계획이라고 밝혔습니다.",
+      "OpenAI는 안전장치가 정상적인 방어 업무까지 늦추거나 멈출 수 있다는 한계도 명시했습니다."
     ],
-    "why": "8월 예비 평가에 이어 위험 판단의 최종 근거를 공개했습니다. 최고 위험 등급 모델이 일반 개발 도구에 들어간 첫 사례입니다.",
-    "change": "일반 사용자 기능 변화는 없지만, 'Critical' 등급 모델에 어떤 제한이 붙는지 알고 싶다면 원문의 안전장치 목록을 확인하세요.",
+    "why": "Critical은 '사이버 성능이 좋다'는 마케팅 표현이 아니라, OpenAI 자체 대비 체계에서 더 강한 배포 보호조치를 요구하는 단계라는 점이 핵심입니다. 이전 모델들은 이 단계에 이르지 않았습니다. 모든 성능·안전 수치는 OpenAI 자체 평가 결과입니다.",
+    "change": "일반 사용자는 Astra에서 사이버 관련 요청이 거절되거나 제한될 수 있습니다. 보안 연구자는 고급 사이버 기능이 소수 테스터와 Daybreak Blue를 통해 단계적으로 열린다는 점을 확인해야 합니다.",
     "prio": 2,
     "secondary": [
       "67aff5abb878"
-    ]
+    ],
+    "editorialDepth": "STANDARD"
   },
   {
     "c": "1ef5285e671d",
