@@ -1,7 +1,7 @@
 {
   "generatedAt": "2026-10-06",
   "generator": "scripts/qa/audit-quality.mjs",
-  "count": 239,
+  "count": 231,
   "items": [
     {
       "slug": "openai-textgrain-text-watermark",
@@ -91,16 +91,6 @@
       "status": "REVIEW",
       "priority": "P2",
       "reason": "일반 기사 권장 분량(400자) 미달 · 이전 상태·변화 맥락 약함",
-      "needsSourceRecheck": true
-    },
-    {
-      "slug": "meta-muse-zero-day-ars",
-      "date": "2026-09-21",
-      "company": "Meta",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P2",
-      "reason": "일반 기사인데 핵심 사실 1개 · 일반 기사 권장 분량(400자) 미달",
       "needsSourceRecheck": true
     },
     {
@@ -424,16 +414,6 @@
       "needsSourceRecheck": true
     },
     {
-      "slug": "mai-code-1-flash-copilot",
-      "date": "2026-06-02",
-      "company": "Microsoft",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P2",
-      "reason": "일반 기사 권장 분량(400자) 미달",
-      "needsSourceRecheck": true
-    },
-    {
       "slug": "anthropic-draft-s1",
       "date": "2026-06-01",
       "company": "Anthropic",
@@ -524,16 +504,6 @@
       "needsSourceRecheck": true
     },
     {
-      "slug": "gpt-5-5-instant-default",
-      "date": "2026-05-05",
-      "company": "OpenAI",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P2",
-      "reason": "일반 기사인데 핵심 사실 1개 · 일반 기사 권장 분량(400자) 미달 · 이전 상태·변화 맥락 약함",
-      "needsSourceRecheck": true
-    },
-    {
       "slug": "chatgpt-ads-manager-cpc",
       "date": "2026-05-05",
       "company": "OpenAI",
@@ -604,28 +574,8 @@
       "needsSourceRecheck": true
     },
     {
-      "slug": "chatgpt-images-2-0",
-      "date": "2026-04-21",
-      "company": "OpenAI",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P2",
-      "reason": "일반 기사 권장 분량(400자) 미달",
-      "needsSourceRecheck": true
-    },
-    {
       "slug": "codex-labs-enterprise-4m-wau",
       "date": "2026-04-21",
-      "company": "OpenAI",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P2",
-      "reason": "일반 기사인데 핵심 사실 1개 · 일반 기사 권장 분량(400자) 미달",
-      "needsSourceRecheck": true
-    },
-    {
-      "slug": "codex-app-computer-use-windows",
-      "date": "2026-04-16",
       "company": "OpenAI",
       "currentDepth": "standard",
       "status": "REVIEW",
@@ -824,16 +774,6 @@
       "needsSourceRecheck": true
     },
     {
-      "slug": "samsung-hbm4-mass-production",
-      "date": "2026-02-12",
-      "company": "Samsung Electronics",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P2",
-      "reason": "일반 기사인데 핵심 사실 1개 · 일반 기사인데 단신 수준 분량",
-      "needsSourceRecheck": true
-    },
-    {
       "slug": "gpt-5-3-codex-spark",
       "date": "2026-02-12",
       "company": "OpenAI",
@@ -894,16 +834,6 @@
       "needsSourceRecheck": true
     },
     {
-      "slug": "claude-team-price-cut",
-      "date": "2026-01-27",
-      "company": "Anthropic",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P2",
-      "reason": "일반 기사인데 핵심 사실 1개 · 일반 기사인데 단신 수준 분량",
-      "needsSourceRecheck": true
-    },
-    {
       "slug": "chatgpt-age-prediction",
       "date": "2026-01-20",
       "company": "OpenAI",
@@ -925,16 +855,6 @@
     },
     {
       "slug": "chatgpt-ads-test-us",
-      "date": "2026-01-16",
-      "company": "OpenAI",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P2",
-      "reason": "일반 기사 권장 분량(400자) 미달",
-      "needsSourceRecheck": true
-    },
-    {
-      "slug": "chatgpt-go-worldwide",
       "date": "2026-01-16",
       "company": "OpenAI",
       "currentDepth": "standard",

@@ -57,7 +57,7 @@
     "c": "5b024cc795ed",
     "slug": "mai-code-1-flash-copilot",
     "title": "마이크로소프트 자체 코딩 모델 'MAI-Code-1-Flash', GitHub Copilot에",
-    "summary": "OpenAI가 아닌 마이크로소프트 자체 모델이 Copilot에 들어왔습니다.",
+    "summary": "VS Code부터 Copilot Free·Student·Pro·Pro+·Max 사용자에게 일부씩 단계적으로 제공됩니다.",
     "cat": "MODEL_RELEASE",
     "topics": [
       "microsoft",
@@ -73,16 +73,17 @@
       "GitHub Copilot"
     ],
     "facts": [
-      "마이크로소프트의 소형 코딩 모델 MAI-Code-1-Flash가 VS Code부터 GitHub Copilot에 순차 제공됐습니다. GitHub은 초기 평가에서 같은 크기의 다른 모델보다 뛰어났다고 밝혔습니다.",
-      "6월 18일에는 Copilot CLI, 클라우드 에이전트, Copilot 앱으로 넓어졌고, 6월 26일 Copilot Business·Enterprise에 정식 제공됐습니다."
+      "GitHub은 Copilot Free·Student·Pro·Pro+·Max 사용자를 대상으로 VS Code부터 MAI-Code-1-Flash를 처음엔 일부 사용자에게, 몇 주에 걸쳐 점진적으로 제공한다고 밝혔고, VS Code 모델 선택기에서 고를 수 있습니다.",
+      "GitHub은 마이크로소프트가 Copilot용으로 설계·튜닝한 코딩 모델 흐름의 첫 모델이며 크기 대비 품질이 높다고 설명했지만, 상세 벤치마크 수치는 공개하지 않았습니다."
     ],
-    "why": "4월 마이크로소프트-OpenAI 계약 개정 이후, 마이크로소프트가 자체 모델을 자사 개발 도구에 본격적으로 넣기 시작했습니다.",
-    "change": "Copilot 사용자는 가벼운 작업에 MAI-Code-1-Flash를 골라 할당량을 아낄 수 있습니다.",
+    "why": "OpenAI·Anthropic·구글 모델이 중심이던 Copilot에 마이크로소프트가 직접 만든 코딩 모델이 들어오기 시작했습니다.",
+    "change": "Copilot 사용자는 VS Code 모델 선택기에서 가벼운 작업용으로 MAI-Code-1-Flash를 골라 볼 수 있습니다. 단계적 제공이라 바로 보이지 않을 수 있습니다.",
     "prio": 2,
     "secondary": [
       "6f63ab131b5c",
       "8d74ffd51987"
-    ]
+    ],
+    "editorialDepth": "SHORT"
   },
   {
     "c": "642f7a3a6650",

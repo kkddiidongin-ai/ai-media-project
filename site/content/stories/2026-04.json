@@ -2396,7 +2396,7 @@
     "id": "s-20260421-84d8ed",
     "slug": "chatgpt-images-2-0",
     "title": "'ChatGPT Images 2.0'… 이미지 속 글자와 다국어 표현 개선",
-    "summary": "글자 렌더링, 다국어 지원, 시각적 추론을 개선했습니다.",
+    "summary": "OpenAI가 새 이미지 생성 모델 ChatGPT Images 2.0을 모든 ChatGPT 플랜에 내놨습니다. 이미지 생성 전에 더 오래 계획하는 'images with thinking'은 모든 유료 플랜에서 제공됩니다.",
     "category": "IMAGE",
     "topics": [
       "openai",
@@ -2410,17 +2410,20 @@
       "ChatGPT Images 2.0"
     ],
     "facts": [
-      "ChatGPT Images 2.0은 이미지 속 텍스트 표현, 다국어 지원, 시각적 추론을 개선했습니다.",
-      "OpenAI는 이후 이 글에 Images 2.5 안내를 덧붙였습니다."
+      "ChatGPT Images 2.0은 새로운 ChatGPT 이미지 생성 모델로, 모든 ChatGPT 플랜에서 쓸 수 있게 출시됐습니다.",
+      "함께 발표된 images with thinking은 모든 유료 ChatGPT 플랜에서 Thinking·Pro 모델을 고를 때 쓸 수 있으며, 이미지를 만들기 전에 더 많은 시간을 들여 결과를 계획하고 다듬습니다.",
+      "시스템 카드에 따르면 thinking 모드는 실시간 웹 검색 데이터를 활용하고, 한 프롬프트에서 여러 이미지를 만들며, 추론 과정을 이미지 생성에 활용할 수 있습니다.",
+      "OpenAI는 Images 2.0이 이전 배포보다 세상에 대한 지식, 지시 따르기, 촘촘한 글자 같은 세부 표현이 나아졌다고 설명했습니다.",
+      "사실감이 높아지면서 딥페이크 위험도 커질 수 있어, 프롬프트·이미지·최종 출력 단계에서 이미지 전용 안전 분류기를 쓴다고 OpenAI가 밝혔습니다."
     ],
-    "whyItMatters": "AI 이미지에서 글자가 깨지는 문제는 포스터·안내문처럼 실제로 쓰려는 사람에게 가장 큰 불편이었습니다. 다국어 개선은 한글 표기에도 영향이 있습니다.",
-    "whatChanges": "한글이 들어간 포스터나 카드 이미지를 다시 시험해 볼 만합니다. 오탈자는 꼭 확인하세요.",
+    "whyItMatters": "무료 사용자를 포함한 모든 ChatGPT 플랜에 새 이미지 모델이 들어왔지만, 추론을 결합한 images with thinking은 유료 플랜에 한정된다는 차이가 중요합니다. 이전 배포와 비교한 개선점(지식·지시 따르기·글자 표현)은 OpenAI 설명 기준입니다.",
+    "whatChanges": "무료 플랜에서도 새 모델로 이미지를 만들 수 있고, 유료 플랜은 Thinking·Pro 모델을 골라 더 공들인 이미지를 받을 수 있습니다. 이미지 속 글자 표현이 나아졌다지만 한국어 표현 성능은 따로 공개되지 않았으니, 글자가 들어간 결과물은 오탈자를 꼭 확인하세요.",
     "priority": 1,
     "secondarySources": [],
     "editorialDepth": "standard",
     "eventDate": "2026-04-21",
     "publishedAt": "2026-10-01",
-    "updatedAt": "2026-10-01",
+    "updatedAt": "2026-10-06",
     "candidateId": "84d8ed5de18a",
     "sourceType": "official",
     "sourceName": "OpenAI",
@@ -2972,8 +2975,8 @@
   {
     "id": "s-20260416-bed35c",
     "slug": "codex-app-computer-use-windows",
-    "title": "Codex 앱 대규모 업데이트… 윈도우 지원, 컴퓨터 사용·브라우징·메모리",
-    "summary": "코딩 도구를 넘어 '거의 모든 일'에 쓰는 앱으로 넓혔습니다.",
+    "title": "Codex 앱 대규모 업데이트… 컴퓨터 사용·브라우징·메모리까지",
+    "summary": "OpenAI가 Codex를 코드 작성 도구에서 컴퓨터 조작, 다른 앱 사용, 이미지 생성, 메모리, 반복 작업까지 다루는 에이전트로 넓혔습니다.",
     "category": "AI_AGENT",
     "topics": [
       "openai",
@@ -2987,16 +2990,19 @@
       "Codex app"
     ],
     "facts": [
-      "업데이트된 macOS·Windows용 Codex 앱에 컴퓨터 사용, 앱 내 브라우징, 이미지 생성, 메모리, 플러그인이 추가됐습니다."
+      "OpenAI는 Codex를 주간 300만 명 이상의 개발자가 쓴다고 밝혔습니다.",
+      "Codex가 코딩을 넘어 컴퓨터 조작, 다른 도구·앱 사용, 이미지 생성, 메모리, 이전 행동 학습, 반복 작업으로 확장됐습니다.",
+      "백그라운드 컴퓨터 사용으로 화면을 보고 클릭하고 입력할 수 있으며, 공식 발표는 여러 에이전트가 Mac에서 병렬로 작동할 수 있다고 밝혔습니다.",
+      "PR 리뷰, 여러 파일·터미널 작업, 원격 개발 환경(devbox) SSH 연결, 앱 내 브라우저 등 개발 작업 흐름 기능도 추가됐고, 메모리는 프리뷰 성격으로 소개됐습니다."
     ],
-    "whyItMatters": "2월 맥 전용으로 나온 코딩 앱이 두 달 만에 윈도우로 확장되고 범용 에이전트 기능을 갖췄습니다. 코딩 에이전트가 일반 업무 에이전트로 넘어가는 흐름입니다.",
-    "whatChanges": "윈도우 사용자도 쓸 수 있게 됐습니다. 컴퓨터를 직접 조작하는 기능은 권한 범위를 좁게 설정해 쓰는 것이 안전합니다.",
+    "whyItMatters": "이번 업데이트의 핵심은 Codex가 코드 작성 도구에서 컴퓨터와 개발 작업 흐름을 직접 다루는 에이전트로 넓어졌다는 점입니다. 이전에는 코드를 쓰고 고치는 데 집중했다면, 이제 화면을 보고 다른 앱을 조작하는 일까지 맡깁니다.",
+    "whatChanges": "개발자는 PR 리뷰나 원격 개발 환경 작업까지 Codex에 맡겨 볼 수 있습니다. 화면을 보고 클릭하는 컴퓨터 사용 기능은 권한 범위를 좁게 설정해 쓰는 것이 안전합니다.",
     "priority": 2,
     "secondarySources": [],
     "editorialDepth": "standard",
     "eventDate": "2026-04-16",
     "publishedAt": "2026-10-01",
-    "updatedAt": "2026-10-01",
+    "updatedAt": "2026-10-06",
     "candidateId": "bed35cf1aaf9",
     "sourceType": "official",
     "sourceName": "OpenAI",

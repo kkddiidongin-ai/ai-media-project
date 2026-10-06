@@ -4733,7 +4733,7 @@
     "id": "s-20260505-e98002",
     "slug": "gpt-5-5-instant-default",
     "title": "ChatGPT 기본 모델, 'GPT-5.5 Instant'로 교체… 환각 감소·개인화 강화",
-    "summary": "더 정확한 답, 환각 감소, 개인화 설정 개선을 내세웠습니다.",
+    "summary": "GPT-5.5 Instant가 GPT-5.3 Instant를 대신해 모든 ChatGPT 사용자의 기본 모델이 됐습니다. OpenAI는 고위험 질문의 환각 감소, 더 간결한 답변, 과거 채팅·파일·Gmail을 활용한 개인화 강화를 내세웠습니다.",
     "category": "MODEL_RELEASE",
     "topics": [
       "openai",
@@ -4746,16 +4746,20 @@
       "GPT-5.5 Instant"
     ],
     "facts": [
-      "GPT-5.5 Instant가 ChatGPT의 기본 모델이 됐으며, OpenAI는 더 똑똑하고 정확한 답, 환각 감소, 개인화 설정 개선을 내세웠습니다."
+      "GPT-5.5 Instant가 GPT-5.3 Instant를 대체해 모든 ChatGPT 사용자의 기본 모델이 됐고, API에서는 chat-latest로 제공됐습니다. 유료 사용자는 3개월 동안 GPT-5.3 Instant를 모델 설정에서 계속 고를 수 있었습니다.",
+      "OpenAI 내부 평가에서 의료·법률·금융 등 고위험 질문의 환각 주장이 GPT-5.3 Instant보다 52.5% 줄었고, 사용자가 사실 오류로 신고한 특히 어려운 대화에서는 부정확한 주장이 37.3% 줄었다고 OpenAI가 밝혔습니다.",
+      "OpenAI는 이미지 분석, STEM 질문, 웹 검색 사용 판단도 나아졌고, 답변을 더 간결하게 해 불필요한 후속 질문과 과도한 서식을 줄였다고 설명했습니다.",
+      "과거 채팅, 파일, 연결된 Gmail을 활용하는 개인화가 강화됐고, '메모리 출처(memory sources)'로 개인화에 쓰인 과거 대화 등 일부 출처를 사용자가 확인·관리할 수 있게 했습니다.",
+      "강화된 개인화는 Plus·Pro 웹부터 적용됐고, 6월 9일 후속 업데이트로 Go·Free에도 적용됐습니다. Free는 과거 채팅의 축소된 범위를 쓴다고 OpenAI가 밝혔습니다."
     ],
-    "whyItMatters": "가장 많은 사람이 매일 쓰는 기본 모델의 교체입니다. 3월 GPT-5.3 Instant 이후 두 달 만입니다.",
-    "whatChanges": "따로 설정하지 않아도 ChatGPT 답변이 바뀝니다. '환각 감소'는 0이 된다는 뜻이 아니므로, 중요한 사실은 계속 확인해야 합니다.",
+    "whyItMatters": "기본 모델 교체는 모델을 따로 고르지 않는 일반 사용자의 경험을 직접 바꿉니다. 이번에는 성능뿐 아니라 답변 길이와 개인화 방식까지 함께 바뀐 것이 핵심입니다. 다만 52.5% 감소는 모든 질문의 환각률이 아니라 OpenAI 내부의 고위험 질문 평가 결과입니다.",
+    "whatChanges": "따로 설정하지 않아도 ChatGPT 답변이 더 짧고 개인화된 방식으로 바뀝니다. 개인화에 어떤 과거 대화가 쓰였는지는 메모리 출처에서 확인·관리할 수 있고, 중요한 사실은 계속 직접 확인해야 합니다.",
     "priority": 1,
     "secondarySources": [],
     "editorialDepth": "standard",
     "eventDate": "2026-05-05",
     "publishedAt": "2026-10-01",
-    "updatedAt": "2026-10-01",
+    "updatedAt": "2026-10-06",
     "candidateId": "e9800213f3cd",
     "sourceType": "official",
     "sourceName": "OpenAI",
