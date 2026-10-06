@@ -1,7 +1,7 @@
 {
   "generatedAt": "2026-10-06",
   "generator": "scripts/qa/audit-quality.mjs",
-  "count": 192,
+  "count": 162,
   "items": [
     {
       "slug": "openai-textgrain-text-watermark",
@@ -151,16 +151,6 @@
       "status": "REVIEW",
       "priority": "P2",
       "reason": "일반 기사인데 핵심 사실 1개 · 일반 기사인데 단신 수준 분량 · 이전 상태·변화 맥락 약함",
-      "needsSourceRecheck": true
-    },
-    {
-      "slug": "chatgpt-ads-1b-run-rate",
-      "date": "2026-08-31",
-      "company": "OpenAI",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P2",
-      "reason": "일반 기사인데 핵심 사실 1개 · 일반 기사 권장 분량(400자) 미달",
       "needsSourceRecheck": true
     },
     {
@@ -694,16 +684,6 @@
       "needsSourceRecheck": true
     },
     {
-      "slug": "openai-business-model-intelligence",
-      "date": "2026-01-18",
-      "company": "OpenAI",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P2",
-      "reason": "일반 기사인데 핵심 사실 1개 · 일반 기사인데 단신 수준 분량 · 이전 상태·변화 맥락 약함",
-      "needsSourceRecheck": true
-    },
-    {
       "slug": "chatgpt-ads-test-us",
       "date": "2026-01-16",
       "company": "OpenAI",
@@ -794,16 +774,6 @@
       "needsSourceRecheck": true
     },
     {
-      "slug": "ai-energy-management-alliance",
-      "date": "2026-09-16",
-      "company": "Emerald AI",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "일반 기사 권장 분량(400자) 미달",
-      "needsSourceRecheck": true
-    },
-    {
       "slug": "claude-projects-redesigned",
       "date": "2026-09-16",
       "company": "Anthropic",
@@ -811,16 +781,6 @@
       "status": "REVIEW",
       "priority": "P3",
       "reason": "일반 기사 권장 분량(400자) 미달",
-      "needsSourceRecheck": true
-    },
-    {
-      "slug": "openai-aarp-older-adults",
-      "date": "2026-09-16",
-      "company": "OpenAI",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "일반 기사 권장 분량(400자) 미달 · 이전 상태·변화 맥락 약함",
       "needsSourceRecheck": true
     },
     {
@@ -854,39 +814,9 @@
       "needsSourceRecheck": true
     },
     {
-      "slug": "openai-ai-policy-window-lehane",
-      "date": "2026-09-09",
-      "company": "OpenAI",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "일반 기사 권장 분량(400자) 미달 · 이전 상태·변화 맥락 약함",
-      "needsSourceRecheck": true
-    },
-    {
       "slug": "gemini-enterprise-context-aware-access",
       "date": "2026-09-08",
       "company": "Google",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "일반 기사 권장 분량(400자) 미달",
-      "needsSourceRecheck": true
-    },
-    {
-      "slug": "openai-teen-development-research-grants",
-      "date": "2026-09-08",
-      "company": "OpenAI",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "일반 기사 권장 분량(400자) 미달 · 이전 상태·변화 맥락 약함",
-      "needsSourceRecheck": true
-    },
-    {
-      "slug": "openai-ukraine-journalism",
-      "date": "2026-09-07",
-      "company": "OpenAI",
       "currentDepth": "standard",
       "status": "REVIEW",
       "priority": "P3",
@@ -954,36 +884,6 @@
       "needsSourceRecheck": true
     },
     {
-      "slug": "anthropic-wellbeing-evaluation-grants",
-      "date": "2026-08-25",
-      "company": "Anthropic",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "일반 기사 권장 분량(400자) 미달",
-      "needsSourceRecheck": true
-    },
-    {
-      "slug": "github-copilot-slack-teams",
-      "date": "2026-08-21",
-      "company": "GitHub",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "일반 기사 권장 분량(400자) 미달",
-      "needsSourceRecheck": true
-    },
-    {
-      "slug": "replit-free-mode-gpt-5-6-luna",
-      "date": "2026-08-19",
-      "company": "Replit",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "일반 기사 권장 분량(400자) 미달 · 이전 상태·변화 맥락 약함",
-      "needsSourceRecheck": true
-    },
-    {
       "slug": "waymo-gemini-ojai",
       "date": "2026-08-19",
       "company": "Waymo",
@@ -1011,16 +911,6 @@
       "status": "REVIEW",
       "priority": "P3",
       "reason": "구체적 사실(수치·제품·조건) 없음",
-      "needsSourceRecheck": true
-    },
-    {
-      "slug": "meta-nabtu-skilled-trades",
-      "date": "2026-08-12",
-      "company": "Meta",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "일반 기사 권장 분량(400자) 미달 · 이전 상태·변화 맥락 약함",
       "needsSourceRecheck": true
     },
     {
@@ -1074,16 +964,6 @@
       "needsSourceRecheck": true
     },
     {
-      "slug": "anthropic-cognizant-ust-partnerships",
-      "date": "2026-07-27",
-      "company": "Anthropic",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "일반 기사 권장 분량(400자) 미달",
-      "needsSourceRecheck": true
-    },
-    {
       "slug": "facebook-verified-free-badge",
       "date": "2026-07-24",
       "company": "Meta",
@@ -1101,36 +981,6 @@
       "status": "REVIEW",
       "priority": "P3",
       "reason": "일반 기사 권장 분량(400자) 미달 · 이전 상태·변화 맥락 약함",
-      "needsSourceRecheck": true
-    },
-    {
-      "slug": "genesis-mission-google-microsoft-openai",
-      "date": "2026-07-22",
-      "company": "Google",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "일반 기사 권장 분량(400자) 미달 · 이전 상태·변화 맥락 약함",
-      "needsSourceRecheck": true
-    },
-    {
-      "slug": "anthropic-public-first-action-20m",
-      "date": "2026-07-21",
-      "company": "Anthropic",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "일반 기사 권장 분량(400자) 미달 · 이전 상태·변화 맥락 약함",
-      "needsSourceRecheck": true
-    },
-    {
-      "slug": "anthropic-rare-disease-research-grants",
-      "date": "2026-07-20",
-      "company": "Anthropic",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "일반 기사인데 단신 수준 분량 · 이전 상태·변화 맥락 약함",
       "needsSourceRecheck": true
     },
     {
@@ -1224,16 +1074,6 @@
       "needsSourceRecheck": true
     },
     {
-      "slug": "google-classroom-read-along-gemini",
-      "date": "2026-06-25",
-      "company": "Google",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "일반 기사 권장 분량(400자) 미달 · 이전 상태·변화 맥락 약함",
-      "needsSourceRecheck": true
-    },
-    {
       "slug": "gemini-3-5-flash-computer-use",
       "date": "2026-06-24",
       "company": "Google",
@@ -1304,16 +1144,6 @@
       "needsSourceRecheck": true
     },
     {
-      "slug": "openai-partner-network-150m",
-      "date": "2026-06-14",
-      "company": "OpenAI",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "일반 기사 권장 분량(400자) 미달",
-      "needsSourceRecheck": true
-    },
-    {
       "slug": "agentperf-blackwell-ultra",
       "date": "2026-06-12",
       "company": "NVIDIA",
@@ -1331,26 +1161,6 @@
       "status": "REVIEW",
       "priority": "P3",
       "reason": "일반 기사 권장 분량(400자) 미달",
-      "needsSourceRecheck": true
-    },
-    {
-      "slug": "anthropic-claude-corps",
-      "date": "2026-06-11",
-      "company": "Anthropic",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "일반 기사 권장 분량(400자) 미달",
-      "needsSourceRecheck": true
-    },
-    {
-      "slug": "dxc-tcs-claude-regulated-industries",
-      "date": "2026-06-11",
-      "company": "Anthropic",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "일반 기사 권장 분량(400자) 미달 · 이전 상태·변화 맥락 약함",
       "needsSourceRecheck": true
     },
     {
@@ -1391,26 +1201,6 @@
       "status": "REVIEW",
       "priority": "P3",
       "reason": "일반 기사 권장 분량(400자) 미달",
-      "needsSourceRecheck": true
-    },
-    {
-      "slug": "openai-economic-research-exchange",
-      "date": "2026-06-08",
-      "company": "OpenAI",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "일반 기사 권장 분량(400자) 미달",
-      "needsSourceRecheck": true
-    },
-    {
-      "slug": "facebook-creator-assistant-ai-translations",
-      "date": "2026-06-04",
-      "company": "Meta",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "일반 기사 권장 분량(400자) 미달 · 이전 상태·변화 맥락 약함",
       "needsSourceRecheck": true
     },
     {
@@ -1564,16 +1354,6 @@
       "needsSourceRecheck": true
     },
     {
-      "slug": "nvidia-servicenow-autonomous-agents",
-      "date": "2026-05-05",
-      "company": "NVIDIA",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "일반 기사 권장 분량(400자) 미달",
-      "needsSourceRecheck": true
-    },
-    {
       "slug": "openai-mrc-networking-protocol",
       "date": "2026-05-05",
       "company": "OpenAI",
@@ -1631,26 +1411,6 @@
       "status": "REVIEW",
       "priority": "P3",
       "reason": "사실이 제목을 거의 되풀이",
-      "needsSourceRecheck": true
-    },
-    {
-      "slug": "samsung-bixby-agentic-interview",
-      "date": "2026-04-08",
-      "company": "Samsung Electronics",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "일반 기사 권장 분량(400자) 미달",
-      "needsSourceRecheck": true
-    },
-    {
-      "slug": "copilot-cli-byok-local-models",
-      "date": "2026-04-07",
-      "company": "GitHub",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "일반 기사 권장 분량(400자) 미달",
       "needsSourceRecheck": true
     },
     {
@@ -1714,16 +1474,6 @@
       "needsSourceRecheck": true
     },
     {
-      "slug": "copilot-jetbrains-agentic-ga",
-      "date": "2026-03-11",
-      "company": "GitHub",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "일반 기사 권장 분량(400자) 미달",
-      "needsSourceRecheck": true
-    },
-    {
       "slug": "gemini-embedding-2",
       "date": "2026-03-10",
       "company": "Google",
@@ -1731,16 +1481,6 @@
       "status": "REVIEW",
       "priority": "P3",
       "reason": "일반 기사인데 단신 수준 분량",
-      "needsSourceRecheck": true
-    },
-    {
-      "slug": "nvidia-thinking-machines-gigawatt",
-      "date": "2026-03-10",
-      "company": "NVIDIA",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "일반 기사 권장 분량(400자) 미달 · 이전 상태·변화 맥락 약함",
       "needsSourceRecheck": true
     },
     {
@@ -1761,16 +1501,6 @@
       "status": "REVIEW",
       "priority": "P3",
       "reason": "일반 기사인데 핵심 사실 1개 · 일반 기사 권장 분량(400자) 미달",
-      "needsSourceRecheck": true
-    },
-    {
-      "slug": "copilot-coding-agent-jira",
-      "date": "2026-03-05",
-      "company": "GitHub",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "일반 기사 권장 분량(400자) 미달",
       "needsSourceRecheck": true
     },
     {
@@ -1824,26 +1554,6 @@
       "needsSourceRecheck": true
     },
     {
-      "slug": "servicenow-chooses-claude",
-      "date": "2026-01-28",
-      "company": "Anthropic",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "일반 기사인데 단신 수준 분량 · 이전 상태·변화 맥락 약함",
-      "needsSourceRecheck": true
-    },
-    {
-      "slug": "anthropic-gov-uk-assistant",
-      "date": "2026-01-27",
-      "company": "Anthropic",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "일반 기사 권장 분량(400자) 미달",
-      "needsSourceRecheck": true
-    },
-    {
       "slug": "openai-prism-latex",
       "date": "2026-01-27",
       "company": "OpenAI",
@@ -1891,16 +1601,6 @@
       "status": "REVIEW",
       "priority": "P3",
       "reason": "사실이 제목을 거의 되풀이",
-      "needsSourceRecheck": true
-    },
-    {
-      "slug": "copilot-agentic-memory-preview",
-      "date": "2026-01-15",
-      "company": "GitHub",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "일반 기사 권장 분량(400자) 미달",
       "needsSourceRecheck": true
     },
     {
