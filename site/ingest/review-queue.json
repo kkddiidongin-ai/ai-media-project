@@ -1,8 +1,18 @@
 {
-  "generatedAt": "2026-10-05",
+  "generatedAt": "2026-10-06",
   "generator": "scripts/qa/audit-quality.mjs",
-  "count": 245,
+  "count": 246,
   "items": [
+    {
+      "slug": "openai-textgrain-text-watermark",
+      "date": "2026-10-05",
+      "company": "OpenAI",
+      "currentDepth": "deep",
+      "status": "REVIEW",
+      "priority": "P2",
+      "reason": "원문 접근 차단 출처인데 추가 확인 자료 없음",
+      "needsSourceRecheck": true
+    },
     {
       "slug": "gpt-6-model-practical-guide",
       "date": "2026-10-02",
