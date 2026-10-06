@@ -40,7 +40,13 @@ function novelty(title, text) {
   return n / F.size;
 }
 // 저장된 원문 요약에 더 쓸 사실이 없어, 보강하려면 원문을 다시 읽어야 하는 기사 (2026-10-05 확인)
-const STORED_INFO_EXHAUSTED = new Set(["gemini-api-managed-agents", "copilot-for-eclipse-open-source", "gh-skill-agent-skills-cli", "claude-tag-teams"]);
+const STORED_INFO_EXHAUSTED = new Set([
+  "gemini-api-managed-agents", "copilot-for-eclipse-open-source", "gh-skill-agent-skills-cli", "claude-tag-teams",
+  // 2026-10-06 확인: 저장된 원문 요약이 이미 사실 문장과 같은 내용뿐
+  "meta-muse-for-small-business", "facebook-verified-free-badge", "project-glasswing-expansion", "anthropic-milan-office",
+  "gemini-app-notebooks", "australia-anthropic-safety-mou", "notebooklm-cinematic-video-overviews",
+  "google-ai-impact-summit-2026", "kaggle-community-benchmarks",
+]);
 const hasSpecific = (t) => /\d|[A-Z][A-Za-z]+/.test(t); // 숫자·고유명(제품·회사)이 하나라도 있는지
 
 function audit(s) {
