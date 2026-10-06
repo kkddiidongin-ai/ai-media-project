@@ -2338,7 +2338,7 @@
     "id": "s-20260422-e24c3b",
     "slug": "google-eighth-gen-tpu",
     "title": "구글 8세대 TPU 공개… '에이전트 시대'용 칩 두 종",
-    "summary": "Cloud Next '26에서 에이전트 작업을 겨냥한 TPU 두 종을 발표했습니다.",
+    "summary": "구글이 8세대 TPU를 대규모 학습용 TPU 8t와 저지연 추론용 TPU 8i 두 종류로 나눠 공개했습니다. 두 칩 모두 2026년 후반 정식 제공 예정입니다.",
     "category": "CHIPS_INFRA",
     "topics": [
       "google",
@@ -2352,10 +2352,14 @@
       "TPU (8th gen)"
     ],
     "facts": [
-      "구글이 에이전트 시대를 위해 만든 8세대 TPU 두 종을 공개했습니다."
+      "8세대 TPU는 대규모 학습(training)에 특화된 TPU 8t와 저지연 추론(inference)에 특화된 TPU 8i 두 종류이며, 둘 다 다른 작업도 실행할 수 있지만 각자의 특화로 효율을 높이는 구조입니다.",
+      "TPU 8t는 한 슈퍼팟에 최대 9,600개 칩을 묶고, 구글에 따르면 이전 세대보다 팟당 연산 성능이 약 3배입니다.",
+      "TPU 8i는 288GB 고대역폭 메모리와 이전 세대의 3배인 384MB 온칩 SRAM을 갖췄고, 구글은 달러당 성능이 이전 세대보다 80% 좋아졌다고 밝혔습니다.",
+      "구글은 두 칩 모두 이전 세대 Ironwood보다 와트당 성능이 최대 2배라고 밝혔으며, JAX·PyTorch·vLLM 등을 지원합니다.",
+      "두 칩 모두 Google AI Hypercomputer의 일부로 2026년 후반 정식 제공될 예정입니다."
     ],
-    "whyItMatters": "구글은 자체 칩으로 Gemini를 돌리고, Anthropic 같은 외부 회사에도 팝니다. 엔비디아의 가장 강한 대안 중 하나입니다.",
-    "whatChanges": "일반 사용자 변화는 없지만, 구글 클라우드를 쓰는 개발사라면 새 TPU 제공 지역과 가격 공지를 확인할 수 있습니다.",
+    "whyItMatters": "이번 세대의 핵심은 TPU가 빨라졌다는 것보다, 학습과 추론을 서로 다른 칩으로 특화한 듀얼 구조라는 점입니다. 에이전트처럼 응답이 빨라야 하는 작업이 늘면서, 추론 전용 칩의 지연 시간과 비용 효율을 따로 끌어올린 것입니다. 성능 수치는 구글 발표 기준입니다.",
+    "whatChanges": "일반 사용자에게 바로 바뀌는 것은 없습니다. 구글 클라우드에서 모델을 학습하거나 서비스하는 기업은 학습엔 8t, 추론엔 8i를 고르는 선택지가 생기며, 실제 이용은 2026년 후반 정식 제공 이후입니다.",
     "priority": 3,
     "secondarySources": [
       {
@@ -2370,7 +2374,7 @@
     "editorialDepth": "standard",
     "eventDate": "2026-04-22",
     "publishedAt": "2026-10-01",
-    "updatedAt": "2026-10-01",
+    "updatedAt": "2026-10-06",
     "candidateId": "e24c3b97e96a",
     "sourceType": "official",
     "sourceName": "Google (The Keyword · AI)",
