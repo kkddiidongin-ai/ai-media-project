@@ -1,7 +1,7 @@
 {
   "generatedAt": "2026-10-06",
   "generator": "scripts/qa/audit-quality.mjs",
-  "count": 221,
+  "count": 192,
   "items": [
     {
       "slug": "openai-textgrain-text-watermark",
@@ -51,16 +51,6 @@
       "status": "REVIEW",
       "priority": "P2",
       "reason": "일반 기사 권장 분량(400자) 미달",
-      "needsSourceRecheck": true
-    },
-    {
-      "slug": "chatgpt-ads-southeast-asia-taiwan",
-      "date": "2026-09-23",
-      "company": "OpenAI",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P2",
-      "reason": "일반 기사인데 핵심 사실 1개 · 일반 기사인데 단신 수준 분량",
       "needsSourceRecheck": true
     },
     {
@@ -181,16 +171,6 @@
       "status": "REVIEW",
       "priority": "P2",
       "reason": "일반 기사인데 핵심 사실 1개 · 일반 기사 권장 분량(400자) 미달",
-      "needsSourceRecheck": true
-    },
-    {
-      "slug": "chatgpt-ads-testing-europe",
-      "date": "2026-08-18",
-      "company": "OpenAI",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P2",
-      "reason": "일반 기사 권장 분량(400자) 미달",
       "needsSourceRecheck": true
     },
     {
@@ -384,16 +364,6 @@
       "needsSourceRecheck": true
     },
     {
-      "slug": "anthropic-korea-representative",
-      "date": "2026-05-26",
-      "company": "Anthropic",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P2",
-      "reason": "일반 기사인데 핵심 사실 1개 · 일반 기사인데 단신 수준 분량 · 이전 상태·변화 맥락 약함",
-      "needsSourceRecheck": true
-    },
-    {
       "slug": "openai-model-disproves-unit-distance-conjecture",
       "date": "2026-05-20",
       "company": "OpenAI",
@@ -441,16 +411,6 @@
       "status": "REVIEW",
       "priority": "P2",
       "reason": "일반 기사인데 핵심 사실 1개 · 일반 기사 권장 분량(400자) 미달",
-      "needsSourceRecheck": true
-    },
-    {
-      "slug": "copilot-ai-credits-april-usage-report",
-      "date": "2026-05-12",
-      "company": "GitHub",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P2",
-      "reason": "일반 기사인데 핵심 사실 1개 · 일반 기사인데 단신 수준 분량 · 이전 상태·변화 맥락 약함",
       "needsSourceRecheck": true
     },
     {
@@ -594,16 +554,6 @@
       "needsSourceRecheck": true
     },
     {
-      "slug": "copilot-lts-gpt-5-3-codex",
-      "date": "2026-03-18",
-      "company": "GitHub",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P2",
-      "reason": "일반 기사인데 핵심 사실 1개 · 일반 기사 권장 분량(400자) 미달",
-      "needsSourceRecheck": true
-    },
-    {
       "slug": "codex-security-preview",
       "date": "2026-03-06",
       "company": "OpenAI",
@@ -611,16 +561,6 @@
       "status": "REVIEW",
       "priority": "P2",
       "reason": "일반 기사인데 핵심 사실 1개 · 일반 기사 권장 분량(400자) 미달",
-      "needsSourceRecheck": true
-    },
-    {
-      "slug": "grok-code-fast-1-copilot-free",
-      "date": "2026-03-04",
-      "company": "xAI",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P2",
-      "reason": "일반 기사인데 핵심 사실 1개 · 일반 기사 권장 분량(400자) 미달 · 이전 상태·변화 맥락 약함",
       "needsSourceRecheck": true
     },
     {
@@ -874,16 +814,6 @@
       "needsSourceRecheck": true
     },
     {
-      "slug": "copilot-budget-increase-requests",
-      "date": "2026-09-16",
-      "company": "GitHub",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "일반 기사 권장 분량(400자) 미달",
-      "needsSourceRecheck": true
-    },
-    {
       "slug": "openai-aarp-older-adults",
       "date": "2026-09-16",
       "company": "OpenAI",
@@ -1004,16 +934,6 @@
       "needsSourceRecheck": true
     },
     {
-      "slug": "copilot-global-model-policy-ga",
-      "date": "2026-08-26",
-      "company": "GitHub",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "일반 기사 권장 분량(400자) 미달",
-      "needsSourceRecheck": true
-    },
-    {
       "slug": "gemini-3-5-transcribe",
       "date": "2026-08-26",
       "company": "Google",
@@ -1104,16 +1024,6 @@
       "needsSourceRecheck": true
     },
     {
-      "slug": "mai-code-1-1-flash-copilot",
-      "date": "2026-08-11",
-      "company": "Microsoft",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "일반 기사 권장 분량(400자) 미달",
-      "needsSourceRecheck": true
-    },
-    {
       "slug": "chatgpt-business-premium-seats",
       "date": "2026-08-10",
       "company": "OpenAI",
@@ -1131,26 +1041,6 @@
       "status": "REVIEW",
       "priority": "P3",
       "reason": "일반 기사 권장 분량(400자) 미달 · 이전 상태·변화 맥락 약함",
-      "needsSourceRecheck": true
-    },
-    {
-      "slug": "github-models-retired",
-      "date": "2026-07-30",
-      "company": "GitHub",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "일반 기사 권장 분량(400자) 미달",
-      "needsSourceRecheck": true
-    },
-    {
-      "slug": "copilot-default-model-enablement-policy",
-      "date": "2026-07-29",
-      "company": "GitHub",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "일반 기사 권장 분량(400자) 미달",
       "needsSourceRecheck": true
     },
     {
@@ -1201,16 +1091,6 @@
       "status": "REVIEW",
       "priority": "P3",
       "reason": "사실이 제목을 거의 되풀이",
-      "needsSourceRecheck": true
-    },
-    {
-      "slug": "copilot-cloud-agent-linear-ga",
-      "date": "2026-07-23",
-      "company": "GitHub",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "일반 기사 권장 분량(400자) 미달",
       "needsSourceRecheck": true
     },
     {
@@ -1284,16 +1164,6 @@
       "needsSourceRecheck": true
     },
     {
-      "slug": "gpt-5-6-family-github-copilot",
-      "date": "2026-07-09",
-      "company": "GitHub",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "일반 기사 권장 분량(400자) 미달 · 이전 상태·변화 맥락 약함",
-      "needsSourceRecheck": true
-    },
-    {
       "slug": "openai-government-national-security-principles",
       "date": "2026-07-08",
       "company": "OpenAI",
@@ -1314,49 +1184,9 @@
       "needsSourceRecheck": true
     },
     {
-      "slug": "github-copilot-app-all-plans",
-      "date": "2026-07-07",
-      "company": "GitHub",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "일반 기사 권장 분량(400자) 미달",
-      "needsSourceRecheck": true
-    },
-    {
       "slug": "claude-code-cowork-government",
       "date": "2026-07-06",
       "company": "Anthropic",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "일반 기사 권장 분량(400자) 미달",
-      "needsSourceRecheck": true
-    },
-    {
-      "slug": "copilot-vision-browser-tools-ga",
-      "date": "2026-07-01",
-      "company": "GitHub",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "일반 기사 권장 분량(400자) 미달",
-      "needsSourceRecheck": true
-    },
-    {
-      "slug": "kimi-k2-7-code-github-copilot",
-      "date": "2026-07-01",
-      "company": "GitHub",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "일반 기사 권장 분량(400자) 미달",
-      "needsSourceRecheck": true
-    },
-    {
-      "slug": "copilot-agent-jetbrains-ai-assistant",
-      "date": "2026-06-30",
-      "company": "GitHub",
       "currentDepth": "standard",
       "status": "REVIEW",
       "priority": "P3",
@@ -1654,16 +1484,6 @@
       "needsSourceRecheck": true
     },
     {
-      "slug": "copilot-memory-controls-preferences",
-      "date": "2026-05-26",
-      "company": "GitHub",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "일반 기사 권장 분량(400자) 미달 · 이전 상태·변화 맥락 약함",
-      "needsSourceRecheck": true
-    },
-    {
       "slug": "chris-olah-pope-encyclical-remarks",
       "date": "2026-05-25",
       "company": "Anthropic",
@@ -1704,26 +1524,6 @@
       "needsSourceRecheck": true
     },
     {
-      "slug": "copilot-base-model-gpt-5-3-codex",
-      "date": "2026-05-18",
-      "company": "GitHub",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "일반 기사 권장 분량(400자) 미달",
-      "needsSourceRecheck": true
-    },
-    {
-      "slug": "copilot-cli-remote-control-ga",
-      "date": "2026-05-18",
-      "company": "GitHub",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "일반 기사인데 핵심 사실 1개 · 일반 기사인데 단신 수준 분량",
-      "needsSourceRecheck": true
-    },
-    {
       "slug": "google-antigravity-2",
       "date": "2026-05-17",
       "company": "Google",
@@ -1751,16 +1551,6 @@
       "status": "REVIEW",
       "priority": "P3",
       "reason": "일반 기사 권장 분량(400자) 미달 · 이전 상태·변화 맥락 약함",
-      "needsSourceRecheck": true
-    },
-    {
-      "slug": "copilot-deprecates-grok-code-fast-1",
-      "date": "2026-05-08",
-      "company": "GitHub",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "일반 기사 권장 분량(400자) 미달",
       "needsSourceRecheck": true
     },
     {
@@ -1874,16 +1664,6 @@
       "needsSourceRecheck": true
     },
     {
-      "slug": "copilot-deprecates-gpt-5-1-sonnet-4",
-      "date": "2026-04-03",
-      "company": "GitHub",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "일반 기사 권장 분량(400자) 미달",
-      "needsSourceRecheck": true
-    },
-    {
       "slug": "copilot-cloud-agent-rename",
       "date": "2026-04-01",
       "company": "GitHub",
@@ -1994,16 +1774,6 @@
       "needsSourceRecheck": true
     },
     {
-      "slug": "gpt-5-4-in-copilot",
-      "date": "2026-03-05",
-      "company": "GitHub",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "일반 기사 권장 분량(400자) 미달 · 이전 상태·변화 맥락 약함",
-      "needsSourceRecheck": true
-    },
-    {
       "slug": "notebooklm-cinematic-video-overviews",
       "date": "2026-03-04",
       "company": "Google",
@@ -2011,26 +1781,6 @@
       "status": "REVIEW",
       "priority": "P3",
       "reason": "사실이 제목을 거의 되풀이",
-      "needsSourceRecheck": true
-    },
-    {
-      "slug": "copilot-deprecates-gemini-3-pro-gpt-5-1",
-      "date": "2026-03-02",
-      "company": "GitHub",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "일반 기사 권장 분량(400자) 미달",
-      "needsSourceRecheck": true
-    },
-    {
-      "slug": "copilot-usage-metrics-ga",
-      "date": "2026-02-27",
-      "company": "GitHub",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "일반 기사 권장 분량(400자) 미달",
       "needsSourceRecheck": true
     },
     {
@@ -2064,16 +1814,6 @@
       "needsSourceRecheck": true
     },
     {
-      "slug": "gpt-5-3-codex-in-copilot",
-      "date": "2026-02-09",
-      "company": "GitHub",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "일반 기사 권장 분량(400자) 미달",
-      "needsSourceRecheck": true
-    },
-    {
       "slug": "copilot-opus-4-6-fast-mode-preview",
       "date": "2026-02-07",
       "company": "GitHub",
@@ -2081,16 +1821,6 @@
       "status": "REVIEW",
       "priority": "P3",
       "reason": "일반 기사인데 단신 수준 분량",
-      "needsSourceRecheck": true
-    },
-    {
-      "slug": "claude-opus-4-6-in-copilot",
-      "date": "2026-02-05",
-      "company": "GitHub",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "일반 기사 권장 분량(400자) 미달",
       "needsSourceRecheck": true
     },
     {
@@ -2184,16 +1914,6 @@
       "needsSourceRecheck": true
     },
     {
-      "slug": "gpt-5-2-codex-ga-copilot",
-      "date": "2026-01-14",
-      "company": "GitHub",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "일반 기사 권장 분량(400자) 미달",
-      "needsSourceRecheck": true
-    },
-    {
       "slug": "kaggle-community-benchmarks",
       "date": "2026-01-14",
       "company": "Google",
@@ -2201,16 +1921,6 @@
       "status": "REVIEW",
       "priority": "P3",
       "reason": "사실이 제목을 거의 되풀이",
-      "needsSourceRecheck": true
-    },
-    {
-      "slug": "copilot-model-deprecations-january",
-      "date": "2026-01-13",
-      "company": "GitHub",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "일반 기사 권장 분량(400자) 미달",
       "needsSourceRecheck": true
     }
   ]
