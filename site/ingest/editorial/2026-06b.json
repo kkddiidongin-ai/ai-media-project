@@ -447,7 +447,7 @@
     "c": "78f90780fb21",
     "slug": "claude-microsoft-foundry-ga",
     "title": "Claude, 마이크로소프트 Foundry에서 정식 제공… 애저 GB300에서 실행",
-    "summary": "Azure 고객이 마이크로소프트 플랫폼에서 Claude를 정식으로 씁니다.",
+    "summary": "Claude 모델이 Azure에서 호스팅되는 Microsoft Foundry에서 정식 제공됩니다. 기존 Azure 인증·결제·관리 체계를 그대로 쓰고, 추론 처리 위치로 미국 데이터 존을 고를 수 있습니다.",
     "cat": "BUSINESS",
     "topics": [
       "anthropic",
@@ -466,14 +466,19 @@
     ],
     "facts": [
       "Anthropic은 Azure에서 호스팅되는 Microsoft Foundry에서 Claude 모델을 정식 제공한다고 밝혔습니다.",
+      "기존 Azure 인증, 결제, 거버넌스 체계를 그대로 쓸 수 있고, 추론 처리 위치를 선택할 수 있으며 미국 데이터 존 옵션도 제공됩니다. Anthropic이 추론을 운영하는 데이터 처리자 역할을 합니다.",
+      "정식 제공 전 공개 프리뷰에서는 Claude Haiku 4.5, Sonnet 4.5, Opus 4.1 등이 제공됐으며, Azure 계약과 MACC(Azure 사용 약정)를 활용할 수 있었습니다.",
+      "Python, TypeScript, C# SDK와 Microsoft Entra 인증을 지원합니다.",
       "엔비디아는 Microsoft Foundry의 Claude 모델이 Azure의 NVIDIA GB300 Blackwell Ultra GPU에서 실행된다고 설명했습니다."
     ],
-    "why": "Claude가 AWS, 구글 클라우드에 이어 애저까지 3대 클라우드에서 모두 정식 제공됩니다. OpenAI 모델이 AWS에 들어간 것과 반대 방향의 확장입니다.",
-    "change": "애저를 쓰는 회사는 별도 계약 없이 Foundry에서 Claude를 쓸 수 있습니다.",
+    "why": "공개 프리뷰에서 정식 제공으로 넘어가며, 애저 기업 고객이 기존 계약과 관리 체계 안에서 Claude를 쓰게 됐습니다. Claude가 AWS, 구글 클라우드에 이어 애저까지 주요 클라우드에서 정식 제공되는 셈입니다.",
+    "change": "애저를 쓰는 회사는 별도 계약 없이 기존 Azure 약정으로 Claude를 쓸 수 있습니다. 데이터 처리 위치 옵션은 도입 전 확인하는 것이 좋습니다.",
     "prio": 3,
     "secondary": [
       "f2ff41701679"
-    ]
+    ],
+    "editorialDepth": "STANDARD",
+    "eventDate": "2026-06-29"
   },
   {
     "c": "5d4106fa20ae",

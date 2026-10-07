@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-06",
+  "generatedAt": "2026-10-07",
   "generator": "scripts/qa/audit-quality.mjs",
-  "count": 162,
+  "count": 149,
   "items": [
     {
       "slug": "openai-textgrain-text-watermark",
@@ -31,16 +31,6 @@
       "status": "REVIEW",
       "priority": "P2",
       "reason": "일반 기사 권장 분량(400자) 미달",
-      "needsSourceRecheck": true
-    },
-    {
-      "slug": "samsung-helix-1b-investment",
-      "date": "2026-09-29",
-      "company": "Samsung Electronics",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P2",
-      "reason": "일반 기사인데 핵심 사실 1개 · 일반 기사 권장 분량(400자) 미달 · 이전 상태·변화 맥락 약함",
       "needsSourceRecheck": true
     },
     {
@@ -101,16 +91,6 @@
       "status": "REVIEW",
       "priority": "P2",
       "reason": "일반 기사인데 핵심 사실 1개 · 일반 기사인데 단신 수준 분량",
-      "needsSourceRecheck": true
-    },
-    {
-      "slug": "samsung-mistral-semiconductor-partnership",
-      "date": "2026-09-09",
-      "company": "Samsung Electronics",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P2",
-      "reason": "일반 기사인데 핵심 사실 1개 · 일반 기사 권장 분량(400자) 미달",
       "needsSourceRecheck": true
     },
     {
@@ -231,16 +211,6 @@
       "status": "REVIEW",
       "priority": "P2",
       "reason": "일반 기사 권장 분량(400자) 미달",
-      "needsSourceRecheck": true
-    },
-    {
-      "slug": "samsung-broadcom-memory-foundry-mou",
-      "date": "2026-07-25",
-      "company": "Samsung Electronics",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P2",
-      "reason": "일반 기사 권장 분량(400자) 미달 · 이전 상태·변화 맥락 약함",
       "needsSourceRecheck": true
     },
     {
@@ -414,16 +384,6 @@
       "needsSourceRecheck": true
     },
     {
-      "slug": "chatgpt-ads-manager-cpc",
-      "date": "2026-05-05",
-      "company": "OpenAI",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P2",
-      "reason": "일반 기사인데 핵심 사실 1개 · 일반 기사 권장 분량(400자) 미달 · 이전 상태·변화 맥락 약함",
-      "needsSourceRecheck": true
-    },
-    {
       "slug": "openai-advanced-account-security",
       "date": "2026-04-30",
       "company": "OpenAI",
@@ -484,16 +444,6 @@
       "needsSourceRecheck": true
     },
     {
-      "slug": "codex-labs-enterprise-4m-wau",
-      "date": "2026-04-21",
-      "company": "OpenAI",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P2",
-      "reason": "일반 기사인데 핵심 사실 1개 · 일반 기사 권장 분량(400자) 미달",
-      "needsSourceRecheck": true
-    },
-    {
       "slug": "copilot-opus-4-7-ga-multiplier",
       "date": "2026-04-16",
       "company": "GitHub",
@@ -516,16 +466,6 @@
     {
       "slug": "openai-axios-supply-chain-response",
       "date": "2026-04-10",
-      "company": "OpenAI",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P2",
-      "reason": "일반 기사인데 핵심 사실 1개 · 일반 기사 권장 분량(400자) 미달",
-      "needsSourceRecheck": true
-    },
-    {
-      "slug": "openai-raises-122b",
-      "date": "2026-03-31",
       "company": "OpenAI",
       "currentDepth": "standard",
       "status": "REVIEW",
@@ -571,26 +511,6 @@
       "status": "REVIEW",
       "priority": "P2",
       "reason": "일반 기사인데 핵심 사실 1개 · 일반 기사 권장 분량(400자) 미달 · 이전 상태·변화 맥락 약함",
-      "needsSourceRecheck": true
-    },
-    {
-      "slug": "openai-110b-investment-feb",
-      "date": "2026-02-27",
-      "company": "OpenAI",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P2",
-      "reason": "일반 기사 권장 분량(400자) 미달 · 이전 상태·변화 맥락 약함",
-      "needsSourceRecheck": true
-    },
-    {
-      "slug": "openai-amazon-partnership",
-      "date": "2026-02-27",
-      "company": "OpenAI",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P2",
-      "reason": "일반 기사 권장 분량(400자) 미달",
       "needsSourceRecheck": true
     },
     {
@@ -954,16 +874,6 @@
       "needsSourceRecheck": true
     },
     {
-      "slug": "meta-blackrock-el-paso-data-center",
-      "date": "2026-07-28",
-      "company": "Meta",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "일반 기사 권장 분량(400자) 미달",
-      "needsSourceRecheck": true
-    },
-    {
       "slug": "facebook-verified-free-badge",
       "date": "2026-07-24",
       "company": "Meta",
@@ -1061,16 +971,6 @@
       "status": "REVIEW",
       "priority": "P3",
       "reason": "일반 기사인데 핵심 사실 1개 · 일반 기사 권장 분량(400자) 미달",
-      "needsSourceRecheck": true
-    },
-    {
-      "slug": "claude-microsoft-foundry-ga",
-      "date": "2026-06-28",
-      "company": "Anthropic",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "일반 기사 권장 분량(400자) 미달",
       "needsSourceRecheck": true
     },
     {
@@ -1424,16 +1324,6 @@
       "needsSourceRecheck": true
     },
     {
-      "slug": "copilot-cloud-agent-rename",
-      "date": "2026-04-01",
-      "company": "GitHub",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "일반 기사인데 핵심 사실 1개 · 일반 기사인데 단신 수준 분량",
-      "needsSourceRecheck": true
-    },
-    {
       "slug": "australia-anthropic-safety-mou",
       "date": "2026-03-31",
       "company": "Anthropic",
@@ -1461,16 +1351,6 @@
       "status": "REVIEW",
       "priority": "P3",
       "reason": "일반 기사인데 단신 수준 분량",
-      "needsSourceRecheck": true
-    },
-    {
-      "slug": "google-the-check-up-health",
-      "date": "2026-03-17",
-      "company": "Google",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "일반 기사인데 핵심 사실 1개 · 일반 기사인데 단신 수준 분량",
       "needsSourceRecheck": true
     },
     {
@@ -1541,16 +1421,6 @@
       "status": "REVIEW",
       "priority": "P3",
       "reason": "일반 기사 권장 분량(400자) 미달",
-      "needsSourceRecheck": true
-    },
-    {
-      "slug": "copilot-opus-4-6-fast-mode-preview",
-      "date": "2026-02-07",
-      "company": "GitHub",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "일반 기사인데 단신 수준 분량",
       "needsSourceRecheck": true
     },
     {

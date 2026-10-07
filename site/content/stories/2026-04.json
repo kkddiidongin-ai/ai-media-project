@@ -2445,7 +2445,7 @@
     "id": "s-20260421-d9639e",
     "slug": "codex-labs-enterprise-4m-wau",
     "title": "OpenAI 'Codex Labs' 출범… 액센츄어·PwC·인포시스와 기업 확산, 주간 사용자 400만",
-    "summary": "기업이 개발 전 과정에 Codex를 도입하도록 돕는 프로그램입니다.",
+    "summary": "OpenAI가 전문 인력이 고객사에 직접 들어가 Codex 도입을 돕는 Codex Labs를 출범했습니다. Codex 주간 사용자가 4월 초 300만 명에서 약 2주 만에 400만 명을 넘었다고 밝혔습니다.",
     "category": "BUSINESS",
     "topics": [
       "openai",
@@ -2463,16 +2463,19 @@
       "Codex Labs"
     ],
     "facts": [
-      "OpenAI가 Codex Labs를 출범하고 액센츄어, PwC, 인포시스 등과 협력해 기업의 개발 전 과정에 Codex 도입을 돕는다고 밝혔습니다. Codex 주간 활성 사용자는 400만 명에 이르렀다고 발표했습니다."
+      "OpenAI가 Codex Labs를 출범했습니다. OpenAI 전문 인력이 고객 조직에 직접 들어가 Codex를 개발 작업 흐름에 적용하도록 돕습니다.",
+      "액센츄어, 캡제미니, CGI, 코그니전트, 인포시스, PwC, TCS 등 글로벌 시스템 통합 기업들과 협력합니다.",
+      "OpenAI는 Codex 주간 사용자가 4월 초 300만 명 이상에서 약 2주 뒤 400만 명 이상으로 늘었다고 밝혔습니다.",
+      "Virgin Atlantic, Ramp, Notion, Cisco 등의 사용 사례를 OpenAI가 소개했습니다."
     ],
-    "whyItMatters": "코딩 에이전트가 개인 개발자 도구에서 대형 컨설팅사를 통한 기업 도입 단계로 넘어갔습니다.",
-    "whatChanges": "기업 고객 프로그램이라 개인 사용 방식은 그대로지만, 주간 400만 명이라는 수치는 코딩 에이전트가 주류 도구가 됐다는 지표입니다.",
+    "whyItMatters": "코딩 에이전트 경쟁이 도구 성능에서 '기업 안에 실제로 정착시키는 능력'으로 넓어지고 있습니다. 이전에는 도구를 제공하는 데 그쳤다면, 이제 전문 인력과 컨설팅 회사를 붙여 도입을 직접 돕습니다. 400만 명은 OpenAI 자체 발표 수치입니다.",
+    "whatChanges": "대기업 개발 조직이라면 Codex 도입을 컨설팅 파트너와 함께 진행하는 선택지가 생겼습니다.",
     "priority": 2,
     "secondarySources": [],
     "editorialDepth": "standard",
     "eventDate": "2026-04-21",
     "publishedAt": "2026-10-01",
-    "updatedAt": "2026-10-01",
+    "updatedAt": "2026-10-07",
     "candidateId": "d9639e2fcb88",
     "sourceType": "official",
     "sourceName": "OpenAI",
@@ -5659,8 +5662,8 @@
   {
     "id": "s-20260401-6e7636",
     "slug": "copilot-cloud-agent-rename",
-    "title": "'Copilot 코딩 에이전트'→'클라우드 에이전트'… PR 밖에서도 조사·계획·코딩",
-    "summary": "이름을 바꾸며 쓰임새를 넓혔습니다.",
+    "title": "GitHub Copilot coding agent, 'cloud agent'로 개편… PR 없이 코드 작업·계획·리서치 지원",
+    "summary": "GitHub이 Copilot coding agent를 Copilot cloud agent로 바꾸면서, PR을 먼저 만들지 않고 브랜치에서 작업하고 계획·리서치까지 맡길 수 있게 했습니다.",
     "category": "AI_AGENT",
     "topics": [
       "copilot",
@@ -5674,10 +5677,13 @@
       "Copilot cloud agent"
     ],
     "facts": [
-      "GitHub은 Copilot coding agent의 이름을 Copilot cloud agent로 바꾸고, PR 작업에만 쓰이던 기능을 조사·계획·코딩 등 더 넓은 용도로 확장했다고 밝혔습니다."
+      "Copilot coding agent의 이름이 Copilot cloud agent로 바뀌었습니다.",
+      "기존에는 작업 과정에서 PR 생성이 전제됐지만, 이제 브랜치에서 작업한 뒤 전체 변경 내용(diff)을 검토하고 나서 PR을 만들 수 있습니다.",
+      "코드 작업 전에 구현 계획을 먼저 만들고 사람이 검토·피드백한 뒤 진행할 수 있으며, 저장소 맥락을 바탕으로 한 심층 리서치 세션도 지원합니다.",
+      "Agents 탭과 Copilot Chat에서 쓸 수 있고, 모든 유료 Copilot 요금제가 대상이며 Business·Enterprise는 관리자가 켜야 합니다."
     ],
-    "whyItMatters": "코드 작성 도우미가 '클라우드에서 일하는 동료'로 위치가 바뀌었습니다. 4월 8일에는 GitHub 모바일에서도 같은 기능이 열렸습니다.",
-    "whatChanges": "휴대폰에서 이슈를 보고 바로 클라우드 에이전트에 조사나 수정을 맡길 수 있습니다.",
+    "whyItMatters": "단순한 이름 변경이 아니라 작업 방식 자체가 넓어진 업데이트입니다. 이전에는 에이전트에게 맡기면 곧바로 PR이 만들어졌다면, 이제 계획·리서치·브랜치 작업을 거쳐 사람이 확인한 뒤 PR을 만듭니다.",
+    "whatChanges": "Copilot 유료 사용자는 바로 PR을 받는 대신 구현 계획을 먼저 검토하거나, 저장소에 대한 조사만 맡길 수 있습니다. 회사 계정은 관리자 활성화가 필요합니다.",
     "priority": 3,
     "secondarySources": [
       {
@@ -5692,7 +5698,7 @@
     "editorialDepth": "standard",
     "eventDate": "2026-04-01",
     "publishedAt": "2026-10-01",
-    "updatedAt": "2026-10-01",
+    "updatedAt": "2026-10-07",
     "candidateId": "6e76360046a2",
     "sourceType": "official",
     "sourceName": "GitHub Changelog",
