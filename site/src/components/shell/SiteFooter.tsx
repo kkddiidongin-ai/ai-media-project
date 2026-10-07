@@ -26,6 +26,7 @@ export function SiteFooter() {
         </nav>
         <nav aria-label="사이트 정보">
           <ul className="space-y-2">
+            <li><Link href="/newsletter/subscribe/" className="font-semibold text-night-accent hover:text-night-text">뉴스레터 구독</Link></li>
             <li><Link href="/method/" className="hover:text-night-text">편집·출처 원칙</Link></li>
             <li><Link href="/method/#sources" className="hover:text-night-text">수집 소스 목록</Link></li>
             <li><Link href="/about/" className="hover:text-night-text">소개</Link></li>

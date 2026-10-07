@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SubscribeCta } from "@/components/newsletter/SubscribeCta";
 import { ChartVisual } from "@/components/news/ChartView";
 import { CategoryTag, StoryRow } from "@/components/news/Story";
 import { DarkCard, PaperCard, SectionLabel, WideLink, Wrap } from "@/components/ui";
@@ -104,6 +105,7 @@ export default function HomePage() {
             <div aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 h-[120px] bg-gradient-to-b from-paper/0 to-paper" />
           </PaperCard>
           <WideLink href={issueHref(latest.date)}>전체 보기 ↓</WideLink>
+          <SubscribeCta className="mt-6" />
         </Wrap>
       ) : null}
 

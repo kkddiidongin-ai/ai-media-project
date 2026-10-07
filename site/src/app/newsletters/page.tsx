@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SubscribeCta } from "@/components/newsletter/SubscribeCta";
 import { CategoryTag } from "@/components/news/Story";
 import { PageHead, Wrap } from "@/components/ui";
 import { getIssues, getStories } from "@/lib/news";
@@ -30,6 +31,8 @@ export default function NewslettersPage() {
           {formatDate(issues.at(-1)?.date)} ~ {formatDate(issues[0]?.date)} · {issues.length}호 · {total}건
         </p>
       </PageHead>
+
+      <SubscribeCta className="mb-8" />
 
       <nav aria-label="월 바로가기" className="mb-8 flex flex-wrap gap-2">
         {[...months.keys()].map((m) => (

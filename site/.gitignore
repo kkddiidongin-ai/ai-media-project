@@ -45,3 +45,6 @@ next-env.d.ts
 
 .vercel
 .env*
+
+# 환경변수 이름 목록은 공유한다 (값 없음)
+!.env.example

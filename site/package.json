@@ -2,6 +2,7 @@
   "name": "site",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -15,14 +16,20 @@
     "qa:routes": "node scripts/qa/check-routes.mjs",
     "postbuild": "node scripts/postbuild-fix-segments.mjs",
     "publish:daily": "npm run publish:stories && npm run qa:content && npx tsc --noEmit && npm run lint && npm run build && npm run qa:routes",
-    "qa:quality": "node scripts/qa/audit-quality.mjs"
+    "qa:quality": "node scripts/qa/audit-quality.mjs",
+    "newsletter:preview": "node scripts/newsletter/preview.mjs",
+    "newsletter:test": "node scripts/newsletter/test-send.mjs",
+    "newsletter:send": "node scripts/newsletter/send.mjs",
+    "newsletter:setup": "node scripts/newsletter/setup.mjs",
+    "qa:newsletter": "node scripts/newsletter/check.mjs"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
     "marked": "^18.0.14",
     "next": "16.3.7",
     "react": "19.2.8",
-    "react-dom": "19.2.8"
+    "react-dom": "19.2.8",
+    "resend": "^6.32.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
@@ -31,6 +38,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.3.7",
+    "jiti": "^2.7.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

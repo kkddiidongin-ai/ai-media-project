@@ -11,7 +11,7 @@ export const dynamic = "force-static";
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = siteConfig.url;
   const cards = getCardnews().filter((c) => !c.demo);
-  const pages = ["/", "/newsletters/", "/chart/", "/topics/", ...(cards.length ? ["/cardnews/"] : []), "/collab/", "/method/", "/about/"].map((p) => ({ url: `${base}${p}` }));
+  const pages = ["/", "/newsletters/", "/newsletter/subscribe/", "/chart/", "/topics/", ...(cards.length ? ["/cardnews/"] : []), "/collab/", "/method/", "/about/"].map((p) => ({ url: `${base}${p}` }));
   const issues = getIssues().map((i) => ({ url: `${base}/newsletters/${i.date}/`, lastModified: i.stories.map((s) => s.updatedAt).sort().at(-1) }));
   const stories = getStories().map((s) => ({ url: `${base}/stories/${s.slug}/`, lastModified: s.updatedAt }));
   const charts = getCharts().map((c) => ({ url: `${base}/chart/${c.slug}/`, lastModified: c.checkedAt }));

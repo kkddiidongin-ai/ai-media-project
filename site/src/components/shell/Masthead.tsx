@@ -93,8 +93,16 @@ export function Masthead({ ticker }: { ticker: TickerItem[] }) {
             <span className="text-[20px] font-bold leading-[24px] tracking-[-0.5px] text-white sm:text-[22px]">{siteConfig.shortName}</span>
             <span className="mt-[2px] text-[11px] leading-[13px] text-night-muted">{siteConfig.descriptor}</span>
           </Link>
-          {/* 오른쪽 action 자리: 구독·로그인을 만들기 전까지 비워 둔다 */}
-          <div aria-hidden />
+          {/* 오른쪽 action 자리: 뉴스레터 구독 */}
+          <div className="flex justify-end">
+            <Link
+              href="/newsletter/subscribe/"
+              aria-current={pathname.startsWith("/newsletter/subscribe") ? "page" : undefined}
+              className="inline-flex h-9 items-center rounded-full border border-night-accent/60 px-3.5 text-[13px] font-bold text-night-accent hover:bg-night-accent hover:text-night-deep"
+            >
+              구독<span className="max-sm:hidden">하기</span>
+            </Link>
+          </div>
         </div>
       </header>
 

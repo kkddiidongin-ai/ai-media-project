@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { SubscribeCta } from "@/components/newsletter/SubscribeCta";
 import { StoryBody, StoryBrief } from "@/components/news/Story";
 import { PaperCard, Wrap } from "@/components/ui";
 import { getIssue, getIssues } from "@/lib/news";
@@ -129,6 +130,7 @@ export default async function IssuePage({ params }: PageProps<"/newsletters/[dat
           <span />
         )}
       </nav>
+      <SubscribeCta className="mt-8" />
     </Wrap>
   );
 }
