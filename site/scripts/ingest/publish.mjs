@@ -13,18 +13,13 @@
  */
 import fs from "node:fs";
 import path from "node:path";
-import { ROOT, loadAllCandidates, readJson, today, writeJson } from "./lib.mjs";
+import { CATEGORIES, ROOT, loadAllCandidates, readJson, today, writeJson } from "./lib.mjs";
 
 const EDITORIAL_DIR = path.join(ROOT, "ingest", "editorial");
 /** 심층 기사(Phase 6.4.1 Editorial Depth Pilot): ingest/editorial/deep/<slug>.json — 해당 기사에만 덧붙는다 */
 const DEEP_DIR = path.join(EDITORIAL_DIR, "deep");
 const SECTION_ROLES = ["what", "before", "change", "point", "users", "open"];
 const STORY_DIR = path.join(ROOT, "content", "stories");
-export const CATEGORIES = [
-  "MODEL_RELEASE", "PRODUCT_UPDATE", "AI_AGENT", "AI_CODING", "AI_SEARCH", "IMAGE", "VIDEO", "VOICE", "ROBOTICS",
-  "CHIPS_INFRA", "BUSINESS", "INVESTMENT", "REGULATION", "COPYRIGHT", "RESEARCH", "BENCHMARK", "SECURITY", "WORK", "CONSUMER",
-];
-
 const candidates = loadAllCandidates();
 const topics = new Set(readJson(path.join(ROOT, "content", "topics.json"), []).map((t) => t.slug));
 const existing = new Map();

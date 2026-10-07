@@ -11,7 +11,7 @@
  */
 import fs from "node:fs";
 import path from "node:path";
-import { ROOT, loadAllCandidates } from "./lib.mjs";
+import { ROOT, loadAllCandidates, selectionScore as score } from "./lib.mjs";
 
 const args = process.argv.slice(2);
 const month = args.find((a) => /^\d{4}-\d{2}$/.test(a));
@@ -26,32 +26,9 @@ for (const f of fs.readdirSync(path.join(ROOT, "content/stories")))
   }
 const draftIds = new Set();
 const ed = path.join(ROOT, "ingest/editorial");
-for (const f of fs.readdirSync(ed)) for (const d of JSON.parse(fs.readFileSync(path.join(ed, f), "utf8"))) {
+for (const f of fs.readdirSync(ed).filter((x) => x.endsWith(".json"))) for (const d of JSON.parse(fs.readFileSync(path.join(ed, f), "utf8"))) {
   draftIds.add(d.c);
   for (const x of d.secondary ?? []) draftIds.add(x);
-}
-
-const RULES = [
-  [/\b(introduc|launch|now available|generally available|\bGA\b|available (in|to|for|on)|rolling out|rolls out|released?|unveil|announc|debuts?|arrives?)/i, 3],
-  [/\b(price|pricing|cost|free|plan|tier|credits?|billing|subscription)\b/i, 2],
-  [/\b(deprecat|retir|sunset|end of support|no longer|removed?|breaking change)/i, 2],
-  [/\b(model|gpt-|claude|gemini|grok|llama|muse|gemma|nemotron|copilot|codex|agent|api)\b/i, 1],
-  [/\b(acquir|acquisition|invest|funding|raises?|valuation|partner(ship)?|agreement|deal|contract)\b/i, 2],
-  [/\b(regulat|law|act\b|bill\b|government|policy|court|lawsuit|copyright|licens)/i, 2],
-  [/\b(security|vulnerab|incident|breach|attack|scam|fraud|safety|jailbreak|malicious)/i, 2],
-  [/\b(benchmark|leaderboard|state-of-the-art|SOTA|research|paper|discover)/i, 1],
-  [/\b(korea|korean|seoul|samsung|naver|kakao|lg\b|sk\b)/i, 2],
-  [/\b(how .* (uses|built|builds|scales|boosts|cuts|helps|turns|transforms)|customer story|case study)/i, -4],
-  [/\b(for beginners|how to|guide|tips|best practices|cheat sheet|explained|lessons|what we learned|playbook|tutorial|deep dive|part \d)/i, -3],
-  [/\b(webinar|event|summit|hackathon|meetup|register|save the date|recap|podcast|watch|award|winners|career|hiring|joins|appointed|named)\b/i, -2],
-  [/\b(galaxy (tab|watch|buds|book|ring)|tv|refrigerator|washer|appliance|monitor|soundbar|unpacked|olympic)/i, -1],
-];
-
-function score(c) {
-  const text = `${c.title} ${c.description.slice(0, 300)}`;
-  let s = 0;
-  for (const [re, w] of RULES) if (re.test(text)) s += w;
-  return s;
 }
 
 const list = [...loadAllCandidates().values()]

@@ -11,14 +11,17 @@ import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
 
-export const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname.replace(/^\/([A-Za-z]:)/, "$1")), "../..");
+// 데이터 위치. AIMAJUNG_ROOT는 시험용(임시 복사본에서 승인·발행을 시험할 때)으로만 쓴다
+export const ROOT = process.env.AIMAJUNG_ROOT
+  ? path.resolve(process.env.AIMAJUNG_ROOT)
+  : path.resolve(path.dirname(new URL(import.meta.url).pathname.replace(/^\/([A-Za-z]:)/, "$1")), "../..");
 export const INGEST_DIR = path.join(ROOT, "ingest");
 export const CANDIDATE_DIR = path.join(INGEST_DIR, "candidates");
 export const LOG_DIR = path.join(INGEST_DIR, "log");
 export const STATE_FILE = path.join(INGEST_DIR, "state.json");
 export const REGISTRY_FILE = path.join(INGEST_DIR, "registry.json");
 
-export const UA = "AIMediaResearchBot/0.1 (+https://example.com/method/; research, respects robots.txt)";
+export const UA = "AImajungBot/0.1 (+https://aimajung.com/method/; research, respects robots.txt)";
 const AI_AGENTS = ["anthropic-ai", "claudebot", "claude-web", "claude-user", "claude-searchbot"];
 
 export const today = () => new Date().toISOString().slice(0, 10);
@@ -254,4 +257,65 @@ export function saveCandidates(map) {
     list.sort((a, b) => a.publishedAt.localeCompare(b.publishedAt) || a.id.localeCompare(b.id));
     writeJson(path.join(CANDIDATE_DIR, `${k}.json`), list);
   }
+}
+
+// ---------- 기사 분류 (publish.mjs·daily 승인이 함께 쓴다) ----------
+
+export const CATEGORIES = [
+  "MODEL_RELEASE", "PRODUCT_UPDATE", "AI_AGENT", "AI_CODING", "AI_SEARCH", "IMAGE", "VIDEO", "VOICE", "ROBOTICS",
+  "CHIPS_INFRA", "BUSINESS", "INVESTMENT", "REGULATION", "COPYRIGHT", "RESEARCH", "BENCHMARK", "SECURITY", "WORK", "CONSUMER",
+];
+
+// ---------- 본문 텍스트 추출 (source-gate.mjs·daily 근거 수집이 함께 쓴다) ----------
+
+/** HTML → 읽을 수 있는 본문 줄 (마크업·내비게이션·짧은 조각·관련 글 목록 제거) */
+export function bodyText(html) {
+  const cleaned = html
+    .replace(/<script[\s\S]*?<\/script>/gi, " ")
+    .replace(/<style[\s\S]*?<\/style>/gi, " ")
+    .replace(/<noscript[\s\S]*?<\/noscript>/gi, " ")
+    .replace(/<(nav|header|footer|aside|svg|form|button|template)[\s\S]*?<\/\1>/gi, " ");
+  const lines = cleaned
+    .replace(/<\/(p|h[1-6]|li|tr|div|section|blockquote|figcaption)>/gi, "\n")
+    .replace(/<br\s*\/?>/gi, "\n")
+    .replace(/<li[^>]*>/gi, "• ")
+    .split("\n")
+    .map((l) => stripHtml(l).replace(/\s+/g, " ").trim())
+    .filter((l) => l.length >= 30 || /^•\s.{8,}/.test(l))
+    .filter((l) => !/[{}]|=\"|class=|\baria-[a-z-]+=|\bdata-[a-z-]+=|https?:\/\/\S+\.(png|jpg|webp|mp4)/.test(l)); // 속성 형태(data-x=)만 걸러 낸다. 본문 속 "data-residency" 같은 단어는 남김
+  const out = [];
+  const seen = new Set();
+  for (const l of lines) {
+    if (/^(Related (posts|content|News|stories)|Read more|Share this|Sign up for|Subscribe)/i.test(l)) break;
+    if (seen.has(l)) continue;
+    seen.add(l);
+    out.push(l);
+  }
+  return out.join("\n");
+}
+
+// ---------- 편집 선별 점수 (screen.mjs·daily 판정이 함께 쓴다) ----------
+
+/** 내부용 규칙 점수. 점수만으로 발행하지 않는다 — 편집 판단의 보조 */
+export const RULES = [
+  [/\b(introduc|launch|now available|generally available|\bGA\b|available (in|to|for|on)|rolling out|rolls out|released?|unveil|announc|debuts?|arrives?)/i, 3],
+  [/\b(price|pricing|cost|free|plan|tier|credits?|billing|subscription)\b/i, 2],
+  [/\b(deprecat|retir|sunset|end of support|no longer|removed?|breaking change)/i, 2],
+  [/\b(model|gpt-|claude|gemini|grok|llama|muse|gemma|nemotron|copilot|codex|agent|api)\b/i, 1],
+  [/\b(acquir|acquisition|invest|funding|raises?|valuation|partner(ship)?|agreement|deal|contract)\b/i, 2],
+  [/\b(regulat|law|act\b|bill\b|government|policy|court|lawsuit|copyright|licens)/i, 2],
+  [/\b(security|vulnerab|incident|breach|attack|scam|fraud|safety|jailbreak|malicious)/i, 2],
+  [/\b(benchmark|leaderboard|state-of-the-art|SOTA|research|paper|discover)/i, 1],
+  [/\b(korea|korean|seoul|samsung|naver|kakao|lg\b|sk\b)/i, 2],
+  [/\b(how .* (uses|built|builds|scales|boosts|cuts|helps|turns|transforms)|customer story|case study)/i, -4],
+  [/\b(for beginners|how to|guide|tips|best practices|cheat sheet|explained|lessons|what we learned|playbook|tutorial|deep dive|part \d)/i, -3],
+  [/\b(webinar|event|summit|hackathon|meetup|register|save the date|recap|podcast|watch|award|winners|career|hiring|joins|appointed|named)\b/i, -2],
+  [/\b(galaxy (tab|watch|buds|book|ring)|tv|refrigerator|washer|appliance|monitor|soundbar|unpacked|olympic)/i, -1],
+];
+
+export function selectionScore(c) {
+  const text = `${c.title} ${(c.description ?? "").slice(0, 300)}`;
+  let s = 0;
+  for (const [re, w] of RULES) if (re.test(text)) s += w;
+  return s;
 }

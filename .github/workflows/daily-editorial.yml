@@ -1,0 +1,125 @@
+# AI마중 DAILY — 자동 수집·편집·검증·승인 대기 (Phase 7.1)
+#
+# 하는 일: 공식 출처 수집 → 중복 판정 → 편집 판정 → 근거 확인 → (키가 있으면) 원고 생성 → 검증 → 보고서
+# 결과는 automation/daily-<날짜> 브랜치에 커밋하고 PR을 연다 (같은 날짜 재실행은 같은 브랜치·같은 PR을 갱신).
+# 하지 않는 일: master 직접 push, content/ 발행, 배포, 뉴스레터 생성·발송. 승인·발행은 사람이 한다.
+#
+# 켜고 끄기(킬 스위치): Settings → Secrets and variables → Actions → Variables
+#   DAILY_AUTOMATION_ENABLED = true  일 때만 실행. 지우거나 다른 값이면 아무것도 하지 않는다.
+# 일정: 매일 22:00 UTC = 한국 시간 07:00. GitHub schedule은 정시 실행을 보장하지 않는다 (수 분~수십 분 늦을 수 있음).
+
+name: AI마중 DAILY
+
+on:
+  schedule:
+    - cron: "0 22 * * *"
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "기준일 (한국 시간 YYYY-MM-DD, 비우면 오늘)"
+        required: false
+        type: string
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: aimajung-daily
+  cancel-in-progress: false
+
+jobs:
+  daily:
+    if: ${{ vars.DAILY_AUTOMATION_ENABLED == 'true' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    defaults:
+      run:
+        working-directory: site
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+
+      - name: Install
+        run: npm ci --no-audit --no-fund
+
+      - name: Date (KST)
+        id: d
+        env:
+          INPUT_DATE: ${{ inputs.date }}
+        run: |
+          D="${INPUT_DATE:-$(TZ=Asia/Seoul date +%F)}"
+          [[ "$D" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]] || { echo "bad date: $D"; exit 1; }
+          echo "date=$D" >> "$GITHUB_OUTPUT"
+
+      # 같은 URL을 날마다 다시 처리하지 않도록 처리 기록을 캐시로 이어 쓴다
+      - name: Restore processed index
+        uses: actions/cache/restore@v4
+        with:
+          path: site/ingest/log/daily-processed.json
+          key: daily-processed-${{ github.run_id }}
+          restore-keys: daily-processed-
+
+      - name: Automation QA (fixtures, no network)
+        run: npm run qa:daily
+
+      - name: Daily run
+        id: run
+        env:
+          DAILY_AUTOMATION_ENABLED: ${{ vars.DAILY_AUTOMATION_ENABLED }}
+          DAILY_LLM_PROVIDER: ${{ vars.DAILY_LLM_PROVIDER }}
+          DAILY_LLM_MODEL: ${{ vars.DAILY_LLM_MODEL }}
+          DAILY_MAX_CANDIDATES: ${{ vars.DAILY_MAX_CANDIDATES }}
+          DAILY_MAX_LLM_CALLS: ${{ vars.DAILY_MAX_LLM_CALLS }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: npm run daily:run -- --date "${{ steps.d.outputs.date }}" --out "$RUNNER_TEMP/daily"
+
+      - name: Save processed index
+        if: always() && steps.run.outcome != 'skipped'
+        uses: actions/cache/save@v4
+        with:
+          path: site/ingest/log/daily-processed.json
+          key: daily-processed-${{ github.run_id }}
+
+      - name: Branch + PR (never master)
+        if: always() && steps.run.outcome != 'skipped'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          D: ${{ steps.d.outputs.date }}
+        run: |
+          set -euo pipefail
+          SRC="$RUNNER_TEMP/daily/$D"
+          [ -f "$SRC/report.md" ] || { echo "보고서 없음 (자동화 꺼짐 또는 실행 실패)"; exit 0; }
+          B="automation/daily-$D"
+          case "$B" in automation/daily-*) ;; *) echo "unsafe branch"; exit 1;; esac
+          git config user.name "aimajung-daily[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git stash --include-untracked >/dev/null || true
+          if git ls-remote --exit-code --heads origin "$B" >/dev/null; then
+            git fetch origin "$B"
+            git checkout -B "$B" "origin/$B"
+          else
+            git checkout -B "$B" "origin/${{ github.event.repository.default_branch }}"
+          fi
+          mkdir -p "ingest/daily/$D"
+          cp -R "$SRC/." "ingest/daily/$D/"
+          git add "ingest/daily/$D"
+          if git diff --cached --quiet; then
+            echo "변경 없음"
+          else
+            git commit -m "chore(daily): AI마중 DAILY $D"
+            git push origin "HEAD:refs/heads/$B"
+          fi
+          PR=$(gh pr list --head "$B" --state open --json number -q '.[0].number')
+          if [ -z "$PR" ]; then
+            gh pr create --base "${{ github.event.repository.default_branch }}" --head "$B" --title "AI마중 DAILY $D (승인 대기)" --body-file "ingest/daily/$D/report.md"
+          else
+            gh pr edit "$PR" --body-file "ingest/daily/$D/report.md"
+          fi

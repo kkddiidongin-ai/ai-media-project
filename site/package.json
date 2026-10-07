@@ -22,7 +22,11 @@
     "newsletter:send": "node scripts/newsletter/send.mjs",
     "newsletter:setup": "node scripts/newsletter/setup.mjs",
     "qa:newsletter": "node scripts/newsletter/check.mjs",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "daily:collect": "node scripts/daily/run.mjs --collect-only",
+    "daily:run": "node scripts/daily/run.mjs",
+    "daily:approve": "node scripts/daily/approve.mjs",
+    "qa:daily": "node scripts/daily/check.mjs"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",

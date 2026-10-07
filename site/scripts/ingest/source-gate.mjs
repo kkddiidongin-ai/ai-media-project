@@ -17,7 +17,7 @@
  */
 import fs from "node:fs";
 import path from "node:path";
-import { ROOT, politeFetch, robotsAllowed, stripHtml, today } from "./lib.mjs";
+import { ROOT, bodyText, politeFetch, robotsAllowed, today } from "./lib.mjs";
 
 const args = process.argv.slice(2);
 const noteDir = args[0];
@@ -36,32 +36,6 @@ fs.mkdirSync(noteDir, { recursive: true });
 const stories = [];
 for (const f of fs.readdirSync(path.join(ROOT, "content/stories"))) stories.push(...JSON.parse(fs.readFileSync(path.join(ROOT, "content/stories", f), "utf8")));
 const targets = stories.filter((s) => (onlySlugs ? onlySlugs.includes(s.slug) : s.priority <= maxPriority && s.editorialDepth !== "deep"));
-
-/** HTML → 읽을 수 있는 본문 줄 (마크업·내비게이션·짧은 조각·관련 글 목록 제거) */
-export function bodyText(html) {
-  const cleaned = html
-    .replace(/<script[\s\S]*?<\/script>/gi, " ")
-    .replace(/<style[\s\S]*?<\/style>/gi, " ")
-    .replace(/<noscript[\s\S]*?<\/noscript>/gi, " ")
-    .replace(/<(nav|header|footer|aside|svg|form|button|template)[\s\S]*?<\/\1>/gi, " ");
-  const lines = cleaned
-    .replace(/<\/(p|h[1-6]|li|tr|div|section|blockquote|figcaption)>/gi, "\n")
-    .replace(/<br\s*\/?>/gi, "\n")
-    .replace(/<li[^>]*>/gi, "• ")
-    .split("\n")
-    .map((l) => stripHtml(l).replace(/\s+/g, " ").trim())
-    .filter((l) => l.length >= 30 || /^•\s.{8,}/.test(l))
-    .filter((l) => !/[{}]|=\"|class=|\baria-[a-z-]+=|\bdata-[a-z-]+=|https?:\/\/\S+\.(png|jpg|webp|mp4)/.test(l)); // 속성 형태(data-x=)만 걸러 낸다. 본문 속 "data-residency" 같은 단어는 남김
-  const out = [];
-  const seen = new Set();
-  for (const l of lines) {
-    if (/^(Related (posts|content|News|stories)|Read more|Share this|Sign up for|Subscribe)/i.test(l)) break;
-    if (seen.has(l)) continue;
-    seen.add(l);
-    out.push(l);
-  }
-  return out.join("\n");
-}
 
 const hostFails = new Map();
 const results = {};
