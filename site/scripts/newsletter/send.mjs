@@ -13,12 +13,13 @@
  *
  * 필요: RESEND_API_KEY, RESEND_AUDIENCE_ID(Segment ID), 인증 도메인의 발신 주소, 실제 받은편지함이 있는 Reply-To. 하나라도 없으면 멈춘다.
  * 선택: --subject "…" --preheader "…" (없으면 메인 기사 제목·요약으로 만든다)
+ * 편집 호: --edition 2026-10-06 (newsletter/editions/<id>.json). --date 대신 쓰고, --confirm 값도 편집 호 id와 같아야 한다.
  */
 import fs from "node:fs";
 import path from "node:path";
 import readline from "node:readline/promises";
 import { Resend } from "resend";
-import { ROOT, loadConfig, loadEnvLocal, loadIssues, loadStories, parseArgs, renderIssueEmail, sendSettings } from "./lib.mjs";
+import { ROOT, loadConfig, loadEdition, loadEnvLocal, loadIssues, loadStories, parseArgs, renderEditionEmail, renderIssueEmail, sendSettings } from "./lib.mjs";
 
 loadEnvLocal();
 const args = parseArgs(process.argv.slice(2));
@@ -31,20 +32,22 @@ const stop = (msg) => {
   process.exit(1);
 };
 
-const date = typeof args.date === "string" ? args.date : null;
-if (!date || !/^\d{4}-\d{2}-\d{2}$/.test(date)) stop("--date YYYY-MM-DD 가 필요합니다 (보낼 호를 반드시 직접 지정).");
+const edition = typeof args.edition === "string" ? loadEdition(args.edition) : null;
+const date = edition ? edition.id : typeof args.date === "string" ? args.date : null;
+if (!date || !/^\d{4}-\d{2}-\d{2}$/.test(date)) stop("--date YYYY-MM-DD 또는 --edition <id>가 필요합니다 (보낼 호를 반드시 직접 지정).");
 const stories = loadStories();
-const issue = loadIssues(stories).find((i) => i.date === date);
-if (!issue) stop(`${date} 호가 없습니다.`);
+const issue = edition ? null : loadIssues(stories).find((i) => i.date === date);
+if (!edition && !issue) stop(`${date} 호가 없습니다.`);
 if (sent.some((s) => s.date === date && s.status === "sent")) stop(`${date} 호는 이미 발송했습니다 (ingest/newsletter-sent.json).`);
 
-const mail = renderIssueEmail(issue, { mode: "broadcast", allStories: stories, config, subject: args.subject, preheader: args.preheader });
+const renderOpts = { mode: "broadcast", allStories: stories, config, subject: args.subject, preheader: args.preheader };
+const mail = edition ? renderEditionEmail(edition, renderOpts) : renderIssueEmail(issue, renderOpts);
 const settings = sendSettings(process.env, config.newsletterConfig);
 const outDir = path.join(ROOT, "ingest/log/newsletter-preview");
 fs.mkdirSync(outDir, { recursive: true });
 fs.writeFileSync(path.join(outDir, `send-${date}.html`), mail.html);
 
-console.log(`호: ${date} · ${issue.stories.length}건`);
+console.log(edition ? `편집 호: ${date} (${edition.number}호)` : `호: ${date} · ${issue.stories.length}건`);
 console.log(`제목: ${mail.subject}`);
 console.log(`프리헤더: ${mail.preheader}`);
 console.log(`보낸 사람: ${settings.from || "(없음)"}`);

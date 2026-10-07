@@ -490,6 +490,80 @@ await t("발송 설정: 빠진 값·vercel.app 발신 주소를 막음", async (
   eq(sendSettings({ RESEND_API_KEY: "k", RESEND_AUDIENCE_ID: "s", NEWSLETTER_FROM_EMAIL: "news@example.org" }, nc).from, "AI마중 <news@example.org>");
 });
 
+// ---------- 2-2) 편집 호 (newsletter/editions) ----------
+
+const { EDITIONS_DIR, loadEdition, renderEditionEmail, editionSlugs } = await import("./lib.mjs");
+const editionIds = fs.existsSync(EDITIONS_DIR) ? fs.readdirSync(EDITIONS_DIR).filter((f) => f.endsWith(".json")).map((f) => f.replace(/\.json$/, "")) : [];
+const storyBySlug = new Map(stories.map((s) => [s.slug, s]));
+/** 기사에 실제로 들어 있는 글 전체 (숫자 출처 대조용) */
+const corpusOf = (s) =>
+  [s.title, s.summary, ...s.facts, s.whyItMatters, s.whatChanges, s.lead ?? "", s.eventDate, ...(s.sections ?? []).flatMap((x) => [x.heading, ...x.paragraphs, ...x.bullets])].join("\n");
+const numbersIn = (t) => (String(t).match(/\d+(?:\.\d+)?/g) ?? []).map((n) => n.replace(/^0+(?=\d)/, ""));
+
+for (const id of editionIds) {
+  const ed = loadEdition(id);
+  const opts = (mode) => ({ mode, allStories: stories, config });
+  await t(`편집 호 ${id}: 모든 기사가 실제 기사이고 ${ed.webIssueDate} 호에 속함`, async () => {
+    for (const slug of editionSlugs(ed)) {
+      const s = storyBySlug.get(slug);
+      ok(s, `없는 기사 ${slug}`);
+      eq(s.eventDate, ed.webIssueDate, slug);
+    }
+    eq(ed.id, id);
+  });
+  await t(`편집 호 ${id}: 숫자는 모두 해당 기사에 있는 숫자 (지어낸 수치 없음)`, async () => {
+    const all = editionSlugs(ed).map((slug) => corpusOf(storyBySlug.get(slug))).join("\n");
+    const allNums = new Set(numbersIn(all));
+    const check = (text, corpusNums, where) => {
+      for (const n of numbersIn(text)) ok(corpusNums.has(n), `${where}: 숫자 ${n}이 기사에 없음 — "${String(text).slice(0, 40)}…"`);
+    };
+    const mainNums = new Set(numbersIn(corpusOf(storyBySlug.get(ed.main.slug))));
+    const keyNums = (ed.main.keyNumbers ?? []).flatMap((k) => [k.value, k.label]);
+    for (const x of [ed.main.title, ...ed.main.body, ...(ed.main.facts ?? []), ...keyNums, ed.main.point]) check(x, mainNums, "메인");
+    for (const m of ed.more) {
+      const nums = new Set(numbersIn(corpusOf(storyBySlug.get(m.slug))));
+      for (const x of [m.title ?? "", m.change, m.why]) check(x, nums, m.slug);
+    }
+    for (const x of [ed.subject, ed.preheader, ...ed.intro, ed.dayPoint?.fact ?? "", ed.dayPoint?.opinion ?? ""]) check(x, allNums, "제목·도입·POINT");
+  });
+  await t(`편집 호 ${id}: 렌더링 — 섹션 구성·빈 섹션 숨김·링크·자리표시자 없음`, async () => {
+    for (const mode of ["preview", "test", "broadcast"]) {
+      const { html, text, subject, preheader } = renderEditionEmail(ed, opts(mode));
+      const both = html + text;
+      ok(!/undefined|null|NaN|\[object Object\]|TODO|lorem|PREVIEW_TOKEN|XXX/i.test(both.replace("{{{RESEND_UNSUBSCRIBE_URL}}}", "")), `${mode}: 자리표시자·미치환 값`);
+      ok(!/<script|javascript:|onclick=|<img/i.test(html), `${mode}: 스크립트·이미지`);
+      ok(/<table[^>]+width="640"/.test(html) && /max-width: 640px/.test(html), `${mode}: 640px·모바일 규칙`);
+      ok(!/display:\s*flex|display:\s*grid|position:\s*(absolute|fixed)|@import|<link /i.test(html), `${mode}: 메일 앱에서 깨지기 쉬운 CSS`);
+      const labels = ["🔥 오늘의 메인", "⚡ 놓치면 아쉬운 변화", "왜 봐야 하나", ed.dateLine];
+      if (ed.main.facts?.length) labels.push("핵심 사실");
+      if (ed.main.keyNumbers?.length) labels.push("핵심 숫자", ...ed.main.keyNumbers.map((k) => k.value));
+      if (ed.main.point) labels.push("이 뉴스의 POINT");
+      if (ed.dayPoint) labels.push("📌 오늘의 흐름", "확인된 사실", "AI마중의 해석");
+      for (const label of labels)
+        ok(both.includes(label), `${mode}: '${label}' 없음`);
+      eq(ed.checked.length === 0, !both.includes("🧪"), `${mode}: 🧪 표시 조건`);
+      eq(ed.readMore.length === 0, !both.includes("📚"), `${mode}: 📚 표시 조건`);
+      const urls = [...new Set(html.match(/href="([^"]+)"/g).map((h) => h.slice(6, -1)))];
+      for (const u of urls) ok(u === "{{{RESEND_UNSUBSCRIBE_URL}}}" || u.startsWith("https://aimajung.com/"), `${mode}: 공식 주소가 아닌 링크 ${u}`);
+      for (const slug of editionSlugs(ed)) ok(urls.includes(`https://aimajung.com/stories/${slug}/`), `${mode}: 기사 링크 없음 ${slug}`);
+      ok(urls.includes(`https://aimajung.com/newsletters/${ed.webIssueDate}/`) && urls.includes("https://aimajung.com/newsletters/"), `${mode}: 웹에서 보기·지난 호`);
+      if (mode === "broadcast") ok(html.includes("{{{RESEND_UNSUBSCRIBE_URL}}}") && text.includes("{{{RESEND_UNSUBSCRIBE_URL}}}"), "broadcast 수신거부");
+      else ok(urls.includes("https://aimajung.com/newsletter/unsubscribe/"), `${mode}: 수신거부 안내`);
+      ok(!/[\w.+-]+@[\w-]+\.[\w.]+/.test(html.replace(/xmlns="[^"]+"/, "")), `${mode}: 이메일 주소 노출`);
+      eq([subject, preheader], [ed.subject, ed.preheader]);
+    }
+  });
+  await t(`편집 호 ${id}: 제목·프리헤더 원칙`, async () => {
+    ok(!/뉴스레터|\d{1,2}월\s*\d{1,2}일|\[AI마중\]/.test(ed.subject), "관리형 제목");
+    ok(ed.subject.length <= 60, `제목이 김 (${ed.subject.length}자)`);
+    const words = (s) => new Set(s.replace(/[^\p{L}\p{N}\s]/gu, " ").split(/\s+/).filter((w) => w.length > 1));
+    const sw = words(ed.subject);
+    const overlap = [...words(ed.preheader)].filter((w) => sw.has(w)).length;
+    ok(overlap <= 1, `프리헤더가 제목을 되풀이 (${overlap}단어)`);
+    ok(ed.preheader.length >= 30 && ed.preheader.length <= 110, `프리헤더 길이 ${ed.preheader.length}`);
+  });
+}
+
 // ---------- 3) 정적 산출물·저장소 ----------
 
 await t("정적 산출물·저장소에 비밀값이 없음", async () => {

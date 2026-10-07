@@ -5,12 +5,13 @@
  *   npm run newsletter:preview                    # 최신 호
  *   npm run newsletter:preview -- --date 2026-10-05
  *   npm run newsletter:preview -- --cases         # 점검용 대표 사례 묶음 (긴 제목, 단신 많은 날, 심층 메인, 관련 기사 없음 …)
+ *   npm run newsletter:preview -- --edition 2026-10-06   # 편집 호 (newsletter/editions/<id>.json)
  *
  * 결과: ingest/log/newsletter-preview/<이름>.html · .txt, 그리고 여러 폭으로 나란히 보는 index.html
  */
 import fs from "node:fs";
 import path from "node:path";
-import { ROOT, composeIssue, esc, loadConfig, loadIssues, loadStories, parseArgs, renderIssueEmail } from "./lib.mjs";
+import { ROOT, composeIssue, esc, loadConfig, loadEdition, loadIssues, loadStories, parseArgs, renderEditionEmail, renderIssueEmail } from "./lib.mjs";
 
 const args = parseArgs(process.argv.slice(2));
 const config = await loadConfig();
@@ -40,7 +41,8 @@ function pickCases() {
 }
 
 let targets;
-if (args.cases) targets = pickCases();
+if (typeof args.edition === "string") targets = [{ name: `edition-${args.edition}`, desc: `편집 호 ${args.edition}`, edition: loadEdition(args.edition) }];
+else if (args.cases) targets = pickCases();
 else {
   const date = typeof args.date === "string" ? args.date : issues[0].date;
   const issue = issues.find((i) => i.date === date);
@@ -53,6 +55,14 @@ else {
 
 const rows = [];
 for (const t of targets) {
+  if (t.edition) {
+    const mail = renderEditionEmail(t.edition, { mode: "preview", allStories: stories, config });
+    fs.writeFileSync(path.join(OUT, `${t.name}.html`), mail.html);
+    fs.writeFileSync(path.join(OUT, `${t.name}.txt`), `제목: ${mail.subject}\n프리헤더: ${mail.preheader}\n\n${mail.text}\n`);
+    rows.push({ ...t, issue: { date: t.edition.id }, mail });
+    console.log(`${t.name}  ${(mail.html.length / 1024).toFixed(1)}KB\n  제목: ${mail.subject}\n  프리헤더: ${mail.preheader}`);
+    continue;
+  }
   const mail = renderIssueEmail(t.issue, { mode: "preview", allStories: stories, config });
   fs.writeFileSync(path.join(OUT, `${t.name}.html`), mail.html);
   fs.writeFileSync(path.join(OUT, `${t.name}.txt`), `제목: ${mail.subject}\n프리헤더: ${mail.preheader}\n\n${mail.text}\n`);
