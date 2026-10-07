@@ -25,7 +25,6 @@ import {
   politeFetch,
   readJson,
   robotsAllowed,
-  selectionScore,
   stripHtml,
 } from "../ingest/lib.mjs";
 
@@ -35,14 +34,14 @@ import {
 export const DEFAULTS = {
   windowDays: 2, // 기준일 포함 최근 N+1일 발표만 본다 (피드 지연 대비)
   maxItemsPerSource: 20,
-  maxCandidatesPerDay: 6, // 근거 수집·원고 생성까지 가는 후보 수
-  maxEvidenceFetches: 8,
-  maxLlmCalls: 6,
+  maxPublishPerDay: 6, // 최종 발행 추천 수 (근거 확인 '뒤'에 건다)
+  maxEvidenceFetches: 12, // 근거 확인 명단(shortlist) — 원문 요청 수 상한 (비용·부하)
+  maxLlmCalls: 6, // 원고 생성은 최종 추천에만
   maxOutputTokens: 2500,
   llmTimeoutMs: 60_000,
   llmRetries: 1, // 실패 시 다시 시도 횟수 (총 시도 = 1 + retries)
 };
-export const HARD_CAPS = { maxCandidatesPerDay: 12, maxLlmCalls: 12, maxOutputTokens: 4000, llmRetries: 2, maxEvidenceFetches: 15, maxItemsPerSource: 40 };
+export const HARD_CAPS = { maxPublishPerDay: 12, maxLlmCalls: 12, maxOutputTokens: 4000, llmRetries: 2, maxEvidenceFetches: 25, maxItemsPerSource: 40 };
 
 export function loadLimits(env = process.env) {
   const pick = (key, envName) => {
@@ -52,7 +51,8 @@ export function loadLimits(env = process.env) {
   };
   return {
     ...DEFAULTS,
-    maxCandidatesPerDay: pick("maxCandidatesPerDay", "DAILY_MAX_CANDIDATES"),
+    // DAILY_MAX_CANDIDATES는 7.1 이름 (같은 뜻으로 받아 준다)
+    maxPublishPerDay: pick("maxPublishPerDay", env.DAILY_MAX_PUBLISH !== undefined ? "DAILY_MAX_PUBLISH" : "DAILY_MAX_CANDIDATES"),
     maxLlmCalls: pick("maxLlmCalls", "DAILY_MAX_LLM_CALLS"),
     maxOutputTokens: pick("maxOutputTokens", "DAILY_MAX_OUTPUT_TOKENS"),
     llmRetries: pick("llmRetries", "DAILY_LLM_RETRIES"),
@@ -212,44 +212,9 @@ export function dedupeItem(item, existing) {
   return { result: "NEW", reason: "기존 기사·후보와 겹치지 않음" };
 }
 
-// ---------- 3) 편집 점수 · 판정 ----------
+// ---------- 3) 편집 점수 · 판정: select.mjs (Phase 7.1.1) ----------
 
 const KOREA_RE = /\b(korea|korean|seoul|samsung|naver|kakao|lg|sk hynix|sk telecom)\b/i;
-const GLOBAL_RE = /\b(global(ly)?|worldwide|all (users|countries|regions)|every(one|where)|all plans)\b/i;
-const REGION_ONLY_RE = /\b(in the (us|u\.s\.|united states|uk|eu)|u\.s\.(-| )only|us-only|eu only|united states only)\b/i;
-const IMPACT_RE = [
-  [/\b(introduc|launch|now available|generally available|rolling out|rolls out|available (in|to|for|on)|released?)/i, 2],
-  [/\b(price|pricing|free|plan|tier|credits?|subscription)\b/i, 1],
-  [/\b(deprecat|retir|sunset|end of support|no longer|breaking change)/i, 1],
-];
-const clamp = (n, lo, hi) => Math.max(lo, Math.min(hi, n));
-
-export function scoreItem(item, dup) {
-  const raw = selectionScore({ title: item.title, description: item.excerpt });
-  const text = `${item.title} ${item.excerpt}`;
-  const score = {
-    importance: clamp(Math.round(raw / 2) + (item.tier === 1 ? 1 : 0), 0, 5),
-    koreanRelevance: clamp((KOREA_RE.test(text) ? 2 : 0) + (GLOBAL_RE.test(text) ? 1 : 0) - (REGION_ONLY_RE.test(text) ? 1 : 0), 0, 3),
-    practicalImpact: clamp(IMPACT_RE.reduce((n, [re, w]) => n + (re.test(text) ? w : 0), 0), 0, 3),
-    sourceQuality: item.sourceType === "official" ? (item.tier === 1 ? 3 : 2) : 1,
-    novelty: { NEW: 3, UPDATE_EXISTING: 2, UNCERTAIN: 0, DUPLICATE: 0 }[dup.result],
-    verificationConfidence: clamp((item.datePrecision === "month" ? 0 : 1) + ((item.excerpt ?? "").length >= 120 ? 1 : 0), 0, 3),
-    selectionRaw: raw,
-  };
-  score.total = score.importance + score.koreanRelevance + score.practicalImpact + score.sourceQuality + score.novelty + score.verificationConfidence;
-  return score;
-}
-
-/** 판정 (근거 수집 전): PUBLISH(근거 확인 대상) · HOLD · EXCLUDE */
-export function decide(item, dup, score) {
-  if (dup.result === "DUPLICATE") return { decision: "EXCLUDE", reasons: [`중복: ${dup.reason}`] };
-  if (dup.result === "UNCERTAIN") return { decision: "HOLD", reasons: [`중복 불확실: ${dup.reason}`], needsReview: ["duplicate_uncertain"] };
-  if (item.datePrecision === "month") return { decision: "HOLD", reasons: ["발표일(일자)을 알 수 없음 — 날짜를 지어내지 않는다"], needsReview: ["date_conflict"] };
-  if (score.selectionRaw <= 0) return { decision: "EXCLUDE", reasons: ["독자 가치 신호 없음 (사례·가이드·행사·인사 등)"] };
-  if (score.importance >= 2 && score.total >= 10) return { decision: "PUBLISH", reasons: ["중요도·실용성·출처 기준 통과 (근거 확인 필요)"] };
-  if (score.importance >= 1) return { decision: "HOLD", reasons: ["가치는 있으나 기준 점수 미달 — 편집자 판단"] };
-  return { decision: "EXCLUDE", reasons: ["중요도 낮음"] };
-}
 
 // ---------- 4) 근거 수집 (Evidence Ledger) ----------
 
@@ -314,20 +279,7 @@ export async function gatherEvidence(item, { hostFails }) {
   return out;
 }
 
-/**
- * 근거로 쓸 수 있는 깊이 (DEFAULT STANDARD 없음).
- *  DEEP 제안: 근거 PASS + 중요도 4 이상 — 7.1에서는 자동 원고로 승인하지 않는다 (사람이 deep 원고 작성)
- *  STANDARD: 근거 LIMITED 이상 + 본문 근거 문장 5개 이상 (변화·조건·영향을 설명할 재료)
- *  SHORT: 그 밖에 근거 문장 2개 이상
- *  null: 근거 부족 → HOLD
- */
-export function suggestDepth(evidence, score) {
-  const bodySentences = evidence.ledger.filter((e) => e.kind === "body").length;
-  if (evidence.grade === "PASS" && score.importance >= 4 && bodySentences >= 8) return "DEEP";
-  if ((evidence.grade === "PASS" || evidence.grade === "LIMITED") && bodySentences >= 5) return "STANDARD";
-  if (evidence.ledger.length >= 3 || (evidence.ledger.length >= 2 && bodySentences >= 1)) return "SHORT";
-  return null;
-}
+// 깊이 판단: select.mjs assessDepth (페이지 길이·문장 수는 근거 충분성에만 쓴다)
 
 // ---------- 5) 원고 검증 ----------
 

@@ -76,7 +76,8 @@ jobs:
           DAILY_AUTOMATION_ENABLED: ${{ vars.DAILY_AUTOMATION_ENABLED }}
           DAILY_LLM_PROVIDER: ${{ vars.DAILY_LLM_PROVIDER }}
           DAILY_LLM_MODEL: ${{ vars.DAILY_LLM_MODEL }}
-          DAILY_MAX_CANDIDATES: ${{ vars.DAILY_MAX_CANDIDATES }}
+          DAILY_MAX_PUBLISH: ${{ vars.DAILY_MAX_PUBLISH }}
+          DAILY_MAX_EVIDENCE_FETCHES: ${{ vars.DAILY_MAX_EVIDENCE_FETCHES }}
           DAILY_MAX_LLM_CALLS: ${{ vars.DAILY_MAX_LLM_CALLS }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: npm run daily:run -- --date "${{ steps.d.outputs.date }}" --out "$RUNNER_TEMP/daily"

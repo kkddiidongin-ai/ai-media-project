@@ -21,8 +21,8 @@ import {
   PROCESSED_FILE,
   automationEnabled,
   collectDaily,
-  decide,
   dedupeItem,
+  titleSimilarity,
   gatherEvidence,
   isDateStr,
   kstToday,
@@ -31,11 +31,10 @@ import {
   loadProcessed,
   proposeSlug,
   saveProcessed,
-  scoreItem,
   sha,
-  suggestDepth,
   validateDraft,
 } from "./lib.mjs";
+import { PUBLISH_MIN, assessDepth, companyOf, distinctFacts, finalSelect, metadataScore, screenDecision } from "./select.mjs";
 import { generateArticle, resolveProvider } from "./providers.mjs";
 import { renderReport } from "./report.mjs";
 
@@ -78,55 +77,100 @@ export async function runDaily(opts) {
     return { status: run.status, items, sources, outDir };
   }
 
-  // 2) 중복 · 3) 점수 · 판정
+  // 2) 중복 · 3) 메타데이터 점수 · 1차 판정 (원문을 열기 전, 비용 0)
   const prevQueue = new Map();
   const qDir = path.join(outDir, "candidates");
   if (fs.existsSync(qDir)) for (const f of fs.readdirSync(qDir).filter((x) => x.endsWith(".json"))) prevQueue.set(f.replace(/\.json$/, ""), readJson(path.join(qDir, f), null));
   const rows = items.map((item) => {
     const dup = dedupeItem(item, existing);
-    const score = scoreItem(item, dup);
-    const d = decide(item, dup, score);
+    const score = metadataScore(item, dup);
+    const d = screenDecision(item, dup, score);
+    const base = { item, dup, score, company: companyOf(item), facts: 0, reasons: d.reasons, needsReview: d.needsReview ?? [], stage: "metadata" };
     const prev = processed[item.id];
-    if (prev && prev.date !== date && d.decision === "PUBLISH") {
-      // 지난 날짜에 이미 근거 확인·원고 생성까지 한 항목: 다시 만들지 않는다 (그날 PR에서 승인)
-      return { item, dup, score, decision: "HOLD", reasons: [`${prev.date} DAILY에서 이미 다룸 — 그날 승인 대기열 확인`], needsReview: [], carried: prev.date };
+    if (prev && prev.date !== date && prev.decision === "PUBLISH") {
+      // 지난 날짜에 이미 발행 추천까지 한 항목: 다시 근거·원고를 만들지 않는다 (그날 PR에서 승인)
+      return { ...base, decision: "HOLD", reasons: [`${prev.date} DAILY에서 이미 추천함 — 그날 승인 대기열 확인`], carried: prev.date };
     }
-    return { item, dup, score, decision: d.decision, reasons: d.reasons, needsReview: d.needsReview ?? [] };
+    return { ...base, decision: d.decision };
   });
 
-  // 4) 근거 수집 (상한: 하루 후보 수·근거 요청 수)
-  const publish = rows.filter((r) => r.decision === "PUBLISH").sort((a, b) => b.score.total - a.score.total);
-  const overLimit = publish.slice(limits.maxCandidatesPerDay);
-  for (const r of overLimit) {
-    r.decision = "HOLD";
-    r.reasons = [...r.reasons, `하루 후보 상한(${limits.maxCandidatesPerDay}) 초과 — 다음에 검토`];
+  // 3-2) 같은 날 다른 출처의 같은 발표 (예: Google DeepMind 블로그와 Google Keyword에 같은 글) → 하나만 남긴다
+  const live = rows.filter((r) => r.dup.result === "NEW" || r.dup.result === "UPDATE_EXISTING");
+  for (const r of live) {
+    if (r.sameDayOf) continue;
+    const twins = live.filter((x) => x !== r && !x.sameDayOf && titleSimilarity(x.item.title, r.item.title) >= 0.75);
+    if (!twins.length) continue;
+    const group = [r, ...twins].sort(
+      (a, b) => (b.item.sourceType === "official") - (a.item.sourceType === "official") || b.score.priority - a.score.priority || items.indexOf(a.item) - items.indexOf(b.item),
+    );
+    const primary = group[0];
+    primary.alsoAt = group.slice(1).map((x) => ({ url: x.item.url, source: x.item.sourceName }));
+    for (const x of group.slice(1)) {
+      x.sameDayOf = primary.item.id;
+      x.dup = { result: "DUPLICATE", reason: `같은 날 다른 출처의 같은 발표 (${primary.item.sourceName})`, sameDayOf: primary.item.id };
+      x.decision = "EXCLUDE";
+      x.reasons = [`중복: ${x.dup.reason}`];
+    }
   }
-  const work = publish.slice(0, limits.maxCandidatesPerDay);
+
+  // 4) 근거 확인 명단(shortlist): 하루 상한으로 미리 자르지 않는다. 원문 요청 수 상한(maxEvidenceFetches)만 적용
+  const candidates = rows.filter((r) => r.decision === "CANDIDATE").sort((a, b) => b.score.priority - a.score.priority);
   const hostFails = new Map();
   let fetches = 0;
-  const takenSlugs = new Set([...existing.stories.map((s) => s.slug), ...existing.editorialSlugs]);
-  for (const r of work) {
+  const work = [];
+  for (const r of candidates) {
     const prev = prevQueue.get(r.item.id);
-    if (prev?.evidence && prev.generation?.status === "ok") {
-      r.evidence = prev.evidence;
+    if (prev?.evidence && prev.evidence.status === "OK") {
+      r.evidence = prev.evidence; // 같은 날 재실행: 원문을 다시 요청하지 않는다
     } else if (fetches < limits.maxEvidenceFetches) {
       fetches++;
       r.evidence = await gatherEvidence(r.item, { hostFails });
     } else {
-      r.evidence = { status: "NOT_FETCHED", grade: "FAIL", chars: 0, ledger: r.item.excerpt ? [{ id: "E0", kind: "feed", text: r.item.excerpt, sourceUrl: r.item.url, source: r.item.sourceName, publishedAt: r.item.publishedAt, checkedAt: new Date().toISOString() }] : [] };
-      r.needsReview.push("source_blocked");
+      r.decision = "HOLD";
+      r.reasons = [...r.reasons, `근거 확인 상한(원문 ${limits.maxEvidenceFetches}건) 초과 — 다음 실행·편집자 확인`];
+      r.capStage = "evidence";
+      continue;
     }
-    r.depth = suggestDepth(r.evidence, r.score);
-    r.score.verificationConfidence = Math.min(3, r.score.verificationConfidence + (r.evidence.status === "OK" && r.evidence.chars >= 600 ? 1 : 0));
+    r.stage = "evidence";
+    work.push(r);
+    // 접근 가능 여부는 검증 신뢰도에만 반영 (중요도·우선순위 아님)
+    r.score.verificationConfidence = Math.min(3, r.score.verificationConfidence + (r.evidence.status === "OK" ? 1 : 0));
+    r.facts = distinctFacts(r.evidence);
+    const depth = assessDepth(r.score, r.evidence, r.facts, r.dup);
+    Object.assign(r, { depth: depth.depth, sufficiency: depth.sufficiency, deepChecks: depth.deepChecks, deepMissing: depth.deepMissing });
     if (r.evidence.status !== "OK") r.needsReview.push("source_blocked");
     if (!r.depth) {
       r.decision = "HOLD";
-      r.reasons = [`근거 부족 (원문 ${r.evidence.status}, 근거 문장 ${r.evidence.ledger.length}개) — 발행하지 않음`];
+      r.reasons = [`근거 부족 (원문 ${r.evidence.status}, 확인 사실 ${r.facts}개) — 발행하지 않음`];
       r.needsReview.push("insufficient_evidence");
+    } else if (r.score.priority < PUBLISH_MIN) {
+      r.decision = "HOLD";
+      r.reasons = [...r.reasons, `근거는 있으나 우선순위 ${r.score.priority} < 발행 추천 기준 ${PUBLISH_MIN}`];
+    } else {
+      r.decision = "ELIGIBLE";
     }
   }
 
-  // 5) 원고 생성 · 6) 검증
+  // 5) 최종 발행 추천: 상한 maxPublishPerDay + 회사 다양성(부드러운 규칙)
+  const eligible = work.filter((r) => r.decision === "ELIGIBLE");
+  const sel = finalSelect(eligible, { maxPublish: limits.maxPublishPerDay });
+  for (const r of sel.picked) {
+    r.decision = "PUBLISH";
+    r.reasons = [...r.reasons, `근거 확인 통과 (확인 사실 ${r.facts}개, ${r.sufficiency})`];
+  }
+  for (const r of sel.diversityDeferred) {
+    r.decision = "HOLD";
+    r.capStage = "diversity";
+    r.reasons = [...r.reasons, `같은 회사(${r.company}) 추천이 이미 ${2}건 — 다양성 규칙으로 뒤로 (편집자 판단)`];
+  }
+  for (const r of sel.capDropped) {
+    r.decision = "HOLD";
+    r.capStage = "final";
+    r.reasons = [...r.reasons, `최종 발행 추천 상한(${limits.maxPublishPerDay}) 초과 — 편집자 판단`];
+  }
+
+  // 6) 원고 생성 (최종 추천만) · 검증
+  const takenSlugs = new Set([...existing.stories.map((s) => s.slug), ...existing.editorialSlugs]);
   const ctx = { provider, env, limits, budget, categories: CATEGORIES, topics: existing.topics, fetch: opts.fetch, mockReply: opts.mockReply, retryDelayMs: opts.retryDelayMs };
   for (const r of work.filter((x) => x.decision === "PUBLISH")) {
     const prev = prevQueue.get(r.item.id);
@@ -150,8 +194,8 @@ export async function runDaily(opts) {
         r.decision = "HOLD";
         r.reasons = [...r.reasons, `원고 검증 실패: ${v.errors.slice(0, 3).join(" · ")}`];
       }
-      if (r.depth === "DEEP") r.needsReview.push("deep_requires_editor");
     }
+    if (r.depth === "DEEP") r.needsReview.push("deep_requires_editor");
     r.needsReview = [...new Set(r.needsReview)];
   }
 
@@ -165,7 +209,10 @@ export async function runDaily(opts) {
       title: r.draft?.title ?? null,
       sourceTitle: r.item.title,
       depth: r.draft?.editorialDepth ?? null,
-      suggestedDepth: r.depth,
+      suggestedDepth: r.depth ?? null,
+      depthAssessment: { sufficiency: r.sufficiency ?? null, distinctFacts: r.facts, deepChecks: r.deepChecks ?? null, deepMissing: r.deepMissing ?? null },
+      company: r.company,
+      alsoAt: r.alsoAt ?? [],
       category: r.draft?.category ?? null,
       summary: r.draft?.summary ?? null,
       body: r.draft ? { facts: r.draft.facts, why: r.draft.why, change: r.draft.change } : null,
@@ -184,12 +231,16 @@ export async function runDaily(opts) {
       draft: r.draft ?? null,
       validation: r.validation ?? null,
       newsletterCandidate: r.decision === "PUBLISH" && r.score.importance >= 3,
+      capStage: r.capStage ?? null,
       approval: prevQueue.get(r.item.id)?.approval ?? { status: "pending" },
     };
     writeJson(path.join(qDir, `${r.item.id}.json`), entry);
     processed[r.item.id] = { date: processed[r.item.id]?.date && processed[r.item.id].date < date ? processed[r.item.id].date : date, decision: r.decision, generated: r.generation?.status === "ok" };
   }
-  for (const r of rows) if (!processed[r.item.id]) processed[r.item.id] = { date, decision: r.decision, generated: false };
+  for (const r of rows) {
+    if (r.decision === "CANDIDATE") r.decision = "HOLD"; // 이론상 남지 않지만 안전하게
+    if (!processed[r.item.id]) processed[r.item.id] = { date, decision: r.decision, generated: false };
+  }
   saveProcessed(processed, processedFile);
 
   const count = (f) => rows.filter(f).length;
@@ -206,6 +257,7 @@ export async function runDaily(opts) {
     PUBLISH: count((r) => r.decision === "PUBLISH"),
     HOLD: count((r) => r.decision === "HOLD"),
     EXCLUDE: count((r) => r.decision === "EXCLUDE"),
+    shortlisted: rows.filter((r) => r.stage === "evidence" || r.capStage === "evidence").length,
     evidenceChecked: work.length,
     drafts: work.filter((r) => r.draft).length,
     validationFailures: valFail.length,
@@ -223,7 +275,15 @@ export async function runDaily(opts) {
     matchSlug: r.dup.matchSlug ?? null,
     decision: r.decision,
     reasons: r.reasons,
-    score: r.score.total,
+    score: r.score.priority,
+    importance: r.score.importance,
+    contentType: r.score.contentType,
+    typePenalty: r.score.typePenalty,
+    signals: r.score.signals,
+    company: r.company,
+    stage: r.stage,
+    ...(r.capStage ? { capStage: r.capStage } : {}),
+    ...(r.stage === "evidence" ? { evidenceStatus: r.evidence.status, distinctFacts: r.facts, sufficiency: r.sufficiency, deepMissing: r.deepMissing } : {}),
     ...(r.depth !== undefined ? { suggestedDepth: r.depth } : {}),
     ...(r.carried ? { carriedFrom: r.carried } : {}),
   }));

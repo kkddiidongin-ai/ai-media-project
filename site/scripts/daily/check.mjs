@@ -32,6 +32,7 @@ const { runDaily } = await import("./run.mjs");
 const { approve } = await import("./approve.mjs");
 const providers = await import("./providers.mjs");
 const { renderReport } = await import("./report.mjs");
+const sel = await import("./select.mjs");
 
 let passed = 0;
 let failed = 0;
@@ -137,28 +138,59 @@ await t("중복: 같은 URL → DUPLICATE, 같은 제품 후속(GA) → UPDATE_E
 });
 
 // ---------- 3) 점수 · 판정 · 깊이 ----------
-await t("판정: 중복 EXCLUDE · 불확실 HOLD · 사례 글 EXCLUDE · 출시 소식 PUBLISH · 일자 미상 HOLD", async () => {
+await t("1차 판정: 중복 EXCLUDE · 불확실 HOLD · 사례 글 EXCLUDE · 출시 소식 CANDIDATE · 일자 미상 HOLD · 언론 보도 HOLD", async () => {
   const ex = existing();
   const dec = (end, patch = {}) => {
     const it = { ...col.items.find((i) => i.url.endsWith(end)), ...patch };
     const dup = lib.dedupeItem(it, ex);
-    return lib.decide(it, dup, lib.scoreItem(it, dup)).decision;
+    return sel.screenDecision(it, dup, sel.metadataScore(it, dup)).decision;
   };
-  eq([dec("/old"), dec("/sprocket-engine"), dec("/acme-story"), dec("/widget-2"), dec("/widget-2", { datePrecision: "month" })], ["EXCLUDE", "HOLD", "EXCLUDE", "PUBLISH", "HOLD"]);
+  eq([dec("/old"), dec("/sprocket-engine"), dec("/acme-story"), dec("/widget-2"), dec("/widget-2", { datePrecision: "month" }), dec("/widget-2", { sourceType: "press" })], ["EXCLUDE", "HOLD", "EXCLUDE", "CANDIDATE", "HOLD", "HOLD"]);
 });
-const ev = (bodyN, chars, grade, extra = 1) => ({ status: "OK", chars, grade, ledger: [...Array(extra)].map((_, i) => ({ id: `E${i}`, kind: "feed", text: "x" })).concat([...Array(bodyN)].map((_, i) => ({ id: `E${i + 1}`, kind: "body", text: "y" }))) });
-await t("깊이: DEFAULT STANDARD 없음 — SHORT·STANDARD·DEEP(제안)·근거 부족(null)", async () => {
-  const hi = { importance: 4 };
-  const lo = { importance: 2 };
-  eq(lib.suggestDepth(ev(2, 300, "FAIL"), lo), "SHORT");
-  eq(lib.suggestDepth(ev(5, 900, "LIMITED"), lo), "STANDARD");
-  eq(lib.suggestDepth(ev(4, 900, "LIMITED"), lo), "SHORT", "문장 4개면 STANDARD 아님");
-  eq(lib.suggestDepth(ev(9, 3000, "PASS"), hi), "DEEP");
-  eq(lib.suggestDepth(ev(9, 3000, "PASS"), lo), "STANDARD", "중요도 낮으면 DEEP 아님");
-  eq(lib.suggestDepth(ev(0, 0, "FAIL"), lo), null, "피드 설명 하나뿐");
+const ev = (bodyTexts, grade, status = "OK") => ({ status, grade, chars: 0, ledger: [{ id: "E0", kind: "feed", text: "feed" }, ...bodyTexts.map((t, i) => ({ id: `E${i + 1}`, kind: "body", text: t }))] });
+// 서로 다른 사실 문장 (거의 같은 문장은 distinctFacts가 하나로 센다)
+const FACT_POOL = [
+  "Widget 2 is available in 40 countries starting October 7, 2026.",
+  "The free tier includes 1,000 requests per day.",
+  "Paid plans start at $20 per month per seat.",
+  "Latency dropped by 3x compared with Widget 1 in internal tests.",
+  "Enterprise admins get audit logs and SSO through Acme Console.",
+  "Widget 1 integrations retire on March 31, 2027.",
+  "Partners including Globex and Initech joined the launch program.",
+  "Korean language support arrives with the Seoul data region.",
+  "The SDK adds Python and TypeScript bindings in version 4.2.",
+  "Rate limits rise to 500 requests per minute for verified orgs.",
+  "Pricing for batch jobs is 50 percent lower than realtime calls.",
+  "Data residency options cover the EU and Japan from day one.",
+];
+const factsN = (n) => FACT_POOL.slice(0, n);
+const S = (o) => ({ importance: 2, practicalImpact: 1, signals: ["PRODUCT_LAUNCH"], ...o });
+await t("깊이: DEFAULT STANDARD 없음 — SHORT·STANDARD·DEEP·근거 부족", async () => {
+  const NEWd = { result: "NEW" };
+  const d = (s2, e) => sel.assessDepth(s2, e, sel.distinctFacts(e), NEWd).depth;
+  eq(d(S(), ev(factsN(2), "FAIL")), "SHORT");
+  eq(d(S(), ev(factsN(5), "LIMITED")), "STANDARD");
+  eq(d(S({ practicalImpact: 0, signals: ["RESEARCH_RESULT"] }), ev(factsN(5), "LIMITED")), "SHORT", "영향·맥락 없으면 STANDARD 아님");
+  eq(d(S(), ev(factsN(1), "FAIL")), null, "근거 부족");
+  const deepS = S({ importance: 4, practicalImpact: 2, signals: ["PRICING", "PRODUCT_LAUNCH", "AVAILABILITY"] });
+  eq(d(deepS, ev(factsN(8), "PASS")), "DEEP");
+  eq(sel.assessDepth(deepS, ev(factsN(8), "PASS"), 8, { result: "UPDATE_EXISTING" }).depth, "STANDARD", "후속 업데이트는 DEEP 아님");
   eq(lib.evidenceGrade(2600, 1300), "PASS");
   eq(lib.evidenceGrade(700, 700), "LIMITED");
   eq(lib.evidenceGrade(100, 100), "FAIL");
+});
+await t("회귀 long page != DEEP: 원문이 길고 확인 사실이 많아도 중요도·맥락이 없으면 DEEP 아님", async () => {
+  const howto = { importance: 1, practicalImpact: 1, signals: ["API_PLATFORM"] };
+  const r = sel.assessDepth(howto, ev(factsN(12), "PASS"), 12, { result: "NEW" });
+  ok(r.depth !== "DEEP", `깊이 ${r.depth}`);
+  ok(r.deepMissing.includes("importance") && r.deepMissing.includes("contextNeed"), JSON.stringify(r.deepMissing));
+});
+await t("회귀 accessible source != importance: 원문 접근 여부·출처 등급은 중요도·우선순위를 바꾸지 않음", async () => {
+  const it = col.items.find((i) => i.url.endsWith("/widget-2"));
+  const a = sel.metadataScore(it, { result: "NEW" });
+  const b = sel.metadataScore({ ...it, tier: 3, sourceType: "official" }, { result: "NEW" });
+  eq([a.importance, a.priority], [b.importance, b.priority], "출처 등급");
+  ok(a.sourceQuality !== b.sourceQuality, "출처 품질은 따로 기록");
 });
 
 // ---------- 4) 검증 ----------
@@ -239,9 +271,11 @@ await t("원고 생성: 5xx는 retries번까지만 다시 시도, 4xx는 다시 
   ok(!JSON.stringify([r5, r4, cap]).includes("sk-test"), "키가 결과에 나옴");
 });
 await t("비용 상한: 환경변수로 HARD_CAPS를 넘길 수 없음", async () => {
-  const l = lib.loadLimits({ DAILY_MAX_CANDIDATES: "999", DAILY_MAX_LLM_CALLS: "500", DAILY_LLM_RETRIES: "9" });
-  eq([l.maxCandidatesPerDay, l.maxLlmCalls, l.llmRetries], [lib.HARD_CAPS.maxCandidatesPerDay, lib.HARD_CAPS.maxLlmCalls, lib.HARD_CAPS.llmRetries]);
-  eq(lib.loadLimits({}).maxCandidatesPerDay, lib.DEFAULTS.maxCandidatesPerDay);
+  const l = lib.loadLimits({ DAILY_MAX_PUBLISH: "999", DAILY_MAX_LLM_CALLS: "500", DAILY_LLM_RETRIES: "9", DAILY_MAX_EVIDENCE_FETCHES: "999" });
+  eq([l.maxPublishPerDay, l.maxLlmCalls, l.llmRetries, l.maxEvidenceFetches], [12, 12, 2, 25]);
+  const d = lib.loadLimits({});
+  eq([d.maxPublishPerDay, d.maxEvidenceFetches, d.maxLlmCalls], [6, 12, 6], "기본값");
+  eq(lib.loadLimits({ DAILY_MAX_CANDIDATES: "2" }).maxPublishPerDay, 2, "7.1 이름 호환");
 });
 
 // ---------- 6) 전체 실행 ----------
@@ -287,11 +321,14 @@ await t("다음 날 실행: 이미 다룬 URL은 다시 생성하지 않음 (HOL
   eq([w.decision, w.carriedFrom], ["HOLD", DATE]);
   eq(next.run.llm.calls, 0);
 });
-await t("하루 후보 상한: DAILY_MAX_CANDIDATES=1이면 1건만 근거·원고, 나머지는 상한 사유로 HOLD", async () => {
+await t("회귀 final publish cap: 상한은 근거 확인 '뒤' 최종 추천에만 — DAILY_MAX_PUBLISH=1이면 근거는 여러 건 보고 추천만 1건", async () => {
   resetWeb();
-  const r = await runDaily(baseRun({ env: ENV({ DAILY_MAX_CANDIDATES: "1" }) }));
-  eq(r.run.counts.evidenceChecked, 1);
-  ok(r.run.items.some((i) => i.reasons.some((x) => x.includes("상한"))), "상한 사유");
+  const r = await runDaily(baseRun({ env: ENV({ DAILY_MAX_PUBLISH: "1" }) }));
+  ok(r.run.counts.evidenceChecked >= 2, `근거 확인 ${r.run.counts.evidenceChecked}건`);
+  eq(r.run.counts.PUBLISH, 1);
+  ok(r.run.items.some((i) => i.capStage === "final" && i.reasons.some((x) => x.includes("최종 발행 추천 상한"))), "최종 상한 사유");
+  ok(!r.run.items.some((i) => i.capStage === "evidence"), "근거 확인 전에 잘림");
+  ok(fs.readFileSync(path.join(r.outDir, "report.md"), "utf8").includes("## 선정 진단 (Selection Diagnostics)"), "진단 섹션");
 });
 await t("뉴스 없는 날: 0건도 정상 (SUCCESS, 발행 추천 0, 보고서에 안내)", async () => {
   WEB.clear();
@@ -322,6 +359,83 @@ await t("보고서: 상태·숫자표·발행 추천·보류·제외·소스 상
   for (const s of ["# AI마중 DAILY — 2026-10-07", "**상태: PARTIAL", "## 발행 추천", "## 보류", "## 제외", "## 소스 상태", "FX B — **blocked**", "FX C — **failed**", "## 비용", "자동으로 발행하지 않습니다"]) ok(md.includes(s), `보고서에 '${s}' 없음`);
   ok(md.split("\n").length < 120, "보고서가 너무 김");
   ok(renderReport({ ...full.run, counts: { ...full.run.counts } }, []).includes("0건도 정상"), "빈 대기열");
+});
+
+// ---------- 6-2) 2026-10-07 실제 메타데이터 회귀 (외부 요청 없음) ----------
+const FX107 = JSON.parse(fs.readFileSync(path.join(HERE, "fixtures/2026-10-07-metadata.json"), "utf8")).items;
+const NEWdup = { result: "NEW" };
+const scored = FX107.map((i) => {
+  const s2 = sel.metadataScore(i, NEWdup);
+  return { i, s: s2, d: sel.screenDecision(i, NEWdup, s2).decision };
+});
+const find = (re) => {
+  const x = scored.find((r) => re.test(r.i.title));
+  if (!x) throw new Error(`fixture 없음: ${re}`);
+  return x;
+};
+await t("회귀 OpenAI–Atlassian early-cap: 근거 확인 명단(기본 상한 12) 안에 들고, 사용법·고객 사례보다 우선", async () => {
+  const atl = find(/^Atlassian and OpenAI/);
+  eq(atl.d, "CANDIDATE");
+  const shortlist = scored.filter((r) => r.d === "CANDIDATE").sort((a, b) => b.s.priority - a.s.priority).slice(0, lib.DEFAULTS.maxEvidenceFetches);
+  ok(shortlist.includes(atl), `명단 밖 (우선순위 ${atl.s.priority})`);
+  for (const r of scored.filter((x) => ["HOW_TO", "CUSTOMER_STORY", "INDUSTRY_STORY"].includes(x.s.contentType))) ok(atl.s.priority > r.s.priority, `${r.i.title.slice(0, 40)} (${r.s.priority}) ≥ Atlassian (${atl.s.priority})`);
+});
+await t("회귀 vendor how-to penalty: AWS 사용법 글은 감점·제외, 실제 기능 변화(can now·지역 제공)가 있으면 제외하지 않음", async () => {
+  for (const re of [/^Build a voice travel concierge/, /^Agentic retrieval with LangChain/, /^Downgrading user roles/, /^Best practices for Amazon SageMaker HyperPod/, /^Building a context-aware AI assistant/, /^Evaluating multi-agent systems/]) {
+    const x = find(re);
+    eq([x.s.contentType, x.d], ["HOW_TO", "EXCLUDE"], x.i.title.slice(0, 40));
+  }
+  ok(find(/^Supercharge regulated workloads/).d !== "EXCLUDE", "GovCloud 제공(강한 신호)은 제외하지 않음");
+  ok(find(/^Manage Amazon SageMaker HyperPod Spaces/).s.priority < sel.PUBLISH_MIN, "작은 기능 변화는 발행 추천 기준 미달");
+});
+await t("회귀 customer story penalty: 고객·업계 사례는 제외", async () => {
+  for (const re of [/^How Jump Trading/, /^Advancing computer use with Ironclad/, /^From Scan to Treatment Plan/, /^Ask a Scientist/, /^Making global public health/]) eq(find(re).d, "EXCLUDE", re.source);
+});
+await t("회귀 major product event priority: SynthID·EmbeddingGemma 2·Cyber Verification은 발행 추천 기준 이상, 사용법 글보다 위", async () => {
+  for (const re of [/^We're making it easier to identify AI-generated/, /^EmbeddingGemma 2/, /^Expanding the Cyber Verification Program/, /^Sharing AI progress in mathematics/]) {
+    const x = find(re);
+    eq(x.d, "CANDIDATE", x.i.title.slice(0, 40));
+    ok(x.s.priority >= sel.PUBLISH_MIN, `${x.i.title.slice(0, 40)} 우선순위 ${x.s.priority}`);
+  }
+});
+await t("회귀 2026-10-07 재실행에서 찾은 오류: 'How …' 고객 사례 · 사용법 글의 'security test'는 DEEP 맥락 아님", async () => {
+  const corner = { title: "How Cornerstone OnDemand cut database diagnosis by 78% with Amazon Bedrock", excerpt: "", sourceId: "aws-ml", sourceType: "official", tier: 1 };
+  eq(sel.classifyType(corner).type, "CUSTOMER_STORY");
+  eq(sel.screenDecision(corner, NEWdup, sel.metadataScore(corner, NEWdup)).decision, "EXCLUDE");
+  const glm = find(/^Introducing GLM 5\.3/);
+  ok(!glm.s.signals.includes("SECURITY"), `일반 'security' 언급이 보안 사건으로 잡힘: ${glm.s.signals}`);
+  const r = sel.assessDepth(glm.s, ev(factsN(11), "PASS"), 11, NEWdup);
+  ok(r.depth !== "DEEP", "플랫폼 모델 제공 글이 DEEP");
+  ok(find(/^Expanding the Cyber Verification Program/).s.signals.includes("SECURITY"), "사이버 검증 프로그램은 보안 사건");
+  ok(find(/^We're making it easier to identify AI-generated/).s.signals.includes("SECURITY"), "AI 생성물 식별은 보안·출처 신호");
+});
+await t("회귀 같은 날 다른 출처의 같은 발표: 하나만 근거·추천, 나머지는 DUPLICATE(alsoAt 기록)", async () => {
+  WEB.clear();
+  const twin = (host, src) => ({ ...REGISTRY.sources[0], id: src, name: src.toUpperCase(), feedUrl: `https://${host}/feed.xml` });
+  WEB.set("https://fx-t1.test/feed.xml", { body: rss([{ title: "Introducing Widget 2 for developers", link: "https://fx-t1.test/news/widget-2", date: "Tue, 07 Oct 2026 09:00:00 GMT", desc: LONG_DESC }]) });
+  WEB.set("https://fx-t2.test/feed.xml", { body: rss([{ title: "Introducing Widget 2 for developers", link: "https://fx-t2.test/blog/widget-2", date: "Tue, 07 Oct 2026 10:00:00 GMT", desc: LONG_DESC }]) });
+  WEB.set("https://fx-t1.test/news/widget-2", { body: bodyPage(WIDGET_SENTENCES) });
+  WEB.set("https://fx-t2.test/blog/widget-2", { body: bodyPage(WIDGET_SENTENCES) });
+  const r = await runDaily(baseRun({ env: ENV(), registry: { sources: [twin("fx-t1.test", "t1"), twin("fx-t2.test", "t2")] } }));
+  eq([r.run.counts.PUBLISH, r.run.counts.DUPLICATE, r.run.counts.evidenceChecked], [1, 1, 1]);
+  const pub = JSON.parse(fs.readFileSync(path.join(r.outDir, "candidates", fs.readdirSync(path.join(r.outDir, "candidates"))[0]), "utf8"));
+  eq(pub.alsoAt.length, 1);
+});
+await t("회귀 press only: 언론 보도는 공식 확인 전까지 HOLD (발행 추천 아님)", async () => {
+  const x = find(/^OpenAI agents tried to hack Wikipedia/);
+  eq(x.d, "HOLD");
+});
+await t("회귀 same-company soft diversity: 같은 회사 3번째는 다른 회사 후보에 양보, 다른 후보가 없거나 훨씬 약하면 그대로", async () => {
+  const mk = (company, priority, facts = 5) => ({ company, facts, score: { priority } });
+  const g = [mk("Google", 10), mk("Google", 9), mk("Google", 9), mk("Google", 8)];
+  const o = mk("OpenAI", 7);
+  const a = sel.finalSelect([...g, o], { maxPublish: 3 });
+  eq(a.picked.map((x) => x.company), ["Google", "Google", "OpenAI"]);
+  eq(a.diversityDeferred.map((x) => x.score.priority), [9, 8], "3·4번째 Google은 다양성으로 뒤로");
+  const only = sel.finalSelect(g, { maxPublish: 3 });
+  eq(only.picked.map((x) => x.company), ["Google", "Google", "Google"], "한 회사에 몰린 날은 억지로 끼우지 않음");
+  const strong = sel.finalSelect([mk("Google", 14), mk("Google", 13), mk("Google", 12), mk("OpenAI", 6)], { maxPublish: 3 });
+  eq(strong.picked.map((x) => x.score.priority), [14, 13, 12], "훨씬 중요한 같은 회사 기사는 우선");
 });
 
 // ---------- 7) 승인 ----------

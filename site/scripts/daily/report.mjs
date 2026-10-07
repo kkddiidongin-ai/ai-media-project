@@ -20,6 +20,40 @@ const FLAG_KO = {
   deep_requires_editor: "DEEP 제안 — 사람이 심층 원고 작성",
 };
 const flags = (list) => (list?.length ? list.map((f) => FLAG_KO[f] ?? f).join(", ") : "없음");
+const TYPE_KO = { NEWS: "소식", HOW_TO: "사용법", CUSTOMER_STORY: "고객 사례", INDUSTRY_STORY: "업계 이야기", THOUGHT_LEADERSHIP: "의견·전망", EVENT: "행사", HIRING: "채용·인사", DOCS_ONLY: "문서·소소한 갱신", MARKETING: "홍보", RESEARCH_PAPER: "논문" };
+const DEEP_KO = { importance: "중요도 4+", novelty: "새 사안", userImpact: "사용자 영향", contextNeed: "배경 설명 필요", distinctFacts: "확인 사실 6+", evidenceQuality: "근거 PASS", standardWouldOmit: "STANDARD로는 맥락 누락" };
+const short = (t, n = 60) => (t.length > n ? `${t.slice(0, n - 1)}…` : t);
+
+/** 선정 진단: 왜 골랐고 왜 뺐는지 1~2분 안에 확인 */
+export function renderDiagnostics(run) {
+  const items = run.items ?? [];
+  if (!items.some((i) => i.stage)) return [];
+  const L = ["## 선정 진단 (Selection Diagnostics)", ""];
+  const byPrio = [...items].filter((i) => i.duplicate !== "DUPLICATE").sort((a, b) => b.score - a.score);
+  L.push("**메타데이터 상위 10** (원문을 열기 전 점수 · 유형 · 사건 신호 → 결과)");
+  for (const i of byPrio.slice(0, 10)) L.push(`- ${i.score} · ${TYPE_KO[i.contentType] ?? i.contentType}${i.typePenalty ? ` ${i.typePenalty}` : ""} · ${(i.signals ?? []).join("·") || "신호 없음"} — ${short(i.title)} → **${i.decision}**`);
+  const sl = items.filter((i) => i.stage === "evidence");
+  L.push("", `**근거 확인 명단 ${sl.length}건** (원문 요청 상한 ${run.limits.maxEvidenceFetches}, 최종 추천 상한 ${run.limits.maxPublishPerDay})`);
+  for (const i of sl.sort((a, b) => b.score - a.score)) L.push(`- ${short(i.title)} — 원문 ${i.evidenceStatus} · 확인 사실 ${i.distinctFacts} · ${i.sufficiency ?? "-"} · 깊이 ${i.suggestedDepth ?? "-"} → **${i.decision}**`);
+  const capped = items.filter((i) => i.capStage);
+  L.push("", `**상한·다양성으로 빠진 후보 ${capped.length}건**`);
+  if (!capped.length) L.push("- 없음");
+  for (const i of capped) L.push(`- ${short(i.title)} — ${{ evidence: "근거 요청 상한", final: "최종 추천 상한", diversity: "회사 다양성" }[i.capStage]} (우선순위 ${i.score})`);
+  const pen = items.filter((i) => i.typePenalty < 0 && i.duplicate !== "DUPLICATE");
+  L.push("", `**글 유형 감점 ${pen.length}건**: ${pen.slice(0, 12).map((i) => `${short(i.title, 40)} (${TYPE_KO[i.contentType] ?? i.contentType}, ${i.decision})`).join(" · ") || "없음"}${pen.length > 12 ? " …" : ""}`);
+  const deepish = sl.filter((i) => i.suggestedDepth === "DEEP" || (i.importance >= 3 && i.suggestedDepth));
+  L.push("", "**DEEP 판단**");
+  if (!deepish.length) L.push("- 해당 없음");
+  for (const i of deepish) L.push(i.suggestedDepth === "DEEP" ? `- ${short(i.title)} → DEEP 제안 (7개 조건 모두 충족, 자동 원고·발행 아님)` : `- ${short(i.title)} → ${i.suggestedDepth} (DEEP 아님: ${(i.deepMissing ?? []).map((k) => DEEP_KO[k] ?? k).join(", ")})`);
+  const holds = items.filter((i) => i.decision === "HOLD");
+  const groups = {};
+  for (const i of holds) {
+    const k = (i.reasons.at(-1) ?? "").replace(/\d+/g, "N").replace(/\(.*?\)/g, "").replace(/ — .*$/, "").trim().slice(0, 50);
+    groups[k] = (groups[k] ?? 0) + 1;
+  }
+  L.push("", `**보류 이유 (${holds.length}건)**: ${Object.entries(groups).sort((a, b) => b[1] - a[1]).map(([k, n]) => `${k} ${n}`).join(" · ") || "없음"}`, "");
+  return L;
+}
 
 export function renderReport(run, queue) {
   const c = run.counts;
@@ -39,8 +73,8 @@ export function renderReport(run, queue) {
     L.push(`- 원문: [${q.candidate.sourceName} — ${q.sourceTitle}](${q.candidate.url}) · 발표 ${q.candidate.publishedAt.slice(0, 10)}`);
     if (q.summary) L.push(`- 요약: ${q.summary}`);
     if (q.body?.change?.text) L.push(`- 사용자 영향: ${q.body.change.text}`);
-    L.push(`- 추천 이유: ${q.reasons.join(" · ")} (점수 ${q.score.total}, 한국 관련 ${q.score.koreanRelevance}/3)`);
-    L.push(`- 근거: 원문 ${q.evidence.status} · 근거 문장 ${q.evidence.ledger.length}개 · 판정 ${q.evidence.grade}`);
+    L.push(`- 추천 이유: ${q.reasons.join(" · ")} (중요도 ${q.score.importance}/5, 한국 관련 ${q.score.koreanRelevance}/3${q.score.contentType && q.score.contentType !== "NEWS" ? `, 유형 ${q.score.contentType}` : ""})`);
+    L.push(`- 근거: 원문 ${q.evidence.status} · 근거 문장 ${q.evidence.ledger.length}개 · 서로 다른 확인 사실 ${q.depthAssessment?.distinctFacts ?? "-"}개 · 판정 ${q.evidence.grade}${q.suggestedDepth === "DEEP" ? " · DEEP 제안(7개 조건 충족)" : q.depthAssessment?.deepMissing?.length ? ` · DEEP 아님(${q.depthAssessment.deepMissing.map((k) => DEEP_KO[k] ?? k).join(", ")})` : ""}`);
     L.push(`- 검증: 확인 필요 ${flags(q.needsReview)}${q.validation?.errors?.length ? ` · 오류 ${q.validation.errors.join(", ")}` : ""}`);
     L.push(`- 원고: ${q.generation?.status === "ok" ? `${q.generation.provider}${q.generation.model ? ` (${q.generation.model})` : ""}` : `없음 — ${q.generation?.error ?? "생성 안 함"}`}${q.newsletterCandidate ? " · 📮 뉴스레터 후보" : ""}`);
     L.push("");
@@ -69,6 +103,7 @@ export function renderReport(run, queue) {
   if (!bad.length) L.push("실패한 소스 없음");
   for (const s of bad) L.push(`- ${s.name} — **${s.status}** ${s.errors?.[0] ? `(${s.errors[0].slice(0, 120)})` : ""}`);
   L.push("");
+  L.push(...renderDiagnostics(run));
   L.push(`## 비용`, "", `원고 생성 ${run.llm.provider} · 호출 ${run.llm.calls}/${run.llm.maxCalls} · 입력 ${run.llm.inputTokens} · 출력 ${run.llm.outputTokens} 토큰`, "");
   L.push(`<sub>실행 ${run.startedAt} → ${run.finishedAt} · 상세: run.json, candidates/*.json</sub>`, "");
   return L.join("\n");
