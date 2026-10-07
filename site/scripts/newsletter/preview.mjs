@@ -65,6 +65,17 @@ for (const t of targets) {
 }
 
 // 여러 폭으로 나란히 보기
+// 구독 확인 메일 (이중 확인). 링크의 토큰 자리는 예시 값
+{
+  const { createJiti } = await import("jiti");
+  const { renderConfirmEmail } = await createJiti(import.meta.url).import(path.join(ROOT, "src/lib/newsletterConfirmEmail.ts"));
+  const mail = renderConfirmEmail(`${config.siteConfig.url}/newsletter/confirm/#token=PREVIEW_TOKEN`, config.newsletterConfig.confirmTokenTtlHours);
+  fs.writeFileSync(path.join(OUT, "confirm-email.html"), mail.html);
+  fs.writeFileSync(path.join(OUT, "confirm-email.txt"), `제목: ${mail.subject}\n\n${mail.text}\n`);
+  rows.push({ name: "confirm-email", desc: "구독 확인 메일", issue: { date: "-" }, mail: { ...mail, preheader: "(확인 메일)" } });
+  console.log(`confirm-email  구독 확인 메일  제목: ${mail.subject}`);
+}
+
 const widths = [375, 600, 680];
 const index = `<!doctype html><html lang="ko"><meta charset="utf-8"><title>AI마중 메일 미리보기</title>
 <body style="margin:0;padding:20px;background:#333;font-family:sans-serif;color:#eee">

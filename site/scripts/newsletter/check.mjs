@@ -2,8 +2,9 @@
 /**
  * 뉴스레터 점검 (외부 호출 없음): npm run qa:newsletter
  *
- * 1) 구독 처리(src/lib/newsletterSubscribe.ts)를 가짜 저장소로 시험한다
- *    정상 · 잘못된 이메일 · 동의 없음 · 중복 · 해지 후 재구독 · 허니팟 · 저장소 실패 · 설정 없음 · 요청 제한 · 다른 출처
+ * 1) 구독 신청·확인(이중 확인, src/lib/newsletterSubscribe.ts)을 가짜 발송기·저장소로 시험한다
+ *    신청 시 연락처 미생성 · 토큰 위변조/만료/재사용 · 재신청 · 해지 후 재구독 · 허니팟 · 요청 제한 · 다른 출처 · 실패 · 설정 없음
+ *    + 실제 Resend SDK에 가짜 fetch를 물려 요청 URL에 이메일이 들어가지 않는지 확인한다
  * 2) 메일 렌더링을 대표 사례로 시험한다
  *    섹션 표시/숨김, 수신거부 링크, 미치환 값(undefined 등), JavaScript 없음, 이메일 주소 노출 없음
  * 3) 정적 산출물(out/)에 비밀값·구독자 정보가 들어가지 않았는지 본다 (빌드 후에만)
@@ -35,26 +36,36 @@ const ok = (v, m) => {
   if (!v) throw new Error(m);
 };
 
-// ---------- 1) 구독 처리 ----------
+// ---------- 1) 구독 신청 · 확인 (이중 확인) ----------
 
+const tok = await jiti.import(path.join(ROOT, "src/lib/newsletterToken.ts"));
+const confirmMail = await jiti.import(path.join(ROOT, "src/lib/newsletterConfirmEmail.ts"));
+const SECRET = "test-secret-".padEnd(48, "x");
+const OTHER_SECRET = "other-secret-".padEnd(48, "y");
+
+/** 가짜 확인 메일 발송기: 보낸 링크를 모은다 */
+function fakeMailer() {
+  const sent = [];
+  return {
+    sent,
+    async sendConfirmation(email, url) {
+      sent.push({ email, url });
+    },
+  };
+}
+/** 가짜 Resend 연락처 저장소 (확인 단계 전용) */
 function fakeStore(existing = {}) {
   const db = new Map(Object.entries(existing));
   const calls = [];
   return {
     db,
     calls,
-    async find(email) {
-      calls.push(["find", email]);
+    async confirm(email, interests) {
+      calls.push(["confirm", email, interests]);
       const c = db.get(email);
-      return c ? { exists: true, unsubscribed: c.unsubscribed, inSegment: c.inSegment } : { exists: false, unsubscribed: false, inSegment: false };
-    },
-    async create(email, interests) {
-      calls.push(["create", email, interests]);
+      const wasActive = c && !c.unsubscribed && c.inSegment;
       db.set(email, { unsubscribed: false, inSegment: true, interests });
-    },
-    async resubscribe(email, interests) {
-      calls.push(["resubscribe", email, interests]);
-      db.set(email, { unsubscribed: false, inSegment: true, interests });
+      return wasActive ? "already" : "subscribed";
     },
   };
 }
@@ -63,92 +74,354 @@ const logs = [];
 const log = (e) => logs.push(JSON.stringify(e));
 const req = (body, extra = {}) => ({ body, ip: "1.2.3.4", origin: "https://ai.example", host: "ai.example", ...extra });
 const valid = { email: "  Reader@Example.com ", interests: ["claude", "ai-coding", "bogus"], consent: true, website: "" };
+const subCtx = (mailer, extra = {}) => ({ mailer, secret: SECRET, allowIp: always, allowEmail: always, log, ...extra });
+const confCtx = (store, extra = {}) => ({ store, secret: SECRET, allowIp: always, log, ...extra });
+const tokenOf = (url) => new URL(url).hash.replace(/^#token=/, "");
 
-await t("정상 구독 → 200 subscribed, 소문자 정규화, 모르는 관심 분야 제거", async () => {
+await t("신청 → 200 confirmation_sent, 확인 메일 1통, 연락처는 아직 만들지 않음", async () => {
+  const m = fakeMailer();
   const s = fakeStore();
-  const r = await sub.handleSubscribe(req(valid), s, always, log);
-  eq(r, { status: 200, body: { ok: true, code: "subscribed" } });
-  eq(s.calls.at(-1), ["create", "reader@example.com", ["claude", "ai-coding"]]);
+  const r = await sub.handleSubscribe(req(valid), subCtx(m));
+  eq(r, { status: 200, body: { ok: true, code: "confirmation_sent" } });
+  eq(m.sent.length, 1);
+  eq(m.sent[0].email, "reader@example.com");
+  eq(s.calls.length, 0, "신청 단계 저장소 호출");
 });
-await t("잘못된 이메일 → 400 invalid_email, 저장소 호출 없음", async () => {
+await t("확인 링크: https://aimajung.com/newsletter/confirm/#token=…, 이메일·query 없음", async () => {
+  const m = fakeMailer();
+  await sub.handleSubscribe(req(valid), subCtx(m));
+  const u = new URL(m.sent[0].url);
+  eq(u.origin + u.pathname, "https://aimajung.com/newsletter/confirm/");
+  eq(u.search, "");
+  ok(!/@|%40|reader|example/i.test(m.sent[0].url), "링크에 이메일 흔적");
+});
+await t("토큰은 암호화: 풀어 봐도 이메일·관심 분야가 보이지 않음", async () => {
+  const m = fakeMailer();
+  await sub.handleSubscribe(req(valid), subCtx(m));
+  const raw = Buffer.from(tokenOf(m.sent[0].url), "base64url").toString("latin1");
+  ok(!/reader|example|claude|ai-coding/i.test(raw), "토큰 안에 평문");
+});
+await t("확인: 정상 토큰 → confirmed, 구독·Segment·interests 저장", async () => {
+  const m = fakeMailer();
+  const s = fakeStore();
+  await sub.handleSubscribe(req(valid), subCtx(m));
+  const r = await sub.handleConfirm(req({ token: tokenOf(m.sent[0].url) }), confCtx(s));
+  eq(r, { status: 200, body: { ok: true, code: "confirmed" } });
+  eq(s.db.get("reader@example.com"), { unsubscribed: false, inSegment: true, interests: ["claude", "ai-coding"] });
+});
+await t("같은 토큰 재사용 → already_confirmed, 연락처 1개 그대로 (멱등)", async () => {
+  const m = fakeMailer();
+  const s = fakeStore();
+  await sub.handleSubscribe(req(valid), subCtx(m));
+  const token = tokenOf(m.sent[0].url);
+  await sub.handleConfirm(req({ token }), confCtx(s));
+  const again = await sub.handleConfirm(req({ token }), confCtx(s));
+  const third = await sub.handleConfirm(req({ token }), confCtx(s));
+  eq([again.body.code, third.body.code], ["already_confirmed", "already_confirmed"]);
+  eq(s.db.size, 1);
+});
+await t("위변조 토큰 → 400 invalid, 저장소 호출 없음", async () => {
+  const m = fakeMailer();
+  const s = fakeStore();
+  await sub.handleSubscribe(req(valid), subCtx(m));
+  const token = tokenOf(m.sent[0].url);
+  const flip = (str, i) => str.slice(0, i) + (str[i] === "A" ? "B" : "A") + str.slice(i + 1);
+  for (const bad of [flip(token, 5), flip(token, 30), flip(token, token.length - 3), token.slice(0, -4), token + "AA"]) {
+    eq((await sub.handleConfirm(req({ token: bad }), confCtx(s))).body.code, "invalid");
+  }
+  eq(s.calls.length, 0);
+});
+await t("다른 비밀값으로 만든 토큰·임의 문자열 → invalid", async () => {
+  const s = fakeStore();
+  const forged = tok.sealToken({ email: "victim@example.com", interests: [], expiresAt: Date.now() + 3600_000 }, OTHER_SECRET);
+  for (const token of [forged, "", "abc", "x".repeat(300), null, 42, { a: 1 }, "AQ" + "A".repeat(60)]) {
+    eq((await sub.handleConfirm(req({ token }), confCtx(s))).body.code, "invalid", String(token).slice(0, 10));
+  }
+  eq(s.calls.length, 0);
+});
+await t("만료 토큰 → 410 expired (24시간 + 1분 뒤)", async () => {
+  const m = fakeMailer();
+  const s = fakeStore();
+  const t0 = Date.parse("2026-10-07T00:00:00Z");
+  await sub.handleSubscribe(req(valid), subCtx(m, { now: t0 }));
+  const token = tokenOf(m.sent[0].url);
+  eq((await sub.handleConfirm(req({ token }), confCtx(s, { now: t0 + 23 * 3600_000 }))).body.code, "confirmed");
+  eq(await sub.handleConfirm(req({ token }), confCtx(fakeStore(), { now: t0 + 24 * 3600_000 + 60_000 })), { status: 410, body: { ok: false, code: "expired" } });
+});
+await t("같은 주소 재신청 · 이미 구독 중인 주소 신청 → 새 주소와 똑같은 응답 (상태 노출 없음)", async () => {
+  const fresh = await sub.handleSubscribe(req({ ...valid, email: "new@example.com" }), subCtx(fakeMailer()));
+  const m = fakeMailer();
+  const again1 = await sub.handleSubscribe(req(valid), subCtx(m));
+  const again2 = await sub.handleSubscribe(req(valid), subCtx(m));
+  eq([again1, again2], [fresh, fresh]);
+  eq(m.sent.length, 2, "확인 메일은 다시 보냄");
+});
+await t("같은 주소로 너무 자주 신청 → 메일은 더 안 보내지만 응답은 같음", async () => {
+  const allowEmail = sub.createRateLimiter(3, 3600_000);
+  const m = fakeMailer();
+  const codes = [];
+  for (let i = 0; i < 5; i++) codes.push((await sub.handleSubscribe(req(valid), subCtx(m, { allowEmail }))).body.code);
+  eq(codes, Array(5).fill("confirmation_sent"));
+  eq(m.sent.length, 3);
+});
+await t("구독 해지했던 주소 → 확인 후 재구독", async () => {
+  const s = fakeStore({ "reader@example.com": { unsubscribed: true, inSegment: true, interests: [] } });
+  const m = fakeMailer();
+  await sub.handleSubscribe(req(valid), subCtx(m));
+  eq((await sub.handleConfirm(req({ token: tokenOf(m.sent[0].url) }), confCtx(s))).body.code, "confirmed");
+  eq(s.db.get("reader@example.com").unsubscribed, false);
+});
+await t("잘못된 이메일 → 400 invalid_email, 메일 안 보냄", async () => {
   for (const email of ["", "abc", "a@b", "a@@b.com", "a b@c.com", "x".repeat(250) + "@a.com", 123, null]) {
-    const s = fakeStore();
-    const r = await sub.handleSubscribe(req({ ...valid, email }), s, always, log);
-    eq(r.body.code, "invalid_email", String(email).slice(0, 20));
-    eq(s.calls.length, 0);
+    const m = fakeMailer();
+    eq((await sub.handleSubscribe(req({ ...valid, email }), subCtx(m))).body.code, "invalid_email", String(email).slice(0, 20));
+    eq(m.sent.length, 0);
   }
 });
 await t("동의 없음 → 400 consent_required", async () => {
   for (const consent of [false, undefined, "true", "yes"]) {
-    const r = await sub.handleSubscribe(req({ ...valid, consent }), fakeStore(), always, log);
-    eq(r, { status: 400, body: { ok: false, code: "consent_required" } });
+    eq(await sub.handleSubscribe(req({ ...valid, consent }), subCtx(fakeMailer())), { status: 400, body: { ok: false, code: "consent_required" } });
   }
 });
-await t("이미 구독 중 → 409 duplicate, 새로 만들지 않음", async () => {
-  const s = fakeStore({ "reader@example.com": { unsubscribed: false, inSegment: true } });
-  const r = await sub.handleSubscribe(req(valid), s, always, log);
-  eq(r, { status: 409, body: { ok: false, code: "duplicate" } });
-  ok(!s.calls.some((c) => c[0] !== "find"), "find 외 호출이 있음");
+await t("허니팟 → 정상과 같은 응답, 메일 안 보냄", async () => {
+  const m = fakeMailer();
+  eq((await sub.handleSubscribe(req({ ...valid, website: "http://spam" }), subCtx(m))).status, 200);
+  eq(m.sent.length, 0);
 });
-await t("해지했던 주소 → 재구독 200", async () => {
-  const s = fakeStore({ "reader@example.com": { unsubscribed: true, inSegment: true } });
-  const r = await sub.handleSubscribe(req(valid), s, always, log);
-  eq(r.body.code, "subscribed");
-  eq(s.calls.at(-1)[0], "resubscribe");
-});
-await t("연락처는 있지만 구독 Segment에 없음 → 재구독 처리", async () => {
-  const s = fakeStore({ "reader@example.com": { unsubscribed: false, inSegment: false } });
-  eq((await sub.handleSubscribe(req(valid), s, always, log)).body.code, "subscribed");
-  eq(s.calls.at(-1)[0], "resubscribe");
-});
-await t("허니팟 → 200이지만 저장하지 않음", async () => {
-  const s = fakeStore();
-  const r = await sub.handleSubscribe(req({ ...valid, website: "http://spam" }), s, always, log);
-  eq(r.status, 200);
-  eq(s.calls.length, 0);
-});
-await t("저장소(API) 실패 → 502 error, 내부 정보 없음", async () => {
-  const s = fakeStore();
-  s.find = async () => {
-    throw new sub.StoreError("invalid_api_key");
+await t("메일 발송(Resend) 실패 → 502 error, 내부 정보 없음", async () => {
+  const m = {
+    async sendConfirmation() {
+      throw new sub.StoreError("invalid_api_key");
+    },
   };
-  const r = await sub.handleSubscribe(req(valid), s, always, log);
+  const r = await sub.handleSubscribe(req(valid), subCtx(m));
   eq(r, { status: 502, body: { ok: false, code: "error" } });
   ok(!JSON.stringify(r).match(/resend|api_key|invalid/i), "응답에 내부 정보");
 });
-await t("예상 못 한 예외도 502 error", async () => {
-  const s = fakeStore();
-  s.create = async () => {
-    throw new Error("socket hang up reader@example.com");
-  };
-  eq((await sub.handleSubscribe(req(valid), s, always, log)).body.code, "error");
+await t("확인 단계 Resend 실패·예외 → 502 error", async () => {
+  const m = fakeMailer();
+  await sub.handleSubscribe(req(valid), subCtx(m));
+  const token = tokenOf(m.sent[0].url);
+  for (const err of [new sub.StoreError("validation_error"), new Error("socket hang up reader@example.com")]) {
+    const s = {
+      async confirm() {
+        throw err;
+      },
+    };
+    eq(await sub.handleConfirm(req({ token }), confCtx(s)), { status: 502, body: { ok: false, code: "error" } });
+  }
 });
-await t("API 키·Segment 미설정 → 503 unavailable (가짜 성공 없음)", async () => {
-  eq(await sub.handleSubscribe(req(valid), null, always, log), { status: 503, body: { ok: false, code: "unavailable" } });
-  eq(sub.resendSettings({}), null);
-  eq(sub.resendSettings({ RESEND_API_KEY: "k" }), null);
-  eq(sub.resendSettings({ RESEND_API_KEY: "k", RESEND_AUDIENCE_ID: "seg" }), { apiKey: "k", segmentId: "seg" });
+await t("설정 없음 → 503 unavailable (가짜 성공 없음)", async () => {
+  eq((await sub.handleSubscribe(req(valid), subCtx(null))).status, 503);
+  eq((await sub.handleSubscribe(req(valid), subCtx(fakeMailer(), { secret: null }))).status, 503);
+  eq((await sub.handleConfirm(req({ token: "x" }), confCtx(null))).status, 503);
+  eq((await sub.handleConfirm(req({ token: "x" }), confCtx(fakeStore(), { secret: null }))).status, 503);
+  const full = { RESEND_API_KEY: "k", RESEND_AUDIENCE_ID: "seg", NEWSLETTER_CONFIRM_SECRET: SECRET };
+  eq(sub.newsletterSettings({}), null);
+  eq(sub.newsletterSettings({ ...full, NEWSLETTER_CONFIRM_SECRET: undefined }), null);
+  eq(sub.newsletterSettings({ ...full, NEWSLETTER_CONFIRM_SECRET: "short" }), null, "짧은 비밀값");
+  eq(sub.newsletterSettings({ ...full, RESEND_AUDIENCE_ID: "" }), null);
+  eq(sub.newsletterSettings({ ...full, NEWSLETTER_FROM_EMAIL: "x@foo.vercel.app" }), null);
+  eq(sub.newsletterSettings(full), { apiKey: "k", segmentId: "seg", secret: SECRET, from: "AI마중 <letter@aimajung.com>", replyTo: undefined });
+  eq(sub.newsletterSettings({ ...full, NEWSLETTER_REPLY_TO: "hello@aimajung.com" }).replyTo, "hello@aimajung.com");
 });
-await t("요청 제한: 같은 IP 6번째부터 429", async () => {
-  const allow = sub.createRateLimiter(5, 60_000);
+await t("요청 제한: 신청은 IP당 6번째부터 429, 확인은 넉넉하게", async () => {
+  const allowIp = sub.createRateLimiter(5, 60_000);
   const codes = [];
-  for (let i = 0; i < 7; i++) codes.push((await sub.handleSubscribe(req({ ...valid, email: `r${i}@example.com` }), fakeStore(), allow, log)).status);
+  for (let i = 0; i < 7; i++) codes.push((await sub.handleSubscribe(req({ ...valid, email: `r${i}@example.com` }), subCtx(fakeMailer(), { allowIp }))).status);
   eq(codes, [200, 200, 200, 200, 200, 429, 429]);
-  ok(allow("5.6.7.8"), "다른 IP는 허용");
-  const later = sub.createRateLimiter(1, 1000);
-  ok(later("x", 0) && !later("x", 10) && later("x", 2000), "시간이 지나면 풀림");
+  const confirmLimit = sub.createRateLimiter(30, 600_000);
+  let allowed = 0;
+  for (let i = 0; i < 30; i++) if (confirmLimit("ip")) allowed++;
+  eq(allowed, 30);
+  eq((await sub.handleConfirm(req({ token: "x" }), confCtx(fakeStore(), { allowIp: () => false }))).status, 429);
 });
-await t("다른 사이트 Origin → 403", async () => {
-  eq((await sub.handleSubscribe(req(valid, { origin: "https://evil.example" }), fakeStore(), always, log)).status, 403);
-  eq((await sub.handleSubscribe(req(valid, { origin: "null" }), fakeStore(), always, log)).status, 403);
-  eq((await sub.handleSubscribe(req(valid, { origin: null }), fakeStore(), always, log)).status, 200);
+await t("다른 사이트 Origin → 403 (신청·확인)", async () => {
+  for (const origin of ["https://evil.example", "null"]) {
+    eq((await sub.handleSubscribe(req(valid, { origin }), subCtx(fakeMailer()))).status, 403);
+    eq((await sub.handleConfirm(req({ token: "x" }, { origin }), confCtx(fakeStore()))).status, 403);
+  }
+  eq((await sub.handleSubscribe(req(valid, { origin: null }), subCtx(fakeMailer()))).status, 200);
 });
 await t("잘못된 본문 → 400 bad_request", async () => {
-  for (const body of [null, "x", [], 5]) eq((await sub.handleSubscribe(req(body), fakeStore(), always, log)).body.code, "bad_request");
-  eq((await sub.handleSubscribe(req({ ...valid, interests: Array(20).fill("claude") }), fakeStore(), always, log)).body.code, "bad_request");
+  for (const body of [null, "x", [], 5]) {
+    eq((await sub.handleSubscribe(req(body), subCtx(fakeMailer()))).body.code, "bad_request");
+    eq((await sub.handleConfirm(req(body), confCtx(fakeStore()))).body.code, "bad_request");
+  }
+  eq((await sub.handleSubscribe(req({ ...valid, interests: Array(20).fill("claude") }), subCtx(fakeMailer()))).body.code, "bad_request");
 });
+await t("확인 메일: 버튼·만료 안내·텍스트 버전, 스크립트 없음, 폭 560", async () => {
+  const url = "https://aimajung.com/newsletter/confirm/#token=AbC_-123";
+  const mail = confirmMail.renderConfirmEmail(url, 24);
+  eq(mail.subject, "AI마중 뉴스레터 구독을 확인해 주세요");
+  for (const s of ["AI마중 뉴스레터 구독을 신청하셨습니다.", "뉴스레터 구독 확인", "본인이 신청하지 않았다면", "24시간", `href="${url}"`, "https://aimajung.com/"]) ok(mail.html.includes(s), `HTML에 '${s}' 없음`);
+  for (const s of ["뉴스레터 구독 확인: " + url, "본인이 신청하지 않았다면", "24시간", "https://aimajung.com/"]) ok(mail.text.includes(s), `텍스트에 '${s}' 없음`);
+  ok(!/<script|javascript:|onclick=|<img/i.test(mail.html), "스크립트·이미지");
+  ok(/width="560"/.test(mail.html) && /max-width: 560px/.test(mail.html), "모바일 폭 규칙");
+  ok(confirmMail.renderConfirmEmail('x"><b>', 24).html.includes("x&quot;&gt;&lt;b&gt;"), "이스케이프");
+});
+
+// ---------- 1-2) 실제 Resend SDK로 요청 URL 검사 (fetch를 가로채 외부 호출 없음) ----------
+
+process.env.NODE_ENV = "production"; // SDK 개발용 오류 로그(요청 경로 출력) 끄기 — Vercel Function과 같은 조건
+const { Resend } = await import("resend");
+const SEG = "seg_general";
+
+/** Resend API 흉내. mode "conflict": 있는 주소 생성 시 오류 / "upsert": 있는 주소 생성 시 기존 id를 그대로 돌려줌 */
+function fakeResendApi({ mode = "conflict", contacts = [], throttleOnce = false } = {}) {
+  const db = contacts.map((c, i) => ({ id: c.id ?? `ct_${i}`, created_at: c.created_at ?? "2026-01-01T00:00:00Z", unsubscribed: false, segments: [SEG], properties: {}, ...c }));
+  const urls = [];
+  const emails = [];
+  let throttled = !throttleOnce;
+  const json = (status, body) => new Response(JSON.stringify(body), { status, headers: { "content-type": "application/json" } });
+  const fetchImpl = async (input, init = {}) => {
+    const u = new URL(String(input));
+    const method = init.method ?? "GET";
+    urls.push(`${method} ${u.pathname}${u.search}`);
+    if (!throttled) {
+      throttled = true;
+      return json(429, { name: "rate_limit_exceeded", message: "Too many requests", statusCode: 429 });
+    }
+    const body = init.body ? JSON.parse(init.body) : null;
+    const p = u.pathname;
+    let m;
+    if (method === "POST" && p === "/emails") {
+      emails.push(body);
+      return json(200, { id: "em_1" });
+    }
+    if (method === "POST" && p === "/contacts") {
+      if (body.properties && Object.keys(body.properties).some((k) => k !== "interests")) return json(422, { name: "validation_error", message: "unknown property", statusCode: 422 });
+      const ex = db.find((c) => c.email === body.email);
+      if (ex && mode === "conflict") return json(422, { name: "validation_error", message: `Contact ${body.email} already exists`, statusCode: 422 });
+      if (ex) return json(200, { object: "contact", id: ex.id });
+      const c = { id: `ct_new${db.length}`, email: body.email, created_at: new Date().toISOString(), unsubscribed: body.unsubscribed, properties: body.properties, segments: (body.segments ?? []).map((s) => s.id) };
+      db.push(c);
+      return json(201, { object: "contact", id: c.id });
+    }
+    if (method === "GET" && p === "/contacts") {
+      const limit = Number(u.searchParams.get("limit") ?? 20);
+      const after = u.searchParams.get("after");
+      const start = after ? db.findIndex((c) => c.id === after) + 1 : 0;
+      const page = db.slice(start, start + limit);
+      return json(200, { object: "list", has_more: start + limit < db.length, data: page.map(({ id, email, created_at, unsubscribed }) => ({ id, email, created_at, unsubscribed, first_name: null, last_name: null })) });
+    }
+    if ((m = p.match(/^\/contacts\/([^/]+)\/segments$/)) && method === "GET") {
+      const c = db.find((x) => x.id === m[1]);
+      return c ? json(200, { object: "list", has_more: false, data: c.segments.map((id) => ({ id, name: "General", created_at: "" })) }) : json(404, { name: "not_found", message: "nf", statusCode: 404 });
+    }
+    if ((m = p.match(/^\/contacts\/([^/]+)\/segments\/([^/]+)$/)) && method === "POST") {
+      const c = db.find((x) => x.id === m[1]);
+      if (!c.segments.includes(m[2])) c.segments.push(m[2]);
+      return json(200, { id: m[2] });
+    }
+    if ((m = p.match(/^\/contacts\/([^/]+)$/))) {
+      const c = db.find((x) => x.id === m[1]);
+      if (!c) return json(404, { name: "not_found", message: "nf", statusCode: 404 });
+      if (method === "GET") return json(200, { object: "contact", id: c.id, email: c.email, created_at: c.created_at, unsubscribed: c.unsubscribed, first_name: null, last_name: null, properties: {} });
+      if (method === "PATCH") {
+        if (body.unsubscribed !== undefined) c.unsubscribed = body.unsubscribed;
+        if (body.properties) c.properties = body.properties;
+        return json(200, { object: "contact", id: c.id });
+      }
+    }
+    return json(500, { name: "application_error", message: `unhandled ${method} ${p}`, statusCode: 500 });
+  };
+  return { db, urls, emails, fetchImpl };
+}
+async function withApi(api, fn) {
+  const orig = globalThis.fetch;
+  globalThis.fetch = api.fetchImpl;
+  try {
+    return await fn(new Resend("re_test_dummy"));
+  } finally {
+    globalThis.fetch = orig;
+  }
+}
+const noEmailInUrls = (api) => ok(!api.urls.some((u) => /@|%40/.test(u)), `URL에 이메일: ${api.urls.find((u) => /@|%40/.test(u))}`);
+
+await t("SDK: 확인 메일 발송은 POST /emails 본문에만 이메일, 발신 AI마중 <letter@aimajung.com>", async () => {
+  const api = fakeResendApi();
+  await withApi(api, (resend) => sub.createResendMailer(resend, { from: "AI마중 <letter@aimajung.com>" }).sendConfirmation("reader@example.com", "https://aimajung.com/newsletter/confirm/#token=abc"));
+  eq(api.urls, ["POST /emails"]);
+  eq(api.emails[0].from, "AI마중 <letter@aimajung.com>");
+  eq(api.emails[0].to, ["reader@example.com"]);
+  eq(api.emails[0].subject, "AI마중 뉴스레터 구독을 확인해 주세요");
+  ok(api.emails[0].html.includes("#token=abc") && api.emails[0].text.includes("#token=abc"), "링크 없음");
+  ok(!("reply_to" in api.emails[0]) || api.emails[0].reply_to == null, "Reply-To가 비어 있어야 함");
+});
+await t("SDK: 신청 전체 흐름 → Resend 요청은 POST /emails 하나뿐, 연락처 0개 (확인 전 구독자 아님)", async () => {
+  const api = fakeResendApi();
+  const r = await withApi(api, (resend) => sub.handleSubscribe(req(valid), subCtx(sub.createResendMailer(resend, { from: "AI마중 <letter@aimajung.com>" }, 1))));
+  eq(r.body.code, "confirmation_sent");
+  eq(api.urls, ["POST /emails"]);
+  eq(api.db.length, 0);
+  ok(api.emails[0].html.includes("https://aimajung.com/newsletter/confirm/#token="), "확인 링크 없음");
+});
+await t("SDK: 새 구독자 확인 → POST /contacts(Segment·interests 포함) + GET /contacts/{id}, URL에 이메일 없음", async () => {
+  const api = fakeResendApi();
+  const r = await withApi(api, (resend) => sub.createResendStore(resend, SEG, { retryDelayMs: 1 }).confirm("reader@example.com", ["ai-news", "chatgpt-openai"]));
+  eq(r, "subscribed");
+  eq(api.urls, ["POST /contacts", "GET /contacts/ct_new0"]);
+  eq(api.db[0].segments, [SEG]);
+  eq(api.db[0].properties, { interests: "ai-news,chatgpt-openai" });
+  eq(api.db[0].unsubscribed, false);
+  noEmailInUrls(api);
+});
+await t("SDK: 이미 구독 중(생성 오류 응답) → 목록에서 id 찾기, already, 중복 연락처·Segment 없음", async () => {
+  const others = Array.from({ length: 150 }, (_, i) => ({ email: `p${i}@example.com` }));
+  const api = fakeResendApi({ contacts: [...others, { email: "reader@example.com", id: "ct_reader" }] });
+  const r = await withApi(api, (resend) => sub.createResendStore(resend, SEG, { retryDelayMs: 1 }).confirm("reader@example.com", ["claude"]));
+  eq(r, "already");
+  eq(api.db.filter((c) => c.email === "reader@example.com").length, 1);
+  eq(api.db.find((c) => c.id === "ct_reader").segments, [SEG]);
+  ok(api.urls.includes("GET /contacts?limit=100") && api.urls.some((u) => u.startsWith("GET /contacts?limit=100&after=")), "두 쪽 넘김");
+  noEmailInUrls(api);
+});
+await t("SDK: 해지했던 주소 → PATCH unsubscribed:false·interests + Segment 재등록", async () => {
+  const api = fakeResendApi({ contacts: [{ email: "reader@example.com", id: "ct_r", unsubscribed: true, segments: [] }] });
+  const r = await withApi(api, (resend) => sub.createResendStore(resend, SEG, { retryDelayMs: 1 }).confirm("reader@example.com", ["gemini"]));
+  eq(r, "subscribed");
+  const c = api.db[0];
+  eq([c.unsubscribed, c.segments, c.properties], [false, [SEG], { interests: "gemini" }]);
+  ok(api.urls.includes("PATCH /contacts/ct_r") && api.urls.includes(`POST /contacts/ct_r/segments/${SEG}`), "갱신·등록 호출");
+  noEmailInUrls(api);
+});
+await t("SDK: 생성이 기존 id를 돌려주는 경우(upsert)도 id로 상태를 맞춤", async () => {
+  const api = fakeResendApi({ mode: "upsert", contacts: [{ email: "reader@example.com", id: "ct_u", unsubscribed: true, segments: [] }] });
+  eq(await withApi(api, (resend) => sub.createResendStore(resend, SEG, { retryDelayMs: 1 }).confirm("reader@example.com", [])), "subscribed");
+  eq([api.db[0].unsubscribed, api.db[0].segments], [false, [SEG]]);
+  noEmailInUrls(api);
+});
+await t("SDK: 같은 토큰으로 두 번 확인 → 연락처 1개, Segment 1번", async () => {
+  const api = fakeResendApi();
+  await withApi(api, async (resend) => {
+    const store = sub.createResendStore(resend, SEG, { retryDelayMs: 1, now: () => Date.now() + 10 * 60_000 });
+    await store.confirm("reader@example.com", ["claude"]);
+    eq(await store.confirm("reader@example.com", ["claude"]), "already");
+  });
+  eq(api.db.length, 1);
+  eq(api.db[0].segments, [SEG]);
+  noEmailInUrls(api);
+});
+await t("SDK: 진짜 검증 오류(속성 없음 등)는 목록에서 못 찾으면 그대로 실패", async () => {
+  const api = fakeResendApi();
+  let err = null;
+  await withApi(api, (resend) => sub.createResendStore(resend, SEG, { retryDelayMs: 1 }).confirm("reader@example.com", []).catch((e) => (err = e)));
+  ok(err === null, "정상 경로");
+  const api2 = fakeResendApi();
+  const orig = api2.fetchImpl;
+  api2.fetchImpl = (input, init) => (String(input).endsWith("/contacts") && init?.method === "POST" ? Promise.resolve(new Response(JSON.stringify({ name: "validation_error", message: "property interests does not exist", statusCode: 422 }), { status: 422 })) : orig(input, init));
+  await withApi(api2, (resend) => sub.createResendStore(resend, SEG, { retryDelayMs: 1 }).confirm("reader@example.com", []).catch((e) => (err = e)));
+  ok(err instanceof sub.StoreError && err.reason === "validation_error", `오류 이유: ${err?.reason}`);
+});
+await t("SDK: 요청 한도(429)에 걸리면 잠깐 쉬고 다시 시도", async () => {
+  const api = fakeResendApi({ throttleOnce: true });
+  eq(await withApi(api, (resend) => sub.createResendStore(resend, SEG, { retryDelayMs: 1 }).confirm("reader@example.com", [])), "subscribed");
+  eq(api.urls[0], api.urls[1]);
+});
+
 await t("로그에 이메일 전체가 남지 않음", async () => {
-  ok(logs.length > 0, "로그 없음");
+  ok(logs.length > 10, "로그 없음");
   ok(!logs.some((l) => /@/.test(l)), `로그에 이메일: ${logs.find((l) => /@/.test(l))}`);
 });
 
@@ -211,7 +484,7 @@ await t("HTML 특수문자 이스케이프", async () => {
 });
 await t("발송 설정: 빠진 값·vercel.app 발신 주소를 막음", async () => {
   const nc = config.newsletterConfig;
-  ok(sendSettings({}, nc).problems.length >= 3, "빈 설정 통과");
+  ok(sendSettings({}, nc).problems.length >= 2, "빈 설정 통과");
   ok(sendSettings({ RESEND_API_KEY: "k", RESEND_AUDIENCE_ID: "s", NEWSLETTER_FROM_EMAIL: "news@example-project.vercel.app" }, nc).problems.some((p) => p.includes("vercel.app")), "vercel.app 통과");
   eq(sendSettings({ RESEND_API_KEY: "k", RESEND_AUDIENCE_ID: "s", NEWSLETTER_FROM_EMAIL: "news@example.org" }, nc).problems, []);
   eq(sendSettings({ RESEND_API_KEY: "k", RESEND_AUDIENCE_ID: "s", NEWSLETTER_FROM_EMAIL: "news@example.org" }, nc).from, "AI마중 <news@example.org>");

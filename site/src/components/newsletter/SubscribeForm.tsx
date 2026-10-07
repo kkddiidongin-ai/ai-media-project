@@ -3,15 +3,16 @@
 import { useId, useRef, useState, type FormEvent } from "react";
 import { newsletterInterests, newsletterMessages, newsletterPrivacy, normalizeEmail, SUBSCRIBE_ENDPOINT } from "@/config/newsletter";
 
-type Phase = "idle" | "sending" | "success" | "duplicate" | "error";
+type Phase = "idle" | "sending" | "success" | "error";
 
-/** 서버 응답 code → 화면 문구. 모르는 code는 일반 오류 문구로 */
+/**
+ * 서버 응답 code → 화면 문구. 모르는 code는 일반 오류 문구로.
+ * 이중 확인: 신청이 받아지면 항상 '확인 메일을 보냈습니다' (이미 구독 중인 주소인지는 알려주지 않는다)
+ */
 function messageFor(code: unknown): { phase: Phase; text: string } {
   switch (code) {
-    case "subscribed":
-      return { phase: "success", text: newsletterMessages.success };
-    case "duplicate":
-      return { phase: "duplicate", text: newsletterMessages.duplicate };
+    case "confirmation_sent":
+      return { phase: "success", text: newsletterMessages.confirmationSent };
     case "invalid_email":
       return { phase: "error", text: newsletterMessages.invalidEmail };
     case "consent_required":
@@ -81,12 +82,7 @@ export function SubscribeForm() {
   }
 
   const sending = phase === "sending";
-  const tone =
-    phase === "success"
-      ? "border-night-accent/50 bg-night-accent/10 text-night-text"
-      : phase === "duplicate"
-        ? "border-night-line bg-night-raise text-night-text"
-        : "border-[#c7745c]/60 bg-[#c7745c]/10 text-night-text";
+  const tone = phase === "success" ? "border-night-accent/50 bg-night-accent/10 text-night-text" : "border-[#c7745c]/60 bg-[#c7745c]/10 text-night-text";
 
   return (
     <form onSubmit={onSubmit} noValidate aria-describedby={`${id}-status`} className="space-y-6">

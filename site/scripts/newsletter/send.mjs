@@ -11,7 +11,7 @@
  *        실제 발송. --confirm 값이 날짜와 같아야 하고, 터미널에서는 '발송'을 한 번 더 입력해야 한다.
  *        보낸 기록은 ingest/newsletter-sent.json에 남고, 같은 호는 두 번 보내지 않는다.
  *
- * 필요: RESEND_API_KEY, RESEND_AUDIENCE_ID(Segment ID), 인증 도메인의 발신 주소. 하나라도 없으면 멈춘다.
+ * 필요: RESEND_API_KEY, RESEND_AUDIENCE_ID(Segment ID), 인증 도메인의 발신 주소, 실제 받은편지함이 있는 Reply-To. 하나라도 없으면 멈춘다.
  * 선택: --subject "…" --preheader "…" (없으면 메인 기사 제목·요약으로 만든다)
  */
 import fs from "node:fs";
@@ -51,6 +51,8 @@ console.log(`보낸 사람: ${settings.from || "(없음)"}`);
 console.log(`미리보기: ingest/log/newsletter-preview/send-${date}.html`);
 if (!mail.html.includes("{{{RESEND_UNSUBSCRIBE_URL}}}")) stop("수신거부 링크가 메일에 없습니다. 발송하지 않습니다.");
 if (settings.problems.length) stop("설정이 빠져 발송할 수 없습니다:\n- " + settings.problems.join("\n- "));
+// 정기 뉴스레터는 답장(문의·수신거부 요청)을 실제로 받을 수 있어야 한다. 받은편지함이 준비되기 전에는 보내지 않는다
+if (!settings.replyTo) stop("Reply-To 주소가 없습니다. 실제로 받아 볼 수 있는 받은편지함(예정: hello@aimajung.com)을 만든 뒤 NEWSLETTER_REPLY_TO 또는 newsletterReplyTo에 넣으세요.");
 
 if (!args.draft && !args.send) {
   console.log("\n점검 완료 (외부 호출 없음). 초안은 --draft, 실제 발송은 --send --confirm <날짜>.");
