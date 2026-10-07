@@ -26,7 +26,8 @@
     "daily:collect": "node scripts/daily/run.mjs --collect-only",
     "daily:run": "node scripts/daily/run.mjs",
     "daily:approve": "node scripts/daily/approve.mjs",
-    "qa:daily": "node scripts/daily/check.mjs"
+    "qa:daily": "node scripts/daily/check.mjs",
+    "daily:backtest": "node scripts/daily/backtest.mjs"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",

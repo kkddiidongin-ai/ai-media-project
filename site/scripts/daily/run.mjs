@@ -58,16 +58,21 @@ export async function runDaily(opts) {
   if (!isDateStr(date)) throw new Error(`날짜 형식 오류: ${date}`);
   const outDir = path.join(opts.out ?? DAILY_DIR, date);
   const limits = loadLimits(env);
-  const provider = resolveProvider(env);
+  // Shadow Mode: 수집·중복·선정·근거·보고서까지만. 키가 있어도 LLM을 부르지 않는다
+  const mode = String(env.DAILY_MODE ?? "").trim().toLowerCase() === "shadow" ? "shadow" : "normal";
+  const provider = mode === "shadow" ? "none" : resolveProvider(env);
   const registry = opts.registry ?? readJson(REGISTRY_FILE, { sources: [] });
   const existing = opts.existing ?? loadExisting();
   const processedFile = opts.processedFile ?? PROCESSED_FILE;
   const processed = loadProcessed(processedFile);
-  const run = { date, startedAt: new Date().toISOString(), status: "", limits, provider, model: provider === "anthropic" ? env.DAILY_LLM_MODEL || "claude-sonnet-5-5" : null };
+  const run = { date, mode, startedAt: new Date().toISOString(), status: "", limits, provider, model: provider === "anthropic" ? env.DAILY_LLM_MODEL || "claude-sonnet-5-5" : null, ...(opts.backtest ? { backtest: opts.backtest } : {}) };
   const budget = { calls: 0, inputTokens: 0, outputTokens: 0 };
 
   // 1) 수집
-  const { items, sources, since } = await collectDaily({ date, registry, limits, known: existing.candidates });
+  // 백테스트는 보존된 항목을 넘겨받는다 (지금 피드를 과거 시점 데이터처럼 쓰지 않기 위해)
+  const { items, sources, since } = opts.items
+    ? { items: opts.items, sources: opts.sources ?? [{ id: "backtest", name: "보존 데이터", status: "success" }], since: opts.since ?? date }
+    : await collectDaily({ date, registry, limits, known: existing.candidates });
   run.window = { since, until: date };
   run.sources = sources;
   log(`수집 ${items.length}건 (소스 ${sources.filter((s) => s.status === "success").length} 성공 · ${sources.filter((s) => ["failed", "blocked", "partial"].includes(s.status)).length} 실패·일부)`);
@@ -139,6 +144,7 @@ export async function runDaily(opts) {
     const depth = assessDepth(r.score, r.evidence, r.facts, r.dup);
     Object.assign(r, { depth: depth.depth, sufficiency: depth.sufficiency, deepChecks: depth.deepChecks, deepMissing: depth.deepMissing });
     if (r.evidence.status !== "OK") r.needsReview.push("source_blocked");
+    if (r.evidence.alternate?.matched) r.needsReview.push("alternate_evidence");
     if (!r.depth) {
       r.decision = "HOLD";
       r.reasons = [`근거 부족 (원문 ${r.evidence.status}, 확인 사실 ${r.facts}개) — 발행하지 않음`];
@@ -180,7 +186,10 @@ export async function runDaily(opts) {
       r.draft = prev.draft;
     } else {
       // DEEP 제안이라도 자동 원고는 STANDARD까지만 쓴다 (DEEP은 사람이 deep 원고 작성)
-      const g = await generateArticle(r.item, r.evidence, { ...ctx, suggestedDepth: r.depth === "DEEP" ? "STANDARD" : r.depth });
+      const g =
+        mode === "shadow"
+          ? { status: "skipped", provider: "none", error: "Shadow Mode — 원고를 만들지 않음" }
+          : await generateArticle(r.item, r.evidence, { ...ctx, suggestedDepth: r.depth === "DEEP" ? "STANDARD" : r.depth });
       r.generation = { provider: g.provider, model: g.model ?? null, status: g.status, ...(g.error ? { error: g.error } : {}), at: new Date().toISOString(), evidenceHash: evHash };
       r.draft = g.draft ?? null;
     }
@@ -245,7 +254,7 @@ export async function runDaily(opts) {
 
   const count = (f) => rows.filter(f).length;
   const sourceTrouble = sources.filter((s) => ["failed", "blocked", "partial"].includes(s.status));
-  const genTrouble = work.filter((r) => r.generation && r.generation.status !== "ok");
+  const genTrouble = mode === "shadow" ? [] : work.filter((r) => r.generation && r.generation.status !== "ok");
   const valFail = work.filter((r) => r.validation?.errors?.length);
   const enabled = sources.filter((s) => s.status !== "skipped");
   run.counts = {
@@ -283,7 +292,7 @@ export async function runDaily(opts) {
     company: r.company,
     stage: r.stage,
     ...(r.capStage ? { capStage: r.capStage } : {}),
-    ...(r.stage === "evidence" ? { evidenceStatus: r.evidence.status, distinctFacts: r.facts, sufficiency: r.sufficiency, deepMissing: r.deepMissing } : {}),
+    ...(r.stage === "evidence" ? { evidenceStatus: r.evidence.status, distinctFacts: r.facts, sufficiency: r.sufficiency, deepMissing: r.deepMissing, ...(r.evidence.alternate ? { alternate: r.evidence.alternate } : {}) } : {}),
     ...(r.depth !== undefined ? { suggestedDepth: r.depth } : {}),
     ...(r.carried ? { carriedFrom: r.carried } : {}),
   }));

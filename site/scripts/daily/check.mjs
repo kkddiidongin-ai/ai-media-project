@@ -33,6 +33,7 @@ const { approve } = await import("./approve.mjs");
 const providers = await import("./providers.mjs");
 const { renderReport } = await import("./report.mjs");
 const sel = await import("./select.mjs");
+const bt = await import("./backtest.mjs");
 
 let passed = 0;
 let failed = 0;
@@ -438,6 +439,78 @@ await t("회귀 same-company soft diversity: 같은 회사 3번째는 다른 회
   eq(strong.picked.map((x) => x.score.priority), [14, 13, 12], "훨씬 중요한 같은 회사 기사는 우선");
 });
 
+// ---------- 6-3) Phase 7.1.2: Shadow Mode · 대체 근거 · 백테스트 ----------
+await t("Shadow Mode: 키·anthropic 설정이 있어도 LLM 호출 0, 보고서에 Shadow 표시, 원고 없음은 실패로 치지 않음", async () => {
+  resetWeb();
+  let llm = 0;
+  const r = await runDaily(baseRun({ env: ENV({ DAILY_MODE: "shadow", DAILY_LLM_PROVIDER: "anthropic", ANTHROPIC_API_KEY: "sk-test-not-real" }), registry: { sources: [REGISTRY.sources[0]] }, fetch: async () => (llm++, new Response("{}", { status: 500 })) }));
+  eq([llm, r.run.llm.calls, r.run.provider, r.run.mode], [0, 0, "none", "shadow"]);
+  eq(r.status, "SUCCESS", "소스 정상이면 원고가 없어도 SUCCESS");
+  ok(r.run.counts.PUBLISH >= 1, "선정은 그대로");
+  const md = fs.readFileSync(path.join(r.outDir, "report.md"), "utf8");
+  ok(md.includes("Shadow Mode") && !md.includes("sk-test"), "Shadow 표시·키 노출");
+});
+await t("OpenAI 대체 근거: 원문 403이면 공식 API 변경 기록에서 '버전 붙은 이름'이 나오는 줄만 근거(확인 필요 표시), 이름이 없으면 HOLD", async () => {
+  WEB.clear();
+  const oa = { ...REGISTRY.sources[0], id: "openai", name: "OpenAI", feedUrl: "https://openai.com/news/rss.xml" };
+  WEB.set("https://openai.com/news/rss.xml", { body: rss([
+    { title: "Introducing GPT-6.1 Sol for professional work", link: "https://openai.com/index/gpt-6-1-sol", date: "Tue, 07 Oct 2026 09:00:00 GMT", desc: "GPT-6.1 Sol is now available in the API for complex coding at a lower price than GPT-6 Astra." },
+    { title: "Atlassian and OpenAI expand partnership to turn enterprise knowledge into action", link: "https://openai.com/index/atlassian", date: "Tue, 07 Oct 2026 08:00:00 GMT", desc: "Atlassian and OpenAI are expanding their partnership to connect frontier models with enterprise knowledge." },
+  ]) });
+  WEB.set("https://openai.com/index/gpt-6-1-sol", { status: 403, body: "" });
+  WEB.set("https://openai.com/index/atlassian", { status: 403, body: "" });
+  WEB.set("https://platform.openai.com/docs/changelog", { body: bodyPage(["Released GPT-6.1 Sol ( gpt-6.1-sol ) for complex coding and professional work at a lower cost than GPT-6 Astra.", "GPT-6.1 Sol also supports Multi-agent in beta in the Responses API for delegating work.", "Fixed a bug in image encoding that degraded image understanding in older snapshots."]) });
+  const r = await runDaily(baseRun({ env: ENV({ DAILY_MODE: "shadow" }), registry: { sources: [oa] } }));
+  const qdir = path.join(r.outDir, "candidates");
+  const qs = fs.readdirSync(qdir).map((f) => JSON.parse(fs.readFileSync(path.join(qdir, f), "utf8")));
+  const sol = qs.find((q) => /GPT-6\.1/.test(q.sourceTitle));
+  const atl = qs.find((q) => /Atlassian/.test(q.sourceTitle));
+  ok(sol && atl, "두 항목 모두 근거 확인");
+  eq([sol.evidence.status, sol.evidence.alternate.matched], ["HTTP_403", 2]);
+  ok(sol.evidence.ledger.some((e) => e.kind === "alternate" && e.sourceUrl === "https://platform.openai.com/docs/changelog" && e.publishedAt === null), "대체 근거 출처·날짜 없음 표시");
+  ok(sol.needsReview.includes("alternate_evidence") && sol.needsReview.includes("source_blocked"), JSON.stringify(sol.needsReview));
+  ok(sol.suggestedDepth !== "STANDARD" && sol.suggestedDepth !== "DEEP", `대체 근거만으로 깊이 ${sol.suggestedDepth}`);
+  eq([atl.decision, atl.evidence.alternate.matched], ["HOLD", 0]);
+  ok(atl.needsReview.includes("insufficient_evidence"), "근거 부족");
+});
+await t("회귀 제품 이름 접두어: 'Claude Sonnet 5' 기사와 'Claude Sonnet 5.5' 발표는 같은 사안으로 보지 않음", async () => {
+  ok(!lib.mentionsProduct("Claude Opus 5.5 and Claude Sonnet 5.5 are available", "Claude Sonnet 5"), "5 vs 5.5");
+  ok(lib.mentionsProduct("New Claude Sonnet 5 pricing", "Claude Sonnet 5"), "같은 버전");
+  ok(!lib.mentionsProduct("Gizmo Pro 30 launched", "Gizmo Pro 3"), "3 vs 30");
+  const ex = { ...existing(), stories: [{ slug: "claude-sonnet-5", title: "x", sourceUrl: "https://a.test/s5", secondarySources: [], sourceTitle: "Claude Sonnet 5", sourceName: "Anthropic", eventDate: "2026-09-20", products: ["Claude Sonnet 5"] }] };
+  const it = { id: "aaaaaaaaaaaa", url: "https://b.test/x", canonicalUrl: "https://b.test/x", title: "Supercharge regulated workloads with Claude Code and Amazon Bedrock", excerpt: "Anthropic Claude Opus 5.5 and Claude Sonnet 5.5 are available on Amazon Bedrock in the AWS GovCloud (US) Regions.", publishedAt: "2026-10-05T10:00:00Z", sourceName: "AWS" };
+  eq(lib.dedupeItem(it, ex).result, "NEW");
+});
+await t("백테스트: 실행 시각(D-1 22:00 UTC) 이전 발표만·창 밖 제외·스냅숏 없는 날 표시, D 이전 사람 발행만 기존 기사", async () => {
+  const snapshot = { capturedAt: "2026-10-07T15:30:00Z", window: { since: "2026-10-05" }, items: [
+    { id: "s1", url: "https://x.test/1", title: "A", excerpt: "", publishedAt: "2026-10-05T10:00:00Z" },
+    { id: "s2", url: "https://x.test/2", title: "B", excerpt: "", publishedAt: "2026-10-06T23:00:00Z" },
+  ] };
+  const a = bt.itemsAsOf("2026-10-07", { snapshot, candidates: new Map([["c1", { id: "c1", url: "https://x.test/c1", title: "C", description: "", publishedAt: "2026-10-04T05:00:00Z" }]]) });
+  eq(a.items.map((i) => i.id), ["s1"], "실행 시각 뒤 발표·창 밖 제외");
+  eq(a.runTime, "2026-10-06T22:00:00.000Z");
+  const b = bt.itemsAsOf("2026-10-06", { snapshot, candidates: new Map([["c1", { id: "c1", url: "https://x.test/c1", title: "C", description: "", publishedAt: "2026-10-04T05:00:00Z" }]]) });
+  eq([b.items.map((i) => i.origin), b.coverage.uncoveredDays], [["snapshot", "candidates"], ["2026-10-04"]]);
+  const full = { stories: [{ slug: "p", publishedAt: "2026-10-06", candidateId: "s1", secondarySources: [] }, { slug: "q", publishedAt: "2026-10-05", candidateId: "zz", secondarySources: [] }] };
+  eq(bt.existingAsOf("2026-10-06", full).stories.map((s) => s.slug), ["q"], "D 당일 발행분은 아직 없던 기사");
+});
+await t("백테스트 평가: 발표 전 NOT_YET · 이미 사람 발행 DUP_OK/DUP_MISSED · 추천 RECOMMENDED · 사람 미발행 추천 목록", async () => {
+  const full = { stories: [
+    { slug: "later", eventDate: "2026-10-06", sourcePublishedAt: "2026-10-06T23:00:00Z", publishedAt: "2026-10-07", candidateId: "l1", sourceUrl: "https://x.test/l1" },
+    { slug: "already", eventDate: "2026-10-05", sourcePublishedAt: "2026-10-05T01:00:00Z", publishedAt: "2026-10-05", candidateId: "a1", sourceUrl: "https://x.test/a1" },
+    { slug: "rec", eventDate: "2026-10-06", sourcePublishedAt: "2026-10-06T01:00:00Z", publishedAt: "2026-10-07", candidateId: "r1", sourceUrl: "https://x.test/r1" },
+  ] };
+  const run = { items: [
+    { id: "a1", url: "https://x.test/a1", duplicate: "DUPLICATE", decision: "EXCLUDE", reasons: [] },
+    { id: "r1", url: "https://x.test/r1", duplicate: "NEW", decision: "PUBLISH", stage: "evidence", reasons: [] },
+    { id: "x9", url: "https://x.test/x9", duplicate: "NEW", decision: "PUBLISH", stage: "evidence", reasons: [], title: "Extra", source: "S" },
+  ] };
+  const ev = bt.evaluate("2026-10-07", run, full, { since: "2026-10-05", runTime: "2026-10-06T22:00:00.000Z", items: [] });
+  eq(ev.truth.map((x) => x.outcome), ["NOT_YET", "DUP_OK", "RECOMMENDED"]);
+  eq(ev.recall, { recommended: 1, shortlisted: 1, of: 1 });
+  eq(ev.recommendedNotPublishedByHuman.map((x) => x.title), ["Extra"]);
+});
+
 // ---------- 7) 승인 ----------
 const Q = path.join(tmp, "queue");
 const wItem = col.items.find((i) => i.url.endsWith("/widget-2"));
@@ -521,6 +594,16 @@ await t("워크플로: master 직접 push 없음, automation/daily-* 브랜치·
   ok(!/vercel|newsletter|daily:approve|publish:/.test(wf), "배포·뉴스레터·승인·발행이 워크플로에 있음");
   ok(/gh pr list --head "\$B" --state open/.test(wf), "같은 날짜 PR 재사용");
   ok(!/ANTHROPIC_API_KEY[^:]*\becho|echo .*ANTHROPIC/.test(wf), "키 출력");
+  // Shadow Mode: LLM 키를 넘기지 않고 공급자 none 고정
+  ok(/DAILY_MODE: shadow/.test(wf) && /DAILY_LLM_PROVIDER: none/.test(wf), "Shadow 고정");
+  ok(!/secrets\.ANTHROPIC_API_KEY|ANTHROPIC_API_KEY:/.test(wf), "LLM 키가 워크플로에 전달됨");
+  // 보고서 fallback: Summary + artifact는 항상, PR은 실패해도 계속
+  ok(/actions\/upload-artifact@v4/.test(wf) && /name: daily-report-\$\{\{ steps\.d\.outputs\.date \}\}/.test(wf) && /overwrite: true/.test(wf), "artifact 업로드");
+  const step = (name) => wf.split(/\n      - name: /).find((x) => x.startsWith(name)) ?? "";
+  ok(/if: always\(\)/.test(step("Upload report artifact")), "artifact는 항상");
+  ok(/continue-on-error: true/.test(step("Branch + PR")), "PR 실패가 artifact를 막지 않음");
+  ok(/GITHUB_STEP_SUMMARY/.test(step("Job summary")), "Summary");
+  ok(wf.indexOf("Upload report artifact") < wf.indexOf("Branch + PR"), "artifact가 PR보다 먼저");
 });
 await t("자동화 코드: 뉴스레터 발송·Resend·content 직접 쓰기·git push 없음", async () => {
   for (const f of ["lib.mjs", "run.mjs", "providers.mjs", "report.mjs"]) {

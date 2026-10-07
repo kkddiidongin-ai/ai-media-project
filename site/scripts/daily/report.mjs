@@ -18,6 +18,8 @@ const FLAG_KO = {
   source_blocked: "원문을 읽지 못함",
   insufficient_evidence: "근거 부족",
   deep_requires_editor: "DEEP 제안 — 사람이 심층 원고 작성",
+  alternate_evidence: "공식 대체 문서 근거 — 날짜·대응 확인 필요",
+  press_only: "언론 보도만 — 공식 발표 확인 필요",
 };
 const flags = (list) => (list?.length ? list.map((f) => FLAG_KO[f] ?? f).join(", ") : "없음");
 const TYPE_KO = { NEWS: "소식", HOW_TO: "사용법", CUSTOMER_STORY: "고객 사례", INDUSTRY_STORY: "업계 이야기", THOUGHT_LEADERSHIP: "의견·전망", EVENT: "행사", HIRING: "채용·인사", DOCS_ONLY: "문서·소소한 갱신", MARKETING: "홍보", RESEARCH_PAPER: "논문" };
@@ -34,7 +36,7 @@ export function renderDiagnostics(run) {
   for (const i of byPrio.slice(0, 10)) L.push(`- ${i.score} · ${TYPE_KO[i.contentType] ?? i.contentType}${i.typePenalty ? ` ${i.typePenalty}` : ""} · ${(i.signals ?? []).join("·") || "신호 없음"} — ${short(i.title)} → **${i.decision}**`);
   const sl = items.filter((i) => i.stage === "evidence");
   L.push("", `**근거 확인 명단 ${sl.length}건** (원문 요청 상한 ${run.limits.maxEvidenceFetches}, 최종 추천 상한 ${run.limits.maxPublishPerDay})`);
-  for (const i of sl.sort((a, b) => b.score - a.score)) L.push(`- ${short(i.title)} — 원문 ${i.evidenceStatus} · 확인 사실 ${i.distinctFacts} · ${i.sufficiency ?? "-"} · 깊이 ${i.suggestedDepth ?? "-"} → **${i.decision}**`);
+  for (const i of sl.sort((a, b) => b.score - a.score)) L.push(`- ${short(i.title)} — 원문 ${i.evidenceStatus}${i.alternate ? ` (대체 문서 ${i.alternate.matched}줄${i.alternate.reason ? `: ${i.alternate.reason}` : ""})` : ""} · 확인 사실 ${i.distinctFacts} · ${i.sufficiency ?? "-"} · 깊이 ${i.suggestedDepth ?? "-"} → **${i.decision}**`);
   const capped = items.filter((i) => i.capStage);
   L.push("", `**상한·다양성으로 빠진 후보 ${capped.length}건**`);
   if (!capped.length) L.push("- 없음");
@@ -59,6 +61,8 @@ export function renderReport(run, queue) {
   const c = run.counts;
   const L = [];
   L.push(`# AI마중 DAILY — ${run.date}`, "");
+  if (run.mode === "shadow") L.push("> 🕶️ **Shadow Mode** — 수집·중복·선정·근거 확인·보고서까지만 실행했습니다. 원고 생성(LLM)·기사 발행·뉴스레터·배포는 하지 않습니다.", "");
+  if (run.backtest) L.push(`> 🔁 **Backtest** — ${run.backtest.note}`, "");
   L.push(`**상태: ${run.status} (${STATUS_KO[run.status] ?? run.status})** · 수집 창 ${run.window.since} ~ ${run.window.until} (발표일 기준)`, "");
   L.push("| 수집 | 신규 | 후속 | 중복 | 불확실 | 발행 추천 | 보류 | 제외 | 원고 |", "|---|---|---|---|---|---|---|---|---|");
   L.push(`| ${c.collected} | ${c.NEW} | ${c.UPDATE_EXISTING} | ${c.DUPLICATE} | ${c.UNCERTAIN} | ${c.PUBLISH} | ${c.HOLD} | ${c.EXCLUDE} | ${c.drafts} |`, "");

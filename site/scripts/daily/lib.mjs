@@ -181,6 +181,14 @@ const UPDATE_RE = /\b(now (generally )?available|generally available|\bGA\b|expa
  */
 const specificProducts = (s) => (s.products ?? []).filter((p) => p.length >= 4 && /\d/.test(p));
 const daysBetween = (a, b) => Math.abs(Date.parse(a) - Date.parse(b)) / 86400_000;
+/**
+ * 제품 이름이 '그 버전 그대로' 나오는지. 'Claude Sonnet 5'는 'Claude Sonnet 5.5' 안에서 찾지 않는다
+ * (2026-10-07 백테스트에서 접두어 일치로 UNCERTAIN 오판 확인)
+ */
+export function mentionsProduct(text, product) {
+  const esc = product.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  return new RegExp(`(^|[^\\w.])${esc}(?![\\w]|\\.\\d)`, "i").test(text);
+}
 
 /**
  * NEW · UPDATE_EXISTING · DUPLICATE · UNCERTAIN
@@ -202,7 +210,7 @@ export function dedupeItem(item, existing) {
   if (best && best.sim >= 0.75) return { result: "DUPLICATE", reason: `원문 제목이 기존 기사와 거의 같음 (${best.sim.toFixed(2)})`, matchSlug: best.slug };
   const text = `${item.title} ${item.excerpt}`;
   for (const s of existing.stories.filter((x) => x.eventDate && daysBetween(x.eventDate, item.publishedAt) <= 120)) {
-    const hit = specificProducts(s).find((p) => text.toLowerCase().includes(p.toLowerCase()));
+    const hit = specificProducts(s).find((p) => mentionsProduct(text, p));
     if (!hit) continue;
     if (UPDATE_RE.test(text) && s.sourceName === item.sourceName) return { result: "UPDATE_EXISTING", reason: `기존 기사(${hit})의 후속 발표로 보임`, matchSlug: s.slug };
     return { result: "UNCERTAIN", reason: `기존 기사와 같은 제품(${hit}) — 같은 사안인지 사람이 판단`, matchSlug: s.slug };
@@ -243,6 +251,43 @@ export function evidenceGrade(officialChars, best) {
 }
 
 /**
+ * 원문이 봇 차단(403 등)일 때 볼 수 있는 같은 회사의 '공식' 대체 문서.
+ * robots.txt가 허용하고 실제로 열리는 곳만 (2026-10-08 조사: openai.com 기사·help.openai.com은 Cloudflare 챌린지 403,
+ * platform.openai.com/docs/changelog는 열림, github.com 릴리스 피드는 robots가 막음).
+ * 대체 문서는 날짜를 안정적으로 분리하지 못하므로, 제목의 '버전 붙은 이름'(GPT-6.1 등)이 그대로 나오는 줄만 쓰고
+ * 언제나 사람이 날짜·대응을 확인하도록 alternate_evidence로 표시한다. 맞는 줄이 없으면 근거로 쓰지 않는다 (HOLD).
+ */
+export const ALTERNATE_EVIDENCE = {
+  openai: [{ url: "https://platform.openai.com/docs/changelog", name: "OpenAI API Changelog" }],
+};
+/** 제목에서 대체 문서와 맞춰 볼 고유한 이름: 숫자가 붙은 이름만 (GPT-6.1 Sol, Codex 2 …) */
+export const distinctiveNames = (title) => [...new Set(String(title).match(/\b[A-Z][A-Za-z]*(?:[- ][A-Za-z]*\d[A-Za-z0-9.]*)+(?: [A-Z][a-z]+)?/g) ?? [])].filter((n) => /\d/.test(n) && n.length >= 4);
+
+export async function gatherAlternate(item, { hostFails }) {
+  const alts = ALTERNATE_EVIDENCE[item.sourceId] ?? [];
+  const names = distinctiveNames(item.title);
+  const out = [];
+  if (!alts.length || !names.length) return { ledger: out, tried: alts.map((a) => a.url), reason: names.length ? "대체 문서 없음" : "제목에 버전 붙은 이름 없음" };
+  const checkedAt = new Date().toISOString();
+  for (const alt of alts) {
+    const host = new URL(alt.url).host;
+    if ((hostFails.get(host) ?? 0) >= 2 || !(await robotsAllowed(alt.url))) continue;
+    try {
+      const r = await politeFetch(alt.url, { delay: 1500, accept: "text/html" });
+      if (!r.ok) {
+        await r.body?.cancel();
+        continue;
+      }
+      const lines = bodyText(await r.text()).split("\n").map((l) => l.replace(/^•\s*/, "").trim()).filter((l) => l.length >= 40);
+      for (const l of lines) if (names.some((n) => l.toLowerCase().includes(n.toLowerCase())) && out.length < 6) out.push({ kind: "alternate", text: l.length > 280 ? `${l.slice(0, 277)}…` : l, sourceUrl: alt.url, source: alt.name, publishedAt: null, checkedAt });
+    } catch {
+      hostFails.set(host, (hostFails.get(host) ?? 0) + 1);
+    }
+  }
+  return { ledger: out, tried: alts.map((a) => a.url), reason: out.length ? "" : "대체 문서에 맞는 줄 없음" };
+}
+
+/**
  * 후보의 공식 원문을 읽어 근거 장부를 만든다. robots·403·429·시간 초과는 우회하지 않는다.
  * 본문 전문은 저장하지 않고 고른 문장만 남긴다.
  */
@@ -276,6 +321,12 @@ export async function gatherEvidence(item, { hostFails }) {
     }
   }
   out.grade = item.sourceType === "official" ? evidenceGrade(out.chars, out.chars) : "FAIL";
+  // 원문이 막혔으면 같은 회사의 공식 대체 문서에서 '버전 붙은 이름'이 그대로 나오는 줄만 근거로 (사람 확인 필수)
+  if (out.status !== "OK" && ALTERNATE_EVIDENCE[item.sourceId]) {
+    const alt = await gatherAlternate(item, { hostFails });
+    out.alternate = { tried: alt.tried, matched: alt.ledger.length, reason: alt.reason };
+    alt.ledger.forEach((e, i) => ledger.push({ id: `A${i + 1}`, ...e }));
+  }
   return out;
 }
 

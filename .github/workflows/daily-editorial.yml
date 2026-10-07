@@ -1,12 +1,16 @@
-# AI마중 DAILY — 자동 수집·편집·검증·승인 대기 (Phase 7.1)
+# AI마중 DAILY — Shadow Mode (Phase 7.1.2)
 #
-# 하는 일: 공식 출처 수집 → 중복 판정 → 편집 판정 → 근거 확인 → (키가 있으면) 원고 생성 → 검증 → 보고서
-# 결과는 automation/daily-<날짜> 브랜치에 커밋하고 PR을 연다 (같은 날짜 재실행은 같은 브랜치·같은 PR을 갱신).
-# 하지 않는 일: master 직접 push, content/ 발행, 배포, 뉴스레터 생성·발송. 승인·발행은 사람이 한다.
+# 하는 일: 공식 출처 수집 → 중복 판정 → 선정 → 근거 확인 → 보고서 (Shadow Mode)
+# 하지 않는 일: LLM 원고 생성, 기사 발행(content/), master push, 배포, 뉴스레터 생성·발송.
 #
-# 켜고 끄기(킬 스위치): Settings → Secrets and variables → Actions → Variables
-#   DAILY_AUTOMATION_ENABLED = true  일 때만 실행. 지우거나 다른 값이면 아무것도 하지 않는다.
-# 일정: 매일 22:00 UTC = 한국 시간 07:00. GitHub schedule은 정시 실행을 보장하지 않는다 (수 분~수십 분 늦을 수 있음).
+# 결과를 남기는 곳 (PR이 권한 때문에 실패해도 보고서는 반드시 남는다):
+#   1) 실행 화면의 Summary (보고서 본문)
+#   2) Artifact  daily-report-<날짜>  (run.json · report.md · candidates/) — 같은 날짜의 예전 artifact는 지우고 하나만 둔다
+#   3) automation/daily-<날짜> 브랜치 + PR (권한이 있을 때만, 같은 날짜는 같은 브랜치·같은 PR을 갱신)
+#
+# 켜기/끄기(킬 스위치): Settings → Secrets and variables → Actions → Variables
+#   DAILY_AUTOMATION_ENABLED = true 일 때만 실행. 지우거나 다른 값이면 job 자체를 건너뛴다.
+# 일정: 매일 22:00 UTC = 한국 시간 07:00. GitHub schedule은 정시 실행을 보장하지 않는다 (수 분~수십 분 늦거나 드물게 건너뜀).
 
 name: AI마중 DAILY
 
@@ -21,8 +25,9 @@ on:
         type: string
 
 permissions:
-  contents: write
+  contents: write # automation/daily-* 브랜치에만 push
   pull-requests: write
+  actions: write # 같은 날짜의 예전 보고서 artifact 정리
 
 concurrency:
   group: aimajung-daily
@@ -70,16 +75,15 @@ jobs:
       - name: Automation QA (fixtures, no network)
         run: npm run qa:daily
 
-      - name: Daily run
+      # Shadow Mode: LLM 키를 넘기지 않고, 공급자도 none으로 고정한다
+      - name: Daily run (shadow)
         id: run
         env:
           DAILY_AUTOMATION_ENABLED: ${{ vars.DAILY_AUTOMATION_ENABLED }}
-          DAILY_LLM_PROVIDER: ${{ vars.DAILY_LLM_PROVIDER }}
-          DAILY_LLM_MODEL: ${{ vars.DAILY_LLM_MODEL }}
+          DAILY_MODE: shadow
+          DAILY_LLM_PROVIDER: none
           DAILY_MAX_PUBLISH: ${{ vars.DAILY_MAX_PUBLISH }}
           DAILY_MAX_EVIDENCE_FETCHES: ${{ vars.DAILY_MAX_EVIDENCE_FETCHES }}
-          DAILY_MAX_LLM_CALLS: ${{ vars.DAILY_MAX_LLM_CALLS }}
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: npm run daily:run -- --date "${{ steps.d.outputs.date }}" --out "$RUNNER_TEMP/daily"
 
       - name: Save processed index
@@ -89,15 +93,47 @@ jobs:
           path: site/ingest/log/daily-processed.json
           key: daily-processed-${{ github.run_id }}
 
+      # 보고서는 실행 화면 Summary에 항상 남긴다
+      - name: Job summary
+        if: always() && steps.run.outcome != 'skipped'
+        env:
+          D: ${{ steps.d.outputs.date }}
+        run: |
+          F="$RUNNER_TEMP/daily/$D/report.md"
+          if [ -f "$F" ]; then cat "$F" >> "$GITHUB_STEP_SUMMARY"; else echo "보고서 없음 (실행 실패 — 로그 확인)" >> "$GITHUB_STEP_SUMMARY"; fi
+
+      # 같은 날짜의 예전 artifact를 지우고 하나만 남긴다 (권한이 없으면 건너뜀)
+      - name: Remove older report artifacts for this date
+        if: always() && steps.run.outcome != 'skipped'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+          D: ${{ steps.d.outputs.date }}
+        run: |
+          gh api "repos/${{ github.repository }}/actions/artifacts?name=daily-report-$D&per_page=100" --jq '.artifacts[] | select(.workflow_run.id != ${{ github.run_id }}) | .id' \
+            | while read -r ID; do gh api -X DELETE "repos/${{ github.repository }}/actions/artifacts/$ID"; done
+
+      - name: Upload report artifact (fallback)
+        if: always() && steps.run.outcome != 'skipped'
+        uses: actions/upload-artifact@v4
+        with:
+          name: daily-report-${{ steps.d.outputs.date }}
+          path: ${{ runner.temp }}/daily/${{ steps.d.outputs.date }}
+          if-no-files-found: warn
+          overwrite: true
+          retention-days: 30
+
+      # PR은 권한이 있을 때만. 실패해도 위의 Summary·artifact로 보고서는 남는다
       - name: Branch + PR (never master)
         if: always() && steps.run.outcome != 'skipped'
+        continue-on-error: true
         env:
           GH_TOKEN: ${{ github.token }}
           D: ${{ steps.d.outputs.date }}
         run: |
           set -euo pipefail
           SRC="$RUNNER_TEMP/daily/$D"
-          [ -f "$SRC/report.md" ] || { echo "보고서 없음 (자동화 꺼짐 또는 실행 실패)"; exit 0; }
+          [ -f "$SRC/report.md" ] || { echo "보고서 없음"; exit 0; }
           B="automation/daily-$D"
           case "$B" in automation/daily-*) ;; *) echo "unsafe branch"; exit 1;; esac
           git config user.name "aimajung-daily[bot]"
@@ -115,12 +151,12 @@ jobs:
           if git diff --cached --quiet; then
             echo "변경 없음"
           else
-            git commit -m "chore(daily): AI마중 DAILY $D"
+            git commit -m "chore(daily): AI마중 DAILY $D (shadow)"
             git push origin "HEAD:refs/heads/$B"
           fi
           PR=$(gh pr list --head "$B" --state open --json number -q '.[0].number')
           if [ -z "$PR" ]; then
-            gh pr create --base "${{ github.event.repository.default_branch }}" --head "$B" --title "AI마중 DAILY $D (승인 대기)" --body-file "ingest/daily/$D/report.md"
+            gh pr create --base "${{ github.event.repository.default_branch }}" --head "$B" --title "AI마중 DAILY $D (shadow · 승인 대기)" --body-file "ingest/daily/$D/report.md"
           else
             gh pr edit "$PR" --body-file "ingest/daily/$D/report.md"
           fi

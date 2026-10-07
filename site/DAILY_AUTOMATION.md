@@ -1,9 +1,12 @@
-# AI마중 DAILY 자동화 (Phase 7.1 · 7.1.1 선정 보정)
+# AI마중 DAILY 자동화 (Phase 7.1 · 7.1.1 선정 보정 · 7.1.2 Shadow Mode)
 
 매일 아침 공식 AI 출처를 자동으로 모으고, 중복·가치·근거를 확인해 **승인 대기 결과**까지 만든다.
 **기사 발행·배포·뉴스레터 발송은 자동으로 하지 않는다.** 사람이 보고서를 보고 승인한 것만 기존 발행 흐름(`DAILY_PUBLISHING.md`)으로 들어간다.
 
 원칙: **AI, 해본 만큼만 말합니다.** 정보가 부족하면 발행하지 않는다. 0건인 날도 정상이다.
+
+> **현재 운영 단계: Shadow Mode (7.1.2).** GitHub Actions는 매일 수집·중복·선정·근거 확인·보고서까지만 한다.
+> LLM 원고 생성·기사 발행·뉴스레터·배포는 하지 않는다 (워크플로에서 `DAILY_MODE=shadow`, `DAILY_LLM_PROVIDER=none` 고정, LLM 키를 넘기지 않음).
 
 ## 1. 전체 흐름
 
@@ -75,20 +78,39 @@ GitHub Actions (매일 07:00 KST 전후)
    통과하면 `ingest/candidates/<월>.json`·`ingest/editorial/<월>.json`에 한 건씩 덧붙이고 `publish.mjs`를 돌린다(실패하면 되돌림).
 4. `npm run publish:daily` (전체 QA·빌드) → diff 확인 → 커밋·푸시·배포는 사람이 직접. 다 쓴 DAILY PR은 닫는다(대기열 기록은 PR에 남는다).
 
-## 5. GitHub Actions
+## 5. GitHub Actions (Shadow Mode)
 
 `.github/workflows/daily-editorial.yml`
 - 일정: `0 22 * * *` (UTC 22:00 = **KST 07:00**). GitHub의 schedule은 정시를 보장하지 않는다 — 부하에 따라 수 분~수십 분 늦거나 드물게 건너뛸 수 있다. 수동 실행(workflow_dispatch, 날짜 지정)도 된다.
-- 순서: checkout → Node 24 → `npm ci` → 처리 기록 캐시 복원 → `npm run qa:daily`(고정 데이터 시험) → `npm run daily:run` → 캐시 저장 → 브랜치·PR.
-- 브랜치: `automation/daily-<날짜>`. 같은 날짜를 다시 돌리면 **같은 브랜치에 커밋을 더하고 열린 PR 본문을 갱신**한다 (브랜치·PR이 늘어나지 않음). force push 없음. master로는 push하지 않는다.
+- 순서: checkout → Node 24 → `npm ci` → 처리 기록 캐시 복원 → `npm run qa:daily`(고정 데이터 시험) → `npm run daily:run` (shadow) → 캐시 저장 → **Summary** → **artifact** → 브랜치·PR.
+- 보고서가 남는 곳 (PR이 실패해도 앞의 두 곳에는 반드시 남는다):
+  1. 실행 화면 **Summary** — report.md 본문
+  2. **Artifact `daily-report-<날짜>`** — run.json · report.md · candidates/ (30일 보관). 같은 날짜의 예전 artifact는 지우고 하나만 둔다 (`actions: write` 권한이 없으면 지우기만 건너뜀)
+  3. **브랜치 `automation/daily-<날짜>` + PR** — 권한이 있을 때만. 이 단계는 `continue-on-error`라 실패해도 실행 전체가 실패로 바뀌지 않는다 (로그에 경고)
+- 같은 날짜 재실행: 같은 브랜치에 커밋을 더하고 열린 PR 본문을 갱신 (브랜치·PR이 늘지 않음). force push 없음. master로는 push하지 않는다. Shadow Mode라 LLM 호출은 0이다.
 - 처리 기록(`ingest/log/daily-processed.json`)은 Actions 캐시로 이어 쓴다 — 전날 다룬 URL을 다시 원고로 만들지 않는다 (캐시가 비면 다시 판정만 한다).
 
-## 6. 필요한 설정 (GitHub → Settings)
+## 6. 실제로 켜는 방법 (GitHub 화면에서 사람이 직접)
+
+1. **Settings → Actions → General**
+   - *Actions permissions*: Allow all actions and reusable workflows (또는 GitHub 공식 actions 허용 — `actions/checkout`·`setup-node`·`cache`·`upload-artifact`를 씀)
+   - *Workflow permissions*: **Read and write permissions** 선택
+   - **Allow GitHub Actions to create and approve pull requests** 체크 (PR을 받으려면 필요. 안 켜면 PR 단계만 실패하고 Summary·artifact는 남는다)
+   - Save
+2. **Settings → Secrets and variables → Actions → Variables 탭 → New repository variable**
+   - Name `DAILY_AUTOMATION_ENABLED`, Value `true` → Add variable (이 순간부터 매일 22:00 UTC에 돈다)
+3. 바로 확인: **Actions → AI마중 DAILY → Run workflow** (날짜 비우면 오늘) → 실행 화면 Summary와 Artifacts의 `daily-report-<날짜>` 확인
+4. 끄기: 같은 Variable을 `false`로 바꾸거나 삭제 (job이 건너뛰어진다). 또는 Actions → AI마중 DAILY → ⋯ → Disable workflow
+5. (권장) Settings → Branches → master에 보호 규칙 (직접 push 금지·PR 필요)
+
+Shadow Mode에서는 **Secret이 필요 없다** (`ANTHROPIC_API_KEY`를 넣어도 워크플로가 넘기지 않는다).
+
+### 설정 값 목록
 
 | 종류 | 이름 | 값 | 필수 |
 |---|---|---|---|
 | Variable | `DAILY_AUTOMATION_ENABLED` | `true` (킬 스위치) | 실행하려면 필수 |
-| Secret | `ANTHROPIC_API_KEY` | Anthropic API 키 | 원고 생성 시 (없으면 수집·판정·근거·보고서까지만) |
+| Secret | `ANTHROPIC_API_KEY` | Anthropic API 키 | Shadow Mode에서는 쓰지 않음 (7.2 이후 원고 생성 시) |
 | Variable | `DAILY_LLM_PROVIDER` | `anthropic` · `none` | 선택 (기본: 키 있으면 anthropic) |
 | Variable | `DAILY_LLM_MODEL` | 예: `claude-sonnet-5-5` | 선택 (기본값 같음) |
 | Variable | `DAILY_MAX_PUBLISH`(최종 추천 수), `DAILY_MAX_EVIDENCE_FETCHES`(근거 확인 명단), `DAILY_MAX_LLM_CALLS` | 숫자 | 선택 (상한 이하로만, 7.1의 `DAILY_MAX_CANDIDATES`는 `DAILY_MAX_PUBLISH`로 읽음) |
@@ -135,7 +157,31 @@ npm run qa:daily                                                                
 ```
 `--out`을 생략하면 `ingest/daily/<날짜>/`에 쓴다 (PR용 위치).
 
-## 11. Phase 7.2(자동 발행)를 열기 전에 확인할 조건
+## 11. 백테스트 (`npm run daily:backtest`)
+
+과거 날짜 D를 'D 07:00 KST(= D-1 22:00 UTC)에 돌았다면'으로 재현한다. **지금 피드를 그때의 완전한 데이터처럼 쓰지 않는다.**
+- 항목: 보존된 피드 스냅숏(`scripts/daily/fixtures/2026-10-07-metadata.json`, 2026-10-07 15:30 UTC 수집) 중 실행 시각 이전 발표 + `ingest/candidates` 기록(사후 보존, origin 표시). 스냅숏 수집 창 이전 날짜는 '스냅숏 없는 날'로 표시하고 평가하지 않는다.
+- 기존 기사: D 이전에 사람이 발행한 기사만.
+- 근거 원문은 지금 다시 읽는다 (당시와 다를 수 있음). LLM 호출 없음.
+- 평가: 사람이 발행한 기사(원 발표일이 창 안) 기준 recall · 사람이 발행하지 않은 추천 · 누락 이유 · 원문 차단 · 중복 판정. 결과는 `ingest/log/backtest/` (git 제외).
+- Shadow Mode 보고서가 쌓이면 그날그날의 실제 피드가 artifact로 남으므로, 이후 백테스트는 그 보고서를 기준으로 하면 된다.
+
+## 12. 원문이 막힌 출처 (OpenAI) — 2026-10-08 조사
+
+우리 봇 이름(`AImajungBot`)으로, robots.txt를 먼저 보고, 막히면 요청하지 않는 조건에서:
+
+| 문서 | 결과 |
+|---|---|
+| openai.com robots.txt | `User-agent: *` 허용 |
+| openai.com 기사 (`/index/…`) | **403 · Cloudflare 챌린지** (`cf-mitigated: challenge`) — 서버가 봇을 막음. 챌린지 풀기·브라우저 위장은 하지 않는다 |
+| help.openai.com 릴리스 노트 | 403 · Cloudflare 챌린지 |
+| openai.com/news/rss.xml (공식 RSS) | 200 — 제목·짧은 설명(약 150자)·분류·날짜만, 본문(content:encoded) 없음 → 근거 한 줄(E0)뿐 |
+| platform.openai.com/docs/changelog (공식 API 변경 기록) | 200 — 읽힘. 다만 본문 추출 시 날짜를 안정적으로 분리하지 못함 |
+| github.com/openai/… 릴리스 피드 | robots.txt가 막음 → 요청하지 않음 |
+
+적용 (`ALTERNATE_EVIDENCE`, `scripts/daily/lib.mjs`): OpenAI 원문이 막히면 API 변경 기록에서 **제목의 버전 붙은 이름**(예: GPT-6.1 Sol)이 그대로 나오는 줄만 근거로 쓰고 `alternate_evidence`(날짜·대응 사람 확인)로 표시한다. 대체 근거는 '본문 사실'로 세지 않아 최대 SHORT. 파트너십·연구·정책처럼 버전 이름이 없는 글은 맞는 줄이 없으므로 **HOLD** (확인 불가 사실은 쓰지 않는다). 사람이 브라우저로 원문을 확인해 수동 발행하는 것은 기존 흐름대로 가능하다.
+
+## 13. Phase 7.2(자동 발행)를 열기 전에 확인할 조건
 
 - 선정 보정(7.1.1) 이후 매일 보고서의 선정 진단으로 오선정·누락을 기록 (특히 사용법·사례 글이 추천에 남는지, 주요 발표가 빠지는지)
 - 실제 LLM 원고로 최소 2~3주 운영: 발행 추천 대비 승인 비율, 사람이 고친 비율, 확인 필요 항목의 실제 오류 비율을 기록
