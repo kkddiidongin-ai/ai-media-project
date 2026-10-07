@@ -4188,23 +4188,30 @@
   {
     "id": "s-20260708-41b85c",
     "slug": "openai-government-national-security-principles",
-    "title": "OpenAI, 정부·국가안보 협력 원칙 공개",
-    "summary": "책임 있는 사용, 민주적 책임성, 공공 안전을 원칙으로 내세웠습니다.",
+    "title": "OpenAI, 국가안보 원칙 공개… 대규모 국내 감시·자율무기 지휘엔 선 그어",
+    "summary": "OpenAI가 정부·국가안보 협력에 적용할 'National Security Principles'를 공개했습니다. 사이버 방어·생물보안 협력을 넓히면서도, 대규모 국내 감시나 자율무기 지휘에는 자사 기술을 쓰게 하지 않겠다고 밝혔습니다.",
     "category": "REGULATION",
     "topics": [
       "openai",
-      "ai-regulation"
+      "ai-regulation",
+      "ai-security"
     ],
     "companies": [
       "OpenAI"
     ],
-    "products": [],
+    "products": [
+      "Daybreak",
+      "GPT-Rosalind"
+    ],
     "facts": [
-      "OpenAI가 책임 있는 AI 사용, 민주적 책임성, 공공 안전을 원칙으로 하는 정부·국가안보 파트너십 접근 방식을 설명했습니다.",
+      "OpenAI는 원칙의 방향으로 민주적 책임성, 의미 있는 인간 판단, 법치, 권력 집중을 막고 민주 제도를 강화하는 것을 제시했습니다.",
+      "가능한 활용 분야로는 사람 보호, 핵심 기반시설 방어, 공공 서비스, 새로운 위협 대응, 사이버 방어, 생물 보안을 꼽았습니다.",
+      "OpenAI는 이 원칙이 기존 전쟁부(Department of War) 계약을 포함한 현재·향후 국가안보·법 집행 협력에 적용된다고 밝혔습니다. 대규모 국내 감시, 자율무기 시스템 지휘, 고위험 자동 결정에는 자사 기술 사용을 지원하지 않겠다는 입장입니다.",
+      "사이버 방어 모델 Daybreak의 Trusted Access for Cyber 파트너에는 호주, 캐나다, 일본, 대한민국, 프랑스, 독일, 폴란드, 네덜란드와 EU 기관 ENISA가 포함됐습니다. 영국 정부와는 사이버·시험·평가 협력을 넓히고, GPT-Rosalind 신뢰 접근은 공중보건·생물방어 목적으로 일부 미국 정부·동맹국 파트너에게 확대합니다.",
       "7월 15일에는 주(州) 법이 국가 차원의 틀을 만드는 데 기여하는 '역(逆) 연방주의' 방식의 AI 거버넌스를 제안했습니다."
     ],
-    "whyItMatters": "6월 연방 단일 규제를 요구했던 것과 달리, 주 법의 역할을 인정하는 쪽으로 무게가 옮겨졌습니다. 8월 캘리포니아 청소년 법안 지지로 이어집니다.",
-    "whatChanges": "원칙 발표라 서비스 변화는 없지만, 군·정보기관의 AI 사용 기준을 논의할 때 참고할 회사 측 입장입니다.",
+    "whyItMatters": "정부·국방 사업을 넓히는 시점에 OpenAI가 스스로 어디까지 하지 않겠다고 선을 그은 문서입니다. 법이 아니라 회사가 밝힌 원칙이며, 국가안보 전문가 David Kris가 독립적 판단을 보탰고 연구·안전·정책·정부협력 팀과 사내 의견 청취를 거쳐 만들었다고 OpenAI는 설명합니다. OpenAI는 중요한 국가안보 AI 문제는 민주적 절차로 정해야 하며, 고위험 군사 AI에 대한 입법 안전장치를 지지한다고도 밝혔습니다.",
+    "whatChanges": "일반 사용자 서비스가 바로 달라지지는 않습니다. 다만 앞으로 나올 전쟁부 계약, Daybreak, 정부 협력 기사를 읽을 때 OpenAI가 약속한 기준과 실제 계약 내용을 비교하는 기준점이 됩니다. 한국 정부 기관이 Daybreak 신뢰 접근 파트너에 포함된 점도 국내에서 눈여겨볼 대목입니다.",
     "priority": 3,
     "secondarySources": [
       {
@@ -4219,7 +4226,7 @@
     "editorialDepth": "standard",
     "eventDate": "2026-07-08",
     "publishedAt": "2026-10-01",
-    "updatedAt": "2026-10-01",
+    "updatedAt": "2026-10-07",
     "candidateId": "41b85c9cdb7a",
     "sourceType": "official",
     "sourceName": "OpenAI",

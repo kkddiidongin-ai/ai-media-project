@@ -1,7 +1,7 @@
 {
   "generatedAt": "2026-10-07",
   "generator": "scripts/qa/audit-quality.mjs",
-  "count": 149,
+  "count": 147,
   "items": [
     {
       "slug": "openai-textgrain-text-watermark",
@@ -391,16 +391,6 @@
       "status": "REVIEW",
       "priority": "P2",
       "reason": "일반 기사인데 핵심 사실 1개 · 일반 기사인데 단신 수준 분량 · 이전 상태·변화 맥락 약함",
-      "needsSourceRecheck": true
-    },
-    {
-      "slug": "openai-models-on-aws",
-      "date": "2026-04-28",
-      "company": "OpenAI",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P2",
-      "reason": "사실이 제목을 거의 되풀이 · 일반 기사인데 핵심 사실 1개 · 일반 기사인데 단신 수준 분량",
       "needsSourceRecheck": true
     },
     {
@@ -921,16 +911,6 @@
       "status": "REVIEW",
       "priority": "P3",
       "reason": "왜 중요한가가 지나치게 짧음",
-      "needsSourceRecheck": true
-    },
-    {
-      "slug": "openai-government-national-security-principles",
-      "date": "2026-07-08",
-      "company": "OpenAI",
-      "currentDepth": "standard",
-      "status": "REVIEW",
-      "priority": "P3",
-      "reason": "일반 기사 권장 분량(400자) 미달 · 이전 상태·변화 맥락 약함",
       "needsSourceRecheck": true
     },
     {

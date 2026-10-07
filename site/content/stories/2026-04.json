@@ -515,8 +515,8 @@
   {
     "id": "s-20260428-368128",
     "slug": "openai-models-on-aws",
-    "title": "OpenAI GPT 모델·Codex·Managed Agents, AWS에서 제공",
-    "summary": "기업이 자기 AWS 환경 안에서 OpenAI 모델로 AI를 만들 수 있게 됐습니다.",
+    "title": "OpenAI 모델·Codex·Managed Agents, AWS에서 제한 프리뷰 시작",
+    "summary": "OpenAI와 AWS가 전략적 파트너십을 넓히면서 OpenAI 모델, Codex, Bedrock Managed Agents 세 가지를 제한 프리뷰로 AWS에 내놨습니다. 2월 파트너십 발표 이후 실제 제품이 처음 AWS에 올라온 단계이지만, 정식 출시(GA)는 아니었습니다.",
     "category": "BUSINESS",
     "topics": [
       "openai",
@@ -528,22 +528,24 @@
       "Amazon"
     ],
     "products": [
-      "GPT",
+      "GPT-5.5",
       "Codex",
-      "Managed Agents",
-      "AWS"
+      "Amazon Bedrock",
+      "Bedrock Managed Agents"
     ],
     "facts": [
-      "OpenAI GPT 모델, Codex, Managed Agents가 AWS에서 제공되기 시작했습니다."
+      "OpenAI 모델(GPT-5.5 포함)을 Amazon Bedrock에서 쓸 수 있게 됐습니다. 기업은 AWS의 보안 통제, 계정·권한 관리, 구매 절차 안에서 OpenAI 모델을 씁니다.",
+      "Codex on AWS는 Bedrock을 모델 제공자로 삼아 OpenAI 모델을 돌립니다. AWS 약정과 Bedrock 접근 권한이 있는 기업이 대상이고, 데이터는 Bedrock 안에서 처리됩니다. 조건을 갖춘 고객은 Codex 사용액을 AWS 클라우드 약정에 반영할 수 있으며, Codex CLI·데스크톱 앱·VS Code 확장을 지원합니다.",
+      "Amazon Bedrock Managed Agents powered by OpenAI도 제한 프리뷰로 공개됐습니다. OpenAI 설명에 따르면 맥락 유지, 여러 단계 작업, 도구 사용, 실제 작업 실행을 지원하는 에이전트입니다."
     ],
-    "whyItMatters": "마이크로소프트와의 계약 개정 바로 다음 날 나온 발표입니다. OpenAI 모델을 쓰려면 Azure를 써야 하던 구조가 바뀌었습니다.",
-    "whatChanges": "AWS를 쓰는 회사는 클라우드를 옮기지 않고 OpenAI 모델을 쓸 수 있습니다.",
+    "whyItMatters": "2월 27일 파트너십 발표가 유통 구조를 정한 단계였다면, 4월 28일은 그 구조 위에 실제 제품이 처음 올라온 단계입니다. 다만 세 가지 모두 제한 프리뷰였고, OpenAI 모델과 Codex의 정식 제공은 6월 1일에 따로 발표됐습니다.",
+    "whatChanges": "AWS를 주력 클라우드로 쓰는 기업은 이때부터 별도 계약 없이 기존 AWS 구매·보안 체계 안에서 OpenAI 모델과 Codex를 시험해 볼 수 있게 됐습니다. 프리뷰라 신청·승인이 필요했고, 실제 업무 도입은 6월 정식 제공 이후를 기준으로 보는 편이 맞습니다.",
     "priority": 2,
     "secondarySources": [],
     "editorialDepth": "standard",
     "eventDate": "2026-04-28",
     "publishedAt": "2026-10-01",
-    "updatedAt": "2026-10-01",
+    "updatedAt": "2026-10-07",
     "candidateId": "368128e6f281",
     "sourceType": "official",
     "sourceName": "OpenAI",
