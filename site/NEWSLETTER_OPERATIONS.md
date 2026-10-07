@@ -11,6 +11,8 @@
 구독 페이지 /newsletter/subscribe/ ──POST──▶ /api/newsletter/subscribe (Vercel Function) ──▶ Resend Contacts + Segment
 ```
 
+- 공식 주소는 `https://aimajung.com` (`src/config/site.ts`의 `url`). 메일의 웹에서 보기·지난 뉴스레터·기사·수신거부 안내 링크가 모두 이 주소로 만들어진다.
+  구독 페이지: https://aimajung.com/newsletter/subscribe/ · 수신거부 안내: https://aimajung.com/newsletter/unsubscribe/
 - 사이트 본문은 지금처럼 정적 export(`out/`)다. 서버에서 도는 것은 `api/newsletter/subscribe.ts` 하나뿐이다.
   Vercel이 `site/api/` 폴더를 Function으로 배포한다 (Next.js의 `output: "export"`는 그대로).
 - 메일은 웹 뉴스레터와 같은 데이터·같은 순서(사건 날짜 → priority → slug)로 만든다. 메일 전용 원고는 없다.
@@ -30,8 +32,8 @@
 ## 2. 처음 한 번 준비 (운영자)
 
 1. **Resend 계정** — resend.com 가입. (Vercel Marketplace의 Resend 통합으로 만들어도 된다: `vercel integration add resend`.)
-2. **발신 도메인 인증** — Resend → Domains에서 자체 도메인(예: `news.<도메인>`)을 추가하고 DNS(SPF·DKIM)를 등록해 `verified`로 만든다.
-   `*.vercel.app`은 발신 주소로 쓸 수 없다. 사이트 도메인이 아직 없으면 도메인부터 마련해야 한다.
+2. **발신 도메인 인증** — Resend → Domains에서 공식 도메인 `aimajung.com`(또는 발송 전용 서브도메인, 예: `news.aimajung.com`)을 추가하고 DNS(SPF·DKIM)를 등록해 `verified`로 만든다.
+   어떤 주소로 보낼지(예: `news@aimajung.com`)는 운영자가 정해 `NEWSLETTER_FROM_EMAIL`에 넣는다. `*.vercel.app`은 발신 주소로 쓸 수 없다.
 3. **Segment 만들기** — Resend → Audience(Contacts) → Segments에서 구독자용 Segment를 하나 만들고 ID를 적어 둔다.
    (Resend가 예전 'Audience'를 'Segment'로 바꿨다. 예전 Audience ID는 같은 ID의 Segment로 그대로 쓸 수 있다.)
 4. **API 키** — Resend → API Keys에서 키를 만든다. 구독 Function용은 연락처 권한만, 발송 스크립트용은 Full access가 필요하다.

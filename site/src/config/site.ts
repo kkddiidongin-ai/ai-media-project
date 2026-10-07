@@ -14,8 +14,8 @@ export const siteConfig = {
   tagline: "AI, 해본 만큼만 말합니다.",
   description:
     "AI의 변화를 먼저 마중 나가는 AI 미디어. OpenAI, Anthropic, Google 등 AI 회사들의 공식 발표를 날짜별로 확인하고, '그래서 나한테 뭐가 달라지는지'를 쉽게 정리합니다.",
-  /** canonical·sitemap·OG에 쓰인다. 지금은 Vercel 기본 주소. 도메인이 정해지면 바꾼다. */
-  url: "https://ai-media-project-eight.vercel.app",
+  /** 공식 주소 (2026-10-07 aimajung.com 연결). canonical·sitemap·robots·OG·JSON-LD·뉴스레터 메일 링크가 모두 이 값을 쓴다 */
+  url: "https://aimajung.com",
   locale: "ko_KR",
   /**
    * true면 공개 전 미리보기: 화면 아래 얇은 안내 줄을 띄우고 검색엔진 색인을 막는다 (robots noindex, robots.txt Disallow).

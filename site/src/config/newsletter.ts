@@ -11,7 +11,7 @@
 export const newsletterConfig = {
   /** 발신자 이름 */
   newsletterFromName: "AI마중",
-  /** TODO(운영자): Resend에서 인증한 자체 도메인 주소 (예: news@<도메인>). *.vercel.app 주소는 쓸 수 없다. env NEWSLETTER_FROM_EMAIL */
+  /** TODO(운영자): Resend에서 인증한 자체 도메인 주소 (예: news@aimajung.com — 운영자가 정함). *.vercel.app 주소는 쓸 수 없다. env NEWSLETTER_FROM_EMAIL */
   newsletterFromEmail: null as string | null,
   /** TODO(운영자): 답장을 받을 주소. env NEWSLETTER_REPLY_TO */
   newsletterReplyTo: null as string | null,

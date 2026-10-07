@@ -21,7 +21,8 @@
     "newsletter:test": "node scripts/newsletter/test-send.mjs",
     "newsletter:send": "node scripts/newsletter/send.mjs",
     "newsletter:setup": "node scripts/newsletter/setup.mjs",
-    "qa:newsletter": "node scripts/newsletter/check.mjs"
+    "qa:newsletter": "node scripts/newsletter/check.mjs",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",

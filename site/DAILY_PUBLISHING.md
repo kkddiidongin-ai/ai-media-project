@@ -25,7 +25,7 @@
 6~8. **publish → validation → build**: `npm run publish:daily`
    (= `publish:stories` → `qa:content` → `tsc --noEmit` → `lint` → `build` → `qa:routes`, 하나라도 실패하면 거기서 멈춘다)
 9. **git**: `git add -A site/ingest site/content` → `git commit -m "content: YYYY-MM-DD daily"` → `git push origin master` (force push 금지)
-10. **배포·확인**: `npx vercel deploy --prod --yes` → https://ai-media-project-eight.vercel.app 에서 홈 최신 뉴스레터와 새 기사 1건을 연다.
+10. **배포·확인**: `npx vercel deploy --prod --yes` → https://aimajung.com 에서 홈 최신 뉴스레터와 새 기사 1건을 연다.
 
 ## 3. 입력 위치와 형식
 

@@ -212,7 +212,7 @@ await t("HTML 특수문자 이스케이프", async () => {
 await t("발송 설정: 빠진 값·vercel.app 발신 주소를 막음", async () => {
   const nc = config.newsletterConfig;
   ok(sendSettings({}, nc).problems.length >= 3, "빈 설정 통과");
-  ok(sendSettings({ RESEND_API_KEY: "k", RESEND_AUDIENCE_ID: "s", NEWSLETTER_FROM_EMAIL: "news@ai-media-project-eight.vercel.app" }, nc).problems.some((p) => p.includes("vercel.app")), "vercel.app 통과");
+  ok(sendSettings({ RESEND_API_KEY: "k", RESEND_AUDIENCE_ID: "s", NEWSLETTER_FROM_EMAIL: "news@example-project.vercel.app" }, nc).problems.some((p) => p.includes("vercel.app")), "vercel.app 통과");
   eq(sendSettings({ RESEND_API_KEY: "k", RESEND_AUDIENCE_ID: "s", NEWSLETTER_FROM_EMAIL: "news@example.org" }, nc).problems, []);
   eq(sendSettings({ RESEND_API_KEY: "k", RESEND_AUDIENCE_ID: "s", NEWSLETTER_FROM_EMAIL: "news@example.org" }, nc).from, "AI마중 <news@example.org>");
 });
