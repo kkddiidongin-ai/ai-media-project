@@ -497,3 +497,94 @@ export function parseArgs(argv) {
 
 /** 이메일을 로그에 남길 때 가린다 (ab***@example.com) */
 export const maskEmail = (e) => String(e).replace(/^(.{0,2}).*@/, "$1***@");
+
+// ---------- 특정 Segment 안전 발송 (send.mjs) ----------
+//
+// 모든 함수는 Resend를 읽기만 한다 (발송·초안 생성은 send.mjs에서만).
+// 실패하면 이유를 담은 Error를 던진다. 이유에는 키·전체 이메일을 넣지 않는다.
+
+const sdkFail = (what, error) => new Error(`${what} 실패: ${error.name}${error.statusCode ? ` (${error.statusCode})` : ""}`);
+
+/**
+ * 보낼 Segment를 정한다: --segment <id> → --segment-name <이름(정확히 하나)> → 환경변수 RESEND_AUDIENCE_ID 순.
+ * 어느 경우든 Resend에서 실제로 존재하는지 확인한다.
+ */
+export async function resolveSegment(resend, { segment, segmentName, fallbackId }) {
+  if (typeof segment === "string" && segment) {
+    const r = await resend.segments.get(segment);
+    if (r.error || !r.data) throw new Error("지정한 Segment를 찾지 못했습니다 (--segment)");
+    return { id: r.data.id, name: r.data.name, source: "--segment" };
+  }
+  if (typeof segmentName === "string" && segmentName) {
+    const r = await resend.segments.list();
+    if (r.error) throw sdkFail("Segment 목록 조회", r.error);
+    const hits = r.data.data.filter((s) => s.name === segmentName);
+    if (hits.length !== 1) throw new Error(`이름이 '${segmentName}'인 Segment가 ${hits.length}개입니다 (정확히 1개여야 함)`);
+    return { id: hits[0].id, name: hits[0].name, source: "--segment-name" };
+  }
+  if (fallbackId) {
+    const r = await resend.segments.get(fallbackId);
+    if (r.error || !r.data) throw new Error("RESEND_AUDIENCE_ID의 Segment를 찾지 못했습니다");
+    return { id: r.data.id, name: r.data.name, source: "RESEND_AUDIENCE_ID" };
+  }
+  throw new Error("보낼 Segment가 없습니다 (--segment, --segment-name 또는 RESEND_AUDIENCE_ID)");
+}
+
+/** Segment의 실제 연락처 목록 (Segment 정보의 숫자가 아니라 목록을 끝까지 넘겨 센다. URL에 이메일 없음) */
+export async function listSegmentMembers(resend, segmentId) {
+  const members = [];
+  let after;
+  for (let page = 0; page < 200; page++) {
+    const r = await resend.contacts.list(after ? { segmentId, limit: 100, after } : { segmentId, limit: 100 });
+    if (r.error) throw sdkFail("Segment 연락처 조회", r.error);
+    members.push(...r.data.data);
+    if (!r.data.has_more || r.data.data.length === 0) return members;
+    after = r.data.data.at(-1).id;
+  }
+  throw new Error("Segment 연락처가 너무 많아 끝까지 확인하지 못했습니다");
+}
+
+/**
+ * 받는 사람 검증: 인원 수(정확히), 전원 구독 중, (지정 시) 주소 목록이 정확히 일치.
+ * @returns {string[]} 문제 목록 (비어 있으면 통과)
+ */
+export function checkRecipients(members, { expect, expectEmails = [] }) {
+  const problems = [];
+  if (!Number.isInteger(expect) || expect < 1) problems.push("--expect-recipients에 1 이상의 정수가 필요합니다");
+  else if (members.length !== expect) problems.push(`받는 사람 수가 다릅니다: 기대 ${expect}명, 실제 ${members.length}명`);
+  const unsub = members.filter((m) => m.unsubscribed).length;
+  if (unsub) problems.push(`구독 해지 상태인 연락처가 ${unsub}명 있습니다`);
+  if (expectEmails.length) {
+    const want = new Set(expectEmails.map((e) => e.trim().toLowerCase()));
+    const got = new Set(members.map((m) => m.email.toLowerCase()));
+    const missing = [...want].filter((e) => !got.has(e));
+    const extra = [...got].filter((e) => !want.has(e));
+    if (missing.length || extra.length) problems.push(`받는 사람 주소가 다릅니다 (빠짐 ${missing.length}명, 예상 밖 ${extra.length}명)`);
+  }
+  return problems;
+}
+
+/**
+ * 같은 호를 같은 Segment에 이미 보냈는지. 예전 형식 기록(segmentId 없음)은 어느 Segment인지 몰라 보수적으로 막는다.
+ * 초안(draft) 기록은 막지 않는다.
+ */
+export function alreadySent(records, date, segmentId) {
+  return records.some((r) => r.status === "sent" && r.date === date && (r.segmentId == null || r.segmentId === segmentId));
+}
+
+/** Resend에 저장된 Broadcast가 의도한 내용과 같은지 (초안 확인·초안 발송 전 재확인) */
+export function verifyBroadcast(b, want) {
+  const problems = [];
+  if (!b) return ["Broadcast를 읽지 못했습니다"];
+  if (b.status !== want.status) problems.push(`상태가 ${b.status}입니다 (기대 ${want.status})`);
+  if ((b.segment_id ?? b.audience_id) !== want.segmentId) problems.push("Segment가 다릅니다");
+  if (b.subject !== want.subject) problems.push("제목이 다릅니다");
+  if (b.from !== want.from) problems.push("보낸 사람이 다릅니다");
+  const replyTo = Array.isArray(b.reply_to) ? b.reply_to : b.reply_to ? [b.reply_to] : [];
+  if (replyTo.length !== 1 || replyTo[0] !== want.replyTo) problems.push("Reply-To가 다릅니다");
+  if (!b.html || b.html !== want.html) problems.push("HTML 본문이 다릅니다");
+  if (!b.text || b.text !== want.text) problems.push("텍스트 본문이 다릅니다");
+  if (!String(b.html).includes("{{{RESEND_UNSUBSCRIBE_URL}}}") || !String(b.text).includes("{{{RESEND_UNSUBSCRIBE_URL}}}")) problems.push("구독 해지 자리(RESEND_UNSUBSCRIBE_URL)가 없습니다");
+  if (want.webUrl && !String(b.html).includes(want.webUrl)) problems.push("웹에서 보기 주소가 다릅니다");
+  return problems;
+}

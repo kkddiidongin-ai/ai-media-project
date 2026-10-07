@@ -570,6 +570,191 @@ await t("편집 호마다 웹 버전 페이지가 빌드됨 (out/ 있을 때)", 
   for (const id of editionIds) ok(fs.existsSync(path.join(ROOT, "out/newsletters", id, "index.html")), `out/newsletters/${id}/ 없음`);
 });
 
+// ---------- 2-3) send.mjs 특정 Segment 안전 발송 (가짜 Resend 서버 + 실제 스크립트 실행, 외부 호출 없음) ----------
+
+{
+  const http = await import("node:http");
+  const os = await import("node:os");
+  const { spawnSync } = await import("node:child_process");
+  const { spawn } = await import("node:child_process");
+  const SEGS = {
+    seg_general: { name: "General", members: [{ id: "c1", email: "reader@example.com", unsubscribed: false }] },
+    seg_one: { name: "AI마중 1호 발송 대상", members: [{ id: "c1", email: "reader@example.com", unsubscribed: false }] },
+    seg_two: { name: "둘", members: [{ id: "c1", email: "reader@example.com", unsubscribed: false }, { id: "c2", email: "other@example.com", unsubscribed: false }] },
+    seg_empty: { name: "빈", members: [] },
+    seg_unsub: { name: "해지", members: [{ id: "c3", email: "gone@example.com", unsubscribed: true }] },
+    seg_dup_a: { name: "같은이름", members: [] },
+    seg_dup_b: { name: "같은이름", members: [] },
+  };
+  let calls = [];
+  const broadcasts = new Map();
+  const server = http.createServer((req, res) => {
+    let raw = "";
+    req.on("data", (c) => (raw += c));
+    req.on("end", () => {
+      const u = new URL(req.url, "http://x");
+      const body = raw ? JSON.parse(raw) : null;
+      calls.push({ method: req.method, path: u.pathname + u.search, body });
+      const json = (status, obj) => {
+        res.writeHead(status, { "content-type": "application/json" });
+        res.end(JSON.stringify(obj));
+      };
+      let m;
+      if (req.method === "GET" && u.pathname === "/segments") return json(200, { object: "list", has_more: false, data: Object.entries(SEGS).map(([id, s]) => ({ id, name: s.name, created_at: "" })) });
+      if (req.method === "GET" && (m = u.pathname.match(/^\/segments\/([^/]+)$/))) return SEGS[m[1]] ? json(200, { object: "segment", id: m[1], name: SEGS[m[1]].name, created_at: "" }) : json(404, { name: "not_found", message: "nf", statusCode: 404 });
+      if (req.method === "GET" && (m = u.pathname.match(/^\/segments\/([^/]+)\/contacts$/))) {
+        const s = SEGS[m[1]];
+        return s ? json(200, { object: "list", has_more: false, data: s.members.map((x) => ({ ...x, created_at: "", first_name: null, last_name: null })) }) : json(404, { name: "not_found", message: "nf", statusCode: 404 });
+      }
+      if (req.method === "POST" && u.pathname === "/broadcasts") {
+        const id = `bc_${broadcasts.size + 1}`;
+        broadcasts.set(id, { id, status: body.send ? "sent" : "draft", segment_id: body.segment_id, audience_id: null, from: body.from, subject: body.subject, reply_to: body.reply_to ? [].concat(body.reply_to) : null, html: body.html, text: body.text, preview_text: body.preview_text });
+        return json(201, { id });
+      }
+      if (req.method === "GET" && (m = u.pathname.match(/^\/broadcasts\/([^/]+)$/))) return broadcasts.has(m[1]) ? json(200, { object: "broadcast", ...broadcasts.get(m[1]) }) : json(404, { name: "not_found", message: "nf", statusCode: 404 });
+      if (req.method === "POST" && (m = u.pathname.match(/^\/broadcasts\/([^/]+)\/send$/))) {
+        const b = broadcasts.get(m[1]);
+        if (!b) return json(404, { name: "not_found", message: "nf", statusCode: 404 });
+        b.status = "sent";
+        return json(200, { id: m[1] });
+      }
+      return json(500, { name: "application_error", message: `unhandled ${req.method} ${u.pathname}`, statusCode: 500 });
+    });
+  });
+  await new Promise((r) => server.listen(0, "127.0.0.1", r));
+  const base = `http://127.0.0.1:${server.address().port}`;
+  const tmp = fs.mkdtempSync(path.join(os.tmpdir(), "nl-send-"));
+  let n = 0;
+  /** 실제 send.mjs를 가짜 Resend 서버에 붙여 실행. 표준입력은 터미널이 아니다 */
+  const run = (argv, { sent = [], env = {} } = {}) => {
+    const sentFile = path.join(tmp, `sent-${++n}.json`);
+    fs.writeFileSync(sentFile, JSON.stringify(sent));
+    calls = [];
+    return new Promise((resolve) => {
+      const child = spawn(process.execPath, [path.join(ROOT, "scripts/newsletter/send.mjs"), "--edition", "2026-10-06", ...argv], {
+        cwd: ROOT,
+        env: {
+          PATH: process.env.PATH,
+          SystemRoot: process.env.SystemRoot,
+          NODE_ENV: "production",
+          RESEND_API_KEY: "re_fake_for_tests",
+          RESEND_BASE_URL: base,
+          NEWSLETTER_REPLY_TO: "hello@aimajung.com",
+          NEWSLETTER_SENT_FILE: sentFile,
+          NEWSLETTER_DRAFT_LOG: path.join(tmp, `drafts-${n}.json`),
+          ...env,
+        },
+        stdio: ["pipe", "pipe", "pipe"],
+      });
+      let out = "";
+      child.stdout.on("data", (d) => (out += d));
+      child.stderr.on("data", (d) => (out += d));
+      child.stdin.end();
+      child.on("close", (code) => resolve({ code, out, calls: [...calls], sentAfter: JSON.parse(fs.readFileSync(sentFile, "utf8")) }));
+    });
+  };
+  const created = (r) => r.calls.filter((c) => c.method === "POST" && c.path === "/broadcasts");
+  const sendCalls = (r) => r.calls.filter((c) => /\/send$/.test(c.path) || (c.path === "/broadcasts" && c.body?.send === true));
+  const one = ["--segment", "seg_one", "--expect-recipients", "1"];
+  const ok1 = { NEWSLETTER_CONFIRM_TYPED: "발송" };
+
+  await t("send A: --segment 없으면 기존처럼 RESEND_AUDIENCE_ID Segment로 초안", async () => {
+    const r = await run(["--draft"], { env: { RESEND_AUDIENCE_ID: "seg_general" } });
+    eq(r.code, 0, r.out);
+    eq(created(r).map((c) => c.body.segment_id), ["seg_general"]);
+    eq(sendCalls(r).length, 0, "초안인데 발송 호출");
+    eq(r.sentAfter, [], "초안을 발송 기록에 씀");
+  });
+  await t("send B: --segment·--segment-name 지정 시 그 Segment 사용, 초안은 발송 호출 없음·다시 읽어 확인", async () => {
+    for (const argv of [one, ["--segment-name", "AI마중 1호 발송 대상", "--expect-recipients", "1", "--expect-email", "reader@example.com"]]) {
+      const r = await run([...argv, "--draft"], { env: { RESEND_AUDIENCE_ID: "seg_general" } });
+      eq(r.code, 0, r.out);
+      eq(created(r).map((c) => c.body.segment_id), ["seg_one"]);
+      eq(sendCalls(r).length, 0, "초안인데 발송 호출");
+      ok(r.calls.some((c) => c.method === "GET" && c.path.startsWith("/segments/seg_one/contacts")), "실제 연락처 목록을 읽지 않음");
+      ok(r.calls.some((c) => c.method === "GET" && /^\/broadcasts\/bc_/.test(c.path)), "초안을 다시 읽지 않음");
+      ok(/초안 생성·확인 완료/.test(r.out), r.out);
+      ok(!/reader@example\.com/.test(r.out), "출력에 전체 이메일");
+      eq(r.sentAfter, []);
+    }
+  });
+  await t("send C·D·E·F: 인원 2명·0명·해지 연락처·잘못된 Segment·주소 불일치·같은 이름 Segment 2개 → 실패, 초안도 안 만듦", async () => {
+    const cases = [
+      [["--segment", "seg_two", "--expect-recipients", "1", "--draft"], /기대 1명, 실제 2명/],
+      [["--segment", "seg_empty", "--expect-recipients", "1", "--draft"], /기대 1명, 실제 0명/],
+      [["--segment", "seg_unsub", "--expect-recipients", "1", "--draft"], /구독 해지 상태/],
+      [["--segment", "seg_nope", "--expect-recipients", "1", "--draft"], /찾지 못했습니다/],
+      [["--segment", "seg_one", "--expect-recipients", "1", "--expect-email", "someone@example.com", "--draft"], /주소가 다릅니다/],
+      [["--segment-name", "같은이름", "--expect-recipients", "1", "--draft"], /2개/],
+      [["--segment", "seg_one", "--draft"], /--expect-recipients/],
+      [["--segment", "seg_two", "--expect-recipients", "1", "--send", "--confirm", "2026-10-06"], /기대 1명, 실제 2명/],
+    ];
+    for (const [argv, re] of cases) {
+      const r = await run(argv, { env: ok1 });
+      ok(r.code !== 0, `${argv.join(" ")} 통과됨`);
+      ok(re.test(r.out), `${argv.join(" ")}: ${r.out.slice(-200)}`);
+      eq(created(r).length + sendCalls(r).length, 0, `${argv.join(" ")}: Resend에 만들거나 보냄`);
+    }
+  });
+  await t("send G·H: 같은 Segment 발송 기록은 차단, 다른 Segment 기록은 차단하지 않음, 예전 형식 기록은 보수적으로 차단", async () => {
+    const g = await run([...one, "--send", "--confirm", "2026-10-06"], { sent: [{ date: "2026-10-06", status: "sent", segmentId: "seg_one" }], env: ok1 });
+    ok(g.code !== 0 && /이미 발송/.test(g.out), g.out);
+    eq(sendCalls(g).length, 0);
+    const h = await run([...one, "--send", "--confirm", "2026-10-06"], { sent: [{ date: "2026-10-06", status: "sent", segmentId: "seg_general" }, { date: "2026-10-06", status: "draft", segmentId: "seg_one" }], env: ok1 });
+    eq(h.code, 0, h.out);
+    eq(sendCalls(h).length, 1);
+    const legacy = await run([...one, "--draft"], { sent: [{ date: "2026-10-06", status: "sent" }] });
+    ok(legacy.code !== 0 && /이미 발송/.test(legacy.out), legacy.out);
+  });
+  await t("send I·J: --confirm 불일치·'발송' 입력 없음 → 차단 (Resend 호출 0), 모두 맞으면 1번 발송·기록에 이메일 없음", async () => {
+    const i = await run([...one, "--send", "--confirm", "2026-10-05"], { env: ok1 });
+    ok(i.code !== 0 && /--confirm 2026-10-06/.test(i.out), i.out);
+    eq(i.calls.length, 0, "confirm 불일치인데 Resend 호출");
+    const j = await run([...one, "--send", "--confirm", "2026-10-06"]);
+    ok(j.code !== 0 && /'발송' 입력/.test(j.out), j.out);
+    eq(sendCalls(j).length + created(j).length, 0, "'발송' 없이 보냄");
+    const okRun = await run([...one, "--send", "--confirm", "2026-10-06"], { env: ok1 });
+    eq(okRun.code, 0, okRun.out);
+    eq(sendCalls(okRun).length, 1);
+    const rec = okRun.sentAfter.at(-1);
+    eq([rec.date, rec.status, rec.segmentId, rec.recipients, rec.edition], ["2026-10-06", "sent", "seg_one", 1, "2026-10-06"]);
+    ok(rec.broadcastId && rec.subject && rec.at, "기록 항목");
+    ok(!JSON.stringify(okRun.sentAfter).includes("@"), "기록에 이메일 주소");
+  });
+  await t("send: 검토한 초안(--broadcast)을 보낼 때 다시 확인하고 그 초안만 보냄, 다른 Segment 초안이면 차단", async () => {
+    const d = await run([...one, "--draft"]);
+    const id = created(d)[0] && "bc_" + [...broadcasts.keys()].length;
+    const s = await run([...one, "--send", "--confirm", "2026-10-06", "--broadcast", id], { env: ok1 });
+    eq(s.code, 0, s.out);
+    eq(s.calls.filter((c) => c.path === `/broadcasts/${id}/send`).length, 1);
+    eq(created(s).length, 0, "초안 대신 새로 만듦");
+    const other = await run(["--draft"], { env: { RESEND_AUDIENCE_ID: "seg_general" } });
+    const otherId = "bc_" + [...broadcasts.keys()].length;
+    ok(other.code === 0, other.out);
+    const bad = await run([...one, "--send", "--confirm", "2026-10-06", "--broadcast", otherId], { env: ok1 });
+    ok(bad.code !== 0 && /Segment가 다릅니다/.test(bad.out), bad.out);
+    eq(sendCalls(bad).length, 0);
+  });
+  await t("send K: 초안 본문(HTML·텍스트)에 개인별 구독 해지 자리, 웹에서 보기는 /newsletters/2026-10-06/", async () => {
+    const r = await run([...one, "--draft"]);
+    const body = created(r)[0].body;
+    ok(body.html.includes("{{{RESEND_UNSUBSCRIBE_URL}}}") && body.text.includes("{{{RESEND_UNSUBSCRIBE_URL}}}"), "구독 해지 자리");
+    ok(body.html.includes("https://aimajung.com/newsletters/2026-10-06/"), "웹에서 보기");
+    eq([body.from, body.reply_to, body.subject], ["AI마중 <letter@aimajung.com>", "hello@aimajung.com", loadEdition("2026-10-06").subject]);
+  });
+  await t("send: Reply-To가 없으면 초안·발송 모두 멈춤 (Resend 호출 0)", async () => {
+    const r = await run([...one, "--draft"], { env: { NEWSLETTER_REPLY_TO: "" } });
+    ok(r.code !== 0 && /Reply-To/.test(r.out), r.out);
+    eq(r.calls.length, 0);
+  });
+  await t("send L: 기사 데이터(content/, ingest/ 추적 파일) 변경 없음", async () => {
+    const d = spawnSync("git", ["status", "--porcelain", "--", "content", "ingest"], { cwd: ROOT, encoding: "utf8" });
+    eq(d.stdout.trim(), "");
+  });
+  server.close();
+  fs.rmSync(tmp, { recursive: true, force: true });
+}
+
 // ---------- 3) 정적 산출물·저장소 ----------
 
 await t("정적 산출물·저장소에 비밀값이 없음", async () => {
