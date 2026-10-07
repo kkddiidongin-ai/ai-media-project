@@ -546,7 +546,8 @@ for (const id of editionIds) {
       const urls = [...new Set(html.match(/href="([^"]+)"/g).map((h) => h.slice(6, -1)))];
       for (const u of urls) ok(u === "{{{RESEND_UNSUBSCRIBE_URL}}}" || u.startsWith("https://aimajung.com/"), `${mode}: 공식 주소가 아닌 링크 ${u}`);
       for (const slug of editionSlugs(ed)) ok(urls.includes(`https://aimajung.com/stories/${slug}/`), `${mode}: 기사 링크 없음 ${slug}`);
-      ok(urls.includes(`https://aimajung.com/newsletters/${ed.webIssueDate}/`) && urls.includes("https://aimajung.com/newsletters/"), `${mode}: 웹에서 보기·지난 호`);
+      ok(urls.includes(`https://aimajung.com/newsletters/${ed.id}/`) && urls.includes("https://aimajung.com/newsletters/"), `${mode}: 웹에서 보기(편집 호 웹 버전)·지난 호`);
+      ok(!urls.includes(`https://aimajung.com/newsletters/${ed.webIssueDate}/`) || ed.webIssueDate === ed.id, `${mode}: 웹에서 보기가 날짜별 호를 가리킴`);
       if (mode === "broadcast") ok(html.includes("{{{RESEND_UNSUBSCRIBE_URL}}}") && text.includes("{{{RESEND_UNSUBSCRIBE_URL}}}"), "broadcast 수신거부");
       else ok(urls.includes("https://aimajung.com/newsletter/unsubscribe/"), `${mode}: 수신거부 안내`);
       ok(!/[\w.+-]+@[\w-]+\.[\w.]+/.test(html.replace(/xmlns="[^"]+"/, "")), `${mode}: 이메일 주소 노출`);
@@ -563,6 +564,11 @@ for (const id of editionIds) {
     ok(ed.preheader.length >= 30 && ed.preheader.length <= 110, `프리헤더 길이 ${ed.preheader.length}`);
   });
 }
+
+await t("편집 호마다 웹 버전 페이지가 빌드됨 (out/ 있을 때)", async () => {
+  if (!fs.existsSync(path.join(ROOT, "out"))) return;
+  for (const id of editionIds) ok(fs.existsSync(path.join(ROOT, "out/newsletters", id, "index.html")), `out/newsletters/${id}/ 없음`);
+});
 
 // ---------- 3) 정적 산출물·저장소 ----------
 

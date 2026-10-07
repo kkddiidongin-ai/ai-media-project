@@ -260,6 +260,55 @@ export function getIssues(): Issue[] {
   return issueCache;
 }
 export const getIssue = (date: string) => getIssues().find((i) => i.date === date);
+
+// ---------- 뉴스레터 편집 호 (메일로 발행한 호의 웹 버전) ----------
+//
+// newsletter/editions/<발행일>.json이 메일과 웹의 공통 원고다 (scripts/newsletter/lib.mjs와 같은 파일).
+// 편집 호 날짜는 '뉴스레터 발행일'이고, 각 기사의 날짜(원 발표일 eventDate)와 다르다.
+// 기사 데이터는 바꾸지 않고 slug로만 연결한다.
+
+export interface EditionKeyNumber {
+  value: string;
+  label: string;
+}
+
+export interface Edition {
+  /** 발행일 (YYYY-MM-DD) = 웹 주소 /newsletters/<id>/ */
+  id: string;
+  number: number;
+  dateLine: string;
+  /** 기사들이 속한 날짜별 호 (원 발표일) */
+  webIssueDate: string;
+  subject: string;
+  preheader: string;
+  intro: string[];
+  main: { slug: string; title?: string; body: string[]; keyNumbers?: EditionKeyNumber[]; facts?: string[]; point?: string; cta?: string };
+  more: { slug: string; title?: string; change: string; why?: string }[];
+  checked: { slug: string; summary: string }[];
+  dayPoint?: { fact: string; opinion: string };
+  readMore: { slug: string }[];
+}
+
+const EDITIONS = path.join(process.cwd(), "newsletter", "editions");
+let editionCache: Edition[] | null = null;
+export function getEditions(): Edition[] {
+  if (editionCache) return editionCache;
+  const out: Edition[] = [];
+  if (fs.existsSync(EDITIONS)) {
+    for (const f of fs.readdirSync(EDITIONS).filter((x) => x.endsWith(".json")).sort()) {
+      const e = JSON.parse(fs.readFileSync(path.join(EDITIONS, f), "utf8")) as Edition;
+      const where = `newsletter/editions/${f}`;
+      if (`${e.id}.json` !== f || !isDate(e.id)) fail(where, "id는 파일 이름과 같은 YYYY-MM-DD");
+      if (!e.subject || !e.dateLine || !e.main?.body?.length) fail(where, "subject·dateLine·main.body 필요");
+      const slugs = [e.main.slug, ...(e.more ?? []).map((m) => m.slug), ...(e.checked ?? []).map((m) => m.slug), ...(e.readMore ?? []).map((m) => m.slug)];
+      for (const slug of slugs) if (!getStory(slug)) fail(where, `없는 기사 ${slug}`);
+      out.push({ ...e, more: e.more ?? [], checked: e.checked ?? [], readMore: e.readMore ?? [], intro: e.intro ?? [] });
+    }
+  }
+  editionCache = out.sort((a, b) => b.id.localeCompare(a.id));
+  return editionCache;
+}
+export const getEdition = (id: string) => getEditions().find((e) => e.id === id);
 export const issueOfStory = (s: Story) => getIssue(s.eventDate);
 
 // ---------- charts ----------

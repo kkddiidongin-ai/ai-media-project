@@ -3,7 +3,8 @@ import { notFound } from "next/navigation";
 import { SubscribeCta } from "@/components/newsletter/SubscribeCta";
 import { StoryBody, StoryBrief } from "@/components/news/Story";
 import { PaperCard, Wrap } from "@/components/ui";
-import { getIssue, getIssues } from "@/lib/news";
+import { EditionView } from "@/components/news/EditionView";
+import { getEdition, getEditions, getIssue, getIssues } from "@/lib/news";
 import { formatDate, formatLongDate, issueHref } from "@/lib/format";
 import { pageMetadata } from "@/lib/seo";
 
@@ -12,12 +13,26 @@ export const dynamicParams = false;
 const MAIN_THRESHOLD = 6;
 const MAIN_SIZE = 5;
 
+/** 날짜별 호(기사 원 발표일) + 메일로 발행한 편집 호(발행일). 같은 날짜면 편집 호를 보여준다 */
 export function generateStaticParams() {
-  return getIssues().map((i) => ({ date: i.date }));
+  const dates = new Set([...getIssues().map((i) => i.date), ...getEditions().map((e) => e.id)]);
+  return [...dates].map((date) => ({ date }));
 }
 
 export async function generateMetadata({ params }: PageProps<"/newsletters/[date]">) {
   const { date } = await params;
+  const edition = getEdition(date);
+  if (edition) {
+    const headline = edition.subject.replace(/^\p{Extended_Pictographic}\s*/u, "").replace(/\s*—\s*AI마중$/, "");
+    return pageMetadata({
+      title: `뉴스레터 ${edition.number}호 · ${headline}`,
+      // 검수한 문장만 쓴다 (글자 수로 자르지 않음): 도입 첫 문장 + 프리헤더
+      description: [edition.intro[0], edition.preheader].filter(Boolean).join(" "),
+      path: issueHref(date),
+      type: "article",
+      publishedTime: edition.id,
+    });
+  }
   const issue = getIssue(date);
   if (!issue) return {};
   return pageMetadata({
@@ -33,6 +48,8 @@ export async function generateMetadata({ params }: PageProps<"/newsletters/[date
 /** 날짜별 뉴스레터 상세: 머리(날짜·주요 내용) → story 전체 → 이전/다음 호 */
 export default async function IssuePage({ params }: PageProps<"/newsletters/[date]">) {
   const { date } = await params;
+  const edition = getEdition(date);
+  if (edition) return <EditionView edition={edition} />;
   const all = getIssues();
   const idx = all.findIndex((i) => i.date === date);
   if (idx < 0) notFound();

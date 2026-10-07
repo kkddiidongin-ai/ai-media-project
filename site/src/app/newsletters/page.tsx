@@ -2,7 +2,7 @@ import Link from "next/link";
 import { SubscribeCta } from "@/components/newsletter/SubscribeCta";
 import { CategoryTag } from "@/components/news/Story";
 import { PageHead, Wrap } from "@/components/ui";
-import { getIssues, getStories } from "@/lib/news";
+import { getEditions, getIssues, getStories, getStory } from "@/lib/news";
 import { formatDate, formatMonth, issueHref, storyHref } from "@/lib/format";
 import { pageMetadata } from "@/lib/seo";
 
@@ -15,6 +15,7 @@ export const metadata = pageMetadata({
 /** Reference의 뉴스레터 목록: 날짜 → 대표 제목 → 그날의 헤드라인 목록. 월별로 묶는다. */
 export default function NewslettersPage() {
   const issues = getIssues();
+  const editions = getEditions();
   const total = getStories().length;
   const months = new Map<string, typeof issues>();
   for (const i of issues) {
@@ -33,6 +34,33 @@ export default function NewslettersPage() {
       </PageHead>
 
       <SubscribeCta className="mb-8" />
+
+      {editions.length ? (
+        <section aria-labelledby="sent-editions" className="mb-10">
+          <h2 id="sent-editions" className="mb-3 text-[12px] font-extrabold tracking-[0.08em] text-night-accent">
+            메일로 발행한 AI마중 뉴스레터
+          </h2>
+          <ol className="space-y-2.5">
+            {editions.map((e) => {
+              const main = getStory(e.main.slug)!;
+              return (
+                <li key={e.id}>
+                  <Link
+                    href={issueHref(e.id)}
+                    className="flex items-center gap-3 rounded-[8px] border border-night-accent/40 bg-night-raise px-4 py-3 hover:border-night-accent"
+                  >
+                    <span className="shrink-0 rounded-[4px] bg-night-accent px-1.5 py-0.5 text-[11px] font-extrabold text-night-deep">{e.number}호</span>
+                    <span className="min-w-0 flex-1">
+                      <span className="block truncate text-[14.5px] font-bold text-white">{e.main.title || main.title}</span>
+                      <span className="block font-mono text-[12px] text-night-muted">{formatDate(e.id)} 발행</span>
+                    </span>
+                  </Link>
+                </li>
+              );
+            })}
+          </ol>
+        </section>
+      ) : null}
 
       <nav aria-label="월 바로가기" className="mb-8 flex flex-wrap gap-2">
         {[...months.keys()].map((m) => (

@@ -203,7 +203,8 @@ export function buildEditionModel(edition, opts) {
     return s;
   };
   const main = get(edition.main.slug);
-  const webUrl = `${site}/newsletters/${edition.webIssueDate}/`;
+  // 웹에서 보기: 이 편집 호의 웹 버전 (/newsletters/<발행일>/). 기사들이 속한 날짜별 호(webIssueDate)와 다르다
+  const webUrl = `${site}/newsletters/${edition.id}/`;
   return {
     subject: opts.subject || edition.subject,
     preheader: opts.preheader || edition.preheader,
