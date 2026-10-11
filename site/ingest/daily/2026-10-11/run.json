@@ -1,13 +1,13 @@
 {
   "date": "2026-10-11",
   "mode": "shadow",
-  "startedAt": "2026-10-11T09:55:33.585Z",
+  "startedAt": "2026-10-11T12:24:12.035Z",
   "status": "SUCCESS",
   "limits": {
     "windowDays": 2,
     "maxItemsPerSource": 20,
-    "maxPublishPerDay": 0,
-    "maxEvidenceFetches": 0,
+    "maxPublishPerDay": 6,
+    "maxEvidenceFetches": 12,
     "maxLlmCalls": 6,
     "maxOutputTokens": 2500,
     "llmTimeoutMs": 60000,
@@ -257,15 +257,15 @@
   ],
   "counts": {
     "collected": 7,
-    "NEW": 6,
+    "NEW": 7,
     "UPDATE_EXISTING": 0,
     "DUPLICATE": 0,
-    "UNCERTAIN": 1,
+    "UNCERTAIN": 0,
     "PUBLISH": 0,
-    "HOLD": 4,
-    "EXCLUDE": 3,
+    "HOLD": 3,
+    "EXCLUDE": 4,
     "shortlisted": 3,
-    "evidenceChecked": 0,
+    "evidenceChecked": 3,
     "drafts": 0,
     "validationFailures": 0,
     "generationSkippedOrFailed": 0
@@ -306,13 +306,13 @@
       "source": "OpenAI",
       "publishedAt": "2026-10-09T07:00:00.000Z",
       "url": "https://openai.com/index/asana-browser-agent",
-      "duplicate": "UNCERTAIN",
-      "matchSlug": "chatgpt-for-financial-services",
-      "decision": "HOLD",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
       "reasons": [
-        "중복 불확실: 기존 기사와 같은 제품(GPT-6 Astra) — 같은 사안인지 사람이 판단"
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
       ],
-      "score": 0,
+      "score": 2,
       "importance": 0,
       "contentType": "NEWS",
       "typePenalty": 0,
@@ -331,7 +331,7 @@
       "decision": "HOLD",
       "reasons": [
         "사건 신호 INFRA (우선순위 4)",
-        "근거 확인 상한(원문 0건) 초과 — 다음 실행·편집자 확인"
+        "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
       ],
       "score": 4,
       "importance": 1,
@@ -341,8 +341,17 @@
         "INFRA"
       ],
       "company": "Hugging Face",
-      "stage": "metadata",
-      "capStage": "evidence"
+      "stage": "evidence",
+      "evidenceStatus": "OK",
+      "distinctFacts": 12,
+      "sufficiency": "SUFFICIENT_STANDARD",
+      "deepMissing": [
+        "importance",
+        "userImpact",
+        "contextNeed",
+        "standardWouldOmit"
+      ],
+      "suggestedDepth": "SHORT"
     },
     {
       "id": "07862ce6a3fa",
@@ -355,7 +364,7 @@
       "decision": "HOLD",
       "reasons": [
         "사건 신호 API_PLATFORM (우선순위 5)",
-        "근거 확인 상한(원문 0건) 초과 — 다음 실행·편집자 확인"
+        "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
       ],
       "score": 5,
       "importance": 1,
@@ -365,8 +374,17 @@
         "API_PLATFORM"
       ],
       "company": "Amazon",
-      "stage": "metadata",
-      "capStage": "evidence"
+      "stage": "evidence",
+      "evidenceStatus": "OK",
+      "distinctFacts": 11,
+      "sufficiency": "SUFFICIENT_STANDARD",
+      "deepMissing": [
+        "importance",
+        "userImpact",
+        "contextNeed",
+        "standardWouldOmit"
+      ],
+      "suggestedDepth": "STANDARD"
     },
     {
       "id": "dd106deebac2",
@@ -379,7 +397,7 @@
       "decision": "HOLD",
       "reasons": [
         "사건 신호 API_PLATFORM (우선순위 5)",
-        "근거 확인 상한(원문 0건) 초과 — 다음 실행·편집자 확인"
+        "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
       ],
       "score": 5,
       "importance": 1,
@@ -389,8 +407,17 @@
         "API_PLATFORM"
       ],
       "company": "Amazon",
-      "stage": "metadata",
-      "capStage": "evidence"
+      "stage": "evidence",
+      "evidenceStatus": "OK",
+      "distinctFacts": 10,
+      "sufficiency": "SUFFICIENT_STANDARD",
+      "deepMissing": [
+        "importance",
+        "userImpact",
+        "contextNeed",
+        "standardWouldOmit"
+      ],
+      "suggestedDepth": "STANDARD"
     },
     {
       "id": "1e0e6608c184",
@@ -433,5 +460,5 @@
       "stage": "metadata"
     }
   ],
-  "finishedAt": "2026-10-11T09:56:17.192Z"
+  "finishedAt": "2026-10-11T12:24:57.716Z"
 }
