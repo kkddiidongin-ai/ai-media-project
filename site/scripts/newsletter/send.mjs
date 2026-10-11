@@ -65,6 +65,8 @@ const readJson = (p) => (fs.existsSync(p) ? JSON.parse(fs.readFileSync(p, "utf8"
 const sent = readJson(SENT);
 
 const edition = typeof args.edition === "string" ? loadEdition(args.edition) : null;
+// 주간 호는 서명 승인·중복 확인이 있는 newsletter:weekly:send로만 보낸다 (이 명령으로 우회하지 않게)
+if (edition?.kind === "weekly") stop("주간 호(kind: weekly)는 npm run newsletter:weekly:send로만 보냅니다.");
 const date = edition ? edition.id : typeof args.date === "string" ? args.date : null;
 if (!date || !/^\d{4}-\d{2}-\d{2}$/.test(date)) stop("--date YYYY-MM-DD 또는 --edition <id>가 필요합니다 (보낼 호를 반드시 직접 지정).");
 const stories = loadStories();

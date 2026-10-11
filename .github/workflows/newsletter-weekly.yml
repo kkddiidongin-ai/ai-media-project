@@ -1,0 +1,160 @@
+# AI마중 주간 뉴스레터 — 자동 준비 (Phase 7.1.4)
+#
+# 매주 일요일 09:00 KST(= 일요일 00:00 UTC): 지난 한 주(일~토, AI마중 발행일 기준)에 발행된 기사로 뉴스레터 원고를 만들고
+# 검증한 뒤 검토용 브랜치·PR을 만든다. 하는 일은 이것뿐이다:
+#   발행 기사 조회 · 기간 분류 · 기사 선정 · 원고 · HTML 미리보기 · 검증 · 보고서 · newsletter/weekly-<id> 브랜치 + PR
+# 하지 않는 일: 이메일 발송, 승인, 발송 서비스 접속, 유료 API 호출, master push, 자동 merge, 배포.
+#   이 workflow에는 어떤 Secret도 넘기지 않는다. 발송 Secret은 'newsletter-send' Environment에만 두고
+#   그 Environment는 수동 발송 workflow(newsletter-send.yml)만 쓴다.
+#
+# 대상 주차는 실행 시각이 아니라 edition ID(한국 시간 일요일 날짜)로 정한다. 예약 실행이 늦어져도
+# 한국 날짜가 속한 주의 일요일을 쓰므로 같은 호를 가리킨다. 같은 호를 다시 돌리면 같은 브랜치·같은 PR을 갱신한다.
+#
+# 켜기/끄기: Settings → Secrets and variables → Actions → Variables → NEWSLETTER_WEEKLY_ENABLED = true 일 때만 실행.
+
+name: AI마중 주간 뉴스레터 준비
+
+on:
+  schedule:
+    - cron: "0 0 * * 0"
+  workflow_dispatch:
+    inputs:
+      edition:
+        description: "edition ID = 일요일 날짜 (한국 시간 YYYY-MM-DD). 비우면 이번 주"
+        required: false
+        type: string
+
+permissions:
+  contents: write # newsletter/weekly-* 브랜치에만 push
+  pull-requests: write
+
+concurrency:
+  group: aimajung-newsletter-weekly
+  cancel-in-progress: false
+
+jobs:
+  prepare:
+    if: ${{ vars.NEWSLETTER_WEEKLY_ENABLED == 'true' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: site
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+
+      - name: Install
+        run: npm ci --no-audit --no-fund
+
+      - name: Edition ID (KST Sunday)
+        id: e
+        env:
+          INPUT_EDITION: ${{ inputs.edition }}
+        run: |
+          if [ -n "$INPUT_EDITION" ]; then E="$INPUT_EDITION"; else E=$(node --input-type=module -e "const m = await import('./scripts/newsletter/weekly.mjs'); console.log(m.editionIdFor(m.kstDate()))"); fi
+          [[ "$E" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]] || { echo "bad edition: $E"; exit 1; }
+          [ "$(date -u -d "$E" +%u)" = "7" ] || { echo "edition must be a Sunday: $E"; exit 1; }
+          echo "id=$E" >> "$GITHUB_OUTPUT"
+          echo "edition: $E"
+
+      # 같은 호를 다시 돌릴 때 검토 브랜치의 원고·상태(편집자 수정·승인)를 이어 쓴다
+      - name: Restore earlier results for this edition
+        continue-on-error: true
+        env:
+          E: ${{ steps.e.outputs.id }}
+        run: |
+          B="newsletter/weekly-$E"
+          if git ls-remote --exit-code --heads origin "$B" >/dev/null; then
+            git fetch origin "$B"
+            if git cat-file -e "FETCH_HEAD:site/newsletter/weekly/$E/state.json" 2>/dev/null; then
+              rm -rf "newsletter/weekly/$E"
+              git -C "$GITHUB_WORKSPACE" archive FETCH_HEAD "site/newsletter/weekly/$E" | tar -x -C "$GITHUB_WORKSPACE"
+              echo "restored $B"
+            fi
+          fi
+
+      - name: Weekly QA (fixtures, no network, no email)
+        run: npm run qa:weekly
+
+      # Production 사이트맵 읽기(GET) 말고는 외부 호출 없음. 발송 관련 Secret 없음
+      - name: Prepare weekly edition
+        id: run
+        env:
+          E: ${{ steps.e.outputs.id }}
+          NEWSLETTER_WEEKLY_MIN_STORIES: ${{ vars.NEWSLETTER_WEEKLY_MIN_STORIES }}
+          NEWSLETTER_WEEKLY_MORE_MAX: ${{ vars.NEWSLETTER_WEEKLY_MORE_MAX }}
+          NEWSLETTER_WEEKLY_READ_MORE_MAX: ${{ vars.NEWSLETTER_WEEKLY_READ_MORE_MAX }}
+          NEWSLETTER_WEEKLY_IMPORTANT_PRIORITY: ${{ vars.NEWSLETTER_WEEKLY_IMPORTANT_PRIORITY }}
+          NEWSLETTER_WEEKLY_MAX_PER_COMPANY: ${{ vars.NEWSLETTER_WEEKLY_MAX_PER_COMPANY }}
+          NEWSLETTER_WEEKLY_MAX_EVENT_AGE_DAYS: ${{ vars.NEWSLETTER_WEEKLY_MAX_EVENT_AGE_DAYS }}
+          NEWSLETTER_OPERATOR_INFO: ${{ vars.NEWSLETTER_OPERATOR_INFO }}
+          NEWSLETTER_REPLY_TO: ${{ vars.NEWSLETTER_REPLY_TO }}
+        run: npm run newsletter:weekly -- --edition "$E"
+
+      - name: Job summary
+        if: always() && steps.run.outcome != 'skipped'
+        env:
+          E: ${{ steps.e.outputs.id }}
+        run: |
+          F="newsletter/weekly/$E/report.md"
+          if [ -f "$F" ]; then cat "$F" >> "$GITHUB_STEP_SUMMARY"; else echo "보고서 없음 (실행 실패 — 로그 확인)" >> "$GITHUB_STEP_SUMMARY"; fi
+
+      - name: Upload preview artifact
+        if: always() && steps.run.outcome != 'skipped'
+        uses: actions/upload-artifact@v4
+        with:
+          name: newsletter-weekly-${{ steps.e.outputs.id }}
+          path: site/newsletter/weekly/${{ steps.e.outputs.id }}
+          if-no-files-found: warn
+          overwrite: true
+          retention-days: 30
+
+      # 검토 브랜치 + PR (master에는 쓰지 않음. 같은 호는 같은 브랜치·같은 PR. merge해도 승인·발송되지 않음)
+      - name: Branch + PR (never master)
+        if: steps.run.outcome == 'success'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+          E: ${{ steps.e.outputs.id }}
+          BASE: ${{ github.event.repository.default_branch }}
+        run: |
+          set -euo pipefail
+          SRC="$RUNNER_TEMP/weekly-$E"
+          rm -rf "$SRC" && cp -R "newsletter/weekly/$E" "$SRC"
+          B="newsletter/weekly-$E"
+          case "$B" in newsletter/weekly-*) ;; *) echo "unsafe branch"; exit 1;; esac
+          git config user.name "aimajung-newsletter[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git stash --include-untracked >/dev/null || true
+          if git ls-remote --exit-code --heads origin "$B" >/dev/null; then
+            git fetch origin "$B"
+            git checkout -B "$B" "origin/$B"
+          else
+            git checkout -B "$B" "origin/$BASE"
+          fi
+          rm -rf "newsletter/weekly/$E" && mkdir -p "newsletter/weekly" && cp -R "$SRC" "newsletter/weekly/$E"
+          git add "newsletter/weekly/$E"
+          if git diff --cached --quiet; then
+            echo "변경 없음"
+          else
+            git commit -m "chore(newsletter): AI마중 주간 뉴스레터 $E 준비"
+            git push origin "HEAD:refs/heads/$B"
+          fi
+          STATUS=$(node -e "console.log(require('./newsletter/weekly/$E/state.json').status)")
+          TITLE="AI마중 주간 뉴스레터 $E ($STATUS · 편집자 검토)"
+          PR=$(gh pr list --head "$B" --state open --json number -q '.[0].number')
+          if [ -n "$PR" ]; then
+            gh pr edit "$PR" --title "$TITLE" --body-file "newsletter/weekly/$E/report.md"
+          elif git diff --quiet "origin/$BASE" HEAD -- "newsletter/weekly/$E"; then
+            echo "master와 같은 내용 — 새 PR을 만들지 않음"
+          else
+            gh pr create --base "$BASE" --head "$B" --title "$TITLE" --body-file "newsletter/weekly/$E/report.md"
+          fi

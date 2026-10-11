@@ -203,8 +203,10 @@ export function buildEditionModel(edition, opts) {
     return s;
   };
   const main = get(edition.main.slug);
+  // 주간 호(kind: weekly)는 여러 날짜의 기사를 묶고, 웹 버전 페이지가 없으므로 '웹에서 보기'를 넣지 않는다
+  const weekly = edition.kind === "weekly";
   // 웹에서 보기: 이 편집 호의 웹 버전 (/newsletters/<발행일>/). 기사들이 속한 날짜별 호(webIssueDate)와 다르다
-  const webUrl = `${site}/newsletters/${edition.id}/`;
+  const webUrl = weekly ? null : `${site}/newsletters/${edition.id}/`;
   return {
     subject: opts.subject || edition.subject,
     preheader: opts.preheader || edition.preheader,
@@ -221,10 +223,11 @@ export function buildEditionModel(edition, opts) {
       keyNumbers: edition.main.keyNumbers ?? [],
       point: edition.main.point ?? null,
       cta: edition.main.cta || "전체 내용 보기 →",
+      source: edition.main.source ?? null,
     },
     more: (edition.more ?? []).map((m) => {
       const s = get(m.slug);
-      return { title: m.title || s.title, url: storyLink(opts.config, s.slug), lines: [m.change], why: m.why };
+      return { title: m.title || s.title, url: storyLink(opts.config, s.slug), lines: [m.change], why: m.why, source: m.source ?? null };
     }),
     moreOverflow: null,
     checked: (edition.checked ?? []).map((m) => {
@@ -233,7 +236,10 @@ export function buildEditionModel(edition, opts) {
     }),
     point: edition.dayPoint
       ? { heading: "📌 오늘의 흐름", fact: edition.dayPoint.fact, opinion: edition.dayPoint.opinion }
-      : { heading: "📌 AI마중 POINT", paragraphs: [edition.main.point] },
+      : weekly
+        ? null // 주간 호: 메인 기사의 POINT는 메인 안에 이미 있다 (같은 문장을 두 번 싣지 않음)
+        : { heading: "📌 AI마중 POINT", paragraphs: [edition.main.point] },
+    headings: weekly ? { main: "🔥 이번 주 메인", more: "⚡ 이번 주 함께 볼 변화", related: "📚 추가로 읽을 기사" } : null,
     related: (edition.readMore ?? []).map((m) => {
       const s = get(m.slug);
       return { title: s.title, url: storyLink(opts.config, s.slug), date: s.eventDate };
@@ -252,8 +258,10 @@ export function renderModel(model, opts) {
   const site = siteBase(opts.config);
   const archiveUrl = `${site}/newsletters/`;
   const unsubscribeUrl = opts.mode === "broadcast" ? "{{{RESEND_UNSUBSCRIBE_URL}}}" : `${site}/newsletter/unsubscribe/`;
-  const operatorInfo = process.env.NEWSLETTER_OPERATOR_INFO || newsletterConfig.newsletterOperatorInfo;
+  // opts.operatorInfo: 주간 발송처럼 env를 따로 넘기는 경우 (없으면 예전처럼 process.env → 설정 파일)
+  const operatorInfo = opts.operatorInfo !== undefined ? opts.operatorInfo : process.env.NEWSLETTER_OPERATOR_INFO || newsletterConfig.newsletterOperatorInfo;
   const { subject, preheader, main } = model;
+  const H = { main: "🔥 오늘의 메인", more: "⚡ 놓치면 아쉬운 변화", related: "📚 더 읽어보기", ...(model.headings ?? {}) };
 
   const h2 = (label) => `<h2 style="${TEXT}margin:0 0 14px;font-size:17px;line-height:1.4;font-weight:800;color:${C.ink};">${label}</h2>`;
   // 섹션 사이: 얇은 종이색 띠로 나눠 한 편의 긴 글처럼 보이지 않게 (카드·새 색 없이)
@@ -272,6 +280,8 @@ export function renderModel(model, opts) {
           `<p style="${TEXT}margin:4px 0 0;font-size:13px;line-height:1.6;color:${C.muted};">${esc(k.label)}</p></td></tr>`,
       )
       .join("")}</table>`;
+  // 공식 원문 링크 (주간 호처럼 원고에 source가 있을 때만)
+  const sourceLine = (src, margin = "0 0 14px") => `<p style="${TEXT}margin:${margin};font-size:13px;line-height:1.6;color:${C.muted};">원문: ${link(src.url, `${esc(src.name)} ↗`)}</p>`;
   const pointBox = (heading, inner) =>
     `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:0 0 24px;"><tr><td style="padding:18px 20px;border-radius:8px;background:${C.accentSoft};border-left:4px solid ${C.accent};">` +
     `<p style="${TEXT}margin:0 0 8px;font-size:15px;font-weight:800;color:${C.accent};">${heading}</p>${inner}</td></tr></table>`;
@@ -299,7 +309,7 @@ export function renderModel(model, opts) {
   }
 
   push(
-    h2("🔥 오늘의 메인") +
+    h2(H.main) +
       (main.label ? `<p style="${TEXT}margin:0 0 6px;font-size:12px;line-height:1.4;font-weight:800;letter-spacing:0.06em;color:${C.accent};">${esc(main.label)}</p>` : "") +
       `<h3 style="${TEXT}margin:0 0 12px;font-size:21px;line-height:1.45;font-weight:800;color:${C.ink};"><a href="${esc(main.url)}" style="color:${C.ink};text-decoration:none;">${esc(main.title)}</a></h3>` +
       main.body.map((t) => para(t)).join("") +
@@ -312,13 +322,14 @@ export function renderModel(model, opts) {
             .join("")}</table>`
         : "") +
       (main.keyNumbers.length ? keyNumbers(main.keyNumbers) : "") +
+      (main.source ? sourceLine(main.source) : "") +
       (main.point ? pointBox("이 뉴스의 POINT", para(main.point, "15px", C.ink, "0")) : "") +
       `<table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin:0 0 20px;"><tr><td style="border-radius:8px;background:${C.accent};"><a href="${esc(main.url)}" style="${TEXT}display:inline-block;padding:11px 18px;font-size:14px;font-weight:800;color:#ffffff;text-decoration:none;">${esc(main.cta)}</a></td></tr></table>`,
   );
 
   if (model.more.length) {
     push(
-      h2("⚡ 놓치면 아쉬운 변화") +
+      h2(H.more) +
         model.more
           .map(
             (s) =>
@@ -326,6 +337,7 @@ export function renderModel(model, opts) {
               s.lines.map((t) => para(t, "14.5px", C.inkSoft, "0 0 6px")).join("") +
               (s.why ? `<p style="${TEXT}margin:0 0 6px;font-size:14.5px;line-height:1.7;color:${C.ink};"><strong style="color:${C.accent};">왜 봐야 하나</strong> ${esc(s.why)}</p>` : "") +
               (s.why ? `<p style="${TEXT}margin:0;font-size:14px;">${link(s.url, "자세히 보기 →")}</p>` : "") +
+              (s.source ? sourceLine(s.source, "6px 0 0") : "") +
               `</div>`,
           )
           .join("") +
@@ -347,19 +359,20 @@ export function renderModel(model, opts) {
   }
 
   const pt = model.point;
-  push(
-    pointBox(
-      pt.heading,
-      pt.fact
-        ? `<p style="${TEXT}margin:0 0 4px;font-size:12.5px;font-weight:800;color:${C.muted};">확인된 사실</p>${para(pt.fact, "15px", C.ink, "0 0 12px")}` +
-            `<p style="${TEXT}margin:0 0 4px;font-size:12.5px;font-weight:800;color:${C.muted};">AI마중의 해석</p>${para(pt.opinion, "15px", C.ink, "0")}`
-        : pt.paragraphs.map((t, i) => para(t, "15px", C.ink, i === pt.paragraphs.length - 1 ? "0" : "0 0 10px")).join(""),
-    ),
-  );
+  if (pt)
+    push(
+      pointBox(
+        pt.heading,
+        pt.fact
+          ? `<p style="${TEXT}margin:0 0 4px;font-size:12.5px;font-weight:800;color:${C.muted};">확인된 사실</p>${para(pt.fact, "15px", C.ink, "0 0 12px")}` +
+              `<p style="${TEXT}margin:0 0 4px;font-size:12.5px;font-weight:800;color:${C.muted};">AI마중의 해석</p>${para(pt.opinion, "15px", C.ink, "0")}`
+          : pt.paragraphs.map((t, i) => para(t, "15px", C.ink, i === pt.paragraphs.length - 1 ? "0" : "0 0 10px")).join(""),
+      ),
+    );
 
   if (model.related.length) {
     push(
-      h2("📚 더 읽어보기") +
+      h2(H.related) +
         model.related
           .map(
             (s) =>
@@ -398,7 +411,7 @@ export function renderModel(model, opts) {
   <p style="${TEXT}margin:0;font-size:26px;line-height:1.3;font-weight:800;color:#ffffff;letter-spacing:-0.5px;">AI마중</p>
   <p style="${TEXT}margin:4px 0 0;font-size:13.5px;line-height:1.5;color:${C.nightMuted};">${esc(siteConfig.descriptor)}</p>
   <p style="${TEXT}margin:14px 0 0;font-size:13px;line-height:1.6;color:${C.nightText};"><strong>${esc(model.dateLine)}</strong>
-  <span style="color:${C.nightMuted};">&nbsp;|&nbsp;</span>${footerLink(model.webUrl, "웹에서 보기")}${sep}${footerLink(archiveUrl, "지난 호")}</p>
+  <span style="color:${C.nightMuted};">&nbsp;|&nbsp;</span>${model.webUrl ? `${footerLink(model.webUrl, "웹에서 보기")}${sep}` : ""}${footerLink(archiveUrl, "지난 호")}</p>
 </td></tr>
 <tr><td style="background:${C.paper};border-radius:10px;">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
@@ -420,28 +433,30 @@ ${blocks.join("\n")}
 `;
 
   // 텍스트 버전 (HTML을 못 보는 메일 앱용)
-  const lines = [`AI마중 — ${siteConfig.descriptor}`, model.dateLine, `웹에서 보기: ${model.webUrl}`, ""];
+  const lines = [`AI마중 — ${siteConfig.descriptor}`, model.dateLine, ...(model.webUrl ? [`웹에서 보기: ${model.webUrl}`] : []), ""];
   if (model.intro.length) lines.push(...model.intro, "");
   if (model.today.length) lines.push("☀️ 오늘의 AI", ...model.today.map((s, i) => `${i + 1}. ${s.title}`), "");
-  lines.push("🔥 오늘의 메인", main.title, ...main.body);
+  lines.push(H.main, main.title, ...main.body);
   if (main.facts.length) lines.push("", "핵심 사실", ...main.facts.map((f) => `- ${f}`));
   if (main.keyNumbers.length) lines.push("", "핵심 숫자", ...main.keyNumbers.map((k) => `- ${k.value}: ${k.label}`));
+  if (main.source) lines.push("", `원문: ${main.source.name} ${main.source.url}`);
   if (main.point) lines.push("", "이 뉴스의 POINT", main.point);
   lines.push(`${main.cta.replace(/\s*→$/, "")}: ${main.url}`, "");
   if (model.more.length) {
-    lines.push("⚡ 놓치면 아쉬운 변화");
+    lines.push(H.more);
     for (const s of model.more) {
       lines.push(`- ${s.title}`, ...s.lines.map((t) => `  ${t}`));
       if (s.why) lines.push(`  왜 봐야 하나: ${s.why}`);
       lines.push(`  ${s.url}`);
+      if (s.source) lines.push(`  원문: ${s.source.name} ${s.source.url}`);
     }
     if (model.moreOverflow) lines.push(`같은 날 소식 ${model.moreOverflow.count}건 더 보기: ${model.moreOverflow.url}`);
     lines.push("");
   }
   if (model.checked.length) lines.push("🧪 AI마중이 직접 확인했습니다", ...model.checked.map((s) => `- ${s.title} ${s.url}`), "");
-  if (pt.fact) lines.push(pt.heading, `[확인된 사실] ${pt.fact}`, `[AI마중의 해석] ${pt.opinion}`, "");
-  else lines.push(pt.heading, ...pt.paragraphs, "");
-  if (model.related.length) lines.push("📚 더 읽어보기", ...model.related.map((s) => `- ${s.title} ${s.url}`), "");
+  if (pt?.fact) lines.push(pt.heading, `[확인된 사실] ${pt.fact}`, `[AI마중의 해석] ${pt.opinion}`, "");
+  else if (pt) lines.push(pt.heading, ...pt.paragraphs, "");
+  if (model.related.length) lines.push(H.related, ...model.related.map((s) => `- ${s.title} ${s.url}`), "");
   lines.push("—", "AI마중", siteConfig.descriptor, siteConfig.intro, "", `AI마중 웹사이트: ${site}/`, `지난 뉴스레터 보기: ${archiveUrl}`, `구독 해지: ${unsubscribeUrl}`);
   if (operatorInfo) lines.push(operatorInfo);
 

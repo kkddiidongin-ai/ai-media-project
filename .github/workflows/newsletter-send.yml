@@ -1,0 +1,129 @@
+# AI마중 뉴스레터 발송 — 수동 · 보호 (Phase 7.1.4)
+#
+# 사람이 Actions → 이 workflow → Run workflow로만 실행한다 (예약 실행 없음). master에서만 돈다.
+# job은 'newsletter-send' Environment를 쓴다. 발송 Secret은 그 Environment에만 두고(저장소 Secret에 두지 않음),
+# Environment에 Required reviewers와 Deployment branch = master를 걸면 실행 전에 한 번 더 사람이 승인해야 한다.
+#   Environment secrets: RESEND_API_KEY · NEWSLETTER_APPROVAL_SECRET · RESEND_AUDIENCE_ID · NEWSLETTER_TEST_TO
+#   Environment/저장소 variables: NEWSLETTER_REPLY_TO · NEWSLETTER_OPERATOR_INFO
+#
+# action
+#   check     : 점검만 (외부 호출 없음)
+#   test      : NEWSLETTER_TEST_TO(Secret)의 테스트 주소에만 [테스트] 발송 (주소는 입력란에 받지 않음 — 공개 로그 방지)
+#   send      : 서명 승인된 호를 Segment에 발송. confirm 칸에 edition ID를 한 번 더 적어야 하고 hash·expect_recipients가 맞아야 한다
+#   reconcile : 결과가 불확실했던 발송을 Resend 기록으로 확인
+# 발송 기록(state.json · ingest/newsletter-sent.json)은 실행마다 새 newsletter/weekly-<id>-sent-<run> 브랜치 + PR로 남긴다 (master에 직접 쓰지 않음, force push 없음).
+
+name: AI마중 뉴스레터 발송 (수동)
+
+on:
+  workflow_dispatch:
+    inputs:
+      edition:
+        description: "edition ID (일요일 날짜 YYYY-MM-DD)"
+        required: true
+        type: string
+      action:
+        description: "check(점검) · test(테스트 주소) · send(실제 발송) · reconcile(불확실한 발송 확인)"
+        required: true
+        type: choice
+        default: check
+        options:
+          - check
+          - test
+          - send
+          - reconcile
+      hash:
+        description: "send: 승인한 원고 해시 12자"
+        required: false
+        type: string
+      expect_recipients:
+        description: "send: 구독 중인 받는 사람 수 (승인 때 확인한 숫자)"
+        required: false
+        type: string
+      confirm:
+        description: "send: edition ID를 한 번 더 입력"
+        required: false
+        type: string
+
+permissions:
+  contents: write # newsletter/weekly-*-sent 브랜치에만 push
+  pull-requests: write
+
+concurrency:
+  group: aimajung-newsletter-send
+  cancel-in-progress: false
+
+jobs:
+  send:
+    if: ${{ github.event_name == 'workflow_dispatch' && github.ref_name == github.event.repository.default_branch }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment: newsletter-send
+    defaults:
+      run:
+        working-directory: site
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+
+      - name: Install
+        run: npm ci --no-audit --no-fund
+
+      - name: Weekly QA (fixtures)
+        run: npm run qa:weekly
+
+      - name: Newsletter ${{ inputs.action }}
+        id: run
+        env:
+          E: ${{ inputs.edition }}
+          ACTION: ${{ inputs.action }}
+          HASH: ${{ inputs.hash }}
+          EXPECT: ${{ inputs.expect_recipients }}
+          CONFIRM: ${{ inputs.confirm }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          NEWSLETTER_APPROVAL_SECRET: ${{ secrets.NEWSLETTER_APPROVAL_SECRET }}
+          RESEND_AUDIENCE_ID: ${{ secrets.RESEND_AUDIENCE_ID }}
+          NEWSLETTER_TEST_TO: ${{ secrets.NEWSLETTER_TEST_TO }}
+          NEWSLETTER_REPLY_TO: ${{ vars.NEWSLETTER_REPLY_TO }}
+          NEWSLETTER_OPERATOR_INFO: ${{ vars.NEWSLETTER_OPERATOR_INFO }}
+          NEWSLETTER_FREE_CONTACT_LIMIT: ${{ vars.NEWSLETTER_FREE_CONTACT_LIMIT }}
+          # 터미널이 아니므로 확인 문구를 대신 넣는다: send이고 confirm 칸이 edition ID와 같을 때만
+          NEWSLETTER_CONFIRM_TYPED: ${{ inputs.action == 'send' && inputs.confirm == inputs.edition && format('발송 {0}', inputs.edition) || '' }}
+        run: |
+          [[ "$E" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]] || { echo "bad edition"; exit 1; }
+          case "$ACTION" in
+            check) npm run newsletter:weekly:send -- --edition "$E" ;;
+            test) npm run newsletter:weekly:send -- --edition "$E" --test ;;
+            send) npm run newsletter:weekly:send -- --edition "$E" --send --confirm "$CONFIRM" --hash "$HASH" --expect-recipients "$EXPECT" ;;
+            reconcile) npm run newsletter:weekly:send -- --edition "$E" --reconcile ;;
+            *) echo "unknown action"; exit 1 ;;
+          esac
+
+      # 발송·확인 기록을 검토 브랜치로 남긴다 (실패해도 기록은 남김)
+      - name: Record result (branch + PR, never master)
+        if: always() && (inputs.action == 'send' || inputs.action == 'reconcile') && steps.run.outcome != 'skipped'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+          E: ${{ inputs.edition }}
+          BASE: ${{ github.event.repository.default_branch }}
+          RUN: ${{ github.run_id }}
+        run: |
+          set -euo pipefail
+          [ -f "newsletter/weekly/$E/state.json" ] || exit 0
+          B="newsletter/weekly-$E-sent-$RUN"
+          git config user.name "aimajung-newsletter[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B "$B"
+          git add "newsletter/weekly/$E/state.json" "newsletter/weekly/$E/report.md" ingest/newsletter-sent.json
+          if git diff --cached --quiet; then echo "변경 없음"; exit 0; fi
+          git commit -m "chore(newsletter): 주간 $E 발송 기록"
+          git push origin "HEAD:refs/heads/$B"
+          gh pr create --base "$BASE" --head "$B" --title "AI마중 주간 뉴스레터 $E 발송 기록" --body-file "newsletter/weekly/$E/report.md"
