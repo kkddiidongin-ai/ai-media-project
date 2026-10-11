@@ -37,11 +37,33 @@ export const DEFAULTS = {
   maxPublishPerDay: 6, // 최종 발행 추천 수 (근거 확인 '뒤'에 건다)
   maxEvidenceFetches: 12, // 근거 확인 명단(shortlist) — 원문 요청 수 상한 (비용·부하)
   maxLlmCalls: 6, // 원고 생성은 최종 추천에만
-  maxOutputTokens: 2500,
+  maxOutputTokens: 3000, // 사고(thinking) 토큰도 여기에 포함된다
   llmTimeoutMs: 60_000,
   llmRetries: 1, // 실패 시 다시 시도 횟수 (총 시도 = 1 + retries)
+  maxCostUsd: 0.5, // 하루 LLM 예상 비용 상한 (USD) — 호출 전 최악 비용으로 확인
 };
-export const HARD_CAPS = { maxPublishPerDay: 12, maxLlmCalls: 12, maxOutputTokens: 4000, llmRetries: 2, maxEvidenceFetches: 25, maxItemsPerSource: 40 };
+export const HARD_CAPS = { maxPublishPerDay: 12, maxLlmCalls: 12, maxOutputTokens: 4000, llmRetries: 2, maxEvidenceFetches: 25, maxItemsPerSource: 40, maxCostUsd: 3 };
+
+/**
+ * 실행 모드 (DAILY_MODE)
+ *   shadow  (기본) 수집·중복·선정·근거·보고서까지만. LLM을 부르지 않는다
+ *   draft   검증된 PUBLISH 후보에 AI 초안 + 초안 QA. 명시적으로 draft라고 적은 수동 실행에서만
+ *   publish Phase 7.2 전까지 사용 금지 — 아무것도 하지 않고 멈춘다
+ * 값이 없거나 모르는 값이면 shadow (환경변수 누락으로 draft가 켜지지 않게).
+ * GitHub Actions에서는 수동 실행(workflow_dispatch)일 때만 draft를 허용한다 (예약 실행은 언제나 shadow).
+ */
+export function resolveMode(env = process.env) {
+  const raw = String(env.DAILY_MODE ?? "").trim().toLowerCase();
+  if (raw === "publish") return { mode: null, error: "publish 모드는 Phase 7.2 전까지 사용할 수 없습니다 — 실행하지 않음" };
+  if (raw === "draft") {
+    const ev = String(env.GITHUB_EVENT_NAME ?? "").trim();
+    if (ev === "schedule") return { mode: "shadow", warning: "예약 실행에서는 draft를 쓰지 않음 — shadow로 실행" };
+    if (String(env.GITHUB_ACTIONS ?? "") === "true" && ev !== "workflow_dispatch") return { mode: "shadow", warning: `GitHub 이벤트 ${ev || "(없음)"}에서는 draft를 쓰지 않음 — shadow로 실행` };
+    return { mode: "draft" };
+  }
+  if (raw && raw !== "shadow") return { mode: "shadow", warning: `알 수 없는 DAILY_MODE '${raw}' — shadow로 실행` };
+  return { mode: "shadow" };
+}
 
 export function loadLimits(env = process.env) {
   // GitHub Actions의 `${{ vars.X }}`는 Variable이 없으면 빈 문자열을 넘긴다. Number("")은 0이므로
@@ -61,6 +83,11 @@ export function loadLimits(env = process.env) {
     llmRetries: pick("llmRetries", "DAILY_LLM_RETRIES"),
     maxEvidenceFetches: pick("maxEvidenceFetches", "DAILY_MAX_EVIDENCE_FETCHES"),
     maxItemsPerSource: pick("maxItemsPerSource", "DAILY_MAX_ITEMS_PER_SOURCE"),
+    maxCostUsd: (() => {
+      const raw = String(env.DAILY_MAX_COST_USD ?? "").trim();
+      const v = /^\d+(\.\d+)?$/.test(raw) ? Number(raw) : DEFAULTS.maxCostUsd;
+      return Math.min(v, HARD_CAPS.maxCostUsd);
+    })(),
   };
 }
 
@@ -363,6 +390,10 @@ export function validateDraft(draft, { item, evidence, existing, dup }) {
   const ids = new Set(evidence.ledger.map((e) => e.id));
   const evText = evidence.ledger.map((e) => e.text).join("\n");
   const evNums = new Set((evText.match(NUM_RE) ?? []).map(normNum));
+  // 'October 7, 2026'의 월(10)과 원문 발표일(메타데이터로 확인)은 근거 숫자로 본다
+  const MON = { jan: 1, feb: 2, mar: 3, apr: 4, may: 5, jun: 6, jul: 7, aug: 8, sep: 9, oct: 10, nov: 11, dec: 12 };
+  for (const m of evText.matchAll(/\b(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\.?\s+\d/gi)) evNums.add(String(MON[m[1].toLowerCase()]));
+  if (item.publishedAt) for (const x of item.publishedAt.slice(0, 10).split("-")) evNums.add(normNum(x));
   const evLower = evText.toLowerCase();
 
   for (const k of ["title", "summary", "category"]) if (!draft[k]) errors.push(`${k} 없음`);

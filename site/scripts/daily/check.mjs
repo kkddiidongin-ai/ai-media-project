@@ -34,6 +34,7 @@ const providers = await import("./providers.mjs");
 const { renderReport } = await import("./report.mjs");
 const sel = await import("./select.mjs");
 const bt = await import("./backtest.mjs");
+const dr = await import("./draft.mjs");
 
 let passed = 0;
 let failed = 0;
@@ -101,7 +102,7 @@ function resetWeb() {
   WEB.set("https://fx-a.test/news/widget-2", { body: bodyPage(WIDGET_SENTENCES) });
   WEB.set("https://fx-a.test/news/gizmo-ga", { body: bodyPage(["Gizmo Pro 3 is now generally available in 12 more regions.", "It was first released as a preview in September 2026."]) });
 }
-const ENV = (extra = {}) => ({ DAILY_AUTOMATION_ENABLED: "true", DAILY_LLM_PROVIDER: "mock", ...extra });
+const ENV = (extra = {}) => ({ DAILY_AUTOMATION_ENABLED: "true", DAILY_MODE: "draft", DAILY_LLM_PROVIDER: "mock", ...extra });
 const baseRun = (extra = {}) => ({ date: DATE, out: path.join(tmp, `out-${Math.random().toString(36).slice(2)}`), registry: REGISTRY, existing: existing(), processedFile: path.join(tmp, `p-${Math.random().toString(36).slice(2)}.json`), retryDelayMs: 1, log: quiet, ...extra });
 
 // ---------- 1) 수집 ----------
@@ -358,7 +359,9 @@ await t("원문 차단 소스: 근거 부족이면 발행 추천하지 않음 (H
 await t("보고서: 상태·숫자표·발행 추천·보류·제외·소스 상태·비용이 들어감", async () => {
   const md = fs.readFileSync(path.join(fullOpt.out, DATE, "report.md"), "utf8");
   for (const s of ["# AI마중 DAILY — 2026-10-07", "**상태: PARTIAL", "## 발행 추천", "## 보류", "## 제외", "## 소스 상태", "FX B — **blocked**", "FX C — **failed**", "## 비용", "자동으로 발행하지 않습니다"]) ok(md.includes(s), `보고서에 '${s}' 없음`);
-  ok(md.split("\n").length < 120, "보고서가 너무 김");
+  const summaryPart = md.replace(/## AI 초안[\s\S]*?(?=## 보류)/, "");
+  ok(summaryPart.split("\n").length < 120, "보고서가 너무 김");
+  ok(md.length < 60_000, "PR 본문 한도");
   ok(renderReport({ ...full.run, counts: { ...full.run.counts } }, []).includes("0건도 정상"), "빈 대기열");
 });
 
@@ -549,6 +552,326 @@ await t("회귀 2026-10-11 Asana: 발췌에만 지나가듯 나온 모델(GPT-6 
   eq(sel.screenDecision(story, { result: "UNCERTAIN", reason: "x" }, sel.metadataScore(story, { result: "UNCERTAIN" })).decision, "EXCLUDE");
 });
 
+// ---------- 6-5) Phase 7.1.3: AI 초안 · 초안 QA ----------
+const FAKE_KEY = "sk-ant-test-FAKEKEY-not-real-0123456789";
+const WIDGET_ID = col.items.find((i) => i.url.endsWith("/widget-2")).id;
+// 근거(WIDGET_SENTENCES = E1~E7, 피드 설명 = E0)와 맞는 한국어 초안
+const widgetDraft = () => ({
+  title: "Widget 2 개발자 공개, 하루 1,000회 무료 요청",
+  summary: "FX A가 2026년 10월 7일 Widget 2를 API로 전 세계 개발자에게 공개했습니다.",
+  category: "PRODUCT_UPDATE",
+  topics: ["ai-coding"],
+  companies: ["FX A"],
+  products: ["Widget 2"],
+  facts: [
+    { text: "무료 요금제는 계정마다 하루 1,000회 요청을 제공합니다.", evidence: ["E2"] },
+    { text: "유료 요금제는 개발자 좌석당 월 $20부터입니다.", evidence: ["E5"] },
+    { text: "FX A는 내부 벤치마크에서 Widget 1보다 응답이 3배 빠르다고 밝혔습니다.", evidence: ["E3"] },
+  ],
+  why: { text: "무료 구간이 생겨 개발자가 비용 부담 없이 먼저 확인해 볼 여지가 커졌습니다.", evidence: ["E2"] },
+  change: { text: "기존 Widget 1 연동은 2027년 3월 31일까지 동작하므로 그 전에 전환 계획이 필요합니다.", evidence: ["E6"] },
+  checks: [{ text: "무료 한도와 유료 요금이 내 사용량에 맞는지 확인하세요.", evidence: ["E2", "E5"] }, { text: "기업 고객은 계정 팀을 통해 더 높은 한도를 요청할 수 있습니다.", evidence: ["E7"] }],
+  unknowns: ["국내 제공 조건과 한국어 지원 여부는 공식 발표에 나와 있지 않습니다."],
+  editorialDepth: "SHORT",
+  insufficient: false,
+});
+const W_LEDGER = { status: "OK", grade: "LIMITED", pageDate: null, ledger: [{ id: "E0", kind: "feed", text: LONG_DESC }, ...WIDGET_SENTENCES.map((t, i) => ({ id: `E${i + 1}`, kind: "body", text: t }))] };
+const W_ITEM = { ...col.items.find((i) => i.url.endsWith("/widget-2")) };
+const qa = (d, patch = {}) => dr.reviewDraft(d, { item: W_ITEM, evidence: W_LEDGER, existing: existing(), dup: { result: "NEW" }, suggestedDepth: "SHORT", ...patch });
+const codes = (res) => res.issues.map((i) => `${i.severity}:${i.code}`);
+const anthropicReply = (draft, usage = { input_tokens: 1200, output_tokens: 800 }, stop = "end_turn") => new Response(JSON.stringify({ content: [{ type: "text", text: JSON.stringify(draft) }], usage, stop_reason: stop }), { status: 200, headers: { "content-type": "application/json" } });
+const walk = (dir) => fs.readdirSync(dir, { withFileTypes: true }).flatMap((e) => (e.isDirectory() ? walk(path.join(dir, e.name)) : [path.join(dir, e.name)]));
+
+await t("초안 QA: 근거와 맞는 한국어 초안은 PASS (6개 항목 모두 PASS)", async () => {
+  const res = qa(widgetDraft());
+  eq(res.verdict, "PASS", JSON.stringify(res.issues));
+  eq(Object.values(res.checks).map((c) => c.result), ["PASS", "PASS", "PASS", "PASS", "PASS", "PASS"]);
+});
+await t("초안 QA FACT: 근거 없는 수치·가격 통화·날짜·지역·출시 단계·API → FAIL", async () => {
+  const cases = [
+    [(d) => (d.facts[0].text = "무료 요금제는 하루 5,000회 요청을 제공합니다."), "FAIL:unsupported_number"],
+    [(d) => (d.facts[1].text = "유료 요금제는 월 20,000원부터입니다."), "FAIL:price_currency"],
+    [(d) => (d.summary = "FX A가 2026년 10월 9일 Widget 2를 공개했습니다."), "FAIL:unsupported_date"],
+    [(d) => (d.change.text = "한국에서도 바로 사용할 수 있습니다."), "FAIL:unsupported_region"],
+    [(d) => (d.summary = "FX A가 Widget 2를 베타로 공개했습니다."), "FAIL:rollout_mismatch"],
+    [(d) => (d.why.text = "Widget 2가 프로 요금제 사용자에게 먼저 제공됩니다."), null], // 근거 없는 요금제 이름은 한국어라 이름 검사 밖 → 사람이 확인 (아래 영문 이름은 잡음)
+    [(d) => (d.why.text = "Pro 요금제 사용자에게 먼저 제공됩니다."), "REVIEW:unverified_term"],
+  ];
+  for (const [mut, code] of cases) {
+    const d = widgetDraft();
+    mut(d);
+    const res = qa(d);
+    if (code) ok(codes(res).includes(code), `${code} 기대 · ${JSON.stringify(codes(res))}`);
+    if (code?.startsWith("FAIL")) eq(res.verdict, "FAIL", code);
+  }
+  // GA: 근거가 preview인데 정식 제공이라고 쓰면 FAIL
+  const pv = { ...W_LEDGER, ledger: [{ id: "E1", kind: "body", text: "Widget 2 is available in limited preview for developers starting October 7, 2026." }, { id: "E2", kind: "body", text: "The preview includes 1,000 free requests per day." }] };
+  const d = widgetDraft();
+  d.facts = [{ text: "Widget 2가 정식 출시됐습니다.", evidence: ["E1"] }];
+  ok(codes(dr.reviewDraft(d, { item: W_ITEM, evidence: pv, existing: existing(), dup: { result: "NEW" }, suggestedDepth: "SHORT" })).includes("FAIL:rollout_mismatch"), "GA vs preview");
+  // API: 근거에 API 언급이 없으면 FAIL
+  const noApi = { ...W_LEDGER, ledger: W_LEDGER.ledger.map((e) => ({ ...e, text: e.text.replace(/\bAPI\b/g, "console") })) };
+  ok(codes(dr.reviewDraft(widgetDraft(), { item: { ...W_ITEM, title: "Introducing Widget 2" }, evidence: noApi, existing: existing(), dup: { result: "NEW" }, suggestedDepth: "SHORT" })).includes("FAIL:unsupported_api"), "API 제공");
+  // '확인되지 않았다'는 주장 아님
+  const neg = widgetDraft();
+  neg.checks.push({ text: "한국 제공 여부는 확인되지 않았습니다.", evidence: ["E1"] });
+  ok(!codes(qa(neg)).includes("FAIL:unsupported_region"), "부정문 오탐");
+});
+await t("초안 QA FACT: 모델명·버전 오류 검출 (GPT-6 ≠ GPT-6.1, Claude Sonnet 5 ≠ 5.5, 근거에 없는 이름)", async () => {
+  const ev = { status: "OK", grade: "LIMITED", ledger: [{ id: "E1", kind: "body", text: "GPT-6.1 Sol is now available in the API at a lower price than GPT-6 Astra." }, { id: "E2", kind: "body", text: "Claude Sonnet 5.5 is available on Amazon Bedrock in 3 regions." }] };
+  const item = { url: "https://x.test/a", publishedAt: "2026-10-07T00:00:00Z", title: "Introducing GPT-6.1 Sol", sourceName: "OpenAI" };
+  const base = { title: "GPT-6.1 Sol 공개", summary: "OpenAI가 GPT-6.1 Sol을 API로 공개했습니다.", category: "PRODUCT_UPDATE", topics: [], facts: [{ text: "GPT-6.1 Sol은 API에서 쓸 수 있습니다.", evidence: ["E1"] }], why: { text: "x 설명 문장입니다 충분히.", evidence: ["E1"] }, change: { text: "y 설명 문장입니다 충분히.", evidence: ["E1"] }, checks: [{ text: "요금을 확인하세요.", evidence: ["E1"] }], unknowns: [], editorialDepth: "SHORT" };
+  const run = (patch) => codes(dr.reviewDraft({ ...base, ...patch }, { item, evidence: ev, existing: existing(), dup: { result: "NEW" }, suggestedDepth: "SHORT" }));
+  ok(!run({}).some((c) => c.startsWith("FAIL")), JSON.stringify(run({})));
+  ok(run({ summary: "OpenAI가 GPT-6 Sol을 공개했습니다." }).includes("FAIL:model_version_mismatch"), "GPT-6 vs 6.1");
+  ok(run({ facts: [{ text: "Claude Sonnet 5는 3개 지역에서 제공됩니다.", evidence: ["E2"] }] }).includes("FAIL:model_version_mismatch"), "Sonnet 5 vs 5.5");
+  ok(run({ facts: [{ text: "Gemini 3.5와 비교됩니다.", evidence: ["E1"] }] }).includes("FAIL:unsupported_name"), "근거에 없는 모델");
+  ok(run({ products: ["GPT-7"] }).includes("FAIL:unsupported_name"), "products 이름");
+});
+await t("초안 QA SAFETY·EDITORIAL: 허위 사용 경험 · 과장 제목 · 근거 없는 시장 전망 → FAIL, 회사 주장 무출처 · 상대 날짜 → REVIEW", async () => {
+  for (const [mut, code] of [
+    [(d) => (d.why.text = "AI마중이 직접 써 보니 응답이 빨랐습니다."), "FAIL:fake_experience"],
+    [(d) => (d.change.text = "직접 재봄: 응답 시간이 절반으로 줄었습니다."), "FAIL:fake_experience"],
+    [(d) => (d.handsOn = true), "FAIL:fake_experience"],
+    [(d) => (d.title = "충격! Widget 2 무료 공개"), "FAIL:hype_title"],
+    [(d) => (d.why.text = "이번 발표로 AI 시장 점유율 판도가 바뀔 것으로 보인다."), "FAIL:market_speculation"],
+    [(d) => (d.why.text = "업계 최고 수준의 속도를 냅니다."), "REVIEW:company_claim_unattributed"],
+    [(d) => (d.summary = "오늘 FX A가 Widget 2를 공개했습니다."), "REVIEW:relative_date"],
+    [(d) => (d.facts[0].text = "무료 요청 1,000회는 개발자 확산에 기여할 것으로 보인다."), "REVIEW:interpretation_in_facts"],
+  ]) {
+    const d = widgetDraft();
+    mut(d);
+    ok(codes(qa(d)).includes(code), `${code} · ${JSON.stringify(codes(qa(d)))}`);
+  }
+});
+await t("초안 QA STRUCTURE·DUPLICATE·EVIDENCE: 근거 id 누락·DEEP·근거보다 깊은 유형 → FAIL, 기존 기사와 같은 사안 → FAIL/REVIEW", async () => {
+  const noId = widgetDraft();
+  noId.facts[0].evidence = ["E99"];
+  eq(qa(noId).verdict, "FAIL");
+  const deep = widgetDraft();
+  deep.editorialDepth = "DEEP";
+  ok(codes(qa(deep)).includes("FAIL:deep_not_allowed"), "DEEP");
+  const std = widgetDraft();
+  std.editorialDepth = "STANDARD";
+  ok(codes(qa(std)).includes("FAIL:depth_exceeds_evidence"), "SHORT 근거로 STANDARD");
+  ok(!codes(qa(std, { suggestedDepth: "STANDARD" })).includes("FAIL:depth_exceeds_evidence"), "STANDARD 허용");
+  const thin = { ...std, facts: [std.facts[0]], checks: [std.checks[0]], why: { text: "비용 부담이 줄었습니다.", evidence: ["E2"] } };
+  const thinRes = qa(thin, { suggestedDepth: "STANDARD" });
+  ok(codes(thinRes).includes("REVIEW:length_out_of_range") && thinRes.verdict === "REVIEW", `STANDARD 길이(약 400~800자)보다 짧음 → REVIEW (FAIL 아님) ${dr.bodyLength(thin)}자 ${JSON.stringify(codes(thinRes))}`);
+  ok(codes(qa(widgetDraft(), { dup: { result: "DUPLICATE", reason: "같은 원문" } })).includes("FAIL:duplicate"), "중복");
+  ok(codes(qa(widgetDraft(), { dup: { result: "UPDATE_EXISTING", matchSlug: "x" } })).includes("REVIEW:update_existing"), "후속");
+  ok(codes(qa(widgetDraft(), { evidence: { ...W_LEDGER, status: "HTTP_403" } })).includes("FAIL:source_blocked"), "원문 미확인");
+  eq(dr.LENGTH_RANGE, { SHORT: [150, 350], STANDARD: [400, 800] });
+});
+await t("초안 대상: PUBLISH·NEW/확인된 UPDATE·원문 OK·사실 2개+·주소·일자·공식만 — HOLD·EXCLUDE·UNCERTAIN·근거 부족·DEEP 차단", async () => {
+  const good = { decision: "PUBLISH", dup: { result: "NEW" }, evidence: W_LEDGER, facts: 6, depth: "SHORT", item: W_ITEM };
+  eq(dr.draftEligibility(good), { ok: true, reasons: [] });
+  ok(dr.draftEligibility({ ...good, depth: "STANDARD" }).ok, "STANDARD");
+  ok(dr.draftEligibility({ ...good, dup: { result: "UPDATE_EXISTING", matchSlug: "gizmo" } }).ok, "확인된 후속");
+  for (const [patch, re] of [
+    [{ decision: "HOLD" }, /PUBLISH만/],
+    [{ decision: "EXCLUDE" }, /PUBLISH만/],
+    [{ dup: { result: "UNCERTAIN" } }, /UNCERTAIN/],
+    [{ dup: { result: "UPDATE_EXISTING" } }, /UPDATE_EXISTING/],
+    [{ evidence: { ...W_LEDGER, status: "HTTP_403" } }, /원문 근거 HTTP_403/],
+    [{ evidence: { status: "OK", ledger: [{ id: "E0", kind: "feed", text: "x" }] }, facts: 1 }, /핵심 사실 부족/],
+    [{ depth: "DEEP" }, /DEEP/],
+    [{ depth: null }, /유형 없음/],
+    [{ item: { ...W_ITEM, datePrecision: "month" } }, /발표일/],
+    [{ item: { ...W_ITEM, url: "http://insecure.test/x" } }, /주소/],
+    [{ item: { ...W_ITEM, sourceType: "press" } }, /공식/],
+  ]) {
+    const g = dr.draftEligibility({ ...good, ...patch });
+    ok(!g.ok && g.reasons.some((x) => re.test(x)), `${JSON.stringify(patch).slice(0, 50)} → ${JSON.stringify(g)}`);
+  }
+});
+await t("모드: 값 없음·모르는 값 → shadow, draft는 명시할 때만, 예약 실행·다른 이벤트의 draft → shadow, publish → 거부", async () => {
+  eq(lib.resolveMode({}).mode, "shadow");
+  eq(lib.resolveMode({ DAILY_MODE: "" }).mode, "shadow");
+  eq(lib.resolveMode({ DAILY_MODE: "normal" }).mode, "shadow");
+  eq(lib.resolveMode({ DAILY_MODE: "draft" }).mode, "draft");
+  eq(lib.resolveMode({ DAILY_MODE: "draft", GITHUB_ACTIONS: "true", GITHUB_EVENT_NAME: "workflow_dispatch" }).mode, "draft");
+  eq(lib.resolveMode({ DAILY_MODE: "draft", GITHUB_ACTIONS: "true", GITHUB_EVENT_NAME: "schedule" }).mode, "shadow");
+  eq(lib.resolveMode({ DAILY_MODE: "draft", GITHUB_ACTIONS: "true", GITHUB_EVENT_NAME: "push" }).mode, "shadow");
+  ok(lib.resolveMode({ DAILY_MODE: "publish" }).error, "publish 거부");
+  resetWeb();
+  calls.length = 0;
+  const opt = baseRun({ env: ENV({ DAILY_MODE: "publish" }) });
+  const r = await runDaily(opt);
+  eq([r.status, calls.length, fs.existsSync(opt.out)], ["REFUSED", 0, false]);
+});
+await t("shadow(기본): DAILY_MODE가 없으면 mock·키가 있어도 LLM 호출 0, 예약 실행에서 draft를 요청해도 0", async () => {
+  for (const extra of [{ DAILY_MODE: undefined }, { DAILY_MODE: "draft", GITHUB_ACTIONS: "true", GITHUB_EVENT_NAME: "schedule" }]) {
+    resetWeb();
+    let llm = 0;
+    const env = ENV({ DAILY_LLM_PROVIDER: "anthropic", ANTHROPIC_API_KEY: FAKE_KEY, ...extra });
+    if (extra.DAILY_MODE === undefined) delete env.DAILY_MODE;
+    const r = await runDaily(baseRun({ env, registry: { sources: [REGISTRY.sources[0]] }, fetch: async () => (llm++, anthropicReply(widgetDraft())) }));
+    eq([llm, r.run.llm.calls, r.run.mode, r.run.counts.drafts], [0, 0, "shadow", 0], JSON.stringify(extra));
+    ok(r.run.counts.PUBLISH >= 1, "선정은 그대로");
+  }
+});
+await t("PUBLISH 0건이면 draft 모드에서도 LLM 호출 0 (뉴스 없는 날 · 후보가 모두 보류·제외인 날)", async () => {
+  let llm = 0;
+  const f = async () => (llm++, anthropicReply(widgetDraft()));
+  WEB.clear();
+  WEB.set("https://fx-a.test/feed.xml", { body: rss([]) });
+  const a = await runDaily(baseRun({ env: ENV({ DAILY_LLM_PROVIDER: "anthropic", ANTHROPIC_API_KEY: FAKE_KEY }), registry: { sources: [REGISTRY.sources[0]] }, fetch: f }));
+  WEB.clear();
+  WEB.set("https://fx-a.test/feed.xml", { body: rss(ITEMS_A.filter((i) => /old|acme|sprocket/.test(i.link))) });
+  const b = await runDaily(baseRun({ env: ENV({ DAILY_LLM_PROVIDER: "anthropic", ANTHROPIC_API_KEY: FAKE_KEY }), registry: { sources: [REGISTRY.sources[0]] }, fetch: f }));
+  eq([a.run.counts.PUBLISH, b.run.counts.PUBLISH, llm, a.run.llm.calls + b.run.llm.calls], [0, 0, 0, 0]);
+  eq(b.status, "SUCCESS");
+});
+await t("draft(anthropic, 가짜 응답): PUBLISH 후보에만 호출 · 요청 형식(모델·effort·thinking·버전) · 토큰·비용 기록 · drafts/ JSON·MD · QA PASS도 승인 대기", async () => {
+  resetWeb();
+  const seen = [];
+  const f = async (url, init) => {
+    const body = JSON.parse(init.body);
+    seen.push({ url, body, headers: init.headers });
+    return body.messages[0].content.includes("widget-2") ? anthropicReply(widgetDraft()) : anthropicReply({ ...widgetDraft(), title: "Gizmo Pro 3 확대 제공" });
+  };
+  const opt = baseRun({ env: ENV({ DAILY_LLM_PROVIDER: "anthropic", ANTHROPIC_API_KEY: FAKE_KEY }), fetch: f });
+  const r = await runDaily(opt);
+  const pubIds = r.run.items.filter((i) => i.decision === "PUBLISH" || /초안 QA FAIL/.test(i.reasons.join())).map((i) => i.id);
+  eq(seen.length, r.run.llm.calls);
+  ok(seen.length >= 1 && seen.length === pubIds.length, `호출 ${seen.length} · 대상 ${pubIds.length}`);
+  const b = seen[0].body;
+  eq([seen[0].url, b.model, b.output_config, b.thinking, seen[0].headers["anthropic-version"]], ["https://api.anthropic.com/v1/messages", "claude-sonnet-5-5", { effort: "medium" }, { type: "between_tools" }, "2023-06-01"]);
+  ok(b.max_tokens === 3000 && !JSON.stringify(b).includes(FAKE_KEY), "본문에 키");
+  eq([r.run.llm.inputTokens, r.run.llm.outputTokens], [1200 * seen.length, 800 * seen.length]);
+  eq(r.run.llm.estimatedCostUsd, Number(((1200 * 2 + 800 * 10) / 1e6 * seen.length).toFixed(6)), "비용 = 입력 $2 + 출력 $10 / 100만 토큰");
+  const rec = JSON.parse(fs.readFileSync(path.join(r.outDir, "drafts", `${WIDGET_ID}.json`), "utf8"));
+  for (const k of ["candidateId", "title", "source", "evidenceSummary", "articleType", "draft", "qa", "fixes", "generation"]) ok(k in rec, `초안 기록 ${k}`);
+  eq([rec.qa.verdict, rec.articleType, rec.generation.model, rec.generation.usage.inputTokens, rec.handsOn, rec.status], ["PASS", "SHORT", "claude-sonnet-5-5", 1200, false, "draft_for_editor_review"]);
+  ok(rec.generation.generatedAt && rec.source.url.endsWith("/widget-2") && rec.evidenceSummary.ledger.length === 8, "출처·근거 요약");
+  const md = fs.readFileSync(path.join(r.outDir, "drafts", `${WIDGET_ID}.md`), "utf8");
+  for (const sec of ["핵심 요약", "무엇이 달라졌나", "왜 중요한가", "독자가 확인할 사항", "아직 확인되지 않은 부분", "출처 및 확인 범위", "발행 승인 아님", "직접 써 보지 않았습니다", "자동 QA", "수정 필요 사항"]) ok(md.includes(sec), `초안 MD에 '${sec}'`);
+  const q = JSON.parse(fs.readFileSync(path.join(r.outDir, "candidates", `${WIDGET_ID}.json`), "utf8"));
+  eq([q.decision, q.approval.status, q.draftQa.verdict, q.draftFile], ["PUBLISH", "pending", "PASS", `drafts/${WIDGET_ID}.md`]);
+  const report = fs.readFileSync(path.join(r.outDir, "report.md"), "utf8");
+  ok(report.includes("Draft Mode") && report.includes("## AI 초안") && report.includes("발행 승인 아님") && report.includes("예상 비용 $"), "보고서");
+  ok(!walk(r.outDir).some((f) => fs.readFileSync(f, "utf8").includes(FAKE_KEY)), "결과 파일에 키");
+});
+await t("중복 생성 방지: 같은 날짜 재실행·대기열이 지워져도 같은 근거·프롬프트·모델이면 다시 부르지 않음, shadow 재실행은 초안을 지우지 않음", async () => {
+  resetWeb();
+  let n = 0;
+  const f = async () => (n++, anthropicReply(widgetDraft()));
+  const opt = baseRun({ env: ENV({ DAILY_LLM_PROVIDER: "anthropic", ANTHROPIC_API_KEY: FAKE_KEY }), registry: { sources: [REGISTRY.sources[0]] }, fetch: f });
+  const first = await runDaily(opt);
+  const made = n;
+  ok(made >= 1, "첫 실행 생성");
+  resetWeb();
+  const again = await runDaily({ ...opt, processedFile: path.join(tmp, `p-${Math.random().toString(36).slice(2)}.json`) });
+  eq([n, again.run.llm.calls, again.run.counts.drafts], [made, 0, first.run.counts.drafts], "재실행");
+  fs.rmSync(path.join(first.outDir, "candidates"), { recursive: true });
+  resetWeb();
+  const third = await runDaily({ ...opt, processedFile: path.join(tmp, `p-${Math.random().toString(36).slice(2)}.json`) });
+  eq([n, third.run.llm.calls], [made, 0], "drafts/ 기록으로 재사용");
+  resetWeb();
+  const shadow = await runDaily({ ...opt, env: ENV({ DAILY_MODE: "shadow" }), processedFile: path.join(tmp, `p-${Math.random().toString(36).slice(2)}.json`) });
+  eq([n, shadow.run.counts.drafts], [made, first.run.counts.drafts], "shadow가 초안을 보존");
+  ok(JSON.parse(fs.readFileSync(path.join(first.outDir, "drafts", `${WIDGET_ID}.json`), "utf8")).generation.reused, "재사용 표시");
+});
+await t("API 오류 처리: timeout·429·529는 retries번까지, 400·max_tokens 잘림은 재시도 없음, 비용 상한·미확인 모델·키 없음은 호출 0", async () => {
+  const cand = { title: "t", sourceName: "s", url: "https://x.test", publishedAt: "2026-10-07T00:00:00Z" };
+  const lim = { ...lib.DEFAULTS, llmRetries: 1 };
+  const mk = (fetchFn, env = {}, limits = lim) => ({ provider: "anthropic", env: { ANTHROPIC_API_KEY: FAKE_KEY, ...env }, limits, budget: { calls: 0, inputTokens: 0, outputTokens: 0, costUsd: 0 }, categories: [], topics: [], suggestedDepth: "SHORT", retryDelayMs: 1, fetch: fetchFn });
+  let n = 0;
+  const timeout = async () => {
+    n++;
+    throw Object.assign(new Error("The operation was aborted due to timeout"), { name: "TimeoutError" });
+  };
+  n = 0;
+  const t1 = await providers.generateArticle(cand, { ledger: [] }, mk(timeout));
+  eq([t1.status, t1.error, n], ["failed", "timeout", 2]);
+  for (const st of [429, 529]) {
+    n = 0;
+    const x = await providers.generateArticle(cand, { ledger: [] }, mk(async () => (n++, new Response("{}", { status: st }))));
+    eq([x.status, n], ["failed", 2], `HTTP ${st}`);
+  }
+  n = 0;
+  const bad = await providers.generateArticle(cand, { ledger: [] }, mk(async () => (n++, new Response("{}", { status: 400 }))));
+  eq([bad.status, n], ["failed", 1], "400");
+  n = 0;
+  const cut = await providers.generateArticle(cand, { ledger: [] }, mk(async () => (n++, anthropicReply(widgetDraft(), { input_tokens: 10, output_tokens: 3000 }, "max_tokens"))));
+  eq([cut.status, n, cut.usage.outputTokens], ["failed", 1, 3000], "max_tokens 잘림");
+  n = 0;
+  const flaky = await providers.generateArticle(cand, { ledger: [] }, mk(async () => (++n === 1 ? new Response("{}", { status: 503 }) : anthropicReply(widgetDraft()))));
+  eq([flaky.status, n], ["ok", 2], "한 번 실패 후 성공");
+  n = 0;
+  const broke = await providers.generateArticle(cand, { ledger: [] }, mk(async () => (n++, new Response(JSON.stringify({ content: [{ type: "text", text: "not json" }], usage: {} }), { status: 200 }))));
+  eq([broke.status, broke.error, n], ["failed", "JSON 형식 오류", 1]);
+  // 비용 상한: 호출 전 최악 비용으로 막음
+  n = 0;
+  const capped = await providers.generateArticle(cand, { ledger: [] }, mk(async () => (n++, anthropicReply(widgetDraft())), {}, { ...lim, maxCostUsd: 0.001 }));
+  eq([capped.status, n], ["skipped", 0], "비용 상한");
+  ok(/비용 상한/.test(capped.error), capped.error);
+  n = 0;
+  const unknown = await providers.generateArticle(cand, { ledger: [] }, mk(async () => (n++, anthropicReply(widgetDraft())), { DAILY_LLM_MODEL: "claude-made-up-9" }));
+  eq([unknown.status, n], ["skipped", 0], "확인되지 않은 모델");
+  n = 0;
+  const haiku = await providers.generateArticle(cand, { ledger: [] }, mk(async () => (n++, anthropicReply(widgetDraft())), { DAILY_LLM_MODEL: "claude-haiku-5-5" }));
+  eq([haiku.status, n], ["skipped", 0], "요금 미정 모델은 요금 설정 없이는 호출 안 함");
+  eq(providers.resolveModelConfig({ DAILY_LLM_MODEL: "claude-haiku-5-5", DAILY_LLM_PRICE_INPUT: "0.1", DAILY_LLM_PRICE_OUTPUT: "0.5" }).inputPerMTok, 0.1);
+  eq([lib.loadLimits({ DAILY_MAX_COST_USD: "" }).maxCostUsd, lib.loadLimits({ DAILY_MAX_COST_USD: "0.2" }).maxCostUsd, lib.loadLimits({ DAILY_MAX_COST_USD: "99" }).maxCostUsd], [0.5, 0.2, 3]);
+});
+await t("한 후보의 생성 실패가 다른 후보를 막지 않음 (실패 후보는 원고 없음 · 나머지는 초안 · PARTIAL)", async () => {
+  resetWeb();
+  const r = await runDaily(baseRun({ env: ENV(), mockReply: (c) => (c.url.endsWith("/widget-2") ? new Error("upstream exploded") : { ...widgetDraft(), title: "Gizmo Pro 3 확대", products: [] }) }));
+  const w = JSON.parse(fs.readFileSync(path.join(r.outDir, "candidates", `${WIDGET_ID}.json`), "utf8"));
+  eq([w.generation.status, w.draft], ["failed", null]);
+  ok(r.run.counts.drafts >= 1, "다른 후보 초안");
+  eq(r.status, "PARTIAL");
+});
+await t("draft인데 ANTHROPIC_API_KEY가 없으면: 안내 후 LLM 호출 0, 수집·선정·보고서는 그대로 (PARTIAL)", async () => {
+  resetWeb();
+  let n = 0;
+  const logs = [];
+  const r = await runDaily(baseRun({ env: ENV({ DAILY_LLM_PROVIDER: "anthropic", ANTHROPIC_API_KEY: "" }), registry: { sources: [REGISTRY.sources[0]] }, fetch: async () => (n++, anthropicReply(widgetDraft())), log: (m) => logs.push(m) }));
+  eq([n, r.run.llm.calls, r.run.counts.drafts, r.status], [0, 0, 0, "PARTIAL"]);
+  ok(/ANTHROPIC_API_KEY가 설정되지 않음/.test(r.run.draftBlocked) && logs.some((l) => l.includes("초안 생성 안 함")), "안내");
+  ok(r.run.counts.PUBLISH >= 1 && fs.readFileSync(path.join(r.outDir, "report.md"), "utf8").includes("초안을 만들지 않았습니다"), "보고서 안내");
+});
+await t("API 키 유출 방지: 오류 문장에 키가 섞여도 결과·보고서·로그·run.json에 남지 않음", async () => {
+  resetWeb();
+  const logs = [];
+  const r = await runDaily(baseRun({
+    env: ENV({ DAILY_LLM_PROVIDER: "anthropic", ANTHROPIC_API_KEY: FAKE_KEY }),
+    registry: { sources: [REGISTRY.sources[0]] },
+    fetch: async () => {
+      throw new Error(`connect failed for key=${FAKE_KEY} and sk-ant-other-secret-abcdef`);
+    },
+    log: (m) => logs.push(m),
+  }));
+  const all = walk(r.outDir).map((f) => fs.readFileSync(f, "utf8")).join("\n") + logs.join("\n");
+  ok(!all.includes(FAKE_KEY) && !all.includes("sk-ant-other"), "키 노출");
+  ok(all.includes("[REDACTED]"), "가림 표시");
+  eq(providers.redact(`x ${FAKE_KEY} y`, { ANTHROPIC_API_KEY: FAKE_KEY }), "x [REDACTED] y");
+});
+await t("초안 QA FAIL → 승인 대기에서 제외 (HOLD · approvable false · daily:approve 거부)", async () => {
+  resetWeb();
+  const r = await runDaily(baseRun({ env: ENV({ DAILY_LLM_PROVIDER: "anthropic", ANTHROPIC_API_KEY: FAKE_KEY }), registry: { sources: [REGISTRY.sources[0]] }, fetch: async () => anthropicReply({ ...widgetDraft(), why: { text: "AI마중이 직접 써 보니 응답이 확실히 빨랐습니다.", evidence: ["E3"] } }) }));
+  const q = JSON.parse(fs.readFileSync(path.join(r.outDir, "candidates", `${WIDGET_ID}.json`), "utf8"));
+  eq([q.decision, q.draftQa.verdict], ["HOLD", "FAIL"]);
+  ok(q.reasons.some((x) => x.includes("초안 QA FAIL")), JSON.stringify(q.reasons));
+  const rec = JSON.parse(fs.readFileSync(path.join(r.outDir, "drafts", `${WIDGET_ID}.json`), "utf8"));
+  eq([rec.approvable, rec.qa.checks.SAFETY.result], [false, "FAIL"]);
+  const qd = path.join(tmp, "qafail");
+  fs.mkdirSync(path.join(qd, DATE, "candidates"), { recursive: true });
+  fs.writeFileSync(path.join(qd, DATE, "candidates", `${WIDGET_ID}.json`), JSON.stringify({ ...q, decision: "PUBLISH", generation: { ...q.generation, provider: "anthropic" }, needsReview: [] }));
+  const a = await approve({ date: DATE, id: WIDGET_ID, queueDir: qd, publish: false, recheckSource: false, dryRun: true, log: quiet });
+  ok(!a.ok && a.problems.some((p) => /초안 QA FAIL/.test(p)), JSON.stringify(a.problems));
+});
+await t("Production 파일 보호: draft 실행은 out 폴더(candidates·drafts·run.json·report.md)에만 쓰고 content/·ingest/ 추적 파일은 그대로", async () => {
+  resetWeb();
+  const before = spawnSync("git", ["status", "--porcelain", "--", "content", "ingest", "newsletter"], { cwd: SITE, encoding: "utf8" }).stdout;
+  const r = await runDaily(baseRun({ env: ENV({ DAILY_LLM_PROVIDER: "anthropic", ANTHROPIC_API_KEY: FAKE_KEY }), fetch: async () => anthropicReply(widgetDraft()) }));
+  const rel = walk(r.outDir).map((f) => path.relative(r.outDir, f).replace(/\\/g, "/").split("/")[0]);
+  ok(rel.every((x) => ["candidates", "drafts", "run.json", "report.md"].includes(x)), JSON.stringify([...new Set(rel)]));
+  eq(spawnSync("git", ["status", "--porcelain", "--", "content", "ingest", "newsletter"], { cwd: SITE, encoding: "utf8" }).stdout, before);
+});
+
 // ---------- 7) 승인 ----------
 const Q = path.join(tmp, "queue");
 const wItem = col.items.find((i) => i.url.endsWith("/widget-2"));
@@ -632,9 +955,14 @@ await t("워크플로: master 직접 push 없음, automation/daily-* 브랜치·
   ok(!/vercel|newsletter|daily:approve|publish:/.test(wf), "배포·뉴스레터·승인·발행이 워크플로에 있음");
   ok(/gh pr list --head "\$B" --state open/.test(wf), "같은 날짜 PR 재사용");
   ok(!/ANTHROPIC_API_KEY[^:]*\becho|echo .*ANTHROPIC/.test(wf), "키 출력");
-  // Shadow Mode: LLM 키를 넘기지 않고 공급자 none 고정
-  ok(/DAILY_MODE: shadow/.test(wf) && /DAILY_LLM_PROVIDER: none/.test(wf), "Shadow 고정");
-  ok(!/secrets\.ANTHROPIC_API_KEY|ANTHROPIC_API_KEY:/.test(wf), "LLM 키가 워크플로에 전달됨");
+  // 예약 실행은 언제나 shadow. draft는 수동 실행에서 고른 경우에만, LLM 키도 그때만
+  ok(/M=shadow\n\s+if \[ "\$EVENT" = "workflow_dispatch" \] && \[ "\$INPUT_MODE" = "draft" \]; then M=draft; fi/.test(wf), "모드 결정");
+  ok(/DAILY_MODE: \$\{\{ steps\.m\.outputs\.mode \}\}/.test(wf), "모드 전달");
+  ok(/DAILY_LLM_PROVIDER: \$\{\{ steps\.m\.outputs\.mode == 'draft' && 'anthropic' \|\| 'none' \}\}/.test(wf), "shadow는 공급자 none");
+  eq(wf.match(/secrets\.ANTHROPIC_API_KEY/g)?.length, 1, "키 사용 위치");
+  ok(/ANTHROPIC_API_KEY: \$\{\{ steps\.m\.outputs\.mode == 'draft' && github\.event_name == 'workflow_dispatch' && secrets\.ANTHROPIC_API_KEY \|\| '' \}\}/.test(wf), "키는 수동 draft에서만");
+  ok(/default: shadow/.test(wf), "수동 실행 기본값 shadow");
+  ok(!/gh pr merge|--auto|auto-merge/.test(wf), "자동 merge");
   // 보고서 fallback: Summary + artifact는 항상, PR은 실패해도 계속
   ok(/actions\/upload-artifact@v4/.test(wf) && /name: daily-report-\$\{\{ steps\.d\.outputs\.date \}\}/.test(wf) && /overwrite: true/.test(wf), "artifact 업로드");
   const step = (name) => wf.split(/\n      - name: /).find((x) => x.startsWith(name)) ?? "";
@@ -644,7 +972,7 @@ await t("워크플로: master 직접 push 없음, automation/daily-* 브랜치·
   ok(wf.indexOf("Upload report artifact") < wf.indexOf("Branch + PR"), "artifact가 PR보다 먼저");
 });
 await t("자동화 코드: 뉴스레터 발송·Resend·content 직접 쓰기·git push 없음", async () => {
-  for (const f of ["lib.mjs", "run.mjs", "providers.mjs", "report.mjs"]) {
+  for (const f of ["lib.mjs", "run.mjs", "providers.mjs", "report.mjs", "draft.mjs"]) {
     const s = fs.readFileSync(path.join(HERE, f), "utf8");
     ok(!/resend|broadcast|newsletter\/send|emails\.send|git push|child_process/i.test(s.replace(/뉴스레터는 만들거나 보내지 않는다|뉴스레터 후보|뉴스레터도 만들거나 보내지 않습니다/g, "")), `${f}에 발송·push 코드`);
     ok(!/content[\\/"']+stories[^\n]*writeFileSync|writeFileSync[^\n]*content[\\/]stories/.test(s), `${f}가 content/stories에 씀`);

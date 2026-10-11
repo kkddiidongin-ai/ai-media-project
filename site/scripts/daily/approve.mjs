@@ -18,6 +18,7 @@ import { spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import { CATEGORIES, ROOT, canonicalUrl, politeFetch, readJson, robotsAllowed } from "../ingest/lib.mjs";
 import { DAILY_DIR, dedupeItem, loadExisting, validateDraft } from "./lib.mjs";
+import { reviewDraft } from "./draft.mjs";
 
 export async function approve({ date, id, ack = [], slug, dryRun = false, queueDir = DAILY_DIR, publish = true, recheckSource = true, log = console.log }) {
   const problems = [];
@@ -32,6 +33,8 @@ export async function approve({ date, id, ack = [], slug, dryRun = false, queueD
   if (q.generation?.provider === "mock") problems.push("mock 원고는 승인할 수 없음");
   if (q.draft && !["SHORT", "STANDARD"].includes(q.draft.editorialDepth)) problems.push(`깊이 ${q.draft.editorialDepth} — 자동 원고는 SHORT·STANDARD만 승인 (DEEP은 사람이 deep 원고 작성)`);
   if (q.validation?.errors?.length) problems.push(`원고 검증 오류: ${q.validation.errors.join(" · ")}`);
+  // 초안 QA FAIL은 승인 대기 대상이 아니다 (자동 QA PASS도 승인이 아니라 사람이 확인한 뒤 이 명령을 실행한다)
+  if (q.draftQa?.verdict === "FAIL") problems.push("초안 QA FAIL — 승인 불가 (drafts/ 의 수정 필요 사항 확인)");
   const unacked = (q.needsReview ?? []).filter((f) => !ack.includes(f));
   if (unacked.includes("deep_requires_editor")) problems.push("DEEP 제안 항목 — 사람이 심층 원고로 작성");
   if (unacked.length) problems.push(`확인 필요 항목을 검토한 뒤 --ack ${unacked.join(",")} 로 표시하세요`);
@@ -46,6 +49,8 @@ export async function approve({ date, id, ack = [], slug, dryRun = false, queueD
     if (v.errors.length) problems.push(`재검증 오류: ${v.errors.join(" · ")}`);
     const newFlags = v.needsReview.filter((f) => !ack.includes(f) && !(q.needsReview ?? []).includes(f));
     if (newFlags.length) problems.push(`새로 생긴 확인 필요 항목: ${newFlags.join(", ")}`);
+    const qa = reviewDraft(q.draft, { item: q.candidate, evidence: q.evidence, existing, dup, suggestedDepth: q.suggestedDepth ?? q.draft.editorialDepth });
+    if (qa.verdict === "FAIL") problems.push(`초안 QA 재검사 FAIL: ${qa.issues.filter((i) => i.severity === "FAIL").map((i) => i.msg).slice(0, 3).join(" · ")}`);
   }
   const finalSlug = slug ?? q.proposedSlug;
   if (!/^[a-z0-9]+(-[a-z0-9]+)*$/.test(finalSlug ?? "")) problems.push(`slug 형식 오류: ${finalSlug}`);

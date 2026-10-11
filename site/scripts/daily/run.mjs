@@ -1,11 +1,13 @@
 #!/usr/bin/env node
 /**
- * AI마중 DAILY 실행 (Phase 7.1)
+ * AI마중 DAILY 실행 (Phase 7.1 · 7.1.3 초안)
  *
  *   npm run daily:run -- [--date YYYY-MM-DD] [--out <dir>] [--collect-only]
  *   (npm run daily:collect = --collect-only)
  *
  * DAILY_AUTOMATION_ENABLED=true 일 때만 돈다 (킬 스위치).
+ * DAILY_MODE: shadow(기본, LLM 없음) · draft(명시적 수동 실행에서만 AI 초안 + 초안 QA) · publish(사용 금지).
+ *   drafts/<id>.json · drafts/<id>.md  AI 초안 (편집자 검토용, 발행 승인 아님)
  * 결과는 <out>/<date>/ 에만 쓴다 (기본 ingest/daily). content/·ingest/candidates·ingest/editorial은 건드리지 않는다.
  *   run.json           실행 기록: 상태(SUCCESS·PARTIAL·FAILED), 소스별 결과, 후보 전체 판정, API 사용량
  *   candidates/<id>.json  근거를 확인한 후보 (원고·근거 장부·검증 결과·승인 상태)
@@ -26,6 +28,7 @@ import {
   gatherEvidence,
   isDateStr,
   kstToday,
+  resolveMode,
   loadExisting,
   loadLimits,
   loadProcessed,
@@ -35,7 +38,8 @@ import {
   validateDraft,
 } from "./lib.mjs";
 import { PUBLISH_MIN, assessDepth, companyOf, distinctFacts, finalSelect, metadataScore, screenDecision } from "./select.mjs";
-import { generateArticle, resolveProvider } from "./providers.mjs";
+import { PROMPT_VERSION, generateArticle, providerBlocker, resolveModelConfig, resolveProvider } from "./providers.mjs";
+import { buildDraftRecord, draftEligibility, renderDraftMarkdown, reviewDraft } from "./draft.mjs";
 import { renderReport } from "./report.mjs";
 
 const writeJson = (file, data) => {
@@ -58,9 +62,21 @@ export async function runDaily(opts) {
   if (!isDateStr(date)) throw new Error(`날짜 형식 오류: ${date}`);
   const outDir = path.join(opts.out ?? DAILY_DIR, date);
   const limits = loadLimits(env);
+  // 모드: 값이 없으면 shadow. draft는 명시적 수동 실행에서만, publish는 Phase 7.2 전까지 거부
+  const m = resolveMode(env);
+  if (m.error) {
+    log(m.error);
+    return { status: "REFUSED", error: m.error };
+  }
+  const mode = m.mode;
+  if (m.warning) log(`⚠️ ${m.warning}`);
   // Shadow Mode: 수집·중복·선정·근거·보고서까지만. 키가 있어도 LLM을 부르지 않는다
-  const mode = String(env.DAILY_MODE ?? "").trim().toLowerCase() === "shadow" ? "shadow" : "normal";
   const provider = mode === "shadow" ? "none" : resolveProvider(env);
+  const modelCfg = provider === "anthropic" ? resolveModelConfig(env) : null;
+  const modelName = provider === "anthropic" ? modelCfg.model : provider === "mock" ? "mock" : null;
+  // draft 모드인데 공급자를 쓸 수 없으면(키 없음·모델 미확인): LLM 호출 없이 안내만 하고 나머지는 shadow처럼
+  const draftBlocked = mode === "draft" ? providerBlocker(provider, env) : null;
+  if (draftBlocked) log(`⛔ 초안 생성 안 함: ${draftBlocked}`);
   const registry = opts.registry ?? readJson(REGISTRY_FILE, { sources: [] });
   const existing = opts.existing ?? loadExisting();
   const processedFile = opts.processedFile ?? PROCESSED_FILE;
@@ -71,8 +87,8 @@ export async function runDaily(opts) {
     if (limits.maxEvidenceFetches === 0) limitWarnings.push("근거 확인 상한(maxEvidenceFetches)이 0 — 원문 근거를 하나도 보지 않음");
     if (limits.maxPublishPerDay === 0) limitWarnings.push("발행 추천 상한(maxPublishPerDay)이 0 — 추천을 하나도 내지 않음");
   }
-  const run = { date, mode, ...(limitWarnings.length ? { limitWarnings } : {}), startedAt: new Date().toISOString(), status: "", limits, provider, model: provider === "anthropic" ? env.DAILY_LLM_MODEL || "claude-sonnet-5-5" : null, ...(opts.backtest ? { backtest: opts.backtest } : {}) };
-  const budget = { calls: 0, inputTokens: 0, outputTokens: 0 };
+  const run = { date, mode, ...(m.warning ? { modeWarning: m.warning } : {}), ...(draftBlocked ? { draftBlocked } : {}), ...(limitWarnings.length ? { limitWarnings } : {}), startedAt: new Date().toISOString(), status: "", limits, provider, model: modelName, ...(opts.backtest ? { backtest: opts.backtest } : {}) };
+  const budget = { calls: 0, inputTokens: 0, outputTokens: 0, costUsd: 0 };
 
   // 1) 수집
   // 백테스트는 보존된 항목을 넘겨받는다 (지금 피드를 과거 시점 데이터처럼 쓰지 않기 위해)
@@ -91,7 +107,11 @@ export async function runDaily(opts) {
   // 2) 중복 · 3) 메타데이터 점수 · 1차 판정 (원문을 열기 전, 비용 0)
   const prevQueue = new Map();
   const qDir = path.join(outDir, "candidates");
+  const dDir = path.join(outDir, "drafts");
   if (fs.existsSync(qDir)) for (const f of fs.readdirSync(qDir).filter((x) => x.endsWith(".json"))) prevQueue.set(f.replace(/\.json$/, ""), readJson(path.join(qDir, f), null));
+  // 같은 날짜의 이전 초안 기록 (대기열 파일이 없어져도 같은 초안을 다시 만들지 않게)
+  const prevDrafts = new Map();
+  if (fs.existsSync(dDir)) for (const f of fs.readdirSync(dDir).filter((x) => x.endsWith(".json"))) prevDrafts.set(f.replace(/\.json$/, ""), readJson(path.join(dDir, f), null));
   const rows = items.map((item) => {
     const dup = dedupeItem(item, existing);
     const score = metadataScore(item, dup);
@@ -181,22 +201,43 @@ export async function runDaily(opts) {
     r.reasons = [...r.reasons, `최종 발행 추천 상한(${limits.maxPublishPerDay}) 초과 — 편집자 판단`];
   }
 
-  // 6) 원고 생성 (최종 추천만) · 검증
+  // 6) 초안 생성 (draft 모드 · 최종 추천 중 조건을 모두 충족한 후보만) · 초안 QA
+  //    PUBLISH가 0건이면 이 반복이 돌지 않으므로 LLM 호출도 0
   const takenSlugs = new Set([...existing.stories.map((s) => s.slug), ...existing.editorialSlugs]);
   const ctx = { provider, env, limits, budget, categories: CATEGORIES, topics: existing.topics, fetch: opts.fetch, mockReply: opts.mockReply, retryDelayMs: opts.retryDelayMs };
   for (const r of work.filter((x) => x.decision === "PUBLISH")) {
     const prev = prevQueue.get(r.item.id);
+    const prevD = prevDrafts.get(r.item.id);
     const evHash = sha(JSON.stringify(r.evidence.ledger.map((e) => e.text)));
-    if (prev?.generation?.status === "ok" && prev.generation.evidenceHash === evHash && prev.generation.provider === provider) {
-      r.generation = prev.generation;
-      r.draft = prev.draft;
+    const gate = draftEligibility(r);
+    r.draftGate = gate;
+    // 재사용: 같은 근거·같은 프롬프트로 이미 만든 초안은 다시 만들지 않는다 (draft는 같은 공급자·모델일 때, shadow는 보존만)
+    const old = prev?.generation?.status === "ok" && prev.draft ? { generation: prev.generation, draft: prev.draft } : prevD?.draft && prevD.generation ? { generation: { ...prevD.generation, status: "ok", at: prevD.generation.generatedAt }, draft: prevD.draft } : null;
+    const reusable = old && old.generation.evidenceHash === evHash && old.generation.promptVersion === PROMPT_VERSION && (mode === "shadow" || (old.generation.provider === provider && old.generation.model === modelName));
+    if (reusable && gate.ok) {
+      r.generation = { ...old.generation, reused: true };
+      r.draft = old.draft;
     } else {
-      // DEEP 제안이라도 자동 원고는 STANDARD까지만 쓴다 (DEEP은 사람이 deep 원고 작성)
+      const skip = (error) => ({ provider: mode === "draft" ? provider : "none", model: null, status: "skipped", error });
       const g =
-        mode === "shadow"
-          ? { status: "skipped", provider: "none", error: "Shadow Mode — 원고를 만들지 않음" }
-          : await generateArticle(r.item, r.evidence, { ...ctx, suggestedDepth: r.depth === "DEEP" ? "STANDARD" : r.depth });
-      r.generation = { provider: g.provider, model: g.model ?? null, status: g.status, ...(g.error ? { error: g.error } : {}), at: new Date().toISOString(), evidenceHash: evHash };
+        mode !== "draft"
+          ? skip("Shadow Mode — 원고를 만들지 않음")
+          : !gate.ok
+            ? { ...skip(`초안 생성 대상 아님: ${gate.reasons.join(" · ")}`), gated: true }
+            : draftBlocked
+              ? skip(draftBlocked)
+              : await generateArticle(r.item, r.evidence, { ...ctx, suggestedDepth: r.depth });
+      r.generation = {
+        provider: g.provider,
+        model: g.model ?? null,
+        status: g.status,
+        ...(g.error ? { error: g.error } : {}),
+        ...(g.gated ? { gated: true } : {}),
+        ...(g.usage ? { usage: { ...g.usage, costUsd: Number(g.usage.costUsd.toFixed(6)) } } : {}),
+        promptVersion: PROMPT_VERSION,
+        at: new Date().toISOString(),
+        evidenceHash: evHash,
+      };
       r.draft = g.draft ?? null;
     }
     r.proposedSlug = prev?.proposedSlug ?? proposeSlug(r.item.title, takenSlugs);
@@ -204,11 +245,18 @@ export async function runDaily(opts) {
     if (r.draft) {
       const v = validateDraft(r.draft, { item: r.item, evidence: r.evidence, existing, dup: r.dup });
       r.validation = v;
-      r.needsReview = [...new Set([...r.needsReview, ...v.needsReview])];
-      if (v.errors.length) {
+      r.draftQa = reviewDraft(r.draft, { item: r.item, evidence: r.evidence, existing, dup: r.dup, suggestedDepth: r.depth });
+      r.needsReview = [...new Set([...r.needsReview, ...v.needsReview, ...r.draftQa.needsReview])];
+      if (v.errors.length || r.draftQa.verdict === "FAIL") {
+        // FAIL 초안은 승인 대기에서 뺀다 (원고는 오류 확인용으로 drafts/에 남김)
         r.decision = "HOLD";
-        r.reasons = [...r.reasons, `원고 검증 실패: ${v.errors.slice(0, 3).join(" · ")}`];
+        const why = [...v.errors, ...r.draftQa.issues.filter((i) => i.severity === "FAIL").map((i) => i.msg)];
+        r.reasons = [...r.reasons, `초안 QA FAIL: ${[...new Set(why)].slice(0, 3).join(" · ")}`];
       }
+      const rec = buildDraftRecord(r, { date, generatedAt: r.generation.at });
+      writeJson(path.join(dDir, `${r.item.id}.json`), rec);
+      fs.writeFileSync(path.join(dDir, `${r.item.id}.md`), renderDraftMarkdown(rec));
+      r.draftFile = `drafts/${r.item.id}.md`;
     }
     if (r.depth === "DEEP") r.needsReview.push("deep_requires_editor");
     r.needsReview = [...new Set(r.needsReview)];
@@ -245,6 +293,9 @@ export async function runDaily(opts) {
       generation: r.generation ?? null,
       draft: r.draft ?? null,
       validation: r.validation ?? null,
+      draftQa: r.draftQa ? { verdict: r.draftQa.verdict, checks: r.draftQa.checks, fixes: r.draftQa.fixes, stats: r.draftQa.stats } : null,
+      draftGate: r.draftGate ?? null,
+      draftFile: r.draftFile ?? null,
       newsletterCandidate: r.decision === "PUBLISH" && r.score.importance >= 3,
       capStage: r.capStage ?? null,
       approval: prevQueue.get(r.item.id)?.approval ?? { status: "pending" },
@@ -260,7 +311,8 @@ export async function runDaily(opts) {
 
   const count = (f) => rows.filter(f).length;
   const sourceTrouble = sources.filter((s) => ["failed", "blocked", "partial"].includes(s.status));
-  const genTrouble = mode === "shadow" ? [] : work.filter((r) => r.generation && r.generation.status !== "ok");
+  // 초안 문제: draft 모드에서 대상 후보인데 만들지 못한 경우(키 없음·실패·상한). 대상이 아니어서 건너뛴 것은 문제 아님
+  const genTrouble = mode !== "draft" ? [] : work.filter((r) => r.generation && r.generation.status !== "ok" && !r.generation.gated);
   const valFail = work.filter((r) => r.validation?.errors?.length);
   const enabled = sources.filter((s) => s.status !== "skipped");
   run.counts = {
@@ -275,11 +327,22 @@ export async function runDaily(opts) {
     shortlisted: rows.filter((r) => r.stage === "evidence" || r.capStage === "evidence").length,
     evidenceChecked: work.length,
     drafts: work.filter((r) => r.draft).length,
+    draftQa: { PASS: work.filter((r) => r.draftQa?.verdict === "PASS").length, REVIEW: work.filter((r) => r.draftQa?.verdict === "REVIEW").length, FAIL: work.filter((r) => r.draftQa?.verdict === "FAIL").length },
     validationFailures: valFail.length,
     generationSkippedOrFailed: genTrouble.length,
   };
-  run.llm = { provider, calls: budget.calls, inputTokens: budget.inputTokens, outputTokens: budget.outputTokens, maxCalls: limits.maxLlmCalls };
-  run.status = enabled.length && enabled.every((s) => ["failed", "blocked"].includes(s.status)) ? "FAILED" : sourceTrouble.length || genTrouble.length || valFail.length || limitWarnings.length ? "PARTIAL" : "SUCCESS";
+  run.llm = {
+    provider,
+    model: modelName,
+    calls: budget.calls,
+    inputTokens: budget.inputTokens,
+    outputTokens: budget.outputTokens,
+    estimatedCostUsd: Number(budget.costUsd.toFixed(6)),
+    maxCalls: limits.maxLlmCalls,
+    maxCostUsd: limits.maxCostUsd,
+    ...(modelCfg && !modelCfg.error ? { pricePerMTok: { input: modelCfg.inputPerMTok, output: modelCfg.outputPerMTok }, effort: modelCfg.effort } : {}),
+  };
+  run.status = enabled.length && enabled.every((s) => ["failed", "blocked"].includes(s.status)) ? "FAILED" : sourceTrouble.length || genTrouble.length || valFail.length || limitWarnings.length || draftBlocked ? "PARTIAL" : "SUCCESS";
   run.items = rows.map((r) => ({
     id: r.item.id,
     title: r.item.title,
@@ -306,7 +369,7 @@ export async function runDaily(opts) {
   writeJson(path.join(outDir, "run.json"), run);
   const queueEntries = work.map((r) => readJson(path.join(qDir, `${r.item.id}.json`), null)).filter(Boolean);
   fs.writeFileSync(path.join(outDir, "report.md"), renderReport(run, queueEntries));
-  log(`상태 ${run.status} · 발행 추천 ${run.counts.PUBLISH} · 보류 ${run.counts.HOLD} · 제외 ${run.counts.EXCLUDE} · 원고 ${run.counts.drafts} · LLM 호출 ${budget.calls}`);
+  log(`상태 ${run.status} (${mode}) · 발행 추천 ${run.counts.PUBLISH} · 보류 ${run.counts.HOLD} · 제외 ${run.counts.EXCLUDE} · 초안 ${run.counts.drafts} (QA PASS ${run.counts.draftQa.PASS}·REVIEW ${run.counts.draftQa.REVIEW}·FAIL ${run.counts.draftQa.FAIL}) · LLM 호출 ${budget.calls} · 예상 비용 $${budget.costUsd.toFixed(4)}`);
   log(`→ ${path.relative(process.cwd(), outDir)}`);
   return { status: run.status, run, outDir };
 }
@@ -321,7 +384,7 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
   const date = arg("--date") ?? kstToday();
   try {
     const r = await runDaily({ date, out: arg("--out"), collectOnly: argv.includes("--collect-only") });
-    if (r.status === "FAILED") process.exitCode = 1;
+    if (r.status === "FAILED" || r.status === "REFUSED") process.exitCode = 1;
   } catch (e) {
     console.error(`DAILY 실패: ${e?.message ?? e}`);
     process.exitCode = 1;

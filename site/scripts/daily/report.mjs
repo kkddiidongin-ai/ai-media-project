@@ -25,6 +25,65 @@ const flags = (list) => (list?.length ? list.map((f) => FLAG_KO[f] ?? f).join(",
 const TYPE_KO = { NEWS: "소식", HOW_TO: "사용법", CUSTOMER_STORY: "고객 사례", INDUSTRY_STORY: "업계 이야기", THOUGHT_LEADERSHIP: "의견·전망", EVENT: "행사", HIRING: "채용·인사", DOCS_ONLY: "문서·소소한 갱신", MARKETING: "홍보", RESEARCH_PAPER: "논문" };
 const DEEP_KO = { importance: "중요도 4+", novelty: "새 사안", userImpact: "사용자 영향", contextNeed: "배경 설명 필요", distinctFacts: "확인 사실 6+", evidenceQuality: "근거 PASS", standardWouldOmit: "STANDARD로는 맥락 누락" };
 const short = (t, n = 60) => (t.length > n ? `${t.slice(0, n - 1)}…` : t);
+const QA_ICON = { PASS: "✅", REVIEW: "⚠️", FAIL: "⛔" };
+// PR 본문 한도(65,536자) 안에 들도록 초안 본문 펼침은 이 길이까지만
+const MAX_DRAFT_DETAILS = 40_000;
+
+/** AI 초안 (draft 모드): 후보별 QA 결과 · 수정 필요 사항 · 본문(접기) */
+export function renderDrafts(run, queue) {
+  const withDraft = queue.filter((q) => q.draftQa);
+  const gated = queue.filter((q) => q.decision === "PUBLISH" && !q.draftQa && q.generation?.status === "skipped" && run.mode === "draft");
+  if (run.mode !== "draft" && !withDraft.length) return [];
+  const L = [`## AI 초안 (${withDraft.length}) — 편집자 검토용 · 발행 승인 아님`, ""];
+  if (run.draftBlocked) L.push(`> ⛔ **초안을 만들지 않았습니다** — ${run.draftBlocked}. LLM 호출 0회.`, "");
+  L.push("> 자동 QA PASS도 발행 승인이 아닙니다. 모든 초안은 사람이 원문과 대조해 확인합니다. FAIL 초안은 승인 대기에서 빠집니다.", "");
+  if (withDraft.length) {
+    L.push("| 초안 | 유형 | QA | FACT | EVIDENCE | EDITORIAL | STRUCTURE | DUPLICATE | SAFETY | 파일 |", "|---|---|---|---|---|---|---|---|---|---|");
+    for (const q of withDraft) {
+      const c = q.draftQa.checks;
+      L.push(`| ${short(q.title ?? q.sourceTitle, 40).replace(/\|/g, "/")} | ${q.depth ?? "-"} | ${QA_ICON[q.draftQa.verdict]} ${q.draftQa.verdict} | ${["FACT", "EVIDENCE", "EDITORIAL", "STRUCTURE", "DUPLICATE", "SAFETY"].map((k) => QA_ICON[c[k].result]).join(" | ")} | \`${q.draftFile}\` |`);
+    }
+    L.push("");
+  }
+  let budget = MAX_DRAFT_DETAILS;
+  for (const q of withDraft) {
+    const g = q.generation ?? {};
+    L.push(`### ${QA_ICON[q.draftQa.verdict]} ${q.title ?? q.sourceTitle}`);
+    L.push(`- 후보 \`${q.id}\` · 원문 [${q.candidate.sourceName}](${q.candidate.url}) · 발표 ${q.candidate.publishedAt.slice(0, 10)} · 유형 ${q.depth ?? "-"} (근거 기준 최대 ${q.suggestedDepth}) · 본문 ${q.draftQa.stats?.bodyChars ?? "-"}자`);
+    L.push(`- 생성: ${g.provider} · ${g.model ?? "-"}${g.reused ? " · 이전 초안 재사용(추가 호출 없음)" : ""} · 토큰 ${g.usage?.inputTokens ?? 0}/${g.usage?.outputTokens ?? 0} · $${(g.usage?.costUsd ?? 0).toFixed(4)}`);
+    L.push(`- 수정 필요 사항: ${q.draftQa.fixes.length ? "" : "자동 점검 항목 없음"}`);
+    for (const f of q.draftQa.fixes.slice(0, 8)) L.push(`  - ${f}`);
+    if (q.draftQa.fixes.length > 8) L.push(`  - … 외 ${q.draftQa.fixes.length - 8}건 (${q.draftFile})`);
+    const art = [
+      `**${q.title ?? ""}**`,
+      "",
+      `**핵심 요약** ${q.draft?.summary ?? ""}`,
+      "",
+      "**무엇이 달라졌나** (공식 발표로 확인된 사실)",
+      ...(q.draft?.facts ?? []).map((f) => `- ${f.text} \`${(f.evidence ?? []).join(",")}\``),
+      "",
+      `**왜 중요한가** (AI마중의 해석) ${q.draft?.why?.text ?? ""}`,
+      ...(q.draft?.change?.text ? ["", q.draft.change.text] : []),
+      "",
+      "**독자가 확인할 사항**",
+      ...(q.draft?.checks ?? []).map((c) => `- ${c.text}`),
+      "",
+      "**아직 확인되지 않은 부분**",
+      ...(q.draft?.unknowns ?? []).map((u) => `- ${u}`),
+    ].join("\n");
+    if (art.length <= budget) {
+      budget -= art.length;
+      L.push("", "<details><summary>초안 본문 보기</summary>", "", art, "", "</details>");
+    } else L.push(`- 본문: \`${q.draftFile}\` (보고서 길이 한도로 생략)`);
+    L.push("");
+  }
+  if (gated.length) {
+    L.push(`**초안을 만들지 않은 발행 추천 ${gated.length}건**`);
+    for (const q of gated) L.push(`- ${short(q.sourceTitle)} — ${q.generation.error}`);
+    L.push("");
+  }
+  return L;
+}
 
 /** 선정 진단: 왜 골랐고 왜 뺐는지 1~2분 안에 확인 */
 export function renderDiagnostics(run) {
@@ -62,6 +121,9 @@ export function renderReport(run, queue) {
   const L = [];
   L.push(`# AI마중 DAILY — ${run.date}`, "");
   if (run.mode === "shadow") L.push("> 🕶️ **Shadow Mode** — 수집·중복·선정·근거 확인·보고서까지만 실행했습니다. '발행 추천'은 **편집자 검토용 추천**이며, 원고 생성(LLM)·기사 발행·뉴스레터·배포는 하지 않습니다.", "");
+  if (run.mode === "draft") L.push("> ✍️ **Draft Mode (수동 실행)** — 검증된 발행 추천 후보에만 AI 초안을 만들고 자동 QA를 했습니다. 초안은 **편집자 검토용**이며 발행 승인이 아닙니다. 기사 발행·뉴스레터·배포는 하지 않습니다.", "");
+  if (run.modeWarning) L.push(`> ⚠️ **모드** — ${run.modeWarning}`, "");
+  if (run.draftBlocked) L.push(`> ⛔ **초안 생성 안 함** — ${run.draftBlocked}`, "");
   if (run.limitWarnings?.length) L.push(`> ⚠️ **설정 경고** — ${run.limitWarnings.join(" · ")}. 상한 설정을 확인하세요.`, "");
   if (run.backtest) L.push(`> 🔁 **Backtest** — ${run.backtest.note}`, "");
   L.push(`**상태: ${run.status} (${STATUS_KO[run.status] ?? run.status})** · 수집 창 ${run.window.since} ~ ${run.window.until} (발표일 기준)`, "");
@@ -81,9 +143,11 @@ export function renderReport(run, queue) {
     L.push(`- 추천 이유: ${q.reasons.join(" · ")} (중요도 ${q.score.importance}/5, 한국 관련 ${q.score.koreanRelevance}/3${q.score.contentType && q.score.contentType !== "NEWS" ? `, 유형 ${q.score.contentType}` : ""})`);
     L.push(`- 근거: 원문 ${q.evidence.status} · 근거 문장 ${q.evidence.ledger.length}개 · 서로 다른 확인 사실 ${q.depthAssessment?.distinctFacts ?? "-"}개 · 판정 ${q.evidence.grade}${q.suggestedDepth === "DEEP" ? " · DEEP 제안(7개 조건 충족)" : q.depthAssessment?.deepMissing?.length ? ` · DEEP 아님(${q.depthAssessment.deepMissing.map((k) => DEEP_KO[k] ?? k).join(", ")})` : ""}`);
     L.push(`- 검증: 확인 필요 ${flags(q.needsReview)}${q.validation?.errors?.length ? ` · 오류 ${q.validation.errors.join(", ")}` : ""}`);
-    L.push(`- 원고: ${q.generation?.status === "ok" ? `${q.generation.provider}${q.generation.model ? ` (${q.generation.model})` : ""}` : `없음 — ${q.generation?.error ?? "생성 안 함"}`}${q.newsletterCandidate ? " · 📮 뉴스레터 후보" : ""}`);
+    L.push(`- 원고: ${q.generation?.status === "ok" ? `${q.generation.provider}${q.generation.model ? ` (${q.generation.model})` : ""}${q.draftQa ? ` · 초안 QA ${QA_ICON[q.draftQa.verdict]} ${q.draftQa.verdict} · \`${q.draftFile}\`` : ""}` : `없음 — ${q.generation?.error ?? "생성 안 함"}`}${q.newsletterCandidate ? " · 📮 뉴스레터 후보" : ""}`);
     L.push("");
   }
+
+  L.push(...renderDrafts(run, queue));
 
   const holdQ = queue.filter((q) => q.decision === "HOLD");
   const holdOther = run.items.filter((x) => x.decision === "HOLD" && !holdQ.some((q) => q.id === x.id));
@@ -109,7 +173,7 @@ export function renderReport(run, queue) {
   for (const s of bad) L.push(`- ${s.name} — **${s.status}** ${s.errors?.[0] ? `(${s.errors[0].slice(0, 120)})` : ""}`);
   L.push("");
   L.push(...renderDiagnostics(run));
-  L.push(`## 비용`, "", `원고 생성 ${run.llm.provider} · 호출 ${run.llm.calls}/${run.llm.maxCalls} · 입력 ${run.llm.inputTokens} · 출력 ${run.llm.outputTokens} 토큰`, "");
+  L.push(`## 비용`, "", `원고 생성 ${run.llm.provider}${run.llm.model ? ` (${run.llm.model}${run.llm.effort ? `, effort ${run.llm.effort}` : ""})` : ""} · 호출 ${run.llm.calls}/${run.llm.maxCalls} · 입력 ${run.llm.inputTokens} · 출력 ${run.llm.outputTokens} 토큰 · 예상 비용 $${(run.llm.estimatedCostUsd ?? 0).toFixed(4)} / 상한 $${run.llm.maxCostUsd ?? "-"}${run.llm.pricePerMTok ? ` (요금 입력 $${run.llm.pricePerMTok.input}·출력 $${run.llm.pricePerMTok.output} / 100만 토큰)` : ""}`, "");
   L.push(`<sub>실행 ${run.startedAt} → ${run.finishedAt} · 상세: run.json, candidates/*.json</sub>`, "");
   return L.join("\n");
 }
