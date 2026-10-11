@@ -129,9 +129,10 @@ export const PUBLISH_MIN = 6; // 근거 확인 후 발행 추천 최소 우선�
 /** 1차 판정 (메타데이터): CANDIDATE(근거 확인 대상) · HOLD · EXCLUDE */
 export function screenDecision(item, dup, s) {
   if (dup.result === "DUPLICATE") return { decision: "EXCLUDE", reasons: [`중복: ${dup.reason}`] };
+  // 사례·사용법 같은 저가치 유형은 어차피 추천하지 않으므로 '중복 불확실'로 사람 검토를 요구하지 않는다
+  if (s.typePenalty < 0 && !s.strongSignal) return { decision: "EXCLUDE", reasons: [`글 유형 ${s.contentType} — 강한 사건 신호 없음`] };
   if (dup.result === "UNCERTAIN") return { decision: "HOLD", reasons: [`중복 불확실: ${dup.reason}`], needsReview: ["duplicate_uncertain"] };
   if (item.datePrecision === "month") return { decision: "HOLD", reasons: ["발표일(일자)을 알 수 없음 — 날짜를 지어내지 않는다"], needsReview: ["date_conflict"] };
-  if (s.typePenalty < 0 && !s.strongSignal) return { decision: "EXCLUDE", reasons: [`글 유형 ${s.contentType} — 강한 사건 신호 없음`] };
   if (!s.signals.length) return { decision: "EXCLUDE", reasons: ["사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"] };
   if (s.priority >= SHORTLIST_MIN && item.sourceType !== "official")
     return { decision: "HOLD", reasons: [`언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 ${s.signals.join("·")})`], needsReview: ["press_only"] };

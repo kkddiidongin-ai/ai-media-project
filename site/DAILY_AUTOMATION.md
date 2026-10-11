@@ -103,6 +103,10 @@ GitHub Actions (매일 07:00 KST 전후)
 4. 끄기: 같은 Variable을 `false`로 바꾸거나 삭제 (job이 건너뛰어진다). 또는 Actions → AI마중 DAILY → ⋯ → Disable workflow
 5. (권장) Settings → Branches → master에 보호 규칙 (직접 push 금지·PR 필요)
 
+**다시 돌릴 때**: 실행 화면의 *Re-run jobs*는 그 실행 당시의 커밋(옛 코드)으로 다시 돈다. 코드를 고친 뒤에는 **Actions → AI마중 DAILY → Run workflow**(branch: master, 날짜 입력)로 돌린다. 같은 날짜면 같은 `automation/daily-<날짜>` 브랜치에 커밋을 더하고 열린 PR 본문을 갱신하며, 예전 artifact는 지운다. **PR은 자동으로 merge하지 않는다.**
+
+**상한 Variable 주의 (2026-10-11 수정)**: 워크플로의 `${{ vars.DAILY_MAX_PUBLISH }}`처럼 없는 Variable은 빈 문자열로 넘어온다. 예전 코드는 이를 0으로 읽어 근거 확인·추천이 꺼졌다. 지금은 빈 값·숫자가 아닌 값은 기본값(추천 6, 근거 확인 12)을 쓰고, 상한이 0이면 보고서에 '설정 경고'를 띄우고 상태를 PARTIAL로 둔다. 명시한 `0`은 그대로 존중한다.
+
 Shadow Mode에서는 **Secret이 필요 없다** (`ANTHROPIC_API_KEY`를 넣어도 워크플로가 넘기지 않는다).
 
 ### 설정 값 목록

@@ -44,15 +44,18 @@ export const DEFAULTS = {
 export const HARD_CAPS = { maxPublishPerDay: 12, maxLlmCalls: 12, maxOutputTokens: 4000, llmRetries: 2, maxEvidenceFetches: 25, maxItemsPerSource: 40 };
 
 export function loadLimits(env = process.env) {
+  // GitHub Actions의 `${{ vars.X }}`는 Variable이 없으면 빈 문자열을 넘긴다. Number("")은 0이므로
+  // 빈 값·공백·숫자가 아닌 값은 '설정 안 함'으로 보고 기본값을 쓴다 (2026-10-11 첫 실행에서 상한이 0이 된 원인)
   const pick = (key, envName) => {
-    const v = Number(env[envName]);
-    const base = Number.isFinite(v) && v >= 0 ? v : DEFAULTS[key];
+    const raw = env[envName];
+    const v = typeof raw === "string" && raw.trim() !== "" && /^\d+$/.test(raw.trim()) ? Number(raw.trim()) : NaN;
+    const base = Number.isFinite(v) ? v : DEFAULTS[key];
     return HARD_CAPS[key] !== undefined ? Math.min(base, HARD_CAPS[key]) : base;
   };
   return {
     ...DEFAULTS,
     // DAILY_MAX_CANDIDATES는 7.1 이름 (같은 뜻으로 받아 준다)
-    maxPublishPerDay: pick("maxPublishPerDay", env.DAILY_MAX_PUBLISH !== undefined ? "DAILY_MAX_PUBLISH" : "DAILY_MAX_CANDIDATES"),
+    maxPublishPerDay: pick("maxPublishPerDay", String(env.DAILY_MAX_PUBLISH ?? "").trim() !== "" ? "DAILY_MAX_PUBLISH" : "DAILY_MAX_CANDIDATES"),
     maxLlmCalls: pick("maxLlmCalls", "DAILY_MAX_LLM_CALLS"),
     maxOutputTokens: pick("maxOutputTokens", "DAILY_MAX_OUTPUT_TOKENS"),
     llmRetries: pick("llmRetries", "DAILY_LLM_RETRIES"),
@@ -210,7 +213,9 @@ export function dedupeItem(item, existing) {
   if (best && best.sim >= 0.75) return { result: "DUPLICATE", reason: `원문 제목이 기존 기사와 거의 같음 (${best.sim.toFixed(2)})`, matchSlug: best.slug };
   const text = `${item.title} ${item.excerpt}`;
   for (const s of existing.stories.filter((x) => x.eventDate && daysBetween(x.eventDate, item.publishedAt) <= 120)) {
-    const hit = specificProducts(s).find((p) => mentionsProduct(text, p));
+    // 발췌에 지나가듯 나온 모델(예: 'Using GPT-6 Astra in Codex')은 주제가 아니다 (2026-10-11 Asana 오판).
+    // 이 글 제목과 기존 기사 제목(원문 제목 또는 한국어 제목)에 모두 나올 때만 같은 제품으로 본다
+    const hit = specificProducts(s).find((p) => mentionsProduct(item.title, p) && (mentionsProduct(s.sourceTitle ?? "", p) || mentionsProduct(s.title ?? "", p)));
     if (!hit) continue;
     if (UPDATE_RE.test(text) && s.sourceName === item.sourceName) return { result: "UPDATE_EXISTING", reason: `기존 기사(${hit})의 후속 발표로 보임`, matchSlug: s.slug };
     return { result: "UNCERTAIN", reason: `기존 기사와 같은 제품(${hit}) — 같은 사안인지 사람이 판단`, matchSlug: s.slug };

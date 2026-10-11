@@ -115,7 +115,7 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
     const env = { DAILY_AUTOMATION_ENABLED: "true", DAILY_MODE: "shadow", DAILY_LLM_PROVIDER: "none", ...(argv.includes("--no-fetch") ? { DAILY_MAX_EVIDENCE_FETCHES: "0" } : {}) };
     const sources = [{ id: "snapshot", name: `피드 스냅숏 (${snapshot.capturedAt})`, status: "success" }, { id: "candidates", name: "후보 기록 (사후 보존)", status: "success" }];
     const note = `${date} 07:00 KST 재현 · 스냅숏 ${asOf.coverage.snapshotItems} + 후보 기록 ${asOf.coverage.candidateItems}${asOf.coverage.uncoveredDays.length ? ` · 스냅숏 없는 날 ${asOf.coverage.uncoveredDays.join(", ")}` : ""} · 근거 원문은 현재 상태`;
-    const r = await runDaily({ date, out, env, items: asOf.items, sources, since: asOf.since, existing, processedFile: path.join(out, `processed-${date}.json`), backtest: { note, runTime: asOf.runTime, coverage: asOf.coverage }, log: () => {} });
+    const r = await runDaily({ date, out, env, allowZeroLimits: argv.includes("--no-fetch"), items: asOf.items, sources, since: asOf.since, existing, processedFile: path.join(out, `processed-${date}.json`), backtest: { note, runTime: asOf.runTime, coverage: asOf.coverage }, log: () => {} });
     const ev = evaluate(date, r.run, full, asOf);
     results.push({ asOf, ev, run: r.run });
     console.log(`${date}: 자료 ${asOf.items.length}건 · 추천 ${r.run.counts.PUBLISH} · recall ${ev.recall ? `${ev.recall.recommended}/${ev.recall.of}` : "-"} · 데이터 없음 ${ev.notInData}`);

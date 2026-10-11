@@ -61,7 +61,8 @@ export function renderReport(run, queue) {
   const c = run.counts;
   const L = [];
   L.push(`# AI마중 DAILY — ${run.date}`, "");
-  if (run.mode === "shadow") L.push("> 🕶️ **Shadow Mode** — 수집·중복·선정·근거 확인·보고서까지만 실행했습니다. 원고 생성(LLM)·기사 발행·뉴스레터·배포는 하지 않습니다.", "");
+  if (run.mode === "shadow") L.push("> 🕶️ **Shadow Mode** — 수집·중복·선정·근거 확인·보고서까지만 실행했습니다. '발행 추천'은 **편집자 검토용 추천**이며, 원고 생성(LLM)·기사 발행·뉴스레터·배포는 하지 않습니다.", "");
+  if (run.limitWarnings?.length) L.push(`> ⚠️ **설정 경고** — ${run.limitWarnings.join(" · ")}. 상한 설정을 확인하세요.`, "");
   if (run.backtest) L.push(`> 🔁 **Backtest** — ${run.backtest.note}`, "");
   L.push(`**상태: ${run.status} (${STATUS_KO[run.status] ?? run.status})** · 수집 창 ${run.window.since} ~ ${run.window.until} (발표일 기준)`, "");
   L.push("| 수집 | 신규 | 후속 | 중복 | 불확실 | 발행 추천 | 보류 | 제외 | 원고 |", "|---|---|---|---|---|---|---|---|---|");
@@ -69,7 +70,7 @@ export function renderReport(run, queue) {
   L.push("> 자동으로 발행하지 않습니다. 아래 추천은 사람이 `npm run daily:approve -- <날짜> <id>`로 승인해야 기사 데이터에 들어갑니다. 뉴스레터도 만들거나 보내지 않습니다.", "");
 
   const pub = queue.filter((q) => q.decision === "PUBLISH");
-  L.push(`## 발행 추천 (${pub.length})`, "");
+  L.push(`## 발행 추천 (${pub.length})${run.mode === "shadow" ? " — 편집자 검토용" : ""}`, "");
   if (!pub.length) L.push("오늘은 발행을 추천할 만큼 근거가 충분한 소식이 없습니다. (0건도 정상입니다)", "");
   for (const [i, q] of pub.entries()) {
     L.push(`### ${i + 1}. ${q.title ?? q.sourceTitle}`);

@@ -511,6 +511,44 @@ await t("백테스트 평가: 발표 전 NOT_YET · 이미 사람 발행 DUP_OK/
   eq(ev.recommendedNotPublishedByHuman.map((x) => x.title), ["Extra"]);
 });
 
+// ---------- 6-4) 2026-10-11 Hotfix 회귀 ----------
+await t("회귀 2026-10-11: GitHub이 없는 Variable을 빈 문자열로 넘겨도 상한은 기본값 (0이 되지 않음)", async () => {
+  const l = lib.loadLimits({ DAILY_MAX_PUBLISH: "", DAILY_MAX_EVIDENCE_FETCHES: "", DAILY_MAX_LLM_CALLS: " " });
+  eq([l.maxPublishPerDay, l.maxEvidenceFetches, l.maxLlmCalls], [6, 12, 6]);
+  eq(lib.loadLimits({ DAILY_MAX_PUBLISH: "abc" }).maxPublishPerDay, 6, "숫자가 아닌 값");
+  eq(lib.loadLimits({ DAILY_MAX_EVIDENCE_FETCHES: "0" }).maxEvidenceFetches, 0, "명시한 0은 그대로");
+  eq(lib.loadLimits({ DAILY_MAX_PUBLISH: "", DAILY_MAX_CANDIDATES: "2" }).maxPublishPerDay, 2, "빈 새 이름이면 예전 이름");
+});
+await t("회귀 2026-10-11: 워크플로와 같은 환경(빈 Variable·Shadow)에서도 근거 확인·검토용 추천이 실제로 이뤄짐", async () => {
+  resetWeb();
+  const r = await runDaily(baseRun({ env: ENV({ DAILY_MODE: "shadow", DAILY_LLM_PROVIDER: "none", DAILY_MAX_PUBLISH: "", DAILY_MAX_EVIDENCE_FETCHES: "" }), registry: { sources: [REGISTRY.sources[0]] } }));
+  eq([r.run.limits.maxPublishPerDay, r.run.limits.maxEvidenceFetches], [6, 12]);
+  ok(r.run.counts.evidenceChecked >= 1 && r.run.counts.PUBLISH >= 1, JSON.stringify(r.run.counts));
+  eq([r.status, r.run.limitWarnings, r.run.llm.calls], ["SUCCESS", undefined, 0]);
+  ok(fs.readFileSync(path.join(r.outDir, "report.md"), "utf8").includes("편집자 검토용"), "검토용 추천 표시");
+});
+await t("상한을 0으로 두면 조용히 SUCCESS가 아니라 경고 + PARTIAL", async () => {
+  resetWeb();
+  const r = await runDaily(baseRun({ env: ENV({ DAILY_MODE: "shadow", DAILY_MAX_EVIDENCE_FETCHES: "0" }), registry: { sources: [REGISTRY.sources[0]] } }));
+  eq(r.status, "PARTIAL");
+  ok(r.run.limitWarnings?.[0]?.includes("maxEvidenceFetches"), JSON.stringify(r.run.limitWarnings));
+  ok(fs.readFileSync(path.join(r.outDir, "report.md"), "utf8").includes("설정 경고"), "보고서 경고");
+});
+await t("회귀 2026-10-11 Asana: 발췌에만 지나가듯 나온 모델(GPT-6 Astra)로 같은 사안 판정하지 않음, 제목이 주제일 때만", async () => {
+  const astra = { slug: "chatgpt-for-financial-services", title: "'ChatGPT for Financial Services'… 금융 데이터 내장, GPT-6 Astra 기반", sourceUrl: "https://a.test/fs", secondarySources: [], sourceTitle: "Introducing ChatGPT for Financial Services", sourceName: "OpenAI", eventDate: "2026-09-10", products: ["ChatGPT for Financial Services", "GPT-6 Astra"] };
+  const ex = { ...existing(), stories: [astra] };
+  const asana = { id: "a5a5a5a5a5a5", url: "https://openai.com/index/asana-browser-agent", canonicalUrl: "https://openai.com/index/asana-browser-agent", title: "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol", excerpt: "Using GPT-6 Astra in Codex, Asana made its browser agent 76x cheaper and 5x faster in tests to offer customers more capable models.", publishedAt: "2026-10-09T15:00:00Z", sourceId: "openai", sourceName: "OpenAI", sourceType: "official", tier: 1 };
+  const dup = lib.dedupeItem(asana, ex);
+  eq(dup.result, "NEW", `판정 ${dup.result} ${dup.reason}`);
+  eq(sel.screenDecision(asana, dup, sel.metadataScore(asana, dup)).decision, "EXCLUDE", "고객 사례는 제외");
+  // 제목이 그 제품을 다루면 여전히 같은 사안 후보
+  const about = { ...asana, id: "b6b6b6b6b6b6", title: "GPT-6 Astra now available in more regions", excerpt: "GPT-6 Astra is now available in 12 more regions." };
+  eq(lib.dedupeItem(about, ex).result, "UPDATE_EXISTING");
+  // 저가치 유형은 중복 불확실이어도 사람 검토 대신 제외
+  const story = { ...asana, id: "c7c7c7c7c7c7", title: "How Acme uses GPT-6 Astra to cut costs" };
+  eq(sel.screenDecision(story, { result: "UNCERTAIN", reason: "x" }, sel.metadataScore(story, { result: "UNCERTAIN" })).decision, "EXCLUDE");
+});
+
 // ---------- 7) 승인 ----------
 const Q = path.join(tmp, "queue");
 const wItem = col.items.find((i) => i.url.endsWith("/widget-2"));

@@ -65,7 +65,13 @@ export async function runDaily(opts) {
   const existing = opts.existing ?? loadExisting();
   const processedFile = opts.processedFile ?? PROCESSED_FILE;
   const processed = loadProcessed(processedFile);
-  const run = { date, mode, startedAt: new Date().toISOString(), status: "", limits, provider, model: provider === "anthropic" ? env.DAILY_LLM_MODEL || "claude-sonnet-5-5" : null, ...(opts.backtest ? { backtest: opts.backtest } : {}) };
+  // 상한 0은 근거 확인·추천을 꺼 버린다. 백테스트(--no-fetch)처럼 의도한 경우가 아니면 경고하고 PARTIAL로
+  const limitWarnings = [];
+  if (!opts.allowZeroLimits) {
+    if (limits.maxEvidenceFetches === 0) limitWarnings.push("근거 확인 상한(maxEvidenceFetches)이 0 — 원문 근거를 하나도 보지 않음");
+    if (limits.maxPublishPerDay === 0) limitWarnings.push("발행 추천 상한(maxPublishPerDay)이 0 — 추천을 하나도 내지 않음");
+  }
+  const run = { date, mode, ...(limitWarnings.length ? { limitWarnings } : {}), startedAt: new Date().toISOString(), status: "", limits, provider, model: provider === "anthropic" ? env.DAILY_LLM_MODEL || "claude-sonnet-5-5" : null, ...(opts.backtest ? { backtest: opts.backtest } : {}) };
   const budget = { calls: 0, inputTokens: 0, outputTokens: 0 };
 
   // 1) 수집
@@ -273,7 +279,7 @@ export async function runDaily(opts) {
     generationSkippedOrFailed: genTrouble.length,
   };
   run.llm = { provider, calls: budget.calls, inputTokens: budget.inputTokens, outputTokens: budget.outputTokens, maxCalls: limits.maxLlmCalls };
-  run.status = enabled.length && enabled.every((s) => ["failed", "blocked"].includes(s.status)) ? "FAILED" : sourceTrouble.length || genTrouble.length || valFail.length ? "PARTIAL" : "SUCCESS";
+  run.status = enabled.length && enabled.every((s) => ["failed", "blocked"].includes(s.status)) ? "FAILED" : sourceTrouble.length || genTrouble.length || valFail.length || limitWarnings.length ? "PARTIAL" : "SUCCESS";
   run.items = rows.map((r) => ({
     id: r.item.id,
     title: r.item.title,
