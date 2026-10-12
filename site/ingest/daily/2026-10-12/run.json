@@ -1,0 +1,312 @@
+{
+  "date": "2026-10-12",
+  "mode": "shadow",
+  "startedAt": "2026-10-12T00:50:18.587Z",
+  "status": "SUCCESS",
+  "limits": {
+    "windowDays": 2,
+    "maxItemsPerSource": 20,
+    "maxPublishPerDay": 6,
+    "maxEvidenceFetches": 12,
+    "maxLlmCalls": 6,
+    "maxOutputTokens": 3000,
+    "llmTimeoutMs": 60000,
+    "llmRetries": 1,
+    "maxCostUsd": 0.5
+  },
+  "provider": "none",
+  "model": null,
+  "window": {
+    "since": "2026-10-10",
+    "until": "2026-10-12"
+  },
+  "sources": [
+    {
+      "id": "openai",
+      "name": "OpenAI",
+      "status": "success",
+      "requests": 1,
+      "found": 1287,
+      "inWindow": 0,
+      "kept": 0
+    },
+    {
+      "id": "anthropic",
+      "name": "Anthropic",
+      "status": "success",
+      "requests": 1,
+      "found": 0,
+      "inWindow": 0,
+      "kept": 0
+    },
+    {
+      "id": "claude-blog",
+      "name": "Claude (claude.com blog)",
+      "status": "success",
+      "requests": 1,
+      "found": 0,
+      "inWindow": 0,
+      "kept": 0
+    },
+    {
+      "id": "google-deepmind",
+      "name": "Google DeepMind",
+      "status": "success",
+      "requests": 1,
+      "found": 100,
+      "inWindow": 0,
+      "kept": 0
+    },
+    {
+      "id": "google-ai",
+      "name": "Google (The Keyword · AI)",
+      "status": "success",
+      "requests": 1,
+      "found": 0,
+      "inWindow": 0,
+      "kept": 0
+    },
+    {
+      "id": "microsoft",
+      "name": "Microsoft (Official Blog)",
+      "status": "success",
+      "requests": 1,
+      "found": 10,
+      "inWindow": 0,
+      "kept": 0
+    },
+    {
+      "id": "meta",
+      "name": "Meta Newsroom",
+      "status": "success",
+      "requests": 1,
+      "found": 10,
+      "inWindow": 0,
+      "kept": 0
+    },
+    {
+      "id": "nvidia",
+      "name": "NVIDIA Blog",
+      "status": "success",
+      "requests": 1,
+      "found": 18,
+      "inWindow": 0,
+      "kept": 0
+    },
+    {
+      "id": "github",
+      "name": "GitHub Blog",
+      "status": "success",
+      "requests": 1,
+      "found": 10,
+      "inWindow": 0,
+      "kept": 0
+    },
+    {
+      "id": "huggingface",
+      "name": "Hugging Face Blog",
+      "status": "success",
+      "requests": 1,
+      "found": 876,
+      "inWindow": 0,
+      "kept": 0
+    },
+    {
+      "id": "mistral",
+      "name": "Mistral AI",
+      "status": "success",
+      "requests": 2,
+      "found": 0,
+      "inWindow": 0,
+      "kept": 0
+    },
+    {
+      "id": "aws-ml",
+      "name": "AWS Machine Learning Blog",
+      "status": "success",
+      "requests": 1,
+      "found": 20,
+      "inWindow": 0,
+      "kept": 0
+    },
+    {
+      "id": "xai-docs",
+      "name": "xAI API Release Notes (docs.x.ai)",
+      "status": "success",
+      "requests": 1,
+      "found": 55,
+      "inWindow": 0,
+      "kept": 0
+    },
+    {
+      "id": "github-changelog",
+      "name": "GitHub Changelog",
+      "status": "success",
+      "requests": 1,
+      "found": 10,
+      "inWindow": 1,
+      "kept": 1
+    },
+    {
+      "id": "google-workspace-updates",
+      "name": "Google Workspace Updates",
+      "status": "success",
+      "requests": 1,
+      "found": 150,
+      "inWindow": 0,
+      "kept": 0
+    },
+    {
+      "id": "microsoft-365",
+      "name": "Microsoft 365 Blog",
+      "status": "success",
+      "requests": 1,
+      "found": 10,
+      "inWindow": 0,
+      "kept": 0
+    },
+    {
+      "id": "samsung-newsroom",
+      "name": "Samsung Newsroom",
+      "status": "success",
+      "requests": 1,
+      "found": 50,
+      "inWindow": 0,
+      "kept": 0
+    },
+    {
+      "id": "nvidia-newsroom",
+      "name": "NVIDIA Newsroom (Press Releases)",
+      "status": "success",
+      "requests": 1,
+      "found": 20,
+      "inWindow": 0,
+      "kept": 0
+    },
+    {
+      "id": "xai",
+      "name": "xAI",
+      "status": "skipped",
+      "reason": "비활성"
+    },
+    {
+      "id": "perplexity",
+      "name": "Perplexity",
+      "status": "skipped",
+      "reason": "비활성"
+    },
+    {
+      "id": "apple-ml",
+      "name": "Apple Machine Learning Research",
+      "status": "success",
+      "requests": 1,
+      "found": 10,
+      "inWindow": 0,
+      "kept": 0
+    },
+    {
+      "id": "wired-ai",
+      "name": "WIRED (AI)",
+      "status": "skipped",
+      "reason": "비활성"
+    },
+    {
+      "id": "ars-technica",
+      "name": "Ars Technica",
+      "status": "success",
+      "requests": 1,
+      "found": 20,
+      "inWindow": 0,
+      "kept": 0
+    },
+    {
+      "id": "techcrunch",
+      "name": "TechCrunch",
+      "status": "skipped",
+      "reason": "비활성"
+    },
+    {
+      "id": "the-verge",
+      "name": "The Verge",
+      "status": "skipped",
+      "reason": "비활성"
+    },
+    {
+      "id": "mit-tr",
+      "name": "MIT Technology Review",
+      "status": "skipped",
+      "reason": "비활성"
+    },
+    {
+      "id": "ap",
+      "name": "AP",
+      "status": "skipped",
+      "reason": "비활성"
+    },
+    {
+      "id": "reuters",
+      "name": "Reuters",
+      "status": "skipped",
+      "reason": "비활성"
+    },
+    {
+      "id": "bloomberg-ft",
+      "name": "Bloomberg / Financial Times",
+      "status": "skipped",
+      "reason": "비활성"
+    }
+  ],
+  "counts": {
+    "collected": 1,
+    "NEW": 1,
+    "UPDATE_EXISTING": 0,
+    "DUPLICATE": 0,
+    "UNCERTAIN": 0,
+    "PUBLISH": 0,
+    "HOLD": 0,
+    "EXCLUDE": 1,
+    "shortlisted": 0,
+    "evidenceChecked": 0,
+    "drafts": 0,
+    "draftQa": {
+      "PASS": 0,
+      "REVIEW": 0,
+      "FAIL": 0
+    },
+    "validationFailures": 0,
+    "generationSkippedOrFailed": 0
+  },
+  "llm": {
+    "provider": "none",
+    "model": null,
+    "calls": 0,
+    "inputTokens": 0,
+    "outputTokens": 0,
+    "estimatedCostUsd": 0,
+    "maxCalls": 6,
+    "maxCostUsd": 0.5
+  },
+  "items": [
+    {
+      "id": "1e0e6608c184",
+      "title": "New controls and chat improvements in Copilot for JetBrains",
+      "source": "GitHub Changelog",
+      "publishedAt": "2026-10-10T18:53:39.000Z",
+      "url": "https://github.blog/changelog/2026-10-10-new-controls-and-chat-improvements-in-copilot-for-jetbrains",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+      ],
+      "score": 2,
+      "importance": 0,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [],
+      "company": "GitHub",
+      "stage": "metadata"
+    }
+  ],
+  "finishedAt": "2026-10-12T00:51:01.285Z"
+}
