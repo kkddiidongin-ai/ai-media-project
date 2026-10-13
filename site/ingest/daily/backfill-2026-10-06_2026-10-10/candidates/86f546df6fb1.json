@@ -1,0 +1,222 @@
+{
+  "id": "86f546df6fb1",
+  "date": "2026-10-10",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Claude Haiku 5.5 in GitHub Copilot",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 12,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": false,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "evidenceQuality",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "GitHub",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://github.blog/changelog/2026-10-07-claude-haiku-5-5-in-github-copilot",
+      "name": "GitHub Changelog",
+      "type": "official",
+      "publishedAt": "2026-10-07T20:12:18.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "86f546df6fb1",
+    "url": "https://github.blog/changelog/2026-10-07-claude-haiku-5-5-in-github-copilot",
+    "canonicalUrl": "https://github.blog/changelog/2026-10-07-claude-haiku-5-5-in-github-copilot",
+    "title": "Claude Haiku 5.5 in GitHub Copilot",
+    "excerpt": "Claude Haiku 5.5, Anthropic’s newest lightweight model, is now generally available in GitHub Copilot. It is designed for fast, high-volume work like subagents, quick edits, and terminal tasks. In early… The post Claude Haiku 5.5 in GitHub Copilot appeared first on The GitHub Blog .",
+    "publishedAt": "2026-10-07T20:12:18.000Z",
+    "sourceId": "github-changelog",
+    "sourceName": "GitHub Changelog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://github.blog/changelog/feed/?paged=2",
+    "fetchedAt": "2026-10-13T06:38:31.253Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 1597,
+    "grade": "LIMITED",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Claude Haiku 5.5, Anthropic’s newest lightweight model, is now generally available in GitHub Copilot. It is designed for fast, high-volume work like subagents, quick edits, and terminal tasks. In early… The post Claude Haiku 5.5 in GitHub Copilot appeared first on The GitHub Blog .",
+        "sourceUrl": "https://github.blog/changelog/2026-10-07-claude-haiku-5-5-in-github-copilot",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-07T20:12:18.000Z",
+        "checkedAt": "2026-10-13T06:36:12.605Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Claude Haiku 5.5 in GitHub Copilot - GitHub Changelog",
+        "sourceUrl": "https://github.blog/changelog/2026-10-07-claude-haiku-5-5-in-github-copilot",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-07T20:12:18.000Z",
+        "checkedAt": "2026-10-13T06:36:12.605Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Claude Haiku 5.5, Anthropic&rsquo;s newest lightweight model, is now generally available in GitHub Copilot.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-07-claude-haiku-5-5-in-github-copilot",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-07T20:12:18.000Z",
+        "checkedAt": "2026-10-13T06:36:12.605Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "In early testing, Haiku 5.5 matched Claude Sonnet 5 on many coding tasks while using significantly fewer tokens and steps.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-07-claude-haiku-5-5-in-github-copilot",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-07T20:12:18.000Z",
+        "checkedAt": "2026-10-13T06:36:12.605Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "See Models and pricing for GitHub Copilot for details.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-07-claude-haiku-5-5-in-github-copilot",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-07T20:12:18.000Z",
+        "checkedAt": "2026-10-13T06:36:12.605Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Claude Haiku 5.5 is available to Copilot Pro, Pro+, Max, Business, and Enterprise users.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-07-claude-haiku-5-5-in-github-copilot",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-07T20:12:18.000Z",
+        "checkedAt": "2026-10-13T06:36:12.605Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Copilot Enterprise and Copilot Business plan administrators can manage access to Claude Haiku 5.5 through the model policy in Copilot settings.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-07-claude-haiku-5-5-in-github-copilot",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-07T20:12:18.000Z",
+        "checkedAt": "2026-10-13T06:36:12.605Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "To explore all models available in GitHub Copilot, see our documentation on models and get started with Copilot.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-07-claude-haiku-5-5-in-github-copilot",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-07T20:12:18.000Z",
+        "checkedAt": "2026-10-13T06:36:12.605Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Join the GitHub Community to share your feedback.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-07-claude-haiku-5-5-in-github-copilot",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-07T20:12:18.000Z",
+        "checkedAt": "2026-10-13T06:36:12.605Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "New controls and chat improvements in Copilot for JetBrains",
+        "sourceUrl": "https://github.blog/changelog/2026-10-07-claude-haiku-5-5-in-github-copilot",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-07T20:12:18.000Z",
+        "checkedAt": "2026-10-13T06:36:12.605Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "GitHub Copilot weekly releases — October 5",
+        "sourceUrl": "https://github.blog/changelog/2026-10-07-claude-haiku-5-5-in-github-copilot",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-07T20:12:18.000Z",
+        "checkedAt": "2026-10-13T06:36:12.605Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Local sandboxing for GitHub Copilot now generally available",
+        "sourceUrl": "https://github.blog/changelog/2026-10-07-claude-haiku-5-5-in-github-copilot",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-07T20:12:18.000Z",
+        "checkedAt": "2026-10-13T06:36:12.605Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Discover local models in GitHub Copilot CLI",
+        "sourceUrl": "https://github.blog/changelog/2026-10-07-claude-haiku-5-5-in-github-copilot",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-07T20:12:18.000Z",
+        "checkedAt": "2026-10-13T06:36:12.605Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "AVAILABILITY"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 AVAILABILITY (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

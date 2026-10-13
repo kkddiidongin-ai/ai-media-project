@@ -1,0 +1,224 @@
+{
+  "id": "820bd24a41c4",
+  "date": "2026-10-10",
+  "proposedSlug": "introducing-mistral-large-4",
+  "title": null,
+  "sourceTitle": "Introducing Mistral Large 4",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 12,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Mistral",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://mistral.ai/news/mistral-large-4/",
+      "name": "Mistral AI",
+      "type": "official",
+      "publishedAt": "2026-10-06T12:00:27.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "820bd24a41c4",
+    "url": "https://mistral.ai/news/mistral-large-4/",
+    "canonicalUrl": "https://mistral.ai/news/mistral-large-4",
+    "title": "Introducing Mistral Large 4",
+    "excerpt": "",
+    "publishedAt": "2026-10-06T12:00:27.000Z",
+    "sourceId": "mistral",
+    "sourceName": "Mistral AI",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://mistral.ai/news/rss",
+    "fetchedAt": "2026-10-13T06:38:31.253Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 12114,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Introducing Mistral Large 4 | Mistral • • • • • • • • • • Le chonk",
+        "sourceUrl": "https://mistral.ai/news/mistral-large-4/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-10-06T12:00:27.000Z",
+        "checkedAt": "2026-10-13T06:39:39.506Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Today, we’re launching a public preview of Mistral Large 4.",
+        "sourceUrl": "https://mistral.ai/news/mistral-large-4/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-10-06T12:00:27.000Z",
+        "checkedAt": "2026-10-13T06:39:39.506Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Unofficially ML4, very officially: le Chonk .",
+        "sourceUrl": "https://mistral.ai/news/mistral-large-4/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-10-06T12:00:27.000Z",
+        "checkedAt": "2026-10-13T06:39:39.506Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "ML4 pushes the frontier of open-weight performance.",
+        "sourceUrl": "https://mistral.ai/news/mistral-large-4/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-10-06T12:00:27.000Z",
+        "checkedAt": "2026-10-13T06:39:39.506Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "You can try the preview API today on Mistral Studio .",
+        "sourceUrl": "https://mistral.ai/news/mistral-large-4/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-10-06T12:00:27.000Z",
+        "checkedAt": "2026-10-13T06:39:39.506Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "ML4 is a 1 trillion-parameter natively multimodal model with 52 billion active parameters.",
+        "sourceUrl": "https://mistral.ai/news/mistral-large-4/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-10-06T12:00:27.000Z",
+        "checkedAt": "2026-10-13T06:39:39.506Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "ML4 was trained from scratch on 3,800 NVIDIA Grace Blackwell GPUs in Mistral’s own datacenters in Europe.",
+        "sourceUrl": "https://mistral.ai/news/mistral-large-4/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-10-06T12:00:27.000Z",
+        "checkedAt": "2026-10-13T06:39:39.506Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "ML4 Preview ranked second of five models (3.74), ahead of Kimi K3 (3.59), GLM-5.3 (3.60) and GLM-5.2 (3.40), and behind only Claude Opus 5 (4.22).",
+        "sourceUrl": "https://mistral.ai/news/mistral-large-4/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-10-06T12:00:27.000Z",
+        "checkedAt": "2026-10-13T06:39:39.506Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "In this demo, ML4 compared to other top OSS models take on the same multistep corporate finance challenge, searching through public company filings and financial reports, such as those available via EDGAR and equivalent European databases.",
+        "sourceUrl": "https://mistral.ai/news/mistral-large-4/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-10-06T12:00:27.000Z",
+        "checkedAt": "2026-10-13T06:39:39.506Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "ML4 also engages more responsibly with users than any of our previous models.",
+        "sourceUrl": "https://mistral.ai/news/mistral-large-4/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-10-06T12:00:27.000Z",
+        "checkedAt": "2026-10-13T06:39:39.506Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "We ran an internal evaluation in which expert annotators across coding, computer-aided design (CAD), finance, mathematics and physics compared Mistral Large 4 with GLM-5.3.",
+        "sourceUrl": "https://mistral.ai/news/mistral-large-4/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-10-06T12:00:27.000Z",
+        "checkedAt": "2026-10-13T06:39:39.506Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "And ML4 is only the foundation: it will serve as the base for a new generation of specialized and optimized Mistral models, built for the industries and workloads our customers care about most.",
+        "sourceUrl": "https://mistral.ai/news/mistral-large-4/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-10-06T12:00:27.000Z",
+        "checkedAt": "2026-10-13T06:39:39.506Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 3,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 2,
+    "signals": [
+      "MODEL",
+      "PRODUCT_LAUNCH"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 9,
+    "total": 9
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 MODEL·PRODUCT_LAUNCH (우선순위 9)",
+    "근거 확인 통과 (확인 사실 12개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "none",
+    "model": null,
+    "status": "skipped",
+    "error": "Shadow Mode — 원고를 만들지 않음",
+    "promptVersion": "draft-v1",
+    "at": "2026-10-13T06:39:40.314Z",
+    "evidenceHash": "17fe2f2cd97a"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": true,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}
