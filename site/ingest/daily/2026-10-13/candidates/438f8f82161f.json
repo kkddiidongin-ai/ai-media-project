@@ -1,0 +1,222 @@
+{
+  "id": "438f8f82161f",
+  "date": "2026-10-13",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Minions: A Dynamic and Distributed Virtual GPU Cloud Built on Idle Apple Silicon Devices",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 12,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": false,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "evidenceQuality",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Apple",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://machinelearning.apple.com/research/distributed-gpu-cloud",
+      "name": "Apple Machine Learning Research",
+      "type": "official",
+      "publishedAt": "2026-10-12T00:00:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "438f8f82161f",
+    "url": "https://machinelearning.apple.com/research/distributed-gpu-cloud",
+    "canonicalUrl": "https://machinelearning.apple.com/research/distributed-gpu-cloud",
+    "title": "Minions: A Dynamic and Distributed Virtual GPU Cloud Built on Idle Apple Silicon Devices",
+    "excerpt": "The increasing demand for GPU-accelerated machine learning inference has exposed limitations in centralized GPU infrastructures, including high cost, limited elasticity, and long wait times under resource constraints. At the same time, modern Apple Silicon–based macOS devices are equipped with power",
+    "publishedAt": "2026-10-12T00:00:00.000Z",
+    "sourceId": "apple-ml",
+    "sourceName": "Apple Machine Learning Research",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://machinelearning.apple.com/rss.xml",
+    "fetchedAt": "2026-10-13T02:47:23.501Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 2150,
+    "grade": "LIMITED",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "The increasing demand for GPU-accelerated machine learning inference has exposed limitations in centralized GPU infrastructures, including high cost, limited elasticity, and long wait times under resource constraints. At the same time, modern Apple Silicon–based macOS devices are equipped with power",
+        "sourceUrl": "https://machinelearning.apple.com/research/distributed-gpu-cloud",
+        "source": "Apple Machine Learning Research",
+        "publishedAt": "2026-10-12T00:00:00.000Z",
+        "checkedAt": "2026-10-13T02:48:13.955Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "• • Minions: A Dynamic and Distributed Virtual GPU Cloud Built on Idle Apple Silicon Devices - Apple Machine Learning Research • • • • • • • • research area Speech and Natural Language Processing , research area Tools, Platforms, Frameworks",
+        "sourceUrl": "https://machinelearning.apple.com/research/distributed-gpu-cloud",
+        "source": "Apple Machine Learning Research",
+        "publishedAt": "2026-10-12T00:00:00.000Z",
+        "checkedAt": "2026-10-13T02:48:13.955Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "content type paper published October 2026",
+        "sourceUrl": "https://machinelearning.apple.com/research/distributed-gpu-cloud",
+        "source": "Apple Machine Learning Research",
+        "publishedAt": "2026-10-12T00:00:00.000Z",
+        "checkedAt": "2026-10-13T02:48:13.955Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Minions: A Dynamic and Distributed Virtual GPU Cloud Built on Idle Apple Silicon Devices",
+        "sourceUrl": "https://machinelearning.apple.com/research/distributed-gpu-cloud",
+        "source": "Apple Machine Learning Research",
+        "publishedAt": "2026-10-12T00:00:00.000Z",
+        "checkedAt": "2026-10-13T02:48:13.955Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "The increasing demand for GPU-accelerated machine learning inference has exposed limitations in centralized GPU infrastructures, including high cost, limited elasticity, and long wait times under resource constraints.",
+        "sourceUrl": "https://machinelearning.apple.com/research/distributed-gpu-cloud",
+        "source": "Apple Machine Learning Research",
+        "publishedAt": "2026-10-12T00:00:00.000Z",
+        "checkedAt": "2026-10-13T02:48:13.955Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "At the same time, modern Apple Silicon–based macOS devices are equipped with powerful GPUs that remain largely idle during normal usage.",
+        "sourceUrl": "https://machinelearning.apple.com/research/distributed-gpu-cloud",
+        "source": "Apple Machine Learning Research",
+        "publishedAt": "2026-10-12T00:00:00.000Z",
+        "checkedAt": "2026-10-13T02:48:13.955Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "This paper presents Minions, a dynamic and distributed virtual GPU cloud that aggregates idle Apple Silicon GPUs across macOS devices to execute large-scale machine learning inference workloads.",
+        "sourceUrl": "https://machinelearning.apple.com/research/distributed-gpu-cloud",
+        "source": "Apple Machine Learning Research",
+        "publishedAt": "2026-10-12T00:00:00.000Z",
+        "checkedAt": "2026-10-13T02:48:13.955Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Minions enables teams to leverage existing hardware without requiring additional GPU procurement.",
+        "sourceUrl": "https://machinelearning.apple.com/research/distributed-gpu-cloud",
+        "source": "Apple Machine Learning Research",
+        "publishedAt": "2026-10-12T00:00:00.000Z",
+        "checkedAt": "2026-10-13T02:48:13.955Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Our experience shows that idle macOS devices can be transformed into a practical distributed GPU inference platform in environments where centralized GPU resources are constrained.",
+        "sourceUrl": "https://machinelearning.apple.com/research/distributed-gpu-cloud",
+        "source": "Apple Machine Learning Research",
+        "publishedAt": "2026-10-12T00:00:00.000Z",
+        "checkedAt": "2026-10-13T02:48:13.955Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Exploring LLMs with MLX and the Neural Accelerators in the M5 GPU",
+        "sourceUrl": "https://machinelearning.apple.com/research/distributed-gpu-cloud",
+        "source": "Apple Machine Learning Research",
+        "publishedAt": "2026-10-12T00:00:00.000Z",
+        "checkedAt": "2026-10-13T02:48:13.955Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Mac with Apple silicon is increasingly popular among AI developers and researchers interested in using their Mac to experiment with the latest models and techniques.",
+        "sourceUrl": "https://machinelearning.apple.com/research/distributed-gpu-cloud",
+        "source": "Apple Machine Learning Research",
+        "publishedAt": "2026-10-12T00:00:00.000Z",
+        "checkedAt": "2026-10-13T02:48:13.955Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "MLX works with all Apple silicon systems, and with the latest…",
+        "sourceUrl": "https://machinelearning.apple.com/research/distributed-gpu-cloud",
+        "source": "Apple Machine Learning Research",
+        "publishedAt": "2026-10-12T00:00:00.000Z",
+        "checkedAt": "2026-10-13T02:48:13.955Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "In addition to ongoing efforts to accelerate inference on Apple silicon, we have recently made significant progress in accelerating LLM inference for the NVIDIA GPUs widely used for production applications across the industry…",
+        "sourceUrl": "https://machinelearning.apple.com/research/distributed-gpu-cloud",
+        "source": "Apple Machine Learning Research",
+        "publishedAt": "2026-10-12T00:00:00.000Z",
+        "checkedAt": "2026-10-13T02:48:13.955Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "INFRA"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 INFRA (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

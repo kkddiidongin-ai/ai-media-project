@@ -1,0 +1,221 @@
+{
+  "id": "87249271f53f",
+  "date": "2026-10-13",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Microsoft to expand Azure Maia system to multi-gigawatt deployments",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 12,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Microsoft",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/",
+      "name": "Microsoft (Official Blog)",
+      "type": "official",
+      "publishedAt": "2026-10-12T13:01:29.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "87249271f53f",
+    "url": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/",
+    "canonicalUrl": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments",
+    "title": "Microsoft to expand Azure Maia system to multi-gigawatt deployments",
+    "excerpt": "Azure Maia 200 now in production; Azure Maia 300 coming in 2027 As we move into the era of Super Intelligence, Microsoft is entering a new phase of infrastructure. We will scale our Azure Maia family to multi-gigawatt deployments starting in 2027, making Maia the primary inference system for Microso",
+    "publishedAt": "2026-10-12T13:01:29.000Z",
+    "sourceId": "microsoft",
+    "sourceName": "Microsoft (Official Blog)",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://blogs.microsoft.com/feed/",
+    "fetchedAt": "2026-10-13T02:47:23.501Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 6883,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Azure Maia 200 now in production; Azure Maia 300 coming in 2027 As we move into the era of Super Intelligence, Microsoft is entering a new phase of infrastructure. We will scale our Azure Maia family to multi-gigawatt deployments starting in 2027, making Maia the primary inference system for Microso",
+        "sourceUrl": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/",
+        "source": "Microsoft (Official Blog)",
+        "publishedAt": "2026-10-12T13:01:29.000Z",
+        "checkedAt": "2026-10-13T02:48:13.503Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Microsoft to expand Azure Maia system to multi-gigawatt deployments - The Official Microsoft Blog",
+        "sourceUrl": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/",
+        "source": "Microsoft (Official Blog)",
+        "publishedAt": "2026-10-12T13:01:29.000Z",
+        "checkedAt": "2026-10-13T02:48:13.503Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Azure Maia 200 now in production; Azure Maia 300 coming in 2027",
+        "sourceUrl": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/",
+        "source": "Microsoft (Official Blog)",
+        "publishedAt": "2026-10-12T13:01:29.000Z",
+        "checkedAt": "2026-10-13T02:48:13.503Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "We will scale our Azure Maia family to multi-gigawatt deployments starting in 2027, making Maia the primary inference system for Microsoft products and services.",
+        "sourceUrl": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/",
+        "source": "Microsoft (Official Blog)",
+        "publishedAt": "2026-10-12T13:01:29.000Z",
+        "checkedAt": "2026-10-13T02:48:13.503Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Maia 200 is now serving Microsoft production workloads, including Microsoft Copilot , and supporting the MAI team as they develop next-generation models, with GitHub Copilot and Microsoft Foundry to follow by end of year.",
+        "sourceUrl": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/",
+        "source": "Microsoft (Official Blog)",
+        "publishedAt": "2026-10-12T13:01:29.000Z",
+        "checkedAt": "2026-10-13T02:48:13.503Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Across these workloads, Maia 200 runs OpenAI models , Microsoft’s own MAI models and leading open-source model families.",
+        "sourceUrl": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/",
+        "source": "Microsoft (Official Blog)",
+        "publishedAt": "2026-10-12T13:01:29.000Z",
+        "checkedAt": "2026-10-13T02:48:13.503Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Maia 300 is a complete intelligent system designed for the new types of AI workloads emerging today: Long-context reasoning, latency-sensitive conversational experiences and sustained, multi-step agentic tasks.",
+        "sourceUrl": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/",
+        "source": "Microsoft (Official Blog)",
+        "publishedAt": "2026-10-12T13:01:29.000Z",
+        "checkedAt": "2026-10-13T02:48:13.503Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "By improving efficiency across the system, we expect Maia 300 to deliver 40% more tokens per megawatt compared to leading GPU-based systems.",
+        "sourceUrl": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/",
+        "source": "Microsoft (Official Blog)",
+        "publishedAt": "2026-10-12T13:01:29.000Z",
+        "checkedAt": "2026-10-13T02:48:13.503Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Maia 200: Driving the workloads that Microsoft runs at scale",
+        "sourceUrl": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/",
+        "source": "Microsoft (Official Blog)",
+        "publishedAt": "2026-10-12T13:01:29.000Z",
+        "checkedAt": "2026-10-13T02:48:13.503Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "The Azure Maia system is designed around the real-world workloads Microsoft runs at scale and the models we expect to build in the years ahead.",
+        "sourceUrl": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/",
+        "source": "Microsoft (Official Blog)",
+        "publishedAt": "2026-10-12T13:01:29.000Z",
+        "checkedAt": "2026-10-13T02:48:13.503Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Maia 200 is deploying across the United States, Europe and Australia and delivering up to 1.7x more tokens per watt for built-in AI capabilities in Microsoft Teams, Copilot and Cowork experiences compared with leading GPU infrastructure.",
+        "sourceUrl": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/",
+        "source": "Microsoft (Official Blog)",
+        "publishedAt": "2026-10-12T13:01:29.000Z",
+        "checkedAt": "2026-10-13T02:48:13.503Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Experience running our AI models and services on Maia 200 directly informed the design of Maia 300.",
+        "sourceUrl": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/",
+        "source": "Microsoft (Official Blog)",
+        "publishedAt": "2026-10-12T13:01:29.000Z",
+        "checkedAt": "2026-10-13T02:48:13.503Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "As the third generation of our Azure Maia program, Maia 300 is designed with an inference-first architecture optimized for long-context, memory-intensive and decode-heavy AI workloads.",
+        "sourceUrl": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/",
+        "source": "Microsoft (Official Blog)",
+        "publishedAt": "2026-10-12T13:01:29.000Z",
+        "checkedAt": "2026-10-13T02:48:13.503Z"
+      }
+    ],
+    "pageDate": "2026-10-12T13:01:29.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "INFRA"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 INFRA (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}
