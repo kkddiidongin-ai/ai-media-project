@@ -1,4 +1,4 @@
-# AI마중 DAILY — Shadow Mode (Phase 7.1.2) · 수동 Draft Mode (Phase 7.1.3)
+# AI마중 DAILY — Shadow Mode (Phase 7.1.2) · 수동 Draft Mode (Phase 7.1.3) · 수집 안정화·백필 (Phase 7.1.5)
 #
 # 예약 실행(매일 07:00 KST): 언제나 shadow — 공식 출처 수집 → 중복 판정 → 선정 → 근거 확인 → 보고서. LLM 호출 없음.
 # 수동 실행(Run workflow)에서 mode=draft를 고른 경우에만: 검증된 발행 추천 후보에 AI 초안 + 자동 QA (편집자 검토용).
@@ -12,13 +12,18 @@
 #
 # 켜기/끄기(킬 스위치): Settings → Secrets and variables → Actions → Variables
 #   DAILY_AUTOMATION_ENABLED = true 일 때만 실행. 지우거나 다른 값이면 job 자체를 건너뛴다.
-# 일정: 매일 22:00 UTC = 한국 시간 07:00. GitHub schedule은 정시 실행을 보장하지 않는다 (수 분~수십 분 늦거나 드물게 건너뜀).
+# 일정: 매일 21:17 UTC = 한국 시간 06:17. GitHub schedule은 정시 실행을 보장하지 않는다 (2026-10-08~12 실측: 약 2.5~3.5시간 지연).
+#   정각(:00)은 GitHub 예약 실행이 몰리는 시각이라 피했다. 그래도 정확한 실행 시각은 보장되지 않는다.
+#   그래서 시각 대신 '따라잡기'로 누락을 막는다: 수집 시작일 = 기본 창(기준일-2)과 마지막 실행일(automation/daily-* 브랜치·캐시 기록) 중
+#   이른 날 (최대 7일). 실행이 빠진 날의 발표도 다음 실행이 다시 본다. 이미 처리한 항목은 처리 기록으로 다시 추천하지 않는다.
+# 백필(Phase 7.1.5): Run workflow에서 from·to(발표일 기준, 최대 14일)를 넣으면 그 기간을 다시 수집한다 (언제나 shadow).
+#   결과는 ingest/daily/backfill-<from>_<to>/ · 브랜치 automation/daily-backfill-<from>_<to> · 같은 기간은 같은 PR.
 
 name: AI마중 DAILY
 
 on:
   schedule:
-    - cron: "0 22 * * *"
+    - cron: "17 21 * * *"
   workflow_dispatch:
     inputs:
       date:
@@ -33,6 +38,14 @@ on:
         options:
           - shadow
           - draft
+      from:
+        description: "백필 시작일 (발표일 기준 YYYY-MM-DD). to와 함께 넣으면 그 기간만 다시 수집 (shadow)"
+        required: false
+        type: string
+      to:
+        description: "백필 종료일 (발표일 기준 YYYY-MM-DD, 최대 14일)"
+        required: false
+        type: string
 
 permissions:
   contents: write # automation/daily-* 브랜치에만 push
@@ -65,14 +78,27 @@ jobs:
       - name: Install
         run: npm ci --no-audit --no-fund
 
+      # rid = 결과 폴더·브랜치·artifact 이름 (날짜별 DAILY는 날짜, 백필은 backfill-<from>_<to>)
       - name: Date (KST)
         id: d
         env:
           INPUT_DATE: ${{ inputs.date }}
+          INPUT_FROM: ${{ inputs.from }}
+          INPUT_TO: ${{ inputs.to }}
         run: |
-          D="${INPUT_DATE:-$(TZ=Asia/Seoul date +%F)}"
-          [[ "$D" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]] || { echo "bad date: $D"; exit 1; }
-          echo "date=$D" >> "$GITHUB_OUTPUT"
+          re='^[0-9]{4}-[0-9]{2}-[0-9]{2}$'
+          if [ -n "$INPUT_FROM$INPUT_TO" ]; then
+            [[ "$INPUT_FROM" =~ $re && "$INPUT_TO" =~ $re ]] || { echo "백필은 from·to 둘 다 YYYY-MM-DD"; exit 1; }
+            echo "date=$INPUT_TO" >> "$GITHUB_OUTPUT"
+            echo "rid=backfill-${INPUT_FROM}_${INPUT_TO}" >> "$GITHUB_OUTPUT"
+            echo "backfill=true" >> "$GITHUB_OUTPUT"
+          else
+            D="${INPUT_DATE:-$(TZ=Asia/Seoul date +%F)}"
+            [[ "$D" =~ $re ]] || { echo "bad date: $D"; exit 1; }
+            echo "date=$D" >> "$GITHUB_OUTPUT"
+            echo "rid=$D" >> "$GITHUB_OUTPUT"
+            echo "backfill=false" >> "$GITHUB_OUTPUT"
+          fi
 
       # 예약 실행은 언제나 shadow. draft는 수동 실행에서 직접 고른 경우에만
       - name: Mode
@@ -80,9 +106,10 @@ jobs:
         env:
           EVENT: ${{ github.event_name }}
           INPUT_MODE: ${{ inputs.mode }}
+          BACKFILL: ${{ steps.d.outputs.backfill }}
         run: |
           M=shadow
-          if [ "$EVENT" = "workflow_dispatch" ] && [ "$INPUT_MODE" = "draft" ]; then M=draft; fi
+          if [ "$EVENT" = "workflow_dispatch" ] && [ "$INPUT_MODE" = "draft" ] && [ "$BACKFILL" != "true" ]; then M=draft; fi
           echo "mode=$M" >> "$GITHUB_OUTPUT"
           echo "mode: $M (event: $EVENT)"
 
@@ -90,7 +117,7 @@ jobs:
       - name: Restore earlier results for this date
         continue-on-error: true
         env:
-          D: ${{ steps.d.outputs.date }}
+          D: ${{ steps.d.outputs.rid }}
         run: |
           B="automation/daily-$D"
           mkdir -p "$RUNNER_TEMP/daily" "$RUNNER_TEMP/restore"
@@ -104,12 +131,26 @@ jobs:
       - name: Restore processed index
         uses: actions/cache/restore@v4
         with:
-          path: site/ingest/log/daily-processed.json
+          path: |
+            site/ingest/log/daily-processed.json
+            site/ingest/log/daily-sources.json
           key: daily-processed-${{ github.run_id }}
           restore-keys: daily-processed-
 
       - name: Automation QA (fixtures, no network)
         run: npm run qa:daily
+
+      # 따라잡기: 마지막으로 결과를 남긴 날짜별 DAILY 브랜치 (캐시가 지워져도 남는 기록). 백필에는 쓰지 않음
+      - name: Last run (catch-up)
+        id: last
+        if: steps.d.outputs.backfill != 'true'
+        continue-on-error: true
+        env:
+          D: ${{ steps.d.outputs.date }}
+        run: |
+          L=$(git ls-remote --heads origin 'automation/daily-20*' | sed -E 's#.*refs/heads/automation/daily-##' | grep -E '^[0-9]{4}-[0-9]{2}-[0-9]{2}$' | awk -v d="$D" '$1 < d' | sort | tail -1)
+          echo "date=$L" >> "$GITHUB_OUTPUT"
+          echo "last run branch: ${L:-없음}"
 
       # shadow: LLM 키를 넘기지 않고 공급자 none. draft(수동)에서만 키·anthropic
       - name: Daily run
@@ -127,20 +168,32 @@ jobs:
           DAILY_MAX_LLM_CALLS: ${{ vars.DAILY_MAX_LLM_CALLS }}
           DAILY_MAX_PUBLISH: ${{ vars.DAILY_MAX_PUBLISH }}
           DAILY_MAX_EVIDENCE_FETCHES: ${{ vars.DAILY_MAX_EVIDENCE_FETCHES }}
-        run: npm run daily:run -- --date "${{ steps.d.outputs.date }}" --out "$RUNNER_TEMP/daily"
+          DAILY_LAST_RUN_DATE: ${{ steps.last.outputs.date }}
+          D: ${{ steps.d.outputs.date }}
+          BACKFILL: ${{ steps.d.outputs.backfill }}
+          INPUT_FROM: ${{ inputs.from }}
+          INPUT_TO: ${{ inputs.to }}
+        run: |
+          if [ "$BACKFILL" = "true" ]; then
+            npm run daily:backfill -- --from "$INPUT_FROM" --to "$INPUT_TO" --out "$RUNNER_TEMP/daily"
+          else
+            npm run daily:run -- --date "$D" --out "$RUNNER_TEMP/daily"
+          fi
 
       - name: Save processed index
         if: always() && steps.run.outcome != 'skipped'
         uses: actions/cache/save@v4
         with:
-          path: site/ingest/log/daily-processed.json
+          path: |
+            site/ingest/log/daily-processed.json
+            site/ingest/log/daily-sources.json
           key: daily-processed-${{ github.run_id }}
 
       # 보고서는 실행 화면 Summary에 항상 남긴다
       - name: Job summary
         if: always() && steps.run.outcome != 'skipped'
         env:
-          D: ${{ steps.d.outputs.date }}
+          D: ${{ steps.d.outputs.rid }}
         run: |
           F="$RUNNER_TEMP/daily/$D/report.md"
           if [ -f "$F" ]; then cat "$F" >> "$GITHUB_STEP_SUMMARY"; else echo "보고서 없음 (실행 실패 — 로그 확인)" >> "$GITHUB_STEP_SUMMARY"; fi
@@ -151,7 +204,7 @@ jobs:
         continue-on-error: true
         env:
           GH_TOKEN: ${{ github.token }}
-          D: ${{ steps.d.outputs.date }}
+          D: ${{ steps.d.outputs.rid }}
         run: |
           gh api "repos/${{ github.repository }}/actions/artifacts?name=daily-report-$D&per_page=100" --jq '.artifacts[] | select(.workflow_run.id != ${{ github.run_id }}) | .id' \
             | while read -r ID; do gh api -X DELETE "repos/${{ github.repository }}/actions/artifacts/$ID"; done
@@ -160,8 +213,8 @@ jobs:
         if: always() && steps.run.outcome != 'skipped'
         uses: actions/upload-artifact@v4
         with:
-          name: daily-report-${{ steps.d.outputs.date }}
-          path: ${{ runner.temp }}/daily/${{ steps.d.outputs.date }}
+          name: daily-report-${{ steps.d.outputs.rid }}
+          path: ${{ runner.temp }}/daily/${{ steps.d.outputs.rid }}
           if-no-files-found: warn
           overwrite: true
           retention-days: 30
@@ -172,7 +225,7 @@ jobs:
         continue-on-error: true
         env:
           GH_TOKEN: ${{ github.token }}
-          D: ${{ steps.d.outputs.date }}
+          D: ${{ steps.d.outputs.rid }}
           M: ${{ steps.m.outputs.mode }}
         run: |
           set -euo pipefail

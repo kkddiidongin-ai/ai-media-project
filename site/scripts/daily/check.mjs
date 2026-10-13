@@ -103,7 +103,7 @@ function resetWeb() {
   WEB.set("https://fx-a.test/news/gizmo-ga", { body: bodyPage(["Gizmo Pro 3 is now generally available in 12 more regions.", "It was first released as a preview in September 2026."]) });
 }
 const ENV = (extra = {}) => ({ DAILY_AUTOMATION_ENABLED: "true", DAILY_MODE: "draft", DAILY_LLM_PROVIDER: "mock", ...extra });
-const baseRun = (extra = {}) => ({ date: DATE, out: path.join(tmp, `out-${Math.random().toString(36).slice(2)}`), registry: REGISTRY, existing: existing(), processedFile: path.join(tmp, `p-${Math.random().toString(36).slice(2)}.json`), retryDelayMs: 1, log: quiet, ...extra });
+const baseRun = (extra = {}) => ({ date: DATE, out: path.join(tmp, `out-${Math.random().toString(36).slice(2)}`), registry: REGISTRY, existing: existing(), processedFile: path.join(tmp, `p-${Math.random().toString(36).slice(2)}.json`), historyFile: path.join(tmp, `h-${Math.random().toString(36).slice(2)}.json`), retryDelayMs: 1, log: quiet, ...extra });
 
 // ---------- 1) 수집 ----------
 resetWeb();
@@ -358,7 +358,7 @@ await t("원문 차단 소스: 근거 부족이면 발행 추천하지 않음 (H
 });
 await t("보고서: 상태·숫자표·발행 추천·보류·제외·소스 상태·비용이 들어감", async () => {
   const md = fs.readFileSync(path.join(fullOpt.out, DATE, "report.md"), "utf8");
-  for (const s of ["# AI마중 DAILY — 2026-10-07", "**상태: PARTIAL", "## 발행 추천", "## 보류", "## 제외", "## 소스 상태", "FX B — **blocked**", "FX C — **failed**", "## 비용", "자동으로 발행하지 않습니다"]) ok(md.includes(s), `보고서에 '${s}' 없음`);
+  for (const s of ["# AI마중 DAILY — 2026-10-07", "**상태: PARTIAL", "## 발행 추천", "## 보류", "## 제외", "## 소스 상태", "| FX B | **FAILED** |", "| FX C | **FAILED** |", "요청 실패 (blocked", "요청 실패 (failed", "## 비용", "자동으로 발행하지 않습니다"]) ok(md.includes(s), `보고서에 '${s}' 없음`);
   const summaryPart = md.replace(/## AI 초안[\s\S]*?(?=## 보류)/, "");
   ok(summaryPart.split("\n").length < 120, "보고서가 너무 김");
   ok(md.length < 60_000, "PR 본문 한도");
@@ -947,7 +947,9 @@ await t("승인: 원문이 사라졌거나 막히면 --ack source_blocked 없이
 await t("워크플로: master 직접 push 없음, automation/daily-* 브랜치·PR만, 킬 스위치 변수, 배포·뉴스레터 없음", async () => {
   const wf = fs.readFileSync(path.join(REPO, ".github/workflows/daily-editorial.yml"), "utf8");
   ok(/if: \$\{\{ vars\.DAILY_AUTOMATION_ENABLED == 'true' \}\}/.test(wf), "킬 스위치 조건");
-  ok(/cron: "0 22 \* \* \*"/.test(wf), "22:00 UTC = 07:00 KST");
+  // 정각을 피한 예약 (21:17 UTC = 06:17 KST). 정확한 시각을 보장한다고 주장하지 않음 — 따라잡기로 누락을 막는다
+  ok(/cron: "17 21 \* \* \*"/.test(wf), "21:17 UTC = 06:17 KST (정각 회피)");
+  ok(/정확한 실행 시각은 보장되지 않는다/.test(wf), "시각 보장 주장 없음");
   const pushes = wf.split("\n").filter((l) => /git push/.test(l));
   eq(pushes.map((l) => l.trim()), ['git push origin "HEAD:refs/heads/$B"'], "push 명령");
   ok(/B="automation\/daily-\$D"/.test(wf) && /case "\$B" in automation\/daily-\*\)/.test(wf), "브랜치 이름 고정");
@@ -956,7 +958,10 @@ await t("워크플로: master 직접 push 없음, automation/daily-* 브랜치·
   ok(/gh pr list --head "\$B" --state open/.test(wf), "같은 날짜 PR 재사용");
   ok(!/ANTHROPIC_API_KEY[^:]*\becho|echo .*ANTHROPIC/.test(wf), "키 출력");
   // 예약 실행은 언제나 shadow. draft는 수동 실행에서 고른 경우에만, LLM 키도 그때만
-  ok(/M=shadow\n\s+if \[ "\$EVENT" = "workflow_dispatch" \] && \[ "\$INPUT_MODE" = "draft" \]; then M=draft; fi/.test(wf), "모드 결정");
+  ok(/M=shadow\n\s+if \[ "\$EVENT" = "workflow_dispatch" \] && \[ "\$INPUT_MODE" = "draft" \] && \[ "\$BACKFILL" != "true" \]; then M=draft; fi/.test(wf), "모드 결정 (백필은 언제나 shadow)");
+  ok(/DAILY_LAST_RUN_DATE: \$\{\{ steps\.last\.outputs\.date \}\}/.test(wf) && /automation\/daily-20\*/.test(wf), "따라잡기: 마지막 실행 브랜치");
+  ok(/npm run daily:backfill -- --from "\$INPUT_FROM" --to "\$INPUT_TO"/.test(wf), "백필 실행");
+  ok(/site\/ingest\/log\/daily-sources\.json/.test(wf), "소스 상태 기록을 캐시로 이어 씀");
   ok(/DAILY_MODE: \$\{\{ steps\.m\.outputs\.mode \}\}/.test(wf), "모드 전달");
   ok(/DAILY_LLM_PROVIDER: \$\{\{ steps\.m\.outputs\.mode == 'draft' && 'anthropic' \|\| 'none' \}\}/.test(wf), "shadow는 공급자 none");
   eq(wf.match(/secrets\.ANTHROPIC_API_KEY/g)?.length, 1, "키 사용 위치");
@@ -964,7 +969,7 @@ await t("워크플로: master 직접 push 없음, automation/daily-* 브랜치·
   ok(/default: shadow/.test(wf), "수동 실행 기본값 shadow");
   ok(!/gh pr merge|--auto|auto-merge/.test(wf), "자동 merge");
   // 보고서 fallback: Summary + artifact는 항상, PR은 실패해도 계속
-  ok(/actions\/upload-artifact@v4/.test(wf) && /name: daily-report-\$\{\{ steps\.d\.outputs\.date \}\}/.test(wf) && /overwrite: true/.test(wf), "artifact 업로드");
+  ok(/actions\/upload-artifact@v4/.test(wf) && /name: daily-report-\$\{\{ steps\.d\.outputs\.rid \}\}/.test(wf) && /overwrite: true/.test(wf), "artifact 업로드");
   const step = (name) => wf.split(/\n      - name: /).find((x) => x.startsWith(name)) ?? "";
   ok(/if: always\(\)/.test(step("Upload report artifact")), "artifact는 항상");
   ok(/continue-on-error: true/.test(step("Branch + PR")), "PR 실패가 artifact를 막지 않음");
@@ -972,14 +977,256 @@ await t("워크플로: master 직접 push 없음, automation/daily-* 브랜치·
   ok(wf.indexOf("Upload report artifact") < wf.indexOf("Branch + PR"), "artifact가 PR보다 먼저");
 });
 await t("자동화 코드: 뉴스레터 발송·Resend·content 직접 쓰기·git push 없음", async () => {
-  for (const f of ["lib.mjs", "run.mjs", "providers.mjs", "report.mjs", "draft.mjs"]) {
+  for (const f of ["lib.mjs", "run.mjs", "providers.mjs", "report.mjs", "draft.mjs", "health.mjs", "diagnose.mjs"]) {
     const s = fs.readFileSync(path.join(HERE, f), "utf8");
     ok(!/resend|broadcast|newsletter\/send|emails\.send|git push|child_process/i.test(s.replace(/뉴스레터는 만들거나 보내지 않는다|뉴스레터 후보|뉴스레터도 만들거나 보내지 않습니다/g, "")), `${f}에 발송·push 코드`);
     ok(!/content[\\/"']+stories[^\n]*writeFileSync|writeFileSync[^\n]*content[\\/]stories/.test(s), `${f}가 content/stories에 씀`);
   }
 });
+// ---------- 9) 수집 안정화 · 백필 (Phase 7.1.5) ----------
+const health = await import("./health.mjs");
+const diag = await import("./diagnose.mjs");
+const coll = await import("../ingest/collectors.mjs");
+const { canonicalUrl: canonical } = await import("../ingest/lib.mjs");
+const metaPage = (title, published, extra = "") =>
+  `<html><head><meta property="og:title" content="${title}">${published ? `<meta property="article:published_time" content="${published}">` : ""}<meta property="og:description" content="${title} is now available for developers in the API."></head><body>${extra}<p>${title} is now available for developers in the API with new features.</p></body></html>`;
+const redirectedResponse = (body, finalUrl, type = "text/html") => () => {
+  const res = new Response(body, { status: 200, headers: { "content-type": type } });
+  Object.defineProperty(res, "redirected", { value: true });
+  Object.defineProperty(res, "url", { value: finalUrl });
+  return res;
+};
+// 기간 안·밖 항목이 섞인 피드 (발표일 기준 필터 확인용)
+const BF_ITEMS = [
+  { title: "Introducing Gadget 7 for teams", link: "https://fx-bf.test/news/gadget-7", date: "Tue, 06 Oct 2026 09:00:00 GMT", desc: "Gadget 7 is now available to all teams worldwide in the API with a free tier." },
+  { title: "Gadget pricing update for enterprises", link: "https://fx-bf.test/news/gadget-pricing", date: "Thu, 08 Oct 2026 09:00:00 GMT", desc: "New pricing for Gadget starts at $10 per month per seat for enterprise customers." },
+  { title: "Before the gap", link: "https://fx-bf.test/news/before", date: "Sun, 04 Oct 2026 09:00:00 GMT", desc: "Out of range (before)." },
+  { title: "After the gap", link: "https://fx-bf.test/news/after", date: "Sun, 11 Oct 2026 09:00:00 GMT", desc: "Out of range (after)." },
+];
+const BF_REG = { sources: [{ id: "fx-bf", name: "FX BF", feedUrl: "https://fx-bf.test/feed.xml", sourceType: "official", tier: 1, fetchMode: "rss", enabled: true }] };
+const bfWeb = () => {
+  WEB.set("https://fx-bf.test/feed.xml", { body: rss(BF_ITEMS), type: "application/rss+xml" });
+  WEB.set("https://fx-bf.test/news/gadget-7", { body: bodyPage(["Gadget 7 is now available to all teams worldwide in the API starting October 6, 2026.", "The free tier includes 500 requests per day for every account.", "Gadget 7 is 2x faster than Gadget 6 in internal tests.", "It supports 30 languages."]) });
+  WEB.set("https://fx-bf.test/news/gadget-pricing", { body: bodyPage(["New pricing for Gadget starts at $10 per month per seat.", "Enterprise customers can switch plans from October 8, 2026.", "Existing plans keep their price until January 2027."]) });
+};
+const BF = { from: "2026-10-06", to: "2026-10-10" };
+
+let bfFirst;
+await t("[7.1.5-1] 날짜 범위 백필: 발표일 기간만 · 별도 폴더 · 기간 검증", async () => {
+  resetWeb();
+  bfWeb();
+  const out = path.join(tmp, "bf");
+  const hist = path.join(tmp, "bf-hist.json");
+  bfFirst = { out, processedFile: path.join(tmp, "bf-p.json"), historyFile: hist };
+  const r = await runDaily(baseRun({ env: ENV({ DAILY_MODE: "shadow" }), registry: BF_REG, backfill: BF, today: "2026-10-12", ...bfFirst }));
+  eq(r.run.kind, "backfill");
+  eq(r.run.window.since, "2026-10-06", "시작일");
+  eq(r.run.window.until, "2026-10-10", "종료일");
+  eq(r.run.items.map((x) => x.url).sort(), ["https://fx-bf.test/news/gadget-7", "https://fx-bf.test/news/gadget-pricing"], "기간 안 항목만");
+  ok(r.outDir.endsWith(path.join("bf", "backfill-2026-10-06_2026-10-10")), `폴더 ${r.outDir}`);
+  ok(fs.existsSync(path.join(r.outDir, "report.md")) && fs.existsSync(path.join(r.outDir, "diagnostics.md")), "보고서·진단");
+  ok(fs.readFileSync(path.join(r.outDir, "report.md"), "utf8").includes("# AI마중 DAILY 백필 — 2026-10-06 ~ 2026-10-10"), "백필 제목");
+  ok(!fs.existsSync(hist), "백필은 소스 상태 기록(마지막 실행일)을 바꾸지 않음");
+  for (const [f, to, re] of [["2026-10-10", "2026-10-06", /늦습니다/], ["2026-09-01", "2026-10-10", /백필은 최대 14일/], ["2026-10-10", "2026-10-20", /이후일 수 없습니다/]]) {
+    let err = null;
+    try {
+      await runDaily(baseRun({ env: ENV({ DAILY_MODE: "shadow" }), registry: BF_REG, backfill: { from: f, to }, today: "2026-10-12" }));
+    } catch (e) {
+      err = e;
+    }
+    ok(err && re.test(err.message), `기간 검증 ${f}~${to}: ${err?.message}`);
+  }
+});
+
+await t("[7.1.5-2] 중복 후보 방지: 같은 기간 재실행은 원문을 다시 열지 않고 후보 파일을 늘리지 않음 · 다른 날 DAILY가 다시 추천하지 않음", async () => {
+  const before = fs.readdirSync(path.join(bfFirst.out, "backfill-2026-10-06_2026-10-10", "candidates")).sort();
+  calls.length = 0;
+  const r = await runDaily(baseRun({ env: ENV({ DAILY_MODE: "shadow" }), registry: BF_REG, backfill: BF, today: "2026-10-12", ...bfFirst }));
+  eq(fs.readdirSync(path.join(r.outDir, "candidates")).sort(), before, "후보 파일");
+  eq(calls.filter((c) => /fx-bf\.test\/news\//.test(c.url)).length, 0, "원문 재요청");
+  const pub = r.run.items.filter((x) => x.decision === "PUBLISH");
+  if (pub.length) {
+    // 백필에서 추천한 항목은 이후 날짜 DAILY에서 '이미 추천함'으로 보류 (중복 추천·PR 충돌 방지)
+    const d = await runDaily(baseRun({ date: "2026-10-12", since: "2026-10-06", env: ENV({ DAILY_MODE: "shadow" }), registry: BF_REG, processedFile: bfFirst.processedFile }));
+    for (const x of pub) {
+      const again = d.run.items.find((y) => y.id === x.id);
+      ok(again && again.decision === "HOLD" && again.carriedFrom === "2026-10-10", `다시 추천됨: ${x.title}`);
+    }
+  }
+});
+
+await t("[7.1.5-3] 기존 기사 중복 방지: 같은 원문 · 옮겨진 주소(claude.com/blog → resources/articles)", async () => {
+  const ex = { ...existing(), stories: [...STORIES, { slug: "claude-code-mods-typescript", title: "Mods", sourceUrl: "https://claude.com/blog/claude-code-mods", secondarySources: [], sourceTitle: "Customize Claude Code with mods", sourceName: "Claude", eventDate: "2026-10-01", products: [] }] };
+  const item = (url) => ({ id: "x", url, canonicalUrl: canonical(url), title: "Mods walkthrough", excerpt: "", publishedAt: "2026-10-01T00:00:00.000Z", sourceName: "Claude" });
+  eq(lib.dedupeItem(item("https://claude.com/resources/articles/claude-code-mods"), ex).result, "DUPLICATE", "옮겨진 주소");
+  eq(lib.dedupeItem(item("https://fx-a.test/news/old"), ex).result, "DUPLICATE", "같은 원문");
+  ok(lib.dedupeItem(item("https://claude.com/resources/articles/other-post"), ex).result !== "DUPLICATE", "다른 글은 중복 아님");
+  // 반대 방향: 기사는 새 주소, 수집한 글은 옛 주소
+  const ex2 = { ...existing(), stories: [{ ...ex.stories.at(-1), sourceUrl: "https://claude.com/resources/articles/claude-code-mods" }] };
+  eq(lib.dedupeItem(item("https://claude.com/blog/claude-code-mods"), ex2).result, "DUPLICATE", "옛 주소로 들어온 글");
+  eq(lib.aliasUrl("https://claude.com/blog/x"), "https://claude.com/resources/articles/x");
+});
+
+await t("[7.1.5-4] 누락된 공식 발표 복구: 예약 실행이 빠져도 마지막 실행일부터 다시 수집 (최대 7일)", async () => {
+  eq(health.catchUpSince({ date: "2026-10-11", windowDays: 2, lastRunDates: ["2026-10-07"] }).since, "2026-10-07", "따라잡기");
+  eq(health.catchUpSince({ date: "2026-10-11", windowDays: 2, lastRunDates: ["2026-10-10"] }).since, "2026-10-09", "기본 창");
+  eq(health.catchUpSince({ date: "2026-10-11", windowDays: 2, lastRunDates: [] }).since, "2026-10-09", "기록 없음");
+  const far = health.catchUpSince({ date: "2026-10-20", windowDays: 2, lastRunDates: ["2026-10-01"] });
+  eq([far.since, far.gapFrom], ["2026-10-13", "2026-10-01"], "최대 7일 + 공백 표시");
+  // 실제 실행: 10-07에 마지막으로 돌고 10-08~10 예약이 빠진 뒤 10-11 실행 → 10-08 발표를 놓치지 않는다
+  resetWeb();
+  bfWeb();
+  const hist = path.join(tmp, "cu-hist.json");
+  fs.writeFileSync(hist, JSON.stringify({ sources: {}, lastRun: "2026-10-07" }));
+  const r = await runDaily(baseRun({ date: "2026-10-11", env: ENV({ DAILY_MODE: "shadow" }), registry: BF_REG, historyFile: hist }));
+  eq(r.run.window.since, "2026-10-07", "수집 시작일");
+  ok(r.run.items.some((x) => x.url === "https://fx-bf.test/news/gadget-pricing"), "10-08 발표 복구");
+  const plain = await runDaily(baseRun({ date: "2026-10-11", env: ENV({ DAILY_MODE: "shadow" }), registry: BF_REG }));
+  ok(!plain.run.items.some((x) => x.url === "https://fx-bf.test/news/gadget-pricing"), "기록이 없으면 기본 3일 창 (예전 동작)");
+  eq(JSON.parse(fs.readFileSync(hist, "utf8")).lastRun, "2026-10-11", "마지막 실행일 갱신");
+  // 워크플로 브랜치 기록(DAILY_LAST_RUN_DATE)도 쓴다
+  const viaEnv = await runDaily(baseRun({ date: "2026-10-11", env: ENV({ DAILY_MODE: "shadow", DAILY_LAST_RUN_DATE: "2026-10-08" }), registry: BF_REG }));
+  eq(viaEnv.run.window.since, "2026-10-08", "브랜치 기록으로 따라잡기");
+  // 사이트맵 순서가 날짜순이 아니어도 상한 안에서 최신 글부터 연다 (Mistral Large 4 누락 사례)
+  const old = Array.from({ length: 5 }, (_, i) => `<url><loc>https://fx-mi.test/news/old-${i}</loc><lastmod>2026-10-0${i + 1}T00:00:00Z</lastmod></url>`).join("");
+  WEB.set("https://fx-mi.test/sitemap.xml", { body: `<?xml version="1.0"?><urlset>${old}<url><loc>https://fx-mi.test/news/large-4</loc><lastmod>2026-10-09T00:00:00Z</lastmod></url></urlset>`, type: "application/xml" });
+  for (let i = 0; i < 5; i++) WEB.set(`https://fx-mi.test/news/old-${i}`, { body: metaPage(`Old ${i}`, `2026-09-1${i}T00:00:00Z`) });
+  WEB.set("https://fx-mi.test/news/large-4", { body: metaPage("Introducing Large 4", "2026-10-06T12:00:00Z") });
+  const mi = await lib.collectDaily({ date: "2026-10-10", since: "2026-10-01", registry: { sources: [{ id: "fx-mi", name: "FX MI", feedUrl: "https://fx-mi.test/sitemap.xml", sourceType: "official", tier: 1, fetchMode: "sitemap-meta", include: "^https://fx-mi\\.test/news/", enabled: true }] }, limits: { ...lib.loadLimits({}), maxItemsPerSource: 2 }, known: new Map() });
+  ok(mi.items.some((x) => x.title === "Introducing Large 4"), "상한 안에서 최신 글");
+});
+
+await t("[7.1.5-5] 308 리다이렉트 처리: 따라가서 수집하되 경고로 기록 · 목록 페이지 수집(listing-meta)", async () => {
+  resetWeb();
+  WEB.set("https://fx-cl.test/blog", redirectedResponse(`<a href="/resources/articles/post-a">A</a><a href="/resources/articles/post-b">B</a><a href="/about">x</a>`, "https://fx-cl.test/resources/articles"));
+  WEB.set("https://fx-cl.test/resources/articles/post-a", { body: metaPage("Post A launch", "2026-10-06") });
+  WEB.set("https://fx-cl.test/resources/articles/post-b", { body: metaPage("Post B launch", "2026-10-08T10:00:00Z") });
+  const reg = { sources: [{ id: "fx-cl", name: "FX CL", feedUrl: "https://fx-cl.test/blog", sourceType: "official", tier: 1, fetchMode: "listing-meta", include: "^https://fx-cl\\.test/resources/articles/[a-z0-9-]+/?$", enabled: true }] };
+  const r = await runDaily(baseRun({ env: ENV({ DAILY_MODE: "shadow" }), registry: reg, backfill: BF, today: "2026-10-12" }));
+  const s = r.run.sources[0];
+  eq([s.http.status, s.http.redirected, s.http.finalUrl, s.matched], [200, true, "https://fx-cl.test/resources/articles", 2], "응답 기록");
+  eq(s.health, "WARNING", "리다이렉트는 경고");
+  ok(s.healthReasons.some((x) => /리다이렉트/.test(x)), "이유");
+  eq(r.run.items.map((x) => x.title).sort(), ["Post A launch", "Post B launch"], "실제 글 수집");
+});
+
+await t("[7.1.5-6] 파싱 결과 0건 경고: HTTP 200인데 글 주소 0개 → WARNING, 2회 연속·리다이렉트와 겹치면 DEGRADED (실행 PARTIAL)", async () => {
+  resetWeb();
+  const sm = `<?xml version="1.0"?><urlset><url><loc>https://fx-sm.test/resources/x</loc></url><url><loc>https://fx-sm.test/about</loc></url></urlset>`;
+  WEB.set("https://fx-sm.test/sitemap.xml", { body: sm, type: "application/xml" });
+  const reg = { sources: [{ id: "fx-sm", name: "FX SM", feedUrl: "https://fx-sm.test/sitemap.xml", sourceType: "official", tier: 1, fetchMode: "sitemap-meta", include: "^https://fx-sm\\.test/blog/", enabled: true }] };
+  const hist = path.join(tmp, "sm-hist.json");
+  const a = await runDaily(baseRun({ date: "2026-10-11", env: ENV({ DAILY_MODE: "shadow" }), registry: reg, historyFile: hist }));
+  eq([a.run.sources[0].status, a.run.sources[0].health, a.run.sources[0].matched, a.run.sources[0].parsed], ["success", "WARNING", 0, 2], "첫 0개");
+  ok(/구조 변경 의심/.test(a.run.sources[0].healthReasons.join()), "이유");
+  const same = await runDaily(baseRun({ date: "2026-10-11", env: ENV({ DAILY_MODE: "shadow" }), registry: reg, historyFile: hist }));
+  eq(same.run.sources[0].health, "WARNING", "같은 날 재실행은 연속으로 세지 않음");
+  const b = await runDaily(baseRun({ date: "2026-10-12", env: ENV({ DAILY_MODE: "shadow" }), registry: reg, historyFile: hist }));
+  eq(b.run.sources[0].health, "DEGRADED", "2회 연속");
+  eq(b.run.status, "PARTIAL", "실행 상태");
+  ok(/\| FX SM \| \*\*DEGRADED\*\* \|/.test(fs.readFileSync(path.join(b.outDir, "report.md"), "utf8")), "보고서 표");
+  WEB.set("https://fx-sm.test/sitemap.xml", redirectedResponse(sm, "https://fx-sm.test/new-sitemap.xml", "application/xml"));
+  const c = await runDaily(baseRun({ date: "2026-10-11", env: ENV({ DAILY_MODE: "shadow" }), registry: reg }));
+  eq(c.run.sources[0].health, "DEGRADED", "리다이렉트 + 0개");
+});
+
+await t("[7.1.5-7] 정상적인 0건 구분: 글 목록은 읽히는데 기간 안 새 글이 없으면 OK(NO_NEW) — 연속 5회부터 경고", async () => {
+  resetWeb();
+  WEB.set("https://fx-q.test/feed.xml", { body: rss([{ title: "Old news", link: "https://fx-q.test/news/old", date: "Mon, 01 Sep 2026 08:00:00 GMT" }]), type: "application/rss+xml" });
+  const reg = { sources: [{ id: "fx-q", name: "FX Q", feedUrl: "https://fx-q.test/feed.xml", sourceType: "official", tier: 1, fetchMode: "rss", enabled: true }] };
+  const hist = path.join(tmp, "q-hist.json");
+  const days = ["2026-10-08", "2026-10-09", "2026-10-10", "2026-10-11", "2026-10-12"];
+  const seen = [];
+  for (const d of days) {
+    const r = await runDaily(baseRun({ date: d, env: ENV({ DAILY_MODE: "shadow" }), registry: reg, historyFile: hist }));
+    seen.push([r.run.sources[0].health, r.run.sources[0].healthNote ?? null, r.run.status]);
+  }
+  eq(seen.slice(0, 4), Array(4).fill(["OK", "NO_NEW", "SUCCESS"]), "1~4회 0건은 정상");
+  eq(seen[4][0], "WARNING", "5회 연속");
+  eq(seen[4][2], "SUCCESS", "경고만으로 실패 처리하지 않음");
+  const h = JSON.parse(fs.readFileSync(hist, "utf8")).sources["fx-q"];
+  eq([h.zeroStreak, h.lastOkDate, h.lastItemDate], [5, "2026-10-12", null], "기록");
+});
+
+await t("[7.1.5-8] 발표일 미확인: 임의 날짜 없이 후보에서 빼고 보고 · 본문 날짜가 하나뿐일 때만 편집자 확인 표시와 함께 사용", async () => {
+  resetWeb();
+  WEB.set("https://fx-ls.test/news", { body: `<a href="/claude-model-9">m</a><a href="/claude-model-8">m</a><a href="/news/no-date">n</a>` });
+  WEB.set("https://fx-ls.test/claude-model-9", { body: metaPage("Introducing Model 9", null, "<p>October 7, 2026</p><time>October 7, 2026</time>") });
+  WEB.set("https://fx-ls.test/claude-model-8", { body: metaPage("Introducing Model 8", null, "<p>October 7, 2026 and October 9, 2026</p>") });
+  WEB.set("https://fx-ls.test/news/no-date", { body: metaPage("Undated post", null) });
+  const reg = { sources: [
+    { id: "fx-launch", name: "FX Launch", feedUrl: "https://fx-ls.test/news", sourceType: "official", tier: 1, fetchMode: "listing-meta", include: "^https://fx-ls\\.test/claude-model-\\d+$", pageDateFallback: true, enabled: true },
+    { id: "fx-news", name: "FX News", feedUrl: "https://fx-ls.test/news", sourceType: "official", tier: 1, fetchMode: "listing-meta", include: "^https://fx-ls\\.test/news/[a-z-]+$", enabled: true },
+  ] };
+  const r = await runDaily(baseRun({ env: ENV({ DAILY_MODE: "shadow" }), registry: reg, backfill: BF, today: "2026-10-12" }));
+  eq(r.run.items.map((x) => x.title), ["Introducing Model 9"], "날짜가 하나인 글만 후보");
+  const q = JSON.parse(fs.readFileSync(path.join(r.outDir, "run.json"), "utf8"));
+  const launch = q.sources.find((s) => s.id === "fx-launch");
+  const news = q.sources.find((s) => s.id === "fx-news");
+  eq([launch.undated, news.undated], [1, 1], "미확인 수");
+  eq([launch.health, news.health], ["WARNING", "WARNING"], "경고");
+  eq(news.undatedItems[0].title, "Undated post");
+  ok(fs.readFileSync(path.join(r.outDir, "report.md"), "utf8").includes("발행일을 확인하지 못해 후보에서 뺀 글"), "보고서");
+  const row = r.run.items[0];
+  eq(row.publishedAt.slice(0, 10), "2026-10-07");
+  const item = q.items[0];
+  ok(item, "run.json 항목");
+  // 본문 날짜로 정한 항목은 편집자 확인 표시 (근거 단계까지 간 경우 후보 파일에도)
+  const files = fs.existsSync(path.join(r.outDir, "candidates")) ? fs.readdirSync(path.join(r.outDir, "candidates")) : [];
+  for (const f of files) ok(JSON.parse(fs.readFileSync(path.join(r.outDir, "candidates", f), "utf8")).needsReview.includes("date_from_page_text"), "date_from_page_text");
+  eq(coll.singleVisibleDate("<p>February 31, 2026</p>"), null, "없는 날짜");
+  eq(coll.singleVisibleDate("<script>October 1, 2026</script><p>none</p>"), null, "스크립트 안 날짜 무시");
+});
+
+await t("[7.1.5-9] Shadow Mode 유지: 백필은 DAILY_MODE=draft여도 shadow · 워크플로 예약 실행 기본 shadow", async () => {
+  resetWeb();
+  bfWeb();
+  const r = await runDaily(baseRun({ env: ENV({ DAILY_MODE: "draft", DAILY_LLM_PROVIDER: "anthropic", ANTHROPIC_API_KEY: "sk-ant-test-FAKEKEY-not-real-0123456789" }), registry: BF_REG, backfill: BF, today: "2026-10-12" }));
+  eq(r.run.mode, "shadow");
+  eq(r.run.provider, "none");
+  ok(/백필은 shadow로만/.test(r.run.modeWarning ?? ""), "경고");
+  eq(lib.resolveMode({}).mode, "shadow", "기본값");
+});
+
+await t("[7.1.5-10] 유료 API 호출 0회: 백필·따라잡기 실행에서 LLM 엔드포인트 요청 없음", async () => {
+  calls.length = 0;
+  resetWeb();
+  bfWeb();
+  let llm = 0;
+  await runDaily(baseRun({ env: ENV({ DAILY_MODE: "draft", DAILY_LLM_PROVIDER: "anthropic", ANTHROPIC_API_KEY: "sk-ant-test-FAKEKEY-not-real-0123456789" }), registry: BF_REG, backfill: BF, today: "2026-10-12", fetch: async () => (llm++, new Response("{}", { status: 500 })) }));
+  await runDaily(baseRun({ date: "2026-10-11", env: ENV({ DAILY_MODE: "shadow", DAILY_LAST_RUN_DATE: "2026-10-06" }), registry: BF_REG, fetch: async () => (llm++, new Response("{}", { status: 500 })) }));
+  eq(llm, 0, "LLM 호출");
+  eq(calls.filter((c) => /api\.anthropic\.com|api\.openai\.com/.test(c.url)).length, 0, "LLM 엔드포인트");
+});
+
+await t("[7.1.5-11] 기사 발행 0건: 백필·진단은 content/·ingest 추적 파일을 바꾸지 않고 approve를 부르지 않음", async () => {
+  const d = spawnSync("git", ["status", "--porcelain", "--", "content", "newsletter", "ingest/candidates", "ingest/editorial", "ingest/state.json", "ingest/newsletter-sent.json"], { cwd: SITE, encoding: "utf8" });
+  eq(d.stdout.trim(), "", "기사·후보·편집 데이터 변경");
+  for (const f of ["run.mjs", "health.mjs", "diagnose.mjs", "report.mjs"]) {
+    const s = fs.readFileSync(path.join(HERE, f), "utf8");
+    ok(!/from "\.\/approve\.mjs"|publish\.mjs|saveCandidates|content[\\/"']+stories[^\n]*writeFileSync/.test(s), `${f}에 발행 경로`);
+  }
+  const run = JSON.parse(fs.readFileSync(path.join(bfFirst.out, "backfill-2026-10-06_2026-10-10", "run.json"), "utf8"));
+  ok(fs.readFileSync(path.join(bfFirst.out, "backfill-2026-10-06_2026-10-10", "diagnostics.md"), "utf8").includes("설정은 바꾸지 않았습니다"), "진단은 설정을 바꾸지 않음");
+  const dd = diag.diagnoseRun(run);
+  eq(dd.thresholds.map((x) => x.threshold), [6, 5, 4], "기준 비교");
+  ok(dd.thresholds[0].count <= dd.thresholds[1].count && dd.thresholds[1].count <= dd.thresholds[2].count, "기준을 낮출수록 후보가 늘거나 같음");
+});
+
+await t("[7.1.5-12] 뉴스레터 발송 0건: 수집·백필 코드와 DAILY 워크플로에 뉴스레터·Resend 없음", async () => {
+  for (const f of ["health.mjs", "diagnose.mjs", "run.mjs", "lib.mjs", "report.mjs"]) {
+    const s = fs.readFileSync(path.join(HERE, f), "utf8");
+    ok(!/resend|broadcast|newsletter:|emails\.send/i.test(s), `${f}에 발송 코드`);
+  }
+  ok(!/resend|newsletter/i.test(fs.readFileSync(path.join(SITE, "scripts/ingest/collectors.mjs"), "utf8")), "collectors");
+  const wf = fs.readFileSync(path.join(REPO, ".github/workflows/daily-editorial.yml"), "utf8");
+  ok(!/RESEND|newsletter:|vercel/i.test(wf), "워크플로");
+  eq(calls.filter((c) => /resend\.com|api\.resend/.test(c.url)).length, 0, "Resend 요청");
+});
+
 await t("실제 기사 데이터 변경 없음 (content/, ingest/ 추적 파일)", async () => {
-  const d = spawnSync("git", ["status", "--porcelain", "--", "content", "ingest"], { cwd: SITE, encoding: "utf8" });
+  // ingest/registry.json은 소스 설정(기사 데이터 아님)이라 제외한다 (Phase 7.1.5에서 Claude 소스 주소를 고침)
+  const d = spawnSync("git", ["status", "--porcelain", "--", "content", "ingest", ":!ingest/registry.json"], { cwd: SITE, encoding: "utf8" });
   eq(d.stdout.trim(), "");
 });
 

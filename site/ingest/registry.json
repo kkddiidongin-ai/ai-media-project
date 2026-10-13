@@ -25,16 +25,29 @@
       "note": "공식 RSS 없음. 공개 sitemap의 /news/ 주소에서 각 페이지 메타(og:title, og:description, article:published_time)만 읽는다"
     },
     {
-      "id": "claude-blog",
-      "name": "Claude (claude.com blog)",
-      "officialUrl": "https://claude.com/blog",
-      "feedUrl": "https://claude.com/sitemap.xml",
+      "id": "anthropic-launch",
+      "name": "Anthropic (모델 발표 페이지)",
+      "officialUrl": "https://www.anthropic.com/news",
+      "feedUrl": "https://www.anthropic.com/news",
       "sourceType": "official",
       "tier": 1,
-      "fetchMode": "sitemap-meta",
-      "include": "^https://claude\\.com/blog/[^/]+/?$",
+      "fetchMode": "listing-meta",
+      "include": "^https://www\\.anthropic\\.com/claude-[a-z]+-\\d[a-z0-9-]*$",
+      "pageDateFallback": true,
       "enabled": true,
-      "note": "Anthropic의 제품 발표 일부는 anthropic.com/news가 아니라 claude.com/blog에 올라온다 (2026-10-01 확인). 영어 원문 주소만 수집"
+      "note": "2026-10-12 확인: 모델 출시 글(예: anthropic.com/claude-haiku-5-5 'Introducing Claude Haiku 5.5')은 /news/ 밖에 있고 사이트맵 lastmod·발행일 메타가 없다. 뉴스 목록 페이지의 링크로 찾고, 발행일 메타가 없으면 본문에 보이는 날짜가 한 가지일 때만 그 날짜를 쓰며(편집자 확인 표시 date_from_page_text), 없거나 여러 가지면 후보에서 뺀다."
+    },
+    {
+      "id": "claude-blog",
+      "name": "Claude (claude.com articles)",
+      "officialUrl": "https://claude.com/resources/articles",
+      "feedUrl": "https://claude.com/resources/articles",
+      "sourceType": "official",
+      "tier": 1,
+      "fetchMode": "listing-meta",
+      "include": "^https://claude\\.com/resources/articles/[a-z0-9-]+/?$",
+      "enabled": true,
+      "note": "2026-10-12 확인: claude.com/blog/<slug>가 claude.com/resources/articles/<slug>로 308 리다이렉트되고, 사이트맵의 새 주소에는 lastmod가 없어 최신 글을 고를 수 없다. 목록 페이지(최신 글이 위)의 링크를 읽고, 발행일은 각 글 페이지 메타(datePublished)에서만 가져온다. 이전 설정: sitemap-meta · claude.com/sitemap.xml · ^https://claude\\.com/blog/[^/]+/?$ (2026-10-01 확인)"
     },
     {
       "id": "google-deepmind",
@@ -118,12 +131,12 @@
       "id": "mistral",
       "name": "Mistral AI",
       "officialUrl": "https://mistral.ai/news",
-      "feedUrl": "https://mistral.ai/sitemap-index.xml",
+      "feedUrl": "https://mistral.ai/news/rss",
       "sourceType": "official",
       "tier": 1,
-      "fetchMode": "sitemap-meta",
-      "include": "^https://mistral\\.ai/news/[^/]+/?$",
-      "enabled": true
+      "fetchMode": "rss",
+      "enabled": true,
+      "note": "2026-10-13 변경: 공식 RSS(mistral.ai/news/rss, pubDate 포함)로 수집. 사이트맵 lastmod는 2026-10-08에 옛 글 수십 건이 한꺼번에 갱신돼 최신 글을 고르는 기준이 될 수 없었다 (Mistral Large 4 누락 원인). pubDate가 없는 항목은 후보에서 빼고 소스 상태에 남긴다. 이전 설정: sitemap-meta · https://mistral.ai/sitemap-index.xml"
     },
     {
       "id": "aws-ml",

@@ -116,17 +116,50 @@ export function renderDiagnostics(run) {
   return L;
 }
 
+/** 소스 상태 (Phase 7.1.5): OK · WARNING · DEGRADED · FAILED · SKIPPED. 정상적인 0건(NO_NEW)은 따로 센다 */
+export function renderSourceHealth(run) {
+  const L = [];
+  const src = run.sources ?? [];
+  const h = (k) => src.filter((s) => s.health === k).length;
+  const hasHealth = src.some((s) => s.health);
+  if (!hasHealth) {
+    const bad = src.filter((s) => ["failed", "blocked", "partial"].includes(s.status));
+    L.push(`## 소스 상태 (성공 ${src.filter((s) => s.status === "success").length} · 실패/차단/일부 ${bad.length} · 비활성 ${src.filter((s) => s.status === "skipped").length})`, "");
+    if (!bad.length) L.push("실패한 소스 없음");
+    for (const s of bad) L.push(`- ${s.name} — **${s.status}** ${s.errors?.[0] ? `(${s.errors[0].slice(0, 120)})` : ""}`);
+    L.push("");
+    return L;
+  }
+  const noNew = src.filter((s) => s.healthNote === "NO_NEW").length;
+  L.push(`## 소스 상태 (정상 ${h("OK")}${noNew ? `, 그중 기간 안 새 글 0건 ${noNew}` : ""} · 경고 ${h("WARNING")} · 저하 ${h("DEGRADED")} · 실패 ${h("FAILED")} · 비활성 ${h("SKIPPED")})`, "");
+  const issues = src.filter((s) => ["WARNING", "DEGRADED", "FAILED"].includes(s.health));
+  if (!issues.length) L.push("경고 없음 — 모든 활성 소스가 요청·파싱 정상 (기간 안 새 글이 없는 소스는 발표가 없었던 것으로 봄)");
+  else {
+    L.push("| 소스 | 상태 | HTTP | 글 주소(형식 일치/전체) | 기간 안 | 연속 0건 | 최근 정상 수집 | 이유 |", "|---|---|---|---|---|---|---|---|");
+    const order = { FAILED: 0, DEGRADED: 1, WARNING: 2 };
+    for (const s of issues.sort((a, b) => order[a.health] - order[b.health]))
+      L.push(`| ${s.name} | **${s.health}** | ${s.http?.status ?? "-"}${s.http?.redirected ? " ↪" : ""} | ${s.matched ?? "-"}/${s.parsed ?? "-"} | ${s.inWindow ?? "-"} | ${s.zeroStreak ?? "-"} | ${s.lastOkDate ?? "-"} | ${(s.healthReasons ?? []).join(" · ").replace(/\|/g, "/").slice(0, 220)} |`);
+    const undated = issues.flatMap((s) => (s.undatedItems ?? []).map((u) => ({ ...u, source: s.name })));
+    if (undated.length) L.push("", `발행일을 확인하지 못해 후보에서 뺀 글 (임의 날짜로 넣지 않음): ${undated.slice(0, 6).map((u) => `${u.title || u.url} (${u.source})`).join(" · ")}`);
+  }
+  L.push("");
+  return L;
+}
+
 export function renderReport(run, queue) {
   const c = run.counts;
   const L = [];
-  L.push(`# AI마중 DAILY — ${run.date}`, "");
+  L.push(run.kind === "backfill" ? `# AI마중 DAILY 백필 — ${run.backfill.from} ~ ${run.backfill.to}` : `# AI마중 DAILY — ${run.date}`, "");
+  if (run.kind === "backfill")
+    L.push(`> 🔁 **수집 공백 백필** — 발표일 ${run.backfill.from} ~ ${run.backfill.to}를 다시 수집했습니다 (언제나 Shadow). 결과는 편집자 검토용이며 기사·뉴스레터·배포를 바꾸지 않습니다. 날짜별 DAILY 결과와 따로 저장합니다.`, "");
   if (run.mode === "shadow") L.push("> 🕶️ **Shadow Mode** — 수집·중복·선정·근거 확인·보고서까지만 실행했습니다. '발행 추천'은 **편집자 검토용 추천**이며, 원고 생성(LLM)·기사 발행·뉴스레터·배포는 하지 않습니다.", "");
   if (run.mode === "draft") L.push("> ✍️ **Draft Mode (수동 실행)** — 검증된 발행 추천 후보에만 AI 초안을 만들고 자동 QA를 했습니다. 초안은 **편집자 검토용**이며 발행 승인이 아닙니다. 기사 발행·뉴스레터·배포는 하지 않습니다.", "");
   if (run.modeWarning) L.push(`> ⚠️ **모드** — ${run.modeWarning}`, "");
   if (run.draftBlocked) L.push(`> ⛔ **초안 생성 안 함** — ${run.draftBlocked}`, "");
   if (run.limitWarnings?.length) L.push(`> ⚠️ **설정 경고** — ${run.limitWarnings.join(" · ")}. 상한 설정을 확인하세요.`, "");
   if (run.backtest) L.push(`> 🔁 **Backtest** — ${run.backtest.note}`, "");
-  L.push(`**상태: ${run.status} (${STATUS_KO[run.status] ?? run.status})** · 수집 창 ${run.window.since} ~ ${run.window.until} (발표일 기준)`, "");
+  L.push(`**상태: ${run.status} (${STATUS_KO[run.status] ?? run.status})** · 수집 창 ${run.window.since} ~ ${run.window.until} (발표일 기준${run.window.reason ? ` · ${run.window.reason}` : ""})`, "");
+  if (run.window.gapFrom) L.push(`> ⚠️ **수집 공백** — 마지막 실행(${run.window.gapFrom}) 이후가 따라잡기 한도보다 깁니다. 빠진 기간은 \`--from/--to\` 백필로 확인하세요.`, "");
   L.push("| 수집 | 신규 | 후속 | 중복 | 불확실 | 발행 추천 | 보류 | 제외 | 원고 |", "|---|---|---|---|---|---|---|---|---|");
   L.push(`| ${c.collected} | ${c.NEW} | ${c.UPDATE_EXISTING} | ${c.DUPLICATE} | ${c.UNCERTAIN} | ${c.PUBLISH} | ${c.HOLD} | ${c.EXCLUDE} | ${c.drafts} |`, "");
   L.push("> 자동으로 발행하지 않습니다. 아래 추천은 사람이 `npm run daily:approve -- <날짜> <id>`로 승인해야 기사 데이터에 들어갑니다. 뉴스레터도 만들거나 보내지 않습니다.", "");
@@ -167,11 +200,7 @@ export function renderReport(run, queue) {
   if (!ex.length) L.push("없음");
   L.push("");
 
-  const bad = run.sources.filter((s) => ["failed", "blocked", "partial"].includes(s.status));
-  L.push(`## 소스 상태 (성공 ${run.sources.filter((s) => s.status === "success").length} · 실패/차단/일부 ${bad.length} · 비활성 ${run.sources.filter((s) => s.status === "skipped").length})`, "");
-  if (!bad.length) L.push("실패한 소스 없음");
-  for (const s of bad) L.push(`- ${s.name} — **${s.status}** ${s.errors?.[0] ? `(${s.errors[0].slice(0, 120)})` : ""}`);
-  L.push("");
+  L.push(...renderSourceHealth(run));
   L.push(...renderDiagnostics(run));
   L.push(`## 비용`, "", `원고 생성 ${run.llm.provider}${run.llm.model ? ` (${run.llm.model}${run.llm.effort ? `, effort ${run.llm.effort}` : ""})` : ""} · 호출 ${run.llm.calls}/${run.llm.maxCalls} · 입력 ${run.llm.inputTokens} · 출력 ${run.llm.outputTokens} 토큰 · 예상 비용 $${(run.llm.estimatedCostUsd ?? 0).toFixed(4)} / 상한 $${run.llm.maxCostUsd ?? "-"}${run.llm.pricePerMTok ? ` (요금 입력 $${run.llm.pricePerMTok.input}·출력 $${run.llm.pricePerMTok.output} / 100만 토큰)` : ""}`, "");
   L.push(`<sub>실행 ${run.startedAt} → ${run.finishedAt} · 상세: run.json, candidates/*.json</sub>`, "");

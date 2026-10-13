@@ -2,8 +2,11 @@
 /**
  * AI마중 DAILY 실행 (Phase 7.1 · 7.1.3 초안)
  *
- *   npm run daily:run -- [--date YYYY-MM-DD] [--out <dir>] [--collect-only]
+ *   npm run daily:run -- [--date YYYY-MM-DD] [--out <dir>] [--collect-only] [--since YYYY-MM-DD]
+ *   npm run daily:backfill -- --from 2026-10-06 --to 2026-10-10 [--out <dir>]   (발표일 기준 기간 다시 수집, 언제나 shadow)
  *   (npm run daily:collect = --collect-only)
+ * 수집 창: --since가 없으면 기본 창(date-2)과 마지막 실행일 중 이른 날부터 (최대 7일 따라잡기, Phase 7.1.5).
+ *   백필 결과는 <out>/backfill-<from>_<to>/ 에 따로 둔다 (날짜별 DAILY 결과·PR과 섞이지 않음).
  *
  * DAILY_AUTOMATION_ENABLED=true 일 때만 돈다 (킬 스위치).
  * DAILY_MODE: shadow(기본, LLM 없음) · draft(명시적 수동 실행에서만 AI 초안 + 초안 QA) · publish(사용 금지).
@@ -20,6 +23,7 @@ import { fileURLToPath } from "node:url";
 import { CATEGORIES, REGISTRY_FILE, readJson } from "../ingest/lib.mjs";
 import {
   DAILY_DIR,
+  HARD_CAPS,
   PROCESSED_FILE,
   automationEnabled,
   collectDaily,
@@ -41,6 +45,22 @@ import { PUBLISH_MIN, assessDepth, companyOf, distinctFacts, finalSelect, metada
 import { PROMPT_VERSION, generateArticle, providerBlocker, resolveModelConfig, resolveProvider } from "./providers.mjs";
 import { buildDraftRecord, draftEligibility, renderDraftMarkdown, reviewDraft } from "./draft.mjs";
 import { renderReport } from "./report.mjs";
+import { assessSources, catchUpSince, loadHistory, saveHistory } from "./health.mjs";
+import { renderDiagnostics } from "./diagnose.mjs";
+
+export const HISTORY_FILE = process.env.DAILY_SOURCES_FILE || path.join(path.dirname(PROCESSED_FILE), "daily-sources.json");
+const addDays = (d, n) => new Date(Date.parse(`${d}T00:00:00Z`) + n * 86400_000).toISOString().slice(0, 10);
+export const BACKFILL_MAX_DAYS = 14;
+
+/** 백필 기간 확인: 날짜 형식 · from ≤ to · 최대 14일 · 미래 아님 */
+export function backfillRange(from, to, today = kstToday()) {
+  if (!isDateStr(from) || !isDateStr(to)) throw new Error("--from·--to는 YYYY-MM-DD");
+  if (from > to) throw new Error(`--from ${from}이 --to ${to}보다 늦습니다`);
+  if (to > today) throw new Error(`--to ${to}는 오늘(${today}) 이후일 수 없습니다`);
+  const days = (Date.parse(to) - Date.parse(from)) / 86400_000 + 1;
+  if (days > BACKFILL_MAX_DAYS) throw new Error(`백필은 최대 ${BACKFILL_MAX_DAYS}일 (${days}일 요청)`);
+  return { from, to, runId: `backfill-${from}_${to}` };
+}
 
 const writeJson = (file, data) => {
   fs.mkdirSync(path.dirname(file), { recursive: true });
@@ -58,12 +78,20 @@ export async function runDaily(opts) {
     log("DAILY 자동화가 꺼져 있습니다 (DAILY_AUTOMATION_ENABLED=true가 아님). 아무것도 하지 않습니다.");
     return { status: "DISABLED" };
   }
-  const date = opts.date;
+  const backfill = opts.backfill ? backfillRange(opts.backfill.from, opts.backfill.to, opts.today) : null;
+  const date = backfill ? backfill.to : opts.date;
   if (!isDateStr(date)) throw new Error(`날짜 형식 오류: ${date}`);
-  const outDir = path.join(opts.out ?? DAILY_DIR, date);
+  const outDir = path.join(opts.out ?? DAILY_DIR, backfill ? backfill.runId : date);
   const limits = loadLimits(env);
+  // 백필은 여러 날을 한 번에 보므로 (환경변수로 정하지 않았으면) 근거 확인·추천 상한을 하드 상한까지 연다. 비용은 원문 요청뿐 (LLM 없음)
+  if (backfill) {
+    if (!String(env.DAILY_MAX_EVIDENCE_FETCHES ?? "").trim()) limits.maxEvidenceFetches = HARD_CAPS.maxEvidenceFetches;
+    if (!String(env.DAILY_MAX_PUBLISH ?? "").trim()) limits.maxPublishPerDay = HARD_CAPS.maxPublishPerDay;
+  }
   // 모드: 값이 없으면 shadow. draft는 명시적 수동 실행에서만, publish는 Phase 7.2 전까지 거부
-  const m = resolveMode(env);
+  // 백필은 언제나 shadow (지난 기간을 다시 보는 것은 편집자 검토용 — 원고를 만들지 않는다)
+  let m = resolveMode(env);
+  if (backfill && !m.error && m.mode !== "shadow") m = { mode: "shadow", warning: "백필은 shadow로만 실행 — draft 무시" };
   if (m.error) {
     log(m.error);
     return { status: "REFUSED", error: m.error };
@@ -81,22 +109,38 @@ export async function runDaily(opts) {
   const existing = opts.existing ?? loadExisting();
   const processedFile = opts.processedFile ?? PROCESSED_FILE;
   const processed = loadProcessed(processedFile);
+  // 소스 상태 기록 (최근 정상 수집일 · 연속 0건). 백필·수집만 실행은 기록을 바꾸지 않는다
+  const historyFile = opts.historyFile === undefined ? HISTORY_FILE : opts.historyFile;
+  const history = loadHistory(historyFile);
   // 상한 0은 근거 확인·추천을 꺼 버린다. 백테스트(--no-fetch)처럼 의도한 경우가 아니면 경고하고 PARTIAL로
   const limitWarnings = [];
   if (!opts.allowZeroLimits) {
     if (limits.maxEvidenceFetches === 0) limitWarnings.push("근거 확인 상한(maxEvidenceFetches)이 0 — 원문 근거를 하나도 보지 않음");
     if (limits.maxPublishPerDay === 0) limitWarnings.push("발행 추천 상한(maxPublishPerDay)이 0 — 추천을 하나도 내지 않음");
   }
-  const run = { date, mode, ...(m.warning ? { modeWarning: m.warning } : {}), ...(draftBlocked ? { draftBlocked } : {}), ...(limitWarnings.length ? { limitWarnings } : {}), startedAt: new Date().toISOString(), status: "", limits, provider, model: modelName, ...(opts.backtest ? { backtest: opts.backtest } : {}) };
+  const run = { date, ...(backfill ? { kind: "backfill", backfill: { from: backfill.from, to: backfill.to } } : {}), mode, ...(m.warning ? { modeWarning: m.warning } : {}), ...(draftBlocked ? { draftBlocked } : {}), ...(limitWarnings.length ? { limitWarnings } : {}), startedAt: new Date().toISOString(), status: "", limits, provider, model: modelName, ...(opts.backtest ? { backtest: opts.backtest } : {}) };
   const budget = { calls: 0, inputTokens: 0, outputTokens: 0, costUsd: 0 };
 
   // 1) 수집
   // 백테스트는 보존된 항목을 넘겨받는다 (지금 피드를 과거 시점 데이터처럼 쓰지 않기 위해)
-  const { items, sources, since } = opts.items
+  // 수집 시작일: 백필 --from > 명시 --since > 따라잡기(마지막 실행일 · 최대 7일) > 기본 창
+  const cu = backfill
+    ? { since: backfill.from, reason: `백필 ${backfill.from} ~ ${backfill.to}` }
+    : opts.since
+      ? { since: opts.since, reason: "지정 시작일 (--since)" }
+      : catchUpSince({ date, windowDays: limits.windowDays, lastRunDates: [history.lastRun, ...(opts.lastRunDates ?? []), ...String(env.DAILY_LAST_RUN_DATE ?? "").split(",").map((x) => x.trim())] });
+  if (!opts.items && (!isDateStr(cu.since) || cu.since > date || cu.since < addDays(date, -BACKFILL_MAX_DAYS))) throw new Error(`수집 시작일 오류: ${cu.since} (종료일 ${date}, 최대 ${BACKFILL_MAX_DAYS}일)`);
+  const { items, sources: rawSources, since } = opts.items
     ? { items: opts.items, sources: opts.sources ?? [{ id: "backtest", name: "보존 데이터", status: "success" }], since: opts.since ?? date }
-    : await collectDaily({ date, registry, limits, known: existing.candidates });
-  run.window = { since, until: date };
+    : await collectDaily({ date, since: cu.since, registry, limits, known: existing.candidates });
+  run.window = { since, until: date, reason: opts.items ? "보존 데이터" : cu.reason, ...(cu.gapFrom ? { gapFrom: cu.gapFrom } : {}) };
+  const assessed = opts.items ? { sources: rawSources, history } : assessSources(rawSources, history, date);
+  const sources = assessed.sources;
   run.sources = sources;
+  run.sourceHealth = { OK: 0, WARNING: 0, DEGRADED: 0, FAILED: 0, SKIPPED: 0 };
+  for (const s of sources) if (s.health) run.sourceHealth[s.health]++;
+  const updateHistory = !backfill && !opts.collectOnly && !opts.items && historyFile;
+  if (updateHistory) saveHistory(historyFile, { ...assessed.history, lastRun: date });
   log(`수집 ${items.length}건 (소스 ${sources.filter((s) => s.status === "success").length} 성공 · ${sources.filter((s) => ["failed", "blocked", "partial"].includes(s.status)).length} 실패·일부)`);
   if (opts.collectOnly) {
     writeJson(path.join(outDir, "collected.json"), { date, window: run.window, sources, items });
@@ -116,7 +160,8 @@ export async function runDaily(opts) {
     const dup = dedupeItem(item, existing);
     const score = metadataScore(item, dup);
     const d = screenDecision(item, dup, score);
-    const base = { item, dup, score, company: companyOf(item), facts: 0, reasons: d.reasons, needsReview: d.needsReview ?? [], stage: "metadata" };
+    // 발행일 메타가 없어 본문 날짜로 정한 항목은 편집자가 날짜를 확인한다 (Phase 7.1.5)
+    const base = { item, dup, score, company: companyOf(item), facts: 0, reasons: d.reasons, needsReview: [...(d.needsReview ?? []), ...(item.dateSource === "page-text" ? ["date_from_page_text"] : [])], stage: "metadata" };
     const prev = processed[item.id];
     if (prev && prev.date !== date && prev.decision === "PUBLISH") {
       // 지난 날짜에 이미 발행 추천까지 한 항목: 다시 근거·원고를 만들지 않는다 (그날 PR에서 승인)
@@ -342,7 +387,8 @@ export async function runDaily(opts) {
     maxCostUsd: limits.maxCostUsd,
     ...(modelCfg && !modelCfg.error ? { pricePerMTok: { input: modelCfg.inputPerMTok, output: modelCfg.outputPerMTok }, effort: modelCfg.effort } : {}),
   };
-  run.status = enabled.length && enabled.every((s) => ["failed", "blocked"].includes(s.status)) ? "FAILED" : sourceTrouble.length || genTrouble.length || valFail.length || limitWarnings.length || draftBlocked ? "PARTIAL" : "SUCCESS";
+  const degraded = sources.filter((s) => s.health === "DEGRADED");
+  run.status = enabled.length && enabled.every((s) => ["failed", "blocked"].includes(s.status)) ? "FAILED" : sourceTrouble.length || degraded.length || genTrouble.length || valFail.length || limitWarnings.length || draftBlocked ? "PARTIAL" : "SUCCESS";
   run.items = rows.map((r) => ({
     id: r.item.id,
     title: r.item.title,
@@ -369,6 +415,8 @@ export async function runDaily(opts) {
   writeJson(path.join(outDir, "run.json"), run);
   const queueEntries = work.map((r) => readJson(path.join(qDir, `${r.item.id}.json`), null)).filter(Boolean);
   fs.writeFileSync(path.join(outDir, "report.md"), renderReport(run, queueEntries));
+  // 백필은 선정 기준 진단도 함께 남긴다 (설정은 바꾸지 않음)
+  if (backfill) fs.writeFileSync(path.join(outDir, "diagnostics.md"), renderDiagnostics(run));
   log(`상태 ${run.status} (${mode}) · 발행 추천 ${run.counts.PUBLISH} · 보류 ${run.counts.HOLD} · 제외 ${run.counts.EXCLUDE} · 초안 ${run.counts.drafts} (QA PASS ${run.counts.draftQa.PASS}·REVIEW ${run.counts.draftQa.REVIEW}·FAIL ${run.counts.draftQa.FAIL}) · LLM 호출 ${budget.calls} · 예상 비용 $${budget.costUsd.toFixed(4)}`);
   log(`→ ${path.relative(process.cwd(), outDir)}`);
   return { status: run.status, run, outDir };
@@ -383,7 +431,10 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
   };
   const date = arg("--date") ?? kstToday();
   try {
-    const r = await runDaily({ date, out: arg("--out"), collectOnly: argv.includes("--collect-only") });
+    const from = arg("--from");
+    const to = arg("--to");
+    if ((from || to) && !(from && to)) throw new Error("백필은 --from과 --to를 함께 적어야 합니다");
+    const r = await runDaily({ date, out: arg("--out"), collectOnly: argv.includes("--collect-only"), since: arg("--since"), ...(from ? { backfill: { from, to } } : {}) });
     if (r.status === "FAILED" || r.status === "REFUSED") process.exitCode = 1;
   } catch (e) {
     console.error(`DAILY 실패: ${e?.message ?? e}`);

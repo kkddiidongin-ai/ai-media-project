@@ -130,8 +130,10 @@ const BLOCK_RE = /robots\.txt disallow|HTTP 40[13]|HTTP 429/;
  * ingest/candidates·state.json은 건드리지 않는다 (승인할 때만 후보로 들어간다).
  * @returns {{ items: object[], sources: object[] }}
  */
-export async function collectDaily({ date, registry, limits, known }) {
-  const since = addDays(date, -limits.windowDays);
+export async function collectDaily({ date, since: sinceArg = null, registry, limits, known }) {
+  // since를 넘기면 그날부터 (백필 --from · 예약 실행 따라잡기). 없으면 기본 창 date-windowDays
+  const since = sinceArg ?? addDays(date, -limits.windowDays);
+  if (since > date) throw new Error(`수집 시작일 ${since}이 종료일 ${date}보다 늦습니다`);
   const fetchedAt = new Date().toISOString();
   const items = [];
   const sources = [];
@@ -149,9 +151,15 @@ export async function collectDaily({ date, registry, limits, known }) {
       stats.errors.push(String(e.message ?? e));
     }
     const inWindow = [];
+    const undated = [];
     for (const it of got) {
       const publishedAt = isoDate(it.date);
-      if (!publishedAt || publishedAt.slice(0, 10) < since || publishedAt.slice(0, 10) > date) continue;
+      // 발행일을 확인하지 못한 글은 임의 날짜로 넣지 않는다 — 후보에서 빼고 소스 상태에 남긴다
+      if (!publishedAt) {
+        undated.push({ title: stripHtml(it.title ?? "").slice(0, 160), url: it.url });
+        continue;
+      }
+      if (publishedAt.slice(0, 10) < since || publishedAt.slice(0, 10) > date) continue;
       if (src.relevance === "ai" && !isAiRelevant(it)) continue;
       const fp = candidateId(it.idKey ?? it.url);
       if (seen.has(fp)) continue;
@@ -165,6 +173,7 @@ export async function collectDaily({ date, registry, limits, known }) {
         excerpt: stripHtml(it.description ?? "").slice(0, 300),
         publishedAt,
         ...(it.datePrecision ? { datePrecision: it.datePrecision } : {}),
+        ...(it.dateSource ? { dateSource: it.dateSource } : {}),
         sourceId: src.id,
         sourceName: src.name,
         sourceType: src.sourceType,
@@ -179,7 +188,21 @@ export async function collectDaily({ date, registry, limits, known }) {
     items.push(...kept);
     const errs = stats.errors;
     const status = !errs.length ? "success" : got.length ? "partial" : errs.every((e) => BLOCK_RE.test(e)) ? "blocked" : "failed";
-    sources.push({ id: src.id, name: src.name, status, requests: stats.requests, found: got.length, inWindow: inWindow.length, kept: kept.length, ...(errs.length ? { errors: errs.slice(0, 3).map((e) => e.slice(0, 200)) } : {}) });
+    sources.push({
+      id: src.id,
+      name: src.name,
+      status,
+      requests: stats.requests,
+      http: stats.http ?? null,
+      parsed: stats.parsed ?? null,
+      matched: stats.matched ?? null,
+      found: got.length,
+      inWindow: inWindow.length,
+      kept: kept.length,
+      undated: undated.length,
+      ...(undated.length ? { undatedItems: undated.slice(0, 5) } : {}),
+      ...(errs.length ? { errors: errs.slice(0, 3).map((e) => e.slice(0, 200)) } : {}),
+    });
   }
   return { items, sources, since };
 }
@@ -221,14 +244,21 @@ export function mentionsProduct(text, product) {
 }
 
 /**
+ * 출처가 주소를 옮긴 경우 같은 글로 본다 (옛 주소가 새 주소로 리다이렉트되는 것을 2026-10-12 확인)
+ *   claude.com/blog/<slug> → claude.com/resources/articles/<slug> (308)
+ */
+export const URL_ALIASES = [[/^https:\/\/claude\.com\/blog\//, "https://claude.com/resources/articles/"]];
+export const aliasUrl = (u) => URL_ALIASES.reduce((acc, [re, to]) => acc.replace(re, to), String(u ?? ""));
+
+/**
  * NEW · UPDATE_EXISTING · DUPLICATE · UNCERTAIN
  * UNCERTAIN은 자동 발행 대상이 아니다 (사람이 판단).
  */
 export function dedupeItem(item, existing) {
-  const url = item.canonicalUrl;
+  const url = aliasUrl(item.canonicalUrl);
   for (const s of existing.stories) {
-    if (canonicalUrl(s.sourceUrl) === url) return { result: "DUPLICATE", reason: "같은 원문으로 쓴 기사가 있음", matchSlug: s.slug };
-    if ((s.secondarySources ?? []).some((x) => canonicalUrl(x.sourceUrl) === url)) return { result: "DUPLICATE", reason: "기존 기사의 추가 출처", matchSlug: s.slug };
+    if (aliasUrl(canonicalUrl(s.sourceUrl)) === url) return { result: "DUPLICATE", reason: "같은 원문으로 쓴 기사가 있음", matchSlug: s.slug };
+    if ((s.secondarySources ?? []).some((x) => aliasUrl(canonicalUrl(x.sourceUrl)) === url)) return { result: "DUPLICATE", reason: "기존 기사의 추가 출처", matchSlug: s.slug };
   }
   if (existing.editorialIds.has(item.id)) return { result: "DUPLICATE", reason: "편집 원고에 이미 쓰인 후보" };
   const near = existing.stories.filter((s) => s.eventDate && item.publishedAt && daysBetween(s.eventDate, item.publishedAt) <= 45);

@@ -748,7 +748,8 @@ await t("편집 호마다 웹 버전 페이지가 빌드됨 (out/ 있을 때)", 
     eq(r.calls.length, 0);
   });
   await t("send L: 기사 데이터(content/, ingest/ 추적 파일) 변경 없음", async () => {
-    const d = spawnSync("git", ["status", "--porcelain", "--", "content", "ingest"], { cwd: ROOT, encoding: "utf8" });
+    // ingest/registry.json은 수집 소스 설정(기사·발송 데이터 아님) — Phase 7.1.5에서 Claude·Mistral 소스를 고쳤다
+    const d = spawnSync("git", ["status", "--porcelain", "--", "content", "ingest", ":!ingest/registry.json"], { cwd: ROOT, encoding: "utf8" });
     eq(d.stdout.trim(), "");
   });
   server.close();

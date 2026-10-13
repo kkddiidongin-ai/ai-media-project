@@ -1,4 +1,4 @@
-# AI마중 DAILY 자동화 (Phase 7.1 · 7.1.1 선정 보정 · 7.1.2 Shadow Mode · 7.1.3 AI 초안)
+# AI마중 DAILY 자동화 (Phase 7.1 · 7.1.1 선정 보정 · 7.1.2 Shadow Mode · 7.1.3 AI 초안 · 7.1.5 수집 안정화)
 
 매일 아침 공식 AI 출처를 자동으로 모으고, 중복·가치·근거를 확인해 **승인 대기 결과**까지 만든다.
 **기사 발행·배포·뉴스레터 발송은 자동으로 하지 않는다.** 사람이 보고서를 보고 승인한 것만 기존 발행 흐름(`DAILY_PUBLISHING.md`)으로 들어간다.
@@ -12,7 +12,7 @@
 ## 1. 전체 흐름
 
 ```
-GitHub Actions (매일 07:00 KST 전후)
+GitHub Actions (매일 06:17 KST 예약 — 실제 시작은 늦어질 수 있음)
   └ npm run daily:run
       1) 수집      ingest/registry.json의 활성 공식 출처 (RSS·sitemap 메타·릴리스 노트, robots.txt 준수)
       2) 중복      기존 기사·후보·편집 원고와 비교 → NEW · UPDATE_EXISTING · DUPLICATE · UNCERTAIN
@@ -82,14 +82,14 @@ GitHub Actions (매일 07:00 KST 전후)
 ## 5. GitHub Actions (Shadow Mode)
 
 `.github/workflows/daily-editorial.yml`
-- 일정: `0 22 * * *` (UTC 22:00 = **KST 07:00**). GitHub의 schedule은 정시를 보장하지 않는다 — 부하에 따라 수 분~수십 분 늦거나 드물게 건너뛸 수 있다. 수동 실행(workflow_dispatch, 날짜 지정)도 된다.
+- 일정: `17 21 * * *` (UTC 21:17 = **KST 06:17**). 정각은 GitHub 예약 실행이 몰리는 시각이라 피했다. 그래도 정시는 보장되지 않는다 (2026-10-08~12 실측 약 2.5~3.5시간 지연) — 그래서 시각이 아니라 **따라잡기 수집 창**으로 누락을 막는다 (§15). 수동 실행(workflow_dispatch, 날짜 지정 · 백필 from/to)도 된다.
 - 순서: checkout → Node 24 → `npm ci` → 처리 기록 캐시 복원 → `npm run qa:daily`(고정 데이터 시험) → `npm run daily:run` (shadow) → 캐시 저장 → **Summary** → **artifact** → 브랜치·PR.
 - 보고서가 남는 곳 (PR이 실패해도 앞의 두 곳에는 반드시 남는다):
   1. 실행 화면 **Summary** — report.md 본문
   2. **Artifact `daily-report-<날짜>`** — run.json · report.md · candidates/ (30일 보관). 같은 날짜의 예전 artifact는 지우고 하나만 둔다 (`actions: write` 권한이 없으면 지우기만 건너뜀)
   3. **브랜치 `automation/daily-<날짜>` + PR** — 권한이 있을 때만. 이 단계는 `continue-on-error`라 실패해도 실행 전체가 실패로 바뀌지 않는다 (로그에 경고)
 - 같은 날짜 재실행: 같은 브랜치에 커밋을 더하고 열린 PR 본문을 갱신 (브랜치·PR이 늘지 않음). force push 없음. master로는 push하지 않는다. Shadow Mode라 LLM 호출은 0이다.
-- 처리 기록(`ingest/log/daily-processed.json`)은 Actions 캐시로 이어 쓴다 — 전날 다룬 URL을 다시 원고로 만들지 않는다 (캐시가 비면 다시 판정만 한다).
+- 처리 기록(`ingest/log/daily-processed.json`)과 소스 상태 기록(`ingest/log/daily-sources.json`)은 Actions 캐시로 이어 쓴다 — 전날 다룬 URL을 다시 원고로 만들지 않는다 (캐시가 비면 다시 판정만 한다).
 
 ## 6. 실제로 켜는 방법 (GitHub 화면에서 사람이 직접)
 
@@ -99,7 +99,7 @@ GitHub Actions (매일 07:00 KST 전후)
    - **Allow GitHub Actions to create and approve pull requests** 체크 (PR을 받으려면 필요. 안 켜면 PR 단계만 실패하고 Summary·artifact는 남는다)
    - Save
 2. **Settings → Secrets and variables → Actions → Variables 탭 → New repository variable**
-   - Name `DAILY_AUTOMATION_ENABLED`, Value `true` → Add variable (이 순간부터 매일 22:00 UTC에 돈다)
+   - Name `DAILY_AUTOMATION_ENABLED`, Value `true` → Add variable (이 순간부터 매일 21:17 UTC 예약으로 돈다)
 3. 바로 확인: **Actions → AI마중 DAILY → Run workflow** (날짜 비우면 오늘) → 실행 화면 Summary와 Artifacts의 `daily-report-<날짜>` 확인
 4. 끄기: 같은 Variable을 `false`로 바꾸거나 삭제 (job이 건너뛰어진다). 또는 Actions → AI마중 DAILY → ⋯ → Disable workflow
 5. (권장) Settings → Branches → master에 보호 규칙 (직접 push 금지·PR 필요)
@@ -238,3 +238,38 @@ npm run qa:daily                                                                
 - 소스별 실패율과 원문 차단 소스(openai.com 등)의 근거 확보 방법 정리
 - 자동 발행 범위를 SHORT + 확인 필요 항목 0건 + 공식 1차 출처로 한정하는 등 조건과 즉시 되돌리는 방법(롤백) 합의
 - 비용(월 LLM 호출·토큰) 실측
+
+## 15. 수집 안정화 · 누락 복구 (Phase 7.1.5)
+
+**2026-10-06~10 수집 공백의 원인** (재현: `npm run daily:backfill -- --from 2026-10-06 --to 2026-10-10 --collect-only --out <임시 폴더>`)
+1. 수집 창이 기준일 포함 3일(`windowDays: 2`)로 고정이었다. 10-08~10-10 예약 실행은 킬 스위치 변수가 없어 **skipped**, 10-11 수동 실행은 10-09~10-11만, 10-12 실행은 10-10~10-12만 봤다 → **10-06~10-08 발표는 어떤 실행도 보지 않았다.** 빠진 날을 다시 보는 구조가 없었다.
+2. `claude.com/blog`가 `claude.com/resources/articles`로 옮겨져(308) 사이트맵의 옛 형식 주소가 0개가 됐는데, 요청은 200이라 **'success · 0건'으로만 기록**됐다. 새 주소에는 lastmod가 없어 사이트맵 방식으로는 최신 글을 고를 수 없다.
+3. Anthropic 모델 출시 글(`anthropic.com/claude-haiku-5-5` 등)은 `/news/` 밖에 있고 lastmod·발행일 메타가 없어 **원래부터 수집 대상이 아니었다.**
+4. (오진 정정) Mistral의 '10-07' 항목 3건은 사이트맵 lastmod(수정일)였다 — 실제 발표일은 6~8월이고 이미 후보·기사에 있다.
+
+**백필 (명시적 시작일·종료일)** — `npm run daily:backfill -- --from YYYY-MM-DD --to YYYY-MM-DD [--out <dir>] [--collect-only]`
+- 발표일 기준 기간 필터. 최대 14일, 미래 날짜 불가. **언제나 shadow** (DAILY_MODE=draft여도 LLM 호출 없음).
+- 결과: `ingest/daily/backfill-<from>_<to>/` (run.json · report.md · diagnostics.md · candidates/) — 날짜별 DAILY 폴더·PR과 섞이지 않는다. GitHub: Run workflow에 from·to → 브랜치 `automation/daily-backfill-<from>_<to>` (같은 기간은 같은 PR).
+- 근거 확인·추천 상한은 (환경변수가 없으면) 하드 상한(원문 25 · 추천 12)까지 연다. 비용은 공식 페이지 요청뿐.
+- 중복: 기존 기사(같은 원문·옮겨진 주소 포함) → DUPLICATE. 같은 기간 재실행은 이전 근거를 다시 쓰고 후보 파일을 늘리지 않는다. 백필에서 추천한 항목은 이후 날짜 DAILY가 '이미 추천함'으로 보류한다(처리 기록). 소스 상태 기록·마지막 실행일은 바꾸지 않는다.
+
+**따라잡기 수집 창** (예약 실행이 빠지거나 늦어도) — `health.mjs` `catchUpSince`
+- 수집 시작일 = 기본 창(기준일-2)과 **마지막 실행일** 중 이른 날, 최대 7일 전까지. 마지막 실행일은 캐시 기록(`daily-sources.json` lastRun)과 원격 브랜치 `automation/daily-<날짜>`(워크플로가 `DAILY_LAST_RUN_DATE`로 넘김) 중 최근 값. 7일보다 길게 빠지면 보고서에 '수집 공백' 경고 → 백필.
+- 예약 시각: `17 21 * * *`(06:17 KST). 정각을 피했을 뿐 실행 시각을 보장하지 않는다.
+
+**소스 수정**
+- `claude-blog`: `listing-meta` — 목록 페이지 `https://claude.com/resources/articles`의 글 링크(최신 글이 위) → 각 글 페이지의 발행일 메타(datePublished). 옛 주소 `claude.com/blog/<slug>`는 중복 판정에서 새 주소와 같은 글로 본다(`URL_ALIASES`).
+- `anthropic-launch`(신규): `https://www.anthropic.com/news` 목록의 `anthropic.com/claude-<모델>` 링크. 발행일 메타가 없으면 **본문에 보이는 날짜가 정확히 한 가지일 때만** 그 날짜를 쓰고 `date_from_page_text`(편집자 확인)를 붙인다. 없거나 여러 가지면 후보에서 뺀다.
+- 발행일을 확인하지 못한 글은 어떤 소스든 임의 날짜로 넣지 않고 소스 상태(undated)·보고서에 남긴다.
+- 비활성 9개(xai·perplexity 403, wired-ai·techcrunch·the-verge·mit-tr·ap robots.txt 차단, reuters·bloomberg-ft 유료)는 접근 제한을 우회하지 않으므로 그대로 둔다.
+
+**소스 상태** (`report.md` '소스 상태', `run.json` sources[].health)
+| 상태 | 조건 |
+|---|---|
+| OK | 요청·파싱 정상. 기간 안 새 글 0건이어도 글 목록이 읽히면 정상(NO_NEW — 발표가 없는 날) |
+| WARNING | 리다이렉트 · 발행일 미확인 글 · 일부 요청 실패 · HTTP 200인데 글 주소 0개(첫 발생) · 기간 안 0건 5회 연속 |
+| DEGRADED | 글 주소 0개가 2회 연속이거나 리다이렉트와 겹침(구조 변경) · 기간 안 0건 10회 연속 → 실행 PARTIAL |
+| FAILED | 요청 실패·차단 |
+- 기록 항목: 요청 성공 · HTTP 상태 · 리다이렉트/최종 주소 · 글 주소 수(형식 일치/전체) · 기간 안 · 수집 후보 수 · 최근 정상 수집일 · 연속 0건(같은 날 재실행은 한 번으로 셈).
+
+**선정 기준 진단** — `npm run daily:diagnose -- <run.json>` (백필은 diagnostics.md 자동 생성). 우선순위 분포 · PUBLISH/HOLD/EXCLUDE · 근거 통과율 · 주요 기업 공식 발표 미추천률 · 편집 가치가 있는데 HOLD된 후보 · 홍보성 비중 · 기준 6/5/4 비교(시뮬레이션). **설정은 바꾸지 않는다.**
