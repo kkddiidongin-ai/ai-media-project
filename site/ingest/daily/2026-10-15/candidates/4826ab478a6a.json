@@ -1,0 +1,219 @@
+{
+  "id": "4826ab478a6a",
+  "date": "2026-10-15",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Manage private pricing offers for Amazon Bedrock with managed entitlements",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": true,
+      "contextNeed": true,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": true
+    },
+    "deepMissing": [
+      "importance"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/manage-private-pricing-offers-for-amazon-bedrock-with-managed-entitlements/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-10-13T17:17:25.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "4826ab478a6a",
+    "url": "https://aws.amazon.com/blogs/machine-learning/manage-private-pricing-offers-for-amazon-bedrock-with-managed-entitlements/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/manage-private-pricing-offers-for-amazon-bedrock-with-managed-entitlements",
+    "title": "Manage private pricing offers for Amazon Bedrock with managed entitlements",
+    "excerpt": "Managing AI model access across dozens or hundreds of AWS accounts creates friction when each account must accept AWS Marketplace Private Pricing Offers individually. This post shows two ways to activate MPPO entitlements in AWS License Manager: a lightweight script for a one-time fix, and CDK autom",
+    "publishedAt": "2026-10-13T17:17:25.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-10-14T23:55:55.540Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 8618,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Managing AI model access across dozens or hundreds of AWS accounts creates friction when each account must accept AWS Marketplace Private Pricing Offers individually. This post shows two ways to activate MPPO entitlements in AWS License Manager: a lightweight script for a one-time fix, and CDK autom",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/manage-private-pricing-offers-for-amazon-bedrock-with-managed-entitlements/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-13T17:17:25.000Z",
+        "checkedAt": "2026-10-14T23:57:19.851Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Manage private pricing offers for Amazon Bedrock with managed entitlements | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/manage-private-pricing-offers-for-amazon-bedrock-with-managed-entitlements/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-13T17:17:25.000Z",
+        "checkedAt": "2026-10-14T23:57:19.851Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Manage private pricing offers for Amazon Bedrock with managed entitlements",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/manage-private-pricing-offers-for-amazon-bedrock-with-managed-entitlements/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-13T17:17:25.000Z",
+        "checkedAt": "2026-10-14T23:57:19.851Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Managing AI model access across dozens or hundreds of AWS accounts creates operational friction when each workload account must subscribe and accept AWS Marketplace Private Pricing Offers (MPPOs) individually.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/manage-private-pricing-offers-for-amazon-bedrock-with-managed-entitlements/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-13T17:17:25.000Z",
+        "checkedAt": "2026-10-14T23:57:19.851Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Amazon Bedrock with managed entitlements simplifies multi-account access to third-party AI models so you can subscribe once from a central account and distribute access across your organization.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/manage-private-pricing-offers-for-amazon-bedrock-with-managed-entitlements/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-13T17:17:25.000Z",
+        "checkedAt": "2026-10-14T23:57:19.851Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "In this post, we show you two ways to activate AWS Marketplace Private Pricing Offer (MPPO) entitlements in AWS License Manager.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/manage-private-pricing-offers-for-amazon-bedrock-with-managed-entitlements/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-13T17:17:25.000Z",
+        "checkedAt": "2026-10-14T23:57:19.851Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "With AWS Marketplace Private Pricing Offers, you can negotiate custom rates for third-party models on Amazon Bedrock.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/manage-private-pricing-offers-for-amazon-bedrock-with-managed-entitlements/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-13T17:17:25.000Z",
+        "checkedAt": "2026-10-14T23:57:19.851Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Path 1 – The lightweight path is a standalone script that lists received licenses and prints a dry-run plan.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/manage-private-pricing-offers-for-amazon-bedrock-with-managed-entitlements/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-13T17:17:25.000Z",
+        "checkedAt": "2026-10-14T23:57:19.851Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Amazon EventBridge rule : The stack listens for AWS Marketplace agreement events on the default event bus in us-east-1 .",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/manage-private-pricing-offers-for-amazon-bedrock-with-managed-entitlements/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-13T17:17:25.000Z",
+        "checkedAt": "2026-10-14T23:57:19.851Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Figure 1: Sequence diagram showing AWS Marketplace sending a Purchase Agreement Created – Acceptor event to Amazon EventBridge, which invokes an AWS Lambda function.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/manage-private-pricing-offers-for-amazon-bedrock-with-managed-entitlements/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-13T17:17:25.000Z",
+        "checkedAt": "2026-10-14T23:57:19.851Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Private pricing on AWS Marketplace gives us a cost-effective and efficient way to manage that growth: we can granularly attribute usage and pricing across AWS accounts and organizational units, and automate grant management as we adopt new models.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/manage-private-pricing-offers-for-amazon-bedrock-with-managed-entitlements/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-13T17:17:25.000Z",
+        "checkedAt": "2026-10-14T23:57:19.851Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "This post showed two ways to activate managed entitlements for Amazon Bedrock private pricing offers.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/manage-private-pricing-offers-for-amazon-bedrock-with-managed-entitlements/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-13T17:17:25.000Z",
+        "checkedAt": "2026-10-14T23:57:19.851Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Sample code: Amazon Bedrock with managed entitlements (GitHub)",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/manage-private-pricing-offers-for-amazon-bedrock-with-managed-entitlements/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-13T17:17:25.000Z",
+        "checkedAt": "2026-10-14T23:57:19.851Z"
+      }
+    ],
+    "pageDate": "2026-10-13T17:17:25.000Z"
+  },
+  "score": {
+    "importance": 2,
+    "practicalImpact": 2,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PRICING",
+      "API_PLATFORM"
+    ],
+    "strongSignal": true,
+    "contentType": "HOW_TO",
+    "typePenalty": -3,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 PRICING·API_PLATFORM (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}
