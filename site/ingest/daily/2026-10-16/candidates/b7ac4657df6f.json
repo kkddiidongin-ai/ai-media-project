@@ -1,0 +1,221 @@
+{
+  "id": "b7ac4657df6f",
+  "date": "2026-10-16",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Agentic autofix for code scanning alerts general availability",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 10,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "GitHub",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://github.blog/changelog/2026-10-15-agentic-autofix-for-code-scanning-alerts-general-availability",
+      "name": "GitHub Changelog",
+      "type": "official",
+      "publishedAt": "2026-10-15T13:49:20.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "b7ac4657df6f",
+    "url": "https://github.blog/changelog/2026-10-15-agentic-autofix-for-code-scanning-alerts-general-availability",
+    "canonicalUrl": "https://github.blog/changelog/2026-10-15-agentic-autofix-for-code-scanning-alerts-general-availability",
+    "title": "Agentic autofix for code scanning alerts general availability",
+    "excerpt": "Agentic autofix for code scanning alerts is now generally available. It remediates alerts by working across your codebase the way a developer would: it explores relevant files, proposes a fix,… The post Agentic autofix for code scanning alerts general availability appeared first on The GitHub Blog .",
+    "publishedAt": "2026-10-15T13:49:20.000Z",
+    "sourceId": "github-changelog",
+    "sourceName": "GitHub Changelog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://github.blog/changelog/feed/",
+    "fetchedAt": "2026-10-15T23:42:14.991Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 2707,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Agentic autofix for code scanning alerts is now generally available. It remediates alerts by working across your codebase the way a developer would: it explores relevant files, proposes a fix,… The post Agentic autofix for code scanning alerts general availability appeared first on The GitHub Blog .",
+        "sourceUrl": "https://github.blog/changelog/2026-10-15-agentic-autofix-for-code-scanning-alerts-general-availability",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-15T13:49:20.000Z",
+        "checkedAt": "2026-10-15T23:43:40.820Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Agentic autofix for code scanning alerts general availability - GitHub Changelog",
+        "sourceUrl": "https://github.blog/changelog/2026-10-15-agentic-autofix-for-code-scanning-alerts-general-availability",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-15T13:49:20.000Z",
+        "checkedAt": "2026-10-15T23:43:40.820Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Agentic autofix for code scanning alerts is now generally available.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-15-agentic-autofix-for-code-scanning-alerts-general-availability",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-15T13:49:20.000Z",
+        "checkedAt": "2026-10-15T23:43:40.820Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Agentic autofix is available to GitHub Code Security and GitHub Advanced Security customers on GitHub Enterprise Cloud, including GitHub Enterprise Cloud with data residency.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-15-agentic-autofix-for-code-scanning-alerts-general-availability",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-15T13:49:20.000Z",
+        "checkedAt": "2026-10-15T23:43:40.820Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "When you assign a code scanning alert to Copilot, it:",
+        "sourceUrl": "https://github.blog/changelog/2026-10-15-agentic-autofix-for-code-scanning-alerts-general-availability",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-15T13:49:20.000Z",
+        "checkedAt": "2026-10-15T23:43:40.820Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "When enabled, agentic autofix replaces the free Generate Fix option on individual code scanning alerts with an Assign to Copilot button.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-15-agentic-autofix-for-code-scanning-alerts-general-availability",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-15T13:49:20.000Z",
+        "checkedAt": "2026-10-15T23:43:40.820Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "From any code scanning alert on the repository&rsquo;s default branch, by assigning the alert to Copilot.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-15-agentic-autofix-for-code-scanning-alerts-general-availability",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-15T13:49:20.000Z",
+        "checkedAt": "2026-10-15T23:43:40.820Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "In the list of security alerts in your repository or security campaign, by selecting up to 25 alerts for Copilot to fix together in a single pull request.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-15-agentic-autofix-for-code-scanning-alerts-general-availability",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-15T13:49:20.000Z",
+        "checkedAt": "2026-10-15T23:43:40.820Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Via the Update a Code Scanning Alert REST API by setting assignees to [\"copilot-swe-agent[bot]\"] .",
+        "sourceUrl": "https://github.blog/changelog/2026-10-15-agentic-autofix-for-code-scanning-alerts-general-availability",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-15T13:49:20.000Z",
+        "checkedAt": "2026-10-15T23:43:40.820Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Agentic autofix supports code scanning alerts on the repository&rsquo;s default branch.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-15-agentic-autofix-for-code-scanning-alerts-general-availability",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-15T13:49:20.000Z",
+        "checkedAt": "2026-10-15T23:43:40.820Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Agentic autofix requires an enterprise administrator to enable access to it via the new &ldquo;Agentic autofix&rdquo; policy in Advanced Security policies.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-15-agentic-autofix-for-code-scanning-alerts-general-availability",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-15T13:49:20.000Z",
+        "checkedAt": "2026-10-15T23:43:40.820Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Once the policy is enabled by an enterprise administrator, an organization or repository administrator can turn on agentic autofix in the Code Security settings for the organization or the repository.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-15-agentic-autofix-for-code-scanning-alerts-general-availability",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-15T13:49:20.000Z",
+        "checkedAt": "2026-10-15T23:43:40.820Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Agentic autofix for code scanning alerts consumes AI Credits from your Code Security budget and GitHub Actions minutes.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-15-agentic-autofix-for-code-scanning-alerts-general-availability",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-15T13:49:20.000Z",
+        "checkedAt": "2026-10-15T23:43:40.820Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "AVAILABILITY"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 AVAILABILITY (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}
