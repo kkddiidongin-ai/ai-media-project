@@ -34,7 +34,8 @@
     "qa:daily": "node scripts/daily/check.mjs",
     "daily:backtest": "node scripts/daily/backtest.mjs",
     "daily:backfill": "node scripts/daily/run.mjs",
-    "daily:diagnose": "node scripts/daily/diagnose.mjs"
+    "daily:diagnose": "node scripts/daily/diagnose.mjs",
+    "daily:check-drafts": "node scripts/daily/check-editorial-drafts.mjs"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",

@@ -1224,6 +1224,48 @@ await t("[7.1.5-12] 뉴스레터 발송 0건: 수집·백필 코드와 DAILY 워
   eq(calls.filter((c) => /resend\.com|api\.resend/.test(c.url)).length, 0, "Resend 요청");
 });
 
+await t("편집 원고 점검: 근거에 없는 숫자 · 직접 써 본 표현 · 관련 기사 미표시 · 기존 원문 중복은 FAIL", async () => {
+  const cd = await import("./check-editorial-drafts.mjs");
+  const ex = existing();
+  const base = {
+    handsOn: false,
+    relatedStory: null,
+    story: {
+      slug: "widget-2-ga", title: "Widget 2 정식 출시… 무료 등급 하루 1,000건", status: "draft", publishedAt: null, eventDate: "2026-10-07", editorialDepth: "standard",
+      summary: "FX A가 10월 7일 Widget 2를 모든 개발자에게 정식으로 내놨습니다. 하루 1,000건 무료 등급이 생겼고, 유료 등급은 월 20달러부터입니다.",
+      facts: ["하루 1,000건까지 무료로 쓸 수 있는 등급이 새로 생겼습니다.", "유료 등급은 개발자 좌석당 월 20달러부터입니다.", "지원 언어는 40개입니다."],
+      whyItMatters: "프리뷰로만 열려 있던 Widget이 정식 출시되면서, 개인 개발자도 비용 부담 없이 시험해 볼 수 있게 됐습니다. 다만 성능 수치는 회사 자체 측정입니다.",
+      whatChanges: "기존 Widget 1 연동은 2027년 3월 31일까지 그대로 동작하므로 그 전에 옮기면 됩니다.",
+      sourceUrl: "https://fx-a.test/news/widget-2", sourceName: "FX A", sourceTitle: "Introducing Widget 2 for developers", sourceType: "official", contentType: "NEWS", category: "PRODUCT_UPDATE", topics: ["ai-coding"], companies: ["FX A"], products: ["Widget 2"], secondarySources: [], priority: 2,
+    },
+    evidence: [
+      { fact: 1, url: "https://fx-a.test/news/widget-2", quote: WIDGET_SENTENCES[1] },
+      { fact: 2, url: "https://fx-a.test/news/widget-2", quote: WIDGET_SENTENCES[4] },
+      { fact: 3, url: "https://fx-a.test/news/widget-2", quote: WIDGET_SENTENCES[3] },
+      { fact: "change", url: "https://fx-a.test/news/widget-2", quote: WIDGET_SENTENCES[5] },
+    ],
+  };
+  const v = (d) => cd.checkDraft(d, ex);
+  eq(v(base).verdict !== "FAIL", true, `정상 원고: ${JSON.stringify(v(base).fail)}`);
+  const num = structuredClone(base);
+  num.story.facts[1] = "유료 등급은 개발자 좌석당 월 25달러부터입니다.";
+  ok(v(num).fail.some((x) => /근거에 없는 숫자 25/.test(x)), "숫자 위조");
+  const fake = structuredClone(base);
+  fake.story.whatChanges += " 직접 써 보니 확실히 빨랐습니다.";
+  ok(v(fake).fail.some((x) => /직접 사용한 것처럼/.test(x)), "체험 표현");
+  const dupe = structuredClone(base);
+  dupe.story.sourceUrl = "https://fx-a.test/news/old";
+  ok(v(dupe).fail.some((x) => /기존 기사와 중복/.test(x)), "기존 원문 중복");
+  const pub = structuredClone(base);
+  pub.story.publishedAt = "2026-10-15";
+  pub.story.status = "published";
+  ok(v(pub).fail.length >= 2, "발행 상태 원고 거부");
+  const noEv = structuredClone(base);
+  noEv.evidence = noEv.evidence.filter((e) => e.fact !== 3);
+  ok(v(noEv).fail.some((x) => /사실 3에 근거 인용 없음/.test(x)), "근거 없는 사실");
+  eq(cd.numberValues("$4 per 1M input tokens · November 30, 2026 · Fourteen months").has(1000000), true);
+});
+
 await t("실제 기사 데이터 변경 없음 (content/, ingest/ 추적 파일)", async () => {
   // ingest/registry.json은 소스 설정(기사 데이터 아님)이라 제외한다 (Phase 7.1.5에서 Claude 소스 주소를 고침)
   const d = spawnSync("git", ["status", "--porcelain", "--", "content", "ingest", ":!ingest/registry.json"], { cwd: SITE, encoding: "utf8" });
