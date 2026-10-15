@@ -1,0 +1,116 @@
+{
+  "id": "9a32cd570de4",
+  "date": "2026-10-15",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Samsung Hosts Silicon Valley Future Wireless Summit 2026",
+  "depth": null,
+  "suggestedDepth": null,
+  "depthAssessment": {
+    "sufficiency": "INSUFFICIENT",
+    "distinctFacts": 0,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": true,
+      "contextNeed": false,
+      "distinctFacts": false,
+      "evidenceQuality": false,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "contextNeed",
+      "distinctFacts",
+      "evidenceQuality",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Samsung",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://news.samsung.com/global/samsung-hosts-silicon-valley-future-wireless-summit-2026",
+      "name": "Samsung Newsroom",
+      "type": "official",
+      "publishedAt": "2026-10-15T06:00:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "9a32cd570de4",
+    "url": "https://news.samsung.com/global/samsung-hosts-silicon-valley-future-wireless-summit-2026",
+    "canonicalUrl": "https://news.samsung.com/global/samsung-hosts-silicon-valley-future-wireless-summit-2026",
+    "title": "Samsung Hosts Silicon Valley Future Wireless Summit 2026",
+    "excerpt": "Samsung Electronics today announced that it is bringing together global telecommunications industry partners at the Samsung Research America campus in Mountain View, California for the Silicon Valley Future Wireless Summit 2026 on Oct. 15 (local time), following Partner Day held at the same venue th",
+    "publishedAt": "2026-10-15T06:00:00.000Z",
+    "sourceId": "samsung-newsroom",
+    "sourceName": "Samsung Newsroom",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://news.samsung.com/global/feed",
+    "fetchedAt": "2026-10-15T09:08:04.550Z"
+  },
+  "evidence": {
+    "status": "SKIPPED_HOST_BLOCKED",
+    "chars": 0,
+    "grade": "FAIL",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Samsung Electronics today announced that it is bringing together global telecommunications industry partners at the Samsung Research America campus in Mountain View, California for the Silicon Valley Future Wireless Summit 2026 on Oct. 15 (local time), following Partner Day held at the same venue th",
+        "sourceUrl": "https://news.samsung.com/global/samsung-hosts-silicon-valley-future-wireless-summit-2026",
+        "source": "Samsung Newsroom",
+        "publishedAt": "2026-10-15T06:00:00.000Z",
+        "checkedAt": "2026-10-15T09:10:17.327Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 2,
+    "practicalImpact": 0,
+    "koreanRelevance": 3,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 2,
+    "signals": [
+      "KOREA"
+    ],
+    "strongSignal": true,
+    "contentType": "EVENT",
+    "typePenalty": -4,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "근거 부족 (원문 SKIPPED_HOST_BLOCKED, 확인 사실 0개) — 발행하지 않음"
+  ],
+  "needsReview": [
+    "source_blocked",
+    "insufficient_evidence"
+  ],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

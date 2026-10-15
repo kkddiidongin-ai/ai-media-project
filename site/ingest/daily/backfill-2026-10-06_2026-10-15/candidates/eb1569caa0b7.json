@@ -1,0 +1,232 @@
+{
+  "id": "eb1569caa0b7",
+  "date": "2026-10-15",
+  "proposedSlug": "expanding-cyber-verification-program",
+  "title": null,
+  "sourceTitle": "Expanding the Cyber Verification Program",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": true,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": true
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact"
+    ]
+  },
+  "company": "Anthropic",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://www.anthropic.com/news/cyber-verification-program",
+      "name": "Anthropic",
+      "type": "official",
+      "publishedAt": "2026-10-06T19:00:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "eb1569caa0b7",
+    "url": "https://www.anthropic.com/news/cyber-verification-program",
+    "canonicalUrl": "https://anthropic.com/news/cyber-verification-program",
+    "title": "Expanding the Cyber Verification Program",
+    "excerpt": "We’re launching a new, expanded version of our Cyber Verification Program (CVP), which makes advanced cyber capabilities and reduced blocking classifiers available to qualifying security professionals.",
+    "publishedAt": "2026-10-06T19:00:00.000Z",
+    "sourceId": "anthropic",
+    "sourceName": "Anthropic",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "sitemap-meta",
+    "discoveredVia": "https://www.anthropic.com/sitemap.xml",
+    "fetchedAt": "2026-10-15T09:08:04.550Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 8450,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "We’re launching a new, expanded version of our Cyber Verification Program (CVP), which makes advanced cyber capabilities and reduced blocking classifiers available to qualifying security professionals.",
+        "sourceUrl": "https://www.anthropic.com/news/cyber-verification-program",
+        "source": "Anthropic",
+        "publishedAt": "2026-10-06T19:00:00.000Z",
+        "checkedAt": "2026-10-13T06:32:13.417Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "• • • • • • • • Expanding the Cyber Verification Program \\ Anthropic • • • • • •",
+        "sourceUrl": "https://www.anthropic.com/news/cyber-verification-program",
+        "source": "Anthropic",
+        "publishedAt": "2026-10-06T19:00:00.000Z",
+        "checkedAt": "2026-10-13T06:32:13.417Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Expanding the Cyber Verification Program",
+        "sourceUrl": "https://www.anthropic.com/news/cyber-verification-program",
+        "source": "Anthropic",
+        "publishedAt": "2026-10-06T19:00:00.000Z",
+        "checkedAt": "2026-10-13T06:32:13.417Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "We’re launching a new, expanded version of our Cyber Verification Program (CVP), which makes advanced cyber capabilities and reduced blocking classifiers available to qualifying security professionals.",
+        "sourceUrl": "https://www.anthropic.com/news/cyber-verification-program",
+        "source": "Anthropic",
+        "publishedAt": "2026-10-06T19:00:00.000Z",
+        "checkedAt": "2026-10-13T06:32:13.417Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "For this reason, our generally available models, such as Claude Opus 5.5 , Claude Fable 5.1 , and Claude Sonnet 5.5 , have conservative cyber safeguards that block most cyber work.",
+        "sourceUrl": "https://www.anthropic.com/news/cyber-verification-program",
+        "source": "Anthropic",
+        "publishedAt": "2026-10-06T19:00:00.000Z",
+        "checkedAt": "2026-10-13T06:32:13.417Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Until EFS is available, organizations with access to Claude Fable 5.1 or Claude Mythos 5.1 with zero data retention can also use CVP with zero data retention.",
+        "sourceUrl": "https://www.anthropic.com/news/cyber-verification-program",
+        "source": "Anthropic",
+        "publishedAt": "2026-10-06T19:00:00.000Z",
+        "checkedAt": "2026-10-13T06:32:13.417Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Overview of the Cyber Verification Program tiers.",
+        "sourceUrl": "https://www.anthropic.com/news/cyber-verification-program",
+        "source": "Anthropic",
+        "publishedAt": "2026-10-06T19:00:00.000Z",
+        "checkedAt": "2026-10-13T06:32:13.417Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "To assess the efficacy of our CVP protections, we ran Claude Opus 5.5 through CyScenarioBench—an evaluation that measures whether models can plan and execute multi-stage cyber operations under realistic constraints—with safeguards tuned for our different CVP tiers.",
+        "sourceUrl": "https://www.anthropic.com/news/cyber-verification-program",
+        "source": "Anthropic",
+        "publishedAt": "2026-10-06T19:00:00.000Z",
+        "checkedAt": "2026-10-13T06:32:13.417Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "These evaluations give us confidence that we can make advanced cyber capabilities safely available to a broader set of defenders, expanding the defensive efforts we began with Project Glasswing.",
+        "sourceUrl": "https://www.anthropic.com/news/cyber-verification-program",
+        "source": "Anthropic",
+        "publishedAt": "2026-10-06T19:00:00.000Z",
+        "checkedAt": "2026-10-13T06:32:13.417Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Through the program, our partners uncovered at least 129,000 verified software vulnerabilities between April and July 2026.",
+        "sourceUrl": "https://www.anthropic.com/news/cyber-verification-program",
+        "source": "Anthropic",
+        "publishedAt": "2026-10-06T19:00:00.000Z",
+        "checkedAt": "2026-10-13T06:32:13.417Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "These results represent a lower bound on the program’s impact on third-party code, as they’re based on partial data from 33 partner reports and Anthropic’s open-source partnerships.",
+        "sourceUrl": "https://www.anthropic.com/news/cyber-verification-program",
+        "source": "Anthropic",
+        "publishedAt": "2026-10-06T19:00:00.000Z",
+        "checkedAt": "2026-10-13T06:32:13.417Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "The changes we’re making to our Cyber Verification Program today are intended to extend the impact of Project Glasswing to a much larger number of cyber defenders.",
+        "sourceUrl": "https://www.anthropic.com/news/cyber-verification-program",
+        "source": "Anthropic",
+        "publishedAt": "2026-10-06T19:00:00.000Z",
+        "checkedAt": "2026-10-13T06:32:13.417Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Existing CVP members will keep their current settings for previous models and will be automatically evaluated for access to Claude Opus 5.5, Claude Sonnet 5.5, and Claude Mythos 5.1 through the updated program.",
+        "sourceUrl": "https://www.anthropic.com/news/cyber-verification-program",
+        "source": "Anthropic",
+        "publishedAt": "2026-10-06T19:00:00.000Z",
+        "checkedAt": "2026-10-13T06:32:13.417Z"
+      }
+    ],
+    "pageDate": "2026-10-06T19:00:00.000Z"
+  },
+  "score": {
+    "importance": 3,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PRODUCT_LAUNCH",
+      "SECURITY",
+      "SECURITY_MENTION"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 9,
+    "total": 9
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 PRODUCT_LAUNCH·SECURITY·SECURITY_MENTION (우선순위 9)",
+    "근거 확인 통과 (확인 사실 11개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "none",
+    "model": null,
+    "status": "skipped",
+    "error": "Shadow Mode — 원고를 만들지 않음",
+    "promptVersion": "draft-v1",
+    "at": "2026-10-15T09:10:24.640Z",
+    "evidenceHash": "7e88215f5429"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": true,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

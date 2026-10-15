@@ -1,0 +1,213 @@
+{
+  "id": "2435ebd74585",
+  "date": "2026-10-15",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 9,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Google",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
+      "name": "Google DeepMind",
+      "type": "official",
+      "publishedAt": "2026-10-06T19:57:04.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "2435ebd74585",
+    "url": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
+    "canonicalUrl": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model",
+    "title": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
+    "excerpt": "",
+    "publishedAt": "2026-10-06T19:57:04.000Z",
+    "sourceId": "google-deepmind",
+    "sourceName": "Google DeepMind",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://deepmind.google/blog/rss.xml",
+    "fetchedAt": "2026-10-15T09:05:21.566Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 8760,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "EmbeddingGemma 2 is a best-in-class open model for natively multimodal embeddings",
+        "sourceUrl": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-10-06T19:57:04.000Z",
+        "checkedAt": "2026-10-15T09:07:35.810Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "\"page_name\": \"EmbeddingGemma 2 is a best\\u002Din\\u002Dclass open model for natively multimodal embeddings\",",
+        "sourceUrl": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-10-06T19:57:04.000Z",
+        "checkedAt": "2026-10-15T09:07:35.810Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "\"article_name\": \"EmbeddingGemma 2: an open, lightweight multimodal embedding model\",",
+        "sourceUrl": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-10-06T19:57:04.000Z",
+        "checkedAt": "2026-10-15T09:07:35.810Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "\"section_header\": \"EmbeddingGemma 2: an open, lightweight multimodal embedding model\"",
+        "sourceUrl": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-10-06T19:57:04.000Z",
+        "checkedAt": "2026-10-15T09:07:35.810Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
+        "sourceUrl": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-10-06T19:57:04.000Z",
+        "checkedAt": "2026-10-15T09:07:35.810Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "EmbeddingGemma 2 is the most capable model for on-device multimodal embeddings, natively mapping combinations of text, images, audio, and video into a unified embedding space.",
+        "sourceUrl": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-10-06T19:57:04.000Z",
+        "checkedAt": "2026-10-15T09:07:35.810Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Today, we’re launching EmbeddingGemma 2 , expanding beyond text to unify code, images, video, and audio in a shared embedding space.",
+        "sourceUrl": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-10-06T19:57:04.000Z",
+        "checkedAt": "2026-10-15T09:07:35.810Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Built from the same technology as Gemini Embedding models, EmbeddingGemma 2 is:",
+        "sourceUrl": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-10-06T19:57:04.000Z",
+        "checkedAt": "2026-10-15T09:07:35.810Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Best-in-class for its size: Achieves leading scores among sub-1B multimodal embedders for its size across benchmarks like MTEB (Massive Text Embedding Benchmark) Code and MAEB (Massive Audio Embedding Benchmark), while matching or outperforming many larger models across text, …",
+        "sourceUrl": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-10-06T19:57:04.000Z",
+        "checkedAt": "2026-10-15T09:07:35.810Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "With quantization, on a Google Pixel 11 Pro, EmbeddingGemma 2 requires as little as ~191MB active RAM for text-only weights and ~567MB for the full multimodal model.",
+        "sourceUrl": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-10-06T19:57:04.000Z",
+        "checkedAt": "2026-10-15T09:07:35.810Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "EmbeddingGemma 2 matches the strong multilingual text performance of EmbeddingGemma while delivering a significant 9.92-point improvement on code performance (in MTEB Code, from 68.76 to 78.68), making it well-suited for local codebase indexing, semantic code search, and codin…",
+        "sourceUrl": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-10-06T19:57:04.000Z",
+        "checkedAt": "2026-10-15T09:07:35.810Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Find full evaluation metrics and model information in the EmbeddingGemma 2 model card .",
+        "sourceUrl": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-10-06T19:57:04.000Z",
+        "checkedAt": "2026-10-15T09:07:35.810Z"
+      }
+    ],
+    "pageDate": "2026-10-06T00:00:00.000Z"
+  },
+  "score": {
+    "importance": 2,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 2,
+    "signals": [
+      "MODEL",
+      "MODEL_MENTION"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 6,
+    "total": 6
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 MODEL·MODEL_MENTION (우선순위 6)",
+    "최종 발행 추천 상한(12) 초과 — 편집자 판단"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": "final",
+  "approval": {
+    "status": "pending"
+  }
+}

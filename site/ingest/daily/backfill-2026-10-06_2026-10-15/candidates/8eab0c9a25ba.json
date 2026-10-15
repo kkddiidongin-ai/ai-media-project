@@ -1,0 +1,221 @@
+{
+  "id": "8eab0c9a25ba",
+  "date": "2026-10-15",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Copilot code review: New organization billing options and controls",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": true,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": false,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "contextNeed",
+      "evidenceQuality",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "GitHub",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://github.blog/changelog/2026-10-08-copilot-code-review-new-organization-billing-options-and-controls",
+      "name": "GitHub Changelog",
+      "type": "official",
+      "publishedAt": "2026-10-08T19:43:05.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "8eab0c9a25ba",
+    "url": "https://github.blog/changelog/2026-10-08-copilot-code-review-new-organization-billing-options-and-controls",
+    "canonicalUrl": "https://github.blog/changelog/2026-10-08-copilot-code-review-new-organization-billing-options-and-controls",
+    "title": "Copilot code review: New organization billing options and controls",
+    "excerpt": "This release adds new billing and license controls for Copilot code review admins: Billing: Organization owners can bill Copilot code reviews from members with a Copilot license to the organization’s… The post Copilot code review: New organization billing options and controls appeared first on The G",
+    "publishedAt": "2026-10-08T19:43:05.000Z",
+    "sourceId": "github-changelog",
+    "sourceName": "GitHub Changelog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://github.blog/changelog/feed/?paged=2",
+    "fetchedAt": "2026-10-15T09:08:04.550Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 2237,
+    "grade": "LIMITED",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "This release adds new billing and license controls for Copilot code review admins: Billing: Organization owners can bill Copilot code reviews from members with a Copilot license to the organization’s… The post Copilot code review: New organization billing options and controls appeared first on The G",
+        "sourceUrl": "https://github.blog/changelog/2026-10-08-copilot-code-review-new-organization-billing-options-and-controls",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-08T19:43:05.000Z",
+        "checkedAt": "2026-10-13T06:32:18.858Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Copilot code review: New organization billing options and controls - GitHub Changelog",
+        "sourceUrl": "https://github.blog/changelog/2026-10-08-copilot-code-review-new-organization-billing-options-and-controls",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-08T19:43:05.000Z",
+        "checkedAt": "2026-10-13T06:32:18.858Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "This release adds new billing and license controls for Copilot code review admins:",
+        "sourceUrl": "https://github.blog/changelog/2026-10-08-copilot-code-review-new-organization-billing-options-and-controls",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-08T19:43:05.000Z",
+        "checkedAt": "2026-10-13T06:32:18.858Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Billing: Organization owners can bill Copilot code reviews from members with a Copilot license to the organization&rsquo;s cost center instead of using up those members&rsquo; Copilot quotas.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-08-copilot-code-review-new-organization-billing-options-and-controls",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-08T19:43:05.000Z",
+        "checkedAt": "2026-10-13T06:32:18.858Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Review request controls: Organization owners and repository admins can control whether people with external licenses can request a review.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-08-copilot-code-review-new-organization-billing-options-and-controls",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-08T19:43:05.000Z",
+        "checkedAt": "2026-10-13T06:32:18.858Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "By default, Copilot code review bills requests associated with members who have a Copilot license to that member&rsquo;s own Copilot entitlement.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-08-copilot-code-review-new-organization-billing-options-and-controls",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-08T19:43:05.000Z",
+        "checkedAt": "2026-10-13T06:32:18.858Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Organization owners can now choose to bill the organization that owns the repository instead in order to avoid consuming or exhausting member quotas.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-08-copilot-code-review-new-organization-billing-options-and-controls",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-08T19:43:05.000Z",
+        "checkedAt": "2026-10-13T06:32:18.858Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "The Choose how members with a Copilot license are billed setting has two options:",
+        "sourceUrl": "https://github.blog/changelog/2026-10-08-copilot-code-review-new-organization-billing-options-and-controls",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-08T19:43:05.000Z",
+        "checkedAt": "2026-10-13T06:32:18.858Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "By default, anyone with a paid Copilot license can use it to request a review from Copilot in the repositories they have access to.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-08-copilot-code-review-new-organization-billing-options-and-controls",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-08T19:43:05.000Z",
+        "checkedAt": "2026-10-13T06:32:18.858Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Organization owners and repository admins can now, if desired, turn on the Only allow Copilot code review to be triggered by authorized users setting to require that review requests come from people with a Copilot license provided by your organization or enterprise.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-08-copilot-code-review-new-organization-billing-options-and-controls",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-08T19:43:05.000Z",
+        "checkedAt": "2026-10-13T06:32:18.858Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "When it&rsquo;s on, people can&rsquo;t use a Copilot license from outside your organization or enterprise (e.g., a personal license) to request a review.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-08-copilot-code-review-new-organization-billing-options-and-controls",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-08T19:43:05.000Z",
+        "checkedAt": "2026-10-13T06:32:18.858Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "GitHub Copilot weekly releases — October 5",
+        "sourceUrl": "https://github.blog/changelog/2026-10-08-copilot-code-review-new-organization-billing-options-and-controls",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-08T19:43:05.000Z",
+        "checkedAt": "2026-10-13T06:32:18.858Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Copilot code review: API support and new default effort level",
+        "sourceUrl": "https://github.blog/changelog/2026-10-08-copilot-code-review-new-organization-billing-options-and-controls",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-08T19:43:05.000Z",
+        "checkedAt": "2026-10-13T06:32:18.858Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 2,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PRICING"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 7,
+    "total": 7
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 PRICING (우선순위 7)",
+    "같은 회사(GitHub) 추천이 이미 2건 — 다양성 규칙으로 뒤로 (편집자 판단)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": "diversity",
+  "approval": {
+    "status": "pending"
+  }
+}
