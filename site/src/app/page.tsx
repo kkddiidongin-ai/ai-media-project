@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { SubscribeCta } from "@/components/newsletter/SubscribeCta";
+import { SubscriberCountCard } from "@/components/newsletter/SubscriberCountCard";
+import { subscriberCountForDisplay } from "@/config/subscribers";
 import { ChartVisual } from "@/components/news/ChartView";
 import { CategoryTag, StoryRow } from "@/components/news/Story";
 import { DarkCard, PaperCard, SectionLabel, WideLink, Wrap } from "@/components/ui";
@@ -105,7 +107,15 @@ export default function HomePage() {
             <div aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 h-[120px] bg-gradient-to-b from-paper/0 to-paper" />
           </PaperCard>
           <WideLink href={issueHref(latest.date)}>전체 보기 ↓</WideLink>
-          <SubscribeCta className="mt-6" />
+          {/* 구독 영역: 구독자 수 카드는 표시할 수 있을 때만(확인된 값 · 개발 미리보기) 옆에 둔다. 모바일은 아래로 */}
+          {subscriberCountForDisplay() !== null ? (
+            <div className="mt-6 grid gap-3 sm:grid-cols-[minmax(0,1fr)_220px] sm:items-stretch">
+              <SubscribeCta />
+              <SubscriberCountCard />
+            </div>
+          ) : (
+            <SubscribeCta className="mt-6" />
+          )}
         </Wrap>
       ) : null}
 
