@@ -1,0 +1,231 @@
+{
+  "id": "2cd92b812c13",
+  "date": "2026-10-16",
+  "proposedSlug": "open-data-center-desktop-nvidia-expands-nemotron",
+  "title": null,
+  "sourceTitle": "Open From Data Center to Desktop: NVIDIA Expands Nemotron Family With Highest Efficiency Super VL and Bolt Models",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": true,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": true
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact"
+    ]
+  },
+  "company": "NVIDIA",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
+      "name": "NVIDIA Blog",
+      "type": "official",
+      "publishedAt": "2026-10-15T15:00:24.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "2cd92b812c13",
+    "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
+    "canonicalUrl": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl",
+    "title": "Open From Data Center to Desktop: NVIDIA Expands Nemotron Family With Highest Efficiency Super VL and Bolt Models",
+    "excerpt": "NVIDIA today released Nemotron 3.5 Super VL, an open 120-billion-parameter model that delivers the fastest task completion and highest accuracy for specialized always-on agents. Joining it are two new edge models: Nemotron 3.5 Bolt 74B-A9B 24GB, optimized to balance intelligence and speed per GB for",
+    "publishedAt": "2026-10-15T15:00:24.000Z",
+    "sourceId": "nvidia",
+    "sourceName": "NVIDIA Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://blogs.nvidia.com/feed/",
+    "fetchedAt": "2026-10-15T23:42:14.991Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 7496,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "NVIDIA today released Nemotron 3.5 Super VL, an open 120-billion-parameter model that delivers the fastest task completion and highest accuracy for specialized always-on agents. Joining it are two new edge models: Nemotron 3.5 Bolt 74B-A9B 24GB, optimized to balance intelligence and speed per GB for",
+        "sourceUrl": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-15T15:00:24.000Z",
+        "checkedAt": "2026-10-15T23:43:38.304Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Open From Data Center to Desktop: NVIDIA Expands Nemotron Family With Highest Efficiency Super VL and Bolt Models | NVIDIA Blog",
+        "sourceUrl": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-15T15:00:24.000Z",
+        "checkedAt": "2026-10-15T23:43:38.304Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "NVIDIA today released Nemotron 3.5 Super VL, an open 120-billion-parameter model that delivers the fastest task completion and highest accuracy for specialized always-on agents.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-15T15:00:24.000Z",
+        "checkedAt": "2026-10-15T23:43:38.304Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Joining it are two new edge models: Nemotron 3.5 Bolt 74B-A9B 24GB, optimized to balance intelligence and speed per GB for local agentic workloads, and Nemotron 3.5 Bolt E4B 4GB, optimized for intelligence per GB for fast conversational agents.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-15T15:00:24.000Z",
+        "checkedAt": "2026-10-15T23:43:38.304Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Super VL and Bolt 74B-A9B are available now, with Bolt E4B coming Oct.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-15T15:00:24.000Z",
+        "checkedAt": "2026-10-15T23:43:38.304Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Super VL and Bolt join the Nemotron family alongside Lightning and Ultra.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-15T15:00:24.000Z",
+        "checkedAt": "2026-10-15T23:43:38.304Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Nemotron 3.5 Super VL: Frontier Accuracy at One-Fifth the Size",
+        "sourceUrl": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-15T15:00:24.000Z",
+        "checkedAt": "2026-10-15T23:43:38.304Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Nemotron 3.5 Super VL delivers frontier-level intelligence in its class for high-volume agentic workflows.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-15T15:00:24.000Z",
+        "checkedAt": "2026-10-15T23:43:38.304Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Nemotron 3.5 Super VL, on Artificial Analysis Intelligence Index leadboard, achieves up to 5x faster throughput compared to other models in its class.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-15T15:00:24.000Z",
+        "checkedAt": "2026-10-15T23:43:38.304Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Additional organizations customizing Nemotron 3.5 Super VL include Ramp for financial document intelligence; Dream , sovereign AI-powered cybersecurity research and vulnerability analysis; Lila Sciences for scientific discovery and search, and R1 for medical claims analysis an…",
+        "sourceUrl": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-15T15:00:24.000Z",
+        "checkedAt": "2026-10-15T23:43:38.304Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Nemotron 3.5 Super VL is available now on Hugging Face, Open Router, ModelScope community and as NVIDIA NIM.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-15T15:00:24.000Z",
+        "checkedAt": "2026-10-15T23:43:38.304Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Nemotron 3.5 Super VL runs across NVIDIA’s full hardware stack: on DGX Spark , DGX Station , RTX PRO and RTX systems for local intelligence at the desktop, on NVIDIA Jetson at the edge, and across data center and cloud environments.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-15T15:00:24.000Z",
+        "checkedAt": "2026-10-15T23:43:38.304Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Open From Data Center to Desktop: NVIDIA Expands Nemotron Family With Highest Efficiency Super VL and Bolt Models",
+        "sourceUrl": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-15T15:00:24.000Z",
+        "checkedAt": "2026-10-15T23:43:38.304Z"
+      }
+    ],
+    "pageDate": "2026-10-15T15:00:24.000Z"
+  },
+  "score": {
+    "importance": 3,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "MODEL",
+      "INFRA"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 8,
+    "total": 8
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 MODEL·INFRA (우선순위 8)",
+    "근거 확인 통과 (확인 사실 11개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "none",
+    "model": null,
+    "status": "skipped",
+    "error": "Shadow Mode — 원고를 만들지 않음",
+    "promptVersion": "draft-v1",
+    "at": "2026-10-15T23:43:40.831Z",
+    "evidenceHash": "d337721a5c1d"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": true,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}
