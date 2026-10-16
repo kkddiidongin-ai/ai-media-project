@@ -1,0 +1,129 @@
+# AI마중 기사 발행 (Phase 7.2) — 승인된 원고만 사이트에 반영하고, 켜져 있을 때만 Production에 배포한다
+#
+# 실행: Actions → 'AI마중 기사 발행' → Run workflow (사람이 실행 = 발행 승인). master에서만 돈다.
+#   또는 DAILY workflow가 AUTO_PUBLISH_ENABLED=true일 때 mode=auto로 부른다 (기본 꺼짐).
+# job은 'production-publish' Environment를 쓴다 — Required reviewers를 걸면 자동 실행도 사람이 한 번 더 승인해야 시작된다.
+#
+# 순서: 원고 가져오기(drafts_ref:drafts_path) → daily:check-drafts → pipeline:publish(apply → publish:daily) →
+#       master에 content 커밋·push → (deploy=true이고 VERCEL_DEPLOY_ENABLED=true일 때만) Vercel Production 배포 → 운영 URL 확인
+# 배포가 실패해도 기사 기록(ingest/publications.json)은 'deploy failed'로 남고, 운영 사이트는 이전 상태 그대로다.
+# 필요 (배포할 때만): Environment secrets VERCEL_TOKEN · VERCEL_ORG_ID · VERCEL_PROJECT_ID, Variable VERCEL_DEPLOY_ENABLED=true
+
+name: AI마중 기사 발행
+
+on:
+  workflow_dispatch:
+    inputs:
+      drafts_ref:
+        description: "원고가 있는 브랜치 (예: automation/daily-backfill-2026-10-06_2026-10-10)"
+        required: true
+        type: string
+      drafts_path:
+        description: "원고 파일 경로 (예: site/ingest/daily/backfill-2026-10-06_2026-10-15/drafts/editorial-drafts.json)"
+        required: true
+        type: string
+      only:
+        description: "일부만 발행할 slug (쉼표로, 비우면 PUBLISHABLE 전부)"
+        required: false
+        type: string
+      mode:
+        description: "manual(사람이 실행) · auto(DAILY 자동 발행)"
+        required: false
+        type: choice
+        default: manual
+        options:
+          - manual
+          - auto
+      deploy:
+        description: "Production 배포까지 (VERCEL_DEPLOY_ENABLED=true일 때만 실제로 배포)"
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: aimajung-publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    if: ${{ github.ref_name == github.event.repository.default_branch }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    environment: production-publish
+    defaults:
+      run:
+        working-directory: site
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+
+      - name: Install
+        run: npm ci --no-audit --no-fund
+
+      - name: Fetch drafts
+        env:
+          REF: ${{ inputs.drafts_ref }}
+          P: ${{ inputs.drafts_path }}
+        run: |
+          case "$REF" in automation/*) ;; *) echo "drafts_ref는 automation/* 브랜치만"; exit 1;; esac
+          case "$P" in site/ingest/daily/*/drafts/editorial-drafts.json) ;; *) echo "drafts_path 형식 오류"; exit 1;; esac
+          git fetch origin "$REF"
+          git -C "$GITHUB_WORKSPACE" show "FETCH_HEAD:$P" > "$RUNNER_TEMP/editorial-drafts.json"
+
+      - name: Check drafts
+        run: npm run daily:check-drafts -- "$RUNNER_TEMP/editorial-drafts.json"
+
+      # 승인자 = 이 workflow를 실행한 사람 (auto이면 DAILY workflow를 켠 운영 설정)
+      - name: Publish (content)
+        id: pub
+        env:
+          ONLY: ${{ inputs.only }}
+          MODE: ${{ inputs.mode }}
+          AUTO_PUBLISH_ENABLED: ${{ vars.AUTO_PUBLISH_ENABLED }}
+        run: |
+          ARGS=(--drafts "$RUNNER_TEMP/editorial-drafts.json" --approved-by "${{ github.actor }}" --mode "$MODE")
+          [ -n "$ONLY" ] && ARGS+=(--only "$ONLY")
+          node scripts/pipeline/publish.mjs publish "${ARGS[@]}"
+
+      - name: Commit content to master
+        if: steps.pub.outputs.published != '' && steps.pub.outputs.published != '0'
+        run: |
+          set -euo pipefail
+          git config user.name "aimajung-publish[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add ingest/candidates ingest/editorial content ingest/publications.json
+          git commit -m "content: $(TZ=Asia/Seoul date +%F) 기사 ${{ steps.pub.outputs.published }}건 (${{ inputs.mode }} · 승인 ${{ github.actor }})"
+          git push origin "HEAD:${{ github.event.repository.default_branch }}"
+
+      - name: Deploy to Vercel Production (opt-in)
+        id: deploy
+        if: inputs.deploy && vars.VERCEL_DEPLOY_ENABLED == 'true'
+        env:
+          VERCEL_DEPLOY_ENABLED: ${{ vars.VERCEL_DEPLOY_ENABLED }}
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+        run: node scripts/pipeline/publish.mjs deploy
+
+      - name: Verify live URLs
+        if: always() && steps.deploy.outcome == 'success'
+        run: node scripts/pipeline/publish.mjs verify
+
+      - name: Record deploy/live status
+        if: always() && steps.deploy.outcome != 'skipped'
+        continue-on-error: true
+        run: |
+          git add ingest/publications.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "chore(publish): 배포·운영 확인 기록"
+          git pull --rebase origin "${{ github.event.repository.default_branch }}" && git push origin "HEAD:${{ github.event.repository.default_branch }}"

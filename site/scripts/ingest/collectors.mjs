@@ -86,11 +86,24 @@ async function metaFor(uniq, src, stats, opts) {
   const maxMeta = opts.maxMeta ?? 600;
   const known = opts.known ?? loadAllCandidates();
   const out = [];
-  for (const e of uniq.slice(0, maxMeta)) {
+  // 지난 실행에서 배치를 넘겨 남겨 둔 주소부터 (Phase 7.2: 상한 때문에 버리지 않고 이월)
+  const carried = (opts.pending ?? []).filter((e) => e?.loc);
+  const seen = new Set();
+  const todo = [];
+  for (const e of [...carried, ...uniq]) {
+    const k = canonicalUrl(e.loc);
+    if (seen.has(k)) continue;
+    seen.add(k);
     if (known.has(candidateId(e.loc))) {
       stats.skippedKnown++;
       continue; // 이미 후보에 있는 페이지는 다시 열지 않는다
     }
+    todo.push(e);
+  }
+  // 배치 크기만큼만 열고, 나머지는 다음 실행으로 넘긴다 (요청 수 제한 — 건수 제한이 아님)
+  stats.pendingMeta = todo.slice(maxMeta).map((e) => ({ loc: e.loc, lastmod: e.lastmod ?? "" }));
+  stats.carriedMeta = carried.length;
+  for (const e of todo.slice(0, maxMeta)) {
     try {
       const html = await fetchText(e.loc, "text/html");
       stats.requests++;
@@ -103,7 +116,6 @@ async function metaFor(uniq, src, stats, opts) {
       stats.errors.push(err.message);
     }
   }
-  if (uniq.length > maxMeta) stats.errors.push(`meta cap ${maxMeta} reached (${uniq.length} urls)`);
   return out;
 }
 

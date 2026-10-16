@@ -78,10 +78,24 @@ const SIGNALS = [
 // 파트너십·투자가 실제 사업·제품 효과를 갖는지 (기업 고객·통합·모델 공급 등)
 const MATERIAL_RE = /\b(enterprise|integrat\w*|customers|frontier models?|bring\w* .* to|deploy\w* .* across|available (in|to)|work(flows)?|platform)\b/i;
 
+// 한국어 제목·요약용 사건 신호 (Phase 7.2: 국내 언론·기업 블로그). 영어 신호와 같은 갈래로 센다
+const KO_SIGNALS = [
+  ["PRODUCT_LAUNCH", 2, /(출시|공개|선보|론칭|정식 서비스|베타 서비스|도입한다|도입했)/],
+  ["AVAILABILITY", 2, /(국내 (출시|서비스|제공)|한국어 (지원|서비스)|전면 (도입|적용))/],
+  ["PRICING", 3, /(가격|요금|무료 (제공|전환)|유료화|구독료)/],
+  ["PARTNERSHIP", 2, /(협력|협약|MOU|파트너십|제휴|맞손)/],
+  ["ACQ_INVEST", 3, /(투자 유치|인수|합병|시리즈 [A-F]|억 원 투자|조 원 투자|상장)/],
+  ["REGULATION", 3, /(규제|법안|기본법|가이드라인|정부|과기정통부|과학기술정보통신부|방통위|개인정보위)/],
+  ["SECURITY", 2, /(해킹|유출|취약점|보안 사고|딥페이크)/],
+  ["INFRA", 2, /(반도체|GPU|HBM|데이터센터|NPU|슈퍼컴퓨터)/],
+  ["MODEL_MENTION", 1, /(LLM|언어모델|파운데이션 모델|생성형 AI|AI 모델)/],
+];
+
 export function eventSignals(item) {
   const text = `${item.title ?? ""} ${item.excerpt ?? ""}`;
   const families = [];
   for (const [family, weight, re, strong] of SIGNALS) if (re.test(text)) families.push({ family, weight, strong });
+  for (const [family, weight, re] of KO_SIGNALS) if (!families.some((f) => f.family === family) && re.test(text)) families.push({ family, weight, strong: false });
   const p = families.find((f) => f.family === "PARTNERSHIP");
   if (p && MATERIAL_RE.test(text)) p.weight += 1;
   return families;

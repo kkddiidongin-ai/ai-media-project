@@ -341,6 +341,123 @@
       "fetchMode": "none",
       "enabled": false,
       "note": "유료 구독 콘텐츠. 수집하지 않는다"
+    },
+    {
+      "id": "google-research",
+      "name": "Google Research Blog",
+      "officialUrl": "https://research.google/blog/",
+      "feedUrl": "https://research.google/blog/rss/",
+      "sourceType": "official",
+      "tier": 1,
+      "fetchMode": "rss",
+      "enabled": true,
+      "note": "2026-10-16 확인: robots.txt(일반·AI 크롤러) 허용, 피드 응답 200 · 항목 100개(약 1년)"
+    },
+    {
+      "id": "microsoft-research",
+      "name": "Microsoft Research Blog",
+      "officialUrl": "https://www.microsoft.com/en-us/research/blog/",
+      "feedUrl": "https://www.microsoft.com/en-us/research/feed/",
+      "sourceType": "official",
+      "tier": 1,
+      "fetchMode": "rss",
+      "relevance": "ai",
+      "enabled": true,
+      "note": "2026-10-16 확인: robots.txt(일반·AI 크롤러) 허용, 피드 응답 200 · 항목 10개뿐 — 수집 범위 경고가 나올 수 있음"
+    },
+    {
+      "id": "aws-news",
+      "name": "AWS News Blog",
+      "officialUrl": "https://aws.amazon.com/blogs/aws/",
+      "feedUrl": "https://aws.amazon.com/blogs/aws/feed/",
+      "sourceType": "official",
+      "tier": 1,
+      "fetchMode": "rss",
+      "relevance": "ai",
+      "enabled": true,
+      "note": "2026-10-16 확인: robots.txt(일반·AI 크롤러) 허용, 피드 응답 200"
+    },
+    {
+      "id": "nvidia-developer",
+      "name": "NVIDIA Technical Blog",
+      "officialUrl": "https://developer.nvidia.com/blog/",
+      "feedUrl": "https://developer.nvidia.com/blog/feed",
+      "sourceType": "official",
+      "tier": 1,
+      "fetchMode": "rss",
+      "relevance": "ai",
+      "enabled": true,
+      "note": "2026-10-16 확인: robots.txt(일반·AI 크롤러) 허용, 피드 응답 200"
+    },
+    {
+      "id": "naver-d2",
+      "name": "NAVER D2",
+      "officialUrl": "https://d2.naver.com/",
+      "feedUrl": "https://d2.naver.com/d2.atom",
+      "sourceType": "official",
+      "tier": 2,
+      "fetchMode": "rss",
+      "relevance": "ai",
+      "enabled": true,
+      "note": "2026-10-16 확인: robots.txt(일반·AI 크롤러) 허용, 피드 응답 200 · 국내 기업 기술 블로그"
+    },
+    {
+      "id": "kakao-tech",
+      "name": "Kakao Tech",
+      "officialUrl": "https://tech.kakao.com/",
+      "feedUrl": "https://tech.kakao.com/feed/",
+      "sourceType": "official",
+      "tier": 2,
+      "fetchMode": "rss",
+      "relevance": "ai",
+      "enabled": true,
+      "note": "2026-10-16 확인: robots.txt(일반·AI 크롤러) 허용, 피드 응답 200 (리다이렉트) · 국내 기업 기술 블로그"
+    },
+    {
+      "id": "aitimes",
+      "name": "AI타임스",
+      "officialUrl": "https://www.aitimes.com/",
+      "feedUrl": "https://www.aitimes.com/rss/allArticle.xml",
+      "sourceType": "press",
+      "tier": 2,
+      "fetchMode": "rss",
+      "enabled": true,
+      "note": "2026-10-16 확인: robots.txt(일반·AI 크롤러) 허용, 피드 응답 200 · 국내 AI 전문 언론 — 언론 보도(2차 출처)로만 기록, 공식 원문 확인 전 발행 추천 안 함. 피드 50개(약 2일)라 72시간 창을 다 덮지 못할 수 있음"
+    },
+    {
+      "id": "zdnet-korea",
+      "name": "지디넷코리아",
+      "officialUrl": "https://zdnet.co.kr/",
+      "feedUrl": "https://feeds.feedburner.com/zdkorea",
+      "sourceType": "press",
+      "tier": 2,
+      "fetchMode": "rss",
+      "relevance": "ai",
+      "enabled": true,
+      "note": "2026-10-16 확인: robots.txt(일반·AI 크롤러) 허용, 피드 응답 200 · 언론 보도(2차 출처). 피드 30개(당일분)라 수집 범위 경고가 나는 것이 정상"
+    },
+    {
+      "id": "etnews",
+      "name": "전자신문",
+      "officialUrl": "https://www.etnews.com/",
+      "feedUrl": "https://rss.etnews.com/Section901.xml",
+      "sourceType": "press",
+      "tier": 2,
+      "fetchMode": "rss",
+      "relevance": "ai",
+      "enabled": true,
+      "note": "2026-10-16 확인: robots.txt(일반·AI 크롤러) 허용, 피드 응답 200 · 언론 보도(2차 출처)"
+    },
+    {
+      "id": "arxiv-cs-ai",
+      "name": "arXiv cs.AI (신규 논문)",
+      "officialUrl": "https://arxiv.org/list/cs.AI/new",
+      "feedUrl": "https://rss.arxiv.org/rss/cs.AI",
+      "sourceType": "preprint",
+      "tier": 3,
+      "fetchMode": "rss",
+      "enabled": true,
+      "note": "2026-10-16 확인: robots.txt(일반·AI 크롤러) 허용, 피드 응답 200 · 하루 약 450건 — 동료 심사 전 논문(preprint). 사건 신호가 강한 것만 보류로 남고 대부분 제외된다"
     }
   ]
 }

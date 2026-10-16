@@ -103,7 +103,7 @@ function resetWeb() {
   WEB.set("https://fx-a.test/news/gizmo-ga", { body: bodyPage(["Gizmo Pro 3 is now generally available in 12 more regions.", "It was first released as a preview in September 2026."]) });
 }
 const ENV = (extra = {}) => ({ DAILY_AUTOMATION_ENABLED: "true", DAILY_MODE: "draft", DAILY_LLM_PROVIDER: "mock", ...extra });
-const baseRun = (extra = {}) => ({ date: DATE, out: path.join(tmp, `out-${Math.random().toString(36).slice(2)}`), registry: REGISTRY, existing: existing(), processedFile: path.join(tmp, `p-${Math.random().toString(36).slice(2)}.json`), historyFile: path.join(tmp, `h-${Math.random().toString(36).slice(2)}.json`), retryDelayMs: 1, log: quiet, ...extra });
+const baseRun = (extra = {}) => ({ date: DATE, out: path.join(tmp, `out-${Math.random().toString(36).slice(2)}`), registry: REGISTRY, existing: existing(), processedFile: path.join(tmp, `p-${Math.random().toString(36).slice(2)}.json`), historyFile: path.join(tmp, `h-${Math.random().toString(36).slice(2)}.json`), queueFile: path.join(tmp, `q-${Math.random().toString(36).slice(2)}.json`), retryDelayMs: 1, log: quiet, ...extra });
 
 // ---------- 1) 수집 ----------
 resetWeb();
@@ -274,9 +274,11 @@ await t("원고 생성: 5xx는 retries번까지만 다시 시도, 4xx는 다시 
 });
 await t("비용 상한: 환경변수로 HARD_CAPS를 넘길 수 없음", async () => {
   const l = lib.loadLimits({ DAILY_MAX_PUBLISH: "999", DAILY_MAX_LLM_CALLS: "500", DAILY_LLM_RETRIES: "9", DAILY_MAX_EVIDENCE_FETCHES: "999" });
-  eq([l.maxPublishPerDay, l.maxLlmCalls, l.llmRetries, l.maxEvidenceFetches], [12, 12, 2, 25]);
+  // Phase 7.2: 배치 크기의 안전 상한 (요청·비용 보호). 발행 추천 총량은 기본 0 = 상한 없음
+  eq([l.maxPublishPerDay, l.maxLlmCalls, l.llmRetries, l.maxEvidenceFetches], [999, 200, 2, 200]);
+  eq(lib.loadLimits({ DAILY_MAX_PUBLISH: "5000", DAILY_MAX_EVIDENCE_FETCHES: "5000" }).maxEvidenceFetches, 200, "근거 확인 배치 하드 상한");
   const d = lib.loadLimits({});
-  eq([d.maxPublishPerDay, d.maxEvidenceFetches, d.maxLlmCalls], [6, 12, 6], "기본값");
+  eq([d.maxPublishPerDay, d.maxEvidenceFetches, d.maxLlmCalls, d.windowDays], [0, 40, 6, 3], "기본값 (0 = 발행 추천 상한 없음, 72시간 재확인)");
   eq(lib.loadLimits({ DAILY_MAX_CANDIDATES: "2" }).maxPublishPerDay, 2, "7.1 이름 호환");
 });
 
@@ -517,23 +519,24 @@ await t("백테스트 평가: 발표 전 NOT_YET · 이미 사람 발행 DUP_OK/
 // ---------- 6-4) 2026-10-11 Hotfix 회귀 ----------
 await t("회귀 2026-10-11: GitHub이 없는 Variable을 빈 문자열로 넘겨도 상한은 기본값 (0이 되지 않음)", async () => {
   const l = lib.loadLimits({ DAILY_MAX_PUBLISH: "", DAILY_MAX_EVIDENCE_FETCHES: "", DAILY_MAX_LLM_CALLS: " " });
-  eq([l.maxPublishPerDay, l.maxEvidenceFetches, l.maxLlmCalls], [6, 12, 6]);
-  eq(lib.loadLimits({ DAILY_MAX_PUBLISH: "abc" }).maxPublishPerDay, 6, "숫자가 아닌 값");
+  eq([l.maxPublishPerDay, l.maxEvidenceFetches, l.maxLlmCalls], [0, 40, 6]);
+  eq(lib.loadLimits({ DAILY_MAX_PUBLISH: "abc" }).maxPublishPerDay, 0, "숫자가 아닌 값 → 기본(상한 없음)");
   eq(lib.loadLimits({ DAILY_MAX_EVIDENCE_FETCHES: "0" }).maxEvidenceFetches, 0, "명시한 0은 그대로");
   eq(lib.loadLimits({ DAILY_MAX_PUBLISH: "", DAILY_MAX_CANDIDATES: "2" }).maxPublishPerDay, 2, "빈 새 이름이면 예전 이름");
 });
 await t("회귀 2026-10-11: 워크플로와 같은 환경(빈 Variable·Shadow)에서도 근거 확인·검토용 추천이 실제로 이뤄짐", async () => {
   resetWeb();
   const r = await runDaily(baseRun({ env: ENV({ DAILY_MODE: "shadow", DAILY_LLM_PROVIDER: "none", DAILY_MAX_PUBLISH: "", DAILY_MAX_EVIDENCE_FETCHES: "" }), registry: { sources: [REGISTRY.sources[0]] } }));
-  eq([r.run.limits.maxPublishPerDay, r.run.limits.maxEvidenceFetches], [6, 12]);
+  eq([r.run.limits.maxPublishPerDay, r.run.limits.maxEvidenceFetches], [0, 40]);
   ok(r.run.counts.evidenceChecked >= 1 && r.run.counts.PUBLISH >= 1, JSON.stringify(r.run.counts));
   eq([r.status, r.run.limitWarnings, r.run.llm.calls], ["SUCCESS", undefined, 0]);
   ok(fs.readFileSync(path.join(r.outDir, "report.md"), "utf8").includes("편집자 검토용"), "검토용 추천 표시");
 });
-await t("상한을 0으로 두면 조용히 SUCCESS가 아니라 경고 + PARTIAL", async () => {
+await t("근거 확인 배치를 0으로 두면 조용히 SUCCESS가 아니라 경고 + 미완료(대기열)", async () => {
   resetWeb();
   const r = await runDaily(baseRun({ env: ENV({ DAILY_MODE: "shadow", DAILY_MAX_EVIDENCE_FETCHES: "0" }), registry: { sources: [REGISTRY.sources[0]] } }));
-  eq(r.status, "PARTIAL");
+  eq(r.status, "INCOMPLETE");
+  ok(r.run.pipeline.pending.evidence >= 1, "대기열에 남음");
   ok(r.run.limitWarnings?.[0]?.includes("maxEvidenceFetches"), JSON.stringify(r.run.limitWarnings));
   ok(fs.readFileSync(path.join(r.outDir, "report.md"), "utf8").includes("설정 경고"), "보고서 경고");
 });
@@ -948,24 +951,33 @@ await t("워크플로: master 직접 push 없음, automation/daily-* 브랜치·
   const wf = fs.readFileSync(path.join(REPO, ".github/workflows/daily-editorial.yml"), "utf8");
   ok(/if: \$\{\{ vars\.DAILY_AUTOMATION_ENABLED == 'true' \}\}/.test(wf), "킬 스위치 조건");
   // 정각을 피한 예약 (21:17 UTC = 06:17 KST). 정확한 시각을 보장한다고 주장하지 않음 — 따라잡기로 누락을 막는다
-  ok(/cron: "17 21 \* \* \*"/.test(wf), "21:17 UTC = 06:17 KST (정각 회피)");
+  // Phase 7.2: 07:07 KST 정기 + 19:07 KST 추가 실행 (정각 회피). 정확한 시각은 보장하지 않는다 — 따라잡기·대기열로 누락을 막는다
+  ok(/cron: "7 22 \* \* \*"/.test(wf) && /cron: "7 10 \* \* \*"/.test(wf), "22:07 UTC = 07:07 KST · 10:07 UTC = 19:07 KST");
   ok(/정확한 실행 시각은 보장되지 않는다/.test(wf), "시각 보장 주장 없음");
-  const pushes = wf.split("\n").filter((l) => /git push/.test(l));
-  eq(pushes.map((l) => l.trim()), ['git push origin "HEAD:refs/heads/$B"'], "push 명령");
+  const pushes = wf.split("\n").filter((l) => /git (-C "\$W" )?push/.test(l));
+  // automation/daily-* PR 브랜치 + automation/pipeline-state(대기열·처리 기록) 두 곳만. master로는 push하지 않는다
+  eq(pushes.length, 2, "push 위치");
+  ok(pushes[0].includes('git -C "$W" push origin HEAD:refs/heads/automation/pipeline-state'), pushes[0]);
+  ok(pushes[1].trim() === 'git push origin "HEAD:refs/heads/$B"', pushes[1]);
   ok(/B="automation\/daily-\$D"/.test(wf) && /case "\$B" in automation\/daily-\*\)/.test(wf), "브랜치 이름 고정");
   ok(!/push.*(master|main)\b|--force|-f\b/.test(pushes.join("\n")), "master·force push");
-  ok(!/vercel|newsletter|daily:approve|publish:/.test(wf), "배포·뉴스레터·승인·발행이 워크플로에 있음");
+  // DAILY는 배포·뉴스레터·승인·기사 반영을 직접 하지 않는다 (자동 발행은 별도 보호된 publish.yml을 부를 뿐)
+  ok(!/vercel|newsletter|daily:approve|publish:daily|pipeline:publish|publish\.mjs/.test(wf), "배포·뉴스레터·승인·발행이 워크플로에 있음");
   ok(/gh pr list --head "\$B" --state open/.test(wf), "같은 날짜 PR 재사용");
   ok(!/ANTHROPIC_API_KEY[^:]*\becho|echo .*ANTHROPIC/.test(wf), "키 출력");
   // 예약 실행은 언제나 shadow. draft는 수동 실행에서 고른 경우에만, LLM 키도 그때만
-  ok(/M=shadow\n\s+if \[ "\$EVENT" = "workflow_dispatch" \] && \[ "\$INPUT_MODE" = "draft" \] && \[ "\$BACKFILL" != "true" \]; then M=draft; fi/.test(wf), "모드 결정 (백필은 언제나 shadow)");
+  ok(/M=shadow\n\s+P=none\n\s+if \[ "\$EVENT" = "workflow_dispatch" \] && \[ "\$INPUT_MODE" = "draft" \] && \[ "\$BACKFILL" != "true" \]; then M=draft; P=anthropic; fi/.test(wf), "모드 결정 (유료는 수동 draft만, 백필은 언제나 shadow)");
+  ok(/if \[ "\$P" = "none" \] && \[ "\$FREE_DRAFT" = "true" \] && \[ "\$BACKFILL" != "true" \]; then M=draft; P=gemini; fi/.test(wf), "무료 생성은 운영자가 켠 경우만");
+  ok(/GEMINI_API_KEY: \$\{\{ steps\.m\.outputs\.provider == 'gemini' && secrets\.GEMINI_API_KEY \|\| '' \}\}/.test(wf), "Gemini 키는 gemini일 때만");
+  ok(/site\/ingest\/log\/pipeline-queue\.json/.test(wf), "대기열을 이어 씀");
+  ok(/if: always\(\) && vars\.AUTO_PUBLISH_ENABLED == 'true'/.test(wf), "자동 발행은 운영자가 켰을 때만");
   ok(/DAILY_LAST_RUN_DATE: \$\{\{ steps\.last\.outputs\.date \}\}/.test(wf) && /automation\/daily-20\*/.test(wf), "따라잡기: 마지막 실행 브랜치");
   ok(/npm run daily:backfill -- --from "\$INPUT_FROM" --to "\$INPUT_TO"/.test(wf), "백필 실행");
   ok(/site\/ingest\/log\/daily-sources\.json/.test(wf), "소스 상태 기록을 캐시로 이어 씀");
   ok(/DAILY_MODE: \$\{\{ steps\.m\.outputs\.mode \}\}/.test(wf), "모드 전달");
-  ok(/DAILY_LLM_PROVIDER: \$\{\{ steps\.m\.outputs\.mode == 'draft' && 'anthropic' \|\| 'none' \}\}/.test(wf), "shadow는 공급자 none");
+  ok(/DAILY_LLM_PROVIDER: \$\{\{ steps\.m\.outputs\.provider \}\}/.test(wf), "공급자는 Mode 단계에서 (기본 none)");
   eq(wf.match(/secrets\.ANTHROPIC_API_KEY/g)?.length, 1, "키 사용 위치");
-  ok(/ANTHROPIC_API_KEY: \$\{\{ steps\.m\.outputs\.mode == 'draft' && github\.event_name == 'workflow_dispatch' && secrets\.ANTHROPIC_API_KEY \|\| '' \}\}/.test(wf), "키는 수동 draft에서만");
+  ok(/ANTHROPIC_API_KEY: \$\{\{ steps\.m\.outputs\.provider == 'anthropic' && github\.event_name == 'workflow_dispatch' && secrets\.ANTHROPIC_API_KEY \|\| '' \}\}/.test(wf), "유료 키는 수동 draft에서만");
   ok(/default: shadow/.test(wf), "수동 실행 기본값 shadow");
   ok(!/gh pr merge|--auto|auto-merge/.test(wf), "자동 merge");
   // 보고서 fallback: Summary + artifact는 항상, PR은 실패해도 계속
@@ -1081,8 +1093,10 @@ await t("[7.1.5-4] 누락된 공식 발표 복구: 예약 실행이 빠져도 �
   const r = await runDaily(baseRun({ date: "2026-10-11", env: ENV({ DAILY_MODE: "shadow" }), registry: BF_REG, historyFile: hist }));
   eq(r.run.window.since, "2026-10-07", "수집 시작일");
   ok(r.run.items.some((x) => x.url === "https://fx-bf.test/news/gadget-pricing"), "10-08 발표 복구");
-  const plain = await runDaily(baseRun({ date: "2026-10-11", env: ENV({ DAILY_MODE: "shadow" }), registry: BF_REG }));
-  ok(!plain.run.items.some((x) => x.url === "https://fx-bf.test/news/gadget-pricing"), "기록이 없으면 기본 3일 창 (예전 동작)");
+  // Phase 7.2: 기본 창은 72시간+ (기준일 포함 4일). 10-12 기준 기본 창은 10-09부터라 10-08 발표는 기록이 있어야 다시 본다
+  const plain = await runDaily(baseRun({ date: "2026-10-12", env: ENV({ DAILY_MODE: "shadow" }), registry: BF_REG }));
+  eq(plain.run.window.since, "2026-10-09", "기본 창");
+  ok(!plain.run.items.some((x) => x.url === "https://fx-bf.test/news/gadget-pricing"), "기록이 없으면 기본 창만");
   eq(JSON.parse(fs.readFileSync(hist, "utf8")).lastRun, "2026-10-11", "마지막 실행일 갱신");
   // 워크플로 브랜치 기록(DAILY_LAST_RUN_DATE)도 쓴다
   const viaEnv = await runDaily(baseRun({ date: "2026-10-11", env: ENV({ DAILY_MODE: "shadow", DAILY_LAST_RUN_DATE: "2026-10-08" }), registry: BF_REG }));

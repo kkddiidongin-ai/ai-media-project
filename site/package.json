@@ -27,6 +27,7 @@
     "newsletter:weekly:approve": "node scripts/newsletter/weekly-approve.mjs",
     "newsletter:weekly:send": "node scripts/newsletter/weekly-send.mjs",
     "qa:weekly": "node scripts/newsletter/weekly-check.mjs",
+    "qa:pipeline": "node scripts/pipeline/check.mjs",
     "typecheck": "tsc --noEmit",
     "daily:collect": "node scripts/daily/run.mjs --collect-only",
     "daily:run": "node scripts/daily/run.mjs",
@@ -36,7 +37,11 @@
     "daily:backfill": "node scripts/daily/run.mjs",
     "daily:diagnose": "node scripts/daily/diagnose.mjs",
     "daily:check-drafts": "node scripts/daily/check-editorial-drafts.mjs",
-    "daily:apply-drafts": "node scripts/daily/apply-editorial-package.mjs"
+    "daily:apply-drafts": "node scripts/daily/apply-editorial-package.mjs",
+    "pipeline:export-drafts": "node scripts/pipeline/export-drafts.mjs",
+    "pipeline:publish": "node scripts/pipeline/publish.mjs publish",
+    "pipeline:deploy": "node scripts/pipeline/publish.mjs deploy",
+    "pipeline:verify": "node scripts/pipeline/publish.mjs verify"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",

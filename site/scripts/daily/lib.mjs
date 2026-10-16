@@ -30,19 +30,24 @@ import {
 
 // ---------- 설정 · 비용 상한 ----------
 
-/** 기본값은 보수적으로. 환경변수로 낮출 수는 있지만 HARD_CAPS를 넘길 수는 없다 */
+/**
+ * 기본값. 환경변수로 바꿀 수 있지만 HARD_CAPS를 넘길 수는 없다.
+ * Phase 7.2: 기사 '건수' 상한은 없앴다. 아래 값은 한 실행에서 처리하는 '배치 크기'(요청 수·시간 보호)이며,
+ * 배치를 넘는 항목은 버리지 않고 처리 대기열(queue)로 넘겨 다음 실행에서 이어서 처리한다.
+ */
 export const DEFAULTS = {
-  windowDays: 2, // 기준일 포함 최근 N+1일 발표만 본다 (피드 지연 대비)
-  maxItemsPerSource: 20,
-  maxPublishPerDay: 6, // 최종 발행 추천 수 (근거 확인 '뒤'에 건다)
-  maxEvidenceFetches: 12, // 근거 확인 명단(shortlist) — 원문 요청 수 상한 (비용·부하)
-  maxLlmCalls: 6, // 원고 생성은 최종 추천에만
+  windowDays: 3, // 기준일 포함 최근 4일(72시간 이상)을 다시 본다 — 늦게 올라온 발표·피드 지연 대비
+  maxItemsPerSource: 60, // 소스당 한 실행에서 새로 여는 글 페이지 수(배치). 남은 주소는 다음 실행으로 이월
+  maxPublishPerDay: 0, // 0 = 발행 추천 총량 상한 없음 (Phase 7.2). 양수로 주면 예전처럼 상한 + 회사 다양성 규칙
+  maxEvidenceFetches: 40, // 한 실행의 근거 확인 배치. 남은 후보는 대기열로 이월 (버리지 않음)
+  maxLlmCalls: 6, // 한 실행의 원고 생성 배치. 남은 추천은 '작성 대기'로 이월
+  timeBudgetMs: 20 * 60_000, // 한 실행의 처리 시간 예산. 넘으면 남은 작업을 대기열에 두고 멈춘다 (Actions 시간 제한 대비)
   maxOutputTokens: 3000, // 사고(thinking) 토큰도 여기에 포함된다
   llmTimeoutMs: 60_000,
   llmRetries: 1, // 실패 시 다시 시도 횟수 (총 시도 = 1 + retries)
   maxCostUsd: 0.5, // 하루 LLM 예상 비용 상한 (USD) — 호출 전 최악 비용으로 확인
 };
-export const HARD_CAPS = { maxPublishPerDay: 12, maxLlmCalls: 12, maxOutputTokens: 4000, llmRetries: 2, maxEvidenceFetches: 25, maxItemsPerSource: 40, maxCostUsd: 3 };
+export const HARD_CAPS = { maxPublishPerDay: 1000, maxLlmCalls: 200, maxOutputTokens: 4000, llmRetries: 2, maxEvidenceFetches: 200, maxItemsPerSource: 200, maxCostUsd: 3 };
 
 /**
  * 실행 모드 (DAILY_MODE)
@@ -57,6 +62,8 @@ export function resolveMode(env = process.env) {
   if (raw === "publish") return { mode: null, error: "publish 모드는 Phase 7.2 전까지 사용할 수 없습니다 — 실행하지 않음" };
   if (raw === "draft") {
     const ev = String(env.GITHUB_EVENT_NAME ?? "").trim();
+    const freeDraft = String(env.DAILY_LLM_PROVIDER ?? "").trim().toLowerCase() === "gemini" && String(env.DAILY_GEMINI_FREE_TIER_CONFIRMED ?? "").trim() === "true";
+    if (ev === "schedule" && freeDraft) return { mode: "draft" }; // Phase 7.2: 무료 등급 생성만 예약 실행에서 허용
     if (ev === "schedule") return { mode: "shadow", warning: "예약 실행에서는 draft를 쓰지 않음 — shadow로 실행" };
     if (String(env.GITHUB_ACTIONS ?? "") === "true" && ev !== "workflow_dispatch") return { mode: "shadow", warning: `GitHub 이벤트 ${ev || "(없음)"}에서는 draft를 쓰지 않음 — shadow로 실행` };
     return { mode: "draft" };
@@ -83,6 +90,8 @@ export function loadLimits(env = process.env) {
     llmRetries: pick("llmRetries", "DAILY_LLM_RETRIES"),
     maxEvidenceFetches: pick("maxEvidenceFetches", "DAILY_MAX_EVIDENCE_FETCHES"),
     maxItemsPerSource: pick("maxItemsPerSource", "DAILY_MAX_ITEMS_PER_SOURCE"),
+    // 처리 시간 예산(분). 넘으면 남은 근거 확인·원고 작성을 대기열에 두고 멈춘다
+    timeBudgetMs: /^\d+$/.test(String(env.DAILY_TIME_BUDGET_MIN ?? "").trim()) ? Number(String(env.DAILY_TIME_BUDGET_MIN).trim()) * 60_000 : DEFAULTS.timeBudgetMs,
     maxCostUsd: (() => {
       const raw = String(env.DAILY_MAX_COST_USD ?? "").trim();
       const v = /^\d+(\.\d+)?$/.test(raw) ? Number(raw) : DEFAULTS.maxCostUsd;
@@ -130,7 +139,7 @@ const BLOCK_RE = /robots\.txt disallow|HTTP 40[13]|HTTP 429/;
  * ingest/candidates·state.json은 건드리지 않는다 (승인할 때만 후보로 들어간다).
  * @returns {{ items: object[], sources: object[] }}
  */
-export async function collectDaily({ date, since: sinceArg = null, registry, limits, known }) {
+export async function collectDaily({ date, since: sinceArg = null, registry, limits, known, sourceSince = {}, pendingMeta = {} }) {
   // since를 넘기면 그날부터 (백필 --from · 예약 실행 따라잡기). 없으면 기본 창 date-windowDays
   const since = sinceArg ?? addDays(date, -limits.windowDays);
   if (since > date) throw new Error(`수집 시작일 ${since}이 종료일 ${date}보다 늦습니다`);
@@ -143,10 +152,12 @@ export async function collectDaily({ date, since: sinceArg = null, registry, lim
       sources.push({ id: src.id, name: src.name, status: "skipped", reason: src.enabled ? `수집 방식 없음 (${src.fetchMode})` : "비활성" });
       continue;
     }
-    const stats = { id: src.id, since, requests: 0, found: 0, inRange: 0, irrelevant: 0, new: 0, duplicate: 0, skippedKnown: 0, errors: [] };
+    // 지난 실행에서 실패한 소스는 그때의 시작일부터 다시 본다 (재시도 보충, Phase 7.2)
+    const srcSince = sourceSince[src.id] && sourceSince[src.id] < since ? sourceSince[src.id] : since;
+    const stats = { id: src.id, since: srcSince, requests: 0, found: 0, inRange: 0, irrelevant: 0, new: 0, duplicate: 0, skippedKnown: 0, errors: [] };
     let got = [];
     try {
-      got = await collectors[src.fetchMode](src, since, stats, { maxPaged: 3, maxMeta: limits.maxItemsPerSource, known });
+      got = await collectors[src.fetchMode](src, srcSince, stats, { maxPaged: 3, maxMeta: limits.maxItemsPerSource, known, pending: pendingMeta[src.id] ?? [] });
     } catch (e) {
       stats.errors.push(String(e.message ?? e));
     }
@@ -159,7 +170,7 @@ export async function collectDaily({ date, since: sinceArg = null, registry, lim
         undated.push({ title: stripHtml(it.title ?? "").slice(0, 160), url: it.url });
         continue;
       }
-      if (publishedAt.slice(0, 10) < since || publishedAt.slice(0, 10) > date) continue;
+      if (publishedAt.slice(0, 10) < srcSince || publishedAt.slice(0, 10) > date) continue;
       if (src.relevance === "ai" && !isAiRelevant(it)) continue;
       const fp = candidateId(it.idKey ?? it.url);
       if (seen.has(fp)) continue;
@@ -184,8 +195,19 @@ export async function collectDaily({ date, since: sinceArg = null, registry, lim
       });
     }
     inWindow.sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
-    const kept = inWindow.slice(0, limits.maxItemsPerSource);
+    // Phase 7.2: 기간 안 항목은 모두 넘긴다 (예전에는 소스당 상위 N건만 남기고 나머지를 조용히 버렸다)
+    const kept = inWindow;
     items.push(...kept);
+    // 수집 범위 확인: 피드가 시작일까지 닿았는지 · 배치를 넘겨 남긴 주소가 있는지 (누락 가능성을 숨기지 않는다)
+    const dated = got.map((it) => isoDate(it.date)).filter(Boolean).sort();
+    const pending = stats.pendingMeta ?? [];
+    const feedLike = ["rss", "rss-paged", "listing-meta"].includes(src.fetchMode);
+    const reachedSince = !dated.length || dated[0].slice(0, 10) < srcSince;
+    const coverage = pending.length
+      ? { complete: false, reason: `글 주소 ${pending.length}개를 다음 실행으로 이월 (배치 ${limits.maxItemsPerSource})` }
+      : feedLike && got.length && !reachedSince
+        ? { complete: false, reason: `피드의 가장 오래된 항목(${dated[0].slice(0, 10)})이 시작일(${srcSince})보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음`, oldest: dated[0].slice(0, 10) }
+        : { complete: true };
     const errs = stats.errors;
     const status = !errs.length ? "success" : got.length ? "partial" : errs.every((e) => BLOCK_RE.test(e)) ? "blocked" : "failed";
     sources.push({
@@ -199,6 +221,10 @@ export async function collectDaily({ date, since: sinceArg = null, registry, lim
       found: got.length,
       inWindow: inWindow.length,
       kept: kept.length,
+      since: srcSince,
+      coverage,
+      ...(pending.length ? { pendingMeta: pending.map((e) => ({ ...e, since: srcSince })) } : {}),
+      ...(stats.carriedMeta ? { carriedMeta: stats.carriedMeta } : {}),
       undated: undated.length,
       ...(undated.length ? { undatedItems: undated.slice(0, 5) } : {}),
       ...(errs.length ? { errors: errs.slice(0, 3).map((e) => e.slice(0, 200)) } : {}),

@@ -47,6 +47,7 @@ import { buildDraftRecord, draftEligibility, renderDraftMarkdown, reviewDraft } 
 import { renderReport } from "./report.mjs";
 import { assessSources, catchUpSince, loadHistory, saveHistory } from "./health.mjs";
 import { renderDiagnostics } from "./diagnose.mjs";
+import { QUEUE_FILE, loadQueue, queueCounts, saveQueue } from "./queue.mjs";
 
 export const HISTORY_FILE = process.env.DAILY_SOURCES_FILE || path.join(path.dirname(PROCESSED_FILE), "daily-sources.json");
 const addDays = (d, n) => new Date(Date.parse(`${d}T00:00:00Z`) + n * 86400_000).toISOString().slice(0, 10);
@@ -101,7 +102,7 @@ export async function runDaily(opts) {
   // Shadow Mode: 수집·중복·선정·근거·보고서까지만. 키가 있어도 LLM을 부르지 않는다
   const provider = mode === "shadow" ? "none" : resolveProvider(env);
   const modelCfg = provider === "anthropic" ? resolveModelConfig(env) : null;
-  const modelName = provider === "anthropic" ? modelCfg.model : provider === "mock" ? "mock" : null;
+  const modelName = provider === "anthropic" ? modelCfg.model : provider === "gemini" ? String(env.DAILY_GEMINI_MODEL ?? "").trim() || "gemini-3.8-flash" : provider === "mock" ? "mock" : null;
   // draft 모드인데 공급자를 쓸 수 없으면(키 없음·모델 미확인): LLM 호출 없이 안내만 하고 나머지는 shadow처럼
   const draftBlocked = mode === "draft" ? providerBlocker(provider, env) : null;
   if (draftBlocked) log(`⛔ 초안 생성 안 함: ${draftBlocked}`);
@@ -112,11 +113,24 @@ export async function runDaily(opts) {
   // 소스 상태 기록 (최근 정상 수집일 · 연속 0건). 백필·수집만 실행은 기록을 바꾸지 않는다
   const historyFile = opts.historyFile === undefined ? HISTORY_FILE : opts.historyFile;
   const history = loadHistory(historyFile);
+  // 처리 대기열 (Phase 7.2): 지난 실행이 배치·시간 때문에 남긴 일. 백필은 자기 폴더의 대기열을 쓴다
+  const queueFile = opts.queueFile === undefined ? (backfill ? path.join(outDir, "queue.json") : QUEUE_FILE) : opts.queueFile;
+  const queue = loadQueue(queueFile);
+  // 이미 기사로 나간 항목(같은 원문)은 대기열에서 뺀다 — 편집자가 직접 발행한 경우 포함
+  let resolvedFromQueue = 0;
+  for (const [id, q] of Object.entries(queue.items)) {
+    if (dedupeItem(q.item, existing).result === "DUPLICATE") {
+      delete queue.items[id];
+      resolvedFromQueue++;
+    }
+  }
+  const clock = opts.clock ?? Date.now;
+  const t0 = clock();
+  const overTime = () => clock() - t0 > limits.timeBudgetMs;
   // 상한 0은 근거 확인·추천을 꺼 버린다. 백테스트(--no-fetch)처럼 의도한 경우가 아니면 경고하고 PARTIAL로
   const limitWarnings = [];
   if (!opts.allowZeroLimits) {
     if (limits.maxEvidenceFetches === 0) limitWarnings.push("근거 확인 상한(maxEvidenceFetches)이 0 — 원문 근거를 하나도 보지 않음");
-    if (limits.maxPublishPerDay === 0) limitWarnings.push("발행 추천 상한(maxPublishPerDay)이 0 — 추천을 하나도 내지 않음");
   }
   const run = { date, ...(backfill ? { kind: "backfill", backfill: { from: backfill.from, to: backfill.to } } : {}), mode, ...(m.warning ? { modeWarning: m.warning } : {}), ...(draftBlocked ? { draftBlocked } : {}), ...(limitWarnings.length ? { limitWarnings } : {}), startedAt: new Date().toISOString(), status: "", limits, provider, model: modelName, ...(opts.backtest ? { backtest: opts.backtest } : {}) };
   const budget = { calls: 0, inputTokens: 0, outputTokens: 0, costUsd: 0 };
@@ -132,7 +146,17 @@ export async function runDaily(opts) {
   if (!opts.items && (!isDateStr(cu.since) || cu.since > date || cu.since < addDays(date, -BACKFILL_MAX_DAYS))) throw new Error(`수집 시작일 오류: ${cu.since} (종료일 ${date}, 최대 ${BACKFILL_MAX_DAYS}일)`);
   const { items, sources: rawSources, since } = opts.items
     ? { items: opts.items, sources: opts.sources ?? [{ id: "backtest", name: "보존 데이터", status: "success" }], since: opts.since ?? date }
-    : await collectDaily({ date, since: cu.since, registry, limits, known: existing.candidates });
+    : await collectDaily({
+        date,
+        since: cu.since,
+        registry,
+        limits,
+        // 이미 후보 기록에 있거나 지난 날짜에 처리한 글은 다시 열지 않는다 (같은 날 재실행은 다시 연다)
+        known: { has: (id) => existing.candidates.has(id) || Boolean(processed[id] && processed[id].date !== date) },
+        // 실패했던 소스는 그때의 시작일부터, 배치를 넘겨 남긴 글 주소는 먼저
+        sourceSince: Object.fromEntries(Object.entries(queue.retry).map(([id, r]) => [id, r.since < addDays(date, -BACKFILL_MAX_DAYS) ? addDays(date, -BACKFILL_MAX_DAYS) : r.since])),
+        pendingMeta: queue.meta,
+      });
   run.window = { since, until: date, reason: opts.items ? "보존 데이터" : cu.reason, ...(cu.gapFrom ? { gapFrom: cu.gapFrom } : {}) };
   const assessed = opts.items ? { sources: rawSources, history } : assessSources(rawSources, history, date);
   const sources = assessed.sources;
@@ -142,6 +166,19 @@ export async function runDaily(opts) {
   const updateHistory = !backfill && !opts.collectOnly && !opts.items && historyFile;
   if (updateHistory) saveHistory(historyFile, { ...assessed.history, lastRun: date });
   log(`수집 ${items.length}건 (소스 ${sources.filter((s) => s.status === "success").length} 성공 · ${sources.filter((s) => ["failed", "blocked", "partial"].includes(s.status)).length} 실패·일부)`);
+  // 대기열 갱신: 소스별 남은 글 주소 · 실패 소스 재시도 (수집만 실행·보존 데이터는 바꾸지 않음)
+  if (!opts.items && !opts.collectOnly) {
+    for (const s of sources) {
+      if (s.status === "skipped") continue;
+      if (s.pendingMeta?.length) queue.meta[s.id] = s.pendingMeta;
+      else if (s.status === "success") delete queue.meta[s.id];
+      if (["failed", "blocked", "partial"].includes(s.status)) {
+        const prev = queue.retry[s.id];
+        queue.retry[s.id] = { since: prev && prev.since < s.since ? prev.since : s.since ?? run.window.since, failedAt: prev?.failedAt ?? date, attempts: (prev?.attempts ?? 0) + 1, lastError: String(s.errors?.[0] ?? s.status).slice(0, 200) };
+      } else if (s.status === "success") delete queue.retry[s.id];
+    }
+    saveQueue(queueFile, queue);
+  }
   if (opts.collectOnly) {
     writeJson(path.join(outDir, "collected.json"), { date, window: run.window, sources, items });
     run.status = sources.some((s) => ["failed", "blocked", "partial"].includes(s.status)) ? "PARTIAL" : "SUCCESS";
@@ -156,14 +193,19 @@ export async function runDaily(opts) {
   // 같은 날짜의 이전 초안 기록 (대기열 파일이 없어져도 같은 초안을 다시 만들지 않게)
   const prevDrafts = new Map();
   if (fs.existsSync(dDir)) for (const f of fs.readdirSync(dDir).filter((x) => x.endsWith(".json"))) prevDrafts.set(f.replace(/\.json$/, ""), readJson(path.join(dDir, f), null));
-  const rows = items.map((item) => {
+  // 대기열에서 넘어온 항목: 근거 확인 대기는 언제나, 원고 작성 대기는 원고를 만들 수 있을 때만 다시 넣는다
+  const canDraft = mode === "draft" && !draftBlocked;
+  const fresh = new Set(items.map((i) => i.id));
+  const carriedIn = Object.values(queue.items).filter((q) => !fresh.has(q.item.id) && (q.stage === "evidence" || (q.stage === "draft" && canDraft)));
+  const allItems = [...items, ...carriedIn.map((q) => ({ ...q.item, fromQueue: q.stage }))];
+  const rows = allItems.map((item) => {
     const dup = dedupeItem(item, existing);
     const score = metadataScore(item, dup);
     const d = screenDecision(item, dup, score);
     // 발행일 메타가 없어 본문 날짜로 정한 항목은 편집자가 날짜를 확인한다 (Phase 7.1.5)
     const base = { item, dup, score, company: companyOf(item), facts: 0, reasons: d.reasons, needsReview: [...(d.needsReview ?? []), ...(item.dateSource === "page-text" ? ["date_from_page_text"] : [])], stage: "metadata" };
     const prev = processed[item.id];
-    if (prev && prev.date !== date && prev.decision === "PUBLISH") {
+    if (prev && prev.date !== date && prev.decision === "PUBLISH" && queue.items[item.id]?.stage !== "draft") {
       // 지난 날짜에 이미 발행 추천까지 한 항목: 다시 근거·원고를 만들지 않는다 (그날 PR에서 승인)
       return { ...base, decision: "HOLD", reasons: [`${prev.date} DAILY에서 이미 추천함 — 그날 승인 대기열 확인`], carried: prev.date };
     }
@@ -177,7 +219,7 @@ export async function runDaily(opts) {
     const twins = live.filter((x) => x !== r && !x.sameDayOf && titleSimilarity(x.item.title, r.item.title) >= 0.75);
     if (!twins.length) continue;
     const group = [r, ...twins].sort(
-      (a, b) => (b.item.sourceType === "official") - (a.item.sourceType === "official") || b.score.priority - a.score.priority || items.indexOf(a.item) - items.indexOf(b.item),
+      (a, b) => (b.item.sourceType === "official") - (a.item.sourceType === "official") || b.score.priority - a.score.priority || allItems.indexOf(a.item) - allItems.indexOf(b.item),
     );
     const primary = group[0];
     primary.alsoAt = group.slice(1).map((x) => ({ url: x.item.url, source: x.item.sourceName }));
@@ -194,17 +236,29 @@ export async function runDaily(opts) {
   const hostFails = new Map();
   let fetches = 0;
   const work = [];
+  // 체크포인트: 처리 전에 근거 확인 대상 전부를 대기열에 먼저 올린다 → 실행이 중간에 끊겨도 남은 후보가 다음 실행으로 넘어간다
+  const enqueue = (r, stage, extra = {}) => {
+    const prevQ = queue.items[r.item.id];
+    queue.items[r.item.id] = { stage, item: { ...r.item, fromQueue: undefined }, addedAt: prevQ?.addedAt ?? date, since: prevQ?.since ?? run.window.since, attempts: prevQ?.attempts ?? 0, date, ...extra };
+  };
+  for (const r of candidates) if (!(prevQueue.get(r.item.id)?.evidence?.status === "OK")) enqueue(r, "evidence");
+  saveQueue(queueFile, queue);
   for (const r of candidates) {
     const prev = prevQueue.get(r.item.id);
     if (prev?.evidence && prev.evidence.status === "OK") {
       r.evidence = prev.evidence; // 같은 날 재실행: 원문을 다시 요청하지 않는다
-    } else if (fetches < limits.maxEvidenceFetches) {
+    } else if (fetches < limits.maxEvidenceFetches && !overTime()) {
       fetches++;
       r.evidence = await gatherEvidence(r.item, { hostFails });
+      // 체크포인트: 몇 건마다 저장. 처리한 후보는 결과 파일을 쓴 뒤에 대기열에서 뺀다 (끊기면 다음 실행이 다시 한다)
+      if (fetches % 5 === 0) saveQueue(queueFile, queue);
     } else {
+      // 버리지 않는다: 근거 확인 대기열로 넘겨 다음 실행이 먼저 처리
       r.decision = "HOLD";
-      r.reasons = [...r.reasons, `근거 확인 상한(원문 ${limits.maxEvidenceFetches}건) 초과 — 다음 실행·편집자 확인`];
+      r.queued = "evidence";
+      r.reasons = [...r.reasons, `근거 확인 대기 — 이번 실행 ${overTime() ? "시간 예산" : `배치(${limits.maxEvidenceFetches}건)`}을 넘어 다음 실행으로 이월`];
       r.capStage = "evidence";
+      enqueue(r, "evidence", { attempts: (queue.items[r.item.id]?.attempts ?? 0) + 1, reason: "batch" });
       continue;
     }
     r.stage = "evidence";
@@ -230,7 +284,8 @@ export async function runDaily(opts) {
 
   // 5) 최종 발행 추천: 상한 maxPublishPerDay + 회사 다양성(부드러운 규칙)
   const eligible = work.filter((r) => r.decision === "ELIGIBLE");
-  const sel = finalSelect(eligible, { maxPublish: limits.maxPublishPerDay });
+  // Phase 7.2: maxPublishPerDay 0(기본) = 총량·회사별 상한 없이 근거를 통과한 후보 모두 추천. 같은 발표는 위에서 이미 하나로 합침
+  const sel = limits.maxPublishPerDay ? finalSelect(eligible, { maxPublish: limits.maxPublishPerDay }) : { picked: eligible, capDropped: [], diversityDeferred: [] };
   for (const r of sel.picked) {
     r.decision = "PUBLISH";
     r.reasons = [...r.reasons, `근거 확인 통과 (확인 사실 ${r.facts}개, ${r.sufficiency})`];
@@ -249,6 +304,9 @@ export async function runDaily(opts) {
   // 6) 초안 생성 (draft 모드 · 최종 추천 중 조건을 모두 충족한 후보만) · 초안 QA
   //    PUBLISH가 0건이면 이 반복이 돌지 않으므로 LLM 호출도 0
   const takenSlugs = new Set([...existing.stories.map((s) => s.slug), ...existing.editorialSlugs]);
+  // 체크포인트: 발행 추천 전부를 '원고 작성 대기'로 먼저 올리고, 원고가 생기면(또는 대상이 아니면) 뺀다
+  for (const r of work.filter((x) => x.decision === "PUBLISH")) if (!queue.items[r.item.id] || queue.items[r.item.id].stage !== "draft") enqueue(r, "draft");
+  saveQueue(queueFile, queue);
   const ctx = { provider, env, limits, budget, categories: CATEGORIES, topics: existing.topics, fetch: opts.fetch, mockReply: opts.mockReply, retryDelayMs: opts.retryDelayMs };
   for (const r of work.filter((x) => x.decision === "PUBLISH")) {
     const prev = prevQueue.get(r.item.id);
@@ -271,7 +329,9 @@ export async function runDaily(opts) {
             ? { ...skip(`초안 생성 대상 아님: ${gate.reasons.join(" · ")}`), gated: true }
             : draftBlocked
               ? skip(draftBlocked)
-              : await generateArticle(r.item, r.evidence, { ...ctx, suggestedDepth: r.depth });
+              : overTime()
+                ? skip("시간 예산 초과 — 다음 실행에서 작성")
+                : await generateArticle(r.item, r.evidence, { ...ctx, suggestedDepth: r.depth });
       r.generation = {
         provider: g.provider,
         model: g.model ?? null,
@@ -305,7 +365,14 @@ export async function runDaily(opts) {
     }
     if (r.depth === "DEEP") r.needsReview.push("deep_requires_editor");
     r.needsReview = [...new Set(r.needsReview)];
+    // 원고를 못 만든 발행 추천은 버리지 않고 '작성 대기'로 남긴다 (근거는 후보 파일에 보존). 빈 원고·허위 원고는 만들지 않는다
+    // 초안 대상이 아닌 항목(DEEP 등, gated)은 편집자가 직접 쓴다 — 대기열에 넣지 않음
+    if (r.decision === "PUBLISH" && !r.draft && !r.generation?.gated) {
+      r.draftPending = true;
+      enqueue(r, "draft", { attempts: (queue.items[r.item.id]?.attempts ?? 0) + (r.generation?.status === "failed" ? 1 : 0), reason: r.generation?.error ?? r.generation?.status ?? "no draft" });
+    } else if (queue.items[r.item.id]?.stage === "draft") delete queue.items[r.item.id];
   }
+  saveQueue(queueFile, queue);
 
   // 7) 승인 대기열 · 기록
   fs.mkdirSync(outDir, { recursive: true });
@@ -343,9 +410,11 @@ export async function runDaily(opts) {
       draftFile: r.draftFile ?? null,
       newsletterCandidate: r.decision === "PUBLISH" && r.score.importance >= 3,
       capStage: r.capStage ?? null,
+      ...(r.draftPending ? { draftPending: true } : {}),
       approval: prevQueue.get(r.item.id)?.approval ?? { status: "pending" },
     };
     writeJson(path.join(qDir, `${r.item.id}.json`), entry);
+    if (queue.items[r.item.id]?.stage === "evidence") delete queue.items[r.item.id]; // 결과를 남겼으니 근거 확인 대기에서 뺀다
     processed[r.item.id] = { date: processed[r.item.id]?.date && processed[r.item.id].date < date ? processed[r.item.id].date : date, decision: r.decision, generated: r.generation?.status === "ok" };
   }
   for (const r of rows) {
@@ -353,6 +422,7 @@ export async function runDaily(opts) {
     if (!processed[r.item.id]) processed[r.item.id] = { date, decision: r.decision, generated: false };
   }
   saveProcessed(processed, processedFile);
+  saveQueue(queueFile, queue);
 
   const count = (f) => rows.filter(f).length;
   const sourceTrouble = sources.filter((s) => ["failed", "blocked", "partial"].includes(s.status));
@@ -362,6 +432,7 @@ export async function runDaily(opts) {
   const enabled = sources.filter((s) => s.status !== "skipped");
   run.counts = {
     collected: items.length,
+    carriedFromQueue: carriedIn.length,
     NEW: count((r) => r.dup.result === "NEW"),
     UPDATE_EXISTING: count((r) => r.dup.result === "UPDATE_EXISTING"),
     DUPLICATE: count((r) => r.dup.result === "DUPLICATE"),
@@ -383,12 +454,40 @@ export async function runDaily(opts) {
     inputTokens: budget.inputTokens,
     outputTokens: budget.outputTokens,
     estimatedCostUsd: Number(budget.costUsd.toFixed(6)),
+    // 원고 생성 결과 (Phase 7.2 운영 보고): 시도·성공·실패·건너뜀
+    generation: (() => {
+      const g = work.filter((r) => r.decision === "PUBLISH" || r.generation).map((r) => r.generation?.status ?? "none");
+      const ok = work.filter((r) => r.generation?.status === "ok" && !r.generation.reused).length;
+      const failed = work.filter((r) => r.generation?.status === "failed").length;
+      const attempted = ok + failed;
+      return { attempted, ok, failed, skipped: g.filter((x) => x === "skipped").length, successRate: attempted ? Number((ok / attempted).toFixed(3)) : null, quotaHit: Boolean(budget.quotaHit) };
+    })(),
     maxCalls: limits.maxLlmCalls,
     maxCostUsd: limits.maxCostUsd,
     ...(modelCfg && !modelCfg.error ? { pricePerMTok: { input: modelCfg.inputPerMTok, output: modelCfg.outputPerMTok }, effort: modelCfg.effort } : {}),
   };
   const degraded = sources.filter((s) => s.health === "DEGRADED");
-  run.status = enabled.length && enabled.every((s) => ["failed", "blocked"].includes(s.status)) ? "FAILED" : sourceTrouble.length || degraded.length || genTrouble.length || valFail.length || limitWarnings.length || draftBlocked ? "PARTIAL" : "SUCCESS";
+  // 파이프라인 진행 상태: 남은 일이 있으면 '완료'로 표시하지 않는다
+  const pendingNow = queueCounts(queue);
+  run.pipeline = {
+    complete: !pendingNow.evidence && !pendingNow.draft && !pendingNow.meta && !pendingNow.retrySources,
+    pending: pendingNow,
+    carriedIn: { evidence: carriedIn.filter((q) => q.stage === "evidence").length, draft: carriedIn.filter((q) => q.stage === "draft").length },
+    resolvedFromQueue,
+    processed: { evidenceFetches: fetches, drafted: work.filter((r) => r.draft && !r.generation?.reused).length },
+    coverageGaps: sources.filter((s) => s.coverage && !s.coverage.complete).map((s) => ({ id: s.id, name: s.name, reason: s.coverage.reason })),
+    timeBudgetExceeded: overTime(),
+    queueFile: queueFile ? path.basename(queueFile) : null,
+  };
+  // 근거 확인·글 주소가 남았으면 INCOMPLETE. 실패한 소스는 예전처럼 PARTIAL로 알리고 재시도는 대기열에 기록
+  const verificationPending = pendingNow.evidence || pendingNow.meta;
+  run.status = enabled.length && enabled.every((s) => ["failed", "blocked"].includes(s.status))
+    ? "FAILED"
+    : verificationPending
+      ? "INCOMPLETE"
+      : sourceTrouble.length || degraded.length || genTrouble.length || valFail.length || limitWarnings.length || draftBlocked
+        ? "PARTIAL"
+        : "SUCCESS";
   run.items = rows.map((r) => ({
     id: r.item.id,
     title: r.item.title,
@@ -410,6 +509,9 @@ export async function runDaily(opts) {
     ...(r.stage === "evidence" ? { evidenceStatus: r.evidence.status, distinctFacts: r.facts, sufficiency: r.sufficiency, deepMissing: r.deepMissing, ...(r.evidence.alternate ? { alternate: r.evidence.alternate } : {}) } : {}),
     ...(r.depth !== undefined ? { suggestedDepth: r.depth } : {}),
     ...(r.carried ? { carriedFrom: r.carried } : {}),
+    ...(r.queued ? { queued: r.queued } : {}),
+    ...(r.draftPending ? { draftPending: true } : {}),
+    ...(r.item.fromQueue ? { fromQueue: r.item.fromQueue } : {}),
   }));
   run.finishedAt = new Date().toISOString();
   writeJson(path.join(outDir, "run.json"), run);

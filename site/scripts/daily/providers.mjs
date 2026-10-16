@@ -189,6 +189,64 @@ async function anthropicProvider(candidate, evidence, ctx) {
   return { status: "failed", error: redact(lastErr, ctx.env), model: cfg.model, usage };
 }
 
+/**
+ * Gemini API 무료 등급 (Phase 7.2) — 기본 꺼짐. 다음을 모두 갖춰야만 부른다:
+ *   DAILY_LLM_PROVIDER=gemini · GEMINI_API_KEY · DAILY_GEMINI_FREE_TIER_CONFIRMED=true
+ * 2026-10-16 확인 (ai.google.dev/gemini-api/docs/pricing): 무료 등급 제공 모델은 아래 목록. 무료 등급에서는 입력 내용이
+ *   Google 제품 개선에 쓰인다고 명시돼 있다. 실제 호출 한도(RPM·RPD)는 문서에 숫자가 없고 AI Studio에서만 확인된다 →
+ *   한도를 가정하지 않고, 429(한도 초과)를 받으면 그 실행의 나머지 원고는 '작성 대기'로 넘긴다 (재시도로 밀어붙이지 않음).
+ * 결제가 연결된 프로젝트의 키면 유료로 청구될 수 있으므로, 무료 등급 프로젝트임을 운영자가 직접 확인하고 표시해야 한다.
+ */
+export const GEMINI_FREE_MODELS = ["gemini-3.8-flash", "gemini-3.6-flash", "gemini-3.5-flash-lite", "gemini-3.1-flash-lite", "gemini-2.5-flash", "gemini-2.5-flash-lite"];
+export const GEMINI_DEFAULT_MODEL = "gemini-3.8-flash";
+const geminiModel = (env) => String(env.DAILY_GEMINI_MODEL ?? "").trim() || GEMINI_DEFAULT_MODEL;
+
+async function geminiProvider(candidate, evidence, ctx) {
+  const key = String(ctx.env.GEMINI_API_KEY ?? "").trim();
+  if (!key) return { status: "skipped", error: "GEMINI_API_KEY 없음" };
+  const model = geminiModel(ctx.env);
+  if (!GEMINI_FREE_MODELS.includes(model)) return { status: "skipped", error: `무료 등급 목록에 없는 모델 ${model}`, model };
+  if (ctx.budget.quotaHit) return { status: "skipped", error: "무료 등급 한도(429) — 다음 실행에서 작성", model };
+  if (ctx.budget.calls >= ctx.limits.maxLlmCalls) return { status: "skipped", error: "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성", model };
+  const prompt = buildPrompt(candidate, evidence, ctx);
+  const usage = { inputTokens: 0, outputTokens: 0, costUsd: 0, attempts: 0 };
+  ctx.budget.calls++;
+  usage.attempts++;
+  try {
+    const res = await (ctx.fetch ?? fetch)(`https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent`, {
+      method: "POST",
+      headers: { "x-goog-api-key": key, "content-type": "application/json" },
+      body: JSON.stringify({
+        systemInstruction: { parts: [{ text: SYSTEM }] },
+        contents: [{ role: "user", parts: [{ text: prompt }] }],
+        generationConfig: { responseMimeType: "application/json", maxOutputTokens: ctx.limits.maxOutputTokens },
+      }),
+      signal: AbortSignal.timeout(ctx.limits.llmTimeoutMs),
+    });
+    if (res.status === 429) {
+      await res.body?.cancel();
+      ctx.budget.quotaHit = true; // 한도: 이 실행에서는 더 부르지 않는다
+      return { status: "skipped", error: "무료 등급 한도(429) — 다음 실행에서 작성", model, usage };
+    }
+    if (!res.ok) {
+      await res.body?.cancel();
+      return { status: "failed", error: `HTTP ${res.status}`, model, usage };
+    }
+    const json = await res.json();
+    usage.inputTokens = json.usageMetadata?.promptTokenCount ?? 0;
+    usage.outputTokens = json.usageMetadata?.candidatesTokenCount ?? 0;
+    ctx.budget.inputTokens += usage.inputTokens;
+    ctx.budget.outputTokens += usage.outputTokens;
+    const c = json.candidates?.[0];
+    if (c?.finishReason === "MAX_TOKENS") return { status: "failed", error: "출력 토큰 상한에서 잘림 (MAX_TOKENS)", model, usage };
+    const text = (c?.content?.parts ?? []).map((p) => p.text ?? "").join("");
+    if (!text.trim()) return { status: "failed", error: `빈 응답 (${c?.finishReason ?? "후보 없음"})`, model, usage };
+    return { status: "ok", draft: parseJsonReply(text), model, usage };
+  } catch (e) {
+    return { status: "failed", error: e?.name === "TimeoutError" ? "timeout" : e instanceof SyntaxError ? "JSON 형식 오류" : redact(String(e?.message ?? e), ctx.env).slice(0, 120), model, usage };
+  }
+}
+
 /** 시험용: 근거 문장을 옮긴 표시용 원고. 실제 발행 원고가 아니다 (승인 불가) */
 async function mockProvider(candidate, evidence, ctx) {
   if (ctx.budget.calls >= ctx.limits.maxLlmCalls) return { status: "skipped", error: "하루 LLM 호출 상한 도달" };
@@ -224,7 +282,7 @@ async function mockProvider(candidate, evidence, ctx) {
   };
 }
 
-export const PROVIDERS = { anthropic: anthropicProvider, mock: mockProvider };
+export const PROVIDERS = { anthropic: anthropicProvider, gemini: geminiProvider, mock: mockProvider };
 
 /** DAILY_LLM_PROVIDER가 없으면: 키가 있으면 anthropic, 없으면 none */
 export function resolveProvider(env = process.env) {
@@ -240,6 +298,11 @@ export function resolveProvider(env = process.env) {
  */
 export function providerBlocker(provider, env = process.env) {
   if (provider === "none") return "원고 생성 공급자가 none — DAILY_LLM_PROVIDER=anthropic(또는 시험용 mock)이 필요";
+  if (provider === "gemini") {
+    if (!String(env.GEMINI_API_KEY ?? "").trim()) return "GEMINI_API_KEY가 설정되지 않음 — 무료 원고 생성을 쓰려면 Google AI Studio 키 필요 (지금은 원고 작성 대기)";
+    if (String(env.DAILY_GEMINI_FREE_TIER_CONFIRMED ?? "").trim() !== "true") return "DAILY_GEMINI_FREE_TIER_CONFIRMED=true가 아님 — 결제가 연결되지 않은 무료 등급 프로젝트인지 운영자가 확인해야 함 (무료 등급은 입력이 Google 제품 개선에 쓰임)";
+    if (!GEMINI_FREE_MODELS.includes(geminiModel(env))) return `무료 등급 목록에 없는 모델 ${geminiModel(env)}`;
+  }
   if (provider === "anthropic") {
     if (!String(env.ANTHROPIC_API_KEY ?? "").trim()) return "ANTHROPIC_API_KEY가 설정되지 않음 — GitHub Secret 또는 .env.local에 넣은 뒤 다시 실행 (지금은 원고를 만들지 않음)";
     const cfg = resolveModelConfig(env);

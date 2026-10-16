@@ -2,7 +2,24 @@
  * DAILY 보고서 (사람이 1~2분 안에 판단할 수 있게). PR 본문으로도 쓴다.
  * 로그를 늘어놓지 않고: 상태 → 숫자 → 발행 추천(카드) → 보류 → 제외(묶음) → 소스 실패 → 비용 순.
  */
-const STATUS_KO = { SUCCESS: "정상", PARTIAL: "일부 실패", FAILED: "실패" };
+const STATUS_KO = { SUCCESS: "정상", PARTIAL: "일부 실패", FAILED: "실패", INCOMPLETE: "미완료 — 남은 일을 다음 실행에서 이어서" };
+
+/** 처리 대기열 · 수집 범위 (Phase 7.2): 무엇이 남았는지, 어디서 놓쳤을 수 있는지 숨기지 않는다 */
+export function renderPipeline(run) {
+  const p = run.pipeline;
+  if (!p) return [];
+  const L = ["## 처리 대기열 · 수집 범위", ""];
+  L.push(`- 진행 상태: **${p.complete ? "완료 — 남은 일 없음" : "미완료"}** · 이번 실행 근거 확인 ${p.processed.evidenceFetches}건 · 원고 작성 ${p.processed.drafted}건${p.timeBudgetExceeded ? " · ⏱️ 시간 예산 초과로 멈춤" : ""}`);
+  L.push(`- 지난 실행에서 넘어온 일: 근거 확인 ${p.carriedIn.evidence}건 · 원고 작성 ${p.carriedIn.draft}건`);
+  L.push(`- 남은 일 (다음 실행으로 이월): 근거 확인 대기 **${p.pending.evidence}**건 · 원고 작성 대기 **${p.pending.draft}**건 · 아직 열지 못한 글 주소 ${p.pending.meta}개 · 재시도할 소스 ${p.pending.retrySources}곳`);
+  if (p.pending.draft) L.push("  - 원고 작성 대기: 발행 추천은 났지만 원고 생성 수단이 없거나(무료 생성 미설정·Shadow) 배치를 넘은 항목입니다. 근거는 후보 파일에 보존했고, 빈 원고나 허위 원고는 만들지 않습니다.");
+  if (p.coverageGaps.length) {
+    L.push(`- 수집 범위가 기간 전체를 덮지 못한 소스 ${p.coverageGaps.length}곳 (놓쳤을 수 있음):`);
+    for (const g of p.coverageGaps.slice(0, 20)) L.push(`  - ${g.name}: ${g.reason}`);
+  } else L.push("- 모든 활성 소스가 수집 기간 전체를 덮었습니다 (피드 길이·배치 기준).");
+  L.push("");
+  return L;
+}
 const FLAG_KO = {
   source_conflict: "출처끼리 다름",
   date_conflict: "날짜 불일치",
@@ -201,6 +218,7 @@ export function renderReport(run, queue) {
   L.push("");
 
   L.push(...renderSourceHealth(run));
+  L.push(...renderPipeline(run));
   L.push(...renderDiagnostics(run));
   L.push(`## 비용`, "", `원고 생성 ${run.llm.provider}${run.llm.model ? ` (${run.llm.model}${run.llm.effort ? `, effort ${run.llm.effort}` : ""})` : ""} · 호출 ${run.llm.calls}/${run.llm.maxCalls} · 입력 ${run.llm.inputTokens} · 출력 ${run.llm.outputTokens} 토큰 · 예상 비용 $${(run.llm.estimatedCostUsd ?? 0).toFixed(4)} / 상한 $${run.llm.maxCostUsd ?? "-"}${run.llm.pricePerMTok ? ` (요금 입력 $${run.llm.pricePerMTok.input}·출력 $${run.llm.pricePerMTok.output} / 100만 토큰)` : ""}`, "");
   L.push(`<sub>실행 ${run.startedAt} → ${run.finishedAt} · 상세: run.json, candidates/*.json</sub>`, "");
