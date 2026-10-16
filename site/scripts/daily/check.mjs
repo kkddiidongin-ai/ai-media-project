@@ -1266,6 +1266,33 @@ await t("편집 원고 점검: 근거에 없는 숫자 · 직접 써 본 표현 
   eq(cd.numberValues("$4 per 1M input tokens · November 30, 2026 · Fourteen months").has(1000000), true);
 });
 
+await t("발행 구조 변환(daily:apply-drafts): PUBLISHABLE만 · 기존 slug·HOLD는 멈춤 · dry-run은 아무것도 쓰지 않음", async () => {
+  const ap = await import("./apply-editorial-package.mjs");
+  const story = {
+    slug: "fx-apply-widget-2-ga", title: "Widget 2 정식 출시… 무료 등급 하루 1,000건", status: "draft", publishedAt: null, eventDate: "2026-10-07", editorialDepth: "standard",
+    summary: "FX A가 10월 7일 Widget 2를 모든 개발자에게 정식으로 내놨습니다. 하루 1,000건 무료 등급이 생겼고, 유료 등급은 월 20달러부터입니다.",
+    facts: ["하루 1,000건까지 무료로 쓸 수 있는 등급이 새로 생겼습니다.", "유료 등급은 개발자 좌석당 월 20달러부터입니다.", "지원 언어는 40개입니다."],
+    whyItMatters: "프리뷰로만 열려 있던 Widget이 정식 출시되면서, 개인 개발자도 비용 부담 없이 시험해 볼 수 있게 됐습니다. 다만 성능 수치는 회사 자체 측정입니다.",
+    whatChanges: "기존 Widget 1 연동은 2027년 3월 31일까지 그대로 동작하므로 그 전에 옮기면 됩니다.",
+    sourceUrl: "https://fx-a.test/news/widget-2", sourceName: "FX A", sourceTitle: "Introducing Widget 2 for developers", sourceType: "official", sourcePublishedAt: "2026-10-07T09:00:00.000Z",
+    contentType: "NEWS", category: "PRODUCT_UPDATE", topics: ["ai-coding"], companies: ["FX A"], products: ["Widget 2"], secondarySources: [], priority: 2,
+  };
+  const evidence = [1, 4, 3].map((n, i) => ({ fact: i + 1, url: story.sourceUrl, quote: WIDGET_SENTENCES[n] })).concat([{ fact: "change", url: story.sourceUrl, quote: WIDGET_SENTENCES[5] }]);
+  const draft = { verdict: "PUBLISHABLE", handsOn: false, relatedStory: null, story, evidence };
+  const before = spawnSync("git", ["status", "--porcelain", "--", "ingest", "content"], { cwd: SITE, encoding: "utf8" }).stdout;
+  const ok1 = ap.buildPackage({ drafts: [draft] }, { runId: "test", now: "2026-10-16T00:00:00.000Z" });
+  ok(ok1.ok, ok1.problems.join(" / "));
+  eq([ok1.candidates.length, ok1.editorial.length, ok1.editorial[0].editorialDepth, ok1.editorial[0].eventDate, ok1.editorial[0].c], [1, 1, "STANDARD", "2026-10-07", ok1.candidates[0].id]);
+  eq(Object.keys(ok1.editorial[0]).includes("publishedAt"), false, "publishedAt은 publish.mjs가 정한다");
+  const hold = ap.buildPackage({ drafts: [{ ...draft, verdict: "HOLD" }] }, { runId: "test" });
+  ok(!hold.ok && /PUBLISHABLE만/.test(hold.problems[0]), "HOLD 원고");
+  const taken = ap.buildPackage({ drafts: [{ ...draft, story: { ...story, slug: "gemini-4-argon" } }] }, { runId: "test" });
+  ok(!taken.ok && taken.problems.some((p) => /같은 slug/.test(p)), "기존 slug");
+  const badTopic = ap.buildPackage({ drafts: [{ ...draft, story: { ...story, topics: ["no-such-topic"] } }] }, { runId: "test" });
+  ok(badTopic.problems.some((p) => /주제 no-such-topic/.test(p)), "주제 목록");
+  eq(spawnSync("git", ["status", "--porcelain", "--", "ingest", "content"], { cwd: SITE, encoding: "utf8" }).stdout, before, "dry-run이 파일을 바꿈");
+});
+
 await t("실제 기사 데이터 변경 없음 (content/, ingest/ 추적 파일)", async () => {
   // ingest/registry.json은 소스 설정(기사 데이터 아님)이라 제외한다 (Phase 7.1.5에서 Claude 소스 주소를 고침)
   const d = spawnSync("git", ["status", "--porcelain", "--", "content", "ingest", ":!ingest/registry.json"], { cwd: SITE, encoding: "utf8" });
