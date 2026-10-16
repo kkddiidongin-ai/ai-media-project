@@ -37,13 +37,18 @@ on:
         required: false
         type: string
       mode:
-        description: "shadow(기본, LLM 없음) 또는 draft(AI 초안 + QA, 유료 API 호출)"
+        description: "shadow(기본, LLM 없음) · free-draft(무료 Gemini 초안, 시험 실행) · draft(유료 Anthropic 초안)"
         required: false
         type: choice
         default: shadow
         options:
           - shadow
+          - free-draft
           - draft
+      max_drafts:
+        description: "이번 실행에서 만들 초안 수 (비우면 기본 6). 시험할 때 1"
+        required: false
+        type: string
       from:
         description: "백필 시작일 (발표일 기준 YYYY-MM-DD). to와 함께 넣으면 그 기간만 다시 수집 (shadow)"
         required: false
@@ -120,6 +125,8 @@ jobs:
           if [ "$EVENT" = "workflow_dispatch" ] && [ "$INPUT_MODE" = "draft" ] && [ "$BACKFILL" != "true" ]; then M=draft; P=anthropic; fi
           # Phase 7.2: 무료 원고 생성은 운영자가 켠 경우에만 (예약 실행 포함). 유료(anthropic)는 여전히 수동 draft에서만
           if [ "$P" = "none" ] && [ "$FREE_DRAFT" = "true" ] && [ "$BACKFILL" != "true" ]; then M=draft; P=gemini; fi
+          # 수동 시험: free-draft를 고르면 이번 실행만 무료 Gemini (DAILY_GEMINI_FREE_TIER_CONFIRMED=true가 아니면 코드가 막는다)
+          if [ "$EVENT" = "workflow_dispatch" ] && [ "$INPUT_MODE" = "free-draft" ] && [ "$BACKFILL" != "true" ]; then M=draft; P=gemini; fi
           echo "mode=$M" >> "$GITHUB_OUTPUT"
           echo "provider=$P" >> "$GITHUB_OUTPUT"
           echo "mode: $M · provider: $P (event: $EVENT)"
@@ -195,7 +202,7 @@ jobs:
           DAILY_LLM_PRICE_INPUT: ${{ vars.DAILY_LLM_PRICE_INPUT }}
           DAILY_LLM_PRICE_OUTPUT: ${{ vars.DAILY_LLM_PRICE_OUTPUT }}
           DAILY_MAX_COST_USD: ${{ vars.DAILY_MAX_COST_USD }}
-          DAILY_MAX_LLM_CALLS: ${{ vars.DAILY_MAX_LLM_CALLS }}
+          DAILY_MAX_LLM_CALLS: ${{ inputs.max_drafts || vars.DAILY_MAX_LLM_CALLS }}
           DAILY_MAX_PUBLISH: ${{ vars.DAILY_MAX_PUBLISH }}
           DAILY_MAX_EVIDENCE_FETCHES: ${{ vars.DAILY_MAX_EVIDENCE_FETCHES }}
           DAILY_LAST_RUN_DATE: ${{ steps.last.outputs.date }}
@@ -272,7 +279,7 @@ jobs:
           D: ${{ steps.d.outputs.rid }}
         run: |
           [ -d "$RUNNER_TEMP/daily/$D/drafts" ] || { echo "drafts=0" >> "$GITHUB_OUTPUT"; exit 0; }
-          node scripts/pipeline/export-drafts.mjs "$RUNNER_TEMP/daily/$D"
+          node scripts/pipeline/export-drafts.mjs "$RUNNER_TEMP/daily/$D" --append-report "$RUNNER_TEMP/daily/$D/report.md"
 
       - name: Upload report artifact (fallback)
         if: always() && steps.run.outcome != 'skipped'
@@ -292,6 +299,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           D: ${{ steps.d.outputs.rid }}
           M: ${{ steps.m.outputs.mode }}
+          PUBN: ${{ steps.exp.outputs.publishable }}
         run: |
           set -euo pipefail
           SRC="$RUNNER_TEMP/daily/$D"
@@ -318,9 +326,9 @@ jobs:
           fi
           PR=$(gh pr list --head "$B" --state open --json number -q '.[0].number')
           if [ -z "$PR" ]; then
-            gh pr create --base "${{ github.event.repository.default_branch }}" --head "$B" --title "AI마중 DAILY $D ($M · 편집자 검토)" --body-file "ingest/daily/$D/report.md"
+            gh pr create --base "${{ github.event.repository.default_branch }}" --head "$B" --title "AI마중 DAILY $D ($M · 편집자 검토${PUBN:+ · 승인 대기 원고 ${PUBN}건})" --body-file "ingest/daily/$D/report.md"
           else
-            gh pr edit "$PR" --title "AI마중 DAILY $D ($M · 편집자 검토)" --body-file "ingest/daily/$D/report.md"
+            gh pr edit "$PR" --title "AI마중 DAILY $D ($M · 편집자 검토${PUBN:+ · 승인 대기 원고 ${PUBN}건})" --body-file "ingest/daily/$D/report.md"
           fi
 
       # 자동 발행: 운영자가 AUTO_PUBLISH_ENABLED=true로 켠 경우에만 발행 workflow를 부른다 (기본 꺼짐).

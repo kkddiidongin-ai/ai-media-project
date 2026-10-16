@@ -86,6 +86,23 @@ export function exportRun(runDir, { existing = loadExisting() } = {}) {
   return { version: 2, generatedAt: new Date().toISOString(), status: "draft_for_editor_review", source: path.basename(runDir), drafts: out };
 }
 
+/** 편집 승인 PR 본문용 요약 (보고서 뒤에 붙인다). PR merge는 승인이 아니다 — 발행은 publish.yml에서만 */
+export function renderApprovalSection(doc, { draftsRef, draftsPath }) {
+  const L = ["", "## 편집 승인 대기 원고", ""];
+  if (!doc.drafts.length) return [...L, "이번 실행에서 만든 원고가 없습니다 (생성 수단 미설정·한도·근거 부족이면 '원고 작성 대기'로 이월).", ""].join("\n");
+  L.push("| 상태 | 제목 | 사건일 | 공식 출처 | 초안 QA | 확인 필요 |", "|---|---|---|---|---|---|");
+  const cell = (s) => String(s ?? "").replace(/\|/g, "/").replace(/\n/g, " ");
+  for (const d of doc.drafts) L.push(`| ${d.verdict === "PUBLISHABLE" ? "✅ 승인 대기" : "✏️ 수정·재검증 대기"} | ${cell(d.story.title)} | ${d.story.eventDate} | [${cell(d.story.sourceName)}](${d.story.sourceUrl}) | ${d.draftQa ?? "-"} | ${cell([...(d.reviewReasons ?? []), ...(d.unverified ?? [])].slice(0, 3).join(" · ")) || "-"} |`);
+  L.push("");
+  for (const d of doc.drafts) {
+    L.push(`<details><summary>${cell(d.story.title)} — 원고 펼치기</summary>`, "", `**핵심 요약** ${d.story.summary}`, "", "**사실**");
+    for (const f of d.story.facts) L.push(`- ${f}`);
+    L.push("", `**왜 중요한가** ${d.story.whyItMatters}`, "", `**그래서 나에게는** ${d.story.whatChanges}`, "", `**미확인** ${(d.unverified ?? []).join(" · ") || "없음"}`, "", `작성 ${d.generation?.provider ?? "-"} · ${d.generation?.model ?? "-"} · ${d.generation?.generatedAt ?? "-"} · 직접 사용하지 않음 (handsOn: false)`, "", "</details>", "");
+  }
+  L.push("> PR을 승인·병합해도 사이트에 공개되지 않습니다. 발행은 Actions → **AI마중 기사 발행** (production-publish 승인) 에서만:", `> drafts_ref \`${draftsRef}\` · drafts_path \`${draftsPath}\` · (일부만) only=slug,slug`, "");
+  return L.join("\n");
+}
+
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   const argv = process.argv.slice(2);
   const dir = argv.find((a) => !a.startsWith("--"));
@@ -99,6 +116,11 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
   fs.mkdirSync(path.dirname(file), { recursive: true });
   fs.writeFileSync(file, JSON.stringify(doc, null, 2) + "\n");
   const pub = doc.drafts.filter((d) => d.verdict === "PUBLISHABLE").length;
+  const repI = argv.indexOf("--append-report");
+  if (repI >= 0 && fs.existsSync(argv[repI + 1])) {
+    const rid = path.basename(path.resolve(dir));
+    fs.appendFileSync(argv[repI + 1], renderApprovalSection(doc, { draftsRef: `automation/daily-${rid}`, draftsPath: `site/ingest/daily/${rid}/drafts/editorial-drafts.json` }));
+  }
   console.log(`원고 ${doc.drafts.length}건 → ${file} (발행 가능 ${pub} · 검토 필요 ${doc.drafts.length - pub})`);
   if (process.env.GITHUB_OUTPUT) fs.appendFileSync(process.env.GITHUB_OUTPUT, `drafts=${doc.drafts.length}\npublishable=${pub}\nfile=${file}\n`);
 }

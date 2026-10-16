@@ -279,6 +279,17 @@ await t("무료 생성 성공: 원고·QA·생성 통계 기록, 응답 형식 �
   eq([r.run.llm.generation.attempted, r.run.llm.generation.ok, r.run.llm.generation.failed], [2, 1, 1]);
   eq(r.run.pipeline.pending.draft, 1, "실패한 1건은 작성 대기로");
   eq(r.run.llm.estimatedCostUsd, 0, "무료 등급 비용 0");
+  // 연결: 초안 → 편집 원고 내보내기 → 승인 PR 본문 (모의 응답 — 실제 Gemini 호출 아님)
+  const { exportRun, renderApprovalSection } = await import("./export-drafts.mjs");
+  const doc = exportRun(r.outDir, { existing: EMPTY() });
+  eq(doc.drafts.length, 1, "만든 초안 1건만 내보냄 (실패 1건은 작성 대기)");
+  const d0 = doc.drafts[0];
+  eq([d0.handsOn, d0.story.status, d0.story.publishedAt, d0.story.eventDate, d0.generation.provider], [false, "draft", null, "2026-10-15", "gemini"]);
+  const md = renderApprovalSection(doc, { draftsRef: "automation/daily-2026-10-16", draftsPath: "site/ingest/daily/2026-10-16/drafts/editorial-drafts.json" });
+  ok(md.includes(d0.story.title) && /승인 대기|수정·재검증 대기/.test(md) && md.includes("PR을 승인·병합해도 사이트에 공개되지 않습니다"), md.slice(0, 300));
+  const wf = fs.readFileSync(path.join(REPO, ".github/workflows/daily-editorial.yml"), "utf8");
+  ok(/INPUT_MODE" = "free-draft" .*then M=draft; P=gemini; fi/.test(wf), "수동 시험 free-draft");
+  ok(/--append-report/.test(wf) && /승인 대기 원고/.test(wf), "PR 본문·제목에 승인 대기 원고");
 });
 
 // ---------- 원고 내보내기 · 발행 · 배포 ----------
