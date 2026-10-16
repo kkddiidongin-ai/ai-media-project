@@ -1,0 +1,231 @@
+{
+  "id": "0fa13121f082",
+  "date": "2026-10-15",
+  "proposedSlug": "re-making-easier-identify-ai-generated-content",
+  "title": null,
+  "sourceTitle": "We're making it easier to identify AI-generated content globally.",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 10,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": true,
+      "contextNeed": true,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": true
+    },
+    "deepMissing": [
+      "importance"
+    ]
+  },
+  "company": "Google",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/synth-id-ai-content/",
+      "name": "Google (The Keyword · AI)",
+      "type": "official",
+      "publishedAt": "2026-10-07T00:00:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "0fa13121f082",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/synth-id-ai-content/",
+    "canonicalUrl": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/synth-id-ai-content",
+    "title": "We're making it easier to identify AI-generated content globally.",
+    "excerpt": "We’re launching a standalone platform to help you easily identify whether online content was created using Google AI or tools from our industry partners.",
+    "publishedAt": "2026-10-07T00:00:00.000Z",
+    "sourceId": "google-ai",
+    "sourceName": "Google (The Keyword · AI)",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "sitemap-meta",
+    "discoveredVia": "https://blog.google/en-us/sitemap.xml",
+    "fetchedAt": "2026-10-15T09:08:04.550Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 3396,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "We’re launching a standalone platform to help you easily identify whether online content was created using Google AI or tools from our industry partners.",
+        "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/synth-id-ai-content/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-10-07T00:00:00.000Z",
+        "checkedAt": "2026-10-13T06:32:12.871Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "\"article_name\": \"We\\u0027re making it easier to identify AI\\u002Dgenerated content globally.\",",
+        "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/synth-id-ai-content/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-10-07T00:00:00.000Z",
+        "checkedAt": "2026-10-13T06:32:12.871Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "\"section_header\": \"We\\u0027re making it easier to identify AI\\u002Dgenerated content globally.\"",
+        "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/synth-id-ai-content/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-10-07T00:00:00.000Z",
+        "checkedAt": "2026-10-13T06:32:12.871Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "We're making it easier to identify AI-generated content globally.",
+        "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/synth-id-ai-content/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-10-07T00:00:00.000Z",
+        "checkedAt": "2026-10-13T06:32:12.871Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "As AI tools become better and easier to use, having clear context about the content you encounter online helps you make informed decisions about what to trust.",
+        "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/synth-id-ai-content/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-10-07T00:00:00.000Z",
+        "checkedAt": "2026-10-13T06:32:12.871Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Since launching Google SynthID in 2023, we've helped people identify AI-generated media using imperceptible watermarks across images, video, and audio.",
+        "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/synth-id-ai-content/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-10-07T00:00:00.000Z",
+        "checkedAt": "2026-10-13T06:32:12.871Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "To date, we've watermarked over 180 billion images and videos, along with 240,000 years of audio content.",
+        "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/synth-id-ai-content/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-10-07T00:00:00.000Z",
+        "checkedAt": "2026-10-13T06:32:12.871Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Last year, we introduced an early version of the SynthID Detector to help media professionals verify AI-generated content.",
+        "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/synth-id-ai-content/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-10-07T00:00:00.000Z",
+        "checkedAt": "2026-10-13T06:32:12.871Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Now, we’re expanding access to everyone – with the tool available globally in English starting today.",
+        "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/synth-id-ai-content/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-10-07T00:00:00.000Z",
+        "checkedAt": "2026-10-13T06:32:12.871Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "This tool joins our built-in verification features in Search, the Gemini app, and Chrome, which now regularly handle over 1 million requests daily.",
+        "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/synth-id-ai-content/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-10-07T00:00:00.000Z",
+        "checkedAt": "2026-10-13T06:32:12.871Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
+        "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/synth-id-ai-content/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-10-07T00:00:00.000Z",
+        "checkedAt": "2026-10-13T06:32:12.871Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "\"link_text\": \"EmbeddingGemma 2: an open, lightweight multimodal embedding model\",",
+        "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/synth-id-ai-content/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-10-07T00:00:00.000Z",
+        "checkedAt": "2026-10-13T06:32:12.871Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "\"link_url\": \"https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/\",",
+        "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/synth-id-ai-content/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-10-07T00:00:00.000Z",
+        "checkedAt": "2026-10-13T06:32:12.871Z"
+      }
+    ],
+    "pageDate": "2026-10-07T00:00:00.000Z"
+  },
+  "score": {
+    "importance": 3,
+    "practicalImpact": 2,
+    "koreanRelevance": 1,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PRODUCT_LAUNCH",
+      "AVAILABILITY",
+      "SECURITY"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 11,
+    "total": 11
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 PRODUCT_LAUNCH·AVAILABILITY·SECURITY (우선순위 11)",
+    "근거 확인 통과 (확인 사실 10개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "none",
+    "model": null,
+    "status": "skipped",
+    "error": "Shadow Mode — 원고를 만들지 않음",
+    "promptVersion": "draft-v1",
+    "at": "2026-10-15T09:10:24.640Z",
+    "evidenceHash": "fd3ed0744cbd"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": true,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

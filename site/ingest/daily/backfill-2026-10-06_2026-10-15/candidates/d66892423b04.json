@@ -1,0 +1,221 @@
+{
+  "id": "d66892423b04",
+  "date": "2026-10-15",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Share GPU clusters across teams with isolation and fairness using Amazon SageMaker HyperPod",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/share-gpu-clusters-across-teams-with-isolation-and-fairness-using-amazon-sagemaker-hyperpod/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-10-08T16:20:04.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "d66892423b04",
+    "url": "https://aws.amazon.com/blogs/machine-learning/share-gpu-clusters-across-teams-with-isolation-and-fairness-using-amazon-sagemaker-hyperpod/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/share-gpu-clusters-across-teams-with-isolation-and-fairness-using-amazon-sagemaker-hyperpod",
+    "title": "Share GPU clusters across teams with isolation and fairness using Amazon SageMaker HyperPod",
+    "excerpt": "A reference architecture for securely sharing one Amazon SageMaker HyperPod EKS cluster across multiple teams, using AWS IAM Identity Center for authentication, per-team SageMaker Domains and Kubernetes namespaces for isolation, HyperPod Task Governance for fairness, and namespace-level cost allocat",
+    "publishedAt": "2026-10-08T16:20:04.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-10-15T09:08:04.550Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 35377,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "A reference architecture for securely sharing one Amazon SageMaker HyperPod EKS cluster across multiple teams, using AWS IAM Identity Center for authentication, per-team SageMaker Domains and Kubernetes namespaces for isolation, HyperPod Task Governance for fairness, and namespace-level cost allocat",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/share-gpu-clusters-across-teams-with-isolation-and-fairness-using-amazon-sagemaker-hyperpod/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-08T16:20:04.000Z",
+        "checkedAt": "2026-10-13T06:36:14.963Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Share GPU clusters across teams with isolation and fairness using Amazon SageMaker HyperPod | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/share-gpu-clusters-across-teams-with-isolation-and-fairness-using-amazon-sagemaker-hyperpod/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-08T16:20:04.000Z",
+        "checkedAt": "2026-10-13T06:36:14.963Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Share GPU clusters across teams with isolation and fairness using Amazon SageMaker HyperPod",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/share-gpu-clusters-across-teams-with-isolation-and-fairness-using-amazon-sagemaker-hyperpod/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-08T16:20:04.000Z",
+        "checkedAt": "2026-10-13T06:36:14.963Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Multiple teams within the same company increasingly need shared access to expensive GPU clusters for their generative AI operations, while maintaining isolation boundaries, resource fairness, and operational independence.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/share-gpu-clusters-across-teams-with-isolation-and-fairness-using-amazon-sagemaker-hyperpod/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-08T16:20:04.000Z",
+        "checkedAt": "2026-10-13T06:36:14.963Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Without a well-designed multi-tenant (multi-team) architecture, organizations face uncontrolled resource consumption, weak isolation between teams, an inability to attribute shared GPU costs to the teams that incur them, and administrative overhead that slows down innovation.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/share-gpu-clusters-across-teams-with-isolation-and-fairness-using-amazon-sagemaker-hyperpod/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-08T16:20:04.000Z",
+        "checkedAt": "2026-10-13T06:36:14.963Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Amazon SageMaker HyperPod is a purpose-built AI service that simplifies the management of large-scale compute clusters for gen AI workloads.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/share-gpu-clusters-across-teams-with-isolation-and-fairness-using-amazon-sagemaker-hyperpod/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-08T16:20:04.000Z",
+        "checkedAt": "2026-10-13T06:36:14.963Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Figure 1: High-level multi-tenant architecture for two teams sharing one HyperPod EKS cluster",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/share-gpu-clusters-across-teams-with-isolation-and-fairness-using-amazon-sagemaker-hyperpod/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-08T16:20:04.000Z",
+        "checkedAt": "2026-10-13T06:36:14.963Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Each domain (SageMaker AI domain Team A and SageMaker AI domain Team B) provides a dedicated Amazon SageMaker Studio GUI and is configured with a team-specific execution role ( TeamA-role and TeamB-role respectively).",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/share-gpu-clusters-across-teams-with-isolation-and-fairness-using-amazon-sagemaker-hyperpod/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-08T16:20:04.000Z",
+        "checkedAt": "2026-10-13T06:36:14.963Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Within each namespace, teams can run their own HyperPod Spaces (interactive development environments), HyperPod PyTorch jobs (distributed training workloads), and HyperPod Inference endpoints (model serving).",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/share-gpu-clusters-across-teams-with-isolation-and-fairness-using-amazon-sagemaker-hyperpod/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-08T16:20:04.000Z",
+        "checkedAt": "2026-10-13T06:36:14.963Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "The first is a POSIX-compliant file system (Amazon FSx for Lustre or Amazon FSx for OpenZFS) organized into per-team shared directories ( /fsx/TeamA , /fsx/TeamB ) and per-user home directories ( /home/User1 , /home/User2 ).",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/share-gpu-clusters-across-teams-with-isolation-and-fairness-using-amazon-sagemaker-hyperpod/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-08T16:20:04.000Z",
+        "checkedAt": "2026-10-13T06:36:14.963Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Amazon SageMaker AI – For managing HyperPod clusters, MLflow tracking servers, and other SageMaker AI resources through the SageMaker AI API.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/share-gpu-clusters-across-teams-with-isolation-and-fairness-using-amazon-sagemaker-hyperpod/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-08T16:20:04.000Z",
+        "checkedAt": "2026-10-13T06:36:14.963Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Learn more: Interactive development environments on Amazon SageMaker HyperPod EKS clusters · Introducing new Ray capabilities on SageMaker HyperPod",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/share-gpu-clusters-across-teams-with-isolation-and-fairness-using-amazon-sagemaker-hyperpod/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-08T16:20:04.000Z",
+        "checkedAt": "2026-10-13T06:36:14.963Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "By combining AWS IAM Identity Center for authentication, per-team IAM roles for AWS level authorization, SageMaker AI domains for a tailored workspace experience, Kubernetes namespaces for workload isolation, HyperPod Task Governance for fair resource allocation, and namespace…",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/share-gpu-clusters-across-teams-with-isolation-and-fairness-using-amazon-sagemaker-hyperpod/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-08T16:20:04.000Z",
+        "checkedAt": "2026-10-13T06:36:14.963Z"
+      }
+    ],
+    "pageDate": "2026-10-08T16:20:04.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "INFRA"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 INFRA (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

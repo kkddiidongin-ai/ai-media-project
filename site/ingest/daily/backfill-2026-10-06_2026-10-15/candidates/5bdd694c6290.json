@@ -1,0 +1,224 @@
+{
+  "id": "5bdd694c6290",
+  "date": "2026-10-15",
+  "proposedSlug": "one-model-family-two-gold-level-results",
+  "title": null,
+  "sourceTitle": "One Model Family, Two Gold-Level Results: Fine-Tuning Nemotron for IOI and IMO",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 12,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Hugging Face",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026",
+      "name": "Hugging Face Blog",
+      "type": "official",
+      "publishedAt": "2026-10-07T12:45:31.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "5bdd694c6290",
+    "url": "https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026",
+    "canonicalUrl": "https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026",
+    "title": "One Model Family, Two Gold-Level Results: Fine-Tuning Nemotron for IOI and IMO",
+    "excerpt": "",
+    "publishedAt": "2026-10-07T12:45:31.000Z",
+    "sourceId": "huggingface",
+    "sourceName": "Hugging Face Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://huggingface.co/blog/feed.xml",
+    "fetchedAt": "2026-10-15T09:08:04.550Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 6036,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "One Model Family, Two Gold-Level Results: Fine-Tuning Nemotron for IOI and IMO",
+        "sourceUrl": "https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-07T12:45:31.000Z",
+        "checkedAt": "2026-10-13T06:32:20.555Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Starting from Nemotron 3, our teams used supervised fine-tuning (SFT), reinforcement learning (RL), and feedback-driven inference to create systems that reached gold-medal level at both IMO 2026 and IOI 2026 .",
+        "sourceUrl": "https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-07T12:45:31.000Z",
+        "checkedAt": "2026-10-13T06:32:20.555Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Nemotron 3 Ultra general, SFT, and RL checkpoints in a generate-verify-refine system",
+        "sourceUrl": "https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-07T12:45:31.000Z",
+        "checkedAt": "2026-10-13T06:32:20.555Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "For competitive programming, we curated 22,000 problems and generated synthetic reasoning traces to train two specialists.",
+        "sourceUrl": "https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-07T12:45:31.000Z",
+        "checkedAt": "2026-10-13T06:32:20.555Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "The progression on IOI 2025 makes the value of specialization easy to see.",
+        "sourceUrl": "https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-07T12:45:31.000Z",
+        "checkedAt": "2026-10-13T06:32:20.555Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "For the stronger Ultra model, one SFT epoch was enough to outperform the fully post-trained Nano model across IOI, ICPC, and LiveCodeBench Pro.",
+        "sourceUrl": "https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-07T12:45:31.000Z",
+        "checkedAt": "2026-10-13T06:32:20.555Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "That finding guided the competition-specific Ultra-CC system used for IOI 2026, which scored 535.4 out of 600.",
+        "sourceUrl": "https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-07T12:45:31.000Z",
+        "checkedAt": "2026-10-13T06:32:20.555Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Starting from Nemotron 3 Ultra, we trained one specialist with SFT and another with RL.",
+        "sourceUrl": "https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-07T12:45:31.000Z",
+        "checkedAt": "2026-10-13T06:32:20.555Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "The RL model was trained on 9,597 proof problems selected near the model's capability frontier.",
+        "sourceUrl": "https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-07T12:45:31.000Z",
+        "checkedAt": "2026-10-13T06:32:20.555Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Our earlier IOI 2025 Hugging Face post showed how test-time compute can push open-weight models to gold-level performance.",
+        "sourceUrl": "https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-07T12:45:31.000Z",
+        "checkedAt": "2026-10-13T06:32:20.555Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "The Nemotron Labs IMO 2026 collection brings together the SFT and RL checkpoints, both training datasets, and Nemotron-IMO-Bench, a new benchmark of 200 olympiad-level problems.",
+        "sourceUrl": "https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-07T12:45:31.000Z",
+        "checkedAt": "2026-10-13T06:32:20.555Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "For competitive programming, the Nemotron-3-Ultra-CC model is available on Hugging Face, and the IOI paper provides the training recipe and the GenCorrect methodology.",
+        "sourceUrl": "https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-07T12:45:31.000Z",
+        "checkedAt": "2026-10-13T06:32:20.555Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 2,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 2,
+    "signals": [
+      "MODEL_MENTION",
+      "RESEARCH_RESULT"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 6,
+    "total": 6
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 MODEL_MENTION·RESEARCH_RESULT (우선순위 6)",
+    "근거 확인 통과 (확인 사실 12개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "none",
+    "model": null,
+    "status": "skipped",
+    "error": "Shadow Mode — 원고를 만들지 않음",
+    "promptVersion": "draft-v1",
+    "at": "2026-10-15T09:10:24.641Z",
+    "evidenceHash": "4eceb8ff965f"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

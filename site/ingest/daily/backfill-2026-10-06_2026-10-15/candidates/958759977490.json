@@ -1,0 +1,222 @@
+{
+  "id": "958759977490",
+  "date": "2026-10-15",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Natural language security queries at Orca Security using Amazon Bedrock",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/natural-language-security-queries-at-orca-security-using-amazon-bedrock/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-10-13T16:03:31.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "958759977490",
+    "url": "https://aws.amazon.com/blogs/machine-learning/natural-language-security-queries-at-orca-security-using-amazon-bedrock/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/natural-language-security-queries-at-orca-security-using-amazon-bedrock",
+    "title": "Natural language security queries at Orca Security using Amazon Bedrock",
+    "excerpt": "Orca Security built Discovery AI, a natural language query agent on Amazon Bedrock that converts plain-English questions into Sonar queries. The post shares the multi-stage architecture and the results: 90% lower query cost, 93% fewer input tokens, and 75% lower latency than the initial baseline.",
+    "publishedAt": "2026-10-13T16:03:31.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-10-15T09:08:04.550Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 12650,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Orca Security built Discovery AI, a natural language query agent on Amazon Bedrock that converts plain-English questions into Sonar queries. The post shares the multi-stage architecture and the results: 90% lower query cost, 93% fewer input tokens, and 75% lower latency than the initial baseline.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/natural-language-security-queries-at-orca-security-using-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-13T16:03:31.000Z",
+        "checkedAt": "2026-10-15T09:07:39.029Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Natural language security queries at Orca Security using Amazon Bedrock | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/natural-language-security-queries-at-orca-security-using-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-13T16:03:31.000Z",
+        "checkedAt": "2026-10-15T09:07:39.029Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Natural language security queries at Orca Security using Amazon Bedrock",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/natural-language-security-queries-at-orca-security-using-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-13T16:03:31.000Z",
+        "checkedAt": "2026-10-15T09:07:39.029Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Orca Security ’s tool covers over 900 cloud models (the resource types Sonar tracks, such as an Amazon Elastic Compute Cloud (Amazon EC2) instance or an Amazon Simple Storage Service (Amazon S3) bucket).",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/natural-language-security-queries-at-orca-security-using-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-13T16:03:31.000Z",
+        "checkedAt": "2026-10-15T09:07:39.029Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "To solve this, Orca Security partnered with AWS to build Discovery AI, a natural language query agent on Amazon Bedrock .",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/natural-language-security-queries-at-orca-security-using-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-13T16:03:31.000Z",
+        "checkedAt": "2026-10-15T09:07:39.029Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Orca Security’s Sonar query system supports 900+ cloud infrastructure and application models with complex relationships between them.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/natural-language-security-queries-at-orca-security-using-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-13T16:03:31.000Z",
+        "checkedAt": "2026-10-15T09:07:39.029Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "To build this capability, the Orca team set out to build a natural language interface that can generate valid Sonar queries from plain text.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/natural-language-security-queries-at-orca-security-using-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-13T16:03:31.000Z",
+        "checkedAt": "2026-10-15T09:07:39.029Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "To address this, the Orca team designed and deployed a solution that handles thousands of queries per day at 15-second response times using Amazon Bedrock.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/natural-language-security-queries-at-orca-security-using-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-13T16:03:31.000Z",
+        "checkedAt": "2026-10-15T09:07:39.029Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "The system converts natural language questions into valid Discovery filters through a multi-stage pipeline, with each stage matched to the most appropriate Amazon Bedrock model.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/natural-language-security-queries-at-orca-security-using-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-13T16:03:31.000Z",
+        "checkedAt": "2026-10-15T09:07:39.029Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Figure 1: Multi-stage Discovery AI pipeline architecture showing the flow from natural language input to validated Discovery filter queries using foundation models on Amazon Bedrock",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/natural-language-security-queries-at-orca-security-using-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-13T16:03:31.000Z",
+        "checkedAt": "2026-10-15T09:07:39.029Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Neural Relevance Reranking: The retrieved candidates are reranked using Cohere Rerank 3.5 on Amazon Bedrock.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/natural-language-security-queries-at-orca-security-using-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-13T16:03:31.000Z",
+        "checkedAt": "2026-10-15T09:07:39.029Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "To get started building similar solutions, explore Amazon Bedrock for foundation model (FM) access, Cohere Rerank on Amazon Bedrock for retrieval optimization, and Amazon Titan for embeddings.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/natural-language-security-queries-at-orca-security-using-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-13T16:03:31.000Z",
+        "checkedAt": "2026-10-15T09:07:39.029Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "To learn more about how Orca Security applies AI across its framework, see how Orca drives security outcomes with AI and how Orca secures AI adoption, including Amazon Bedrock .",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/natural-language-security-queries-at-orca-security-using-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-13T16:03:31.000Z",
+        "checkedAt": "2026-10-15T09:07:39.029Z"
+      }
+    ],
+    "pageDate": "2026-10-13T16:03:31.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "SECURITY_MENTION",
+      "API_PLATFORM"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 SECURITY_MENTION·API_PLATFORM (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

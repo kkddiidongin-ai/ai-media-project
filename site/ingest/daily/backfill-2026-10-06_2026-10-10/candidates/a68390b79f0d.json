@@ -1,0 +1,220 @@
+{
+  "id": "a68390b79f0d",
+  "date": "2026-10-10",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "How Comcast and Booz Allen use Claude Mythos to find exploit chains and secure their codebases",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 12,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": true,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": true
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact"
+    ]
+  },
+  "company": "Anthropic",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://claude.com/resources/articles/how-comcast-booz-allen-use-claude-mythos-to-secure-their-codebases",
+      "name": "Claude (claude.com articles)",
+      "type": "official",
+      "publishedAt": "2026-10-06T00:00:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "a68390b79f0d",
+    "url": "https://claude.com/resources/articles/how-comcast-booz-allen-use-claude-mythos-to-secure-their-codebases",
+    "canonicalUrl": "https://claude.com/resources/articles/how-comcast-booz-allen-use-claude-mythos-to-secure-their-codebases",
+    "title": "How Comcast and Booz Allen use Claude Mythos to find exploit chains and secure their codebases",
+    "excerpt": "Security teams at Comcast and Booz Allen used Claude Mythos-class models through Project Glasswing to find, validate, and fix vulnerabilities their existing scanners missed.",
+    "publishedAt": "2026-10-06T00:00:00.000Z",
+    "sourceId": "claude-blog",
+    "sourceName": "Claude (claude.com articles)",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "listing-meta",
+    "discoveredVia": "https://claude.com/resources/articles",
+    "fetchedAt": "2026-10-13T06:38:31.253Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 7849,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Security teams at Comcast and Booz Allen used Claude Mythos-class models through Project Glasswing to find, validate, and fix vulnerabilities their existing scanners missed.",
+        "sourceUrl": "https://claude.com/resources/articles/how-comcast-booz-allen-use-claude-mythos-to-secure-their-codebases",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-06T00:00:00.000Z",
+        "checkedAt": "2026-10-13T06:32:19.979Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "• • • • • • • • • How Comcast and Booz Allen use Claude Mythos to find exploit chains and secure their codebases | Claude by Anthropic • •",
+        "sourceUrl": "https://claude.com/resources/articles/how-comcast-booz-allen-use-claude-mythos-to-secure-their-codebases",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-06T00:00:00.000Z",
+        "checkedAt": "2026-10-13T06:32:19.979Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "We spoke with security leaders from Comcast and Booz Allen who participated in the program about what Claude Mythos-class models found in their environments and how it’s changing the way their teams defend against attacks.",
+        "sourceUrl": "https://claude.com/resources/articles/how-comcast-booz-allen-use-claude-mythos-to-secure-their-codebases",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-06T00:00:00.000Z",
+        "checkedAt": "2026-10-13T06:32:19.979Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Comcast, a global media and technology company, used Claude Mythos Preview to identify a critical authentication vulnerability in a public-facing platform during an assessment covering 258 business-critical systems and approximately 170 million lines of code.",
+        "sourceUrl": "https://claude.com/resources/articles/how-comcast-booz-allen-use-claude-mythos-to-secure-their-codebases",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-06T00:00:00.000Z",
+        "checkedAt": "2026-10-13T06:32:19.979Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "The finding emerged from Claude Mythos Preview's ability to reason across a complex software ecosystem rather than evaluating individual files or components in isolation.",
+        "sourceUrl": "https://claude.com/resources/articles/how-comcast-booz-allen-use-claude-mythos-to-secure-their-codebases",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-06T00:00:00.000Z",
+        "checkedAt": "2026-10-13T06:32:19.979Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "By maintaining context across code, configuration, and application behavior, Claude Mythos Preview identified a security gap that emerged across multiple interacting components, making it difficult to detect through conventional approaches.",
+        "sourceUrl": "https://claude.com/resources/articles/how-comcast-booz-allen-use-claude-mythos-to-secure-their-codebases",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-06T00:00:00.000Z",
+        "checkedAt": "2026-10-13T06:32:19.979Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Booz Allen: Piecing together exploit chains",
+        "sourceUrl": "https://claude.com/resources/articles/how-comcast-booz-allen-use-claude-mythos-to-secure-their-codebases",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-06T00:00:00.000Z",
+        "checkedAt": "2026-10-13T06:32:19.979Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Booz Allen used Claude Mythos Preview to review far more software than a short engagement window would normally allow, and to identify weaknesses that could be strung together into exploit chains.",
+        "sourceUrl": "https://claude.com/resources/articles/how-comcast-booz-allen-use-claude-mythos-to-secure-their-codebases",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-06T00:00:00.000Z",
+        "checkedAt": "2026-10-13T06:32:19.979Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "“Mythos was surprising in its ability to reason across boundaries rather than only identify isolated code issues,” said Sahil Sanghvi, Vice President of AI Engineering at Booz Allen.",
+        "sourceUrl": "https://claude.com/resources/articles/how-comcast-booz-allen-use-claude-mythos-to-secure-their-codebases",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-06T00:00:00.000Z",
+        "checkedAt": "2026-10-13T06:32:19.979Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "“Mythos can create a large candidate set quickly, but teams still need to validate findings, deduplicate systemic patterns, and route issues to the right owners,” said Brad Medairy, President of National Cybersecurity, Booz Allen.",
+        "sourceUrl": "https://claude.com/resources/articles/how-comcast-booz-allen-use-claude-mythos-to-secure-their-codebases",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-06T00:00:00.000Z",
+        "checkedAt": "2026-10-13T06:32:19.979Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "As models with the capabilities of Claude Mythos become part of everyday security work, organizations can examine their own systems the way a skilled attacker would, tracing how code, configuration, and legacy components interact and closing the gaps between them before anyone…",
+        "sourceUrl": "https://claude.com/resources/articles/how-comcast-booz-allen-use-claude-mythos-to-secure-their-codebases",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-06T00:00:00.000Z",
+        "checkedAt": "2026-10-13T06:32:19.979Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Bradley Axen, Head of AI Capabilities at Block, on how his team evaluates new large language models, how Claude Fable 5 orchestrates company-wide code migrations, and why safeguards are a critical part of deploying frontier intelligence responsibly, at scale.",
+        "sourceUrl": "https://claude.com/resources/articles/how-comcast-booz-allen-use-claude-mythos-to-secure-their-codebases",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-06T00:00:00.000Z",
+        "checkedAt": "2026-10-13T06:32:19.979Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "What effort really is and when to use which level in Claude Code, from my own tests of three builds and a deep dive into Terminal-Bench 3.0 on Opus 5.5 and Fable 5.1.",
+        "sourceUrl": "https://claude.com/resources/articles/how-comcast-booz-allen-use-claude-mythos-to-secure-their-codebases",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-06T00:00:00.000Z",
+        "checkedAt": "2026-10-13T06:32:19.979Z"
+      }
+    ],
+    "pageDate": "2026-10-06T00:00:00.000Z"
+  },
+  "score": {
+    "importance": 2,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "SECURITY",
+      "SECURITY_MENTION"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 6,
+    "total": 6
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 SECURITY·SECURITY_MENTION (우선순위 6)",
+    "같은 회사(Anthropic) 추천이 이미 2건 — 다양성 규칙으로 뒤로 (편집자 판단)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": "diversity",
+  "approval": {
+    "status": "pending"
+  }
+}

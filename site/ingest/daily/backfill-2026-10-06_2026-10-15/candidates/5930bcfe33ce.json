@@ -1,0 +1,222 @@
+{
+  "id": "5930bcfe33ce",
+  "date": "2026-10-15",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Enterprise managed settings enforcement updates",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 8,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": false,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "evidenceQuality",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "GitHub",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://github.blog/changelog/2026-10-13-enterprise-managed-settings-enforcement-updates",
+      "name": "GitHub Changelog",
+      "type": "official",
+      "publishedAt": "2026-10-13T15:20:10.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "5930bcfe33ce",
+    "url": "https://github.blog/changelog/2026-10-13-enterprise-managed-settings-enforcement-updates",
+    "canonicalUrl": "https://github.blog/changelog/2026-10-13-enterprise-managed-settings-enforcement-updates",
+    "title": "Enterprise managed settings enforcement updates",
+    "excerpt": "Enterprise administrators can now require supported GitHub Copilot clients to retrieve current server-managed settings at startup instead of relying on a cached policy. We are also adding minimum client version… The post Enterprise managed settings enforcement updates appeared first on The GitHub Bl",
+    "publishedAt": "2026-10-13T15:20:10.000Z",
+    "sourceId": "github-changelog",
+    "sourceName": "GitHub Changelog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://github.blog/changelog/feed/",
+    "fetchedAt": "2026-10-15T09:08:04.550Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 1808,
+    "grade": "LIMITED",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Enterprise administrators can now require supported GitHub Copilot clients to retrieve current server-managed settings at startup instead of relying on a cached policy. We are also adding minimum client version… The post Enterprise managed settings enforcement updates appeared first on The GitHub Bl",
+        "sourceUrl": "https://github.blog/changelog/2026-10-13-enterprise-managed-settings-enforcement-updates",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-13T15:20:10.000Z",
+        "checkedAt": "2026-10-15T09:07:40.241Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Enterprise managed settings enforcement updates - GitHub Changelog",
+        "sourceUrl": "https://github.blog/changelog/2026-10-13-enterprise-managed-settings-enforcement-updates",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-13T15:20:10.000Z",
+        "checkedAt": "2026-10-15T09:07:40.241Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Enterprise administrators can now require supported GitHub Copilot clients to retrieve current server-managed settings at startup instead of relying on a cached policy.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-13-enterprise-managed-settings-enforcement-updates",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-13T15:20:10.000Z",
+        "checkedAt": "2026-10-15T09:07:40.241Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "We are also adding minimum client version requirements to governance-focused managed settings keys over time, starting with the sandbox key.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-13-enterprise-managed-settings-enforcement-updates",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-13T15:20:10.000Z",
+        "checkedAt": "2026-10-15T09:07:40.241Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Force refresh settings on client startup",
+        "sourceUrl": "https://github.blog/changelog/2026-10-13-enterprise-managed-settings-enforcement-updates",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-13T15:20:10.000Z",
+        "checkedAt": "2026-10-15T09:07:40.241Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Set forceRemoteSettingsRefresh to true through server-managed, MDM-managed, or file-based settings when a policy change must take effect before Copilot starts.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-13-enterprise-managed-settings-enforcement-updates",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-13T15:20:10.000Z",
+        "checkedAt": "2026-10-15T09:07:40.241Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "The setting is supported in Copilot CLI, VS Code, and the GitHub Copilot app.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-13-enterprise-managed-settings-enforcement-updates",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-13T15:20:10.000Z",
+        "checkedAt": "2026-10-15T09:07:40.241Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "MDM-managed and file-based delivery can require freshness before the client signs in for the first time.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-13-enterprise-managed-settings-enforcement-updates",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-13T15:20:10.000Z",
+        "checkedAt": "2026-10-15T09:07:40.241Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "We&rsquo;ve also added enforcement of a required minimum client version to the sandbox key in support of the generally available local sandbox capability.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-13-enterprise-managed-settings-enforcement-updates",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-13T15:20:10.000Z",
+        "checkedAt": "2026-10-15T09:07:40.241Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "When this key is included in managed settings, users who pin to older versions of Copilot clients will now be forced to update in order to resume using Copilot.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-13-enterprise-managed-settings-enforcement-updates",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-13T15:20:10.000Z",
+        "checkedAt": "2026-10-15T09:07:40.241Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "To learn more, see Deploying enterprise managed settings .",
+        "sourceUrl": "https://github.blog/changelog/2026-10-13-enterprise-managed-settings-enforcement-updates",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-13T15:20:10.000Z",
+        "checkedAt": "2026-10-15T09:07:40.241Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Search and filter for budgets now available",
+        "sourceUrl": "https://github.blog/changelog/2026-10-13-enterprise-managed-settings-enforcement-updates",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-13T15:20:10.000Z",
+        "checkedAt": "2026-10-15T09:07:40.241Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "GitHub Copilot weekly releases — October 5",
+        "sourceUrl": "https://github.blog/changelog/2026-10-13-enterprise-managed-settings-enforcement-updates",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-13T15:20:10.000Z",
+        "checkedAt": "2026-10-15T09:07:40.241Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PRODUCT_LAUNCH"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 PRODUCT_LAUNCH (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

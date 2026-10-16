@@ -1,0 +1,212 @@
+{
+  "id": "91ed3eb235f3",
+  "date": "2026-10-10",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Introducing Falcon ASR",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 12,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Hugging Face",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://huggingface.co/blog/tiiuae/falcon-asr",
+      "name": "Hugging Face Blog",
+      "type": "official",
+      "publishedAt": "2026-10-07T13:21:03.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "91ed3eb235f3",
+    "url": "https://huggingface.co/blog/tiiuae/falcon-asr",
+    "canonicalUrl": "https://huggingface.co/blog/tiiuae/falcon-asr",
+    "title": "Introducing Falcon ASR",
+    "excerpt": "",
+    "publishedAt": "2026-10-07T13:21:03.000Z",
+    "sourceId": "huggingface",
+    "sourceName": "Hugging Face Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://huggingface.co/blog/feed.xml",
+    "fetchedAt": "2026-10-13T06:38:31.253Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 6991,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Arabic WER: 20.92% · Parameters: 1.6B · Emirati WER (TII evaluation): 22.73%",
+        "sourceUrl": "https://huggingface.co/blog/tiiuae/falcon-asr",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-07T13:21:03.000Z",
+        "checkedAt": "2026-10-13T06:32:22.087Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "We’re introducing Falcon-ASR, our 1.6 billion parameter speech recognition model for Arabic, with a particular focus on the Emirati dialect.",
+        "sourceUrl": "https://huggingface.co/blog/tiiuae/falcon-asr",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-07T13:21:03.000Z",
+        "checkedAt": "2026-10-13T06:32:22.087Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "In our evaluation, Falcon-ASR achieved an average word error rate of 20.92% across six Arabic test sets, compared with the best published result of 23.17% in the leaderboard snapshot we used.",
+        "sourceUrl": "https://huggingface.co/blog/tiiuae/falcon-asr",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-07T13:21:03.000Z",
+        "checkedAt": "2026-10-13T06:32:22.087Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Competitor figures are the published leaderboard averages checked on 30 September 2026.",
+        "sourceUrl": "https://huggingface.co/blog/tiiuae/falcon-asr",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-07T13:21:03.000Z",
+        "checkedAt": "2026-10-13T06:32:22.087Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Falcon-ASR’s average WER is 2.25 percentage points better than the best published result in that snapshot.",
+        "sourceUrl": "https://huggingface.co/blog/tiiuae/falcon-asr",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-07T13:21:03.000Z",
+        "checkedAt": "2026-10-13T06:32:22.087Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "In our internal Emirati evaluation, Falcon-ASR achieved 22.73% WER and 10.19% CER:",
+        "sourceUrl": "https://huggingface.co/blog/tiiuae/falcon-asr",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-07T13:21:03.000Z",
+        "checkedAt": "2026-10-13T06:32:22.087Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Its WER is 4.07 percentage points below Qwen3-Omni, the next best result.",
+        "sourceUrl": "https://huggingface.co/blog/tiiuae/falcon-asr",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-07T13:21:03.000Z",
+        "checkedAt": "2026-10-13T06:32:22.087Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "In our evaluation on the seven public English test sets used by the Hugging Face Open ASR Leaderboard, it achieved a mean WER of 5.74%.",
+        "sourceUrl": "https://huggingface.co/blog/tiiuae/falcon-asr",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-07T13:21:03.000Z",
+        "checkedAt": "2026-10-13T06:32:22.087Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Falcon-ASR builds on our Falcon3-Audio work.",
+        "sourceUrl": "https://huggingface.co/blog/tiiuae/falcon-asr",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-07T13:21:03.000Z",
+        "checkedAt": "2026-10-13T06:32:22.087Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "The architecture and training approach for Falcon3-Audio are described in Competitive Audio-Language Models with Data-Efficient Single-Stage Training on Public Data .",
+        "sourceUrl": "https://huggingface.co/blog/tiiuae/falcon-asr",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-07T13:21:03.000Z",
+        "checkedAt": "2026-10-13T06:32:22.087Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "نقدّم Falcon-ASR ، نموذجنا للتعرف على الكلام العربي بحجم 1.6 مليار معلمة، مع اهتمام خاص باللهجة الإماراتية. طوّرنا النموذج في معهد الابتكار التكنولوجي ( TII ) في أبوظبي، وهو يدعم أيضًا اللغات الإنجليزية والفرنسية والإسبانية والبرتغالية.",
+        "sourceUrl": "https://huggingface.co/blog/tiiuae/falcon-asr",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-07T13:21:03.000Z",
+        "checkedAt": "2026-10-13T06:32:22.087Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Falcon OCR Arabic: 270M Parameters State-of-the-Art Arabic OCR",
+        "sourceUrl": "https://huggingface.co/blog/tiiuae/falcon-asr",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-07T13:21:03.000Z",
+        "checkedAt": "2026-10-13T06:32:22.087Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 2,
+    "signals": [
+      "PRODUCT_LAUNCH"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 PRODUCT_LAUNCH (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

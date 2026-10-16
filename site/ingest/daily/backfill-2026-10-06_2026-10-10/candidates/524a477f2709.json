@@ -1,0 +1,238 @@
+{
+  "id": "524a477f2709",
+  "date": "2026-10-10",
+  "proposedSlug": "introducing-claude-haiku-5-5-aws",
+  "title": null,
+  "sourceTitle": "Introducing Claude Haiku 5.5 on AWS",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 12,
+    "deepChecks": {
+      "importance": true,
+      "novelty": true,
+      "userImpact": true,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [
+    {
+      "url": "https://www.anthropic.com/claude-haiku-5-5",
+      "source": "Anthropic (모델 발표 페이지)"
+    }
+  ],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-haiku-5-5-on-aws/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-10-07T18:52:10.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "524a477f2709",
+    "url": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-haiku-5-5-on-aws/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-haiku-5-5-on-aws",
+    "title": "Introducing Claude Haiku 5.5 on AWS",
+    "excerpt": "Claude Haiku 5.5 is now available on Amazon Bedrock and Claude Platform on AWS. According to Anthropic, it is the fastest, most efficient model in the Claude 5.5 family, built for subagents and high-volume, cost-sensitive work, and costs around 75% less than Claude Haiku 4.5 for most tasks. This pos",
+    "publishedAt": "2026-10-07T18:52:10.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-10-13T06:38:31.253Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 5798,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Claude Haiku 5.5 is now available on Amazon Bedrock and Claude Platform on AWS. According to Anthropic, it is the fastest, most efficient model in the Claude 5.5 family, built for subagents and high-volume, cost-sensitive work, and costs around 75% less than Claude Haiku 4.5 for most tasks. This pos",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-haiku-5-5-on-aws/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-07T18:52:10.000Z",
+        "checkedAt": "2026-10-13T06:32:10.476Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Introducing Claude Haiku 5.5 on AWS | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-haiku-5-5-on-aws/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-07T18:52:10.000Z",
+        "checkedAt": "2026-10-13T06:32:10.476Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Today, we’re excited to announce the availability of Claude Haiku 5.5 on Amazon Bedrock and Claude Platform on AWS .",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-haiku-5-5-on-aws/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-07T18:52:10.000Z",
+        "checkedAt": "2026-10-13T06:32:10.476Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "According to Anthropic, Claude Haiku 5.5 is the fastest and most efficient model in the Claude 5.5 family, built for subagents and high-volume, cost-sensitive work.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-haiku-5-5-on-aws/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-07T18:52:10.000Z",
+        "checkedAt": "2026-10-13T06:32:10.476Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Amazon Bedrock gives you Haiku 5.5 capabilities while keeping your data within AWS infrastructure with Regional data residency.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-haiku-5-5-on-aws/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-07T18:52:10.000Z",
+        "checkedAt": "2026-10-13T06:32:10.476Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "This post covers Claude Haiku 5.5’s improvements, practical guidance on when to choose Haiku 5.5, and how to get started on Amazon Bedrock.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-haiku-5-5-on-aws/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-07T18:52:10.000Z",
+        "checkedAt": "2026-10-13T06:32:10.476Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Claude Haiku 5.5 is Anthropic’s most capable Haiku model, across coding, tool use, computer use, and agentic tasks.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-haiku-5-5-on-aws/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-07T18:52:10.000Z",
+        "checkedAt": "2026-10-13T06:32:10.476Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Haiku 5.5 pairs with the recently announced Claude Opus 5.5.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-haiku-5-5-on-aws/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-07T18:52:10.000Z",
+        "checkedAt": "2026-10-13T06:32:10.476Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Together, they make a strong team: Opus 5.5 plans and makes the judgment calls, and Haiku 5.5 carries out well-defined tasks quickly and at scale.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-haiku-5-5-on-aws/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-07T18:52:10.000Z",
+        "checkedAt": "2026-10-13T06:32:10.476Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Claude Haiku 5.5 takes on the fast layer of subagents.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-haiku-5-5-on-aws/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-07T18:52:10.000Z",
+        "checkedAt": "2026-10-13T06:32:10.476Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "To try Haiku 5.5, open the Amazon Bedrock console , choose Test , then Playground , and select Haiku 5.5 as the model.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-haiku-5-5-on-aws/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-07T18:52:10.000Z",
+        "checkedAt": "2026-10-13T06:32:10.476Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Claude Haiku 5.5 is available today on Amazon Bedrock through the US Geo CRIS (us.), EU Geo CRIS (eu.), AU Geo CRIS (au.), JP Geo CRIS (jp.) and Global CRIS (global.) inference profiles on bedrock-runtime .",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-haiku-5-5-on-aws/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-07T18:52:10.000Z",
+        "checkedAt": "2026-10-13T06:32:10.476Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Give Claude Haiku 5.5 a try on the Amazon Bedrock console , in Claude Platform on AWS , or explore the Getting Started notebooks on GitHub.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-haiku-5-5-on-aws/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-07T18:52:10.000Z",
+        "checkedAt": "2026-10-13T06:32:10.476Z"
+      }
+    ],
+    "pageDate": "2026-10-07T18:52:10.000Z"
+  },
+  "score": {
+    "importance": 4,
+    "practicalImpact": 3,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "MODEL",
+      "PRODUCT_LAUNCH",
+      "AVAILABILITY",
+      "API_PLATFORM"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 13,
+    "total": 13
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 MODEL·PRODUCT_LAUNCH·AVAILABILITY·API_PLATFORM (우선순위 13)",
+    "근거 확인 통과 (확인 사실 12개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "none",
+    "model": null,
+    "status": "skipped",
+    "error": "Shadow Mode — 원고를 만들지 않음",
+    "promptVersion": "draft-v1",
+    "at": "2026-10-13T06:39:40.313Z",
+    "evidenceHash": "7a73cd49be82"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": true,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}
