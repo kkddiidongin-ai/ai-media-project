@@ -56,10 +56,10 @@
     "tier": 1,
     "fetchMode": "rss",
     "discoveredVia": "https://openai.com/news/rss.xml",
-    "fetchedAt": "2026-10-17T00:22:08.238Z"
+    "fetchedAt": "2026-10-17T13:40:53.584Z"
   },
   "evidence": {
-    "status": "HTTP_403",
+    "status": "SKIPPED_HOST_BLOCKED",
     "chars": 0,
     "grade": "FAIL",
     "ledger": [
@@ -70,7 +70,7 @@
         "sourceUrl": "https://openai.com/index/introducing-the-rosalind-academic-plan",
         "source": "OpenAI",
         "publishedAt": "2026-10-15T19:00:00.000Z",
-        "checkedAt": "2026-10-17T00:23:55.013Z"
+        "checkedAt": "2026-10-17T13:43:26.432Z"
       }
     ],
     "pageDate": null,
@@ -100,7 +100,7 @@
   },
   "decision": "HOLD",
   "reasons": [
-    "근거 부족 (원문 HTTP_403, 확인 사실 0개) — 발행하지 않음"
+    "근거 부족 (원문 SKIPPED_HOST_BLOCKED, 확인 사실 0개) — 발행하지 않음"
   ],
   "needsReview": [
     "source_blocked",
