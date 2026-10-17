@@ -1,0 +1,212 @@
+{
+  "id": "849b423196d1",
+  "date": "2026-10-17",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Welcome Beam: a 501B open model you can own, customize, and scale",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Hugging Face",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://huggingface.co/blog/reflection-beam",
+      "name": "Hugging Face Blog",
+      "type": "official",
+      "publishedAt": "2026-10-16T00:00:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "849b423196d1",
+    "url": "https://huggingface.co/blog/reflection-beam",
+    "canonicalUrl": "https://huggingface.co/blog/reflection-beam",
+    "title": "Welcome Beam: a 501B open model you can own, customize, and scale",
+    "excerpt": "",
+    "publishedAt": "2026-10-16T00:00:00.000Z",
+    "sourceId": "huggingface",
+    "sourceName": "Hugging Face Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://huggingface.co/blog/feed.xml",
+    "fetchedAt": "2026-10-17T00:22:08.238Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 19367,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Welcome Beam: a 501B open model you can own, customize, and scale",
+        "sourceUrl": "https://huggingface.co/blog/reflection-beam",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-16T00:00:00.000Z",
+        "checkedAt": "2026-10-17T00:24:00.900Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "It's a mixture-of-experts (MoEs) model with 501B parameters (23B active per token), supports text as input, has a context window of 1M tokens , and is released under the Apache 2.0 license.",
+        "sourceUrl": "https://huggingface.co/blog/reflection-beam",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-16T00:00:00.000Z",
+        "checkedAt": "2026-10-17T00:24:00.900Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "It is for teams that want a frontier-scale model on their own hardware, infrastructure, or cloud, and want to customize it to their own use cases.",
+        "sourceUrl": "https://huggingface.co/blog/reflection-beam",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-16T00:00:00.000Z",
+        "checkedAt": "2026-10-17T00:24:00.900Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Beam ships with its own dedicated open source Rust based harness that delivers the best performance from the model.",
+        "sourceUrl": "https://huggingface.co/blog/reflection-beam",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-16T00:00:00.000Z",
+        "checkedAt": "2026-10-17T00:24:00.900Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "If you build something with Beam, then share it on the Hub for a chance to win $10,000.",
+        "sourceUrl": "https://huggingface.co/blog/reflection-beam",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-16T00:00:00.000Z",
+        "checkedAt": "2026-10-17T00:24:00.900Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Beam is a text-only model built for long-context (1M context length) reasoning and agentic work.",
+        "sourceUrl": "https://huggingface.co/blog/reflection-beam",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-16T00:00:00.000Z",
+        "checkedAt": "2026-10-17T00:24:00.900Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "All 256 experts stay in memory, so deployment needs the memory of a 501B model but runs at the speed of a 23B one.",
+        "sourceUrl": "https://huggingface.co/blog/reflection-beam",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-16T00:00:00.000Z",
+        "checkedAt": "2026-10-17T00:24:00.900Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "A B200 has 180 GB of HBM3e, so two of them (360 GB) can hold the Beam weights, with little room left for activations and the KV cache.",
+        "sourceUrl": "https://huggingface.co/blog/reflection-beam",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-16T00:00:00.000Z",
+        "checkedAt": "2026-10-17T00:24:00.900Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "You can also serve it on a full 8xB200 node, or on two B300s at 288 GB each, or even 8xRTX Pro 6000.",
+        "sourceUrl": "https://huggingface.co/blog/reflection-beam",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-16T00:00:00.000Z",
+        "checkedAt": "2026-10-17T00:24:00.900Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Beam writes tool-call arguments inline, in its own XML-style grammar, so a bare 7 could be a number or a string.",
+        "sourceUrl": "https://huggingface.co/blog/reflection-beam",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-16T00:00:00.000Z",
+        "checkedAt": "2026-10-17T00:24:00.900Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "A small drafter model proposes up to 15 tokens ahead, and Beam checks them all in one forward pass, so each step can accept several tokens.",
+        "sourceUrl": "https://huggingface.co/blog/reflection-beam",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-16T00:00:00.000Z",
+        "checkedAt": "2026-10-17T00:24:00.900Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Beam is a 501B open model that you can run on your own hardware and change.",
+        "sourceUrl": "https://huggingface.co/blog/reflection-beam",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-16T00:00:00.000Z",
+        "checkedAt": "2026-10-17T00:24:00.900Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 2,
+    "signals": [
+      "MODEL_MENTION"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 MODEL_MENTION (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}
