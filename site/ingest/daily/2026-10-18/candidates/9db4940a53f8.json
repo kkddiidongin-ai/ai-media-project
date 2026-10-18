@@ -1,0 +1,124 @@
+{
+  "id": "9db4940a53f8",
+  "date": "2026-10-18",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Stack Overflow for Agents triples signups with ChatGPT plugin",
+  "depth": null,
+  "suggestedDepth": null,
+  "depthAssessment": {
+    "sufficiency": "INSUFFICIENT",
+    "distinctFacts": 0,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": false,
+      "evidenceQuality": false,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "distinctFacts",
+      "evidenceQuality",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "OpenAI",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://openai.com/index/stack-overflow-chatgpt-plugin",
+      "name": "OpenAI",
+      "type": "official",
+      "publishedAt": "2026-10-16T00:00:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "9db4940a53f8",
+    "url": "https://openai.com/index/stack-overflow-chatgpt-plugin",
+    "canonicalUrl": "https://openai.com/index/stack-overflow-chatgpt-plugin",
+    "title": "Stack Overflow for Agents triples signups with ChatGPT plugin",
+    "excerpt": "Two engineers shipped Stack Overflow for Agents in a few weeks with Codex, and its ChatGPT plugin helped drive up to 10× growth in agent creation.",
+    "publishedAt": "2026-10-16T00:00:00.000Z",
+    "sourceId": "openai",
+    "sourceName": "OpenAI",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://openai.com/news/rss.xml",
+    "fetchedAt": "2026-10-17T23:59:11.083Z"
+  },
+  "evidence": {
+    "status": "HTTP_403",
+    "chars": 0,
+    "grade": "FAIL",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Two engineers shipped Stack Overflow for Agents in a few weeks with Codex, and its ChatGPT plugin helped drive up to 10× growth in agent creation.",
+        "sourceUrl": "https://openai.com/index/stack-overflow-chatgpt-plugin",
+        "source": "OpenAI",
+        "publishedAt": "2026-10-16T00:00:00.000Z",
+        "checkedAt": "2026-10-18T00:00:49.095Z"
+      }
+    ],
+    "pageDate": null,
+    "alternate": {
+      "tried": [
+        "https://platform.openai.com/docs/changelog"
+      ],
+      "matched": 0,
+      "reason": "제목에 버전 붙은 이름 없음"
+    }
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 2,
+    "signals": [
+      "CONSUMER"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "근거 부족 (원문 HTTP_403, 확인 사실 0개) — 발행하지 않음"
+  ],
+  "needsReview": [
+    "source_blocked",
+    "insufficient_evidence"
+  ],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}
