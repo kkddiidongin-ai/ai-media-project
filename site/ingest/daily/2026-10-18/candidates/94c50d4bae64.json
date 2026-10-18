@@ -5,25 +5,23 @@
   "title": null,
   "sourceTitle": "Gmail Live is rolling out to paid Workspace users",
   "depth": null,
-  "suggestedDepth": null,
+  "suggestedDepth": "STANDARD",
   "depthAssessment": {
-    "sufficiency": "INSUFFICIENT",
-    "distinctFacts": 0,
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 9,
     "deepChecks": {
       "importance": false,
       "novelty": true,
       "userImpact": false,
       "contextNeed": false,
-      "distinctFacts": false,
-      "evidenceQuality": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
       "standardWouldOmit": false
     },
     "deepMissing": [
       "importance",
       "userImpact",
       "contextNeed",
-      "distinctFacts",
-      "evidenceQuality",
       "standardWouldOmit"
     ]
   },
@@ -56,12 +54,12 @@
     "tier": 1,
     "fetchMode": "rss",
     "discoveredVia": "https://workspaceupdates.googleblog.com/feeds/posts/default?max-results=500&published-min=2026-01-01T00:00:00Z",
-    "fetchedAt": "2026-10-17T23:59:11.083Z"
+    "fetchedAt": "2026-10-18T13:58:30.865Z"
   },
   "evidence": {
-    "status": "HTTP_429",
-    "chars": 0,
-    "grade": "FAIL",
+    "status": "OK",
+    "chars": 3460,
+    "grade": "PASS",
     "ledger": [
       {
         "id": "E0",
@@ -70,7 +68,115 @@
         "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/gmail-live-is-rolling-out-to-paid-Workspace-users.html",
         "source": "Google Workspace Updates",
         "publishedAt": "2026-10-15T21:19:41.625Z",
-        "checkedAt": "2026-10-18T00:00:51.076Z"
+        "checkedAt": "2026-10-18T14:00:07.673Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Google Workspace Updates: Gmail Live is rolling out to paid Workspace users",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/gmail-live-is-rolling-out-to-paid-Workspace-users.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-15T21:19:41.625Z",
+        "checkedAt": "2026-10-18T14:00:07.673Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "This official feed from the Google Workspace team provides essential information about new features and improvements for Google Workspace customers.",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/gmail-live-is-rolling-out-to-paid-Workspace-users.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-15T21:19:41.625Z",
+        "checkedAt": "2026-10-18T14:00:07.673Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Gmail Live is rolling out to paid Workspace users",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/gmail-live-is-rolling-out-to-paid-Workspace-users.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-15T21:19:41.625Z",
+        "checkedAt": "2026-10-18T14:00:07.673Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Following our initial rollout of conversational AI voice capabilities, we are bringing Gmail Live to Google Workspace customers on mobile (Android and iOS).",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/gmail-live-is-rolling-out-to-paid-Workspace-users.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-15T21:19:41.625Z",
+        "checkedAt": "2026-10-18T14:00:07.673Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Using our latest Gemini models, Gmail Live delivers a low-latency, inbox-aware voice search experience that lets you ask questions naturally and hear synthesized answers directly from your email inbox.",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/gmail-live-is-rolling-out-to-paid-Workspace-users.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-15T21:19:41.625Z",
+        "checkedAt": "2026-10-18T14:00:07.673Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "We’ve included sources for users to easily view the emails where the information is being pulled, as well as the following improvements:",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/gmail-live-is-rolling-out-to-paid-Workspace-users.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-15T21:19:41.625Z",
+        "checkedAt": "2026-10-18T14:00:07.673Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Ability to pick the voice of your choice: You can now pick your preferred voice directly from Gmail Live.",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/gmail-live-is-rolling-out-to-paid-Workspace-users.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-15T21:19:41.625Z",
+        "checkedAt": "2026-10-18T14:00:07.673Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "End users: On supported iOS and Android devices, tap the Live entry point in the Gmail search bar to begin a voice session.",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/gmail-live-is-rolling-out-to-paid-Workspace-users.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-15T21:19:41.625Z",
+        "checkedAt": "2026-10-18T14:00:07.673Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "First-time users will be prompted to grant microphone access.",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/gmail-live-is-rolling-out-to-paid-Workspace-users.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-15T21:19:41.625Z",
+        "checkedAt": "2026-10-18T14:00:07.673Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Google Workspace Admin Help: Turn Gemini features on or off for users",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/gmail-live-is-rolling-out-to-paid-Workspace-users.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-15T21:19:41.625Z",
+        "checkedAt": "2026-10-18T14:00:07.673Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "On the “What’s new in Google Workspace?” Help Center page, learn about new products and features launching in Google Workspace, including smaller changes that haven’t been announced on the Google Workspace Updates blog.",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/gmail-live-is-rolling-out-to-paid-Workspace-users.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-15T21:19:41.625Z",
+        "checkedAt": "2026-10-18T14:00:07.673Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Discover how a diverse range of organizations, from small businesses and nimble startups to globally recognized Fortune 500 corporations, leverage the collaborative power of Google Workspace.",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/gmail-live-is-rolling-out-to-paid-Workspace-users.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-15T21:19:41.625Z",
+        "checkedAt": "2026-10-18T14:00:07.673Z"
       }
     ],
     "pageDate": null
@@ -81,7 +187,7 @@
     "koreanRelevance": 0,
     "novelty": 2,
     "sourceQuality": 3,
-    "verificationConfidence": 2,
+    "verificationConfidence": 3,
     "signals": [
       "PRODUCT_LAUNCH"
     ],
@@ -93,12 +199,10 @@
   },
   "decision": "HOLD",
   "reasons": [
-    "근거 부족 (원문 HTTP_429, 확인 사실 0개) — 발행하지 않음"
+    "사건 신호 PRODUCT_LAUNCH (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
   ],
-  "needsReview": [
-    "source_blocked",
-    "insufficient_evidence"
-  ],
+  "needsReview": [],
   "duplicate": {
     "result": "NEW",
     "reason": "기존 기사·후보와 겹치지 않음"
