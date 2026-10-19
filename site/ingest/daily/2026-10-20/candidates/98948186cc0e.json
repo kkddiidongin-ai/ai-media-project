@@ -1,0 +1,240 @@
+{
+  "id": "98948186cc0e",
+  "date": "2026-10-20",
+  "proposedSlug": "pegasus-1-5-twelvelabs-available-amazon-bedrock",
+  "title": null,
+  "sourceTitle": "Pegasus 1.5 from TwelveLabs is now available in Amazon Bedrock",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": true,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/pegasus-1-5-from-twelvelabs-is-now-available-in-amazon-bedrock/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-10-19T16:49:19.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "98948186cc0e",
+    "url": "https://aws.amazon.com/blogs/machine-learning/pegasus-1-5-from-twelvelabs-is-now-available-in-amazon-bedrock/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/pegasus-1-5-from-twelvelabs-is-now-available-in-amazon-bedrock",
+    "title": "Pegasus 1.5 from TwelveLabs is now available in Amazon Bedrock",
+    "excerpt": "TwelveLabs Pegasus 1.5 is now available in Amazon Bedrock. The video language model turns long-form video into structured, timestamped metadata: define the moments that matter and get every matching segment back as JSON, with new video segmentation, multimodal prompting with reference images, and on",
+    "publishedAt": "2026-10-19T16:49:19.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-10-19T16:57:47.658Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 13664,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "TwelveLabs Pegasus 1.5 is now available in Amazon Bedrock. The video language model turns long-form video into structured, timestamped metadata: define the moments that matter and get every matching segment back as JSON, with new video segmentation, multimodal prompting with reference images, and on",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/pegasus-1-5-from-twelvelabs-is-now-available-in-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T16:49:19.000Z",
+        "checkedAt": "2026-10-19T16:58:46.675Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Pegasus 1.5 from TwelveLabs is now available in Amazon Bedrock | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/pegasus-1-5-from-twelvelabs-is-now-available-in-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T16:49:19.000Z",
+        "checkedAt": "2026-10-19T16:58:46.675Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Pegasus 1.5 from TwelveLabs is now available in Amazon Bedrock",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/pegasus-1-5-from-twelvelabs-is-now-available-in-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T16:49:19.000Z",
+        "checkedAt": "2026-10-19T16:58:46.675Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "On Oct 9, 2026 we announced the availability of TwelveLabs’ Pegasus 1.5 on Amazon Bedrock .",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/pegasus-1-5-from-twelvelabs-is-now-available-in-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T16:49:19.000Z",
+        "checkedAt": "2026-10-19T16:58:46.675Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "With Pegasus 1.5 on Amazon Bedrock, you can analyze videos directly from an Amazon Simple Storage Service (Amazon S3) URI or a base64 string with no pre-indexing required, and your data remains within the AWS data boundary.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/pegasus-1-5-from-twelvelabs-is-now-available-in-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T16:49:19.000Z",
+        "checkedAt": "2026-10-19T16:58:46.675Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "In this post, we cover what’s new in Pegasus 1.5, how the model is packaged on Amazon Bedrock, and how to send your first request.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/pegasus-1-5-from-twelvelabs-is-now-available-in-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T16:49:19.000Z",
+        "checkedAt": "2026-10-19T16:58:46.675Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Pegasus 1.5 analyzes videos up to two hours long in a single request, up from one hour in Pegasus 1.2.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/pegasus-1-5-from-twelvelabs-is-now-available-in-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T16:49:19.000Z",
+        "checkedAt": "2026-10-19T16:58:46.675Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Pegasus 1.5 retains and enhances the core capabilities that made Pegasus 1.2 a powerful tool for video understanding, including:",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/pegasus-1-5-from-twelvelabs-is-now-available-in-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T16:49:19.000Z",
+        "checkedAt": "2026-10-19T16:58:46.675Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Model access enabled for TwelveLabs Pegasus 1.5 in the Amazon Bedrock console .",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/pegasus-1-5-from-twelvelabs-is-now-available-in-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T16:49:19.000Z",
+        "checkedAt": "2026-10-19T16:58:46.675Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Pegasus 1.5 publishes Amazon CloudWatch metrics in the AWS/Bedrock namespace under its model ID, including Invocations , OutputTokenCount , InvocationLatency , and InvocationClientErrors .",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/pegasus-1-5-from-twelvelabs-is-now-available-in-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T16:49:19.000Z",
+        "checkedAt": "2026-10-19T16:58:46.675Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "TwelveLabs Pegasus 1.5 is available today on Amazon Bedrock in the US West (Oregon) AWS Region.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/pegasus-1-5-from-twelvelabs-is-now-available-in-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T16:49:19.000Z",
+        "checkedAt": "2026-10-19T16:58:46.675Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Pegasus 1.5 is billed through AWS Marketplace, so its charges appear on your AWS bill and in AWS Cost Explorer under TwelveLabs rather than Amazon Bedrock.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/pegasus-1-5-from-twelvelabs-is-now-available-in-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T16:49:19.000Z",
+        "checkedAt": "2026-10-19T16:58:46.675Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "We’re excited to see what you build with TwelveLabs Pegasus 1.5 in Amazon Bedrock.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/pegasus-1-5-from-twelvelabs-is-now-available-in-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T16:49:19.000Z",
+        "checkedAt": "2026-10-19T16:58:46.675Z"
+      }
+    ],
+    "pageDate": "2026-10-19T16:49:19.000Z"
+  },
+  "score": {
+    "importance": 3,
+    "practicalImpact": 3,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PRODUCT_LAUNCH",
+      "AVAILABILITY",
+      "API_PLATFORM"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 11,
+    "total": 11
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 PRODUCT_LAUNCH·AVAILABILITY·API_PLATFORM (우선순위 11)",
+    "근거 확인 통과 (확인 사실 11개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "status": "failed",
+    "error": "HTTP 503",
+    "usage": {
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "costUsd": 0,
+      "attempts": 1
+    },
+    "promptVersion": "draft-v1",
+    "at": "2026-10-19T16:58:56.552Z",
+    "evidenceHash": "28077d0ae0bc"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": true,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}
