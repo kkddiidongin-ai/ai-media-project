@@ -20,8 +20,8 @@
       },
       "addedAt": "2026-10-17",
       "since": "2026-10-14",
-      "attempts": 1,
-      "date": "2026-10-19",
+      "attempts": 2,
+      "date": "2026-10-20",
       "reason": "HTTP 503"
     },
     "61a2ef3c9ba4": {
@@ -43,9 +43,9 @@
       },
       "addedAt": "2026-10-17",
       "since": "2026-10-14",
-      "attempts": 0,
-      "date": "2026-10-19",
-      "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
+      "attempts": 1,
+      "date": "2026-10-20",
+      "reason": "HTTP 503"
     },
     "d259b094fe0e": {
       "stage": "draft",
@@ -66,9 +66,9 @@
       },
       "addedAt": "2026-10-17",
       "since": "2026-10-14",
-      "attempts": 0,
-      "date": "2026-10-19",
-      "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
+      "attempts": 1,
+      "date": "2026-10-20",
+      "reason": "HTTP 503"
     },
     "f2bde108f64c": {
       "stage": "draft",
@@ -89,32 +89,9 @@
       },
       "addedAt": "2026-10-17",
       "since": "2026-10-14",
-      "attempts": 0,
-      "date": "2026-10-19",
-      "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
-    },
-    "2cd92b812c13": {
-      "stage": "draft",
-      "item": {
-        "id": "2cd92b812c13",
-        "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
-        "canonicalUrl": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl",
-        "title": "Open From Data Center to Desktop: NVIDIA Expands Nemotron Family With Highest Efficiency Super VL and Bolt Models",
-        "excerpt": "NVIDIA today released Nemotron 3.5 Super VL, an open 120-billion-parameter model that delivers the fastest task completion and highest accuracy for specialized always-on agents. Joining it are two new edge models: Nemotron 3.5 Bolt 74B-A9B 24GB, optimized to balance intelligence and speed per GB for",
-        "publishedAt": "2026-10-15T15:00:24.000Z",
-        "sourceId": "nvidia",
-        "sourceName": "NVIDIA Blog",
-        "sourceType": "official",
-        "tier": 1,
-        "fetchMode": "rss-paged",
-        "discoveredVia": "https://blogs.nvidia.com/feed/",
-        "fetchedAt": "2026-10-18T13:58:30.865Z"
-      },
-      "addedAt": "2026-10-17",
-      "since": "2026-10-14",
-      "attempts": 0,
-      "date": "2026-10-19",
-      "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
+      "attempts": 1,
+      "date": "2026-10-20",
+      "reason": "HTTP 503"
     },
     "116eea760bcf": {
       "stage": "draft",
@@ -136,7 +113,7 @@
       "addedAt": "2026-10-17",
       "since": "2026-10-14",
       "attempts": 0,
-      "date": "2026-10-19",
+      "date": "2026-10-20",
       "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
     },
     "0fff098609ae": {
@@ -159,7 +136,7 @@
       "addedAt": "2026-10-17",
       "since": "2026-10-14",
       "attempts": 0,
-      "date": "2026-10-19",
+      "date": "2026-10-20",
       "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
     },
     "3a11e60ee8cf": {
@@ -182,7 +159,7 @@
       "addedAt": "2026-10-17",
       "since": "2026-10-14",
       "attempts": 0,
-      "date": "2026-10-19",
+      "date": "2026-10-20",
       "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
     },
     "7bd3e3f63e0f": {
@@ -205,7 +182,7 @@
       "addedAt": "2026-10-17",
       "since": "2026-10-14",
       "attempts": 0,
-      "date": "2026-10-19",
+      "date": "2026-10-20",
       "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
     },
     "39ed69c21fb1": {
@@ -228,7 +205,7 @@
       "addedAt": "2026-10-17",
       "since": "2026-10-14",
       "attempts": 0,
-      "date": "2026-10-19",
+      "date": "2026-10-20",
       "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
     },
     "5cb1618c1db5": {
@@ -251,7 +228,7 @@
       "addedAt": "2026-10-17",
       "since": "2026-10-14",
       "attempts": 0,
-      "date": "2026-10-19",
+      "date": "2026-10-20",
       "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
     },
     "e612dc941250": {
@@ -274,11 +251,80 @@
       "addedAt": "2026-10-17",
       "since": "2026-10-14",
       "attempts": 0,
-      "date": "2026-10-19",
+      "date": "2026-10-20",
+      "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
+    },
+    "98948186cc0e": {
+      "stage": "draft",
+      "item": {
+        "id": "98948186cc0e",
+        "url": "https://aws.amazon.com/blogs/machine-learning/pegasus-1-5-from-twelvelabs-is-now-available-in-amazon-bedrock/",
+        "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/pegasus-1-5-from-twelvelabs-is-now-available-in-amazon-bedrock",
+        "title": "Pegasus 1.5 from TwelveLabs is now available in Amazon Bedrock",
+        "excerpt": "TwelveLabs Pegasus 1.5 is now available in Amazon Bedrock. The video language model turns long-form video into structured, timestamped metadata: define the moments that matter and get every matching segment back as JSON, with new video segmentation, multimodal prompting with reference images, and on",
+        "publishedAt": "2026-10-19T16:49:19.000Z",
+        "sourceId": "aws-ml",
+        "sourceName": "AWS Machine Learning Blog",
+        "sourceType": "official",
+        "tier": 1,
+        "fetchMode": "rss",
+        "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+        "fetchedAt": "2026-10-19T16:57:47.658Z"
+      },
+      "addedAt": "2026-10-20",
+      "since": "2026-10-17",
+      "attempts": 1,
+      "date": "2026-10-20",
+      "reason": "HTTP 503"
+    },
+    "e242a37f6e45": {
+      "stage": "draft",
+      "item": {
+        "id": "e242a37f6e45",
+        "url": "https://aws.amazon.com/blogs/machine-learning/push-based-kv-transfer-to-improve-ttft-and-tpot-for-disaggregated-inference-in-vllm/",
+        "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/push-based-kv-transfer-to-improve-ttft-and-tpot-for-disaggregated-inference-in-vllm",
+        "title": "Push-based KV transfer to improve TTFT and TPOT for disaggregated inference in vLLM",
+        "excerpt": "vLLM's prefill-decode disaggregation splits LLM inference across engine instances but must transfer the KV cache between them. This post introduces a push-based NIXL connector that moves transfer coordination off the critical path, delivering up to 3x better TTFT and 30% better TPOT in benchmarks on",
+        "publishedAt": "2026-10-19T16:05:17.000Z",
+        "sourceId": "aws-ml",
+        "sourceName": "AWS Machine Learning Blog",
+        "sourceType": "official",
+        "tier": 1,
+        "fetchMode": "rss",
+        "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+        "fetchedAt": "2026-10-19T16:57:47.658Z"
+      },
+      "addedAt": "2026-10-20",
+      "since": "2026-10-17",
+      "attempts": 0,
+      "date": "2026-10-20",
+      "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
+    },
+    "24f0298eed38": {
+      "stage": "draft",
+      "item": {
+        "id": "24f0298eed38",
+        "url": "https://blogs.nvidia.com/blog/media-agentic-security-european-public-service-broadcasting-global-content-production/",
+        "canonicalUrl": "https://blogs.nvidia.com/blog/media-agentic-security-european-public-service-broadcasting-global-content-production",
+        "title": "NVIDIA Advances Agentic Security for Media, From European Public Service Broadcasting to Global Content Production",
+        "excerpt": "At a creative industry event that took place today in Berlin — hosted in collaboration with Adobe, Bertelsmann, NVIDIA and UFA — the latest advancements in intelligent media were on display. Key to the news: the European Broadcasting Union (EBU) is collaborating with NVIDIA to expand its sovereign f",
+        "publishedAt": "2026-10-19T15:00:31.000Z",
+        "sourceId": "nvidia",
+        "sourceName": "NVIDIA Blog",
+        "sourceType": "official",
+        "tier": 1,
+        "fetchMode": "rss-paged",
+        "discoveredVia": "https://blogs.nvidia.com/feed/",
+        "fetchedAt": "2026-10-19T16:57:47.658Z"
+      },
+      "addedAt": "2026-10-20",
+      "since": "2026-10-17",
+      "attempts": 0,
+      "date": "2026-10-20",
       "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
     }
   },
   "meta": {},
   "retry": {},
-  "updatedAt": "2026-10-19T09:31:27.678Z"
+  "updatedAt": "2026-10-19T16:59:59.294Z"
 }
