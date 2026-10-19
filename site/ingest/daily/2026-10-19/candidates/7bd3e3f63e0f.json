@@ -53,7 +53,7 @@
     "tier": 1,
     "fetchMode": "rss",
     "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
-    "fetchedAt": "2026-10-19T00:09:25.048Z"
+    "fetchedAt": "2026-10-19T07:53:43.024Z"
   },
   "evidence": {
     "status": "OK",
@@ -210,12 +210,12 @@
     "reason": "기존 기사·후보와 겹치지 않음"
   },
   "generation": {
-    "provider": "none",
+    "provider": "gemini",
     "model": null,
     "status": "skipped",
-    "error": "Shadow Mode — 원고를 만들지 않음",
+    "error": "DAILY_GEMINI_FREE_TIER_CONFIRMED=true가 아님 — 결제가 연결되지 않은 무료 등급 프로젝트인지 운영자가 확인해야 함 (무료 등급은 입력이 Google 제품 개선에 쓰임)",
     "promptVersion": "draft-v1",
-    "at": "2026-10-19T00:10:31.171Z",
+    "at": "2026-10-19T07:54:49.251Z",
     "evidenceHash": "e214c495770d"
   },
   "draft": null,
