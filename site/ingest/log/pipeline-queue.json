@@ -1,52 +1,6 @@
 {
   "version": 1,
   "items": {
-    "13e122947fca": {
-      "stage": "draft",
-      "item": {
-        "id": "13e122947fca",
-        "url": "https://aws.amazon.com/blogs/machine-learning/metas-muse-spark-open-now-available-in-amazon-sagemaker-jumpstart/",
-        "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/metas-muse-spark-open-now-available-in-amazon-sagemaker-jumpstart",
-        "title": "Meta’s Muse Spark Open now available in Amazon SageMaker JumpStart",
-        "excerpt": "Muse Spark Open, Meta's coding-optimized open-weight model, is now available in Amazon SageMaker JumpStart. Deploy it to a SageMaker AI endpoint in your own AWS account using SageMaker Studio or the SageMaker Python SDK, and run your first inference request.",
-        "publishedAt": "2026-10-15T17:43:35.000Z",
-        "sourceId": "aws-ml",
-        "sourceName": "AWS Machine Learning Blog",
-        "sourceType": "official",
-        "tier": 1,
-        "fetchMode": "rss",
-        "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
-        "fetchedAt": "2026-10-18T13:58:30.865Z"
-      },
-      "addedAt": "2026-10-17",
-      "since": "2026-10-14",
-      "attempts": 2,
-      "date": "2026-10-20",
-      "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
-    },
-    "61a2ef3c9ba4": {
-      "stage": "draft",
-      "item": {
-        "id": "61a2ef3c9ba4",
-        "url": "https://about.fb.com/news/2026/10/meta-milans-pinacoteca-di-brera-and-essilorluxottica-expand-access-to-art-through-ai-glasses/",
-        "canonicalUrl": "https://about.fb.com/news/2026/10/meta-milans-pinacoteca-di-brera-and-essilorluxottica-expand-access-to-art-through-ai-glasses",
-        "title": "Meta, Milan’s Pinacoteca di Brera, and EssilorLuxottica Expand Access to Art Through AI Glasses",
-        "excerpt": "Today, Meta, Pinacoteca di Brera and EssilorLuxottica are proud to launch “Sensing Art – Discovering Masterpieces Beyond What Meets the Eye.” This pilot aims to explore how AI glasses can make art more accessible for people who are blind or with low vision – in collaboration with the some of Italy’s",
-        "publishedAt": "2026-10-14T16:00:57.000Z",
-        "sourceId": "meta",
-        "sourceName": "Meta Newsroom",
-        "sourceType": "official",
-        "tier": 1,
-        "fetchMode": "rss-paged",
-        "discoveredVia": "https://about.fb.com/news/feed/",
-        "fetchedAt": "2026-10-17T13:40:53.584Z"
-      },
-      "addedAt": "2026-10-17",
-      "since": "2026-10-14",
-      "attempts": 1,
-      "date": "2026-10-20",
-      "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
-    },
     "d259b094fe0e": {
       "stage": "draft",
       "item": {
@@ -66,9 +20,9 @@
       },
       "addedAt": "2026-10-17",
       "since": "2026-10-14",
-      "attempts": 1,
+      "attempts": 2,
       "date": "2026-10-20",
-      "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
+      "reason": "timeout"
     },
     "f2bde108f64c": {
       "stage": "draft",
@@ -269,7 +223,7 @@
         "tier": 1,
         "fetchMode": "rss",
         "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
-        "fetchedAt": "2026-10-20T00:30:21.157Z"
+        "fetchedAt": "2026-10-20T01:03:55.463Z"
       },
       "addedAt": "2026-10-20",
       "since": "2026-10-17",
@@ -292,30 +246,7 @@
         "tier": 1,
         "fetchMode": "rss-paged",
         "discoveredVia": "https://blogs.nvidia.com/feed/",
-        "fetchedAt": "2026-10-20T00:30:21.157Z"
-      },
-      "addedAt": "2026-10-20",
-      "since": "2026-10-17",
-      "attempts": 0,
-      "date": "2026-10-20",
-      "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
-    },
-    "87cd33ee12bd": {
-      "stage": "draft",
-      "item": {
-        "id": "87cd33ee12bd",
-        "url": "https://aws.amazon.com/blogs/machine-learning/developers-can-now-access-sagemaker-studio-through-the-new-aws-experience/",
-        "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/developers-can-now-access-sagemaker-studio-through-the-new-aws-experience",
-        "title": "Developers can now access SageMaker Studio through the new AWS experience",
-        "excerpt": "New Amazon SageMaker AI customers can now land in a fully configured SageMaker Studio environment in only a few steps. Sign up with an identity you already have, such as Amazon, Apple, GitHub, or Google, with no advanced AWS account or credit card required for most customers, plus $100 in AWS Free T",
-        "publishedAt": "2026-10-19T22:39:24.000Z",
-        "sourceId": "aws-ml",
-        "sourceName": "AWS Machine Learning Blog",
-        "sourceType": "official",
-        "tier": 1,
-        "fetchMode": "rss",
-        "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
-        "fetchedAt": "2026-10-20T00:30:21.157Z"
+        "fetchedAt": "2026-10-20T01:03:55.463Z"
       },
       "addedAt": "2026-10-20",
       "since": "2026-10-17",
@@ -338,13 +269,13 @@
         "tier": 1,
         "fetchMode": "rss",
         "discoveredVia": "https://workspaceupdates.googleblog.com/feeds/posts/default?max-results=500&published-min=2026-01-01T00:00:00Z",
-        "fetchedAt": "2026-10-20T00:30:21.157Z"
+        "fetchedAt": "2026-10-20T01:03:55.463Z"
       },
       "addedAt": "2026-10-20",
       "since": "2026-10-17",
-      "attempts": 0,
+      "attempts": 1,
       "date": "2026-10-20",
-      "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
+      "reason": "HTTP 503"
     },
     "9db7d13375ba": {
       "stage": "draft",
@@ -361,7 +292,7 @@
         "tier": 1,
         "fetchMode": "rss-paged",
         "discoveredVia": "https://github.blog/changelog/feed/",
-        "fetchedAt": "2026-10-20T00:30:21.157Z"
+        "fetchedAt": "2026-10-20T01:03:55.463Z"
       },
       "addedAt": "2026-10-20",
       "since": "2026-10-17",
@@ -384,7 +315,7 @@
         "tier": 1,
         "fetchMode": "rss",
         "discoveredVia": "https://workspaceupdates.googleblog.com/feeds/posts/default?max-results=500&published-min=2026-01-01T00:00:00Z",
-        "fetchedAt": "2026-10-20T00:30:21.157Z"
+        "fetchedAt": "2026-10-20T01:03:55.463Z"
       },
       "addedAt": "2026-10-20",
       "since": "2026-10-17",
@@ -395,5 +326,5 @@
   },
   "meta": {},
   "retry": {},
-  "updatedAt": "2026-10-20T00:31:33.987Z"
+  "updatedAt": "2026-10-20T01:08:04.660Z"
 }
