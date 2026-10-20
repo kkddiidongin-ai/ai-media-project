@@ -1,5 +1,57 @@
 [
   {
+    "id": "s-20261009-989481",
+    "slug": "pegasus-1-5-twelvelabs-available-amazon-bedrock",
+    "title": "트웰브랩스 페가수스 1.5, 아마존 베드록에 출시",
+    "summary": "트웰브랩스의 동영상 언어 모델 페가수스 1.5가 아마존 베드록에 출시됐습니다. 한 번의 요청으로 최대 2시간 길이의 영상을 사전 색인 없이 분석할 수 있습니다. AWS는 10월 9일 제공을 처음 알렸고, 10월 19일 사용 방법을 담은 안내 글을 냈습니다.",
+    "category": "MODEL_RELEASE",
+    "topics": [
+      "amazon",
+      "ai-video"
+    ],
+    "companies": [
+      "TwelveLabs",
+      "AWS"
+    ],
+    "products": [
+      "Pegasus 1.5",
+      "Pegasus 1.2",
+      "Amazon Bedrock"
+    ],
+    "facts": [
+      "트웰브랩스의 동영상 언어 모델 페가수스 1.5가 아마존 베드록에서 제공됩니다. AWS는 10월 9일 제공을 처음 발표했습니다.",
+      "페가수스 1.5는 한 번의 요청으로 최대 2시간 길이의 영상을 분석할 수 있으며, 페가수스 1.2의 1시간에서 늘었습니다.",
+      "아마존 S3 URI나 base64 문자열로 별도의 사전 색인 없이 영상을 바로 분석할 수 있고, 데이터는 AWS 데이터 경계 안에 머문다고 AWS는 밝혔습니다.",
+      "긴 영상을 타임스탬프가 붙은 구조화된 JSON 메타데이터로 바꾸며, 영상 구간 나누기와 참조 이미지를 쓰는 멀티모달 프롬프트를 지원합니다.",
+      "현재 제공 리전은 미국 서부(오레곤)이며, AWS는 다른 리전은 리전 목록에서 추후 안내한다고만 밝혔습니다.",
+      "요금은 AWS Marketplace를 통해 청구되며, 발표문에는 구체적인 금액이 없고 Amazon Bedrock 요금 페이지를 확인하라고 안내했습니다."
+    ],
+    "whyItMatters": "사전 색인 없이 S3의 영상을 바로 처리하고 AWS 데이터 경계를 유지할 수 있어, AWS를 쓰는 기업이 긴 동영상 분석 흐름을 만들기가 단순해집니다. 다만 성능에 대한 설명은 AWS·트웰브랩스 발표 기준이며 AI마중이 따로 시험하지 않았습니다.",
+    "whatChanges": "아마존 베드록을 쓰는 개발자는 최대 2시간 길이의 영상에서 구간 검색과 구조화된 메타데이터 추출을 만들 수 있습니다. 다만 지금은 미국 서부(오레곤) 리전에서만 제공되며, 서울 리전 지원 여부와 일정은 발표문에서 확인되지 않았습니다.",
+    "priority": 2,
+    "secondarySources": [],
+    "editorialDepth": "standard",
+    "eventDate": "2026-10-09",
+    "publishedAt": "2026-10-20",
+    "updatedAt": "2026-10-20",
+    "candidateId": "98948186cc0e",
+    "sourceType": "official",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/pegasus-1-5-from-twelvelabs-is-now-available-in-amazon-bedrock/",
+    "sourcePublishedAt": "2026-10-19T16:49:19.000Z",
+    "sourceTitle": "Pegasus 1.5 from TwelveLabs is now available in Amazon Bedrock",
+    "contentType": "NEWS",
+    "status": "published",
+    "backfilled": true,
+    "collectedAt": "2026-10-20T02:47:55.598Z",
+    "provenance": {
+      "discoveredVia": "2026-10-20",
+      "fetchMode": "manual",
+      "runId": "2026-10-20",
+      "verification": "primary-official"
+    }
+  },
+  {
     "id": "s-20261005-3cbec8",
     "slug": "chatgpt-visual-ads-measurement-brand-suitability",
     "title": "ChatGPT 광고가 이미지 생성에도 들어온다… 측정·브랜드 적합성도 확대",
