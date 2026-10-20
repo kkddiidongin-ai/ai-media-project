@@ -60,6 +60,6 @@
 - `E12` (body) Discover how a diverse range of organizations, from small businesses and nimble startups to globally recognized Fortune 500 corporations, leverage the collaborative power of Google Workspace.
 
 ### 생성 정보
-- gemini · 모델 gemini-3.8-flash · 프롬프트 draft-v1
+- gemini · 모델 gemini-3.8-flash · 프롬프트 draft-v1 · 이전 생성 재사용(추가 호출 없음)
 - 토큰 입력 1690 · 출력 840 · 예상 비용 $0.0000 · 생성 2026-10-20T01:05:40.920Z
 - 승인: 편집자가 확인 후 `npm run daily:approve`
