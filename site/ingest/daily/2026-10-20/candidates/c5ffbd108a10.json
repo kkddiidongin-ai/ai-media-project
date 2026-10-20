@@ -1,0 +1,221 @@
+{
+  "id": "c5ffbd108a10",
+  "date": "2026-10-20",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Improve TTFT for multi-turn agentic workloads with bi-directional KV transfer in vLLM",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/improve-ttft-for-multi-turn-agentic-workloads-with-bi-directional-kv-transfer-in-vllm/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-10-19T16:03:23.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "c5ffbd108a10",
+    "url": "https://aws.amazon.com/blogs/machine-learning/improve-ttft-for-multi-turn-agentic-workloads-with-bi-directional-kv-transfer-in-vllm/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/improve-ttft-for-multi-turn-agentic-workloads-with-bi-directional-kv-transfer-in-vllm",
+    "title": "Improve TTFT for multi-turn agentic workloads with bi-directional KV transfer in vLLM",
+    "excerpt": "Multi-turn agentic workloads reprocess growing conversation context each turn, driving up latency. See how bi-directional KV cache transfer lets prefill and decode nodes reuse previously computed context across turns, cutting time to first token by up to 1.6x for Qwen3-32B and 3.3x for GLM-5-FP8 on ",
+    "publishedAt": "2026-10-19T16:03:23.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-10-20T15:00:04.811Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 10668,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Multi-turn agentic workloads reprocess growing conversation context each turn, driving up latency. See how bi-directional KV cache transfer lets prefill and decode nodes reuse previously computed context across turns, cutting time to first token by up to 1.6x for Qwen3-32B and 3.3x for GLM-5-FP8 on ",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/improve-ttft-for-multi-turn-agentic-workloads-with-bi-directional-kv-transfer-in-vllm/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T16:03:23.000Z",
+        "checkedAt": "2026-10-19T16:58:55.064Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Improve TTFT for multi-turn agentic workloads with bi-directional KV transfer in vLLM | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/improve-ttft-for-multi-turn-agentic-workloads-with-bi-directional-kv-transfer-in-vllm/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T16:03:23.000Z",
+        "checkedAt": "2026-10-19T16:58:55.064Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Improve TTFT for multi-turn agentic workloads with bi-directional KV transfer in vLLM",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/improve-ttft-for-multi-turn-agentic-workloads-with-bi-directional-kv-transfer-in-vllm/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T16:03:23.000Z",
+        "checkedAt": "2026-10-19T16:58:55.064Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "In this post, we show how bi-directional KV cache transfer lets prefill and decode nodes reuse previously computed context across turns, which improves accelerator utilization and helps applications sustain responsive TTFT as conversations grow.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/improve-ttft-for-multi-turn-agentic-workloads-with-bi-directional-kv-transfer-in-vllm/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T16:03:23.000Z",
+        "checkedAt": "2026-10-19T16:58:55.064Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "In our multi-turn benchmarks on a 1P1D deployment using Amazon Elastic Compute Cloud (Amazon EC2) P5en instances, bi-directional KV transfer reduced TTFT by up to 1.6x for Qwen3-32B and up to 3.3x for zai-org/GLM-5-FP8 (see the Performance data section).",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/improve-ttft-for-multi-turn-agentic-workloads-with-bi-directional-kv-transfer-in-vllm/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T16:03:23.000Z",
+        "checkedAt": "2026-10-19T16:58:55.064Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Bi-directional KV transfer is a mechanism in which a decode node returns previously computed KV to a prefill node on subsequent turns of a conversation.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/improve-ttft-for-multi-turn-agentic-workloads-with-bi-directional-kv-transfer-in-vllm/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T16:03:23.000Z",
+        "checkedAt": "2026-10-19T16:58:55.064Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "The numbered red path illustrates the bi-directional KV transfer additions: (1) decode node retains eligible KV blocks after generation, (2) returns their metadata in the streaming response, and (3) the router caches that metadata for the next prefill request.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/improve-ttft-for-multi-turn-agentic-workloads-with-bi-directional-kv-transfer-in-vllm/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T16:03:23.000Z",
+        "checkedAt": "2026-10-19T16:58:55.064Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Figure 1: Standard prefill-to-decode flow (blue) and the bi-directional KV transfer additions (red)",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/improve-ttft-for-multi-turn-agentic-workloads-with-bi-directional-kv-transfer-in-vllm/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T16:03:23.000Z",
+        "checkedAt": "2026-10-19T16:58:55.064Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "vLLM includes connector-side support for bi-directional KV transfer, while coordinating KV reuse across conversation turns requires a KV-cache-aware router. vLLM GitHub provides an example proxy that implements the flow used in this post which can be adapted for your environment.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/improve-ttft-for-multi-turn-agentic-workloads-with-bi-directional-kv-transfer-in-vllm/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T16:03:23.000Z",
+        "checkedAt": "2026-10-19T16:58:55.064Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Under bi-directional KV transfer mode, it holds them for a configurable lifetime ( decoder_kv_blocks_ttl , default 480 seconds) and publishes their location and expiry.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/improve-ttft-for-multi-turn-agentic-workloads-with-bi-directional-kv-transfer-in-vllm/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T16:03:23.000Z",
+        "checkedAt": "2026-10-19T16:58:55.064Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Across both the models, turning on bi-directional KV transfer reduces prefill computation on multi-turn conversations, and the benefit typically grows with prompt length.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/improve-ttft-for-multi-turn-agentic-workloads-with-bi-directional-kv-transfer-in-vllm/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T16:03:23.000Z",
+        "checkedAt": "2026-10-19T16:58:55.064Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "The following chart plots TTFT against prompt length for Qwen3-32B, comparing bi-directional KV transfer ON versus OFF.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/improve-ttft-for-multi-turn-agentic-workloads-with-bi-directional-kv-transfer-in-vllm/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T16:03:23.000Z",
+        "checkedAt": "2026-10-19T16:58:55.064Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Figure 3: Qwen3-32B TTFT versus prompt length with bi-directional KV transfer on and off",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/improve-ttft-for-multi-turn-agentic-workloads-with-bi-directional-kv-transfer-in-vllm/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T16:03:23.000Z",
+        "checkedAt": "2026-10-19T16:58:55.064Z"
+      }
+    ],
+    "pageDate": "2026-10-19T16:03:23.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "MODEL_MENTION"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 MODEL_MENTION (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

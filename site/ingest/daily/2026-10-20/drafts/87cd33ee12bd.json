@@ -1,0 +1,230 @@
+{
+  "candidateId": "87cd33ee12bd",
+  "date": "2026-10-20",
+  "status": "draft_for_editor_review",
+  "title": "AWS, 간소화된 세이지메이커 스튜디오 가입 환경 공개",
+  "source": {
+    "name": "AWS Machine Learning Blog",
+    "url": "https://aws.amazon.com/blogs/machine-learning/developers-can-now-access-sagemaker-studio-through-the-new-aws-experience/",
+    "title": "Developers can now access SageMaker Studio through the new AWS experience",
+    "publishedAt": "2026-10-19T22:39:24.000Z",
+    "type": "official"
+  },
+  "evidenceSummary": {
+    "status": "OK",
+    "grade": "PASS",
+    "sentences": 13,
+    "bodySentences": 12,
+    "distinctFacts": 10,
+    "checkedAt": "2026-10-20T00:31:20.244Z",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "New Amazon SageMaker AI customers can now land in a fully configured SageMaker Studio environment in only a few steps. Sign up with an identity you already have, such as Amazon, Apple, GitHub, or Google, with no advanced AWS account or credit card required for most customers, plus $100 in AWS Free T"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Developers can now access SageMaker Studio through the new AWS experience | Artificial Intelligence"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Developers can now access SageMaker Studio through the new AWS experience"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Today, we’re excited to announce that new Amazon SageMaker AI customers can now land inside a fully configured Amazon SageMaker Studio environment in only a few steps after signing up for AWS."
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "New customers also receive $100 in AWS Free Tier credits that work across SageMaker AI, including model customization, training jobs, Studio notebooks, and endpoint deployments."
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "This post follows on from our previous post, From Hugging Face to Amazon SageMaker Studio in One Click , which introduced deep links from Hugging Face model pages directly into SageMaker Studio workflows."
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Earlier this year, we also sped up Studio environment creation time from 2 minutes to about 20 seconds and pre-configured model customization permissions in every new Studio domain."
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "With this launch, SageMaker Studio is now integrated with the updated AWS sign-in and sign-up experience , which introduces new options for creating and managing AWS accounts along with simplified collaboration."
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "New customers can create an account using an identity that they already have and start building in SageMaker Studio right away."
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "After you sign up, SageMaker AI automatically creates your Studio environment in about 20 seconds."
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Figure 3: Configuring endpoint settings in SageMaker Studio"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "New customers receive $100 in AWS Free Tier credits that work across SageMaker AI, including endpoint deployments, model customization, Studio notebooks, and model training."
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Eligible accounts get default access to G5, G6, and G4dn GPU instances for endpoints, training jobs, and Studio notebooks."
+      }
+    ]
+  },
+  "articleType": "STANDARD",
+  "suggestedDepth": "STANDARD",
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음",
+    "matchSlug": null
+  },
+  "draft": {
+    "title": "AWS, 간소화된 세이지메이커 스튜디오 가입 환경 공개",
+    "summary": "AWS가 신규 고객을 위해 소셜 계정 연동 가입과 약 20초 만에 자동 생성되는 세이지메이커 스튜디오 환경을 도입했습니다. 대상 계정에는 100달러 크레딧과 일부 GPU 인스턴스 기본 접근 권한이 제공됩니다.",
+    "category": "PRODUCT_UPDATE",
+    "topics": [
+      "amazon"
+    ],
+    "companies": [
+      "AWS",
+      "Amazon"
+    ],
+    "products": [
+      "Amazon SageMaker AI",
+      "SageMaker Studio"
+    ],
+    "facts": [
+      {
+        "text": "신규 고객은 아마존, 애플, 깃허브, 구글 등의 기존 계정으로 가입할 수 있으며, 대부분의 경우 신용카드 등록 없이 세이지메이커 스튜디오 환경을 구성할 수 있습니다.",
+        "evidence": [
+          "E0",
+          "E8"
+        ]
+      },
+      {
+        "text": "가입 후 약 20초 만에 세이지메이커 스튜디오 환경이 자동으로 생성됩니다.",
+        "evidence": [
+          "E6",
+          "E9"
+        ]
+      },
+      {
+        "text": "신규 고객에게는 모델 맞춤화, 훈련, 스튜디오 노트북, 엔드포인트 배포에 사용할 수 있는 100달러 상당의 AWS 프리 티어 크레딧이 제공됩니다.",
+        "evidence": [
+          "E4",
+          "E11"
+        ]
+      },
+      {
+        "text": "자격을 갖춘 계정은 엔드포인트, 훈련 작업, 스튜디오 노트북용 G5, G6, G4dn GPU 인스턴스에 기본적으로 접근할 수 있습니다.",
+        "evidence": [
+          "E12"
+        ]
+      }
+    ],
+    "why": {
+      "text": "복잡한 AWS 계정 생성 및 결제 수단 등록 절차를 줄이고 초기 설정 시간을 단축해 개발자가 머신러닝 개발 환경에 더 빠르게 진입할 수 있도록 온보딩 과정을 개편했습니다.",
+      "evidence": [
+        "E0",
+        "E7",
+        "E9"
+      ]
+    },
+    "change": {
+      "text": "별도 신용카드 없이 소셜 계정으로 세이지메이커 스튜디오 환경을 시험해 볼 수 있으며, 기본 제공되는 크레딧과 GPU 인스턴스를 활용해 모델 실습을 시작할 수 있습니다.",
+      "evidence": [
+        "E0",
+        "E4",
+        "E12"
+      ]
+    },
+    "checks": [
+      {
+        "text": "신용카드 없이 가입 가능한 대상 고객의 구체적인 조건과 100달러 크레딧의 유효 기간을 확인해야 합니다.",
+        "evidence": [
+          "E0",
+          "E4"
+        ]
+      },
+      {
+        "text": "GPU 인스턴스 기본 접근이 허용되는 '적격 계정(eligible accounts)'의 상세 기준을 확인해야 합니다.",
+        "evidence": [
+          "E12"
+        ]
+      }
+    ],
+    "unknowns": [
+      "기존 AWS 계정 보유자에게도 동일한 간소화 환경이나 크레딧이 적용되는지는 근거에 나와 있지 않습니다.",
+      "100달러 크레딧의 사용 기한 및 소진 후 요금 청구 방식은 본문에 명시되지 않았습니다.",
+      "한국을 포함한 국가별 지원 범위나 제한 사항은 확인되지 않았습니다."
+    ],
+    "editorialDepth": "STANDARD",
+    "insufficient": false,
+    "notes": "발표일 표기가 원문에 2026-10-19로 되어 있으므로 날짜 관련 해석 시 원문 출처 표기를 참고하십시오."
+  },
+  "handsOn": false,
+  "qa": {
+    "verdict": "PASS",
+    "checks": {
+      "FACT": {
+        "result": "PASS",
+        "issues": []
+      },
+      "EVIDENCE": {
+        "result": "PASS",
+        "issues": []
+      },
+      "EDITORIAL": {
+        "result": "PASS",
+        "issues": []
+      },
+      "STRUCTURE": {
+        "result": "PASS",
+        "issues": []
+      },
+      "DUPLICATE": {
+        "result": "PASS",
+        "issues": []
+      },
+      "SAFETY": {
+        "result": "PASS",
+        "issues": []
+      }
+    },
+    "stats": {
+      "bodyChars": 724,
+      "depth": "STANDARD",
+      "suggestedDepth": "STANDARD"
+    }
+  },
+  "fixes": [],
+  "approvable": true,
+  "generation": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "promptVersion": "draft-v1",
+    "usage": {
+      "inputTokens": 1746,
+      "outputTokens": 931,
+      "costUsd": 0,
+      "attempts": 1
+    },
+    "reused": true,
+    "generatedAt": "2026-10-20T01:06:30.631Z",
+    "evidenceHash": "33e2eecfa976"
+  }
+}

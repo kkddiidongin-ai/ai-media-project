@@ -1,0 +1,241 @@
+{
+  "id": "d259b094fe0e",
+  "date": "2026-10-20",
+  "proposedSlug": "scale-agentic-coding-workflows-meta-s-muse",
+  "title": null,
+  "sourceTitle": "Scale Agentic Coding Workflows with Meta’s Muse Spark Open on NVIDIA GB300 NVL72",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 10,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "NVIDIA",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://developer.nvidia.com/blog/scale-agentic-coding-workflows-with-metas-muse-spark-open-on-nvidia-gb300-nvl72/",
+      "name": "NVIDIA Technical Blog",
+      "type": "official",
+      "publishedAt": "2026-10-15T18:00:01.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "d259b094fe0e",
+    "url": "https://developer.nvidia.com/blog/scale-agentic-coding-workflows-with-metas-muse-spark-open-on-nvidia-gb300-nvl72/",
+    "canonicalUrl": "https://developer.nvidia.com/blog/scale-agentic-coding-workflows-with-metas-muse-spark-open-on-nvidia-gb300-nvl72",
+    "title": "Scale Agentic Coding Workflows with Meta’s Muse Spark Open on NVIDIA GB300 NVL72",
+    "excerpt": "Meta launches Muse Spark Open, a coding-optimized 816B mixture-of-experts (MoE) model with 42B active parameters and a 1M token context window. Trained on...",
+    "publishedAt": "2026-10-15T18:00:01.000Z",
+    "sourceId": "nvidia-developer",
+    "sourceName": "NVIDIA Technical Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://developer.nvidia.com/blog/feed",
+    "fetchedAt": "2026-10-18T13:58:30.865Z",
+    "fromQueue": "draft"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 7651,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Meta launches Muse Spark Open, a coding-optimized 816B mixture-of-experts (MoE) model with 42B active parameters and a 1M token context window. Trained on...",
+        "sourceUrl": "https://developer.nvidia.com/blog/scale-agentic-coding-workflows-with-metas-muse-spark-open-on-nvidia-gb300-nvl72/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-15T18:00:01.000Z",
+        "checkedAt": "2026-10-19T16:58:49.062Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Scale Agentic Coding Workflows with Meta’s Muse Spark Open on NVIDIA GB300 NVL72 | NVIDIA Technical Blog",
+        "sourceUrl": "https://developer.nvidia.com/blog/scale-agentic-coding-workflows-with-metas-muse-spark-open-on-nvidia-gb300-nvl72/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-15T18:00:01.000Z",
+        "checkedAt": "2026-10-19T16:58:49.062Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Scale Agentic Coding Workflows with Meta’s Muse Spark Open on NVIDIA GB300 NVL72",
+        "sourceUrl": "https://developer.nvidia.com/blog/scale-agentic-coding-workflows-with-metas-muse-spark-open-on-nvidia-gb300-nvl72/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-15T18:00:01.000Z",
+        "checkedAt": "2026-10-19T16:58:49.062Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Mixture-of-experts (MoE) model Muse Spark Open activates 42B of 816B total parameters per token through top-8 routing across 256 experts.",
+        "sourceUrl": "https://developer.nvidia.com/blog/scale-agentic-coding-workflows-with-metas-muse-spark-open-on-nvidia-gb300-nvl72/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-15T18:00:01.000Z",
+        "checkedAt": "2026-10-19T16:58:49.062Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Trained on NVIDIA GB300 NVL72 Blackwell Ultra for agentic coding workflows, it delivers higher first-attempt accuracy, reliable tool calling, and deep codebase understanding across repositories.",
+        "sourceUrl": "https://developer.nvidia.com/blog/scale-agentic-coding-workflows-with-metas-muse-spark-open-on-nvidia-gb300-nvl72/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-15T18:00:01.000Z",
+        "checkedAt": "2026-10-19T16:58:49.062Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Running agentic workloads on NVIDIA GB300 NVL72 delivers up to 50K tokens per second per GPU and up to 600 tokens per second per user.",
+        "sourceUrl": "https://developer.nvidia.com/blog/scale-agentic-coding-workflows-with-metas-muse-spark-open-on-nvidia-gb300-nvl72/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-15T18:00:01.000Z",
+        "checkedAt": "2026-10-19T16:58:49.062Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Meta launches Muse Spark Open, a coding-optimized 816B mixture-of-experts (MoE) model with 42B active parameters and a 1M token context window.",
+        "sourceUrl": "https://developer.nvidia.com/blog/scale-agentic-coding-workflows-with-metas-muse-spark-open-on-nvidia-gb300-nvl72/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-15T18:00:01.000Z",
+        "checkedAt": "2026-10-19T16:58:49.062Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Trained on NVIDIA GB300 NVL72 Blackwell Ultra specifically for agentic coding workflows, it delivers higher first attempt accuracy, reliable tool calling, and deep codebase understanding across repositories.",
+        "sourceUrl": "https://developer.nvidia.com/blog/scale-agentic-coding-workflows-with-metas-muse-spark-open-on-nvidia-gb300-nvl72/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-15T18:00:01.000Z",
+        "checkedAt": "2026-10-19T16:58:49.062Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Muse Spark Open optimized performance on GB300 NVL72",
+        "sourceUrl": "https://developer.nvidia.com/blog/scale-agentic-coding-workflows-with-metas-muse-spark-open-on-nvidia-gb300-nvl72/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-15T18:00:01.000Z",
+        "checkedAt": "2026-10-19T16:58:49.062Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "The NVIDIA GB300 NVL72 features a rack scale architecture that integrates 72 NVIDIA Blackwell Ultra GPUs into a single platform.",
+        "sourceUrl": "https://developer.nvidia.com/blog/scale-agentic-coding-workflows-with-metas-muse-spark-open-on-nvidia-gb300-nvl72/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-15T18:00:01.000Z",
+        "checkedAt": "2026-10-19T16:58:49.062Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Out of the box, Muse Spark Open running agentic workloads on NVIDIA GB300 NVL72 delivers up to 50K per second per GPU and up to 600 tokens per second per user, enabling AI factories to run large parameter models in production at high throughput and low latency.",
+        "sourceUrl": "https://developer.nvidia.com/blog/scale-agentic-coding-workflows-with-metas-muse-spark-open-on-nvidia-gb300-nvl72/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-15T18:00:01.000Z",
+        "checkedAt": "2026-10-19T16:58:49.062Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Running agentic workloads, Muse Spark Open on four NVIDIA Blackwell GPUs with speculative decode achieved over 50K tokens per second per GPU and over 600 tokens per user",
+        "sourceUrl": "https://developer.nvidia.com/blog/scale-agentic-coding-workflows-with-metas-muse-spark-open-on-nvidia-gb300-nvl72/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-15T18:00:01.000Z",
+        "checkedAt": "2026-10-19T16:58:49.062Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Agentic AI / Generative AI | General | Blackwell | Dynamo | NeMo | NVLink | TensorRT-LLM | Intermediate Technical | News | featured | GB300 NVL72 | Megatron | Mixture of Experts (MoE) | NVFP4 | Open Source | PyTorch | Training AI Models",
+        "sourceUrl": "https://developer.nvidia.com/blog/scale-agentic-coding-workflows-with-metas-muse-spark-open-on-nvidia-gb300-nvl72/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-15T18:00:01.000Z",
+        "checkedAt": "2026-10-19T16:58:49.062Z"
+      }
+    ],
+    "pageDate": "2026-10-15T18:00:01.000Z"
+  },
+  "score": {
+    "importance": 3,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "MODEL",
+      "PRODUCT_LAUNCH"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 9,
+    "total": 9
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 MODEL·PRODUCT_LAUNCH (우선순위 9)",
+    "근거 확인 통과 (확인 사실 10개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "status": "failed",
+    "error": "HTTP 503",
+    "usage": {
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "costUsd": 0,
+      "attempts": 1
+    },
+    "promptVersion": "draft-v1",
+    "at": "2026-10-20T15:02:17.333Z",
+    "evidenceHash": "bc02fb929f09"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": true,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}

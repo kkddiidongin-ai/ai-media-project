@@ -1,0 +1,420 @@
+{
+  "id": "13e122947fca",
+  "date": "2026-10-20",
+  "proposedSlug": "meta-s-muse-spark-open-available-amazon",
+  "title": "메타의 코딩 특화 모델 '뮤즈 스파크 오픈', AWS 세이지메이커 점프스타트 출시",
+  "sourceTitle": "Meta’s Muse Spark Open now available in Amazon SageMaker JumpStart",
+  "depth": "STANDARD",
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": true,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": "AI_CODING",
+  "summary": "메타의 코딩 최적화 오픈 가중치 모델 '뮤즈 스파크 오픈'이 아마존 세이지메이커 점프스타트에 추가됐습니다. 사용자는 자체 AWS 계정의 엔드포인트에 모델을 배포해 추론을 실행할 수 있습니다.",
+  "body": {
+    "facts": [
+      {
+        "text": "메타의 코딩 최적화 오픈 가중치 모델 '뮤즈 스파크 오픈(Muse Spark Open)'이 아마존 세이지메이커 AI의 머신러닝 허브인 세이지메이커 점프스타트에 출시됐습니다.",
+        "evidence": [
+          "E0",
+          "E3"
+        ]
+      },
+      {
+        "text": "뮤즈 스파크 오픈은 전문가 혼합(MoE) 아키텍처를 기반으로 하며, 총 8,160억 개 파라미터 중 토큰당 420억 개 파라미터가 활성화됩니다.",
+        "evidence": [
+          "E5"
+        ]
+      },
+      {
+        "text": "세이지메이커 스튜디오나 세이지메이커 파이썬 SDK를 사용해 자체 AWS 계정의 엔드포인트에 모델을 배포하고 첫 추론 요청을 보낼 수 있습니다.",
+        "evidence": [
+          "E0",
+          "E4",
+          "E6"
+        ]
+      }
+    ],
+    "why": {
+      "text": "대규모 MoE 기반 코딩 모델을 별도의 외부 인프라 구축 없이 AWS 관리형 환경 내에서 직접 엔드포인트로 띄워 활용할 수 있게 됐습니다.",
+      "evidence": [
+        "E0",
+        "E3",
+        "E5"
+      ]
+    },
+    "change": {
+      "text": "AWS를 사용하는 개발자는 세이지메이커 스튜디오 검색이나 파이썬 SDK 코드를 통해 자체 AWS 계정에 코딩 특화 모델 엔드포인트를 구축하고 연동할 수 있습니다.",
+      "evidence": [
+        "E0",
+        "E6",
+        "E11",
+        "E12"
+      ]
+    }
+  },
+  "topics": [
+    "meta",
+    "amazon",
+    "ai-coding",
+    "open-models"
+  ],
+  "companies": [
+    "Meta",
+    "Amazon",
+    "AWS"
+  ],
+  "products": [
+    "Muse Spark Open",
+    "Amazon SageMaker JumpStart",
+    "Amazon SageMaker Studio",
+    "SageMaker Python SDK"
+  ],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/metas-muse-spark-open-now-available-in-amazon-sagemaker-jumpstart/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-10-15T17:43:35.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "13e122947fca",
+    "url": "https://aws.amazon.com/blogs/machine-learning/metas-muse-spark-open-now-available-in-amazon-sagemaker-jumpstart/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/metas-muse-spark-open-now-available-in-amazon-sagemaker-jumpstart",
+    "title": "Meta’s Muse Spark Open now available in Amazon SageMaker JumpStart",
+    "excerpt": "Muse Spark Open, Meta's coding-optimized open-weight model, is now available in Amazon SageMaker JumpStart. Deploy it to a SageMaker AI endpoint in your own AWS account using SageMaker Studio or the SageMaker Python SDK, and run your first inference request.",
+    "publishedAt": "2026-10-15T17:43:35.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-10-18T13:58:30.865Z",
+    "fromQueue": "draft"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 9947,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Muse Spark Open, Meta's coding-optimized open-weight model, is now available in Amazon SageMaker JumpStart. Deploy it to a SageMaker AI endpoint in your own AWS account using SageMaker Studio or the SageMaker Python SDK, and run your first inference request.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/metas-muse-spark-open-now-available-in-amazon-sagemaker-jumpstart/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-15T17:43:35.000Z",
+        "checkedAt": "2026-10-19T16:58:46.827Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Meta’s Muse Spark Open now available in Amazon SageMaker JumpStart | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/metas-muse-spark-open-now-available-in-amazon-sagemaker-jumpstart/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-15T17:43:35.000Z",
+        "checkedAt": "2026-10-19T16:58:46.827Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Meta’s Muse Spark Open now available in Amazon SageMaker JumpStart",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/metas-muse-spark-open-now-available-in-amazon-sagemaker-jumpstart/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-15T17:43:35.000Z",
+        "checkedAt": "2026-10-19T16:58:46.827Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Muse Spark Open, Meta’s coding-optimized open-weight model, is now available in Amazon SageMaker JumpStart , the machine learning (ML) hub of Amazon SageMaker AI .",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/metas-muse-spark-open-now-available-in-amazon-sagemaker-jumpstart/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-15T17:43:35.000Z",
+        "checkedAt": "2026-10-19T16:58:46.827Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "In this post, we introduce Muse Spark Open and show you how to deploy the model with Amazon SageMaker Studio and the SageMaker Python SDK , send it a first inference request, and clean up.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/metas-muse-spark-open-now-available-in-amazon-sagemaker-jumpstart/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-15T17:43:35.000Z",
+        "checkedAt": "2026-10-19T16:58:46.827Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Muse Spark Open uses a mixture-of-experts (MoE) architecture with 816 billion total parameters, of which 42 billion are active for each token.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/metas-muse-spark-open-now-available-in-amazon-sagemaker-jumpstart/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-15T17:43:35.000Z",
+        "checkedAt": "2026-10-19T16:58:46.827Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "You can deploy Muse Spark Open from SageMaker Studio or with the SageMaker Python SDK.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/metas-muse-spark-open-now-available-in-amazon-sagemaker-jumpstart/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-15T17:43:35.000Z",
+        "checkedAt": "2026-10-19T16:58:46.827Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "An AWS Region where Muse Spark Open is available in SageMaker JumpStart.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/metas-muse-spark-open-now-available-in-amazon-sagemaker-jumpstart/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-15T17:43:35.000Z",
+        "checkedAt": "2026-10-19T16:58:46.827Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "At launch, Muse Spark Open is available in US East (N.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/metas-muse-spark-open-now-available-in-amazon-sagemaker-jumpstart/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-15T17:43:35.000Z",
+        "checkedAt": "2026-10-19T16:58:46.827Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "To find Muse Spark Open in SageMaker JumpStart",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/metas-muse-spark-open-now-available-in-amazon-sagemaker-jumpstart/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-15T17:43:35.000Z",
+        "checkedAt": "2026-10-19T16:58:46.827Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Figure 1: The Muse Spark Open model detail card in SageMaker JumpStart",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/metas-muse-spark-open-now-available-in-amazon-sagemaker-jumpstart/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-15T17:43:35.000Z",
+        "checkedAt": "2026-10-19T16:58:46.827Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "In this post, we showed how to deploy Muse Spark Open, Meta’s coding-optimized open-weight model, from SageMaker JumpStart to an endpoint in your own AWS account.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/metas-muse-spark-open-now-available-in-amazon-sagemaker-jumpstart/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-15T17:43:35.000Z",
+        "checkedAt": "2026-10-19T16:58:46.827Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "To get started, search for Muse Spark Open in SageMaker JumpStart in SageMaker Studio.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/metas-muse-spark-open-now-available-in-amazon-sagemaker-jumpstart/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-15T17:43:35.000Z",
+        "checkedAt": "2026-10-19T16:58:46.827Z"
+      }
+    ],
+    "pageDate": "2026-10-15T17:43:35.000Z"
+  },
+  "score": {
+    "importance": 3,
+    "practicalImpact": 3,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PRODUCT_LAUNCH",
+      "AVAILABILITY",
+      "API_PLATFORM"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 11,
+    "total": 11
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 PRODUCT_LAUNCH·AVAILABILITY·API_PLATFORM (우선순위 11)",
+    "근거 확인 통과 (확인 사실 11개, SUFFICIENT_STANDARD)",
+    "초안 QA FAIL: 근거에 없는 수치 '8160' · 근거에 없는 수치 '420'"
+  ],
+  "needsReview": [
+    "numeric_claim"
+  ],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "status": "ok",
+    "usage": {
+      "inputTokens": 1688,
+      "outputTokens": 791,
+      "costUsd": 0,
+      "attempts": 1
+    },
+    "promptVersion": "draft-v1",
+    "at": "2026-10-20T01:06:01.117Z",
+    "evidenceHash": "bc304b8838b6"
+  },
+  "draft": {
+    "title": "메타의 코딩 특화 모델 '뮤즈 스파크 오픈', AWS 세이지메이커 점프스타트 출시",
+    "summary": "메타의 코딩 최적화 오픈 가중치 모델 '뮤즈 스파크 오픈'이 아마존 세이지메이커 점프스타트에 추가됐습니다. 사용자는 자체 AWS 계정의 엔드포인트에 모델을 배포해 추론을 실행할 수 있습니다.",
+    "category": "AI_CODING",
+    "topics": [
+      "meta",
+      "amazon",
+      "ai-coding",
+      "open-models"
+    ],
+    "companies": [
+      "Meta",
+      "Amazon",
+      "AWS"
+    ],
+    "products": [
+      "Muse Spark Open",
+      "Amazon SageMaker JumpStart",
+      "Amazon SageMaker Studio",
+      "SageMaker Python SDK"
+    ],
+    "facts": [
+      {
+        "text": "메타의 코딩 최적화 오픈 가중치 모델 '뮤즈 스파크 오픈(Muse Spark Open)'이 아마존 세이지메이커 AI의 머신러닝 허브인 세이지메이커 점프스타트에 출시됐습니다.",
+        "evidence": [
+          "E0",
+          "E3"
+        ]
+      },
+      {
+        "text": "뮤즈 스파크 오픈은 전문가 혼합(MoE) 아키텍처를 기반으로 하며, 총 8,160억 개 파라미터 중 토큰당 420억 개 파라미터가 활성화됩니다.",
+        "evidence": [
+          "E5"
+        ]
+      },
+      {
+        "text": "세이지메이커 스튜디오나 세이지메이커 파이썬 SDK를 사용해 자체 AWS 계정의 엔드포인트에 모델을 배포하고 첫 추론 요청을 보낼 수 있습니다.",
+        "evidence": [
+          "E0",
+          "E4",
+          "E6"
+        ]
+      }
+    ],
+    "why": {
+      "text": "대규모 MoE 기반 코딩 모델을 별도의 외부 인프라 구축 없이 AWS 관리형 환경 내에서 직접 엔드포인트로 띄워 활용할 수 있게 됐습니다.",
+      "evidence": [
+        "E0",
+        "E3",
+        "E5"
+      ]
+    },
+    "change": {
+      "text": "AWS를 사용하는 개발자는 세이지메이커 스튜디오 검색이나 파이썬 SDK 코드를 통해 자체 AWS 계정에 코딩 특화 모델 엔드포인트를 구축하고 연동할 수 있습니다.",
+      "evidence": [
+        "E0",
+        "E6",
+        "E11",
+        "E12"
+      ]
+    },
+    "checks": [
+      {
+        "text": "출시 시점 기준 제공 리전이 미국 동부(US East) 등으로 제한되어 있으므로 배포하려는 AWS 리전 지원 여부를 확인해야 합니다.",
+        "evidence": [
+          "E7",
+          "E8"
+        ]
+      }
+    ],
+    "unknowns": [
+      "한국(서울) 리전 지원 여부 및 향후 지원 일정",
+      "모델 엔드포인트 호스팅 및 추론 실행에 따른 구체적인 인스턴스 사양과 요금 체계",
+      "기존 메타 모델 대비 세부 벤치마크 및 코딩 성능 수치"
+    ],
+    "editorialDepth": "STANDARD",
+    "insufficient": false,
+    "notes": "E8에서 제공 리전 이름('US East (N.')이 원문 발췌상 끊겨 있으므로 '미국 동부' 수준으로만 기술하고 추가 리전 지원 여부를 unknowns에 남겼습니다."
+  },
+  "validation": {
+    "errors": [],
+    "needsReview": [
+      "numeric_claim"
+    ]
+  },
+  "draftQa": {
+    "verdict": "FAIL",
+    "checks": {
+      "FACT": {
+        "result": "FAIL",
+        "issues": [
+          "근거에 없는 수치 '8160' (facts[1])",
+          "근거에 없는 수치 '420' (facts[1])"
+        ]
+      },
+      "EVIDENCE": {
+        "result": "PASS",
+        "issues": []
+      },
+      "EDITORIAL": {
+        "result": "PASS",
+        "issues": []
+      },
+      "STRUCTURE": {
+        "result": "PASS",
+        "issues": []
+      },
+      "DUPLICATE": {
+        "result": "PASS",
+        "issues": []
+      },
+      "SAFETY": {
+        "result": "PASS",
+        "issues": []
+      }
+    },
+    "fixes": [
+      "[FACT/FAIL] 근거에 없는 수치 '8160' (facts[1])",
+      "[FACT/FAIL] 근거에 없는 수치 '420' (facts[1])"
+    ],
+    "stats": {
+      "bodyChars": 608,
+      "depth": "STANDARD",
+      "suggestedDepth": "STANDARD"
+    }
+  },
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": "drafts/13e122947fca.md",
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

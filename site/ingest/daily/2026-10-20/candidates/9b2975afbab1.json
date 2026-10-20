@@ -1,0 +1,116 @@
+{
+  "id": "9b2975afbab1",
+  "date": "2026-10-20",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Tailored for Every Home: Samsung “The Brief” Goes Global With AI-Powered Home Appliances",
+  "depth": null,
+  "suggestedDepth": null,
+  "depthAssessment": {
+    "sufficiency": "INSUFFICIENT",
+    "distinctFacts": 0,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": true,
+      "contextNeed": false,
+      "distinctFacts": false,
+      "evidenceQuality": false,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "contextNeed",
+      "distinctFacts",
+      "evidenceQuality",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Samsung",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://news.samsung.com/global/tailored-for-every-home-samsung-the-brief-goes-global-with-ai-powered-home-appliances",
+      "name": "Samsung Newsroom",
+      "type": "official",
+      "publishedAt": "2026-10-20T08:00:31.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "9b2975afbab1",
+    "url": "https://news.samsung.com/global/tailored-for-every-home-samsung-the-brief-goes-global-with-ai-powered-home-appliances",
+    "canonicalUrl": "https://news.samsung.com/global/tailored-for-every-home-samsung-the-brief-goes-global-with-ai-powered-home-appliances",
+    "title": "Tailored for Every Home: Samsung “The Brief” Goes Global With AI-Powered Home Appliances",
+    "excerpt": "Samsung Electronics hosted “The Brief,” a series of home appliance tech seminars across five regions: the US, Europe, Latin America, Southwest Asia, and Southeast Asia. The event showcased AI-powered home appliance experiences reflecting each region’s living environment and consumer needs. Across th",
+    "publishedAt": "2026-10-20T08:00:31.000Z",
+    "sourceId": "samsung-newsroom",
+    "sourceName": "Samsung Newsroom",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://news.samsung.com/global/feed",
+    "fetchedAt": "2026-10-20T15:00:04.811Z"
+  },
+  "evidence": {
+    "status": "TIMEOUT",
+    "chars": 0,
+    "grade": "FAIL",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Samsung Electronics hosted “The Brief,” a series of home appliance tech seminars across five regions: the US, Europe, Latin America, Southwest Asia, and Southeast Asia. The event showcased AI-powered home appliance experiences reflecting each region’s living environment and consumer needs. Across th",
+        "sourceUrl": "https://news.samsung.com/global/tailored-for-every-home-samsung-the-brief-goes-global-with-ai-powered-home-appliances",
+        "source": "Samsung Newsroom",
+        "publishedAt": "2026-10-20T08:00:31.000Z",
+        "checkedAt": "2026-10-20T15:01:45.890Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 2,
+    "practicalImpact": 0,
+    "koreanRelevance": 3,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 2,
+    "signals": [
+      "KOREA"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 9,
+    "total": 9
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "근거 부족 (원문 TIMEOUT, 확인 사실 0개) — 발행하지 않음"
+  ],
+  "needsReview": [
+    "source_blocked",
+    "insufficient_evidence"
+  ],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}
