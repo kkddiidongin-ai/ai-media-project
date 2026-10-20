@@ -113,6 +113,13 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
   }
   const doc = exportRun(dir);
   const file = outI >= 0 ? argv[outI + 1] : path.join(dir, "drafts", "editorial-drafts.json");
+  // 편집자가 고친 원고(editedBy 표시)는 같은 날 재실행이 덮어쓰지 않는다
+  if (fs.existsSync(file)) {
+    const prev = JSON.parse(fs.readFileSync(file, "utf8"));
+    const kept = new Map((prev.drafts ?? []).filter((d) => d.editedBy).map((d) => [d.story.slug, d]));
+    doc.drafts = doc.drafts.map((d) => kept.get(d.story.slug) ?? d);
+    for (const [slug, d] of kept) if (!doc.drafts.some((x) => x.story.slug === slug)) doc.drafts.push(d);
+  }
   fs.mkdirSync(path.dirname(file), { recursive: true });
   fs.writeFileSync(file, JSON.stringify(doc, null, 2) + "\n");
   const pub = doc.drafts.filter((d) => d.verdict === "PUBLISHABLE").length;
