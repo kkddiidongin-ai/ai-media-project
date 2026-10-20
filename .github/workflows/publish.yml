@@ -83,6 +83,10 @@ jobs:
       - name: Check drafts
         run: npm run daily:check-drafts -- "$RUNNER_TEMP/editorial-drafts.json"
 
+      # 새로 checkout한 runner에는 .next/types가 없어 publish:daily의 tsc가 실패한다 (next-env.d.ts가 참조) → 먼저 생성
+      - name: Generate Next route types
+        run: npx next typegen
+
       # 승인자 = 이 workflow를 실행한 사람 (auto이면 DAILY workflow를 켠 운영 설정)
       - name: Publish (content)
         id: pub

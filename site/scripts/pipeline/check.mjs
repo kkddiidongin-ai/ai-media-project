@@ -361,6 +361,7 @@ await t("발행: 승인자 없으면 거부 · 자동 발행은 꺼져 있으면
 await t("발행 workflow: 보호된 Environment · master에서만 · 배포는 두 스위치(입력 deploy + VERCEL_DEPLOY_ENABLED) · 자동 발행은 기본 꺼짐", async () => {
   const wf = fs.readFileSync(path.join(REPO, ".github/workflows/publish.yml"), "utf8");
   ok(/environment: production-publish/.test(wf), "Environment");
+  ok(wf.indexOf("npx next typegen") > 0 && wf.indexOf("npx next typegen") < wf.indexOf("Publish (content)"), "발행 전 Next 타입 생성 (새 runner에서 tsc 실패 방지)");
   ok(/github\.ref_name == github\.event\.repository\.default_branch/.test(wf), "master만");
   ok(/if: inputs\.deploy && vars\.VERCEL_DEPLOY_ENABLED == 'true'/.test(wf), "배포 스위치 두 개");
   ok(!/schedule:/.test(wf), "예약 실행 없음");
