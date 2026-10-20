@@ -1,5 +1,134 @@
 [
   {
+    "id": "s-20261013-66cb1e",
+    "slug": "gemini-4-argon-general-availability",
+    "title": "구글 Gemini 4 Argon 일반 공개… 유료 API와 Gemini 앱 Pro·Ultra부터",
+    "summary": "구글이 10월 13일 Gemini 4 Argon을 개발자·기업과 Google AI Pro·Ultra 구독자에게 공개했습니다. 9월 30일 발표 때는 신뢰할 수 있는 사이버 방어자에게만 단계적으로 제공되던 모델입니다.",
+    "category": "MODEL_RELEASE",
+    "topics": [
+      "google",
+      "gemini",
+      "ai-coding",
+      "ai-security"
+    ],
+    "companies": [
+      "Google",
+      "Google DeepMind"
+    ],
+    "products": [
+      "Gemini 4 Argon"
+    ],
+    "facts": [
+      "개발자와 기업은 10월 13일부터 AI Studio의 유료 Gemini API와 Gemini 플랫폼에서 Gemini 4 Argon을 쓸 수 있고, Android Studio에서도 쓸 수 있습니다. 구글은 이번 공개가 전 세계 대상이라고 밝혔습니다.",
+      "일반 사용자는 Google AI Pro·Ultra 구독자부터 Gemini 앱과 검색의 AI 모드에서 쓸 수 있고, 개발 플랫폼 Google Antigravity에서는 Ultra 구독자가 쓸 수 있습니다.",
+      "가격은 9월 30일 발표 때 밝힌 출시 기념가(100만 토큰당 입력 2달러·출력 10달러)가 적용되며, 이 가격은 2026년 11월 30일까지입니다. 그 뒤에는 입력 4달러·출력 20달러가 적용됩니다.",
+      "Gemini API에서는 입력과 출력을 합쳐 100만 토큰까지 쓸 수 있으며, 긴 작업을 위한 새 연속 처리(continuation) 방식 설정이 문서로 안내됩니다.",
+      "사이버 보안 제한 없이 Argon을 쓰는 Fairwind 프로그램은 이날부터 수백 곳의 추가 파트너로 넓어지기 시작했습니다.",
+      "Gemini 앱에는 채팅에서 '작업(tasks)'으로 바꾸는 전환 버튼과 40개 이상의 앱 연결이 함께 들어왔고, macOS 앱에서 Antigravity 코딩 화면을 바로 쓸 수 있게 됐습니다."
+    ],
+    "whyItMatters": "9월 30일 발표 당시 Argon은 신뢰할 수 있는 사이버 방어자에게만 단계적으로 배포됐고, 개발자·기업·일반 공개는 안전장치를 다듬은 뒤로 미뤄졌습니다. 이번에 같은 모델이 API와 소비자 앱으로 함께 열리면서 구글의 최상위 모델을 실제 업무에서 비교해 볼 수 있게 됐습니다. 다만 일반 공개 모델에는 사이버 관련 안전장치가 적용되고, 제한을 푼 버전은 Fairwind 프로그램 참여자에게만 열립니다. 구글이 밝힌 Vals Index 1위 등 성능 결과는 구글 발표 기준이며 AI마중이 따로 검증하지 않았습니다.",
+    "whatChanges": "유료 Gemini API 계정이 있으면 바로 호출할 수 있습니다. Gemini 앱은 Pro·Ultra 구독자 대상이며, 구글의 구독 안내에는 '일부 국가'에서 제공된다고만 적혀 있어 한국에서 지금 쓸 수 있는지는 확인되지 않았습니다. 장기 비용은 11월 30일 이후 가격 기준으로 잡는 편이 안전합니다.",
+    "priority": 1,
+    "secondarySources": [
+      {
+        "candidateId": "08b67872d0b2",
+        "sourceType": "official",
+        "sourceName": "Google (The Keyword · AI)",
+        "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-argon/",
+        "sourcePublishedAt": "2026-10-13T00:00:00.000Z",
+        "sourceTitle": "Gemini 4 Argon is now available for developers."
+      },
+      {
+        "candidateId": "de035fc3e01d",
+        "sourceType": "official",
+        "sourceName": "Google (The Keyword · AI)",
+        "sourceUrl": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-4-argon-availability/",
+        "sourcePublishedAt": "2026-10-13T00:00:00.000Z",
+        "sourceTitle": "Gemini 4 Argon comes to the Gemini app."
+      }
+    ],
+    "editorialDepth": "standard",
+    "eventDate": "2026-10-13",
+    "publishedAt": "2026-10-20",
+    "updatedAt": "2026-10-20",
+    "candidateId": "66cb1e68848f",
+    "sourceType": "official",
+    "sourceName": "Google (The Keyword · AI)",
+    "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+    "sourcePublishedAt": "2026-10-13T00:00:00.000Z",
+    "sourceTitle": "Gemini 4 Argon: Built to solve your hardest problems",
+    "contentType": "NEWS",
+    "status": "published",
+    "backfilled": true,
+    "collectedAt": "2026-10-20T09:16:52.375Z",
+    "provenance": {
+      "discoveredVia": "Local",
+      "fetchMode": "manual",
+      "runId": "Local",
+      "verification": "primary+secondary"
+    }
+  },
+  {
+    "id": "s-20261012-9c8dc2",
+    "slug": "meta-muse-wonder-frontier-models",
+    "title": "메타, 에이전트용 모델 'Muse Wonder' 공개… API·Muse Code에서 먼저",
+    "summary": "메타가 10월 12일 Muse Wonder와 Muse Wonder Full을 공개했습니다. 메타는 지금까지 만든 모델 가운데 가장 뛰어난 모델이라고 소개했으며, 개발자는 Meta Model API와 Muse Code에서 바로 쓸 수 있습니다. 일반 사용자용 Muse 앱 적용은 아직 '곧'으로만 예고됐습니다.",
+    "category": "MODEL_RELEASE",
+    "topics": [
+      "meta",
+      "ai-agent",
+      "ai-coding"
+    ],
+    "companies": [
+      "Meta"
+    ],
+    "products": [
+      "Muse Wonder",
+      "Muse Wonder Full"
+    ],
+    "facts": [
+      "Muse Wonder는 Meta Model API와 Muse Code에서, Muse Wonder Full은 Muse Code 구독자에게 10월 12일부터 제공됩니다.",
+      "메타의 AI 서비스 Muse에는 곧 들어갈 예정이며 구독자에게 먼저 적용된다고 밝혔습니다. 일반 사용자가 지금 바로 쓸 수 있는 단계는 아닙니다.",
+      "개인·업무용 에이전트 작업을 겨냥한 모델로, 대화가 바뀌어도 필요한 맥락을 이어 가는 'Active Memory'와 어려운 작업에서 다른 방법을 시도하고 오류를 복구하며 중요한 일 전에 확인을 구하는 'Active Focus'를 핵심 기능으로 내세웠습니다.",
+      "법률·금융·건강 같은 전문 분야 작업과 코딩 성능을 강조했으며, 보험 청구 처리·임대 계약 이해·앱 만들기를 예로 들었습니다.",
+      "허락 없이 개인정보를 공유하지 않고 실제로 해로운 요청은 거절하도록 학습했다고 밝혔으며, 추가 안전성 평가를 담은 보고서는 곧 공개할 예정입니다.",
+      "앞서 공개한 Muse Spark의 기반 위에 만들었고, 기가와트급 Prometheus 데이터센터에서 학습했다고 밝혔습니다. 메타는 14개월 전 AI 조직을 전면 개편했다고 설명했습니다."
+    ],
+    "whyItMatters": "메타는 Muse Spark 이후 이미지·개인 에이전트 등 Muse 제품군을 넓혀 왔고, 이번 모델은 사용자를 대신해 일을 처리하는 에이전트 작업을 정면으로 겨냥합니다. 다만 '주요 벤치마크에서 최고 수준'이라는 성능은 메타 발표이며, 연구 블로그의 비교 결과도 그래프로만 제시돼 수치를 확인할 수 없었습니다. API 가격과 제공 국가 역시 발표문에 없어, 다른 회사 모델과 비교하려면 메타가 곧 내겠다는 보고서를 기다려야 합니다.",
+    "whatChanges": "메타 모델을 API로 쓰려는 개발자에게는 선택지가 하나 늘었습니다. 일반 사용자용 Muse 적용은 '곧'이라고만 밝혀 시점이 정해지지 않았고, 한국 제공 여부와 가격은 발표문에서 확인되지 않습니다.",
+    "priority": 2,
+    "secondarySources": [
+      {
+        "candidateId": "31ba1e7c3abd",
+        "sourceType": "official",
+        "sourceName": "Meta Research",
+        "sourceUrl": "https://research.meta.ai/blog/muse-wonder",
+        "sourcePublishedAt": "2026-10-12T00:00:00.000Z",
+        "sourceTitle": "Muse Wonder: A Frontier Model For Personal & Professional AI Agents"
+      }
+    ],
+    "editorialDepth": "standard",
+    "eventDate": "2026-10-12",
+    "publishedAt": "2026-10-20",
+    "updatedAt": "2026-10-20",
+    "candidateId": "9c8dc2fb4e50",
+    "sourceType": "official",
+    "sourceName": "Meta Newsroom",
+    "sourceUrl": "https://about.fb.com/news/2026/10/introducing-muse-wonder-models/",
+    "sourcePublishedAt": "2026-10-12T17:08:05.000Z",
+    "sourceTitle": "Introducing Muse Wonder and Muse Wonder Full: Frontier Models for Agents",
+    "contentType": "NEWS",
+    "status": "published",
+    "backfilled": true,
+    "collectedAt": "2026-10-20T09:16:52.375Z",
+    "provenance": {
+      "discoveredVia": "Local",
+      "fetchMode": "manual",
+      "runId": "Local",
+      "verification": "primary+secondary"
+    }
+  },
+  {
     "id": "s-20261009-989481",
     "slug": "pegasus-1-5-twelvelabs-available-amazon-bedrock",
     "title": "트웰브랩스 페가수스 1.5, 아마존 베드록에 출시",
@@ -49,6 +178,76 @@
       "fetchMode": "manual",
       "runId": "2026-10-20",
       "verification": "primary-official"
+    }
+  },
+  {
+    "id": "s-20261007-1d78f0",
+    "slug": "claude-haiku-5-5",
+    "title": "Anthropic 'Claude Haiku 5.5' 출시… Haiku 4.5보다 평균 약 75% 싸게",
+    "summary": "Anthropic이 10월 7일 소형 모델 Claude Haiku 5.5를 출시했습니다. 요약·분류·서브에이전트처럼 빠르고 많이 처리해야 하는 작업용 모델로, Anthropic은 Haiku 4.5보다 평균 약 75% 적은 비용으로 돌릴 수 있다고 밝혔습니다.",
+    "category": "MODEL_RELEASE",
+    "topics": [
+      "anthropic",
+      "claude",
+      "ai-coding",
+      "ai-agent"
+    ],
+    "companies": [
+      "Anthropic"
+    ],
+    "products": [
+      "Claude Haiku 5.5",
+      "Claude Sonnet 5.5"
+    ],
+    "facts": [
+      "100만 토큰당 가격은 10만 토큰 이하 요청 기준 입력 0.10달러·출력 0.50달러, 10만 토큰을 넘으면 입력 0.50달러·출력 2.50달러입니다. Haiku 4.5는 입력 1달러·출력 5달러입니다.",
+      "Haiku급 모델 가운데 처음으로 노력(effort) 수준을 조절해 비용과 성능 중 무엇을 우선할지 정할 수 있습니다.",
+      "Claude Platform(모델 이름 claude-haiku-5-5)과 AWS·Google Cloud·Microsoft Azure에서 쓸 수 있습니다. AWS는 같은 날 Amazon Bedrock과 Claude Platform on AWS 제공을 발표했고, Bedrock에서는 지역별 데이터 보관을 지원한다고 밝혔습니다.",
+      "GitHub Copilot에서는 Pro·Pro+·Max·Business·Enterprise 이용자가 쓸 수 있고, 사용량 기반 과금(제공사 정가)이 적용되며 순차적으로 열립니다.",
+      "함께 Claude Sonnet 5.5의 캐시 읽기 가격을 100만 토큰당 0.20달러에서 0.10달러로 절반 내렸고, Anthropic은 이로써 대부분의 에이전트 작업 비용이 약 20% 줄어든다고 밝혔습니다.",
+      "Claude Max·Team 구독자는 매달 Claude Platform API 크레딧을 받습니다. Max 5x는 100달러, Max 20x는 200달러, Team은 좌석 수에 따라 최대 500달러이며, 요금제에 7일 이상 가입돼 있어야 하고 쓰지 않은 크레딧은 이월되지 않습니다. Free·Pro·Enterprise는 대상이 아닙니다.",
+      "Anthropic 발표 기준 Terminal-Bench 4.0 점수는 39.2%로 Sonnet 5.5(70.6%)보다 낮으며, Anthropic도 복잡한 에이전트 코딩에는 Sonnet 5.5·Opus 5.5가 더 낫다고 밝혔습니다."
+    ],
+    "whyItMatters": "소형 모델 가격이 크게 내려가면서, 요약·분류·문서 질의처럼 호출량이 많아 비용 때문에 미뤄 두던 작업을 다시 계산해 볼 만해졌습니다. 다만 '약 75%'는 Anthropic이 새 토크나이저로 토큰을 조금 더 쓰는 점까지 반영해 계산한 추정치이고, 10만 토큰을 넘는 요청은 Haiku 4.5보다 50%만 싸집니다. 큰 모델을 대신하기보다 큰 모델 아래에서 짧은 일을 나눠 맡는 용도라는 점도 Anthropic이 직접 밝혔습니다.",
+    "whatChanges": "Claude API·Amazon Bedrock·GitHub Copilot 사용자는 모델 목록에서 고를 수 있습니다(Copilot은 순차 적용). 기존 Haiku 4.5 작업을 옮길 때는 토크나이저 변경을 고려해 Anthropic의 이전 가이드를 먼저 확인하는 것이 좋습니다. Max·Team 구독자는 claude.ai 결제 설정에서 Console 조직을 연결해야 크레딧을 받을 수 있습니다.",
+    "priority": 1,
+    "secondarySources": [
+      {
+        "candidateId": "524a477f2709",
+        "sourceType": "official",
+        "sourceName": "AWS Machine Learning Blog",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-haiku-5-5-on-aws/",
+        "sourcePublishedAt": "2026-10-07T18:52:10.000Z",
+        "sourceTitle": "Introducing Claude Haiku 5.5 on AWS"
+      },
+      {
+        "candidateId": "86f546df6fb1",
+        "sourceType": "official",
+        "sourceName": "GitHub Changelog",
+        "sourceUrl": "https://github.blog/changelog/2026-10-07-claude-haiku-5-5-in-github-copilot",
+        "sourcePublishedAt": "2026-10-07T20:12:18.000Z",
+        "sourceTitle": "Claude Haiku 5.5 in GitHub Copilot"
+      }
+    ],
+    "editorialDepth": "standard",
+    "eventDate": "2026-10-07",
+    "publishedAt": "2026-10-20",
+    "updatedAt": "2026-10-20",
+    "candidateId": "1d78f09c640d",
+    "sourceType": "official",
+    "sourceName": "Anthropic",
+    "sourceUrl": "https://www.anthropic.com/claude-haiku-5-5",
+    "sourcePublishedAt": "2026-10-07T00:00:00.000Z",
+    "sourceTitle": "Introducing Claude Haiku 5.5",
+    "contentType": "NEWS",
+    "status": "published",
+    "backfilled": true,
+    "collectedAt": "2026-10-20T09:16:52.375Z",
+    "provenance": {
+      "discoveredVia": "Local",
+      "fetchMode": "manual",
+      "runId": "Local",
+      "verification": "primary+secondary"
     }
   },
   {
