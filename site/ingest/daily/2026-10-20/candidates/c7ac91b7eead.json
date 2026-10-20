@@ -1,0 +1,117 @@
+{
+  "id": "c7ac91b7eead",
+  "date": "2026-10-20",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Gemini in Google Sheets is now available on iOS devices",
+  "depth": null,
+  "suggestedDepth": null,
+  "depthAssessment": {
+    "sufficiency": "INSUFFICIENT",
+    "distinctFacts": 0,
+    "deepChecks": {
+      "importance": true,
+      "novelty": true,
+      "userImpact": true,
+      "contextNeed": false,
+      "distinctFacts": false,
+      "evidenceQuality": false,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "contextNeed",
+      "distinctFacts",
+      "evidenceQuality",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Google",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://workspaceupdates.googleblog.com/2026/10/gemini-in-google-sheets-is-now-available-on-iOS-devices.html",
+      "name": "Google Workspace Updates",
+      "type": "official",
+      "publishedAt": "2026-10-19T17:00:39.796Z"
+    }
+  ],
+  "candidate": {
+    "id": "c7ac91b7eead",
+    "url": "https://workspaceupdates.googleblog.com/2026/10/gemini-in-google-sheets-is-now-available-on-iOS-devices.html",
+    "canonicalUrl": "https://workspaceupdates.googleblog.com/2026/10/gemini-in-google-sheets-is-now-available-on-iOS-devices.html",
+    "title": "Gemini in Google Sheets is now available on iOS devices",
+    "excerpt": "Building upon the power of Gemini in Sheets on the web and our recent launch on Android devices , we’re excited to announce that you can now use Gemini in Google Sheets on your iOS device to quickly analyze and understand your data while on the go. Simply tap on the Gemini spark icon, and you can as",
+    "publishedAt": "2026-10-19T17:00:39.796Z",
+    "sourceId": "google-workspace-updates",
+    "sourceName": "Google Workspace Updates",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://workspaceupdates.googleblog.com/feeds/posts/default?max-results=500&published-min=2026-01-01T00:00:00Z",
+    "fetchedAt": "2026-10-20T00:30:21.157Z"
+  },
+  "evidence": {
+    "status": "HTTP_429",
+    "chars": 0,
+    "grade": "FAIL",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Building upon the power of Gemini in Sheets on the web and our recent launch on Android devices , we’re excited to announce that you can now use Gemini in Google Sheets on your iOS device to quickly analyze and understand your data while on the go. Simply tap on the Gemini spark icon, and you can as",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/gemini-in-google-sheets-is-now-available-on-iOS-devices.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-19T17:00:39.796Z",
+        "checkedAt": "2026-10-20T00:31:19.960Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 4,
+    "practicalImpact": 2,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 2,
+    "signals": [
+      "MODEL",
+      "PRODUCT_LAUNCH",
+      "AVAILABILITY"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 12,
+    "total": 12
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "근거 부족 (원문 HTTP_429, 확인 사실 0개) — 발행하지 않음"
+  ],
+  "needsReview": [
+    "source_blocked",
+    "insufficient_evidence"
+  ],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

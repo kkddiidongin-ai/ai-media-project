@@ -1,0 +1,231 @@
+{
+  "id": "87cd33ee12bd",
+  "date": "2026-10-20",
+  "proposedSlug": "developers-can-access-sagemaker-studio-through-aws",
+  "title": null,
+  "sourceTitle": "Developers can now access SageMaker Studio through the new AWS experience",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 10,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": true,
+      "contextNeed": true,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": true
+    },
+    "deepMissing": [
+      "importance"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/developers-can-now-access-sagemaker-studio-through-the-new-aws-experience/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-10-19T22:39:24.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "87cd33ee12bd",
+    "url": "https://aws.amazon.com/blogs/machine-learning/developers-can-now-access-sagemaker-studio-through-the-new-aws-experience/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/developers-can-now-access-sagemaker-studio-through-the-new-aws-experience",
+    "title": "Developers can now access SageMaker Studio through the new AWS experience",
+    "excerpt": "New Amazon SageMaker AI customers can now land in a fully configured SageMaker Studio environment in only a few steps. Sign up with an identity you already have, such as Amazon, Apple, GitHub, or Google, with no advanced AWS account or credit card required for most customers, plus $100 in AWS Free T",
+    "publishedAt": "2026-10-19T22:39:24.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-10-20T00:30:21.157Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 4660,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "New Amazon SageMaker AI customers can now land in a fully configured SageMaker Studio environment in only a few steps. Sign up with an identity you already have, such as Amazon, Apple, GitHub, or Google, with no advanced AWS account or credit card required for most customers, plus $100 in AWS Free T",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/developers-can-now-access-sagemaker-studio-through-the-new-aws-experience/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T22:39:24.000Z",
+        "checkedAt": "2026-10-20T00:31:20.244Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Developers can now access SageMaker Studio through the new AWS experience | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/developers-can-now-access-sagemaker-studio-through-the-new-aws-experience/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T22:39:24.000Z",
+        "checkedAt": "2026-10-20T00:31:20.244Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Developers can now access SageMaker Studio through the new AWS experience",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/developers-can-now-access-sagemaker-studio-through-the-new-aws-experience/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T22:39:24.000Z",
+        "checkedAt": "2026-10-20T00:31:20.244Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Today, we’re excited to announce that new Amazon SageMaker AI customers can now land inside a fully configured Amazon SageMaker Studio environment in only a few steps after signing up for AWS.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/developers-can-now-access-sagemaker-studio-through-the-new-aws-experience/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T22:39:24.000Z",
+        "checkedAt": "2026-10-20T00:31:20.244Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "New customers also receive $100 in AWS Free Tier credits that work across SageMaker AI, including model customization, training jobs, Studio notebooks, and endpoint deployments.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/developers-can-now-access-sagemaker-studio-through-the-new-aws-experience/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T22:39:24.000Z",
+        "checkedAt": "2026-10-20T00:31:20.244Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "This post follows on from our previous post, From Hugging Face to Amazon SageMaker Studio in One Click , which introduced deep links from Hugging Face model pages directly into SageMaker Studio workflows.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/developers-can-now-access-sagemaker-studio-through-the-new-aws-experience/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T22:39:24.000Z",
+        "checkedAt": "2026-10-20T00:31:20.244Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Earlier this year, we also sped up Studio environment creation time from 2 minutes to about 20 seconds and pre-configured model customization permissions in every new Studio domain.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/developers-can-now-access-sagemaker-studio-through-the-new-aws-experience/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T22:39:24.000Z",
+        "checkedAt": "2026-10-20T00:31:20.244Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "With this launch, SageMaker Studio is now integrated with the updated AWS sign-in and sign-up experience , which introduces new options for creating and managing AWS accounts along with simplified collaboration.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/developers-can-now-access-sagemaker-studio-through-the-new-aws-experience/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T22:39:24.000Z",
+        "checkedAt": "2026-10-20T00:31:20.244Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "New customers can create an account using an identity that they already have and start building in SageMaker Studio right away.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/developers-can-now-access-sagemaker-studio-through-the-new-aws-experience/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T22:39:24.000Z",
+        "checkedAt": "2026-10-20T00:31:20.244Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "After you sign up, SageMaker AI automatically creates your Studio environment in about 20 seconds.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/developers-can-now-access-sagemaker-studio-through-the-new-aws-experience/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T22:39:24.000Z",
+        "checkedAt": "2026-10-20T00:31:20.244Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Figure 3: Configuring endpoint settings in SageMaker Studio",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/developers-can-now-access-sagemaker-studio-through-the-new-aws-experience/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T22:39:24.000Z",
+        "checkedAt": "2026-10-20T00:31:20.244Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "New customers receive $100 in AWS Free Tier credits that work across SageMaker AI, including endpoint deployments, model customization, Studio notebooks, and model training.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/developers-can-now-access-sagemaker-studio-through-the-new-aws-experience/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T22:39:24.000Z",
+        "checkedAt": "2026-10-20T00:31:20.244Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Eligible accounts get default access to G5, G6, and G4dn GPU instances for endpoints, training jobs, and Studio notebooks.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/developers-can-now-access-sagemaker-studio-through-the-new-aws-experience/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T22:39:24.000Z",
+        "checkedAt": "2026-10-20T00:31:20.244Z"
+      }
+    ],
+    "pageDate": "2026-10-19T22:39:24.000Z"
+  },
+  "score": {
+    "importance": 3,
+    "practicalImpact": 2,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PRODUCT_LAUNCH",
+      "PRICING"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 10,
+    "total": 10
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 PRODUCT_LAUNCH·PRICING (우선순위 10)",
+    "근거 확인 통과 (확인 사실 10개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "status": "skipped",
+    "error": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성",
+    "promptVersion": "draft-v1",
+    "at": "2026-10-20T00:31:33.980Z",
+    "evidenceHash": "33e2eecfa976"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": true,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}

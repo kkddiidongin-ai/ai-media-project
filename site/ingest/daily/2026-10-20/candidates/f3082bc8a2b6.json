@@ -1,0 +1,117 @@
+{
+  "id": "f3082bc8a2b6",
+  "date": "2026-10-20",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Analyze BigQuery data using natural language with Gemini in Google Sheets",
+  "depth": null,
+  "suggestedDepth": null,
+  "depthAssessment": {
+    "sufficiency": "INSUFFICIENT",
+    "distinctFacts": 0,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": false,
+      "evidenceQuality": false,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "distinctFacts",
+      "evidenceQuality",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Google",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://workspaceupdates.googleblog.com/2026/10/analyze-bigquery-data-using-natural-language-with-Gemini-in-Google-Sheets.html",
+      "name": "Google Workspace Updates",
+      "type": "official",
+      "publishedAt": "2026-10-19T20:19:13.824Z"
+    }
+  ],
+  "candidate": {
+    "id": "f3082bc8a2b6",
+    "url": "https://workspaceupdates.googleblog.com/2026/10/analyze-bigquery-data-using-natural-language-with-Gemini-in-Google-Sheets.html",
+    "canonicalUrl": "https://workspaceupdates.googleblog.com/2026/10/analyze-bigquery-data-using-natural-language-with-Gemini-in-Google-Sheets.html",
+    "title": "Analyze BigQuery data using natural language with Gemini in Google Sheets",
+    "excerpt": "We’re introducing a new way to analyze BigQuery data in Google Sheets. After connecting to BigQuery data with Connected Sheets, you can use Gemini to interact and analyze that data conversationally, right in Google Sheets. Gemini queries run against the full dataset in BigQuery, not just what’s visi",
+    "publishedAt": "2026-10-19T20:19:13.824Z",
+    "sourceId": "google-workspace-updates",
+    "sourceName": "Google Workspace Updates",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://workspaceupdates.googleblog.com/feeds/posts/default?max-results=500&published-min=2026-01-01T00:00:00Z",
+    "fetchedAt": "2026-10-20T00:30:21.157Z"
+  },
+  "evidence": {
+    "status": "HTTP_429",
+    "chars": 0,
+    "grade": "FAIL",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "We’re introducing a new way to analyze BigQuery data in Google Sheets. After connecting to BigQuery data with Connected Sheets, you can use Gemini to interact and analyze that data conversationally, right in Google Sheets. Gemini queries run against the full dataset in BigQuery, not just what’s visi",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/analyze-bigquery-data-using-natural-language-with-Gemini-in-Google-Sheets.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-19T20:19:13.824Z",
+        "checkedAt": "2026-10-20T00:31:22.577Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 2,
+    "signals": [
+      "PRODUCT_LAUNCH"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "근거 부족 (원문 HTTP_429, 확인 사실 0개) — 발행하지 않음"
+  ],
+  "needsReview": [
+    "source_blocked",
+    "insufficient_evidence"
+  ],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

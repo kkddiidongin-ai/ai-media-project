@@ -1,14 +1,14 @@
 {
   "date": "2026-10-20",
   "mode": "draft",
-  "startedAt": "2026-10-19T16:57:47.657Z",
+  "startedAt": "2026-10-20T00:30:21.157Z",
   "status": "PARTIAL",
   "limits": {
     "windowDays": 3,
     "maxItemsPerSource": 60,
     "maxPublishPerDay": 0,
     "maxEvidenceFetches": 40,
-    "maxLlmCalls": 6,
+    "maxLlmCalls": 1,
     "timeBudgetMs": 2400000,
     "maxOutputTokens": 3000,
     "llmTimeoutMs": 60000,
@@ -33,11 +33,11 @@
         "redirected": false,
         "finalUrl": null
       },
-      "parsed": 1299,
-      "matched": 1299,
-      "found": 1299,
-      "inWindow": 0,
-      "kept": 0,
+      "parsed": 1300,
+      "matched": 1300,
+      "found": 1300,
+      "inWindow": 1,
+      "kept": 1,
       "since": "2026-10-17",
       "coverage": {
         "complete": true
@@ -45,10 +45,9 @@
       "undated": 0,
       "health": "OK",
       "healthReasons": [],
-      "healthNote": "NO_NEW",
       "lastOkDate": "2026-10-20",
-      "lastItemDate": "2026-10-19",
-      "zeroStreak": 1
+      "lastItemDate": "2026-10-20",
+      "zeroStreak": 0
     },
     {
       "id": "anthropic",
@@ -87,7 +86,7 @@
         "redirected": false,
         "finalUrl": null
       },
-      "parsed": 130,
+      "parsed": 129,
       "matched": 3,
       "found": 3,
       "inWindow": 0,
@@ -121,7 +120,7 @@
         "redirected": false,
         "finalUrl": null
       },
-      "parsed": 282,
+      "parsed": 283,
       "matched": 6,
       "found": 3,
       "inWindow": 0,
@@ -169,17 +168,17 @@
       "id": "google-ai",
       "name": "Google (The Keyword · AI)",
       "status": "success",
-      "requests": 1,
+      "requests": 3,
       "http": {
         "status": 200,
         "redirected": false,
         "finalUrl": null
       },
-      "parsed": 11766,
-      "matched": 1609,
-      "found": 0,
-      "inWindow": 0,
-      "kept": 0,
+      "parsed": 11769,
+      "matched": 1611,
+      "found": 2,
+      "inWindow": 2,
+      "kept": 2,
       "since": "2026-10-17",
       "coverage": {
         "complete": true
@@ -187,10 +186,9 @@
       "undated": 0,
       "health": "OK",
       "healthReasons": [],
-      "healthNote": "NO_NEW",
       "lastOkDate": "2026-10-20",
-      "lastItemDate": "2026-10-17",
-      "zeroStreak": 3
+      "lastItemDate": "2026-10-20",
+      "zeroStreak": 0
     },
     {
       "id": "microsoft",
@@ -258,8 +256,8 @@
       "parsed": 18,
       "matched": 18,
       "found": 18,
-      "inWindow": 2,
-      "kept": 2,
+      "inWindow": 3,
+      "kept": 3,
       "since": "2026-10-17",
       "coverage": {
         "complete": true
@@ -284,8 +282,8 @@
       "parsed": 10,
       "matched": 10,
       "found": 10,
-      "inWindow": 0,
-      "kept": 0,
+      "inWindow": 1,
+      "kept": 1,
       "since": "2026-10-17",
       "coverage": {
         "complete": true
@@ -293,10 +291,9 @@
       "undated": 0,
       "health": "OK",
       "healthReasons": [],
-      "healthNote": "NO_NEW",
       "lastOkDate": "2026-10-20",
-      "lastItemDate": "2026-10-18",
-      "zeroStreak": 2
+      "lastItemDate": "2026-10-20",
+      "zeroStreak": 0
     },
     {
       "id": "huggingface",
@@ -308,11 +305,11 @@
         "redirected": false,
         "finalUrl": null
       },
-      "parsed": 881,
-      "matched": 881,
-      "found": 881,
-      "inWindow": 0,
-      "kept": 0,
+      "parsed": 882,
+      "matched": 882,
+      "found": 882,
+      "inWindow": 1,
+      "kept": 1,
       "since": "2026-10-17",
       "coverage": {
         "complete": true
@@ -320,10 +317,9 @@
       "undated": 0,
       "health": "OK",
       "healthReasons": [],
-      "healthNote": "NO_NEW",
       "lastOkDate": "2026-10-20",
-      "lastItemDate": "2026-10-19",
-      "zeroStreak": 1
+      "lastItemDate": "2026-10-20",
+      "zeroStreak": 0
     },
     {
       "id": "mistral",
@@ -365,8 +361,8 @@
       "parsed": 20,
       "matched": 20,
       "found": 20,
-      "inWindow": 4,
-      "kept": 4,
+      "inWindow": 7,
+      "kept": 7,
       "since": "2026-10-17",
       "coverage": {
         "complete": true
@@ -418,8 +414,8 @@
       "parsed": 10,
       "matched": 10,
       "found": 10,
-      "inWindow": 0,
-      "kept": 0,
+      "inWindow": 2,
+      "kept": 2,
       "since": "2026-10-17",
       "coverage": {
         "complete": true
@@ -427,10 +423,9 @@
       "undated": 0,
       "health": "OK",
       "healthReasons": [],
-      "healthNote": "NO_NEW",
       "lastOkDate": "2026-10-20",
-      "lastItemDate": "2026-10-19",
-      "zeroStreak": 1
+      "lastItemDate": "2026-10-20",
+      "zeroStreak": 0
     },
     {
       "id": "google-workspace-updates",
@@ -445,8 +440,8 @@
       "parsed": 150,
       "matched": 150,
       "found": 150,
-      "inWindow": 1,
-      "kept": 1,
+      "inWindow": 5,
+      "kept": 5,
       "since": "2026-10-17",
       "coverage": {
         "complete": true
@@ -804,8 +799,8 @@
       "parsed": 100,
       "matched": 100,
       "found": 100,
-      "inWindow": 0,
-      "kept": 0,
+      "inWindow": 1,
+      "kept": 1,
       "since": "2026-10-17",
       "coverage": {
         "complete": true
@@ -813,10 +808,9 @@
       "undated": 0,
       "health": "OK",
       "healthReasons": [],
-      "healthNote": "NO_NEW",
       "lastOkDate": "2026-10-20",
-      "lastItemDate": "2026-10-19",
-      "zeroStreak": 1
+      "lastItemDate": "2026-10-20",
+      "zeroStreak": 0
     },
     {
       "id": "naver-d2",
@@ -994,59 +988,59 @@
     "SKIPPED": 9
   },
   "counts": {
-    "collected": 78,
-    "carriedFromQueue": 12,
-    "NEW": 90,
+    "collected": 94,
+    "carriedFromQueue": 11,
+    "NEW": 105,
     "UPDATE_EXISTING": 0,
     "DUPLICATE": 0,
     "UNCERTAIN": 0,
-    "PUBLISH": 14,
-    "HOLD": 53,
-    "EXCLUDE": 23,
-    "shortlisted": 20,
-    "evidenceChecked": 20,
+    "PUBLISH": 18,
+    "HOLD": 54,
+    "EXCLUDE": 33,
+    "shortlisted": 27,
+    "evidenceChecked": 27,
     "drafts": 1,
     "draftQa": {
-      "PASS": 0,
+      "PASS": 1,
       "REVIEW": 0,
-      "FAIL": 1
+      "FAIL": 0
     },
-    "validationFailures": 1,
-    "generationSkippedOrFailed": 14
+    "validationFailures": 0,
+    "generationSkippedOrFailed": 17
   },
   "llm": {
     "provider": "gemini",
     "model": "gemini-3.8-flash",
-    "calls": 6,
-    "inputTokens": 1786,
-    "outputTokens": 1069,
+    "calls": 1,
+    "inputTokens": 1759,
+    "outputTokens": 994,
     "estimatedCostUsd": 0,
     "generation": {
-      "attempted": 6,
+      "attempted": 1,
       "ok": 1,
-      "failed": 5,
-      "skipped": 9,
-      "successRate": 0.167,
+      "failed": 0,
+      "skipped": 17,
+      "successRate": 1,
       "quotaHit": false
     },
-    "maxCalls": 6,
+    "maxCalls": 1,
     "maxCostUsd": 0.5
   },
   "pipeline": {
     "complete": false,
     "pending": {
       "evidence": 0,
-      "draft": 14,
+      "draft": 17,
       "meta": 0,
       "retrySources": 0
     },
     "carriedIn": {
       "evidence": 0,
-      "draft": 12
+      "draft": 11
     },
     "resolvedFromQueue": 0,
     "processed": {
-      "evidenceFetches": 20,
+      "evidenceFetches": 8,
       "drafted": 1
     },
     "coverageGaps": [
@@ -1070,6 +1064,68 @@
     "queueFile": "pipeline-queue.json"
   },
   "items": [
+    {
+      "id": "7a364f356aab",
+      "title": "Advancing coding in low‑resource programming languages",
+      "source": "OpenAI",
+      "publishedAt": "2026-10-19T12:00:00.000Z",
+      "url": "https://openai.com/index/low-resource-programming-languages",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "글 유형 CUSTOMER_STORY — 강한 사건 신호 없음"
+      ],
+      "score": 2,
+      "importance": 1,
+      "contentType": "CUSTOMER_STORY",
+      "typePenalty": -3,
+      "signals": [
+        "CONSUMER"
+      ],
+      "company": "OpenAI",
+      "stage": "metadata"
+    },
+    {
+      "id": "6cac32efa670",
+      "title": "How to shape your slides and videos with Gemini Notebook",
+      "source": "Google (The Keyword · AI)",
+      "publishedAt": "2026-10-19T00:00:00.000Z",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-notebook/co-create-slides-videos/",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "글 유형 HOW_TO — 강한 사건 신호 없음"
+      ],
+      "score": -1,
+      "importance": 0,
+      "contentType": "HOW_TO",
+      "typePenalty": -3,
+      "signals": [],
+      "company": "Google",
+      "stage": "metadata"
+    },
+    {
+      "id": "543bde93fee9",
+      "title": "Partnering to strengthen the grid and support local communities in Arkansas",
+      "source": "Google (The Keyword · AI)",
+      "publishedAt": "2026-10-19T00:00:00.000Z",
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/arkansas-partnerships/",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+      ],
+      "score": 2,
+      "importance": 0,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [],
+      "company": "Google",
+      "stage": "metadata"
+    },
     {
       "id": "5a9dd192c567",
       "title": "Securing the agentic insider",
@@ -1102,6 +1158,26 @@
         "standardWouldOmit"
       ],
       "suggestedDepth": "SHORT"
+    },
+    {
+      "id": "037c22a3c293",
+      "title": "Germany Wants to Lead the World in Industrial AI: How NVIDIA Will Help",
+      "source": "NVIDIA Blog",
+      "publishedAt": "2026-10-19T19:27:08.000Z",
+      "url": "https://blogs.nvidia.com/blog/germany-wants-to-lead-the-world-in-industrial-ai-how-nvidia-will-help/",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+      ],
+      "score": 2,
+      "importance": 0,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [],
+      "company": "NVIDIA",
+      "stage": "metadata"
     },
     {
       "id": "24f0298eed38",
@@ -1173,6 +1249,146 @@
       "suggestedDepth": "STANDARD"
     },
     {
+      "id": "f73f11092849",
+      "title": "How to continue a GitHub Copilot app session in VS Code",
+      "source": "GitHub Blog",
+      "publishedAt": "2026-10-19T18:47:22.000Z",
+      "url": "https://github.blog/ai-and-ml/github-copilot/how-to-continue-a-github-copilot-app-session-in-vs-code/",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "글 유형 HOW_TO — 강한 사건 신호 없음"
+      ],
+      "score": 2,
+      "importance": 1,
+      "contentType": "HOW_TO",
+      "typePenalty": -3,
+      "signals": [
+        "CONSUMER"
+      ],
+      "company": "GitHub",
+      "stage": "metadata"
+    },
+    {
+      "id": "9dbc0d55ff91",
+      "title": "TorchNeuron: running HF models on AWS Trainium is easier than ever",
+      "source": "Hugging Face Blog",
+      "publishedAt": "2026-10-19T00:00:00.000Z",
+      "url": "https://huggingface.co/blog/hf-torchneuron",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "사건 신호 INFRA (우선순위 4)",
+        "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+      ],
+      "score": 4,
+      "importance": 1,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "INFRA"
+      ],
+      "company": "Hugging Face",
+      "stage": "evidence",
+      "evidenceStatus": "OK",
+      "distinctFacts": 12,
+      "sufficiency": "SUFFICIENT_STANDARD",
+      "deepMissing": [
+        "importance",
+        "userImpact",
+        "contextNeed",
+        "standardWouldOmit"
+      ],
+      "suggestedDepth": "SHORT"
+    },
+    {
+      "id": "ea83f0dd69c5",
+      "title": "Structured outputs for Anthropic Claude models on Amazon Bedrock",
+      "source": "AWS Machine Learning Blog",
+      "publishedAt": "2026-10-19T23:32:19.000Z",
+      "url": "https://aws.amazon.com/blogs/machine-learning/structured-outputs-for-anthropic-claude-models-on-amazon-bedrock/",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "사건 신호 API_PLATFORM (우선순위 5)",
+        "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+      ],
+      "score": 5,
+      "importance": 1,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "API_PLATFORM"
+      ],
+      "company": "Amazon",
+      "stage": "evidence",
+      "evidenceStatus": "OK",
+      "distinctFacts": 11,
+      "sufficiency": "SUFFICIENT_STANDARD",
+      "deepMissing": [
+        "importance",
+        "userImpact",
+        "contextNeed",
+        "standardWouldOmit"
+      ],
+      "suggestedDepth": "STANDARD"
+    },
+    {
+      "id": "87cd33ee12bd",
+      "title": "Developers can now access SageMaker Studio through the new AWS experience",
+      "source": "AWS Machine Learning Blog",
+      "publishedAt": "2026-10-19T22:39:24.000Z",
+      "url": "https://aws.amazon.com/blogs/machine-learning/developers-can-now-access-sagemaker-studio-through-the-new-aws-experience/",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "PUBLISH",
+      "reasons": [
+        "사건 신호 PRODUCT_LAUNCH·PRICING (우선순위 10)",
+        "근거 확인 통과 (확인 사실 10개, SUFFICIENT_STANDARD)"
+      ],
+      "score": 10,
+      "importance": 3,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "PRODUCT_LAUNCH",
+        "PRICING"
+      ],
+      "company": "Amazon",
+      "stage": "evidence",
+      "evidenceStatus": "OK",
+      "distinctFacts": 10,
+      "sufficiency": "SUFFICIENT_STANDARD",
+      "deepMissing": [
+        "importance"
+      ],
+      "suggestedDepth": "STANDARD",
+      "draftPending": true
+    },
+    {
+      "id": "4bf843f5f5fd",
+      "title": "Amazon SageMaker JumpStart: 2026 year-to-date in review",
+      "source": "AWS Machine Learning Blog",
+      "publishedAt": "2026-10-19T21:14:44.000Z",
+      "url": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-jumpstart-2026-year-to-date-in-review/",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+      ],
+      "score": 2,
+      "importance": 0,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [],
+      "company": "Amazon",
+      "stage": "metadata"
+    },
+    {
       "id": "98948186cc0e",
       "title": "Pegasus 1.5 from TwelveLabs is now available in Amazon Bedrock",
       "source": "AWS Machine Learning Blog",
@@ -1204,8 +1420,7 @@
         "contextNeed",
         "standardWouldOmit"
       ],
-      "suggestedDepth": "STANDARD",
-      "draftPending": true
+      "suggestedDepth": "STANDARD"
     },
     {
       "id": "134c1a21491e",
@@ -1309,6 +1524,199 @@
       "suggestedDepth": "SHORT"
     },
     {
+      "id": "9db7d13375ba",
+      "title": "Copilot model policy API for enterprise, orgs, and teams",
+      "source": "GitHub Changelog",
+      "publishedAt": "2026-10-19T21:32:18.000Z",
+      "url": "https://github.blog/changelog/2026-10-19-copilot-model-policy-api-for-enterprise-orgs-and-teams",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "PUBLISH",
+      "reasons": [
+        "사건 신호 PRODUCT_LAUNCH·API_PLATFORM (우선순위 8)",
+        "근거 확인 통과 (확인 사실 8개, SUFFICIENT_STANDARD)"
+      ],
+      "score": 8,
+      "importance": 2,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "PRODUCT_LAUNCH",
+        "API_PLATFORM"
+      ],
+      "company": "GitHub",
+      "stage": "evidence",
+      "evidenceStatus": "OK",
+      "distinctFacts": 8,
+      "sufficiency": "SUFFICIENT_STANDARD",
+      "deepMissing": [
+        "importance",
+        "contextNeed",
+        "evidenceQuality",
+        "standardWouldOmit"
+      ],
+      "suggestedDepth": "STANDARD",
+      "draftPending": true
+    },
+    {
+      "id": "6101472dca29",
+      "title": "GitHub Copilot models deprecated on October 19, 2026",
+      "source": "GitHub Changelog",
+      "publishedAt": "2026-10-19T21:27:10.000Z",
+      "url": "https://github.blog/changelog/2026-10-19-github-copilot-models-deprecated-on-october-19-2026",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+      ],
+      "score": 2,
+      "importance": 0,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [],
+      "company": "GitHub",
+      "stage": "metadata"
+    },
+    {
+      "id": "35a22a987ed8",
+      "title": "Teacher-led Gemini Notebook in Google Classroom now offers insight summaries for educators and updated sharing settings for admins, including trusted domains",
+      "source": "Google Workspace Updates",
+      "publishedAt": "2026-10-19T20:23:52.002Z",
+      "url": "https://workspaceupdates.googleblog.com/2026/10/teacher-led-gemini-notebook-in-google-Classroom-now-offers-insight-summaries-for-educators-and-updated-sharing-settings-for-admins-including-trusted-domains.html",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "PUBLISH",
+      "reasons": [
+        "사건 신호 MODEL·PRODUCT_LAUNCH (우선순위 9)",
+        "근거 확인 통과 (확인 사실 11개, SUFFICIENT_STANDARD)"
+      ],
+      "score": 9,
+      "importance": 3,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "MODEL",
+        "PRODUCT_LAUNCH"
+      ],
+      "company": "Google",
+      "stage": "evidence",
+      "evidenceStatus": "OK",
+      "distinctFacts": 11,
+      "sufficiency": "SUFFICIENT_STANDARD",
+      "deepMissing": [
+        "importance",
+        "userImpact",
+        "contextNeed",
+        "standardWouldOmit"
+      ],
+      "suggestedDepth": "STANDARD",
+      "draftPending": true
+    },
+    {
+      "id": "f3082bc8a2b6",
+      "title": "Analyze BigQuery data using natural language with Gemini in Google Sheets",
+      "source": "Google Workspace Updates",
+      "publishedAt": "2026-10-19T20:19:13.824Z",
+      "url": "https://workspaceupdates.googleblog.com/2026/10/analyze-bigquery-data-using-natural-language-with-Gemini-in-Google-Sheets.html",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "근거 부족 (원문 HTTP_429, 확인 사실 0개) — 발행하지 않음"
+      ],
+      "score": 5,
+      "importance": 1,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "PRODUCT_LAUNCH"
+      ],
+      "company": "Google",
+      "stage": "evidence",
+      "evidenceStatus": "HTTP_429",
+      "distinctFacts": 0,
+      "sufficiency": "INSUFFICIENT",
+      "deepMissing": [
+        "importance",
+        "userImpact",
+        "contextNeed",
+        "distinctFacts",
+        "evidenceQuality",
+        "standardWouldOmit"
+      ],
+      "suggestedDepth": null
+    },
+    {
+      "id": "9822e22c0dc9",
+      "title": "Publish interactive apps from the Gemini app to Google Sites",
+      "source": "Google Workspace Updates",
+      "publishedAt": "2026-10-19T17:25:14.930Z",
+      "url": "https://workspaceupdates.googleblog.com/2026/10/publish-interactive-apps-from-gemini-app-to-Google-Sites.html",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "PUBLISH",
+      "reasons": [
+        "사건 신호 PRODUCT_LAUNCH·CONSUMER (우선순위 8)",
+        "근거 확인 통과 (확인 사실 10개, SUFFICIENT_STANDARD)"
+      ],
+      "score": 8,
+      "importance": 2,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "PRODUCT_LAUNCH",
+        "CONSUMER"
+      ],
+      "company": "Google",
+      "stage": "evidence",
+      "evidenceStatus": "OK",
+      "distinctFacts": 10,
+      "sufficiency": "SUFFICIENT_STANDARD",
+      "deepMissing": [
+        "importance",
+        "contextNeed",
+        "evidenceQuality",
+        "standardWouldOmit"
+      ],
+      "suggestedDepth": "STANDARD",
+      "draftPending": true
+    },
+    {
+      "id": "c7ac91b7eead",
+      "title": "Gemini in Google Sheets is now available on iOS devices",
+      "source": "Google Workspace Updates",
+      "publishedAt": "2026-10-19T17:00:39.796Z",
+      "url": "https://workspaceupdates.googleblog.com/2026/10/gemini-in-google-sheets-is-now-available-on-iOS-devices.html",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "근거 부족 (원문 HTTP_429, 확인 사실 0개) — 발행하지 않음"
+      ],
+      "score": 12,
+      "importance": 4,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "MODEL",
+        "PRODUCT_LAUNCH",
+        "AVAILABILITY"
+      ],
+      "company": "Google",
+      "stage": "evidence",
+      "evidenceStatus": "HTTP_429",
+      "distinctFacts": 0,
+      "sufficiency": "INSUFFICIENT",
+      "deepMissing": [
+        "contextNeed",
+        "distinctFacts",
+        "evidenceQuality",
+        "standardWouldOmit"
+      ],
+      "suggestedDepth": null
+    },
+    {
       "id": "2ad5bafb57c0",
       "title": "Follow through on your meeting tasks with meeting recaps in Google Chat",
       "source": "Google Workspace Updates",
@@ -1359,6 +1767,113 @@
       "typePenalty": 0,
       "signals": [],
       "company": "Amazon",
+      "stage": "metadata"
+    },
+    {
+      "id": "5d44067f2d19",
+      "title": "Accelerating Mamba-2 with High-Performance Forward Pass Kernels in NVIDIA CUDA Tile",
+      "source": "NVIDIA Technical Blog",
+      "publishedAt": "2026-10-19T17:00:00.000Z",
+      "url": "https://developer.nvidia.com/blog/accelerating-mamba-2-with-high-performance-forward-pass-kernels-in-nvidia-cuda-tile/",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "글 유형 HOW_TO — 강한 사건 신호 없음"
+      ],
+      "score": 1,
+      "importance": 1,
+      "contentType": "HOW_TO",
+      "typePenalty": -3,
+      "signals": [
+        "INFRA"
+      ],
+      "company": "NVIDIA",
+      "stage": "metadata"
+    },
+    {
+      "id": "d8bfd41db4cc",
+      "title": "[AI리더의 서가] 다중 에이전트 시스템을 위한 컨텍스트 엔지니어링",
+      "source": "AI타임스",
+      "publishedAt": "2026-10-20T09:00:00.000Z",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=216342",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+      ],
+      "score": 2,
+      "importance": 0,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [],
+      "company": "AI타임스",
+      "stage": "metadata"
+    },
+    {
+      "id": "a4440d5ba45d",
+      "title": "[10월19일] 뇌 읽는 AI, 공상과학을 현실로 이끄는 기술들",
+      "source": "AI타임스",
+      "publishedAt": "2026-10-20T07:00:00.000Z",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=216396",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)"
+      ],
+      "score": 5,
+      "importance": 1,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "PRODUCT_LAUNCH"
+      ],
+      "company": "AI타임스",
+      "stage": "metadata"
+    },
+    {
+      "id": "bb554bf3736a",
+      "title": "머스크 “미국 모든 어린이에게 스페이스X 주식 1주씩”…14조원 규모",
+      "source": "AI타임스",
+      "publishedAt": "2026-10-20T06:41:29.000Z",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=216418",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+      ],
+      "score": 2,
+      "importance": 0,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [],
+      "company": "AI타임스",
+      "stage": "metadata"
+    },
+    {
+      "id": "6f4091f06747",
+      "title": "미국, 연방기관서 딥시크 퇴출…기반 기술 활용 외부 서비스도 포함",
+      "source": "AI타임스",
+      "publishedAt": "2026-10-20T05:29:07.000Z",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=216417",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·REGULATION)"
+      ],
+      "score": 9,
+      "importance": 3,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "PRODUCT_LAUNCH",
+        "REGULATION"
+      ],
+      "company": "AI타임스",
       "stage": "metadata"
     },
     {
@@ -2366,94 +2881,6 @@
       "stage": "metadata"
     },
     {
-      "id": "727e5012d5dc",
-      "title": "AI 코딩도 LLM만으론 부족…레플릿, ‘결정론적 시뮬레이터’로 검증",
-      "source": "AI타임스",
-      "publishedAt": "2026-10-17T19:27:01.000Z",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=216367",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 MODEL_MENTION)"
-      ],
-      "score": 4,
-      "importance": 1,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "MODEL_MENTION"
-      ],
-      "company": "AI타임스",
-      "stage": "metadata"
-    },
-    {
-      "id": "55df661b4c01",
-      "title": "오픈AI 도청 사건에 드러난 AI 첩보전…기업들은 이미 ‘스파이 경계’",
-      "source": "AI타임스",
-      "publishedAt": "2026-10-17T18:45:28.000Z",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=216366",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 REGULATION)"
-      ],
-      "score": 6,
-      "importance": 2,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "REGULATION"
-      ],
-      "company": "AI타임스",
-      "stage": "metadata"
-    },
-    {
-      "id": "ce76d6138626",
-      "title": "GPT-6 아스트라, 미공개 물리 문제 98% 해결…전문가 오류도 발견",
-      "source": "AI타임스",
-      "publishedAt": "2026-10-17T18:06:23.000Z",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=216365",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)"
-      ],
-      "score": 5,
-      "importance": 1,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "PRODUCT_LAUNCH"
-      ],
-      "company": "AI타임스",
-      "stage": "metadata"
-    },
-    {
-      "id": "87164e8d76a3",
-      "title": "전 오픈AI 연구원 “AI 내부 읽을 수 있다” 주장…기대·반론 엇갈려",
-      "source": "AI타임스",
-      "publishedAt": "2026-10-17T17:02:23.000Z",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=216364",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)"
-      ],
-      "score": 5,
-      "importance": 1,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "PRODUCT_LAUNCH"
-      ],
-      "company": "AI타임스",
-      "stage": "metadata"
-    },
-    {
       "id": "dbe5405e8848",
       "title": "AI 모방작 우려에…日 '드렁큰 갓데스 리플럭스' 무료 데모 취소",
       "source": "지디넷코리아",
@@ -2671,6 +3098,26 @@
       "stage": "metadata"
     },
     {
+      "id": "fce96817697a",
+      "title": "오픈AI 회의실 도청 혐의자, 사우디 왕족 AI 프로젝트 합류 타진",
+      "source": "전자신문",
+      "publishedAt": "2026-10-19T22:17:26.000Z",
+      "url": "https://www.etnews.com/20261020000002",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+      ],
+      "score": 2,
+      "importance": 0,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [],
+      "company": "전자신문",
+      "stage": "metadata"
+    },
+    {
       "id": "61f2ba61b1d5",
       "title": "TSMC, 대만 타이난에 3나노 공장 추가 건설…2028년 양산",
       "source": "전자신문",
@@ -2839,26 +3286,6 @@
       "stage": "metadata"
     },
     {
-      "id": "7d0a50009695",
-      "title": "“바이오데이터 연구 활용…美는 일주일, 한국은 최소 1년”",
-      "source": "전자신문",
-      "publishedAt": "2026-10-19T04:46:29.000Z",
-      "url": "https://www.etnews.com/20261019000220",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "EXCLUDE",
-      "reasons": [
-        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
-      ],
-      "score": 2,
-      "importance": 0,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [],
-      "company": "전자신문",
-      "stage": "metadata"
-    },
-    {
       "id": "13e122947fca",
       "title": "Meta’s Muse Spark Open now available in Amazon SageMaker JumpStart",
       "source": "AWS Machine Learning Blog",
@@ -2997,40 +3424,6 @@
       ],
       "suggestedDepth": "STANDARD",
       "draftPending": true,
-      "fromQueue": "draft"
-    },
-    {
-      "id": "2cd92b812c13",
-      "title": "Open From Data Center to Desktop: NVIDIA Expands Nemotron Family With Highest Efficiency Super VL and Bolt Models",
-      "source": "NVIDIA Blog",
-      "publishedAt": "2026-10-15T15:00:24.000Z",
-      "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "사건 신호 MODEL·INFRA (우선순위 8)",
-        "근거 확인 통과 (확인 사실 11개, SUFFICIENT_STANDARD)",
-        "초안 QA FAIL: facts는 1~5개 · 근거에 없는 수치 '15' · 근거에 없는 수치 '1200'"
-      ],
-      "score": 8,
-      "importance": 3,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "MODEL",
-        "INFRA"
-      ],
-      "company": "NVIDIA",
-      "stage": "evidence",
-      "evidenceStatus": "OK",
-      "distinctFacts": 11,
-      "sufficiency": "SUFFICIENT_STANDARD",
-      "deepMissing": [
-        "importance",
-        "userImpact"
-      ],
-      "suggestedDepth": "STANDARD",
       "fromQueue": "draft"
     },
     {
@@ -3283,5 +3676,5 @@
       "fromQueue": "draft"
     }
   ],
-  "finishedAt": "2026-10-19T16:59:59.294Z"
+  "finishedAt": "2026-10-20T00:31:33.988Z"
 }
