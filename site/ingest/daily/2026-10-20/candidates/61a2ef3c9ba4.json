@@ -2,9 +2,9 @@
   "id": "61a2ef3c9ba4",
   "date": "2026-10-20",
   "proposedSlug": "meta-milan-s-pinacoteca-di-brera-essilorluxottica",
-  "title": null,
+  "title": "메타·에실로룩소티카, 밀라노 브레라 미술관서 시각장애인용 AI 안경 시범 운영",
   "sourceTitle": "Meta, Milan’s Pinacoteca di Brera, and EssilorLuxottica Expand Access to Art Through AI Glasses",
-  "depth": null,
+  "depth": "STANDARD",
   "suggestedDepth": "STANDARD",
   "depthAssessment": {
     "sufficiency": "SUFFICIENT_STANDARD",
@@ -24,12 +24,83 @@
   },
   "company": "Meta",
   "alsoAt": [],
-  "category": null,
-  "summary": null,
-  "body": null,
-  "topics": [],
-  "companies": [],
-  "products": [],
+  "category": "PRODUCT_UPDATE",
+  "summary": "메타와 에실로룩소티카, 밀라노 브레라 미술관이 시각장애인과 저시력자 관람을 돕는 AI 안경 시범 프로그램 'Sensing Art'를 시작했습니다. 관람객은 안경을 통해 작품 음성 설명을 듣고 메타 AI 및 Be My Eyes 기능을 활용할 수 있습니다.",
+  "body": {
+    "facts": [
+      {
+        "text": "메타와 에실로룩소티카, 이탈리아 밀라노의 피나코테카 디 브레라 미술관이 시각장애인과 저시력자를 위한 예술 접근성 탐색 파일럿 프로그램인 'Sensing Art'를 발표했습니다.",
+        "evidence": [
+          "E0",
+          "E1",
+          "E2",
+          "E4"
+        ]
+      },
+      {
+        "text": "피나코테카 디 브레라 미술관은 메타와 에실로룩소티카가 개발한 AI 안경을 기존 미술관 앱(Grande Brera)과 연동해 시각장애인 및 저시력 관람객을 위한 오디오 투어 가이드를 제공합니다.",
+        "evidence": [
+          "E3",
+          "E5",
+          "E7"
+        ]
+      },
+      {
+        "text": "관람객이 파일럿 일정에 포함된 8개 선정 작품 앞에 서서 안경으로 작품 인식을 활성화하면 안경테에 내장된 오픈이어 스피커를 통해 해당 오디오 설명을 들을 수 있습니다.",
+        "evidence": [
+          "E8"
+        ]
+      },
+      {
+        "text": "관람객은 AI 안경을 통해 배경 및 주변 환경에 대해 질문할 수 있는 Meta AI 기능과, 정안인 자원봉사자 및 전문 운영자에게 실시간 안내를 받는 Be My Eyes 기능을 추가로 이용할 수 있습니다.",
+        "evidence": [
+          "E9",
+          "E10",
+          "E11"
+        ]
+      },
+      {
+        "text": "해당 투어는 사전 예약제로 운영되며, AI 안경은 화요일부터 금요일 오전 10시부터 오후 4시 30분까지 이용할 수 있습니다.",
+        "evidence": [
+          "E12"
+        ]
+      }
+    ],
+    "why": {
+      "text": "시각 기반 예술 관람이 어려운 시각장애인 및 저시력자가 스마트 안경의 객체 인식과 오픈이어 오디오, 음성 질의응답 및 원격 도우미 기능을 결합해 전시를 자율적으로 감상할 수 있는 구체적인 활용 사례를 제시합니다.",
+      "evidence": [
+        "E2",
+        "E6",
+        "E8",
+        "E10",
+        "E11"
+      ]
+    },
+    "change": {
+      "text": "피나코테카 디 브레라 미술관을 방문해 사전 예약한 관람객은 지정된 시간대에 AI 안경을 대여받아 8개 작품에 대한 음성 해설 및 Meta AI 질의 지원을 직접 체험할 수 있습니다.",
+      "evidence": [
+        "E8",
+        "E10",
+        "E12"
+      ]
+    }
+  },
+  "topics": [
+    "meta"
+  ],
+  "companies": [
+    "Meta",
+    "EssilorLuxottica",
+    "Pinacoteca di Brera",
+    "ANS",
+    "Be My Eyes"
+  ],
+  "products": [
+    "AI glasses",
+    "Grande Brera app",
+    "Meta AI",
+    "Be My Eyes"
+  ],
   "sources": [
     {
       "url": "https://about.fb.com/news/2026/10/meta-milans-pinacoteca-di-brera-and-essilorluxottica-expand-access-to-art-through-ai-glasses/",
@@ -202,7 +273,9 @@
     "사건 신호 PRODUCT_LAUNCH·AVAILABILITY·PARTNERSHIP (우선순위 10)",
     "근거 확인 통과 (확인 사실 10개, SUFFICIENT_STANDARD)"
   ],
-  "needsReview": [],
+  "needsReview": [
+    "numeric_claim"
+  ],
   "duplicate": {
     "result": "NEW",
     "reason": "기존 기사·후보와 겹치지 않음"
@@ -210,23 +283,165 @@
   "generation": {
     "provider": "gemini",
     "model": "gemini-3.8-flash",
-    "status": "skipped",
-    "error": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성",
+    "status": "ok",
+    "usage": {
+      "inputTokens": 1858,
+      "outputTokens": 1252,
+      "costUsd": 0,
+      "attempts": 1
+    },
     "promptVersion": "draft-v1",
-    "at": "2026-10-20T00:31:33.980Z",
+    "at": "2026-10-20T01:07:03.237Z",
     "evidenceHash": "c33d66c407d5"
   },
-  "draft": null,
-  "validation": null,
-  "draftQa": null,
+  "draft": {
+    "title": "메타·에실로룩소티카, 밀라노 브레라 미술관서 시각장애인용 AI 안경 시범 운영",
+    "summary": "메타와 에실로룩소티카, 밀라노 브레라 미술관이 시각장애인과 저시력자 관람을 돕는 AI 안경 시범 프로그램 'Sensing Art'를 시작했습니다. 관람객은 안경을 통해 작품 음성 설명을 듣고 메타 AI 및 Be My Eyes 기능을 활용할 수 있습니다.",
+    "category": "PRODUCT_UPDATE",
+    "topics": [
+      "meta"
+    ],
+    "companies": [
+      "Meta",
+      "EssilorLuxottica",
+      "Pinacoteca di Brera",
+      "ANS",
+      "Be My Eyes"
+    ],
+    "products": [
+      "AI glasses",
+      "Grande Brera app",
+      "Meta AI",
+      "Be My Eyes"
+    ],
+    "facts": [
+      {
+        "text": "메타와 에실로룩소티카, 이탈리아 밀라노의 피나코테카 디 브레라 미술관이 시각장애인과 저시력자를 위한 예술 접근성 탐색 파일럿 프로그램인 'Sensing Art'를 발표했습니다.",
+        "evidence": [
+          "E0",
+          "E1",
+          "E2",
+          "E4"
+        ]
+      },
+      {
+        "text": "피나코테카 디 브레라 미술관은 메타와 에실로룩소티카가 개발한 AI 안경을 기존 미술관 앱(Grande Brera)과 연동해 시각장애인 및 저시력 관람객을 위한 오디오 투어 가이드를 제공합니다.",
+        "evidence": [
+          "E3",
+          "E5",
+          "E7"
+        ]
+      },
+      {
+        "text": "관람객이 파일럿 일정에 포함된 8개 선정 작품 앞에 서서 안경으로 작품 인식을 활성화하면 안경테에 내장된 오픈이어 스피커를 통해 해당 오디오 설명을 들을 수 있습니다.",
+        "evidence": [
+          "E8"
+        ]
+      },
+      {
+        "text": "관람객은 AI 안경을 통해 배경 및 주변 환경에 대해 질문할 수 있는 Meta AI 기능과, 정안인 자원봉사자 및 전문 운영자에게 실시간 안내를 받는 Be My Eyes 기능을 추가로 이용할 수 있습니다.",
+        "evidence": [
+          "E9",
+          "E10",
+          "E11"
+        ]
+      },
+      {
+        "text": "해당 투어는 사전 예약제로 운영되며, AI 안경은 화요일부터 금요일 오전 10시부터 오후 4시 30분까지 이용할 수 있습니다.",
+        "evidence": [
+          "E12"
+        ]
+      }
+    ],
+    "why": {
+      "text": "시각 기반 예술 관람이 어려운 시각장애인 및 저시력자가 스마트 안경의 객체 인식과 오픈이어 오디오, 음성 질의응답 및 원격 도우미 기능을 결합해 전시를 자율적으로 감상할 수 있는 구체적인 활용 사례를 제시합니다.",
+      "evidence": [
+        "E2",
+        "E6",
+        "E8",
+        "E10",
+        "E11"
+      ]
+    },
+    "change": {
+      "text": "피나코테카 디 브레라 미술관을 방문해 사전 예약한 관람객은 지정된 시간대에 AI 안경을 대여받아 8개 작품에 대한 음성 해설 및 Meta AI 질의 지원을 직접 체험할 수 있습니다.",
+      "evidence": [
+        "E8",
+        "E10",
+        "E12"
+      ]
+    },
+    "checks": [
+      {
+        "text": "투어는 사전 예약 시에만 참여 가능하며, 이용 요일과 시간(화~금 오전 10시~오후 4시 30분)이 제한되어 있으므로 방문 전 예약 일정을 확인해야 합니다.",
+        "evidence": [
+          "E12"
+        ]
+      },
+      {
+        "text": "파일럿 프로그램에서 인식 및 오디오 가이드가 지원되는 작품은 미술관 내 선정된 8개로 한정됩니다.",
+        "evidence": [
+          "E8"
+        ]
+      }
+    ],
+    "unknowns": [
+      "해당 AI 안경 대여 및 투어 프로그램 참여에 별도 비용이 발생하는지 여부는 근거에 언급되지 않았습니다.",
+      "시범 운영 기간이 언제까지 지속되는지, 향후 다른 미술관이나 해외(한국 등)로 확대될 계획이 있는지는 확인되지 않았습니다.",
+      "사전 예약 방법 및 지원 언어(이탈리아어 외 다국어 지원 여부)에 대한 세부 사항은 근거에 나와 있지 않습니다."
+    ],
+    "editorialDepth": "STANDARD",
+    "insufficient": false,
+    "notes": "발표일자가 원문에 2026-10-14로 주어졌으므로 사실 관계 작성 시 상대 날짜 표현을 배제하고 제공된 시범 프로그램 운영 조건(화~금, 예약제, 8개 작품)을 정확히 기술함."
+  },
+  "validation": {
+    "errors": [],
+    "needsReview": [
+      "numeric_claim"
+    ]
+  },
+  "draftQa": {
+    "verdict": "PASS",
+    "checks": {
+      "FACT": {
+        "result": "PASS",
+        "issues": []
+      },
+      "EVIDENCE": {
+        "result": "PASS",
+        "issues": []
+      },
+      "EDITORIAL": {
+        "result": "PASS",
+        "issues": []
+      },
+      "STRUCTURE": {
+        "result": "PASS",
+        "issues": []
+      },
+      "DUPLICATE": {
+        "result": "PASS",
+        "issues": []
+      },
+      "SAFETY": {
+        "result": "PASS",
+        "issues": []
+      }
+    },
+    "fixes": [],
+    "stats": {
+      "bodyChars": 992,
+      "depth": "STANDARD",
+      "suggestedDepth": "STANDARD"
+    }
+  },
   "draftGate": {
     "ok": true,
     "reasons": []
   },
-  "draftFile": null,
+  "draftFile": "drafts/61a2ef3c9ba4.md",
   "newsletterCandidate": true,
   "capStage": null,
-  "draftPending": true,
   "approval": {
     "status": "pending"
   }

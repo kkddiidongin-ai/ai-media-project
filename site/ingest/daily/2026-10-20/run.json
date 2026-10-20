@@ -1,14 +1,14 @@
 {
   "date": "2026-10-20",
   "mode": "draft",
-  "startedAt": "2026-10-20T00:30:21.157Z",
+  "startedAt": "2026-10-20T01:03:55.462Z",
   "status": "PARTIAL",
   "limits": {
     "windowDays": 3,
     "maxItemsPerSource": 60,
     "maxPublishPerDay": 0,
     "maxEvidenceFetches": 40,
-    "maxLlmCalls": 1,
+    "maxLlmCalls": 6,
     "timeBudgetMs": 2400000,
     "maxOutputTokens": 3000,
     "llmTimeoutMs": 60000,
@@ -494,8 +494,8 @@
       "parsed": 50,
       "matched": 50,
       "found": 50,
-      "inWindow": 0,
-      "kept": 0,
+      "inWindow": 1,
+      "kept": 1,
       "since": "2026-10-17",
       "coverage": {
         "complete": true
@@ -503,10 +503,9 @@
       "undated": 0,
       "health": "OK",
       "healthReasons": [],
-      "healthNote": "NO_NEW",
       "lastOkDate": "2026-10-20",
-      "lastItemDate": "2026-10-18",
-      "zeroStreak": 2
+      "lastItemDate": "2026-10-20",
+      "zeroStreak": 0
     },
     {
       "id": "nvidia-newsroom",
@@ -936,8 +935,8 @@
       "parsed": 30,
       "matched": 30,
       "found": 30,
-      "inWindow": 9,
-      "kept": 9,
+      "inWindow": 10,
+      "kept": 10,
       "since": "2026-10-17",
       "coverage": {
         "complete": false,
@@ -988,49 +987,49 @@
     "SKIPPED": 9
   },
   "counts": {
-    "collected": 94,
+    "collected": 96,
     "carriedFromQueue": 11,
-    "NEW": 105,
+    "NEW": 107,
     "UPDATE_EXISTING": 0,
     "DUPLICATE": 0,
     "UNCERTAIN": 0,
     "PUBLISH": 18,
-    "HOLD": 54,
-    "EXCLUDE": 33,
-    "shortlisted": 27,
-    "evidenceChecked": 27,
-    "drafts": 1,
+    "HOLD": 55,
+    "EXCLUDE": 34,
+    "shortlisted": 28,
+    "evidenceChecked": 28,
+    "drafts": 5,
     "draftQa": {
-      "PASS": 1,
+      "PASS": 4,
       "REVIEW": 0,
-      "FAIL": 0
+      "FAIL": 1
     },
     "validationFailures": 0,
-    "generationSkippedOrFailed": 17
+    "generationSkippedOrFailed": 14
   },
   "llm": {
     "provider": "gemini",
     "model": "gemini-3.8-flash",
-    "calls": 1,
-    "inputTokens": 1759,
-    "outputTokens": 994,
+    "calls": 6,
+    "inputTokens": 6982,
+    "outputTokens": 3814,
     "estimatedCostUsd": 0,
     "generation": {
-      "attempted": 1,
-      "ok": 1,
-      "failed": 0,
-      "skipped": 17,
-      "successRate": 1,
+      "attempted": 6,
+      "ok": 4,
+      "failed": 2,
+      "skipped": 12,
+      "successRate": 0.667,
       "quotaHit": false
     },
-    "maxCalls": 1,
+    "maxCalls": 6,
     "maxCostUsd": 0.5
   },
   "pipeline": {
     "complete": false,
     "pending": {
       "evidence": 0,
-      "draft": 17,
+      "draft": 14,
       "meta": 0,
       "retrySources": 0
     },
@@ -1040,8 +1039,8 @@
     },
     "resolvedFromQueue": 0,
     "processed": {
-      "evidenceFetches": 8,
-      "drafted": 1
+      "evidenceFetches": 3,
+      "drafted": 4
     },
     "coverageGaps": [
       {
@@ -1365,8 +1364,7 @@
       "deepMissing": [
         "importance"
       ],
-      "suggestedDepth": "STANDARD",
-      "draftPending": true
+      "suggestedDepth": "STANDARD"
     },
     {
       "id": "4bf843f5f5fd",
@@ -1623,7 +1621,8 @@
       "matchSlug": null,
       "decision": "HOLD",
       "reasons": [
-        "근거 부족 (원문 HTTP_429, 확인 사실 0개) — 발행하지 않음"
+        "사건 신호 PRODUCT_LAUNCH (우선순위 5)",
+        "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
       ],
       "score": 5,
       "importance": 1,
@@ -1634,18 +1633,16 @@
       ],
       "company": "Google",
       "stage": "evidence",
-      "evidenceStatus": "HTTP_429",
-      "distinctFacts": 0,
-      "sufficiency": "INSUFFICIENT",
+      "evidenceStatus": "OK",
+      "distinctFacts": 10,
+      "sufficiency": "SUFFICIENT_STANDARD",
       "deepMissing": [
         "importance",
         "userImpact",
         "contextNeed",
-        "distinctFacts",
-        "evidenceQuality",
         "standardWouldOmit"
       ],
-      "suggestedDepth": null
+      "suggestedDepth": "STANDARD"
     },
     {
       "id": "9822e22c0dc9",
@@ -1690,9 +1687,10 @@
       "url": "https://workspaceupdates.googleblog.com/2026/10/gemini-in-google-sheets-is-now-available-on-iOS-devices.html",
       "duplicate": "NEW",
       "matchSlug": null,
-      "decision": "HOLD",
+      "decision": "PUBLISH",
       "reasons": [
-        "근거 부족 (원문 HTTP_429, 확인 사실 0개) — 발행하지 않음"
+        "사건 신호 MODEL·PRODUCT_LAUNCH·AVAILABILITY (우선순위 12)",
+        "근거 확인 통과 (확인 사실 11개, SUFFICIENT_STANDARD)"
       ],
       "score": 12,
       "importance": 4,
@@ -1705,16 +1703,14 @@
       ],
       "company": "Google",
       "stage": "evidence",
-      "evidenceStatus": "HTTP_429",
-      "distinctFacts": 0,
-      "sufficiency": "INSUFFICIENT",
+      "evidenceStatus": "OK",
+      "distinctFacts": 11,
+      "sufficiency": "SUFFICIENT_STANDARD",
       "deepMissing": [
         "contextNeed",
-        "distinctFacts",
-        "evidenceQuality",
         "standardWouldOmit"
       ],
-      "suggestedDepth": null
+      "suggestedDepth": "STANDARD"
     },
     {
       "id": "2ad5bafb57c0",
@@ -1748,6 +1744,39 @@
         "standardWouldOmit"
       ],
       "suggestedDepth": "STANDARD"
+    },
+    {
+      "id": "9b2975afbab1",
+      "title": "Tailored for Every Home: Samsung “The Brief” Goes Global With AI-Powered Home Appliances",
+      "source": "Samsung Newsroom",
+      "publishedAt": "2026-10-20T08:00:31.000Z",
+      "url": "https://news.samsung.com/global/tailored-for-every-home-samsung-the-brief-goes-global-with-ai-powered-home-appliances",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "근거 부족 (원문 TIMEOUT, 확인 사실 0개) — 발행하지 않음"
+      ],
+      "score": 9,
+      "importance": 2,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "KOREA"
+      ],
+      "company": "Samsung",
+      "stage": "evidence",
+      "evidenceStatus": "TIMEOUT",
+      "distinctFacts": 0,
+      "sufficiency": "INSUFFICIENT",
+      "deepMissing": [
+        "importance",
+        "contextNeed",
+        "distinctFacts",
+        "evidenceQuality",
+        "standardWouldOmit"
+      ],
+      "suggestedDepth": null
     },
     {
       "id": "94006e779707",
@@ -3098,6 +3127,26 @@
       "stage": "metadata"
     },
     {
+      "id": "bdf125d22118",
+      "title": "MS, AI 에이전트 내부자 위협 대응 강화…실시간 감시·권한 통제",
+      "source": "전자신문",
+      "publishedAt": "2026-10-19T23:55:59.000Z",
+      "url": "https://www.etnews.com/20261020000020",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+      ],
+      "score": 2,
+      "importance": 0,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [],
+      "company": "전자신문",
+      "stage": "metadata"
+    },
+    {
       "id": "fce96817697a",
       "title": "오픈AI 회의실 도청 혐의자, 사우디 왕족 AI 프로젝트 합류 타진",
       "source": "전자신문",
@@ -3293,10 +3342,11 @@
       "url": "https://aws.amazon.com/blogs/machine-learning/metas-muse-spark-open-now-available-in-amazon-sagemaker-jumpstart/",
       "duplicate": "NEW",
       "matchSlug": null,
-      "decision": "PUBLISH",
+      "decision": "HOLD",
       "reasons": [
         "사건 신호 PRODUCT_LAUNCH·AVAILABILITY·API_PLATFORM (우선순위 11)",
-        "근거 확인 통과 (확인 사실 11개, SUFFICIENT_STANDARD)"
+        "근거 확인 통과 (확인 사실 11개, SUFFICIENT_STANDARD)",
+        "초안 QA FAIL: 근거에 없는 수치 '8160' · 근거에 없는 수치 '420'"
       ],
       "score": 11,
       "importance": 3,
@@ -3318,7 +3368,6 @@
         "standardWouldOmit"
       ],
       "suggestedDepth": "STANDARD",
-      "draftPending": true,
       "fromQueue": "draft"
     },
     {
@@ -3352,7 +3401,6 @@
         "importance"
       ],
       "suggestedDepth": "STANDARD",
-      "draftPending": true,
       "fromQueue": "draft"
     },
     {
@@ -3676,5 +3724,5 @@
       "fromQueue": "draft"
     }
   ],
-  "finishedAt": "2026-10-20T00:31:33.988Z"
+  "finishedAt": "2026-10-20T01:08:04.661Z"
 }

@@ -5,25 +5,23 @@
   "title": null,
   "sourceTitle": "Analyze BigQuery data using natural language with Gemini in Google Sheets",
   "depth": null,
-  "suggestedDepth": null,
+  "suggestedDepth": "STANDARD",
   "depthAssessment": {
-    "sufficiency": "INSUFFICIENT",
-    "distinctFacts": 0,
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 10,
     "deepChecks": {
       "importance": false,
       "novelty": true,
       "userImpact": false,
       "contextNeed": false,
-      "distinctFacts": false,
-      "evidenceQuality": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
       "standardWouldOmit": false
     },
     "deepMissing": [
       "importance",
       "userImpact",
       "contextNeed",
-      "distinctFacts",
-      "evidenceQuality",
       "standardWouldOmit"
     ]
   },
@@ -56,12 +54,12 @@
     "tier": 1,
     "fetchMode": "rss",
     "discoveredVia": "https://workspaceupdates.googleblog.com/feeds/posts/default?max-results=500&published-min=2026-01-01T00:00:00Z",
-    "fetchedAt": "2026-10-20T00:30:21.157Z"
+    "fetchedAt": "2026-10-20T01:03:55.463Z"
   },
   "evidence": {
-    "status": "HTTP_429",
-    "chars": 0,
-    "grade": "FAIL",
+    "status": "OK",
+    "chars": 3659,
+    "grade": "PASS",
     "ledger": [
       {
         "id": "E0",
@@ -70,7 +68,115 @@
         "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/analyze-bigquery-data-using-natural-language-with-Gemini-in-Google-Sheets.html",
         "source": "Google Workspace Updates",
         "publishedAt": "2026-10-19T20:19:13.824Z",
-        "checkedAt": "2026-10-20T00:31:22.577Z"
+        "checkedAt": "2026-10-20T01:05:25.922Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Google Workspace Updates: Analyze BigQuery data using natural language with Gemini in Google Sheets",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/analyze-bigquery-data-using-natural-language-with-Gemini-in-Google-Sheets.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-19T20:19:13.824Z",
+        "checkedAt": "2026-10-20T01:05:25.922Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Analyze BigQuery data using natural language with Gemini in Google Sheets",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/analyze-bigquery-data-using-natural-language-with-Gemini-in-Google-Sheets.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-19T20:19:13.824Z",
+        "checkedAt": "2026-10-20T01:05:25.922Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "We’re introducing a new way to analyze BigQuery data in Google Sheets.",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/analyze-bigquery-data-using-natural-language-with-Gemini-in-Google-Sheets.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-19T20:19:13.824Z",
+        "checkedAt": "2026-10-20T01:05:25.922Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "After connecting to BigQuery data with Connected Sheets, you can use Gemini to interact and analyze that data conversationally, right in Google Sheets.",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/analyze-bigquery-data-using-natural-language-with-Gemini-in-Google-Sheets.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-19T20:19:13.824Z",
+        "checkedAt": "2026-10-20T01:05:25.922Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "This means users can now ask questions on, analyze, and create views over super large data sets.",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/analyze-bigquery-data-using-natural-language-with-Gemini-in-Google-Sheets.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-19T20:19:13.824Z",
+        "checkedAt": "2026-10-20T01:05:25.922Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Ask questions in natural language: Ask something like “What were total sales in the Northeast last quarter?” and get an answer based on your complete BigQuery data.",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/analyze-bigquery-data-using-natural-language-with-Gemini-in-Google-Sheets.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-19T20:19:13.824Z",
+        "checkedAt": "2026-10-20T01:05:25.922Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Ask Gemini to analyze and pull insights from your largest datasets in BigQuery",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/analyze-bigquery-data-using-natural-language-with-Gemini-in-Google-Sheets.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-19T20:19:13.824Z",
+        "checkedAt": "2026-10-20T01:05:25.922Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Go from analysis to dashboard: Describe what you need, such as “Build a quarterly sales review with revenue by region, a monthly trend, and our top 10 products.” Gemini will share its plan for you to review, then build a new spreadsheet tab with native, connected, refreshable …",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/analyze-bigquery-data-using-natural-language-with-Gemini-in-Google-Sheets.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-19T20:19:13.824Z",
+        "checkedAt": "2026-10-20T01:05:25.922Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "For business users, Gemini handles the legwork of completing their end to end analysis, from querying the data to garnering complex and nuanced insights from the data, to laying out the final dashboard for review, allowing them to get their work done faster without ever leavin…",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/analyze-bigquery-data-using-natural-language-with-Gemini-in-Google-Sheets.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-19T20:19:13.824Z",
+        "checkedAt": "2026-10-20T01:05:25.922Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "For data teams, this means a shorter backlog of one-off requests for reports and data pulls from BigQuery.",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/analyze-bigquery-data-using-natural-language-with-Gemini-in-Google-Sheets.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-19T20:19:13.824Z",
+        "checkedAt": "2026-10-20T01:05:25.922Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Google Docs Editors Help: Get started with BigQuery data in Google Sheets",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/analyze-bigquery-data-using-natural-language-with-Gemini-in-Google-Sheets.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-19T20:19:13.824Z",
+        "checkedAt": "2026-10-20T01:05:25.922Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Google Docs Editors Help: Collaborate with Gemini in Google Sheets",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/analyze-bigquery-data-using-natural-language-with-Gemini-in-Google-Sheets.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-19T20:19:13.824Z",
+        "checkedAt": "2026-10-20T01:05:25.922Z"
       }
     ],
     "pageDate": null
@@ -81,7 +187,7 @@
     "koreanRelevance": 0,
     "novelty": 2,
     "sourceQuality": 3,
-    "verificationConfidence": 2,
+    "verificationConfidence": 3,
     "signals": [
       "PRODUCT_LAUNCH"
     ],
@@ -93,12 +199,10 @@
   },
   "decision": "HOLD",
   "reasons": [
-    "근거 부족 (원문 HTTP_429, 확인 사실 0개) — 발행하지 않음"
+    "사건 신호 PRODUCT_LAUNCH (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
   ],
-  "needsReview": [
-    "source_blocked",
-    "insufficient_evidence"
-  ],
+  "needsReview": [],
   "duplicate": {
     "result": "NEW",
     "reason": "기존 기사·후보와 겹치지 않음"

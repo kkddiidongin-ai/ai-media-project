@@ -1,9 +1,184 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-20T00:31:38.089Z",
+  "generatedAt": "2026-10-20T01:08:07.957Z",
   "status": "draft_for_editor_review",
   "source": "2026-10-20",
   "drafts": [
+    {
+      "rank": 1,
+      "verdict": "PUBLISHABLE",
+      "handsOn": false,
+      "relatedStory": null,
+      "story": {
+        "slug": "gemini-google-sheets-available-ios-devices",
+        "title": "구글, iOS용 스프레드시트에 제미나이 데이터 분석 기능 출시",
+        "summary": "구글이 웹과 안드로이드에 이어 iOS 기기용 구글 스프레드시트에도 제미나이 기능을 지원합니다. 2026년 10월 15일부터 점진 배포가 시작되었습니다.",
+        "category": "PRODUCT_UPDATE",
+        "topics": [
+          "google",
+          "gemini",
+          "ai-work"
+        ],
+        "companies": [
+          "Google"
+        ],
+        "products": [
+          "Gemini in Google Sheets",
+          "Google Sheets",
+          "Gemini for Google Workspace"
+        ],
+        "facts": [
+          "웹과 안드로이드에 이어 iOS 기기의 구글 스프레드시트 앱에서도 데이터를 분석하고 파악하는 데 제미나이를 사용할 수 있게 되었습니다.",
+          "자격이 있는 사용자의 경우 호환되는 스프레드시트를 열고 제미나이 아이콘을 눌러 이용할 수 있으며, 기본값으로 활성화됩니다.",
+          "도메인 및 조직 단위(OU) 수준의 구글 워크스페이스용 제미나이 활성화 설정 외에 별도의 모바일 전용 관리자 제어 항목은 없습니다.",
+          "빠른 출시(Rapid Release) 및 계획 출시(Scheduled Release) 도메인을 대상으로 2026년 10월 15일부터 기능 노출까지 최대 15일이 걸리는 점진적 배포가 시작되었습니다."
+        ],
+        "whyItMatters": "데스크톱 웹과 안드로이드에 이어 iOS 기기까지 지원을 확대해 이동 중에도 스프레드시트 데이터를 빠르게 분석할 수 있도록 모바일 생산성 환경을 맞추려는 조치입니다.",
+        "whatChanges": "구글 워크스페이스에서 제미나이를 사용하는 조직의 iOS 사용자는 모바일 기기 스프레드시트 앱 내에서 제미나이 아이콘을 눌러 데이터 분석 기능을 직접 활용할 수 있습니다.",
+        "priority": 1,
+        "secondarySources": [],
+        "editorialDepth": "standard",
+        "eventDate": "2026-10-19",
+        "publishedAt": null,
+        "sourceType": "official",
+        "sourceName": "Google Workspace Updates",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/gemini-in-google-sheets-is-now-available-on-iOS-devices.html",
+        "sourcePublishedAt": "2026-10-19T17:00:39.796Z",
+        "sourceTitle": "Gemini in Google Sheets is now available on iOS devices",
+        "contentType": "NEWS",
+        "status": "draft"
+      },
+      "evidence": [
+        {
+          "fact": 1,
+          "url": "https://workspaceupdates.googleblog.com/2026/10/gemini-in-google-sheets-is-now-available-on-iOS-devices.html",
+          "quote": "Building upon the power of Gemini in Sheets on the web and our recent launch on Android devices , we’re excited to announce that you can now use Gemini in Google Sheets on your iOS device to quickly analyze and understand your data while on the go. Simply tap on the Gemini spark icon, and you can as … Building upon the power of Gemini in Sheets on the web and our recent launch on Android devices , we’re excited to announce that you can now use Gemini in Google Sheets on your iOS device to quickly analyze and understand your data while on the go."
+        },
+        {
+          "fact": 2,
+          "url": "https://workspaceupdates.googleblog.com/2026/10/gemini-in-google-sheets-is-now-available-on-iOS-devices.html",
+          "quote": "End users: This feature will be available by default for eligible users. … To access it, open a compatible spreadsheet on your iOS device and tap the Ask Gemini icon."
+        },
+        {
+          "fact": 3,
+          "url": "https://workspaceupdates.googleblog.com/2026/10/gemini-in-google-sheets-is-now-available-on-iOS-devices.html",
+          "quote": "Admins: There is no specific admin control for this mobile feature beyond the general Gemini for Google Workspace enablement at the domain/OU level."
+        },
+        {
+          "fact": 4,
+          "url": "https://workspaceupdates.googleblog.com/2026/10/gemini-in-google-sheets-is-now-available-on-iOS-devices.html",
+          "quote": "Rapid Release and Scheduled Release domains: Gradual rollout (up to 15 days for feature visibility) started on October 15, 2026"
+        },
+        {
+          "fact": "why",
+          "url": "https://workspaceupdates.googleblog.com/2026/10/gemini-in-google-sheets-is-now-available-on-iOS-devices.html",
+          "quote": "Building upon the power of Gemini in Sheets on the web and our recent launch on Android devices , we’re excited to announce that you can now use Gemini in Google Sheets on your iOS device to quickly analyze and understand your data while on the go. Simply tap on the Gemini spark icon, and you can as … Building upon the power of Gemini in Sheets on the web and our recent launch on Android devices , we’re excited to announce that you can now use Gemini in Google Sheets on your iOS device to quickly analyze and understand your data while on the go."
+        },
+        {
+          "fact": "change",
+          "url": "https://workspaceupdates.googleblog.com/2026/10/gemini-in-google-sheets-is-now-available-on-iOS-devices.html",
+          "quote": "Admins: There is no specific admin control for this mobile feature beyond the general Gemini for Google Workspace enablement at the domain/OU level. … End users: This feature will be available by default for eligible users. … To access it, open a compatible spreadsheet on your iOS device and tap the Ask Gemini icon."
+        }
+      ],
+      "unverified": [
+        "구체적으로 어떤 워크스페이스 요금제나 추가 라이선스를 보유해야 대상 사용자(eligible users)로 분류되는지 근거에 명시되지 않았습니다.",
+        "iOS 앱의 제미나이 기능이 한국어 프롬프트나 한국어 데이터를 정상 지원하는지 여부는 확인되지 않았습니다."
+      ],
+      "generation": {
+        "provider": "gemini",
+        "model": "gemini-3.8-flash",
+        "generatedAt": "2026-10-20T01:05:40.920Z"
+      },
+      "draftQa": "PASS",
+      "reviewReasons": []
+    },
+    {
+      "rank": 2,
+      "verdict": "PUBLISHABLE",
+      "handsOn": false,
+      "relatedStory": null,
+      "story": {
+        "slug": "developers-can-access-sagemaker-studio-through-aws",
+        "title": "AWS, 간소화된 세이지메이커 스튜디오 가입 환경 공개",
+        "summary": "AWS가 신규 고객을 위해 소셜 계정 연동 가입과 약 20초 만에 자동 생성되는 세이지메이커 스튜디오 환경을 도입했습니다. 대상 계정에는 100달러 크레딧과 일부 GPU 인스턴스 기본 접근 권한이 제공됩니다.",
+        "category": "PRODUCT_UPDATE",
+        "topics": [
+          "amazon"
+        ],
+        "companies": [
+          "AWS",
+          "Amazon"
+        ],
+        "products": [
+          "Amazon SageMaker AI",
+          "SageMaker Studio"
+        ],
+        "facts": [
+          "신규 고객은 아마존, 애플, 깃허브, 구글 등의 기존 계정으로 가입할 수 있으며, 대부분의 경우 신용카드 등록 없이 세이지메이커 스튜디오 환경을 구성할 수 있습니다.",
+          "가입 후 약 20초 만에 세이지메이커 스튜디오 환경이 자동으로 생성됩니다.",
+          "신규 고객에게는 모델 맞춤화, 훈련, 스튜디오 노트북, 엔드포인트 배포에 사용할 수 있는 100달러 상당의 AWS 프리 티어 크레딧이 제공됩니다.",
+          "자격을 갖춘 계정은 엔드포인트, 훈련 작업, 스튜디오 노트북용 G5, G6, G4dn GPU 인스턴스에 기본적으로 접근할 수 있습니다."
+        ],
+        "whyItMatters": "복잡한 AWS 계정 생성 및 결제 수단 등록 절차를 줄이고 초기 설정 시간을 단축해 개발자가 머신러닝 개발 환경에 더 빠르게 진입할 수 있도록 온보딩 과정을 개편했습니다.",
+        "whatChanges": "별도 신용카드 없이 소셜 계정으로 세이지메이커 스튜디오 환경을 시험해 볼 수 있으며, 기본 제공되는 크레딧과 GPU 인스턴스를 활용해 모델 실습을 시작할 수 있습니다.",
+        "priority": 2,
+        "secondarySources": [],
+        "editorialDepth": "standard",
+        "eventDate": "2026-10-19",
+        "publishedAt": null,
+        "sourceType": "official",
+        "sourceName": "AWS Machine Learning Blog",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/developers-can-now-access-sagemaker-studio-through-the-new-aws-experience/",
+        "sourcePublishedAt": "2026-10-19T22:39:24.000Z",
+        "sourceTitle": "Developers can now access SageMaker Studio through the new AWS experience",
+        "contentType": "NEWS",
+        "status": "draft"
+      },
+      "evidence": [
+        {
+          "fact": 1,
+          "url": "https://aws.amazon.com/blogs/machine-learning/developers-can-now-access-sagemaker-studio-through-the-new-aws-experience/",
+          "quote": "New Amazon SageMaker AI customers can now land in a fully configured SageMaker Studio environment in only a few steps. Sign up with an identity you already have, such as Amazon, Apple, GitHub, or Google, with no advanced AWS account or credit card required for most customers, plus $100 in AWS Free T … New customers can create an account using an identity that they already have and start building in SageMaker Studio right away."
+        },
+        {
+          "fact": 2,
+          "url": "https://aws.amazon.com/blogs/machine-learning/developers-can-now-access-sagemaker-studio-through-the-new-aws-experience/",
+          "quote": "Earlier this year, we also sped up Studio environment creation time from 2 minutes to about 20 seconds and pre-configured model customization permissions in every new Studio domain. … After you sign up, SageMaker AI automatically creates your Studio environment in about 20 seconds."
+        },
+        {
+          "fact": 3,
+          "url": "https://aws.amazon.com/blogs/machine-learning/developers-can-now-access-sagemaker-studio-through-the-new-aws-experience/",
+          "quote": "New customers also receive $100 in AWS Free Tier credits that work across SageMaker AI, including model customization, training jobs, Studio notebooks, and endpoint deployments. … New customers receive $100 in AWS Free Tier credits that work across SageMaker AI, including endpoint deployments, model customization, Studio notebooks, and model training."
+        },
+        {
+          "fact": 4,
+          "url": "https://aws.amazon.com/blogs/machine-learning/developers-can-now-access-sagemaker-studio-through-the-new-aws-experience/",
+          "quote": "Eligible accounts get default access to G5, G6, and G4dn GPU instances for endpoints, training jobs, and Studio notebooks."
+        },
+        {
+          "fact": "why",
+          "url": "https://aws.amazon.com/blogs/machine-learning/developers-can-now-access-sagemaker-studio-through-the-new-aws-experience/",
+          "quote": "New Amazon SageMaker AI customers can now land in a fully configured SageMaker Studio environment in only a few steps. Sign up with an identity you already have, such as Amazon, Apple, GitHub, or Google, with no advanced AWS account or credit card required for most customers, plus $100 in AWS Free T … With this launch, SageMaker Studio is now integrated with the updated AWS sign-in and sign-up experience , which introduces new options for creating and managing AWS accounts along with simplified collaboration. … After you sign up, SageMaker AI automatically creates your Studio environment in about 20 seconds."
+        },
+        {
+          "fact": "change",
+          "url": "https://aws.amazon.com/blogs/machine-learning/developers-can-now-access-sagemaker-studio-through-the-new-aws-experience/",
+          "quote": "New Amazon SageMaker AI customers can now land in a fully configured SageMaker Studio environment in only a few steps. Sign up with an identity you already have, such as Amazon, Apple, GitHub, or Google, with no advanced AWS account or credit card required for most customers, plus $100 in AWS Free T … New customers also receive $100 in AWS Free Tier credits that work across SageMaker AI, including model customization, training jobs, Studio notebooks, and endpoint deployments. … Eligible accounts get default access to G5, G6, and G4dn GPU instances for endpoints, training jobs, and Studio notebooks."
+        }
+      ],
+      "unverified": [
+        "기존 AWS 계정 보유자에게도 동일한 간소화 환경이나 크레딧이 적용되는지는 근거에 나와 있지 않습니다.",
+        "100달러 크레딧의 사용 기한 및 소진 후 요금 청구 방식은 본문에 명시되지 않았습니다.",
+        "한국을 포함한 국가별 지원 범위나 제한 사항은 확인되지 않았습니다."
+      ],
+      "generation": {
+        "provider": "gemini",
+        "model": "gemini-3.8-flash",
+        "generatedAt": "2026-10-20T01:06:30.631Z"
+      },
+      "draftQa": "PASS",
+      "reviewReasons": []
+    },
     {
       "rank": 1,
       "verdict": "PUBLISHABLE",
@@ -114,6 +289,106 @@
         "가격: 구체적 금액 표현 없음 확인, 청구 방식(AWS Marketplace)과 요금 페이지 안내만 사실로 반영",
         "리전: 미국 서부(오레곤)만 공식 확인, 서울·기타 리전은 미확인으로 본문에 명시",
         "발표일: AWS가 10월 9일 제공을 처음 발표 → eventDate 2026-10-09 (원문 게시일 10-19와 다름, 의도)"
+      ]
+    },
+    {
+      "rank": 4,
+      "verdict": "REVIEW",
+      "handsOn": false,
+      "relatedStory": null,
+      "story": {
+        "slug": "meta-milan-s-pinacoteca-di-brera-essilorluxottica",
+        "title": "메타·에실로룩소티카, 밀라노 브레라 미술관서 시각장애인용 AI 안경 시범 운영",
+        "summary": "메타와 에실로룩소티카, 밀라노 브레라 미술관이 시각장애인과 저시력자 관람을 돕는 AI 안경 시범 프로그램 'Sensing Art'를 시작했습니다. 관람객은 안경을 통해 작품 음성 설명을 듣고 메타 AI 및 Be My Eyes 기능을 활용할 수 있습니다.",
+        "category": "PRODUCT_UPDATE",
+        "topics": [
+          "meta"
+        ],
+        "companies": [
+          "Meta",
+          "EssilorLuxottica",
+          "Pinacoteca di Brera",
+          "ANS",
+          "Be My Eyes"
+        ],
+        "products": [
+          "AI glasses",
+          "Grande Brera app",
+          "Meta AI",
+          "Be My Eyes"
+        ],
+        "facts": [
+          "메타와 에실로룩소티카, 이탈리아 밀라노의 피나코테카 디 브레라 미술관이 시각장애인과 저시력자를 위한 예술 접근성 탐색 파일럿 프로그램인 'Sensing Art'를 발표했습니다.",
+          "피나코테카 디 브레라 미술관은 메타와 에실로룩소티카가 개발한 AI 안경을 기존 미술관 앱(Grande Brera)과 연동해 시각장애인 및 저시력 관람객을 위한 오디오 투어 가이드를 제공합니다.",
+          "관람객이 파일럿 일정에 포함된 8개 선정 작품 앞에 서서 안경으로 작품 인식을 활성화하면 안경테에 내장된 오픈이어 스피커를 통해 해당 오디오 설명을 들을 수 있습니다.",
+          "관람객은 AI 안경을 통해 배경 및 주변 환경에 대해 질문할 수 있는 Meta AI 기능과, 정안인 자원봉사자 및 전문 운영자에게 실시간 안내를 받는 Be My Eyes 기능을 추가로 이용할 수 있습니다.",
+          "해당 투어는 사전 예약제로 운영되며, AI 안경은 화요일부터 금요일 오전 10시부터 오후 4시 30분까지 이용할 수 있습니다."
+        ],
+        "whyItMatters": "시각 기반 예술 관람이 어려운 시각장애인 및 저시력자가 스마트 안경의 객체 인식과 오픈이어 오디오, 음성 질의응답 및 원격 도우미 기능을 결합해 전시를 자율적으로 감상할 수 있는 구체적인 활용 사례를 제시합니다.",
+        "whatChanges": "피나코테카 디 브레라 미술관을 방문해 사전 예약한 관람객은 지정된 시간대에 AI 안경을 대여받아 8개 작품에 대한 음성 해설 및 Meta AI 질의 지원을 직접 체험할 수 있습니다.",
+        "priority": 2,
+        "secondarySources": [],
+        "editorialDepth": "standard",
+        "eventDate": "2026-10-14",
+        "publishedAt": null,
+        "sourceType": "official",
+        "sourceName": "Meta Newsroom",
+        "sourceUrl": "https://about.fb.com/news/2026/10/meta-milans-pinacoteca-di-brera-and-essilorluxottica-expand-access-to-art-through-ai-glasses/",
+        "sourcePublishedAt": "2026-10-14T16:00:57.000Z",
+        "sourceTitle": "Meta, Milan’s Pinacoteca di Brera, and EssilorLuxottica Expand Access to Art Through AI Glasses",
+        "contentType": "NEWS",
+        "status": "draft"
+      },
+      "evidence": [
+        {
+          "fact": 1,
+          "url": "https://about.fb.com/news/2026/10/meta-milans-pinacoteca-di-brera-and-essilorluxottica-expand-access-to-art-through-ai-glasses/",
+          "quote": "Today, Meta, Pinacoteca di Brera and EssilorLuxottica are proud to launch “Sensing Art – Discovering Masterpieces Beyond What Meets the Eye.” This pilot aims to explore how AI glasses can make art more accessible for people who are blind or with low vision – in collaboration with the some of Italy’s … Meta, Milan’s Pinacoteca di Brera, and EssilorLuxottica Expand Access to Art Through AI Glasses … A new pilot running at Milan’s Pinacoteca di Brera museums will explore how Meta and EssilorLuxottica’s AI glasses can make art more accessible for people who are blind or with low vision. … Today, Meta, Pinacoteca di Brera and EssilorLuxottica are proud to launch “Sensing Art – Discovering Masterpieces Beyond What Meets the Eye.” This pilot aims to explore how AI glasses can make art more accessible for people who are blind or with low vision – in collaboration w…"
+        },
+        {
+          "fact": 2,
+          "url": "https://about.fb.com/news/2026/10/meta-milans-pinacoteca-di-brera-and-essilorluxottica-expand-access-to-art-through-ai-glasses/",
+          "quote": "AI glasses have been integrated with the museum’s existing Grande Brera app which includes the DescriVedendo tour designed for blind and low vision visitors. … In one of the first projects of its kind in the world, Pinacoteca di Brera will use AI glasses developed by Meta and EssilorLuxottica to enhance the experience for blind and visually impaired people. … The AI glasses have been integrated with the museum’s existing Grande Brera app, which includes an audio tour guide, developed by ANS for blind and low vision visitors."
+        },
+        {
+          "fact": 3,
+          "url": "https://about.fb.com/news/2026/10/meta-milans-pinacoteca-di-brera-and-essilorluxottica-expand-access-to-art-through-ai-glasses/",
+          "quote": "When a visitor stands in front of one of eight selected artworks on the itinerary as part of this pilot, they can activate artwork recognition directly from the glasses and listen to the corresponding audio description through the open-ear speakers built into the frames."
+        },
+        {
+          "fact": 4,
+          "url": "https://about.fb.com/news/2026/10/meta-milans-pinacoteca-di-brera-and-essilorluxottica-expand-access-to-art-through-ai-glasses/",
+          "quote": "Visitors can also choose to utilize additional tools available through the AI glasses: … Meta AI allows users to ask questions about the context and surrounding environment … Be My Eyes connects visitors through the glasses with sighted volunteers and qualified operators to receive real-time support in orientation and practical task management, both during the tour."
+        },
+        {
+          "fact": 5,
+          "url": "https://about.fb.com/news/2026/10/meta-milans-pinacoteca-di-brera-and-essilorluxottica-expand-access-to-art-through-ai-glasses/",
+          "quote": "The tour will be available at the Pinacoteca di Brera upon reservation, with AI glasses available Tuesday through Friday from 10:00 AM to 4:30 PM."
+        },
+        {
+          "fact": "why",
+          "url": "https://about.fb.com/news/2026/10/meta-milans-pinacoteca-di-brera-and-essilorluxottica-expand-access-to-art-through-ai-glasses/",
+          "quote": "A new pilot running at Milan’s Pinacoteca di Brera museums will explore how Meta and EssilorLuxottica’s AI glasses can make art more accessible for people who are blind or with low vision. … AI glasses give people who are blind or low vision access to transformative AI technology that can help with everyday tasks like reading text, identifying objects and accessing information about the world around them. … When a visitor stands in front of one of eight selected artworks on the itinerary as part of this pilot, they can activate artwork recognition directly from the glasses and listen to the corresponding audio description through the open-ear speakers built into the frames. … Meta AI allows users to ask questions about the context and surrounding environment … Be My Eyes connects visitors through the glasses with sighted volunteers and qualified operators to receive real-time support in orientation and practical task management, both during the tour."
+        },
+        {
+          "fact": "change",
+          "url": "https://about.fb.com/news/2026/10/meta-milans-pinacoteca-di-brera-and-essilorluxottica-expand-access-to-art-through-ai-glasses/",
+          "quote": "When a visitor stands in front of one of eight selected artworks on the itinerary as part of this pilot, they can activate artwork recognition directly from the glasses and listen to the corresponding audio description through the open-ear speakers built into the frames. … Meta AI allows users to ask questions about the context and surrounding environment … The tour will be available at the Pinacoteca di Brera upon reservation, with AI glasses available Tuesday through Friday from 10:00 AM to 4:30 PM."
+        }
+      ],
+      "unverified": [
+        "해당 AI 안경 대여 및 투어 프로그램 참여에 별도 비용이 발생하는지 여부는 근거에 언급되지 않았습니다.",
+        "시범 운영 기간이 언제까지 지속되는지, 향후 다른 미술관이나 해외(한국 등)로 확대될 계획이 있는지는 확인되지 않았습니다.",
+        "사전 예약 방법 및 지원 언어(이탈리아어 외 다국어 지원 여부)에 대한 세부 사항은 근거에 나와 있지 않습니다."
+      ],
+      "generation": {
+        "provider": "gemini",
+        "model": "gemini-3.8-flash",
+        "generatedAt": "2026-10-20T01:07:03.237Z"
+      },
+      "draftQa": "PASS",
+      "reviewReasons": [
+        "확인 필요: numeric_claim"
       ]
     }
   ]

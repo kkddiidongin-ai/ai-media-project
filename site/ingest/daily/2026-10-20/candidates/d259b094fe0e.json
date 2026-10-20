@@ -212,10 +212,16 @@
   "generation": {
     "provider": "gemini",
     "model": "gemini-3.8-flash",
-    "status": "skipped",
-    "error": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성",
+    "status": "failed",
+    "error": "timeout",
+    "usage": {
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "costUsd": 0,
+      "attempts": 1
+    },
     "promptVersion": "draft-v1",
-    "at": "2026-10-20T00:31:33.980Z",
+    "at": "2026-10-20T01:08:04.651Z",
     "evidenceHash": "bc02fb929f09"
   },
   "draft": null,
