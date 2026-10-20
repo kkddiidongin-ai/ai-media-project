@@ -22,7 +22,7 @@
       "since": "2026-10-14",
       "attempts": 2,
       "date": "2026-10-20",
-      "reason": "HTTP 503"
+      "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
     },
     "61a2ef3c9ba4": {
       "stage": "draft",
@@ -45,7 +45,7 @@
       "since": "2026-10-14",
       "attempts": 1,
       "date": "2026-10-20",
-      "reason": "HTTP 503"
+      "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
     },
     "d259b094fe0e": {
       "stage": "draft",
@@ -68,7 +68,7 @@
       "since": "2026-10-14",
       "attempts": 1,
       "date": "2026-10-20",
-      "reason": "HTTP 503"
+      "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
     },
     "f2bde108f64c": {
       "stage": "draft",
@@ -91,7 +91,7 @@
       "since": "2026-10-14",
       "attempts": 1,
       "date": "2026-10-20",
-      "reason": "HTTP 503"
+      "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
     },
     "116eea760bcf": {
       "stage": "draft",
@@ -254,29 +254,6 @@
       "date": "2026-10-20",
       "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
     },
-    "98948186cc0e": {
-      "stage": "draft",
-      "item": {
-        "id": "98948186cc0e",
-        "url": "https://aws.amazon.com/blogs/machine-learning/pegasus-1-5-from-twelvelabs-is-now-available-in-amazon-bedrock/",
-        "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/pegasus-1-5-from-twelvelabs-is-now-available-in-amazon-bedrock",
-        "title": "Pegasus 1.5 from TwelveLabs is now available in Amazon Bedrock",
-        "excerpt": "TwelveLabs Pegasus 1.5 is now available in Amazon Bedrock. The video language model turns long-form video into structured, timestamped metadata: define the moments that matter and get every matching segment back as JSON, with new video segmentation, multimodal prompting with reference images, and on",
-        "publishedAt": "2026-10-19T16:49:19.000Z",
-        "sourceId": "aws-ml",
-        "sourceName": "AWS Machine Learning Blog",
-        "sourceType": "official",
-        "tier": 1,
-        "fetchMode": "rss",
-        "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
-        "fetchedAt": "2026-10-19T16:57:47.658Z"
-      },
-      "addedAt": "2026-10-20",
-      "since": "2026-10-17",
-      "attempts": 1,
-      "date": "2026-10-20",
-      "reason": "HTTP 503"
-    },
     "e242a37f6e45": {
       "stage": "draft",
       "item": {
@@ -292,7 +269,7 @@
         "tier": 1,
         "fetchMode": "rss",
         "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
-        "fetchedAt": "2026-10-19T16:57:47.658Z"
+        "fetchedAt": "2026-10-20T00:30:21.157Z"
       },
       "addedAt": "2026-10-20",
       "since": "2026-10-17",
@@ -315,7 +292,99 @@
         "tier": 1,
         "fetchMode": "rss-paged",
         "discoveredVia": "https://blogs.nvidia.com/feed/",
-        "fetchedAt": "2026-10-19T16:57:47.658Z"
+        "fetchedAt": "2026-10-20T00:30:21.157Z"
+      },
+      "addedAt": "2026-10-20",
+      "since": "2026-10-17",
+      "attempts": 0,
+      "date": "2026-10-20",
+      "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
+    },
+    "87cd33ee12bd": {
+      "stage": "draft",
+      "item": {
+        "id": "87cd33ee12bd",
+        "url": "https://aws.amazon.com/blogs/machine-learning/developers-can-now-access-sagemaker-studio-through-the-new-aws-experience/",
+        "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/developers-can-now-access-sagemaker-studio-through-the-new-aws-experience",
+        "title": "Developers can now access SageMaker Studio through the new AWS experience",
+        "excerpt": "New Amazon SageMaker AI customers can now land in a fully configured SageMaker Studio environment in only a few steps. Sign up with an identity you already have, such as Amazon, Apple, GitHub, or Google, with no advanced AWS account or credit card required for most customers, plus $100 in AWS Free T",
+        "publishedAt": "2026-10-19T22:39:24.000Z",
+        "sourceId": "aws-ml",
+        "sourceName": "AWS Machine Learning Blog",
+        "sourceType": "official",
+        "tier": 1,
+        "fetchMode": "rss",
+        "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+        "fetchedAt": "2026-10-20T00:30:21.157Z"
+      },
+      "addedAt": "2026-10-20",
+      "since": "2026-10-17",
+      "attempts": 0,
+      "date": "2026-10-20",
+      "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
+    },
+    "35a22a987ed8": {
+      "stage": "draft",
+      "item": {
+        "id": "35a22a987ed8",
+        "url": "https://workspaceupdates.googleblog.com/2026/10/teacher-led-gemini-notebook-in-google-Classroom-now-offers-insight-summaries-for-educators-and-updated-sharing-settings-for-admins-including-trusted-domains.html",
+        "canonicalUrl": "https://workspaceupdates.googleblog.com/2026/10/teacher-led-gemini-notebook-in-google-Classroom-now-offers-insight-summaries-for-educators-and-updated-sharing-settings-for-admins-including-trusted-domains.html",
+        "title": "Teacher-led Gemini Notebook in Google Classroom now offers insight summaries for educators and updated sharing settings for admins, including trusted domains",
+        "excerpt": "Following the launch of teacher-led Gemini Notebook in Google Classroom , we are introducing insight summaries for educators. This update provides teachers with greater visibility into how students interact with assigned notebooks, helping gauge instructional value and inform lesson planning. Teache",
+        "publishedAt": "2026-10-19T20:23:52.002Z",
+        "sourceId": "google-workspace-updates",
+        "sourceName": "Google Workspace Updates",
+        "sourceType": "official",
+        "tier": 1,
+        "fetchMode": "rss",
+        "discoveredVia": "https://workspaceupdates.googleblog.com/feeds/posts/default?max-results=500&published-min=2026-01-01T00:00:00Z",
+        "fetchedAt": "2026-10-20T00:30:21.157Z"
+      },
+      "addedAt": "2026-10-20",
+      "since": "2026-10-17",
+      "attempts": 0,
+      "date": "2026-10-20",
+      "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
+    },
+    "9db7d13375ba": {
+      "stage": "draft",
+      "item": {
+        "id": "9db7d13375ba",
+        "url": "https://github.blog/changelog/2026-10-19-copilot-model-policy-api-for-enterprise-orgs-and-teams",
+        "canonicalUrl": "https://github.blog/changelog/2026-10-19-copilot-model-policy-api-for-enterprise-orgs-and-teams",
+        "title": "Copilot model policy API for enterprise, orgs, and teams",
+        "excerpt": "You can now use the REST API to retrieve and update Copilot model policies for enterprises, enterprise teams, enterprise apps, and organizations. What’s new GET and PATCH endpoints are now… The post Copilot model policy API for enterprise, orgs, and teams appeared first on The GitHub Blog .",
+        "publishedAt": "2026-10-19T21:32:18.000Z",
+        "sourceId": "github-changelog",
+        "sourceName": "GitHub Changelog",
+        "sourceType": "official",
+        "tier": 1,
+        "fetchMode": "rss-paged",
+        "discoveredVia": "https://github.blog/changelog/feed/",
+        "fetchedAt": "2026-10-20T00:30:21.157Z"
+      },
+      "addedAt": "2026-10-20",
+      "since": "2026-10-17",
+      "attempts": 0,
+      "date": "2026-10-20",
+      "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
+    },
+    "9822e22c0dc9": {
+      "stage": "draft",
+      "item": {
+        "id": "9822e22c0dc9",
+        "url": "https://workspaceupdates.googleblog.com/2026/10/publish-interactive-apps-from-gemini-app-to-Google-Sites.html",
+        "canonicalUrl": "https://workspaceupdates.googleblog.com/2026/10/publish-interactive-apps-from-gemini-app-to-Google-Sites.html",
+        "title": "Publish interactive apps from the Gemini app to Google Sites",
+        "excerpt": "You can now export interactive apps built in the Gemini app directly to Google Sites. With one click, your app is added to a new, private site draft — fully interactive and ready to customize. From there, you can add more content, publish the site, and share it just like any other Google Site. This ",
+        "publishedAt": "2026-10-19T17:25:14.930Z",
+        "sourceId": "google-workspace-updates",
+        "sourceName": "Google Workspace Updates",
+        "sourceType": "official",
+        "tier": 1,
+        "fetchMode": "rss",
+        "discoveredVia": "https://workspaceupdates.googleblog.com/feeds/posts/default?max-results=500&published-min=2026-01-01T00:00:00Z",
+        "fetchedAt": "2026-10-20T00:30:21.157Z"
       },
       "addedAt": "2026-10-20",
       "since": "2026-10-17",
@@ -326,5 +395,5 @@
   },
   "meta": {},
   "retry": {},
-  "updatedAt": "2026-10-19T16:59:59.294Z"
+  "updatedAt": "2026-10-20T00:31:33.987Z"
 }
