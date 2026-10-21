@@ -83,15 +83,36 @@ export function checkDraft(d, existing) {
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
-  const file = process.argv[2];
+  const argv = process.argv.slice(2);
+  const onlyI = argv.indexOf("--only");
+  const file = argv.find((a, i) => !a.startsWith("--") && (onlyI < 0 || i !== onlyI + 1));
   if (!file || !fs.existsSync(file)) {
-    console.error("사용법: npm run daily:check-drafts -- <editorial-drafts.json>");
+    console.error("사용법: npm run daily:check-drafts -- <editorial-drafts.json> [--only slug,slug]");
+    process.exit(1);
+  }
+  // --only: 발행할 원고만 점검한다 (publish.yml의 only와 같은 값). 지정하지 않으면 전부 점검 — 기존 방식 그대로
+  const only = onlyI >= 0 ? String(argv[onlyI + 1] ?? "").split(",").map((x) => x.trim()).filter(Boolean) : [];
+  if (onlyI >= 0 && !only.length) {
+    console.error("--only 값이 비어 있음");
     process.exit(1);
   }
   const doc = JSON.parse(fs.readFileSync(file, "utf8"));
   const existing = loadExisting();
-  const slugs = doc.drafts.map((d) => d.story.slug);
   let bad = 0;
+  if (only.length) {
+    if (new Set(only).size !== only.length) {
+      console.log("FAIL   only에 같은 slug가 두 번 있음");
+      bad++;
+    }
+    for (const x of new Set(only))
+      if (!doc.drafts.some((d) => d.story.slug === x)) {
+        console.log(`FAIL   only에 지정한 원고 없음: ${x}`);
+        bad++;
+      }
+    doc.drafts = doc.drafts.filter((d) => only.includes(d.story.slug));
+    console.log(`only 지정 — 원고 ${doc.drafts.length}건만 점검`);
+  }
+  const slugs = doc.drafts.map((d) => d.story.slug);
   if (new Set(slugs).size !== slugs.length) {
     console.log("FAIL 원고끼리 slug 중복");
     bad++;

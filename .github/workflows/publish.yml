@@ -80,8 +80,14 @@ jobs:
           git fetch origin "$REF"
           git -C "$GITHUB_WORKSPACE" show "FETCH_HEAD:$P" > "$RUNNER_TEMP/editorial-drafts.json"
 
+      # only를 지정하면 발행 단계와 같은 원고만 점검한다 (비우면 전부 점검)
       - name: Check drafts
-        run: npm run daily:check-drafts -- "$RUNNER_TEMP/editorial-drafts.json"
+        env:
+          ONLY: ${{ inputs.only }}
+        run: |
+          ARGS=("$RUNNER_TEMP/editorial-drafts.json")
+          [ -n "$ONLY" ] && ARGS+=(--only "$ONLY")
+          npm run daily:check-drafts -- "${ARGS[@]}"
 
       # 새로 checkout한 runner에는 .next/types가 없어 publish:daily의 tsc가 실패한다 (next-env.d.ts가 참조) → 먼저 생성
       - name: Generate Next route types
