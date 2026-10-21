@@ -1,0 +1,221 @@
+{
+  "id": "5a9dd192c567",
+  "date": "2026-10-22",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Securing the agentic insider",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 7,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Microsoft",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://blogs.microsoft.com/blog/2026/10/19/securing-the-agentic-insider/",
+      "name": "Microsoft (Official Blog)",
+      "type": "official",
+      "publishedAt": "2026-10-19T13:00:02.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "5a9dd192c567",
+    "url": "https://blogs.microsoft.com/blog/2026/10/19/securing-the-agentic-insider/",
+    "canonicalUrl": "https://blogs.microsoft.com/blog/2026/10/19/securing-the-agentic-insider",
+    "title": "Securing the agentic insider",
+    "excerpt": "In the last few months, concerns have arisen about AI safety as a growing number of incidents were publicly disclosed. These incidents exposed how powerful models have become and how they represent a significant threat if not handled well. And with the global race on innovation, the challenge will c",
+    "publishedAt": "2026-10-19T13:00:02.000Z",
+    "sourceId": "microsoft",
+    "sourceName": "Microsoft (Official Blog)",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://blogs.microsoft.com/feed/",
+    "fetchedAt": "2026-10-21T15:08:24.835Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 4247,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "In the last few months, concerns have arisen about AI safety as a growing number of incidents were publicly disclosed. These incidents exposed how powerful models have become and how they represent a significant threat if not handled well. And with the global race on innovation, the challenge will c",
+        "sourceUrl": "https://blogs.microsoft.com/blog/2026/10/19/securing-the-agentic-insider/",
+        "source": "Microsoft (Official Blog)",
+        "publishedAt": "2026-10-19T13:00:02.000Z",
+        "checkedAt": "2026-10-21T15:10:11.974Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Securing the agentic insider - The Official Microsoft Blog",
+        "sourceUrl": "https://blogs.microsoft.com/blog/2026/10/19/securing-the-agentic-insider/",
+        "source": "Microsoft (Official Blog)",
+        "publishedAt": "2026-10-19T13:00:02.000Z",
+        "checkedAt": "2026-10-21T15:10:11.974Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "In the last few months, concerns have arisen about AI safety as a growing number of incidents were publicly disclosed.",
+        "sourceUrl": "https://blogs.microsoft.com/blog/2026/10/19/securing-the-agentic-insider/",
+        "source": "Microsoft (Official Blog)",
+        "publishedAt": "2026-10-19T13:00:02.000Z",
+        "checkedAt": "2026-10-21T15:10:11.974Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Monitoring and securing those agents must become continuous.",
+        "sourceUrl": "https://blogs.microsoft.com/blog/2026/10/19/securing-the-agentic-insider/",
+        "source": "Microsoft (Official Blog)",
+        "publishedAt": "2026-10-19T13:00:02.000Z",
+        "checkedAt": "2026-10-21T15:10:11.974Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "To manage and control these insiders, we will need Guardian Agents — an established industry term — that watch and moderate every action of every agent, before it happens, 24/7.",
+        "sourceUrl": "https://blogs.microsoft.com/blog/2026/10/19/securing-the-agentic-insider/",
+        "source": "Microsoft (Official Blog)",
+        "publishedAt": "2026-10-19T13:00:02.000Z",
+        "checkedAt": "2026-10-21T15:10:11.974Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Securing agents requires protection across multiple layers: identity, permissions, data, endpoints, network, cloud and runtime.",
+        "sourceUrl": "https://blogs.microsoft.com/blog/2026/10/19/securing-the-agentic-insider/",
+        "source": "Microsoft (Official Blog)",
+        "publishedAt": "2026-10-19T13:00:02.000Z",
+        "checkedAt": "2026-10-21T15:10:11.974Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "In July, we announced Project Perception , an agentic security system that uses our new cyber stack and teams of red, blue and green agents to help defenders act with speed, while defending against AI driven attacks from outside of the enterprise.",
+        "sourceUrl": "https://blogs.microsoft.com/blog/2026/10/19/securing-the-agentic-insider/",
+        "source": "Microsoft (Official Blog)",
+        "publishedAt": "2026-10-19T13:00:02.000Z",
+        "checkedAt": "2026-10-21T15:10:11.974Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "The same cyber stack is also directly applicable to managing and governing the agentic insiders that run in the enterprise.",
+        "sourceUrl": "https://blogs.microsoft.com/blog/2026/10/19/securing-the-agentic-insider/",
+        "source": "Microsoft (Official Blog)",
+        "publishedAt": "2026-10-19T13:00:02.000Z",
+        "checkedAt": "2026-10-21T15:10:11.974Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Project Perception can be leveraged to contain agentic insiders, implementing deterministic controls on non-deterministic intelligence:",
+        "sourceUrl": "https://blogs.microsoft.com/blog/2026/10/19/securing-the-agentic-insider/",
+        "source": "Microsoft (Official Blog)",
+        "publishedAt": "2026-10-19T13:00:02.000Z",
+        "checkedAt": "2026-10-21T15:10:11.974Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "This is where agentic security changes the equation for security practitioners.",
+        "sourceUrl": "https://blogs.microsoft.com/blog/2026/10/19/securing-the-agentic-insider/",
+        "source": "Microsoft (Official Blog)",
+        "publishedAt": "2026-10-19T13:00:02.000Z",
+        "checkedAt": "2026-10-21T15:10:11.974Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "This needs to be the next step in securing agentic insiders.",
+        "sourceUrl": "https://blogs.microsoft.com/blog/2026/10/19/securing-the-agentic-insider/",
+        "source": "Microsoft (Official Blog)",
+        "publishedAt": "2026-10-19T13:00:02.000Z",
+        "checkedAt": "2026-10-21T15:10:11.974Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "With Project Perception, you can get started today on the journey to secure your agentic insiders .",
+        "sourceUrl": "https://blogs.microsoft.com/blog/2026/10/19/securing-the-agentic-insider/",
+        "source": "Microsoft (Official Blog)",
+        "publishedAt": "2026-10-19T13:00:02.000Z",
+        "checkedAt": "2026-10-21T15:10:11.974Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Tags: Agentic AI , AI , Project Perception , Security",
+        "sourceUrl": "https://blogs.microsoft.com/blog/2026/10/19/securing-the-agentic-insider/",
+        "source": "Microsoft (Official Blog)",
+        "publishedAt": "2026-10-19T13:00:02.000Z",
+        "checkedAt": "2026-10-21T15:10:11.974Z"
+      }
+    ],
+    "pageDate": "2026-10-19T13:00:02.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "SECURITY_MENTION"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 SECURITY_MENTION (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

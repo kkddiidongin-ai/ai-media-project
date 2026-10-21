@@ -1,0 +1,234 @@
+{
+  "id": "5cb1618c1db5",
+  "date": "2026-10-22",
+  "proposedSlug": "google-deepmind-singapore-government-collaborate-build-fine",
+  "title": null,
+  "sourceTitle": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Google",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+      "name": "Google DeepMind",
+      "type": "official",
+      "publishedAt": "2026-10-14T02:00:14.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "5cb1618c1db5",
+    "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+    "canonicalUrl": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi",
+    "title": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
+    "excerpt": "Learn how Google DeepMind and GovTech Singapore uses lightweight on-device Gemma models to intercept conversational scams in private chats with zero cloud data egress.",
+    "publishedAt": "2026-10-14T02:00:14.000Z",
+    "sourceId": "google-deepmind",
+    "sourceName": "Google DeepMind",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://deepmind.google/blog/rss.xml",
+    "fetchedAt": "2026-10-17T13:40:53.584Z",
+    "fromQueue": "draft"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 4727,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Learn how Google DeepMind and GovTech Singapore uses lightweight on-device Gemma models to intercept conversational scams in private chats with zero cloud data egress.",
+        "sourceUrl": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-10-14T02:00:14.000Z",
+        "checkedAt": "2026-10-21T15:10:08.812Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "On-Device AI Against Scams: Google DeepMind & MDDI — Google DeepMind • • • • • • • • • • • • • • • • • • Skip to main content",
+        "sourceUrl": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-10-14T02:00:14.000Z",
+        "checkedAt": "2026-10-21T15:10:08.812Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
+        "sourceUrl": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-10-14T02:00:14.000Z",
+        "checkedAt": "2026-10-21T15:10:08.812Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Collaborating with the Government Technology Agency of Singapore (GovTech Singapore) to protect users without compromising privacy.",
+        "sourceUrl": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-10-14T02:00:14.000Z",
+        "checkedAt": "2026-10-21T15:10:08.812Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Scams, such as investment fraud, fake job offers, and impersonation of public officials make up over half of Singapore’s reported crimes, and account for more than S$4 billion in losses since 2019 .",
+        "sourceUrl": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-10-14T02:00:14.000Z",
+        "checkedAt": "2026-10-21T15:10:08.812Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "To address this, Google DeepMind and the Government Technology Agency of Singapore (GovTech Singapore) have been working together as part of our National AI Partnership with the Singapore Government.",
+        "sourceUrl": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-10-14T02:00:14.000Z",
+        "checkedAt": "2026-10-21T15:10:08.812Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Together, we've fine-tuned a privacy-preserving, on-device scam detection model.",
+        "sourceUrl": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-10-14T02:00:14.000Z",
+        "checkedAt": "2026-10-21T15:10:08.812Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "To address this, Google’s lightweight Gemma model was fine-tuned on local scam conversations.",
+        "sourceUrl": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-10-14T02:00:14.000Z",
+        "checkedAt": "2026-10-21T15:10:08.812Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "The roll out of the model within applications will be carefully phased and developed in partnership with the Singapore Government.",
+        "sourceUrl": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-10-14T02:00:14.000Z",
+        "checkedAt": "2026-10-21T15:10:08.812Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "As the model runs entirely on-device, neither the Singapore Government nor Google, will be able to access users’ conversations through its deployment.",
+        "sourceUrl": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-10-14T02:00:14.000Z",
+        "checkedAt": "2026-10-21T15:10:08.812Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Working with Google DeepMind, we're bringing advanced AI protection directly onto citizens' devices.",
+        "sourceUrl": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-10-14T02:00:14.000Z",
+        "checkedAt": "2026-10-21T15:10:08.812Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Stage 2: In-context analysis with our fine-tuned Gemma model, where we analyze a larger snapshot of the conversation to confirm a threat or discard a false alarm.",
+        "sourceUrl": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-10-14T02:00:14.000Z",
+        "checkedAt": "2026-10-21T15:10:08.812Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Presented at Singapore International Cyber Week (SICW 2026), this collaboration provides a model for messaging platforms balancing user protection with end-to-end encryption.",
+        "sourceUrl": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-10-14T02:00:14.000Z",
+        "checkedAt": "2026-10-21T15:10:08.812Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 2,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "REGULATION"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 6,
+    "total": 6
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 REGULATION (우선순위 6)",
+    "근거 확인 통과 (확인 사실 11개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "status": "skipped",
+    "error": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성",
+    "promptVersion": "draft-v1",
+    "at": "2026-10-21T15:10:25.203Z",
+    "evidenceHash": "4119831b3ad5"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}

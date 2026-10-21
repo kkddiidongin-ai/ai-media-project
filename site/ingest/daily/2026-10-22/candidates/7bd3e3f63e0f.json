@@ -1,0 +1,236 @@
+{
+  "id": "7bd3e3f63e0f",
+  "date": "2026-10-22",
+  "proposedSlug": "introducing-reflection-beam-open-weight-model-agentic",
+  "title": null,
+  "sourceTitle": "Introducing Reflection Beam: an open-weight model for agentic coding on AWS",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 10,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": true,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-reflection-beam-an-open-weight-model-for-agentic-coding-on-aws/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-10-16T15:23:10.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "7bd3e3f63e0f",
+    "url": "https://aws.amazon.com/blogs/machine-learning/introducing-reflection-beam-an-open-weight-model-for-agentic-coding-on-aws/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-reflection-beam-an-open-weight-model-for-agentic-coding-on-aws",
+    "title": "Introducing Reflection Beam: an open-weight model for agentic coding on AWS",
+    "excerpt": "Reflection AI's Beam is an open-weight model for agentic coding and long-horizon tasks. This post shows how to deploy Beam on AWS: start with an Amazon SageMaker JumpStart real-time endpoint, or use Amazon SageMaker HyperPod Inference with JumpStart, SGLang, or vLLM for Kubernetes-native control ove",
+    "publishedAt": "2026-10-16T15:23:10.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-10-19T09:30:12.892Z",
+    "fromQueue": "draft"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 12463,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Reflection AI's Beam is an open-weight model for agentic coding and long-horizon tasks. This post shows how to deploy Beam on AWS: start with an Amazon SageMaker JumpStart real-time endpoint, or use Amazon SageMaker HyperPod Inference with JumpStart, SGLang, or vLLM for Kubernetes-native control ove",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-reflection-beam-an-open-weight-model-for-agentic-coding-on-aws/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-16T15:23:10.000Z",
+        "checkedAt": "2026-10-21T15:10:05.675Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Introducing Reflection Beam: an open-weight model for agentic coding on AWS | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-reflection-beam-an-open-weight-model-for-agentic-coding-on-aws/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-16T15:23:10.000Z",
+        "checkedAt": "2026-10-21T15:10:05.675Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Introducing Reflection Beam: an open-weight model for agentic coding on AWS",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-reflection-beam-an-open-weight-model-for-agentic-coding-on-aws/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-16T15:23:10.000Z",
+        "checkedAt": "2026-10-21T15:10:05.675Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Reflection AI introduced Beam, an open-weight model for agentic coding and long-horizon tasks such as maintaining code, using tools, interpreting results, and completing multi-step workflows.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-reflection-beam-an-open-weight-model-for-agentic-coding-on-aws/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-16T15:23:10.000Z",
+        "checkedAt": "2026-10-21T15:10:05.675Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "In this post, we explain Reflection’s vision and show how you can deploy Beam on AWS.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-reflection-beam-an-open-weight-model-for-agentic-coding-on-aws/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-16T15:23:10.000Z",
+        "checkedAt": "2026-10-21T15:10:05.675Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Reflection releases Beam’s weights through Hugging Face under the Apache 2.0 license.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-reflection-beam-an-open-weight-model-for-agentic-coding-on-aws/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-16T15:23:10.000Z",
+        "checkedAt": "2026-10-21T15:10:05.675Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Beam 1.0 is available in BF16, FP8, and NVFP4 checkpoint variants.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-reflection-beam-an-open-weight-model-for-agentic-coding-on-aws/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-16T15:23:10.000Z",
+        "checkedAt": "2026-10-21T15:10:05.675Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "You can deploy the model with the AWS managed JumpStart container configuration or inspect and customize the model with SGLang or vLLM in your AWS environment.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-reflection-beam-an-open-weight-model-for-agentic-coding-on-aws/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-16T15:23:10.000Z",
+        "checkedAt": "2026-10-21T15:10:05.675Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Access to Beam through SageMaker JumpStart or one of the Beam 1.0 checkpoint repositories on Hugging Face.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-reflection-beam-an-open-weight-model-for-agentic-coding-on-aws/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-16T15:23:10.000Z",
+        "checkedAt": "2026-10-21T15:10:05.675Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Acceptance of the model terms, the AWS Command Line Interface (AWS CLI), and Python 3.11 or later.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-reflection-beam-an-open-weight-model-for-agentic-coding-on-aws/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-16T15:23:10.000Z",
+        "checkedAt": "2026-10-21T15:10:05.675Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Reflection Beam gives developers an open-weight model designed for agentic coding and multi-step tasks.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-reflection-beam-an-open-weight-model-for-agentic-coding-on-aws/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-16T15:23:10.000Z",
+        "checkedAt": "2026-10-21T15:10:05.675Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "To learn more about Reflection AI and its vision for open intelligence, visit Reflection AI and read Introducing Beam .",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-reflection-beam-an-open-weight-model-for-agentic-coding-on-aws/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-16T15:23:10.000Z",
+        "checkedAt": "2026-10-21T15:10:05.675Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Reflection Beam checkpoint variants: BF16 , FP8 , and NVFP4",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-reflection-beam-an-open-weight-model-for-agentic-coding-on-aws/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-16T15:23:10.000Z",
+        "checkedAt": "2026-10-21T15:10:05.675Z"
+      }
+    ],
+    "pageDate": "2026-10-16T15:23:10.000Z"
+  },
+  "score": {
+    "importance": 3,
+    "practicalImpact": 2,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "MODEL",
+      "PRODUCT_LAUNCH",
+      "API_PLATFORM",
+      "MODEL_MENTION"
+    ],
+    "strongSignal": true,
+    "contentType": "HOW_TO",
+    "typePenalty": -3,
+    "priority": 7,
+    "total": 7
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 MODEL·PRODUCT_LAUNCH·API_PLATFORM·MODEL_MENTION (우선순위 7)",
+    "근거 확인 통과 (확인 사실 10개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "status": "skipped",
+    "error": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성",
+    "promptVersion": "draft-v1",
+    "at": "2026-10-21T15:10:25.203Z",
+    "evidenceHash": "e214c495770d"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": true,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}
