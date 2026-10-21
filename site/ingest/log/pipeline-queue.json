@@ -20,9 +20,9 @@
       },
       "addedAt": "2026-10-17",
       "since": "2026-10-14",
-      "attempts": 2,
-      "date": "2026-10-21",
-      "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
+      "attempts": 3,
+      "date": "2026-10-22",
+      "reason": "HTTP 503"
     },
     "116eea760bcf": {
       "stage": "draft",
@@ -43,9 +43,9 @@
       },
       "addedAt": "2026-10-17",
       "since": "2026-10-14",
-      "attempts": 0,
-      "date": "2026-10-21",
-      "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
+      "attempts": 1,
+      "date": "2026-10-22",
+      "reason": "HTTP 503"
     },
     "0fff098609ae": {
       "stage": "draft",
@@ -67,7 +67,7 @@
       "addedAt": "2026-10-17",
       "since": "2026-10-14",
       "attempts": 0,
-      "date": "2026-10-21",
+      "date": "2026-10-22",
       "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
     },
     "3a11e60ee8cf": {
@@ -90,7 +90,7 @@
       "addedAt": "2026-10-17",
       "since": "2026-10-14",
       "attempts": 0,
-      "date": "2026-10-21",
+      "date": "2026-10-22",
       "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
     },
     "7bd3e3f63e0f": {
@@ -113,7 +113,7 @@
       "addedAt": "2026-10-17",
       "since": "2026-10-14",
       "attempts": 0,
-      "date": "2026-10-21",
+      "date": "2026-10-22",
       "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
     },
     "39ed69c21fb1": {
@@ -136,7 +136,7 @@
       "addedAt": "2026-10-17",
       "since": "2026-10-14",
       "attempts": 0,
-      "date": "2026-10-21",
+      "date": "2026-10-22",
       "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
     },
     "5cb1618c1db5": {
@@ -159,7 +159,7 @@
       "addedAt": "2026-10-17",
       "since": "2026-10-14",
       "attempts": 0,
-      "date": "2026-10-21",
+      "date": "2026-10-22",
       "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
     },
     "e612dc941250": {
@@ -182,7 +182,7 @@
       "addedAt": "2026-10-17",
       "since": "2026-10-14",
       "attempts": 0,
-      "date": "2026-10-21",
+      "date": "2026-10-22",
       "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
     },
     "e242a37f6e45": {
@@ -200,12 +200,12 @@
         "tier": 1,
         "fetchMode": "rss",
         "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
-        "fetchedAt": "2026-10-21T00:34:17.891Z"
+        "fetchedAt": "2026-10-21T15:08:24.835Z"
       },
       "addedAt": "2026-10-20",
       "since": "2026-10-17",
       "attempts": 0,
-      "date": "2026-10-21",
+      "date": "2026-10-22",
       "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
     },
     "24f0298eed38": {
@@ -223,36 +223,13 @@
         "tier": 1,
         "fetchMode": "rss-paged",
         "discoveredVia": "https://blogs.nvidia.com/feed/",
-        "fetchedAt": "2026-10-21T00:34:17.891Z"
+        "fetchedAt": "2026-10-21T15:08:24.835Z"
       },
       "addedAt": "2026-10-20",
       "since": "2026-10-17",
       "attempts": 0,
-      "date": "2026-10-21",
+      "date": "2026-10-22",
       "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
-    },
-    "35a22a987ed8": {
-      "stage": "draft",
-      "item": {
-        "id": "35a22a987ed8",
-        "url": "https://workspaceupdates.googleblog.com/2026/10/teacher-led-gemini-notebook-in-google-Classroom-now-offers-insight-summaries-for-educators-and-updated-sharing-settings-for-admins-including-trusted-domains.html",
-        "canonicalUrl": "https://workspaceupdates.googleblog.com/2026/10/teacher-led-gemini-notebook-in-google-Classroom-now-offers-insight-summaries-for-educators-and-updated-sharing-settings-for-admins-including-trusted-domains.html",
-        "title": "Teacher-led Gemini Notebook in Google Classroom now offers insight summaries for educators and updated sharing settings for admins, including trusted domains",
-        "excerpt": "Following the launch of teacher-led Gemini Notebook in Google Classroom , we are introducing insight summaries for educators. This update provides teachers with greater visibility into how students interact with assigned notebooks, helping gauge instructional value and inform lesson planning. Teache",
-        "publishedAt": "2026-10-19T20:23:52.002Z",
-        "sourceId": "google-workspace-updates",
-        "sourceName": "Google Workspace Updates",
-        "sourceType": "official",
-        "tier": 1,
-        "fetchMode": "rss",
-        "discoveredVia": "https://workspaceupdates.googleblog.com/feeds/posts/default?max-results=500&published-min=2026-01-01T00:00:00Z",
-        "fetchedAt": "2026-10-21T00:34:17.891Z"
-      },
-      "addedAt": "2026-10-20",
-      "since": "2026-10-17",
-      "attempts": 3,
-      "date": "2026-10-21",
-      "reason": "HTTP 503"
     },
     "abedaf2dbb11": {
       "stage": "draft",
@@ -269,12 +246,12 @@
         "tier": 1,
         "fetchMode": "rss-paged",
         "discoveredVia": "https://blogs.microsoft.com/feed/",
-        "fetchedAt": "2026-10-21T00:34:17.891Z"
+        "fetchedAt": "2026-10-21T15:08:24.835Z"
       },
       "addedAt": "2026-10-20",
       "since": "2026-10-17",
-      "attempts": 2,
-      "date": "2026-10-21",
+      "attempts": 3,
+      "date": "2026-10-22",
       "reason": "HTTP 503"
     },
     "4bdfa4285ba8": {
@@ -297,11 +274,356 @@
       "addedAt": "2026-10-21",
       "since": "2026-10-18",
       "attempts": 0,
-      "date": "2026-10-21",
+      "date": "2026-10-22",
       "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
+    },
+    "147a52922e17": {
+      "stage": "draft",
+      "item": {
+        "id": "147a52922e17",
+        "url": "https://blogs.nvidia.com/blog/cudss-generally-available-engineering-scientific-simulation/",
+        "canonicalUrl": "https://blogs.nvidia.com/blog/cudss-generally-available-engineering-scientific-simulation",
+        "title": "NVIDIA cuDSS Now Generally Available to Accelerate Engineering and Scientific Simulations",
+        "excerpt": "NVIDIA cuDSS, launched today in general availability, is an NVIDIA CUDA-X library that shifts a critical part of engineering and scientific simulations onto GPUs. Complex engineering feats — from advanced chips to aircraft to industrial systems —– depend on simulation to predict how designs will per",
+        "publishedAt": "2026-10-21T10:30:25.000Z",
+        "sourceId": "nvidia",
+        "sourceName": "NVIDIA Blog",
+        "sourceType": "official",
+        "tier": 1,
+        "fetchMode": "rss-paged",
+        "discoveredVia": "https://blogs.nvidia.com/feed/",
+        "fetchedAt": "2026-10-21T15:08:24.835Z"
+      },
+      "addedAt": "2026-10-22",
+      "since": "2026-10-19",
+      "attempts": 1,
+      "date": "2026-10-22",
+      "reason": "HTTP 503"
+    },
+    "753fc98bb47c": {
+      "stage": "draft",
+      "item": {
+        "id": "753fc98bb47c",
+        "url": "https://aws.amazon.com/blogs/machine-learning/access-openai-gpt-models-on-amazon-bedrock-from-canada-with-cross-region-inference/",
+        "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/access-openai-gpt-models-on-amazon-bedrock-from-canada-with-cross-region-inference",
+        "title": "Access OpenAI GPT models on Amazon Bedrock from Canada with cross-Region inference",
+        "excerpt": "Canadian organizations can now access OpenAI GPT-5.6, GPT-6, and GPT-6.1 models on Amazon Bedrock from the Canada (Central) and Canada West (Calgary) Regions using cross-Region inference. This post covers the models and inference profiles, how to set up permissions, and how to invoke them with the R",
+        "publishedAt": "2026-10-20T16:42:53.000Z",
+        "sourceId": "aws-ml",
+        "sourceName": "AWS Machine Learning Blog",
+        "sourceType": "official",
+        "tier": 1,
+        "fetchMode": "rss",
+        "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+        "fetchedAt": "2026-10-21T15:08:24.835Z"
+      },
+      "addedAt": "2026-10-22",
+      "since": "2026-10-19",
+      "attempts": 1,
+      "date": "2026-10-22",
+      "reason": "HTTP 503"
+    },
+    "db73069fa994": {
+      "stage": "draft",
+      "item": {
+        "id": "db73069fa994",
+        "url": "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure/",
+        "canonicalUrl": "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure",
+        "title": "Google Cloud and NVIDIA Announce General Availability of NVIDIA Vera Rubin Infrastructure",
+        "excerpt": "General availability of the instances is coming next month, with planned expansion of availability to Europe — bringing an integrated platform for training, inference and large-scale reinforcement learning to cloud customers. A5X instances bring together NVIDIA Vera Rubin NVL72, NVIDIA ConnectX-9 Su",
+        "publishedAt": "2026-10-21T10:45:17.000Z",
+        "sourceId": "nvidia",
+        "sourceName": "NVIDIA Blog",
+        "sourceType": "official",
+        "tier": 1,
+        "fetchMode": "rss-paged",
+        "discoveredVia": "https://blogs.nvidia.com/feed/",
+        "fetchedAt": "2026-10-21T15:08:24.835Z"
+      },
+      "addedAt": "2026-10-22",
+      "since": "2026-10-19",
+      "attempts": 1,
+      "date": "2026-10-22",
+      "reason": "HTTP 503"
+    },
+    "cf0e97bf97c4": {
+      "stage": "draft",
+      "item": {
+        "id": "cf0e97bf97c4",
+        "url": "https://nvidianews.nvidia.com/news/openshell-reference-architecture",
+        "canonicalUrl": "https://nvidianews.nvidia.com/news/openshell-reference-architecture",
+        "title": "NVIDIA Launches OpenShell Reference Architecture for Safe AI Agents",
+        "excerpt": "NVIDIA today announced the NVIDIA OpenShell Reference Architecture, which enables building, containing, observing and enforcing safe agents on enterprise infrastructure and edge systems.",
+        "publishedAt": "2026-10-21T09:48:00.000Z",
+        "sourceId": "nvidia-newsroom",
+        "sourceName": "NVIDIA Newsroom (Press Releases)",
+        "sourceType": "official",
+        "tier": 1,
+        "fetchMode": "rss",
+        "discoveredVia": "https://nvidianews.nvidia.com/releases.xml",
+        "fetchedAt": "2026-10-21T15:08:24.835Z"
+      },
+      "addedAt": "2026-10-22",
+      "since": "2026-10-19",
+      "attempts": 0,
+      "date": "2026-10-22",
+      "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
+    },
+    "f613f6912e3a": {
+      "stage": "draft",
+      "item": {
+        "id": "f613f6912e3a",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-introduces-dsx-pod-ai-factories-to-accelerate-europes-infrastructure-deployment",
+        "canonicalUrl": "https://nvidianews.nvidia.com/news/nvidia-introduces-dsx-pod-ai-factories-to-accelerate-europes-infrastructure-deployment",
+        "title": "NVIDIA Introduces DSX POD AI Factories to Accelerate Europe’s Infrastructure Deployment",
+        "excerpt": "NVIDIA today introduced DSX POD, a reference design for complete NVIDIA Vera Rubin AI factories built by partners inside modular containers, integrated and validated before delivery.",
+        "publishedAt": "2026-10-21T09:34:00.000Z",
+        "sourceId": "nvidia-newsroom",
+        "sourceName": "NVIDIA Newsroom (Press Releases)",
+        "sourceType": "official",
+        "tier": 1,
+        "fetchMode": "rss",
+        "discoveredVia": "https://nvidianews.nvidia.com/releases.xml",
+        "fetchedAt": "2026-10-21T15:08:24.835Z"
+      },
+      "addedAt": "2026-10-22",
+      "since": "2026-10-19",
+      "attempts": 0,
+      "date": "2026-10-22",
+      "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
+    },
+    "3df8ce2aed7d": {
+      "stage": "draft",
+      "item": {
+        "id": "3df8ce2aed7d",
+        "url": "https://blogs.nvidia.com/blog/cloud-partners-europe-sovereign-safety-open-agents/",
+        "canonicalUrl": "https://blogs.nvidia.com/blog/cloud-partners-europe-sovereign-safety-open-agents",
+        "title": "NVIDIA Cloud Partners Scale Across Europe — Sovereign, Open and Built for Safe AI Agents",
+        "excerpt": "Demand from AI-natives is pulling the European AI cloud ecosystem forward faster than ever. Developers need compute closer to their data, open models they can customize and serve at scale, and full-stack infrastructure that is secure by design. NVIDIA Cloud Partners across Europe, the Nordics, Afric",
+        "publishedAt": "2026-10-21T10:30:41.000Z",
+        "sourceId": "nvidia",
+        "sourceName": "NVIDIA Blog",
+        "sourceType": "official",
+        "tier": 1,
+        "fetchMode": "rss-paged",
+        "discoveredVia": "https://blogs.nvidia.com/feed/",
+        "fetchedAt": "2026-10-21T15:08:24.835Z"
+      },
+      "addedAt": "2026-10-22",
+      "since": "2026-10-19",
+      "attempts": 0,
+      "date": "2026-10-22",
+      "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
+    },
+    "82603c5be230": {
+      "stage": "draft",
+      "item": {
+        "id": "82603c5be230",
+        "url": "https://blogs.nvidia.com/blog/confidential-computing-model-builders-infrastructure/",
+        "canonicalUrl": "https://blogs.nvidia.com/blog/confidential-computing-model-builders-infrastructure",
+        "title": "NVIDIA Confidential Computing Expands, Enabling Frontier Model Builders to Securely Scale Across Global Infrastructure",
+        "excerpt": "NVIDIA builds tools to enable safe agents across the stack. The NVIDIA OpenShell Reference Architecture, announced today, is part of NVIDIA’s growing portfolio of technologies that enables organizations to safely deploy agents at scale. NVIDIA Confidential Computing is the infrastructure layer that ",
+        "publishedAt": "2026-10-21T10:30:02.000Z",
+        "sourceId": "nvidia",
+        "sourceName": "NVIDIA Blog",
+        "sourceType": "official",
+        "tier": 1,
+        "fetchMode": "rss-paged",
+        "discoveredVia": "https://blogs.nvidia.com/feed/",
+        "fetchedAt": "2026-10-21T15:08:24.835Z"
+      },
+      "addedAt": "2026-10-22",
+      "since": "2026-10-19",
+      "attempts": 0,
+      "date": "2026-10-22",
+      "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
+    },
+    "5e2a27f6f1a3": {
+      "stage": "draft",
+      "item": {
+        "id": "5e2a27f6f1a3",
+        "url": "https://nvidianews.nvidia.com/news/healthcare-and-life-sciences-leaders-build-on-nvidia-to-advance-drug-discovery-and-expand-patient-care",
+        "canonicalUrl": "https://nvidianews.nvidia.com/news/healthcare-and-life-sciences-leaders-build-on-nvidia-to-advance-drug-discovery-and-expand-patient-care",
+        "title": "Healthcare and Life Sciences Leaders Build on NVIDIA to Advance Drug Discovery and Expand Patient Care",
+        "excerpt": "NVIDIA today announced collaborations with leading global healthcare and research organizations to advance protein design — including through a newly released open model, RFD4-Proteina — accelerate drug discovery and bring greater precision to cancer care.",
+        "publishedAt": "2026-10-21T10:13:00.000Z",
+        "sourceId": "nvidia-newsroom",
+        "sourceName": "NVIDIA Newsroom (Press Releases)",
+        "sourceType": "official",
+        "tier": 1,
+        "fetchMode": "rss",
+        "discoveredVia": "https://nvidianews.nvidia.com/releases.xml",
+        "fetchedAt": "2026-10-21T15:08:24.835Z"
+      },
+      "addedAt": "2026-10-22",
+      "since": "2026-10-19",
+      "attempts": 0,
+      "date": "2026-10-22",
+      "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
+    },
+    "9dbc0d55ff91": {
+      "stage": "evidence",
+      "item": {
+        "id": "9dbc0d55ff91",
+        "url": "https://huggingface.co/blog/hf-torchneuron",
+        "canonicalUrl": "https://huggingface.co/blog/hf-torchneuron",
+        "title": "TorchNeuron: running HF models on AWS Trainium is easier than ever",
+        "excerpt": "",
+        "publishedAt": "2026-10-19T00:00:00.000Z",
+        "sourceId": "huggingface",
+        "sourceName": "Hugging Face Blog",
+        "sourceType": "official",
+        "tier": 1,
+        "fetchMode": "rss",
+        "discoveredVia": "https://huggingface.co/blog/feed.xml",
+        "fetchedAt": "2026-10-21T15:08:24.835Z"
+      },
+      "addedAt": "2026-10-22",
+      "since": "2026-10-19",
+      "attempts": 1,
+      "date": "2026-10-22",
+      "reason": "batch"
+    },
+    "134c1a21491e": {
+      "stage": "evidence",
+      "item": {
+        "id": "134c1a21491e",
+        "url": "https://aws.amazon.com/blogs/machine-learning/how-deepgram-optimized-voice-ai-at-scale-with-aws-trainium/",
+        "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/how-deepgram-optimized-voice-ai-at-scale-with-aws-trainium",
+        "title": "How Deepgram optimized voice AI at scale with AWS Trainium",
+        "excerpt": "Deepgram worked with the AWS Forward Deployed Engineering team to port its Nova-3 speech-to-text model to AWS Trainium2 for offline batch inference. This post covers porting to the AWS Neuron stack, kernel-level tuning, a data-parallel Rust runtime, and the throughput and cost results on batch trans",
+        "publishedAt": "2026-10-19T16:23:22.000Z",
+        "sourceId": "aws-ml",
+        "sourceName": "AWS Machine Learning Blog",
+        "sourceType": "official",
+        "tier": 1,
+        "fetchMode": "rss",
+        "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+        "fetchedAt": "2026-10-21T15:08:24.835Z"
+      },
+      "addedAt": "2026-10-22",
+      "since": "2026-10-19",
+      "attempts": 1,
+      "date": "2026-10-22",
+      "reason": "batch"
+    },
+    "c5ffbd108a10": {
+      "stage": "evidence",
+      "item": {
+        "id": "c5ffbd108a10",
+        "url": "https://aws.amazon.com/blogs/machine-learning/improve-ttft-for-multi-turn-agentic-workloads-with-bi-directional-kv-transfer-in-vllm/",
+        "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/improve-ttft-for-multi-turn-agentic-workloads-with-bi-directional-kv-transfer-in-vllm",
+        "title": "Improve TTFT for multi-turn agentic workloads with bi-directional KV transfer in vLLM",
+        "excerpt": "Multi-turn agentic workloads reprocess growing conversation context each turn, driving up latency. See how bi-directional KV cache transfer lets prefill and decode nodes reuse previously computed context across turns, cutting time to first token by up to 1.6x for Qwen3-32B and 3.3x for GLM-5-FP8 on ",
+        "publishedAt": "2026-10-19T16:03:23.000Z",
+        "sourceId": "aws-ml",
+        "sourceName": "AWS Machine Learning Blog",
+        "sourceType": "official",
+        "tier": 1,
+        "fetchMode": "rss",
+        "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+        "fetchedAt": "2026-10-21T15:08:24.835Z"
+      },
+      "addedAt": "2026-10-22",
+      "since": "2026-10-19",
+      "attempts": 1,
+      "date": "2026-10-22",
+      "reason": "batch"
+    },
+    "37991df881f8": {
+      "stage": "evidence",
+      "item": {
+        "id": "37991df881f8",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout",
+        "canonicalUrl": "https://nvidianews.nvidia.com/news/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout",
+        "title": "NVIDIA and Supply Chain Partners Expand Capacity to Accelerate AI Infrastructure Buildout",
+        "excerpt": "NVIDIA today announced plans with a group of supply chain partners to expand global manufacturing capacity to meet growing demand for its accelerated computing and full-stack AI factory platform.",
+        "publishedAt": "2026-10-21T10:33:00.000Z",
+        "sourceId": "nvidia-newsroom",
+        "sourceName": "NVIDIA Newsroom (Press Releases)",
+        "sourceType": "official",
+        "tier": 1,
+        "fetchMode": "rss",
+        "discoveredVia": "https://nvidianews.nvidia.com/releases.xml",
+        "fetchedAt": "2026-10-21T15:08:24.835Z"
+      },
+      "addedAt": "2026-10-22",
+      "since": "2026-10-19",
+      "attempts": 1,
+      "date": "2026-10-22",
+      "reason": "batch"
+    },
+    "4c8a7f998de4": {
+      "stage": "evidence",
+      "item": {
+        "id": "4c8a7f998de4",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-nokia-and-leading-telecom-operators-turn-networks-into-distributed-intelligence-platforms",
+        "canonicalUrl": "https://nvidianews.nvidia.com/news/nvidia-nokia-and-leading-telecom-operators-turn-networks-into-distributed-intelligence-platforms",
+        "title": "NVIDIA, Nokia and Leading Telecom Operators Turn Networks Into Distributed Intelligence Platforms",
+        "excerpt": "NVIDIA today announced that leading global telecom operators are turning their networks into distributed intelligence platforms, adding NVIDIA accelerated computing to centralized data centers, metro sites and cell sites so they can serve models and applications closer to the people, businesses and ",
+        "publishedAt": "2026-10-21T10:11:00.000Z",
+        "sourceId": "nvidia-newsroom",
+        "sourceName": "NVIDIA Newsroom (Press Releases)",
+        "sourceType": "official",
+        "tier": 1,
+        "fetchMode": "rss",
+        "discoveredVia": "https://nvidianews.nvidia.com/releases.xml",
+        "fetchedAt": "2026-10-21T15:08:24.835Z"
+      },
+      "addedAt": "2026-10-22",
+      "since": "2026-10-19",
+      "attempts": 1,
+      "date": "2026-10-22",
+      "reason": "batch"
+    },
+    "5aaac97d85d0": {
+      "stage": "evidence",
+      "item": {
+        "id": "5aaac97d85d0",
+        "url": "https://developer.nvidia.com/blog/inside-nvidia-sentry-secure-ai-agents-at-runtime/",
+        "canonicalUrl": "https://developer.nvidia.com/blog/inside-nvidia-sentry-secure-ai-agents-at-runtime",
+        "title": "Inside NVIDIA Sentry: Secure AI Agents at Runtime",
+        "excerpt": "An AI agent can complete its assignment and still cross a security boundary. Recent incidents show that agents can circumvent security controls while using...",
+        "publishedAt": "2026-10-21T09:52:16.000Z",
+        "sourceId": "nvidia-developer",
+        "sourceName": "NVIDIA Technical Blog",
+        "sourceType": "official",
+        "tier": 1,
+        "fetchMode": "rss",
+        "discoveredVia": "https://developer.nvidia.com/blog/feed",
+        "fetchedAt": "2026-10-21T15:08:24.835Z"
+      },
+      "addedAt": "2026-10-22",
+      "since": "2026-10-19",
+      "attempts": 1,
+      "date": "2026-10-22",
+      "reason": "batch"
+    },
+    "c7a69fcb2cd3": {
+      "stage": "evidence",
+      "item": {
+        "id": "c7a69fcb2cd3",
+        "url": "https://tech.kakao.com/posts/840",
+        "canonicalUrl": "https://tech.kakao.com/posts/840",
+        "title": "글로벌 최고 수준의 자체 비전 인코더, Kanana-2-vision-encoder 개발기",
+        "excerpt": "안녕하세요. 카카오 Multimodal Model Training팀에서 카나나를 연구·개발하는 Polar(엄지환)입니다. 카카오가 자체 기술력만으로 밑바닥부터(from scratch) 개발한 독자 비전 인코더, Kanana-2-vision-encoder를 소개합니다. Kanana-2-vision-encoder는 카카오 언어모델 Kanana-2 LLM[1]의 가중치와 구조를 활용해 학습과 추론 모두에서 높은 효율성을 자랑합니다. 또한, 고해상도 이미지 ...",
+        "publishedAt": "2026-10-20T15:00:00.000Z",
+        "sourceId": "kakao-tech",
+        "sourceName": "Kakao Tech",
+        "sourceType": "official",
+        "tier": 2,
+        "fetchMode": "rss",
+        "discoveredVia": "https://tech.kakao.com/feed/",
+        "fetchedAt": "2026-10-21T15:08:24.835Z"
+      },
+      "addedAt": "2026-10-22",
+      "since": "2026-10-19",
+      "attempts": 1,
+      "date": "2026-10-22",
+      "reason": "batch"
     }
   },
   "meta": {},
   "retry": {},
-  "updatedAt": "2026-10-21T00:38:40.203Z"
+  "updatedAt": "2026-10-21T15:10:25.208Z"
 }
