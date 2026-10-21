@@ -1,0 +1,221 @@
+{
+  "id": "134c1a21491e",
+  "date": "2026-10-21",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "How Deepgram optimized voice AI at scale with AWS Trainium",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 10,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-deepgram-optimized-voice-ai-at-scale-with-aws-trainium/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-10-19T16:23:22.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "134c1a21491e",
+    "url": "https://aws.amazon.com/blogs/machine-learning/how-deepgram-optimized-voice-ai-at-scale-with-aws-trainium/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/how-deepgram-optimized-voice-ai-at-scale-with-aws-trainium",
+    "title": "How Deepgram optimized voice AI at scale with AWS Trainium",
+    "excerpt": "Deepgram worked with the AWS Forward Deployed Engineering team to port its Nova-3 speech-to-text model to AWS Trainium2 for offline batch inference. This post covers porting to the AWS Neuron stack, kernel-level tuning, a data-parallel Rust runtime, and the throughput and cost results on batch trans",
+    "publishedAt": "2026-10-19T16:23:22.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-10-21T00:34:17.891Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 8404,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Deepgram worked with the AWS Forward Deployed Engineering team to port its Nova-3 speech-to-text model to AWS Trainium2 for offline batch inference. This post covers porting to the AWS Neuron stack, kernel-level tuning, a data-parallel Rust runtime, and the throughput and cost results on batch trans",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-deepgram-optimized-voice-ai-at-scale-with-aws-trainium/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T16:23:22.000Z",
+        "checkedAt": "2026-10-21T00:36:10.718Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "How Deepgram optimized voice AI at scale with AWS Trainium | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-deepgram-optimized-voice-ai-at-scale-with-aws-trainium/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T16:23:22.000Z",
+        "checkedAt": "2026-10-21T00:36:10.718Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "How Deepgram optimized voice AI at scale with AWS Trainium",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-deepgram-optimized-voice-ai-at-scale-with-aws-trainium/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T16:23:22.000Z",
+        "checkedAt": "2026-10-21T00:36:10.718Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "As voice becomes a first-class modality for AI, Deepgram’s models span speech-to-text, text-to-speech, and voice agents.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-deepgram-optimized-voice-ai-at-scale-with-aws-trainium/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T16:23:22.000Z",
+        "checkedAt": "2026-10-21T00:36:10.718Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "That made inference efficiency a natural target and Deepgram turned to AWS AI chips to improve it.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-deepgram-optimized-voice-ai-at-scale-with-aws-trainium/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T16:23:22.000Z",
+        "checkedAt": "2026-10-21T00:36:10.718Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "They worked with AWS to bring its Nova-3 speech-to-text model to AWS Trainium2 for offline batch workloads such as contact-center analytics and medical transcription.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-deepgram-optimized-voice-ai-at-scale-with-aws-trainium/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T16:23:22.000Z",
+        "checkedAt": "2026-10-21T00:36:10.718Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "The engagement began with Deepgram delivering Nova-3 as standard PyTorch code.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-deepgram-optimized-voice-ai-at-scale-with-aws-trainium/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T16:23:22.000Z",
+        "checkedAt": "2026-10-21T00:36:10.718Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Over several months, Deepgram and the AWS Forward Deployed Engineering (FDE) team ported Nova-3 to AWS Trainium2 in PyTorch reconstruction and tuned it for the new hardware.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-deepgram-optimized-voice-ai-at-scale-with-aws-trainium/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T16:23:22.000Z",
+        "checkedAt": "2026-10-21T00:36:10.718Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "On Deepgram’s offline, throughput-oriented batch workloads, that setup processed 11–70 percent more audio per dollar than the compute options Deepgram had been running.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-deepgram-optimized-voice-ai-at-scale-with-aws-trainium/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T16:23:22.000Z",
+        "checkedAt": "2026-10-21T00:36:10.718Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "In this post, we walk through the full inference optimization effort on Trainium: porting Nova-3 to the AWS Neuron software stack, the kernel-level tuning that followed, the data-parallel Rust runtime that lets Deepgram’s own model server call Trainium, and the throughput and …",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-deepgram-optimized-voice-ai-at-scale-with-aws-trainium/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T16:23:22.000Z",
+        "checkedAt": "2026-10-21T00:36:10.718Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Figure 1: Deepgram Nova-3 on AWS Trainium2, compiled ahead of time and served from Rust",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-deepgram-optimized-voice-ai-at-scale-with-aws-trainium/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T16:23:22.000Z",
+        "checkedAt": "2026-10-21T00:36:10.718Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "On Deepgram’s offline, throughput-oriented batch workloads, the single-device Trainium2 setup (trn2.3xlarge) processed 11–70 percent more audio per dollar than the compute options Deepgram had been running.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-deepgram-optimized-voice-ai-at-scale-with-aws-trainium/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T16:23:22.000Z",
+        "checkedAt": "2026-10-21T00:36:10.718Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "In this post, we demonstrated how Deepgram and the AWS FDE ported the Nova-3 speech-to-text PyTorch model to Trainium hardware using TorchNeuron, which provides native PyTorch framework integration for AWS Trainium.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-deepgram-optimized-voice-ai-at-scale-with-aws-trainium/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T16:23:22.000Z",
+        "checkedAt": "2026-10-21T00:36:10.718Z"
+      }
+    ],
+    "pageDate": "2026-10-19T16:23:22.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "INFRA"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 INFRA (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

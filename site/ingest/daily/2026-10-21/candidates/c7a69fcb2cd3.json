@@ -1,0 +1,133 @@
+{
+  "id": "c7a69fcb2cd3",
+  "date": "2026-10-21",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "글로벌 최고 수준의 자체 비전 인코더, Kanana-2-vision-encoder 개발기",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_SHORT",
+    "distinctFacts": 2,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": false,
+      "evidenceQuality": false,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "distinctFacts",
+      "evidenceQuality",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Kakao Tech",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://tech.kakao.com/posts/840",
+      "name": "Kakao Tech",
+      "type": "official",
+      "publishedAt": "2026-10-20T15:00:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "c7a69fcb2cd3",
+    "url": "https://tech.kakao.com/posts/840",
+    "canonicalUrl": "https://tech.kakao.com/posts/840",
+    "title": "글로벌 최고 수준의 자체 비전 인코더, Kanana-2-vision-encoder 개발기",
+    "excerpt": "안녕하세요. 카카오 Multimodal Model Training팀에서 카나나를 연구·개발하는 Polar(엄지환)입니다. 카카오가 자체 기술력만으로 밑바닥부터(from scratch) 개발한 독자 비전 인코더, Kanana-2-vision-encoder를 소개합니다. Kanana-2-vision-encoder는 카카오 언어모델 Kanana-2 LLM[1]의 가중치와 구조를 활용해 학습과 추론 모두에서 높은 효율성을 자랑합니다. 또한, 고해상도 이미지 ...",
+    "publishedAt": "2026-10-20T15:00:00.000Z",
+    "sourceId": "kakao-tech",
+    "sourceName": "Kakao Tech",
+    "sourceType": "official",
+    "tier": 2,
+    "fetchMode": "rss",
+    "discoveredVia": "https://tech.kakao.com/feed/",
+    "fetchedAt": "2026-10-21T00:34:17.891Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 123,
+    "grade": "FAIL",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "안녕하세요. 카카오 Multimodal Model Training팀에서 카나나를 연구·개발하는 Polar(엄지환)입니다. 카카오가 자체 기술력만으로 밑바닥부터(from scratch) 개발한 독자 비전 인코더, Kanana-2-vision-encoder를 소개합니다. Kanana-2-vision-encoder는 카카오 언어모델 Kanana-2 LLM[1]의 가중치와 구조를 활용해 학습과 추론 모두에서 높은 효율성을 자랑합니다. 또한, 고해상도 이미지 ...",
+        "sourceUrl": "https://tech.kakao.com/posts/840",
+        "source": "Kakao Tech",
+        "publishedAt": "2026-10-20T15:00:00.000Z",
+        "checkedAt": "2026-10-21T00:36:12.002Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "글로벌 최고 수준의 자체 비전 인코더, Kanana-2-vision-encoder 개발기 - tech.kakao.com",
+        "sourceUrl": "https://tech.kakao.com/posts/840",
+        "source": "Kakao Tech",
+        "publishedAt": "2026-10-20T15:00:00.000Z",
+        "checkedAt": "2026-10-21T00:36:12.002Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "글로벌 최고 수준의 자체 비전 인코더, Kanana-2-vision-encoder 개발기",
+        "sourceUrl": "https://tech.kakao.com/posts/840",
+        "source": "Kakao Tech",
+        "publishedAt": "2026-10-20T15:00:00.000Z",
+        "checkedAt": "2026-10-21T00:36:12.002Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 2,
+    "verificationConfidence": 3,
+    "signals": [
+      "MODEL_MENTION"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 MODEL_MENTION (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

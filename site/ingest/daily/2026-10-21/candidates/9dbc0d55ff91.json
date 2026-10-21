@@ -1,0 +1,212 @@
+{
+  "id": "9dbc0d55ff91",
+  "date": "2026-10-21",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "TorchNeuron: running HF models on AWS Trainium is easier than ever",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 12,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Hugging Face",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://huggingface.co/blog/hf-torchneuron",
+      "name": "Hugging Face Blog",
+      "type": "official",
+      "publishedAt": "2026-10-19T00:00:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "9dbc0d55ff91",
+    "url": "https://huggingface.co/blog/hf-torchneuron",
+    "canonicalUrl": "https://huggingface.co/blog/hf-torchneuron",
+    "title": "TorchNeuron: running HF models on AWS Trainium is easier than ever",
+    "excerpt": "",
+    "publishedAt": "2026-10-19T00:00:00.000Z",
+    "sourceId": "huggingface",
+    "sourceName": "Hugging Face Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://huggingface.co/blog/feed.xml",
+    "fetchedAt": "2026-10-21T00:34:17.891Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 8808,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "TorchNeuron: running HF models on AWS Trainium is easier than ever",
+        "sourceUrl": "https://huggingface.co/blog/hf-torchneuron",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-19T00:00:00.000Z",
+        "checkedAt": "2026-10-21T00:36:09.499Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "TorchNeuron provides a new native backend for PyTorch on AWS Trainium.",
+        "sourceUrl": "https://huggingface.co/blog/hf-torchneuron",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-19T00:00:00.000Z",
+        "checkedAt": "2026-10-21T00:36:09.499Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Transformers, Diffusers and Kernels natively support it, making it easier than ever to run models on Trainium and to share them on the HF hub.",
+        "sourceUrl": "https://huggingface.co/blog/hf-torchneuron",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-19T00:00:00.000Z",
+        "checkedAt": "2026-10-21T00:36:09.499Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "TorchNeuron is a PyTorch plugin that brings a new backend for Trainium enabling support for eager mode, torch.compile and native distributed APIs like FSDP and TP.",
+        "sourceUrl": "https://huggingface.co/blog/hf-torchneuron",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-19T00:00:00.000Z",
+        "checkedAt": "2026-10-21T00:36:09.499Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "20, 2026, TorchNeuron will be available as a public beta.",
+        "sourceUrl": "https://huggingface.co/blog/hf-torchneuron",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-19T00:00:00.000Z",
+        "checkedAt": "2026-10-21T00:36:09.499Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "To date, the Hugging Face experience on AWS Trainium and Inferentia — AI chips designed respectively for cost-effective training and inference at scale — has been delivered through optimum-neuron .",
+        "sourceUrl": "https://huggingface.co/blog/hf-torchneuron",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-19T00:00:00.000Z",
+        "checkedAt": "2026-10-21T00:36:09.499Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "With TorchNeuron, 89% of the top 100 most-used text-generation model architectures are supported out of the box, compared to 46% with Optimum Neuron v0.4.5.",
+        "sourceUrl": "https://huggingface.co/blog/hf-torchneuron",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-19T00:00:00.000Z",
+        "checkedAt": "2026-10-21T00:36:09.499Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "The built-in asynchronous weight loading in Transformers is not supported on Neuron, so for now we disable it with HF_DEACTIVATE_ASYNC_LOAD=1 .",
+        "sourceUrl": "https://huggingface.co/blog/hf-torchneuron",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-19T00:00:00.000Z",
+        "checkedAt": "2026-10-21T00:36:09.499Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "TP_SIZE=4 FSDP_SIZE=8 HF_DEACTIVATE_ASYNC_LOAD=1 uv run torchrun --nproc_per_node=32 sft_neuron_example.py \\",
+        "sourceUrl": "https://huggingface.co/blog/hf-torchneuron",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-19T00:00:00.000Z",
+        "checkedAt": "2026-10-21T00:36:09.499Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "You can use for example this kernel to speed up your vision transformers with up to a x2.4 speedup on Trainium!",
+        "sourceUrl": "https://huggingface.co/blog/hf-torchneuron",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-19T00:00:00.000Z",
+        "checkedAt": "2026-10-21T00:36:09.499Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Special thanks to the AWS team for their work on TorchNeuron and for their reactivity to our feedback to make the HF integration as good as possible.",
+        "sourceUrl": "https://huggingface.co/blog/hf-torchneuron",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-19T00:00:00.000Z",
+        "checkedAt": "2026-10-21T00:36:09.499Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "hi, which models are supported with this? is mobernbert and t5gemma2 on the list?",
+        "sourceUrl": "https://huggingface.co/blog/hf-torchneuron",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-19T00:00:00.000Z",
+        "checkedAt": "2026-10-21T00:36:09.499Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 2,
+    "signals": [
+      "INFRA"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 INFRA (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

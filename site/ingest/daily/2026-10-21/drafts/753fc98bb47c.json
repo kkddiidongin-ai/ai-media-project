@@ -1,0 +1,250 @@
+{
+  "candidateId": "753fc98bb47c",
+  "date": "2026-10-21",
+  "status": "draft_for_editor_review",
+  "title": "아마존 베드록, 캐나다 리전서 교차 리전 추론 통한 오픈AI GPT 지원",
+  "source": {
+    "name": "AWS Machine Learning Blog",
+    "url": "https://aws.amazon.com/blogs/machine-learning/access-openai-gpt-models-on-amazon-bedrock-from-canada-with-cross-region-inference/",
+    "title": "Access OpenAI GPT models on Amazon Bedrock from Canada with cross-Region inference",
+    "publishedAt": "2026-10-20T16:42:53.000Z",
+    "type": "official"
+  },
+  "evidenceSummary": {
+    "status": "OK",
+    "grade": "PASS",
+    "sentences": 13,
+    "bodySentences": 12,
+    "distinctFacts": 11,
+    "checkedAt": "2026-10-21T00:36:00.083Z",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Canadian organizations can now access OpenAI GPT-5.6, GPT-6, and GPT-6.1 models on Amazon Bedrock from the Canada (Central) and Canada West (Calgary) Regions using cross-Region inference. This post covers the models and inference profiles, how to set up permissions, and how to invoke them with the R"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Access OpenAI GPT models on Amazon Bedrock from Canada with cross-Region inference | Artificial Intelligence"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Access OpenAI GPT models on Amazon Bedrock from Canada with cross-Region inference"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Canadian organizations building generative AI applications on Amazon Bedrock often need the latest foundation models (FMs), such as OpenAI GPT-6.1, OpenAI GPT-6, and GPT-5.6, accessible from the Canadian AWS Regions."
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "With Amazon Bedrock cross-Region inference (CRIS), you can now access these models from Canada."
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "OpenAI GPT-5.6 models (Sol, Terra, and Luna), GPT-6 (Astra, Sol, and Luna), and GPT-6.1 Sol are available from the Canada (Central) and Canada West (Calgary) Regions."
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "In this post, we walk through the GPT-5.6, GPT-6, and GPT-6.1 models available from Canada and the cross-Region inference profiles that serve them."
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "With Amazon Bedrock, you can access three families of OpenAI models in Canada through cross-Region inference."
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "These models are available through the OpenAI Responses API, the OpenAI Chat Completions API, and the Amazon Bedrock Converse API on the bedrock-runtime endpoint."
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Open the console, choose Canada (Central) or Canada West (Calgary) as your Region, choose Cross-Region inference under Inference , and review the available profiles."
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Figure 1: Active OpenAI cross-Region inference profiles on the Amazon Bedrock console (Canada (Central))"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "GPT-5.6, GPT-6, and GPT-6.1 support three access paths on the bedrock-runtime endpoint: the OpenAI Responses API, the OpenAI Chat Completions API, and the Amazon Bedrock Converse API."
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "These models are available from the Canada (Central) and Canada West (Calgary) Regions using cross-Region inference on Amazon Bedrock."
+      }
+    ]
+  },
+  "articleType": "STANDARD",
+  "suggestedDepth": "STANDARD",
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음",
+    "matchSlug": null
+  },
+  "draft": {
+    "title": "아마존 베드록, 캐나다 리전서 교차 리전 추론 통한 오픈AI GPT 지원",
+    "summary": "캐나다 내 AWS 이용자는 교차 리전 추론을 통해 아마존 베드록에서 오픈AI의 GPT-5.6, GPT-6, GPT-6.1 모델을 호출할 수 있습니다. 콘솔에서 프로필을 설정하고 OpenAI 호환 API나 베드록 Converse API로 연동 가능합니다.",
+    "category": "PRODUCT_UPDATE",
+    "topics": [
+      "amazon",
+      "openai"
+    ],
+    "companies": [
+      "Amazon",
+      "OpenAI"
+    ],
+    "products": [
+      "Amazon Bedrock",
+      "OpenAI GPT-5.6",
+      "OpenAI GPT-6",
+      "OpenAI GPT-6.1",
+      "GPT-5.6 Sol",
+      "GPT-5.6 Terra",
+      "GPT-5.6 Luna",
+      "GPT-6 Astra",
+      "GPT-6 Sol",
+      "GPT-6 Luna",
+      "GPT-6.1 Sol"
+    ],
+    "facts": [
+      {
+        "text": "아마존 베드록의 교차 리전 추론(cross-Region inference)을 통해 캐나다(중부) 및 캐나다 서부(캘거리) 리전에서 오픈AI의 GPT-5.6, GPT-6, GPT-6.1 모델 접근이 가능해졌습니다.",
+        "evidence": [
+          "E0",
+          "E4",
+          "E12"
+        ]
+      },
+      {
+        "text": "제공되는 모델은 GPT-5.6(Sol, Terra, Luna), GPT-6(Astra, Sol, Luna), GPT-6.1 Sol 등 3개 제품군입니다.",
+        "evidence": [
+          "E5",
+          "E7"
+        ]
+      },
+      {
+        "text": "해당 모델들은 bedrock-runtime 엔드포인트 상에서 OpenAI Responses API, OpenAI Chat Completions API, Amazon Bedrock Converse API 등 세 가지 경로로 호출할 수 있습니다.",
+        "evidence": [
+          "E8",
+          "E11"
+        ]
+      }
+    ],
+    "why": {
+      "text": "캐나다 리전에서 생성형 AI 애플리케이션을 구축하는 조직이 교차 리전 추론을 활용해 아마존 베드록 환경 안에서 최신 오픈AI 파운데이션 모델을 직접 활용할 수 있도록 지원하기 위함입니다.",
+      "evidence": [
+        "E3",
+        "E4"
+      ]
+    },
+    "change": {
+      "text": "캐나다(중부) 및 캐나다 서부(캘거리) 리전 콘솔에서 교차 리전 추론 프로필을 설정하면, 기존 OpenAI 규격 API 코드나 베드록 Converse API를 그대로 사용해 모델을 호출할 수 있습니다.",
+      "evidence": [
+        "E8",
+        "E9",
+        "E11"
+      ]
+    },
+    "checks": [
+      {
+        "text": "지원 리전: AWS 캐나다(중부, Canada (Central)) 및 캐나다 서부(캘거리, Canada West (Calgary)) 리전",
+        "evidence": [
+          "E0",
+          "E9",
+          "E12"
+        ]
+      },
+      {
+        "text": "호출 인터페이스: bedrock-runtime 엔드포인트 기반의 OpenAI Responses API, OpenAI Chat Completions API, Amazon Bedrock Converse API",
+        "evidence": [
+          "E8",
+          "E11"
+        ]
+      }
+    ],
+    "unknowns": [
+      "교차 리전 추론 사용에 따른 구체적인 요금 체계 및 데이터 전송 비용(근거에 없음)",
+      "서울 리전 등 한국 및 타 리전의 동일 기능 지원 여부와 일정(근거에 없음)",
+      "교차 리전 추론 시 발생하는 지연 시간(레이턴시) 영향(근거에 없음)"
+    ],
+    "editorialDepth": "STANDARD",
+    "insufficient": false,
+    "notes": "근거 원문에 기재된 모델명(GPT-5.6, GPT-6, GPT-6.1)과 세부 변형(Sol, Terra, Luna, Astra)을 변형 없이 기록했습니다. 요금 및 한국 지원 여부는 원문에 언급되지 않았습니다."
+  },
+  "handsOn": false,
+  "qa": {
+    "verdict": "FAIL",
+    "checks": {
+      "FACT": {
+        "result": "FAIL",
+        "issues": [
+          "products의 'GPT-5.6 Sol'가 근거에 없음",
+          "products의 'GPT-5.6 Terra'가 근거에 없음",
+          "products의 'GPT-5.6 Luna'가 근거에 없음",
+          "products의 'GPT-6 Astra'가 근거에 없음",
+          "products의 'GPT-6 Sol'가 근거에 없음",
+          "products의 'GPT-6 Luna'가 근거에 없음"
+        ]
+      },
+      "EVIDENCE": {
+        "result": "PASS",
+        "issues": []
+      },
+      "EDITORIAL": {
+        "result": "PASS",
+        "issues": []
+      },
+      "STRUCTURE": {
+        "result": "PASS",
+        "issues": []
+      },
+      "DUPLICATE": {
+        "result": "PASS",
+        "issues": []
+      },
+      "SAFETY": {
+        "result": "PASS",
+        "issues": []
+      }
+    },
+    "stats": {
+      "bodyChars": 892,
+      "depth": "STANDARD",
+      "suggestedDepth": "STANDARD"
+    }
+  },
+  "fixes": [
+    "[FACT/FAIL] products의 'GPT-5.6 Sol'가 근거에 없음",
+    "[FACT/FAIL] products의 'GPT-5.6 Terra'가 근거에 없음",
+    "[FACT/FAIL] products의 'GPT-5.6 Luna'가 근거에 없음",
+    "[FACT/FAIL] products의 'GPT-6 Astra'가 근거에 없음",
+    "[FACT/FAIL] products의 'GPT-6 Sol'가 근거에 없음",
+    "[FACT/FAIL] products의 'GPT-6 Luna'가 근거에 없음"
+  ],
+  "approvable": false,
+  "generation": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "promptVersion": "draft-v1",
+    "usage": {
+      "inputTokens": 1806,
+      "outputTokens": 970,
+      "costUsd": 0,
+      "attempts": 1
+    },
+    "reused": false,
+    "generatedAt": "2026-10-21T00:37:36.875Z",
+    "evidenceHash": "6c870358b197"
+  }
+}

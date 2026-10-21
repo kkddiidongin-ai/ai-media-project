@@ -1,0 +1,438 @@
+{
+  "id": "d259b094fe0e",
+  "date": "2026-10-21",
+  "proposedSlug": "scale-agentic-coding-workflows-meta-s-muse",
+  "title": "메타, 코딩 특화 MoE 모델 'Muse Spark Open' 공개",
+  "sourceTitle": "Scale Agentic Coding Workflows with Meta’s Muse Spark Open on NVIDIA GB300 NVL72",
+  "depth": "STANDARD",
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 10,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "NVIDIA",
+  "alsoAt": [],
+  "category": "AI_CODING",
+  "summary": "메타가 816B 파라미터 규모의 코딩 최적화 MoE 모델 'Muse Spark Open'을 공개했습니다. 엔비디아 GB300 NVL72 인프라에서 학습되었으며 100만(1M) 토큰 컨텍스트를 지원합니다.",
+  "body": {
+    "facts": [
+      {
+        "text": "메타는 816B 총 파라미터 중 토큰당 42B 파라미터를 활성화하고 1M 토큰 컨텍스트 윈도우를 지원하는 코딩 최적화 MoE 모델 'Muse Spark Open'을 공개했습니다.",
+        "evidence": [
+          "E0",
+          "E3",
+          "E6"
+        ]
+      },
+      {
+        "text": "Muse Spark Open은 256개 전문가 중 상위 8개를 라우팅하는 방식을 적용했습니다.",
+        "evidence": [
+          "E3"
+        ]
+      },
+      {
+        "text": "이 모델은 에이전트 코딩 워크플로를 위해 72개 Blackwell Ultra GPU를 단일 플랫폼으로 통합한 NVIDIA GB300 NVL72 인프라에서 학습되었습니다.",
+        "evidence": [
+          "E4",
+          "E7",
+          "E9"
+        ]
+      },
+      {
+        "text": "엔비디아는 GB300 NVL72 환경에서 에이전트 워크로드를 실행할 경우 GPU당 초당 최대 5만 토큰, 사용자당 초당 최대 600 토큰의 처리량을 달성한다고 밝혔습니다.",
+        "evidence": [
+          "E5",
+          "E10",
+          "E11"
+        ]
+      }
+    ],
+    "why": {
+      "text": "816B급 대규모 MoE 구조이면서도 활성 파라미터를 42B로 유지하고 최신 Blackwell 랙 스케일 아키텍처와 결합하여 대용량 컨텍스트 기반 에이전트 코딩 워크플로를 고속으로 구동할 수 있음을 보여줍니다.",
+      "evidence": [
+        "E0",
+        "E3",
+        "E9",
+        "E10"
+      ]
+    },
+    "change": {
+      "text": "엔비디아에 따르면 저장소 전반에 대한 코드베이스 이해와 도구 호출 기능이 지원되어 복잡한 소프트웨어 개발 자동화 파이프라인에 대형 오픈 모델을 적용할 가능성이 열렸습니다.",
+      "evidence": [
+        "E4",
+        "E7",
+        "E12"
+      ]
+    }
+  },
+  "topics": [
+    "meta",
+    "nvidia",
+    "ai-coding",
+    "ai-agent",
+    "open-models",
+    "ai-chip"
+  ],
+  "companies": [
+    "Meta",
+    "NVIDIA"
+  ],
+  "products": [
+    "Muse Spark Open",
+    "NVIDIA GB300 NVL72",
+    "Blackwell Ultra"
+  ],
+  "sources": [
+    {
+      "url": "https://developer.nvidia.com/blog/scale-agentic-coding-workflows-with-metas-muse-spark-open-on-nvidia-gb300-nvl72/",
+      "name": "NVIDIA Technical Blog",
+      "type": "official",
+      "publishedAt": "2026-10-15T18:00:01.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "d259b094fe0e",
+    "url": "https://developer.nvidia.com/blog/scale-agentic-coding-workflows-with-metas-muse-spark-open-on-nvidia-gb300-nvl72/",
+    "canonicalUrl": "https://developer.nvidia.com/blog/scale-agentic-coding-workflows-with-metas-muse-spark-open-on-nvidia-gb300-nvl72",
+    "title": "Scale Agentic Coding Workflows with Meta’s Muse Spark Open on NVIDIA GB300 NVL72",
+    "excerpt": "Meta launches Muse Spark Open, a coding-optimized 816B mixture-of-experts (MoE) model with 42B active parameters and a 1M token context window. Trained on...",
+    "publishedAt": "2026-10-15T18:00:01.000Z",
+    "sourceId": "nvidia-developer",
+    "sourceName": "NVIDIA Technical Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://developer.nvidia.com/blog/feed",
+    "fetchedAt": "2026-10-18T13:58:30.865Z",
+    "fromQueue": "draft"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 7651,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Meta launches Muse Spark Open, a coding-optimized 816B mixture-of-experts (MoE) model with 42B active parameters and a 1M token context window. Trained on...",
+        "sourceUrl": "https://developer.nvidia.com/blog/scale-agentic-coding-workflows-with-metas-muse-spark-open-on-nvidia-gb300-nvl72/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-15T18:00:01.000Z",
+        "checkedAt": "2026-10-21T00:35:59.783Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Scale Agentic Coding Workflows with Meta’s Muse Spark Open on NVIDIA GB300 NVL72 | NVIDIA Technical Blog",
+        "sourceUrl": "https://developer.nvidia.com/blog/scale-agentic-coding-workflows-with-metas-muse-spark-open-on-nvidia-gb300-nvl72/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-15T18:00:01.000Z",
+        "checkedAt": "2026-10-21T00:35:59.783Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Scale Agentic Coding Workflows with Meta’s Muse Spark Open on NVIDIA GB300 NVL72",
+        "sourceUrl": "https://developer.nvidia.com/blog/scale-agentic-coding-workflows-with-metas-muse-spark-open-on-nvidia-gb300-nvl72/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-15T18:00:01.000Z",
+        "checkedAt": "2026-10-21T00:35:59.783Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Mixture-of-experts (MoE) model Muse Spark Open activates 42B of 816B total parameters per token through top-8 routing across 256 experts.",
+        "sourceUrl": "https://developer.nvidia.com/blog/scale-agentic-coding-workflows-with-metas-muse-spark-open-on-nvidia-gb300-nvl72/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-15T18:00:01.000Z",
+        "checkedAt": "2026-10-21T00:35:59.783Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Trained on NVIDIA GB300 NVL72 Blackwell Ultra for agentic coding workflows, it delivers higher first-attempt accuracy, reliable tool calling, and deep codebase understanding across repositories.",
+        "sourceUrl": "https://developer.nvidia.com/blog/scale-agentic-coding-workflows-with-metas-muse-spark-open-on-nvidia-gb300-nvl72/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-15T18:00:01.000Z",
+        "checkedAt": "2026-10-21T00:35:59.783Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Running agentic workloads on NVIDIA GB300 NVL72 delivers up to 50K tokens per second per GPU and up to 600 tokens per second per user.",
+        "sourceUrl": "https://developer.nvidia.com/blog/scale-agentic-coding-workflows-with-metas-muse-spark-open-on-nvidia-gb300-nvl72/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-15T18:00:01.000Z",
+        "checkedAt": "2026-10-21T00:35:59.783Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Meta launches Muse Spark Open, a coding-optimized 816B mixture-of-experts (MoE) model with 42B active parameters and a 1M token context window.",
+        "sourceUrl": "https://developer.nvidia.com/blog/scale-agentic-coding-workflows-with-metas-muse-spark-open-on-nvidia-gb300-nvl72/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-15T18:00:01.000Z",
+        "checkedAt": "2026-10-21T00:35:59.783Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Trained on NVIDIA GB300 NVL72 Blackwell Ultra specifically for agentic coding workflows, it delivers higher first attempt accuracy, reliable tool calling, and deep codebase understanding across repositories.",
+        "sourceUrl": "https://developer.nvidia.com/blog/scale-agentic-coding-workflows-with-metas-muse-spark-open-on-nvidia-gb300-nvl72/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-15T18:00:01.000Z",
+        "checkedAt": "2026-10-21T00:35:59.783Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Muse Spark Open optimized performance on GB300 NVL72",
+        "sourceUrl": "https://developer.nvidia.com/blog/scale-agentic-coding-workflows-with-metas-muse-spark-open-on-nvidia-gb300-nvl72/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-15T18:00:01.000Z",
+        "checkedAt": "2026-10-21T00:35:59.783Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "The NVIDIA GB300 NVL72 features a rack scale architecture that integrates 72 NVIDIA Blackwell Ultra GPUs into a single platform.",
+        "sourceUrl": "https://developer.nvidia.com/blog/scale-agentic-coding-workflows-with-metas-muse-spark-open-on-nvidia-gb300-nvl72/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-15T18:00:01.000Z",
+        "checkedAt": "2026-10-21T00:35:59.783Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Out of the box, Muse Spark Open running agentic workloads on NVIDIA GB300 NVL72 delivers up to 50K per second per GPU and up to 600 tokens per second per user, enabling AI factories to run large parameter models in production at high throughput and low latency.",
+        "sourceUrl": "https://developer.nvidia.com/blog/scale-agentic-coding-workflows-with-metas-muse-spark-open-on-nvidia-gb300-nvl72/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-15T18:00:01.000Z",
+        "checkedAt": "2026-10-21T00:35:59.783Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Running agentic workloads, Muse Spark Open on four NVIDIA Blackwell GPUs with speculative decode achieved over 50K tokens per second per GPU and over 600 tokens per user",
+        "sourceUrl": "https://developer.nvidia.com/blog/scale-agentic-coding-workflows-with-metas-muse-spark-open-on-nvidia-gb300-nvl72/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-15T18:00:01.000Z",
+        "checkedAt": "2026-10-21T00:35:59.783Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Agentic AI / Generative AI | General | Blackwell | Dynamo | NeMo | NVLink | TensorRT-LLM | Intermediate Technical | News | featured | GB300 NVL72 | Megatron | Mixture of Experts (MoE) | NVFP4 | Open Source | PyTorch | Training AI Models",
+        "sourceUrl": "https://developer.nvidia.com/blog/scale-agentic-coding-workflows-with-metas-muse-spark-open-on-nvidia-gb300-nvl72/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-15T18:00:01.000Z",
+        "checkedAt": "2026-10-21T00:35:59.783Z"
+      }
+    ],
+    "pageDate": "2026-10-15T18:00:01.000Z"
+  },
+  "score": {
+    "importance": 3,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "MODEL",
+      "PRODUCT_LAUNCH"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 9,
+    "total": 9
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 MODEL·PRODUCT_LAUNCH (우선순위 9)",
+    "근거 확인 통과 (확인 사실 10개, SUFFICIENT_STANDARD)",
+    "초안 QA FAIL: 근거에 없는 수치 '100' · 근거에 없는 수치 '5'"
+  ],
+  "needsReview": [
+    "numeric_claim"
+  ],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "status": "ok",
+    "usage": {
+      "inputTokens": 1856,
+      "outputTokens": 970,
+      "costUsd": 0,
+      "attempts": 1
+    },
+    "promptVersion": "draft-v1",
+    "at": "2026-10-21T00:36:39.279Z",
+    "evidenceHash": "bc02fb929f09"
+  },
+  "draft": {
+    "title": "메타, 코딩 특화 MoE 모델 'Muse Spark Open' 공개",
+    "summary": "메타가 816B 파라미터 규모의 코딩 최적화 MoE 모델 'Muse Spark Open'을 공개했습니다. 엔비디아 GB300 NVL72 인프라에서 학습되었으며 100만(1M) 토큰 컨텍스트를 지원합니다.",
+    "category": "AI_CODING",
+    "topics": [
+      "meta",
+      "nvidia",
+      "ai-coding",
+      "ai-agent",
+      "open-models",
+      "ai-chip"
+    ],
+    "companies": [
+      "Meta",
+      "NVIDIA"
+    ],
+    "products": [
+      "Muse Spark Open",
+      "NVIDIA GB300 NVL72",
+      "Blackwell Ultra"
+    ],
+    "facts": [
+      {
+        "text": "메타는 816B 총 파라미터 중 토큰당 42B 파라미터를 활성화하고 1M 토큰 컨텍스트 윈도우를 지원하는 코딩 최적화 MoE 모델 'Muse Spark Open'을 공개했습니다.",
+        "evidence": [
+          "E0",
+          "E3",
+          "E6"
+        ]
+      },
+      {
+        "text": "Muse Spark Open은 256개 전문가 중 상위 8개를 라우팅하는 방식을 적용했습니다.",
+        "evidence": [
+          "E3"
+        ]
+      },
+      {
+        "text": "이 모델은 에이전트 코딩 워크플로를 위해 72개 Blackwell Ultra GPU를 단일 플랫폼으로 통합한 NVIDIA GB300 NVL72 인프라에서 학습되었습니다.",
+        "evidence": [
+          "E4",
+          "E7",
+          "E9"
+        ]
+      },
+      {
+        "text": "엔비디아는 GB300 NVL72 환경에서 에이전트 워크로드를 실행할 경우 GPU당 초당 최대 5만 토큰, 사용자당 초당 최대 600 토큰의 처리량을 달성한다고 밝혔습니다.",
+        "evidence": [
+          "E5",
+          "E10",
+          "E11"
+        ]
+      }
+    ],
+    "why": {
+      "text": "816B급 대규모 MoE 구조이면서도 활성 파라미터를 42B로 유지하고 최신 Blackwell 랙 스케일 아키텍처와 결합하여 대용량 컨텍스트 기반 에이전트 코딩 워크플로를 고속으로 구동할 수 있음을 보여줍니다.",
+      "evidence": [
+        "E0",
+        "E3",
+        "E9",
+        "E10"
+      ]
+    },
+    "change": {
+      "text": "엔비디아에 따르면 저장소 전반에 대한 코드베이스 이해와 도구 호출 기능이 지원되어 복잡한 소프트웨어 개발 자동화 파이프라인에 대형 오픈 모델을 적용할 가능성이 열렸습니다.",
+      "evidence": [
+        "E4",
+        "E7",
+        "E12"
+      ]
+    },
+    "checks": [
+      {
+        "text": "공개된 초당 5만 토큰 처리량은 투기적 디코딩 기법 및 NVIDIA GB300 NVL72 인프라를 기준으로 측정된 결과이므로, 도입 환경별 인프라 사양을 확인해야 합니다.",
+        "evidence": [
+          "E10",
+          "E11"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Muse Spark Open의 구체적인 오픈소스 라이선스 범위와 상업적 이용 조건은 원문에 명시되지 않았습니다.",
+      "일반 개발자나 소규모 조직이 온프레미스에서 구동하기 위한 최소 하드웨어 요구 사양은 확인되지 않았습니다.",
+      "국내 클라우드 서비스 제공자(CSP)를 통한 인스턴스 지원 여부는 확인되지 않았습니다."
+    ],
+    "editorialDepth": "STANDARD",
+    "insufficient": false,
+    "notes": "엔비디아 기술 블로그 발표 내용을 바탕으로 작성되었으며, 성능 수치 및 모델 특징은 엔비디아와 메타의 공식 기술 사양 주장에 근거했습니다."
+  },
+  "validation": {
+    "errors": [],
+    "needsReview": [
+      "numeric_claim"
+    ]
+  },
+  "draftQa": {
+    "verdict": "FAIL",
+    "checks": {
+      "FACT": {
+        "result": "FAIL",
+        "issues": [
+          "근거에 없는 수치 '100' (summary)",
+          "근거에 없는 수치 '5' (facts[3])"
+        ]
+      },
+      "EVIDENCE": {
+        "result": "PASS",
+        "issues": []
+      },
+      "EDITORIAL": {
+        "result": "PASS",
+        "issues": []
+      },
+      "STRUCTURE": {
+        "result": "PASS",
+        "issues": []
+      },
+      "DUPLICATE": {
+        "result": "PASS",
+        "issues": []
+      },
+      "SAFETY": {
+        "result": "PASS",
+        "issues": []
+      }
+    },
+    "fixes": [
+      "[FACT/FAIL] 근거에 없는 수치 '100' (summary)",
+      "[FACT/FAIL] 근거에 없는 수치 '5' (facts[3])"
+    ],
+    "stats": {
+      "bodyChars": 767,
+      "depth": "STANDARD",
+      "suggestedDepth": "STANDARD"
+    }
+  },
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": "drafts/d259b094fe0e.md",
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}
