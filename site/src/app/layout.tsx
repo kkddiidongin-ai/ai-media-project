@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   },
   robots: siteConfig.isPreview ? { index: false, follow: false } : undefined,
   // 네이버 서치어드바이저 소유확인
-  verification: { other: { "naver-site-verification": "482c5ebbfc6c49f718eee6af405fe3311153d22" } },
+  verification: { other: { "naver-site-verification": "482c5ebbfcc6c49f718eee6af405fe3311153d22" } },
 };
 
 export const viewport: Viewport = {
