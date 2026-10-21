@@ -11,7 +11,11 @@ import { getCharts, getIssues, topicCounts } from "@/lib/news";
 import { chartHref, formatDate, formatShortDate, issueHref, storyHref, topicHref } from "@/lib/format";
 import { pageMetadata } from "@/lib/seo";
 
-export const metadata = pageMetadata({ path: "/" });
+// 홈 설명은 검색 결과용으로 80자 이내 (네이버 서치어드바이저 권장). 다른 페이지 기본 설명은 siteConfig.description 그대로
+export const metadata = pageMetadata({
+  path: "/",
+  description: "AI마중은 OpenAI, 구글, 앤트로픽 등 주요 AI 기업의 최신 뉴스와 기술 변화를 공식 발표를 바탕으로 쉽고 정확하게 전합니다.",
+});
 
 /**
  * 홈 (Phase 6.3): 오늘의 AI 뉴스레터 → 오늘 주요 story → AI차트 → 최근 AI 뉴스 → 지난 뉴스레터 → 주요 Topic.
