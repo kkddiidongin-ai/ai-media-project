@@ -74,9 +74,14 @@ jobs:
         env:
           REF: ${{ inputs.drafts_ref }}
           P: ${{ inputs.drafts_path }}
+          ONLY: ${{ inputs.only }}
         run: |
           case "$REF" in automation/*) ;; *) echo "drafts_ref는 automation/* 브랜치만"; exit 1;; esac
           case "$P" in site/ingest/daily/*/drafts/editorial-drafts.json) ;; *) echo "drafts_path 형식 오류"; exit 1;; esac
+          # only 칸에 파일 경로 등을 잘못 넣으면 여기서 바로 멈춘다 (slug를 쉼표로만)
+          if [ -n "$ONLY" ] && ! printf '%s' "$ONLY" | grep -Eq '^[a-z0-9-]+(, *[a-z0-9-]+)*$'; then
+            echo "only 형식 오류: slug를 쉼표로 구분해 넣어야 함 (입력값: $ONLY)"; exit 1
+          fi
           git fetch origin "$REF"
           git -C "$GITHUB_WORKSPACE" show "FETCH_HEAD:$P" > "$RUNNER_TEMP/editorial-drafts.json"
 
