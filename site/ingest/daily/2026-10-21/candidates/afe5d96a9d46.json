@@ -1,0 +1,221 @@
+{
+  "id": "afe5d96a9d46",
+  "date": "2026-10-21",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Voxtral 3",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 12,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Mistral",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://mistral.ai/news/voxtral-3/",
+      "name": "Mistral AI",
+      "type": "official",
+      "publishedAt": "2026-10-20T12:00:22.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "afe5d96a9d46",
+    "url": "https://mistral.ai/news/voxtral-3/",
+    "canonicalUrl": "https://mistral.ai/news/voxtral-3",
+    "title": "Voxtral 3",
+    "excerpt": "Voxtral 3: Mistral's voice agent SDK for real-time speech in 50+ languages — accurate transcription, emotional TTS, deep tool use. EU-hosted or self-deployed.",
+    "publishedAt": "2026-10-20T12:00:22.000Z",
+    "sourceId": "mistral",
+    "sourceName": "Mistral AI",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://mistral.ai/news/rss",
+    "fetchedAt": "2026-10-21T00:34:17.891Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 13363,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Voxtral 3: Mistral's voice agent SDK for real-time speech in 50+ languages — accurate transcription, emotional TTS, deep tool use. EU-hosted or self-deployed.",
+        "sourceUrl": "https://mistral.ai/news/voxtral-3/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-10-20T12:00:22.000Z",
+        "checkedAt": "2026-10-21T00:36:04.805Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Voxtral 3: Voice Agent SDK & Speech Models in 50+ Languages • • • • • • • • • •",
+        "sourceUrl": "https://mistral.ai/news/voxtral-3/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-10-20T12:00:22.000Z",
+        "checkedAt": "2026-10-21T00:36:04.805Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Voxtral 3 introduces a cutting-edge voice agent SDK and state-of-the-art speech models designed for real-time, multi-step conversations across 50+ languages.",
+        "sourceUrl": "https://mistral.ai/news/voxtral-3/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-10-20T12:00:22.000Z",
+        "checkedAt": "2026-10-21T00:36:04.805Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "To address this, we introduce Voxtral 3: a new family of state-of-the-art speech-to-text and text-to-speech models, alongside a voice agent SDK that brings listening, thinking, tool calling, and speaking into a single real-time streaming pipeline.",
+        "sourceUrl": "https://mistral.ai/news/voxtral-3/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-10-20T12:00:22.000Z",
+        "checkedAt": "2026-10-21T00:36:04.805Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Voxtral 3 is built to create natural conversational experiences, from contact-center agents and service desks to virtual assistants and hands-free copilots.",
+        "sourceUrl": "https://mistral.ai/news/voxtral-3/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-10-20T12:00:22.000Z",
+        "checkedAt": "2026-10-21T00:36:04.805Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "As with other Mistral models, the Voxtral 3 family is designed for sovereign deployment.",
+        "sourceUrl": "https://mistral.ai/news/voxtral-3/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-10-20T12:00:22.000Z",
+        "checkedAt": "2026-10-21T00:36:04.805Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "The speech-to-text model, Voxtral Small Transcribe 3 , is state-of-the-art in multilingual transcription, identifying who said what (diarization), using keyphrases to improve its accuracy (context-biasing).",
+        "sourceUrl": "https://mistral.ai/news/voxtral-3/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-10-20T12:00:22.000Z",
+        "checkedAt": "2026-10-21T00:36:04.805Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "The text-to-speech model, Voxtral Mini TTS 3 , introduces new voices that adjust their emotion, pace, and emphasis based on conversational context, with support for 35+ languages and 50+ dialects.",
+        "sourceUrl": "https://mistral.ai/news/voxtral-3/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-10-20T12:00:22.000Z",
+        "checkedAt": "2026-10-21T00:36:04.805Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "For professional use cases where basic voice cloning does not suffice, Voxtral’s Pro Voice adaptation is able to reproduce a speaker’s distinctive character, emotional range, and speaking style across languages, using just 30 minutes of audio.",
+        "sourceUrl": "https://mistral.ai/news/voxtral-3/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-10-20T12:00:22.000Z",
+        "checkedAt": "2026-10-21T00:36:04.805Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Use Mistral's EU-hosted API or deploy Voxtral 3 on your own infrastructure.",
+        "sourceUrl": "https://mistral.ai/news/voxtral-3/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-10-20T12:00:22.000Z",
+        "checkedAt": "2026-10-21T00:36:04.805Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Voxtral Mini TTS 3.0 , available in batch and realtime, achieves state-of-the-art expressiveness and instruction following for 35+ languages and 50+ dialects.",
+        "sourceUrl": "https://mistral.ai/news/voxtral-3/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-10-20T12:00:22.000Z",
+        "checkedAt": "2026-10-21T00:36:04.805Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Voxtral Mini Transcribe Realtime 3 listens and detects when the caller has finished speaking, a general model—like Mistral Small —reasons and calls tools, and Voxtral Speech 3 replies in the tone of the conversation so far.",
+        "sourceUrl": "https://mistral.ai/news/voxtral-3/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-10-20T12:00:22.000Z",
+        "checkedAt": "2026-10-21T00:36:04.805Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Voxtral 3 is available today through the Mistral API, hosted through our European, US, and global endpoints.",
+        "sourceUrl": "https://mistral.ai/news/voxtral-3/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-10-20T12:00:22.000Z",
+        "checkedAt": "2026-10-21T00:36:04.805Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "API_PLATFORM"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 API_PLATFORM (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

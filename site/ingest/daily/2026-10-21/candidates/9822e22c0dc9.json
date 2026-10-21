@@ -1,0 +1,418 @@
+{
+  "id": "9822e22c0dc9",
+  "date": "2026-10-21",
+  "proposedSlug": "publish-interactive-apps-gemini-app-google-sites",
+  "title": "구글, 제미나이 앱에서 만든 인터랙티브 앱을 구글 사이트로 내보내는 기능 지원",
+  "sourceTitle": "Publish interactive apps from the Gemini app to Google Sites",
+  "depth": "STANDARD",
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 10,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": true,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": false,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "contextNeed",
+      "evidenceQuality",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Google",
+  "alsoAt": [],
+  "category": "PRODUCT_UPDATE",
+  "summary": "제미나이 앱에서 제작한 인터랙티브 앱을 클릭 한 번으로 구글 사이트의 비공개 초안으로 내보내고 편집해 게시할 수 있게 됐습니다.",
+  "body": {
+    "facts": [
+      {
+        "text": "제미나이 앱에서 제작한 인터랙티브 앱을 구글 사이트(Google Sites)로 직접 내보낼 수 있는 기능이 추가되었습니다.",
+        "evidence": [
+          "E0",
+          "E4"
+        ]
+      },
+      {
+        "text": "제미나이 앱의 인터랙티브 앱에서 '내보내기(Export) > Google Sites'를 선택하면 대화형 기능이 유지된 상태로 새 비공개 사이트 초안에 추가됩니다.",
+        "evidence": [
+          "E0",
+          "E5",
+          "E8",
+          "E9"
+        ]
+      },
+      {
+        "text": "사용자는 해당 초안에서 콘텐츠를 추가하거나 편집한 뒤 사이트를 게시하고 공유할 수 있습니다.",
+        "evidence": [
+          "E0",
+          "E9"
+        ]
+      },
+      {
+        "text": "이 기능은 구글 워크스페이스 고객, 워크스페이스 인디비주얼 구독자, 제미나이 앱 접근 권한이 있는 개인 구글 계정 사용자에게 제공됩니다.",
+        "evidence": [
+          "E10"
+        ]
+      }
+    ],
+    "why": {
+      "text": "제미나이에서 생성한 대화형 앱 결과물을 별도 개발 작업 없이 구글 사이트로 옮겨 바로 웹 페이지 형태로 공유하고 배포할 수 있게 되었습니다.",
+      "evidence": [
+        "E0",
+        "E5",
+        "E9"
+      ]
+    },
+    "change": {
+      "text": "사용자는 제미나이 앱에서 만든 앱을 새 사이트 초안으로 가져와 다른 구글 사이트와 동일하게 편집하고 공유할 수 있습니다.",
+      "evidence": [
+        "E0",
+        "E9"
+      ]
+    }
+  },
+  "topics": [
+    "google",
+    "gemini",
+    "ai-work"
+  ],
+  "companies": [
+    "Google"
+  ],
+  "products": [
+    "Gemini app",
+    "Google Sites",
+    "Google Workspace",
+    "Google Drive"
+  ],
+  "sources": [
+    {
+      "url": "https://workspaceupdates.googleblog.com/2026/10/publish-interactive-apps-from-gemini-app-to-Google-Sites.html",
+      "name": "Google Workspace Updates",
+      "type": "official",
+      "publishedAt": "2026-10-19T17:25:14.930Z"
+    }
+  ],
+  "candidate": {
+    "id": "9822e22c0dc9",
+    "url": "https://workspaceupdates.googleblog.com/2026/10/publish-interactive-apps-from-gemini-app-to-Google-Sites.html",
+    "canonicalUrl": "https://workspaceupdates.googleblog.com/2026/10/publish-interactive-apps-from-gemini-app-to-Google-Sites.html",
+    "title": "Publish interactive apps from the Gemini app to Google Sites",
+    "excerpt": "You can now export interactive apps built in the Gemini app directly to Google Sites. With one click, your app is added to a new, private site draft — fully interactive and ready to customize. From there, you can add more content, publish the site, and share it just like any other Google Site. This ",
+    "publishedAt": "2026-10-19T17:25:14.930Z",
+    "sourceId": "google-workspace-updates",
+    "sourceName": "Google Workspace Updates",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://workspaceupdates.googleblog.com/feeds/posts/default?max-results=500&published-min=2026-01-01T00:00:00Z",
+    "fetchedAt": "2026-10-21T00:34:17.891Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 2444,
+    "grade": "LIMITED",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "You can now export interactive apps built in the Gemini app directly to Google Sites. With one click, your app is added to a new, private site draft — fully interactive and ready to customize. From there, you can add more content, publish the site, and share it just like any other Google Site. This ",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/publish-interactive-apps-from-gemini-app-to-Google-Sites.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-19T17:25:14.930Z",
+        "checkedAt": "2026-10-21T00:36:00.722Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Google Workspace Updates: Publish interactive apps from the Gemini app to Google Sites",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/publish-interactive-apps-from-gemini-app-to-Google-Sites.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-19T17:25:14.930Z",
+        "checkedAt": "2026-10-21T00:36:00.722Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "This official feed from the Google Workspace team provides essential information about new features and improvements for Google Workspace customers.",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/publish-interactive-apps-from-gemini-app-to-Google-Sites.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-19T17:25:14.930Z",
+        "checkedAt": "2026-10-21T00:36:00.722Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Publish interactive apps from the Gemini app to Google Sites",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/publish-interactive-apps-from-gemini-app-to-Google-Sites.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-19T17:25:14.930Z",
+        "checkedAt": "2026-10-21T00:36:00.722Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "You can now export interactive apps built in the Gemini app directly to Google Sites.",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/publish-interactive-apps-from-gemini-app-to-Google-Sites.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-19T17:25:14.930Z",
+        "checkedAt": "2026-10-21T00:36:00.722Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "With one click, your app is added to a new, private site draft — fully interactive and ready to customize.",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/publish-interactive-apps-from-gemini-app-to-Google-Sites.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-19T17:25:14.930Z",
+        "checkedAt": "2026-10-21T00:36:00.722Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Users can only export to Google Sites if Google Sites is turned on for them and they are allowed to create and edit sites.",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/publish-interactive-apps-from-gemini-app-to-Google-Sites.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-19T17:25:14.930Z",
+        "checkedAt": "2026-10-21T00:36:00.722Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Sites created this way follow your organization's existing Google Sites and Google Drive policies.",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/publish-interactive-apps-from-gemini-app-to-Google-Sites.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-19T17:25:14.930Z",
+        "checkedAt": "2026-10-21T00:36:00.722Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "End users: In the Gemini app, select Export > Google Sites on your interactive app.",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/publish-interactive-apps-from-gemini-app-to-Google-Sites.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-19T17:25:14.930Z",
+        "checkedAt": "2026-10-21T00:36:00.722Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "It opens directly in Google Sites as a new draft, ready to edit and publish.",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/publish-interactive-apps-from-gemini-app-to-Google-Sites.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-19T17:25:14.930Z",
+        "checkedAt": "2026-10-21T00:36:00.722Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Available to Google Workspace customers, Workspace Individual subscribers, and users with personal Google accounts who have access to the Gemini app.",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/publish-interactive-apps-from-gemini-app-to-Google-Sites.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-19T17:25:14.930Z",
+        "checkedAt": "2026-10-21T00:36:00.722Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "On the “What’s new in Google Workspace?” Help Center page, learn about new products and features launching in Google Workspace, including smaller changes that haven’t been announced on the Google Workspace Updates blog.",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/publish-interactive-apps-from-gemini-app-to-Google-Sites.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-19T17:25:14.930Z",
+        "checkedAt": "2026-10-21T00:36:00.722Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Discover how a diverse range of organizations, from small businesses and nimble startups to globally recognized Fortune 500 corporations, leverage the collaborative power of Google Workspace.",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/publish-interactive-apps-from-gemini-app-to-Google-Sites.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-19T17:25:14.930Z",
+        "checkedAt": "2026-10-21T00:36:00.722Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 2,
+    "practicalImpact": 2,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PRODUCT_LAUNCH",
+      "CONSUMER"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 8,
+    "total": 8
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 PRODUCT_LAUNCH·CONSUMER (우선순위 8)",
+    "근거 확인 통과 (확인 사실 10개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "status": "ok",
+    "usage": {
+      "inputTokens": 1662,
+      "outputTokens": 755,
+      "costUsd": 0,
+      "attempts": 1
+    },
+    "promptVersion": "draft-v1",
+    "at": "2026-10-21T00:38:40.174Z",
+    "evidenceHash": "a013ee43df59"
+  },
+  "draft": {
+    "title": "구글, 제미나이 앱에서 만든 인터랙티브 앱을 구글 사이트로 내보내는 기능 지원",
+    "summary": "제미나이 앱에서 제작한 인터랙티브 앱을 클릭 한 번으로 구글 사이트의 비공개 초안으로 내보내고 편집해 게시할 수 있게 됐습니다.",
+    "category": "PRODUCT_UPDATE",
+    "topics": [
+      "google",
+      "gemini",
+      "ai-work"
+    ],
+    "companies": [
+      "Google"
+    ],
+    "products": [
+      "Gemini app",
+      "Google Sites",
+      "Google Workspace",
+      "Google Drive"
+    ],
+    "facts": [
+      {
+        "text": "제미나이 앱에서 제작한 인터랙티브 앱을 구글 사이트(Google Sites)로 직접 내보낼 수 있는 기능이 추가되었습니다.",
+        "evidence": [
+          "E0",
+          "E4"
+        ]
+      },
+      {
+        "text": "제미나이 앱의 인터랙티브 앱에서 '내보내기(Export) > Google Sites'를 선택하면 대화형 기능이 유지된 상태로 새 비공개 사이트 초안에 추가됩니다.",
+        "evidence": [
+          "E0",
+          "E5",
+          "E8",
+          "E9"
+        ]
+      },
+      {
+        "text": "사용자는 해당 초안에서 콘텐츠를 추가하거나 편집한 뒤 사이트를 게시하고 공유할 수 있습니다.",
+        "evidence": [
+          "E0",
+          "E9"
+        ]
+      },
+      {
+        "text": "이 기능은 구글 워크스페이스 고객, 워크스페이스 인디비주얼 구독자, 제미나이 앱 접근 권한이 있는 개인 구글 계정 사용자에게 제공됩니다.",
+        "evidence": [
+          "E10"
+        ]
+      }
+    ],
+    "why": {
+      "text": "제미나이에서 생성한 대화형 앱 결과물을 별도 개발 작업 없이 구글 사이트로 옮겨 바로 웹 페이지 형태로 공유하고 배포할 수 있게 되었습니다.",
+      "evidence": [
+        "E0",
+        "E5",
+        "E9"
+      ]
+    },
+    "change": {
+      "text": "사용자는 제미나이 앱에서 만든 앱을 새 사이트 초안으로 가져와 다른 구글 사이트와 동일하게 편집하고 공유할 수 있습니다.",
+      "evidence": [
+        "E0",
+        "E9"
+      ]
+    },
+    "checks": [
+      {
+        "text": "구글 사이트 서비스가 활성화되어 있고 사이트 생성 및 편집 권한이 부여된 사용자만 내보내기가 가능합니다.",
+        "evidence": [
+          "E6"
+        ]
+      },
+      {
+        "text": "이 방식으로 생성된 사이트는 조직에 적용된 기존 구글 사이트 및 구글 드라이브 정책을 따릅니다.",
+        "evidence": [
+          "E7"
+        ]
+      }
+    ],
+    "unknowns": [
+      "구체적인 한국어 환경 지원 여부는 근거에 명시되어 있지 않습니다.",
+      "계정별 기능 반영 일정(단계적 배포 여부)은 본문 근거에 나와 있지 않습니다."
+    ],
+    "editorialDepth": "STANDARD",
+    "insufficient": false,
+    "notes": "근거에 나온 지원 대상(Google Workspace 고객, Workspace Individual, 개인 계정)과 권한 조건(Google Sites 생성/편집 권한)을 정확히 명시했습니다."
+  },
+  "validation": {
+    "errors": [],
+    "needsReview": []
+  },
+  "draftQa": {
+    "verdict": "PASS",
+    "checks": {
+      "FACT": {
+        "result": "PASS",
+        "issues": []
+      },
+      "EVIDENCE": {
+        "result": "PASS",
+        "issues": []
+      },
+      "EDITORIAL": {
+        "result": "PASS",
+        "issues": []
+      },
+      "STRUCTURE": {
+        "result": "PASS",
+        "issues": []
+      },
+      "DUPLICATE": {
+        "result": "PASS",
+        "issues": []
+      },
+      "SAFETY": {
+        "result": "PASS",
+        "issues": []
+      }
+    },
+    "fixes": [],
+    "stats": {
+      "bodyChars": 620,
+      "depth": "STANDARD",
+      "suggestedDepth": "STANDARD"
+    }
+  },
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": "drafts/9822e22c0dc9.md",
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

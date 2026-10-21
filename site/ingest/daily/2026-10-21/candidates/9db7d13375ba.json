@@ -1,0 +1,377 @@
+{
+  "id": "9db7d13375ba",
+  "date": "2026-10-21",
+  "proposedSlug": "copilot-model-policy-api-enterprise-orgs-teams",
+  "title": "깃허브, 코파일럿 모델 정책 관리 REST API 정식 출시",
+  "sourceTitle": "Copilot model policy API for enterprise, orgs, and teams",
+  "depth": "STANDARD",
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 8,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": true,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": false,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "contextNeed",
+      "evidenceQuality",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "GitHub",
+  "alsoAt": [],
+  "category": "AI_CODING",
+  "summary": "깃허브가 엔터프라이즈, 조직, 팀, 에이전트 앱 단위로 코파일럿 모델 정책을 조회하고 수정할 수 있는 REST API 엔드포인트를 정식 출시했습니다.",
+  "body": {
+    "facts": [
+      {
+        "text": "깃허브는 엔터프라이즈, 엔터프라이즈 팀, 에이전트 앱, 조직 등 네 가지 수준에서 코파일럿 모델 정책을 조회(GET)하고 업데이트(PATCH)할 수 있는 REST API 엔드포인트를 정식 출시(GA)했습니다.",
+        "evidence": [
+          "E0",
+          "E2",
+          "E3"
+        ]
+      },
+      {
+        "text": "엔터프라이즈 정책에서는 조직 모드를 통해 조직에 모델 제어권을 위임하거나, 엔터프라이즈 팀 모드를 통해 팀 및 앱에 권한을 위임할 수 있습니다.",
+        "evidence": [
+          "E5"
+        ]
+      }
+    ],
+    "why": {
+      "text": "조직 내 코파일럿 모델 정책 설정을 웹 UI를 거치지 않고 API를 통해 프로그래밍 방식으로 일괄 조회 및 변경할 수 있게 되어 모델 가용성 관리가 용이해집니다.",
+      "evidence": [
+        "E2",
+        "E4"
+      ]
+    },
+    "change": {
+      "text": "깃허브 엔터프라이즈 관리자는 REST API를 자동화 파이프라인이나 내부 도구에 연동하여 코파일럿 모델 접근 정책을 관리할 수 있습니다.",
+      "evidence": [
+        "E2",
+        "E5",
+        "E6"
+      ]
+    }
+  },
+  "topics": [
+    "copilot",
+    "ai-coding",
+    "ai-work"
+  ],
+  "companies": [
+    "GitHub"
+  ],
+  "products": [
+    "GitHub Copilot",
+    "Copilot"
+  ],
+  "sources": [
+    {
+      "url": "https://github.blog/changelog/2026-10-19-copilot-model-policy-api-for-enterprise-orgs-and-teams",
+      "name": "GitHub Changelog",
+      "type": "official",
+      "publishedAt": "2026-10-19T21:32:18.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "9db7d13375ba",
+    "url": "https://github.blog/changelog/2026-10-19-copilot-model-policy-api-for-enterprise-orgs-and-teams",
+    "canonicalUrl": "https://github.blog/changelog/2026-10-19-copilot-model-policy-api-for-enterprise-orgs-and-teams",
+    "title": "Copilot model policy API for enterprise, orgs, and teams",
+    "excerpt": "You can now use the REST API to retrieve and update Copilot model policies for enterprises, enterprise teams, agent apps, and organizations. What’s new GET and PATCH endpoints are now… The post Copilot model policy API for enterprise, orgs, and teams appeared first on The GitHub Blog .",
+    "publishedAt": "2026-10-19T21:32:18.000Z",
+    "sourceId": "github-changelog",
+    "sourceName": "GitHub Changelog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://github.blog/changelog/feed/",
+    "fetchedAt": "2026-10-21T00:34:17.891Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 986,
+    "grade": "LIMITED",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "You can now use the REST API to retrieve and update Copilot model policies for enterprises, enterprise teams, agent apps, and organizations. What’s new GET and PATCH endpoints are now… The post Copilot model policy API for enterprise, orgs, and teams appeared first on The GitHub Blog .",
+        "sourceUrl": "https://github.blog/changelog/2026-10-19-copilot-model-policy-api-for-enterprise-orgs-and-teams",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-19T21:32:18.000Z",
+        "checkedAt": "2026-10-21T00:36:00.176Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Copilot model policy API for enterprise, orgs, and teams - GitHub Changelog",
+        "sourceUrl": "https://github.blog/changelog/2026-10-19-copilot-model-policy-api-for-enterprise-orgs-and-teams",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-19T21:32:18.000Z",
+        "checkedAt": "2026-10-21T00:36:00.176Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "You can now use the REST API to retrieve and update Copilot model policies for enterprises, enterprise teams, agent apps, and organizations.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-19-copilot-model-policy-api-for-enterprise-orgs-and-teams",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-19T21:32:18.000Z",
+        "checkedAt": "2026-10-21T00:36:00.176Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "GET and PATCH endpoints are now generally available for model policies at four levels:",
+        "sourceUrl": "https://github.blog/changelog/2026-10-19-copilot-model-policy-api-for-enterprise-orgs-and-teams",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-19T21:32:18.000Z",
+        "checkedAt": "2026-10-21T00:36:00.176Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Together, these endpoints make it easier to manage Copilot model availability across your enterprise.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-19-copilot-model-policy-api-for-enterprise-orgs-and-teams",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-19T21:32:18.000Z",
+        "checkedAt": "2026-10-21T00:36:00.176Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Enterprise policies can delegate model control to organizations in organization mode, or to teams and apps in enterprise teams mode.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-19-copilot-model-policy-api-for-enterprise-orgs-and-teams",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-19T21:32:18.000Z",
+        "checkedAt": "2026-10-21T00:36:00.176Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Reference our documentation on managing availability of models in your enterprise and our REST API documentation to get started.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-19-copilot-model-policy-api-for-enterprise-orgs-and-teams",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-19T21:32:18.000Z",
+        "checkedAt": "2026-10-21T00:36:00.176Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "GitHub Copilot models deprecated on October 19, 2026",
+        "sourceUrl": "https://github.blog/changelog/2026-10-19-copilot-model-policy-api-for-enterprise-orgs-and-teams",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-19T21:32:18.000Z",
+        "checkedAt": "2026-10-21T00:36:00.176Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Multi-repository support and other improvements for GitHub in Slack and Teams",
+        "sourceUrl": "https://github.blog/changelog/2026-10-19-copilot-model-policy-api-for-enterprise-orgs-and-teams",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-19T21:32:18.000Z",
+        "checkedAt": "2026-10-21T00:36:00.176Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Upcoming deprecation of selected GitHub Copilot models in mid-November",
+        "sourceUrl": "https://github.blog/changelog/2026-10-19-copilot-model-policy-api-for-enterprise-orgs-and-teams",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-19T21:32:18.000Z",
+        "checkedAt": "2026-10-21T00:36:00.176Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Agentic autofix for code scanning alerts general availability",
+        "sourceUrl": "https://github.blog/changelog/2026-10-19-copilot-model-policy-api-for-enterprise-orgs-and-teams",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-19T21:32:18.000Z",
+        "checkedAt": "2026-10-21T00:36:00.176Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Enterprise managed settings enforcement updates",
+        "sourceUrl": "https://github.blog/changelog/2026-10-19-copilot-model-policy-api-for-enterprise-orgs-and-teams",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-19T21:32:18.000Z",
+        "checkedAt": "2026-10-21T00:36:00.176Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Search and filter for budgets now available",
+        "sourceUrl": "https://github.blog/changelog/2026-10-19-copilot-model-policy-api-for-enterprise-orgs-and-teams",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-19T21:32:18.000Z",
+        "checkedAt": "2026-10-21T00:36:00.176Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 2,
+    "practicalImpact": 2,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PRODUCT_LAUNCH",
+      "API_PLATFORM"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 8,
+    "total": 8
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 PRODUCT_LAUNCH·API_PLATFORM (우선순위 8)",
+    "근거 확인 통과 (확인 사실 8개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "status": "ok",
+    "usage": {
+      "inputTokens": 1585,
+      "outputTokens": 656,
+      "costUsd": 0,
+      "attempts": 1
+    },
+    "promptVersion": "draft-v1",
+    "at": "2026-10-21T00:38:10.883Z",
+    "evidenceHash": "68306055f382"
+  },
+  "draft": {
+    "title": "깃허브, 코파일럿 모델 정책 관리 REST API 정식 출시",
+    "summary": "깃허브가 엔터프라이즈, 조직, 팀, 에이전트 앱 단위로 코파일럿 모델 정책을 조회하고 수정할 수 있는 REST API 엔드포인트를 정식 출시했습니다.",
+    "category": "AI_CODING",
+    "topics": [
+      "copilot",
+      "ai-coding",
+      "ai-work"
+    ],
+    "companies": [
+      "GitHub"
+    ],
+    "products": [
+      "GitHub Copilot",
+      "Copilot"
+    ],
+    "facts": [
+      {
+        "text": "깃허브는 엔터프라이즈, 엔터프라이즈 팀, 에이전트 앱, 조직 등 네 가지 수준에서 코파일럿 모델 정책을 조회(GET)하고 업데이트(PATCH)할 수 있는 REST API 엔드포인트를 정식 출시(GA)했습니다.",
+        "evidence": [
+          "E0",
+          "E2",
+          "E3"
+        ]
+      },
+      {
+        "text": "엔터프라이즈 정책에서는 조직 모드를 통해 조직에 모델 제어권을 위임하거나, 엔터프라이즈 팀 모드를 통해 팀 및 앱에 권한을 위임할 수 있습니다.",
+        "evidence": [
+          "E5"
+        ]
+      }
+    ],
+    "why": {
+      "text": "조직 내 코파일럿 모델 정책 설정을 웹 UI를 거치지 않고 API를 통해 프로그래밍 방식으로 일괄 조회 및 변경할 수 있게 되어 모델 가용성 관리가 용이해집니다.",
+      "evidence": [
+        "E2",
+        "E4"
+      ]
+    },
+    "change": {
+      "text": "깃허브 엔터프라이즈 관리자는 REST API를 자동화 파이프라인이나 내부 도구에 연동하여 코파일럿 모델 접근 정책을 관리할 수 있습니다.",
+      "evidence": [
+        "E2",
+        "E5",
+        "E6"
+      ]
+    },
+    "checks": [
+      {
+        "text": "API 연동을 시작하려면 엔터프라이즈 모델 가용성 관리 문서 및 REST API 문서를 참고해야 합니다.",
+        "evidence": [
+          "E6"
+        ]
+      }
+    ],
+    "unknowns": [
+      "API 호출 한도(rate limit)나 특정 요금제(Enterprise Cloud/Server) 전용 여부 등 상세 자격 요건은 근거에 명시되지 않았습니다."
+    ],
+    "editorialDepth": "STANDARD",
+    "insufficient": false,
+    "notes": "발표일은 제공된 근거(2026-10-19)를 기준으로 작성했습니다."
+  },
+  "validation": {
+    "errors": [],
+    "needsReview": []
+  },
+  "draftQa": {
+    "verdict": "PASS",
+    "checks": {
+      "FACT": {
+        "result": "PASS",
+        "issues": []
+      },
+      "EVIDENCE": {
+        "result": "PASS",
+        "issues": []
+      },
+      "EDITORIAL": {
+        "result": "PASS",
+        "issues": []
+      },
+      "STRUCTURE": {
+        "result": "PASS",
+        "issues": []
+      },
+      "DUPLICATE": {
+        "result": "PASS",
+        "issues": []
+      },
+      "SAFETY": {
+        "result": "PASS",
+        "issues": []
+      }
+    },
+    "fixes": [],
+    "stats": {
+      "bodyChars": 508,
+      "depth": "STANDARD",
+      "suggestedDepth": "STANDARD"
+    }
+  },
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": "drafts/9db7d13375ba.md",
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}
