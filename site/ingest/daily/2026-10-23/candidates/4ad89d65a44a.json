@@ -1,0 +1,221 @@
+{
+  "id": "4ad89d65a44a",
+  "date": "2026-10-23",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Bringing the Spark to Europe: Local Intelligence Powers Next Wave of Agents",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "NVIDIA",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://blogs.nvidia.com/blog/local-ai-gtc-rtx-dgx-spark-station-sync/",
+      "name": "NVIDIA Blog",
+      "type": "official",
+      "publishedAt": "2026-10-21T10:50:37.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "4ad89d65a44a",
+    "url": "https://blogs.nvidia.com/blog/local-ai-gtc-rtx-dgx-spark-station-sync/",
+    "canonicalUrl": "https://blogs.nvidia.com/blog/local-ai-gtc-rtx-dgx-spark-station-sync",
+    "title": "Bringing the Spark to Europe: Local Intelligence Powers Next Wave of Agents",
+    "excerpt": "At GTC Berlin, NVIDIA is showcasing its full lineup of local AI hardware. RTX Spark, which launched last week, powers personal agents on Windows PCs; DGX Spark supports developers building and scaling applications on Linux; and DGX Station serves enterprise teams running frontier workloads on Linux,",
+    "publishedAt": "2026-10-21T10:50:37.000Z",
+    "sourceId": "nvidia",
+    "sourceName": "NVIDIA Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://blogs.nvidia.com/feed/",
+    "fetchedAt": "2026-10-22T15:08:58.366Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 10219,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "At GTC Berlin, NVIDIA is showcasing its full lineup of local AI hardware. RTX Spark, which launched last week, powers personal agents on Windows PCs; DGX Spark supports developers building and scaling applications on Linux; and DGX Station serves enterprise teams running frontier workloads on Linux,",
+        "sourceUrl": "https://blogs.nvidia.com/blog/local-ai-gtc-rtx-dgx-spark-station-sync/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:50:37.000Z",
+        "checkedAt": "2026-10-22T15:11:07.240Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Bringing the Spark to Europe: Local Intelligence Powers Next Wave of Agents | NVIDIA Blog",
+        "sourceUrl": "https://blogs.nvidia.com/blog/local-ai-gtc-rtx-dgx-spark-station-sync/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:50:37.000Z",
+        "checkedAt": "2026-10-22T15:11:07.240Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "RTX Spark , which launched last week , powers personal agents on Windows PCs; DGX Spark supports developers building and scaling applications on Linux; and DGX Station serves enterprise teams running frontier workloads on Linux, with a Windows version arriving in December.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/local-ai-gtc-rtx-dgx-spark-station-sync/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:50:37.000Z",
+        "checkedAt": "2026-10-22T15:11:07.240Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "DGX Spark 64GB available on Friday, Oct.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/local-ai-gtc-rtx-dgx-spark-station-sync/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:50:37.000Z",
+        "checkedAt": "2026-10-22T15:11:07.240Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "RTX Spark is a new beginning for the PC — running personal agents, accelerated content creation and 1440p 100 frames-per-second gaming with up to 128GB of unified memory and 1 petaflop of AI compute.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/local-ai-gtc-rtx-dgx-spark-station-sync/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:50:37.000Z",
+        "checkedAt": "2026-10-22T15:11:07.240Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "During the GTC keynote, NVIDIA founder and CEO Jensen Huang showed off how AI agents running on RTX Spark can be used to train Hugging Face’s Microduck robot using NVIDIA Isaac Lab, Hermes Agent and Nemotron 3.5 Bolt 74B.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/local-ai-gtc-rtx-dgx-spark-station-sync/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:50:37.000Z",
+        "checkedAt": "2026-10-22T15:11:07.240Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "New DGX Spark 64GB systems — that can run models including Nemotron 3.5 Bolt 74B 24GB, Qwen3.8 27B and Gemma 4 26B-A4B — start rolling out from partners on Friday, Oct.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/local-ai-gtc-rtx-dgx-spark-station-sync/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:50:37.000Z",
+        "checkedAt": "2026-10-22T15:11:07.240Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "This allows users to run advanced coding models like Qwen 3.8 Flash Next, DeepSeek v4 Flash 0731 and GLM 5.3 Flash.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/local-ai-gtc-rtx-dgx-spark-station-sync/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:50:37.000Z",
+        "checkedAt": "2026-10-22T15:11:07.240Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "It automates the full research loop: proposes ideas, implements them, runs experiments to validate ideas and uses the results to decide what to try next — creating specialized kernels that boosted Flint’s generation speed on RTX Spark by 55% without changing the model’s weights.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/local-ai-gtc-rtx-dgx-spark-station-sync/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:50:37.000Z",
+        "checkedAt": "2026-10-22T15:11:07.240Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Developers can download the open weights on Hugging Face under the Apache 2.0 license and run the model on RTX Spark and DGX Spark systems, as well as GeForce RTX and RTX PRO GPUs.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/local-ai-gtc-rtx-dgx-spark-station-sync/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:50:37.000Z",
+        "checkedAt": "2026-10-22T15:11:07.240Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Nemotron Bolt E4B 4GB packs natural conversation and multi-turn agentic skills into as little as 4GB of memory, powering fast local voice assistants, interactive game characters and embedded interfaces on NVIDIA GeForce RTX GPUs, NVIDIA Jetson devices, and RTX and DGX Spark.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/local-ai-gtc-rtx-dgx-spark-station-sync/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:50:37.000Z",
+        "checkedAt": "2026-10-22T15:11:07.240Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "MiniMax M3.1 Flash is a new open model built for NVIDIA DGX Station and DGX Spark, bringing long-context AI to the desktop.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/local-ai-gtc-rtx-dgx-spark-station-sync/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:50:37.000Z",
+        "checkedAt": "2026-10-22T15:11:07.240Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Bringing the Spark to Europe: Local Intelligence Powers Next Wave of Agents",
+        "sourceUrl": "https://blogs.nvidia.com/blog/local-ai-gtc-rtx-dgx-spark-station-sync/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:50:37.000Z",
+        "checkedAt": "2026-10-22T15:11:07.240Z"
+      }
+    ],
+    "pageDate": "2026-10-21T10:50:37.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PRODUCT_LAUNCH"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 PRODUCT_LAUNCH (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}
