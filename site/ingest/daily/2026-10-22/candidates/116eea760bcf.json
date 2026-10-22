@@ -1,0 +1,234 @@
+{
+  "id": "116eea760bcf",
+  "date": "2026-10-22",
+  "proposedSlug": "hydrafusion-updates-max-option",
+  "title": null,
+  "sourceTitle": "HydraFusion updates and new Max option",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": true,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "GitHub",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://github.blog/changelog/2026-10-14-hydrafusion-updates-and-new-max-option",
+      "name": "GitHub Changelog",
+      "type": "official",
+      "publishedAt": "2026-10-14T20:01:35.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "116eea760bcf",
+    "url": "https://github.blog/changelog/2026-10-14-hydrafusion-updates-and-new-max-option",
+    "canonicalUrl": "https://github.blog/changelog/2026-10-14-hydrafusion-updates-and-new-max-option",
+    "title": "HydraFusion updates and new Max option",
+    "excerpt": "HydraFusion has an updated model pool, improved orchestration workflows, and introduces HydraFusion Max. Both HydraFusion and HydraFusion Max are available across VS Code, the GitHub Copilot app, and GitHub Copilot… The post HydraFusion updates and new Max option appeared first on The GitHub Blog .",
+    "publishedAt": "2026-10-14T20:01:35.000Z",
+    "sourceId": "github-changelog",
+    "sourceName": "GitHub Changelog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://github.blog/changelog/feed/",
+    "fetchedAt": "2026-10-17T13:40:53.584Z",
+    "fromQueue": "draft"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 2671,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "HydraFusion has an updated model pool, improved orchestration workflows, and introduces HydraFusion Max. Both HydraFusion and HydraFusion Max are available across VS Code, the GitHub Copilot app, and GitHub Copilot… The post HydraFusion updates and new Max option appeared first on The GitHub Blog .",
+        "sourceUrl": "https://github.blog/changelog/2026-10-14-hydrafusion-updates-and-new-max-option",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-14T20:01:35.000Z",
+        "checkedAt": "2026-10-21T15:10:02.737Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "HydraFusion updates and new Max option - GitHub Changelog",
+        "sourceUrl": "https://github.blog/changelog/2026-10-14-hydrafusion-updates-and-new-max-option",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-14T20:01:35.000Z",
+        "checkedAt": "2026-10-21T15:10:02.737Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "HydraFusion has an updated model pool, improved orchestration workflows, and introduces HydraFusion Max.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-14-hydrafusion-updates-and-new-max-option",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-14T20:01:35.000Z",
+        "checkedAt": "2026-10-21T15:10:02.737Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Both HydraFusion and HydraFusion Max are available across VS Code, the GitHub Copilot app, and GitHub Copilot CLI and remain in research preview.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-14-hydrafusion-updates-and-new-max-option",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-14T20:01:35.000Z",
+        "checkedAt": "2026-10-21T15:10:02.737Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "HydraFusion orchestrates multiple models to produce a single response, bringing together their strengths so you don&rsquo;t have to choose an individual model for each task.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-14-hydrafusion-updates-and-new-max-option",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-14T20:01:35.000Z",
+        "checkedAt": "2026-10-21T15:10:02.737Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Latest frontier models: HydraFusion and HydraFusion Max draw from a pool that now includes Claude Opus 5.5, GPT-6 Astra, GPT-6.1 Sol, and GPT-6 Luna.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-14-hydrafusion-updates-and-new-max-option",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-14T20:01:35.000Z",
+        "checkedAt": "2026-10-21T15:10:02.737Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Reasoning effort tailored to each step: Previously, HydraFusion only used each model&rsquo;s default reasoning effort.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-14-hydrafusion-updates-and-new-max-option",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-14T20:01:35.000Z",
+        "checkedAt": "2026-10-21T15:10:02.737Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "HydraFusion Max is built on the same architecture and uses the same workflow techniques as HydraFusion, but is tuned for frontier capability on more demanding tasks.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-14-hydrafusion-updates-and-new-max-option",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-14T20:01:35.000Z",
+        "checkedAt": "2026-10-21T15:10:02.737Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Both options are supported across all three clients, so you can access the latest HydraFusion experience whether you work in VS Code, the GitHub Copilot app, or the terminal.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-14-hydrafusion-updates-and-new-max-option",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-14T20:01:35.000Z",
+        "checkedAt": "2026-10-21T15:10:02.737Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "HydraFusion and HydraFusion Max are available on Copilot Pro, Pro+, Business, and Enterprise plans with experimental or preview features enabled, subject to your organization&rsquo;s model policies.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-14-hydrafusion-updates-and-new-max-option",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-14T20:01:35.000Z",
+        "checkedAt": "2026-10-21T15:10:02.737Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Learn more in the HydraFusion documentation .",
+        "sourceUrl": "https://github.blog/changelog/2026-10-14-hydrafusion-updates-and-new-max-option",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-14T20:01:35.000Z",
+        "checkedAt": "2026-10-21T15:10:02.737Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Share your feedback in the HydraFusion discussion .",
+        "sourceUrl": "https://github.blog/changelog/2026-10-14-hydrafusion-updates-and-new-max-option",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-14T20:01:35.000Z",
+        "checkedAt": "2026-10-21T15:10:02.737Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "GitHub Copilot models deprecated on October 19, 2026",
+        "sourceUrl": "https://github.blog/changelog/2026-10-14-hydrafusion-updates-and-new-max-option",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-14T20:01:35.000Z",
+        "checkedAt": "2026-10-21T15:10:02.737Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 2,
+    "practicalImpact": 2,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PRODUCT_LAUNCH",
+      "CONSUMER"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 8,
+    "total": 8
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 PRODUCT_LAUNCH·CONSUMER (우선순위 8)",
+    "근거 확인 통과 (확인 사실 11개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "status": "skipped",
+    "error": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성",
+    "promptVersion": "draft-v1",
+    "at": "2026-10-22T00:43:21.591Z",
+    "evidenceHash": "f3c0c098b7af"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}

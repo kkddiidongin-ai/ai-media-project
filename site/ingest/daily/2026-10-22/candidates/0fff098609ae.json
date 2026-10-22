@@ -1,0 +1,235 @@
+{
+  "id": "0fff098609ae",
+  "date": "2026-10-22",
+  "proposedSlug": "trace-agents-opentelemetry-claude-platform",
+  "title": null,
+  "sourceTitle": "Trace agents with OpenTelemetry on the Claude Platform",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 12,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Anthropic",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://claude.com/resources/articles/agent-observability-on-the-claude-platform",
+      "name": "Claude (claude.com articles)",
+      "type": "official",
+      "publishedAt": "2026-10-14T00:00:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "0fff098609ae",
+    "url": "https://claude.com/resources/articles/agent-observability-on-the-claude-platform",
+    "canonicalUrl": "https://claude.com/resources/articles/agent-observability-on-the-claude-platform",
+    "title": "Trace agents with OpenTelemetry on the Claude Platform",
+    "excerpt": "Announcing OpenTelemetry traces from Claude Managed Agents, the Messages API, and Claude SDKs on the Claude Platform.",
+    "publishedAt": "2026-10-14T00:00:00.000Z",
+    "sourceId": "claude-blog",
+    "sourceName": "Claude (claude.com articles)",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "listing-meta",
+    "discoveredVia": "https://claude.com/resources/articles",
+    "fetchedAt": "2026-10-17T13:40:53.584Z",
+    "fromQueue": "draft"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 4024,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Announcing OpenTelemetry traces from Claude Managed Agents, the Messages API, and Claude SDKs on the Claude Platform.",
+        "sourceUrl": "https://claude.com/resources/articles/agent-observability-on-the-claude-platform",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-14T00:00:00.000Z",
+        "checkedAt": "2026-10-21T15:10:05.027Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "• • • • • • • • • Trace agents with OpenTelemetry on the Claude Platform | Claude by Anthropic • •",
+        "sourceUrl": "https://claude.com/resources/articles/agent-observability-on-the-claude-platform",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-14T00:00:00.000Z",
+        "checkedAt": "2026-10-21T15:10:05.027Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Skip to main content You can now send OpenTelemetry (OTel) traces from Claude Managed Agents, the Messages API, and Claude SDKs to any OTel tool, and follow each step your agents take.",
+        "sourceUrl": "https://claude.com/resources/articles/agent-observability-on-the-claude-platform",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-14T00:00:00.000Z",
+        "checkedAt": "2026-10-21T15:10:05.027Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "If you already send Claude Code or Cowork traces to your observability tool, the agents you build on the Claude Platform can also show up in the same place.",
+        "sourceUrl": "https://claude.com/resources/articles/agent-observability-on-the-claude-platform",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-14T00:00:00.000Z",
+        "checkedAt": "2026-10-21T15:10:05.027Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Add a destination in the Claude Console, and every agent turn, model call, and tool use arrives in your observability tool as a standard OpenTelemetry trace, with latency, tokens, and IDs.",
+        "sourceUrl": "https://claude.com/resources/articles/agent-observability-on-the-claude-platform",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-14T00:00:00.000Z",
+        "checkedAt": "2026-10-21T15:10:05.027Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Claude traces follow the OpenTelemetry GenAI semantic conventions , so data from Claude and other providers works in the same tools and dashboards.",
+        "sourceUrl": "https://claude.com/resources/articles/agent-observability-on-the-claude-platform",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-14T00:00:00.000Z",
+        "checkedAt": "2026-10-21T15:10:05.027Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "OpenTelemetry traces on the Claude Platform is available in public beta.",
+        "sourceUrl": "https://claude.com/resources/articles/agent-observability-on-the-claude-platform",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-14T00:00:00.000Z",
+        "checkedAt": "2026-10-21T15:10:05.027Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Managed Agents and the Messages API need a destination in the Claude Console, while Claude SDKs export traces automatically.",
+        "sourceUrl": "https://claude.com/resources/articles/agent-observability-on-the-claude-platform",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-14T00:00:00.000Z",
+        "checkedAt": "2026-10-21T15:10:05.027Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Native OpenTelemetry export from the Claude Platform lets us analyze agent interactions in PostHog alongside product usage data.",
+        "sourceUrl": "https://claude.com/resources/articles/agent-observability-on-the-claude-platform",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-14T00:00:00.000Z",
+        "checkedAt": "2026-10-21T15:10:05.027Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "On some agents, we’ve already cut token usage by 10–20% and made sessions 30% faster.",
+        "sourceUrl": "https://claude.com/resources/articles/agent-observability-on-the-claude-platform",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-14T00:00:00.000Z",
+        "checkedAt": "2026-10-21T15:10:05.027Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "For agents analyzing live markets 24/7, Langfuse is our pit wall.",
+        "sourceUrl": "https://claude.com/resources/articles/agent-observability-on-the-claude-platform",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-14T00:00:00.000Z",
+        "checkedAt": "2026-10-21T15:10:05.027Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Native OpenTelemetry export from the Claude Platform streams every trace straight in with no custom instrumentation, so my team can focus on the edge, not the wiring.”",
+        "sourceUrl": "https://claude.com/resources/articles/agent-observability-on-the-claude-platform",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-14T00:00:00.000Z",
+        "checkedAt": "2026-10-21T15:10:05.027Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Our agents run on the Claude Platform and our telemetry lives in Grafana Cloud, and native OpenTelemetry export from Claude puts each model call in the same trace as the reconciliation or journal-entry workflow it ran inside.",
+        "sourceUrl": "https://claude.com/resources/articles/agent-observability-on-the-claude-platform",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-14T00:00:00.000Z",
+        "checkedAt": "2026-10-21T15:10:05.027Z"
+      }
+    ],
+    "pageDate": "2026-10-14T00:00:00.000Z"
+  },
+  "score": {
+    "importance": 2,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 2,
+    "signals": [
+      "MODEL",
+      "API_PLATFORM"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 7,
+    "total": 7
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 MODEL·API_PLATFORM (우선순위 7)",
+    "근거 확인 통과 (확인 사실 12개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "status": "skipped",
+    "error": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성",
+    "promptVersion": "draft-v1",
+    "at": "2026-10-22T00:43:21.591Z",
+    "evidenceHash": "f02149a0a93d"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}

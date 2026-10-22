@@ -1,0 +1,221 @@
+{
+  "id": "ea83f0dd69c5",
+  "date": "2026-10-22",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Structured outputs for Anthropic Claude models on Amazon Bedrock",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/structured-outputs-for-anthropic-claude-models-on-amazon-bedrock/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-10-19T23:32:19.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "ea83f0dd69c5",
+    "url": "https://aws.amazon.com/blogs/machine-learning/structured-outputs-for-anthropic-claude-models-on-amazon-bedrock/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/structured-outputs-for-anthropic-claude-models-on-amazon-bedrock",
+    "title": "Structured outputs for Anthropic Claude models on Amazon Bedrock",
+    "excerpt": "Amazon Bedrock now supports structured outputs for all Anthropic Claude models on both the bedrock-runtime and bedrock-mantle endpoints. Receive schema-compliant JSON that conforms to a defined structure, without custom parsing, retry logic, or post-processing, using JSON Schema output format and st",
+    "publishedAt": "2026-10-19T23:32:19.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-10-22T00:37:54.015Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 9755,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Amazon Bedrock now supports structured outputs for all Anthropic Claude models on both the bedrock-runtime and bedrock-mantle endpoints. Receive schema-compliant JSON that conforms to a defined structure, without custom parsing, retry logic, or post-processing, using JSON Schema output format and st",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/structured-outputs-for-anthropic-claude-models-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T23:32:19.000Z",
+        "checkedAt": "2026-10-21T15:10:10.151Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Structured outputs for Anthropic Claude models on Amazon Bedrock | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/structured-outputs-for-anthropic-claude-models-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T23:32:19.000Z",
+        "checkedAt": "2026-10-21T15:10:10.151Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Structured outputs for Anthropic Claude models on Amazon Bedrock",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/structured-outputs-for-anthropic-claude-models-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T23:32:19.000Z",
+        "checkedAt": "2026-10-21T15:10:10.151Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Amazon Bedrock now supports structured outputs for all Anthropic Claude models, on both the bedrock-runtime and bedrock-mantle endpoints, where the model is available.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/structured-outputs-for-anthropic-claude-models-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T23:32:19.000Z",
+        "checkedAt": "2026-10-21T15:10:10.151Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Whether you call Claude through Boto3 and the bedrock-runtime APIs or through the Messages API and the bedrock-mantle endpoint, you can now receive schema-compliant JSON responses that conform to a defined structure.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/structured-outputs-for-anthropic-claude-models-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T23:32:19.000Z",
+        "checkedAt": "2026-10-21T15:10:10.151Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "With structured outputs for Claude on Amazon Bedrock, you can automate reliable, schema-compliant tasks across industries.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/structured-outputs-for-anthropic-claude-models-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T23:32:19.000Z",
+        "checkedAt": "2026-10-21T15:10:10.151Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "What changes with structured outputs on Amazon Bedrock",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/structured-outputs-for-anthropic-claude-models-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T23:32:19.000Z",
+        "checkedAt": "2026-10-21T15:10:10.151Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Schema validation – Amazon Bedrock validates your JSON schema against the supported JSON Schema Draft 2020-12 subset.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/structured-outputs-for-anthropic-claude-models-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T23:32:19.000Z",
+        "checkedAt": "2026-10-21T15:10:10.151Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "The following example shows how to extract the structured lead data from a customer email using boto3 with an Anthropic Claude model:",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/structured-outputs-for-anthropic-claude-models-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T23:32:19.000Z",
+        "checkedAt": "2026-10-21T15:10:10.151Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "To use structured outputs effectively on Amazon Bedrock, follow these guidelines:",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/structured-outputs-for-anthropic-claude-models-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T23:32:19.000Z",
+        "checkedAt": "2026-10-21T15:10:10.151Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "For additional best practices and schema design recommendations, see Structured outputs in the Amazon Bedrock User Guide.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/structured-outputs-for-anthropic-claude-models-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T23:32:19.000Z",
+        "checkedAt": "2026-10-21T15:10:10.151Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Structured outputs for Anthropic Claude models on Amazon Bedrock provides the reliability that production AI applications require.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/structured-outputs-for-anthropic-claude-models-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T23:32:19.000Z",
+        "checkedAt": "2026-10-21T15:10:10.151Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Structured outputs for Claude on Amazon Bedrock is now generally available.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/structured-outputs-for-anthropic-claude-models-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T23:32:19.000Z",
+        "checkedAt": "2026-10-21T15:10:10.151Z"
+      }
+    ],
+    "pageDate": "2026-10-19T23:32:19.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "API_PLATFORM"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 API_PLATFORM (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

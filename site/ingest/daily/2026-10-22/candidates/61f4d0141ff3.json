@@ -1,0 +1,124 @@
+{
+  "id": "61f4d0141ff3",
+  "date": "2026-10-22",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "OpenAI models are coming to Google Cloud",
+  "depth": null,
+  "suggestedDepth": null,
+  "depthAssessment": {
+    "sufficiency": "INSUFFICIENT",
+    "distinctFacts": 0,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": false,
+      "evidenceQuality": false,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "distinctFacts",
+      "evidenceQuality",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "OpenAI",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://openai.com/index/openai-models-google-cloud",
+      "name": "OpenAI",
+      "type": "official",
+      "publishedAt": "2026-10-21T12:00:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "61f4d0141ff3",
+    "url": "https://openai.com/index/openai-models-google-cloud",
+    "canonicalUrl": "https://openai.com/index/openai-models-google-cloud",
+    "title": "OpenAI models are coming to Google Cloud",
+    "excerpt": "OpenAI and Google Cloud are bringing frontier models and Codex workflows to Gemini’s Model Garden, available through Google Cloud Marketplace.",
+    "publishedAt": "2026-10-21T12:00:00.000Z",
+    "sourceId": "openai",
+    "sourceName": "OpenAI",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://openai.com/news/rss.xml",
+    "fetchedAt": "2026-10-22T00:37:54.015Z"
+  },
+  "evidence": {
+    "status": "SKIPPED_HOST_BLOCKED",
+    "chars": 0,
+    "grade": "FAIL",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "OpenAI and Google Cloud are bringing frontier models and Codex workflows to Gemini’s Model Garden, available through Google Cloud Marketplace.",
+        "sourceUrl": "https://openai.com/index/openai-models-google-cloud",
+        "source": "OpenAI",
+        "publishedAt": "2026-10-21T12:00:00.000Z",
+        "checkedAt": "2026-10-22T00:39:13.649Z"
+      }
+    ],
+    "pageDate": null,
+    "alternate": {
+      "tried": [
+        "https://platform.openai.com/docs/changelog"
+      ],
+      "matched": 0,
+      "reason": "제목에 버전 붙은 이름 없음"
+    }
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 2,
+    "signals": [
+      "MODEL_MENTION"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "근거 부족 (원문 SKIPPED_HOST_BLOCKED, 확인 사실 0개) — 발행하지 않음"
+  ],
+  "needsReview": [
+    "source_blocked",
+    "insufficient_evidence"
+  ],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}
