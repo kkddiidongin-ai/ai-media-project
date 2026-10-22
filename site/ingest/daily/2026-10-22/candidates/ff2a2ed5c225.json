@@ -1,0 +1,221 @@
+{
+  "id": "ff2a2ed5c225",
+  "date": "2026-10-22",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Train Qwen3 on AWS Trainium with torchtitan",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 9,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/train-qwen3-on-aws-trainium-with-torchtitan/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-10-21T20:00:22.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "ff2a2ed5c225",
+    "url": "https://aws.amazon.com/blogs/machine-learning/train-qwen3-on-aws-trainium-with-torchtitan/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/train-qwen3-on-aws-trainium-with-torchtitan",
+    "title": "Train Qwen3 on AWS Trainium with torchtitan",
+    "excerpt": "Train Qwen3 on AWS Trainium with torchtitan three ways on a single trn2.48xlarge: the Hugging Face Transformers v5 modeling backend, torchtitan's native Qwen3, and NKI mixture-of-experts kernels. The same torchrun launcher and config structure work unchanged across all three paths, including loading",
+    "publishedAt": "2026-10-21T20:00:22.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-10-22T00:37:54.015Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 13180,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Train Qwen3 on AWS Trainium with torchtitan three ways on a single trn2.48xlarge: the Hugging Face Transformers v5 modeling backend, torchtitan's native Qwen3, and NKI mixture-of-experts kernels. The same torchrun launcher and config structure work unchanged across all three paths, including loading",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/train-qwen3-on-aws-trainium-with-torchtitan/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-21T20:00:22.000Z",
+        "checkedAt": "2026-10-22T00:39:15.299Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Train Qwen3 on AWS Trainium with torchtitan | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/train-qwen3-on-aws-trainium-with-torchtitan/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-21T20:00:22.000Z",
+        "checkedAt": "2026-10-22T00:39:15.299Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Train Qwen3 on AWS Trainium with torchtitan",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/train-qwen3-on-aws-trainium-with-torchtitan/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-21T20:00:22.000Z",
+        "checkedAt": "2026-10-22T00:39:15.299Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "In this post, you train Qwen3 three ways on a single trn2.48xlarge .",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/train-qwen3-on-aws-trainium-with-torchtitan/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-21T20:00:22.000Z",
+        "checkedAt": "2026-10-22T00:39:15.299Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "The second method switches to torchtitan’s native Qwen3 by changing config.model_spec .",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/train-qwen3-on-aws-trainium-with-torchtitan/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-21T20:00:22.000Z",
+        "checkedAt": "2026-10-22T00:39:15.299Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "python3 -c \"import torchtitan, torchtitan_neuron; print(torchtitan.__version__, torchtitan_neuron.__file__)\"",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/train-qwen3-on-aws-trainium-with-torchtitan/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-21T20:00:22.000Z",
+        "checkedAt": "2026-10-22T00:39:15.299Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "-m torchtitan.train --module neuron_qwen3 --config v5_qwen3_4b",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/train-qwen3-on-aws-trainium-with-torchtitan/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-21T20:00:22.000Z",
+        "checkedAt": "2026-10-22T00:39:15.299Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "This command launches 64 training processes, one for each logical NeuronCore. --module neuron_qwen3 imports the local config module. --config v5_qwen3_4b selects the configuration function.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/train-qwen3-on-aws-trainium-with-torchtitan/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-21T20:00:22.000Z",
+        "checkedAt": "2026-10-22T00:39:15.299Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "This example starts from qwen3_32b() because the tested torchtitan build does not provide a generic qwen3_4b() config builder.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/train-qwen3-on-aws-trainium-with-torchtitan/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-21T20:00:22.000Z",
+        "checkedAt": "2026-10-22T00:39:15.299Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "-m torchtitan.train --module neuron_qwen3 --config native_qwen3_4b",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/train-qwen3-on-aws-trainium-with-torchtitan/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-21T20:00:22.000Z",
+        "checkedAt": "2026-10-22T00:39:15.299Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "from torchtitan_neuron.models.qwen3.config_registry import qwen3_nki_moe_config",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/train-qwen3-on-aws-trainium-with-torchtitan/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-21T20:00:22.000Z",
+        "checkedAt": "2026-10-22T00:39:15.299Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "-m torchtitan.train --module neuron_qwen3 --config nki_qwen3_30b_a3b",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/train-qwen3-on-aws-trainium-with-torchtitan/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-21T20:00:22.000Z",
+        "checkedAt": "2026-10-22T00:39:15.299Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "You can also train with torchtitan’s native Qwen3 implementation by setting config.model_spec .",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/train-qwen3-on-aws-trainium-with-torchtitan/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-21T20:00:22.000Z",
+        "checkedAt": "2026-10-22T00:39:15.299Z"
+      }
+    ],
+    "pageDate": "2026-10-21T20:00:22.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "INFRA"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 INFRA (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

@@ -1,0 +1,221 @@
+{
+  "id": "5aaac97d85d0",
+  "date": "2026-10-22",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Inside NVIDIA Sentry: Secure AI Agents at Runtime",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "NVIDIA",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://developer.nvidia.com/blog/inside-nvidia-sentry-secure-ai-agents-at-runtime/",
+      "name": "NVIDIA Technical Blog",
+      "type": "official",
+      "publishedAt": "2026-10-21T09:52:16.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "5aaac97d85d0",
+    "url": "https://developer.nvidia.com/blog/inside-nvidia-sentry-secure-ai-agents-at-runtime/",
+    "canonicalUrl": "https://developer.nvidia.com/blog/inside-nvidia-sentry-secure-ai-agents-at-runtime",
+    "title": "Inside NVIDIA Sentry: Secure AI Agents at Runtime",
+    "excerpt": "An AI agent can complete its assignment and still cross a security boundary. Recent incidents show that agents can circumvent security controls while using...",
+    "publishedAt": "2026-10-21T09:52:16.000Z",
+    "sourceId": "nvidia-developer",
+    "sourceName": "NVIDIA Technical Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://developer.nvidia.com/blog/feed",
+    "fetchedAt": "2026-10-22T00:37:54.015Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 15670,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "An AI agent can complete its assignment and still cross a security boundary. Recent incidents show that agents can circumvent security controls while using...",
+        "sourceUrl": "https://developer.nvidia.com/blog/inside-nvidia-sentry-secure-ai-agents-at-runtime/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-21T09:52:16.000Z",
+        "checkedAt": "2026-10-22T00:39:17.695Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Inside NVIDIA Sentry: Secure AI Agents at Runtime | NVIDIA Technical Blog",
+        "sourceUrl": "https://developer.nvidia.com/blog/inside-nvidia-sentry-secure-ai-agents-at-runtime/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-21T09:52:16.000Z",
+        "checkedAt": "2026-10-22T00:39:17.695Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Inside NVIDIA Sentry: Secure AI Agents at Runtime",
+        "sourceUrl": "https://developer.nvidia.com/blog/inside-nvidia-sentry-secure-ai-agents-at-runtime/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-21T09:52:16.000Z",
+        "checkedAt": "2026-10-22T00:39:17.695Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "NVIDIA Sentry monitors AI agents and enforces access policies from a hardware-isolated trust domain on BlueField-4 DPUs, independent of host software.",
+        "sourceUrl": "https://developer.nvidia.com/blog/inside-nvidia-sentry-secure-ai-agents-at-runtime/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-21T09:52:16.000Z",
+        "checkedAt": "2026-10-22T00:39:17.695Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "NVIDIA Sentry is a security software framework that monitors AI agents and enforces policies governing their access to models, tools, and data.",
+        "sourceUrl": "https://developer.nvidia.com/blog/inside-nvidia-sentry-secure-ai-agents-at-runtime/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-21T09:52:16.000Z",
+        "checkedAt": "2026-10-22T00:39:17.695Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Part of the NVIDIA OpenShell reference architecture announced at GTC Berlin, it’s built on NVIDIA DOCA , runs on NVIDIA BlueField-4 DPUs , and provides host-isolated runtime protection for AI agents.",
+        "sourceUrl": "https://developer.nvidia.com/blog/inside-nvidia-sentry-secure-ai-agents-at-runtime/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-21T09:52:16.000Z",
+        "checkedAt": "2026-10-22T00:39:17.695Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "In addition to inspecting agent communications, NVIDIA Sentry uses out-of-band observability to establish real-time situational awareness, continuously evaluating agents’ runtime security and behavior to validate their security and integrity.",
+        "sourceUrl": "https://developer.nvidia.com/blog/inside-nvidia-sentry-secure-ai-agents-at-runtime/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-21T09:52:16.000Z",
+        "checkedAt": "2026-10-22T00:39:17.695Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "NVIDIA Sentry builds on that foundation to continuously monitor AI agent behavior and enforce access policies independently of host software, establishing a strict security boundary in a separate hardware trust domain outside the agent’s reach to keep agents operating within t…",
+        "sourceUrl": "https://developer.nvidia.com/blog/inside-nvidia-sentry-secure-ai-agents-at-runtime/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-21T09:52:16.000Z",
+        "checkedAt": "2026-10-22T00:39:17.695Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "NVIDIA OpenShell is a secure runtime for autonomous agents that governs what an agent can do.",
+        "sourceUrl": "https://developer.nvidia.com/blog/inside-nvidia-sentry-secure-ai-agents-at-runtime/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-21T09:52:16.000Z",
+        "checkedAt": "2026-10-22T00:39:17.695Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "NVIDIA Sentry adds an independent hardware safeguard out of band, running on BlueField-4, beyond the agent’s reach and knowledge.",
+        "sourceUrl": "https://developer.nvidia.com/blog/inside-nvidia-sentry-secure-ai-agents-at-runtime/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-21T09:52:16.000Z",
+        "checkedAt": "2026-10-22T00:39:17.695Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "NVIDIA Sentry can contain and quarantine agents within milliseconds using BlueField-4 in-silicon enforcement capabilities without the cooperation of the agent or the host software.",
+        "sourceUrl": "https://developer.nvidia.com/blog/inside-nvidia-sentry-secure-ai-agents-at-runtime/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-21T09:52:16.000Z",
+        "checkedAt": "2026-10-22T00:39:17.695Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "NVIDIA Sentry brings that control into an independent infrastructure domain, combining application-layer inspection through DOCA Tower with runtime evidence and visibility from DOCA Argus and in-silicon enforcement on BlueField-4.",
+        "sourceUrl": "https://developer.nvidia.com/blog/inside-nvidia-sentry-secure-ai-agents-at-runtime/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-21T09:52:16.000Z",
+        "checkedAt": "2026-10-22T00:39:17.695Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Agentic AI / Generative AI | Networking / Communications | Trustworthy AI / Cybersecurity | General | BlueField DPU | DOCA | Intermediate Technical | Deep dive | AI Agent | AI Networking | GTC Berlin 2026 | Open Agent Safety Platform | OpenShell | Sentry",
+        "sourceUrl": "https://developer.nvidia.com/blog/inside-nvidia-sentry-secure-ai-agents-at-runtime/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-21T09:52:16.000Z",
+        "checkedAt": "2026-10-22T00:39:17.695Z"
+      }
+    ],
+    "pageDate": "2026-10-21T09:52:16.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "SECURITY_MENTION"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 SECURITY_MENTION (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}
