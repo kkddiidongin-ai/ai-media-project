@@ -6,7 +6,7 @@
 
 | 수집 | 신규 | 후속 | 중복 | 불확실 | 발행 추천 | 보류 | 제외 | 원고 |
 |---|---|---|---|---|---|---|---|---|
-| 537 | 555 | 0 | 0 | 0 | 34 | 270 | 251 | 0 |
+| 544 | 561 | 0 | 0 | 0 | 34 | 293 | 234 | 0 |
 
 > 자동으로 발행하지 않습니다. 아래 추천은 사람이 `npm run daily:approve -- <날짜> <id>`로 승인해야 기사 데이터에 들어갑니다. 뉴스레터도 만들거나 보내지 않습니다.
 
@@ -34,7 +34,7 @@
 - 추천 이유: 사건 신호 MODEL·AVAILABILITY·INFRA (우선순위 11) · 근거 확인 통과 (확인 사실 9개, SUFFICIENT_STANDARD) (중요도 4/5, 한국 관련 0/3)
 - 근거: 원문 OK · 근거 문장 13개 · 서로 다른 확인 사실 9개 · 판정 PASS · DEEP 아님(사용자 영향)
 - 검증: 확인 필요 없음
-- 원고: 없음 — HTTP 503 · 📮 뉴스레터 후보
+- 원고: 없음 — timeout · 📮 뉴스레터 후보
 
 ### 4. NVIDIA cuDSS Now Generally Available to Accelerate Engineering and Scientific Simulations
 - id `147a52922e17` · 제안 slug `nvidia-cudss-generally-available-accelerate-engineering-scie` · 깊이 **-** (근거 기준 최대 STANDARD) · 분류 -
@@ -42,7 +42,7 @@
 - 추천 이유: 사건 신호 PRODUCT_LAUNCH·AVAILABILITY·INFRA (우선순위 10) · 근거 확인 통과 (확인 사실 11개, SUFFICIENT_STANDARD) (중요도 3/5, 한국 관련 0/3)
 - 근거: 원문 OK · 근거 문장 13개 · 서로 다른 확인 사실 11개 · 판정 PASS · DEEP 아님(중요도 4+)
 - 검증: 확인 필요 없음
-- 원고: 없음 — HTTP 503 · 📮 뉴스레터 후보
+- 원고: 없음 — timeout · 📮 뉴스레터 후보
 
 ### 5. An easier way to customize how Gemini works for you
 - id `a760dd1e00bd` · 제안 slug `easier-way-customize-gemini-works-you` · 깊이 **-** (근거 기준 최대 STANDARD) · 분류 -
@@ -50,7 +50,7 @@
 - 추천 이유: 사건 신호 MODEL·PRODUCT_LAUNCH·CONSUMER (우선순위 10) · 근거 확인 통과 (확인 사실 10개, SUFFICIENT_STANDARD) (중요도 3/5, 한국 관련 0/3)
 - 근거: 원문 OK · 근거 문장 13개 · 서로 다른 확인 사실 10개 · 판정 PASS · DEEP 아님(중요도 4+, 배경 설명 필요, STANDARD로는 맥락 누락)
 - 검증: 확인 필요 없음
-- 원고: 없음 — timeout · 📮 뉴스레터 후보
+- 원고: 없음 — HTTP 503 · 📮 뉴스레터 후보
 
 ### 6. AWS Continuum for code vulnerabilities is now generally available
 - id `416b0e09bace` · 제안 slug `aws-continuum-code-vulnerabilities-generally-available` · 깊이 **-** (근거 기준 최대 STANDARD) · 분류 -
@@ -66,7 +66,7 @@
 - 추천 이유: 사건 신호 MODEL·PRODUCT_LAUNCH·PREVIEW (우선순위 9) · 근거 확인 통과 (확인 사실 12개, SUFFICIENT_STANDARD) (중요도 3/5, 한국 관련 0/3)
 - 근거: 원문 OK · 근거 문장 13개 · 서로 다른 확인 사실 12개 · 판정 PASS · DEEP 아님(중요도 4+, 사용자 영향, 배경 설명 필요, STANDARD로는 맥락 누락)
 - 검증: 확인 필요 없음
-- 원고: 없음 — timeout · 📮 뉴스레터 후보
+- 원고: 없음 — HTTP 503 · 📮 뉴스레터 후보
 
 ### 8. Teacher-led Gemini Notebook in Google Classroom now offers insight summaries for educators and updated sharing settings for admins, including trusted domains
 - id `35a22a987ed8` · 제안 slug `teacher-led-gemini-notebook-google-classroom-offers` · 깊이 **-** (근거 기준 최대 STANDARD) · 분류 -
@@ -74,7 +74,7 @@
 - 추천 이유: 사건 신호 MODEL·PRODUCT_LAUNCH (우선순위 9) · 근거 확인 통과 (확인 사실 11개, SUFFICIENT_STANDARD) (중요도 3/5, 한국 관련 0/3)
 - 근거: 원문 OK · 근거 문장 13개 · 서로 다른 확인 사실 11개 · 판정 PASS · DEEP 아님(중요도 4+, 사용자 영향, 배경 설명 필요, STANDARD로는 맥락 누락)
 - 검증: 확인 필요 없음
-- 원고: 없음 — timeout · 📮 뉴스레터 후보
+- 원고: 없음 — HTTP 503 · 📮 뉴스레터 후보
 
 ### 9. Advancing digital sovereignty with greater control and choice
 - id `abedaf2dbb11` · 제안 slug `advancing-digital-sovereignty-greater-control-choice` · 깊이 **-** (근거 기준 최대 STANDARD) · 분류 -
@@ -318,7 +318,7 @@
 - New Gemini tools for small business owners — 이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성
 - Physicist Christopher Stubbs joins Anthropic's Long-Term Be… — 이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성
 
-## 보류 (270)
+## 보류 (293)
 
 - **ChatGPT Ads expands to 26 new countries as over 100,000 advertisers have used the platform** (OpenAI, 2026-10-21) — 근거 부족 (원문 HTTP_403, 확인 사실 0개) — 발행하지 않음 · 확인 필요: 원문을 읽지 못함, 근거 부족
 - **Tailored for Every Home: Samsung “The Brief” Goes Global With AI-Powered Home Appliances** (Samsung Newsroom, 2026-10-20) — 근거 부족 (원문 TIMEOUT, 확인 사실 0개) — 발행하지 않음 · 확인 필요: 원문을 읽지 못함, 근거 부족
@@ -333,10 +333,12 @@
 - **How IskayPet unified corporate knowledge with Amazon Bedrock Managed Knowledge Bases** (AWS Machine Learning Blog, 2026-10-22) — 사건 신호 API_PLATFORM (우선순위 5) · 근거는 있으나 우선순위 5 < 발행 추천 기준 6 · 확인 필요: 없음
 - **Global default for Copilot features generally available** (GitHub Changelog, 2026-10-22) — 사건 신호 AVAILABILITY (우선순위 5) · 근거는 있으나 우선순위 5 < 발행 추천 기준 6 · 확인 필요: 없음
 - **Real-time speech translation in Google Meet expands to 63 languages with automatic language detection** (Google Workspace Updates, 2026-10-22) — 사건 신호 AVAILABILITY (우선순위 5) · 근거는 있으나 우선순위 5 < 발행 추천 기준 6 · 확인 필요: 없음
+- **OpenAI and Poland’s NASK partner to advance AI safety and security** (OpenAI, 2026-10-23) — 근거 부족 (원문 SKIPPED_HOST_BLOCKED, 확인 사실 0개) — 발행하지 않음 · 확인 필요: 원문을 읽지 못함, 근거 부족
 - **OpenAI models are coming to Google Cloud** (OpenAI, 2026-10-21) — 근거 부족 (원문 SKIPPED_HOST_BLOCKED, 확인 사실 0개) — 발행하지 않음 · 확인 필요: 원문을 읽지 못함, 근거 부족
 - **Democratic governance of frontier AI, part II: Empowering cyber defenders** (OpenAI, 2026-10-21) — 근거 부족 (원문 SKIPPED_HOST_BLOCKED, 확인 사실 0개) — 발행하지 않음 · 확인 필요: 원문을 읽지 못함, 근거 부족
 - **Donating Agent Skills to the Agentic AI Foundation** (Anthropic, 2026-10-22) — 사건 신호 SECURITY_MENTION (우선순위 4) · 근거는 있으나 우선순위 4 < 발행 추천 기준 6 · 확인 필요: 없음
 - **We are working with Voltus to build a 1-gigawatt virtual power plant.** (Google (The Keyword · AI), 2026-10-22) — 사건 신호 INFRA (우선순위 4) · 근거는 있으나 우선순위 4 < 발행 추천 기준 6 · 확인 필요: 없음
+- **Kazakhstan Expands Compute for Its AI Future** (NVIDIA Blog, 2026-10-23) — 사건 신호 INFRA (우선순위 4) · 근거는 있으나 우선순위 4 < 발행 추천 기준 6 · 확인 필요: 없음
 - **NVIDIA Cosmos Opens New Tools to Train, Evaluate and Deploy World Models** (NVIDIA Blog, 2026-10-22) — 사건 신호 MODEL_MENTION (우선순위 4) · 근거는 있으나 우선순위 4 < 발행 추천 기준 6 · 확인 필요: 없음
 - **How Companies Are Using NVIDIA DSX to Break the Power Bottleneck** (NVIDIA Blog, 2026-10-22) — 사건 신호 INFRA (우선순위 4) · 근거는 있으나 우선순위 4 < 발행 추천 기준 6 · 확인 필요: 없음
 - **NVIDIA Transforms European Retail, From Digital Discovery to Physical Operations** (NVIDIA Blog, 2026-10-22) — 사건 신호 MODEL_MENTION (우선순위 4) · 근거는 있으나 우선순위 4 < 발행 추천 기준 6 · 확인 필요: 없음
@@ -345,6 +347,7 @@
 - **NVIDIA Open Models Advance Europe’s Sovereign Intelligence Across Industries** (NVIDIA Blog, 2026-10-21) — 사건 신호 MODEL_MENTION (우선순위 4) · 근거는 있으나 우선순위 4 < 발행 추천 기준 6 · 확인 필요: 없음
 - **European Leaders Turn to NVIDIA Vera CPUs to Build Local Infrastructure** (NVIDIA Blog, 2026-10-20) — 사건 신호 INFRA (우선순위 4) · 근거는 있으나 우선순위 4 < 발행 추천 기준 6 · 확인 필요: 없음
 - **The bridge to agent-scale Git infrastructure** (GitHub Blog, 2026-10-21) — 사건 신호 INFRA (우선순위 4) · 근거는 있으나 우선순위 4 < 발행 추천 기준 6 · 확인 필요: 없음
+- **Does Your Model Run on AWS Trainium? Look It Up** (Hugging Face Blog, 2026-10-23) — 사건 신호 INFRA (우선순위 4) · 근거는 있으나 우선순위 4 < 발행 추천 기준 6 · 확인 필요: 없음
 - **OlmoEarth v1.3: State-of-the-art embeddings for the whole planet** (Hugging Face Blog, 2026-10-22) — 사건 신호 RESEARCH_RESULT (우선순위 4) · 근거는 있으나 우선순위 4 < 발행 추천 기준 6 · 확인 필요: 없음
 - **Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium.** (Hugging Face Blog, 2026-10-21) — 사건 신호 INFRA (우선순위 4) · 근거는 있으나 우선순위 4 < 발행 추천 기준 6 · 확인 필요: 없음
 - **Hugging Face ❤️ TorchTPU: TPUs, Natively** (Hugging Face Blog, 2026-10-20) — 사건 신호 INFRA (우선순위 4) · 근거는 있으나 우선순위 4 < 발행 추천 기준 6 · 확인 필요: 없음
@@ -354,39 +357,39 @@
 - **NVIDIA, Nokia and Leading Telecom Operators Turn Networks Into Distributed Intelligence Platforms** (NVIDIA Newsroom (Press Releases), 2026-10-21) — 사건 신호 INFRA (우선순위 4) · 근거는 있으나 우선순위 4 < 발행 추천 기준 6 · 확인 필요: 없음
 - **Inside NVIDIA Sentry: Secure AI Agents at Runtime** (NVIDIA Technical Blog, 2026-10-21) — 사건 신호 SECURITY_MENTION (우선순위 4) · 근거는 있으나 우선순위 4 < 발행 추천 기준 6 · 확인 필요: 없음
 - **글로벌 최고 수준의 자체 비전 인코더, Kanana-2-vision-encoder 개발기** (Kakao Tech, 2026-10-20) — 사건 신호 MODEL_MENTION (우선순위 4) · 근거는 있으나 우선순위 4 < 발행 추천 기준 6 · 확인 필요: 없음
-- **FairStress: A deeper evaluation of fairness in LLM decision-making** (Hugging Face Blog, 2026-10-20) — 사건 신호 MODEL_MENTION (우선순위 4) · 근거는 있으나 우선순위 4 < 발행 추천 기준 6 · 확인 필요: 없음
 - Cloudflare links vulnerability discovery to defense with OpenAI (OpenAI, 2026-10-21) — 우선순위 1 — 근거 확인 기준(4) 미달
-- [10월22일] 테슬라·스페이스X 합병, 최강 ‘통합 AI 기업’ 탄생할까 (AI타임스, 2026-10-23) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRICING·ACQ_INVEST)
-- 리커시브, AI 주도 개발로 완성한 온디바이스 코딩 모델 '플린트' 공개 (AI타임스, 2026-10-22) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)
-- 엔비디아, 로봇 데이터 수집 비용 125배 낮추는 모델 '플로라' 공개 (AI타임스, 2026-10-22) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·MODEL_MENTION)
-- 미스트랄, 실시간 음성 에이전트 지원 '복스트랄 3' 제품군 공개 (AI타임스, 2026-10-22) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 API_PLATFORM·PRODUCT_LAUNCH·MODEL_MENTION)
-- 중국 빅테크, 엔비디아 그래픽카드 46조원 주문…첨단 AI 칩 막히자 대체품 확보 (AI타임스, 2026-10-22) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 REGULATION·INFRA)
-- 앤트로픽, 기업용 AI 보안 분석 도구 ‘클로드 시큐리티’ 출시 (AI타임스, 2026-10-22) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 SECURITY_MENTION·PRODUCT_LAUNCH·SECURITY)
-- 오픈AI, 챗GPT 광고 서비스 26개국 추가... 전 세계 89개국으로 확대 (AI타임스, 2026-10-22) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)
-- [게시판] 모빌린트, LG전자와 휴머노이드용 NPU 플랫폼 개발 등 단신 (AI타임스, 2026-10-22) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PARTNERSHIP·INFRA)
-- 클로드·그록으로 무장한 해커들, 중남미 은행 400여곳 사이버 공격 자동화 (AI타임스, 2026-10-22) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 SECURITY_MENTION·SECURITY·MODEL_MENTION)
-- 나주, 치매안심돌봄학교서 가을소풍…숲길 걷기·문화공연 진행 (AI타임스, 2026-10-22) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)
-- “느려진 TV, 클로드에게 맡겨볼까”…광고 덜고 속도 높이는 AI 활용법 (AI타임스, 2026-10-22) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)
-- [AI 모델 신작] 시계열 예측 ‘타임스트랄’·영상 효과음 ‘SFX 2.0’ 등 5종 (AI타임스, 2026-10-22) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 INFRA·PRODUCT_LAUNCH·MODEL_MENTION)
-- "챗GPT로 글 쓴 거 티 나요"...’AI 말투' 지워주는 교정 도구 뜬다 (AI타임스, 2026-10-22) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·REGULATION·MODEL_MENTION)
-- 트럼프 "데이터센터 건설 기업, 지역사회에 '배당금' 지급해야" (AI타임스, 2026-10-22) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 INFRA)
-- 위플로, 드론 검사·정비용 AI 솔루션 '플로원 AI 스위트' 출시 (AI타임스, 2026-10-22) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)
-- 세계 최대 월마트도 AI 에이전트 쇼핑 본격화…전용 플랫폼까지 공개 (AI타임스, 2026-10-22) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)
-- "OCR 커머스로 영역 확장"...한국딥러닝, SKT와 광고 제작 자동화 실증 (AI타임스, 2026-10-22) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 MODEL_MENTION)
-- KT클라우드, 50MW 규모 안산 AI 데이터센터 착공 추진 (AI타임스, 2026-10-22) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 INFRA)
-- 영광은 ‘인구활력+’…전남광주 인구는 1년 새 2만2323명 감소 (AI타임스, 2026-10-22) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)
-- … 외 215건 (run.json)
+- 오픈AI, 분류·선택 특화 ‘디시전스 API’ 정식 출시…최대 10배 빠르게 (AI타임스, 2026-10-23) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 API_PLATFORM·PRODUCT_LAUNCH)
+- 스페이스X, 엔비디아 등 130여개사와 기업 AI 공략…그록 도입·연동 지원 (AI타임스, 2026-10-23) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PARTNERSHIP)
+- 오픈AI 전 과학 책임자, 신약 개발 ‘완전 자동화 연구소’ 구축 나서 (AI타임스, 2026-10-23) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 ACQ_INVEST)
+- 유니트리, 흉기 막고 차량 들어 올리는 ‘수호 로봇’ 공개…자율 작동 여부는 미공개 (AI타임스, 2026-10-23) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·PRICING)
+- 앤트로픽, 클로드 ‘오토 모드’ 기본 적용…사용자 승인 절차 줄인다 (AI타임스, 2026-10-23) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRICING)
+- 캔바, 프론티어급 이미지 모델 '크래프트' 공개…디자인 아레나 4위 올라 (AI타임스, 2026-10-23) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·MODEL_MENTION)
+- AWS, GPU 관리 없이 맞춤형 AI 학습하는 새 기능 공개 (AI타임스, 2026-10-23) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 INFRA·PRODUCT_LAUNCH·MODEL_MENTION)
+- NC AI, '풀스택 피지컬 AI'로 산업 AX 공략… 제조·조선·국방으로 협력 확대 (AI타임스, 2026-10-23) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PARTNERSHIP)
+- 우버, 업계 최초 전 직원 3만명에 '챗GPT 워크' 도입 (AI타임스, 2026-10-23) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·PARTNERSHIP)
+- 제2우주센터, 사전 검토부터 고흥·제주 경쟁까지…연내 선정 (AI타임스, 2026-10-23) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 REGULATION)
+- SK하이닉스, 미국 손자회사 솔리다임 IPO 검토 중단 (AI타임스, 2026-10-23) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)
+- “지난주 세차장으로 안내해”…구글, 차량용 '제미나이'에 개인화 기능 도입 (AI타임스, 2026-10-23) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)
+- [AI 모델 신작] 드림랩스·앤트그룹·일레븐랩스, 로봇·음성 AI 공개 등 8종 (AI타임스, 2026-10-23) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 API_PLATFORM·PRODUCT_LAUNCH·PRICING·MODEL_MENTION)
+- 에임인텔리전스, 오픈AI 연계 앱 보안 평가 서비스 출시 (AI타임스, 2026-10-23) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 API_PLATFORM·PRODUCT_LAUNCH·SECURITY)
+- AI 에이전트도 '빨리빨리'...한국, 오픈AI '닷츠' 이용 세계 3위 (AI타임스, 2026-10-23) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·PRICING)
+- "오픈AI 내부 모니터링 시스템 허점 대거 발견"...외부 평가서 드러나 (AI타임스, 2026-10-23) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·SECURITY)
+- 딥시크, IPO 앞두고 20조 대규모 투자 유치...상하이 증시 상장 가속 (AI타임스, 2026-10-23) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·ACQ_INVEST)
+- 오픈AI, 투자 열기 주춤하자 목표 기업가치 200조 낮춰 (AI타임스, 2026-10-23) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 ACQ_INVEST)
+- 인도 태양광 171GW 돌파…모듈 품질·장기 성능 관리 과제로 (AI타임스, 2026-10-23) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRICING)
+- … 외 236건 (run.json)
 
-## 제외 (251)
+## 제외 (234)
 
-- 가치 낮음 251건: Build more responsive apps with the Decisions API · What FDE means at OpenAI · Broad access through consistent standards · How AT&T is rethinking in-house legal work with Op · Using thousands of AI agents to uncover new leads  · Terminal X matches senior investor judgment 88.6%  · Open call for guest investigators in the life scie · Building agents: When to fold subagents into your  …
+- 가치 낮음 234건: Build more responsive apps with the Decisions API · What FDE means at OpenAI · Broad access through consistent standards · How AT&T is rethinking in-house legal work with Op · Using thousands of AI agents to uncover new leads  · Terminal X matches senior investor judgment 88.6%  · Open call for guest investigators in the life scie · Building agents: When to fold subagents into your  …
 
-## 소스 상태 (정상 24 · 경고 7 · 저하 0 · 실패 0 · 비활성 9)
+## 소스 상태 (정상 23 · 경고 8 · 저하 0 · 실패 0 · 비활성 9)
 
 | 소스 | 상태 | HTTP | 글 주소(형식 일치/전체) | 기간 안 | 연속 0건 | 최근 정상 수집 | 이유 |
 |---|---|---|---|---|---|---|---|
-| Anthropic | **WARNING** | 200 | 278/575 | 2 | 0 | 2026-10-23 | 발행일을 확인하지 못한 글 8건 (후보에서 제외) |
+| Anthropic | **WARNING** | 200 | 278/576 | 2 | 0 | 2026-10-23 | 발행일을 확인하지 못한 글 8건 (후보에서 제외) |
 | Anthropic (모델 발표 페이지) | **WARNING** | 200 | 3/217 | 0 | 7 | 2026-10-23 | 발행일을 확인하지 못한 글 1건 (후보에서 제외) · 기간 안 새 글 0건 7회 연속 (마지막 수집 기록 없음) |
+| Google (The Keyword · AI) | **WARNING** | 200 | 1614/11782 | 1 | 0 | 2026-10-23 | 발행일을 확인하지 못한 글 3건 (후보에서 제외) |
 | Meta Newsroom | **WARNING** | 200 | 10/10 | 0 | 5 | 2026-10-23 | 기간 안 새 글 0건 5회 연속 (마지막 수집 2026-10-18) |
 | xAI API Release Notes (docs.x.ai) | **WARNING** | 200 | 57/57 | 0 | 6 | 2026-10-23 | 기간 안 새 글 0건 6회 연속 (마지막 수집 2026-10-17) |
 | Microsoft 365 Blog | **WARNING** | 200 ↪ | 10/10 | 0 | 7 | 2026-10-23 | 리다이렉트 → https://www.microsoft.com/en-us/copilot/blog/feed/ · 기간 안 새 글 0건 7회 연속 (마지막 수집 기록 없음) |
@@ -397,17 +400,17 @@
 
 ## 처리 대기열 · 수집 범위
 
-- 진행 상태: **미완료** · 이번 실행 근거 확인 37건 · 원고 작성 0건
-- 지난 실행에서 넘어온 일: 근거 확인 1건 · 원고 작성 17건
+- 진행 상태: **미완료** · 이번 실행 근거 확인 12건 · 원고 작성 0건
+- 지난 실행에서 넘어온 일: 근거 확인 0건 · 원고 작성 17건
 - 남은 일 (다음 실행으로 이월): 근거 확인 대기 **0**건 · 원고 작성 대기 **32**건 · 아직 열지 못한 글 주소 0개 · 재시도할 소스 0곳
   - 원고 작성 대기: 발행 추천은 났지만 원고 생성 수단이 없거나(무료 생성 미설정·Shadow) 배치를 넘은 항목입니다. 근거는 후보 파일에 보존했고, 빈 원고나 허위 원고는 만들지 않습니다.
 - 수집 범위가 기간 전체를 덮지 못한 소스 6곳 (놓쳤을 수 있음):
   - AWS Machine Learning Blog: 피드의 가장 오래된 항목(2026-10-20)이 시작일(2026-10-20)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음
   - NVIDIA Newsroom (Press Releases): 피드의 가장 오래된 항목(2026-10-21)이 시작일(2026-10-20)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음
-  - AI타임스: 피드의 가장 오래된 항목(2026-10-21)이 시작일(2026-10-20)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음
-  - 지디넷코리아: 피드의 가장 오래된 항목(2026-10-22)이 시작일(2026-10-20)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음
-  - 전자신문: 피드의 가장 오래된 항목(2026-10-22)이 시작일(2026-10-20)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음
-  - arXiv cs.AI (신규 논문): 피드의 가장 오래된 항목(2026-10-22)이 시작일(2026-10-20)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음
+  - AI타임스: 피드의 가장 오래된 항목(2026-10-22)이 시작일(2026-10-20)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음
+  - 지디넷코리아: 피드의 가장 오래된 항목(2026-10-23)이 시작일(2026-10-20)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음
+  - 전자신문: 피드의 가장 오래된 항목(2026-10-23)이 시작일(2026-10-20)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음
+  - arXiv cs.AI (신규 논문): 피드의 가장 오래된 항목(2026-10-23)이 시작일(2026-10-20)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음
 
 ## 선정 진단 (Selection Diagnostics)
 
@@ -416,14 +419,14 @@
 - 12 · 소식 · MODEL·PRODUCT_LAUNCH·INFRA·API_PLATFORM·MODEL_MENTION — Write your own training loop — without managing GPUs — with… → **PUBLISH**
 - 11 · 소식 · PRODUCT_LAUNCH·AVAILABILITY·CONSUMER — ChatGPT Ads expands to 26 new countries as over 100,000 adv… → **HOLD**
 - 11 · 소식 · MODEL·AVAILABILITY·INFRA — Announcing new ways to customize models with SageMaker AI, … → **PUBLISH**
-- 11 · 소식 · PRODUCT_LAUNCH·REGULATION·SECURITY — 웹사이트 70% 쓰는 PHP서 AI가 결함 발견…각국 정부 사이트 중단 → **HOLD**
-- 11 · 소식 · MODEL·PRICING·MODEL_MENTION — MICA: Multi-granularity Intertemporal Credit Assignment for… → **HOLD**
+- 11 · 소식 · API_PLATFORM·PRODUCT_LAUNCH·PRICING·MODEL_MENTION — [AI 모델 신작] 드림랩스·앤트그룹·일레븐랩스, 로봇·음성 AI 공개 등 8종 → **HOLD**
+- 11 · 소식 · MODEL·PRICING·MODEL_MENTION — MoEZip: Routing-Aware KV Cache Compression for Sparse Mixtu… → **HOLD**
+- 11 · 소식 · MODEL·PRODUCT_LAUNCH·RESEARCH_RESULT — PosterHarness: Turning Scientific Poster Generation into an… → **HOLD**
 - 10 · 소식 · PRODUCT_LAUNCH·AVAILABILITY·INFRA — NVIDIA cuDSS Now Generally Available to Accelerate Engineer… → **PUBLISH**
 - 10 · 소식 · MODEL·PRODUCT_LAUNCH·CONSUMER — An easier way to customize how Gemini works for you → **PUBLISH**
-- 10 · 소식 · PRODUCT_LAUNCH·PRICING — 앤트로픽, 메타 '뮤즈' 대항마 AI 에이전트 '클로드 듀엣' 공개 → **HOLD**
-- 10 · 소식 · MODEL·REGULATION·RESEARCH_RESULT — AnnoCaseLaw: Legal Annotation Benchmark of Civil Negligence → **HOLD**
+- 10 · 소식 · PRODUCT_LAUNCH·PRICING — 유니트리, 흉기 막고 차량 들어 올리는 ‘수호 로봇’ 공개…자율 작동 여부는 미공개 → **HOLD**
 
-**근거 확인 명단 69건** (원문 요청 상한 40, 최종 추천 상한 0)
+**근거 확인 명단 71건** (원문 요청 상한 40, 최종 추천 상한 0)
 - Claude Platform is now available on Google Cloud — 원문 OK · 확인 사실 12 · SUFFICIENT_STANDARD · 깊이 DEEP → **PUBLISH**
 - Write your own training loop — without managing GPUs — with… — 원문 OK · 확인 사실 11 · SUFFICIENT_STANDARD · 깊이 DEEP → **PUBLISH**
 - ChatGPT Ads expands to 26 new countries as over 100,000 adv… — 원문 HTTP_403 (대체 문서 0줄: 제목에 버전 붙은 이름 없음) · 확인 사실 0 · INSUFFICIENT · 깊이 - → **HOLD**
@@ -471,10 +474,12 @@
 - How IskayPet unified corporate knowledge with Amazon Bedroc… — 원문 OK · 확인 사실 11 · SUFFICIENT_STANDARD · 깊이 STANDARD → **HOLD**
 - Global default for Copilot features generally available — 원문 OK · 확인 사실 7 · SUFFICIENT_STANDARD · 깊이 STANDARD → **HOLD**
 - Real-time speech translation in Google Meet expands to 63 l… — 원문 OK · 확인 사실 11 · SUFFICIENT_STANDARD · 깊이 STANDARD → **HOLD**
+- OpenAI and Poland’s NASK partner to advance AI safety and s… — 원문 SKIPPED_HOST_BLOCKED (대체 문서 0줄: 제목에 버전 붙은 이름 없음) · 확인 사실 0 · INSUFFICIENT · 깊이 - → **HOLD**
 - OpenAI models are coming to Google Cloud — 원문 SKIPPED_HOST_BLOCKED (대체 문서 0줄: 제목에 버전 붙은 이름 없음) · 확인 사실 0 · INSUFFICIENT · 깊이 - → **HOLD**
 - Democratic governance of frontier AI, part II: Empowering c… — 원문 SKIPPED_HOST_BLOCKED (대체 문서 0줄: 제목에 버전 붙은 이름 없음) · 확인 사실 0 · INSUFFICIENT · 깊이 - → **HOLD**
 - Donating Agent Skills to the Agentic AI Foundation — 원문 OK · 확인 사실 11 · SUFFICIENT_STANDARD · 깊이 SHORT → **HOLD**
 - We are working with Voltus to build a 1-gigawatt virtual po… — 원문 OK · 확인 사실 7 · SUFFICIENT_STANDARD · 깊이 SHORT → **HOLD**
+- Kazakhstan Expands Compute for Its AI Future — 원문 OK · 확인 사실 12 · SUFFICIENT_STANDARD · 깊이 SHORT → **HOLD**
 - NVIDIA Cosmos Opens New Tools to Train, Evaluate and Deploy… — 원문 OK · 확인 사실 12 · SUFFICIENT_STANDARD · 깊이 SHORT → **HOLD**
 - How Companies Are Using NVIDIA DSX to Break the Power Bottl… — 원문 OK · 확인 사실 12 · SUFFICIENT_STANDARD · 깊이 SHORT → **HOLD**
 - NVIDIA Transforms European Retail, From Digital Discovery t… — 원문 OK · 확인 사실 11 · SUFFICIENT_STANDARD · 깊이 SHORT → **HOLD**
@@ -483,6 +488,7 @@
 - NVIDIA Open Models Advance Europe’s Sovereign Intelligence … — 원문 OK · 확인 사실 12 · SUFFICIENT_STANDARD · 깊이 SHORT → **HOLD**
 - European Leaders Turn to NVIDIA Vera CPUs to Build Local In… — 원문 OK · 확인 사실 10 · SUFFICIENT_STANDARD · 깊이 SHORT → **HOLD**
 - The bridge to agent-scale Git infrastructure — 원문 OK · 확인 사실 12 · SUFFICIENT_STANDARD · 깊이 SHORT → **HOLD**
+- Does Your Model Run on AWS Trainium? Look It Up — 원문 OK · 확인 사실 11 · SUFFICIENT_STANDARD · 깊이 SHORT → **HOLD**
 - OlmoEarth v1.3: State-of-the-art embeddings for the whole p… — 원문 OK · 확인 사실 12 · SUFFICIENT_STANDARD · 깊이 SHORT → **HOLD**
 - Profiling TorchNeuron (Part 1): System-level profiling on A… — 원문 OK · 확인 사실 11 · SUFFICIENT_STANDARD · 깊이 SHORT → **HOLD**
 - Hugging Face ❤️ TorchTPU: TPUs, Natively — 원문 OK · 확인 사실 12 · SUFFICIENT_STANDARD · 깊이 SHORT → **HOLD**
@@ -492,12 +498,11 @@
 - NVIDIA, Nokia and Leading Telecom Operators Turn Networks I… — 원문 OK · 확인 사실 11 · SUFFICIENT_STANDARD · 깊이 SHORT → **HOLD**
 - Inside NVIDIA Sentry: Secure AI Agents at Runtime — 원문 OK · 확인 사실 11 · SUFFICIENT_STANDARD · 깊이 SHORT → **HOLD**
 - 글로벌 최고 수준의 자체 비전 인코더, Kanana-2-vision-encoder 개발기 — 원문 OK · 확인 사실 3 · SUFFICIENT_SHORT · 깊이 SHORT → **HOLD**
-- FairStress: A deeper evaluation of fairness in LLM decision… — 원문 OK · 확인 사실 11 · SUFFICIENT_STANDARD · 깊이 SHORT → **HOLD**
 
 **상한·다양성으로 빠진 후보 0건**
 - 없음
 
-**글 유형 감점 40건**: Build more responsive apps with the Dec… (사용법, EXCLUDE) · How AT&T is rethinking in-house legal w… (고객 사례, EXCLUDE) · Cloudflare links vulnerability discover… (고객 사례, HOLD) · Building agents: When to fold subagents… (사용법, EXCLUDE) · Deploy AI in a HIPAA-eligible environme… (사용법, EXCLUDE) · Stream low-latency speech from AI agent… (사용법, EXCLUDE) · How Rescale built an AI triage agent wi… (고객 사례, EXCLUDE) · Securing Quick access from corporate ne… (사용법, EXCLUDE) · Adaptive agentic intelligence framework… (사용법, EXCLUDE) · Workflow context for AI agents with Sma… (사용법, EXCLUDE) · From data to decisions: Conversational … (사용법, EXCLUDE) · How Octave built a secure multi-tenant … (고객 사례, EXCLUDE) …
+**글 유형 감점 44건**: Build more responsive apps with the Dec… (사용법, EXCLUDE) · How AT&T is rethinking in-house legal w… (고객 사례, EXCLUDE) · Cloudflare links vulnerability discover… (고객 사례, HOLD) · Building agents: When to fold subagents… (사용법, EXCLUDE) · Deploy AI in a HIPAA-eligible environme… (사용법, EXCLUDE) · Stream low-latency speech from AI agent… (사용법, EXCLUDE) · How Rescale built an AI triage agent wi… (고객 사례, EXCLUDE) · Securing Quick access from corporate ne… (사용법, EXCLUDE) · Adaptive agentic intelligence framework… (사용법, EXCLUDE) · Workflow context for AI agents with Sma… (사용법, EXCLUDE) · From data to decisions: Conversational … (사용법, EXCLUDE) · How Octave built a secure multi-tenant … (고객 사례, EXCLUDE) …
 
 **DEEP 판단**
 - Claude Platform is now available on Google Cloud → DEEP 제안 (7개 조건 모두 충족, 자동 원고·발행 아님)
@@ -512,10 +517,10 @@
 - Singapore office and government MOU | Anthropic → STANDARD (DEEP 아님: 중요도 4+, 사용자 영향)
 - Introducing Reflection Beam: an open-weight model for agent… → STANDARD (DEEP 아님: 중요도 4+, 배경 설명 필요, STANDARD로는 맥락 누락)
 
-**보류 이유 (270건)**: 언론 보도 233 · 근거는 있으나 우선순위 N < 발행 추천 기준 N 26 · 근거 부족 9 · 우선순위 N 2
+**보류 이유 (293건)**: 언론 보도 252 · 근거는 있으나 우선순위 N < 발행 추천 기준 N 27 · 근거 부족 10 · 우선순위 N 4
 
 ## 비용
 
 원고 생성 gemini (gemini-3.8-flash) · 호출 6/6 · 입력 0 · 출력 0 토큰 · 예상 비용 $0.0000 / 상한 $0.5
 
-<sub>실행 2026-10-23T00:35:37.282Z → 2026-10-23T00:40:39.942Z · 상세: run.json, candidates/*.json</sub>
+<sub>실행 2026-10-23T14:59:04.454Z → 2026-10-23T15:02:50.044Z · 상세: run.json, candidates/*.json</sub>

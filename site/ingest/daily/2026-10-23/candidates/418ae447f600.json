@@ -51,7 +51,7 @@
     "tier": 1,
     "fetchMode": "rss",
     "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
-    "fetchedAt": "2026-10-23T00:35:37.283Z"
+    "fetchedAt": "2026-10-23T14:59:04.454Z"
   },
   "evidence": {
     "status": "OK",
@@ -210,7 +210,7 @@
     "provider": "gemini",
     "model": "gemini-3.8-flash",
     "status": "failed",
-    "error": "HTTP 503",
+    "error": "timeout",
     "usage": {
       "inputTokens": 0,
       "outputTokens": 0,
@@ -218,7 +218,7 @@
       "attempts": 1
     },
     "promptVersion": "draft-v1",
-    "at": "2026-10-23T00:37:37.783Z",
+    "at": "2026-10-23T15:01:46.612Z",
     "evidenceHash": "f2215c4f459e"
   },
   "draft": null,

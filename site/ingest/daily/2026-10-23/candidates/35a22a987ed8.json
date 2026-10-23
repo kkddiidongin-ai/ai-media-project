@@ -213,7 +213,7 @@
     "provider": "gemini",
     "model": "gemini-3.8-flash",
     "status": "failed",
-    "error": "timeout",
+    "error": "HTTP 503",
     "usage": {
       "inputTokens": 0,
       "outputTokens": 0,
@@ -221,7 +221,7 @@
       "attempts": 1
     },
     "promptVersion": "draft-v1",
-    "at": "2026-10-23T00:40:39.914Z",
+    "at": "2026-10-23T15:02:50.022Z",
     "evidenceHash": "1f67efd11510"
   },
   "draft": null,
