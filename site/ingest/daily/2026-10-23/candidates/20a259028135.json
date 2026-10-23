@@ -1,0 +1,221 @@
+{
+  "id": "20a259028135",
+  "date": "2026-10-23",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "The bridge to agent-scale Git infrastructure",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 12,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "GitHub",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/",
+      "name": "GitHub Blog",
+      "type": "official",
+      "publishedAt": "2026-10-21T16:00:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "20a259028135",
+    "url": "https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/",
+    "canonicalUrl": "https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure",
+    "title": "The bridge to agent-scale Git infrastructure",
+    "excerpt": "We moved a copy of 99.99999% of GitHub's repositories to Azure. Here's how per-reference quorums will bring over the rest, and how object storage lets reads scale independently. The post The bridge to agent-scale Git infrastructure appeared first on The GitHub Blog .",
+    "publishedAt": "2026-10-21T16:00:00.000Z",
+    "sourceId": "github",
+    "sourceName": "GitHub Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://github.blog/feed/",
+    "fetchedAt": "2026-10-23T14:59:04.454Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 9170,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "We moved a copy of 99.99999% of GitHub's repositories to Azure. Here's how per-reference quorums will bring over the rest, and how object storage lets reads scale independently. The post The bridge to agent-scale Git infrastructure appeared first on The GitHub Blog .",
+        "sourceUrl": "https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/",
+        "source": "GitHub Blog",
+        "publishedAt": "2026-10-21T16:00:00.000Z",
+        "checkedAt": "2026-10-23T00:37:29.606Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "The bridge to agent-scale Git infrastructure - The GitHub Blog",
+        "sourceUrl": "https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/",
+        "source": "GitHub Blog",
+        "publishedAt": "2026-10-21T16:00:00.000Z",
+        "checkedAt": "2026-10-23T00:37:29.606Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Over the past year, while Git traffic grew exponentially, 99.99999% of the Git repositories on GitHub began living in two places at once: our own data centers and Azure.",
+        "sourceUrl": "https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/",
+        "source": "GitHub Blog",
+        "publishedAt": "2026-10-21T16:00:00.000Z",
+        "checkedAt": "2026-10-23T00:37:29.606Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "The rest are among the busiest on the platform, and they&rsquo;re held back by just one thing: a 25ms round trip.",
+        "sourceUrl": "https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/",
+        "source": "GitHub Blog",
+        "publishedAt": "2026-10-21T16:00:00.000Z",
+        "checkedAt": "2026-10-23T00:37:29.606Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "While we had prototyped new architectural approaches for scaling Git on cloud infrastructure, changing the storage architecture and the hosting platform at the same time, under that growth, carried too much risk.",
+        "sourceUrl": "https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/",
+        "source": "GitHub Blog",
+        "publishedAt": "2026-10-21T16:00:00.000Z",
+        "checkedAt": "2026-10-23T00:37:29.606Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Git operations are a Tier 0 service: they&rsquo;re a core function of GitHub, and nearly everything in GitHub depends on the repository data.",
+        "sourceUrl": "https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/",
+        "source": "GitHub Blog",
+        "publishedAt": "2026-10-21T16:00:00.000Z",
+        "checkedAt": "2026-10-23T00:37:29.606Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "The first copy of a repository landed in Azure&rsquo;s Central US region in August 2025.",
+        "sourceUrl": "https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/",
+        "source": "GitHub Blog",
+        "publishedAt": "2026-10-21T16:00:00.000Z",
+        "checkedAt": "2026-10-23T00:37:29.606Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "So, what about the remaining 0.00001% of repositories?",
+        "sourceUrl": "https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/",
+        "source": "GitHub Blog",
+        "publishedAt": "2026-10-21T16:00:00.000Z",
+        "checkedAt": "2026-10-23T00:37:29.606Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Once a replica lives in the target Azure region, it&rsquo;s about 1,000 miles from our data centers, making each network round trip around 25ms, and a write requires multiple round trips.",
+        "sourceUrl": "https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/",
+        "source": "GitHub Blog",
+        "publishedAt": "2026-10-21T16:00:00.000Z",
+        "checkedAt": "2026-10-23T00:37:29.606Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "In internal testing with realistic traffic, writes to different references consistently saw 3&ndash;4x higher throughput at lower latency.",
+        "sourceUrl": "https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/",
+        "source": "GitHub Blog",
+        "publishedAt": "2026-10-21T16:00:00.000Z",
+        "checkedAt": "2026-10-23T00:37:29.606Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Most repositories are heavily read-skewed, with somewhere between 100 and 1,000 reads for every write.",
+        "sourceUrl": "https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/",
+        "source": "GitHub Blog",
+        "publishedAt": "2026-10-21T16:00:00.000Z",
+        "checkedAt": "2026-10-23T00:37:29.606Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Building Git infrastructure for agent-scale development",
+        "sourceUrl": "https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/",
+        "source": "GitHub Blog",
+        "publishedAt": "2026-10-21T16:00:00.000Z",
+        "checkedAt": "2026-10-23T00:37:29.606Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "We’re rebuilding GitHub’s Git infrastructure while GitHub keeps running, creating a foundation for agent-scale software development.",
+        "sourceUrl": "https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/",
+        "source": "GitHub Blog",
+        "publishedAt": "2026-10-21T16:00:00.000Z",
+        "checkedAt": "2026-10-23T00:37:29.606Z"
+      }
+    ],
+    "pageDate": "2026-10-21T16:00:00.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "INFRA"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 INFRA (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

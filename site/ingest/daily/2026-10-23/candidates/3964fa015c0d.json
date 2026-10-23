@@ -1,0 +1,236 @@
+{
+  "id": "3964fa015c0d",
+  "date": "2026-10-23",
+  "proposedSlug": "claude-security-scans-continuously-tracks-fixes",
+  "title": null,
+  "sourceTitle": "Claude Security now scans continuously and tracks fixes",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Anthropic",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://claude.com/resources/articles/claude-security-now-scans-continuously-and-tracks-fixes",
+      "name": "Claude (claude.com articles)",
+      "type": "official",
+      "publishedAt": "2026-10-21T00:00:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "3964fa015c0d",
+    "url": "https://claude.com/resources/articles/claude-security-now-scans-continuously-and-tracks-fixes",
+    "canonicalUrl": "https://claude.com/resources/articles/claude-security-now-scans-continuously-and-tracks-fixes",
+    "title": "Claude Security now scans continuously and tracks fixes",
+    "excerpt": "Claude Security now watches your repositories as code changes, tracks findings until they’re fixed, learns from the context your team adds, and connects to your tools through an API and MCP. Available in public beta for Claude Enterprise customers.",
+    "publishedAt": "2026-10-21T00:00:00.000Z",
+    "sourceId": "claude-blog",
+    "sourceName": "Claude (claude.com articles)",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "listing-meta",
+    "discoveredVia": "https://claude.com/resources/articles",
+    "fetchedAt": "2026-10-22T00:37:54.015Z",
+    "fromQueue": "draft"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 5172,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Claude Security now watches your repositories as code changes, tracks findings until they’re fixed, learns from the context your team adds, and connects to your tools through an API and MCP. Available in public beta for Claude Enterprise customers.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-security-now-scans-continuously-and-tracks-fixes",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-21T00:00:00.000Z",
+        "checkedAt": "2026-10-22T15:11:00.375Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "• • • • • • • • • Claude Security now scans continuously and tracks fixes | Claude by Anthropic • •",
+        "sourceUrl": "https://claude.com/resources/articles/claude-security-now-scans-continuously-and-tracks-fixes",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-21T00:00:00.000Z",
+        "checkedAt": "2026-10-22T15:11:00.375Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Skip to main content Since Claude Security entered public beta in April, thousands of organizations have used it to find over a million vulnerabilities.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-security-now-scans-continuously-and-tracks-fixes",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-21T00:00:00.000Z",
+        "checkedAt": "2026-10-22T15:11:00.375Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Instead of waiting for someone to start a scan, Claude Security now keeps up with your repositories as your code changes, keeps track of which findings get fixed, and uses what your team tells it about your environment to decide what matters.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-security-now-scans-continuously-and-tracks-fixes",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-21T00:00:00.000Z",
+        "checkedAt": "2026-10-22T15:11:00.375Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Claude Security is powered by our full family of models, including Claude Mythos, with no Cyber Verification Program access required.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-security-now-scans-continuously-and-tracks-fixes",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-21T00:00:00.000Z",
+        "checkedAt": "2026-10-22T15:11:00.375Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "The latest version of Claude Security is available today in public beta for Claude Enterprise customers.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-security-now-scans-continuously-and-tracks-fixes",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-21T00:00:00.000Z",
+        "checkedAt": "2026-10-22T15:11:00.375Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Claude Security checks open findings against the code that changed and marks them fixed when the fix lands, whether your team fixed it in Claude Code or in a separate process.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-security-now-scans-continuously-and-tracks-fixes",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-21T00:00:00.000Z",
+        "checkedAt": "2026-10-22T15:11:00.375Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Users can create a personal access token in Claude Security settings, and it can only see and change what the user can.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-security-now-scans-continuously-and-tracks-fixes",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-21T00:00:00.000Z",
+        "checkedAt": "2026-10-22T15:11:00.375Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Claude Security is also available as an MCP connector in Claude.ai and Claude Code.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-security-now-scans-continuously-and-tracks-fixes",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-21T00:00:00.000Z",
+        "checkedAt": "2026-10-22T15:11:00.375Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "The latest version of Claude Security is available in public beta for Claude Enterprise customers starting today.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-security-now-scans-continuously-and-tracks-fixes",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-21T00:00:00.000Z",
+        "checkedAt": "2026-10-22T15:11:00.375Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "“The API and MCP additions are a game changer and will be the path forward for IonQ’s Product Security team to further operationalize Claude Security.”",
+        "sourceUrl": "https://claude.com/resources/articles/claude-security-now-scans-continuously-and-tracks-fixes",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-21T00:00:00.000Z",
+        "checkedAt": "2026-10-22T15:11:00.375Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Claude Dashboards and Claude Motion are now in beta.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-security-now-scans-continuously-and-tracks-fixes",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-21T00:00:00.000Z",
+        "checkedAt": "2026-10-22T15:11:00.375Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "2 more : Claude Cowork and Claude Code Claude Cowork Claude Code",
+        "sourceUrl": "https://claude.com/resources/articles/claude-security-now-scans-continuously-and-tracks-fixes",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-21T00:00:00.000Z",
+        "checkedAt": "2026-10-22T15:11:00.375Z"
+      }
+    ],
+    "pageDate": "2026-10-21T00:00:00.000Z"
+  },
+  "score": {
+    "importance": 2,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PREVIEW",
+      "SECURITY_MENTION",
+      "API_PLATFORM"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 7,
+    "total": 7
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 PREVIEW·SECURITY_MENTION·API_PLATFORM (우선순위 7)",
+    "근거 확인 통과 (확인 사실 11개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "status": "skipped",
+    "error": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성",
+    "promptVersion": "draft-v1",
+    "at": "2026-10-23T15:02:50.023Z",
+    "evidenceHash": "3f6366b6ffde"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}

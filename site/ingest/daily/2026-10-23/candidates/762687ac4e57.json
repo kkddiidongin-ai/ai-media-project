@@ -1,0 +1,221 @@
+{
+  "id": "762687ac4e57",
+  "date": "2026-10-23",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "How IskayPet unified corporate knowledge with Amazon Bedrock Managed Knowledge Bases",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-iskaypet-unified-corporate-knowledge-with-amazon-bedrock-managed-knowledge-bases/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-10-22T18:01:53.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "762687ac4e57",
+    "url": "https://aws.amazon.com/blogs/machine-learning/how-iskaypet-unified-corporate-knowledge-with-amazon-bedrock-managed-knowledge-bases/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/how-iskaypet-unified-corporate-knowledge-with-amazon-bedrock-managed-knowledge-bases",
+    "title": "How IskayPet unified corporate knowledge with Amazon Bedrock Managed Knowledge Bases",
+    "excerpt": "Learn how IskayPet, a leading pet care company in Iberia, built a multilingual corporate knowledge assistant on Amazon Bedrock Managed Knowledge Bases. The assistant answers employee questions across retail, veterinary, onboarding, and procurement in four languages and three countries, with no RAG i",
+    "publishedAt": "2026-10-22T18:01:53.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-10-23T14:59:04.454Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 11404,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Learn how IskayPet, a leading pet care company in Iberia, built a multilingual corporate knowledge assistant on Amazon Bedrock Managed Knowledge Bases. The assistant answers employee questions across retail, veterinary, onboarding, and procurement in four languages and three countries, with no RAG i",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-iskaypet-unified-corporate-knowledge-with-amazon-bedrock-managed-knowledge-bases/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T18:01:53.000Z",
+        "checkedAt": "2026-10-23T00:37:19.972Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "How IskayPet unified corporate knowledge with Amazon Bedrock Managed Knowledge Bases | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-iskaypet-unified-corporate-knowledge-with-amazon-bedrock-managed-knowledge-bases/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T18:01:53.000Z",
+        "checkedAt": "2026-10-23T00:37:19.972Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "How IskayPet unified corporate knowledge with Amazon Bedrock Managed Knowledge Bases",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-iskaypet-unified-corporate-knowledge-with-amazon-bedrock-managed-knowledge-bases/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T18:01:53.000Z",
+        "checkedAt": "2026-10-23T00:37:19.972Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "In this post, we show how IskayPet, a leading pet care company in Iberia, built a corporate knowledge assistant on Amazon Bedrock Managed Knowledge Bases.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-iskaypet-unified-corporate-knowledge-with-amazon-bedrock-managed-knowledge-bases/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T18:01:53.000Z",
+        "checkedAt": "2026-10-23T00:37:19.972Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "With more than 4,500 employees and 7 million customers, IskayPet runs operations that span retail, veterinary clinics, animal care, procurement, and people and onboarding.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-iskaypet-unified-corporate-knowledge-with-amazon-bedrock-managed-knowledge-bases/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T18:01:53.000Z",
+        "checkedAt": "2026-10-23T00:37:19.972Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Why Amazon Bedrock Managed Knowledge Bases",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-iskaypet-unified-corporate-knowledge-with-amazon-bedrock-managed-knowledge-bases/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T18:01:53.000Z",
+        "checkedAt": "2026-10-23T00:37:19.972Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "IskayPet chose Amazon Bedrock Managed Knowledge Bases for its managed RAG infrastructure, which removed the need to run vector stores, embeddings, or ingestion pipelines.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-iskaypet-unified-corporate-knowledge-with-amazon-bedrock-managed-knowledge-bases/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T18:01:53.000Z",
+        "checkedAt": "2026-10-23T00:37:19.972Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "IskayPet built the whole solution, from the store-facing frontend to the AWS architecture and service deployment, using Kiro , the agentic development environment, running on Claude Haiku 4.5 on Amazon Bedrock.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-iskaypet-unified-corporate-knowledge-with-amazon-bedrock-managed-knowledge-bases/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T18:01:53.000Z",
+        "checkedAt": "2026-10-23T00:37:19.972Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "As new models become available on Amazon Bedrock, IskayPet plans to evaluate and adopt them for each use case.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-iskaypet-unified-corporate-knowledge-with-amazon-bedrock-managed-knowledge-bases/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T18:01:53.000Z",
+        "checkedAt": "2026-10-23T00:37:19.972Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Rather than migrate them, the team used the native SharePoint connector in Amazon Bedrock Managed Knowledge Bases.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-iskaypet-unified-corporate-knowledge-with-amazon-bedrock-managed-knowledge-bases/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T18:01:53.000Z",
+        "checkedAt": "2026-10-23T00:37:19.972Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Amazon Bedrock Managed Knowledge Bases supports this document-level access control natively, so the same answer to the same question can legitimately differ between two employees with different permissions.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-iskaypet-unified-corporate-knowledge-with-amazon-bedrock-managed-knowledge-bases/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T18:01:53.000Z",
+        "checkedAt": "2026-10-23T00:37:19.972Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "IskayPet built a production corporate knowledge assistant on Amazon Bedrock Managed Knowledge Bases that serves three countries, four languages, and several business areas, with no RAG infrastructure to run.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-iskaypet-unified-corporate-knowledge-with-amazon-bedrock-managed-knowledge-bases/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T18:01:53.000Z",
+        "checkedAt": "2026-10-23T00:37:19.972Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "To learn more, see Amazon Bedrock Managed Knowledge Base and Evaluate the performance of RAG sources using Amazon Bedrock evaluations .",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-iskaypet-unified-corporate-knowledge-with-amazon-bedrock-managed-knowledge-bases/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T18:01:53.000Z",
+        "checkedAt": "2026-10-23T00:37:19.972Z"
+      }
+    ],
+    "pageDate": "2026-10-22T18:01:53.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "API_PLATFORM"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 API_PLATFORM (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

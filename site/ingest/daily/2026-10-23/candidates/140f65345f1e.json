@@ -1,0 +1,221 @@
+{
+  "id": "140f65345f1e",
+  "date": "2026-10-23",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "NVIDIA Open Models Advance Europe’s Sovereign Intelligence Across Industries",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 12,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "NVIDIA",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://blogs.nvidia.com/blog/open-models-europe-industry/",
+      "name": "NVIDIA Blog",
+      "type": "official",
+      "publishedAt": "2026-10-21T10:00:07.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "140f65345f1e",
+    "url": "https://blogs.nvidia.com/blog/open-models-europe-industry/",
+    "canonicalUrl": "https://blogs.nvidia.com/blog/open-models-europe-industry",
+    "title": "NVIDIA Open Models Advance Europe’s Sovereign Intelligence Across Industries",
+    "excerpt": "NVIDIA is expanding its family of open models across language, robotics, biology, and quantum computing, giving developers, researchers and enterprises what they need to build applications tailored to local languages and industries The portfolio includes the new NVIDIA Nemotron 3.5 Super VL and Nemo",
+    "publishedAt": "2026-10-21T10:00:07.000Z",
+    "sourceId": "nvidia",
+    "sourceName": "NVIDIA Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://blogs.nvidia.com/feed/",
+    "fetchedAt": "2026-10-23T14:59:04.454Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 6994,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "NVIDIA is expanding its family of open models across language, robotics, biology, and quantum computing, giving developers, researchers and enterprises what they need to build applications tailored to local languages and industries The portfolio includes the new NVIDIA Nemotron 3.5 Super VL and Nemo",
+        "sourceUrl": "https://blogs.nvidia.com/blog/open-models-europe-industry/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:00:07.000Z",
+        "checkedAt": "2026-10-23T00:37:27.172Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "NVIDIA Open Models Advance Europe’s Sovereign Intelligence Across Industries | NVIDIA Blog",
+        "sourceUrl": "https://blogs.nvidia.com/blog/open-models-europe-industry/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:00:07.000Z",
+        "checkedAt": "2026-10-23T00:37:27.172Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "NVIDIA is expanding its family of open models across language, robotics, biology, and quantum computing, giving developers, researchers and enterprises what they need to build applications tailored to local languages and industries",
+        "sourceUrl": "https://blogs.nvidia.com/blog/open-models-europe-industry/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:00:07.000Z",
+        "checkedAt": "2026-10-23T00:37:27.172Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "The portfolio includes the new NVIDIA Nemotron 3.5 Super VL and Nemotron 3.5 Bolt models; new NVIDIA Nemotron Retriever models for embedding, reranking and document parsing; the new NVIDIA Kumo family open weight foundation models and libraries for structured business data; NV…",
+        "sourceUrl": "https://blogs.nvidia.com/blog/open-models-europe-industry/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:00:07.000Z",
+        "checkedAt": "2026-10-23T00:37:27.172Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "The portfolio includes NVIDIA Kumo Structured , with models for relational and tabular prediction, forecasting and anomaly detection, and NVIDIA Kumo Engine , an open library stack for developing and deploying structured data foundation models.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/open-models-europe-industry/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:00:07.000Z",
+        "checkedAt": "2026-10-23T00:37:27.172Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "NVIDIA BioNeMo RFD4-Proteina is an open protein design model from NVIDIA and the Baker Lab at the University of Washington’s Institute for Protein Design.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/open-models-europe-industry/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:00:07.000Z",
+        "checkedAt": "2026-10-23T00:37:27.172Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "NVIDIA BioNeMo RFD4-Proteina delivers leading performance across more than 10 protein design tasks and generates designs about 13x faster than RFdiffusion3 in a benchmark of 200 amino acid proteins.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/open-models-europe-industry/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:00:07.000Z",
+        "checkedAt": "2026-10-23T00:37:27.172Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "The NVIDIA Ising family of open models provides a common, extensible foundation to speed the breakthroughs needed to develop useful quantum supercomputers, from real-time hardware calibration to error correction, across different qubit modalities and tailored to individual har…",
+        "sourceUrl": "https://blogs.nvidia.com/blog/open-models-europe-industry/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:00:07.000Z",
+        "checkedAt": "2026-10-23T00:37:27.172Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "NVIDIA Nemotron 3.5 Super VL is available on Hugging Face , ModelScope , OpenRouter and build.nvidia.com as an NVIDIA NIM microservice, as well as through NVIDIA cloud, post-training and inference partners.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/open-models-europe-industry/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:00:07.000Z",
+        "checkedAt": "2026-10-23T00:37:27.172Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "NVIDIA Nemotron Retriever open models are available on Hugging Face , various partner platforms, and as an NVIDIA NIM microservice on build.nvidia.com .",
+        "sourceUrl": "https://blogs.nvidia.com/blog/open-models-europe-industry/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:00:07.000Z",
+        "checkedAt": "2026-10-23T00:37:27.172Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "NVIDIA Kumo open models are available on Hugging Face and optimized and packaged as an NVIDIA NIM microservice for production inference on build.nvidia.com .",
+        "sourceUrl": "https://blogs.nvidia.com/blog/open-models-europe-industry/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:00:07.000Z",
+        "checkedAt": "2026-10-23T00:37:27.172Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "The NVIDIA BioNeMo open model RFD4-Proteina is available on build.nvidia.com and as an NVIDIA NIM microservice, as well as on GitHub, Hugging Face and through select inference partners.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/open-models-europe-industry/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:00:07.000Z",
+        "checkedAt": "2026-10-23T00:37:27.172Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Pioneers Across Europe Deploy NVIDIA Earth-2 Open Models to Power Real-World Weather and Climate Prediction",
+        "sourceUrl": "https://blogs.nvidia.com/blog/open-models-europe-industry/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:00:07.000Z",
+        "checkedAt": "2026-10-23T00:37:27.172Z"
+      }
+    ],
+    "pageDate": "2026-10-21T10:00:07.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "MODEL_MENTION"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 MODEL_MENTION (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

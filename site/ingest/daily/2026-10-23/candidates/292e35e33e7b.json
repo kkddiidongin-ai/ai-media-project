@@ -1,0 +1,242 @@
+{
+  "id": "292e35e33e7b",
+  "date": "2026-10-23",
+  "proposedSlug": "introducing-claude-duet",
+  "title": null,
+  "sourceTitle": "Introducing Claude Duet",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 12,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Anthropic",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://claude.com/resources/articles/claude-duet",
+      "name": "Claude (claude.com articles)",
+      "type": "official",
+      "publishedAt": "2026-10-21T00:00:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "292e35e33e7b",
+    "url": "https://claude.com/resources/articles/claude-duet",
+    "canonicalUrl": "https://claude.com/resources/articles/claude-duet",
+    "title": "Introducing Claude Duet",
+    "excerpt": "Claude Duet is a new app where Claude works as a proactive agent. The research preview opens by waitlist today for Pro and Max subscribers in the US.",
+    "publishedAt": "2026-10-21T00:00:00.000Z",
+    "sourceId": "claude-blog",
+    "sourceName": "Claude (claude.com articles)",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "listing-meta",
+    "discoveredVia": "https://claude.com/resources/articles",
+    "fetchedAt": "2026-10-22T00:37:54.015Z",
+    "fromQueue": "draft"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 8370,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Claude Duet is a new app where Claude works as a proactive agent. The research preview opens by waitlist today for Pro and Max subscribers in the US.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-duet",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-21T00:00:00.000Z",
+        "checkedAt": "2026-10-22T15:10:53.778Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "• • • • • • • • • • Introducing Claude Duet | Claude by Anthropic • •",
+        "sourceUrl": "https://claude.com/resources/articles/claude-duet",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-21T00:00:00.000Z",
+        "checkedAt": "2026-10-22T15:10:53.778Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Skip to main content Today, we’re opening a research preview of Claude Duet, a new app where Claude works as a proactive agent.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-duet",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-21T00:00:00.000Z",
+        "checkedAt": "2026-10-22T15:10:53.778Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "For this research preview, Claude Duet is included in Pro and Max plans and uses the same usage limits as the rest of Claude.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-duet",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-21T00:00:00.000Z",
+        "checkedAt": "2026-10-22T15:10:53.778Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "We designed it around Claude Opus 5.5 (opens in new tab) and built it to be resourceful and to decide what needs you, what can wait, and when to check with you first.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-duet",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-21T00:00:00.000Z",
+        "checkedAt": "2026-10-22T15:10:53.778Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Claude Duet draws on our framework for trustworthy agents (opens in new tab) , which also guides agents like Claude Code and Claude in Chrome.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-duet",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-21T00:00:00.000Z",
+        "checkedAt": "2026-10-22T15:10:53.778Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Claude Duet’s handling of credentials follows the design we use for Claude Managed Agents (opens in new tab) , so it never directly sees your passwords or sign-in tokens.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-duet",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-21T00:00:00.000Z",
+        "checkedAt": "2026-10-22T15:10:53.778Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Boris Cherny, who leads our Claude Code team, talks through his mental to-do list with Claude Duet on walks, instead of saving the work for his desk.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-duet",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-21T00:00:00.000Z",
+        "checkedAt": "2026-10-22T15:10:53.778Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Claude Duet carries over your memory, skills, and connected apps from your Claude account, so setting it up requires minimal work.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-duet",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-21T00:00:00.000Z",
+        "checkedAt": "2026-10-22T15:10:53.778Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Claude Duet checks your connected accounts every few hours, because checking nonstop would use up your plan’s limits much faster.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-duet",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-21T00:00:00.000Z",
+        "checkedAt": "2026-10-22T15:10:53.778Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Claude Duet can use the over 6,000 connectors and plugins in the Claude Marketplace (opens in new tab) to:",
+        "sourceUrl": "https://claude.com/resources/articles/claude-duet",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-21T00:00:00.000Z",
+        "checkedAt": "2026-10-22T15:10:53.778Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "During the research preview, Claude Duet shares your plan’s usage limits with the rest of Claude, and it uses them differently than a typical conversation does.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-duet",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-21T00:00:00.000Z",
+        "checkedAt": "2026-10-22T15:10:53.778Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "2 more : Claude Cowork and Claude Code Claude Cowork Claude Code",
+        "sourceUrl": "https://claude.com/resources/articles/claude-duet",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-21T00:00:00.000Z",
+        "checkedAt": "2026-10-22T15:10:53.778Z"
+      }
+    ],
+    "pageDate": "2026-10-21T00:00:00.000Z"
+  },
+  "score": {
+    "importance": 3,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "MODEL",
+      "PRODUCT_LAUNCH",
+      "PREVIEW"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 9,
+    "total": 9
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 MODEL·PRODUCT_LAUNCH·PREVIEW (우선순위 9)",
+    "근거 확인 통과 (확인 사실 12개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "status": "failed",
+    "error": "HTTP 503",
+    "usage": {
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "costUsd": 0,
+      "attempts": 1
+    },
+    "promptVersion": "draft-v1",
+    "at": "2026-10-23T15:02:49.725Z",
+    "evidenceHash": "ad2b0b9ac145"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": true,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}
