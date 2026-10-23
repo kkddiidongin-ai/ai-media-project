@@ -1,0 +1,213 @@
+{
+  "id": "ca293d8533a3",
+  "date": "2026-10-23",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "FairStress: A deeper evaluation of fairness in LLM decision-making",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Hugging Face",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://huggingface.co/blog/allenai/fairstress",
+      "name": "Hugging Face Blog",
+      "type": "official",
+      "publishedAt": "2026-10-20T16:09:19.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "ca293d8533a3",
+    "url": "https://huggingface.co/blog/allenai/fairstress",
+    "canonicalUrl": "https://huggingface.co/blog/allenai/fairstress",
+    "title": "FairStress: A deeper evaluation of fairness in LLM decision-making",
+    "excerpt": "",
+    "publishedAt": "2026-10-20T16:09:19.000Z",
+    "sourceId": "huggingface",
+    "sourceName": "Hugging Face Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://huggingface.co/blog/feed.xml",
+    "fetchedAt": "2026-10-22T15:08:58.366Z",
+    "fromQueue": "evidence"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 13831,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "FairStress: A deeper evaluation of fairness in LLM decision-making",
+        "sourceUrl": "https://huggingface.co/blog/allenai/fairstress",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-20T16:09:19.000Z",
+        "checkedAt": "2026-10-23T00:37:36.710Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Today we’re introducing FairStress , a benchmark for measuring demographic fairness in LLMs beyond the choice a model ultimately makes in decisions impacting people.",
+        "sourceUrl": "https://huggingface.co/blog/allenai/fairstress",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-20T16:09:19.000Z",
+        "checkedAt": "2026-10-23T00:37:36.710Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "FairStress is available for download, and we’re also building it into Olmo-eval , our open workbench for running and comparing model evaluations.",
+        "sourceUrl": "https://huggingface.co/blog/allenai/fairstress",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-20T16:09:19.000Z",
+        "checkedAt": "2026-10-23T00:37:36.710Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "With FairStress, our target is symmetric fairness —when the evidence supports a decision, a model should apply the same criteria and be equally resistant to changing that decision regardless of which demographic group benefits.",
+        "sourceUrl": "https://huggingface.co/blog/allenai/fairstress",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-20T16:09:19.000Z",
+        "checkedAt": "2026-10-23T00:37:36.710Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "FairStress does not attempt to capture every conception of fairness.",
+        "sourceUrl": "https://huggingface.co/blog/allenai/fairstress",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-20T16:09:19.000Z",
+        "checkedAt": "2026-10-23T00:37:36.710Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "FairStress contains 300 realistic two-candidate decision scenarios across 29 domains including hiring, healthcare, lending, education, housing, and criminal justice.",
+        "sourceUrl": "https://huggingface.co/blog/allenai/fairstress",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-20T16:09:19.000Z",
+        "checkedAt": "2026-10-23T00:37:36.710Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Combining these variations in demographic identity and prefix expands FairStress’ 300 scenarios into more than 13 million test cases.",
+        "sourceUrl": "https://huggingface.co/blog/allenai/fairstress",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-20T16:09:19.000Z",
+        "checkedAt": "2026-10-23T00:37:36.710Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Alongside the full benchmark, we’ve developed FairStress-Core, a 50K-item subset selected using item response theory, following our Fluid Benchmarking approach.",
+        "sourceUrl": "https://huggingface.co/blog/allenai/fairstress",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-20T16:09:19.000Z",
+        "checkedAt": "2026-10-23T00:37:36.710Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "In this hiring example, Tülu 3.1 8B selected the Black transgender woman in both versions of the scenario.",
+        "sourceUrl": "https://huggingface.co/blog/allenai/fairstress",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-20T16:09:19.000Z",
+        "checkedAt": "2026-10-23T00:37:36.710Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Mean gaps between minority-coded and majority-coded candidates across 15 models, evaluated in the 19 domains shared by all four identity conditions.",
+        "sourceUrl": "https://huggingface.co/blog/allenai/fairstress",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-20T16:09:19.000Z",
+        "checkedAt": "2026-10-23T00:37:36.710Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Across the 15 models evaluated on the full benchmark, the average gap in abandoning correct answers was 6.9 percentage points with implied identity and 9.3 points with explicit labels.",
+        "sourceUrl": "https://huggingface.co/blog/allenai/fairstress",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-20T16:09:19.000Z",
+        "checkedAt": "2026-10-23T00:37:36.710Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Open, rigorous evaluation is central to our broader work at Ai2, and we hope FairStress gives the community another useful tool for understanding where models fall short and how to improve them.",
+        "sourceUrl": "https://huggingface.co/blog/allenai/fairstress",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-20T16:09:19.000Z",
+        "checkedAt": "2026-10-23T00:37:36.710Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 2,
+    "signals": [
+      "MODEL_MENTION"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 MODEL_MENTION (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

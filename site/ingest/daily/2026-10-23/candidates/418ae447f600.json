@@ -1,0 +1,238 @@
+{
+  "id": "418ae447f600",
+  "date": "2026-10-23",
+  "proposedSlug": "announcing-ways-customize-models-sagemaker-ai-without",
+  "title": null,
+  "sourceTitle": "Announcing new ways to customize models with SageMaker AI, without managing GPUs",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 9,
+    "deepChecks": {
+      "importance": true,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": true,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": true
+    },
+    "deepMissing": [
+      "userImpact"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/announcing-new-ways-to-customize-models-with-sagemaker-ai-without-managing-gpus/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-10-22T18:00:04.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "418ae447f600",
+    "url": "https://aws.amazon.com/blogs/machine-learning/announcing-new-ways-to-customize-models-with-sagemaker-ai-without-managing-gpus/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/announcing-new-ways-to-customize-models-with-sagemaker-ai-without-managing-gpus",
+    "title": "Announcing new ways to customize models with SageMaker AI, without managing GPUs",
+    "excerpt": "Amazon SageMaker AI serverless model customization now includes training sessions, generally available today. You write and coordinate your own post-training loop (custom loss functions, reward signals, or multi-turn reinforcement learning) while SageMaker AI handles GPU allocation, distributed exec",
+    "publishedAt": "2026-10-22T18:00:04.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-10-23T00:35:37.283Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 5938,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Amazon SageMaker AI serverless model customization now includes training sessions, generally available today. You write and coordinate your own post-training loop (custom loss functions, reward signals, or multi-turn reinforcement learning) while SageMaker AI handles GPU allocation, distributed exec",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/announcing-new-ways-to-customize-models-with-sagemaker-ai-without-managing-gpus/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T18:00:04.000Z",
+        "checkedAt": "2026-10-23T00:36:46.344Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Announcing new ways to customize models with SageMaker AI, without managing GPUs | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/announcing-new-ways-to-customize-models-with-sagemaker-ai-without-managing-gpus/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T18:00:04.000Z",
+        "checkedAt": "2026-10-23T00:36:46.344Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Announcing new ways to customize models with SageMaker AI, without managing GPUs",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/announcing-new-ways-to-customize-models-with-sagemaker-ai-without-managing-gpus/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T18:00:04.000Z",
+        "checkedAt": "2026-10-23T00:36:46.344Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Companies getting real results from AI aren’t only using foundation models (FMs) off the shelf.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/announcing-new-ways-to-customize-models-with-sagemaker-ai-without-managing-gpus/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T18:00:04.000Z",
+        "checkedAt": "2026-10-23T00:36:46.344Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "We launched Amazon SageMaker AI serverless model customization to solve these challenges, and today, we’re expanding it with the general availability launch of training sessions.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/announcing-new-ways-to-customize-models-with-sagemaker-ai-without-managing-gpus/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T18:00:04.000Z",
+        "checkedAt": "2026-10-23T00:36:46.344Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "With training sessions you get control over the post-training logic without managing the underlying infrastructure.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/announcing-new-ways-to-customize-models-with-sagemaker-ai-without-managing-gpus/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T18:00:04.000Z",
+        "checkedAt": "2026-10-23T00:36:46.344Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "SageMaker AI handles GPU allocation, distributed execution, fault recovery, and checkpoint storage.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/announcing-new-ways-to-customize-models-with-sagemaker-ai-without-managing-gpus/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T18:00:04.000Z",
+        "checkedAt": "2026-10-23T00:36:46.344Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Customize without the hassles of infrastructure management",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/announcing-new-ways-to-customize-models-with-sagemaker-ai-without-managing-gpus/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T18:00:04.000Z",
+        "checkedAt": "2026-10-23T00:36:46.344Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "With SageMaker AI serverless model customization, you don’t choose instance types, manage clusters, or write distributed training configuration.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/announcing-new-ways-to-customize-models-with-sagemaker-ai-without-managing-gpus/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T18:00:04.000Z",
+        "checkedAt": "2026-10-23T00:36:46.344Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "“With SageMaker AI Serverless Training Sessions, we fine-tuned gpt-oss-20b for agentic, multi-turn tool calling against our Amazon Neptune knowledge graph — and the platform handled the infrastructure for us.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/announcing-new-ways-to-customize-models-with-sagemaker-ai-without-managing-gpus/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T18:00:04.000Z",
+        "checkedAt": "2026-10-23T00:36:46.344Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Write your own training loop on SageMaker AI serverless model customization training sessions, available today with support for gpt-oss-20b , gemma-4-31B-it , Qwen3.6-27B , and Qwen3.8-27B .",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/announcing-new-ways-to-customize-models-with-sagemaker-ai-without-managing-gpus/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T18:00:04.000Z",
+        "checkedAt": "2026-10-23T00:36:46.344Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "In your IDE: Install the SageMaker Python SDK (on Linux or macOS with Python 3.10 to 3.12), clone the cookbook, and start developing.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/announcing-new-ways-to-customize-models-with-sagemaker-ai-without-managing-gpus/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T18:00:04.000Z",
+        "checkedAt": "2026-10-23T00:36:46.344Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "In SageMaker Studio: Launch a ready-to-use AI development environment in under 20 seconds.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/announcing-new-ways-to-customize-models-with-sagemaker-ai-without-managing-gpus/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T18:00:04.000Z",
+        "checkedAt": "2026-10-23T00:36:46.344Z"
+      }
+    ],
+    "pageDate": "2026-10-22T18:00:04.000Z"
+  },
+  "score": {
+    "importance": 4,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "MODEL",
+      "AVAILABILITY",
+      "INFRA"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 11,
+    "total": 11
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 MODEL·AVAILABILITY·INFRA (우선순위 11)",
+    "근거 확인 통과 (확인 사실 9개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "status": "failed",
+    "error": "HTTP 503",
+    "usage": {
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "costUsd": 0,
+      "attempts": 1
+    },
+    "promptVersion": "draft-v1",
+    "at": "2026-10-23T00:37:37.783Z",
+    "evidenceHash": "f2215c4f459e"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": true,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}

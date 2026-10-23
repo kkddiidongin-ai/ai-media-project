@@ -1,0 +1,236 @@
+{
+  "id": "f5b85121619c",
+  "date": "2026-10-23",
+  "proposedSlug": "write-own-training-loop-without-managing-gpus",
+  "title": null,
+  "sourceTitle": "Write your own training loop — without managing GPUs — with Amazon SageMaker training session APIs",
+  "depth": null,
+  "suggestedDepth": "DEEP",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": true,
+      "novelty": true,
+      "userImpact": true,
+      "contextNeed": true,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": true
+    },
+    "deepMissing": []
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/write-your-own-training-loop-without-managing-gpus-with-amazon-sagemaker-training-sessions/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-10-22T18:00:01.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "f5b85121619c",
+    "url": "https://aws.amazon.com/blogs/machine-learning/write-your-own-training-loop-without-managing-gpus-with-amazon-sagemaker-training-sessions/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/write-your-own-training-loop-without-managing-gpus-with-amazon-sagemaker-training-sessions",
+    "title": "Write your own training loop — without managing GPUs — with Amazon SageMaker training session APIs",
+    "excerpt": "Amazon SageMaker AI training session APIs let you write your own LLM training loop (SFT, RL, or custom objectives) in a Python script while the service runs the GPUs. This post introduces the programming model and three SDK clients, then walks through a GRPO loop on GSM8K and a reinforcement learnin",
+    "publishedAt": "2026-10-22T18:00:01.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-10-23T00:35:37.283Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 15685,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Amazon SageMaker AI training session APIs let you write your own LLM training loop (SFT, RL, or custom objectives) in a Python script while the service runs the GPUs. This post introduces the programming model and three SDK clients, then walks through a GRPO loop on GSM8K and a reinforcement learnin",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/write-your-own-training-loop-without-managing-gpus-with-amazon-sagemaker-training-sessions/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T18:00:01.000Z",
+        "checkedAt": "2026-10-23T00:36:46.141Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Write your own training loop — without managing GPUs — with Amazon SageMaker training session APIs | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/write-your-own-training-loop-without-managing-gpus-with-amazon-sagemaker-training-sessions/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T18:00:01.000Z",
+        "checkedAt": "2026-10-23T00:36:46.141Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Write your own training loop — without managing GPUs — with Amazon SageMaker training session APIs",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/write-your-own-training-loop-without-managing-gpus-with-amazon-sagemaker-training-sessions/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T18:00:01.000Z",
+        "checkedAt": "2026-10-23T00:36:46.141Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Today, serverless model customization in Amazon SageMaker AI expands with training session APIs, which remove that tradeoff by drawing the abstraction boundary one level lower.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/write-your-own-training-loop-without-managing-gpus-with-amazon-sagemaker-training-sessions/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T18:00:01.000Z",
+        "checkedAt": "2026-10-23T00:36:46.141Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "In this post, we introduce the programming model and the three SDK clients, and show where training session APIs fit among the model training and customization options in SageMaker AI.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/write-your-own-training-loop-without-managing-gpus-with-amazon-sagemaker-training-sessions/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T18:00:01.000Z",
+        "checkedAt": "2026-10-23T00:36:46.141Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "With SageMaker AI training session APIs, you can drive a live, GPU-backed session from your own Python process on your local machine.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/write-your-own-training-loop-without-managing-gpus-with-amazon-sagemaker-training-sessions/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T18:00:01.000Z",
+        "checkedAt": "2026-10-23T00:36:46.141Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "A ServiceClient holds the platform-level settings (execution role, model package group, Amazon Simple Storage Service (Amazon S3) output location, and optionally an AWS Key Management Service (AWS KMS) key and virtual private cloud (VPC) configuration, which you can also overr…",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/write-your-own-training-loop-without-managing-gpus-with-amazon-sagemaker-training-sessions/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T18:00:01.000Z",
+        "checkedAt": "2026-10-23T00:36:46.141Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Figure 1: The SageMaker Python SDK client hierarchy for training session APIs",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/write-your-own-training-loop-without-managing-gpus-with-amazon-sagemaker-training-sessions/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T18:00:01.000Z",
+        "checkedAt": "2026-10-23T00:36:46.141Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Figure 2: One training step, with sampling, gradient, and checkpoint operations on managed GPUs and loop control and reward logic on your machine",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/write-your-own-training-loop-without-managing-gpus-with-amazon-sagemaker-training-sessions/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T18:00:01.000Z",
+        "checkedAt": "2026-10-23T00:36:46.141Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Where training session APIs fit within Amazon SageMaker AI",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/write-your-own-training-loop-without-managing-gpus-with-amazon-sagemaker-training-sessions/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T18:00:01.000Z",
+        "checkedAt": "2026-10-23T00:36:46.141Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Training session APIs sit at a distinct point among the model customization options in SageMaker AI: substantially more control over the training algorithm than fully managed Serverless Model Customization , and far less operational ownership than training on Amazon SageMaker …",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/write-your-own-training-loop-without-managing-gpus-with-amazon-sagemaker-training-sessions/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T18:00:01.000Z",
+        "checkedAt": "2026-10-23T00:36:46.141Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Figure 3: Where training session APIs fit among the model customization options in SageMaker AI",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/write-your-own-training-loop-without-managing-gpus-with-amazon-sagemaker-training-sessions/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T18:00:01.000Z",
+        "checkedAt": "2026-10-23T00:36:46.141Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "SageMaker AI training session APIs move the abstraction boundary down to the training operation: you write the training loop in Python on your own machine, and the service runs it on managed GPUs, handling model and LoRA loading, distributed execution, fault recovery, and chec…",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/write-your-own-training-loop-without-managing-gpus-with-amazon-sagemaker-training-sessions/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T18:00:01.000Z",
+        "checkedAt": "2026-10-23T00:36:46.141Z"
+      }
+    ],
+    "pageDate": "2026-10-22T18:00:01.000Z"
+  },
+  "score": {
+    "importance": 4,
+    "practicalImpact": 2,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "MODEL",
+      "PRODUCT_LAUNCH",
+      "INFRA",
+      "API_PLATFORM",
+      "MODEL_MENTION"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 12,
+    "total": 12
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 MODEL·PRODUCT_LAUNCH·INFRA·API_PLATFORM·MODEL_MENTION (우선순위 12)",
+    "근거 확인 통과 (확인 사실 11개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [
+    "deep_requires_editor"
+  ],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "gemini",
+    "model": null,
+    "status": "skipped",
+    "error": "초안 생성 대상 아님: DEEP 후보 — 사람의 별도 승인 없이 자동 작성하지 않음 (편집자가 직접 작성)",
+    "gated": true,
+    "promptVersion": "draft-v1",
+    "at": "2026-10-23T00:37:36.826Z",
+    "evidenceHash": "1ce7665f2d41"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": false,
+    "reasons": [
+      "DEEP 후보 — 사람의 별도 승인 없이 자동 작성하지 않음 (편집자가 직접 작성)"
+    ]
+  },
+  "draftFile": null,
+  "newsletterCandidate": true,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

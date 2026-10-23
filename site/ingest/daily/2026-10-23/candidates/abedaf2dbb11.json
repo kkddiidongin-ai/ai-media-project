@@ -54,7 +54,7 @@
     "tier": 1,
     "fetchMode": "rss-paged",
     "discoveredVia": "https://blogs.microsoft.com/feed/",
-    "fetchedAt": "2026-10-22T15:08:58.366Z"
+    "fetchedAt": "2026-10-23T00:35:37.283Z"
   },
   "evidence": {
     "status": "OK",
@@ -211,16 +211,10 @@
   "generation": {
     "provider": "gemini",
     "model": "gemini-3.8-flash",
-    "status": "failed",
-    "error": "HTTP 503",
-    "usage": {
-      "inputTokens": 0,
-      "outputTokens": 0,
-      "costUsd": 0,
-      "attempts": 1
-    },
+    "status": "skipped",
+    "error": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성",
     "promptVersion": "draft-v1",
-    "at": "2026-10-22T15:11:10.865Z",
+    "at": "2026-10-23T00:40:39.915Z",
     "evidenceHash": "08ad624179b2"
   },
   "draft": null,

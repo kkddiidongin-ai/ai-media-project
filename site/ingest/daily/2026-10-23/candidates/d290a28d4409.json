@@ -1,0 +1,221 @@
+{
+  "id": "d290a28d4409",
+  "date": "2026-10-23",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Europe’s Industrial Leaders Reinvent Engineering and Manufacturing With NVIDIA",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "NVIDIA",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://blogs.nvidia.com/blog/europe-industrial-leaders-engineering-manufacturing/",
+      "name": "NVIDIA Blog",
+      "type": "official",
+      "publishedAt": "2026-10-21T10:30:40.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "d290a28d4409",
+    "url": "https://blogs.nvidia.com/blog/europe-industrial-leaders-engineering-manufacturing/",
+    "canonicalUrl": "https://blogs.nvidia.com/blog/europe-industrial-leaders-engineering-manufacturing",
+    "title": "Europe’s Industrial Leaders Reinvent Engineering and Manufacturing With NVIDIA",
+    "excerpt": "To increase productivity, accelerate innovation and create new opportunities for economic growth, Europe’s industrial leaders are tapping NVIDIA CUDA-X and Omniverse libraries, as well as NVIDIA Cosmos and Nemotron open models, across the engineering and manufacturing lifecycle. Bringing those capab",
+    "publishedAt": "2026-10-21T10:30:40.000Z",
+    "sourceId": "nvidia",
+    "sourceName": "NVIDIA Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://blogs.nvidia.com/feed/",
+    "fetchedAt": "2026-10-23T00:35:37.283Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 6179,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "To increase productivity, accelerate innovation and create new opportunities for economic growth, Europe’s industrial leaders are tapping NVIDIA CUDA-X and Omniverse libraries, as well as NVIDIA Cosmos and Nemotron open models, across the engineering and manufacturing lifecycle. Bringing those capab",
+        "sourceUrl": "https://blogs.nvidia.com/blog/europe-industrial-leaders-engineering-manufacturing/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:30:40.000Z",
+        "checkedAt": "2026-10-23T00:37:25.989Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Europe’s Industrial Leaders Reinvent Engineering and Manufacturing With NVIDIA | NVIDIA Blog",
+        "sourceUrl": "https://blogs.nvidia.com/blog/europe-industrial-leaders-engineering-manufacturing/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:30:40.000Z",
+        "checkedAt": "2026-10-23T00:37:25.989Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "To increase productivity, accelerate innovation and create new opportunities for economic growth, Europe’s industrial leaders are tapping NVIDIA CUDA-X and Omniverse libraries , as well as NVIDIA Cosmos and Nemotron open models, across the engineering and manufacturing lifecycle.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/europe-industrial-leaders-engineering-manufacturing/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:30:40.000Z",
+        "checkedAt": "2026-10-23T00:37:25.989Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Bringing those capabilities together on the factory floor, the NVIDIA Factory Operations Blueprint (FOX) is now available in early access on GitHub , providing a path for developers to build and deploy always-on factory manager agents that coordinate work across machines, and …",
+        "sourceUrl": "https://blogs.nvidia.com/blog/europe-industrial-leaders-engineering-manufacturing/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:30:40.000Z",
+        "checkedAt": "2026-10-23T00:37:25.989Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Siemens is integrating agents built using FOX into Intelligence Center X, its agentic enterprise system, to help identify root causes and coordinate factory operations, for estimated cost savings of 20%.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/europe-industrial-leaders-engineering-manufacturing/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:30:40.000Z",
+        "checkedAt": "2026-10-23T00:37:25.989Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "At its Erlangen electronics factory, Siemens used this approach to reduce calibration time of inspection processes by 40%.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/europe-industrial-leaders-engineering-manufacturing/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:30:40.000Z",
+        "checkedAt": "2026-10-23T00:37:25.989Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "At GTC Berlin, NVIDIA is releasing cuDSS for general availability , accelerating the demanding calculations behind the complex simulations of structural stress, fluid flow, electromagnetic fields and semiconductor device behavior.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/europe-industrial-leaders-engineering-manufacturing/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:30:40.000Z",
+        "checkedAt": "2026-10-23T00:37:25.989Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "In factories, the company applies NVIDIA Cosmos 3 and the Metropolis VSS blueprint to build agents for vehicle inspection and windshield assembly verification, detecting deviations and ensuring consistently high quality.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/europe-industrial-leaders-engineering-manufacturing/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:30:40.000Z",
+        "checkedAt": "2026-10-23T00:37:25.989Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Cadence is benchmarking automotive fluid-dynamics workloads on NVIDIA GPUs to assess opportunities for faster design iteration, while Autodesk brings the NVIDIA PhysicsNeMo and Warp frameworks into NavPack, integrated with Autodesk Alias, to help designers like those at Bentle…",
+        "sourceUrl": "https://blogs.nvidia.com/blog/europe-industrial-leaders-engineering-manufacturing/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:30:40.000Z",
+        "checkedAt": "2026-10-23T00:37:25.989Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Benchmarks of S-Litho on imec’s model show up to 40x speedup, while Infineon uses Sentaurus Device with NVIDIA CUDA libraries to achieve a 12x speedup in 3D breakdown simulation for next-generation power devices.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/europe-industrial-leaders-engineering-manufacturing/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:30:40.000Z",
+        "checkedAt": "2026-10-23T00:37:25.989Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "PhysicsX is working with GB1, Britain’s America’s Cup team , on AI-powered yacht design, using NVIDIA Omniverse libraries to visualize hull geometry and pressure fields, while Fermioniq ’s Sofia agent helps Deltares and Dutch ministries model river flow by translating natural-…",
+        "sourceUrl": "https://blogs.nvidia.com/blog/europe-industrial-leaders-engineering-manufacturing/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:30:40.000Z",
+        "checkedAt": "2026-10-23T00:37:25.989Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "With Microsoft Azure NCv6 virtual machines powered by NVIDIA RTX PRO 6000 Blackwell Server Edition GPUs, agents with spatial intelligence combine engineering data, operating information and 3D equipment geometry to see, simulate and reason over industrial facilities, supportin…",
+        "sourceUrl": "https://blogs.nvidia.com/blog/europe-industrial-leaders-engineering-manufacturing/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:30:40.000Z",
+        "checkedAt": "2026-10-23T00:37:25.989Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Europe’s Industrial Leaders Reinvent Engineering and Manufacturing With NVIDIA",
+        "sourceUrl": "https://blogs.nvidia.com/blog/europe-industrial-leaders-engineering-manufacturing/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:30:40.000Z",
+        "checkedAt": "2026-10-23T00:37:25.989Z"
+      }
+    ],
+    "pageDate": "2026-10-21T10:30:40.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "MODEL_MENTION"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 MODEL_MENTION (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

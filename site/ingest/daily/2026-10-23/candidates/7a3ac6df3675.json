@@ -1,0 +1,235 @@
+{
+  "id": "7a3ac6df3675",
+  "date": "2026-10-23",
+  "proposedSlug": "claude-platform-available-google-cloud",
+  "title": null,
+  "sourceTitle": "Claude Platform is now available on Google Cloud",
+  "depth": null,
+  "suggestedDepth": "DEEP",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 12,
+    "deepChecks": {
+      "importance": true,
+      "novelty": true,
+      "userImpact": true,
+      "contextNeed": true,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": true
+    },
+    "deepMissing": []
+  },
+  "company": "Anthropic",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://claude.com/resources/articles/claude-models-on-google-cloud-anthropic-managed",
+      "name": "Claude (claude.com articles)",
+      "type": "official",
+      "publishedAt": "2026-10-22T00:00:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "7a3ac6df3675",
+    "url": "https://claude.com/resources/articles/claude-models-on-google-cloud-anthropic-managed",
+    "canonicalUrl": "https://claude.com/resources/articles/claude-models-on-google-cloud-anthropic-managed",
+    "title": "Claude Platform is now available on Google Cloud",
+    "excerpt": "Use Claude Models on Google Cloud (Anthropic managed) to access Claude Platform features with Google Cloud authentication, billing, and commitment retirement.",
+    "publishedAt": "2026-10-22T00:00:00.000Z",
+    "sourceId": "claude-blog",
+    "sourceName": "Claude (claude.com articles)",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "listing-meta",
+    "discoveredVia": "https://claude.com/resources/articles",
+    "fetchedAt": "2026-10-23T00:35:37.283Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 5201,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Use Claude Models on Google Cloud (Anthropic managed) to access Claude Platform features with Google Cloud authentication, billing, and commitment retirement.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-models-on-google-cloud-anthropic-managed",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-22T00:00:00.000Z",
+        "checkedAt": "2026-10-23T00:36:45.876Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "• • • • • • • • • Claude Platform is now available on Google Cloud | Claude by Anthropic • •",
+        "sourceUrl": "https://claude.com/resources/articles/claude-models-on-google-cloud-anthropic-managed",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-22T00:00:00.000Z",
+        "checkedAt": "2026-10-23T00:36:45.876Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Skip to main content Claude Models on Google Cloud (Anthropic managed) is now generally available, giving Google Cloud customers the full set of Claude Platform features, with Google Cloud IAM credentials, billing, and commitment retirement.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-models-on-google-cloud-anthropic-managed",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-22T00:00:00.000Z",
+        "checkedAt": "2026-10-23T00:36:45.876Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Claude also remains available via the Google managed offering, where Google is the data processor.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-models-on-google-cloud-anthropic-managed",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-22T00:00:00.000Z",
+        "checkedAt": "2026-10-23T00:36:45.876Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Access the complete Claude Platform on Google Cloud",
+        "sourceUrl": "https://claude.com/resources/articles/claude-models-on-google-cloud-anthropic-managed",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-22T00:00:00.000Z",
+        "checkedAt": "2026-10-23T00:36:45.876Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "With the Anthropic managed offering, Google Cloud customers now receive the full set of Claude API features, with new features and betas shipping the same day they go live on the native Claude Platform.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-models-on-google-cloud-anthropic-managed",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-22T00:00:00.000Z",
+        "checkedAt": "2026-10-23T00:36:45.876Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Billing is through a single Google Cloud invoice and Claude usage draws down your existing Google Cloud commitment.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-models-on-google-cloud-anthropic-managed",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-22T00:00:00.000Z",
+        "checkedAt": "2026-10-23T00:36:45.876Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Claude Models on Google Cloud (Anthropic managed) is currently available with US and Global endpoints.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-models-on-google-cloud-anthropic-managed",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-22T00:00:00.000Z",
+        "checkedAt": "2026-10-23T00:36:45.876Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Fast Mode on Claude Opus 5.5 is also generally available for customers using Claude Models on Google Cloud (Anthropic managed).",
+        "sourceUrl": "https://claude.com/resources/articles/claude-models-on-google-cloud-anthropic-managed",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-22T00:00:00.000Z",
+        "checkedAt": "2026-10-23T00:36:45.876Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "See the full list of features available on Claude Models on Google Cloud in our documentation (opens in new tab) .",
+        "sourceUrl": "https://claude.com/resources/articles/claude-models-on-google-cloud-anthropic-managed",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-22T00:00:00.000Z",
+        "checkedAt": "2026-10-23T00:36:45.876Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Claude Fable 5.1, Opus 5.5, Sonnet 5.5, and Haiku 5.5 are available, with new models shipping on the Anthropic managed offering as they launch.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-models-on-google-cloud-anthropic-managed",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-22T00:00:00.000Z",
+        "checkedAt": "2026-10-23T00:36:45.876Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Claude Models on Google Cloud (Anthropic managed) is built for customers who want day zero access to all beta and generally available Claude Platform features.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-models-on-google-cloud-anthropic-managed",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-22T00:00:00.000Z",
+        "checkedAt": "2026-10-23T00:36:45.876Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Claude Models on Google Cloud (Google managed) remains the best choice for customers who need Google Cloud as the data processor, have strict regional data residency requirements, or want native Google Cloud integrations like Model Armor or Agent Engine.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-models-on-google-cloud-anthropic-managed",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-22T00:00:00.000Z",
+        "checkedAt": "2026-10-23T00:36:45.876Z"
+      }
+    ],
+    "pageDate": "2026-10-22T00:00:00.000Z"
+  },
+  "score": {
+    "importance": 4,
+    "practicalImpact": 3,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "MODEL",
+      "PRODUCT_LAUNCH",
+      "PRICING",
+      "AVAILABILITY"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 13,
+    "total": 13
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 MODEL·PRODUCT_LAUNCH·PRICING·AVAILABILITY (우선순위 13)",
+    "근거 확인 통과 (확인 사실 12개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [
+    "deep_requires_editor"
+  ],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "gemini",
+    "model": null,
+    "status": "skipped",
+    "error": "초안 생성 대상 아님: DEEP 후보 — 사람의 별도 승인 없이 자동 작성하지 않음 (편집자가 직접 작성)",
+    "gated": true,
+    "promptVersion": "draft-v1",
+    "at": "2026-10-23T00:37:36.825Z",
+    "evidenceHash": "8c0fa4a62ea0"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": false,
+    "reasons": [
+      "DEEP 후보 — 사람의 별도 승인 없이 자동 작성하지 않음 (편집자가 직접 작성)"
+    ]
+  },
+  "draftFile": null,
+  "newsletterCandidate": true,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

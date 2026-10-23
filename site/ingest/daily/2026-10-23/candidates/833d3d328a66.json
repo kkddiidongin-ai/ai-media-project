@@ -1,0 +1,221 @@
+{
+  "id": "833d3d328a66",
+  "date": "2026-10-23",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "5 production challenges in multi-agent systems and how Deep Insight solved them",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 10,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/5-production-challenges-in-multi-agent-systems-and-how-deep-insight-solved-them/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-10-21T23:36:47.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "833d3d328a66",
+    "url": "https://aws.amazon.com/blogs/machine-learning/5-production-challenges-in-multi-agent-systems-and-how-deep-insight-solved-them/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/5-production-challenges-in-multi-agent-systems-and-how-deep-insight-solved-them",
+    "title": "5 production challenges in multi-agent systems and how Deep Insight solved them",
+    "excerpt": "Many teams build a multi-agent AI prototype in days but hit a wall in production. This post defines five production challenges (orchestration, per-agent model selection, reliable operation, secure code execution, and monitoring) and shows how Deep Insight, an open source multi-agent system on AWS, s",
+    "publishedAt": "2026-10-21T23:36:47.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-10-23T00:35:37.283Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 21501,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Many teams build a multi-agent AI prototype in days but hit a wall in production. This post defines five production challenges (orchestration, per-agent model selection, reliable operation, secure code execution, and monitoring) and shows how Deep Insight, an open source multi-agent system on AWS, s",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/5-production-challenges-in-multi-agent-systems-and-how-deep-insight-solved-them/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-21T23:36:47.000Z",
+        "checkedAt": "2026-10-23T00:37:32.228Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "5 production challenges in multi-agent systems and how Deep Insight solved them | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/5-production-challenges-in-multi-agent-systems-and-how-deep-insight-solved-them/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-21T23:36:47.000Z",
+        "checkedAt": "2026-10-23T00:37:32.228Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "5 production challenges in multi-agent systems and how Deep Insight solved them",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/5-production-challenges-in-multi-agent-systems-and-how-deep-insight-solved-them/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-21T23:36:47.000Z",
+        "checkedAt": "2026-10-23T00:37:32.228Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "To tackle these challenges head-on, the AWS Solutions Architecture team built Deep Insight , a production-grade multi-agent system.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/5-production-challenges-in-multi-agent-systems-and-how-deep-insight-solved-them/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-21T23:36:47.000Z",
+        "checkedAt": "2026-10-23T00:37:32.228Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Part 1: 5 production challenges in multi-agent systems and how Deep Insight solved them.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/5-production-challenges-in-multi-agent-systems-and-how-deep-insight-solved-them/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-21T23:36:47.000Z",
+        "checkedAt": "2026-10-23T00:37:32.228Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Part 2: Beyond the context window: Context Engineering techniques and how Deep Insight applied them.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/5-production-challenges-in-multi-agent-systems-and-how-deep-insight-solved-them/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-21T23:36:47.000Z",
+        "checkedAt": "2026-10-23T00:37:32.228Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Part 3: Harness engineering in practice: moving Deep Insight from dev to production.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/5-production-challenges-in-multi-agent-systems-and-how-deep-insight-solved-them/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-21T23:36:47.000Z",
+        "checkedAt": "2026-10-23T00:37:32.228Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "It defines the five core challenges any production multi-agent system must solve and shows how each layer of the stack addresses them, from Strands Agents SDK and Amazon Bedrock to Amazon Bedrock AgentCore , Application Load Balancer , and AWS Fargate .",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/5-production-challenges-in-multi-agent-systems-and-how-deep-insight-solved-them/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-21T23:36:47.000Z",
+        "checkedAt": "2026-10-23T00:37:32.228Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "The green boxes represent the Strands Agents multi-agent structure, which addresses challenges 1 and 2 from the preceding table.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/5-production-challenges-in-multi-agent-systems-and-how-deep-insight-solved-them/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-21T23:36:47.000Z",
+        "checkedAt": "2026-10-23T00:37:32.228Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "The remaining infrastructure components shown in the diagram address challenges 3, 4, and 5, which we will walk through in Solution detail 2: Production deployment and operations.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/5-production-challenges-in-multi-agent-systems-and-how-deep-insight-solved-them/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-21T23:36:47.000Z",
+        "checkedAt": "2026-10-23T00:37:32.228Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Figure 4: Deep Insight web version screenshot",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/5-production-challenges-in-multi-agent-systems-and-how-deep-insight-solved-them/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-21T23:36:47.000Z",
+        "checkedAt": "2026-10-23T00:37:32.228Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Figure 5: Deep Insight Ops dashboard screenshot",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/5-production-challenges-in-multi-agent-systems-and-how-deep-insight-solved-them/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-21T23:36:47.000Z",
+        "checkedAt": "2026-10-23T00:37:32.228Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "LG Electronics’ Korea Sales Division built ChatInsight on the same multi-agent architecture as Deep Insight, where data analysis requests had taken 2–3 weeks and lost intent between marketers and data scientists.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/5-production-challenges-in-multi-agent-systems-and-how-deep-insight-solved-them/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-21T23:36:47.000Z",
+        "checkedAt": "2026-10-23T00:37:32.228Z"
+      }
+    ],
+    "pageDate": "2026-10-21T23:36:47.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "SECURITY_MENTION"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 SECURITY_MENTION (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

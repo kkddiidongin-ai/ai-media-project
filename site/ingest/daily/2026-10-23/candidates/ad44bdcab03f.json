@@ -1,0 +1,221 @@
+{
+  "id": "ad44bdcab03f",
+  "date": "2026-10-23",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Amazon Polly delivers a major upgrade to its Generative engine",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/amazon-polly-delivers-a-major-upgrade-to-its-generative-engine/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-10-22T18:06:35.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "ad44bdcab03f",
+    "url": "https://aws.amazon.com/blogs/machine-learning/amazon-polly-delivers-a-major-upgrade-to-its-generative-engine/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-polly-delivers-a-major-upgrade-to-its-generative-engine",
+    "title": "Amazon Polly delivers a major upgrade to its Generative engine",
+    "excerpt": "The Amazon Polly Generative engine gets a major upgrade: more expressive, more accurate speech with low latency, plus 14 new voices across 9 locales and general availability of Hindi and Finnish. This drop-in upgrade requires no code changes and is now generally available in production.",
+    "publishedAt": "2026-10-22T18:06:35.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-10-23T00:35:37.283Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 9127,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "The Amazon Polly Generative engine gets a major upgrade: more expressive, more accurate speech with low latency, plus 14 new voices across 9 locales and general availability of Hindi and Finnish. This drop-in upgrade requires no code changes and is now generally available in production.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-polly-delivers-a-major-upgrade-to-its-generative-engine/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T18:06:35.000Z",
+        "checkedAt": "2026-10-23T00:37:18.741Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Amazon Polly delivers a major upgrade to its Generative engine | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-polly-delivers-a-major-upgrade-to-its-generative-engine/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T18:06:35.000Z",
+        "checkedAt": "2026-10-23T00:37:18.741Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Amazon Polly delivers a major upgrade to its Generative engine",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-polly-delivers-a-major-upgrade-to-its-generative-engine/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T18:06:35.000Z",
+        "checkedAt": "2026-10-23T00:37:18.741Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Amazon Polly Generative engine now offers more natural and accurate speech output.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-polly-delivers-a-major-upgrade-to-its-generative-engine/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T18:06:35.000Z",
+        "checkedAt": "2026-10-23T00:37:18.741Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "We’re introducing an upgrade to the Amazon Polly Generative engine that delivers more expressive, more accurate speech output with low latency.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-polly-delivers-a-major-upgrade-to-its-generative-engine/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T18:06:35.000Z",
+        "checkedAt": "2026-10-23T00:37:18.741Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "The upgrade adds 14 new voices across 9 locales, including general availability of Generative voices in Hindi and Finnish for the first time.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-polly-delivers-a-major-upgrade-to-its-generative-engine/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T18:06:35.000Z",
+        "checkedAt": "2026-10-23T00:37:18.741Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Hindi and Finnish are generally available for the first time on the Amazon Polly Generative engine.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-polly-delivers-a-major-upgrade-to-its-generative-engine/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T18:06:35.000Z",
+        "checkedAt": "2026-10-23T00:37:18.741Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Powered by the new Amazon Polly Generative engine, the voices can reflect emotion and prosody even better based on the text input, without manual setup.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-polly-delivers-a-major-upgrade-to-its-generative-engine/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T18:06:35.000Z",
+        "checkedAt": "2026-10-23T00:37:18.741Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "A larger catalog overall for Amazon Polly Generative engine – Totaling 57 generative voices across 11 languages and 25 locales.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-polly-delivers-a-major-upgrade-to-its-generative-engine/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T18:06:35.000Z",
+        "checkedAt": "2026-10-23T00:37:18.741Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "The upgraded Amazon Polly Generative engine uses a standard Amazon Polly API call to build your speech applications.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-polly-delivers-a-major-upgrade-to-its-generative-engine/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T18:06:35.000Z",
+        "checkedAt": "2026-10-23T00:37:18.741Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "With Amazon Polly, you can continue to build with familiar AWS patterns: call the same Amazon Polly API, manage access with AWS Identity and Access Management (IAM), use the output in your existing applications and contact-center flows, and monitor the workloads that synthesiz…",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-polly-delivers-a-major-upgrade-to-its-generative-engine/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T18:06:35.000Z",
+        "checkedAt": "2026-10-23T00:37:18.741Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "The Amazon Polly Generative engine now delivers more natural, expressive speech alongside low-latency streaming for real-time applications, Speech Synthesis Markup Language (SSML) support for fine-grained control, and the operational reliability of a fully managed AWS service.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-polly-delivers-a-major-upgrade-to-its-generative-engine/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T18:06:35.000Z",
+        "checkedAt": "2026-10-23T00:37:18.741Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "The next-generation Generative engine of Amazon Polly is available today, delivering more natural and more accurate voices, adding 14 new voices, including generative voices generally available in Hindi and Finnish for the first time, and requires no change to your code.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-polly-delivers-a-major-upgrade-to-its-generative-engine/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T18:06:35.000Z",
+        "checkedAt": "2026-10-23T00:37:18.741Z"
+      }
+    ],
+    "pageDate": "2026-10-22T18:06:35.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "AVAILABILITY"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 AVAILABILITY (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}
