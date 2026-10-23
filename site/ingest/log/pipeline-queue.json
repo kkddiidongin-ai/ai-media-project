@@ -246,13 +246,13 @@
         "tier": 1,
         "fetchMode": "rss-paged",
         "discoveredVia": "https://blogs.microsoft.com/feed/",
-        "fetchedAt": "2026-10-22T15:08:58.366Z"
+        "fetchedAt": "2026-10-23T00:35:37.283Z"
       },
       "addedAt": "2026-10-20",
       "since": "2026-10-17",
       "attempts": 5,
       "date": "2026-10-23",
-      "reason": "HTTP 503"
+      "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
     },
     "4bdfa4285ba8": {
       "stage": "draft",
@@ -292,11 +292,11 @@
         "tier": 1,
         "fetchMode": "rss-paged",
         "discoveredVia": "https://blogs.nvidia.com/feed/",
-        "fetchedAt": "2026-10-22T15:08:58.366Z"
+        "fetchedAt": "2026-10-23T00:35:37.283Z"
       },
       "addedAt": "2026-10-22",
       "since": "2026-10-19",
-      "attempts": 3,
+      "attempts": 4,
       "date": "2026-10-23",
       "reason": "HTTP 503"
     },
@@ -315,13 +315,13 @@
         "tier": 1,
         "fetchMode": "rss",
         "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
-        "fetchedAt": "2026-10-22T15:08:58.366Z"
+        "fetchedAt": "2026-10-23T00:35:37.283Z"
       },
       "addedAt": "2026-10-22",
       "since": "2026-10-19",
       "attempts": 2,
       "date": "2026-10-23",
-      "reason": "HTTP 503"
+      "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
     },
     "db73069fa994": {
       "stage": "draft",
@@ -338,7 +338,7 @@
         "tier": 1,
         "fetchMode": "rss-paged",
         "discoveredVia": "https://blogs.nvidia.com/feed/",
-        "fetchedAt": "2026-10-22T15:08:58.366Z"
+        "fetchedAt": "2026-10-23T00:35:37.283Z"
       },
       "addedAt": "2026-10-22",
       "since": "2026-10-19",
@@ -407,7 +407,7 @@
         "tier": 1,
         "fetchMode": "rss-paged",
         "discoveredVia": "https://blogs.nvidia.com/feed/",
-        "fetchedAt": "2026-10-22T15:08:58.366Z"
+        "fetchedAt": "2026-10-23T00:35:37.283Z"
       },
       "addedAt": "2026-10-22",
       "since": "2026-10-19",
@@ -430,7 +430,7 @@
         "tier": 1,
         "fetchMode": "rss-paged",
         "discoveredVia": "https://blogs.nvidia.com/feed/",
-        "fetchedAt": "2026-10-22T15:08:58.366Z"
+        "fetchedAt": "2026-10-23T00:35:37.283Z"
       },
       "addedAt": "2026-10-22",
       "since": "2026-10-19",
@@ -453,7 +453,7 @@
         "tier": 1,
         "fetchMode": "rss",
         "discoveredVia": "https://nvidianews.nvidia.com/releases.xml",
-        "fetchedAt": "2026-10-22T15:08:58.366Z"
+        "fetchedAt": "2026-10-23T00:35:37.283Z"
       },
       "addedAt": "2026-10-22",
       "since": "2026-10-19",
@@ -476,13 +476,13 @@
         "tier": 1,
         "fetchMode": "rss",
         "discoveredVia": "https://workspaceupdates.googleblog.com/feeds/posts/default?max-results=500&published-min=2026-01-01T00:00:00Z",
-        "fetchedAt": "2026-10-22T15:08:58.366Z"
+        "fetchedAt": "2026-10-23T00:35:37.283Z"
       },
       "addedAt": "2026-10-22",
       "since": "2026-10-19",
-      "attempts": 2,
+      "attempts": 3,
       "date": "2026-10-23",
-      "reason": "HTTP 503"
+      "reason": "timeout"
     },
     "292e35e33e7b": {
       "stage": "draft",
@@ -503,9 +503,9 @@
       },
       "addedAt": "2026-10-22",
       "since": "2026-10-19",
-      "attempts": 2,
+      "attempts": 3,
       "date": "2026-10-23",
-      "reason": "HTTP 503"
+      "reason": "timeout"
     },
     "35a22a987ed8": {
       "stage": "draft",
@@ -526,9 +526,9 @@
       },
       "addedAt": "2026-10-22",
       "since": "2026-10-19",
-      "attempts": 2,
+      "attempts": 3,
       "date": "2026-10-23",
-      "reason": "HTTP 503"
+      "reason": "timeout"
     },
     "3964fa015c0d": {
       "stage": "draft",
@@ -590,8 +590,8 @@
         "sourceType": "official",
         "tier": 1,
         "fetchMode": "rss-paged",
-        "discoveredVia": "https://github.blog/changelog/feed/",
-        "fetchedAt": "2026-10-22T15:08:58.366Z"
+        "discoveredVia": "https://github.blog/changelog/feed/?paged=2",
+        "fetchedAt": "2026-10-23T00:35:37.283Z"
       },
       "addedAt": "2026-10-22",
       "since": "2026-10-19",
@@ -608,13 +608,13 @@
         "title": "NVIDIA Unveils Minerva to Bring End-to-End Observability for AI Factories",
         "excerpt": "Launched today, NVIDIA Minerva is an AIOps platform built to help teams find problems earlier and keep AI factories productive. It brings together telemetry from infrastructure and AI workloads, then applies purpose-built AI models to turn that data into timely, actionable insight. AI factories are ",
         "publishedAt": "2026-10-22T15:00:02.000Z",
-        "sourceId": "nvidia-newsroom",
-        "sourceName": "NVIDIA Newsroom (Press Releases)",
+        "sourceId": "nvidia",
+        "sourceName": "NVIDIA Blog",
         "sourceType": "official",
         "tier": 1,
-        "fetchMode": "rss",
-        "discoveredVia": "https://nvidianews.nvidia.com/releases.xml",
-        "fetchedAt": "2026-10-22T15:08:58.366Z"
+        "fetchMode": "rss-paged",
+        "discoveredVia": "https://blogs.nvidia.com/feed/",
+        "fetchedAt": "2026-10-23T00:35:37.283Z"
       },
       "addedAt": "2026-10-23",
       "since": "2026-10-20",
@@ -637,7 +637,7 @@
         "tier": 1,
         "fetchMode": "rss-paged",
         "discoveredVia": "https://blogs.nvidia.com/feed/",
-        "fetchedAt": "2026-10-22T15:08:58.366Z"
+        "fetchedAt": "2026-10-23T00:35:37.283Z"
       },
       "addedAt": "2026-10-23",
       "since": "2026-10-20",
@@ -660,7 +660,7 @@
         "tier": 1,
         "fetchMode": "rss-paged",
         "discoveredVia": "https://blogs.nvidia.com/feed/",
-        "fetchedAt": "2026-10-22T15:08:58.366Z"
+        "fetchedAt": "2026-10-23T00:35:37.283Z"
       },
       "addedAt": "2026-10-23",
       "since": "2026-10-20",
@@ -668,406 +668,77 @@
       "date": "2026-10-23",
       "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
     },
-    "c3ecf70aef54": {
-      "stage": "evidence",
+    "418ae447f600": {
+      "stage": "draft",
       "item": {
-        "id": "c3ecf70aef54",
-        "url": "https://blogs.nvidia.com/blog/cosmos-open-train-evaluate-deploy-world-models/",
-        "canonicalUrl": "https://blogs.nvidia.com/blog/cosmos-open-train-evaluate-deploy-world-models",
-        "title": "NVIDIA Cosmos Opens New Tools to Train, Evaluate and Deploy World Models",
-        "excerpt": "To help developers rapidly build world models, which help physical AI systems understand and simulate the real world, NVIDIA has expanded the Cosmos platform with new training tools, simulation checkpoints and Cosmos Data Factory blueprints. Ranking top five on six different open models leaderboards",
-        "publishedAt": "2026-10-22T05:00:27.000Z",
-        "sourceId": "nvidia",
-        "sourceName": "NVIDIA Blog",
-        "sourceType": "official",
-        "tier": 1,
-        "fetchMode": "rss-paged",
-        "discoveredVia": "https://blogs.nvidia.com/feed/",
-        "fetchedAt": "2026-10-22T15:08:58.366Z"
-      },
-      "addedAt": "2026-10-23",
-      "since": "2026-10-20",
-      "attempts": 1,
-      "date": "2026-10-23",
-      "reason": "batch"
-    },
-    "f298fb1604b9": {
-      "stage": "evidence",
-      "item": {
-        "id": "f298fb1604b9",
-        "url": "https://blogs.nvidia.com/blog/dsx-power/",
-        "canonicalUrl": "https://blogs.nvidia.com/blog/dsx-power",
-        "title": "How Companies Are Using NVIDIA DSX to Break the Power Bottleneck",
-        "excerpt": "Companies around the world are building on the NVIDIA DSX AI Factory Platform to plan, simulate and run the grid and the AI factory as one system, from the substation to the rack. Their adoption of the platform responds to an acute problem. Power is now the biggest bottleneck in infrastructure. More",
-        "publishedAt": "2026-10-22T05:00:25.000Z",
-        "sourceId": "nvidia",
-        "sourceName": "NVIDIA Blog",
-        "sourceType": "official",
-        "tier": 1,
-        "fetchMode": "rss-paged",
-        "discoveredVia": "https://blogs.nvidia.com/feed/",
-        "fetchedAt": "2026-10-22T15:08:58.366Z"
-      },
-      "addedAt": "2026-10-23",
-      "since": "2026-10-20",
-      "attempts": 1,
-      "date": "2026-10-23",
-      "reason": "batch"
-    },
-    "8ed037559253": {
-      "stage": "evidence",
-      "item": {
-        "id": "8ed037559253",
-        "url": "https://blogs.nvidia.com/blog/european-retail-open-models-robotics/",
-        "canonicalUrl": "https://blogs.nvidia.com/blog/european-retail-open-models-robotics",
-        "title": "NVIDIA Transforms European Retail, From Digital Discovery to Physical Operations",
-        "excerpt": "European retailers are using open models and physical intelligence across use cases — from a commerce platform cutting inference costs by 90% to to a fulfillment center where collaboration of different robotic fleets is simulated inside a digital twin. Frontier Results With Open Models Retail leader",
-        "publishedAt": "2026-10-22T05:00:23.000Z",
-        "sourceId": "nvidia",
-        "sourceName": "NVIDIA Blog",
-        "sourceType": "official",
-        "tier": 1,
-        "fetchMode": "rss-paged",
-        "discoveredVia": "https://blogs.nvidia.com/feed/",
-        "fetchedAt": "2026-10-22T15:08:58.366Z"
-      },
-      "addedAt": "2026-10-23",
-      "since": "2026-10-20",
-      "attempts": 1,
-      "date": "2026-10-23",
-      "reason": "batch"
-    },
-    "67906ae6df39": {
-      "stage": "evidence",
-      "item": {
-        "id": "67906ae6df39",
-        "url": "https://blogs.nvidia.com/blog/europe-earth-2-open-models-weather-climate-prediction/",
-        "canonicalUrl": "https://blogs.nvidia.com/blog/europe-earth-2-open-models-weather-climate-prediction",
-        "title": "Pioneers Across Europe Deploy NVIDIA Earth-2 Open Models to Power Real-World Weather and Climate Prediction",
-        "excerpt": "Weather forecasts shape more than daily plans; timely weather information is crucial for energy producers, insurers and transport operators to plan around changing conditions. A global forecast can show a storm taking shape, but decisions about solar farms, shipping routes or insured property depend",
-        "publishedAt": "2026-10-22T05:00:19.000Z",
-        "sourceId": "nvidia",
-        "sourceName": "NVIDIA Blog",
-        "sourceType": "official",
-        "tier": 1,
-        "fetchMode": "rss-paged",
-        "discoveredVia": "https://blogs.nvidia.com/feed/",
-        "fetchedAt": "2026-10-22T15:08:58.366Z"
-      },
-      "addedAt": "2026-10-23",
-      "since": "2026-10-20",
-      "attempts": 1,
-      "date": "2026-10-23",
-      "reason": "batch"
-    },
-    "d290a28d4409": {
-      "stage": "evidence",
-      "item": {
-        "id": "d290a28d4409",
-        "url": "https://blogs.nvidia.com/blog/europe-industrial-leaders-engineering-manufacturing/",
-        "canonicalUrl": "https://blogs.nvidia.com/blog/europe-industrial-leaders-engineering-manufacturing",
-        "title": "Europe’s Industrial Leaders Reinvent Engineering and Manufacturing With NVIDIA",
-        "excerpt": "To increase productivity, accelerate innovation and create new opportunities for economic growth, Europe’s industrial leaders are tapping NVIDIA CUDA-X and Omniverse libraries, as well as NVIDIA Cosmos and Nemotron open models, across the engineering and manufacturing lifecycle. Bringing those capab",
-        "publishedAt": "2026-10-21T10:30:40.000Z",
-        "sourceId": "nvidia",
-        "sourceName": "NVIDIA Blog",
-        "sourceType": "official",
-        "tier": 1,
-        "fetchMode": "rss-paged",
-        "discoveredVia": "https://blogs.nvidia.com/feed/",
-        "fetchedAt": "2026-10-22T15:08:58.366Z"
-      },
-      "addedAt": "2026-10-23",
-      "since": "2026-10-20",
-      "attempts": 1,
-      "date": "2026-10-23",
-      "reason": "batch"
-    },
-    "140f65345f1e": {
-      "stage": "evidence",
-      "item": {
-        "id": "140f65345f1e",
-        "url": "https://blogs.nvidia.com/blog/open-models-europe-industry/",
-        "canonicalUrl": "https://blogs.nvidia.com/blog/open-models-europe-industry",
-        "title": "NVIDIA Open Models Advance Europe’s Sovereign Intelligence Across Industries",
-        "excerpt": "NVIDIA is expanding its family of open models across language, robotics, biology, and quantum computing, giving developers, researchers and enterprises what they need to build applications tailored to local languages and industries The portfolio includes the new NVIDIA Nemotron 3.5 Super VL and Nemo",
-        "publishedAt": "2026-10-21T10:00:07.000Z",
-        "sourceId": "nvidia",
-        "sourceName": "NVIDIA Blog",
-        "sourceType": "official",
-        "tier": 1,
-        "fetchMode": "rss-paged",
-        "discoveredVia": "https://blogs.nvidia.com/feed/",
-        "fetchedAt": "2026-10-22T15:08:58.366Z"
-      },
-      "addedAt": "2026-10-23",
-      "since": "2026-10-20",
-      "attempts": 1,
-      "date": "2026-10-23",
-      "reason": "batch"
-    },
-    "03fd7aaadcdf": {
-      "stage": "evidence",
-      "item": {
-        "id": "03fd7aaadcdf",
-        "url": "https://blogs.nvidia.com/blog/european-leaders-vera-cpu-infrastructure/",
-        "canonicalUrl": "https://blogs.nvidia.com/blog/european-leaders-vera-cpu-infrastructure",
-        "title": "European Leaders Turn to NVIDIA Vera CPUs to Build Local Infrastructure",
-        "excerpt": "Nebius and Nscale are among global technology partners looking to NVIDIA Vera CPUs to build the next wave of infrastructure. Their momentum reflects rapid advancements in agentic computing. Agents do more than generate answers: they retrieve information, run software tools, execute code and evaluate",
-        "publishedAt": "2026-10-20T10:30:11.000Z",
-        "sourceId": "nvidia",
-        "sourceName": "NVIDIA Blog",
-        "sourceType": "official",
-        "tier": 1,
-        "fetchMode": "rss-paged",
-        "discoveredVia": "https://blogs.nvidia.com/feed/",
-        "fetchedAt": "2026-10-22T15:08:58.366Z"
-      },
-      "addedAt": "2026-10-23",
-      "since": "2026-10-20",
-      "attempts": 1,
-      "date": "2026-10-23",
-      "reason": "batch"
-    },
-    "20a259028135": {
-      "stage": "evidence",
-      "item": {
-        "id": "20a259028135",
-        "url": "https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/",
-        "canonicalUrl": "https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure",
-        "title": "The bridge to agent-scale Git infrastructure",
-        "excerpt": "We moved a copy of 99.99999% of GitHub's repositories to Azure. Here's how per-reference quorums will bring over the rest, and how object storage lets reads scale independently. The post The bridge to agent-scale Git infrastructure appeared first on The GitHub Blog .",
-        "publishedAt": "2026-10-21T16:00:00.000Z",
-        "sourceId": "github",
-        "sourceName": "GitHub Blog",
-        "sourceType": "official",
-        "tier": 1,
-        "fetchMode": "rss-paged",
-        "discoveredVia": "https://github.blog/feed/",
-        "fetchedAt": "2026-10-22T15:08:58.366Z"
-      },
-      "addedAt": "2026-10-23",
-      "since": "2026-10-20",
-      "attempts": 1,
-      "date": "2026-10-23",
-      "reason": "batch"
-    },
-    "f9b499debdda": {
-      "stage": "evidence",
-      "item": {
-        "id": "f9b499debdda",
-        "url": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1",
-        "canonicalUrl": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1",
-        "title": "Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium.",
-        "excerpt": "",
-        "publishedAt": "2026-10-21T16:04:43.000Z",
-        "sourceId": "huggingface",
-        "sourceName": "Hugging Face Blog",
-        "sourceType": "official",
-        "tier": 1,
-        "fetchMode": "rss",
-        "discoveredVia": "https://huggingface.co/blog/feed.xml",
-        "fetchedAt": "2026-10-22T15:08:58.366Z"
-      },
-      "addedAt": "2026-10-23",
-      "since": "2026-10-20",
-      "attempts": 1,
-      "date": "2026-10-23",
-      "reason": "batch"
-    },
-    "ca293d8533a3": {
-      "stage": "evidence",
-      "item": {
-        "id": "ca293d8533a3",
-        "url": "https://huggingface.co/blog/allenai/fairstress",
-        "canonicalUrl": "https://huggingface.co/blog/allenai/fairstress",
-        "title": "FairStress: A deeper evaluation of fairness in LLM decision-making",
-        "excerpt": "",
-        "publishedAt": "2026-10-20T16:09:19.000Z",
-        "sourceId": "huggingface",
-        "sourceName": "Hugging Face Blog",
-        "sourceType": "official",
-        "tier": 1,
-        "fetchMode": "rss",
-        "discoveredVia": "https://huggingface.co/blog/feed.xml",
-        "fetchedAt": "2026-10-22T15:08:58.366Z"
-      },
-      "addedAt": "2026-10-23",
-      "since": "2026-10-20",
-      "attempts": 1,
-      "date": "2026-10-23",
-      "reason": "batch"
-    },
-    "84cd8d44e982": {
-      "stage": "evidence",
-      "item": {
-        "id": "84cd8d44e982",
-        "url": "https://huggingface.co/blog/hf-torchtpu",
-        "canonicalUrl": "https://huggingface.co/blog/hf-torchtpu",
-        "title": "Hugging Face ❤️ TorchTPU: TPUs, Natively",
-        "excerpt": "",
-        "publishedAt": "2026-10-20T00:00:00.000Z",
-        "sourceId": "huggingface",
-        "sourceName": "Hugging Face Blog",
-        "sourceType": "official",
-        "tier": 1,
-        "fetchMode": "rss",
-        "discoveredVia": "https://huggingface.co/blog/feed.xml",
-        "fetchedAt": "2026-10-22T15:08:58.366Z"
-      },
-      "addedAt": "2026-10-23",
-      "since": "2026-10-20",
-      "attempts": 1,
-      "date": "2026-10-23",
-      "reason": "batch"
-    },
-    "833d3d328a66": {
-      "stage": "evidence",
-      "item": {
-        "id": "833d3d328a66",
-        "url": "https://aws.amazon.com/blogs/machine-learning/5-production-challenges-in-multi-agent-systems-and-how-deep-insight-solved-them/",
-        "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/5-production-challenges-in-multi-agent-systems-and-how-deep-insight-solved-them",
-        "title": "5 production challenges in multi-agent systems and how Deep Insight solved them",
-        "excerpt": "Many teams build a multi-agent AI prototype in days but hit a wall in production. This post defines five production challenges (orchestration, per-agent model selection, reliable operation, secure code execution, and monitoring) and shows how Deep Insight, an open source multi-agent system on AWS, s",
-        "publishedAt": "2026-10-21T23:36:47.000Z",
+        "id": "418ae447f600",
+        "url": "https://aws.amazon.com/blogs/machine-learning/announcing-new-ways-to-customize-models-with-sagemaker-ai-without-managing-gpus/",
+        "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/announcing-new-ways-to-customize-models-with-sagemaker-ai-without-managing-gpus",
+        "title": "Announcing new ways to customize models with SageMaker AI, without managing GPUs",
+        "excerpt": "Amazon SageMaker AI serverless model customization now includes training sessions, generally available today. You write and coordinate your own post-training loop (custom loss functions, reward signals, or multi-turn reinforcement learning) while SageMaker AI handles GPU allocation, distributed exec",
+        "publishedAt": "2026-10-22T18:00:04.000Z",
         "sourceId": "aws-ml",
         "sourceName": "AWS Machine Learning Blog",
         "sourceType": "official",
         "tier": 1,
         "fetchMode": "rss",
         "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
-        "fetchedAt": "2026-10-22T15:08:58.366Z"
+        "fetchedAt": "2026-10-23T00:35:37.283Z"
       },
       "addedAt": "2026-10-23",
       "since": "2026-10-20",
       "attempts": 1,
       "date": "2026-10-23",
-      "reason": "batch"
+      "reason": "HTTP 503"
     },
-    "ff2a2ed5c225": {
-      "stage": "evidence",
+    "416b0e09bace": {
+      "stage": "draft",
       "item": {
-        "id": "ff2a2ed5c225",
-        "url": "https://aws.amazon.com/blogs/machine-learning/train-qwen3-on-aws-trainium-with-torchtitan/",
-        "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/train-qwen3-on-aws-trainium-with-torchtitan",
-        "title": "Train Qwen3 on AWS Trainium with torchtitan",
-        "excerpt": "Train Qwen3 on AWS Trainium with torchtitan three ways on a single trn2.48xlarge: the Hugging Face Transformers v5 modeling backend, torchtitan's native Qwen3, and NKI mixture-of-experts kernels. The same torchrun launcher and config structure work unchanged across all three paths, including loading",
-        "publishedAt": "2026-10-21T20:00:22.000Z",
+        "id": "416b0e09bace",
+        "url": "https://aws.amazon.com/blogs/aws/aws-continuum-for-code-vulnerabilities-is-now-generally-available/",
+        "canonicalUrl": "https://aws.amazon.com/blogs/aws/aws-continuum-for-code-vulnerabilities-is-now-generally-available",
+        "title": "AWS Continuum for code vulnerabilities is now generally available",
+        "excerpt": "AWS Continuum for code vulnerabilities is a new security service that uses AI to automatically find, validate, and prioritize code vulnerabilities in your environment, then delivers ready-to-review fixes as pull requests replacing what previously took hours of manual investigation and days of cross-",
+        "publishedAt": "2026-10-22T20:33:10.000Z",
+        "sourceId": "aws-news",
+        "sourceName": "AWS News Blog",
+        "sourceType": "official",
+        "tier": 1,
+        "fetchMode": "rss",
+        "discoveredVia": "https://aws.amazon.com/blogs/aws/feed/",
+        "fetchedAt": "2026-10-23T00:35:37.283Z"
+      },
+      "addedAt": "2026-10-23",
+      "since": "2026-10-20",
+      "attempts": 1,
+      "date": "2026-10-23",
+      "reason": "HTTP 503"
+    },
+    "251516e27a00": {
+      "stage": "draft",
+      "item": {
+        "id": "251516e27a00",
+        "url": "https://aws.amazon.com/blogs/machine-learning/stop-guessing-auto-scaling-targets-for-tts-on-amazon-sagemaker-ai/",
+        "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/stop-guessing-auto-scaling-targets-for-tts-on-amazon-sagemaker-ai",
+        "title": "Stop guessing auto scaling targets for TTS on Amazon SageMaker AI",
+        "excerpt": "Teams deploying custom text-to-speech models on Amazon SageMaker AI often guess at autoscaling thresholds, and a wrong guess either wastes GPU spend or breaches a latency SLO. This post deploys Kokoro-82M as a custom container and derives a measured autoscaling policy from two live-endpoint measurem",
+        "publishedAt": "2026-10-22T16:30:06.000Z",
         "sourceId": "aws-ml",
         "sourceName": "AWS Machine Learning Blog",
         "sourceType": "official",
         "tier": 1,
         "fetchMode": "rss",
         "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
-        "fetchedAt": "2026-10-22T15:08:58.366Z"
+        "fetchedAt": "2026-10-23T00:35:37.283Z"
       },
       "addedAt": "2026-10-23",
       "since": "2026-10-20",
-      "attempts": 1,
+      "attempts": 0,
       "date": "2026-10-23",
-      "reason": "batch"
-    },
-    "37991df881f8": {
-      "stage": "evidence",
-      "item": {
-        "id": "37991df881f8",
-        "url": "https://nvidianews.nvidia.com/news/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout",
-        "canonicalUrl": "https://nvidianews.nvidia.com/news/nvidia-and-supply-chain-partners-expand-capacity-to-accelerate-ai-infrastructure-buildout",
-        "title": "NVIDIA and Supply Chain Partners Expand Capacity to Accelerate AI Infrastructure Buildout",
-        "excerpt": "NVIDIA today announced plans with a group of supply chain partners to expand global manufacturing capacity to meet growing demand for its accelerated computing and full-stack AI factory platform.",
-        "publishedAt": "2026-10-21T10:33:00.000Z",
-        "sourceId": "nvidia-newsroom",
-        "sourceName": "NVIDIA Newsroom (Press Releases)",
-        "sourceType": "official",
-        "tier": 1,
-        "fetchMode": "rss",
-        "discoveredVia": "https://nvidianews.nvidia.com/releases.xml",
-        "fetchedAt": "2026-10-22T15:08:58.366Z"
-      },
-      "addedAt": "2026-10-23",
-      "since": "2026-10-20",
-      "attempts": 1,
-      "date": "2026-10-23",
-      "reason": "batch"
-    },
-    "4c8a7f998de4": {
-      "stage": "evidence",
-      "item": {
-        "id": "4c8a7f998de4",
-        "url": "https://nvidianews.nvidia.com/news/nvidia-nokia-and-leading-telecom-operators-turn-networks-into-distributed-intelligence-platforms",
-        "canonicalUrl": "https://nvidianews.nvidia.com/news/nvidia-nokia-and-leading-telecom-operators-turn-networks-into-distributed-intelligence-platforms",
-        "title": "NVIDIA, Nokia and Leading Telecom Operators Turn Networks Into Distributed Intelligence Platforms",
-        "excerpt": "NVIDIA today announced that leading global telecom operators are turning their networks into distributed intelligence platforms, adding NVIDIA accelerated computing to centralized data centers, metro sites and cell sites so they can serve models and applications closer to the people, businesses and ",
-        "publishedAt": "2026-10-21T10:11:00.000Z",
-        "sourceId": "nvidia-newsroom",
-        "sourceName": "NVIDIA Newsroom (Press Releases)",
-        "sourceType": "official",
-        "tier": 1,
-        "fetchMode": "rss",
-        "discoveredVia": "https://nvidianews.nvidia.com/releases.xml",
-        "fetchedAt": "2026-10-22T15:08:58.366Z"
-      },
-      "addedAt": "2026-10-23",
-      "since": "2026-10-20",
-      "attempts": 1,
-      "date": "2026-10-23",
-      "reason": "batch"
-    },
-    "5aaac97d85d0": {
-      "stage": "evidence",
-      "item": {
-        "id": "5aaac97d85d0",
-        "url": "https://developer.nvidia.com/blog/inside-nvidia-sentry-secure-ai-agents-at-runtime/",
-        "canonicalUrl": "https://developer.nvidia.com/blog/inside-nvidia-sentry-secure-ai-agents-at-runtime",
-        "title": "Inside NVIDIA Sentry: Secure AI Agents at Runtime",
-        "excerpt": "An AI agent can complete its assignment and still cross a security boundary. Recent incidents show that agents can circumvent security controls while using...",
-        "publishedAt": "2026-10-21T09:52:16.000Z",
-        "sourceId": "nvidia-developer",
-        "sourceName": "NVIDIA Technical Blog",
-        "sourceType": "official",
-        "tier": 1,
-        "fetchMode": "rss",
-        "discoveredVia": "https://developer.nvidia.com/blog/feed",
-        "fetchedAt": "2026-10-22T15:08:58.366Z"
-      },
-      "addedAt": "2026-10-23",
-      "since": "2026-10-20",
-      "attempts": 1,
-      "date": "2026-10-23",
-      "reason": "batch"
-    },
-    "c7a69fcb2cd3": {
-      "stage": "evidence",
-      "item": {
-        "id": "c7a69fcb2cd3",
-        "url": "https://tech.kakao.com/posts/840",
-        "canonicalUrl": "https://tech.kakao.com/posts/840",
-        "title": "글로벌 최고 수준의 자체 비전 인코더, Kanana-2-vision-encoder 개발기",
-        "excerpt": "안녕하세요. 카카오 Multimodal Model Training팀에서 카나나를 연구·개발하는 Polar(엄지환)입니다. 카카오가 자체 기술력만으로 밑바닥부터(from scratch) 개발한 독자 비전 인코더, Kanana-2-vision-encoder를 소개합니다. Kanana-2-vision-encoder는 카카오 언어모델 Kanana-2 LLM[1]의 가중치와 구조를 활용해 학습과 추론 모두에서 높은 효율성을 자랑합니다. 또한, 고해상도 이미지 ...",
-        "publishedAt": "2026-10-20T15:00:00.000Z",
-        "sourceId": "kakao-tech",
-        "sourceName": "Kakao Tech",
-        "sourceType": "official",
-        "tier": 2,
-        "fetchMode": "rss",
-        "discoveredVia": "https://tech.kakao.com/feed/",
-        "fetchedAt": "2026-10-22T15:08:58.366Z"
-      },
-      "addedAt": "2026-10-23",
-      "since": "2026-10-20",
-      "attempts": 1,
-      "date": "2026-10-23",
-      "reason": "batch"
+      "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
     }
   },
   "meta": {},
-  "retry": {
-    "etnews": {
-      "since": "2026-10-20",
-      "failedAt": "2026-10-23",
-      "attempts": 1,
-      "lastError": "fetch failed"
-    }
-  },
-  "updatedAt": "2026-10-22T15:11:12.820Z"
+  "retry": {},
+  "updatedAt": "2026-10-23T00:40:39.939Z"
 }
