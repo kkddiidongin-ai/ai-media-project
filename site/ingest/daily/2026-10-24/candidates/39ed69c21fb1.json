@@ -1,0 +1,234 @@
+{
+  "id": "39ed69c21fb1",
+  "date": "2026-10-24",
+  "proposedSlug": "ai-scan-pull-requests-generally-available",
+  "title": null,
+  "sourceTitle": "AI Scan for pull requests generally available",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 10,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": true,
+      "distinctFacts": true,
+      "evidenceQuality": false,
+      "standardWouldOmit": true
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "evidenceQuality"
+    ]
+  },
+  "company": "GitHub",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://github.blog/changelog/2026-10-15-ai-scan-for-pull-requests-generally-available",
+      "name": "GitHub Changelog",
+      "type": "official",
+      "publishedAt": "2026-10-15T15:04:51.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "39ed69c21fb1",
+    "url": "https://github.blog/changelog/2026-10-15-ai-scan-for-pull-requests-generally-available",
+    "canonicalUrl": "https://github.blog/changelog/2026-10-15-ai-scan-for-pull-requests-generally-available",
+    "title": "AI Scan for pull requests generally available",
+    "excerpt": "Code scanning AI Scan for pull requests is now generally available. It complements CodeQL by finding vulnerabilities in pull request changes for languages and frameworks that CodeQL does not currently… The post AI Scan for pull requests generally available appeared first on The GitHub Blog .",
+    "publishedAt": "2026-10-15T15:04:51.000Z",
+    "sourceId": "github-changelog",
+    "sourceName": "GitHub Changelog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://github.blog/changelog/feed/",
+    "fetchedAt": "2026-10-18T13:58:30.865Z",
+    "fromQueue": "draft"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 1848,
+    "grade": "LIMITED",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Code scanning AI Scan for pull requests is now generally available. It complements CodeQL by finding vulnerabilities in pull request changes for languages and frameworks that CodeQL does not currently… The post AI Scan for pull requests generally available appeared first on The GitHub Blog .",
+        "sourceUrl": "https://github.blog/changelog/2026-10-15-ai-scan-for-pull-requests-generally-available",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-15T15:04:51.000Z",
+        "checkedAt": "2026-10-24T00:33:44.690Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "AI Scan for pull requests generally available - GitHub Changelog",
+        "sourceUrl": "https://github.blog/changelog/2026-10-15-ai-scan-for-pull-requests-generally-available",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-15T15:04:51.000Z",
+        "checkedAt": "2026-10-24T00:33:44.690Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Code scanning AI Scan for pull requests is now generally available.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-15-ai-scan-for-pull-requests-generally-available",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-15T15:04:51.000Z",
+        "checkedAt": "2026-10-24T00:33:44.690Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "AI Scan runs automatically on pull requests when code scanning and the repository&rsquo;s effective AI Scan setting are enabled.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-15-ai-scan-for-pull-requests-generally-available",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-15T15:04:51.000Z",
+        "checkedAt": "2026-10-24T00:33:44.690Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "AI Scan does not run on pull requests from forks or pull requests created by Dependabot.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-15-ai-scan-for-pull-requests-generally-available",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-15T15:04:51.000Z",
+        "checkedAt": "2026-10-24T00:33:44.690Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "AI Scan is available for public repositories owned by organizations or personal accounts.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-15-ai-scan-for-pull-requests-generally-available",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-15T15:04:51.000Z",
+        "checkedAt": "2026-10-24T00:33:44.690Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "AI Scan for pull requests consumes Code Security AI Credits.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-15-ai-scan-for-pull-requests-generally-available",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-15T15:04:51.000Z",
+        "checkedAt": "2026-10-24T00:33:44.690Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "AI Credit usage is displayed in the &ldquo;AI usage&rdquo; section of enterprise billing and licensing as the &ldquo;Advanced Security&rdquo; product.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-15-ai-scan-for-pull-requests-generally-available",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-15T15:04:51.000Z",
+        "checkedAt": "2026-10-24T00:33:44.690Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Learn more about AI Scan for pull requests and billing for GitHub Advanced Security AI features .",
+        "sourceUrl": "https://github.blog/changelog/2026-10-15-ai-scan-for-pull-requests-generally-available",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-15T15:04:51.000Z",
+        "checkedAt": "2026-10-24T00:33:44.690Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Join the discussion in the AI Scan Community discussion .",
+        "sourceUrl": "https://github.blog/changelog/2026-10-15-ai-scan-for-pull-requests-generally-available",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-15T15:04:51.000Z",
+        "checkedAt": "2026-10-24T00:33:44.690Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Public monitoring now available with data residency",
+        "sourceUrl": "https://github.blog/changelog/2026-10-15-ai-scan-for-pull-requests-generally-available",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-15T15:04:51.000Z",
+        "checkedAt": "2026-10-24T00:33:44.690Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "CodeQL changes for macOS 27, Xcode 27, and Swift 6.4",
+        "sourceUrl": "https://github.blog/changelog/2026-10-15-ai-scan-for-pull-requests-generally-available",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-15T15:04:51.000Z",
+        "checkedAt": "2026-10-24T00:33:44.690Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Open source license compliance generally available",
+        "sourceUrl": "https://github.blog/changelog/2026-10-15-ai-scan-for-pull-requests-generally-available",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-15T15:04:51.000Z",
+        "checkedAt": "2026-10-24T00:33:44.690Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 2,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "AVAILABILITY",
+      "SECURITY"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 7,
+    "total": 7
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 AVAILABILITY·SECURITY (우선순위 7)",
+    "근거 확인 통과 (확인 사실 10개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "status": "skipped",
+    "error": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성",
+    "promptVersion": "draft-v1",
+    "at": "2026-10-24T00:39:05.298Z",
+    "evidenceHash": "5d6f32166db6"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}

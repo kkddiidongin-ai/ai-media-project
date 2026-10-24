@@ -1,0 +1,234 @@
+{
+  "id": "753fc98bb47c",
+  "date": "2026-10-24",
+  "proposedSlug": "access-openai-gpt-models-amazon-bedrock-canada",
+  "title": null,
+  "sourceTitle": "Access OpenAI GPT models on Amazon Bedrock from Canada with cross-Region inference",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": true,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/access-openai-gpt-models-on-amazon-bedrock-from-canada-with-cross-region-inference/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-10-20T16:42:53.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "753fc98bb47c",
+    "url": "https://aws.amazon.com/blogs/machine-learning/access-openai-gpt-models-on-amazon-bedrock-from-canada-with-cross-region-inference/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/access-openai-gpt-models-on-amazon-bedrock-from-canada-with-cross-region-inference",
+    "title": "Access OpenAI GPT models on Amazon Bedrock from Canada with cross-Region inference",
+    "excerpt": "Canadian organizations can now access OpenAI GPT-5.6, GPT-6, and GPT-6.1 models on Amazon Bedrock from the Canada (Central) and Canada West (Calgary) Regions using cross-Region inference. This post covers the models and inference profiles, how to set up permissions, and how to invoke them with the R",
+    "publishedAt": "2026-10-20T16:42:53.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-10-23T14:59:04.454Z",
+    "fromQueue": "draft"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 13969,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Canadian organizations can now access OpenAI GPT-5.6, GPT-6, and GPT-6.1 models on Amazon Bedrock from the Canada (Central) and Canada West (Calgary) Regions using cross-Region inference. This post covers the models and inference profiles, how to set up permissions, and how to invoke them with the R",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/access-openai-gpt-models-on-amazon-bedrock-from-canada-with-cross-region-inference/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-20T16:42:53.000Z",
+        "checkedAt": "2026-10-24T00:33:42.097Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Access OpenAI GPT models on Amazon Bedrock from Canada with cross-Region inference | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/access-openai-gpt-models-on-amazon-bedrock-from-canada-with-cross-region-inference/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-20T16:42:53.000Z",
+        "checkedAt": "2026-10-24T00:33:42.097Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Access OpenAI GPT models on Amazon Bedrock from Canada with cross-Region inference",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/access-openai-gpt-models-on-amazon-bedrock-from-canada-with-cross-region-inference/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-20T16:42:53.000Z",
+        "checkedAt": "2026-10-24T00:33:42.097Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Canadian organizations building generative AI applications on Amazon Bedrock often need the latest foundation models (FMs), such as OpenAI GPT-6.1, OpenAI GPT-6, and GPT-5.6, accessible from the Canadian AWS Regions.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/access-openai-gpt-models-on-amazon-bedrock-from-canada-with-cross-region-inference/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-20T16:42:53.000Z",
+        "checkedAt": "2026-10-24T00:33:42.097Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "With Amazon Bedrock cross-Region inference (CRIS), you can now access these models from Canada.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/access-openai-gpt-models-on-amazon-bedrock-from-canada-with-cross-region-inference/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-20T16:42:53.000Z",
+        "checkedAt": "2026-10-24T00:33:42.097Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "OpenAI GPT-5.6 models (Sol, Terra, and Luna), GPT-6 (Astra, Sol, and Luna), and GPT-6.1 Sol are available from the Canada (Central) and Canada West (Calgary) Regions.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/access-openai-gpt-models-on-amazon-bedrock-from-canada-with-cross-region-inference/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-20T16:42:53.000Z",
+        "checkedAt": "2026-10-24T00:33:42.097Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "In this post, we walk through the GPT-5.6, GPT-6, and GPT-6.1 models available from Canada and the cross-Region inference profiles that serve them.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/access-openai-gpt-models-on-amazon-bedrock-from-canada-with-cross-region-inference/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-20T16:42:53.000Z",
+        "checkedAt": "2026-10-24T00:33:42.097Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "With Amazon Bedrock, you can access three families of OpenAI models in Canada through cross-Region inference.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/access-openai-gpt-models-on-amazon-bedrock-from-canada-with-cross-region-inference/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-20T16:42:53.000Z",
+        "checkedAt": "2026-10-24T00:33:42.097Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "These models are available through the OpenAI Responses API, the OpenAI Chat Completions API, and the Amazon Bedrock Converse API on the bedrock-runtime endpoint.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/access-openai-gpt-models-on-amazon-bedrock-from-canada-with-cross-region-inference/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-20T16:42:53.000Z",
+        "checkedAt": "2026-10-24T00:33:42.097Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Open the console, choose Canada (Central) or Canada West (Calgary) as your Region, choose Cross-Region inference under Inference , and review the available profiles.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/access-openai-gpt-models-on-amazon-bedrock-from-canada-with-cross-region-inference/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-20T16:42:53.000Z",
+        "checkedAt": "2026-10-24T00:33:42.097Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Figure 1: Active OpenAI cross-Region inference profiles on the Amazon Bedrock console (Canada (Central))",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/access-openai-gpt-models-on-amazon-bedrock-from-canada-with-cross-region-inference/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-20T16:42:53.000Z",
+        "checkedAt": "2026-10-24T00:33:42.097Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "GPT-5.6, GPT-6, and GPT-6.1 support three access paths on the bedrock-runtime endpoint: the OpenAI Responses API, the OpenAI Chat Completions API, and the Amazon Bedrock Converse API.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/access-openai-gpt-models-on-amazon-bedrock-from-canada-with-cross-region-inference/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-20T16:42:53.000Z",
+        "checkedAt": "2026-10-24T00:33:42.097Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "These models are available from the Canada (Central) and Canada West (Calgary) Regions using cross-Region inference on Amazon Bedrock.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/access-openai-gpt-models-on-amazon-bedrock-from-canada-with-cross-region-inference/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-20T16:42:53.000Z",
+        "checkedAt": "2026-10-24T00:33:42.097Z"
+      }
+    ],
+    "pageDate": "2026-10-20T16:42:53.000Z"
+  },
+  "score": {
+    "importance": 2,
+    "practicalImpact": 2,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PRODUCT_LAUNCH",
+      "API_PLATFORM"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 8,
+    "total": 8
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 PRODUCT_LAUNCH·API_PLATFORM (우선순위 8)",
+    "근거 확인 통과 (확인 사실 11개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "status": "skipped",
+    "error": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성",
+    "promptVersion": "draft-v1",
+    "at": "2026-10-24T00:39:05.298Z",
+    "evidenceHash": "6c870358b197"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}

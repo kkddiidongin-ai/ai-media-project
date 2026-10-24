@@ -1,0 +1,232 @@
+{
+  "id": "5346e68360b4",
+  "date": "2026-10-24",
+  "proposedSlug": "nvidia-open-models-power-wave-european-public",
+  "title": null,
+  "sourceTitle": "NVIDIA Open Models Power a New Wave of European Public Sector Projects",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 10,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": true,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": true
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact"
+    ]
+  },
+  "company": "NVIDIA",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://blogs.nvidia.com/blog/european-public-sector-open-models/",
+      "name": "NVIDIA Blog",
+      "type": "official",
+      "publishedAt": "2026-10-22T05:00:02.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "5346e68360b4",
+    "url": "https://blogs.nvidia.com/blog/european-public-sector-open-models/",
+    "canonicalUrl": "https://blogs.nvidia.com/blog/european-public-sector-open-models",
+    "title": "NVIDIA Open Models Power a New Wave of European Public Sector Projects",
+    "excerpt": "Governments need modern solutions to serve the public while keeping sensitive information under their control. Open models provide a path forward, letting governments evaluate them, adapt them to local languages and public services, run them on infrastructure they control, apply their own safeguards",
+    "publishedAt": "2026-10-22T05:00:02.000Z",
+    "sourceId": "nvidia",
+    "sourceName": "NVIDIA Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://blogs.nvidia.com/feed/",
+    "fetchedAt": "2026-10-24T00:32:30.801Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 6465,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Governments need modern solutions to serve the public while keeping sensitive information under their control. Open models provide a path forward, letting governments evaluate them, adapt them to local languages and public services, run them on infrastructure they control, apply their own safeguards",
+        "sourceUrl": "https://blogs.nvidia.com/blog/european-public-sector-open-models/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:02.000Z",
+        "checkedAt": "2026-10-24T00:33:57.627Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "NVIDIA Open Models Power a New Wave of European Public Sector Projects | NVIDIA Blog",
+        "sourceUrl": "https://blogs.nvidia.com/blog/european-public-sector-open-models/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:02.000Z",
+        "checkedAt": "2026-10-24T00:33:57.627Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Open models provide a path forward, letting governments evaluate them, adapt them to local languages and public services, run them on infrastructure they control, apply their own safeguards and keep sensitive data within controlled environments.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/european-public-sector-open-models/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:02.000Z",
+        "checkedAt": "2026-10-24T00:33:57.627Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "NVIDIA partners and European governments are teaming to bring advanced models to boost the efficiency of public administration while retaining control of data and infrastructure.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/european-public-sector-open-models/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:02.000Z",
+        "checkedAt": "2026-10-24T00:33:57.627Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Several are also building editions of the NVIDIA Nemotron-Personas collection , the partner-grounded datasets behind NeMo User Sim , NVIDIA’s open source library for population-scale user simulation that dynamically evaluates and trains models and agents in local languages.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/european-public-sector-open-models/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:02.000Z",
+        "checkedAt": "2026-10-24T00:33:57.627Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "In Germany, Materna is introducing Sinfonie, an on-premises platform combining generative AI, voice interaction and 3D avatars, with NVIDIA Audio2Face available for animation.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/european-public-sector-open-models/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:02.000Z",
+        "checkedAt": "2026-10-24T00:33:57.627Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "The planned offering combines four components: NVIDIA accelerated computing and NVIDIA Nemotron open models; Red Hat OpenShift AI for deploying and managing AI workloads; deepset’s Haystack AI agent orchestration; and infrastructure operated by secunet in German data centers.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/european-public-sector-open-models/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:02.000Z",
+        "checkedAt": "2026-10-24T00:33:57.627Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "To support local development, the Sovereign Open Source Foundation Models research initiative (Soofi) is developing a family of AI models for German industry and the public sector.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/european-public-sector-open-models/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:02.000Z",
+        "checkedAt": "2026-10-24T00:33:57.627Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "France: Advanced Open Models in the Public Sector Workspace",
+        "sourceUrl": "https://blogs.nvidia.com/blog/european-public-sector-open-models/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:02.000Z",
+        "checkedAt": "2026-10-24T00:33:57.627Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Greek AI and energy company KIEFER is developing an agentic factory built on NVIDIA DGX SuperPOD with DGX GB200 alongside Sophea open weight models and Greek-language tools for knowledge retrieval, speech and digital assistants.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/european-public-sector-open-models/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:02.000Z",
+        "checkedAt": "2026-10-24T00:33:57.627Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "In an effort to support public sector organizations in integrating agentic AI in Europe and beyond, NVIDIA Open Models Codefest brings together startups, software providers and labs across the region to turn open models into locally controlled solutions for public sector chall…",
+        "sourceUrl": "https://blogs.nvidia.com/blog/european-public-sector-open-models/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:02.000Z",
+        "checkedAt": "2026-10-24T00:33:57.627Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Pioneers Across Europe Deploy NVIDIA Earth-2 Open Models to Power Real-World Weather and Climate Prediction",
+        "sourceUrl": "https://blogs.nvidia.com/blog/european-public-sector-open-models/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:02.000Z",
+        "checkedAt": "2026-10-24T00:33:57.627Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "NVIDIA Open Models Power a New Wave of European Public Sector Projects",
+        "sourceUrl": "https://blogs.nvidia.com/blog/european-public-sector-open-models/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:02.000Z",
+        "checkedAt": "2026-10-24T00:33:57.627Z"
+      }
+    ],
+    "pageDate": "2026-10-22T05:00:02.000Z"
+  },
+  "score": {
+    "importance": 2,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "MODEL_MENTION",
+      "INFRA"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 6,
+    "total": 6
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 MODEL_MENTION·INFRA (우선순위 6)",
+    "근거 확인 통과 (확인 사실 10개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "status": "skipped",
+    "error": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성",
+    "promptVersion": "draft-v1",
+    "at": "2026-10-24T00:39:05.298Z",
+    "evidenceHash": "447a834c41f3"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}

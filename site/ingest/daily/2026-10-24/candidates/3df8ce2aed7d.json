@@ -1,0 +1,233 @@
+{
+  "id": "3df8ce2aed7d",
+  "date": "2026-10-24",
+  "proposedSlug": "nvidia-cloud-partners-scale-across-europe-sovereign",
+  "title": null,
+  "sourceTitle": "NVIDIA Cloud Partners Scale Across Europe — Sovereign, Open and Built for Safe AI Agents",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 12,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": true,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": true
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact"
+    ]
+  },
+  "company": "NVIDIA",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://blogs.nvidia.com/blog/cloud-partners-europe-sovereign-safety-open-agents/",
+      "name": "NVIDIA Blog",
+      "type": "official",
+      "publishedAt": "2026-10-21T10:30:41.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "3df8ce2aed7d",
+    "url": "https://blogs.nvidia.com/blog/cloud-partners-europe-sovereign-safety-open-agents/",
+    "canonicalUrl": "https://blogs.nvidia.com/blog/cloud-partners-europe-sovereign-safety-open-agents",
+    "title": "NVIDIA Cloud Partners Scale Across Europe — Sovereign, Open and Built for Safe AI Agents",
+    "excerpt": "Demand from AI-natives is pulling the European AI cloud ecosystem forward faster than ever. Developers need compute closer to their data, open models they can customize and serve at scale, and full-stack infrastructure that is secure by design. NVIDIA Cloud Partners across Europe, the Nordics, Afric",
+    "publishedAt": "2026-10-21T10:30:41.000Z",
+    "sourceId": "nvidia",
+    "sourceName": "NVIDIA Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://blogs.nvidia.com/feed/",
+    "fetchedAt": "2026-10-24T00:32:30.801Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 6731,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Demand from AI-natives is pulling the European AI cloud ecosystem forward faster than ever. Developers need compute closer to their data, open models they can customize and serve at scale, and full-stack infrastructure that is secure by design. NVIDIA Cloud Partners across Europe, the Nordics, Afric",
+        "sourceUrl": "https://blogs.nvidia.com/blog/cloud-partners-europe-sovereign-safety-open-agents/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:30:41.000Z",
+        "checkedAt": "2026-10-24T00:33:57.708Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "NVIDIA Cloud Partners Scale Across Europe — Sovereign, Open and Built for Safe AI Agents | NVIDIA Blog",
+        "sourceUrl": "https://blogs.nvidia.com/blog/cloud-partners-europe-sovereign-safety-open-agents/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:30:41.000Z",
+        "checkedAt": "2026-10-24T00:33:57.708Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "NVIDIA Cloud Partners across Europe, the Nordics, Africa, and Central Asia are expanding regional compute capacity for model training and inference, helping developers build agentic and physical AI applications, and establishing boundaries around what agents can access and do.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/cloud-partners-europe-sovereign-safety-open-agents/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:30:41.000Z",
+        "checkedAt": "2026-10-24T00:33:57.708Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "In tests using NVIDIA GB300 NVL72 systems, Nscale demonstrated that NVIDIA DSX MaxLPS enabled 37% more GPUs and nearly 50% higher aggregate inference throughput within the same provisioned power budget.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/cloud-partners-europe-sovereign-safety-open-agents/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:30:41.000Z",
+        "checkedAt": "2026-10-24T00:33:57.708Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Crusoe is developing Spark, its liquid-cooled modular AI factories designed for the NVIDIA Vera Rubin platform, to bring Crusoe Cloud capacity closer to users for low-latency AI inference.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/cloud-partners-europe-sovereign-safety-open-agents/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:30:41.000Z",
+        "checkedAt": "2026-10-24T00:33:57.708Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Aleria, Cassava Technologies , Firebird , G42 , Radiant, SWI Compute and Vultr are also developing and expanding NVIDIA-powered AI infrastructure across Europe, the Nordics, Africa and Central Asia.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/cloud-partners-europe-sovereign-safety-open-agents/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:30:41.000Z",
+        "checkedAt": "2026-10-24T00:33:57.708Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Regional capacity from AI clouds combines the full-stack NVIDIA DSX AI Factory platform , including NVIDIA Vera Rubin, NVIDIA BlueField and NVIDIA Spectrum-X Ethernet networking, giving customers greater choice and control over where workloads and data reside while advancing s…",
+        "sourceUrl": "https://blogs.nvidia.com/blog/cloud-partners-europe-sovereign-safety-open-agents/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:30:41.000Z",
+        "checkedAt": "2026-10-24T00:33:57.708Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Fireworks and Era4 are partnering to bring open models to enterprises across the U.K. and Europe.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/cloud-partners-europe-sovereign-safety-open-agents/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:30:41.000Z",
+        "checkedAt": "2026-10-24T00:33:57.708Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Verda plans to deploy NVIDIA Vera Rubin, continuing to promote open weight models with NVIDIA Nemotron and NVIDIA Cosmos already in production, and using the NVIDIA Dynamo open source framework for inference optimization.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/cloud-partners-europe-sovereign-safety-open-agents/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:30:41.000Z",
+        "checkedAt": "2026-10-24T00:33:57.708Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Built on the foundation of NVIDIA OpenShell secure runtime software, the architecture is designed to give organizations full-stack control to deploy AI agents with clear boundaries around what agents can access and do.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/cloud-partners-europe-sovereign-safety-open-agents/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:30:41.000Z",
+        "checkedAt": "2026-10-24T00:33:57.708Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "NVIDIA Vera Rubin NVL72 for model inference, NVIDIA Vera CPUs with OpenShell for agent harnesses and tool use, and NVIDIA BlueField-4 DPUs running NVIDIA Sentry for in-silicon enforcement.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/cloud-partners-europe-sovereign-safety-open-agents/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:30:41.000Z",
+        "checkedAt": "2026-10-24T00:33:57.708Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Partners including Aleria , Baseten , Cassava , CoreWeave , Crusoe , DigitalOcean , Firebird , Fireworks, Firmus , G42 , GMI Cloud , IREN , Lambda , Lightning AI, Nebius , Nscale , Radiant Verda and Vultr are supporting the OpenShell Reference Architecture to enable secure age…",
+        "sourceUrl": "https://blogs.nvidia.com/blog/cloud-partners-europe-sovereign-safety-open-agents/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:30:41.000Z",
+        "checkedAt": "2026-10-24T00:33:57.708Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Pioneers Across Europe Deploy NVIDIA Earth-2 Open Models to Power Real-World Weather and Climate Prediction",
+        "sourceUrl": "https://blogs.nvidia.com/blog/cloud-partners-europe-sovereign-safety-open-agents/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:30:41.000Z",
+        "checkedAt": "2026-10-24T00:33:57.708Z"
+      }
+    ],
+    "pageDate": "2026-10-21T10:30:41.000Z"
+  },
+  "score": {
+    "importance": 2,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "MODEL_MENTION",
+      "SECURITY_MENTION",
+      "INFRA"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 6,
+    "total": 6
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 MODEL_MENTION·SECURITY_MENTION·INFRA (우선순위 6)",
+    "근거 확인 통과 (확인 사실 12개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "status": "skipped",
+    "error": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성",
+    "promptVersion": "draft-v1",
+    "at": "2026-10-24T00:39:05.298Z",
+    "evidenceHash": "612c43776703"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}
