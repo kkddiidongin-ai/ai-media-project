@@ -1,0 +1,221 @@
+{
+  "id": "67906ae6df39",
+  "date": "2026-10-24",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Pioneers Across Europe Deploy NVIDIA Earth-2 Open Models to Power Real-World Weather and Climate Prediction",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 10,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "NVIDIA",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://blogs.nvidia.com/blog/europe-earth-2-open-models-weather-climate-prediction/",
+      "name": "NVIDIA Blog",
+      "type": "official",
+      "publishedAt": "2026-10-22T05:00:19.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "67906ae6df39",
+    "url": "https://blogs.nvidia.com/blog/europe-earth-2-open-models-weather-climate-prediction/",
+    "canonicalUrl": "https://blogs.nvidia.com/blog/europe-earth-2-open-models-weather-climate-prediction",
+    "title": "Pioneers Across Europe Deploy NVIDIA Earth-2 Open Models to Power Real-World Weather and Climate Prediction",
+    "excerpt": "Weather forecasts shape more than daily plans; timely weather information is crucial for energy producers, insurers and transport operators to plan around changing conditions. A global forecast can show a storm taking shape, but decisions about solar farms, shipping routes or insured property depend",
+    "publishedAt": "2026-10-22T05:00:19.000Z",
+    "sourceId": "nvidia",
+    "sourceName": "NVIDIA Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://blogs.nvidia.com/feed/",
+    "fetchedAt": "2026-10-24T13:59:12.250Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 3704,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Weather forecasts shape more than daily plans; timely weather information is crucial for energy producers, insurers and transport operators to plan around changing conditions. A global forecast can show a storm taking shape, but decisions about solar farms, shipping routes or insured property depend",
+        "sourceUrl": "https://blogs.nvidia.com/blog/europe-earth-2-open-models-weather-climate-prediction/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:19.000Z",
+        "checkedAt": "2026-10-24T14:00:28.657Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Pioneers Across Europe Deploy NVIDIA Earth-2 Open Models to Power Weather and Climate Prediction | NVIDIA Blog",
+        "sourceUrl": "https://blogs.nvidia.com/blog/europe-earth-2-open-models-weather-climate-prediction/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:19.000Z",
+        "checkedAt": "2026-10-24T14:00:28.657Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Weather forecasts shape more than daily plans; timely weather information is crucial for energy producers, insurers and transport operators to plan around changing conditions.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/europe-earth-2-open-models-weather-climate-prediction/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:19.000Z",
+        "checkedAt": "2026-10-24T14:00:28.657Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "NVIDIA Earth-2 gives developers and researchers a family of open AI models and tools they can customize with their own data.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/europe-earth-2-open-models-weather-climate-prediction/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:19.000Z",
+        "checkedAt": "2026-10-24T14:00:28.657Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Running on NVIDIA computing, these technologies support global weather prediction, detailed regional forecasts and environmental research.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/europe-earth-2-open-models-weather-climate-prediction/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:19.000Z",
+        "checkedAt": "2026-10-24T14:00:28.657Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "StormScope EU is the latest model to join Earth-2 — a regional version of the StormScope model for short-term forecasting, trained over Europe weather and climate data.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/europe-earth-2-open-models-weather-climate-prediction/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:19.000Z",
+        "checkedAt": "2026-10-24T14:00:28.657Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Developers can combine Earth-2 models in workflows tailored to regional needs, using StormScope for short-term forecasting and CorrDiff to add local detail to coarser weather data.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/europe-earth-2-open-models-weather-climate-prediction/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:19.000Z",
+        "checkedAt": "2026-10-24T14:00:28.657Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "AXA is using NVIDIA Earth-2’s FourCastNet 3 to study regional cyclone risk beyond the historical record across more than 1,000 simulated seasons, generating insights that can inform risk assessments and help customers target prevention efforts.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/europe-earth-2-open-models-weather-climate-prediction/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:19.000Z",
+        "checkedAt": "2026-10-24T14:00:28.657Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Vaisala Xweather is combining Earth-2 with its proprietary observations , lightning data and forecasting expertise to enhance its weather intelligence platforms for government, energy, maritime, transportation and insurance customers.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/europe-earth-2-open-models-weather-climate-prediction/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:19.000Z",
+        "checkedAt": "2026-10-24T14:00:28.657Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "TotalEnergies is exploring NVIDIA Earth-2 for solar-energy forecasting, evaluating StormScope-based solar-radiation nowcasts at two photovoltaic sites and developing models to provide weather information at subhourly intervals.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/europe-earth-2-open-models-weather-climate-prediction/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:19.000Z",
+        "checkedAt": "2026-10-24T14:00:28.657Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Explore NVIDIA Earth-2 open models and tools , and explore with Earth2Studio’s forecasting examples .",
+        "sourceUrl": "https://blogs.nvidia.com/blog/europe-earth-2-open-models-weather-climate-prediction/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:19.000Z",
+        "checkedAt": "2026-10-24T14:00:28.657Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Pioneers Across Europe Deploy NVIDIA Earth-2 Open Models to Power Real-World Weather and Climate Prediction",
+        "sourceUrl": "https://blogs.nvidia.com/blog/europe-earth-2-open-models-weather-climate-prediction/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:19.000Z",
+        "checkedAt": "2026-10-24T14:00:28.657Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "NVIDIA Open Models Power a New Wave of European Public Sector Projects",
+        "sourceUrl": "https://blogs.nvidia.com/blog/europe-earth-2-open-models-weather-climate-prediction/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:19.000Z",
+        "checkedAt": "2026-10-24T14:00:28.657Z"
+      }
+    ],
+    "pageDate": "2026-10-22T05:00:19.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "MODEL_MENTION"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 MODEL_MENTION (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

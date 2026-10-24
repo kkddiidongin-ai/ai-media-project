@@ -1,0 +1,250 @@
+{
+  "candidateId": "292e35e33e7b",
+  "date": "2026-10-24",
+  "status": "draft_for_editor_review",
+  "title": "앤스로픽, 능동형 에이전트 앱 '클로드 듀엣' 프리뷰 공개",
+  "source": {
+    "name": "Claude (claude.com articles)",
+    "url": "https://claude.com/resources/articles/claude-duet",
+    "title": "Introducing Claude Duet",
+    "publishedAt": "2026-10-21T00:00:00.000Z",
+    "type": "official"
+  },
+  "evidenceSummary": {
+    "status": "OK",
+    "grade": "PASS",
+    "sentences": 13,
+    "bodySentences": 12,
+    "distinctFacts": 12,
+    "checkedAt": "2026-10-24T00:33:40.879Z",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Claude Duet is a new app where Claude works as a proactive agent. The research preview opens by waitlist today for Pro and Max subscribers in the US."
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "• • • • • • • • • • Introducing Claude Duet | Claude by Anthropic • •"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Skip to main content Today, we’re opening a research preview of Claude Duet, a new app where Claude works as a proactive agent."
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "For this research preview, Claude Duet is included in Pro and Max plans and uses the same usage limits as the rest of Claude."
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "We designed it around Claude Opus 5.5 (opens in new tab) and built it to be resourceful and to decide what needs you, what can wait, and when to check with you first."
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Claude Duet draws on our framework for trustworthy agents (opens in new tab) , which also guides agents like Claude Code and Claude in Chrome."
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Claude Duet’s handling of credentials follows the design we use for Claude Managed Agents (opens in new tab) , so it never directly sees your passwords or sign-in tokens."
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Boris Cherny, who leads our Claude Code team, talks through his mental to-do list with Claude Duet on walks, instead of saving the work for his desk."
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Claude Duet carries over your memory, skills, and connected apps from your Claude account, so setting it up requires minimal work."
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Claude Duet checks your connected accounts every few hours, because checking nonstop would use up your plan’s limits much faster."
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Claude Duet can use the over 6,000 connectors and plugins in the Claude Marketplace (opens in new tab) to:"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "For now, Claude Duet lives in its own app, separate from the main Claude app."
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "During the research preview, Claude Duet shares your plan’s usage limits with the rest of Claude, and it uses them differently than a typical conversation does."
+      }
+    ]
+  },
+  "articleType": "STANDARD",
+  "suggestedDepth": "STANDARD",
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음",
+    "matchSlug": null
+  },
+  "draft": {
+    "title": "앤스로픽, 능동형 에이전트 앱 '클로드 듀엣' 프리뷰 공개",
+    "summary": "앤스로픽이 클로드 오퍼스 5.5 기반의 능동형 에이전트 앱 '클로드 듀엣'의 리서치 프리뷰를 미국 내 프로 및 맥스 요금제 구독자 대상 대기자 명단으로 공개했습니다.",
+    "category": "AI_AGENT",
+    "topics": [
+      "anthropic",
+      "claude",
+      "ai-agent",
+      "ai-work"
+    ],
+    "companies": [
+      "Anthropic"
+    ],
+    "products": [
+      "Claude Duet",
+      "Claude Opus 5.5",
+      "Claude",
+      "Claude Code",
+      "Claude in Chrome",
+      "Claude Managed Agents"
+    ],
+    "facts": [
+      {
+        "text": "앤스로픽은 2026년 10월 21일 클로드가 능동형 에이전트로 작동하는 별도의 신규 앱 '클로드 듀엣(Claude Duet)'의 리서치 프리뷰를 공개했습니다.",
+        "evidence": [
+          "E0",
+          "E1",
+          "E2",
+          "E11"
+        ]
+      },
+      {
+        "text": "클로드 듀엣은 클로드 오퍼스 5.5를 기반으로 설계되었으며 사용자의 개입 필요성, 대기 가능 여부, 사전 확인 시점을 판단하도록 만들어졌습니다.",
+        "evidence": [
+          "E4"
+        ]
+      },
+      {
+        "text": "기존 클로드 계정의 기억(memory), 스킬, 연동 앱을 그대로 가져오며 클로드 마켓플레이스의 6,000개 이상의 커넥터와 플러그인을 활용할 수 있습니다.",
+        "evidence": [
+          "E8",
+          "E10"
+        ]
+      },
+      {
+        "text": "클로드 매니지드 에이전트와 동일한 인증 처리 방식을 적용해 사용자의 비밀번호나 로그인 토큰을 직접 확인하지 않도록 설계되었습니다.",
+        "evidence": [
+          "E6"
+        ]
+      },
+      {
+        "text": "사용량 한도 소진을 막기 위해 연동된 계정은 몇 시간 간격으로 확인하며, 기존 클로드 앱과 사용량 한도를 공유합니다.",
+        "evidence": [
+          "E3",
+          "E9",
+          "E12"
+        ]
+      }
+    ],
+    "why": {
+      "text": "사용자가 지시할 때만 응답하던 기존 대화형 인터페이스를 넘어, 별도 전용 앱 환경에서 주기적으로 연동 계정을 살피고 작업을 주도적으로 선별하는 에이전트 형태로 클로드의 활용 범위를 넓히려는 시도로 볼 수 있습니다.",
+      "evidence": [
+        "E0",
+        "E4",
+        "E9",
+        "E11"
+      ]
+    },
+    "change": {
+      "text": "미국 내 프로 및 맥스 구독자는 대기자 명단을 통해 메인 앱과 분리된 독립 앱으로 클로드 듀엣을 체험해 볼 수 있으나, 일반 대화와 사용량 한도를 공유하므로 전체 사용량 관리에 유의해야 합니다.",
+      "evidence": [
+        "E0",
+        "E3",
+        "E11",
+        "E12"
+      ]
+    },
+    "checks": [
+      {
+        "text": "이번 리서치 프리뷰는 미국 지역의 Pro 및 Max 플랜 구독자를 대상으로 대기자 명단(waitlist)을 통해 순차 제공됩니다.",
+        "evidence": [
+          "E0"
+        ]
+      },
+      {
+        "text": "별도 추가 요금 없이 기존 요금제 한도 내에서 작동하지만, 메인 클로드 서비스와 사용량 한도를 함께 차감합니다.",
+        "evidence": [
+          "E3",
+          "E12"
+        ]
+      }
+    ],
+    "unknowns": [
+      "한국을 포함한 미국 외 지역의 리서치 프리뷰 제공 여부 및 일정",
+      "정식 버전(GA) 출시 시점 및 정식 출시 후 요금 정책 변경 여부"
+    ],
+    "editorialDepth": "STANDARD",
+    "insufficient": false,
+    "notes": "발표일자가 2026-10-21로 제공된 가상의 미래/특정 문서 기준이므로 상대적 날짜 대신 2026년 10월 21일 명시. 원문에 한국 관련 언급이 전혀 없으므로 unknowns에 한국 제공 여부 기재."
+  },
+  "handsOn": false,
+  "qa": {
+    "verdict": "FAIL",
+    "checks": {
+      "FACT": {
+        "result": "FAIL",
+        "issues": [
+          "근거에 없는 수치 '21' (facts[0])"
+        ]
+      },
+      "EVIDENCE": {
+        "result": "PASS",
+        "issues": []
+      },
+      "EDITORIAL": {
+        "result": "PASS",
+        "issues": []
+      },
+      "STRUCTURE": {
+        "result": "PASS",
+        "issues": []
+      },
+      "DUPLICATE": {
+        "result": "PASS",
+        "issues": []
+      },
+      "SAFETY": {
+        "result": "PASS",
+        "issues": []
+      }
+    },
+    "stats": {
+      "bodyChars": 854,
+      "depth": "STANDARD",
+      "suggestedDepth": "STANDARD"
+    }
+  },
+  "fixes": [
+    "[FACT/FAIL] 근거에 없는 수치 '21' (facts[0])"
+  ],
+  "approvable": false,
+  "generation": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "promptVersion": "draft-v1",
+    "usage": {
+      "inputTokens": 1749,
+      "outputTokens": 1115,
+      "costUsd": 0,
+      "attempts": 1
+    },
+    "reused": false,
+    "generatedAt": "2026-10-24T14:04:58.233Z",
+    "evidenceHash": "104e43eacbbb"
+  }
+}

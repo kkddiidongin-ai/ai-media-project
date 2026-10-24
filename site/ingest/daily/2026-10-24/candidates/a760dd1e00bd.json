@@ -53,7 +53,7 @@
     "tier": 1,
     "fetchMode": "rss",
     "discoveredVia": "https://workspaceupdates.googleblog.com/feeds/posts/default?max-results=500&published-min=2026-01-01T00:00:00Z",
-    "fetchedAt": "2026-10-24T00:32:30.801Z"
+    "fetchedAt": "2026-10-24T13:59:12.250Z"
   },
   "evidence": {
     "status": "OK",
@@ -212,7 +212,7 @@
     "provider": "gemini",
     "model": "gemini-3.8-flash",
     "status": "failed",
-    "error": "HTTP 503",
+    "error": "timeout",
     "usage": {
       "inputTokens": 0,
       "outputTokens": 0,
@@ -220,7 +220,7 @@
       "attempts": 1
     },
     "promptVersion": "draft-v1",
-    "at": "2026-10-24T00:36:05.296Z",
+    "at": "2026-10-24T14:03:05.942Z",
     "evidenceHash": "06b85fd3c2ef"
   },
   "draft": null,

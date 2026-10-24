@@ -1,0 +1,212 @@
+{
+  "id": "f9b499debdda",
+  "date": "2026-10-24",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium.",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Hugging Face",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1",
+      "name": "Hugging Face Blog",
+      "type": "official",
+      "publishedAt": "2026-10-21T16:04:43.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "f9b499debdda",
+    "url": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1",
+    "canonicalUrl": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1",
+    "title": "Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium.",
+    "excerpt": "",
+    "publishedAt": "2026-10-21T16:04:43.000Z",
+    "sourceId": "huggingface",
+    "sourceName": "Hugging Face Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://huggingface.co/blog/feed.xml",
+    "fetchedAt": "2026-10-24T13:59:12.250Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 9299,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium.",
+        "sourceUrl": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-21T16:04:43.000Z",
+        "checkedAt": "2026-10-24T14:00:32.437Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "In Part 1 of this series, you will learn how to systematically analyze inference performance and identify where the time is spent.",
+        "sourceUrl": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-21T16:04:43.000Z",
+        "checkedAt": "2026-10-24T14:00:32.437Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "The walkthrough uses AWS Trainium, a purpose-built AI chip for deep learning training and inference workloads, and TorchNeuron , its open source native PyTorch backend.",
+        "sourceUrl": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-21T16:04:43.000Z",
+        "checkedAt": "2026-10-24T14:00:32.437Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "TorchNeuron supports standard PyTorch workflows on Trainium, including eager execution, torch.compile , and standard PyTorch APIs, with minimal code changes.",
+        "sourceUrl": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-21T16:04:43.000Z",
+        "checkedAt": "2026-10-24T14:00:32.437Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Additionally, TorchNeuron integrates with Neuron Kernel Interface (NKI) to enable custom operators and performance optimization for Trainium hardware.",
+        "sourceUrl": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-21T16:04:43.000Z",
+        "checkedAt": "2026-10-24T14:00:32.437Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "The Neuron backend uses PyTorch's PrivateUse1 extension point.",
+        "sourceUrl": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-21T16:04:43.000Z",
+        "checkedAt": "2026-10-24T14:00:32.437Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "For details about this extension mechanism, see Facilitating New Backend Integration by PrivateUse1 .",
+        "sourceUrl": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-21T16:04:43.000Z",
+        "checkedAt": "2026-10-24T14:00:32.437Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "See Step 5: Upload your profile for the UI and command-line instructions.",
+        "sourceUrl": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-21T16:04:43.000Z",
+        "checkedAt": "2026-10-24T14:00:32.437Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "x = torch.randn( 4 , 512 , dtype=torch.bfloat16, device=device)",
+        "sourceUrl": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-21T16:04:43.000Z",
+        "checkedAt": "2026-10-24T14:00:32.437Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "weight = torch.ones( 512 , dtype=torch.bfloat16, device=device)",
+        "sourceUrl": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-21T16:04:43.000Z",
+        "checkedAt": "2026-10-24T14:00:32.437Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "mean_sq = x_sq.mean(dim=- 1 , keepdim= True ) # mean of squares",
+        "sourceUrl": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-21T16:04:43.000Z",
+        "checkedAt": "2026-10-24T14:00:32.437Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "In Part 2, we will move into the device-level profile.",
+        "sourceUrl": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-21T16:04:43.000Z",
+        "checkedAt": "2026-10-24T14:00:32.437Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 2,
+    "signals": [
+      "INFRA"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 INFRA (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

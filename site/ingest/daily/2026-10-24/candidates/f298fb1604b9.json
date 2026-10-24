@@ -1,0 +1,221 @@
+{
+  "id": "f298fb1604b9",
+  "date": "2026-10-24",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "How Companies Are Using NVIDIA DSX to Break the Power Bottleneck",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 12,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "NVIDIA",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://blogs.nvidia.com/blog/dsx-power/",
+      "name": "NVIDIA Blog",
+      "type": "official",
+      "publishedAt": "2026-10-22T05:00:25.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "f298fb1604b9",
+    "url": "https://blogs.nvidia.com/blog/dsx-power/",
+    "canonicalUrl": "https://blogs.nvidia.com/blog/dsx-power",
+    "title": "How Companies Are Using NVIDIA DSX to Break the Power Bottleneck",
+    "excerpt": "Companies around the world are building on the NVIDIA DSX AI Factory Platform to plan, simulate and run the grid and the AI factory as one system, from the substation to the rack. Their adoption of the platform responds to an acute problem. Power is now the biggest bottleneck in infrastructure. More",
+    "publishedAt": "2026-10-22T05:00:25.000Z",
+    "sourceId": "nvidia",
+    "sourceName": "NVIDIA Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://blogs.nvidia.com/feed/",
+    "fetchedAt": "2026-10-24T13:59:12.250Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 3848,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Companies around the world are building on the NVIDIA DSX AI Factory Platform to plan, simulate and run the grid and the AI factory as one system, from the substation to the rack. Their adoption of the platform responds to an acute problem. Power is now the biggest bottleneck in infrastructure. More",
+        "sourceUrl": "https://blogs.nvidia.com/blog/dsx-power/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:25.000Z",
+        "checkedAt": "2026-10-24T14:00:26.258Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "How Companies Are Using NVIDIA DSX to Break the Power Bottleneck | NVIDIA Blog",
+        "sourceUrl": "https://blogs.nvidia.com/blog/dsx-power/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:25.000Z",
+        "checkedAt": "2026-10-24T14:00:26.258Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Companies around the world are building on the NVIDIA DSX AI Factory Platform to plan, simulate and run the grid and the AI factory as one system, from the substation to the rack.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/dsx-power/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:25.000Z",
+        "checkedAt": "2026-10-24T14:00:26.258Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "NVIDIA DSX Sim and SimReady assets from leading energy manufacturers let engineers simulate the grid, substation and AI factory together, validating generators, switchgear, power systems and cooling before breaking ground.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/dsx-power/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:25.000Z",
+        "checkedAt": "2026-10-24T14:00:26.258Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "NVIDIA DSX MaxLPS and DSX Exchange squeeze more compute from every watt and securely share signals across compute, networking, energy, cooling and operations.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/dsx-power/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:25.000Z",
+        "checkedAt": "2026-10-24T14:00:26.258Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "GE Vernova is deploying its grid-to-facility and rack power expertise to complement NVIDIA DSX systems, enabling customers to transform power constraints into competitive advantages while maximizing compute and token output, sustainability and grid reliability.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/dsx-power/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:25.000Z",
+        "checkedAt": "2026-10-24T14:00:26.258Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Hitachi Energy ’s battery energy storage system has qualified as NVIDIA DSX Ready , helping customers identify power infrastructure that meets applicable NVIDIA DSX reference architecture design requirements for resilient, reliable and scalable AI factories.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/dsx-power/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:25.000Z",
+        "checkedAt": "2026-10-24T14:00:26.258Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Schneider Electric , together with AVEVA and ETAP, is advancing NVIDIA DSX with validated NVIDIA Vera Rubin power and cooling reference architectures and an NVIDIA Omniverse -powered AI factory digital twin.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/dsx-power/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:25.000Z",
+        "checkedAt": "2026-10-24T14:00:26.258Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Siemens Energy is expanding its collaboration with NVIDIA by developing a reference design for resilient, scalable and grid-aware power infrastructure across power generation, transmission and distribution.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/dsx-power/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:25.000Z",
+        "checkedAt": "2026-10-24T14:00:26.258Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Phaidra integrated DSX Flex, DSX Max-Q and DSX Exchange into its self-learning agents, optimizing cooling and power allocation to maximize tokens per watt, improve grid flexibility and deliver about 10% more compute within the same power envelope.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/dsx-power/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:25.000Z",
+        "checkedAt": "2026-10-24T14:00:26.258Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Emerald AI integrated its Conductor platform into DSX Flex to help utilities tap underused grid capacity, an approach modeled to unlock up to 100 gigawatts on the existing U.S. grid.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/dsx-power/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:25.000Z",
+        "checkedAt": "2026-10-24T14:00:26.258Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Explore the NVIDIA Omniverse DSX Blueprint and the Vera Rubin DSX AI Factory Reference Design .",
+        "sourceUrl": "https://blogs.nvidia.com/blog/dsx-power/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:25.000Z",
+        "checkedAt": "2026-10-24T14:00:26.258Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Pioneers Across Europe Deploy NVIDIA Earth-2 Open Models to Power Real-World Weather and Climate Prediction",
+        "sourceUrl": "https://blogs.nvidia.com/blog/dsx-power/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:25.000Z",
+        "checkedAt": "2026-10-24T14:00:26.258Z"
+      }
+    ],
+    "pageDate": "2026-10-22T05:00:25.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "INFRA"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 INFRA (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

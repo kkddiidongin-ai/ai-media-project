@@ -1,29 +1,26 @@
 {
   "id": "e12302cd4e2c",
   "date": "2026-10-24",
-  "proposedSlug": null,
+  "proposedSlug": "leading-european-financial-services-organizations-embrace-op",
   "title": null,
   "sourceTitle": "Leading European Financial Services Organizations Embrace Open Models to Build Proprietary Intelligence",
   "depth": null,
-  "suggestedDepth": null,
+  "suggestedDepth": "STANDARD",
   "depthAssessment": {
-    "sufficiency": "INSUFFICIENT",
-    "distinctFacts": 0,
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 12,
     "deepChecks": {
       "importance": false,
       "novelty": true,
       "userImpact": false,
       "contextNeed": true,
-      "distinctFacts": false,
-      "evidenceQuality": false,
-      "standardWouldOmit": false
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": true
     },
     "deepMissing": [
       "importance",
-      "userImpact",
-      "distinctFacts",
-      "evidenceQuality",
-      "standardWouldOmit"
+      "userImpact"
     ]
   },
   "company": "NVIDIA",
@@ -55,12 +52,12 @@
     "tier": 1,
     "fetchMode": "rss-paged",
     "discoveredVia": "https://blogs.nvidia.com/feed/",
-    "fetchedAt": "2026-10-24T00:32:30.801Z"
+    "fetchedAt": "2026-10-24T13:59:12.250Z"
   },
   "evidence": {
-    "status": "NETWORK",
-    "chars": 0,
-    "grade": "FAIL",
+    "status": "OK",
+    "chars": 4013,
+    "grade": "PASS",
     "ledger": [
       {
         "id": "E0",
@@ -69,10 +66,118 @@
         "sourceUrl": "https://blogs.nvidia.com/blog/european-financial-services-organizations-open-models-proprietary-intelligence/",
         "source": "NVIDIA Blog",
         "publishedAt": "2026-10-22T05:00:56.000Z",
-        "checkedAt": "2026-10-24T00:33:47.435Z"
+        "checkedAt": "2026-10-24T14:00:20.697Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "European Financial Institutions Embrace Open Models to Build Proprietary Intelligence | NVIDIA Blog",
+        "sourceUrl": "https://blogs.nvidia.com/blog/european-financial-services-organizations-open-models-proprietary-intelligence/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:56.000Z",
+        "checkedAt": "2026-10-24T14:00:20.697Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "At GTC Berlin, banks, payment companies and financial data providers are showing what production-scale intelligence looks like — built on NVIDIA accelerated computing, powered by open weight models and running on their own infrastructure.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/european-financial-services-organizations-open-models-proprietary-intelligence/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:56.000Z",
+        "checkedAt": "2026-10-24T14:00:20.697Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Lloyds Banking Group built ATUM , a transaction foundation model that converts billions of banking transactions into reusable intelligence — accelerated with NVIDIA RTX PRO 6000 Blackwell GPUs and improving efficiency across bank-wide use cases.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/european-financial-services-organizations-open-models-proprietary-intelligence/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:56.000Z",
+        "checkedAt": "2026-10-24T14:00:20.697Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Open weight models give European financial institutions proprietary intelligence built on data they own, at costs they control.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/european-financial-services-organizations-open-models-proprietary-intelligence/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:56.000Z",
+        "checkedAt": "2026-10-24T14:00:20.697Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Powered by NVIDIA accelerated computing, deploying on Nebius matches the quality of leading closed models at 60% of the cost per answer.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/european-financial-services-organizations-open-models-proprietary-intelligence/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:56.000Z",
+        "checkedAt": "2026-10-24T14:00:20.697Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "NatWest is building technology designed to recognize the full range of British accents, dialects and financial terminology, developed with NVIDIA’s speech models, including Nemotron 3.5 ASR.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/european-financial-services-organizations-open-models-proprietary-intelligence/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:56.000Z",
+        "checkedAt": "2026-10-24T14:00:20.697Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Modulr is building specialized models for distinct parts of payment operations, based on the NVIDIA Nemotron-3-Ultra-550B open model.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/european-financial-services-organizations-open-models-proprietary-intelligence/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:56.000Z",
+        "checkedAt": "2026-10-24T14:00:20.697Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Santander is an early adopter of the new NVIDIA Kumo family of open weight foundation models for structured financial data, using them to build specialized intelligence for core banking workloads.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/european-financial-services-organizations-open-models-proprietary-intelligence/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:56.000Z",
+        "checkedAt": "2026-10-24T14:00:20.697Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "LSEG is working with NVIDIA to help financial institutions analyze large volumes of historical tick data up to 10x faster with the Polars GPU engine , accelerated by NVIDIA cuDF on NVIDIA RTX PRO 6000 Blackwell GPUs.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/european-financial-services-organizations-open-models-proprietary-intelligence/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:56.000Z",
+        "checkedAt": "2026-10-24T14:00:20.697Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Stripe , a global provider of programmable financial services, sees 42x faster data pipelines and 92% cost savings for its Stripe Radar fraud-detection platform with NVIDIA GPU-accelerated Ray Data in offline testing.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/european-financial-services-organizations-open-models-proprietary-intelligence/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:56.000Z",
+        "checkedAt": "2026-10-24T14:00:20.697Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Leading European Financial Services Organizations Embrace Open Models to Build Proprietary Intelligence",
+        "sourceUrl": "https://blogs.nvidia.com/blog/european-financial-services-organizations-open-models-proprietary-intelligence/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:56.000Z",
+        "checkedAt": "2026-10-24T14:00:20.697Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Pioneers Across Europe Deploy NVIDIA Earth-2 Open Models to Power Real-World Weather and Climate Prediction",
+        "sourceUrl": "https://blogs.nvidia.com/blog/european-financial-services-organizations-open-models-proprietary-intelligence/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:56.000Z",
+        "checkedAt": "2026-10-24T14:00:20.697Z"
       }
     ],
-    "pageDate": null
+    "pageDate": "2026-10-22T05:00:56.000Z"
   },
   "score": {
     "importance": 2,
@@ -80,7 +185,7 @@
     "koreanRelevance": 0,
     "novelty": 2,
     "sourceQuality": 3,
-    "verificationConfidence": 2,
+    "verificationConfidence": 3,
     "signals": [
       "MODEL_MENTION",
       "INFRA"
@@ -91,26 +196,36 @@
     "priority": 6,
     "total": 6
   },
-  "decision": "HOLD",
+  "decision": "PUBLISH",
   "reasons": [
-    "근거 부족 (원문 NETWORK, 확인 사실 0개) — 발행하지 않음"
+    "사건 신호 MODEL_MENTION·INFRA (우선순위 6)",
+    "근거 확인 통과 (확인 사실 12개, SUFFICIENT_STANDARD)"
   ],
-  "needsReview": [
-    "source_blocked",
-    "insufficient_evidence"
-  ],
+  "needsReview": [],
   "duplicate": {
     "result": "NEW",
     "reason": "기존 기사·후보와 겹치지 않음"
   },
-  "generation": null,
+  "generation": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "status": "skipped",
+    "error": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성",
+    "promptVersion": "draft-v1",
+    "at": "2026-10-24T14:05:58.261Z",
+    "evidenceHash": "39a313c4abb3"
+  },
   "draft": null,
   "validation": null,
   "draftQa": null,
-  "draftGate": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
   "draftFile": null,
   "newsletterCandidate": false,
   "capStage": null,
+  "draftPending": true,
   "approval": {
     "status": "pending"
   }

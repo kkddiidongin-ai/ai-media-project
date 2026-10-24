@@ -2,9 +2,9 @@
   "id": "292e35e33e7b",
   "date": "2026-10-24",
   "proposedSlug": "introducing-claude-duet",
-  "title": null,
+  "title": "앤스로픽, 능동형 에이전트 앱 '클로드 듀엣' 프리뷰 공개",
   "sourceTitle": "Introducing Claude Duet",
-  "depth": null,
+  "depth": "STANDARD",
   "suggestedDepth": "STANDARD",
   "depthAssessment": {
     "sufficiency": "SUFFICIENT_STANDARD",
@@ -27,12 +27,83 @@
   },
   "company": "Anthropic",
   "alsoAt": [],
-  "category": null,
-  "summary": null,
-  "body": null,
-  "topics": [],
-  "companies": [],
-  "products": [],
+  "category": "AI_AGENT",
+  "summary": "앤스로픽이 클로드 오퍼스 5.5 기반의 능동형 에이전트 앱 '클로드 듀엣'의 리서치 프리뷰를 미국 내 프로 및 맥스 요금제 구독자 대상 대기자 명단으로 공개했습니다.",
+  "body": {
+    "facts": [
+      {
+        "text": "앤스로픽은 2026년 10월 21일 클로드가 능동형 에이전트로 작동하는 별도의 신규 앱 '클로드 듀엣(Claude Duet)'의 리서치 프리뷰를 공개했습니다.",
+        "evidence": [
+          "E0",
+          "E1",
+          "E2",
+          "E11"
+        ]
+      },
+      {
+        "text": "클로드 듀엣은 클로드 오퍼스 5.5를 기반으로 설계되었으며 사용자의 개입 필요성, 대기 가능 여부, 사전 확인 시점을 판단하도록 만들어졌습니다.",
+        "evidence": [
+          "E4"
+        ]
+      },
+      {
+        "text": "기존 클로드 계정의 기억(memory), 스킬, 연동 앱을 그대로 가져오며 클로드 마켓플레이스의 6,000개 이상의 커넥터와 플러그인을 활용할 수 있습니다.",
+        "evidence": [
+          "E8",
+          "E10"
+        ]
+      },
+      {
+        "text": "클로드 매니지드 에이전트와 동일한 인증 처리 방식을 적용해 사용자의 비밀번호나 로그인 토큰을 직접 확인하지 않도록 설계되었습니다.",
+        "evidence": [
+          "E6"
+        ]
+      },
+      {
+        "text": "사용량 한도 소진을 막기 위해 연동된 계정은 몇 시간 간격으로 확인하며, 기존 클로드 앱과 사용량 한도를 공유합니다.",
+        "evidence": [
+          "E3",
+          "E9",
+          "E12"
+        ]
+      }
+    ],
+    "why": {
+      "text": "사용자가 지시할 때만 응답하던 기존 대화형 인터페이스를 넘어, 별도 전용 앱 환경에서 주기적으로 연동 계정을 살피고 작업을 주도적으로 선별하는 에이전트 형태로 클로드의 활용 범위를 넓히려는 시도로 볼 수 있습니다.",
+      "evidence": [
+        "E0",
+        "E4",
+        "E9",
+        "E11"
+      ]
+    },
+    "change": {
+      "text": "미국 내 프로 및 맥스 구독자는 대기자 명단을 통해 메인 앱과 분리된 독립 앱으로 클로드 듀엣을 체험해 볼 수 있으나, 일반 대화와 사용량 한도를 공유하므로 전체 사용량 관리에 유의해야 합니다.",
+      "evidence": [
+        "E0",
+        "E3",
+        "E11",
+        "E12"
+      ]
+    }
+  },
+  "topics": [
+    "anthropic",
+    "claude",
+    "ai-agent",
+    "ai-work"
+  ],
+  "companies": [
+    "Anthropic"
+  ],
+  "products": [
+    "Claude Duet",
+    "Claude Opus 5.5",
+    "Claude",
+    "Claude Code",
+    "Claude in Chrome",
+    "Claude Managed Agents"
+  ],
   "sources": [
     {
       "url": "https://claude.com/resources/articles/claude-duet",
@@ -200,10 +271,11 @@
     "priority": 9,
     "total": 9
   },
-  "decision": "PUBLISH",
+  "decision": "HOLD",
   "reasons": [
     "사건 신호 MODEL·PRODUCT_LAUNCH·PREVIEW (우선순위 9)",
-    "근거 확인 통과 (확인 사실 12개, SUFFICIENT_STANDARD)"
+    "근거 확인 통과 (확인 사실 12개, SUFFICIENT_STANDARD)",
+    "초안 QA FAIL: 근거에 없는 수치 '21'"
   ],
   "needsReview": [],
   "duplicate": {
@@ -213,29 +285,167 @@
   "generation": {
     "provider": "gemini",
     "model": "gemini-3.8-flash",
-    "status": "failed",
-    "error": "timeout",
+    "status": "ok",
     "usage": {
-      "inputTokens": 0,
-      "outputTokens": 0,
+      "inputTokens": 1749,
+      "outputTokens": 1115,
       "costUsd": 0,
       "attempts": 1
     },
     "promptVersion": "draft-v1",
-    "at": "2026-10-24T00:38:05.297Z",
+    "at": "2026-10-24T14:04:58.233Z",
     "evidenceHash": "104e43eacbbb"
   },
-  "draft": null,
-  "validation": null,
-  "draftQa": null,
+  "draft": {
+    "title": "앤스로픽, 능동형 에이전트 앱 '클로드 듀엣' 프리뷰 공개",
+    "summary": "앤스로픽이 클로드 오퍼스 5.5 기반의 능동형 에이전트 앱 '클로드 듀엣'의 리서치 프리뷰를 미국 내 프로 및 맥스 요금제 구독자 대상 대기자 명단으로 공개했습니다.",
+    "category": "AI_AGENT",
+    "topics": [
+      "anthropic",
+      "claude",
+      "ai-agent",
+      "ai-work"
+    ],
+    "companies": [
+      "Anthropic"
+    ],
+    "products": [
+      "Claude Duet",
+      "Claude Opus 5.5",
+      "Claude",
+      "Claude Code",
+      "Claude in Chrome",
+      "Claude Managed Agents"
+    ],
+    "facts": [
+      {
+        "text": "앤스로픽은 2026년 10월 21일 클로드가 능동형 에이전트로 작동하는 별도의 신규 앱 '클로드 듀엣(Claude Duet)'의 리서치 프리뷰를 공개했습니다.",
+        "evidence": [
+          "E0",
+          "E1",
+          "E2",
+          "E11"
+        ]
+      },
+      {
+        "text": "클로드 듀엣은 클로드 오퍼스 5.5를 기반으로 설계되었으며 사용자의 개입 필요성, 대기 가능 여부, 사전 확인 시점을 판단하도록 만들어졌습니다.",
+        "evidence": [
+          "E4"
+        ]
+      },
+      {
+        "text": "기존 클로드 계정의 기억(memory), 스킬, 연동 앱을 그대로 가져오며 클로드 마켓플레이스의 6,000개 이상의 커넥터와 플러그인을 활용할 수 있습니다.",
+        "evidence": [
+          "E8",
+          "E10"
+        ]
+      },
+      {
+        "text": "클로드 매니지드 에이전트와 동일한 인증 처리 방식을 적용해 사용자의 비밀번호나 로그인 토큰을 직접 확인하지 않도록 설계되었습니다.",
+        "evidence": [
+          "E6"
+        ]
+      },
+      {
+        "text": "사용량 한도 소진을 막기 위해 연동된 계정은 몇 시간 간격으로 확인하며, 기존 클로드 앱과 사용량 한도를 공유합니다.",
+        "evidence": [
+          "E3",
+          "E9",
+          "E12"
+        ]
+      }
+    ],
+    "why": {
+      "text": "사용자가 지시할 때만 응답하던 기존 대화형 인터페이스를 넘어, 별도 전용 앱 환경에서 주기적으로 연동 계정을 살피고 작업을 주도적으로 선별하는 에이전트 형태로 클로드의 활용 범위를 넓히려는 시도로 볼 수 있습니다.",
+      "evidence": [
+        "E0",
+        "E4",
+        "E9",
+        "E11"
+      ]
+    },
+    "change": {
+      "text": "미국 내 프로 및 맥스 구독자는 대기자 명단을 통해 메인 앱과 분리된 독립 앱으로 클로드 듀엣을 체험해 볼 수 있으나, 일반 대화와 사용량 한도를 공유하므로 전체 사용량 관리에 유의해야 합니다.",
+      "evidence": [
+        "E0",
+        "E3",
+        "E11",
+        "E12"
+      ]
+    },
+    "checks": [
+      {
+        "text": "이번 리서치 프리뷰는 미국 지역의 Pro 및 Max 플랜 구독자를 대상으로 대기자 명단(waitlist)을 통해 순차 제공됩니다.",
+        "evidence": [
+          "E0"
+        ]
+      },
+      {
+        "text": "별도 추가 요금 없이 기존 요금제 한도 내에서 작동하지만, 메인 클로드 서비스와 사용량 한도를 함께 차감합니다.",
+        "evidence": [
+          "E3",
+          "E12"
+        ]
+      }
+    ],
+    "unknowns": [
+      "한국을 포함한 미국 외 지역의 리서치 프리뷰 제공 여부 및 일정",
+      "정식 버전(GA) 출시 시점 및 정식 출시 후 요금 정책 변경 여부"
+    ],
+    "editorialDepth": "STANDARD",
+    "insufficient": false,
+    "notes": "발표일자가 2026-10-21로 제공된 가상의 미래/특정 문서 기준이므로 상대적 날짜 대신 2026년 10월 21일 명시. 원문에 한국 관련 언급이 전혀 없으므로 unknowns에 한국 제공 여부 기재."
+  },
+  "validation": {
+    "errors": [],
+    "needsReview": []
+  },
+  "draftQa": {
+    "verdict": "FAIL",
+    "checks": {
+      "FACT": {
+        "result": "FAIL",
+        "issues": [
+          "근거에 없는 수치 '21' (facts[0])"
+        ]
+      },
+      "EVIDENCE": {
+        "result": "PASS",
+        "issues": []
+      },
+      "EDITORIAL": {
+        "result": "PASS",
+        "issues": []
+      },
+      "STRUCTURE": {
+        "result": "PASS",
+        "issues": []
+      },
+      "DUPLICATE": {
+        "result": "PASS",
+        "issues": []
+      },
+      "SAFETY": {
+        "result": "PASS",
+        "issues": []
+      }
+    },
+    "fixes": [
+      "[FACT/FAIL] 근거에 없는 수치 '21' (facts[0])"
+    ],
+    "stats": {
+      "bodyChars": 854,
+      "depth": "STANDARD",
+      "suggestedDepth": "STANDARD"
+    }
+  },
   "draftGate": {
     "ok": true,
     "reasons": []
   },
-  "draftFile": null,
-  "newsletterCandidate": true,
+  "draftFile": "drafts/292e35e33e7b.md",
+  "newsletterCandidate": false,
   "capStage": null,
-  "draftPending": true,
   "approval": {
     "status": "pending"
   }
