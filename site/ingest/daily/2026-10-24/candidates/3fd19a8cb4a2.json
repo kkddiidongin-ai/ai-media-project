@@ -1,0 +1,221 @@
+{
+  "id": "3fd19a8cb4a2",
+  "date": "2026-10-24",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Claude Duet Safety, Privacy, and Security",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 12,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Anthropic",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://claude.com/resources/articles/claude-duet-safety-privacy-and-security",
+      "name": "Claude (claude.com articles)",
+      "type": "official",
+      "publishedAt": "2026-10-23T00:00:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "3fd19a8cb4a2",
+    "url": "https://claude.com/resources/articles/claude-duet-safety-privacy-and-security",
+    "canonicalUrl": "https://claude.com/resources/articles/claude-duet-safety-privacy-and-security",
+    "title": "Claude Duet Safety, Privacy, and Security",
+    "excerpt": "These are the protections we built into Claude Duet for working across your accounts and acting on your behalf.",
+    "publishedAt": "2026-10-23T00:00:00.000Z",
+    "sourceId": "claude-blog",
+    "sourceName": "Claude (claude.com articles)",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "listing-meta",
+    "discoveredVia": "https://claude.com/resources/articles",
+    "fetchedAt": "2026-10-24T13:59:12.250Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 10092,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "These are the protections we built into Claude Duet for working across your accounts and acting on your behalf.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-duet-safety-privacy-and-security",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-23T00:00:00.000Z",
+        "checkedAt": "2026-10-24T14:00:24.720Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "• • • • • • • • • Claude Duet Safety, Privacy, and Security | Claude by Anthropic • •",
+        "sourceUrl": "https://claude.com/resources/articles/claude-duet-safety-privacy-and-security",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-23T00:00:00.000Z",
+        "checkedAt": "2026-10-24T14:00:24.720Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Skip to main content Claude Duet (opens in new tab) is an agent, currently in research preview, that uses a cloud-based computer to do work for you.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-duet-safety-privacy-and-security",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-23T00:00:00.000Z",
+        "checkedAt": "2026-10-24T14:00:24.720Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "In 2025 we published our framework for safe and trustworthy agents (opens in new tab) , which puts people in control and treats privacy and secure interactions as basic requirements.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-duet-safety-privacy-and-security",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-23T00:00:00.000Z",
+        "checkedAt": "2026-10-24T14:00:24.720Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "We also build and operate the infrastructure businesses use to run agents in production through Claude Managed Agents (opens in new tab) , and Claude Duet keeps credentials separate from the agent in the same way.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-duet-safety-privacy-and-security",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-23T00:00:00.000Z",
+        "checkedAt": "2026-10-24T14:00:24.720Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "A separate, automated check runs alongside each action, built on the auto mode classifier from Claude Code (opens in new tab) and extended for Claude Duet.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-duet-safety-privacy-and-security",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-23T00:00:00.000Z",
+        "checkedAt": "2026-10-24T14:00:24.720Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "To address this, we built a new safety classifier that runs separately from the main model and checks whether each message Claude Duet is about to send contains potentially sensitive information.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-duet-safety-privacy-and-security",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-23T00:00:00.000Z",
+        "checkedAt": "2026-10-24T14:00:24.720Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Claude Duet is still in research preview and these safeguards will occasionally miss something or flag a harmless message.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-duet-safety-privacy-and-security",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-23T00:00:00.000Z",
+        "checkedAt": "2026-10-24T14:00:24.720Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "The apps you have connected to Claude carry over to Claude Duet, and switching an app off in one place switches it off in both.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-duet-safety-privacy-and-security",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-23T00:00:00.000Z",
+        "checkedAt": "2026-10-24T14:00:24.720Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Claude Duet also uses the memory from your Claude account, so details Claude remembered from your earlier chats are visible.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-duet-safety-privacy-and-security",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-23T00:00:00.000Z",
+        "checkedAt": "2026-10-24T14:00:24.720Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Soon you will also be able to sign in with 1Password; Claude Duet will ask for a credential, you will approve that request in 1Password, and the credential will go to the browser without passing through the model.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-duet-safety-privacy-and-security",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-23T00:00:00.000Z",
+        "checkedAt": "2026-10-24T14:00:24.720Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "When Claude Duet works in a connected app, it follows our Claude Managed Agents design (opens in new tab) so credentials stay out of reach of the agent’s work.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-duet-safety-privacy-and-security",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-23T00:00:00.000Z",
+        "checkedAt": "2026-10-24T14:00:24.720Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Before launch, we also contacted several large websites and gave them the option to prevent Claude Duet from visiting their sites, and some chose to.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-duet-safety-privacy-and-security",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-23T00:00:00.000Z",
+        "checkedAt": "2026-10-24T14:00:24.720Z"
+      }
+    ],
+    "pageDate": "2026-10-23T00:00:00.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 2,
+    "signals": [
+      "SECURITY_MENTION"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 SECURITY_MENTION (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

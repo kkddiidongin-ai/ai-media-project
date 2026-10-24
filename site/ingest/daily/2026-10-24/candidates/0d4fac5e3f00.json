@@ -1,0 +1,234 @@
+{
+  "id": "0d4fac5e3f00",
+  "date": "2026-10-24",
+  "proposedSlug": "github-package-firewall-public-preview",
+  "title": null,
+  "sourceTitle": "GitHub package firewall in public preview",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 8,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": true,
+      "distinctFacts": true,
+      "evidenceQuality": false,
+      "standardWouldOmit": true
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "evidenceQuality"
+    ]
+  },
+  "company": "GitHub",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://github.blog/changelog/2026-10-20-github-package-firewall-in-public-preview",
+      "name": "GitHub Changelog",
+      "type": "official",
+      "publishedAt": "2026-10-20T16:11:53.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "0d4fac5e3f00",
+    "url": "https://github.blog/changelog/2026-10-20-github-package-firewall-in-public-preview",
+    "canonicalUrl": "https://github.blog/changelog/2026-10-20-github-package-firewall-in-public-preview",
+    "title": "GitHub package firewall in public preview",
+    "excerpt": "Editor’s note (October 21, 2026): Rewrote the changelog for clarity and added imagery. There’s been a recent flood of malware attacks that exploit systems at package installation time. Agents and… The post GitHub package firewall in public preview appeared first on The GitHub Blog .",
+    "publishedAt": "2026-10-20T16:11:53.000Z",
+    "sourceId": "github-changelog",
+    "sourceName": "GitHub Changelog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://github.blog/changelog/feed/?paged=2",
+    "fetchedAt": "2026-10-23T14:59:04.454Z",
+    "fromQueue": "draft"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 2291,
+    "grade": "LIMITED",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Editor’s note (October 21, 2026): Rewrote the changelog for clarity and added imagery. There’s been a recent flood of malware attacks that exploit systems at package installation time. Agents and… The post GitHub package firewall in public preview appeared first on The GitHub Blog .",
+        "sourceUrl": "https://github.blog/changelog/2026-10-20-github-package-firewall-in-public-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-20T16:11:53.000Z",
+        "checkedAt": "2026-10-24T00:34:01.635Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "GitHub package firewall in public preview - GitHub Changelog",
+        "sourceUrl": "https://github.blog/changelog/2026-10-20-github-package-firewall-in-public-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-20T16:11:53.000Z",
+        "checkedAt": "2026-10-24T00:34:01.635Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Editor&rsquo;s note (October 21, 2026): Rewrote the changelog for clarity and added imagery.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-20-github-package-firewall-in-public-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-20T16:11:53.000Z",
+        "checkedAt": "2026-10-24T00:34:01.635Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "To stem this tide, GitHub is introducing a new package firewall, which sits between endpoints or internal registries and the upstream package repositories.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-20-github-package-firewall-in-public-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-20T16:11:53.000Z",
+        "checkedAt": "2026-10-24T00:34:01.635Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "The firewall inspects both metadata requests and package downloads for signs of malicious activity, acting as an install-time policy gate.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-20-github-package-firewall-in-public-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-20T16:11:53.000Z",
+        "checkedAt": "2026-10-24T00:34:01.635Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "The package firewall is available today in public preview for all GitHub Enterprise Cloud customers, including data-resident GitHub Enterprise Cloud.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-20-github-package-firewall-in-public-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-20T16:11:53.000Z",
+        "checkedAt": "2026-10-24T00:34:01.635Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "The controls available today include a configurable cooldown period, checking the GitHub Advisory Database for malware or vulnerability advisories, and supply-chain checks like attestation downgrades.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-20-github-package-firewall-in-public-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-20T16:11:53.000Z",
+        "checkedAt": "2026-10-24T00:34:01.635Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Then, endpoints like coding agents and CI/CD hosts use the firewall for their requests instead of pointing directly at the upstream package registries.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-20-github-package-firewall-in-public-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-20T16:11:53.000Z",
+        "checkedAt": "2026-10-24T00:34:01.635Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Metadata requests for package lists as well as the actual package downloads flow through the firewall, which evaluates them against the policy.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-20-github-package-firewall-in-public-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-20T16:11:53.000Z",
+        "checkedAt": "2026-10-24T00:34:01.635Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "If a package is blocked erroneously, the user can request an exception with a workflow similar to other GitHub Advanced Security features.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-20-github-package-firewall-in-public-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-20T16:11:53.000Z",
+        "checkedAt": "2026-10-24T00:34:01.635Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "The package firewall is available in public preview as we scale up the infrastructure behind it and continue to add features based on customer demand.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-20-github-package-firewall-in-public-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-20T16:11:53.000Z",
+        "checkedAt": "2026-10-24T00:34:01.635Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "It is available to GitHub Enterprise Cloud customers, including GitHub Enterprise Cloud with data residency.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-20-github-package-firewall-in-public-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-20T16:11:53.000Z",
+        "checkedAt": "2026-10-24T00:34:01.635Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "The service is free while in the preview period.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-20-github-package-firewall-in-public-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-20T16:11:53.000Z",
+        "checkedAt": "2026-10-24T00:34:01.635Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 2,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PREVIEW",
+      "SECURITY"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 6,
+    "total": 6
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 PREVIEW·SECURITY (우선순위 6)",
+    "근거 확인 통과 (확인 사실 8개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "status": "skipped",
+    "error": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성",
+    "promptVersion": "draft-v1",
+    "at": "2026-10-24T14:05:58.262Z",
+    "evidenceHash": "a667ae19326c"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}

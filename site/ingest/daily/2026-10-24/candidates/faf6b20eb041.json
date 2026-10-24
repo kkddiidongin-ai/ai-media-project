@@ -1,0 +1,221 @@
+{
+  "id": "faf6b20eb041",
+  "date": "2026-10-24",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Claude Cowork and chat come together for Enterprise",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Anthropic",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://claude.com/resources/articles/unified-claude-enterprise",
+      "name": "Claude (claude.com articles)",
+      "type": "official",
+      "publishedAt": "2026-10-23T00:00:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "faf6b20eb041",
+    "url": "https://claude.com/resources/articles/unified-claude-enterprise",
+    "canonicalUrl": "https://claude.com/resources/articles/unified-claude-enterprise",
+    "title": "Claude Cowork and chat come together for Enterprise",
+    "excerpt": "Chat and Cowork first came together for Pro and Max plans in September. The same unified experience is now generally available for Claude Enterprise plans.",
+    "publishedAt": "2026-10-23T00:00:00.000Z",
+    "sourceId": "claude-blog",
+    "sourceName": "Claude (claude.com articles)",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "listing-meta",
+    "discoveredVia": "https://claude.com/resources/articles",
+    "fetchedAt": "2026-10-24T13:59:12.250Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 4853,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Chat and Cowork first came together for Pro and Max plans in September. The same unified experience is now generally available for Claude Enterprise plans.",
+        "sourceUrl": "https://claude.com/resources/articles/unified-claude-enterprise",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-23T00:00:00.000Z",
+        "checkedAt": "2026-10-24T00:34:01.703Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "• • • • • • • • • Claude Cowork and chat come together for Enterprise | Claude by Anthropic • •",
+        "sourceUrl": "https://claude.com/resources/articles/unified-claude-enterprise",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-23T00:00:00.000Z",
+        "checkedAt": "2026-10-24T00:34:01.703Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Skip to main content Chat and Cowork first came together for Pro and Max plans in September.",
+        "sourceUrl": "https://claude.com/resources/articles/unified-claude-enterprise",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-23T00:00:00.000Z",
+        "checkedAt": "2026-10-24T00:34:01.703Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "The same unified Claude experience is now generally available for Claude Enterprise plans.",
+        "sourceUrl": "https://claude.com/resources/articles/unified-claude-enterprise",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-23T00:00:00.000Z",
+        "checkedAt": "2026-10-24T00:34:01.703Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Chat and Cowork are now one Claude on web, desktop, and mobile, so your team can ask a quick question or hand over a full project in the same conversation.",
+        "sourceUrl": "https://claude.com/resources/articles/unified-claude-enterprise",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-23T00:00:00.000Z",
+        "checkedAt": "2026-10-24T00:34:01.703Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Agentic work runs in a cloud environment that Anthropic manages, and Claude Enterprise admins control access by role and manage usage with a new Efficient mode.",
+        "sourceUrl": "https://claude.com/resources/articles/unified-claude-enterprise",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-23T00:00:00.000Z",
+        "checkedAt": "2026-10-24T00:34:01.703Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Team members no longer choose between chat and Cowork before they start work with Claude.",
+        "sourceUrl": "https://claude.com/resources/articles/unified-claude-enterprise",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-23T00:00:00.000Z",
+        "checkedAt": "2026-10-24T00:34:01.703Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "“Bringing chat and Cowork together answers what clients kept asking us, ‘which Claude should I use’ and ‘which one does what’.",
+        "sourceUrl": "https://claude.com/resources/articles/unified-claude-enterprise",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-23T00:00:00.000Z",
+        "checkedAt": "2026-10-24T00:34:01.703Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "If your organization has already approved Claude chat, this builds on the enterprise controls you already use, including single sign-on (SSO) and the Compliance API.",
+        "sourceUrl": "https://claude.com/resources/articles/unified-claude-enterprise",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-23T00:00:00.000Z",
+        "checkedAt": "2026-10-24T00:34:01.703Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Claude does agentic work in cloud sessions, each running in its own isolated virtual machine with network egress off by default for Claude Enterprise and connector credentials kept outside the sandbox.",
+        "sourceUrl": "https://claude.com/resources/articles/unified-claude-enterprise",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-23T00:00:00.000Z",
+        "checkedAt": "2026-10-24T00:34:01.703Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "The newest Claude models are more efficient than their predecessors: billed through usage, Claude Opus 5.5 costs 40% less to run than Claude Opus 5 on typical workloads, and Claude Sonnet 5.5 costs up to 30% less than Claude Sonnet 5 for most work.",
+        "sourceUrl": "https://claude.com/resources/articles/unified-claude-enterprise",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-23T00:00:00.000Z",
+        "checkedAt": "2026-10-24T00:34:01.703Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "The unified Claude experience is generally available today for Claude Enterprise plans.",
+        "sourceUrl": "https://claude.com/resources/articles/unified-claude-enterprise",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-23T00:00:00.000Z",
+        "checkedAt": "2026-10-24T00:34:01.703Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "It builds on two layers of protection: safety training in the Claude model itself and the safeguards that exist in products like Claude Code and Claude Managed Agents.",
+        "sourceUrl": "https://claude.com/resources/articles/unified-claude-enterprise",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-23T00:00:00.000Z",
+        "checkedAt": "2026-10-24T00:34:01.703Z"
+      }
+    ],
+    "pageDate": "2026-10-23T00:00:00.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "AVAILABILITY"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 AVAILABILITY (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

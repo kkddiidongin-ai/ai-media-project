@@ -1,0 +1,233 @@
+{
+  "id": "cf0e97bf97c4",
+  "date": "2026-10-24",
+  "proposedSlug": "nvidia-launches-openshell-reference-architecture-safe-ai",
+  "title": null,
+  "sourceTitle": "NVIDIA Launches OpenShell Reference Architecture for Safe AI Agents",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": true,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": true
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact"
+    ]
+  },
+  "company": "NVIDIA",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://nvidianews.nvidia.com/news/openshell-reference-architecture",
+      "name": "NVIDIA Newsroom (Press Releases)",
+      "type": "official",
+      "publishedAt": "2026-10-21T09:48:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "cf0e97bf97c4",
+    "url": "https://nvidianews.nvidia.com/news/openshell-reference-architecture",
+    "canonicalUrl": "https://nvidianews.nvidia.com/news/openshell-reference-architecture",
+    "title": "NVIDIA Launches OpenShell Reference Architecture for Safe AI Agents",
+    "excerpt": "NVIDIA today announced the NVIDIA OpenShell Reference Architecture, which enables building, containing, observing and enforcing safe agents on enterprise infrastructure and edge systems.",
+    "publishedAt": "2026-10-21T09:48:00.000Z",
+    "sourceId": "nvidia-newsroom",
+    "sourceName": "NVIDIA Newsroom (Press Releases)",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://nvidianews.nvidia.com/releases.xml",
+    "fetchedAt": "2026-10-22T00:37:54.015Z",
+    "fromQueue": "draft"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 9769,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "NVIDIA today announced the NVIDIA OpenShell Reference Architecture, which enables building, containing, observing and enforcing safe agents on enterprise infrastructure and edge systems.",
+        "sourceUrl": "https://nvidianews.nvidia.com/news/openshell-reference-architecture",
+        "source": "NVIDIA Newsroom (Press Releases)",
+        "publishedAt": "2026-10-21T09:48:00.000Z",
+        "checkedAt": "2026-10-24T00:33:45.882Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "NVIDIA Launches OpenShell Reference Architecture for Safe AI Agents | NVIDIA Newsroom",
+        "sourceUrl": "https://nvidianews.nvidia.com/news/openshell-reference-architecture",
+        "source": "NVIDIA Newsroom (Press Releases)",
+        "publishedAt": "2026-10-21T09:48:00.000Z",
+        "checkedAt": "2026-10-24T00:33:45.882Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "NVIDIA Launches OpenShell Reference Architecture for Safe AI Agents",
+        "sourceUrl": "https://nvidianews.nvidia.com/news/openshell-reference-architecture",
+        "source": "NVIDIA Newsroom (Press Releases)",
+        "publishedAt": "2026-10-21T09:48:00.000Z",
+        "checkedAt": "2026-10-24T00:33:45.882Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Platform Brings Together NVIDIA Vera Rubin, Vera CPUs and BlueField-4 to Power Enterprise Infrastructure to Build, Run, Observe and Enforce Safe Agents at Industrial Scale",
+        "sourceUrl": "https://nvidianews.nvidia.com/news/openshell-reference-architecture",
+        "source": "NVIDIA Newsroom (Press Releases)",
+        "publishedAt": "2026-10-21T09:48:00.000Z",
+        "checkedAt": "2026-10-24T00:33:45.882Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "The NVIDIA OpenShell Reference Architecture delivers enterprise governance, isolation and security for building, containing, observing and enforcing safe agents across enterprise infrastructure and edge systems.",
+        "sourceUrl": "https://nvidianews.nvidia.com/news/openshell-reference-architecture",
+        "source": "NVIDIA Newsroom (Press Releases)",
+        "publishedAt": "2026-10-21T09:48:00.000Z",
+        "checkedAt": "2026-10-24T00:33:45.882Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Built on the foundation of NVIDIA OpenShell secure runtime software, the architecture brings together NVIDIA Vera Rubin infrastructure for model inference, NVIDIA Vera CPUs for agent harnesses and tool use, and NVIDIA BlueField-4 DPUs running NVIDIA Sentry for in-silicon enfor…",
+        "sourceUrl": "https://nvidianews.nvidia.com/news/openshell-reference-architecture",
+        "source": "NVIDIA Newsroom (Press Releases)",
+        "publishedAt": "2026-10-21T09:48:00.000Z",
+        "checkedAt": "2026-10-24T00:33:45.882Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "The OpenShell Reference Architecture extends to the edge with NVIDIA RTX Spark, NVIDIA DGX Spark and NVIDIA DGX Station systems.",
+        "sourceUrl": "https://nvidianews.nvidia.com/news/openshell-reference-architecture",
+        "source": "NVIDIA Newsroom (Press Releases)",
+        "publishedAt": "2026-10-21T09:48:00.000Z",
+        "checkedAt": "2026-10-24T00:33:45.882Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "GTC Berlin&mdash; NVIDIA today announced the NVIDIA OpenShell Reference Architecture , which enables building, containing, observing and enforcing safe agents on enterprise infrastructure and edge systems.",
+        "sourceUrl": "https://nvidianews.nvidia.com/news/openshell-reference-architecture",
+        "source": "NVIDIA Newsroom (Press Releases)",
+        "publishedAt": "2026-10-21T09:48:00.000Z",
+        "checkedAt": "2026-10-24T00:33:45.882Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "The OpenShell Reference Architecture builds on the foundation of NVIDIA OpenShell &trade; secure runtime software, extending it into full-stack, industrial-scale infrastructure for agent development and operations.",
+        "sourceUrl": "https://nvidianews.nvidia.com/news/openshell-reference-architecture",
+        "source": "NVIDIA Newsroom (Press Releases)",
+        "publishedAt": "2026-10-21T09:48:00.000Z",
+        "checkedAt": "2026-10-24T00:33:45.882Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "It includes NVIDIA Vera Rubin infrastructure for running enterprise workloads, including closed and open models built with NVIDIA Nemotron &trade;; NVIDIA Vera CPUs for operating agent harnesses; open source NVIDIA OpenShell software; and NVIDIA BlueField &reg; DPUs for runnin…",
+        "sourceUrl": "https://nvidianews.nvidia.com/news/openshell-reference-architecture",
+        "source": "NVIDIA Newsroom (Press Releases)",
+        "publishedAt": "2026-10-21T09:48:00.000Z",
+        "checkedAt": "2026-10-24T00:33:45.882Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "The OpenShell Reference Architecture is extensible to agents running at the edge across industries such as retail, healthcare, manufacturing, robotics, software development and telecommunications with NVIDIA RTX Spark &trade;, NVIDIA DGX Spark &trade; and NVIDIA DGX Station &t…",
+        "sourceUrl": "https://nvidianews.nvidia.com/news/openshell-reference-architecture",
+        "source": "NVIDIA Newsroom (Press Releases)",
+        "publishedAt": "2026-10-21T09:48:00.000Z",
+        "checkedAt": "2026-10-24T00:33:45.882Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "&ldquo;AI capability and safety must advance together,&rdquo; said Jensen Huang, founder and CEO of NVIDIA. &ldquo;As enterprises prepare to deploy billions of AI agents, safety and control must be built into the computing architecture.",
+        "sourceUrl": "https://nvidianews.nvidia.com/news/openshell-reference-architecture",
+        "source": "NVIDIA Newsroom (Press Releases)",
+        "publishedAt": "2026-10-21T09:48:00.000Z",
+        "checkedAt": "2026-10-24T00:33:45.882Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "NVIDIA Vera CPUs deliver 2x the performance of x86 processors with greater energy efficiency and run NVIDIA OpenShell , which provides a secure runtime boundary for autonomous agents.",
+        "sourceUrl": "https://nvidianews.nvidia.com/news/openshell-reference-architecture",
+        "source": "NVIDIA Newsroom (Press Releases)",
+        "publishedAt": "2026-10-21T09:48:00.000Z",
+        "checkedAt": "2026-10-24T00:33:45.882Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 2,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PRODUCT_LAUNCH",
+      "INFRA"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 7,
+    "total": 7
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 PRODUCT_LAUNCH·INFRA (우선순위 7)",
+    "근거 확인 통과 (확인 사실 11개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "status": "skipped",
+    "error": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성",
+    "promptVersion": "draft-v1",
+    "at": "2026-10-24T14:05:58.261Z",
+    "evidenceHash": "8a32eb7ea3c3"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}

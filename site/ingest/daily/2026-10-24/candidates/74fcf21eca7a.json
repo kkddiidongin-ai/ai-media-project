@@ -1,0 +1,125 @@
+{
+  "id": "74fcf21eca7a",
+  "date": "2026-10-24",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "ChatGPT Ads expands to 26 new countries as over 100,000 advertisers have used the platform",
+  "depth": null,
+  "suggestedDepth": null,
+  "depthAssessment": {
+    "sufficiency": "INSUFFICIENT",
+    "distinctFacts": 0,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": true,
+      "contextNeed": false,
+      "distinctFacts": false,
+      "evidenceQuality": false,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "contextNeed",
+      "distinctFacts",
+      "evidenceQuality",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "OpenAI",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
+      "name": "OpenAI",
+      "type": "official",
+      "publishedAt": "2026-10-21T13:00:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "74fcf21eca7a",
+    "url": "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
+    "canonicalUrl": "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
+    "title": "ChatGPT Ads expands to 26 new countries as over 100,000 advertisers have used the platform",
+    "excerpt": "From local businesses to global brands, more advertisers can now reach people as they explore, compare and decide what to buy in ChatGPT.",
+    "publishedAt": "2026-10-21T13:00:00.000Z",
+    "sourceId": "openai",
+    "sourceName": "OpenAI",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://openai.com/news/rss.xml",
+    "fetchedAt": "2026-10-24T13:59:12.250Z"
+  },
+  "evidence": {
+    "status": "HTTP_403",
+    "chars": 0,
+    "grade": "FAIL",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "From local businesses to global brands, more advertisers can now reach people as they explore, compare and decide what to buy in ChatGPT.",
+        "sourceUrl": "https://openai.com/index/chatgpt-ads-expands-26-new-countries",
+        "source": "OpenAI",
+        "publishedAt": "2026-10-21T13:00:00.000Z",
+        "checkedAt": "2026-10-24T14:00:19.442Z"
+      }
+    ],
+    "pageDate": null,
+    "alternate": {
+      "tried": [
+        "https://platform.openai.com/docs/changelog"
+      ],
+      "matched": 0,
+      "reason": "제목에 버전 붙은 이름 없음"
+    }
+  },
+  "score": {
+    "importance": 3,
+    "practicalImpact": 3,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 2,
+    "signals": [
+      "PRODUCT_LAUNCH",
+      "AVAILABILITY",
+      "CONSUMER"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 11,
+    "total": 11
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "근거 부족 (원문 HTTP_403, 확인 사실 0개) — 발행하지 않음"
+  ],
+  "needsReview": [
+    "source_blocked",
+    "insufficient_evidence"
+  ],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

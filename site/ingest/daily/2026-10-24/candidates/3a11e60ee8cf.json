@@ -1,0 +1,235 @@
+{
+  "id": "3a11e60ee8cf",
+  "date": "2026-10-24",
+  "proposedSlug": "introducing-timestral",
+  "title": null,
+  "sourceTitle": "Introducing Timestral",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 12,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Mistral",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://mistral.ai/news/timestral/",
+      "name": "Mistral AI",
+      "type": "official",
+      "publishedAt": "2026-10-15T12:00:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "3a11e60ee8cf",
+    "url": "https://mistral.ai/news/timestral/",
+    "canonicalUrl": "https://mistral.ai/news/timestral",
+    "title": "Introducing Timestral",
+    "excerpt": "State-of-the-art probabilistic forecasting in four sizes (5M–209M params), CPU-efficient, zero-shot ready.",
+    "publishedAt": "2026-10-15T12:00:00.000Z",
+    "sourceId": "mistral",
+    "sourceName": "Mistral AI",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://mistral.ai/news/rss",
+    "fetchedAt": "2026-10-18T13:58:30.865Z",
+    "fromQueue": "draft"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 8129,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "State-of-the-art probabilistic forecasting in four sizes (5M–209M params), CPU-efficient, zero-shot ready.",
+        "sourceUrl": "https://mistral.ai/news/timestral/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-10-15T12:00:00.000Z",
+        "checkedAt": "2026-10-24T00:33:43.966Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Timestral, Mistral’s first family of time-series foundation models, delivers state-of-the-art probabilistic, multivariate forecasts with just 209M parameters, outperforming larger models on key benchmarks while supporting past and future covariates.",
+        "sourceUrl": "https://mistral.ai/news/timestral/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-10-15T12:00:00.000Z",
+        "checkedAt": "2026-10-24T00:33:43.966Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Available in four sizes (5M to 209M parameters), it balances accuracy and efficiency, running efficiently on CPUs and excelling in zero-shot forecasting for diverse domains.",
+        "sourceUrl": "https://mistral.ai/news/timestral/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-10-15T12:00:00.000Z",
+        "checkedAt": "2026-10-24T00:33:43.966Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Our largest model, at just 209M parameters, ranks first on all three of the field's main public benchmarks, GIFT-Eval, TIME, and fev-bench, outperforming the previous state of the art with only two-thirds of the model parameters.",
+        "sourceUrl": "https://mistral.ai/news/timestral/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-10-15T12:00:00.000Z",
+        "checkedAt": "2026-10-24T00:33:43.966Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "GIFT-Eval, top ten of 83 comparable pretrained and zero-shot entries.",
+        "sourceUrl": "https://mistral.ai/news/timestral/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-10-15T12:00:00.000Z",
+        "checkedAt": "2026-10-24T00:33:43.966Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "TIME, top ten of the 35 leaderboard entries.",
+        "sourceUrl": "https://mistral.ai/news/timestral/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-10-15T12:00:00.000Z",
+        "checkedAt": "2026-10-24T00:33:43.966Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "fev-bench, top ten of the 37 leaderboard entries, by SQL skill score.",
+        "sourceUrl": "https://mistral.ai/news/timestral/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-10-15T12:00:00.000Z",
+        "checkedAt": "2026-10-24T00:33:43.966Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Timestral has been optimised as a family of four models: 5M, 28M, 123M and 209M parameters.",
+        "sourceUrl": "https://mistral.ai/news/timestral/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-10-15T12:00:00.000Z",
+        "checkedAt": "2026-10-24T00:33:43.966Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Score vs model size on GIFT-Eval, TIME and fev-bench (shown as 1 − skill score).",
+        "sourceUrl": "https://mistral.ai/news/timestral/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-10-15T12:00:00.000Z",
+        "checkedAt": "2026-10-24T00:33:43.966Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Our 28M model beats Chronos-2, about four times larger, on GIFT-Eval and TIME.",
+        "sourceUrl": "https://mistral.ai/news/timestral/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-10-15T12:00:00.000Z",
+        "checkedAt": "2026-10-24T00:33:43.966Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Our 209M model beats TimesFM-3 and Falcon-2.0 with fewer parameters.",
+        "sourceUrl": "https://mistral.ai/news/timestral/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-10-15T12:00:00.000Z",
+        "checkedAt": "2026-10-24T00:33:43.966Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "On a standard server CPU with 8 threads, forecasting one day ahead from three weeks of 15-minute history takes 10 ms with the 5M model and 140 ms with the 209M model.",
+        "sourceUrl": "https://mistral.ai/news/timestral/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-10-15T12:00:00.000Z",
+        "checkedAt": "2026-10-24T00:33:43.966Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Timestral is first pre-trained at scale on purely synthetic data with context size 8192, then post-trained on a mix of real and synthetic data with a 4x longer context.",
+        "sourceUrl": "https://mistral.ai/news/timestral/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-10-15T12:00:00.000Z",
+        "checkedAt": "2026-10-24T00:33:43.966Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 2,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 2,
+    "signals": [
+      "PRODUCT_LAUNCH",
+      "RESEARCH_RESULT"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 7,
+    "total": 7
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 PRODUCT_LAUNCH·RESEARCH_RESULT (우선순위 7)",
+    "근거 확인 통과 (확인 사실 12개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "status": "skipped",
+    "error": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성",
+    "promptVersion": "draft-v1",
+    "at": "2026-10-24T14:05:58.261Z",
+    "evidenceHash": "b8dcc3d888dc"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}

@@ -1,0 +1,221 @@
+{
+  "id": "95364ce77079",
+  "date": "2026-10-24",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Multi-Turn Reinforcement Learning on Amazon SageMaker AI: A hands-on guide",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/multi-turn-reinforcement-learning-on-amazon-sagemaker-ai-a-hands-on-guide/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-10-23T17:48:54.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "95364ce77079",
+    "url": "https://aws.amazon.com/blogs/machine-learning/multi-turn-reinforcement-learning-on-amazon-sagemaker-ai-a-hands-on-guide/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/multi-turn-reinforcement-learning-on-amazon-sagemaker-ai-a-hands-on-guide",
+    "title": "Multi-Turn Reinforcement Learning on Amazon SageMaker AI: A hands-on guide",
+    "excerpt": "Multi-Turn Reinforcement Learning (MTRL) on Amazon SageMaker AI trains models on the outcome of a whole multi-step task rather than labeled steps. This hands-on guide walks the full pipeline using Wordle: deploying the agent and reward on Amazon Bedrock AgentCore, preparing the dataset, training, an",
+    "publishedAt": "2026-10-23T17:48:54.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-10-24T13:59:12.250Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 19930,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Multi-Turn Reinforcement Learning (MTRL) on Amazon SageMaker AI trains models on the outcome of a whole multi-step task rather than labeled steps. This hands-on guide walks the full pipeline using Wordle: deploying the agent and reward on Amazon Bedrock AgentCore, preparing the dataset, training, an",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/multi-turn-reinforcement-learning-on-amazon-sagemaker-ai-a-hands-on-guide/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-23T17:48:54.000Z",
+        "checkedAt": "2026-10-24T00:34:02.493Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Multi-Turn Reinforcement Learning on Amazon SageMaker AI: A hands-on guide | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/multi-turn-reinforcement-learning-on-amazon-sagemaker-ai-a-hands-on-guide/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-23T17:48:54.000Z",
+        "checkedAt": "2026-10-24T00:34:02.493Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Multi-Turn Reinforcement Learning on Amazon SageMaker AI: A hands-on guide",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/multi-turn-reinforcement-learning-on-amazon-sagemaker-ai-a-hands-on-guide/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-23T17:48:54.000Z",
+        "checkedAt": "2026-10-24T00:34:02.493Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Multi-Turn Reinforcement Learning (MTRL) on Amazon SageMaker AI trains models on exactly that signal.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/multi-turn-reinforcement-learning-on-amazon-sagemaker-ai-a-hands-on-guide/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-23T17:48:54.000Z",
+        "checkedAt": "2026-10-24T00:34:02.493Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "SageMaker AI sends prompts to an agent you host on Amazon Bedrock AgentCore, or on your own infrastructure, such as Amazon Elastic Kubernetes Service (Amazon EKS), Amazon Elastic Compute Cloud (Amazon EC2), or AWS Fargate, through an AWS Lambda forwarder .",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/multi-turn-reinforcement-learning-on-amazon-sagemaker-ai-a-hands-on-guide/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-23T17:48:54.000Z",
+        "checkedAt": "2026-10-24T00:34:02.493Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Figure 1: MTRL on SageMaker AI, where the training job invokes the AgentCore-hosted agent once per rollout to sample the policy model, play the game, and report a reward",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/multi-turn-reinforcement-learning-on-amazon-sagemaker-ai-a-hands-on-guide/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-23T17:48:54.000Z",
+        "checkedAt": "2026-10-24T00:34:02.493Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "We chose GPT-OSS-20B because it has the lowest per-token price of the four and its reasoning effort is controllable per request.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/multi-turn-reinforcement-learning-on-amazon-sagemaker-ai-a-hands-on-guide/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-23T17:48:54.000Z",
+        "checkedAt": "2026-10-24T00:34:02.493Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "For this run, that was about $79, from the runtime’s Amazon CloudWatch usage metrics at us-east-1 list prices.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/multi-turn-reinforcement-learning-on-amazon-sagemaker-ai-a-hands-on-guide/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-23T17:48:54.000Z",
+        "checkedAt": "2026-10-24T00:34:02.493Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "See Amazon SageMaker AI pricing for current rates.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/multi-turn-reinforcement-learning-on-amazon-sagemaker-ai-a-hands-on-guide/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-23T17:48:54.000Z",
+        "checkedAt": "2026-10-24T00:34:02.493Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "An Amazon Simple Storage Service (Amazon S3) bucket in the same Region as the agent.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/multi-turn-reinforcement-learning-on-amazon-sagemaker-ai-a-hands-on-guide/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-23T17:48:54.000Z",
+        "checkedAt": "2026-10-24T00:34:02.493Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Step 2: Deploy the agent to Amazon Bedrock AgentCore",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/multi-turn-reinforcement-learning-on-amazon-sagemaker-ai-a-hands-on-guide/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-23T17:48:54.000Z",
+        "checkedAt": "2026-10-24T00:34:02.493Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Figure 2: The Wordle agent runtime in the Amazon Bedrock AgentCore console with status Ready",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/multi-turn-reinforcement-learning-on-amazon-sagemaker-ai-a-hands-on-guide/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-23T17:48:54.000Z",
+        "checkedAt": "2026-10-24T00:34:02.493Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Figure 5: The completed training job in SageMaker AI Studio on the Jobs, Training, Multi-turn RL tab",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/multi-turn-reinforcement-learning-on-amazon-sagemaker-ai-a-hands-on-guide/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-23T17:48:54.000Z",
+        "checkedAt": "2026-10-24T00:34:02.493Z"
+      }
+    ],
+    "pageDate": "2026-10-23T17:48:54.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "API_PLATFORM"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 API_PLATFORM (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}
