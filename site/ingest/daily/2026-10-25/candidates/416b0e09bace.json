@@ -1,0 +1,239 @@
+{
+  "id": "416b0e09bace",
+  "date": "2026-10-25",
+  "proposedSlug": "aws-continuum-code-vulnerabilities-generally-available",
+  "title": null,
+  "sourceTitle": "AWS Continuum for code vulnerabilities is now generally available",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": true,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": true
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/aws/aws-continuum-for-code-vulnerabilities-is-now-generally-available/",
+      "name": "AWS News Blog",
+      "type": "official",
+      "publishedAt": "2026-10-22T20:33:10.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "416b0e09bace",
+    "url": "https://aws.amazon.com/blogs/aws/aws-continuum-for-code-vulnerabilities-is-now-generally-available/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/aws/aws-continuum-for-code-vulnerabilities-is-now-generally-available",
+    "title": "AWS Continuum for code vulnerabilities is now generally available",
+    "excerpt": "AWS Continuum for code vulnerabilities is a new security service that uses AI to automatically find, validate, and prioritize code vulnerabilities in your environment, then delivers ready-to-review fixes as pull requests replacing what previously took hours of manual investigation and days of cross-",
+    "publishedAt": "2026-10-22T20:33:10.000Z",
+    "sourceId": "aws-news",
+    "sourceName": "AWS News Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/aws/feed/",
+    "fetchedAt": "2026-10-25T14:19:46.283Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 6453,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "AWS Continuum for code vulnerabilities is a new security service that uses AI to automatically find, validate, and prioritize code vulnerabilities in your environment, then delivers ready-to-review fixes as pull requests replacing what previously took hours of manual investigation and days of cross-",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-continuum-for-code-vulnerabilities-is-now-generally-available/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-10-22T20:33:10.000Z",
+        "checkedAt": "2026-10-25T00:17:05.336Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "AWS Continuum for code vulnerabilities is now generally available | AWS News Blog",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-continuum-for-code-vulnerabilities-is-now-generally-available/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-10-22T20:33:10.000Z",
+        "checkedAt": "2026-10-25T00:17:05.336Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "AWS Continuum for code vulnerabilities is now generally available",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-continuum-for-code-vulnerabilities-is-now-generally-available/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-10-22T20:33:10.000Z",
+        "checkedAt": "2026-10-25T00:17:05.336Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Today, we’re announcing the general availability of AWS Continuum for code vulnerabilities .",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-continuum-for-code-vulnerabilities-is-now-generally-available/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-10-22T20:33:10.000Z",
+        "checkedAt": "2026-10-25T00:17:05.336Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "AWS Continuum is a security service that finds and validates code vulnerabilities, then delivers fixes as patches you can automate or as pull requests in your repositories.",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-continuum-for-code-vulnerabilities-is-now-generally-available/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-10-22T20:33:10.000Z",
+        "checkedAt": "2026-10-25T00:17:05.336Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "AWS Continuum for code vulnerabilities confirms which findings are exploitable in your environment, ranks the resulting issues by business impact, and proposes a fix for each one.",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-continuum-for-code-vulnerabilities-is-now-generally-available/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-10-22T20:33:10.000Z",
+        "checkedAt": "2026-10-25T00:17:05.336Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "AWS Continuum for code vulnerabilities in action",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-continuum-for-code-vulnerabilities-is-now-generally-available/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-10-22T20:33:10.000Z",
+        "checkedAt": "2026-10-25T00:17:05.336Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "To show how this works, I open AWS Continuum in the console and go to Code vulnerabilities .",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-continuum-for-code-vulnerabilities-is-now-generally-available/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-10-22T20:33:10.000Z",
+        "checkedAt": "2026-10-25T00:17:05.336Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "An Amazon S3 source has a couple of prerequisites: the bucket sits in the same account and AWS Region where I turn on AWS Continuum, and I grant access through an AWS Identity and Access Management (IAM) role that AWS Continuum assumes.",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-continuum-for-code-vulnerabilities-is-now-generally-available/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-10-22T20:33:10.000Z",
+        "checkedAt": "2026-10-25T00:17:05.336Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "I can optionally add AWS infrastructure context by setting up an AWS Continuum collector in the account and Region where my code runs and authorizing my environment to use it.",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-continuum-for-code-vulnerabilities-is-now-generally-available/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-10-22T20:33:10.000Z",
+        "checkedAt": "2026-10-25T00:17:05.336Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "The Configuration tab is where I manage the environment: the code and context sources it reads from, its code integrations, environment settings such as whether Continuum creates remediation patches, and the AWS collectors it uses for AWS context.",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-continuum-for-code-vulnerabilities-is-now-generally-available/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-10-22T20:33:10.000Z",
+        "checkedAt": "2026-10-25T00:17:05.336Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "AWS Continuum for code vulnerabilities is available today in US East (N.",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-continuum-for-code-vulnerabilities-is-now-generally-available/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-10-22T20:33:10.000Z",
+        "checkedAt": "2026-10-25T00:17:05.336Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "To learn more, visit the AWS Continuum for code vulnerabilities product page and the User Guide .",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-continuum-for-code-vulnerabilities-is-now-generally-available/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-10-22T20:33:10.000Z",
+        "checkedAt": "2026-10-25T00:17:05.336Z"
+      }
+    ],
+    "pageDate": "2026-10-22T20:33:10.000Z"
+  },
+  "score": {
+    "importance": 3,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "AVAILABILITY",
+      "SECURITY",
+      "SECURITY_MENTION"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 9,
+    "total": 9
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 AVAILABILITY·SECURITY·SECURITY_MENTION (우선순위 9)",
+    "근거 확인 통과 (확인 사실 11개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "status": "failed",
+    "error": "HTTP 503",
+    "usage": {
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "costUsd": 0,
+      "attempts": 1
+    },
+    "promptVersion": "draft-v1",
+    "at": "2026-10-25T14:20:56.973Z",
+    "evidenceHash": "8d4692680859"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": true,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}
