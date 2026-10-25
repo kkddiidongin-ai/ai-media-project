@@ -1,0 +1,221 @@
+{
+  "id": "8ed037559253",
+  "date": "2026-10-25",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "NVIDIA Transforms European Retail, From Digital Discovery to Physical Operations",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "NVIDIA",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://blogs.nvidia.com/blog/european-retail-open-models-robotics/",
+      "name": "NVIDIA Blog",
+      "type": "official",
+      "publishedAt": "2026-10-22T05:00:23.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "8ed037559253",
+    "url": "https://blogs.nvidia.com/blog/european-retail-open-models-robotics/",
+    "canonicalUrl": "https://blogs.nvidia.com/blog/european-retail-open-models-robotics",
+    "title": "NVIDIA Transforms European Retail, From Digital Discovery to Physical Operations",
+    "excerpt": "European retailers are using open models and physical intelligence across use cases — from a commerce platform cutting inference costs by 90% to to a fulfillment center where collaboration of different robotic fleets is simulated inside a digital twin. Frontier Results With Open Models Retail leader",
+    "publishedAt": "2026-10-22T05:00:23.000Z",
+    "sourceId": "nvidia",
+    "sourceName": "NVIDIA Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://blogs.nvidia.com/feed/",
+    "fetchedAt": "2026-10-25T14:19:46.283Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 6430,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "European retailers are using open models and physical intelligence across use cases — from a commerce platform cutting inference costs by 90% to to a fulfillment center where collaboration of different robotic fleets is simulated inside a digital twin. Frontier Results With Open Models Retail leader",
+        "sourceUrl": "https://blogs.nvidia.com/blog/european-retail-open-models-robotics/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:23.000Z",
+        "checkedAt": "2026-10-25T14:20:52.729Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "NVIDIA Transforms European Retail, From Digital Discovery to Physical Operations | NVIDIA Blog",
+        "sourceUrl": "https://blogs.nvidia.com/blog/european-retail-open-models-robotics/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:23.000Z",
+        "checkedAt": "2026-10-25T14:20:52.729Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "European retailers are using open models and physical intelligence across use cases — from a commerce platform cutting inference costs by 90% to to a fulfillment center where collaboration of different robotic fleets is simulated inside a digital twin.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/european-retail-open-models-robotics/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:23.000Z",
+        "checkedAt": "2026-10-25T14:20:52.729Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Retail leaders and technology companies across Europe are using NVIDIA-accelerated open and frontier models to advance agentic commerce, digital product discovery and retail R&D.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/european-retail-open-models-robotics/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:23.000Z",
+        "checkedAt": "2026-10-25T14:20:52.729Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Shopify has post-trained NVIDIA Nemotron 3.5 Lightning for the GraphQL subagent integrated into Sidekick, Shopify’s AI assistant for merchants.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/european-retail-open-models-robotics/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:23.000Z",
+        "checkedAt": "2026-10-25T14:20:52.729Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Beyond Sidekick, NVIDIA CCluster vLLM inference optimization software helped Shopify achieve 4.5x faster performance and up to 12x lower inference cost across five additional use cases: catalog enrichment, merchant assistant, e-commerce shopping simulation, product taxonomy cl…",
+        "sourceUrl": "https://blogs.nvidia.com/blog/european-retail-open-models-robotics/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:23.000Z",
+        "checkedAt": "2026-10-25T14:20:52.729Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "A production ready prototype deployed inside Zooplus ’ Amazon Web Services (AWS) environment achieved 86% search accuracy using the NVIDIA Nemotron Retriever library for semantic search and the NVIDIA Blueprint for retail catalog enrichment for generated, search-ready product …",
+        "sourceUrl": "https://blogs.nvidia.com/blog/european-retail-open-models-robotics/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:23.000Z",
+        "checkedAt": "2026-10-25T14:20:52.729Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Integrated with the NVIDIA ALCHEMI Toolkit and powered by NVIDIA accelerated computing, OrbMol-v2 is five times faster than comparable models and delivers 21% lower error than the next-best model of its kind.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/european-retail-open-models-robotics/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:23.000Z",
+        "checkedAt": "2026-10-25T14:20:52.729Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "NVIDIA physical AI, digital twins and open models help simulate retail environments, automate warehouse operations and deliver virtual try-on experiences for European retailers and fashion brands.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/european-retail-open-models-robotics/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:23.000Z",
+        "checkedAt": "2026-10-25T14:20:52.729Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "ALLSIDES launched its 3D Digital Twin Factory: an automated pipeline that transforms physical objects into SimReady 3D digital twins in minutes, capturing sub-millimeter geometric accuracy, measured physical properties and fully relightable materials that maintain accuracy und…",
+        "sourceUrl": "https://blogs.nvidia.com/blog/european-retail-open-models-robotics/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:23.000Z",
+        "checkedAt": "2026-10-25T14:20:52.729Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "The company launched PredictiveFit, extending physics-based virtual try-on to retailers, as well as CASI, a personal fashion agent that shops, styles and sizes for customers over WhatsApp, powered by open weight models including NVIDIA Nemotron 3, built on NVIDIA Omniverse and…",
+        "sourceUrl": "https://blogs.nvidia.com/blog/european-retail-open-models-robotics/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:23.000Z",
+        "checkedAt": "2026-10-25T14:20:52.729Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "At GTC Berlin, Nebius is showcasing three NVIDIA Blueprints for retail , all available in early access and running on Nebius infrastructure, accelerated by NVIDIA:",
+        "sourceUrl": "https://blogs.nvidia.com/blog/european-retail-open-models-robotics/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:23.000Z",
+        "checkedAt": "2026-10-25T14:20:52.729Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "NVIDIA Transforms European Retail, From Digital Discovery to Physical Operations",
+        "sourceUrl": "https://blogs.nvidia.com/blog/european-retail-open-models-robotics/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:23.000Z",
+        "checkedAt": "2026-10-25T14:20:52.729Z"
+      }
+    ],
+    "pageDate": "2026-10-22T05:00:23.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "MODEL_MENTION"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 MODEL_MENTION (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

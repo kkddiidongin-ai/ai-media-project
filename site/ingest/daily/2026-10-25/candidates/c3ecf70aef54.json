@@ -1,0 +1,221 @@
+{
+  "id": "c3ecf70aef54",
+  "date": "2026-10-25",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "NVIDIA Cosmos Opens New Tools to Train, Evaluate and Deploy World Models",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "NVIDIA",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://blogs.nvidia.com/blog/cosmos-open-train-evaluate-deploy-world-models/",
+      "name": "NVIDIA Blog",
+      "type": "official",
+      "publishedAt": "2026-10-22T05:00:27.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "c3ecf70aef54",
+    "url": "https://blogs.nvidia.com/blog/cosmos-open-train-evaluate-deploy-world-models/",
+    "canonicalUrl": "https://blogs.nvidia.com/blog/cosmos-open-train-evaluate-deploy-world-models",
+    "title": "NVIDIA Cosmos Opens New Tools to Train, Evaluate and Deploy World Models",
+    "excerpt": "To help developers rapidly build world models, which help physical AI systems understand and simulate the real world, NVIDIA has expanded the Cosmos platform with new training tools, simulation checkpoints and Cosmos Data Factory blueprints. Ranking top five on six different open models leaderboards",
+    "publishedAt": "2026-10-22T05:00:27.000Z",
+    "sourceId": "nvidia",
+    "sourceName": "NVIDIA Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://blogs.nvidia.com/feed/",
+    "fetchedAt": "2026-10-25T14:19:46.283Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 5362,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "To help developers rapidly build world models, which help physical AI systems understand and simulate the real world, NVIDIA has expanded the Cosmos platform with new training tools, simulation checkpoints and Cosmos Data Factory blueprints. Ranking top five on six different open models leaderboards",
+        "sourceUrl": "https://blogs.nvidia.com/blog/cosmos-open-train-evaluate-deploy-world-models/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:27.000Z",
+        "checkedAt": "2026-10-25T14:20:50.295Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "NVIDIA Cosmos Opens New Tools to Train, Evaluate and Deploy World Models | NVIDIA Blog",
+        "sourceUrl": "https://blogs.nvidia.com/blog/cosmos-open-train-evaluate-deploy-world-models/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:27.000Z",
+        "checkedAt": "2026-10-25T14:20:50.295Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "To help developers rapidly build world models , which help physical AI systems understand and simulate the real world, NVIDIA has expanded the Cosmos platform with new training tools, simulation checkpoints and Cosmos Data Factory blueprints.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/cosmos-open-train-evaluate-deploy-world-models/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:27.000Z",
+        "checkedAt": "2026-10-25T14:20:50.295Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Ranking top five on six different open models leaderboards, the NVIDIA Cosmos platform gives world model builders the frontier open models — as well as data, training and optimization tools and recipes — to scale training data, adapt models, test behavior and optimize for perf…",
+        "sourceUrl": "https://blogs.nvidia.com/blog/cosmos-open-train-evaluate-deploy-world-models/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:27.000Z",
+        "checkedAt": "2026-10-25T14:20:50.295Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "ANYbotics generated over 1,500 synthetic video clips with Cosmos Data Factory blueprints, curating real-world data and validating outputs with Encord’s platform, to train its industrial-inspection robots to recognize liquid spills and other changes between facility visits.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/cosmos-open-train-evaluate-deploy-world-models/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:27.000Z",
+        "checkedAt": "2026-10-25T14:20:50.295Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "At GTC Berlin, NVIDIA extended Cosmos Framework training, optimization and deployment tools and recipes as agent skills to more open models, along with Cosmos 3, giving world model builders a faster path from experimentation to deployment.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/cosmos-open-train-evaluate-deploy-world-models/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:27.000Z",
+        "checkedAt": "2026-10-25T14:20:50.295Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Developers and agents can now adapt open models like GR00T , Alpamayo , QWEN, Pi0.5 and other compatible Hugging Face models through fine-tuning and reinforcement learning, optimize the model with distillation and quantization, and deploy with high-performing inference.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/cosmos-open-train-evaluate-deploy-world-models/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:27.000Z",
+        "checkedAt": "2026-10-25T14:20:50.295Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "To develop a world model specialized for egocentric manipulation, robotics research lab MicroAGI post-trained Cosmos 3 on videos of humans manipulating objects and distilled its 32-billion-parameter reasoner down to an 8-billion-parameter Nano model with no loss in accuracy.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/cosmos-open-train-evaluate-deploy-world-models/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:27.000Z",
+        "checkedAt": "2026-10-25T14:20:50.295Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Developers can label data and post-train Cosmos 3 on Roboflow for their specific environments and tasks, then deploy those models to RoboFlow hosted or on-premises NVIDIA GPUs to bring video reasoning into factories and warehouses.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/cosmos-open-train-evaluate-deploy-world-models/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:27.000Z",
+        "checkedAt": "2026-10-25T14:20:50.295Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Developers can deploy core Cosmos models using updated NVIDIA Cosmos 3 NIM microservices, which deliver up to 2x faster inference with no quality loss in validated configurations, while continuous video analysis enables sub-second alerts.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/cosmos-open-train-evaluate-deploy-world-models/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:27.000Z",
+        "checkedAt": "2026-10-25T14:20:50.295Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Developers can use Cosmos Data Factory to generate training datasets, Cosmos Framework to train and adapt world models, then deploy supported Cosmos models through NIM microservices .",
+        "sourceUrl": "https://blogs.nvidia.com/blog/cosmos-open-train-evaluate-deploy-world-models/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:27.000Z",
+        "checkedAt": "2026-10-25T14:20:50.295Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "NVIDIA Cosmos Opens New Tools to Train, Evaluate and Deploy World Models",
+        "sourceUrl": "https://blogs.nvidia.com/blog/cosmos-open-train-evaluate-deploy-world-models/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:27.000Z",
+        "checkedAt": "2026-10-25T14:20:50.295Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Pioneers Across Europe Deploy NVIDIA Earth-2 Open Models to Power Real-World Weather and Climate Prediction",
+        "sourceUrl": "https://blogs.nvidia.com/blog/cosmos-open-train-evaluate-deploy-world-models/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T05:00:27.000Z",
+        "checkedAt": "2026-10-25T14:20:50.295Z"
+      }
+    ],
+    "pageDate": "2026-10-22T05:00:27.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "MODEL_MENTION"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 MODEL_MENTION (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

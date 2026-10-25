@@ -1,0 +1,221 @@
+{
+  "id": "4b2a7795a5b5",
+  "date": "2026-10-25",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Scaling NVIDIA TensorRT Performance Optimization Beyond a Single Build Route with the Global Performance Tuner, Part 1",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "NVIDIA",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://developer.nvidia.com/blog/scaling-nvidia-tensorrt-performance-optimization-beyond-a-single-build-route-with-the-global-performance-tuner-part-1/",
+      "name": "NVIDIA Technical Blog",
+      "type": "official",
+      "publishedAt": "2026-10-23T17:27:35.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "4b2a7795a5b5",
+    "url": "https://developer.nvidia.com/blog/scaling-nvidia-tensorrt-performance-optimization-beyond-a-single-build-route-with-the-global-performance-tuner-part-1/",
+    "canonicalUrl": "https://developer.nvidia.com/blog/scaling-nvidia-tensorrt-performance-optimization-beyond-a-single-build-route-with-the-global-performance-tuner-part-1",
+    "title": "Scaling NVIDIA TensorRT Performance Optimization Beyond a Single Build Route with the Global Performance Tuner, Part 1",
+    "excerpt": "Deploying a trained neural network involves more than translating each operator into a GPU kernel. It is a compilation problem with many legitimate answers. For...",
+    "publishedAt": "2026-10-23T17:27:35.000Z",
+    "sourceId": "nvidia-developer",
+    "sourceName": "NVIDIA Technical Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://developer.nvidia.com/blog/feed",
+    "fetchedAt": "2026-10-25T14:19:46.283Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 16103,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Deploying a trained neural network involves more than translating each operator into a GPU kernel. It is a compilation problem with many legitimate answers. For...",
+        "sourceUrl": "https://developer.nvidia.com/blog/scaling-nvidia-tensorrt-performance-optimization-beyond-a-single-build-route-with-the-global-performance-tuner-part-1/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-23T17:27:35.000Z",
+        "checkedAt": "2026-10-25T14:20:55.210Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Scaling NVIDIA TensorRT Performance Optimization Beyond a Single Build Route with the Global Performance Tuner, Part 1 | NVIDIA Technical Blog",
+        "sourceUrl": "https://developer.nvidia.com/blog/scaling-nvidia-tensorrt-performance-optimization-beyond-a-single-build-route-with-the-global-performance-tuner-part-1/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-23T17:27:35.000Z",
+        "checkedAt": "2026-10-25T14:20:55.210Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Scaling NVIDIA TensorRT Performance Optimization Beyond a Single Build Route with the Global Performance Tuner, Part 1",
+        "sourceUrl": "https://developer.nvidia.com/blog/scaling-nvidia-tensorrt-performance-optimization-beyond-a-single-build-route-with-the-global-performance-tuner-part-1/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-23T17:27:35.000Z",
+        "checkedAt": "2026-10-25T14:20:55.210Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "The Global Performance Tuner, released in TensorRT 11.1 , introduces customizable build routes that expand the solution space and validate each candidate against end-to-end accuracy and performance.",
+        "sourceUrl": "https://developer.nvidia.com/blog/scaling-nvidia-tensorrt-performance-optimization-beyond-a-single-build-route-with-the-global-performance-tuner-part-1/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-23T17:27:35.000Z",
+        "checkedAt": "2026-10-25T14:20:55.210Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Read the Global Performance Tuner documentation to understand the feature and its configuration options.",
+        "sourceUrl": "https://developer.nvidia.com/blog/scaling-nvidia-tensorrt-performance-optimization-beyond-a-single-build-route-with-the-global-performance-tuner-part-1/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-23T17:27:35.000Z",
+        "checkedAt": "2026-10-25T14:20:55.210Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Read Part 2 of this series for the algorithm and architecture design plus best practices.",
+        "sourceUrl": "https://developer.nvidia.com/blog/scaling-nvidia-tensorrt-performance-optimization-beyond-a-single-build-route-with-the-global-performance-tuner-part-1/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-23T17:27:35.000Z",
+        "checkedAt": "2026-10-25T14:20:55.210Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "This post is Part 1 of a two-part series that is intended to develop a clearer way of reasoning about performance optimization.",
+        "sourceUrl": "https://developer.nvidia.com/blog/scaling-nvidia-tensorrt-performance-optimization-beyond-a-single-build-route-with-the-global-performance-tuner-part-1/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-23T17:27:35.000Z",
+        "checkedAt": "2026-10-25T14:20:55.210Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "It introduces the Global Performance Tuner , a feature for automatic performance tuning released in TensorRT 11.1 , and explores these questions through an intuitive example and mathematical framework.",
+        "sourceUrl": "https://developer.nvidia.com/blog/scaling-nvidia-tensorrt-performance-optimization-beyond-a-single-build-route-with-the-global-performance-tuner-part-1/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-23T17:27:35.000Z",
+        "checkedAt": "2026-10-25T14:20:55.210Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "The following analogy illustrates the motivation for building the Global Performance Tuner feature in TensorRT.",
+        "sourceUrl": "https://developer.nvidia.com/blog/scaling-nvidia-tensorrt-performance-optimization-beyond-a-single-build-route-with-the-global-performance-tuner-part-1/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-23T17:27:35.000Z",
+        "checkedAt": "2026-10-25T14:20:55.210Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "The Global Performance Tuner begins with the idea of customizable build routes.",
+        "sourceUrl": "https://developer.nvidia.com/blog/scaling-nvidia-tensorrt-performance-optimization-beyond-a-single-build-route-with-the-global-performance-tuner-part-1/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-23T17:27:35.000Z",
+        "checkedAt": "2026-10-25T14:20:55.210Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "To learn more, check out the Global Performance Tuner documentation and read Part 2 of this series, which describes the algorithm and architecture design of the Global Performance Tuner and best practices for using it.",
+        "sourceUrl": "https://developer.nvidia.com/blog/scaling-nvidia-tensorrt-performance-optimization-beyond-a-single-build-route-with-the-global-performance-tuner-part-1/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-23T17:27:35.000Z",
+        "checkedAt": "2026-10-25T14:20:55.210Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "His work includes performance analysis and optimization for deep learning compilers, new performance scheduling technique research, and LLM inference performance improvement.",
+        "sourceUrl": "https://developer.nvidia.com/blog/scaling-nvidia-tensorrt-performance-optimization-beyond-a-single-build-route-with-the-global-performance-tuner-part-1/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-23T17:27:35.000Z",
+        "checkedAt": "2026-10-25T14:20:55.210Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Lin Chai is a senior product manager at NVIDIA, leading TensorRT and TensorRT Edge-LLM, NVIDIA’s AI inference platforms for deep learning across datacenter and embedded platforms.",
+        "sourceUrl": "https://developer.nvidia.com/blog/scaling-nvidia-tensorrt-performance-optimization-beyond-a-single-build-route-with-the-global-performance-tuner-part-1/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-23T17:27:35.000Z",
+        "checkedAt": "2026-10-25T14:20:55.210Z"
+      }
+    ],
+    "pageDate": "2026-10-23T17:27:35.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "INFRA"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 INFRA (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}
