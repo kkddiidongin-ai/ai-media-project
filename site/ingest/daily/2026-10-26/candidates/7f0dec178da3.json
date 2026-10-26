@@ -1,0 +1,221 @@
+{
+  "id": "7f0dec178da3",
+  "date": "2026-10-26",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "How Bayer Crop Science built an agentic decision engine on Amazon Bedrock AgentCore with AWS Unified Operations",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-bayer-crop-science-built-an-agentic-decision-engine-on-amazon-bedrock-agentcore-with-aws-unified-operations/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-10-23T16:21:36.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "7f0dec178da3",
+    "url": "https://aws.amazon.com/blogs/machine-learning/how-bayer-crop-science-built-an-agentic-decision-engine-on-amazon-bedrock-agentcore-with-aws-unified-operations/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/how-bayer-crop-science-built-an-agentic-decision-engine-on-amazon-bedrock-agentcore-with-aws-unified-operations",
+    "title": "How Bayer Crop Science built an agentic decision engine on Amazon Bedrock AgentCore with AWS Unified Operations",
+    "excerpt": "Bayer Crop Science built the Agentic Decision Engine (ADE), a multi-agent platform on Amazon Bedrock AgentCore that lets breeders, analysts, and researchers ask natural language questions about their analytics platform. This post covers the ADE architecture, five design decisions, and how the team p",
+    "publishedAt": "2026-10-23T16:21:36.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-10-26T00:10:28.462Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 14945,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Bayer Crop Science built the Agentic Decision Engine (ADE), a multi-agent platform on Amazon Bedrock AgentCore that lets breeders, analysts, and researchers ask natural language questions about their analytics platform. This post covers the ADE architecture, five design decisions, and how the team p",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-bayer-crop-science-built-an-agentic-decision-engine-on-amazon-bedrock-agentcore-with-aws-unified-operations/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-23T16:21:36.000Z",
+        "checkedAt": "2026-10-26T00:12:04.306Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "How Bayer Crop Science built an agentic decision engine on Amazon Bedrock AgentCore with AWS Unified Operations | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-bayer-crop-science-built-an-agentic-decision-engine-on-amazon-bedrock-agentcore-with-aws-unified-operations/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-23T16:21:36.000Z",
+        "checkedAt": "2026-10-26T00:12:04.306Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "How Bayer Crop Science built an agentic decision engine on Amazon Bedrock AgentCore with AWS Unified Operations",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-bayer-crop-science-built-an-agentic-decision-engine-on-amazon-bedrock-agentcore-with-aws-unified-operations/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-23T16:21:36.000Z",
+        "checkedAt": "2026-10-26T00:12:04.306Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "To close that gap, Bayer built the Agentic Decision Engine (ADE), a multi-agent, natural language interface over CDE.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-bayer-crop-science-built-an-agentic-decision-engine-on-amazon-bedrock-agentcore-with-aws-unified-operations/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-23T16:21:36.000Z",
+        "checkedAt": "2026-10-26T00:12:04.306Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Three AgentCore capabilities drove that choice: a managed runtime that isolates each user session, AWS Identity and Access Management (IAM)-scoped tool access through AgentCore Gateway, a capability of Amazon Bedrock AgentCore, that keeps authentication and authorization outsi…",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-bayer-crop-science-built-an-agentic-decision-engine-on-amazon-bedrock-agentcore-with-aws-unified-operations/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-23T16:21:36.000Z",
+        "checkedAt": "2026-10-26T00:12:04.306Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "To prepare for launch and to operate ADE afterward, Bayer engaged AWS Unified Operations .",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-bayer-crop-science-built-an-agentic-decision-engine-on-amazon-bedrock-agentcore-with-aws-unified-operations/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-23T16:21:36.000Z",
+        "checkedAt": "2026-10-26T00:12:04.306Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "GitHub Actions builds the agent container images, pushes them to Amazon Elastic Container Registry (Amazon ECR) , and deploys them to AgentCore runtime, a capability of Amazon Bedrock AgentCore.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-bayer-crop-science-built-an-agentic-decision-engine-on-amazon-bedrock-agentcore-with-aws-unified-operations/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-23T16:21:36.000Z",
+        "checkedAt": "2026-10-26T00:12:04.306Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Domain content in Amazon Simple Storage Service (Amazon S3) is embedded with Amazon Titan Text Embeddings V2 and indexed in Amazon OpenSearch Serverless for Retrieval Augmented Generation (RAG).",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-bayer-crop-science-built-an-agentic-decision-engine-on-amazon-bedrock-agentcore-with-aws-unified-operations/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-23T16:21:36.000Z",
+        "checkedAt": "2026-10-26T00:12:04.306Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Figure 1: Agentic Decision Engine architecture on Amazon Bedrock AgentCore",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-bayer-crop-science-built-an-agentic-decision-engine-on-amazon-bedrock-agentcore-with-aws-unified-operations/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-23T16:21:36.000Z",
+        "checkedAt": "2026-10-26T00:12:04.306Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "The agent generates on-demand charts with matplotlib and Plotly in AgentCore Code Interpreter, a capability of Amazon Bedrock AgentCore that provides a sandboxed code execution environment, and exchanges data with it through Amazon S3.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-bayer-crop-science-built-an-agentic-decision-engine-on-amazon-bedrock-agentcore-with-aws-unified-operations/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-23T16:21:36.000Z",
+        "checkedAt": "2026-10-26T00:12:04.306Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "By launch, the team had tracked 35 blockers to resolution with Unified Operations.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-bayer-crop-science-built-an-agentic-decision-engine-on-amazon-bedrock-agentcore-with-aws-unified-operations/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-23T16:21:36.000Z",
+        "checkedAt": "2026-10-26T00:12:04.306Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Since launch, more than 100 users across Bayer Crop Science have used ADE, including breeders, analysts, researchers, data scientists, and engineers.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-bayer-crop-science-built-an-agentic-decision-engine-on-amazon-bedrock-agentcore-with-aws-unified-operations/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-23T16:21:36.000Z",
+        "checkedAt": "2026-10-26T00:12:04.306Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "To learn more, explore Amazon Bedrock AgentCore , Amazon Bedrock cost attribution , AWS Well-Architected Generative AI guidance , and AWS Unified Operations .",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-bayer-crop-science-built-an-agentic-decision-engine-on-amazon-bedrock-agentcore-with-aws-unified-operations/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-23T16:21:36.000Z",
+        "checkedAt": "2026-10-26T00:12:04.306Z"
+      }
+    ],
+    "pageDate": "2026-10-23T16:21:36.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "API_PLATFORM"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 API_PLATFORM (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

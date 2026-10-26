@@ -1,0 +1,233 @@
+{
+  "id": "82603c5be230",
+  "date": "2026-10-26",
+  "proposedSlug": "nvidia-confidential-computing-expands-enabling-frontier-mode",
+  "title": null,
+  "sourceTitle": "NVIDIA Confidential Computing Expands, Enabling Frontier Model Builders to Securely Scale Across Global Infrastructure",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": true,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": true
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact"
+    ]
+  },
+  "company": "NVIDIA",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://blogs.nvidia.com/blog/confidential-computing-model-builders-infrastructure/",
+      "name": "NVIDIA Blog",
+      "type": "official",
+      "publishedAt": "2026-10-21T10:30:02.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "82603c5be230",
+    "url": "https://blogs.nvidia.com/blog/confidential-computing-model-builders-infrastructure/",
+    "canonicalUrl": "https://blogs.nvidia.com/blog/confidential-computing-model-builders-infrastructure",
+    "title": "NVIDIA Confidential Computing Expands, Enabling Frontier Model Builders to Securely Scale Across Global Infrastructure",
+    "excerpt": "NVIDIA builds tools to enable safe agents across the stack. The NVIDIA OpenShell Reference Architecture, announced today, is part of NVIDIA’s growing portfolio of technologies that enables organizations to safely deploy agents at scale. NVIDIA Confidential Computing is the infrastructure layer that ",
+    "publishedAt": "2026-10-21T10:30:02.000Z",
+    "sourceId": "nvidia",
+    "sourceName": "NVIDIA Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://blogs.nvidia.com/feed/",
+    "fetchedAt": "2026-10-24T13:59:12.250Z",
+    "fromQueue": "draft"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 4177,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "NVIDIA builds tools to enable safe agents across the stack. The NVIDIA OpenShell Reference Architecture, announced today, is part of NVIDIA’s growing portfolio of technologies that enables organizations to safely deploy agents at scale. NVIDIA Confidential Computing is the infrastructure layer that ",
+        "sourceUrl": "https://blogs.nvidia.com/blog/confidential-computing-model-builders-infrastructure/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:30:02.000Z",
+        "checkedAt": "2026-10-26T00:12:00.519Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "NVIDIA Confidential Computing Expands to Securely Scale Global Infrastructure | NVIDIA Blog",
+        "sourceUrl": "https://blogs.nvidia.com/blog/confidential-computing-model-builders-infrastructure/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:30:02.000Z",
+        "checkedAt": "2026-10-26T00:12:00.519Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "NVIDIA Confidential Computing is the infrastructure layer that protects the models and data those agents depend on while running.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/confidential-computing-model-builders-infrastructure/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:30:02.000Z",
+        "checkedAt": "2026-10-26T00:12:00.519Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Today, NVIDIA is expanding that layer with Confidential Bare Metal, a new deployment option with NVIDIA Confidential Computing that enables frontier model builders to run sensitive workloads on dedicated third-party infrastructure while retaining control of their models and data.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/confidential-computing-model-builders-infrastructure/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:30:02.000Z",
+        "checkedAt": "2026-10-26T00:12:00.519Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "These new controls let frontier model builders use bare-metal instances to own and operate their bespoke software stack, including host and platform infrastructure software, when operating on NVIDIA accelerated computing infrastructure across third-party cloud, neocloud and en…",
+        "sourceUrl": "https://blogs.nvidia.com/blog/confidential-computing-model-builders-infrastructure/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:30:02.000Z",
+        "checkedAt": "2026-10-26T00:12:00.519Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "NVIDIA Confidential Computing is also expanding across NVIDIA Grace Blackwell and Rubin systems and will integrate with NVIDIA DSX OS as a reference architecture for cloud providers building AI factories.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/confidential-computing-model-builders-infrastructure/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:30:02.000Z",
+        "checkedAt": "2026-10-26T00:12:00.519Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Cohere plans to integrate Confidential Bare Metal into Cohere Model Vault, using NVIDIA Confidential Computing trusted execution environments to extend hardware-rooted security directly to the GPU — protecting models and data in memory and across interconnects during execution.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/confidential-computing-model-builders-infrastructure/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:30:02.000Z",
+        "checkedAt": "2026-10-26T00:12:00.519Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "“With NVIDIA Confidential Computing in Cohere Model Vault, we’re extending hardware-rooted security directly to the GPU, protecting customer data in memory and across interconnects during execution.”",
+        "sourceUrl": "https://blogs.nvidia.com/blog/confidential-computing-model-builders-infrastructure/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:30:02.000Z",
+        "checkedAt": "2026-10-26T00:12:00.519Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Google Cloud is extending support for Confidential Bare Metal to A4X Max instances powered by NVIDIA GB300 NVL72 systems.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/confidential-computing-model-builders-infrastructure/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:30:02.000Z",
+        "checkedAt": "2026-10-26T00:12:00.519Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Our A4X instances, built using NVIDIA Confidential Computing, preserve the privacy of user data, protect model IP, provide top-line serving performance,” said Andrés Lagar-Cavilla, distinguished engineer and AI infrastructure security lead at Google Cloud.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/confidential-computing-model-builders-infrastructure/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:30:02.000Z",
+        "checkedAt": "2026-10-26T00:12:00.519Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Confidential Computing Expands Across the NVIDIA Platform",
+        "sourceUrl": "https://blogs.nvidia.com/blog/confidential-computing-model-builders-infrastructure/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:30:02.000Z",
+        "checkedAt": "2026-10-26T00:12:00.519Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Support now extends to NVIDIA Grace Blackwell NVL72 — bringing Confidential Computing to NVL72 rack-scale systems — as well as x86-based NVIDIA HGX Rubin NVL8 and NVIDIA DGX Rubin NVL8 systems.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/confidential-computing-model-builders-infrastructure/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:30:02.000Z",
+        "checkedAt": "2026-10-26T00:12:00.519Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "NVIDIA DSX OS will support all NVIDIA Confidential Computing modes, giving cloud providers a software foundation for building and operating AI factories that support confidential workloads.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/confidential-computing-model-builders-infrastructure/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:30:02.000Z",
+        "checkedAt": "2026-10-26T00:12:00.519Z"
+      }
+    ],
+    "pageDate": "2026-10-21T10:30:02.000Z"
+  },
+  "score": {
+    "importance": 2,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "MODEL_MENTION",
+      "INFRA"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 6,
+    "total": 6
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 MODEL_MENTION·INFRA (우선순위 6)",
+    "근거 확인 통과 (확인 사실 11개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "status": "skipped",
+    "error": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성",
+    "promptVersion": "draft-v1",
+    "at": "2026-10-26T00:16:09.222Z",
+    "evidenceHash": "318b93e052e1"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}
