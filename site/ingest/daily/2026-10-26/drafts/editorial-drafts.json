@@ -1,0 +1,95 @@
+{
+  "version": 2,
+  "generatedAt": "2026-10-26T00:16:12.199Z",
+  "status": "draft_for_editor_review",
+  "source": "2026-10-26",
+  "drafts": [
+    {
+      "rank": 1,
+      "verdict": "PUBLISHABLE",
+      "handsOn": false,
+      "relatedStory": null,
+      "story": {
+        "slug": "easier-way-customize-gemini-works-you",
+        "title": "구글, 제미나이 앱에 '맞춤설정' 통합 허브 도입",
+        "summary": "구글이 제미나이 앱에서 응답 방식과 외부 도구 연결을 한곳에서 관리할 수 있는 맞춤설정 허브를 공개했습니다. 40개 이상의 외부 서비스 연동과 개인 스타일 맞춤 스킬 관리를 지원합니다.",
+        "category": "PRODUCT_UPDATE",
+        "topics": [
+          "google",
+          "gemini",
+          "ai-work"
+        ],
+        "companies": [
+          "Google"
+        ],
+        "products": [
+          "Gemini",
+          "Google Workspace"
+        ],
+        "facts": [
+          "구글이 제미나이(Gemini) 앱에 응답 방식과 도구 연동을 한곳에서 조정할 수 있는 통합 맞춤설정(Customize) 허브를 도입했습니다.",
+          "사용자는 개인 작성 스타일 반영이나 특정 서식 준수 같은 스킬을 추가하고 구글 앱 외에도 40개 이상의 외부 서비스를 연결할 수 있습니다.",
+          "맞춤설정 메뉴는 웹, 모바일, Windows 및 macOS 데스크톱 앱 전반에서 모든 사용자 계층을 대상으로 전 세계에 배포됩니다.",
+          "워크스페이스 관리자는 관리 콘솔(Admin console)의 앱 메뉴에서 제미나이용 연결 앱과 서드파티 도구 통합을 검토하고 관리할 수 있습니다."
+        ],
+        "whyItMatters": "개별적으로 나뉘어 있던 맞춤 스킬과 연결 앱 기능을 단일 인터페이스로 묶어, 사용자가 반복 업무 자동화 설정을 더 쉽게 찾고 관리할 수 있도록 설계했습니다.",
+        "whatChanges": "제미나이 웹, 모바일, 데스크톱 앱의 왼쪽 탐색 메뉴에서 'Customize'를 선택해 직접 스킬을 추가하고 연결 서비스를 설정할 수 있습니다.",
+        "priority": 2,
+        "secondarySources": [],
+        "editorialDepth": "standard",
+        "eventDate": "2026-10-21",
+        "publishedAt": null,
+        "sourceType": "official",
+        "sourceName": "Google Workspace Updates",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/an-easier-way-to-customize-how-gemini-works-for-you.html",
+        "sourcePublishedAt": "2026-10-21T15:31:29.540Z",
+        "sourceTitle": "An easier way to customize how Gemini works for you",
+        "contentType": "NEWS",
+        "status": "draft"
+      },
+      "evidence": [
+        {
+          "fact": 1,
+          "url": "https://workspaceupdates.googleblog.com/2026/10/an-easier-way-to-customize-how-gemini-works-for-you.html",
+          "quote": "We’ve introduced a centralized ”customize” hub in the Gemini app, providing a single place to tailor how Gemini responds and connects with your tools. Users can discover apps and add skills to automate repetitive workflows such as adapting to your personal writing style or adhering to specific forma … We’ve introduced a centralized ”customize” hub in the Gemini app, providing a single place to tailor how Gemini responds and connects with your tools."
+        },
+        {
+          "fact": 2,
+          "url": "https://workspaceupdates.googleblog.com/2026/10/an-easier-way-to-customize-how-gemini-works-for-you.html",
+          "quote": "Users can discover apps and add skills to automate repetitive workflows such as adapting to your personal writing style or adhering to specific formatting guidelines. … Connected apps: Add more than 40 external services, as well as Google apps."
+        },
+        {
+          "fact": 3,
+          "url": "https://workspaceupdates.googleblog.com/2026/10/an-easier-way-to-customize-how-gemini-works-for-you.html",
+          "quote": "The ”customize” menu is rolling out globally across web, mobile, and the Gemini desktop app on Windows and macOS for all user tiers."
+        },
+        {
+          "fact": 4,
+          "url": "https://workspaceupdates.googleblog.com/2026/10/an-easier-way-to-customize-how-gemini-works-for-you.html",
+          "quote": "Admins: Connected apps and third-party tool integrations for Gemini can be reviewed and managed in the Admin console under Apps > Additional Google services > Gemini ."
+        },
+        {
+          "fact": "why",
+          "url": "https://workspaceupdates.googleblog.com/2026/10/an-easier-way-to-customize-how-gemini-works-for-you.html",
+          "quote": "Users can discover apps and add skills to automate repetitive workflows such as adapting to your personal writing style or adhering to specific formatting guidelines. … Bringing custom skills and connected apps together into a unified space makes it easy to discover and manage how you customize your experience when using Gemini."
+        },
+        {
+          "fact": "change",
+          "url": "https://workspaceupdates.googleblog.com/2026/10/an-easier-way-to-customize-how-gemini-works-for-you.html",
+          "quote": "End users: In Gemini (web, mobile, or desktop app), open the left navigation menu and select Customize to add skills, explore apps, and manage connected services."
+        }
+      ],
+      "unverified": [
+        "연결 가능한 40개 이상의 외부 서비스 전체 세부 목록은 근거에 나와 있지 않습니다.",
+        "한국어 환경에서의 스킬 작동 여부나 별도 제한 사항은 근거에 명시되지 않았습니다."
+      ],
+      "generation": {
+        "provider": "gemini",
+        "model": "gemini-3.8-flash",
+        "generatedAt": "2026-10-26T00:14:59.800Z"
+      },
+      "draftQa": "PASS",
+      "reviewReasons": []
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+{
+  "id": "99c8819be3a7",
+  "date": "2026-10-26",
+  "proposedSlug": "nvidia-unveils-minerva-bring-end-end-observability",
+  "title": null,
+  "sourceTitle": "NVIDIA Unveils Minerva to Bring End-to-End Observability for AI Factories",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 12,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": true,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": true
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact"
+    ]
+  },
+  "company": "NVIDIA",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://blogs.nvidia.com/blog/minerva-platform-infrastructure/",
+      "name": "NVIDIA Blog",
+      "type": "official",
+      "publishedAt": "2026-10-22T15:00:02.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "99c8819be3a7",
+    "url": "https://blogs.nvidia.com/blog/minerva-platform-infrastructure/",
+    "canonicalUrl": "https://blogs.nvidia.com/blog/minerva-platform-infrastructure",
+    "title": "NVIDIA Unveils Minerva to Bring End-to-End Observability for AI Factories",
+    "excerpt": "Launched today, NVIDIA Minerva is an AIOps platform built to help teams find problems earlier and keep AI factories productive. It brings together telemetry from infrastructure and AI workloads, then applies purpose-built AI models to turn that data into timely, actionable insight. AI factories are ",
+    "publishedAt": "2026-10-22T15:00:02.000Z",
+    "sourceId": "nvidia",
+    "sourceName": "NVIDIA Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://blogs.nvidia.com/feed/",
+    "fetchedAt": "2026-10-25T14:19:46.283Z",
+    "fromQueue": "draft"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 3847,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Launched today, NVIDIA Minerva is an AIOps platform built to help teams find problems earlier and keep AI factories productive. It brings together telemetry from infrastructure and AI workloads, then applies purpose-built AI models to turn that data into timely, actionable insight. AI factories are ",
+        "sourceUrl": "https://blogs.nvidia.com/blog/minerva-platform-infrastructure/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T15:00:02.000Z",
+        "checkedAt": "2026-10-26T00:11:58.056Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "NVIDIA Unveils Minerva to Bring End-to-End Observability for AI Factories | NVIDIA Blog",
+        "sourceUrl": "https://blogs.nvidia.com/blog/minerva-platform-infrastructure/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T15:00:02.000Z",
+        "checkedAt": "2026-10-26T00:11:58.056Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Launched today, NVIDIA Minerva is an AIOps platform built to help teams find problems earlier and keep AI factories productive.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/minerva-platform-infrastructure/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T15:00:02.000Z",
+        "checkedAt": "2026-10-26T00:11:58.056Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "It brings together telemetry from infrastructure and AI workloads, then applies purpose-built AI models to turn that data into timely, actionable insight.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/minerva-platform-infrastructure/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T15:00:02.000Z",
+        "checkedAt": "2026-10-26T00:11:58.056Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "AI factories are among the most complex operations in the world, with vast numbers of GPUs working across high-speed networks to train models and serve AI applications.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/minerva-platform-infrastructure/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T15:00:02.000Z",
+        "checkedAt": "2026-10-26T00:11:58.056Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Minerva connects those signals across NVIDIA GPUs, networking, storage, schedulers and workloads.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/minerva-platform-infrastructure/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T15:00:02.000Z",
+        "checkedAt": "2026-10-26T00:11:58.056Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Minerva comes with a native AI assistant and connects to external agentic AI tools.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/minerva-platform-infrastructure/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T15:00:02.000Z",
+        "checkedAt": "2026-10-26T00:11:58.056Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "The ability to correlate workload and infrastructure issues along with its agentic AI capabilities help simplify AI factory operations.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/minerva-platform-infrastructure/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T15:00:02.000Z",
+        "checkedAt": "2026-10-26T00:11:58.056Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "And all of this helps AI factories maximize GPU uptime.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/minerva-platform-infrastructure/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T15:00:02.000Z",
+        "checkedAt": "2026-10-26T00:11:58.056Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Minerva delivers value for the key metrics AI factories focus on:",
+        "sourceUrl": "https://blogs.nvidia.com/blog/minerva-platform-infrastructure/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T15:00:02.000Z",
+        "checkedAt": "2026-10-26T00:11:58.056Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "IREN is among the NVIDIA partners using Minerva to optimize its AI factories.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/minerva-platform-infrastructure/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T15:00:02.000Z",
+        "checkedAt": "2026-10-26T00:11:58.056Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Joining IREN , Aolani , Bitdeer AI , IBM , Jio, Lambda , Quake AI and Tesla plan to deploy Minerva.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/minerva-platform-infrastructure/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T15:00:02.000Z",
+        "checkedAt": "2026-10-26T00:11:58.056Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Pioneers Across Europe Deploy NVIDIA Earth-2 Open Models to Power Real-World Weather and Climate Prediction",
+        "sourceUrl": "https://blogs.nvidia.com/blog/minerva-platform-infrastructure/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-22T15:00:02.000Z",
+        "checkedAt": "2026-10-26T00:11:58.056Z"
+      }
+    ],
+    "pageDate": "2026-10-22T15:00:02.000Z"
+  },
+  "score": {
+    "importance": 2,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PRODUCT_LAUNCH",
+      "INFRA"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 7,
+    "total": 7
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 PRODUCT_LAUNCH·INFRA (우선순위 7)",
+    "근거 확인 통과 (확인 사실 12개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "status": "skipped",
+    "error": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성",
+    "promptVersion": "draft-v1",
+    "at": "2026-10-26T00:16:09.222Z",
+    "evidenceHash": "0098ee056b62"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}
