@@ -1,0 +1,221 @@
+{
+  "id": "1ccfdcacfd19",
+  "date": "2026-10-10",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Manage Amazon SageMaker HyperPod Spaces directly from SageMaker Studio",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/manage-amazon-sagemaker-hyperpod-spaces-directly-from-sagemaker-studio/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-10-06T15:47:02.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "1ccfdcacfd19",
+    "url": "https://aws.amazon.com/blogs/machine-learning/manage-amazon-sagemaker-hyperpod-spaces-directly-from-sagemaker-studio/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/manage-amazon-sagemaker-hyperpod-spaces-directly-from-sagemaker-studio",
+    "title": "Manage Amazon SageMaker HyperPod Spaces directly from SageMaker Studio",
+    "excerpt": "Data scientists and ML engineers can now create, configure, start, stop, and open Amazon SageMaker Spaces on SageMaker HyperPod EKS clusters directly from SageMaker Studio. Launch JupyterLab and Code Editor environments in a few clicks, without using command-line tools.",
+    "publishedAt": "2026-10-06T15:47:02.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-10-13T06:38:31.253Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 10947,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Data scientists and ML engineers can now create, configure, start, stop, and open Amazon SageMaker Spaces on SageMaker HyperPod EKS clusters directly from SageMaker Studio. Launch JupyterLab and Code Editor environments in a few clicks, without using command-line tools.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/manage-amazon-sagemaker-hyperpod-spaces-directly-from-sagemaker-studio/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-06T15:47:02.000Z",
+        "checkedAt": "2026-10-13T06:32:25.112Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Manage Amazon SageMaker HyperPod Spaces directly from SageMaker Studio | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/manage-amazon-sagemaker-hyperpod-spaces-directly-from-sagemaker-studio/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-06T15:47:02.000Z",
+        "checkedAt": "2026-10-13T06:32:25.112Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Manage Amazon SageMaker HyperPod Spaces directly from SageMaker Studio",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/manage-amazon-sagemaker-hyperpod-spaces-directly-from-sagemaker-studio/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-06T15:47:02.000Z",
+        "checkedAt": "2026-10-13T06:32:25.112Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "We recently introduced the ability to create and manage Amazon SageMaker Spaces on Amazon SageMaker HyperPod EKS clusters directly from the Amazon SageMaker Studio UI.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/manage-amazon-sagemaker-hyperpod-spaces-directly-from-sagemaker-studio/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-06T15:47:02.000Z",
+        "checkedAt": "2026-10-13T06:32:25.112Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Earlier this year, we launched Amazon SageMaker Spaces for HyperPod , an add-on ML developers can use to create interactive development environments directly on HyperPod EKS clusters.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/manage-amazon-sagemaker-hyperpod-spaces-directly-from-sagemaker-studio/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-06T15:47:02.000Z",
+        "checkedAt": "2026-10-13T06:32:25.112Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "With this new capability, data scientists can now create, configure, start, stop, and open Spaces directly from SageMaker Studio.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/manage-amazon-sagemaker-hyperpod-spaces-directly-from-sagemaker-studio/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-06T15:47:02.000Z",
+        "checkedAt": "2026-10-13T06:32:25.112Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Figure 1: The IDE and Notebooks tab on the HyperPod cluster detail page shows all Spaces with their status, compute allocation, and quick actions to stop, open, or open in a remote IDE",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/manage-amazon-sagemaker-hyperpod-spaces-directly-from-sagemaker-studio/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-06T15:47:02.000Z",
+        "checkedAt": "2026-10-13T06:32:25.112Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Administrators install the SageMaker Spaces add-on on their HyperPod EKS cluster using either the Quick install (one-click with optimized defaults) or Custom install option (required to set up web UI access) from their SageMaker HyperPod EKS cluster’s IDE and Notebooks tab.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/manage-amazon-sagemaker-hyperpod-spaces-directly-from-sagemaker-studio/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-06T15:47:02.000Z",
+        "checkedAt": "2026-10-13T06:32:25.112Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Enable per-user identity propagation on the Studio domain: If your Studio domain was created before the SageMaker Studio and HyperPod Spaces integration was rolled out, you must enable per-user identity propagation to the HyperPod EKS cluster.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/manage-amazon-sagemaker-hyperpod-spaces-directly-from-sagemaker-studio/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-06T15:47:02.000Z",
+        "checkedAt": "2026-10-13T06:32:25.112Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "After the add-on is installed and access is configured, data scientists navigate to their HyperPod cluster in SageMaker Studio under Compute → HyperPod and select the IDE and Notebooks tab to see the Spaces management interface (see Figure 1).",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/manage-amazon-sagemaker-hyperpod-spaces-directly-from-sagemaker-studio/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-06T15:47:02.000Z",
+        "checkedAt": "2026-10-13T06:32:25.112Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "You can also connect using the AWS Toolkit for Visual Studio Code, which lists your Spaces under SageMaker AI > HyperPod, and you can start, stop, and connect to Spaces directly from the toolkit panel.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/manage-amazon-sagemaker-hyperpod-spaces-directly-from-sagemaker-studio/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-06T15:47:02.000Z",
+        "checkedAt": "2026-10-13T06:32:25.112Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "By default, SageMaker Spaces on HyperPod EKS clusters using Karpenter autoscaling incur a cold-start delay of 5–7 minutes the first time a Space is created on a scale-to-zero cluster, dominated by:",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/manage-amazon-sagemaker-hyperpod-spaces-directly-from-sagemaker-studio/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-06T15:47:02.000Z",
+        "checkedAt": "2026-10-13T06:32:25.112Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Amazon Elastic Compute cloud (Amazon EC2) instance launch.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/manage-amazon-sagemaker-hyperpod-spaces-directly-from-sagemaker-studio/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-06T15:47:02.000Z",
+        "checkedAt": "2026-10-13T06:32:25.112Z"
+      }
+    ],
+    "pageDate": "2026-10-06T15:47:02.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PRODUCT_LAUNCH"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 PRODUCT_LAUNCH (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

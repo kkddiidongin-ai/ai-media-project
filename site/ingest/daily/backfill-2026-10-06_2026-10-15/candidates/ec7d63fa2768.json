@@ -1,0 +1,223 @@
+{
+  "id": "ec7d63fa2768",
+  "date": "2026-10-15",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Code scanning AI Scan metrics in security overview",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": false,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "evidenceQuality",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "GitHub",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://github.blog/changelog/2026-10-13-code-scanning-ai-scan-metrics-in-security-overview",
+      "name": "GitHub Changelog",
+      "type": "official",
+      "publishedAt": "2026-10-13T12:03:17.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "ec7d63fa2768",
+    "url": "https://github.blog/changelog/2026-10-13-code-scanning-ai-scan-metrics-in-security-overview",
+    "canonicalUrl": "https://github.blog/changelog/2026-10-13-code-scanning-ai-scan-metrics-in-security-overview",
+    "title": "Code scanning AI Scan metrics in security overview",
+    "excerpt": "Organization and enterprise administrators can now observe the impact of AI Scan for pull requests in security overview. New metrics show how many AI Scan findings were generated, resolved, the… The post Code scanning AI Scan metrics in security overview appeared first on The GitHub Blog .",
+    "publishedAt": "2026-10-13T12:03:17.000Z",
+    "sourceId": "github-changelog",
+    "sourceName": "GitHub Changelog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://github.blog/changelog/feed/",
+    "fetchedAt": "2026-10-15T09:08:04.550Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 1571,
+    "grade": "LIMITED",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Organization and enterprise administrators can now observe the impact of AI Scan for pull requests in security overview. New metrics show how many AI Scan findings were generated, resolved, the… The post Code scanning AI Scan metrics in security overview appeared first on The GitHub Blog .",
+        "sourceUrl": "https://github.blog/changelog/2026-10-13-code-scanning-ai-scan-metrics-in-security-overview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-13T12:03:17.000Z",
+        "checkedAt": "2026-10-15T09:07:33.465Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Code scanning AI Scan metrics in security overview - GitHub Changelog",
+        "sourceUrl": "https://github.blog/changelog/2026-10-13-code-scanning-ai-scan-metrics-in-security-overview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-13T12:03:17.000Z",
+        "checkedAt": "2026-10-15T09:07:33.465Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Organization and enterprise administrators can now observe the impact of AI Scan for pull requests in security overview.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-13-code-scanning-ai-scan-metrics-in-security-overview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-13T12:03:17.000Z",
+        "checkedAt": "2026-10-15T09:07:33.465Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "New metrics show how many AI Scan findings were generated, resolved, the remediation rate, which repositories generated findings, trends over the selected reporting period, and how often developers applied autofix suggestions.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-13-code-scanning-ai-scan-metrics-in-security-overview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-13T12:03:17.000Z",
+        "checkedAt": "2026-10-15T09:07:33.465Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "The &ldquo;CodeQL pull requests&rdquo; page is now named &ldquo;Code scanning on pull requests&rdquo; and includes separate CodeQL and AI Scan tabs.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-13-code-scanning-ai-scan-metrics-in-security-overview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-13T12:03:17.000Z",
+        "checkedAt": "2026-10-15T09:07:33.465Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "The AI Scan tab shows total findings and how many findings include or do not include an autofix suggestion.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-13-code-scanning-ai-scan-metrics-in-security-overview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-13T12:03:17.000Z",
+        "checkedAt": "2026-10-15T09:07:33.465Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Metrics from the &ldquo;CodeQL pull requests&rdquo; page are now under the CodeQL tab.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-13-code-scanning-ai-scan-metrics-in-security-overview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-13T12:03:17.000Z",
+        "checkedAt": "2026-10-15T09:07:33.465Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "These metrics help security teams evaluate the effectiveness of AI Scan across their organization or enterprise, understand developer response, and make informed rollout and investment decisions without reviewing individual pull requests.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-13-code-scanning-ai-scan-metrics-in-security-overview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-13T12:03:17.000Z",
+        "checkedAt": "2026-10-15T09:07:33.465Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "This public preview is available on github.com, including GitHub Enterprise Cloud, for customers with GitHub Code Security or GitHub Advanced Security.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-13-code-scanning-ai-scan-metrics-in-security-overview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-13T12:03:17.000Z",
+        "checkedAt": "2026-10-15T09:07:33.465Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Learn more about AI Scan for pull requests and join the AI Scan Community discussion .",
+        "sourceUrl": "https://github.blog/changelog/2026-10-13-code-scanning-ai-scan-metrics-in-security-overview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-13T12:03:17.000Z",
+        "checkedAt": "2026-10-15T09:07:33.465Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "CodeQL 2.27.2 improves C++, Go, Rust, and JavaScript analysis",
+        "sourceUrl": "https://github.blog/changelog/2026-10-13-code-scanning-ai-scan-metrics-in-security-overview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-13T12:03:17.000Z",
+        "checkedAt": "2026-10-15T09:07:33.465Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Code scanning AI Scan enablement status in security overview",
+        "sourceUrl": "https://github.blog/changelog/2026-10-13-code-scanning-ai-scan-metrics-in-security-overview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-13T12:03:17.000Z",
+        "checkedAt": "2026-10-15T09:07:33.465Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Scheduled code scanning skips inactive repositories",
+        "sourceUrl": "https://github.blog/changelog/2026-10-13-code-scanning-ai-scan-metrics-in-security-overview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-13T12:03:17.000Z",
+        "checkedAt": "2026-10-15T09:07:33.465Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 2,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PRODUCT_LAUNCH",
+      "SECURITY_MENTION"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 7,
+    "total": 7
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 PRODUCT_LAUNCH·SECURITY_MENTION (우선순위 7)",
+    "같은 회사(GitHub) 추천이 이미 2건 — 다양성 규칙으로 뒤로 (편집자 판단)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": "diversity",
+  "approval": {
+    "status": "pending"
+  }
+}

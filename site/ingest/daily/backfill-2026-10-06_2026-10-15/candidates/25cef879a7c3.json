@@ -1,0 +1,222 @@
+{
+  "id": "25cef879a7c3",
+  "date": "2026-10-15",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Claude now works with Google Docs, Sheets, and Slides",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 12,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Anthropic",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides",
+      "name": "Claude (claude.com articles)",
+      "type": "official",
+      "publishedAt": "2026-10-06T00:00:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "25cef879a7c3",
+    "url": "https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides",
+    "canonicalUrl": "https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides",
+    "title": "Claude now works with Google Docs, Sheets, and Slides",
+    "excerpt": "With our new Claude for Google Workspace add-on and connectors (in beta), bring Claude into your Google files or work on your files directly from Claude.",
+    "publishedAt": "2026-10-06T00:00:00.000Z",
+    "sourceId": "claude-blog",
+    "sourceName": "Claude (claude.com articles)",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "listing-meta",
+    "discoveredVia": "https://claude.com/resources/articles",
+    "fetchedAt": "2026-10-15T09:08:04.550Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 3938,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "With our new Claude for Google Workspace add-on and connectors (in beta), bring Claude into your Google files or work on your files directly from Claude.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-06T00:00:00.000Z",
+        "checkedAt": "2026-10-13T06:32:21.108Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "• • • • • • • • • Claude now works with Google Docs, Sheets, and Slides | Claude by Anthropic • •",
+        "sourceUrl": "https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-06T00:00:00.000Z",
+        "checkedAt": "2026-10-13T06:32:21.108Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Skip to main content Claude for Google Workspace™ is now in public beta on all paid Claude plans.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-06T00:00:00.000Z",
+        "checkedAt": "2026-10-13T06:32:21.108Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "It adds Claude to Google Docs, Sheets, and Slides, so that you can work with Claude directly in your open files.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-06T00:00:00.000Z",
+        "checkedAt": "2026-10-13T06:32:21.108Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Additionally, we are releasing new Google Docs, Sheets, and Slides connectors (beta) that Claude uses to create and edit Google files directly from Claude.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-06T00:00:00.000Z",
+        "checkedAt": "2026-10-13T06:32:21.108Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "In Sheets , Claude can write formulas, build pivot tables and native Sheets charts, and add new tabs.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-06T00:00:00.000Z",
+        "checkedAt": "2026-10-13T06:32:21.108Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "You can start from an empty sheet, attach your source files, ask for a Q3 budget vs. actuals report with a tab for each team and a summary chart, and Claude can flag anything that’s over the budget.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-06T00:00:00.000Z",
+        "checkedAt": "2026-10-13T06:32:21.108Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "In Slides , Claude can build new slides from your deck’s layouts and themes, so they match the rest of the deck.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-06T00:00:00.000Z",
+        "checkedAt": "2026-10-13T06:32:21.108Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "With the Google Docs, Sheets, and Slides connectors (opens in new tab) , also in beta, you can start in Claude and it will create and edit your Google files from the chat.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-06T00:00:00.000Z",
+        "checkedAt": "2026-10-13T06:32:21.108Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Claude for Google Workspace (opens in new tab) is in beta on all paid plans.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-06T00:00:00.000Z",
+        "checkedAt": "2026-10-13T06:32:21.108Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "To edit Google files from Claude, turn on the Google Docs, Sheets, and Slides connectors (opens in new tab) .",
+        "sourceUrl": "https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-06T00:00:00.000Z",
+        "checkedAt": "2026-10-13T06:32:21.108Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Docs, Slides, and Design are out of beta and on every Claude plan, including Free.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-06T00:00:00.000Z",
+        "checkedAt": "2026-10-13T06:32:21.108Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "2 more : Claude Cowork and Claude Code Claude Cowork Claude Code",
+        "sourceUrl": "https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-06T00:00:00.000Z",
+        "checkedAt": "2026-10-13T06:32:21.108Z"
+      }
+    ],
+    "pageDate": "2026-10-06T00:00:00.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PREVIEW",
+      "CONSUMER"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 PREVIEW·CONSUMER (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

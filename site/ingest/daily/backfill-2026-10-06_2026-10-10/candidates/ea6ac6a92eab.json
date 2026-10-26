@@ -1,0 +1,231 @@
+{
+  "id": "ea6ac6a92eab",
+  "date": "2026-10-10",
+  "proposedSlug": "pay-per-inference-ai-agents-blockrun-incarna",
+  "title": null,
+  "sourceTitle": "Pay-per-inference for AI agents: How BlockRun and Incarna use Amazon Bedrock AgentCore payments",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": true,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": true
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/pay-per-inference-for-ai-agents-how-blockrun-and-incarna-use-amazon-bedrock-agentcore-payments/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-10-08T18:33:29.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "ea6ac6a92eab",
+    "url": "https://aws.amazon.com/blogs/machine-learning/pay-per-inference-for-ai-agents-how-blockrun-and-incarna-use-amazon-bedrock-agentcore-payments/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/pay-per-inference-for-ai-agents-how-blockrun-and-incarna-use-amazon-bedrock-agentcore-payments",
+    "title": "Pay-per-inference for AI agents: How BlockRun and Incarna use Amazon Bedrock AgentCore payments",
+    "excerpt": "Amazon Bedrock AgentCore payments gives AI agents a managed way to pay for services on demand, with spending limits enforced by the infrastructure. See how Incarna's agents pay BlockRun for model inference one request at a time over x402, cutting the work of adding x402 payment support from months t",
+    "publishedAt": "2026-10-08T18:33:29.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-10-13T06:38:31.253Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 8734,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Amazon Bedrock AgentCore payments gives AI agents a managed way to pay for services on demand, with spending limits enforced by the infrastructure. See how Incarna's agents pay BlockRun for model inference one request at a time over x402, cutting the work of adding x402 payment support from months t",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/pay-per-inference-for-ai-agents-how-blockrun-and-incarna-use-amazon-bedrock-agentcore-payments/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-08T18:33:29.000Z",
+        "checkedAt": "2026-10-13T06:32:18.560Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Pay-per-inference for AI agents: How BlockRun and Incarna use Amazon Bedrock AgentCore payments | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/pay-per-inference-for-ai-agents-how-blockrun-and-incarna-use-amazon-bedrock-agentcore-payments/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-08T18:33:29.000Z",
+        "checkedAt": "2026-10-13T06:32:18.560Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Pay-per-inference for AI agents: How BlockRun and Incarna use Amazon Bedrock AgentCore payments",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/pay-per-inference-for-ai-agents-how-blockrun-and-incarna-use-amazon-bedrock-agentcore-payments/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-08T18:33:29.000Z",
+        "checkedAt": "2026-10-13T06:32:18.560Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Amazon Bedrock AgentCore payments removes that burden.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/pay-per-inference-for-ai-agents-how-blockrun-and-incarna-use-amazon-bedrock-agentcore-payments/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-08T18:33:29.000Z",
+        "checkedAt": "2026-10-13T06:32:18.560Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "In this post, we look at how Incarna used AgentCore payments to let its agents pay BlockRun for model inference one request at a time.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/pay-per-inference-for-ai-agents-how-blockrun-and-incarna-use-amazon-bedrock-agentcore-payments/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-08T18:33:29.000Z",
+        "checkedAt": "2026-10-13T06:32:18.560Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "AgentCore payments works with x402-compatible endpoints, including Amazon Bedrock inference endpoints.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/pay-per-inference-for-ai-agents-how-blockrun-and-incarna-use-amazon-bedrock-agentcore-payments/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-08T18:33:29.000Z",
+        "checkedAt": "2026-10-13T06:32:18.560Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "AgentCore payments is a managed capability of Amazon Bedrock AgentCore that builders can use to add payments to their agents in a few lines of code.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/pay-per-inference-for-ai-agents-how-blockrun-and-incarna-use-amazon-bedrock-agentcore-payments/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-08T18:33:29.000Z",
+        "checkedAt": "2026-10-13T06:32:18.560Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "AgentCore runs the agent, BlockRun serves metered inference, and AgentCore payments connects to the customer’s wallet, enforces the spending limit, and signs each payment on behalf of the agent’s Incarna identity.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/pay-per-inference-for-ai-agents-how-blockrun-and-incarna-use-amazon-bedrock-agentcore-payments/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-08T18:33:29.000Z",
+        "checkedAt": "2026-10-13T06:32:18.560Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Agent request flows through AgentCore to BlockRun (HTTP 402), with AgentCore payments signing the x402 payment from the agent’s own wallet",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/pay-per-inference-for-ai-agents-how-blockrun-and-incarna-use-amazon-bedrock-agentcore-payments/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-08T18:33:29.000Z",
+        "checkedAt": "2026-10-13T06:32:18.560Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Incarna put the pay-per-inference flow into production on Base, with BlockRun serving the sell side and AgentCore payments governing every transaction.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/pay-per-inference-for-ai-agents-how-blockrun-and-incarna-use-amazon-bedrock-agentcore-payments/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-08T18:33:29.000Z",
+        "checkedAt": "2026-10-13T06:32:18.560Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "And with AgentCore payments and x402 providing the spending controls agents need, that intelligence can be put to work safely in the real world.”",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/pay-per-inference-for-ai-agents-how-blockrun-and-incarna-use-amazon-bedrock-agentcore-payments/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-08T18:33:29.000Z",
+        "checkedAt": "2026-10-13T06:32:18.560Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Across the beta, agents have processed over 1,000 payments ranging from $0.001 to $0.05 per call, each settling individually on-chain.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/pay-per-inference-for-ai-agents-how-blockrun-and-incarna-use-amazon-bedrock-agentcore-payments/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-08T18:33:29.000Z",
+        "checkedAt": "2026-10-13T06:32:18.560Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Amazon Bedrock AgentCore payments is now generally available: Enabling agents to transact safely and autonomously at scale",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/pay-per-inference-for-ai-agents-how-blockrun-and-incarna-use-amazon-bedrock-agentcore-payments/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-08T18:33:29.000Z",
+        "checkedAt": "2026-10-13T06:32:18.560Z"
+      }
+    ],
+    "pageDate": "2026-10-08T18:33:29.000Z"
+  },
+  "score": {
+    "importance": 2,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "INFRA",
+      "API_PLATFORM"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 7,
+    "total": 7
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 INFRA·API_PLATFORM (우선순위 7)",
+    "근거 확인 통과 (확인 사실 11개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "none",
+    "model": null,
+    "status": "skipped",
+    "error": "Shadow Mode — 원고를 만들지 않음",
+    "promptVersion": "draft-v1",
+    "at": "2026-10-13T06:39:40.315Z",
+    "evidenceHash": "7b5a04edf268"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

@@ -1,0 +1,222 @@
+{
+  "id": "8869352ca179",
+  "date": "2026-10-10",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Rethinking access control for RAG with Amazon Quick and Amazon Bedrock",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/rethinking-access-control-for-rag-with-amazon-quick-and-amazon-bedrock/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-10-07T18:34:44.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "8869352ca179",
+    "url": "https://aws.amazon.com/blogs/machine-learning/rethinking-access-control-for-rag-with-amazon-quick-and-amazon-bedrock/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/rethinking-access-control-for-rag-with-amazon-quick-and-amazon-bedrock",
+    "title": "Rethinking access control for RAG with Amazon Quick and Amazon Bedrock",
+    "excerpt": "Enterprise RAG unlocks insights from knowledge sources like SharePoint, Google Drive, and Confluence, but those sources carry complex permissions. Learn how Amazon Quick and Amazon Bedrock Knowledge Bases enforce document-level access controls in real time, verifying permissions directly with author",
+    "publishedAt": "2026-10-07T18:34:44.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-10-13T06:38:31.253Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 6753,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Enterprise RAG unlocks insights from knowledge sources like SharePoint, Google Drive, and Confluence, but those sources carry complex permissions. Learn how Amazon Quick and Amazon Bedrock Knowledge Bases enforce document-level access controls in real time, verifying permissions directly with author",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/rethinking-access-control-for-rag-with-amazon-quick-and-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-07T18:34:44.000Z",
+        "checkedAt": "2026-10-13T06:32:23.888Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Rethinking access control for RAG with Amazon Quick and Amazon Bedrock | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/rethinking-access-control-for-rag-with-amazon-quick-and-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-07T18:34:44.000Z",
+        "checkedAt": "2026-10-13T06:32:23.888Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Rethinking access control for RAG with Amazon Quick and Amazon Bedrock",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/rethinking-access-control-for-rag-with-amazon-quick-and-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-07T18:34:44.000Z",
+        "checkedAt": "2026-10-13T06:32:23.888Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "In this post, we explore how Amazon Quick and Amazon Bedrock Knowledge Bases solve this challenge through real-time access control list (ACL) enforcement, verifying permissions directly with authoritative sources at query time.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/rethinking-access-control-for-rag-with-amazon-quick-and-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-07T18:34:44.000Z",
+        "checkedAt": "2026-10-13T06:32:23.888Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "A common approach to RAG access control uses a replicate-and-filter approach to enforce document-level permissions.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/rethinking-access-control-for-rag-with-amazon-quick-and-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-07T18:34:44.000Z",
+        "checkedAt": "2026-10-13T06:32:23.888Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Problem 1: The AI system isn’t the source of truth",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/rethinking-access-control-for-rag-with-amazon-quick-and-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-07T18:34:44.000Z",
+        "checkedAt": "2026-10-13T06:32:23.888Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "To address these challenges, we implemented real-time ACL checks as an additional layer of security on top of existing pre-retrieval ACL filtering for Amazon Quick and Amazon Bedrock Knowledge Bases.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/rethinking-access-control-for-rag-with-amazon-quick-and-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-07T18:34:44.000Z",
+        "checkedAt": "2026-10-13T06:32:23.888Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Figure 1: Real-time ACL enforcement architecture for Amazon Quick and Amazon Bedrock Knowledge Bases, combining pre-retrieval filtering (Stage 1) with real-time verification against authoritative sources (Stage 2)",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/rethinking-access-control-for-rag-with-amazon-quick-and-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-07T18:34:44.000Z",
+        "checkedAt": "2026-10-13T06:32:23.888Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "When a user submits a query to an Amazon Quick agent that uses a Google Drive knowledge base, the system enforces access controls in two stages:",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/rethinking-access-control-for-rag-with-amazon-quick-and-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-07T18:34:44.000Z",
+        "checkedAt": "2026-10-13T06:32:23.888Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Amazon Quick’s approach to real-time access control answered that question definitively and demonstrated a level of rigor that stood out throughout our evaluation.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/rethinking-access-control-for-rag-with-amazon-quick-and-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-07T18:34:44.000Z",
+        "checkedAt": "2026-10-13T06:32:23.888Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Mondelēz International has deployed Amazon Quick for their over 35,000 employees across four regions.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/rethinking-access-control-for-rag-with-amazon-quick-and-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-07T18:34:44.000Z",
+        "checkedAt": "2026-10-13T06:32:23.888Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "In this post, we talked about how Amazon Quick and Amazon Bedrock Knowledge Bases implement real-time ACL enforcement to solve a critical security challenge for enterprises.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/rethinking-access-control-for-rag-with-amazon-quick-and-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-07T18:34:44.000Z",
+        "checkedAt": "2026-10-13T06:32:23.888Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "To get started, visit Amazon Quick and Amazon Bedrock Knowledge Bases .",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/rethinking-access-control-for-rag-with-amazon-quick-and-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-07T18:34:44.000Z",
+        "checkedAt": "2026-10-13T06:32:23.888Z"
+      }
+    ],
+    "pageDate": "2026-10-07T18:34:44.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "API_PLATFORM",
+      "CONSUMER"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 API_PLATFORM·CONSUMER (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

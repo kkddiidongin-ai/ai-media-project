@@ -1,0 +1,221 @@
+{
+  "id": "07862ce6a3fa",
+  "date": "2026-10-10",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "ICYMI: What landed for AI builders in September 2026",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-september-2026/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-10-09T15:38:39.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "07862ce6a3fa",
+    "url": "https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-september-2026/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-september-2026",
+    "title": "ICYMI: What landed for AI builders in September 2026",
+    "excerpt": "A monthly recap of the latest Amazon Bedrock, Amazon Bedrock AgentCore, and Strands updates from September 2026: broader model choice, faster serverless agents with built-in evaluation, and automated knowledge base syncing with native enterprise connectors.",
+    "publishedAt": "2026-10-09T15:38:39.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-10-13T06:38:31.253Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 6392,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "A monthly recap of the latest Amazon Bedrock, Amazon Bedrock AgentCore, and Strands updates from September 2026: broader model choice, faster serverless agents with built-in evaluation, and automated knowledge base syncing with native enterprise connectors.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-september-2026/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-09T15:38:39.000Z",
+        "checkedAt": "2026-10-13T06:32:22.464Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "ICYMI: What landed for AI builders in September 2026 | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-september-2026/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-09T15:38:39.000Z",
+        "checkedAt": "2026-10-13T06:32:22.464Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "ICYMI: What landed for AI builders in September 2026",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-september-2026/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-09T15:38:39.000Z",
+        "checkedAt": "2026-10-13T06:32:22.464Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "A recap of the latest Amazon Bedrock, Amazon Bedrock AgentCore, and Strands updates from September 2026",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-september-2026/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-09T15:38:39.000Z",
+        "checkedAt": "2026-10-13T06:32:22.464Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "At AWS, we believe the fastest path to enterprise AI is giving builders real choice at every layer: model, runtime, and tooling.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-september-2026/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-09T15:38:39.000Z",
+        "checkedAt": "2026-10-13T06:32:22.464Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Amazon Bedrock Managed Agents , powered by OpenAI, is now available in public preview, helping you build production-ready AI agents without sacrificing enterprise security.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-september-2026/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-09T15:38:39.000Z",
+        "checkedAt": "2026-10-13T06:32:22.464Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Strands harness is a new open source agent harness that matches popular harnesses on accuracy while using 28 percent fewer tokens.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-september-2026/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-09T15:38:39.000Z",
+        "checkedAt": "2026-10-13T06:32:22.464Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Strands Decider 2B is a small, open source, 2B-parameter decision model that picks between predefined options (instead of generating text), delivering answers in ~115ms locally.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-september-2026/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-09T15:38:39.000Z",
+        "checkedAt": "2026-10-13T06:32:22.464Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "It’s optimized for agentic AI tasks like tool selection, routing, and guardrails, with all code, data, and weights available on GitHub and Hugging Face.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-september-2026/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-09T15:38:39.000Z",
+        "checkedAt": "2026-10-13T06:32:22.464Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "GPT-6 Astra is the flagship model for your most ambitious work, bringing deeper reasoning to complex decisions, document analysis, and software development with up to 1 million input tokens.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-september-2026/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-09T15:38:39.000Z",
+        "checkedAt": "2026-10-13T06:32:22.464Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Both GPT-6.1 Sol and GPT-6 Sol are available on Amazon Bedrock.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-september-2026/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-09T15:38:39.000Z",
+        "checkedAt": "2026-10-13T06:32:22.464Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Moonshot AI’s Kimi K3 is now available on Amazon Bedrock.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-september-2026/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-09T15:38:39.000Z",
+        "checkedAt": "2026-10-13T06:32:22.464Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "According to Moonshot AI, Kimi K3 is its most capable model and the first open model to reach 2.8 trillion parameters.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-september-2026/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-09T15:38:39.000Z",
+        "checkedAt": "2026-10-13T06:32:22.464Z"
+      }
+    ],
+    "pageDate": "2026-10-09T15:38:39.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "API_PLATFORM"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 API_PLATFORM (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

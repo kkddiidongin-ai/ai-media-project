@@ -1,0 +1,221 @@
+{
+  "id": "dd106deebac2",
+  "date": "2026-10-10",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "How Postman runs Agent Mode for 40 million developers on Amazon Bedrock",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 10,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-postman-runs-agent-mode-for-40-million-developers-on-amazon-bedrock/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-10-09T15:35:02.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "dd106deebac2",
+    "url": "https://aws.amazon.com/blogs/machine-learning/how-postman-runs-agent-mode-for-40-million-developers-on-amazon-bedrock/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/how-postman-runs-agent-mode-for-40-million-developers-on-amazon-bedrock",
+    "title": "How Postman runs Agent Mode for 40 million developers on Amazon Bedrock",
+    "excerpt": "Building an AI agent that works in a demo is a different problem from running one for 40 million developers. Postman and AWS share the architectural patterns behind Agent Mode: controlling tool sprawl, exposing schema-based reads, and treating context as the real bottleneck, plus how it runs on Amaz",
+    "publishedAt": "2026-10-09T15:35:02.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-10-13T06:38:31.253Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 15612,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Building an AI agent that works in a demo is a different problem from running one for 40 million developers. Postman and AWS share the architectural patterns behind Agent Mode: controlling tool sprawl, exposing schema-based reads, and treating context as the real bottleneck, plus how it runs on Amaz",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-postman-runs-agent-mode-for-40-million-developers-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-09T15:35:02.000Z",
+        "checkedAt": "2026-10-13T06:32:22.720Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "How Postman runs Agent Mode for 40 million developers on Amazon Bedrock | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-postman-runs-agent-mode-for-40-million-developers-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-09T15:35:02.000Z",
+        "checkedAt": "2026-10-13T06:32:22.720Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "How Postman runs Agent Mode for 40 million developers on Amazon Bedrock",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-postman-runs-agent-mode-for-40-million-developers-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-09T15:35:02.000Z",
+        "checkedAt": "2026-10-13T06:32:22.720Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Building an AI agent for a demo and operating one for 40 million developers are different engineering problems.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-postman-runs-agent-mode-for-40-million-developers-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-09T15:35:02.000Z",
+        "checkedAt": "2026-10-13T06:32:22.720Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "We also explain how Agent Mode uses Amazon Bedrock for model flexibility, geographically scoped cross-Region inference, model-dependent zero data retention, and multi-tier prompt caching.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-postman-runs-agent-mode-for-40-million-developers-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-09T15:35:02.000Z",
+        "checkedAt": "2026-10-13T06:32:22.720Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Postman has evolved over 11 years, and developers and users learned to locate information through the interface by expanding sidebars, checking tabs, and opening requests.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-postman-runs-agent-mode-for-40-million-developers-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-09T15:35:02.000Z",
+        "checkedAt": "2026-10-13T06:32:22.720Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Figure 1 illustrates how Agent Mode works directly against the application.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-postman-runs-agent-mode-for-40-million-developers-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-09T15:35:02.000Z",
+        "checkedAt": "2026-10-13T06:32:22.720Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Figure 1: Agent Mode works directly against the Postman application.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-postman-runs-agent-mode-for-40-million-developers-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-09T15:35:02.000Z",
+        "checkedAt": "2026-10-13T06:32:22.720Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Agent Mode runs on Amazon Bedrock , which provides managed access to foundation models behind the agent.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-postman-runs-agent-mode-for-40-million-developers-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-09T15:35:02.000Z",
+        "checkedAt": "2026-10-13T06:32:22.720Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Figure 2: Postman Agent Mode combines client-side tools, agent orchestration, purpose-built context, and Amazon Bedrock model inference.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-postman-runs-agent-mode-for-40-million-developers-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-09T15:35:02.000Z",
+        "checkedAt": "2026-10-13T06:32:22.720Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "In Agent Mode, tools define how the agent acts inside Postman.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-postman-runs-agent-mode-for-40-million-developers-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-09T15:35:02.000Z",
+        "checkedAt": "2026-10-13T06:32:22.720Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "In Postman’s testing, tool-selection errors increased once the visible toolset exceeded approximately 40 tools.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-postman-runs-agent-mode-for-40-million-developers-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-09T15:35:02.000Z",
+        "checkedAt": "2026-10-13T06:32:22.720Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Agent Mode uses Amazon Bedrock cross-Region inference to automatically route requests among the destination Regions defined by an inference profile.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-postman-runs-agent-mode-for-40-million-developers-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-09T15:35:02.000Z",
+        "checkedAt": "2026-10-13T06:32:22.720Z"
+      }
+    ],
+    "pageDate": "2026-10-09T15:35:02.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "API_PLATFORM"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 API_PLATFORM (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

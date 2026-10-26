@@ -1,0 +1,234 @@
+{
+  "id": "87f43b6934de",
+  "date": "2026-10-15",
+  "proposedSlug": "local-sandboxing-github-copilot-generally-available",
+  "title": null,
+  "sourceTitle": "Local sandboxing for GitHub Copilot now generally available",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 10,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": true,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": false,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "contextNeed",
+      "evidenceQuality",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "GitHub",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available",
+      "name": "GitHub Changelog",
+      "type": "official",
+      "publishedAt": "2026-10-07T15:46:17.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "87f43b6934de",
+    "url": "https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available",
+    "canonicalUrl": "https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available",
+    "title": "Local sandboxing for GitHub Copilot now generally available",
+    "excerpt": "Local sandboxing for GitHub Copilot is now generally available in GitHub Copilot CLI, the GitHub Copilot app, and VS Code sessions using Agent Host. Local sandboxes give developers a secure… The post Local sandboxing for GitHub Copilot now generally available appeared first on The GitHub Blog .",
+    "publishedAt": "2026-10-07T15:46:17.000Z",
+    "sourceId": "github-changelog",
+    "sourceName": "GitHub Changelog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://github.blog/changelog/feed/?paged=3",
+    "fetchedAt": "2026-10-15T09:08:04.550Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 1733,
+    "grade": "LIMITED",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Local sandboxing for GitHub Copilot is now generally available in GitHub Copilot CLI, the GitHub Copilot app, and VS Code sessions using Agent Host. Local sandboxes give developers a secure… The post Local sandboxing for GitHub Copilot now generally available appeared first on The GitHub Blog .",
+        "sourceUrl": "https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-07T15:46:17.000Z",
+        "checkedAt": "2026-10-13T06:32:16.818Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Local sandboxing for GitHub Copilot now generally available - GitHub Changelog",
+        "sourceUrl": "https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-07T15:46:17.000Z",
+        "checkedAt": "2026-10-13T06:32:16.818Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Local sandboxing for GitHub Copilot is now generally available in GitHub Copilot CLI, the GitHub Copilot app, and VS Code sessions using Agent Host.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-07T15:46:17.000Z",
+        "checkedAt": "2026-10-13T06:32:16.818Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Local sandboxes give developers a secure execution boundary for agentic workflows on their own machines.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-07T15:46:17.000Z",
+        "checkedAt": "2026-10-13T06:32:16.818Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Local sandboxing is powered by Microsoft eXecution Container (MXC) , which translates a common sandbox policy into native operating-system controls across Windows, macOS, and Linux.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-07T15:46:17.000Z",
+        "checkedAt": "2026-10-13T06:32:16.818Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "With local sandboxing, developers and organizations can:",
+        "sourceUrl": "https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-07T15:46:17.000Z",
+        "checkedAt": "2026-10-13T06:32:16.818Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Control access to the internet, local networks, Git credentials, and GitHub CLI credentials.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-07T15:46:17.000Z",
+        "checkedAt": "2026-10-13T06:32:16.818Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Apply sandboxing to local tools and services, including local MCP and language servers where supported.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-07T15:46:17.000Z",
+        "checkedAt": "2026-10-13T06:32:16.818Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Local sandboxing is included with GitHub Copilot at no additional cost.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-07T15:46:17.000Z",
+        "checkedAt": "2026-10-13T06:32:16.818Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "To get started, see About cloud and local sandboxes for GitHub Copilot .",
+        "sourceUrl": "https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-07T15:46:17.000Z",
+        "checkedAt": "2026-10-13T06:32:16.818Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "GitHub Copilot weekly releases — October 5",
+        "sourceUrl": "https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-07T15:46:17.000Z",
+        "checkedAt": "2026-10-13T06:32:16.818Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "CodeQL 2.27.2 improves C++, Go, Rust, and JavaScript analysis",
+        "sourceUrl": "https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-07T15:46:17.000Z",
+        "checkedAt": "2026-10-13T06:32:16.818Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Discover local models in GitHub Copilot CLI",
+        "sourceUrl": "https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-07T15:46:17.000Z",
+        "checkedAt": "2026-10-13T06:32:16.818Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 2,
+    "practicalImpact": 2,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "AVAILABILITY",
+      "SECURITY_MENTION",
+      "CONSUMER"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 8,
+    "total": 8
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 AVAILABILITY·SECURITY_MENTION·CONSUMER (우선순위 8)",
+    "근거 확인 통과 (확인 사실 10개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "none",
+    "model": null,
+    "status": "skipped",
+    "error": "Shadow Mode — 원고를 만들지 않음",
+    "promptVersion": "draft-v1",
+    "at": "2026-10-15T09:10:24.641Z",
+    "evidenceHash": "66ca21a49f8d"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

@@ -1,0 +1,221 @@
+{
+  "id": "b6898643467f",
+  "date": "2026-10-10",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Debunking the Biggest Data Center Myths",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 8,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Meta",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://about.fb.com/news/2026/10/debunking-the-biggest-data-center-myths/",
+      "name": "Meta Newsroom",
+      "type": "official",
+      "publishedAt": "2026-10-08T16:53:24.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "b6898643467f",
+    "url": "https://about.fb.com/news/2026/10/debunking-the-biggest-data-center-myths/",
+    "canonicalUrl": "https://about.fb.com/news/2026/10/debunking-the-biggest-data-center-myths",
+    "title": "Debunking the Biggest Data Center Myths",
+    "excerpt": "Developer and content creator Tom Shaw breaks down three of the biggest myths about data centers. The post Debunking the Biggest Data Center Myths appeared first on Meta Newsroom .",
+    "publishedAt": "2026-10-08T16:53:24.000Z",
+    "sourceId": "meta",
+    "sourceName": "Meta Newsroom",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://about.fb.com/news/feed/",
+    "fetchedAt": "2026-10-13T06:38:31.253Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 4242,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Developer and content creator Tom Shaw breaks down three of the biggest myths about data centers. The post Debunking the Biggest Data Center Myths appeared first on Meta Newsroom .",
+        "sourceUrl": "https://about.fb.com/news/2026/10/debunking-the-biggest-data-center-myths/",
+        "source": "Meta Newsroom",
+        "publishedAt": "2026-10-08T16:53:24.000Z",
+        "checkedAt": "2026-10-13T06:36:13.453Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Myth #1: Data Centers Use Too Much Water and Take it Away From the Public",
+        "sourceUrl": "https://about.fb.com/news/2026/10/debunking-the-biggest-data-center-myths/",
+        "source": "Meta Newsroom",
+        "publishedAt": "2026-10-08T16:53:24.000Z",
+        "checkedAt": "2026-10-13T06:36:13.453Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Water is a huge topic of discussion around data centers at the moment, but very few people actually know how data centers use water for cooling.",
+        "sourceUrl": "https://about.fb.com/news/2026/10/debunking-the-biggest-data-center-myths/",
+        "source": "Meta Newsroom",
+        "publishedAt": "2026-10-08T16:53:24.000Z",
+        "checkedAt": "2026-10-13T06:36:13.453Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "I can’t speak for all data centers, but I can speak about the two types of Meta data centers that I have visited over the past few months.",
+        "sourceUrl": "https://about.fb.com/news/2026/10/debunking-the-biggest-data-center-myths/",
+        "source": "Meta Newsroom",
+        "publishedAt": "2026-10-08T16:53:24.000Z",
+        "checkedAt": "2026-10-13T06:36:13.453Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "A traditional air-cooled compute data center : These facilities use water for only a few months of the year to cool down air as it passes into the building.",
+        "sourceUrl": "https://about.fb.com/news/2026/10/debunking-the-biggest-data-center-myths/",
+        "source": "Meta Newsroom",
+        "publishedAt": "2026-10-08T16:53:24.000Z",
+        "checkedAt": "2026-10-13T06:36:13.453Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "An AI-optimized closed-loop liquid cooled data center : These facilities circulate a water and glycol mixture around a closed-loop system, meaning that the cooling loop is sealed, so water isn’t consumed as it circulates, passing the cold liquid over the server hardware until …",
+        "sourceUrl": "https://about.fb.com/news/2026/10/debunking-the-biggest-data-center-myths/",
+        "source": "Meta Newsroom",
+        "publishedAt": "2026-10-08T16:53:24.000Z",
+        "checkedAt": "2026-10-13T06:36:13.453Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "As mentioned, I can’t speak for all data center operators, but these two efficient cooling methods and the associated water usage mean that many of Meta’s data center facilities use less water annually than an average US golf course will in the same amount of time.",
+        "sourceUrl": "https://about.fb.com/news/2026/10/debunking-the-biggest-data-center-myths/",
+        "source": "Meta Newsroom",
+        "publishedAt": "2026-10-08T16:53:24.000Z",
+        "checkedAt": "2026-10-13T06:36:13.453Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Myth #2: More Data Centers Mean Higher Energy Bills for Consumers",
+        "sourceUrl": "https://about.fb.com/news/2026/10/debunking-the-biggest-data-center-myths/",
+        "source": "Meta Newsroom",
+        "publishedAt": "2026-10-08T16:53:24.000Z",
+        "checkedAt": "2026-10-13T06:36:13.453Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "It’s no secret that data centers do use a lot of energy, but the assumption that data center energy use automatically means higher energy bills is not true.",
+        "sourceUrl": "https://about.fb.com/news/2026/10/debunking-the-biggest-data-center-myths/",
+        "source": "Meta Newsroom",
+        "publishedAt": "2026-10-08T16:53:24.000Z",
+        "checkedAt": "2026-10-13T06:36:13.453Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "But they go a step further by also directly paying for new and upgraded infrastructure needed to supply that additional energy to the data center.",
+        "sourceUrl": "https://about.fb.com/news/2026/10/debunking-the-biggest-data-center-myths/",
+        "source": "Meta Newsroom",
+        "publishedAt": "2026-10-08T16:53:24.000Z",
+        "checkedAt": "2026-10-13T06:36:13.453Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "The important distinction here is that Meta doesn’t simply connect a huge data center to the grid and leave the local community to deal with the consequences.",
+        "sourceUrl": "https://about.fb.com/news/2026/10/debunking-the-biggest-data-center-myths/",
+        "source": "Meta Newsroom",
+        "publishedAt": "2026-10-08T16:53:24.000Z",
+        "checkedAt": "2026-10-13T06:36:13.453Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "In Louisiana, for example, Meta’s agreement with Entergy is structured so the data center pays for the new generation and transmission it requires, with protections written in so existing customers aren’t left holding the cost.",
+        "sourceUrl": "https://about.fb.com/news/2026/10/debunking-the-biggest-data-center-myths/",
+        "source": "Meta Newsroom",
+        "publishedAt": "2026-10-08T16:53:24.000Z",
+        "checkedAt": "2026-10-13T06:36:13.453Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "There are two stages in a data center’s lifecycle that create many jobs for local communities.",
+        "sourceUrl": "https://about.fb.com/news/2026/10/debunking-the-biggest-data-center-myths/",
+        "source": "Meta Newsroom",
+        "publishedAt": "2026-10-08T16:53:24.000Z",
+        "checkedAt": "2026-10-13T06:36:13.453Z"
+      }
+    ],
+    "pageDate": "2026-10-08T16:53:24.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "INFRA"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 INFRA (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}
