@@ -6,7 +6,7 @@
 
 | 수집 | 신규 | 후속 | 중복 | 불확실 | 발행 추천 | 보류 | 제외 | 원고 |
 |---|---|---|---|---|---|---|---|---|
-| 398 | 428 | 0 | 0 | 0 | 31 | 222 | 175 | 0 |
+| 404 | 433 | 0 | 0 | 1 | 31 | 223 | 180 | 0 |
 
 > 자동으로 발행하지 않습니다. 아래 추천은 사람이 `npm run daily:approve -- <날짜> <id>`로 승인해야 기사 데이터에 들어갑니다. 뉴스레터도 만들거나 보내지 않습니다.
 
@@ -26,7 +26,7 @@
 - 추천 이유: 사건 신호 PRODUCT_LAUNCH·AVAILABILITY·INFRA (우선순위 10) · 근거 확인 통과 (확인 사실 12개, SUFFICIENT_STANDARD) (중요도 3/5, 한국 관련 0/3)
 - 근거: 원문 OK · 근거 문장 13개 · 서로 다른 확인 사실 12개 · 판정 PASS · DEEP 아님(중요도 4+)
 - 검증: 확인 필요 없음
-- 원고: 없음 — timeout · 📮 뉴스레터 후보
+- 원고: 없음 — HTTP 503 · 📮 뉴스레터 후보
 
 ### 3. Teacher-led Gemini Notebook in Google Classroom now offers insight summaries for educators and updated sharing settings for admins, including trusted domains
 - id `35a22a987ed8` · 제안 slug `teacher-led-gemini-notebook-google-classroom-offers` · 깊이 **-** (근거 기준 최대 STANDARD) · 분류 -
@@ -34,7 +34,7 @@
 - 추천 이유: 사건 신호 MODEL·PRODUCT_LAUNCH (우선순위 9) · 근거 확인 통과 (확인 사실 11개, SUFFICIENT_STANDARD) (중요도 3/5, 한국 관련 0/3)
 - 근거: 원문 OK · 근거 문장 13개 · 서로 다른 확인 사실 11개 · 판정 PASS · DEEP 아님(중요도 4+, 사용자 영향, 배경 설명 필요, STANDARD로는 맥락 누락)
 - 검증: 확인 필요 없음
-- 원고: 없음 — HTTP 503 · 📮 뉴스레터 후보
+- 원고: 없음 — timeout · 📮 뉴스레터 후보
 
 ### 4. AWS Continuum for code vulnerabilities is now generally available
 - id `416b0e09bace` · 제안 slug `aws-continuum-code-vulnerabilities-generally-available` · 깊이 **-** (근거 기준 최대 STANDARD) · 분류 -
@@ -291,12 +291,24 @@
 - NVIDIA Open Models Power a New Wave of European Public Sect… — 이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성
 - Leading European Financial Services Organizations Embrace O… — 이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성
 
-## 보류 (222)
+## 보류 (223)
 
+- **Introducing GPT-6.1 Terra** (OpenAI, 2026-10-26) — 근거 부족 (원문 HTTP_403, 확인 사실 0개) — 발행하지 않음 · 확인 필요: 원문을 읽지 못함, 공식 대체 문서 근거 — 날짜·대응 확인 필요, 근거 부족
+- **ChatGPT’s expanding world of work** (OpenAI, 2026-10-26) — 근거 부족 (원문 HTTP_403, 확인 사실 0개) — 발행하지 않음 · 확인 필요: 원문을 읽지 못함, 근거 부족
+- **Fleet-wide computer vision lifecycle at the edge with SageMaker SDK v3** (AWS Machine Learning Blog, 2026-10-26) — 사건 신호 API_PLATFORM (우선순위 5) · 근거는 있으나 우선순위 5 < 발행 추천 기준 6 · 확인 필요: 없음
+- **Groundhog Day for AI agents: Prompt caching patterns for using OpenAI models on Amazon Bedrock** (AWS Machine Learning Blog, 2026-10-26) — 사건 신호 API_PLATFORM (우선순위 5) · 근거는 있으나 우선순위 5 < 발행 추천 기준 6 · 확인 필요: 없음
+- **GPT-6.1 Terra in GitHub Copilot** (GitHub Changelog, 2026-10-26) — 사건 신호 AVAILABILITY (우선순위 5) · 근거는 있으나 우선순위 5 < 발행 추천 기준 6 · 확인 필요: 없음
+- **GPT-6.1 Sol helps CodeRabbit strengthen security across complex codebases** (OpenAI, 2026-10-26) — 사건 신호 SECURITY_MENTION (우선순위 4) · 근거는 있으나 우선순위 4 < 발행 추천 기준 6 · 확인 필요: 원문을 읽지 못함, 공식 대체 문서 근거 — 날짜·대응 확인 필요
 - **Anthropic files S-1 with the SEC for proposed initial public offering** (Anthropic, 2026-10-26) — 사건 신호 SECURITY_MENTION (우선순위 4) · 근거는 있으나 우선순위 4 < 발행 추천 기준 6 · 확인 필요: 없음
 - **AWS Weekly Roundup: Amazon Polly Generative engine, TorchNeuron for Trainium, and more (October 26, 2026)** (AWS News Blog, 2026-10-26) — 사건 신호 INFRA (우선순위 4) · 근거는 있으나 우선순위 4 < 발행 추천 기준 6 · 확인 필요: 없음
 - **How NVIDIA Minerva Turns Telemetry Chaos Into Peak GPU Yield** (NVIDIA Technical Blog, 2026-10-26) — 사건 신호 INFRA (우선순위 4) · 근거는 있으나 우선순위 4 < 발행 추천 기준 6 · 확인 필요: 없음
 - **How NVIDIA Mission Control 2.5 Brings Autonomous Recovery to Kubernetes** (NVIDIA Technical Blog, 2026-10-26) — 사건 신호 INFRA (우선순위 4) · 근거는 있으나 우선순위 4 < 발행 추천 기준 6 · 확인 필요: 없음
+- Greptile takes bug detection beyond code review with GPT-6 Astra (OpenAI, 2026-10-26) — 중복 불확실: 기존 기사와 같은 제품(GPT-6 Astra) — 같은 사안인지 사람이 판단
+- How Ultrafast cut incident investigation from hours to minutes at OpenAI (OpenAI, 2026-10-26) — 우선순위 3 — 근거 확인 기준(4) 미달
+- 오픈AI, ‘GPT-6.1 테라’ 출시…자동화 성능 높이고 가격 낮춰 (AI타임스, 2026-10-27) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 API_PLATFORM·PRODUCT_LAUNCH·PRICING)
+- 앤트로픽, IPO 위험 공개…보안 사고부터 데이터센터 반발까지 (AI타임스, 2026-10-27) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·ACQ_INVEST·SECURITY·INFRA)
+- 앤트로픽 IPO 서류에 드러난 재무 부담…800조 지출 약정·빅테크 의존 (AI타임스, 2026-10-27) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·ACQ_INVEST)
+- 앤트로픽, 상장 신청서 공개…11월 공모 절차 추진 (AI타임스, 2026-10-27) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·ACQ_INVEST)
 - 역전파 없는 AI 학습 실험, 열흘 만에 4000배 빨라져…1.76시간→1.6초 (AI타임스, 2026-10-26) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 INFRA·PRODUCT_LAUNCH·MODEL_MENTION)
 - RTX 30 그래픽카드 ‘잠금 해제’ 도구 등장…AI 이미지·영상 처리량 최대 60% 증가 (AI타임스, 2026-10-26) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 INFRA·PRODUCT_LAUNCH)
 - MS, 관리자 없이 AI 1024개 협업하는 ‘에이전시’ 공개…스스로 역할도 나눠 (AI타임스, 2026-10-26) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)
@@ -311,61 +323,56 @@
 - 제논, 기업용 AI 가드레일 솔루션 '젠가드' 출시 (AI타임스, 2026-10-26) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)
 - 중국 AI 컴퓨팅 내년 두 배로…65%는 미국산 칩에 의존 (AI타임스, 2026-10-26) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 INFRA)
 - 영국, '세계 최초' AI 생물보안 연구소 설립...1770억 투자 (AI타임스, 2026-10-26) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·PARTNERSHIP·REGULATION)
-- 알트먼 “수학계, AI에 ‘우린 끝났다’ 절망하다 닷새 만에 수용” (AI타임스, 2026-10-26) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)
-- 셀렉트스타, 의사결정 AI '다비' 출시...판단 능력 높이고 비용 줄여 (AI타임스, 2026-10-26) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·MODEL_MENTION)
-- 문샷, 인플루언서에 “광고 표시 빼라” 지침 의혹…'키미' 신작 홍보 역풍 (AI타임스, 2026-10-26) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·PARTNERSHIP)
-- 클로드, 선거 앞두고 조지아주 유권자 데이터 무단 접근 논란 (AI타임스, 2026-10-26) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·REGULATION)
-- 플래티어, 사내 폐쇄망 대응 AI 테스트 관리 솔루션 ‘XGEN TMS’ 출시 (AI타임스, 2026-10-26) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·MODEL_MENTION)
-- 서울 AI 허브, AI 기업 스케일업 위한 '베이비유니콘센터' 조성 추진 (AI타임스, 2026-10-26) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 ACQ_INVEST)
-- … 외 198건 (run.json)
+- … 외 193건 (run.json)
 
-## 제외 (175)
+## 제외 (180)
 
-- 가치 낮음 175건: How Fanatics and OpenAI streamline the fan experie · 메타, ‘뮤즈’ 기능 확대 속도…실시간 음성 대화에 아바타 공유도 준비 · 우리 집도 군 소음대책지역일까…주소 조회부터 의견 제출까지 · [게시판] 원티드랩, FDE 채용 박람회에 마키나락스·베슬AI 참여 등 단신 · 전남, 매출 고성장 기업 비중 20.2%로 전국 2위 · 범죄 예측 AI가 경찰의 편견까지 학습...집중 단속이 부르는 '차별의 악순환' · 전남광주 농수산식품 수출 8.4억달러…미국행 73%가 '김' · 금감원, AI로 불법사금융 신고 통합 분석...'몸통'까지 추적 …
+- 가치 낮음 180건: Working with academic communities to build scienti · How Fanatics and OpenAI streamline the fan experie · Expanding Claude for Nonprofits · Build agentic retrieval on a Managed Amazon Bedroc · GHARP: Real-Time Gaussian Head Animation from Larg · [AI리더의 서가] 테디노트의 LangGraph 에이전트 비법노트 · [10월26일] “빅테크 빼면 AI 효과=0”…아폴로 보고서가 보여준 것과 보여주지 못한  · [AI 이슈트렌드] 대남 방송 재개·소방 빨대 논란 속 역삼동 방화·프랑스 시위 관심 …
 
-## 소스 상태 (정상 24, 그중 기간 안 새 글 0건 16 · 경고 4 · 저하 3 · 실패 0 · 비활성 9)
+## 소스 상태 (정상 25, 그중 기간 안 새 글 0건 13 · 경고 3 · 저하 3 · 실패 0 · 비활성 9)
 
 | 소스 | 상태 | HTTP | 글 주소(형식 일치/전체) | 기간 안 | 연속 0건 | 최근 정상 수집 | 이유 |
 |---|---|---|---|---|---|---|---|
-| Anthropic (모델 발표 페이지) | **DEGRADED** | 200 | 3/215 | 0 | 11 | 2026-10-27 | 발행일을 확인하지 못한 글 1건 (후보에서 제외) · 기간 안 새 글 0건 11회 연속 (마지막 수집 기록 없음) |
+| Anthropic (모델 발표 페이지) | **DEGRADED** | 200 | 3/214 | 0 | 11 | 2026-10-27 | 발행일을 확인하지 못한 글 1건 (후보에서 제외) · 기간 안 새 글 0건 11회 연속 (마지막 수집 기록 없음) |
 | xAI API Release Notes (docs.x.ai) | **DEGRADED** | 200 | 57/57 | 0 | 10 | 2026-10-27 | 기간 안 새 글 0건 10회 연속 (마지막 수집 2026-10-17) |
 | Microsoft 365 Blog | **DEGRADED** | 200 ↪ | 10/10 | 0 | 11 | 2026-10-27 | 리다이렉트 → https://www.microsoft.com/en-us/copilot/blog/feed/ · 기간 안 새 글 0건 11회 연속 (마지막 수집 기록 없음) |
 | Anthropic | **WARNING** | 200 | 279/583 | 1 | 0 | 2026-10-27 | 발행일을 확인하지 못한 글 8건 (후보에서 제외) |
 | Meta Newsroom | **WARNING** | 200 | 10/10 | 0 | 9 | 2026-10-27 | 기간 안 새 글 0건 9회 연속 (마지막 수집 2026-10-18) |
-| Apple Machine Learning Research | **WARNING** | 200 | 10/10 | 0 | 9 | 2026-10-27 | 기간 안 새 글 0건 9회 연속 (마지막 수집 2026-10-18) |
 | Kakao Tech | **WARNING** | 200 ↪ | 10/10 | 0 | 3 | 2026-10-27 | 리다이렉트 → https://tech.kakao.com/feed |
 
 발행일을 확인하지 못해 후보에서 뺀 글 (임의 날짜로 넣지 않음): Introducing Claude Opus 5.5 (Anthropic (모델 발표 페이지)) · Announcements (Anthropic) · Features (Anthropic) · Models (Anthropic) · Partnerships (Anthropic) · Policy (Anthropic)
 
 ## 처리 대기열 · 수집 범위
 
-- 진행 상태: **미완료** · 이번 실행 근거 확인 35건 · 원고 작성 0건
+- 진행 상태: **미완료** · 이번 실행 근거 확인 6건 · 원고 작성 0건
 - 지난 실행에서 넘어온 일: 근거 확인 0건 · 원고 작성 30건
 - 남은 일 (다음 실행으로 이월): 근거 확인 대기 **0**건 · 원고 작성 대기 **31**건 · 아직 열지 못한 글 주소 0개 · 재시도할 소스 0곳
   - 원고 작성 대기: 발행 추천은 났지만 원고 생성 수단이 없거나(무료 생성 미설정·Shadow) 배치를 넘은 항목입니다. 근거는 후보 파일에 보존했고, 빈 원고나 허위 원고는 만들지 않습니다.
-- 수집 범위가 기간 전체를 덮지 못한 소스 4곳 (놓쳤을 수 있음):
+- 수집 범위가 기간 전체를 덮지 못한 소스 5곳 (놓쳤을 수 있음):
+  - Claude (claude.com articles): 피드의 가장 오래된 항목(2026-10-26)이 시작일(2026-10-24)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음
   - AI타임스: 피드의 가장 오래된 항목(2026-10-25)이 시작일(2026-10-24)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음
   - 지디넷코리아: 피드의 가장 오래된 항목(2026-10-26)이 시작일(2026-10-24)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음
-  - 전자신문: 피드의 가장 오래된 항목(2026-10-26)이 시작일(2026-10-23)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음
+  - 전자신문: 피드의 가장 오래된 항목(2026-10-26)이 시작일(2026-10-24)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음
   - arXiv cs.AI (신규 논문): 피드의 가장 오래된 항목(2026-10-26)이 시작일(2026-10-24)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음
 
 ## 선정 진단 (Selection Diagnostics)
 
 **메타데이터 상위 10** (원문을 열기 전 점수 · 유형 · 사건 신호 → 결과)
 - 12 · 소식 · MODEL·PRODUCT_LAUNCH·PRICING·MODEL_MENTION — Monetizing Intelligence: Advertising and Subscription Desig… → **HOLD**
+- 11 · 소식 · API_PLATFORM·PRODUCT_LAUNCH·PRICING — 오픈AI, ‘GPT-6.1 테라’ 출시…자동화 성능 높이고 가격 낮춰 → **HOLD**
+- 11 · 소식 · PRODUCT_LAUNCH·ACQ_INVEST·SECURITY·INFRA — 앤트로픽, IPO 위험 공개…보안 사고부터 데이터센터 반발까지 → **HOLD**
 - 11 · 소식 · API_PLATFORM·PRODUCT_LAUNCH·PRICING — 오픈AI, 할인으로 앤트로픽 고객 공략…앤트로픽은 신모델로 사용량 선두 탈환 → **HOLD**
 - 11 · 소식 · PRODUCT_LAUNCH·PARTNERSHIP·REGULATION — 영국, '세계 최초' AI 생물보안 연구소 설립...1770억 투자 → **HOLD**
 - 11 · 소식 · MODEL·AVAILABILITY·INFRA — Announcing new ways to customize models with SageMaker AI, … → **PUBLISH**
 - 10 · 소식 · PRODUCT_LAUNCH·PRICING·MODEL_MENTION — 리퀴드 AI, 실시간 추론 엔진 ‘RIPL’ 출시...AI 응답 지연 50ms 미만 겨냥 → **HOLD**
+- 10 · 소식 · PRODUCT_LAUNCH·PRICING — 오픈AI, 비용 효율 높인 'GPT-6.1 테라' 공개…시각·조작 강화 → **HOLD**
 - 10 · 소식 · MODEL·REGULATION·INFRA — Learning Structured Sparsity for Large Models: Bridging Mod… → **HOLD**
 - 10 · 소식 · PRODUCT_LAUNCH·PRICING — Kolibri: A Sovereign European Model on the Pareto Frontier → **HOLD**
-- 10 · 소식 · MODEL·SECURITY·SECURITY_MENTION·RESEARCH_RESULT·MODEL_MENTION — DeepSafe-SciHazard: A Benchmark for Measuring Scientific Sa… → **HOLD**
-- 10 · 소식 · MODEL·REGULATION·SECURITY_MENTION — Scaling Laws for Safety Probes → **HOLD**
-- 10 · 소식 · PRODUCT_LAUNCH·AVAILABILITY·INFRA — NVIDIA cuDSS Now Generally Available to Accelerate Engineer… → **PUBLISH**
 
-**근거 확인 명단 35건** (원문 요청 상한 40, 최종 추천 상한 0)
+**근거 확인 명단 41건** (원문 요청 상한 40, 최종 추천 상한 0)
 - Announcing new ways to customize models with SageMaker AI, … — 원문 OK · 확인 사실 9 · SUFFICIENT_STANDARD · 깊이 STANDARD → **PUBLISH**
 - NVIDIA cuDSS Now Generally Available to Accelerate Engineer… — 원문 OK · 확인 사실 12 · SUFFICIENT_STANDARD · 깊이 STANDARD → **PUBLISH**
+- Introducing GPT-6.1 Terra — 원문 HTTP_403 (대체 문서 1줄) · 확인 사실 0 · INSUFFICIENT · 깊이 - → **HOLD**
 - Teacher-led Gemini Notebook in Google Classroom now offers … — 원문 OK · 확인 사실 11 · SUFFICIENT_STANDARD · 깊이 STANDARD → **PUBLISH**
 - AWS Continuum for code vulnerabilities is now generally ava… — 원문 OK · 확인 사실 11 · SUFFICIENT_STANDARD · 깊이 STANDARD → **PUBLISH**
 - Singapore office and government MOU | Anthropic — 원문 OK · 확인 사실 12 · SUFFICIENT_STANDARD · 깊이 STANDARD → **PUBLISH**
@@ -395,6 +402,11 @@
 - GitHub package firewall in public preview — 원문 OK · 확인 사실 8 · SUFFICIENT_STANDARD · 깊이 STANDARD → **PUBLISH**
 - NVIDIA Open Models Power a New Wave of European Public Sect… — 원문 OK · 확인 사실 10 · SUFFICIENT_STANDARD · 깊이 STANDARD → **PUBLISH**
 - Leading European Financial Services Organizations Embrace O… — 원문 OK · 확인 사실 12 · SUFFICIENT_STANDARD · 깊이 STANDARD → **PUBLISH**
+- ChatGPT’s expanding world of work — 원문 HTTP_403 (대체 문서 0줄: 제목에 버전 붙은 이름 없음) · 확인 사실 0 · INSUFFICIENT · 깊이 - → **HOLD**
+- Fleet-wide computer vision lifecycle at the edge with SageM… — 원문 OK · 확인 사실 10 · SUFFICIENT_STANDARD · 깊이 STANDARD → **HOLD**
+- Groundhog Day for AI agents: Prompt caching patterns for us… — 원문 OK · 확인 사실 11 · SUFFICIENT_STANDARD · 깊이 STANDARD → **HOLD**
+- GPT-6.1 Terra in GitHub Copilot — 원문 OK · 확인 사실 12 · SUFFICIENT_STANDARD · 깊이 STANDARD → **HOLD**
+- GPT-6.1 Sol helps CodeRabbit strengthen security across com… — 원문 SKIPPED_HOST_BLOCKED (대체 문서 3줄) · 확인 사실 0 · SUFFICIENT_SHORT · 깊이 SHORT → **HOLD**
 - Anthropic files S-1 with the SEC for proposed initial publi… — 원문 OK · 확인 사실 8 · SUFFICIENT_STANDARD · 깊이 SHORT → **HOLD**
 - AWS Weekly Roundup: Amazon Polly Generative engine, TorchNe… — 원문 OK · 확인 사실 11 · SUFFICIENT_STANDARD · 깊이 SHORT → **HOLD**
 - How NVIDIA Minerva Turns Telemetry Chaos Into Peak GPU Yield — 원문 OK · 확인 사실 11 · SUFFICIENT_STANDARD · 깊이 SHORT → **HOLD**
@@ -403,7 +415,7 @@
 **상한·다양성으로 빠진 후보 0건**
 - 없음
 
-**글 유형 감점 31건**: How Fanatics and OpenAI streamline the … (고객 사례, EXCLUDE) · Behaviour analysis for large language m… (논문, EXCLUDE) · WiMoT: Replay-Free Continual Wi-Fi Sens… (논문, EXCLUDE) · A Foundation Model for Policy In-Contex… (논문, EXCLUDE) · Advancing SVD-based LLM Compression via… (논문, EXCLUDE) · Closing the Modality Gap via Simplex-Co… (논문, HOLD) · Collaborative In-Context Learning for I… (논문, EXCLUDE) · Before the Ticket: Grounding HPC User S… (문서·소소한 갱신, EXCLUDE) · SEVI: Safe Evidential Real-World Reinfo… (논문, EXCLUDE) · Machine-Readable Operator Manuals over … (논문, EXCLUDE) · AgentTrace: Execution-Level Fingerprint… (논문, HOLD) · Implicit Neural Representations for Var… (논문, EXCLUDE) …
+**글 유형 감점 33건**: How Fanatics and OpenAI streamline the … (고객 사례, EXCLUDE) · How Ultrafast cut incident investigatio… (고객 사례, HOLD) · Build agentic retrieval on a Managed Am… (사용법, EXCLUDE) · Behaviour analysis for large language m… (논문, EXCLUDE) · WiMoT: Replay-Free Continual Wi-Fi Sens… (논문, EXCLUDE) · A Foundation Model for Policy In-Contex… (논문, EXCLUDE) · Advancing SVD-based LLM Compression via… (논문, EXCLUDE) · Closing the Modality Gap via Simplex-Co… (논문, HOLD) · Collaborative In-Context Learning for I… (논문, EXCLUDE) · Before the Ticket: Grounding HPC User S… (문서·소소한 갱신, EXCLUDE) · SEVI: Safe Evidential Real-World Reinfo… (논문, EXCLUDE) · Machine-Readable Operator Manuals over … (논문, EXCLUDE) …
 
 **DEEP 판단**
 - Announcing new ways to customize models with SageMaker AI, … → STANDARD (DEEP 아님: 사용자 영향)
@@ -414,10 +426,10 @@
 - Advancing digital sovereignty with greater control and choi… → STANDARD (DEEP 아님: 중요도 4+, 사용자 영향, 확인 사실 6+, STANDARD로는 맥락 누락)
 - Introducing Reflection Beam: an open-weight model for agent… → STANDARD (DEEP 아님: 중요도 4+, 배경 설명 필요, STANDARD로는 맥락 누락)
 
-**보류 이유 (222건)**: 언론 보도 218 · 근거는 있으나 우선순위 N < 발행 추천 기준 N 4
+**보류 이유 (223건)**: 언론 보도 211 · 근거는 있으나 우선순위 N < 발행 추천 기준 N 8 · 근거 부족 2 · 중복 불확실: 기존 기사와 같은 제품 1 · 우선순위 N 1
 
 ## 비용
 
 원고 생성 gemini (gemini-3.8-flash) · 호출 6/6 · 입력 0 · 출력 0 토큰 · 예상 비용 $0.0000 / 상한 $0.5
 
-<sub>실행 2026-10-26T16:46:30.777Z → 2026-10-26T16:50:24.607Z · 상세: run.json, candidates/*.json</sub>
+<sub>실행 2026-10-27T01:26:12.084Z → 2026-10-27T01:30:01.622Z · 상세: run.json, candidates/*.json</sub>
