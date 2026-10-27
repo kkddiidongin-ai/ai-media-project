@@ -1,0 +1,235 @@
+{
+  "id": "e242a37f6e45",
+  "date": "2026-10-27",
+  "proposedSlug": "push-based-kv-transfer-improve-ttft-tpot",
+  "title": null,
+  "sourceTitle": "Push-based KV transfer to improve TTFT and TPOT for disaggregated inference in vLLM",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 10,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/push-based-kv-transfer-to-improve-ttft-and-tpot-for-disaggregated-inference-in-vllm/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-10-19T16:05:17.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "e242a37f6e45",
+    "url": "https://aws.amazon.com/blogs/machine-learning/push-based-kv-transfer-to-improve-ttft-and-tpot-for-disaggregated-inference-in-vllm/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/push-based-kv-transfer-to-improve-ttft-and-tpot-for-disaggregated-inference-in-vllm",
+    "title": "Push-based KV transfer to improve TTFT and TPOT for disaggregated inference in vLLM",
+    "excerpt": "vLLM's prefill-decode disaggregation splits LLM inference across engine instances but must transfer the KV cache between them. This post introduces a push-based NIXL connector that moves transfer coordination off the critical path, delivering up to 3x better TTFT and 30% better TPOT in benchmarks on",
+    "publishedAt": "2026-10-19T16:05:17.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-10-21T15:08:24.835Z",
+    "fromQueue": "draft"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 11012,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "vLLM's prefill-decode disaggregation splits LLM inference across engine instances but must transfer the KV cache between them. This post introduces a push-based NIXL connector that moves transfer coordination off the critical path, delivering up to 3x better TTFT and 30% better TPOT in benchmarks on",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/push-based-kv-transfer-to-improve-ttft-and-tpot-for-disaggregated-inference-in-vllm/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T16:05:17.000Z",
+        "checkedAt": "2026-10-26T16:47:36.040Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Push-based KV transfer to improve TTFT and TPOT for disaggregated inference in vLLM | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/push-based-kv-transfer-to-improve-ttft-and-tpot-for-disaggregated-inference-in-vllm/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T16:05:17.000Z",
+        "checkedAt": "2026-10-26T16:47:36.040Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Push-based KV transfer to improve TTFT and TPOT for disaggregated inference in vLLM",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/push-based-kv-transfer-to-improve-ttft-and-tpot-for-disaggregated-inference-in-vllm/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T16:05:17.000Z",
+        "checkedAt": "2026-10-26T16:47:36.040Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "However, it also requires transferring the KV cache from the prefill instance to the decode instance before token generation can begin, making efficient KV transfer critical to time-to-first-token (TTFT).",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/push-based-kv-transfer-to-improve-ttft-and-tpot-for-disaggregated-inference-in-vllm/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T16:05:17.000Z",
+        "checkedAt": "2026-10-26T16:47:36.040Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "One of the ways vLLM performs this transfer is through the NVIDIA Inference Xfer Library (NIXL) connector , which moves KV blocks over interconnects that support Remote Direct Memory Access (RDMA), such as AWS Elastic Fabric Adapter ( AWS EFA , the low-latency RDMA network use…",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/push-based-kv-transfer-to-improve-ttft-and-tpot-for-disaggregated-inference-in-vllm/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T16:05:17.000Z",
+        "checkedAt": "2026-10-26T16:47:36.040Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Figure 1: Pull-mode KV transfer timeline, where the router relay, decode-side allocation, and NIXL READ run serially on the path to the first token",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/push-based-kv-transfer-to-improve-ttft-and-tpot-for-disaggregated-inference-in-vllm/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T16:05:17.000Z",
+        "checkedAt": "2026-10-26T16:47:36.040Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "If you run disaggregated prefill/decode inference with vLLM, push mode can improve application responsiveness by reducing TTFT and TPOT, particularly at high request rates.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/push-based-kv-transfer-to-improve-ttft-and-tpot-for-disaggregated-inference-in-vllm/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T16:05:17.000Z",
+        "checkedAt": "2026-10-26T16:47:36.040Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "In our benchmark on a 1P1D deployment using Amazon Elastic Compute Cloud (Amazon EC2) P5en instances connected with EFA, push mode delivered up to 3x better TTFT and up to 30 percent better time-per-output-token (TPOT) compared to pull mode (see the Performance data section) f…",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/push-based-kv-transfer-to-improve-ttft-and-tpot-for-disaggregated-inference-in-vllm/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T16:05:17.000Z",
+        "checkedAt": "2026-10-26T16:47:36.040Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "This section explains the push-based design: its architecture, the transfer protocol, and the threading model that keeps KV transfer off the critical path.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/push-based-kv-transfer-to-improve-ttft-and-tpot-for-disaggregated-inference-in-vllm/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T16:05:17.000Z",
+        "checkedAt": "2026-10-26T16:47:36.040Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Figure 2: Push-based KV transfer architecture, showing how the decode instance, prefill instance, and background transfer thread coordinate",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/push-based-kv-transfer-to-improve-ttft-and-tpot-for-disaggregated-inference-in-vllm/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T16:05:17.000Z",
+        "checkedAt": "2026-10-26T16:47:36.040Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Figure 5: TTFT for push compared to pull KV transfer across input lengths and request rates (1P1D topology, 128 output tokens, prefix caching disabled on the decode node)",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/push-based-kv-transfer-to-improve-ttft-and-tpot-for-disaggregated-inference-in-vllm/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T16:05:17.000Z",
+        "checkedAt": "2026-10-26T16:47:36.040Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Figure 6: TPOT for push compared to pull KV transfer across input lengths and request rates (1P1D topology, 128 output tokens, prefix caching disabled on the decode node)",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/push-based-kv-transfer-to-improve-ttft-and-tpot-for-disaggregated-inference-in-vllm/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T16:05:17.000Z",
+        "checkedAt": "2026-10-26T16:47:36.040Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "In our Qwen3-32B benchmark on a 1P1D deployment using Amazon EC2 P5en instances connected with EFA, push mode provided up to a 3x improvement in TTFT and 30 percent improvement in TPOT compared with pull mode.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/push-based-kv-transfer-to-improve-ttft-and-tpot-for-disaggregated-inference-in-vllm/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-19T16:05:17.000Z",
+        "checkedAt": "2026-10-26T16:47:36.040Z"
+      }
+    ],
+    "pageDate": "2026-10-19T16:05:17.000Z"
+  },
+  "score": {
+    "importance": 2,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PRODUCT_LAUNCH",
+      "MODEL_MENTION"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 7,
+    "total": 7
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 PRODUCT_LAUNCH·MODEL_MENTION (우선순위 7)",
+    "근거 확인 통과 (확인 사실 10개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "status": "skipped",
+    "error": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성",
+    "promptVersion": "draft-v1",
+    "at": "2026-10-27T01:30:01.607Z",
+    "evidenceHash": "8f4d48c093e7"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}

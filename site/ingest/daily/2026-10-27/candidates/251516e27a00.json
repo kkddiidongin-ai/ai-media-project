@@ -1,0 +1,233 @@
+{
+  "id": "251516e27a00",
+  "date": "2026-10-27",
+  "proposedSlug": "stop-guessing-auto-scaling-targets-tts-amazon",
+  "title": null,
+  "sourceTitle": "Stop guessing auto scaling targets for TTS on Amazon SageMaker AI",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": true,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": true
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/stop-guessing-auto-scaling-targets-for-tts-on-amazon-sagemaker-ai/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-10-22T16:30:06.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "251516e27a00",
+    "url": "https://aws.amazon.com/blogs/machine-learning/stop-guessing-auto-scaling-targets-for-tts-on-amazon-sagemaker-ai/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/stop-guessing-auto-scaling-targets-for-tts-on-amazon-sagemaker-ai",
+    "title": "Stop guessing auto scaling targets for TTS on Amazon SageMaker AI",
+    "excerpt": "Teams deploying custom text-to-speech models on Amazon SageMaker AI often guess at autoscaling thresholds, and a wrong guess either wastes GPU spend or breaches a latency SLO. This post deploys Kokoro-82M as a custom container and derives a measured autoscaling policy from two live-endpoint measurem",
+    "publishedAt": "2026-10-22T16:30:06.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-10-25T14:19:46.283Z",
+    "fromQueue": "draft"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 17887,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Teams deploying custom text-to-speech models on Amazon SageMaker AI often guess at autoscaling thresholds, and a wrong guess either wastes GPU spend or breaches a latency SLO. This post deploys Kokoro-82M as a custom container and derives a measured autoscaling policy from two live-endpoint measurem",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/stop-guessing-auto-scaling-targets-for-tts-on-amazon-sagemaker-ai/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T16:30:06.000Z",
+        "checkedAt": "2026-10-26T16:47:38.487Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Stop guessing auto scaling targets for TTS on Amazon SageMaker AI | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/stop-guessing-auto-scaling-targets-for-tts-on-amazon-sagemaker-ai/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T16:30:06.000Z",
+        "checkedAt": "2026-10-26T16:47:38.487Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Stop guessing auto scaling targets for TTS on Amazon SageMaker AI",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/stop-guessing-auto-scaling-targets-for-tts-on-amazon-sagemaker-ai/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T16:30:06.000Z",
+        "checkedAt": "2026-10-26T16:47:38.487Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "In this post, we deploy Kokoro-82M , an 82-million-parameter TTS model, as a custom container on an Amazon SageMaker AI real-time endpoint.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/stop-guessing-auto-scaling-targets-for-tts-on-amazon-sagemaker-ai/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T16:30:06.000Z",
+        "checkedAt": "2026-10-26T16:47:38.487Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Most public guidance on Amazon SageMaker AI auto scaling targets short synchronous request/response calls, or large language model (LLM) serving, where the natural metric is tokens generated per second.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/stop-guessing-auto-scaling-targets-for-tts-on-amazon-sagemaker-ai/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T16:30:06.000Z",
+        "checkedAt": "2026-10-26T16:47:38.487Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "This solution deploys Kokoro-82M in a custom container on an Amazon SageMaker AI real-time endpoint, then replaces a guessed auto scaling target with one derived from two measurements taken against that live endpoint: Q_max , the concurrency ceiling one instance serves inside …",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/stop-guessing-auto-scaling-targets-for-tts-on-amazon-sagemaker-ai/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T16:30:06.000Z",
+        "checkedAt": "2026-10-26T16:47:38.487Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "A synthesis request flows through four layers: a client, the Amazon SageMaker AI endpoint, a custom container on a GPU instance behind that endpoint, and the Kokoro-82M model inside the container.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/stop-guessing-auto-scaling-targets-for-tts-on-amazon-sagemaker-ai/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T16:30:06.000Z",
+        "checkedAt": "2026-10-26T16:47:38.487Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Figure 1: The Kokoro-82M request path, from client through the Amazon SageMaker AI endpoint and custom container to the model",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/stop-guessing-auto-scaling-targets-for-tts-on-amazon-sagemaker-ai/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T16:30:06.000Z",
+        "checkedAt": "2026-10-26T16:47:38.487Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "An AWS account with permissions to create AWS Identity and Access Management (IAM) roles, Amazon Simple Storage Service (Amazon S3) buckets, Amazon Elastic Container Registry (Amazon ECR) repositories, and Amazon SageMaker AI resources.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/stop-guessing-auto-scaling-targets-for-tts-on-amazon-sagemaker-ai/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T16:30:06.000Z",
+        "checkedAt": "2026-10-26T16:47:38.487Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "By the end of this walkthrough, you will have a live Amazon SageMaker AI auto scaling policy for Kokoro-82M, derived entirely from two measurements taken against your own endpoint rather than from a guess.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/stop-guessing-auto-scaling-targets-for-tts-on-amazon-sagemaker-ai/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T16:30:06.000Z",
+        "checkedAt": "2026-10-26T16:47:38.487Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "The endpoint deploys through three AWS CDK stacks, applied in order: SpeechFoundationStack creates the IAM roles and the Amazon S3 bucket that caches model weights, SpeechModelCacheStack syncs a model’s Hugging Face weights into that bucket once, and SpeechEndpointStack builds…",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/stop-guessing-auto-scaling-targets-for-tts-on-amazon-sagemaker-ai/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T16:30:06.000Z",
+        "checkedAt": "2026-10-26T16:47:38.487Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "speech-infra destroy removes the Amazon SageMaker AI model, endpoint configuration, endpoint, and any auto scaling or Amazon CloudWatch resources attached to it.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/stop-guessing-auto-scaling-targets-for-tts-on-amazon-sagemaker-ai/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T16:30:06.000Z",
+        "checkedAt": "2026-10-26T16:47:38.487Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Review the Amazon SageMaker AI auto scaling documentation to adapt the thresholds to your SLO, and open the SageMaker AI console to watch the policy react to live traffic.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/stop-guessing-auto-scaling-targets-for-tts-on-amazon-sagemaker-ai/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-22T16:30:06.000Z",
+        "checkedAt": "2026-10-26T16:47:38.487Z"
+      }
+    ],
+    "pageDate": "2026-10-22T16:30:06.000Z"
+  },
+  "score": {
+    "importance": 2,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "INFRA",
+      "API_PLATFORM"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 7,
+    "total": 7
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 INFRA·API_PLATFORM (우선순위 7)",
+    "근거 확인 통과 (확인 사실 11개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "status": "skipped",
+    "error": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성",
+    "promptVersion": "draft-v1",
+    "at": "2026-10-27T01:30:01.607Z",
+    "evidenceHash": "57526e5f89ac"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}

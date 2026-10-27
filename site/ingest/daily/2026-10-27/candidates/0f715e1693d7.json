@@ -1,0 +1,221 @@
+{
+  "id": "0f715e1693d7",
+  "date": "2026-10-27",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Groundhog Day for AI agents: Prompt caching patterns for using OpenAI models on Amazon Bedrock",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/groundhog-day-for-ai-agents-prompt-caching-patterns-for-using-openai-models-on-amazon-bedrock/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-10-26T17:27:20.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "0f715e1693d7",
+    "url": "https://aws.amazon.com/blogs/machine-learning/groundhog-day-for-ai-agents-prompt-caching-patterns-for-using-openai-models-on-amazon-bedrock/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/groundhog-day-for-ai-agents-prompt-caching-patterns-for-using-openai-models-on-amazon-bedrock",
+    "title": "Groundhog Day for AI agents: Prompt caching patterns for using OpenAI models on Amazon Bedrock",
+    "excerpt": "Every time an agent takes a step, it re-reads its entire context before acting. Here is how prompt caching for OpenAI models on Amazon Bedrock lets your agent remember, cutting input cost and latency without resending the same tools, instructions, and history every turn.",
+    "publishedAt": "2026-10-26T17:27:20.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-10-27T01:26:12.085Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 18807,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Every time an agent takes a step, it re-reads its entire context before acting. Here is how prompt caching for OpenAI models on Amazon Bedrock lets your agent remember, cutting input cost and latency without resending the same tools, instructions, and history every turn.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/groundhog-day-for-ai-agents-prompt-caching-patterns-for-using-openai-models-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-26T17:27:20.000Z",
+        "checkedAt": "2026-10-27T01:27:17.104Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Groundhog Day for AI agents: Prompt caching patterns for using OpenAI models on Amazon Bedrock | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/groundhog-day-for-ai-agents-prompt-caching-patterns-for-using-openai-models-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-26T17:27:20.000Z",
+        "checkedAt": "2026-10-27T01:27:17.104Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Groundhog Day for AI agents: Prompt caching patterns for using OpenAI models on Amazon Bedrock",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/groundhog-day-for-ai-agents-prompt-caching-patterns-for-using-openai-models-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-26T17:27:20.000Z",
+        "checkedAt": "2026-10-27T01:27:17.104Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "In the movie Groundhog Day , Bill Murray’s character re-lives the same February 2 every day.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/groundhog-day-for-ai-agents-prompt-caching-patterns-for-using-openai-models-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-26T17:27:20.000Z",
+        "checkedAt": "2026-10-27T01:27:17.104Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "AI agents live in a version of Groundhog Day.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/groundhog-day-for-ai-agents-prompt-caching-patterns-for-using-openai-models-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-26T17:27:20.000Z",
+        "checkedAt": "2026-10-27T01:27:17.104Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Prompt caching can be implicit, where Amazon Bedrock selects where the reusable prefix ends, or explicit, where your code marks that endpoint using prompt_cache_breakpoint .",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/groundhog-day-for-ai-agents-prompt-caching-patterns-for-using-openai-models-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-26T17:27:20.000Z",
+        "checkedAt": "2026-10-27T01:27:17.104Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Figure 2: Turn 1 saves the prompt prefix up to the breakpoint, and turn 2 reuses it and pays full price only for the new question",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/groundhog-day-for-ai-agents-prompt-caching-patterns-for-using-openai-models-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-26T17:27:20.000Z",
+        "checkedAt": "2026-10-27T01:27:17.104Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "In one of our tests using explicit caching, the roughly 4,000-token tools-and-instructions prefix wrote 4,120 tokens on the first request and read those 4,120 tokens on later requests.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/groundhog-day-for-ai-agents-prompt-caching-patterns-for-using-openai-models-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-26T17:27:20.000Z",
+        "checkedAt": "2026-10-27T01:27:17.104Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Figure 4: Input cost of every caching setup on GPT-6 Astra, relative to no caching",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/groundhog-day-for-ai-agents-prompt-caching-patterns-for-using-openai-models-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-26T17:27:20.000Z",
+        "checkedAt": "2026-10-27T01:27:17.104Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Both Amazon Bedrock Runtime and Amazon Bedrock Mantle endpoints accept an input item type called additional_tools for GPT-6 Astra, GPT-6.1 Sol, and GPT-5.6 Luna.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/groundhog-day-for-ai-agents-prompt-caching-patterns-for-using-openai-models-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-26T17:27:20.000Z",
+        "checkedAt": "2026-10-27T01:27:17.104Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Figure 5: Appending a tool keeps the earlier prefix reusable, with example counts from GPT-6 Astra on Amazon Bedrock Runtime",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/groundhog-day-for-ai-agents-prompt-caching-patterns-for-using-openai-models-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-26T17:27:20.000Z",
+        "checkedAt": "2026-10-27T01:27:17.104Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Figure 9: Cumulative input cost per session for the support-agent example, using Amazon Bedrock on-demand prices for GPT-6 Astra",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/groundhog-day-for-ai-agents-prompt-caching-patterns-for-using-openai-models-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-26T17:27:20.000Z",
+        "checkedAt": "2026-10-27T01:27:17.104Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "To apply these patterns, follow the Amazon Bedrock prompt caching documentation for OpenAI models and check model availability by AWS Region and endpoint .",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/groundhog-day-for-ai-agents-prompt-caching-patterns-for-using-openai-models-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-26T17:27:20.000Z",
+        "checkedAt": "2026-10-27T01:27:17.104Z"
+      }
+    ],
+    "pageDate": "2026-10-26T17:27:20.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "API_PLATFORM"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 API_PLATFORM (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

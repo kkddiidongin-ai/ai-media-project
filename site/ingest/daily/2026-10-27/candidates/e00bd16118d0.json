@@ -1,0 +1,221 @@
+{
+  "id": "e00bd16118d0",
+  "date": "2026-10-27",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "AWS Weekly Roundup: Amazon Polly Generative engine, TorchNeuron for Trainium, and more (October 26, 2026)",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-amazon-polly-generative-engine-torchneuron-for-trainium-and-more-october-26-2026/",
+      "name": "AWS News Blog",
+      "type": "official",
+      "publishedAt": "2026-10-26T15:02:24.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "e00bd16118d0",
+    "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-amazon-polly-generative-engine-torchneuron-for-trainium-and-more-october-26-2026/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-amazon-polly-generative-engine-torchneuron-for-trainium-and-more-october-26-2026",
+    "title": "AWS Weekly Roundup: Amazon Polly Generative engine, TorchNeuron for Trainium, and more (October 26, 2026)",
+    "excerpt": "A few weeks ago I presented to a small group of commercial and technology leaders from Brazilian agribusiness at the AWS office in São Paulo. My talk ran through where generative AI fits across the different stages of an agribusiness operation, and the point I kept returning to is that the markets w",
+    "publishedAt": "2026-10-26T15:02:24.000Z",
+    "sourceId": "aws-news",
+    "sourceName": "AWS News Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/aws/feed/",
+    "fetchedAt": "2026-10-27T01:26:12.085Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 7508,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "A few weeks ago I presented to a small group of commercial and technology leaders from Brazilian agribusiness at the AWS office in São Paulo. My talk ran through where generative AI fits across the different stages of an agribusiness operation, and the point I kept returning to is that the markets w",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-amazon-polly-generative-engine-torchneuron-for-trainium-and-more-october-26-2026/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-10-26T15:02:24.000Z",
+        "checkedAt": "2026-10-26T16:47:44.778Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "AWS Weekly Roundup: Amazon Polly Generative engine, TorchNeuron for Trainium, and more (October 26, 2026) | AWS News Blog",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-amazon-polly-generative-engine-torchneuron-for-trainium-and-more-october-26-2026/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-10-26T15:02:24.000Z",
+        "checkedAt": "2026-10-26T16:47:44.778Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "AWS Weekly Roundup: Amazon Polly Generative engine, TorchNeuron for Trainium, and more (October 26, 2026)",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-amazon-polly-generative-engine-torchneuron-for-trainium-and-more-october-26-2026/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-10-26T15:02:24.000Z",
+        "checkedAt": "2026-10-26T16:47:44.778Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "The Amazon Polly Generative engine upgrade added 14 new voices, two of them in Brazilian Portuguese.",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-amazon-polly-generative-engine-torchneuron-for-trainium-and-more-october-26-2026/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-10-26T15:02:24.000Z",
+        "checkedAt": "2026-10-26T16:47:44.778Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Amazon Threat Intelligence found a PHP2Shell exploitation attempt in MadPot telemetry dated October 17, four days before CVE-2026-109618 and CVE-2026-109619 were publicly disclosed, and on disclosure day proof-of-concept exploits were circulating around 02:00 UTC, roughly twel…",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-amazon-polly-generative-engine-torchneuron-for-trainium-and-more-october-26-2026/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-10-26T15:02:24.000Z",
+        "checkedAt": "2026-10-26T16:47:44.778Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Amazon ECS Gateway is available in all commercial Regions where Amazon ECS is available, at no additional charge.",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-amazon-polly-generative-engine-torchneuron-for-trainium-and-more-october-26-2026/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-10-26T15:02:24.000Z",
+        "checkedAt": "2026-10-26T16:47:44.778Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Amazon Polly delivers a major upgrade to its Generative engine – The Generative engine now runs a larger, more expressive catalog: 57 generative voices across 11 languages and 25 locales, with 14 new voices across 9 locales and Hindi and Finnish generally available for the fir…",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-amazon-polly-generative-engine-torchneuron-for-trainium-and-more-october-26-2026/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-10-26T15:02:24.000Z",
+        "checkedAt": "2026-10-26T16:47:44.778Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "AWS announces TorchNeuron: native PyTorch support for AWS Trainium (public beta) – TorchNeuron is an open source PyTorch backend that lets you run your model on Trainium by switching to .to(‘neuron’), a configuration change instead of a rewrite, with eager execution and torch.…",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-amazon-polly-generative-engine-torchneuron-for-trainium-and-more-october-26-2026/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-10-26T15:02:24.000Z",
+        "checkedAt": "2026-10-26T16:47:44.778Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "If you want the bigger picture on why hardware choice should not lock in your software, the AWS Insights piece on that theme is a good companion read, and the release lands alongside AWS Neuron 2.33 .",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-amazon-polly-generative-engine-torchneuron-for-trainium-and-more-october-26-2026/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-10-26T15:02:24.000Z",
+        "checkedAt": "2026-10-26T16:47:44.778Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Amazon ElastiCache Serverless for Valkey now supports online migration with zero downtime – You can migrate self-managed Valkey or Redis OSS on Amazon EC2 into ElastiCache Serverless with zero downtime, meaning zero errors returned to the client during the move, measured the w…",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-amazon-polly-generative-engine-torchneuron-for-trainium-and-more-october-26-2026/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-10-26T15:02:24.000Z",
+        "checkedAt": "2026-10-26T16:47:44.778Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Bank moved four Oracle Exadata databases totaling about 119 TB to Amazon RDS for Oracle using a config-driven pipeline built on Oracle XTTS, AWS DataSync, and Amazon EFS.",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-amazon-polly-generative-engine-torchneuron-for-trainium-and-more-october-26-2026/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-10-26T15:02:24.000Z",
+        "checkedAt": "2026-10-26T16:47:44.778Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "AWS re:Invent – AWS re:Invent runs November 30 to December 4 in Las Vegas, with more than 2,200 sessions.",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-amazon-polly-generative-engine-torchneuron-for-trainium-and-more-october-26-2026/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-10-26T15:02:24.000Z",
+        "checkedAt": "2026-10-26T16:47:44.778Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "AWS Community Days – AWS Community Day Brasil Norte takes place in Belém on October 31, closing out the 2026 Brazilian community season.",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-amazon-polly-generative-engine-torchneuron-for-trainium-and-more-october-26-2026/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-10-26T15:02:24.000Z",
+        "checkedAt": "2026-10-26T16:47:44.778Z"
+      }
+    ],
+    "pageDate": "2026-10-26T15:02:24.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "INFRA"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 INFRA (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}
