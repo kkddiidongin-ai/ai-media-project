@@ -1,0 +1,155 @@
+{
+  "id": "24f0298eed38",
+  "date": "2026-10-28",
+  "proposedSlug": "nvidia-advances-agentic-security-media-european-public",
+  "title": null,
+  "sourceTitle": "NVIDIA Advances Agentic Security for Media, From European Public Service Broadcasting to Global Content Production",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_SHORT",
+    "distinctFacts": 3,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": true,
+      "distinctFacts": false,
+      "evidenceQuality": false,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "distinctFacts",
+      "evidenceQuality",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "NVIDIA",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://blogs.nvidia.com/blog/media-agentic-security-european-public-service-broadcasting-global-content-production/",
+      "name": "NVIDIA Blog",
+      "type": "official",
+      "publishedAt": "2026-10-19T15:00:31.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "24f0298eed38",
+    "url": "https://blogs.nvidia.com/blog/media-agentic-security-european-public-service-broadcasting-global-content-production/",
+    "canonicalUrl": "https://blogs.nvidia.com/blog/media-agentic-security-european-public-service-broadcasting-global-content-production",
+    "title": "NVIDIA Advances Agentic Security for Media, From European Public Service Broadcasting to Global Content Production",
+    "excerpt": "At a creative industry event that took place today in Berlin — hosted in collaboration with Adobe, Bertelsmann, NVIDIA and UFA — the latest advancements in intelligent media were on display. Key to the news: the European Broadcasting Union (EBU) is collaborating with NVIDIA to expand its sovereign f",
+    "publishedAt": "2026-10-19T15:00:31.000Z",
+    "sourceId": "nvidia",
+    "sourceName": "NVIDIA Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://blogs.nvidia.com/feed/",
+    "fetchedAt": "2026-10-22T00:37:54.015Z",
+    "fromQueue": "draft"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 548,
+    "grade": "FAIL",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "At a creative industry event that took place today in Berlin — hosted in collaboration with Adobe, Bertelsmann, NVIDIA and UFA — the latest advancements in intelligent media were on display. Key to the news: the European Broadcasting Union (EBU) is collaborating with NVIDIA to expand its sovereign f",
+        "sourceUrl": "https://blogs.nvidia.com/blog/media-agentic-security-european-public-service-broadcasting-global-content-production/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-19T15:00:31.000Z",
+        "checkedAt": "2026-10-27T15:53:31.104Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "NVIDIA Advances Agentic Security for Media, From European Public Service Broadcasting to Global Content Production | NVIDIA Blog",
+        "sourceUrl": "https://blogs.nvidia.com/blog/media-agentic-security-european-public-service-broadcasting-global-content-production/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-19T15:00:31.000Z",
+        "checkedAt": "2026-10-27T15:53:31.104Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "At a creative industry event that took place today in Berlin — hosted in collaboration with Adobe , Bertelsmann , NVIDIA and UFA — the latest advancements in intelligent media were on display.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/media-agentic-security-european-public-service-broadcasting-global-content-production/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-19T15:00:31.000Z",
+        "checkedAt": "2026-10-27T15:53:31.104Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Key to the news: the European Broadcasting Union (EBU) is collaborating with NVIDIA to expand its sovereign framework with cloud, open models and integration partners, while Adobe Frame.io is accelerating video agent search capabilities with NVIDIA GPUs, helping German TV and …",
+        "sourceUrl": "https://blogs.nvidia.com/blog/media-agentic-security-european-public-service-broadcasting-global-content-production/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-19T15:00:31.000Z",
+        "checkedAt": "2026-10-27T15:53:31.104Z"
+      }
+    ],
+    "pageDate": "2026-10-19T15:00:31.000Z"
+  },
+  "score": {
+    "importance": 2,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PARTNERSHIP",
+      "SECURITY_MENTION"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 6,
+    "total": 6
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 PARTNERSHIP·SECURITY_MENTION (우선순위 6)",
+    "근거 확인 통과 (확인 사실 3개, SUFFICIENT_SHORT)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "status": "skipped",
+    "error": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성",
+    "promptVersion": "draft-v1",
+    "at": "2026-10-27T15:53:56.878Z",
+    "evidenceHash": "9f216278d7e9"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}

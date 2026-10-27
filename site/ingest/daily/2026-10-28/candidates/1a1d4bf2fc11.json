@@ -1,0 +1,152 @@
+{
+  "id": "1a1d4bf2fc11",
+  "date": "2026-10-28",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "GPT-6.1 Sol helps CodeRabbit strengthen security across complex codebases",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_SHORT",
+    "distinctFacts": 0,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": false,
+      "evidenceQuality": false,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "distinctFacts",
+      "evidenceQuality",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "OpenAI",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security",
+      "name": "OpenAI",
+      "type": "official",
+      "publishedAt": "2026-10-26T13:45:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "1a1d4bf2fc11",
+    "url": "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security",
+    "canonicalUrl": "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security",
+    "title": "GPT-6.1 Sol helps CodeRabbit strengthen security across complex codebases",
+    "excerpt": "CodeRabbit uses GPT-6.1 Sol to investigate security risks across complex codebases. Its security agent helps developers review findings and proposed fixes.",
+    "publishedAt": "2026-10-26T13:45:00.000Z",
+    "sourceId": "openai",
+    "sourceName": "OpenAI",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://openai.com/news/rss.xml",
+    "fetchedAt": "2026-10-27T15:52:21.033Z"
+  },
+  "evidence": {
+    "status": "SKIPPED_HOST_BLOCKED",
+    "chars": 0,
+    "grade": "FAIL",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "CodeRabbit uses GPT-6.1 Sol to investigate security risks across complex codebases. Its security agent helps developers review findings and proposed fixes.",
+        "sourceUrl": "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security",
+        "source": "OpenAI",
+        "publishedAt": "2026-10-26T13:45:00.000Z",
+        "checkedAt": "2026-10-27T15:53:38.483Z"
+      },
+      {
+        "id": "A1",
+        "kind": "alternate",
+        "text": "Added Ultrafast mode for GPT-6.1 Sol in the Responses API. Use gpt-6.1-sol with service_tier: \"ultrafast\" to reduce the time between generated output tokens. It is available to all API users, subject to rate limits, with global processing and US and EU data residency. See Ultr…",
+        "sourceUrl": "https://platform.openai.com/docs/changelog",
+        "source": "OpenAI API Changelog",
+        "publishedAt": null,
+        "checkedAt": "2026-10-27T15:53:38.483Z"
+      },
+      {
+        "id": "A2",
+        "kind": "alternate",
+        "text": "Released GPT-6.1 Sol ( gpt-6.1-sol ) for complex coding and professional work at a lower cost than GPT-6 Astra.",
+        "sourceUrl": "https://platform.openai.com/docs/changelog",
+        "source": "OpenAI API Changelog",
+        "publishedAt": null,
+        "checkedAt": "2026-10-27T15:53:38.483Z"
+      },
+      {
+        "id": "A3",
+        "kind": "alternate",
+        "text": "GPT-6.1 Sol also supports Multi-agent in beta. Let the model delegate work to subagents in a Responses API request.",
+        "sourceUrl": "https://platform.openai.com/docs/changelog",
+        "source": "OpenAI API Changelog",
+        "publishedAt": null,
+        "checkedAt": "2026-10-27T15:53:38.483Z"
+      }
+    ],
+    "pageDate": null,
+    "alternate": {
+      "tried": [
+        "https://platform.openai.com/docs/changelog"
+      ],
+      "matched": 3,
+      "reason": ""
+    }
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 2,
+    "signals": [
+      "SECURITY_MENTION"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 SECURITY_MENTION (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [
+    "source_blocked",
+    "alternate_evidence"
+  ],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

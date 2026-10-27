@@ -1,0 +1,221 @@
+{
+  "id": "8ed93bec7901",
+  "date": "2026-10-28",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Fleet-wide computer vision lifecycle at the edge with SageMaker SDK v3",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 10,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/fleet-wide-computer-vision-lifecycle-at-the-edge-with-sagemaker-sdk-v3/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-10-26T17:56:58.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "8ed93bec7901",
+    "url": "https://aws.amazon.com/blogs/machine-learning/fleet-wide-computer-vision-lifecycle-at-the-edge-with-sagemaker-sdk-v3/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/fleet-wide-computer-vision-lifecycle-at-the-edge-with-sagemaker-sdk-v3",
+    "title": "Fleet-wide computer vision lifecycle at the edge with SageMaker SDK v3",
+    "excerpt": "Fleet-wide computer vision needs a model per camera, not one model for the whole fleet. This post presents a working Amazon SageMaker SDK v3 reference architecture that trains, quality-gates, compiles per-camera models with SageMaker Neo, and versions thousands of them, with an AWS Step Functions la",
+    "publishedAt": "2026-10-26T17:56:58.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-10-27T15:52:21.033Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 17669,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Fleet-wide computer vision needs a model per camera, not one model for the whole fleet. This post presents a working Amazon SageMaker SDK v3 reference architecture that trains, quality-gates, compiles per-camera models with SageMaker Neo, and versions thousands of them, with an AWS Step Functions la",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/fleet-wide-computer-vision-lifecycle-at-the-edge-with-sagemaker-sdk-v3/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-26T17:56:58.000Z",
+        "checkedAt": "2026-10-27T15:53:36.782Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Fleet-wide computer vision lifecycle at the edge with SageMaker SDK v3 | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/fleet-wide-computer-vision-lifecycle-at-the-edge-with-sagemaker-sdk-v3/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-26T17:56:58.000Z",
+        "checkedAt": "2026-10-27T15:53:36.782Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Fleet-wide computer vision lifecycle at the edge with SageMaker SDK v3",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/fleet-wide-computer-vision-lifecycle-at-the-edge-with-sagemaker-sdk-v3/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-26T17:56:58.000Z",
+        "checkedAt": "2026-10-27T15:53:36.782Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Fleet-wide computer vision model lifecycle management is a problem that shows up the moment a quality inspection proof of concept succeeds.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/fleet-wide-computer-vision-lifecycle-at-the-edge-with-sagemaker-sdk-v3/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-26T17:56:58.000Z",
+        "checkedAt": "2026-10-27T15:53:36.782Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "This post updates the pattern introduced in the 2023 series Build an end-to-end MLOps pipeline for visual quality inspection at the edge for the current Amazon SageMaker Python SDK v3.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/fleet-wide-computer-vision-lifecycle-at-the-edge-with-sagemaker-sdk-v3/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-26T17:56:58.000Z",
+        "checkedAt": "2026-10-27T15:53:36.782Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "It replaces the since-deprecated Amazon SageMaker Edge Manager with Amazon SageMaker Neo for edge optimization.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/fleet-wide-computer-vision-lifecycle-at-the-edge-with-sagemaker-sdk-v3/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-26T17:56:58.000Z",
+        "checkedAt": "2026-10-27T15:53:36.782Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "The training half is a single SageMaker Pipeline, parameterized by camera, that runs 13 steps per execution.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/fleet-wide-computer-vision-lifecycle-at-the-edge-with-sagemaker-sdk-v3/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-26T17:56:58.000Z",
+        "checkedAt": "2026-10-27T15:53:36.782Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Past the gate, the model is compiled with SageMaker Neo for the configured edge target, and only then registered in the SageMaker Model Registry.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/fleet-wide-computer-vision-lifecycle-at-the-edge-with-sagemaker-sdk-v3/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-26T17:56:58.000Z",
+        "checkedAt": "2026-10-27T15:53:36.782Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Defining the training pipeline with SDK v3",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/fleet-wide-computer-vision-lifecycle-at-the-edge-with-sagemaker-sdk-v3/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-26T17:56:58.000Z",
+        "checkedAt": "2026-10-27T15:53:36.782Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "SDK v3 reorganized the SageMaker Python SDK into modular packages, and the imports show the new shape of the library:",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/fleet-wide-computer-vision-lifecycle-at-the-edge-with-sagemaker-sdk-v3/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-26T17:56:58.000Z",
+        "checkedAt": "2026-10-27T15:53:36.782Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "First, SDK v3 validates the pipeline’s execution role against live IAM while building the pipeline definition.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/fleet-wide-computer-vision-lifecycle-at-the-edge-with-sagemaker-sdk-v3/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-26T17:56:58.000Z",
+        "checkedAt": "2026-10-27T15:53:36.782Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "In this post, I showed a working SageMaker SDK v3 reference architecture for the fleet-scale computer vision lifecycle.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/fleet-wide-computer-vision-lifecycle-at-the-edge-with-sagemaker-sdk-v3/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-26T17:56:58.000Z",
+        "checkedAt": "2026-10-27T15:53:36.782Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "For the SDK v3 migration itself, the SageMaker Python SDK documentation and the two-part series announcing the new SDK are the references I kept open throughout.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/fleet-wide-computer-vision-lifecycle-at-the-edge-with-sagemaker-sdk-v3/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-26T17:56:58.000Z",
+        "checkedAt": "2026-10-27T15:53:36.782Z"
+      }
+    ],
+    "pageDate": "2026-10-26T17:56:58.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "API_PLATFORM"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 API_PLATFORM (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}
