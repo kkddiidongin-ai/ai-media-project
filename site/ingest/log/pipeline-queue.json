@@ -22,7 +22,7 @@
       "since": "2026-10-14",
       "attempts": 9,
       "date": "2026-10-28",
-      "reason": "HTTP 503"
+      "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
     },
     "116eea760bcf": {
       "stage": "draft",
@@ -296,7 +296,7 @@
       },
       "addedAt": "2026-10-22",
       "since": "2026-10-19",
-      "attempts": 13,
+      "attempts": 14,
       "date": "2026-10-28",
       "reason": "HTTP 503"
     },
@@ -480,7 +480,7 @@
       },
       "addedAt": "2026-10-22",
       "since": "2026-10-19",
-      "attempts": 12,
+      "attempts": 13,
       "date": "2026-10-28",
       "reason": "HTTP 503"
     },
@@ -618,7 +618,7 @@
       },
       "addedAt": "2026-10-23",
       "since": "2026-10-20",
-      "attempts": 10,
+      "attempts": 11,
       "date": "2026-10-28",
       "reason": "HTTP 503"
     },
@@ -641,7 +641,7 @@
       },
       "addedAt": "2026-10-23",
       "since": "2026-10-20",
-      "attempts": 10,
+      "attempts": 11,
       "date": "2026-10-28",
       "reason": "HTTP 503"
     },
@@ -729,13 +729,13 @@
         "tier": 1,
         "fetchMode": "rss-paged",
         "discoveredVia": "https://github.blog/changelog/feed/",
-        "fetchedAt": "2026-10-27T15:52:21.033Z"
+        "fetchedAt": "2026-10-28T01:13:26.555Z"
       },
       "addedAt": "2026-10-28",
       "since": "2026-10-25",
       "attempts": 1,
       "date": "2026-10-28",
-      "reason": "HTTP 503"
+      "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
     },
     "4a299d1e9f3d": {
       "stage": "draft",
@@ -752,7 +752,7 @@
         "tier": 1,
         "fetchMode": "rss-paged",
         "discoveredVia": "https://blogs.nvidia.com/feed/",
-        "fetchedAt": "2026-10-27T15:52:21.033Z"
+        "fetchedAt": "2026-10-28T01:13:26.555Z"
       },
       "addedAt": "2026-10-28",
       "since": "2026-10-25",
@@ -775,7 +775,7 @@
         "tier": 1,
         "fetchMode": "rss",
         "discoveredVia": "https://nvidianews.nvidia.com/releases.xml",
-        "fetchedAt": "2026-10-27T15:52:21.033Z"
+        "fetchedAt": "2026-10-28T01:13:26.555Z"
       },
       "addedAt": "2026-10-28",
       "since": "2026-10-25",
@@ -783,77 +783,146 @@
       "date": "2026-10-28",
       "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
     },
-    "e00bd16118d0": {
-      "stage": "evidence",
+    "45a374d069fd": {
+      "stage": "draft",
       "item": {
-        "id": "e00bd16118d0",
-        "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-amazon-polly-generative-engine-torchneuron-for-trainium-and-more-october-26-2026/",
-        "canonicalUrl": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-amazon-polly-generative-engine-torchneuron-for-trainium-and-more-october-26-2026",
-        "title": "AWS Weekly Roundup: Amazon Polly Generative engine, TorchNeuron for Trainium, and more (October 26, 2026)",
-        "excerpt": "A few weeks ago I presented to a small group of commercial and technology leaders from Brazilian agribusiness at the AWS office in São Paulo. My talk ran through where generative AI fits across the different stages of an agribusiness operation, and the point I kept returning to is that the markets w",
-        "publishedAt": "2026-10-26T15:02:24.000Z",
-        "sourceId": "aws-news",
-        "sourceName": "AWS News Blog",
+        "id": "45a374d069fd",
+        "url": "https://about.fb.com/news/2026/10/muse-is-now-available-in-singapore-the-worlds-first-personal-ai-agent-built-for-everyone/",
+        "canonicalUrl": "https://about.fb.com/news/2026/10/muse-is-now-available-in-singapore-the-worlds-first-personal-ai-agent-built-for-everyone",
+        "title": "Muse Is Now Available in Singapore: The World’s First Personal AI Agent Built for Everyone",
+        "excerpt": "Today we’re announcing Muse is now available in Singapore. The post Muse Is Now Available in Singapore: The World’s First Personal AI Agent Built for Everyone appeared first on Meta Newsroom .",
+        "publishedAt": "2026-10-28T00:00:03.000Z",
+        "sourceId": "meta",
+        "sourceName": "Meta Newsroom",
         "sourceType": "official",
         "tier": 1,
-        "fetchMode": "rss",
-        "discoveredVia": "https://aws.amazon.com/blogs/aws/feed/",
-        "fetchedAt": "2026-10-27T15:52:21.033Z"
+        "fetchMode": "rss-paged",
+        "discoveredVia": "https://about.fb.com/news/feed/",
+        "fetchedAt": "2026-10-28T01:13:26.555Z"
       },
       "addedAt": "2026-10-28",
       "since": "2026-10-25",
       "attempts": 1,
       "date": "2026-10-28",
-      "reason": "batch"
+      "reason": "HTTP 503"
     },
-    "1bb838b3befa": {
-      "stage": "evidence",
+    "31f854764086": {
+      "stage": "draft",
       "item": {
-        "id": "1bb838b3befa",
-        "url": "https://developer.nvidia.com/blog/how-nvidia-minerva-turns-telemetry-chaos-into-peak-gpu-yield/",
-        "canonicalUrl": "https://developer.nvidia.com/blog/how-nvidia-minerva-turns-telemetry-chaos-into-peak-gpu-yield",
-        "title": "How NVIDIA Minerva Turns Telemetry Chaos Into Peak GPU Yield",
-        "excerpt": "AI Factories are some of the most technologically complex operational environments ever created. Hundreds of thousands of GPUs, NVIDIA Spectrum-X Ethernet...",
-        "publishedAt": "2026-10-26T16:00:00.000Z",
+        "id": "31f854764086",
+        "url": "https://www.anthropic.com/news/expanding-partnership-gsa",
+        "canonicalUrl": "https://anthropic.com/news/expanding-partnership-gsa",
+        "title": "Expanding our partnership with GSA to bring Claude to all levels of government",
+        "excerpt": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
+        "publishedAt": "2026-10-27T00:00:00.000Z",
+        "sourceId": "anthropic",
+        "sourceName": "Anthropic",
+        "sourceType": "official",
+        "tier": 1,
+        "fetchMode": "sitemap-meta",
+        "discoveredVia": "https://www.anthropic.com/sitemap.xml",
+        "fetchedAt": "2026-10-28T01:13:26.555Z"
+      },
+      "addedAt": "2026-10-28",
+      "since": "2026-10-25",
+      "attempts": 1,
+      "date": "2026-10-28",
+      "reason": "HTTP 503"
+    },
+    "747b76bde702": {
+      "stage": "draft",
+      "item": {
+        "id": "747b76bde702",
+        "url": "https://github.blog/changelog/2026-10-27-github-copilot-supports-server-to-server-authentication",
+        "canonicalUrl": "https://github.blog/changelog/2026-10-27-github-copilot-supports-server-to-server-authentication",
+        "title": "GitHub Copilot supports server-to-server authentication",
+        "excerpt": "GitHub Copilot now supports server-to-server authentication for GitHub Apps installed on organizations, available in public preview. Services and agents built with the GitHub Copilot SDK can now make requests on… The post GitHub Copilot supports server-to-server authentication appeared first on The ",
+        "publishedAt": "2026-10-27T21:36:55.000Z",
+        "sourceId": "github-changelog",
+        "sourceName": "GitHub Changelog",
+        "sourceType": "official",
+        "tier": 1,
+        "fetchMode": "rss-paged",
+        "discoveredVia": "https://github.blog/changelog/feed/",
+        "fetchedAt": "2026-10-28T01:13:26.555Z"
+      },
+      "addedAt": "2026-10-28",
+      "since": "2026-10-25",
+      "attempts": 0,
+      "date": "2026-10-28",
+      "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
+    },
+    "5ef94984dce4": {
+      "stage": "draft",
+      "item": {
+        "id": "5ef94984dce4",
+        "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+        "canonicalUrl": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation",
+        "title": "Genie 4: A new generation of world simulation",
+        "excerpt": "Genie 4: our new world model unlocking unprecedented realism in real-time simulation.",
+        "publishedAt": "2026-10-27T16:01:38.000Z",
+        "sourceId": "google-deepmind",
+        "sourceName": "Google DeepMind",
+        "sourceType": "official",
+        "tier": 1,
+        "fetchMode": "rss",
+        "discoveredVia": "https://deepmind.google/blog/rss.xml",
+        "fetchedAt": "2026-10-28T01:13:26.555Z"
+      },
+      "addedAt": "2026-10-28",
+      "since": "2026-10-25",
+      "attempts": 0,
+      "date": "2026-10-28",
+      "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
+    },
+    "b7dc23ae3cdc": {
+      "stage": "draft",
+      "item": {
+        "id": "b7dc23ae3cdc",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-genie-4/",
+        "canonicalUrl": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-genie-4",
+        "title": "We’re announcing Genie 4, our new world model for real-time interactive simulation.",
+        "excerpt": "Today, we’re announcing our research on Genie 4, our new world model that brings unprecedented realism and native audio to real-time interactive simulation.The Genie 4 m…",
+        "publishedAt": "2026-10-27T00:00:00.000Z",
+        "sourceId": "google-ai",
+        "sourceName": "Google (The Keyword · AI)",
+        "sourceType": "official",
+        "tier": 1,
+        "fetchMode": "sitemap-meta",
+        "discoveredVia": "https://blog.google/en-us/sitemap.xml",
+        "fetchedAt": "2026-10-28T01:13:26.555Z"
+      },
+      "addedAt": "2026-10-28",
+      "since": "2026-10-25",
+      "attempts": 0,
+      "date": "2026-10-28",
+      "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
+    },
+    "e2324f34bfee": {
+      "stage": "draft",
+      "item": {
+        "id": "e2324f34bfee",
+        "url": "https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages/",
+        "canonicalUrl": "https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages",
+        "title": "Fine-Tuning NVIDIA Nemotron to Know Local Rules, Not Just Local Languages",
+        "excerpt": "As AI adoption expands globally, people across languages and cultures are using it in more aspects of their daily lives. General-purpose language models serve...",
+        "publishedAt": "2026-10-27T16:00:00.000Z",
         "sourceId": "nvidia-developer",
         "sourceName": "NVIDIA Technical Blog",
         "sourceType": "official",
         "tier": 1,
         "fetchMode": "rss",
         "discoveredVia": "https://developer.nvidia.com/blog/feed",
-        "fetchedAt": "2026-10-27T15:52:21.033Z"
+        "fetchedAt": "2026-10-28T01:13:26.555Z"
       },
       "addedAt": "2026-10-28",
       "since": "2026-10-25",
-      "attempts": 1,
+      "attempts": 0,
       "date": "2026-10-28",
-      "reason": "batch"
-    },
-    "56260fcd11d4": {
-      "stage": "evidence",
-      "item": {
-        "id": "56260fcd11d4",
-        "url": "https://developer.nvidia.com/blog/how-nvidia-mission-control-2-5-brings-autonomous-recovery-to-kubernetes/",
-        "canonicalUrl": "https://developer.nvidia.com/blog/how-nvidia-mission-control-2-5-brings-autonomous-recovery-to-kubernetes",
-        "title": "How NVIDIA Mission Control 2.5 Brings Autonomous Recovery to Kubernetes",
-        "excerpt": "Training large-scale AI models on thousands of GPUs is a high-stakes operation where monitoring and automation must be built-in to optimize cluster resiliency...",
-        "publishedAt": "2026-10-26T15:00:00.000Z",
-        "sourceId": "nvidia-developer",
-        "sourceName": "NVIDIA Technical Blog",
-        "sourceType": "official",
-        "tier": 1,
-        "fetchMode": "rss",
-        "discoveredVia": "https://developer.nvidia.com/blog/feed",
-        "fetchedAt": "2026-10-27T15:52:21.033Z"
-      },
-      "addedAt": "2026-10-28",
-      "since": "2026-10-25",
-      "attempts": 1,
-      "date": "2026-10-28",
-      "reason": "batch"
+      "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
     }
   },
   "meta": {},
   "retry": {},
-  "updatedAt": "2026-10-27T15:53:56.887Z"
+  "updatedAt": "2026-10-28T01:15:29.200Z"
 }
