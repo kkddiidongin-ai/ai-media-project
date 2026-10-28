@@ -1,0 +1,221 @@
+{
+  "id": "feb4caa835f1",
+  "date": "2026-10-28",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "The sleep framework: A new way for LLMs to retain knowledge in continual learning",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 9,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Google",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/",
+      "name": "Google Research Blog",
+      "type": "official",
+      "publishedAt": "2026-10-27T17:35:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "feb4caa835f1",
+    "url": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/",
+    "canonicalUrl": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning",
+    "title": "The sleep framework: A new way for LLMs to retain knowledge in continual learning",
+    "excerpt": "Education Innovation",
+    "publishedAt": "2026-10-27T17:35:00.000Z",
+    "sourceId": "google-research",
+    "sourceName": "Google Research Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://research.google/blog/rss/",
+    "fetchedAt": "2026-10-28T01:13:26.555Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 9412,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Education Innovation",
+        "sourceUrl": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/",
+        "source": "Google Research Blog",
+        "publishedAt": "2026-10-27T17:35:00.000Z",
+        "checkedAt": "2026-10-28T01:14:32.522Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "The sleep framework: A new way for LLMs to retain knowledge in continual learning",
+        "sourceUrl": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/",
+        "source": "Google Research Blog",
+        "publishedAt": "2026-10-27T17:35:00.000Z",
+        "checkedAt": "2026-10-28T01:14:32.522Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "We introduce a sleep phase in continual learning, enabling large language models to continuously integrate new facts and enhance reasoning while mitigating catastrophic forgetting or static knowledge cutoffs.",
+        "sourceUrl": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/",
+        "source": "Google Research Blog",
+        "publishedAt": "2026-10-27T17:35:00.000Z",
+        "checkedAt": "2026-10-28T01:14:32.522Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Inspired by how the human brain processes and stabilizes memory during rest, we introduce a sleep framework in continual learning: a learning paradigm that equips large language models (LLMs) with a continuous periodic lifecycle, enabling them to continually learn, consolidate…",
+        "sourceUrl": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/",
+        "source": "Google Research Blog",
+        "publishedAt": "2026-10-27T17:35:00.000Z",
+        "checkedAt": "2026-10-28T01:14:32.522Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "With this framework, we demonstrate that alternating between active interaction and offline memory consolidation allows LLMs to continuously acquire new facts, retain long-context knowledge up to 10M tokens, and improve complex reasoning.",
+        "sourceUrl": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/",
+        "source": "Google Research Blog",
+        "publishedAt": "2026-10-27T17:35:00.000Z",
+        "checkedAt": "2026-10-28T01:14:32.522Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "In a continual learning framework, this distinction becomes artificial; an intelligent agent must constantly learn, adapt, and process information.",
+        "sourceUrl": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/",
+        "source": "Google Research Blog",
+        "publishedAt": "2026-10-27T17:35:00.000Z",
+        "checkedAt": "2026-10-28T01:14:32.522Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "This is achieved through Generalized Knowledge Distillation (GKD) combined with reinforcement learning (RL)-based imitation learning : • On-policy distillation: The expanded student model learns token-specific feedback from teacher distributions generated on self-sampled seque…",
+        "sourceUrl": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/",
+        "source": "Google Research Blog",
+        "publishedAt": "2026-10-27T17:35:00.000Z",
+        "checkedAt": "2026-10-28T01:14:32.522Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Overview of our sleep framework: Input streams from the active phase are stored in short-term memory before entering the sleep cycle, which bifurcates into Consolidation (transferring fragile short-term tokens into expanded long-term parametric memory using low-rank structures…",
+        "sourceUrl": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/",
+        "source": "Google Research Blog",
+        "publishedAt": "2026-10-27T17:35:00.000Z",
+        "checkedAt": "2026-10-28T01:14:32.522Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Beyond the empirical results, our sleep paradigm is grounded in a theory that clarifies why its two stages (memory consolidation and dreaming) can support continual learning without simply trading new knowledge for old capabilities.",
+        "sourceUrl": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/",
+        "source": "Google Research Blog",
+        "publishedAt": "2026-10-27T17:35:00.000Z",
+        "checkedAt": "2026-10-28T01:14:32.522Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Comparative performance of our sleep framework against baseline approaches (such as in-context learning and supervised fine-tuning) across major evaluation axes, including Class-Incremental Learning, continual translation, long-context scaling up to 10M tokens, factual knowled…",
+        "sourceUrl": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/",
+        "source": "Google Research Blog",
+        "publishedAt": "2026-10-27T17:35:00.000Z",
+        "checkedAt": "2026-10-28T01:14:32.522Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "For continual translation , in unseen languages, such as Manchu and Kalamang, the sleep framework maintained a near-zero performance drop in multi-stage evaluations, whereas standard baselines like ICL, Cartridges , and supervised fine-tuning (SFT) suffered severe catastrophic…",
+        "sourceUrl": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/",
+        "source": "Google Research Blog",
+        "publishedAt": "2026-10-27T17:35:00.000Z",
+        "checkedAt": "2026-10-28T01:14:32.522Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "In long-context understanding on the BABILong benchmark, our sleep method demonstrated near-perfect scaling up to 10M tokens, outperforming strong baselines like GPT-4 , and Titans by using sleep-time consolidation to compress long-context information directly into parametric …",
+        "sourceUrl": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/",
+        "source": "Google Research Blog",
+        "publishedAt": "2026-10-27T17:35:00.000Z",
+        "checkedAt": "2026-10-28T01:14:32.522Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "For factual knowledge incorporation evaluated on SQuAD and continued pre-training (CPT), our sleep method achieved 48.9% on single-task and 46.2% on CPT evaluations, outperforming baseline methods including the base model, SFT, and Self-Adapting Language Models (SEAL) by succe…",
+        "sourceUrl": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/",
+        "source": "Google Research Blog",
+        "publishedAt": "2026-10-27T17:35:00.000Z",
+        "checkedAt": "2026-10-28T01:14:32.522Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 2,
+    "signals": [
+      "MODEL_MENTION"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 MODEL_MENTION (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

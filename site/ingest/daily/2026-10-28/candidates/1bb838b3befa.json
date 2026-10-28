@@ -1,0 +1,221 @@
+{
+  "id": "1bb838b3befa",
+  "date": "2026-10-28",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "How NVIDIA Minerva Turns Telemetry Chaos Into Peak GPU Yield",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "NVIDIA",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://developer.nvidia.com/blog/how-nvidia-minerva-turns-telemetry-chaos-into-peak-gpu-yield/",
+      "name": "NVIDIA Technical Blog",
+      "type": "official",
+      "publishedAt": "2026-10-26T16:00:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "1bb838b3befa",
+    "url": "https://developer.nvidia.com/blog/how-nvidia-minerva-turns-telemetry-chaos-into-peak-gpu-yield/",
+    "canonicalUrl": "https://developer.nvidia.com/blog/how-nvidia-minerva-turns-telemetry-chaos-into-peak-gpu-yield",
+    "title": "How NVIDIA Minerva Turns Telemetry Chaos Into Peak GPU Yield",
+    "excerpt": "AI Factories are some of the most technologically complex operational environments ever created. Hundreds of thousands of GPUs, NVIDIA Spectrum-X Ethernet...",
+    "publishedAt": "2026-10-26T16:00:00.000Z",
+    "sourceId": "nvidia-developer",
+    "sourceName": "NVIDIA Technical Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://developer.nvidia.com/blog/feed",
+    "fetchedAt": "2026-10-28T01:13:26.555Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 14324,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "AI Factories are some of the most technologically complex operational environments ever created. Hundreds of thousands of GPUs, NVIDIA Spectrum-X Ethernet...",
+        "sourceUrl": "https://developer.nvidia.com/blog/how-nvidia-minerva-turns-telemetry-chaos-into-peak-gpu-yield/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-26T16:00:00.000Z",
+        "checkedAt": "2026-10-28T01:14:32.921Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "How NVIDIA Minerva Turns Telemetry Chaos Into Peak GPU Yield | NVIDIA Technical Blog",
+        "sourceUrl": "https://developer.nvidia.com/blog/how-nvidia-minerva-turns-telemetry-chaos-into-peak-gpu-yield/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-26T16:00:00.000Z",
+        "checkedAt": "2026-10-28T01:14:32.921Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "How NVIDIA Minerva Turns Telemetry Chaos Into Peak GPU Yield",
+        "sourceUrl": "https://developer.nvidia.com/blog/how-nvidia-minerva-turns-telemetry-chaos-into-peak-gpu-yield/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-26T16:00:00.000Z",
+        "checkedAt": "2026-10-28T01:14:32.921Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "NVIDIA Minerva unifies telemetry across GPUs, networking, storage, and workloads into a dynamic knowledge graph that maps infrastructure to active jobs in real time.",
+        "sourceUrl": "https://developer.nvidia.com/blog/how-nvidia-minerva-turns-telemetry-chaos-into-peak-gpu-yield/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-26T16:00:00.000Z",
+        "checkedAt": "2026-10-28T01:14:32.921Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Purpose-built supervised and unsupervised machine learning models detect gray failures such as a single NVLink interface degrading among 400,000 or a GPU running hotter than its peers under identical load.",
+        "sourceUrl": "https://developer.nvidia.com/blog/how-nvidia-minerva-turns-telemetry-chaos-into-peak-gpu-yield/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-26T16:00:00.000Z",
+        "checkedAt": "2026-10-28T01:14:32.921Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Visit the NVIDIA Minerva product page to learn how AIOps can improve GPU utilization and reliability.",
+        "sourceUrl": "https://developer.nvidia.com/blog/how-nvidia-minerva-turns-telemetry-chaos-into-peak-gpu-yield/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-26T16:00:00.000Z",
+        "checkedAt": "2026-10-28T01:14:32.921Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Hundreds of thousands of GPUs, NVIDIA Spectrum-X Ethernet scale-out, scale-across and scale-in fabrics, NVIDIA NVLink scale-up fabrics, distributed schedulers, and multi-week training runs operate in continuous lockstep.These layers function as one production system even when …",
+        "sourceUrl": "https://developer.nvidia.com/blog/how-nvidia-minerva-turns-telemetry-chaos-into-peak-gpu-yield/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-26T16:00:00.000Z",
+        "checkedAt": "2026-10-28T01:14:32.921Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "NVIDIA Minerva collects telemetry across the stack, maps infrastructure to active jobs in a dynamic knowledge graph, applies purpose-built machine learning, and correlates dependent symptoms into high-fidelity incidents.",
+        "sourceUrl": "https://developer.nvidia.com/blog/how-nvidia-minerva-turns-telemetry-chaos-into-peak-gpu-yield/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-26T16:00:00.000Z",
+        "checkedAt": "2026-10-28T01:14:32.921Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "NVIDIA Minerva ingests metrics, logs, and topology from GPUs, Spectrum-X and NVLink switches, SuperNICs, DPUs, storage, NVIDIA NCCL, schedulers, and AI workloads.",
+        "sourceUrl": "https://developer.nvidia.com/blog/how-nvidia-minerva-turns-telemetry-chaos-into-peak-gpu-yield/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-26T16:00:00.000Z",
+        "checkedAt": "2026-10-28T01:14:32.921Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "NVIDIA Minerva includes a native AI agent called Sherlock which is grounded in live telemetry and the knowledge graph, so an operator can ask why a specific job slowed during a particular interval, which components changed state, or whether other nodes share the same failure d…",
+        "sourceUrl": "https://developer.nvidia.com/blog/how-nvidia-minerva-turns-telemetry-chaos-into-peak-gpu-yield/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-26T16:00:00.000Z",
+        "checkedAt": "2026-10-28T01:14:32.921Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Instead, NVIDIA Minerva’s Full Stack AIOps Debugging took in telemetry from every layer of the workload topology.",
+        "sourceUrl": "https://developer.nvidia.com/blog/how-nvidia-minerva-turns-telemetry-chaos-into-peak-gpu-yield/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-26T16:00:00.000Z",
+        "checkedAt": "2026-10-28T01:14:32.921Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "NVIDIA Minerva’s topology-aware correlation linked 81 separate events and anomalies to the affected job and sent them to the team as a single incident.",
+        "sourceUrl": "https://developer.nvidia.com/blog/how-nvidia-minerva-turns-telemetry-chaos-into-peak-gpu-yield/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-26T16:00:00.000Z",
+        "checkedAt": "2026-10-28T01:14:32.921Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Shai Tsur is a technical product marketing specialist at NVIDIA working on software and platforms for building and operating AI factories, including NVIDIA Minerva, an AI-native AIOps platform for maximizing AI factory yield, and NVIDIA DSX Air, which validates AI factory desi…",
+        "sourceUrl": "https://developer.nvidia.com/blog/how-nvidia-minerva-turns-telemetry-chaos-into-peak-gpu-yield/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-26T16:00:00.000Z",
+        "checkedAt": "2026-10-28T01:14:32.921Z"
+      }
+    ],
+    "pageDate": "2026-10-26T16:00:00.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "INFRA"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 INFRA (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

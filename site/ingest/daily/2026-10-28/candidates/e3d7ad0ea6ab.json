@@ -54,7 +54,7 @@
     "tier": 1,
     "fetchMode": "rss-paged",
     "discoveredVia": "https://github.blog/changelog/feed/",
-    "fetchedAt": "2026-10-27T15:52:21.033Z"
+    "fetchedAt": "2026-10-28T01:13:26.555Z"
   },
   "evidence": {
     "status": "OK",
@@ -211,16 +211,10 @@
   "generation": {
     "provider": "gemini",
     "model": "gemini-3.8-flash",
-    "status": "failed",
-    "error": "HTTP 503",
-    "usage": {
-      "inputTokens": 0,
-      "outputTokens": 0,
-      "costUsd": 0,
-      "attempts": 1
-    },
+    "status": "skipped",
+    "error": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성",
     "promptVersion": "draft-v1",
-    "at": "2026-10-27T15:53:56.100Z",
+    "at": "2026-10-28T01:15:29.188Z",
     "evidenceHash": "7a9b936ef440"
   },
   "draft": null,

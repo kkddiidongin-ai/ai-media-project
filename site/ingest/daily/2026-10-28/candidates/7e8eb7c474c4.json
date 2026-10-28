@@ -1,0 +1,221 @@
+{
+  "id": "7e8eb7c474c4",
+  "date": "2026-10-28",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Claude for Financial Advisors",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 12,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Anthropic",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://claude.com/resources/articles/claude-for-financial-advisors",
+      "name": "Claude (claude.com articles)",
+      "type": "official",
+      "publishedAt": "2026-10-27T00:00:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "7e8eb7c474c4",
+    "url": "https://claude.com/resources/articles/claude-for-financial-advisors",
+    "canonicalUrl": "https://claude.com/resources/articles/claude-for-financial-advisors",
+    "title": "Claude for Financial Advisors",
+    "excerpt": "Financial advisors can now connect Claude to the custodians, portfolio platforms, CRMs, and planning tools they depend on, along with new skills tailored to the daily work of a financial advisor.",
+    "publishedAt": "2026-10-27T00:00:00.000Z",
+    "sourceId": "claude-blog",
+    "sourceName": "Claude (claude.com articles)",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "listing-meta",
+    "discoveredVia": "https://claude.com/resources/articles",
+    "fetchedAt": "2026-10-28T01:13:26.555Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 17035,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Financial advisors can now connect Claude to the custodians, portfolio platforms, CRMs, and planning tools they depend on, along with new skills tailored to the daily work of a financial advisor.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-for-financial-advisors",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-27T00:00:00.000Z",
+        "checkedAt": "2026-10-28T01:14:31.685Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "• • • • • • • • • Claude for Financial Advisors | Claude by Anthropic • • • • • • • • • •",
+        "sourceUrl": "https://claude.com/resources/articles/claude-for-financial-advisors",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-27T00:00:00.000Z",
+        "checkedAt": "2026-10-28T01:14:31.685Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Skip to main content Today we're releasing Claude for Financial Advisors, a suite of connectors and workflow skills designed to help with research, prep, and documentation tasks that occupy an advisor’s time and keep them from client-facing work.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-for-financial-advisors",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-27T00:00:00.000Z",
+        "checkedAt": "2026-10-28T01:14:31.685Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Meanwhile, over four in 10 American workers say they don't know who to go to for good financial or retirement planning advice, according to EBRI's 2026 Retirement Confidence Survey .",
+        "sourceUrl": "https://claude.com/resources/articles/claude-for-financial-advisors",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-27T00:00:00.000Z",
+        "checkedAt": "2026-10-28T01:14:31.685Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Envestnet lets advisors summarize Tamarac accounts and households in natural language, with a financial plan snapshot from MoneyGuide.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-for-financial-advisors",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-27T00:00:00.000Z",
+        "checkedAt": "2026-10-28T01:14:31.685Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "FINNY, the growth and prospecting platform, connects Claude to an advisor's campaign results by channel and sequence step, and lets advisors enrich prospect lists from their CRM, or upload new lists directly in Claude.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-for-financial-advisors",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-27T00:00:00.000Z",
+        "checkedAt": "2026-10-28T01:14:31.685Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Flourish connects Claude to financial advisors’ books of business, enabling them to work with client information, check rates, manage invitations, and prepare for client meetings, all within Claude.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-for-financial-advisors",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-27T00:00:00.000Z",
+        "checkedAt": "2026-10-28T01:14:31.685Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Morgan Asset Management (55ip) extends tax transition technology to Claude, so advisors can evaluate the tax impact of moving a client's holdings into a new portfolio.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-for-financial-advisors",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-27T00:00:00.000Z",
+        "checkedAt": "2026-10-28T01:14:31.685Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Wealth.com gives Claude a structured view of each client's estate and tax picture, including trust and will summaries, tax return insights, and the full balance sheet, so advisors can begin planning with an organized summary of available information instead of documents spread…",
+        "sourceUrl": "https://claude.com/resources/articles/claude-for-financial-advisors",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-27T00:00:00.000Z",
+        "checkedAt": "2026-10-28T01:14:31.685Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Zocks , the AI meeting assistant for financial advisors, brings Claude the client intelligence it captures from every conversation, including profiles, goals, life events, and commitments.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-for-financial-advisors",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-27T00:00:00.000Z",
+        "checkedAt": "2026-10-28T01:14:31.685Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "These join other connectors already available in Claude, including Microsoft 365, Salesforce, DocuSign, Box, S&P Global, Morningstar, and more.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-for-financial-advisors",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-27T00:00:00.000Z",
+        "checkedAt": "2026-10-28T01:14:31.685Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "The Claude for Financial Advisors plugin, which bundles advisor skills and connectors into a single install, works with BlackRock, Charles Schwab, Addepar, Envestnet, iCapital, Orion, Wealthbox, Wealth.com and Zocks, and advisors choose which of these to connect during guided …",
+        "sourceUrl": "https://claude.com/resources/articles/claude-for-financial-advisors",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-27T00:00:00.000Z",
+        "checkedAt": "2026-10-28T01:14:31.685Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Each skill in the Claude for Financial Advisors plugin supports a specific moment in an advisor's day, from prepping for a client meeting to explaining a drifted portfolio, and routes to tools the firm already uses to run their business.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-for-financial-advisors",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-27T00:00:00.000Z",
+        "checkedAt": "2026-10-28T01:14:31.685Z"
+      }
+    ],
+    "pageDate": "2026-10-27T00:00:00.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PRODUCT_LAUNCH"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 PRODUCT_LAUNCH (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

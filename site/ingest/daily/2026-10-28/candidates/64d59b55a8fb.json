@@ -56,10 +56,10 @@
     "tier": 1,
     "fetchMode": "rss",
     "discoveredVia": "https://openai.com/news/rss.xml",
-    "fetchedAt": "2026-10-27T15:52:21.033Z"
+    "fetchedAt": "2026-10-28T01:13:26.555Z"
   },
   "evidence": {
-    "status": "HTTP_403",
+    "status": "SKIPPED_HOST_BLOCKED",
     "chars": 0,
     "grade": "FAIL",
     "ledger": [
@@ -70,7 +70,7 @@
         "sourceUrl": "https://openai.com/index/chatgpt-expanding-world-of-work",
         "source": "OpenAI",
         "publishedAt": "2026-10-26T10:00:00.000Z",
-        "checkedAt": "2026-10-27T15:53:36.743Z"
+        "checkedAt": "2026-10-28T01:14:31.685Z"
       }
     ],
     "pageDate": null,
@@ -100,7 +100,7 @@
   },
   "decision": "HOLD",
   "reasons": [
-    "근거 부족 (원문 HTTP_403, 확인 사실 0개) — 발행하지 않음"
+    "근거 부족 (원문 SKIPPED_HOST_BLOCKED, 확인 사실 0개) — 발행하지 않음"
   ],
   "needsReview": [
     "source_blocked",

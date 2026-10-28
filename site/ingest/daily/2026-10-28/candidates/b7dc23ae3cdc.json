@@ -1,0 +1,233 @@
+{
+  "id": "b7dc23ae3cdc",
+  "date": "2026-10-28",
+  "proposedSlug": "re-announcing-genie-4-world-model-real",
+  "title": null,
+  "sourceTitle": "We’re announcing Genie 4, our new world model for real-time interactive simulation.",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 6,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Google",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-genie-4/",
+      "name": "Google (The Keyword · AI)",
+      "type": "official",
+      "publishedAt": "2026-10-27T00:00:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "b7dc23ae3cdc",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-genie-4/",
+    "canonicalUrl": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-genie-4",
+    "title": "We’re announcing Genie 4, our new world model for real-time interactive simulation.",
+    "excerpt": "Today, we’re announcing our research on Genie 4, our new world model that brings unprecedented realism and native audio to real-time interactive simulation.The Genie 4 m…",
+    "publishedAt": "2026-10-27T00:00:00.000Z",
+    "sourceId": "google-ai",
+    "sourceName": "Google (The Keyword · AI)",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "sitemap-meta",
+    "discoveredVia": "https://blog.google/en-us/sitemap.xml",
+    "fetchedAt": "2026-10-28T01:13:26.555Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 3618,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Today, we’re announcing our research on Genie 4, our new world model that brings unprecedented realism and native audio to real-time interactive simulation.The Genie 4 m…",
+        "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-genie-4/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-10-27T00:00:00.000Z",
+        "checkedAt": "2026-10-28T01:14:30.949Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "We’re announcing Genie 4, our new world model for real-time interactive simulation.",
+        "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-genie-4/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-10-27T00:00:00.000Z",
+        "checkedAt": "2026-10-28T01:14:30.949Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "\"page_name\": \"We’re announcing Genie 4, our new world model for real\\u002Dtime interactive simulation.\",",
+        "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-genie-4/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-10-27T00:00:00.000Z",
+        "checkedAt": "2026-10-28T01:14:30.949Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "\"article_name\": \"We’re announcing Genie 4, our new world model for real\\u002Dtime interactive simulation.\",",
+        "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-genie-4/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-10-27T00:00:00.000Z",
+        "checkedAt": "2026-10-28T01:14:30.949Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "\"section_header\": \"We’re announcing Genie 4, our new world model for real\\u002Dtime interactive simulation.\"",
+        "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-genie-4/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-10-27T00:00:00.000Z",
+        "checkedAt": "2026-10-28T01:14:30.949Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Today, we’re announcing our research on Genie 4, our new world model that brings unprecedented realism and native audio to real-time interactive simulation.",
+        "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-genie-4/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-10-27T00:00:00.000Z",
+        "checkedAt": "2026-10-28T01:14:30.949Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "The Genie 4 model incorporates and builds on capabilities from the Gemini family: Gemini Omni anchors simulations in real-world appearance and behavior, while other Gemini models provide the complex reasoning needed to help maintain a simulation’s coherence and continuity.",
+        "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-genie-4/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-10-27T00:00:00.000Z",
+        "checkedAt": "2026-10-28T01:14:30.949Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "With Genie 4, you can set an event in motion and steer scenes in real time using natural language, like moving the camera, changing the weather, or introducing new characters.",
+        "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-genie-4/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-10-27T00:00:00.000Z",
+        "checkedAt": "2026-10-28T01:14:30.949Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Every world also generates native audio on the fly, including ambient sounds, music, and interactive dialogue.",
+        "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-genie-4/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-10-27T00:00:00.000Z",
+        "checkedAt": "2026-10-28T01:14:30.949Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "We have started rolling out Genie 4 to a limited group of trusted testers.",
+        "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-genie-4/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-10-27T00:00:00.000Z",
+        "checkedAt": "2026-10-28T01:14:30.949Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "TIME has named Google SynthID one of the Best Inventions of 2026.",
+        "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-genie-4/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-10-27T00:00:00.000Z",
+        "checkedAt": "2026-10-28T01:14:30.949Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "\"link_text\": \"TIME has named Google SynthID one of the Best Inventions of 2026.\",",
+        "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-genie-4/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-10-27T00:00:00.000Z",
+        "checkedAt": "2026-10-28T01:14:30.949Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "\"article_name\": \"TIME has named Google SynthID one of the Best Inventions of 2026.\",",
+        "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-genie-4/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-10-27T00:00:00.000Z",
+        "checkedAt": "2026-10-28T01:14:30.949Z"
+      }
+    ],
+    "pageDate": "2026-10-27T00:00:00.000Z"
+  },
+  "score": {
+    "importance": 2,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "MODEL"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 6,
+    "total": 6
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 MODEL (우선순위 6)",
+    "근거 확인 통과 (확인 사실 6개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "status": "skipped",
+    "error": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성",
+    "promptVersion": "draft-v1",
+    "at": "2026-10-28T01:15:29.189Z",
+    "evidenceHash": "b83121f326f6"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}
