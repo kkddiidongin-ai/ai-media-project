@@ -1,0 +1,234 @@
+{
+  "id": "e612dc941250",
+  "date": "2026-10-28",
+  "proposedSlug": "design-space-tri-modal-masked-diffusion-models",
+  "title": null,
+  "sourceTitle": "The Design Space of Tri-Modal Masked Diffusion Models",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 9,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Apple",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://machinelearning.apple.com/research/tri-modal-masked-diffusion",
+      "name": "Apple Machine Learning Research",
+      "type": "official",
+      "publishedAt": "2026-10-14T00:00:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "e612dc941250",
+    "url": "https://machinelearning.apple.com/research/tri-modal-masked-diffusion",
+    "canonicalUrl": "https://machinelearning.apple.com/research/tri-modal-masked-diffusion",
+    "title": "The Design Space of Tri-Modal Masked Diffusion Models",
+    "excerpt": "Discrete diffusion models have emerged as strong alternatives to autoregressive language models, with recent work initializing and finetuning a base unimodal model for bi-modal generation. Diverging from previous approaches, we introduce the first tri-modal Masked Diffusion Models (MDM) pretrained f",
+    "publishedAt": "2026-10-14T00:00:00.000Z",
+    "sourceId": "apple-ml",
+    "sourceName": "Apple Machine Learning Research",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://machinelearning.apple.com/rss.xml",
+    "fetchedAt": "2026-10-17T13:40:53.584Z",
+    "fromQueue": "draft"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 2857,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Discrete diffusion models have emerged as strong alternatives to autoregressive language models, with recent work initializing and finetuning a base unimodal model for bi-modal generation. Diverging from previous approaches, we introduce the first tri-modal Masked Diffusion Models (MDM) pretrained f",
+        "sourceUrl": "https://machinelearning.apple.com/research/tri-modal-masked-diffusion",
+        "source": "Apple Machine Learning Research",
+        "publishedAt": "2026-10-14T00:00:00.000Z",
+        "checkedAt": "2026-10-27T15:53:30.912Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "• • The Design Space of Tri-Modal Masked Diffusion Models - Apple Machine Learning Research • • • • • • • • research area Methods and Algorithms conference NeurIPS",
+        "sourceUrl": "https://machinelearning.apple.com/research/tri-modal-masked-diffusion",
+        "source": "Apple Machine Learning Research",
+        "publishedAt": "2026-10-14T00:00:00.000Z",
+        "checkedAt": "2026-10-27T15:53:30.912Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "content type paper published October 2026",
+        "sourceUrl": "https://machinelearning.apple.com/research/tri-modal-masked-diffusion",
+        "source": "Apple Machine Learning Research",
+        "publishedAt": "2026-10-14T00:00:00.000Z",
+        "checkedAt": "2026-10-27T15:53:30.912Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "The Design Space of Tri-Modal Masked Diffusion Models",
+        "sourceUrl": "https://machinelearning.apple.com/research/tri-modal-masked-diffusion",
+        "source": "Apple Machine Learning Research",
+        "publishedAt": "2026-10-14T00:00:00.000Z",
+        "checkedAt": "2026-10-27T15:53:30.912Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Discrete diffusion models have emerged as strong alternatives to autoregressive language models, with recent work initializing and finetuning a base unimodal model for bi-modal generation.",
+        "sourceUrl": "https://machinelearning.apple.com/research/tri-modal-masked-diffusion",
+        "source": "Apple Machine Learning Research",
+        "publishedAt": "2026-10-14T00:00:00.000Z",
+        "checkedAt": "2026-10-27T15:53:30.912Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Diverging from previous approaches, we introduce the first tri-modal Masked Diffusion Models (MDM) pretrained from scratch on text, image-text, and audio-text data.",
+        "sourceUrl": "https://machinelearning.apple.com/research/tri-modal-masked-diffusion",
+        "source": "Apple Machine Learning Research",
+        "publishedAt": "2026-10-14T00:00:00.000Z",
+        "checkedAt": "2026-10-27T15:53:30.912Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Finally, we pretrain a preliminary model showcasing the capabilities of a unified design, achieving strong results at 3B model scale (6.4T tokens), in both text generation, T2I tasks, and T2S tasks.",
+        "sourceUrl": "https://machinelearning.apple.com/research/tri-modal-masked-diffusion",
+        "source": "Apple Machine Learning Research",
+        "publishedAt": "2026-10-14T00:00:00.000Z",
+        "checkedAt": "2026-10-27T15:53:30.912Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Our work represents the largest scale systematic open study of multimodal discrete diffusion models conducted to date, providing valuable insights into scaling behaviors across multiple modalities.",
+        "sourceUrl": "https://machinelearning.apple.com/research/tri-modal-masked-diffusion",
+        "source": "Apple Machine Learning Research",
+        "publishedAt": "2026-10-14T00:00:00.000Z",
+        "checkedAt": "2026-10-27T15:53:30.912Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Target Concrete Score Matching: A Holistic Framework for Discrete Diffusion",
+        "sourceUrl": "https://machinelearning.apple.com/research/tri-modal-masked-diffusion",
+        "source": "Apple Machine Learning Research",
+        "publishedAt": "2026-10-14T00:00:00.000Z",
+        "checkedAt": "2026-10-27T15:53:30.912Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "July 11, 2025 research area Methods and Algorithms , research area Speech and Natural Language Processing conference ICML",
+        "sourceUrl": "https://machinelearning.apple.com/research/tri-modal-masked-diffusion",
+        "source": "Apple Machine Learning Research",
+        "publishedAt": "2026-10-14T00:00:00.000Z",
+        "checkedAt": "2026-10-27T15:53:30.912Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "In this work, we present Target Concrete Score Matching (TCSM), a novel and versatile objective for training and fine-tuning discrete diffusion models.",
+        "sourceUrl": "https://machinelearning.apple.com/research/tri-modal-masked-diffusion",
+        "source": "Apple Machine Learning Research",
+        "publishedAt": "2026-10-14T00:00:00.000Z",
+        "checkedAt": "2026-10-27T15:53:30.912Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "It supports pre-training discrete diffusion models directly from data samples, and many existing discrete diffusion approaches naturally emerge as…",
+        "sourceUrl": "https://machinelearning.apple.com/research/tri-modal-masked-diffusion",
+        "source": "Apple Machine Learning Research",
+        "publishedAt": "2026-10-14T00:00:00.000Z",
+        "checkedAt": "2026-10-27T15:53:30.912Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "December 4, 2023 research area Methods and Algorithms conference NeurIPS",
+        "sourceUrl": "https://machinelearning.apple.com/research/tri-modal-masked-diffusion",
+        "source": "Apple Machine Learning Research",
+        "publishedAt": "2026-10-14T00:00:00.000Z",
+        "checkedAt": "2026-10-27T15:53:30.912Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 2,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "MODEL"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 6,
+    "total": 6
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 MODEL (우선순위 6)",
+    "근거 확인 통과 (확인 사실 9개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "status": "skipped",
+    "error": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성",
+    "promptVersion": "draft-v1",
+    "at": "2026-10-28T01:15:29.189Z",
+    "evidenceHash": "c5ec0796bbcb"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}

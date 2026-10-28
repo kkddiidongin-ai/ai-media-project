@@ -1,0 +1,235 @@
+{
+  "id": "747b76bde702",
+  "date": "2026-10-28",
+  "proposedSlug": "github-copilot-supports-server-server-authentication",
+  "title": null,
+  "sourceTitle": "GitHub Copilot supports server-to-server authentication",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": true,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": false,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "contextNeed",
+      "evidenceQuality",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "GitHub",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://github.blog/changelog/2026-10-27-github-copilot-supports-server-to-server-authentication",
+      "name": "GitHub Changelog",
+      "type": "official",
+      "publishedAt": "2026-10-27T21:36:55.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "747b76bde702",
+    "url": "https://github.blog/changelog/2026-10-27-github-copilot-supports-server-to-server-authentication",
+    "canonicalUrl": "https://github.blog/changelog/2026-10-27-github-copilot-supports-server-to-server-authentication",
+    "title": "GitHub Copilot supports server-to-server authentication",
+    "excerpt": "GitHub Copilot now supports server-to-server authentication for GitHub Apps installed on organizations, available in public preview. Services and agents built with the GitHub Copilot SDK can now make requests on… The post GitHub Copilot supports server-to-server authentication appeared first on The ",
+    "publishedAt": "2026-10-27T21:36:55.000Z",
+    "sourceId": "github-changelog",
+    "sourceName": "GitHub Changelog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://github.blog/changelog/feed/",
+    "fetchedAt": "2026-10-28T01:13:26.555Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 1474,
+    "grade": "LIMITED",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "GitHub Copilot now supports server-to-server authentication for GitHub Apps installed on organizations, available in public preview. Services and agents built with the GitHub Copilot SDK can now make requests on… The post GitHub Copilot supports server-to-server authentication appeared first on The ",
+        "sourceUrl": "https://github.blog/changelog/2026-10-27-github-copilot-supports-server-to-server-authentication",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-27T21:36:55.000Z",
+        "checkedAt": "2026-10-28T01:14:30.523Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "GitHub Copilot supports server-to-server authentication - GitHub Changelog",
+        "sourceUrl": "https://github.blog/changelog/2026-10-27-github-copilot-supports-server-to-server-authentication",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-27T21:36:55.000Z",
+        "checkedAt": "2026-10-28T01:14:30.523Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "GitHub Copilot now supports server-to-server authentication for GitHub Apps installed on organizations, available in public preview.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-27-github-copilot-supports-server-to-server-authentication",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-27T21:36:55.000Z",
+        "checkedAt": "2026-10-28T01:14:30.523Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Services and agents built with the GitHub Copilot SDK can now make requests on behalf of an organization without relying on a signed-in user&rsquo;s credentials.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-27-github-copilot-supports-server-to-server-authentication",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-27T21:36:55.000Z",
+        "checkedAt": "2026-10-28T01:14:30.523Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "This workload-owned identity helps agents and automated services operate reliably at larger scale without tying their authentication or usage to individual users.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-27-github-copilot-supports-server-to-server-authentication",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-27T21:36:55.000Z",
+        "checkedAt": "2026-10-28T01:14:30.523Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Developers can give a GitHub App the read-only Copilot Requests organization permission, install the app on an organization, and pass a short-lived installation access token to the Copilot SDK.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-27-github-copilot-supports-server-to-server-authentication",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-27T21:36:55.000Z",
+        "checkedAt": "2026-10-28T01:14:30.523Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "To get started, see server-to-server authentication for the GitHub Copilot SDK and managing GitHub App access to your organization&rsquo;s Copilot .",
+        "sourceUrl": "https://github.blog/changelog/2026-10-27-github-copilot-supports-server-to-server-authentication",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-27T21:36:55.000Z",
+        "checkedAt": "2026-10-28T01:14:30.523Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "GitHub Copilot assisted permissions generally available",
+        "sourceUrl": "https://github.blog/changelog/2026-10-27-github-copilot-supports-server-to-server-authentication",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-27T21:36:55.000Z",
+        "checkedAt": "2026-10-28T01:14:30.523Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Turn notifications into code with GitHub Copilot in Teams",
+        "sourceUrl": "https://github.blog/changelog/2026-10-27-github-copilot-supports-server-to-server-authentication",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-27T21:36:55.000Z",
+        "checkedAt": "2026-10-28T01:14:30.523Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "GitHub Copilot in Visual Studio — September update",
+        "sourceUrl": "https://github.blog/changelog/2026-10-27-github-copilot-supports-server-to-server-authentication",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-27T21:36:55.000Z",
+        "checkedAt": "2026-10-28T01:14:30.523Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Global default for Copilot features generally available",
+        "sourceUrl": "https://github.blog/changelog/2026-10-27-github-copilot-supports-server-to-server-authentication",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-27T21:36:55.000Z",
+        "checkedAt": "2026-10-28T01:14:30.523Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Industry comparisons in the Copilot impact dashboard",
+        "sourceUrl": "https://github.blog/changelog/2026-10-27-github-copilot-supports-server-to-server-authentication",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-27T21:36:55.000Z",
+        "checkedAt": "2026-10-28T01:14:30.523Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Copilot model policy API for enterprise, orgs, and teams",
+        "sourceUrl": "https://github.blog/changelog/2026-10-27-github-copilot-supports-server-to-server-authentication",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-27T21:36:55.000Z",
+        "checkedAt": "2026-10-28T01:14:30.523Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 2,
+    "practicalImpact": 2,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PRODUCT_LAUNCH",
+      "PREVIEW",
+      "API_PLATFORM"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 8,
+    "total": 8
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 PRODUCT_LAUNCH·PREVIEW·API_PLATFORM (우선순위 8)",
+    "근거 확인 통과 (확인 사실 11개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "status": "skipped",
+    "error": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성",
+    "promptVersion": "draft-v1",
+    "at": "2026-10-28T01:15:29.188Z",
+    "evidenceHash": "5a98eaeaab23"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}

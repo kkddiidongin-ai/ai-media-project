@@ -1,0 +1,212 @@
+{
+  "id": "34370e88c88d",
+  "date": "2026-10-28",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Can we trust LLMs to judge whether a research idea is novel?",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 8,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Hugging Face",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://huggingface.co/blog/allenai/novelty-bench",
+      "name": "Hugging Face Blog",
+      "type": "official",
+      "publishedAt": "2026-10-27T16:12:42.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "34370e88c88d",
+    "url": "https://huggingface.co/blog/allenai/novelty-bench",
+    "canonicalUrl": "https://huggingface.co/blog/allenai/novelty-bench",
+    "title": "Can we trust LLMs to judge whether a research idea is novel?",
+    "excerpt": "",
+    "publishedAt": "2026-10-27T16:12:42.000Z",
+    "sourceId": "huggingface",
+    "sourceName": "Hugging Face Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://huggingface.co/blog/feed.xml",
+    "fetchedAt": "2026-10-28T01:13:26.555Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 9457,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Can we trust LLMs to judge whether a research idea is novel?",
+        "sourceUrl": "https://huggingface.co/blog/allenai/novelty-bench",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-27T16:12:42.000Z",
+        "checkedAt": "2026-10-28T01:14:32.301Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Novelty judges assess whether a research idea is new relative to prior work, either on its own or in comparison with another idea.",
+        "sourceUrl": "https://huggingface.co/blog/allenai/novelty-bench",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-27T16:12:42.000Z",
+        "checkedAt": "2026-10-28T01:14:32.301Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "To test how reliably novelty judges can distinguish more novel research ideas from less novel ones, we first needed examples where there was strong evidence about the originality of the underlying scientific contribution.",
+        "sourceUrl": "https://huggingface.co/blog/allenai/novelty-bench",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-27T16:12:42.000Z",
+        "checkedAt": "2026-10-28T01:14:32.301Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "We created a high-novelty pool of 154 human-authored research ideas by selecting accepted papers in the top-rated 10% of their ICLR research area whose reviewers positively identified novelty and where no reviewer disputed it.",
+        "sourceUrl": "https://huggingface.co/blog/allenai/novelty-bench",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-27T16:12:42.000Z",
+        "checkedAt": "2026-10-28T01:14:32.301Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "As additional checks, an expert independently reviewed 30 Human+Generated pairs, heavily weighted toward cases our strongest judge got wrong, and we rewrote the human- and AI-generated ideas into a common structure to test whether judges were simply reacting to differences in …",
+        "sourceUrl": "https://huggingface.co/blog/allenai/novelty-bench",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-27T16:12:42.000Z",
+        "checkedAt": "2026-10-28T01:14:32.301Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "The expert preferred the human idea in all 30 pairs and judged none of the generated ideas novel.",
+        "sourceUrl": "https://huggingface.co/blog/allenai/novelty-bench",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-27T16:12:42.000Z",
+        "checkedAt": "2026-10-28T01:14:32.301Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Using our collections of human-authored and AI-generated research ideas, we tested how well six LLM judges – GPT-5.1, GPT-5.2, GPT-5.4, Claude Sonnet 4.5, Claude Opus 4.5, and Claude Opus 4.6 – could evaluate novelty through both pointwise (i.e., absolute novelty ratings) and …",
+        "sourceUrl": "https://huggingface.co/blog/allenai/novelty-bench",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-27T16:12:42.000Z",
+        "checkedAt": "2026-10-28T01:14:32.301Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "For example, we showed GPT-5.4 the same Human+Generated pairs – each containing one validated human-authored idea and one AI-generated idea – with two prompts.",
+        "sourceUrl": "https://huggingface.co/blog/allenai/novelty-bench",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-27T16:12:42.000Z",
+        "checkedAt": "2026-10-28T01:14:32.301Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "One prompt told the model that reviewers had found exactly one idea in each pair to be novel and asked it to identify which one; the other simply asked which idea was novel.",
+        "sourceUrl": "https://huggingface.co/blog/allenai/novelty-bench",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-27T16:12:42.000Z",
+        "checkedAt": "2026-10-28T01:14:32.301Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "This disagreement can be measured without assuming which generator produces more novel ideas, showing how the choice of judge prompt can affect comparisons between ideation systems.",
+        "sourceUrl": "https://huggingface.co/blog/allenai/novelty-bench",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-27T16:12:42.000Z",
+        "checkedAt": "2026-10-28T01:14:32.301Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "(All judges in this comparison ran once per idea on Human+Generated .) The agentic judge scored 0.78 macro-F1 – 11 points behind Claude Opus 4.6 at 0.89, and in roughly the same range as simpler Claude Opus 4.5 and GPT-5.4 setups – while costing roughly 10× more per decision a…",
+        "sourceUrl": "https://huggingface.co/blog/allenai/novelty-bench",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-27T16:12:42.000Z",
+        "checkedAt": "2026-10-28T01:14:32.301Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "(In this context, macro-F1 measures how well a judge identifies novel and non-novel ideas; higher is better.)",
+        "sourceUrl": "https://huggingface.co/blog/allenai/novelty-bench",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-27T16:12:42.000Z",
+        "checkedAt": "2026-10-28T01:14:32.301Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 2,
+    "signals": [
+      "MODEL_MENTION"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 MODEL_MENTION (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

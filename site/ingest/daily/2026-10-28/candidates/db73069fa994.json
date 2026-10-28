@@ -1,0 +1,233 @@
+{
+  "id": "db73069fa994",
+  "date": "2026-10-28",
+  "proposedSlug": "google-cloud-nvidia-announce-general-availability-nvidia",
+  "title": null,
+  "sourceTitle": "Google Cloud and NVIDIA Announce General Availability of NVIDIA Vera Rubin Infrastructure",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 12,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": true,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": true
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact"
+    ]
+  },
+  "company": "NVIDIA",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure/",
+      "name": "NVIDIA Blog",
+      "type": "official",
+      "publishedAt": "2026-10-21T10:45:17.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "db73069fa994",
+    "url": "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure/",
+    "canonicalUrl": "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure",
+    "title": "Google Cloud and NVIDIA Announce General Availability of NVIDIA Vera Rubin Infrastructure",
+    "excerpt": "General availability of the instances is coming next month, with planned expansion of availability to Europe — bringing an integrated platform for training, inference and large-scale reinforcement learning to cloud customers. A5X instances bring together NVIDIA Vera Rubin NVL72, NVIDIA ConnectX-9 Su",
+    "publishedAt": "2026-10-21T10:45:17.000Z",
+    "sourceId": "nvidia",
+    "sourceName": "NVIDIA Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://blogs.nvidia.com/feed/",
+    "fetchedAt": "2026-10-24T13:59:12.250Z",
+    "fromQueue": "draft"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 3651,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "General availability of the instances is coming next month, with planned expansion of availability to Europe — bringing an integrated platform for training, inference and large-scale reinforcement learning to cloud customers. A5X instances bring together NVIDIA Vera Rubin NVL72, NVIDIA ConnectX-9 Su",
+        "sourceUrl": "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:45:17.000Z",
+        "checkedAt": "2026-10-27T15:53:27.504Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Google Cloud and NVIDIA Announce General Availability of NVIDIA Vera Rubin Infrastructure | NVIDIA Blog",
+        "sourceUrl": "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:45:17.000Z",
+        "checkedAt": "2026-10-27T15:53:27.504Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "General availability of the instances is coming next month, with planned expansion of availability to Europe — bringing an integrated platform for training, inference and large-scale reinforcement learning to cloud customers.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:45:17.000Z",
+        "checkedAt": "2026-10-27T15:53:27.504Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "A5X instances bring together NVIDIA Vera Rubin NVL72, NVIDIA ConnectX-9 SuperNICs, Google Cloud Virgo Network and Google Cloud’s fourth-generation advanced liquid-cooling technology for demanding agentic inference and reinforcement learning workloads at scale.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:45:17.000Z",
+        "checkedAt": "2026-10-27T15:53:27.504Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Google Cloud plans to scale its Vera Rubin-based infrastructure to as many as 960,000 Rubin GPUs across multiple sites.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:45:17.000Z",
+        "checkedAt": "2026-10-27T15:53:27.504Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "A5X brings Vera Rubin into Google Cloud’s AI Hypercomputer as an integrated system, combining compute, networking and storage to support experience-driven learning at scale.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:45:17.000Z",
+        "checkedAt": "2026-10-27T15:53:27.504Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Vera Rubin’s combination of compute performance and high-bandwidth connectivity, between the Vera CPU and Rubin GPUs and between the Rubin GPUs within the rack, allow us to push the scale and ambition of our reinforcement learning research further.”",
+        "sourceUrl": "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:45:17.000Z",
+        "checkedAt": "2026-10-27T15:53:27.504Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "WPP , a London-based marketing and communications company, has also demonstrated its creative agent reference architecture on NVIDIA Vera Rubin-based A5X instances using NVIDIA Nemotron models and NVIDIA OpenShell, part of the NVIDIA OpenShell Reference Architecture for safe A…",
+        "sourceUrl": "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:45:17.000Z",
+        "checkedAt": "2026-10-27T15:53:27.504Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Google Cloud will be among the first cloud providers to offer NVIDIA Confidential Computing at rack scale on bare metal instances such as A4X Max instances powered by NVIDIA GB300 NVL72.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:45:17.000Z",
+        "checkedAt": "2026-10-27T15:53:27.504Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Additionally, Google Cloud is making Confidential Computing generally available on G4 VMs powered by NVIDIA RTX PRO 6000 Blackwell Server Edition GPUs, offering a flexible platform for confidential inference and fine-tuning.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:45:17.000Z",
+        "checkedAt": "2026-10-27T15:53:27.504Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Customers including Vertebrae , Polaris Cloud and Confidential Core AI are using Confidential G4 for conversational privacy, verifiable agent execution and policy-governed enterprise intelligence.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:45:17.000Z",
+        "checkedAt": "2026-10-27T15:53:27.504Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "To support energy-efficient deployment at scale, Google Cloud and NVIDIA are exploring NVIDIA DSX MaxLPS capabilities for Vera Rubin-based infrastructure to help optimize performance per watt and expand capacity within available data-center power budgets.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:45:17.000Z",
+        "checkedAt": "2026-10-27T15:53:27.504Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Learn more about NVIDIA Vera Rubin and Google Cloud A5X instances.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:45:17.000Z",
+        "checkedAt": "2026-10-27T15:53:27.504Z"
+      }
+    ],
+    "pageDate": "2026-10-21T10:45:17.000Z"
+  },
+  "score": {
+    "importance": 2,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "AVAILABILITY",
+      "INFRA"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 7,
+    "total": 7
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 AVAILABILITY·INFRA (우선순위 7)",
+    "근거 확인 통과 (확인 사실 12개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "status": "skipped",
+    "error": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성",
+    "promptVersion": "draft-v1",
+    "at": "2026-10-28T01:15:29.189Z",
+    "evidenceHash": "966c3adca03f"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}

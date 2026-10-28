@@ -1,0 +1,221 @@
+{
+  "id": "c660494836a3",
+  "date": "2026-10-28",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Memory-Enforced GPU Sharing in Kubernetes with NVIDIA CUDA 13.4",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "NVIDIA",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4/",
+      "name": "NVIDIA Technical Blog",
+      "type": "official",
+      "publishedAt": "2026-10-27T20:50:39.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "c660494836a3",
+    "url": "https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4/",
+    "canonicalUrl": "https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4",
+    "title": "Memory-Enforced GPU Sharing in Kubernetes with NVIDIA CUDA 13.4",
+    "excerpt": "Many AI workloads need only a fraction of a GPU. Giving each one an entire device can leave capacity idle; sharing GPUs lets platform teams serve more workloads...",
+    "publishedAt": "2026-10-27T20:50:39.000Z",
+    "sourceId": "nvidia-developer",
+    "sourceName": "NVIDIA Technical Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://developer.nvidia.com/blog/feed",
+    "fetchedAt": "2026-10-28T01:13:26.555Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 10458,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Many AI workloads need only a fraction of a GPU. Giving each one an entire device can leave capacity idle; sharing GPUs lets platform teams serve more workloads...",
+        "sourceUrl": "https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-27T20:50:39.000Z",
+        "checkedAt": "2026-10-28T01:14:32.781Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Memory-Enforced GPU Sharing in Kubernetes with NVIDIA CUDA 13.4 | NVIDIA Technical Blog",
+        "sourceUrl": "https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-27T20:50:39.000Z",
+        "checkedAt": "2026-10-28T01:14:32.781Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Memory-Enforced GPU Sharing in Kubernetes with NVIDIA CUDA 13.4",
+        "sourceUrl": "https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-27T20:50:39.000Z",
+        "checkedAt": "2026-10-28T01:14:32.781Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "It runs alongside the NVIDIA GPU Operator to set up and supervise Multi-Process Service (MPS) on every GPU node, apply per-workload memory limits and compute modes, and measure memory and compute use per GPU fraction rather than per whole GPU.",
+        "sourceUrl": "https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-27T20:50:39.000Z",
+        "checkedAt": "2026-10-28T01:14:32.781Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "CUDA 13.4 introduces a memory boundary enforcement that is transparent to applications, offering exact memory amounts, guaranteed minimums with burstable maximums, and a choice between time-slicing and sm-sharing compute modes.",
+        "sourceUrl": "https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-27T20:50:39.000Z",
+        "checkedAt": "2026-10-28T01:14:32.781Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "KAI Scheduler v0.18.0 integrates with GPU Fractioning through its NvFractions GPU-sharing mode, writing per-container Pod annotations that specify memory requests, limits, compute mode, and GPU device assignments for the operator to enforce on the node.",
+        "sourceUrl": "https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-27T20:50:39.000Z",
+        "checkedAt": "2026-10-28T01:14:32.781Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "CUDA 13.4 now enforces a memory boundary that is transparent to the application with a new time-sharing mode, alongside the compute sharing mode (sm-sharing) that already existed in MPS.",
+        "sourceUrl": "https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-27T20:50:39.000Z",
+        "checkedAt": "2026-10-28T01:14:32.781Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Table 1: Per-container Pod annotations that GPU Fractioning Operator reads to enforce a GPU fraction",
+        "sourceUrl": "https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-27T20:50:39.000Z",
+        "checkedAt": "2026-10-28T01:14:32.781Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Any Kubernetes scheduler that can write these annotations can enforce GPU fractions with CUDA.",
+        "sourceUrl": "https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-27T20:50:39.000Z",
+        "checkedAt": "2026-10-28T01:14:32.781Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "KAI Scheduler picks which slice of which GPU each workload gets and writes the annotations (see Table 1, above), and gpu-fractioning enforces them on the node.",
+        "sourceUrl": "https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-27T20:50:39.000Z",
+        "checkedAt": "2026-10-28T01:14:32.781Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Call n the number of workloads sharing a GPU: either way each gets roughly 1/n of the compute, and what differs is whether they take turns or run together.",
+        "sourceUrl": "https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-27T20:50:39.000Z",
+        "checkedAt": "2026-10-28T01:14:32.781Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "image: nvcr.io/nvidia/cuda:13.0.2-base-ubuntu24.04",
+        "sourceUrl": "https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-27T20:50:39.000Z",
+        "checkedAt": "2026-10-28T01:14:32.781Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "For more information about CUDA 13.4, refer to the announcement.",
+        "sourceUrl": "https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-27T20:50:39.000Z",
+        "checkedAt": "2026-10-28T01:14:32.781Z"
+      }
+    ],
+    "pageDate": "2026-10-27T20:50:39.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "INFRA"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 INFRA (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}
