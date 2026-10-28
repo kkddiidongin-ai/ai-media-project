@@ -1,0 +1,239 @@
+{
+  "id": "147a52922e17",
+  "date": "2026-10-29",
+  "proposedSlug": "nvidia-cudss-generally-available-accelerate-engineering-scie",
+  "title": null,
+  "sourceTitle": "NVIDIA cuDSS Now Generally Available to Accelerate Engineering and Scientific Simulations",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 12,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": true,
+      "contextNeed": true,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": true
+    },
+    "deepMissing": [
+      "importance"
+    ]
+  },
+  "company": "NVIDIA",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://blogs.nvidia.com/blog/cudss-generally-available-engineering-scientific-simulation/",
+      "name": "NVIDIA Blog",
+      "type": "official",
+      "publishedAt": "2026-10-21T10:30:25.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "147a52922e17",
+    "url": "https://blogs.nvidia.com/blog/cudss-generally-available-engineering-scientific-simulation/",
+    "canonicalUrl": "https://blogs.nvidia.com/blog/cudss-generally-available-engineering-scientific-simulation",
+    "title": "NVIDIA cuDSS Now Generally Available to Accelerate Engineering and Scientific Simulations",
+    "excerpt": "NVIDIA cuDSS, launched today in general availability, is an NVIDIA CUDA-X library that shifts a critical part of engineering and scientific simulations onto GPUs. Complex engineering feats — from advanced chips to aircraft to industrial systems —– depend on simulation to predict how designs will per",
+    "publishedAt": "2026-10-21T10:30:25.000Z",
+    "sourceId": "nvidia",
+    "sourceName": "NVIDIA Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://blogs.nvidia.com/feed/",
+    "fetchedAt": "2026-10-24T13:59:12.250Z",
+    "fromQueue": "draft"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 2818,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "NVIDIA cuDSS, launched today in general availability, is an NVIDIA CUDA-X library that shifts a critical part of engineering and scientific simulations onto GPUs. Complex engineering feats — from advanced chips to aircraft to industrial systems —– depend on simulation to predict how designs will per",
+        "sourceUrl": "https://blogs.nvidia.com/blog/cudss-generally-available-engineering-scientific-simulation/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:30:25.000Z",
+        "checkedAt": "2026-10-28T16:37:12.603Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "NVIDIA cuDSS Now Generally Available to Accelerate Engineering and Scientific Simulations | NVIDIA Blog",
+        "sourceUrl": "https://blogs.nvidia.com/blog/cudss-generally-available-engineering-scientific-simulation/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:30:25.000Z",
+        "checkedAt": "2026-10-28T16:37:12.603Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "NVIDIA cuDSS, launched today in general availability, is an NVIDIA CUDA-X library that shifts a critical part of engineering and scientific simulations onto GPUs.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/cudss-generally-available-engineering-scientific-simulation/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:30:25.000Z",
+        "checkedAt": "2026-10-28T16:37:12.603Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "NVIDIA cuDSS accelerates solving large sparse systems — the math-heavy step that repeats throughout engineering and scientific simulations and often limits how many designs a team can test — by tapping into GPUs.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/cudss-generally-available-engineering-scientific-simulation/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:30:25.000Z",
+        "checkedAt": "2026-10-28T16:37:12.603Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Industry leaders are already integrating NVIDIA cuDSS into their tools to transform workflows for their end customers:",
+        "sourceUrl": "https://blogs.nvidia.com/blog/cudss-generally-available-engineering-scientific-simulation/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:30:25.000Z",
+        "checkedAt": "2026-10-28T16:37:12.603Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Applied Materials: With cuDSS, Applied Materials accelerated sparse solves in Ginestra, its physics-based, defect-centric simulation platform, by up to 10x versus CPU-only approaches, speeding exploration of semiconductor materials and device reliability.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/cudss-generally-available-engineering-scientific-simulation/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:30:25.000Z",
+        "checkedAt": "2026-10-28T16:37:12.603Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "COMSOL: Using COMSOL Multiphysics with NVIDIA cuDSS on NVIDIA accelerated computing, ZEISS SMT achieved a measured 4x speedup in an EUV lithography plasma simulation benchmark, completing the full simulation in six days and 14 hours.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/cudss-generally-available-engineering-scientific-simulation/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:30:25.000Z",
+        "checkedAt": "2026-10-28T16:37:12.603Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Cadence : Uses cuDSS in its Celsius software to accelerate simulations of heat, structural stress and warpage in advanced chips and 3D chip designs, helping customers including Nokia analyze complex designs faster.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/cudss-generally-available-engineering-scientific-simulation/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:30:25.000Z",
+        "checkedAt": "2026-10-28T16:37:12.603Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Dassault Systèmes : Dassault Systèmes reports an 8-10x speedup using cuDSS within its Abaqus structural and computer simulation technology electromagnetic solvers for performance-critical simulations across industries.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/cudss-generally-available-engineering-scientific-simulation/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:30:25.000Z",
+        "checkedAt": "2026-10-28T16:37:12.603Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Siemens : Siemens uses cuDSS in Simcenter STAR-CCM+ to accelerate simulations of structures in fluid-structure interaction workflows.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/cudss-generally-available-engineering-scientific-simulation/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:30:25.000Z",
+        "checkedAt": "2026-10-28T16:37:12.603Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Synopsys : Synopsys uses cuDSS in its Sentaurus Device simulator tool to accelerate simulations of advanced logic, memory and power chips, helping Infineon model increasingly complex devices faster.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/cudss-generally-available-engineering-scientific-simulation/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:30:25.000Z",
+        "checkedAt": "2026-10-28T16:37:12.603Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Developers can integrate cuDSS into existing engineering, scientific and optimization software offerings, bringing GPU acceleration to tools already used by engineers and researchers.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/cudss-generally-available-engineering-scientific-simulation/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:30:25.000Z",
+        "checkedAt": "2026-10-28T16:37:12.603Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Dial Up the Cloud: NVIDIA DLSS 4.5 Controls Arrive on GeForce NOW",
+        "sourceUrl": "https://blogs.nvidia.com/blog/cudss-generally-available-engineering-scientific-simulation/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-10-21T10:30:25.000Z",
+        "checkedAt": "2026-10-28T16:37:12.603Z"
+      }
+    ],
+    "pageDate": "2026-10-21T10:30:25.000Z"
+  },
+  "score": {
+    "importance": 3,
+    "practicalImpact": 2,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PRODUCT_LAUNCH",
+      "AVAILABILITY",
+      "INFRA"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 10,
+    "total": 10
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 PRODUCT_LAUNCH·AVAILABILITY·INFRA (우선순위 10)",
+    "근거 확인 통과 (확인 사실 12개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "status": "failed",
+    "error": "HTTP 503",
+    "usage": {
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "costUsd": 0,
+      "attempts": 1
+    },
+    "promptVersion": "draft-v1",
+    "at": "2026-10-28T16:37:36.525Z",
+    "evidenceHash": "2f136410b0b1"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": true,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}

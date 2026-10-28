@@ -1,0 +1,240 @@
+{
+  "id": "3cfd7e486253",
+  "date": "2026-10-29",
+  "proposedSlug": "introducing-artifacts-legal-work-claude",
+  "title": null,
+  "sourceTitle": "Introducing artifacts for legal work with Claude",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Anthropic",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://claude.com/resources/articles/introducing-artifacts-for-legal-work",
+      "name": "Claude (claude.com articles)",
+      "type": "official",
+      "publishedAt": "2026-10-28T00:00:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "3cfd7e486253",
+    "url": "https://claude.com/resources/articles/introducing-artifacts-for-legal-work",
+    "canonicalUrl": "https://claude.com/resources/articles/introducing-artifacts-for-legal-work",
+    "title": "Introducing artifacts for legal work with Claude",
+    "excerpt": "Anthropic's new legal artifacts and connectors help legal teams get work done with Claude.",
+    "publishedAt": "2026-10-28T00:00:00.000Z",
+    "sourceId": "claude-blog",
+    "sourceName": "Claude (claude.com articles)",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "listing-meta",
+    "discoveredVia": "https://claude.com/resources/articles",
+    "fetchedAt": "2026-10-28T16:36:08.468Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 11588,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Anthropic's new legal artifacts and connectors help legal teams get work done with Claude.",
+        "sourceUrl": "https://claude.com/resources/articles/introducing-artifacts-for-legal-work",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-28T00:00:00.000Z",
+        "checkedAt": "2026-10-28T16:37:14.767Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "• • • • • • • • • Introducing artifacts for legal work with Claude | Claude by Anthropic • •",
+        "sourceUrl": "https://claude.com/resources/articles/introducing-artifacts-for-legal-work",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-28T00:00:00.000Z",
+        "checkedAt": "2026-10-28T16:37:14.767Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Skip to main content Today, we’re introducing ready-to-use artifacts that legal professionals can adapt to how their teams work and share with colleagues across the business.",
+        "sourceUrl": "https://claude.com/resources/articles/introducing-artifacts-for-legal-work",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-28T00:00:00.000Z",
+        "checkedAt": "2026-10-28T16:37:14.767Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Since we launched Claude for Legal in May, the most common requests from legal teams have been for simpler setup and easier ways to work with colleagues.",
+        "sourceUrl": "https://claude.com/resources/articles/introducing-artifacts-for-legal-work",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-28T00:00:00.000Z",
+        "checkedAt": "2026-10-28T16:37:14.767Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "We are also funding public interest groups building artifacts for access-to-justice work and legal education programs teaching tomorrow’s lawyers to build with Claude, and we are starting a Legal Ambassadors Program so legal professionals can learn from each other.",
+        "sourceUrl": "https://claude.com/resources/articles/introducing-artifacts-for-legal-work",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-28T00:00:00.000Z",
+        "checkedAt": "2026-10-28T16:37:14.767Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Every legal team works differently and artifacts work best when they’re connected to the systems legal teams already use.",
+        "sourceUrl": "https://claude.com/resources/articles/introducing-artifacts-for-legal-work",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-28T00:00:00.000Z",
+        "checkedAt": "2026-10-28T16:37:14.767Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Since we launched Claude for Legal, we’ve added more than 60 legal connectors, including Bloomberg Law, Filevine, Ivo, Legora, and Patlytics.",
+        "sourceUrl": "https://claude.com/resources/articles/introducing-artifacts-for-legal-work",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-28T00:00:00.000Z",
+        "checkedAt": "2026-10-28T16:37:14.767Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Harvey Intake built by Harvey (opens in new tab) gives business users one place in Claude to send legal questions and requests, answering routine ones from Legal’s own guidance in Harvey and routing the rest to a lawyer, whose reply comes back in Claude.",
+        "sourceUrl": "https://claude.com/resources/articles/introducing-artifacts-for-legal-work",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-28T00:00:00.000Z",
+        "checkedAt": "2026-10-28T16:37:14.767Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "We are excited to see legal tech companies, law firms, legal aid organizations create and share their own artifacts, and have more artifacts coming from Legora and Orrick.",
+        "sourceUrl": "https://claude.com/resources/articles/introducing-artifacts-for-legal-work",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-28T00:00:00.000Z",
+        "checkedAt": "2026-10-28T16:37:14.767Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "“Claude continues to power us as the most widely contract review tool in the world—we're approaching 500,000 contracts per month moving through Spellbook and we wouldn't be here without Claude.”",
+        "sourceUrl": "https://claude.com/resources/articles/introducing-artifacts-for-legal-work",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-28T00:00:00.000Z",
+        "checkedAt": "2026-10-28T16:37:14.767Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "By connecting Legora to Claude, we’re making it easier for mutual customers to get answers to legal questions within their broader enterprise AI workflows, with links back to Legora for source review, citations and deeper legal work.”",
+        "sourceUrl": "https://claude.com/resources/articles/introducing-artifacts-for-legal-work",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-28T00:00:00.000Z",
+        "checkedAt": "2026-10-28T16:37:14.767Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "We are also launching the Legal Ambassadors Program, a community for legal professionals who build with Claude to share their work and learn from each other.",
+        "sourceUrl": "https://claude.com/resources/articles/introducing-artifacts-for-legal-work",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-28T00:00:00.000Z",
+        "checkedAt": "2026-10-28T16:37:14.767Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Legal teams can browse the gallery (opens in new tab) in Claude or start from our Claude for Legal (opens in new tab) page.",
+        "sourceUrl": "https://claude.com/resources/articles/introducing-artifacts-for-legal-work",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-10-28T00:00:00.000Z",
+        "checkedAt": "2026-10-28T16:37:14.767Z"
+      }
+    ],
+    "pageDate": "2026-10-28T00:00:00.000Z"
+  },
+  "score": {
+    "importance": 3,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 2,
+    "signals": [
+      "MODEL",
+      "PRODUCT_LAUNCH"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 9,
+    "total": 9
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 MODEL·PRODUCT_LAUNCH (우선순위 9)",
+    "근거 확인 통과 (확인 사실 11개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "status": "failed",
+    "error": "HTTP 503",
+    "usage": {
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "costUsd": 0,
+      "attempts": 1
+    },
+    "promptVersion": "draft-v1",
+    "at": "2026-10-28T16:37:37.545Z",
+    "evidenceHash": "49f009fd9a7f"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": true,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}

@@ -1,0 +1,233 @@
+{
+  "id": "5ef94984dce4",
+  "date": "2026-10-29",
+  "proposedSlug": "genie-4-generation-world-simulation",
+  "title": null,
+  "sourceTitle": "Genie 4: A new generation of world simulation",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 12,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Google",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+      "name": "Google DeepMind",
+      "type": "official",
+      "publishedAt": "2026-10-27T16:01:38.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "5ef94984dce4",
+    "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+    "canonicalUrl": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation",
+    "title": "Genie 4: A new generation of world simulation",
+    "excerpt": "Genie 4: our new world model unlocking unprecedented realism in real-time simulation.",
+    "publishedAt": "2026-10-27T16:01:38.000Z",
+    "sourceId": "google-deepmind",
+    "sourceName": "Google DeepMind",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://deepmind.google/blog/rss.xml",
+    "fetchedAt": "2026-10-28T16:36:08.468Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 21081,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Genie 4: our new world model unlocking unprecedented realism in real-time simulation.",
+        "sourceUrl": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-10-27T16:01:38.000Z",
+        "checkedAt": "2026-10-28T16:37:29.880Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Genie 4: A new generation of world simulation — Google DeepMind • • • • • • • • • • • • • • • • • • Skip to main content",
+        "sourceUrl": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-10-27T16:01:38.000Z",
+        "checkedAt": "2026-10-28T16:37:29.880Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Genie 4: A new generation of world simulation",
+        "sourceUrl": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-10-27T16:01:38.000Z",
+        "checkedAt": "2026-10-28T16:37:29.880Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Today, we are announcing Genie 4, our new world model, which unlocks unprecedented realism and improves real-time interactive simulation.",
+        "sourceUrl": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-10-27T16:01:38.000Z",
+        "checkedAt": "2026-10-28T16:37:29.880Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Genie 4 is natively multimodal, enabling audio-like music, ambient noises, and interactive dialogue to be simultaneously generated with the world.",
+        "sourceUrl": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-10-27T16:01:38.000Z",
+        "checkedAt": "2026-10-28T16:37:29.880Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "The Genie 4 model incorporates and builds on capabilities from the Gemini family: Gemini Omni anchors the simulations in real-world appearance and behavior, while other Gemini models provide the complex reasoning needed to help maintain a simulation’s coherence and continuity.",
+        "sourceUrl": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-10-27T16:01:38.000Z",
+        "checkedAt": "2026-10-28T16:37:29.880Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "With this foundation, you can set an event in motion, and Genie 4 simulates what happens next: how the world responds, how it sounds, and how the people in it move, react, and speak.",
+        "sourceUrl": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-10-27T16:01:38.000Z",
+        "checkedAt": "2026-10-28T16:37:29.880Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "We have started rolling Genie 4 out as a research preview for trusted testers — gathering feedback before we release it to consumers and developers, starting with Google AI Ultra subscribers in Project Genie and early access partners of the Gemini API and Google AI Studio.",
+        "sourceUrl": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-10-27T16:01:38.000Z",
+        "checkedAt": "2026-10-28T16:37:29.880Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Bringing Gemini and Genie 4 together adds a new layer of reasoning to world simulation, allowing us to model complex, multi-step events and test how AI systems navigate different environments before bringing them to the real world.",
+        "sourceUrl": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-10-27T16:01:38.000Z",
+        "checkedAt": "2026-10-28T16:37:29.880Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Simulation : Aside from our robotics research, enterprise partners across industries are evaluating Genie 4 as a tool for rapid \"zero-to-one\" scenario generation, and identifying gaps to further improve Genie to best fulfill that simulation need.",
+        "sourceUrl": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-10-27T16:01:38.000Z",
+        "checkedAt": "2026-10-28T16:37:29.880Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Before launching this preview, we evaluated Genie 4 through internal rigorous safety evaluations to prevent the generation of harmful or malicious content.",
+        "sourceUrl": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-10-27T16:01:38.000Z",
+        "checkedAt": "2026-10-28T16:37:29.880Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "We are sharing Genie 4 as a preview to learn alongside our community and safely advance the frontier of interactive simulation.",
+        "sourceUrl": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-10-27T16:01:38.000Z",
+        "checkedAt": "2026-10-28T16:37:29.880Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Genie 4 has been released as a research preview to trusted testers, and is coming soon to Google AI Ultra subscribers in Project Genie and early access partners in the Gemini API and Google AI Studio.",
+        "sourceUrl": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-10-27T16:01:38.000Z",
+        "checkedAt": "2026-10-28T16:37:29.880Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 2,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 2,
+    "signals": [
+      "MODEL"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 6,
+    "total": 6
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 MODEL (우선순위 6)",
+    "근거 확인 통과 (확인 사실 12개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "status": "skipped",
+    "error": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성",
+    "promptVersion": "draft-v1",
+    "at": "2026-10-28T16:37:37.989Z",
+    "evidenceHash": "6b80ebef781a"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}
