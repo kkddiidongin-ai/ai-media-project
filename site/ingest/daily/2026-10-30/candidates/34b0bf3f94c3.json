@@ -1,0 +1,212 @@
+{
+  "id": "34b0bf3f94c3",
+  "date": "2026-10-30",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Gemini 4 Carbon: Our next frontier model",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 7,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Google",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+      "name": "Google DeepMind",
+      "type": "official",
+      "publishedAt": "2026-10-28T17:00:58.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "34b0bf3f94c3",
+    "url": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+    "canonicalUrl": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model",
+    "title": "Gemini 4 Carbon: Our next frontier model",
+    "excerpt": "",
+    "publishedAt": "2026-10-28T17:00:58.000Z",
+    "sourceId": "google-deepmind",
+    "sourceName": "Google DeepMind",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://deepmind.google/blog/rss.xml",
+    "fetchedAt": "2026-10-29T16:53:38.579Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 8784,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "\"article_name\": \"Gemini 4 Carbon: our next frontier model\",",
+        "sourceUrl": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-10-28T17:00:58.000Z",
+        "checkedAt": "2026-10-29T16:55:24.298Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "\"section_header\": \"Gemini 4 Carbon: our next frontier model\"",
+        "sourceUrl": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-10-28T17:00:58.000Z",
+        "checkedAt": "2026-10-29T16:55:24.298Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Gemini 4 Carbon: our next frontier model",
+        "sourceUrl": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-10-28T17:00:58.000Z",
+        "checkedAt": "2026-10-29T16:55:24.298Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Gemini 4 Carbon is our strongest model with state-of-the-art cybersecurity and long horizon capabilities.",
+        "sourceUrl": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-10-28T17:00:58.000Z",
+        "checkedAt": "2026-10-29T16:55:24.298Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Today, we’re announcing the next frontier model: Gemini 4 Carbon, our strongest model with state-of-the-art cybersecurity and long horizon capabilities.",
+        "sourceUrl": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-10-28T17:00:58.000Z",
+        "checkedAt": "2026-10-29T16:55:24.298Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Building on Gemini 4 Argon , which was launched two weeks ago, Carbon illustrates the pace at which we’re pushing the frontier forward.",
+        "sourceUrl": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-10-28T17:00:58.000Z",
+        "checkedAt": "2026-10-29T16:55:24.298Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Gemini 4 Carbon will launch at the same introductory price",
+        "sourceUrl": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-10-28T17:00:58.000Z",
+        "checkedAt": "2026-10-29T16:55:24.298Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "As another example, the Chrome team has reported that Carbon performed more than 10X better than another lab's large frontier model when generating high quality patches.",
+        "sourceUrl": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-10-28T17:00:58.000Z",
+        "checkedAt": "2026-10-29T16:55:24.298Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Gemini 4 Carbon builds on the same multi-layered safety and security stack of Argon — combining model training, real-time misuse defenses, prompt-injection resilience, and chain-of-thought monitoring.",
+        "sourceUrl": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-10-28T17:00:58.000Z",
+        "checkedAt": "2026-10-29T16:55:24.298Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Gemini 4 Argon: our next era of frontier intelligence",
+        "sourceUrl": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-10-28T17:00:58.000Z",
+        "checkedAt": "2026-10-29T16:55:24.298Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "\"link_text\": \"Gemini 4 Argon: our next era of frontier intelligence\",",
+        "sourceUrl": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-10-28T17:00:58.000Z",
+        "checkedAt": "2026-10-29T16:55:24.298Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "\"article_name\": \"Gemini 4 Argon: our next era of frontier intelligence\",",
+        "sourceUrl": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-10-28T17:00:58.000Z",
+        "checkedAt": "2026-10-29T16:55:24.298Z"
+      }
+    ],
+    "pageDate": "2026-10-28T00:00:00.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 2,
+    "signals": [
+      "MODEL_MENTION"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 MODEL_MENTION (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

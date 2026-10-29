@@ -1,0 +1,233 @@
+{
+  "id": "e2324f34bfee",
+  "date": "2026-10-30",
+  "proposedSlug": "fine-tuning-nvidia-nemotron-know-local-rules",
+  "title": null,
+  "sourceTitle": "Fine-Tuning NVIDIA Nemotron to Know Local Rules, Not Just Local Languages",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "NVIDIA",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages/",
+      "name": "NVIDIA Technical Blog",
+      "type": "official",
+      "publishedAt": "2026-10-27T16:00:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "e2324f34bfee",
+    "url": "https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages/",
+    "canonicalUrl": "https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages",
+    "title": "Fine-Tuning NVIDIA Nemotron to Know Local Rules, Not Just Local Languages",
+    "excerpt": "As AI adoption expands globally, people across languages and cultures are using it in more aspects of their daily lives. General-purpose language models serve...",
+    "publishedAt": "2026-10-27T16:00:00.000Z",
+    "sourceId": "nvidia-developer",
+    "sourceName": "NVIDIA Technical Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://developer.nvidia.com/blog/feed",
+    "fetchedAt": "2026-10-29T16:53:38.579Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 17997,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "As AI adoption expands globally, people across languages and cultures are using it in more aspects of their daily lives. General-purpose language models serve...",
+        "sourceUrl": "https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-27T16:00:00.000Z",
+        "checkedAt": "2026-10-29T16:55:14.474Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Fine-Tuning NVIDIA Nemotron to Know Local Rules, Not Just Local Languages | NVIDIA Technical Blog",
+        "sourceUrl": "https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-27T16:00:00.000Z",
+        "checkedAt": "2026-10-29T16:55:14.474Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Fine-Tuning NVIDIA Nemotron to Know Local Rules, Not Just Local Languages",
+        "sourceUrl": "https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-27T16:00:00.000Z",
+        "checkedAt": "2026-10-29T16:55:14.474Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "A complete post-training workflow uses these personas with a behavior contract and official procedure text to generate synthetic conversations, fine-tune Nemotron 3.5 Lightning with LoRA on NVIDIA NeMo, merge the adapter, and evaluate against a frozen test set.",
+        "sourceUrl": "https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-27T16:00:00.000Z",
+        "checkedAt": "2026-10-29T16:55:14.474Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Both are part of the open NVIDIA Nemotron data program, which includes locale-grounded persona datasets for 12 countries that developers can use to adapt open models market by market.",
+        "sourceUrl": "https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-27T16:00:00.000Z",
+        "checkedAt": "2026-10-29T16:55:14.474Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Demonstration of the process of fine-tuning Nemotron 3.5 Lightning using Nemotron datasets, recipes, and playbooks",
+        "sourceUrl": "https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-27T16:00:00.000Z",
+        "checkedAt": "2026-10-29T16:55:14.474Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Python 3.11 through 3.13, uv, Git, Docker, NVIDIA Container Toolkit and access to the Nemotron repository .",
+        "sourceUrl": "https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-27T16:00:00.000Z",
+        "checkedAt": "2026-10-29T16:55:14.474Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "One NVIDIA DGX Station GB300 or one NVIDIA DGX Spark.",
+        "sourceUrl": "https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-27T16:00:00.000Z",
+        "checkedAt": "2026-10-29T16:55:14.474Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "docker run -d --gpus all --ipc=host --network host \\ -v ~/.cache/huggingface:/root/.cache/huggingface vllm/vllm-openai:v0.26.0 \\ --model nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 \\ --served-model-name lightning --port 8000 --reasoning-parser nemotron_v3",
+        "sourceUrl": "https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-27T16:00:00.000Z",
+        "checkedAt": "2026-10-29T16:55:14.474Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "docker run -it --rm --gpus all --ipc=host --shm-size=16g \\ -v ~/Nemotron:/workspace/Nemotron -w /workspace/Nemotron \\ nvcr.io/nvidia/nemo-automodel:26.08 \\ automodel use-case-examples/french-public-service-assistant/config/peft_automodel.yaml --nproc-per-node 1",
+        "sourceUrl": "https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-27T16:00:00.000Z",
+        "checkedAt": "2026-10-29T16:55:14.474Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "docker run -d --gpus all --ipc=host --network host \\ -v ~/Nemotron:/workspace/Nemotron vllm/vllm-openai:v0.26.0 \\ --model /workspace/Nemotron/use-case-examples/french-public-service-assistant/checkpoints/lightning_fr_merged \\ --served-model-name lightning-fr --port 8001",
+        "sourceUrl": "https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-27T16:00:00.000Z",
+        "checkedAt": "2026-10-29T16:55:14.474Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "For voice-enabled applications, developers can complement the adapted LLM with NVIDIA Nemotron 3.5 ASR , a 600-million-parameter, streaming speech recognition model that transcribes audio as it arrives, including spoken French.",
+        "sourceUrl": "https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-27T16:00:00.000Z",
+        "checkedAt": "2026-10-29T16:55:14.474Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Its coverage spans 40 language locales, with 32 available for transcription out of the box and eight requiring fine-tuning.",
+        "sourceUrl": "https://developer.nvidia.com/blog/fine-tuning-nvidia-nemotron-to-know-local-rules-not-just-local-languages/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-27T16:00:00.000Z",
+        "checkedAt": "2026-10-29T16:55:14.474Z"
+      }
+    ],
+    "pageDate": "2026-10-27T16:00:00.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 1,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "AVAILABILITY"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 6,
+    "total": 6
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 AVAILABILITY (우선순위 6)",
+    "근거 확인 통과 (확인 사실 11개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "none",
+    "model": null,
+    "status": "skipped",
+    "error": "Shadow Mode — 원고를 만들지 않음",
+    "promptVersion": "draft-v1",
+    "at": "2026-10-29T16:55:28.833Z",
+    "evidenceHash": "d36ab9510337"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}
