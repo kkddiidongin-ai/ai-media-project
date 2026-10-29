@@ -1,0 +1,234 @@
+{
+  "id": "fc595589053f",
+  "date": "2026-10-29",
+  "proposedSlug": "github-copilot-fusion-supports-selection-local-models",
+  "title": null,
+  "sourceTitle": "GitHub Copilot Fusion now supports selection of local models",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "GitHub",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://github.blog/changelog/2026-10-28-github-copilot-fusion-now-supports-selection-of-local-models",
+      "name": "GitHub Changelog",
+      "type": "official",
+      "publishedAt": "2026-10-28T15:30:42.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "fc595589053f",
+    "url": "https://github.blog/changelog/2026-10-28-github-copilot-fusion-now-supports-selection-of-local-models",
+    "canonicalUrl": "https://github.blog/changelog/2026-10-28-github-copilot-fusion-now-supports-selection-of-local-models",
+    "title": "GitHub Copilot Fusion now supports selection of local models",
+    "excerpt": "Today we are shipping intelligent routing for local models into experimental preview. GitHub Copilot Fusion can now choose between supported on-device models and cloud models, enabling intelligent local model routing… The post GitHub Copilot Fusion now supports selection of local models appeared fir",
+    "publishedAt": "2026-10-28T15:30:42.000Z",
+    "sourceId": "github-changelog",
+    "sourceName": "GitHub Changelog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://github.blog/changelog/feed/",
+    "fetchedAt": "2026-10-29T01:45:02.773Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 2666,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Today we are shipping intelligent routing for local models into experimental preview. GitHub Copilot Fusion can now choose between supported on-device models and cloud models, enabling intelligent local model routing… The post GitHub Copilot Fusion now supports selection of local models appeared fir",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-copilot-fusion-now-supports-selection-of-local-models",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:42.000Z",
+        "checkedAt": "2026-10-28T16:37:21.459Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "GitHub Copilot Fusion now supports selection of local models - GitHub Changelog",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-copilot-fusion-now-supports-selection-of-local-models",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:42.000Z",
+        "checkedAt": "2026-10-28T16:37:21.459Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Today we are shipping intelligent routing for local models into experimental preview.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-copilot-fusion-now-supports-selection-of-local-models",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:42.000Z",
+        "checkedAt": "2026-10-28T16:37:21.459Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "GitHub Copilot Fusion can now choose between supported on-device models and cloud models, enabling intelligent local model routing in GitHub Copilot CLI, GitHub Copilot app, and Visual Studio Code.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-copilot-fusion-now-supports-selection-of-local-models",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:42.000Z",
+        "checkedAt": "2026-10-28T16:37:21.459Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Once the model is ready, select Standard in Copilot Fusion to let Copilot choose between local and cloud models.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-copilot-fusion-now-supports-selection-of-local-models",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:42.000Z",
+        "checkedAt": "2026-10-28T16:37:21.459Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "The managed download experience is Windows-only, but Copilot CLI&rsquo;s local Copilot Fusion routing also works with manually configured models on Windows, macOS, and Linux.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-copilot-fusion-now-supports-selection-of-local-models",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:42.000Z",
+        "checkedAt": "2026-10-28T16:37:21.459Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "You can configure MAI Code 1.1 Flash or Qwen3.8 Flash Next through a local OpenAI-compatible server.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-copilot-fusion-now-supports-selection-of-local-models",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:42.000Z",
+        "checkedAt": "2026-10-28T16:37:21.459Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Configure the model as a supported local-model provider, enable experimental local routing, and select Standard in Copilot Fusion to let Copilot choose between eligible local and cloud models.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-copilot-fusion-now-supports-selection-of-local-models",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:42.000Z",
+        "checkedAt": "2026-10-28T16:37:21.459Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "The Copilot app also supports connecting and directly selecting compatible local models through BYOK.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-copilot-fusion-now-supports-selection-of-local-models",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:42.000Z",
+        "checkedAt": "2026-10-28T16:37:21.459Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Copilot Fusion still makes routing decisions in the cloud, and local models may have different safety protections from Copilot-provided cloud models.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-copilot-fusion-now-supports-selection-of-local-models",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:42.000Z",
+        "checkedAt": "2026-10-28T16:37:21.459Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "For setup instructions, see Adding LLM models to GitHub Copilot CLI and Adding LLM models to the GitHub Copilot app .",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-copilot-fusion-now-supports-selection-of-local-models",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:42.000Z",
+        "checkedAt": "2026-10-28T16:37:21.459Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Route and orchestrate models with GitHub Copilot Fusion",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-copilot-fusion-now-supports-selection-of-local-models",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:42.000Z",
+        "checkedAt": "2026-10-28T16:37:21.459Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "GitHub Enterprise now includes access to GitHub Copilot",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-copilot-fusion-now-supports-selection-of-local-models",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:42.000Z",
+        "checkedAt": "2026-10-28T16:37:21.459Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 2,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PRODUCT_LAUNCH",
+      "PREVIEW"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 7,
+    "total": 7
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 PRODUCT_LAUNCH·PREVIEW (우선순위 7)",
+    "근거 확인 통과 (확인 사실 11개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "status": "skipped",
+    "error": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성",
+    "promptVersion": "draft-v1",
+    "at": "2026-10-29T01:50:38.723Z",
+    "evidenceHash": "6ae12a87082b"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}

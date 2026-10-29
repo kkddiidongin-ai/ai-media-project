@@ -1,0 +1,124 @@
+{
+  "id": "d42fb1eb3362",
+  "date": "2026-10-29",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Retell uses OpenAI models to help power 100M monthly calls",
+  "depth": null,
+  "suggestedDepth": null,
+  "depthAssessment": {
+    "sufficiency": "INSUFFICIENT",
+    "distinctFacts": 0,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": false,
+      "evidenceQuality": false,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "distinctFacts",
+      "evidenceQuality",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "OpenAI",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://openai.com/index/retell-ai",
+      "name": "OpenAI",
+      "type": "official",
+      "publishedAt": "2026-10-27T15:00:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "d42fb1eb3362",
+    "url": "https://openai.com/index/retell-ai",
+    "canonicalUrl": "https://openai.com/index/retell-ai",
+    "title": "Retell uses OpenAI models to help power 100M monthly calls",
+    "excerpt": "GPT-6 Astra tops Retell’s voice agent benchmark, while Codex helps it reach a $1.6M annual revenue run rate per employee.",
+    "publishedAt": "2026-10-27T15:00:00.000Z",
+    "sourceId": "openai",
+    "sourceName": "OpenAI",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://openai.com/news/rss.xml",
+    "fetchedAt": "2026-10-29T01:45:02.773Z"
+  },
+  "evidence": {
+    "status": "SKIPPED_HOST_BLOCKED",
+    "chars": 0,
+    "grade": "FAIL",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "GPT-6 Astra tops Retell’s voice agent benchmark, while Codex helps it reach a $1.6M annual revenue run rate per employee.",
+        "sourceUrl": "https://openai.com/index/retell-ai",
+        "source": "OpenAI",
+        "publishedAt": "2026-10-27T15:00:00.000Z",
+        "checkedAt": "2026-10-29T01:46:27.125Z"
+      }
+    ],
+    "pageDate": null,
+    "alternate": {
+      "tried": [
+        "https://platform.openai.com/docs/changelog"
+      ],
+      "matched": 0,
+      "reason": "제목에 버전 붙은 이름 없음"
+    }
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 2,
+    "signals": [
+      "RESEARCH_RESULT"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "근거 부족 (원문 SKIPPED_HOST_BLOCKED, 확인 사실 0개) — 발행하지 않음"
+  ],
+  "needsReview": [
+    "source_blocked",
+    "insufficient_evidence"
+  ],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

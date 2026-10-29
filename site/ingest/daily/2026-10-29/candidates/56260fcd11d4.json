@@ -1,0 +1,221 @@
+{
+  "id": "56260fcd11d4",
+  "date": "2026-10-29",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "How NVIDIA Mission Control 2.5 Brings Autonomous Recovery to Kubernetes",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "NVIDIA",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://developer.nvidia.com/blog/how-nvidia-mission-control-2-5-brings-autonomous-recovery-to-kubernetes/",
+      "name": "NVIDIA Technical Blog",
+      "type": "official",
+      "publishedAt": "2026-10-26T15:00:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "56260fcd11d4",
+    "url": "https://developer.nvidia.com/blog/how-nvidia-mission-control-2-5-brings-autonomous-recovery-to-kubernetes/",
+    "canonicalUrl": "https://developer.nvidia.com/blog/how-nvidia-mission-control-2-5-brings-autonomous-recovery-to-kubernetes",
+    "title": "How NVIDIA Mission Control 2.5 Brings Autonomous Recovery to Kubernetes",
+    "excerpt": "Training large-scale AI models on thousands of GPUs is a high-stakes operation where monitoring and automation must be built-in to optimize cluster resiliency...",
+    "publishedAt": "2026-10-26T15:00:00.000Z",
+    "sourceId": "nvidia-developer",
+    "sourceName": "NVIDIA Technical Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://developer.nvidia.com/blog/feed",
+    "fetchedAt": "2026-10-29T01:45:02.773Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 10437,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Training large-scale AI models on thousands of GPUs is a high-stakes operation where monitoring and automation must be built-in to optimize cluster resiliency...",
+        "sourceUrl": "https://developer.nvidia.com/blog/how-nvidia-mission-control-2-5-brings-autonomous-recovery-to-kubernetes/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-26T15:00:00.000Z",
+        "checkedAt": "2026-10-29T01:46:31.349Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "How NVIDIA Mission Control 2.5 Brings Autonomous Recovery to Kubernetes | NVIDIA Technical Blog",
+        "sourceUrl": "https://developer.nvidia.com/blog/how-nvidia-mission-control-2-5-brings-autonomous-recovery-to-kubernetes/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-26T15:00:00.000Z",
+        "checkedAt": "2026-10-29T01:46:31.349Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "How NVIDIA Mission Control 2.5 Brings Autonomous Recovery to Kubernetes",
+        "sourceUrl": "https://developer.nvidia.com/blog/how-nvidia-mission-control-2-5-brings-autonomous-recovery-to-kubernetes/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-26T15:00:00.000Z",
+        "checkedAt": "2026-10-29T01:46:31.349Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "NVIDIA Mission Control 2.5 extends its autonomous recovery engine to Kubernetes-based workloads managed by NVIDIA Run:ai.",
+        "sourceUrl": "https://developer.nvidia.com/blog/how-nvidia-mission-control-2-5-brings-autonomous-recovery-to-kubernetes/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-26T15:00:00.000Z",
+        "checkedAt": "2026-10-29T01:46:31.349Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "The engine operates as a three-layer control loop: the Kubernetes scheduler places workloads, the autonomous job recovery service classifies failures using job context, and the autonomous hardware recovery service isolates and diagnoses faulty infrastructure.",
+        "sourceUrl": "https://developer.nvidia.com/blog/how-nvidia-mission-control-2-5-brings-autonomous-recovery-to-kubernetes/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-26T15:00:00.000Z",
+        "checkedAt": "2026-10-29T01:46:31.349Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Visit the documentation hub to learn how to upgrade to Mission Control 2.5.",
+        "sourceUrl": "https://developer.nvidia.com/blog/how-nvidia-mission-control-2-5-brings-autonomous-recovery-to-kubernetes/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-26T15:00:00.000Z",
+        "checkedAt": "2026-10-29T01:46:31.349Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "This is why software services, like the autonomous recovery engine offered in NVIDIA Mission Control , are critical to scaling production AI.",
+        "sourceUrl": "https://developer.nvidia.com/blog/how-nvidia-mission-control-2-5-brings-autonomous-recovery-to-kubernetes/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-26T15:00:00.000Z",
+        "checkedAt": "2026-10-29T01:46:31.349Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "As a part of Mission Control 2.5, this service is now extended to Kubernetes-based workloads managed using NVIDIA Run:ai .",
+        "sourceUrl": "https://developer.nvidia.com/blog/how-nvidia-mission-control-2-5-brings-autonomous-recovery-to-kubernetes/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-26T15:00:00.000Z",
+        "checkedAt": "2026-10-29T01:46:31.349Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "The vision behind Mission Control’s autonomous recovery engine is simple: AI factories should be self-healing systems where failures are detected instantly, recovery decisions are made intelligently based on workload context and failure type, and jobs resume automatically with…",
+        "sourceUrl": "https://developer.nvidia.com/blog/how-nvidia-mission-control-2-5-brings-autonomous-recovery-to-kubernetes/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-26T15:00:00.000Z",
+        "checkedAt": "2026-10-29T01:46:31.349Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Because true self-governing resiliency is best understood as a control loop rather than a single recovery feature, the autonomous recovery engine then works with the workloads scheduler (HPC or Kubernetes) providing an integrated three-layer framework where each component play…",
+        "sourceUrl": "https://developer.nvidia.com/blog/how-nvidia-mission-control-2-5-brings-autonomous-recovery-to-kubernetes/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-26T15:00:00.000Z",
+        "checkedAt": "2026-10-29T01:46:31.349Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "The three components of NVIDIA Mission Control 2.5’s autonomous recovery engine: the Kubernetes scheduler, the autonomous job recovery service, and the autonomous hardware recovery service",
+        "sourceUrl": "https://developer.nvidia.com/blog/how-nvidia-mission-control-2-5-brings-autonomous-recovery-to-kubernetes/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-26T15:00:00.000Z",
+        "checkedAt": "2026-10-29T01:46:31.349Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "The following scenarios show how the control loop behaves differently in Mission Control depending on the failure signal detected by its autonomous recovery engine.",
+        "sourceUrl": "https://developer.nvidia.com/blog/how-nvidia-mission-control-2-5-brings-autonomous-recovery-to-kubernetes/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-26T15:00:00.000Z",
+        "checkedAt": "2026-10-29T01:46:31.349Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "For platform teams, Mission Control 2.5 delivers a consistent recovery model across both of their Kubernetes and Slurm estates.",
+        "sourceUrl": "https://developer.nvidia.com/blog/how-nvidia-mission-control-2-5-brings-autonomous-recovery-to-kubernetes/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-26T15:00:00.000Z",
+        "checkedAt": "2026-10-29T01:46:31.349Z"
+      }
+    ],
+    "pageDate": "2026-10-26T15:00:00.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "INFRA"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 INFRA (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}
