@@ -250,6 +250,8 @@ await t("검증: 근거에 없는 숫자·가격·이름·GA 표현·회사 주�
 await t("원고 생성: 키 없으면 생성하지 않고 skipped (가짜 원고 없음)", async () => {
   eq(providers.resolveProvider({}), "none");
   eq(providers.resolveProvider({ ANTHROPIC_API_KEY: "x" }), "anthropic");
+  eq(providers.resolveProvider({ ANTHROPIC_API_KEY: "x", GITHUB_ACTIONS: "true" }), "none", "Actions에서는 키만으로 유료 공급자를 고르지 않음");
+  ok(/유료 API/.test(providers.providerBlocker("anthropic", { ANTHROPIC_API_KEY: "x", GITHUB_ACTIONS: "true" }) ?? ""), "Actions에서 anthropic 차단");
   eq(providers.resolveProvider({ ANTHROPIC_API_KEY: "x", DAILY_LLM_PROVIDER: "none" }), "none");
   const r = await providers.generateArticle({ title: "t" }, { ledger: [] }, { provider: "none" });
   eq([r.status, r.draft], ["skipped", undefined]);
@@ -965,8 +967,9 @@ await t("워크플로: master 직접 push 없음, automation/daily-* 브랜치·
   ok(!/vercel|newsletter|daily:approve|publish:daily|pipeline:publish|publish\.mjs/.test(wf), "배포·뉴스레터·승인·발행이 워크플로에 있음");
   ok(/gh pr list --head "\$B" --state open/.test(wf), "같은 날짜 PR 재사용");
   ok(!/ANTHROPIC_API_KEY[^:]*\becho|echo .*ANTHROPIC/.test(wf), "키 출력");
-  // 예약 실행은 언제나 shadow. draft는 수동 실행에서 고른 경우에만, LLM 키도 그때만
-  ok(/M=shadow\n\s+P=none\n\s+if \[ "\$EVENT" = "workflow_dispatch" \] && \[ "\$INPUT_MODE" = "draft" \] && \[ "\$BACKFILL" != "true" \]; then M=draft; P=anthropic; fi/.test(wf), "모드 결정 (유료는 수동 draft만, 백필은 언제나 shadow)");
+  // 기본은 shadow. 유료(anthropic)는 고를 수 없고, 무료 Gemini만 (운영자가 켠 경우 · 수동 free-draft)
+  ok(/M=shadow\r?\n\s+P=none\r?\n/.test(wf) && !/P=anthropic/.test(wf), "모드 결정 (유료 anthropic은 고를 수 없음, 기본 shadow)");
+  ok(!/^\s+- draft\s*$/m.test(wf) && /^\s+- free-draft\s*$/m.test(wf) && /^\s+- shadow\s*$/m.test(wf), "수동 메뉴: shadow · free-draft만 (draft 없음)");
   ok(/if \[ "\$P" = "none" \] && \[ "\$FREE_DRAFT" = "true" \] && \[ "\$BACKFILL" != "true" \]; then M=draft; P=gemini; fi/.test(wf), "무료 생성은 운영자가 켠 경우만");
   ok(/GEMINI_API_KEY: \$\{\{ steps\.m\.outputs\.provider == 'gemini' && steps\.ps\.outputs\.queue == 'true' && secrets\.GEMINI_API_KEY \|\| '' \}\}/.test(wf), "Gemini 키는 gemini이고 사용 기록을 되살렸을 때만");
   ok(/AUTO_PUBLISH_ENABLED == 'true' && steps\.m\.outputs\.provider != 'gemini'/.test(wf), "Gemini 실행은 자동 발행하지 않음");
@@ -981,8 +984,8 @@ await t("워크플로: master 직접 push 없음, automation/daily-* 브랜치·
   ok(/site\/ingest\/log\/daily-sources\.json/.test(wf), "소스 상태 기록을 캐시로 이어 씀");
   ok(/DAILY_MODE: \$\{\{ steps\.m\.outputs\.mode \}\}/.test(wf), "모드 전달");
   ok(/DAILY_LLM_PROVIDER: \$\{\{ steps\.m\.outputs\.provider \}\}/.test(wf), "공급자는 Mode 단계에서 (기본 none)");
-  eq(wf.match(/secrets\.ANTHROPIC_API_KEY/g)?.length, 1, "키 사용 위치");
-  ok(/ANTHROPIC_API_KEY: \$\{\{ steps\.m\.outputs\.provider == 'anthropic' && github\.event_name == 'workflow_dispatch' && secrets\.ANTHROPIC_API_KEY \|\| '' \}\}/.test(wf), "유료 키는 수동 draft에서만");
+  eq(wf.match(/secrets.ANTHROPIC_API_KEY/g)?.length ?? 0, 0, "유료 키를 어떤 단계에도 넘기지 않음");
+  ok(!/ANTHROPIC_API_KEY:/.test(wf), "ANTHROPIC_API_KEY 환경 변수 없음");
   ok(/default: shadow/.test(wf), "수동 실행 기본값 shadow");
   ok(!/gh pr merge|--auto|auto-merge/.test(wf), "자동 merge");
   // 보고서 fallback: Summary + artifact는 항상, PR은 실패해도 계속

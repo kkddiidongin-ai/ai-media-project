@@ -6,8 +6,8 @@
 #   자동 발행은 Variable AUTO_PUBLISH_ENABLED=true일 때만 별도 발행 workflow(publish.yml)를 부른다 (기본 꺼짐).
 #
 # 예약 실행(매일 07:00 KST): 언제나 shadow — 공식 출처 수집 → 중복 판정 → 선정 → 근거 확인 → 보고서. LLM 호출 없음.
-# 수동 실행(Run workflow)에서 mode=draft를 고른 경우에만: 검증된 발행 추천 후보에 AI 초안 + 자동 QA (편집자 검토용).
-#   ANTHROPIC_API_KEY(Secret)는 draft일 때만 넘긴다. Secret이 없으면 초안 없이 안내만 하고 나머지는 shadow처럼.
+# 수동 실행(Run workflow)에서 mode=free-draft를 고른 경우: 검증된 발행 추천 후보에 무료 Gemini 초안 + 자동 QA (편집자 검토용).
+#   유료 API(Anthropic)는 GitHub Actions에서 쓰지 않는다 — draft 선택지를 없앴고 ANTHROPIC_API_KEY를 어떤 단계에도 넘기지 않는다.
 # 하지 않는 일: 기사 발행(content/), 자동 merge, master push, 배포, 뉴스레터 생성·발송.
 #
 # 결과를 남기는 곳 (PR이 권한 때문에 실패해도 보고서는 반드시 남는다):
@@ -37,14 +37,13 @@ on:
         required: false
         type: string
       mode:
-        description: "shadow(기본, LLM 없음) · free-draft(무료 Gemini 초안, 시험 실행) · draft(유료 Anthropic 초안)"
+        description: "shadow(기본, LLM 없음) · free-draft(무료 Gemini 초안, 시험 실행). 유료 API 모드는 없음"
         required: false
         type: choice
         default: shadow
         options:
           - shadow
           - free-draft
-          - draft
       max_drafts:
         description: "이번 실행에서 만들 초안 수 (비우면 기본 6). 시험할 때 1"
         required: false
@@ -122,8 +121,8 @@ jobs:
         run: |
           M=shadow
           P=none
-          if [ "$EVENT" = "workflow_dispatch" ] && [ "$INPUT_MODE" = "draft" ] && [ "$BACKFILL" != "true" ]; then M=draft; P=anthropic; fi
-          # Phase 7.2: 무료 원고 생성은 운영자가 켠 경우에만 (예약 실행 포함). 유료(anthropic)는 여전히 수동 draft에서만
+          # 유료(anthropic)는 GitHub Actions에서 고를 수 없다 (예전 mode=draft 입력이 와도 shadow)
+          # Phase 7.2: 무료 원고 생성은 운영자가 켠 경우에만 (예약 실행 포함)
           if [ "$P" = "none" ] && [ "$FREE_DRAFT" = "true" ] && [ "$BACKFILL" != "true" ]; then M=draft; P=gemini; fi
           # 수동 시험: free-draft를 고르면 이번 실행만 무료 Gemini (DAILY_GEMINI_FREE_TIER_CONFIRMED=true가 아니면 코드가 막는다)
           if [ "$EVENT" = "workflow_dispatch" ] && [ "$INPUT_MODE" = "free-draft" ] && [ "$BACKFILL" != "true" ]; then M=draft; P=gemini; fi
@@ -189,14 +188,13 @@ jobs:
           echo "date=$L" >> "$GITHUB_OUTPUT"
           echo "last run branch: ${L:-없음}"
 
-      # shadow: LLM 키를 넘기지 않고 공급자 none. draft(수동)에서만 키·anthropic
+      # shadow: LLM 키를 넘기지 않고 공급자 none. 무료 Gemini일 때만 Gemini 키. 유료 키(ANTHROPIC_API_KEY)는 넘기지 않음
       - name: Daily run
         id: run
         env:
           DAILY_AUTOMATION_ENABLED: ${{ vars.DAILY_AUTOMATION_ENABLED }}
           DAILY_MODE: ${{ steps.m.outputs.mode }}
           DAILY_LLM_PROVIDER: ${{ steps.m.outputs.provider }}
-          ANTHROPIC_API_KEY: ${{ steps.m.outputs.provider == 'anthropic' && github.event_name == 'workflow_dispatch' && secrets.ANTHROPIC_API_KEY || '' }}
           GEMINI_API_KEY: ${{ steps.m.outputs.provider == 'gemini' && steps.ps.outputs.queue == 'true' && secrets.GEMINI_API_KEY || '' }}
           DAILY_GEMINI_FREE_TIER_CONFIRMED: ${{ vars.DAILY_GEMINI_FREE_TIER_CONFIRMED }}
           DAILY_GEMINI_MODEL: ${{ vars.DAILY_GEMINI_MODEL }}

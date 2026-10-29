@@ -449,6 +449,18 @@ await t("무료 생성 성공: 원고·QA·생성 통계 기록, 응답 형식 �
     ok(n > 8 && n <= 14, `다음 날 새 예산 (${n - 8}회)`);
   });
 
+  await t("7.3-11 GitHub Actions에서는 유료 Anthropic 호출 0 (키가 있어도)", async () => {
+    const f = counter();
+    const ctx = { ...gctx({ fetch: f }), provider: "anthropic", env: { ANTHROPIC_API_KEY: "sk-ant-test-not-real-000000", GITHUB_ACTIONS: "true" } };
+    const r = await providers.generateArticle(cand, ev, ctx);
+    eq([r.status, f.n], ["skipped", 0]);
+    WEB.set("https://fx-ga.test/feed.xml", { body: rss(announcements("fx-ga", 2)), type: "application/rss+xml" });
+    let n = 0;
+    const run = await runDaily(base({ env: ENV({ DAILY_MODE: "draft", DAILY_LLM_PROVIDER: "anthropic", ANTHROPIC_API_KEY: "sk-ant-test-not-real-000000", GITHUB_ACTIONS: "true" }), registry: { sources: [src("fx-ga", "https://fx-ga.test/feed.xml")] }, fetch: async () => (n++, new Response("{}")) }));
+    eq(n, 0, "실행 전체 유료 호출 0");
+    ok(!run.run.items.some((x) => x.generation?.provider === "anthropic" && x.generation?.status === "ok"), "유료 원고 없음");
+  });
+
   await t("7.3-8 Gemini 원고는 자동 발행 불가 (사람이 실행한 manual만)", async () => {
     const doc = { drafts: [{ verdict: "PUBLISHABLE", story: { slug: "g-1" }, generation: { provider: "gemini" } }] };
     const r = pub.publishApproved({ doc, approvedBy: "auto-bot", mode: "auto", allowAuto: true, runId: "t", runStep: () => ({ ok: true, out: "" }), publicationsFile: path.join(tmp, `pub-${rid()}.json`) });

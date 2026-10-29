@@ -128,7 +128,12 @@ function overBudget(ctx, worstCost) {
   return null;
 }
 
+/** 유료 API는 GitHub Actions에서 부르지 않는다 (키가 어떻게 들어와도) */
+export const paidBlockedInCi = (env = process.env) => String(env.GITHUB_ACTIONS ?? "").trim() === "true";
+const PAID_CI_BLOCK = "GitHub Actions에서는 유료 API(Anthropic)를 부르지 않음 — 무료 Gemini(free-draft)만";
+
 async function anthropicProvider(candidate, evidence, ctx) {
+  if (paidBlockedInCi(ctx.env)) return { status: "skipped", error: PAID_CI_BLOCK };
   const key = ctx.env.ANTHROPIC_API_KEY;
   if (!key) return { status: "skipped", error: "ANTHROPIC_API_KEY 없음" };
   const cfg = resolveModelConfig(ctx.env);
@@ -318,7 +323,8 @@ export function resolveProvider(env = process.env) {
   const p = String(env.DAILY_LLM_PROVIDER ?? "").trim().toLowerCase();
   if (p === "none" || p === "off") return "none";
   if (p && PROVIDERS[p]) return p;
-  return env.ANTHROPIC_API_KEY ? "anthropic" : "none";
+  // 키만 있다고 유료 공급자를 고르지 않는다: GitHub Actions에서는 none
+  return env.ANTHROPIC_API_KEY && !paidBlockedInCi(env) ? "anthropic" : "none";
 }
 
 /**
@@ -335,6 +341,7 @@ export function providerBlocker(provider, env = process.env) {
     if (tier) return tier;
   }
   if (provider === "anthropic") {
+    if (paidBlockedInCi(env)) return PAID_CI_BLOCK;
     if (!String(env.ANTHROPIC_API_KEY ?? "").trim()) return "ANTHROPIC_API_KEY가 설정되지 않음 — GitHub Secret 또는 .env.local에 넣은 뒤 다시 실행 (지금은 원고를 만들지 않음)";
     const cfg = resolveModelConfig(env);
     if (cfg.error) return cfg.error;
