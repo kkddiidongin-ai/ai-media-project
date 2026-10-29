@@ -422,6 +422,33 @@ await t("무료 생성 성공: 원고·QA·생성 통계 기록, 응답 형식 �
     eq(loadQueue(o.queueFile).gemini.calls, calls1 + calls2);
   });
 
+  await t("7.3-10 정기(none)·수동 free-draft 여러 번이 같은 기록을 쓰면 하루 8회를 넘지 않음 · 태평양 자정에 새로 셈", async () => {
+    eq([G.pacificDay(Date.parse("2026-10-29T06:59:59Z")), G.pacificDay(Date.parse("2026-10-29T07:00:00Z"))], ["2026-10-28", "2026-10-29"], "PDT 자정");
+    eq([G.pacificDay(Date.parse("2026-11-02T07:59:59Z")), G.pacificDay(Date.parse("2026-11-02T08:00:00Z"))], ["2026-11-01", "2026-11-02"], "PST 자정");
+    WEB.set("https://fx-gr.test/feed.xml", { body: rss(announcements("fx-gr", 6)), type: "application/rss+xml" });
+    const clock = fakeClock(Date.parse("2026-10-29T08:00:00Z"));
+    const o = base({ now: clock.now, sleep: clock.sleep, registry: { sources: [src("fx-gr", "https://fx-gr.test/feed.xml")] } });
+    const gem = ENV({ DAILY_MODE: "draft", DAILY_LLM_PROVIDER: "gemini", GEMINI_API_KEY: KEY, DAILY_GEMINI_FREE_TIER_CONFIRMED: "true", DAILY_GEMINI_BILLING_TIER: "free" });
+    let n = 0;
+    const f = async () => (n++, new Response("{}", { status: 500 })); // 실패해도 예산 차감
+    // 정기 실행 (DAILY_FREE_DRAFT_ENABLED=false → workflow가 provider none, 키 없음)
+    await runDaily({ ...o, out: o.out + "-s", env: ENV({ DAILY_MODE: "shadow", DAILY_LLM_PROVIDER: "none" }), fetch: f });
+    eq(n, 0, "정기 실행 호출 0");
+    for (let i = 0; i < 4; i++) {
+      // 수동 실행마다 처리 기록을 지워 같은 후보를 다시 원고 대상으로 만든다 (최악의 경우)
+      fs.rmSync(o.processedFile, { force: true });
+      const q = loadQueue(o.queueFile);
+      fs.writeFileSync(o.queueFile, JSON.stringify({ ...q, items: {} }));
+      await runDaily({ ...o, out: `${o.out}-m${i}`, env: gem, fetch: f, existing: EMPTY() });
+    }
+    eq(n, 8, "수동 4번 합계");
+    eq(loadQueue(o.queueFile).gemini.calls, 8);
+    clock.advance(24 * 3600 * 1000);
+    fs.rmSync(o.processedFile, { force: true });
+    await runDaily({ ...o, out: `${o.out}-next`, env: gem, fetch: f, existing: EMPTY() });
+    ok(n > 8 && n <= 14, `다음 날 새 예산 (${n - 8}회)`);
+  });
+
   await t("7.3-8 Gemini 원고는 자동 발행 불가 (사람이 실행한 manual만)", async () => {
     const doc = { drafts: [{ verdict: "PUBLISHABLE", story: { slug: "g-1" }, generation: { provider: "gemini" } }] };
     const r = pub.publishApproved({ doc, approvedBy: "auto-bot", mode: "auto", allowAuto: true, runId: "t", runStep: () => ({ ok: true, out: "" }), publicationsFile: path.join(tmp, `pub-${rid()}.json`) });

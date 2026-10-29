@@ -971,6 +971,9 @@ await t("워크플로: master 직접 push 없음, automation/daily-* 브랜치·
   ok(/GEMINI_API_KEY: \$\{\{ steps\.m\.outputs\.provider == 'gemini' && steps\.ps\.outputs\.queue == 'true' && secrets\.GEMINI_API_KEY \|\| '' \}\}/.test(wf), "Gemini 키는 gemini이고 사용 기록을 되살렸을 때만");
   ok(/AUTO_PUBLISH_ENABLED == 'true' && steps\.m\.outputs\.provider != 'gemini'/.test(wf), "Gemini 실행은 자동 발행하지 않음");
   ok(/DAILY_GEMINI_BILLING_TIER: \$\{\{ vars\.DAILY_GEMINI_BILLING_TIER \}\}/.test(wf), "결제 등급 확인 값 전달");
+  ok(/name: Restore processed index\s+if: steps\.ps\.outputs\.queue != 'true'/.test(wf), "브랜치 기록을 캐시로 덮어쓰지 않음");
+  ok((wf.match(/secrets\.GEMINI_API_KEY/g) ?? []).length === 1, "Gemini 키는 한 단계에만");
+  ok(/^concurrency:\s+group: aimajung-daily\s+cancel-in-progress: false/m.test(wf), "예약·수동 실행 모두 한 번에 하나");
   ok(/site\/ingest\/log\/pipeline-queue\.json/.test(wf), "대기열을 이어 씀");
   ok(/if: always\(\) && vars\.AUTO_PUBLISH_ENABLED == 'true'/.test(wf), "자동 발행은 운영자가 켰을 때만");
   ok(/DAILY_LAST_RUN_DATE: \$\{\{ steps\.last\.outputs\.date \}\}/.test(wf) && /automation\/daily-20\*/.test(wf), "따라잡기: 마지막 실행 브랜치");

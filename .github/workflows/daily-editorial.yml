@@ -162,7 +162,9 @@ jobs:
           fi
 
       # 같은 URL을 날마다 다시 처리하지 않도록 처리 기록을 캐시로 이어 쓴다 (브랜치 기록이 없을 때의 대비)
+      # 브랜치에서 대기열을 되살렸으면 캐시로 덮어쓰지 않는다 (더 오래된 캐시가 Gemini 하루 사용량을 줄여 놓지 않게)
       - name: Restore processed index
+        if: steps.ps.outputs.queue != 'true'
         uses: actions/cache/restore@v4
         with:
           path: |
@@ -251,7 +253,7 @@ jobs:
           mkdir -p "$W/site/ingest/log"
           for f in daily-processed.json daily-sources.json pipeline-queue.json; do [ -f "ingest/log/$f" ] && cp "ingest/log/$f" "$W/site/ingest/log/"; done
           git -C "$W" add -f site/ingest/log
-          if git -C "$W" diff --cached --quiet; then echo "변경 없음"; else git -C "$W" commit -m "chore(daily): pipeline state ${{ steps.d.outputs.rid }}" && git -C "$W" push origin HEAD:refs/heads/automation/pipeline-state; fi
+          if git -C "$W" diff --cached --quiet; then echo "변경 없음"; else git -C "$W" commit -m "chore(daily): pipeline state ${{ steps.d.outputs.rid }}" && { for i in 1 2 3; do git -C "$W" push origin HEAD:refs/heads/automation/pipeline-state && break; [ "$i" = 3 ] && { echo "::warning::pipeline-state push 실패 — Gemini 사용 기록이 저장되지 않았을 수 있음 (다음 실행 전 확인)"; exit 1; }; sleep 5; done; }; fi
           git worktree remove --force "$W"
 
       # 보고서는 실행 화면 Summary에 항상 남긴다
