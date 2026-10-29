@@ -296,9 +296,9 @@
       },
       "addedAt": "2026-10-22",
       "since": "2026-10-19",
-      "attempts": 15,
+      "attempts": 16,
       "date": "2026-10-29",
-      "reason": "HTTP 503"
+      "reason": "timeout"
     },
     "753fc98bb47c": {
       "stage": "draft",
@@ -482,7 +482,7 @@
       "since": "2026-10-19",
       "attempts": 14,
       "date": "2026-10-29",
-      "reason": "HTTP 503"
+      "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
     },
     "3964fa015c0d": {
       "stage": "draft",
@@ -618,9 +618,9 @@
       },
       "addedAt": "2026-10-23",
       "since": "2026-10-20",
-      "attempts": 12,
+      "attempts": 13,
       "date": "2026-10-29",
-      "reason": "HTTP 503"
+      "reason": "timeout"
     },
     "416b0e09bace": {
       "stage": "draft",
@@ -752,7 +752,7 @@
         "tier": 1,
         "fetchMode": "rss-paged",
         "discoveredVia": "https://blogs.nvidia.com/feed/",
-        "fetchedAt": "2026-10-28T16:36:08.468Z"
+        "fetchedAt": "2026-10-29T01:45:02.773Z"
       },
       "addedAt": "2026-10-28",
       "since": "2026-10-25",
@@ -775,7 +775,7 @@
         "tier": 1,
         "fetchMode": "rss",
         "discoveredVia": "https://nvidianews.nvidia.com/releases.xml",
-        "fetchedAt": "2026-10-28T16:36:08.468Z"
+        "fetchedAt": "2026-10-29T01:45:02.773Z"
       },
       "addedAt": "2026-10-28",
       "since": "2026-10-25",
@@ -798,11 +798,11 @@
         "tier": 1,
         "fetchMode": "rss-paged",
         "discoveredVia": "https://about.fb.com/news/feed/",
-        "fetchedAt": "2026-10-28T16:36:08.468Z"
+        "fetchedAt": "2026-10-29T01:45:02.773Z"
       },
       "addedAt": "2026-10-28",
       "since": "2026-10-25",
-      "attempts": 2,
+      "attempts": 3,
       "date": "2026-10-29",
       "reason": "HTTP 503"
     },
@@ -825,9 +825,9 @@
       },
       "addedAt": "2026-10-28",
       "since": "2026-10-25",
-      "attempts": 2,
+      "attempts": 3,
       "date": "2026-10-29",
-      "reason": "HTTP 503"
+      "reason": "timeout"
     },
     "747b76bde702": {
       "stage": "draft",
@@ -867,7 +867,7 @@
         "tier": 1,
         "fetchMode": "rss",
         "discoveredVia": "https://deepmind.google/blog/rss.xml",
-        "fetchedAt": "2026-10-28T16:36:08.468Z"
+        "fetchedAt": "2026-10-29T01:45:02.773Z"
       },
       "addedAt": "2026-10-28",
       "since": "2026-10-25",
@@ -913,7 +913,7 @@
         "tier": 1,
         "fetchMode": "rss",
         "discoveredVia": "https://developer.nvidia.com/blog/feed",
-        "fetchedAt": "2026-10-28T16:36:08.468Z"
+        "fetchedAt": "2026-10-29T01:45:02.773Z"
       },
       "addedAt": "2026-10-28",
       "since": "2026-10-25",
@@ -936,11 +936,11 @@
         "tier": 1,
         "fetchMode": "listing-meta",
         "discoveredVia": "https://claude.com/resources/articles",
-        "fetchedAt": "2026-10-28T16:36:08.468Z"
+        "fetchedAt": "2026-10-29T01:45:02.773Z"
       },
       "addedAt": "2026-10-29",
       "since": "2026-10-26",
-      "attempts": 1,
+      "attempts": 2,
       "date": "2026-10-29",
       "reason": "HTTP 503"
     },
@@ -959,7 +959,7 @@
         "tier": 1,
         "fetchMode": "rss-paged",
         "discoveredVia": "https://github.blog/changelog/feed/",
-        "fetchedAt": "2026-10-28T16:36:08.468Z"
+        "fetchedAt": "2026-10-29T01:45:02.773Z"
       },
       "addedAt": "2026-10-29",
       "since": "2026-10-26",
@@ -982,7 +982,7 @@
         "tier": 1,
         "fetchMode": "rss-paged",
         "discoveredVia": "https://github.blog/changelog/feed/",
-        "fetchedAt": "2026-10-28T16:36:08.468Z"
+        "fetchedAt": "2026-10-29T01:45:02.773Z"
       },
       "addedAt": "2026-10-29",
       "since": "2026-10-26",
@@ -1005,7 +1005,7 @@
         "tier": 1,
         "fetchMode": "rss-paged",
         "discoveredVia": "https://blogs.nvidia.com/feed/",
-        "fetchedAt": "2026-10-28T16:36:08.468Z"
+        "fetchedAt": "2026-10-29T01:45:02.773Z"
       },
       "addedAt": "2026-10-29",
       "since": "2026-10-26",
@@ -1028,7 +1028,7 @@
         "tier": 1,
         "fetchMode": "rss-paged",
         "discoveredVia": "https://github.blog/changelog/feed/",
-        "fetchedAt": "2026-10-28T16:36:08.468Z"
+        "fetchedAt": "2026-10-29T01:45:02.773Z"
       },
       "addedAt": "2026-10-29",
       "since": "2026-10-26",
@@ -1051,7 +1051,7 @@
         "tier": 1,
         "fetchMode": "rss-paged",
         "discoveredVia": "https://github.blog/changelog/feed/",
-        "fetchedAt": "2026-10-28T16:36:08.468Z"
+        "fetchedAt": "2026-10-29T01:45:02.773Z"
       },
       "addedAt": "2026-10-29",
       "since": "2026-10-26",
@@ -1059,376 +1059,169 @@
       "date": "2026-10-29",
       "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
     },
-    "64d59b55a8fb": {
-      "stage": "evidence",
+    "f3d8cfd7112a": {
+      "stage": "draft",
       "item": {
-        "id": "64d59b55a8fb",
-        "url": "https://openai.com/index/chatgpt-expanding-world-of-work",
-        "canonicalUrl": "https://openai.com/index/chatgpt-expanding-world-of-work",
-        "title": "ChatGPT’s expanding world of work",
-        "excerpt": "Explore OpenAI Signals data on 165 work activities across nearly 100 countries, revealing how people use ChatGPT for work and how usage changes over time.",
-        "publishedAt": "2026-10-26T10:00:00.000Z",
-        "sourceId": "openai",
-        "sourceName": "OpenAI",
+        "id": "f3d8cfd7112a",
+        "url": "https://workspaceupdates.googleblog.com/2026/10/immersive-explorations-now-available-in-the-Gemini-app.html",
+        "canonicalUrl": "https://workspaceupdates.googleblog.com/2026/10/immersive-explorations-now-available-in-the-Gemini-app.html",
+        "title": "Immersive explorations now available in the Gemini app",
+        "excerpt": "We’re introducing a library of immersive explorations in the Gemini app, giving users an interactive, visual way to explore topics layer-by-layer, from microscopic systems to deep space. Users can access this library in the Gemini student hub by clicking on “Try immersive explorations” and will soon",
+        "publishedAt": "2026-10-28T18:21:30.362Z",
+        "sourceId": "google-workspace-updates",
+        "sourceName": "Google Workspace Updates",
         "sourceType": "official",
         "tier": 1,
         "fetchMode": "rss",
-        "discoveredVia": "https://openai.com/news/rss.xml",
-        "fetchedAt": "2026-10-28T16:36:08.468Z"
+        "discoveredVia": "https://workspaceupdates.googleblog.com/feeds/posts/default?max-results=500&published-min=2026-01-01T00:00:00Z",
+        "fetchedAt": "2026-10-29T01:45:02.773Z"
       },
       "addedAt": "2026-10-29",
       "since": "2026-10-26",
       "attempts": 1,
       "date": "2026-10-29",
-      "reason": "batch"
+      "reason": "timeout"
     },
-    "20e0c61e46a0": {
-      "stage": "evidence",
+    "4b9ad4180246": {
+      "stage": "draft",
       "item": {
-        "id": "20e0c61e46a0",
-        "url": "https://blogs.microsoft.com/blog/2026/10/27/the-platform-approach-to-becoming-frontier/",
-        "canonicalUrl": "https://blogs.microsoft.com/blog/2026/10/27/the-platform-approach-to-becoming-frontier",
-        "title": "The platform approach to becoming Frontier",
-        "excerpt": "Last year at Ignite, we introduced the concept of Frontier Transformation and how it is different from any technology-led pursuit, because it requires us to focus on business outcomes first. It starts with a simple idea: technology was invented to serve humanity, not the other way around. There is n",
-        "publishedAt": "2026-10-27T16:01:38.000Z",
+        "id": "4b9ad4180246",
+        "url": "https://blogs.microsoft.com/blog/2026/10/28/introducing-the-microsoft-copilot-harness-unlocking-the-potential-of-truly-multi-model-agentic-work/",
+        "canonicalUrl": "https://blogs.microsoft.com/blog/2026/10/28/introducing-the-microsoft-copilot-harness-unlocking-the-potential-of-truly-multi-model-agentic-work",
+        "title": "Introducing the Microsoft Copilot harness: Unlocking the potential of truly multi-model agentic work",
+        "excerpt": "If you want to compete, you need to be multi-model. And if you want to take advantage of everything that different AI models have to offer, you need a great harness. But building one that works seamlessly across multiple models and surfaces is incredibly hard. You need to solve for performance, qual",
+        "publishedAt": "2026-10-28T16:51:35.000Z",
         "sourceId": "microsoft",
         "sourceName": "Microsoft (Official Blog)",
         "sourceType": "official",
         "tier": 1,
         "fetchMode": "rss-paged",
         "discoveredVia": "https://blogs.microsoft.com/feed/",
-        "fetchedAt": "2026-10-28T16:36:08.468Z"
+        "fetchedAt": "2026-10-29T01:45:02.773Z"
       },
       "addedAt": "2026-10-29",
       "since": "2026-10-26",
-      "attempts": 1,
+      "attempts": 0,
       "date": "2026-10-29",
-      "reason": "batch"
+      "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
     },
-    "8ed93bec7901": {
-      "stage": "evidence",
+    "cc7dd1039630": {
+      "stage": "draft",
       "item": {
-        "id": "8ed93bec7901",
-        "url": "https://aws.amazon.com/blogs/machine-learning/fleet-wide-computer-vision-lifecycle-at-the-edge-with-sagemaker-sdk-v3/",
-        "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/fleet-wide-computer-vision-lifecycle-at-the-edge-with-sagemaker-sdk-v3",
-        "title": "Fleet-wide computer vision lifecycle at the edge with SageMaker SDK v3",
-        "excerpt": "Fleet-wide computer vision needs a model per camera, not one model for the whole fleet. This post presents a working Amazon SageMaker SDK v3 reference architecture that trains, quality-gates, compiles per-camera models with SageMaker Neo, and versions thousands of them, with an AWS Step Functions la",
-        "publishedAt": "2026-10-26T17:56:58.000Z",
-        "sourceId": "aws-ml",
-        "sourceName": "AWS Machine Learning Blog",
-        "sourceType": "official",
-        "tier": 1,
-        "fetchMode": "rss",
-        "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
-        "fetchedAt": "2026-10-28T16:36:08.468Z"
-      },
-      "addedAt": "2026-10-29",
-      "since": "2026-10-26",
-      "attempts": 1,
-      "date": "2026-10-29",
-      "reason": "batch"
-    },
-    "0f715e1693d7": {
-      "stage": "evidence",
-      "item": {
-        "id": "0f715e1693d7",
-        "url": "https://aws.amazon.com/blogs/machine-learning/groundhog-day-for-ai-agents-prompt-caching-patterns-for-using-openai-models-on-amazon-bedrock/",
-        "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/groundhog-day-for-ai-agents-prompt-caching-patterns-for-using-openai-models-on-amazon-bedrock",
-        "title": "Groundhog Day for AI agents: Prompt caching patterns for using OpenAI models on Amazon Bedrock",
-        "excerpt": "Every time an agent takes a step, it re-reads its entire context before acting. Here is how prompt caching for OpenAI models on Amazon Bedrock lets your agent remember, cutting input cost and latency without resending the same tools, instructions, and history every turn.",
-        "publishedAt": "2026-10-26T17:27:20.000Z",
-        "sourceId": "aws-ml",
-        "sourceName": "AWS Machine Learning Blog",
-        "sourceType": "official",
-        "tier": 1,
-        "fetchMode": "rss",
-        "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
-        "fetchedAt": "2026-10-28T16:36:08.468Z"
-      },
-      "addedAt": "2026-10-29",
-      "since": "2026-10-26",
-      "attempts": 1,
-      "date": "2026-10-29",
-      "reason": "batch"
-    },
-    "194ab4b69c2c": {
-      "stage": "evidence",
-      "item": {
-        "id": "194ab4b69c2c",
-        "url": "https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion",
-        "canonicalUrl": "https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion",
-        "title": "Route and orchestrate models with GitHub Copilot Fusion",
-        "excerpt": "GitHub Copilot Fusion is generally available. Instead of picking a model for each task, choose Copilot Fusion and let Copilot intelligently route and orchestrate which models it uses for you.… The post Route and orchestrate models with GitHub Copilot Fusion appeared first on The GitHub Blog .",
-        "publishedAt": "2026-10-28T16:00:00.000Z",
+        "id": "cc7dd1039630",
+        "url": "https://github.blog/changelog/2026-10-28-ai-scan-for-repositories-in-public-preview",
+        "canonicalUrl": "https://github.blog/changelog/2026-10-28-ai-scan-for-repositories-in-public-preview",
+        "title": "AI Scan for repositories in public preview",
+        "excerpt": "You can now use AI Scan to find vulnerabilities across your whole repository, not just in pull request changes. It covers languages and frameworks that CodeQL doesn’t support and finds… The post AI Scan for repositories in public preview appeared first on The GitHub Blog .",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
         "sourceId": "github-changelog",
         "sourceName": "GitHub Changelog",
         "sourceType": "official",
         "tier": 1,
         "fetchMode": "rss-paged",
-        "discoveredVia": "https://github.blog/changelog/feed/",
-        "fetchedAt": "2026-10-28T16:36:08.468Z"
+        "discoveredVia": "https://github.blog/changelog/feed/?paged=2",
+        "fetchedAt": "2026-10-29T01:45:02.773Z"
       },
       "addedAt": "2026-10-29",
       "since": "2026-10-26",
-      "attempts": 1,
+      "attempts": 0,
       "date": "2026-10-29",
-      "reason": "batch"
+      "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
     },
-    "393d97d2e447": {
-      "stage": "evidence",
+    "c54e1656c97a": {
+      "stage": "draft",
       "item": {
-        "id": "393d97d2e447",
-        "url": "https://github.blog/changelog/2026-10-28-github-enterprise-now-includes-access-to-github-copilot",
-        "canonicalUrl": "https://github.blog/changelog/2026-10-28-github-enterprise-now-includes-access-to-github-copilot",
-        "title": "GitHub Enterprise now includes access to GitHub Copilot",
-        "excerpt": "Enterprises working with a GitHub or Microsoft account team can now get Copilot included with GitHub Enterprise for every licensed user. Previously, you had to manage two things: how many… The post GitHub Enterprise now includes access to GitHub Copilot appeared first on The GitHub Blog .",
-        "publishedAt": "2026-10-28T15:50:00.000Z",
+        "id": "c54e1656c97a",
+        "url": "https://github.blog/changelog/2026-10-28-code-scanning-for-ai-applications-in-public-preview",
+        "canonicalUrl": "https://github.blog/changelog/2026-10-28-code-scanning-for-ai-applications-in-public-preview",
+        "title": "Code scanning for AI applications in public preview",
+        "excerpt": "Code scanning can now detect AI applications and agent vulnerabilities, including indirect prompt injection (XPIA), sensitive information disclosure, excessive agency, and other AI-specific risks as coverage expands. Scans automatically run… The post Code scanning for AI applications in public previ",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
         "sourceId": "github-changelog",
         "sourceName": "GitHub Changelog",
         "sourceType": "official",
         "tier": 1,
         "fetchMode": "rss-paged",
-        "discoveredVia": "https://github.blog/changelog/feed/",
-        "fetchedAt": "2026-10-28T16:36:08.468Z"
+        "discoveredVia": "https://github.blog/changelog/feed/?paged=2",
+        "fetchedAt": "2026-10-29T01:45:02.773Z"
       },
       "addedAt": "2026-10-29",
       "since": "2026-10-26",
-      "attempts": 1,
+      "attempts": 0,
       "date": "2026-10-29",
-      "reason": "batch"
+      "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
     },
-    "1d4e78b6d168": {
-      "stage": "evidence",
+    "c07c1c081e78": {
+      "stage": "draft",
       "item": {
-        "id": "1d4e78b6d168",
-        "url": "https://github.blog/changelog/2026-10-28-github-agentic-workflows-generally-available",
-        "canonicalUrl": "https://github.blog/changelog/2026-10-28-github-agentic-workflows-generally-available",
-        "title": "GitHub Agentic Workflows generally available",
-        "excerpt": "GitHub Agentic Workflows, an open source project from GitHub Next, is now generally available. With agentic workflows, you can automate reasoning-based tasks like issue triage, CI failure analysis, documentation updates,… The post GitHub Agentic Workflows generally available appeared first on The Gi",
-        "publishedAt": "2026-10-28T15:30:15.000Z",
-        "sourceId": "github-changelog",
-        "sourceName": "GitHub Changelog",
+        "id": "c07c1c081e78",
+        "url": "https://blog.google/innovation-and-ai/products/gemini-app/immersive-explorations-student-hub/",
+        "canonicalUrl": "https://blog.google/innovation-and-ai/products/gemini-app/immersive-explorations-student-hub",
+        "title": "Dive into new topics with immersive explorations in the Gemini app.",
+        "excerpt": "Today, we are rolling out immersive explorations in the new Gemini student hub.",
+        "publishedAt": "2026-10-28T00:00:00.000Z",
+        "sourceId": "google-ai",
+        "sourceName": "Google (The Keyword · AI)",
+        "sourceType": "official",
+        "tier": 1,
+        "fetchMode": "sitemap-meta",
+        "discoveredVia": "https://blog.google/en-us/sitemap.xml",
+        "fetchedAt": "2026-10-29T01:45:02.773Z"
+      },
+      "addedAt": "2026-10-29",
+      "since": "2026-10-26",
+      "attempts": 0,
+      "date": "2026-10-29",
+      "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
+    },
+    "6318bf62f2c5": {
+      "stage": "draft",
+      "item": {
+        "id": "6318bf62f2c5",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+        "canonicalUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon",
+        "title": "Gemini 4 Carbon: our next frontier model",
+        "excerpt": "Gemini 4 Carbon is our strongest model with state-of-the-art cybersecurity and long horizon capabilities.",
+        "publishedAt": "2026-10-28T00:00:00.000Z",
+        "sourceId": "google-ai",
+        "sourceName": "Google (The Keyword · AI)",
+        "sourceType": "official",
+        "tier": 1,
+        "fetchMode": "sitemap-meta",
+        "discoveredVia": "https://blog.google/en-us/sitemap.xml",
+        "fetchedAt": "2026-10-29T01:45:02.773Z"
+      },
+      "addedAt": "2026-10-29",
+      "since": "2026-10-26",
+      "attempts": 0,
+      "date": "2026-10-29",
+      "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
+    },
+    "b2139726f08d": {
+      "stage": "draft",
+      "item": {
+        "id": "b2139726f08d",
+        "url": "https://about.fb.com/news/2026/10/meta-partners-with-five-us-universities-to-accelerate-medical-and-scientific-breakthroughs/",
+        "canonicalUrl": "https://about.fb.com/news/2026/10/meta-partners-with-five-us-universities-to-accelerate-medical-and-scientific-breakthroughs",
+        "title": "Meta Partners With Five US Universities to Accelerate Medical and Scientific Breakthroughs",
+        "excerpt": "Meta is bringing Superintelligence models, research funding, and direct researcher collaboration to US universities that are using our models to solve critical issues in science and medicine. The post Meta Partners With Five US Universities to Accelerate Medical and Scientific Breakthroughs appeared",
+        "publishedAt": "2026-10-28T17:00:49.000Z",
+        "sourceId": "meta",
+        "sourceName": "Meta Newsroom",
         "sourceType": "official",
         "tier": 1,
         "fetchMode": "rss-paged",
-        "discoveredVia": "https://github.blog/changelog/feed/",
-        "fetchedAt": "2026-10-28T16:36:08.468Z"
+        "discoveredVia": "https://about.fb.com/news/feed/",
+        "fetchedAt": "2026-10-29T01:45:02.773Z"
       },
       "addedAt": "2026-10-29",
       "since": "2026-10-26",
-      "attempts": 1,
+      "attempts": 0,
       "date": "2026-10-29",
-      "reason": "batch"
-    },
-    "d42fb1eb3362": {
-      "stage": "evidence",
-      "item": {
-        "id": "d42fb1eb3362",
-        "url": "https://openai.com/index/retell-ai",
-        "canonicalUrl": "https://openai.com/index/retell-ai",
-        "title": "Retell uses OpenAI models to help power 100M monthly calls",
-        "excerpt": "GPT-6 Astra tops Retell’s voice agent benchmark, while Codex helps it reach a $1.6M annual revenue run rate per employee.",
-        "publishedAt": "2026-10-27T15:00:00.000Z",
-        "sourceId": "openai",
-        "sourceName": "OpenAI",
-        "sourceType": "official",
-        "tier": 1,
-        "fetchMode": "rss",
-        "discoveredVia": "https://openai.com/news/rss.xml",
-        "fetchedAt": "2026-10-28T16:36:08.468Z"
-      },
-      "addedAt": "2026-10-29",
-      "since": "2026-10-26",
-      "attempts": 1,
-      "date": "2026-10-29",
-      "reason": "batch"
-    },
-    "1a1d4bf2fc11": {
-      "stage": "evidence",
-      "item": {
-        "id": "1a1d4bf2fc11",
-        "url": "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security",
-        "canonicalUrl": "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security",
-        "title": "GPT-6.1 Sol helps CodeRabbit strengthen security across complex codebases",
-        "excerpt": "CodeRabbit uses GPT-6.1 Sol to investigate security risks across complex codebases. Its security agent helps developers review findings and proposed fixes.",
-        "publishedAt": "2026-10-26T13:45:00.000Z",
-        "sourceId": "openai",
-        "sourceName": "OpenAI",
-        "sourceType": "official",
-        "tier": 1,
-        "fetchMode": "rss",
-        "discoveredVia": "https://openai.com/news/rss.xml",
-        "fetchedAt": "2026-10-28T16:36:08.468Z"
-      },
-      "addedAt": "2026-10-29",
-      "since": "2026-10-26",
-      "attempts": 1,
-      "date": "2026-10-29",
-      "reason": "batch"
-    },
-    "34370e88c88d": {
-      "stage": "evidence",
-      "item": {
-        "id": "34370e88c88d",
-        "url": "https://huggingface.co/blog/allenai/novelty-bench",
-        "canonicalUrl": "https://huggingface.co/blog/allenai/novelty-bench",
-        "title": "Can we trust LLMs to judge whether a research idea is novel?",
-        "excerpt": "",
-        "publishedAt": "2026-10-27T16:12:42.000Z",
-        "sourceId": "huggingface",
-        "sourceName": "Hugging Face Blog",
-        "sourceType": "official",
-        "tier": 1,
-        "fetchMode": "rss",
-        "discoveredVia": "https://huggingface.co/blog/feed.xml",
-        "fetchedAt": "2026-10-28T16:36:08.468Z"
-      },
-      "addedAt": "2026-10-29",
-      "since": "2026-10-26",
-      "attempts": 1,
-      "date": "2026-10-29",
-      "reason": "batch"
-    },
-    "6cf6ca19286e": {
-      "stage": "evidence",
-      "item": {
-        "id": "6cf6ca19286e",
-        "url": "https://nvidianews.nvidia.com/news/nvidia-and-oracle-expand-nvidia-vera-rubin-to-multi-gigawatt-scale-and-bring-nvidia-vera-cpu-to-oracle-cloud-infrastructure",
-        "canonicalUrl": "https://nvidianews.nvidia.com/news/nvidia-and-oracle-expand-nvidia-vera-rubin-to-multi-gigawatt-scale-and-bring-nvidia-vera-cpu-to-oracle-cloud-infrastructure",
-        "title": "NVIDIA and Oracle Expand NVIDIA Vera Rubin to Multi-Gigawatt Scale and Bring NVIDIA Vera CPU to Oracle Cloud Infrastructure",
-        "excerpt": "NVIDIA and Oracle today announced plans to expand Oracle Cloud Infrastructure (OCI) Superclusters with NVIDIA Vera Rubin NVL72 systems to multi-gigawatt scale, supporting growing customer demand for AI training, inference and agentic applications.",
-        "publishedAt": "2026-10-27T16:00:00.000Z",
-        "sourceId": "nvidia-newsroom",
-        "sourceName": "NVIDIA Newsroom (Press Releases)",
-        "sourceType": "official",
-        "tier": 1,
-        "fetchMode": "rss",
-        "discoveredVia": "https://nvidianews.nvidia.com/releases.xml",
-        "fetchedAt": "2026-10-28T16:36:08.468Z"
-      },
-      "addedAt": "2026-10-29",
-      "since": "2026-10-26",
-      "attempts": 1,
-      "date": "2026-10-29",
-      "reason": "batch"
-    },
-    "feb4caa835f1": {
-      "stage": "evidence",
-      "item": {
-        "id": "feb4caa835f1",
-        "url": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/",
-        "canonicalUrl": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning",
-        "title": "The sleep framework: A new way for LLMs to retain knowledge in continual learning",
-        "excerpt": "Education Innovation",
-        "publishedAt": "2026-10-27T17:35:00.000Z",
-        "sourceId": "google-research",
-        "sourceName": "Google Research Blog",
-        "sourceType": "official",
-        "tier": 1,
-        "fetchMode": "rss",
-        "discoveredVia": "https://research.google/blog/rss/",
-        "fetchedAt": "2026-10-28T16:36:08.468Z"
-      },
-      "addedAt": "2026-10-29",
-      "since": "2026-10-26",
-      "attempts": 1,
-      "date": "2026-10-29",
-      "reason": "batch"
-    },
-    "e00bd16118d0": {
-      "stage": "evidence",
-      "item": {
-        "id": "e00bd16118d0",
-        "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-amazon-polly-generative-engine-torchneuron-for-trainium-and-more-october-26-2026/",
-        "canonicalUrl": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-amazon-polly-generative-engine-torchneuron-for-trainium-and-more-october-26-2026",
-        "title": "AWS Weekly Roundup: Amazon Polly Generative engine, TorchNeuron for Trainium, and more (October 26, 2026)",
-        "excerpt": "A few weeks ago I presented to a small group of commercial and technology leaders from Brazilian agribusiness at the AWS office in São Paulo. My talk ran through where generative AI fits across the different stages of an agribusiness operation, and the point I kept returning to is that the markets w",
-        "publishedAt": "2026-10-26T15:02:24.000Z",
-        "sourceId": "aws-news",
-        "sourceName": "AWS News Blog",
-        "sourceType": "official",
-        "tier": 1,
-        "fetchMode": "rss",
-        "discoveredVia": "https://aws.amazon.com/blogs/aws/feed/",
-        "fetchedAt": "2026-10-28T16:36:08.468Z"
-      },
-      "addedAt": "2026-10-29",
-      "since": "2026-10-26",
-      "attempts": 1,
-      "date": "2026-10-29",
-      "reason": "batch"
-    },
-    "c660494836a3": {
-      "stage": "evidence",
-      "item": {
-        "id": "c660494836a3",
-        "url": "https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4/",
-        "canonicalUrl": "https://developer.nvidia.com/blog/memory-enforced-gpu-sharing-in-kubernetes-with-nvidia-cuda-13-4",
-        "title": "Memory-Enforced GPU Sharing in Kubernetes with NVIDIA CUDA 13.4",
-        "excerpt": "Many AI workloads need only a fraction of a GPU. Giving each one an entire device can leave capacity idle; sharing GPUs lets platform teams serve more workloads...",
-        "publishedAt": "2026-10-27T20:50:39.000Z",
-        "sourceId": "nvidia-developer",
-        "sourceName": "NVIDIA Technical Blog",
-        "sourceType": "official",
-        "tier": 1,
-        "fetchMode": "rss",
-        "discoveredVia": "https://developer.nvidia.com/blog/feed",
-        "fetchedAt": "2026-10-28T16:36:08.468Z"
-      },
-      "addedAt": "2026-10-29",
-      "since": "2026-10-26",
-      "attempts": 1,
-      "date": "2026-10-29",
-      "reason": "batch"
-    },
-    "1bb838b3befa": {
-      "stage": "evidence",
-      "item": {
-        "id": "1bb838b3befa",
-        "url": "https://developer.nvidia.com/blog/how-nvidia-minerva-turns-telemetry-chaos-into-peak-gpu-yield/",
-        "canonicalUrl": "https://developer.nvidia.com/blog/how-nvidia-minerva-turns-telemetry-chaos-into-peak-gpu-yield",
-        "title": "How NVIDIA Minerva Turns Telemetry Chaos Into Peak GPU Yield",
-        "excerpt": "AI Factories are some of the most technologically complex operational environments ever created. Hundreds of thousands of GPUs, NVIDIA Spectrum-X Ethernet...",
-        "publishedAt": "2026-10-26T16:00:00.000Z",
-        "sourceId": "nvidia-developer",
-        "sourceName": "NVIDIA Technical Blog",
-        "sourceType": "official",
-        "tier": 1,
-        "fetchMode": "rss",
-        "discoveredVia": "https://developer.nvidia.com/blog/feed",
-        "fetchedAt": "2026-10-28T16:36:08.468Z"
-      },
-      "addedAt": "2026-10-29",
-      "since": "2026-10-26",
-      "attempts": 1,
-      "date": "2026-10-29",
-      "reason": "batch"
-    },
-    "56260fcd11d4": {
-      "stage": "evidence",
-      "item": {
-        "id": "56260fcd11d4",
-        "url": "https://developer.nvidia.com/blog/how-nvidia-mission-control-2-5-brings-autonomous-recovery-to-kubernetes/",
-        "canonicalUrl": "https://developer.nvidia.com/blog/how-nvidia-mission-control-2-5-brings-autonomous-recovery-to-kubernetes",
-        "title": "How NVIDIA Mission Control 2.5 Brings Autonomous Recovery to Kubernetes",
-        "excerpt": "Training large-scale AI models on thousands of GPUs is a high-stakes operation where monitoring and automation must be built-in to optimize cluster resiliency...",
-        "publishedAt": "2026-10-26T15:00:00.000Z",
-        "sourceId": "nvidia-developer",
-        "sourceName": "NVIDIA Technical Blog",
-        "sourceType": "official",
-        "tier": 1,
-        "fetchMode": "rss",
-        "discoveredVia": "https://developer.nvidia.com/blog/feed",
-        "fetchedAt": "2026-10-28T16:36:08.468Z"
-      },
-      "addedAt": "2026-10-29",
-      "since": "2026-10-26",
-      "attempts": 1,
-      "date": "2026-10-29",
-      "reason": "batch"
+      "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
     }
   },
   "meta": {},
   "retry": {},
-  "updatedAt": "2026-10-28T16:37:37.995Z"
+  "updatedAt": "2026-10-29T01:50:38.744Z"
 }
