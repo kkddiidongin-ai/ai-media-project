@@ -55,10 +55,10 @@
     "tier": 1,
     "fetchMode": "rss",
     "discoveredVia": "https://openai.com/news/rss.xml",
-    "fetchedAt": "2026-10-28T16:36:08.468Z"
+    "fetchedAt": "2026-10-29T01:45:02.773Z"
   },
   "evidence": {
-    "status": "HTTP_403",
+    "status": "SKIPPED_HOST_BLOCKED",
     "chars": 0,
     "grade": "FAIL",
     "ledger": [
@@ -69,7 +69,7 @@
         "sourceUrl": "https://openai.com/index/oracle-apps-in-chatgpt",
         "source": "OpenAI",
         "publishedAt": "2026-10-27T07:00:00.000Z",
-        "checkedAt": "2026-10-28T16:37:20.725Z"
+        "checkedAt": "2026-10-29T01:46:14.074Z"
       }
     ],
     "pageDate": null,
@@ -100,7 +100,7 @@
   },
   "decision": "HOLD",
   "reasons": [
-    "근거 부족 (원문 HTTP_403, 확인 사실 0개) — 발행하지 않음"
+    "근거 부족 (원문 SKIPPED_HOST_BLOCKED, 확인 사실 0개) — 발행하지 않음"
   ],
   "needsReview": [
     "source_blocked",
