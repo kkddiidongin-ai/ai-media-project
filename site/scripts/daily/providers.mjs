@@ -16,6 +16,8 @@
  * 키 값은 어디에도 쓰지 않는다 (오류 문장에서도 지운다).
  */
 
+import { checkGeminiBudget, geminiTierBlocker, isQuotaError, recordGeminiCall } from "./gemini-guard.mjs";
+
 /** 프롬프트·출력 형식 버전: 바뀌면 같은 후보라도 새로 만든다 (그 전엔 재사용) */
 export const PROMPT_VERSION = "draft-v1";
 
@@ -60,8 +62,8 @@ export const estimateTokens = (text) => Math.ceil(String(text).length / 2);
 /** 오류 문장 등에서 키를 지운다 */
 export function redact(s, env = {}) {
   let out = String(s ?? "");
-  for (const k of [env.ANTHROPIC_API_KEY].filter((x) => x && x.length >= 8)) out = out.split(k).join("[REDACTED]");
-  return out.replace(/sk-ant-[A-Za-z0-9_-]{6,}/g, "[REDACTED]");
+  for (const k of [env.ANTHROPIC_API_KEY, env.GEMINI_API_KEY].filter((x) => x && x.length >= 8)) out = out.split(k).join("[REDACTED]");
+  return out.replace(/sk-ant-[A-Za-z0-9_-]{6,}/g, "[REDACTED]").replace(/AIza[A-Za-z0-9_-]{20,}/g, "[REDACTED]");
 }
 
 export const SYSTEM = `당신은 한국어 AI 뉴스 미디어 'AI마중'의 편집 보조입니다. 브랜드: "AI의 변화를 먼저 마중 나갑니다." 편집 원칙: "AI, 해본 만큼만 말합니다."
@@ -206,10 +208,35 @@ async function geminiProvider(candidate, evidence, ctx) {
   if (!key) return { status: "skipped", error: "GEMINI_API_KEY 없음" };
   const model = geminiModel(ctx.env);
   if (!GEMINI_FREE_MODELS.includes(model)) return { status: "skipped", error: `무료 등급 목록에 없는 모델 ${model}`, model };
+  // Phase 7.3: 실행 시작 때 확인했더라도 호출 직전에 다시 확인 (무료 확인 표시·결제 등급)
+  if (String(ctx.env.DAILY_GEMINI_FREE_TIER_CONFIRMED ?? "").trim() !== "true") return { status: "skipped", error: "DAILY_GEMINI_FREE_TIER_CONFIRMED=true가 아님 — 호출 안 함", model };
+  const tier = geminiTierBlocker(ctx.env);
+  if (tier) return { status: "skipped", error: tier, model };
   if (ctx.budget.quotaHit) return { status: "skipped", error: "무료 등급 한도(429) — 다음 실행에서 작성", model };
   if (ctx.budget.calls >= ctx.limits.maxLlmCalls) return { status: "skipped", error: "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성", model };
-  const prompt = buildPrompt(candidate, evidence, ctx);
+  // 하루 예산·간격·동시 1개: 실행끼리 공유하는 사용 기록이 없으면 부르지 않는다
+  const state = ctx.geminiState;
+  if (!state) return { status: "skipped", error: "Gemini 사용 기록(pipeline-queue.json)을 확인할 수 없음 — 호출 안 함", model };
+  const now = ctx.now ?? Date.now;
+  let chk = checkGeminiBudget(state, { now: now() });
+  if (!chk.ok) return { status: "skipped", error: chk.reason, model };
+  state.inFlight = true;
   const usage = { inputTokens: 0, outputTokens: 0, costUsd: 0, attempts: 0 };
+  try {
+    if (chk.waitMs > 0) await (ctx.sleep ?? wait)(chk.waitMs);
+    chk = checkGeminiBudget({ ...state, inFlight: false }, { now: now() });
+    if (!chk.ok || chk.waitMs > 0) return { status: "skipped", error: chk.reason ?? "요청 간격 20초 미달 — 호출 안 함", model };
+    recordGeminiCall(state, now());
+    ctx.persist?.(); // 요청 전에 저장: 실행이 끊기거나 요청이 실패해도 사용량에 남는다
+    return await geminiRequest(candidate, evidence, ctx, { key, model, usage, state });
+  } finally {
+    state.inFlight = false;
+    ctx.persist?.();
+  }
+}
+
+async function geminiRequest(candidate, evidence, ctx, { key, model, usage, state }) {
+  const prompt = buildPrompt(candidate, evidence, ctx);
   ctx.budget.calls++;
   usage.attempts++;
   try {
@@ -223,13 +250,15 @@ async function geminiProvider(candidate, evidence, ctx) {
       }),
       signal: AbortSignal.timeout(ctx.limits.llmTimeoutMs),
     });
-    if (res.status === 429) {
-      await res.body?.cancel();
-      ctx.budget.quotaHit = true; // 한도: 이 실행에서는 더 부르지 않는다
-      return { status: "skipped", error: "무료 등급 한도(429) — 다음 실행에서 작성", model, usage };
-    }
     if (!res.ok) {
-      await res.body?.cancel();
+      const errText = res.status === 429 ? "" : String(await res.text().catch(() => "")).slice(0, 2000);
+      if (res.status === 429) await res.body?.cancel();
+      if (isQuotaError(res.status, errText)) {
+        // 한도: 다시 시도하지 않고 오늘 남은 Gemini 호출을 모두 멈춘다 (유료 전환은 하지 않음 — 안내만)
+        ctx.budget.quotaHit = true;
+        state.exhausted = true;
+        return { status: "skipped", error: "무료 등급 한도(429·RESOURCE_EXHAUSTED) — 재시도·유료 전환 없이 중단, 다음 날 작성", model, usage };
+      }
       return { status: "failed", error: `HTTP ${res.status}`, model, usage };
     }
     const json = await res.json();
@@ -302,6 +331,8 @@ export function providerBlocker(provider, env = process.env) {
     if (!String(env.GEMINI_API_KEY ?? "").trim()) return "GEMINI_API_KEY가 설정되지 않음 — 무료 원고 생성을 쓰려면 Google AI Studio 키 필요 (지금은 원고 작성 대기)";
     if (String(env.DAILY_GEMINI_FREE_TIER_CONFIRMED ?? "").trim() !== "true") return "DAILY_GEMINI_FREE_TIER_CONFIRMED=true가 아님 — 결제가 연결되지 않은 무료 등급 프로젝트인지 운영자가 확인해야 함 (무료 등급은 입력이 Google 제품 개선에 쓰임)";
     if (!GEMINI_FREE_MODELS.includes(geminiModel(env))) return `무료 등급 목록에 없는 모델 ${geminiModel(env)}`;
+    const tier = geminiTierBlocker(env);
+    if (tier) return tier;
   }
   if (provider === "anthropic") {
     if (!String(env.ANTHROPIC_API_KEY ?? "").trim()) return "ANTHROPIC_API_KEY가 설정되지 않음 — GitHub Secret 또는 .env.local에 넣은 뒤 다시 실행 (지금은 원고를 만들지 않음)";

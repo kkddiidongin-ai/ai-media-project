@@ -968,7 +968,9 @@ await t("워크플로: master 직접 push 없음, automation/daily-* 브랜치·
   // 예약 실행은 언제나 shadow. draft는 수동 실행에서 고른 경우에만, LLM 키도 그때만
   ok(/M=shadow\n\s+P=none\n\s+if \[ "\$EVENT" = "workflow_dispatch" \] && \[ "\$INPUT_MODE" = "draft" \] && \[ "\$BACKFILL" != "true" \]; then M=draft; P=anthropic; fi/.test(wf), "모드 결정 (유료는 수동 draft만, 백필은 언제나 shadow)");
   ok(/if \[ "\$P" = "none" \] && \[ "\$FREE_DRAFT" = "true" \] && \[ "\$BACKFILL" != "true" \]; then M=draft; P=gemini; fi/.test(wf), "무료 생성은 운영자가 켠 경우만");
-  ok(/GEMINI_API_KEY: \$\{\{ steps\.m\.outputs\.provider == 'gemini' && secrets\.GEMINI_API_KEY \|\| '' \}\}/.test(wf), "Gemini 키는 gemini일 때만");
+  ok(/GEMINI_API_KEY: \$\{\{ steps\.m\.outputs\.provider == 'gemini' && steps\.ps\.outputs\.queue == 'true' && secrets\.GEMINI_API_KEY \|\| '' \}\}/.test(wf), "Gemini 키는 gemini이고 사용 기록을 되살렸을 때만");
+  ok(/AUTO_PUBLISH_ENABLED == 'true' && steps\.m\.outputs\.provider != 'gemini'/.test(wf), "Gemini 실행은 자동 발행하지 않음");
+  ok(/DAILY_GEMINI_BILLING_TIER: \$\{\{ vars\.DAILY_GEMINI_BILLING_TIER \}\}/.test(wf), "결제 등급 확인 값 전달");
   ok(/site\/ingest\/log\/pipeline-queue\.json/.test(wf), "대기열을 이어 씀");
   ok(/if: always\(\) && vars\.AUTO_PUBLISH_ENABLED == 'true'/.test(wf), "자동 발행은 운영자가 켰을 때만");
   ok(/DAILY_LAST_RUN_DATE: \$\{\{ steps\.last\.outputs\.date \}\}/.test(wf) && /automation\/daily-20\*/.test(wf), "따라잡기: 마지막 실행 브랜치");

@@ -37,7 +37,9 @@ const pub = await import("./publish.mjs");
 
 let passed = 0;
 let failed = 0;
+// QA_ONLY=이름 일부: 그 이름이 들어간 시험만 돈다 (전체는 오래 걸림)
 const t = async (name, fn) => {
+  if (process.env.QA_ONLY && !name.includes(process.env.QA_ONLY)) return;
   try {
     await fn();
     passed++;
@@ -89,6 +91,12 @@ const ENV = (extra = {}) => ({ DAILY_AUTOMATION_ENABLED: "true", DAILY_MODE: "sh
 const base = (extra = {}) => {
   const d = path.join(tmp, rid());
   return { date: DATE, out: path.join(d, "out"), existing: EMPTY(), processedFile: path.join(d, "processed.json"), historyFile: path.join(d, "history.json"), queueFile: path.join(d, "queue.json"), retryDelayMs: 1, log: () => {}, env: ENV(), ...extra };
+};
+/** 가짜 시계: sleep하면 시간이 그만큼 흐른다 (실제로 기다리지 않음) */
+const fakeClock = (t0 = Date.parse("2026-10-29T03:00:00Z")) => {
+  let t = t0;
+  const slept = [];
+  return { now: () => t, sleep: async (ms) => (slept.push(ms), (t += ms)), advance: (ms) => (t += ms), slept };
 };
 const decisions = (r) => r.run.items.reduce((m, x) => ((m[x.decision] = (m[x.decision] ?? 0) + 1), m), {});
 
@@ -256,7 +264,7 @@ await t("무료 생성(Gemini): 확인 표시 없으면 호출 0 · 한도(429)�
   eq(no.run.pipeline.pending.draft, 3, "작성 대기");
   // 첫 호출은 한도 초과 → 그 실행은 더 부르지 않음
   llm = 0;
-  const env = ENV({ DAILY_MODE: "draft", DAILY_LLM_PROVIDER: "gemini", GEMINI_API_KEY: "test-not-real", DAILY_GEMINI_FREE_TIER_CONFIRMED: "true" });
+  const env = ENV({ DAILY_MODE: "draft", DAILY_LLM_PROVIDER: "gemini", GEMINI_API_KEY: "test-not-real", DAILY_GEMINI_FREE_TIER_CONFIRMED: "true", DAILY_GEMINI_BILLING_TIER: "free" });
   const q = await runDaily(base({ env, registry: reg, fetch: async () => (llm++, new Response("{}", { status: 429 })) }));
   eq([llm, q.run.llm.generation.quotaHit, q.run.pipeline.pending.draft, q.run.counts.drafts], [1, true, 3, 0]);
   // 예약 실행에서도 무료 생성은 허용, 유료(anthropic)는 shadow
@@ -267,10 +275,11 @@ await t("무료 생성(Gemini): 확인 표시 없으면 호출 0 · 한도(429)�
 
 await t("무료 생성 성공: 원고·QA·생성 통계 기록, 응답 형식 오류는 실패로 (허위 원고 없음)", async () => {
   WEB.set("https://fx-gs.test/feed.xml", { body: rss(announcements("fx-gs", 2)), type: "application/rss+xml" });
-  const env = ENV({ DAILY_MODE: "draft", DAILY_LLM_PROVIDER: "gemini", GEMINI_API_KEY: "test-not-real", DAILY_GEMINI_FREE_TIER_CONFIRMED: "true" });
+  const env = ENV({ DAILY_MODE: "draft", DAILY_LLM_PROVIDER: "gemini", GEMINI_API_KEY: "test-not-real", DAILY_GEMINI_FREE_TIER_CONFIRMED: "true", DAILY_GEMINI_BILLING_TIER: "free" });
   let n = 0;
   const reply = (draft) => new Response(JSON.stringify({ candidates: [{ finishReason: "STOP", content: { parts: [{ text: JSON.stringify(draft) }] } }], usageMetadata: { promptTokenCount: 900, candidatesTokenCount: 400 } }), { status: 200 });
-  const r = await runDaily(base({ env, registry: { sources: [src("fx-gs", "https://fx-gs.test/feed.xml")] }, fetch: async (url, init) => {
+  const clock = fakeClock();
+  const r = await runDaily(base({ env, now: clock.now, sleep: clock.sleep, registry: { sources: [src("fx-gs", "https://fx-gs.test/feed.xml")] }, fetch: async (url, init) => {
     n++;
     ok(String(url).includes("generativelanguage.googleapis.com") && init.headers["x-goog-api-key"], "엔드포인트·키 헤더");
     if (n === 2) return new Response(JSON.stringify({ candidates: [{ finishReason: "STOP", content: { parts: [{ text: "not json" }] } }] }), { status: 200 });
@@ -291,6 +300,153 @@ await t("무료 생성 성공: 원고·QA·생성 통계 기록, 응답 형식 �
   ok(/INPUT_MODE" = "free-draft" .*then M=draft; P=gemini; fi/.test(wf), "수동 시험 free-draft");
   ok(/--append-report/.test(wf) && /승인 대기 원고/.test(wf), "PR 본문·제목에 승인 대기 원고");
 });
+
+// ---------- Phase 7.3 Gemini 무료 전용 안전장치 (모의 응답만 — 실제 Gemini 호출 없음) ----------
+{
+  const G = await import("../daily/gemini-guard.mjs");
+  const KEY = "AIzaTESTKEYnotReal0123456789abcdefXYZ";
+  const cand = { title: "t", sourceName: "S", url: "https://x.test/a", publishedAt: "2026-10-15T00:00:00Z" };
+  const ev = { ledger: [] };
+  const okReply = () => new Response(JSON.stringify({ candidates: [{ finishReason: "STOP", content: { parts: [{ text: '{"title":"x"}' }] } }], usageMetadata: {} }), { status: 200 });
+  const gctx = ({ env = {}, state = {}, fetch, clock = fakeClock(), maxLlmCalls = 50 } = {}) => ({
+    provider: "gemini",
+    env: { GEMINI_API_KEY: KEY, DAILY_GEMINI_FREE_TIER_CONFIRMED: "true", DAILY_GEMINI_BILLING_TIER: "free", ...env },
+    limits: { ...lib.DEFAULTS, maxLlmCalls },
+    budget: { calls: 0, inputTokens: 0, outputTokens: 0, costUsd: 0 },
+    categories: ["PRODUCT_UPDATE"],
+    topics: [],
+    fetch,
+    geminiState: state,
+    persist: () => {},
+    now: clock.now,
+    sleep: clock.sleep,
+  });
+  const counter = (reply = okReply) => {
+    const f = async (...a) => (f.n++, reply(...a));
+    f.n = 0;
+    return f;
+  };
+
+  await t("7.3-1 무료 확인 표시 없으면 호출 차단", async () => {
+    const f = counter();
+    const env = { DAILY_GEMINI_FREE_TIER_CONFIRMED: "" };
+    ok(/FREE_TIER_CONFIRMED/.test(providers.providerBlocker("gemini", { GEMINI_API_KEY: KEY, DAILY_GEMINI_BILLING_TIER: "free" }) ?? ""), "시작 확인");
+    const r = await providers.generateArticle(cand, ev, gctx({ env, fetch: f }));
+    eq([r.status, f.n], ["skipped", 0]);
+  });
+
+  await t("7.3-2 결제 등급이 유료·비어 있음·확인 불가면 호출 차단", async () => {
+    for (const tier of ["paid", "", "tier1", "unknown"]) {
+      const f = counter();
+      ok(providers.providerBlocker("gemini", { GEMINI_API_KEY: KEY, DAILY_GEMINI_FREE_TIER_CONFIRMED: "true", DAILY_GEMINI_BILLING_TIER: tier }), `시작 확인 ${tier}`);
+      const r = await providers.generateArticle(cand, ev, gctx({ env: { DAILY_GEMINI_BILLING_TIER: tier }, fetch: f }));
+      eq([r.status, f.n], ["skipped", 0], `등급 '${tier}'`);
+    }
+    eq(providers.providerBlocker("gemini", { GEMINI_API_KEY: KEY, DAILY_GEMINI_FREE_TIER_CONFIRMED: "true", DAILY_GEMINI_BILLING_TIER: "free" }), null);
+  });
+
+  await t("7.3-3 무료 목록에 없는 모델이면 호출 차단 (다른 모델로 바꾸지 않음)", async () => {
+    const f = counter();
+    const r = await providers.generateArticle(cand, ev, gctx({ env: { DAILY_GEMINI_MODEL: "gemini-3.8-pro" }, fetch: f }));
+    eq([r.status, r.model, f.n], ["skipped", "gemini-3.8-pro", 0]);
+    eq(providers.GEMINI_DEFAULT_MODEL, "gemini-3.8-flash");
+  });
+
+  await t("7.3-4 하루 예산 8회 — 실패한 요청도 셈, 9번째는 호출 없이 중단, 다음 날(태평양 시간) 새로 셈", async () => {
+    const clock = fakeClock();
+    const state = {};
+    let n = 0;
+    const f = async () => (++n % 2 ? new Response("{}", { status: 500 }) : okReply());
+    const res = [];
+    for (let i = 0; i < 10; i++) res.push((await providers.generateArticle(cand, ev, gctx({ state, fetch: f, clock }))).status);
+    eq(n, 8, "요청 수");
+    eq(state.calls, 8);
+    eq(res.slice(8), ["skipped", "skipped"]);
+    ok(res.slice(0, 8).includes("failed"), "실패도 예산에 포함");
+    // 설정으로 늘려도 8회를 넘지 않음
+    eq(G.checkGeminiBudget({ day: G.pacificDay(clock.now()), calls: 8 }, { now: clock.now(), maxPerDay: 200 }).ok, false);
+    clock.advance(24 * 3600 * 1000);
+    eq(G.checkGeminiBudget(state, { now: clock.now() }).ok, true, "다음 날");
+  });
+
+  await t("7.3-5 요청 간격 20초 이상 (분당 3회 이하 — AI Studio 5 RPM보다 낮음)", async () => {
+    const clock = fakeClock();
+    const state = {};
+    const at = [];
+    const f = async () => (at.push(clock.now()), okReply());
+    for (let i = 0; i < 4; i++) await providers.generateArticle(cand, ev, gctx({ state, fetch: f, clock }));
+    eq(at.length, 4);
+    for (let i = 1; i < at.length; i++) ok(at[i] - at[i - 1] >= 20_000, `간격 ${at[i] - at[i - 1]}ms`);
+    eq(clock.slept[0], 20_000, "두 번째 요청 전 대기");
+  });
+
+  await t("7.3-6 429·RESOURCE_EXHAUSTED: 재시도 없이 그날 Gemini 중단", async () => {
+    for (const reply of [() => new Response("{}", { status: 429 }), () => new Response('{"error":{"status":"RESOURCE_EXHAUSTED"}}', { status: 403 })]) {
+      const clock = fakeClock();
+      const state = {};
+      const f = counter(reply);
+      const a = await providers.generateArticle(cand, ev, gctx({ state, fetch: f, clock }));
+      const b = await providers.generateArticle(cand, ev, gctx({ state, fetch: f, clock }));
+      eq([a.status, b.status, f.n, state.exhausted, state.calls], ["skipped", "skipped", 1, true, 1]);
+      ok(/재시도·유료 전환 없이/.test(a.error) && /한도/.test(b.error), a.error);
+    }
+  });
+
+  await t("7.3-7 동시 요청 1개 · 사용 기록 없으면 차단 · 실행끼리 같은 예산 (대기열 파일)", async () => {
+    const clock = fakeClock();
+    const state = {};
+    let release;
+    const gate = new Promise((r) => (release = r));
+    const f = counter(async () => (await gate, okReply()));
+    const p = [1, 2, 3].map(() => providers.generateArticle(cand, ev, gctx({ state, fetch: f, clock })));
+    await new Promise((r) => setTimeout(r, 5));
+    release();
+    const r = await Promise.all(p);
+    eq([f.n, r.filter((x) => x.status === "ok").length, state.calls], [1, 1, 1], "병렬 3건 → 요청 1건");
+    ok(r.filter((x) => x.status === "skipped").every((x) => /진행 중/.test(x.error)), "나머지는 진행 중으로 건너뜀");
+    const none = counter();
+    const ctx = gctx({ fetch: none });
+    ctx.geminiState = null;
+    eq([(await providers.generateArticle(cand, ev, ctx)).status, none.n], ["skipped", 0], "기록 없음");
+    // 실행 두 번이 같은 대기열 파일을 쓰면 사용량이 이어진다
+    WEB.set("https://fx-gb.test/feed.xml", { body: rss(announcements("fx-gb", 6)), type: "application/rss+xml" });
+    const env = ENV({ DAILY_MODE: "draft", DAILY_LLM_PROVIDER: "gemini", GEMINI_API_KEY: KEY, DAILY_GEMINI_FREE_TIER_CONFIRMED: "true", DAILY_GEMINI_BILLING_TIER: "free" });
+    const o = base({ env, now: clock.now, sleep: clock.sleep, registry: { sources: [src("fx-gb", "https://fx-gb.test/feed.xml")] } });
+    let calls1 = 0;
+    await runDaily({ ...o, fetch: async () => (calls1++, new Response("{}", { status: 500 })) });
+    eq(loadQueue(o.queueFile).gemini.calls, calls1, "기록된 사용량 = 실제 요청 수");
+    ok(calls1 >= 1 && calls1 <= 6, `1차 실행 ${calls1}`);
+    let calls2 = 0;
+    await runDaily({ ...o, out: o.out + "-2", fetch: async () => (calls2++, new Response("{}", { status: 500 })) });
+    ok(calls1 + calls2 <= 8, `두 실행 합계 ${calls1 + calls2} ≤ 8`);
+    eq(loadQueue(o.queueFile).gemini.calls, calls1 + calls2);
+  });
+
+  await t("7.3-8 Gemini 원고는 자동 발행 불가 (사람이 실행한 manual만)", async () => {
+    const doc = { drafts: [{ verdict: "PUBLISHABLE", story: { slug: "g-1" }, generation: { provider: "gemini" } }] };
+    const r = pub.publishApproved({ doc, approvedBy: "auto-bot", mode: "auto", allowAuto: true, runId: "t", runStep: () => ({ ok: true, out: "" }), publicationsFile: path.join(tmp, `pub-${rid()}.json`) });
+    eq([r.ok, r.stage], [false, "approval"]);
+    ok(/자동 발행 불가/.test(r.problems[0]), r.problems[0]);
+  });
+
+  await t("7.3-9 API 키가 결과·오류·기록·로그에 남지 않음", async () => {
+    const lines = [];
+    const state = {};
+    const boom = async () => {
+      throw new Error(`fetch failed for key=${KEY}`);
+    };
+    const r = await providers.generateArticle(cand, ev, gctx({ state, fetch: boom }));
+    ok(!JSON.stringify(r).includes(KEY) && /REDACTED/.test(r.error), r.error);
+    ok(!providers.redact(`x AIzaSyAAAAAAAAAAAAAAAAAAAAAAAAAAAA y`).includes("AIzaSy"), "AIza 형식 가림");
+    WEB.set("https://fx-gk.test/feed.xml", { body: rss(announcements("fx-gk", 1)), type: "application/rss+xml" });
+    const env = ENV({ DAILY_MODE: "draft", DAILY_LLM_PROVIDER: "gemini", GEMINI_API_KEY: KEY, DAILY_GEMINI_FREE_TIER_CONFIRMED: "true", DAILY_GEMINI_BILLING_TIER: "free" });
+    const o = base({ env, log: (...a) => lines.push(a.join(" ")), registry: { sources: [src("fx-gk", "https://fx-gk.test/feed.xml")] }, fetch: boom });
+    const run = await runDaily(o);
+    ok(!lines.join("\n").includes(KEY), "로그");
+    ok(!fs.readFileSync(o.queueFile, "utf8").includes(KEY), "대기열 파일");
+    ok(!JSON.stringify(run.run).includes(KEY), "보고서");
+  });
+}
 
 // ---------- 원고 내보내기 · 발행 · 배포 ----------
 await t("원고 내보내기: 초안 QA PASS가 아니면 PUBLISHABLE로 내보내지 않음 (자동 발행 대상 아님)", async () => {

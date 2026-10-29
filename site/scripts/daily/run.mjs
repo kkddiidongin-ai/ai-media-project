@@ -307,7 +307,9 @@ export async function runDaily(opts) {
   // 체크포인트: 발행 추천 전부를 '원고 작성 대기'로 먼저 올리고, 원고가 생기면(또는 대상이 아니면) 뺀다
   for (const r of work.filter((x) => x.decision === "PUBLISH")) if (!queue.items[r.item.id] || queue.items[r.item.id].stage !== "draft") enqueue(r, "draft");
   saveQueue(queueFile, queue);
-  const ctx = { provider, env, limits, budget, categories: CATEGORIES, topics: existing.topics, fetch: opts.fetch, mockReply: opts.mockReply, retryDelayMs: opts.retryDelayMs };
+  // Gemini 사용 기록 (Phase 7.3): 대기열 파일에 남겨 실행끼리 하루 예산을 같이 쓴다. 대기열 파일을 안 쓰는 실행은 기록이 없어 호출하지 않는다
+  const geminiState = provider === "gemini" && queueFile ? (queue.gemini ??= {}) : null;
+  const ctx = { provider, env, limits, budget, categories: CATEGORIES, topics: existing.topics, fetch: opts.fetch, mockReply: opts.mockReply, retryDelayMs: opts.retryDelayMs, geminiState, persist: geminiState ? () => saveQueue(queueFile, queue) : null, sleep: opts.sleep, now: opts.now };
   for (const r of work.filter((x) => x.decision === "PUBLISH")) {
     const prev = prevQueue.get(r.item.id);
     const prevD = prevDrafts.get(r.item.id);

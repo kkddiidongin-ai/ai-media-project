@@ -147,6 +147,7 @@ jobs:
 
       # 처리 기록·소스 상태·처리 대기열: 먼저 automation/pipeline-state 브랜치(오래 남는 기록)에서, 없으면 캐시에서
       - name: Restore pipeline state (branch)
+        id: ps
         continue-on-error: true
         run: |
           if git ls-remote --exit-code --heads origin automation/pipeline-state >/dev/null; then
@@ -156,6 +157,8 @@ jobs:
               git show "FETCH_HEAD:site/ingest/log/$f" > "ingest/log/$f" 2>/dev/null || rm -f "ingest/log/$f"
             done
             echo "restored pipeline state"
+            # Gemini 하루 예산 기록(pipeline-queue.json)을 되살린 경우에만 Gemini 키를 넘긴다 (기록 없이 0부터 세지 않게)
+            [ -f ingest/log/pipeline-queue.json ] && echo "queue=true" >> "$GITHUB_OUTPUT"
           fi
 
       # 같은 URL을 날마다 다시 처리하지 않도록 처리 기록을 캐시로 이어 쓴다 (브랜치 기록이 없을 때의 대비)
@@ -192,9 +195,10 @@ jobs:
           DAILY_MODE: ${{ steps.m.outputs.mode }}
           DAILY_LLM_PROVIDER: ${{ steps.m.outputs.provider }}
           ANTHROPIC_API_KEY: ${{ steps.m.outputs.provider == 'anthropic' && github.event_name == 'workflow_dispatch' && secrets.ANTHROPIC_API_KEY || '' }}
-          GEMINI_API_KEY: ${{ steps.m.outputs.provider == 'gemini' && secrets.GEMINI_API_KEY || '' }}
+          GEMINI_API_KEY: ${{ steps.m.outputs.provider == 'gemini' && steps.ps.outputs.queue == 'true' && secrets.GEMINI_API_KEY || '' }}
           DAILY_GEMINI_FREE_TIER_CONFIRMED: ${{ vars.DAILY_GEMINI_FREE_TIER_CONFIRMED }}
           DAILY_GEMINI_MODEL: ${{ vars.DAILY_GEMINI_MODEL }}
+          DAILY_GEMINI_BILLING_TIER: ${{ vars.DAILY_GEMINI_BILLING_TIER }}
           DAILY_TIME_BUDGET_MIN: ${{ vars.DAILY_TIME_BUDGET_MIN || '40' }}
           DAILY_MAX_ITEMS_PER_SOURCE: ${{ vars.DAILY_MAX_ITEMS_PER_SOURCE }}
           DAILY_LLM_MODEL: ${{ vars.DAILY_LLM_MODEL }}
@@ -334,7 +338,7 @@ jobs:
       # 자동 발행: 운영자가 AUTO_PUBLISH_ENABLED=true로 켠 경우에만 발행 workflow를 부른다 (기본 꺼짐).
       # 발행 workflow는 'production-publish' Environment로 보호된다 (Required reviewers를 걸면 사람이 한 번 더 승인)
       - name: Auto publish (opt-in)
-        if: always() && vars.AUTO_PUBLISH_ENABLED == 'true' && steps.exp.outputs.publishable != '' && steps.exp.outputs.publishable != '0'
+        if: always() && vars.AUTO_PUBLISH_ENABLED == 'true' && steps.m.outputs.provider != 'gemini' && steps.exp.outputs.publishable != '' && steps.exp.outputs.publishable != '0'
         continue-on-error: true
         env:
           GH_TOKEN: ${{ github.token }}

@@ -42,6 +42,11 @@ export function publishApproved(o) {
   const runStep = o.runStep ?? npmRun;
   if (!o.approvedBy || !/^[\w.\- ]{2,60}$/.test(o.approvedBy)) return { ok: false, stage: "approval", problems: ["승인자(--approved-by)가 없음 — 승인 없이 발행하지 않는다"] };
   if (o.mode === "auto" && String(process.env.AUTO_PUBLISH_ENABLED ?? "") !== "true" && !o.allowAuto) return { ok: false, stage: "approval", problems: ["자동 발행이 꺼져 있음 (AUTO_PUBLISH_ENABLED=true가 아님)"] };
+  // Phase 7.3: Gemini가 쓴 원고는 사람이 실행한 발행(manual)으로만 나간다 — 자동 발행 대상에서 뺀다
+  if (o.mode === "auto") {
+    const llm = (o.doc.drafts ?? []).filter((d) => (!o.only || o.only.includes(d.story?.slug)) && d.verdict === "PUBLISHABLE" && d.generation?.provider === "gemini");
+    if (llm.length) return { ok: false, stage: "approval", problems: [`Gemini 자동 작성 원고 ${llm.length}건은 자동 발행 불가 — 편집자 검수 후 사람이 publish.yml(manual)을 실행해야 함`] };
+  }
   const pkg = buildPackage(o.doc, { only: o.only ?? null, runId: o.runId, now });
   if (!pkg.ok) return { ok: false, stage: "check", problems: pkg.problems };
   if (!pkg.editorial.length) return { ok: true, stage: "nothing", published: [], problems: [] };
