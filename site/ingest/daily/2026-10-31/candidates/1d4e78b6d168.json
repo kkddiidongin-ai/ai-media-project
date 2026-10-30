@@ -1,0 +1,221 @@
+{
+  "id": "1d4e78b6d168",
+  "date": "2026-10-31",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "GitHub Agentic Workflows generally available",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 10,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "GitHub",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://github.blog/changelog/2026-10-28-github-agentic-workflows-generally-available",
+      "name": "GitHub Changelog",
+      "type": "official",
+      "publishedAt": "2026-10-28T15:30:15.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "1d4e78b6d168",
+    "url": "https://github.blog/changelog/2026-10-28-github-agentic-workflows-generally-available",
+    "canonicalUrl": "https://github.blog/changelog/2026-10-28-github-agentic-workflows-generally-available",
+    "title": "GitHub Agentic Workflows generally available",
+    "excerpt": "GitHub Agentic Workflows, an open source project from GitHub Next, is now generally available. With agentic workflows, you can automate reasoning-based tasks like issue triage, CI failure analysis, documentation updates,… The post GitHub Agentic Workflows generally available appeared first on The Gi",
+    "publishedAt": "2026-10-28T15:30:15.000Z",
+    "sourceId": "github-changelog",
+    "sourceName": "GitHub Changelog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://github.blog/changelog/feed/?paged=2",
+    "fetchedAt": "2026-10-30T16:41:43.436Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 3336,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "GitHub Agentic Workflows, an open source project from GitHub Next, is now generally available. With agentic workflows, you can automate reasoning-based tasks like issue triage, CI failure analysis, documentation updates,… The post GitHub Agentic Workflows generally available appeared first on The Gi",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-agentic-workflows-generally-available",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:15.000Z",
+        "checkedAt": "2026-10-30T16:43:01.600Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "GitHub Agentic Workflows generally available - GitHub Changelog",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-agentic-workflows-generally-available",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:15.000Z",
+        "checkedAt": "2026-10-30T16:43:01.600Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "GitHub Agentic Workflows , an open source project from GitHub Next, is now generally available.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-agentic-workflows-generally-available",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:15.000Z",
+        "checkedAt": "2026-10-30T16:43:01.600Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "With agentic workflows, you can automate reasoning-based tasks like issue triage, CI failure analysis, documentation updates, and test writing by using coding agents inside GitHub Actions.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-agentic-workflows-generally-available",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:15.000Z",
+        "checkedAt": "2026-10-30T16:43:01.600Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Define your automation in natural language Markdown files, and GitHub Agentic Workflows compiles them into standard Actions YAML.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-agentic-workflows-generally-available",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:15.000Z",
+        "checkedAt": "2026-10-30T16:43:01.600Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "We&rsquo;ve been rolling out our agentic developer workflows, and the results are measurable.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-agentic-workflows-generally-available",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:15.000Z",
+        "checkedAt": "2026-10-30T16:43:01.600Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "One of our leads saved an estimated 29 hours a week on his development work alone.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-agentic-workflows-generally-available",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:15.000Z",
+        "checkedAt": "2026-10-30T16:43:01.600Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "With these workflows, the team cut production errors from about 11,000 a day to under 1,000 and drove a technology migration end to end.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-agentic-workflows-generally-available",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:15.000Z",
+        "checkedAt": "2026-10-30T16:43:01.600Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "GitHub Agentic Workflows incorporates layered safeguards for your automation.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-agentic-workflows-generally-available",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:15.000Z",
+        "checkedAt": "2026-10-30T16:43:01.600Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "See the GitHub Agentic Workflows release notes for the full list of changes.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-agentic-workflows-generally-available",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:15.000Z",
+        "checkedAt": "2026-10-30T16:43:01.600Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "GitHub Agentic Workflows is now generally available on github.com for GitHub Free, Team, and Enterprise.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-agentic-workflows-generally-available",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:15.000Z",
+        "checkedAt": "2026-10-30T16:43:01.600Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Learn more in the GitHub Agentic Workflows documentation , and join the conversation in the community discussion .",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-agentic-workflows-generally-available",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:15.000Z",
+        "checkedAt": "2026-10-30T16:43:01.600Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Repository plugin defaults and enterprise plugin controls generally available",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-agentic-workflows-generally-available",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:15.000Z",
+        "checkedAt": "2026-10-30T16:43:01.600Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "AVAILABILITY"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 AVAILABILITY (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

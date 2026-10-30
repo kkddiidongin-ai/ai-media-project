@@ -1,0 +1,226 @@
+{
+  "id": "85d975255b4f",
+  "date": "2026-10-31",
+  "proposedSlug": "introducing-anyspeechrecognizer-anydecisionmodel-open-models",
+  "title": null,
+  "sourceTitle": "Introducing AnySpeechRecognizer and AnyDecisionModel: Open Models for Speech and Decisions on Apple Platforms",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Hugging Face",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://huggingface.co/blog/anydecisionmodel",
+      "name": "Hugging Face Blog",
+      "type": "official",
+      "publishedAt": "2026-10-29T00:00:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "85d975255b4f",
+    "url": "https://huggingface.co/blog/anydecisionmodel",
+    "canonicalUrl": "https://huggingface.co/blog/anydecisionmodel",
+    "title": "Introducing AnySpeechRecognizer and AnyDecisionModel: Open Models for Speech and Decisions on Apple Platforms",
+    "excerpt": "",
+    "publishedAt": "2026-10-29T00:00:00.000Z",
+    "sourceId": "huggingface",
+    "sourceName": "Hugging Face Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://huggingface.co/blog/feed.xml",
+    "fetchedAt": "2026-10-30T16:41:43.436Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 12336,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Introducing AnySpeechRecognizer and AnyDecisionModel: Open Models for Speech and Decisions on Apple Platforms",
+        "sourceUrl": "https://huggingface.co/blog/anydecisionmodel",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-29T00:00:00.000Z",
+        "checkedAt": "2026-10-30T16:42:51.003Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "With AnyLanguageModel and swift-huggingface now on their 1.x releases,",
+        "sourceUrl": "https://huggingface.co/blog/anydecisionmodel",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-29T00:00:00.000Z",
+        "checkedAt": "2026-10-30T16:42:51.003Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "we're extending the same approach to speech and decisions:",
+        "sourceUrl": "https://huggingface.co/blog/anydecisionmodel",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-29T00:00:00.000Z",
+        "checkedAt": "2026-10-30T16:42:51.003Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "including NVIDIA's Parakeet and Alibaba's Qwen3-ASR running locally on Core ML,",
+        "sourceUrl": "https://huggingface.co/blog/anydecisionmodel",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-29T00:00:00.000Z",
+        "checkedAt": "2026-10-30T16:42:51.003Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Both packages can download open models from the Hugging Face Hub",
+        "sourceUrl": "https://huggingface.co/blog/anydecisionmodel",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-29T00:00:00.000Z",
+        "checkedAt": "2026-10-30T16:42:51.003Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Apple platforms already have an API for it.",
+        "sourceUrl": "https://huggingface.co/blog/anydecisionmodel",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-29T00:00:00.000Z",
+        "checkedAt": "2026-10-30T16:42:51.003Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "macOS 26 and iOS 26 introduced SpeechAnalyzer ,",
+        "sourceUrl": "https://huggingface.co/blog/anydecisionmodel",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-29T00:00:00.000Z",
+        "checkedAt": "2026-10-30T16:42:51.003Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "It requires Ollama 0.35.0 or later, or 0.40.5 or later for cloud models.",
+        "sourceUrl": "https://huggingface.co/blog/anydecisionmodel",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-29T00:00:00.000Z",
+        "checkedAt": "2026-10-30T16:42:51.003Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "AnyDecisionModel's MLX build tasks use Xcode's Swift 6.4 or later",
+        "sourceUrl": "https://huggingface.co/blog/anydecisionmodel",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-29T00:00:00.000Z",
+        "checkedAt": "2026-10-30T16:42:51.003Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": ".package(url: \"https://github.com/mattt/AnySpeechRecognizer\" , from: \"0.1.0\" ),",
+        "sourceUrl": "https://huggingface.co/blog/anydecisionmodel",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-29T00:00:00.000Z",
+        "checkedAt": "2026-10-30T16:42:51.003Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "AnyLanguageModel 1.0: One Year of Local Models on Apple Platforms",
+        "sourceUrl": "https://huggingface.co/blog/anydecisionmodel",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-29T00:00:00.000Z",
+        "checkedAt": "2026-10-30T16:42:51.003Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Introducing AnyLanguageModel: One API for Local and Remote LLMs on Apple Platforms",
+        "sourceUrl": "https://huggingface.co/blog/anydecisionmodel",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-10-29T00:00:00.000Z",
+        "checkedAt": "2026-10-30T16:42:51.003Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 3,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 2,
+    "signals": [
+      "MODEL",
+      "MODEL_MENTION",
+      "PRODUCT_LAUNCH"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 9,
+    "total": 9
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 MODEL·MODEL_MENTION·PRODUCT_LAUNCH (우선순위 9)",
+    "근거 확인 통과 (확인 사실 11개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "none",
+    "model": null,
+    "status": "skipped",
+    "error": "Shadow Mode — 원고를 만들지 않음",
+    "promptVersion": "draft-v1",
+    "at": "2026-10-30T16:43:08.413Z",
+    "evidenceHash": "f22fd0957de0"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": true,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}

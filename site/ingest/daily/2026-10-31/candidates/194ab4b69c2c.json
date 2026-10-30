@@ -1,0 +1,221 @@
+{
+  "id": "194ab4b69c2c",
+  "date": "2026-10-31",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Route and orchestrate models with GitHub Copilot Fusion",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 12,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "GitHub",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion",
+      "name": "GitHub Changelog",
+      "type": "official",
+      "publishedAt": "2026-10-28T16:00:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "194ab4b69c2c",
+    "url": "https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion",
+    "canonicalUrl": "https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion",
+    "title": "Route and orchestrate models with GitHub Copilot Fusion",
+    "excerpt": "GitHub Copilot Fusion is generally available. Instead of picking a model for each task, choose Copilot Fusion and let Copilot intelligently route and orchestrate which models it uses for you.… The post Route and orchestrate models with GitHub Copilot Fusion appeared first on The GitHub Blog .",
+    "publishedAt": "2026-10-28T16:00:00.000Z",
+    "sourceId": "github-changelog",
+    "sourceName": "GitHub Changelog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://github.blog/changelog/feed/",
+    "fetchedAt": "2026-10-30T16:41:43.436Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 4049,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "GitHub Copilot Fusion is generally available. Instead of picking a model for each task, choose Copilot Fusion and let Copilot intelligently route and orchestrate which models it uses for you.… The post Route and orchestrate models with GitHub Copilot Fusion appeared first on The GitHub Blog .",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T16:00:00.000Z",
+        "checkedAt": "2026-10-30T16:42:59.998Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Route and orchestrate models with GitHub Copilot Fusion - GitHub Changelog",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T16:00:00.000Z",
+        "checkedAt": "2026-10-30T16:42:59.998Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "GitHub Copilot Fusion is generally available.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T16:00:00.000Z",
+        "checkedAt": "2026-10-30T16:42:59.998Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Instead of picking a model for each task, choose Copilot Fusion and let Copilot intelligently route and orchestrate which models it uses for you.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T16:00:00.000Z",
+        "checkedAt": "2026-10-30T16:42:59.998Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Copilot Fusion brings together Project HydraFusion&rsquo;s multi-model orchestration and Copilot auto model selection&rsquo;s fine-tuned model selection, leveraging the benefits of both to balance performance and cost efficiency.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T16:00:00.000Z",
+        "checkedAt": "2026-10-30T16:42:59.998Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "In the Artificial Analysis Coding Agent Index, Copilot Fusion Max scored 60, within two points of Claude Code with Opus 5.5 Max.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T16:00:00.000Z",
+        "checkedAt": "2026-10-30T16:42:59.998Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Administrators control which models Copilot Fusion can use and whether Copilot Fusion is the default.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T16:00:00.000Z",
+        "checkedAt": "2026-10-30T16:42:59.998Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Enterprise administrators can view what models Copilot Fusion picks from, independently set each model&rsquo;s effective policy state, and disable models for Copilot Fusion without disabling the model for everyone.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T16:00:00.000Z",
+        "checkedAt": "2026-10-30T16:42:59.998Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Administrators can set Copilot Fusion, at any effort level, as the default model for Copilot users with Enterprise managed settings.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T16:00:00.000Z",
+        "checkedAt": "2026-10-30T16:42:59.998Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "For a limited time, users on paid Copilot plans will receive a 30% discount on model costs when using Copilot Fusion.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T16:00:00.000Z",
+        "checkedAt": "2026-10-30T16:42:59.998Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Copilot Fusion is available on all Copilot plans in Visual Studio Code, the GitHub Copilot app, GitHub Copilot CLI, and JetBrains IDEs.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T16:00:00.000Z",
+        "checkedAt": "2026-10-30T16:42:59.998Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "To learn more, see our documentation on GitHub Copilot Fusion and share your feedback in the GitHub Community .",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T16:00:00.000Z",
+        "checkedAt": "2026-10-30T16:42:59.998Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "GitHub Copilot Fusion now supports selection of local models",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T16:00:00.000Z",
+        "checkedAt": "2026-10-30T16:42:59.998Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "AVAILABILITY"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 AVAILABILITY (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

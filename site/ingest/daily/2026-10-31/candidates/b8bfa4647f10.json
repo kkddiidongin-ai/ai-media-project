@@ -1,0 +1,221 @@
+{
+  "id": "b8bfa4647f10",
+  "date": "2026-10-31",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Building an Agentic AI Platform on Amazon Bedrock AgentCore",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 10,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": true,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/building-an-agentic-ai-platform-on-amazon-bedrock-agentcore/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-10-28T18:28:26.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "b8bfa4647f10",
+    "url": "https://aws.amazon.com/blogs/machine-learning/building-an-agentic-ai-platform-on-amazon-bedrock-agentcore/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/building-an-agentic-ai-platform-on-amazon-bedrock-agentcore",
+    "title": "Building an Agentic AI Platform on Amazon Bedrock AgentCore",
+    "excerpt": "Stand up a governed, multi-account Agentic AI Platform on Amazon Bedrock AgentCore. This post walks through the architecture and an open-source reference blueprint: the operating model, control plane, per-Workstream cells, separate inference and tool gateways, and a CI/CD evaluation pipeline that ga",
+    "publishedAt": "2026-10-28T18:28:26.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-10-30T16:41:43.436Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 16790,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Stand up a governed, multi-account Agentic AI Platform on Amazon Bedrock AgentCore. This post walks through the architecture and an open-source reference blueprint: the operating model, control plane, per-Workstream cells, separate inference and tool gateways, and a CI/CD evaluation pipeline that ga",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/building-an-agentic-ai-platform-on-amazon-bedrock-agentcore/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-28T18:28:26.000Z",
+        "checkedAt": "2026-10-30T16:42:59.907Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Building an Agentic AI Platform on Amazon Bedrock AgentCore | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/building-an-agentic-ai-platform-on-amazon-bedrock-agentcore/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-28T18:28:26.000Z",
+        "checkedAt": "2026-10-30T16:42:59.907Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Building an Agentic AI Platform on Amazon Bedrock AgentCore",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/building-an-agentic-ai-platform-on-amazon-bedrock-agentcore/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-28T18:28:26.000Z",
+        "checkedAt": "2026-10-30T16:42:59.907Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "In this post, we walk through the architecture and reference implementation of an enterprise Agentic AI Platform on Amazon Bedrock and Amazon Bedrock AgentCore.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/building-an-agentic-ai-platform-on-amazon-bedrock-agentcore/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-28T18:28:26.000Z",
+        "checkedAt": "2026-10-30T16:42:59.907Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Amazon Bedrock AgentCore provides modular services for building, deploying, and operating agents at scale, including runtime, gateway, identity, memory, policy, registry, and evaluations.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/building-an-agentic-ai-platform-on-amazon-bedrock-agentcore/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-28T18:28:26.000Z",
+        "checkedAt": "2026-10-30T16:42:59.907Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "The Enterprise Agentic AI Platform Blueprint , built on AgentCore, adds the surrounding enterprise contracts as deployable infrastructure as code: ownership, account boundaries, software delivery, observability, cost governance, and retirement.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/building-an-agentic-ai-platform-on-amazon-bedrock-agentcore/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-28T18:28:26.000Z",
+        "checkedAt": "2026-10-30T16:42:59.907Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "This solution delivers a governed, multi-account Agentic AI Platform that platform teams operate, and workstream teams such as internal product and engineering teams consume through versioned, self-service interfaces.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/building-an-agentic-ai-platform-on-amazon-bedrock-agentcore/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-28T18:28:26.000Z",
+        "checkedAt": "2026-10-30T16:42:59.907Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Agentic AI Platform control plane: The Platform account publishes versioned templates and interfaces, operates AWS Agent Registry governance records and shared Inference Gateways, admits models and Guardrails, orchestrates reviewed releases, and aggregates fleet signals.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/building-an-agentic-ai-platform-on-amazon-bedrock-agentcore/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-28T18:28:26.000Z",
+        "checkedAt": "2026-10-30T16:42:59.907Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Repeatable Workstream cell: Each product or domain receives an isolated boundary with a team-owned source repository, a Workload pipeline, and three Amazon Bedrock AgentCore capabilities: AgentCore Runtime, actor-scoped AgentCore Memory, and an AgentCore Gateway that uses AWS_…",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/building-an-agentic-ai-platform-on-amazon-bedrock-agentcore/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-28T18:28:26.000Z",
+        "checkedAt": "2026-10-30T16:42:59.907Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Figure 1: Enterprise Agentic AI Platform operating model, showing the governance foundation, the Platform control plane, repeatable team-owned Workstream cells, and the software delivery, inference, tool, telemetry, and ownership flows between them.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/building-an-agentic-ai-platform-on-amazon-bedrock-agentcore/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-28T18:28:26.000Z",
+        "checkedAt": "2026-10-30T16:42:59.907Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Identity and trust boundaries: AgentCore Identity, a capability of Amazon Bedrock AgentCore, and Amazon Cognito provide short-lived inference credentials.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/building-an-agentic-ai-platform-on-amazon-bedrock-agentcore/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-28T18:28:26.000Z",
+        "checkedAt": "2026-10-30T16:42:59.907Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "In this post, we walked through an enterprise Agentic AI Platform built on Amazon Bedrock AgentCore.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/building-an-agentic-ai-platform-on-amazon-bedrock-agentcore/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-28T18:28:26.000Z",
+        "checkedAt": "2026-10-30T16:42:59.907Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Building an Enterprise Agentic AI Platform on Amazon Bedrock AgentCore Workshop",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/building-an-agentic-ai-platform-on-amazon-bedrock-agentcore/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-28T18:28:26.000Z",
+        "checkedAt": "2026-10-30T16:42:59.907Z"
+      }
+    ],
+    "pageDate": "2026-10-28T18:28:26.000Z"
+  },
+  "score": {
+    "importance": 2,
+    "practicalImpact": 2,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "AVAILABILITY",
+      "API_PLATFORM"
+    ],
+    "strongSignal": true,
+    "contentType": "HOW_TO",
+    "typePenalty": -3,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 AVAILABILITY·API_PLATFORM (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

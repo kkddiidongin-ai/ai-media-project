@@ -1,0 +1,222 @@
+{
+  "id": "121b14ced2d8",
+  "date": "2026-10-31",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Issue artifacts are now in public preview",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 7,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": false,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "evidenceQuality",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "GitHub",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://github.blog/changelog/2026-10-28-issue-artifacts-are-now-in-public-preview",
+      "name": "GitHub Changelog",
+      "type": "official",
+      "publishedAt": "2026-10-28T15:30:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "121b14ced2d8",
+    "url": "https://github.blog/changelog/2026-10-28-issue-artifacts-are-now-in-public-preview",
+    "canonicalUrl": "https://github.blog/changelog/2026-10-28-issue-artifacts-are-now-in-public-preview",
+    "title": "Issue artifacts are now in public preview",
+    "excerpt": "Issue artifacts attach agent-generated outputs and other important context directly to an issue. By keeping plans, research, links, and visualizations alongside the work, they give coding agents richer context and… The post Issue artifacts are now in public preview appeared first on The GitHub Blog ",
+    "publishedAt": "2026-10-28T15:30:00.000Z",
+    "sourceId": "github-changelog",
+    "sourceName": "GitHub Changelog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://github.blog/changelog/feed/?paged=3",
+    "fetchedAt": "2026-10-30T16:41:43.436Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 2107,
+    "grade": "LIMITED",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Issue artifacts attach agent-generated outputs and other important context directly to an issue. By keeping plans, research, links, and visualizations alongside the work, they give coding agents richer context and… The post Issue artifacts are now in public preview appeared first on The GitHub Blog ",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-issue-artifacts-are-now-in-public-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-30T16:43:07.207Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Issue artifacts are now in public preview - GitHub Changelog",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-issue-artifacts-are-now-in-public-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-30T16:43:07.207Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Issue artifacts attach agent-generated outputs and other important context directly to an issue.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-issue-artifacts-are-now-in-public-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-30T16:43:07.207Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "HTML files for interactive visualizations, flowcharts, and diagrams, with the ability to toggle between a rendered preview and the source.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-issue-artifacts-are-now-in-public-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-30T16:43:07.207Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "When you use the GitHub App to work on an issue, artifacts created during the session are automatically attached to that issue.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-issue-artifacts-are-now-in-public-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-30T16:43:07.207Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "You can also prompt the session to create a specific artifact, such as an implementation plan, root cause analysis, or summary of historical context.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-issue-artifacts-are-now-in-public-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-30T16:43:07.207Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Support for creating and viewing HTML artifacts in the GitHub App is coming soon.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-issue-artifacts-are-now-in-public-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-30T16:43:07.207Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "The new gh issue artifact command brings issue artifact support to GitHub CLI.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-issue-artifacts-are-now-in-public-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-30T16:43:07.207Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "You can use the create , edit , list , view , download , and delete commands to manage issue artifacts.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-issue-artifacts-are-now-in-public-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-30T16:43:07.207Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Artifacts can also be addressed by their GitHub URLs, and Markdown documents support image and video attachments with --attach .",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-issue-artifacts-are-now-in-public-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-30T16:43:07.207Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "For usage details, see the gh issue artifact documentation .",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-issue-artifacts-are-now-in-public-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-30T16:43:07.207Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Create, edit, and delete artifacts directly from an issue on github.com.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-issue-artifacts-are-now-in-public-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-30T16:43:07.207Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Join the GitHub Community to tell us what you think and help shape the public preview.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-issue-artifacts-are-now-in-public-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-30T16:43:07.207Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PREVIEW"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 PREVIEW (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

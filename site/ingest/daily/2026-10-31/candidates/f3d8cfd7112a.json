@@ -1,0 +1,118 @@
+{
+  "id": "f3d8cfd7112a",
+  "date": "2026-10-31",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Immersive explorations now available in the Gemini app",
+  "depth": null,
+  "suggestedDepth": null,
+  "depthAssessment": {
+    "sufficiency": "INSUFFICIENT",
+    "distinctFacts": 0,
+    "deepChecks": {
+      "importance": true,
+      "novelty": true,
+      "userImpact": true,
+      "contextNeed": false,
+      "distinctFacts": false,
+      "evidenceQuality": false,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "contextNeed",
+      "distinctFacts",
+      "evidenceQuality",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Google",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://workspaceupdates.googleblog.com/2026/10/immersive-explorations-now-available-in-the-Gemini-app.html",
+      "name": "Google Workspace Updates",
+      "type": "official",
+      "publishedAt": "2026-10-28T18:21:30.362Z"
+    }
+  ],
+  "candidate": {
+    "id": "f3d8cfd7112a",
+    "url": "https://workspaceupdates.googleblog.com/2026/10/immersive-explorations-now-available-in-the-Gemini-app.html",
+    "canonicalUrl": "https://workspaceupdates.googleblog.com/2026/10/immersive-explorations-now-available-in-the-Gemini-app.html",
+    "title": "Immersive explorations now available in the Gemini app",
+    "excerpt": "We’re introducing a library of immersive explorations in the Gemini app, giving users an interactive, visual way to explore topics layer-by-layer, from microscopic systems to deep space. Users can access this library in the Gemini student hub by clicking on “Try immersive explorations” and will soon",
+    "publishedAt": "2026-10-28T18:21:30.362Z",
+    "sourceId": "google-workspace-updates",
+    "sourceName": "Google Workspace Updates",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://workspaceupdates.googleblog.com/feeds/posts/default?max-results=500&published-min=2026-01-01T00:00:00Z",
+    "fetchedAt": "2026-10-30T16:41:43.436Z"
+  },
+  "evidence": {
+    "status": "HTTP_429",
+    "chars": 0,
+    "grade": "FAIL",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "We’re introducing a library of immersive explorations in the Gemini app, giving users an interactive, visual way to explore topics layer-by-layer, from microscopic systems to deep space. Users can access this library in the Gemini student hub by clicking on “Try immersive explorations” and will soon",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/immersive-explorations-now-available-in-the-Gemini-app.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-28T18:21:30.362Z",
+        "checkedAt": "2026-10-30T16:42:49.306Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 4,
+    "practicalImpact": 3,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 2,
+    "signals": [
+      "MODEL",
+      "PRODUCT_LAUNCH",
+      "AVAILABILITY",
+      "CONSUMER"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 13,
+    "total": 13
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "근거 부족 (원문 HTTP_429, 확인 사실 0개) — 발행하지 않음"
+  ],
+  "needsReview": [
+    "source_blocked",
+    "insufficient_evidence"
+  ],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}
