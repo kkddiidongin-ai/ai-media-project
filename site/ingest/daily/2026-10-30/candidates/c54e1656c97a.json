@@ -1,0 +1,234 @@
+{
+  "id": "c54e1656c97a",
+  "date": "2026-10-30",
+  "proposedSlug": "code-scanning-ai-applications-public-preview",
+  "title": null,
+  "sourceTitle": "Code scanning for AI applications in public preview",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": true,
+      "distinctFacts": true,
+      "evidenceQuality": false,
+      "standardWouldOmit": true
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "evidenceQuality"
+    ]
+  },
+  "company": "GitHub",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://github.blog/changelog/2026-10-28-code-scanning-for-ai-applications-in-public-preview",
+      "name": "GitHub Changelog",
+      "type": "official",
+      "publishedAt": "2026-10-28T15:30:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "c54e1656c97a",
+    "url": "https://github.blog/changelog/2026-10-28-code-scanning-for-ai-applications-in-public-preview",
+    "canonicalUrl": "https://github.blog/changelog/2026-10-28-code-scanning-for-ai-applications-in-public-preview",
+    "title": "Code scanning for AI applications in public preview",
+    "excerpt": "Code scanning can now detect AI applications and agent vulnerabilities, including indirect prompt injection (XPIA), sensitive information disclosure, excessive agency, and other AI-specific risks as coverage expands. Scans automatically run… The post Code scanning for AI applications in public previ",
+    "publishedAt": "2026-10-28T15:30:00.000Z",
+    "sourceId": "github-changelog",
+    "sourceName": "GitHub Changelog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://github.blog/changelog/feed/?paged=2",
+    "fetchedAt": "2026-10-30T01:53:51.689Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 2365,
+    "grade": "LIMITED",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Code scanning can now detect AI applications and agent vulnerabilities, including indirect prompt injection (XPIA), sensitive information disclosure, excessive agency, and other AI-specific risks as coverage expands. Scans automatically run… The post Code scanning for AI applications in public previ",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-code-scanning-for-ai-applications-in-public-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-29T16:55:06.844Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Code scanning for AI applications in public preview - GitHub Changelog",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-code-scanning-for-ai-applications-in-public-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-29T16:55:06.844Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Code scanning can now detect AI applications and agent vulnerabilities, including indirect prompt injection (XPIA), sensitive information disclosure, excessive agency, and other AI-specific risks as coverage expands.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-code-scanning-for-ai-applications-in-public-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-29T16:55:06.844Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Here&rsquo;s an overview of AI applications and agent vulnerabilities that are covered:",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-code-scanning-for-ai-applications-in-public-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-29T16:55:06.844Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Indirect prompt injection is the top risk in the OWASP Top 10 for LLM Applications.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-code-scanning-for-ai-applications-in-public-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-29T16:55:06.844Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "It happens when malicious instructions are hidden in untrusted content (e.g., a file, webpage, or issue comment) that an AI agent reads.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-code-scanning-for-ai-applications-in-public-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-29T16:55:06.844Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Sensitive information disclosure happens when an AI application or agent can access sensitive data without appropriate authorization controls, potentially exposing it to users or systems that should not have access.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-code-scanning-for-ai-applications-in-public-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-29T16:55:06.844Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Excessive agency happens when an AI agent has more capabilities, permissions, or autonomy than its task requires, increasing the risk of unintended or high-impact actions.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-code-scanning-for-ai-applications-in-public-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-29T16:55:06.844Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Flags agent code paths where untrusted content can reach a model that has access to tools, data, or business systems.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-code-scanning-for-ai-applications-in-public-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-29T16:55:06.844Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "If your organization uses GitHub Advanced Security, this detector starts scanning pull requests in repositories where code scanning and scans for AI applications are enabled.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-code-scanning-for-ai-applications-in-public-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-29T16:55:06.844Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Code scanning for AI applications is now in public preview on github.com and requires a GitHub Advanced Security license.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-code-scanning-for-ai-applications-in-public-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-29T16:55:06.844Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "It isn&rsquo;t available on GitHub Enterprise Server at this time.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-code-scanning-for-ai-applications-in-public-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-29T16:55:06.844Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Learn more about AI applications code scanning on pull requests and join the discussion in GitHub Community .",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-code-scanning-for-ai-applications-in-public-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-29T16:55:06.844Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 3,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PRODUCT_LAUNCH",
+      "PREVIEW",
+      "SECURITY"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 9,
+    "total": 9
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 PRODUCT_LAUNCH·PREVIEW·SECURITY (우선순위 9)",
+    "근거 확인 통과 (확인 사실 11개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "none",
+    "model": null,
+    "status": "skipped",
+    "error": "Shadow Mode — 원고를 만들지 않음",
+    "promptVersion": "draft-v1",
+    "at": "2026-10-30T01:55:00.860Z",
+    "evidenceHash": "f73f64e69d4d"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": true,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}

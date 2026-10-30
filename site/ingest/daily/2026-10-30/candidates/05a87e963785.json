@@ -1,0 +1,235 @@
+{
+  "id": "05a87e963785",
+  "date": "2026-10-30",
+  "proposedSlug": "generate-edit-images-directly-copilot",
+  "title": null,
+  "sourceTitle": "Generate and edit images directly in Copilot",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": false,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "evidenceQuality",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "GitHub",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://github.blog/changelog/2026-10-28-generate-and-edit-images-directly-in-copilot",
+      "name": "GitHub Changelog",
+      "type": "official",
+      "publishedAt": "2026-10-28T15:30:55.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "05a87e963785",
+    "url": "https://github.blog/changelog/2026-10-28-generate-and-edit-images-directly-in-copilot",
+    "canonicalUrl": "https://github.blog/changelog/2026-10-28-generate-and-edit-images-directly-in-copilot",
+    "title": "Generate and edit images directly in Copilot",
+    "excerpt": "You can now generate and edit images using natural language in GitHub Copilot. When you ask for an image, your selected reasoning model calls a dedicated image-generation tool powered by… The post Generate and edit images directly in Copilot appeared first on The GitHub Blog .",
+    "publishedAt": "2026-10-28T15:30:55.000Z",
+    "sourceId": "github-changelog",
+    "sourceName": "GitHub Changelog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://github.blog/changelog/feed/",
+    "fetchedAt": "2026-10-30T01:53:51.689Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 1702,
+    "grade": "LIMITED",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "You can now generate and edit images using natural language in GitHub Copilot. When you ask for an image, your selected reasoning model calls a dedicated image-generation tool powered by… The post Generate and edit images directly in Copilot appeared first on The GitHub Blog .",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-generate-and-edit-images-directly-in-copilot",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:55.000Z",
+        "checkedAt": "2026-10-29T16:55:11.459Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Generate and edit images directly in Copilot - GitHub Changelog",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-generate-and-edit-images-directly-in-copilot",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:55.000Z",
+        "checkedAt": "2026-10-29T16:55:11.459Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "You can now generate and edit images using natural language in GitHub Copilot.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-generate-and-edit-images-directly-in-copilot",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:55.000Z",
+        "checkedAt": "2026-10-29T16:55:11.459Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "When you ask for an image, your selected reasoning model calls a dedicated image-generation tool powered by GPT Image 2.5 Flare, previews the result inline, and saves it to your project.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-generate-and-edit-images-directly-in-copilot",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:55.000Z",
+        "checkedAt": "2026-10-29T16:55:11.459Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Previously, getting a visual asset while working in Copilot meant stepping away to a separate tool, describing what you needed again, generating it there, and manually bringing it back into your project.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-generate-and-edit-images-directly-in-copilot",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:55.000Z",
+        "checkedAt": "2026-10-29T16:55:11.459Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Describe an image conversationally in any Copilot chat session, whether you&rsquo;re starting a new request or in the middle of a coding task.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-generate-and-edit-images-directly-in-copilot",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:55.000Z",
+        "checkedAt": "2026-10-29T16:55:11.459Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Copilot previews the generated image inline and saves it directly to your workspace.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-generate-and-edit-images-directly-in-copilot",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:55.000Z",
+        "checkedAt": "2026-10-29T16:55:11.459Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Organization and enterprise owners can turn off image generation by disabling the image generation model using Copilot model policies .",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-generate-and-edit-images-directly-in-copilot",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:55.000Z",
+        "checkedAt": "2026-10-29T16:55:11.459Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "You can opt in to a visible &ldquo;Made with AI&rdquo; watermark on images Copilot generates and edits.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-generate-and-edit-images-directly-in-copilot",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:55.000Z",
+        "checkedAt": "2026-10-29T16:55:11.459Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "To try it, open a Copilot chat in VS Code, the GitHub Copilot app, or Copilot CLI and describe the image you want.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-generate-and-edit-images-directly-in-copilot",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:55.000Z",
+        "checkedAt": "2026-10-29T16:55:11.459Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Image generation is in public preview for Copilot Pro, Copilot Pro+, Copilot Business, and Copilot Enterprise.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-generate-and-edit-images-directly-in-copilot",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:55.000Z",
+        "checkedAt": "2026-10-29T16:55:11.459Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "It&rsquo;s billed separately from your chat model, based on image tokens that count toward your plan&rsquo;s AI credits.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-generate-and-edit-images-directly-in-copilot",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:55.000Z",
+        "checkedAt": "2026-10-29T16:55:11.459Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Route and orchestrate models with GitHub Copilot Fusion",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-generate-and-edit-images-directly-in-copilot",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:55.000Z",
+        "checkedAt": "2026-10-29T16:55:11.459Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 2,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "MODEL_MENTION",
+      "PRODUCT_LAUNCH"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 7,
+    "total": 7
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 MODEL_MENTION·PRODUCT_LAUNCH (우선순위 7)",
+    "근거 확인 통과 (확인 사실 11개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "none",
+    "model": null,
+    "status": "skipped",
+    "error": "Shadow Mode — 원고를 만들지 않음",
+    "promptVersion": "draft-v1",
+    "at": "2026-10-30T01:55:00.860Z",
+    "evidenceHash": "94fa4c6be244"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}

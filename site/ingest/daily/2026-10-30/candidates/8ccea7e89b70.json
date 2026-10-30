@@ -1,0 +1,221 @@
+{
+  "id": "8ccea7e89b70",
+  "date": "2026-10-30",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Le Chonk: Built for Coders, Trusted by Defenders.",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 12,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Mistral",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://mistral.ai/news/mistral-large-4-oss/",
+      "name": "Mistral AI",
+      "type": "official",
+      "publishedAt": "2026-10-29T12:00:07.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "8ccea7e89b70",
+    "url": "https://mistral.ai/news/mistral-large-4-oss/",
+    "canonicalUrl": "https://mistral.ai/news/mistral-large-4-oss",
+    "title": "Le Chonk: Built for Coders, Trusted by Defenders.",
+    "excerpt": "The weights of Mistral Large 4 (Le Chonk) are now open. A 1T parameter multimodal model, and best open-weight model for coding, trained in Europe.",
+    "publishedAt": "2026-10-29T12:00:07.000Z",
+    "sourceId": "mistral",
+    "sourceName": "Mistral AI",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://mistral.ai/news/rss",
+    "fetchedAt": "2026-10-30T01:53:51.689Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 19301,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "The weights of Mistral Large 4 (Le Chonk) are now open. A 1T parameter multimodal model, and best open-weight model for coding, trained in Europe.",
+        "sourceUrl": "https://mistral.ai/news/mistral-large-4-oss/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-10-29T12:00:07.000Z",
+        "checkedAt": "2026-10-29T16:55:24.807Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Mistral Large 4 (Le Chonk) is now open weight | Mistral • • • • • • • • • • •",
+        "sourceUrl": "https://mistral.ai/news/mistral-large-4-oss/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-10-29T12:00:07.000Z",
+        "checkedAt": "2026-10-29T16:55:24.807Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Mistral Large 4 (Le Chonk) Built for Coders, Trusted by Defenders.",
+        "sourceUrl": "https://mistral.ai/news/mistral-large-4-oss/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-10-29T12:00:07.000Z",
+        "checkedAt": "2026-10-29T16:55:24.807Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Mistral released Mistral Large 4 (Le Chonk), a 1-trillion-parameter multimodal model, now available with improved coding, cybersecurity, and reasoning efficiency.",
+        "sourceUrl": "https://mistral.ai/news/mistral-large-4-oss/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-10-29T12:00:07.000Z",
+        "checkedAt": "2026-10-29T16:55:24.807Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Earlier this month, we released Mistral Large 4 (Le Chonk), our flagship 1-trillion-parameter, natively multimodal model, in public preview.",
+        "sourceUrl": "https://mistral.ai/news/mistral-large-4-oss/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-10-29T12:00:07.000Z",
+        "checkedAt": "2026-10-29T16:55:24.807Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Mistral Large 4 entered public preview with strong results across leading coding benchmarks.",
+        "sourceUrl": "https://mistral.ai/news/mistral-large-4-oss/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-10-29T12:00:07.000Z",
+        "checkedAt": "2026-10-29T16:55:24.807Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "On Terminal-Bench 4.0, Mistral Large 4 improved by 13 percentage points to 41% compared to its public preview, taking the lead among open-weight models while reducing output tokens by 30%.",
+        "sourceUrl": "https://mistral.ai/news/mistral-large-4-oss/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-10-29T12:00:07.000Z",
+        "checkedAt": "2026-10-29T16:55:24.807Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Since its preview, we've been working with leading cybersecurity vendors to evaluate Mistral Large 4 in real-world environments to test Mistral Large 4’s strengths in vulnerability reproduction and patching.",
+        "sourceUrl": "https://mistral.ai/news/mistral-large-4-oss/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-10-29T12:00:07.000Z",
+        "checkedAt": "2026-10-29T16:55:24.807Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Mistral's ML4 lets defenders audit the architecture, deploy on their own infrastructure, and keep full sovereignty.",
+        "sourceUrl": "https://mistral.ai/news/mistral-large-4-oss/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-10-29T12:00:07.000Z",
+        "checkedAt": "2026-10-29T16:55:24.807Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Our work with Mistral Large 4 tests how well frontier AI can reason through complex vulnerabilities, accelerate remediation, and ensure defenders move faster than adversaries.",
+        "sourceUrl": "https://mistral.ai/news/mistral-large-4-oss/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-10-29T12:00:07.000Z",
+        "checkedAt": "2026-10-29T16:55:24.807Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "We are also providing enterprise design partners such as Orange Cyberdefense, with preview access to a specialized variant of Mistral Large 4 optimized for advanced cybersecurity workflows, including penetration testing, vulnerability assessment, and red-teaming.",
+        "sourceUrl": "https://mistral.ai/news/mistral-large-4-oss/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-10-29T12:00:07.000Z",
+        "checkedAt": "2026-10-29T16:55:24.807Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Developments such as Mistral Large 4 demonstrate how sovereign and open-weight AI models can expand the range of trusted solutions available to European organizations.",
+        "sourceUrl": "https://mistral.ai/news/mistral-large-4-oss/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-10-29T12:00:07.000Z",
+        "checkedAt": "2026-10-29T16:55:24.807Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "As the first cloud provider to bring Mistral Large 4 to customers, Microsoft is making Mistral’s latest open-weight model available through Microsoft Foundry, an enterprise AI platform built for evaluating, deploying, and operating models at scale.",
+        "sourceUrl": "https://mistral.ai/news/mistral-large-4-oss/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-10-29T12:00:07.000Z",
+        "checkedAt": "2026-10-29T16:55:24.807Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "MODEL_MENTION"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 MODEL_MENTION (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

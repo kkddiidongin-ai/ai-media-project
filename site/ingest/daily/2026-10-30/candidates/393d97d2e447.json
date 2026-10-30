@@ -1,0 +1,222 @@
+{
+  "id": "393d97d2e447",
+  "date": "2026-10-30",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "GitHub Enterprise now includes access to GitHub Copilot",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": false,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "evidenceQuality",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "GitHub",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://github.blog/changelog/2026-10-28-github-enterprise-now-includes-access-to-github-copilot",
+      "name": "GitHub Changelog",
+      "type": "official",
+      "publishedAt": "2026-10-28T15:50:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "393d97d2e447",
+    "url": "https://github.blog/changelog/2026-10-28-github-enterprise-now-includes-access-to-github-copilot",
+    "canonicalUrl": "https://github.blog/changelog/2026-10-28-github-enterprise-now-includes-access-to-github-copilot",
+    "title": "GitHub Enterprise now includes access to GitHub Copilot",
+    "excerpt": "Enterprises working with a GitHub or Microsoft account team can now get Copilot included with GitHub Enterprise for every licensed user. Previously, you had to manage two things: how many… The post GitHub Enterprise now includes access to GitHub Copilot appeared first on The GitHub Blog .",
+    "publishedAt": "2026-10-28T15:50:00.000Z",
+    "sourceId": "github-changelog",
+    "sourceName": "GitHub Changelog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://github.blog/changelog/feed/",
+    "fetchedAt": "2026-10-30T01:53:51.689Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 2204,
+    "grade": "LIMITED",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Enterprises working with a GitHub or Microsoft account team can now get Copilot included with GitHub Enterprise for every licensed user. Previously, you had to manage two things: how many… The post GitHub Enterprise now includes access to GitHub Copilot appeared first on The GitHub Blog .",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-enterprise-now-includes-access-to-github-copilot",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:50:00.000Z",
+        "checkedAt": "2026-10-29T16:55:17.204Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "GitHub Enterprise now includes access to GitHub Copilot - GitHub Changelog",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-enterprise-now-includes-access-to-github-copilot",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:50:00.000Z",
+        "checkedAt": "2026-10-29T16:55:17.204Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Enterprises working with a GitHub or Microsoft account team can now get Copilot included with GitHub Enterprise for every licensed user.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-enterprise-now-includes-access-to-github-copilot",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:50:00.000Z",
+        "checkedAt": "2026-10-29T16:55:17.204Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Previously, you had to manage two things: how many Copilot seats you were paying for and how much AI usage those users consumed.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-enterprise-now-includes-access-to-github-copilot",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:50:00.000Z",
+        "checkedAt": "2026-10-29T16:55:17.204Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "With Copilot included in the platform, usage against your enterprise budget is the primary thing to manage.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-enterprise-now-includes-access-to-github-copilot",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:50:00.000Z",
+        "checkedAt": "2026-10-29T16:55:17.204Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Copilot Business and Copilot Enterprise remain available.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-enterprise-now-includes-access-to-github-copilot",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:50:00.000Z",
+        "checkedAt": "2026-10-29T16:55:17.204Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Users in your enterprise account who do not hold a GitHub Enterprise license get the same Copilot access through Copilot Standalone, at $10 per user per month.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-enterprise-now-includes-access-to-github-copilot",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:50:00.000Z",
+        "checkedAt": "2026-10-29T16:55:17.204Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Copilot access through GitHub Enterprise and Copilot Standalone has the same features and models as Copilot Enterprise but does not include monthly AI credits per seat.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-enterprise-now-includes-access-to-github-copilot",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:50:00.000Z",
+        "checkedAt": "2026-10-29T16:55:17.204Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Copilot Chat, Copilot code review, and Copilot in the cloud require available budget to use.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-enterprise-now-includes-access-to-github-copilot",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:50:00.000Z",
+        "checkedAt": "2026-10-29T16:55:17.204Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "If you work with a GitHub or Microsoft account team: Available now for GitHub Enterprise Cloud.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-enterprise-now-includes-access-to-github-copilot",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:50:00.000Z",
+        "checkedAt": "2026-10-29T16:55:17.204Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Talk to your sales team about setting up a new enterprise account on this model or transitioning an existing enterprise account.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-enterprise-now-includes-access-to-github-copilot",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:50:00.000Z",
+        "checkedAt": "2026-10-29T16:55:17.204Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Copilot Business and Copilot Enterprise: Both remain available to purchase for new and existing enterprises.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-enterprise-now-includes-access-to-github-copilot",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:50:00.000Z",
+        "checkedAt": "2026-10-29T16:55:17.204Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "To learn more, check out our updated documentation on Copilot access .",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-enterprise-now-includes-access-to-github-copilot",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:50:00.000Z",
+        "checkedAt": "2026-10-29T16:55:17.204Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PRODUCT_LAUNCH"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 PRODUCT_LAUNCH (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

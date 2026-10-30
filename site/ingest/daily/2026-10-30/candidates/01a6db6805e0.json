@@ -1,0 +1,221 @@
+{
+  "id": "01a6db6805e0",
+  "date": "2026-10-30",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "GitHub Copilot in JetBrains Universe releases",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 12,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "GitHub",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://github.blog/changelog/2026-10-28-github-copilot-in-jetbrains-universe-releases",
+      "name": "GitHub Changelog",
+      "type": "official",
+      "publishedAt": "2026-10-28T15:30:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "01a6db6805e0",
+    "url": "https://github.blog/changelog/2026-10-28-github-copilot-in-jetbrains-universe-releases",
+    "canonicalUrl": "https://github.blog/changelog/2026-10-28-github-copilot-in-jetbrains-universe-releases",
+    "title": "GitHub Copilot in JetBrains Universe releases",
+    "excerpt": "Today, we’re making GitHub Copilot in JetBrains more capable, secure, and seamless. From GitHub Copilot Fusion’s smarter model orchestration to local sandboxes and next edit suggestions (NES), this update brings… The post GitHub Copilot in JetBrains Universe releases appeared first on The GitHub Blo",
+    "publishedAt": "2026-10-28T15:30:00.000Z",
+    "sourceId": "github-changelog",
+    "sourceName": "GitHub Changelog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://github.blog/changelog/feed/?paged=2",
+    "fetchedAt": "2026-10-30T01:53:51.689Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 3287,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Today, we’re making GitHub Copilot in JetBrains more capable, secure, and seamless. From GitHub Copilot Fusion’s smarter model orchestration to local sandboxes and next edit suggestions (NES), this update brings… The post GitHub Copilot in JetBrains Universe releases appeared first on The GitHub Blo",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-copilot-in-jetbrains-universe-releases",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-29T16:55:25.006Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "GitHub Copilot in JetBrains Universe releases - GitHub Changelog",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-copilot-in-jetbrains-universe-releases",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-29T16:55:25.006Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Today, we&rsquo;re making GitHub Copilot in JetBrains more capable, secure, and seamless.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-copilot-in-jetbrains-universe-releases",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-29T16:55:25.006Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "From GitHub Copilot Fusion&rsquo;s smarter model orchestration to local sandboxes and next edit suggestions (NES), this update brings powerful improvements to how you build, review, and manage work.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-copilot-in-jetbrains-universe-releases",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-29T16:55:25.006Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "GitHub Copilot Fusion is now available for Copilot users in JetBrains IDEs.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-copilot-in-jetbrains-universe-releases",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-29T16:55:25.006Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Copilot Fusion delivers stronger task-completion results at lower cost without requiring users to choose and coordinate models themselves.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-copilot-in-jetbrains-universe-releases",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-29T16:55:25.006Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Copilot Fusion replaces the current Auto model option and is gradually rolling out to all GitHub Copilot users.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-copilot-in-jetbrains-universe-releases",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-29T16:55:25.006Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Copilot Fusion use is discounted 30% for the first 30 days.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-copilot-in-jetbrains-universe-releases",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-29T16:55:25.006Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Local sandboxing for GitHub Copilot in JetBrains is now generally available.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-copilot-in-jetbrains-universe-releases",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-29T16:55:25.006Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Plugin updates : Open the Plugins Marketplace filtered to the official GitHub Copilot plugin directly from Copilot update prompts.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-copilot-in-jetbrains-universe-releases",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-29T16:55:25.006Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Feedback repository : Share your thoughts in the GitHub Copilot for JetBrains IDEs issues .",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-copilot-in-jetbrains-universe-releases",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-29T16:55:25.006Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "GitHub Enterprise now includes access to GitHub Copilot",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-copilot-in-jetbrains-universe-releases",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-29T16:55:25.006Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "GitHub Copilot in VS Code, Universe releases",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-copilot-in-jetbrains-universe-releases",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-29T16:55:25.006Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "SECURITY_MENTION"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 SECURITY_MENTION (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

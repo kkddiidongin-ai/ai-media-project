@@ -1,0 +1,233 @@
+{
+  "id": "cc7dd1039630",
+  "date": "2026-10-30",
+  "proposedSlug": "ai-scan-repositories-public-preview",
+  "title": null,
+  "sourceTitle": "AI Scan for repositories in public preview",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 12,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": true,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": true
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact"
+    ]
+  },
+  "company": "GitHub",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://github.blog/changelog/2026-10-28-ai-scan-for-repositories-in-public-preview",
+      "name": "GitHub Changelog",
+      "type": "official",
+      "publishedAt": "2026-10-28T15:30:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "cc7dd1039630",
+    "url": "https://github.blog/changelog/2026-10-28-ai-scan-for-repositories-in-public-preview",
+    "canonicalUrl": "https://github.blog/changelog/2026-10-28-ai-scan-for-repositories-in-public-preview",
+    "title": "AI Scan for repositories in public preview",
+    "excerpt": "You can now use AI Scan to find vulnerabilities across your whole repository, not just in pull request changes. It covers languages and frameworks that CodeQL doesn’t support and finds… The post AI Scan for repositories in public preview appeared first on The GitHub Blog .",
+    "publishedAt": "2026-10-28T15:30:00.000Z",
+    "sourceId": "github-changelog",
+    "sourceName": "GitHub Changelog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://github.blog/changelog/feed/?paged=2",
+    "fetchedAt": "2026-10-30T01:53:51.689Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 2868,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "You can now use AI Scan to find vulnerabilities across your whole repository, not just in pull request changes. It covers languages and frameworks that CodeQL doesn’t support and finds… The post AI Scan for repositories in public preview appeared first on The GitHub Blog .",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-ai-scan-for-repositories-in-public-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-29T16:55:06.111Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "AI Scan for repositories in public preview - GitHub Changelog",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-ai-scan-for-repositories-in-public-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-29T16:55:06.111Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "You can now use AI Scan to find vulnerabilities across your whole repository, not just in pull request changes.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-ai-scan-for-repositories-in-public-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-29T16:55:06.111Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Once your enterprise has enabled the AI Scan policy , organization owners and security managers can turn on AI Scan for repositories for their organization.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-ai-scan-for-repositories-in-public-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-29T16:55:06.111Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "This setting is separate from AI Scan for pull requests.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-ai-scan-for-repositories-in-public-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-29T16:55:06.111Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "After AI Scan for repositories is enabled, users with write access to code scanning can start a scan from the Code scanning page.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-ai-scan-for-repositories-in-public-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-29T16:55:06.111Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "When both AI Scan and CodeQL are scanning the same repository, AI Scan skips issues that CodeQL already reports.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-ai-scan-for-repositories-in-public-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-29T16:55:06.111Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "On rescans, AI Scan keeps existing findings open if it detects them again and only reports new findings.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-ai-scan-for-repositories-in-public-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-29T16:55:06.111Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "AI Scan alerts flow into the code scanning backlog just like other code scanning alerts and support the same workflows, such as assignees, linked pull requests, and issues.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-ai-scan-for-repositories-in-public-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-29T16:55:06.111Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "AI Scan for repositories is available on github.com and GitHub Enterprise Cloud with data residency.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-ai-scan-for-repositories-in-public-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-29T16:55:06.111Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Organization-owned repositories: Available for public repositories as well as for both private and internal repositories with GitHub Code Security or GitHub Advanced Security.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-ai-scan-for-repositories-in-public-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-29T16:55:06.111Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Repositories owned by personal accounts: Available for public repositories.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-ai-scan-for-repositories-in-public-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-29T16:55:06.111Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "AI Scan for repositories consumes Code Security AI credits.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-ai-scan-for-repositories-in-public-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-29T16:55:06.111Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 3,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PRODUCT_LAUNCH",
+      "PREVIEW",
+      "SECURITY"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 9,
+    "total": 9
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 PRODUCT_LAUNCH·PREVIEW·SECURITY (우선순위 9)",
+    "근거 확인 통과 (확인 사실 12개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "none",
+    "model": null,
+    "status": "skipped",
+    "error": "Shadow Mode — 원고를 만들지 않음",
+    "promptVersion": "draft-v1",
+    "at": "2026-10-30T01:55:00.860Z",
+    "evidenceHash": "664df1264a8f"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": true,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}

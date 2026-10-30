@@ -1,0 +1,222 @@
+{
+  "id": "ae617863ce19",
+  "date": "2026-10-30",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "GitHub Copilot SDK is becoming Microsoft Copilot SDK",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 12,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": false,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "evidenceQuality",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "GitHub",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://github.blog/changelog/2026-10-28-github-copilot-sdk-is-becoming-microsoft-copilot-sdk",
+      "name": "GitHub Changelog",
+      "type": "official",
+      "publishedAt": "2026-10-28T15:30:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "ae617863ce19",
+    "url": "https://github.blog/changelog/2026-10-28-github-copilot-sdk-is-becoming-microsoft-copilot-sdk",
+    "canonicalUrl": "https://github.blog/changelog/2026-10-28-github-copilot-sdk-is-becoming-microsoft-copilot-sdk",
+    "title": "GitHub Copilot SDK is becoming Microsoft Copilot SDK",
+    "excerpt": "We’re transitioning GitHub Copilot SDK to Microsoft Copilot SDK. What began as the SDK for the GitHub Copilot harness is becoming the programmable interface for the Microsoft Copilot harness, the… The post GitHub Copilot SDK is becoming Microsoft Copilot SDK appeared first on The GitHub Blog .",
+    "publishedAt": "2026-10-28T15:30:00.000Z",
+    "sourceId": "github-changelog",
+    "sourceName": "GitHub Changelog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://github.blog/changelog/feed/?paged=3",
+    "fetchedAt": "2026-10-29T16:53:38.579Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 1394,
+    "grade": "LIMITED",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "We’re transitioning GitHub Copilot SDK to Microsoft Copilot SDK. What began as the SDK for the GitHub Copilot harness is becoming the programmable interface for the Microsoft Copilot harness, the… The post GitHub Copilot SDK is becoming Microsoft Copilot SDK appeared first on The GitHub Blog .",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-copilot-sdk-is-becoming-microsoft-copilot-sdk",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-29T16:55:23.465Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "GitHub Copilot SDK is becoming Microsoft Copilot SDK - GitHub Changelog",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-copilot-sdk-is-becoming-microsoft-copilot-sdk",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-29T16:55:23.465Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "We&rsquo;re transitioning GitHub Copilot SDK to Microsoft Copilot SDK .",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-copilot-sdk-is-becoming-microsoft-copilot-sdk",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-29T16:55:23.465Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "What began as the SDK for the GitHub Copilot harness is becoming the programmable interface for the Microsoft Copilot harness , the shared agent foundation used across Microsoft and GitHub products.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-copilot-sdk-is-becoming-microsoft-copilot-sdk",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-29T16:55:23.465Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "As part of this transition, we have begun updating the SDK repository to reflect the upcoming move to the Microsoft organization and begun updating branding and documentation.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-copilot-sdk-is-becoming-microsoft-copilot-sdk",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-29T16:55:23.465Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "The migration will happen in phases, so existing package names, namespaces, and some documentation may continue to reference GitHub Copilot SDK during the transition.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-copilot-sdk-is-becoming-microsoft-copilot-sdk",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-29T16:55:23.465Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "This announcement is to share the SDK&rsquo;s direction and expanded role.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-copilot-sdk-is-becoming-microsoft-copilot-sdk",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-29T16:55:23.465Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Support for the Copilot SDK remains the same.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-copilot-sdk-is-becoming-microsoft-copilot-sdk",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-29T16:55:23.465Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Route and orchestrate models with GitHub Copilot Fusion",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-copilot-sdk-is-becoming-microsoft-copilot-sdk",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-29T16:55:23.465Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "GitHub Enterprise now includes access to GitHub Copilot",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-copilot-sdk-is-becoming-microsoft-copilot-sdk",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-29T16:55:23.465Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Security extension for the GitHub Copilot app",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-copilot-sdk-is-becoming-microsoft-copilot-sdk",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-29T16:55:23.465Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "GitHub Copilot in VS Code, Universe releases",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-copilot-sdk-is-becoming-microsoft-copilot-sdk",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-29T16:55:23.465Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "GitHub Copilot Fusion now supports selection of local models",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-github-copilot-sdk-is-becoming-microsoft-copilot-sdk",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-29T16:55:23.465Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "API_PLATFORM"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 API_PLATFORM (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

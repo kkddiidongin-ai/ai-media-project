@@ -1,0 +1,234 @@
+{
+  "id": "4b9ad4180246",
+  "date": "2026-10-30",
+  "proposedSlug": "introducing-microsoft-copilot-harness-unlocking-potential-tr",
+  "title": null,
+  "sourceTitle": "Introducing the Microsoft Copilot harness: Unlocking the potential of truly multi-model agentic work",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Microsoft",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://blogs.microsoft.com/blog/2026/10/28/introducing-the-microsoft-copilot-harness-unlocking-the-potential-of-truly-multi-model-agentic-work/",
+      "name": "Microsoft (Official Blog)",
+      "type": "official",
+      "publishedAt": "2026-10-28T16:51:35.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "4b9ad4180246",
+    "url": "https://blogs.microsoft.com/blog/2026/10/28/introducing-the-microsoft-copilot-harness-unlocking-the-potential-of-truly-multi-model-agentic-work/",
+    "canonicalUrl": "https://blogs.microsoft.com/blog/2026/10/28/introducing-the-microsoft-copilot-harness-unlocking-the-potential-of-truly-multi-model-agentic-work",
+    "title": "Introducing the Microsoft Copilot harness: Unlocking the potential of truly multi-model agentic work",
+    "excerpt": "If you want to compete, you need to be multi-model. And if you want to take advantage of everything that different AI models have to offer, you need a great harness. But building one that works seamlessly across multiple models and surfaces is incredibly hard. You need to solve for performance, qual",
+    "publishedAt": "2026-10-28T16:51:35.000Z",
+    "sourceId": "microsoft",
+    "sourceName": "Microsoft (Official Blog)",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://blogs.microsoft.com/feed/",
+    "fetchedAt": "2026-10-30T01:53:51.689Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 3802,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "If you want to compete, you need to be multi-model. And if you want to take advantage of everything that different AI models have to offer, you need a great harness. But building one that works seamlessly across multiple models and surfaces is incredibly hard. You need to solve for performance, qual",
+        "sourceUrl": "https://blogs.microsoft.com/blog/2026/10/28/introducing-the-microsoft-copilot-harness-unlocking-the-potential-of-truly-multi-model-agentic-work/",
+        "source": "Microsoft (Official Blog)",
+        "publishedAt": "2026-10-28T16:51:35.000Z",
+        "checkedAt": "2026-10-29T16:55:05.755Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Introducing the Microsoft Copilot harness: Unlocking the potential of truly multi-model agentic work - The Official Microsoft Blog",
+        "sourceUrl": "https://blogs.microsoft.com/blog/2026/10/28/introducing-the-microsoft-copilot-harness-unlocking-the-potential-of-truly-multi-model-agentic-work/",
+        "source": "Microsoft (Official Blog)",
+        "publishedAt": "2026-10-28T16:51:35.000Z",
+        "checkedAt": "2026-10-29T16:55:05.755Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Luckily, the GitHub engineering team built a best-in-class, truly multi-model harness , which we’ve adopted company-wide.",
+        "sourceUrl": "https://blogs.microsoft.com/blog/2026/10/28/introducing-the-microsoft-copilot-harness-unlocking-the-potential-of-truly-multi-model-agentic-work/",
+        "source": "Microsoft (Official Blog)",
+        "publishedAt": "2026-10-28T16:51:35.000Z",
+        "checkedAt": "2026-10-29T16:55:05.755Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "The Microsoft Copilot harness powers Copilot Code, Copilot Studio, the GitHub Copilot app, the CLI, VS Code, and more.",
+        "sourceUrl": "https://blogs.microsoft.com/blog/2026/10/28/introducing-the-microsoft-copilot-harness-unlocking-the-potential-of-truly-multi-model-agentic-work/",
+        "source": "Microsoft (Official Blog)",
+        "publishedAt": "2026-10-28T16:51:35.000Z",
+        "checkedAt": "2026-10-29T16:55:05.755Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "And today, we’re making that harness available through Microsoft Foundry .",
+        "sourceUrl": "https://blogs.microsoft.com/blog/2026/10/28/introducing-the-microsoft-copilot-harness-unlocking-the-potential-of-truly-multi-model-agentic-work/",
+        "source": "Microsoft (Official Blog)",
+        "publishedAt": "2026-10-28T16:51:35.000Z",
+        "checkedAt": "2026-10-29T16:55:05.755Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Now, you can build on the same harness Microsoft and GitHub ship in our own products, and you don’t have to maintain it.",
+        "sourceUrl": "https://blogs.microsoft.com/blog/2026/10/28/introducing-the-microsoft-copilot-harness-unlocking-the-potential-of-truly-multi-model-agentic-work/",
+        "source": "Microsoft (Official Blog)",
+        "publishedAt": "2026-10-28T16:51:35.000Z",
+        "checkedAt": "2026-10-29T16:55:05.755Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "We invest in science and engineering work to continually improve and evolve the harness and ensure high-quality, efficient, and low-cost performance across a range of models and workloads.",
+        "sourceUrl": "https://blogs.microsoft.com/blog/2026/10/28/introducing-the-microsoft-copilot-harness-unlocking-the-potential-of-truly-multi-model-agentic-work/",
+        "source": "Microsoft (Official Blog)",
+        "publishedAt": "2026-10-28T16:51:35.000Z",
+        "checkedAt": "2026-10-29T16:55:05.755Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "The Copilot harness was built by the same GitHub engineers behind new technologies like our multi-model orchestration .",
+        "sourceUrl": "https://blogs.microsoft.com/blog/2026/10/28/introducing-the-microsoft-copilot-harness-unlocking-the-potential-of-truly-multi-model-agentic-work/",
+        "source": "Microsoft (Official Blog)",
+        "publishedAt": "2026-10-28T16:51:35.000Z",
+        "checkedAt": "2026-10-29T16:55:05.755Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "The harness is built to perform across model families , with 20+ frontier models plus bring your own key, so you can use the right model for the right job.",
+        "sourceUrl": "https://blogs.microsoft.com/blog/2026/10/28/introducing-the-microsoft-copilot-harness-unlocking-the-potential-of-truly-multi-model-agentic-work/",
+        "source": "Microsoft (Official Blog)",
+        "publishedAt": "2026-10-28T16:51:35.000Z",
+        "checkedAt": "2026-10-29T16:55:05.755Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "And because the Copilot harness powers surfaces across Microsoft, it’s battle-tested and proven performant at the scale of millions of users and hundreds of real-world use cases.",
+        "sourceUrl": "https://blogs.microsoft.com/blog/2026/10/28/introducing-the-microsoft-copilot-harness-unlocking-the-potential-of-truly-multi-model-agentic-work/",
+        "source": "Microsoft (Official Blog)",
+        "publishedAt": "2026-10-28T16:51:35.000Z",
+        "checkedAt": "2026-10-29T16:55:05.755Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "And because the agents you build in Foundry can run on the same harness we’ve adopted across Microsoft, our continuous harness improvements will benefit your agents, too.",
+        "sourceUrl": "https://blogs.microsoft.com/blog/2026/10/28/introducing-the-microsoft-copilot-harness-unlocking-the-potential-of-truly-multi-model-agentic-work/",
+        "source": "Microsoft (Official Blog)",
+        "publishedAt": "2026-10-28T16:51:35.000Z",
+        "checkedAt": "2026-10-29T16:55:05.755Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "With the Copilot harness, Microsoft runs the agent loop and sandbox, with governance and optimization built in from day one.",
+        "sourceUrl": "https://blogs.microsoft.com/blog/2026/10/28/introducing-the-microsoft-copilot-harness-unlocking-the-potential-of-truly-multi-model-agentic-work/",
+        "source": "Microsoft (Official Blog)",
+        "publishedAt": "2026-10-28T16:51:35.000Z",
+        "checkedAt": "2026-10-29T16:55:05.755Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Tags: GitHub , GitHub Copilot , Microsoft Copilot , Microsoft Foundry",
+        "sourceUrl": "https://blogs.microsoft.com/blog/2026/10/28/introducing-the-microsoft-copilot-harness-unlocking-the-potential-of-truly-multi-model-agentic-work/",
+        "source": "Microsoft (Official Blog)",
+        "publishedAt": "2026-10-28T16:51:35.000Z",
+        "checkedAt": "2026-10-29T16:55:05.755Z"
+      }
+    ],
+    "pageDate": "2026-10-28T16:51:35.000Z"
+  },
+  "score": {
+    "importance": 3,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "MODEL",
+      "PRODUCT_LAUNCH"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 9,
+    "total": 9
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 MODEL·PRODUCT_LAUNCH (우선순위 9)",
+    "근거 확인 통과 (확인 사실 11개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "none",
+    "model": null,
+    "status": "skipped",
+    "error": "Shadow Mode — 원고를 만들지 않음",
+    "promptVersion": "draft-v1",
+    "at": "2026-10-30T01:55:00.860Z",
+    "evidenceHash": "3de97e923070"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": true,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}
