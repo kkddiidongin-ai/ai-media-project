@@ -1,0 +1,235 @@
+{
+  "id": "adf1996fc970",
+  "date": "2026-10-31",
+  "proposedSlug": "security-extension-github-copilot-app",
+  "title": null,
+  "sourceTitle": "Security extension for the GitHub Copilot app",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 9,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": true,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "GitHub",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://github.blog/changelog/2026-10-28-security-extension-for-the-github-copilot-app",
+      "name": "GitHub Changelog",
+      "type": "official",
+      "publishedAt": "2026-10-28T15:45:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "adf1996fc970",
+    "url": "https://github.blog/changelog/2026-10-28-security-extension-for-the-github-copilot-app",
+    "canonicalUrl": "https://github.blog/changelog/2026-10-28-security-extension-for-the-github-copilot-app",
+    "title": "Security extension for the GitHub Copilot app",
+    "excerpt": "You can now work through your repository’s GitHub code scanning alerts without leaving the GitHub Copilot app. The new GitHub security extension, now in public preview, lets you find the… The post Security extension for the GitHub Copilot app appeared first on The GitHub Blog .",
+    "publishedAt": "2026-10-28T15:45:00.000Z",
+    "sourceId": "github-changelog",
+    "sourceName": "GitHub Changelog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://github.blog/changelog/feed/",
+    "fetchedAt": "2026-10-31T01:32:23.063Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 3075,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "You can now work through your repository’s GitHub code scanning alerts without leaving the GitHub Copilot app. The new GitHub security extension, now in public preview, lets you find the… The post Security extension for the GitHub Copilot app appeared first on The GitHub Blog .",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-security-extension-for-the-github-copilot-app",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:45:00.000Z",
+        "checkedAt": "2026-10-30T16:42:53.605Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Security extension for the GitHub Copilot app - GitHub Changelog",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-security-extension-for-the-github-copilot-app",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:45:00.000Z",
+        "checkedAt": "2026-10-30T16:42:53.605Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "You can now work through your repository&rsquo;s GitHub code scanning alerts without leaving the GitHub Copilot app.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-security-extension-for-the-github-copilot-app",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:45:00.000Z",
+        "checkedAt": "2026-10-30T16:42:53.605Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "The new GitHub security extension, now in public preview, lets you find the alerts that matter most and ask Copilot to explain or help fix them.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-security-extension-for-the-github-copilot-app",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:45:00.000Z",
+        "checkedAt": "2026-10-30T16:42:53.605Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "With the security extension, you can move from finding an alert to fixing it in one place.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-security-extension-for-the-github-copilot-app",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:45:00.000Z",
+        "checkedAt": "2026-10-30T16:42:53.605Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "If you already run code scanning on your repository, the security extension shows its open code scanning alerts:",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-security-extension-for-the-github-copilot-app",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:45:00.000Z",
+        "checkedAt": "2026-10-30T16:42:53.605Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Copilot uses the security extension&rsquo;s tools in the same way as any other tool, following your tool permission settings.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-security-extension-for-the-github-copilot-app",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:45:00.000Z",
+        "checkedAt": "2026-10-30T16:42:53.605Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "In the GitHub Copilot app, click Customize , search for github-security , then click + Install .",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-security-extension-for-the-github-copilot-app",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:45:00.000Z",
+        "checkedAt": "2026-10-30T16:42:53.605Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "The security extension is in public preview on github.com and GitHub Enterprise Cloud with data residency.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-security-extension-for-the-github-copilot-app",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:45:00.000Z",
+        "checkedAt": "2026-10-30T16:42:53.605Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "With any Copilot plan: You can install the extension and run /security-review on your local changes.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-security-extension-for-the-github-copilot-app",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:45:00.000Z",
+        "checkedAt": "2026-10-30T16:42:53.605Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "For Copilot Business and Copilot Enterprise, an administrator needs to enable the GitHub Copilot app policy, and can use enterprise managed settings to control which plugins developers can install.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-security-extension-for-the-github-copilot-app",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:45:00.000Z",
+        "checkedAt": "2026-10-30T16:42:53.605Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Learn more in the security extension documentation and join the discussion in GitHub Community .",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-security-extension-for-the-github-copilot-app",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:45:00.000Z",
+        "checkedAt": "2026-10-30T16:42:53.605Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "GitHub Enterprise now includes access to GitHub Copilot",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-security-extension-for-the-github-copilot-app",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:45:00.000Z",
+        "checkedAt": "2026-10-30T16:42:53.605Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 2,
+    "practicalImpact": 2,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PRODUCT_LAUNCH",
+      "PREVIEW",
+      "SECURITY_MENTION",
+      "CONSUMER"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 8,
+    "total": 8
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 PRODUCT_LAUNCH·PREVIEW·SECURITY_MENTION·CONSUMER (우선순위 8)",
+    "근거 확인 통과 (확인 사실 9개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "none",
+    "model": null,
+    "status": "skipped",
+    "error": "Shadow Mode — 원고를 만들지 않음",
+    "promptVersion": "draft-v1",
+    "at": "2026-10-31T01:33:34.021Z",
+    "evidenceHash": "5e9afa730820"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}

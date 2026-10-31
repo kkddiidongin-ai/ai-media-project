@@ -1,0 +1,221 @@
+{
+  "id": "feb912e225e8",
+  "date": "2026-10-31",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Managing Amazon Bedrock costs end to end: A playbook for FinOps and platform teams",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/managing-amazon-bedrock-costs-end-to-end-a-playbook-for-finops-and-platform-teams/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-10-30T22:42:24.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "feb912e225e8",
+    "url": "https://aws.amazon.com/blogs/machine-learning/managing-amazon-bedrock-costs-end-to-end-a-playbook-for-finops-and-platform-teams/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/managing-amazon-bedrock-costs-end-to-end-a-playbook-for-finops-and-platform-teams",
+    "title": "Managing Amazon Bedrock costs end to end: A playbook for FinOps and platform teams",
+    "excerpt": "This post presents a five-stage operating model for managing Amazon Bedrock cost: attribute every dollar to an owner, make every request observable, enforce budgets, optimize platform defaults, and operate a review cadence. Written for FinOps and platform engineering teams.",
+    "publishedAt": "2026-10-30T22:42:24.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-10-31T01:32:23.063Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 17324,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "This post presents a five-stage operating model for managing Amazon Bedrock cost: attribute every dollar to an owner, make every request observable, enforce budgets, optimize platform defaults, and operate a review cadence. Written for FinOps and platform engineering teams.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/managing-amazon-bedrock-costs-end-to-end-a-playbook-for-finops-and-platform-teams/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-30T22:42:24.000Z",
+        "checkedAt": "2026-10-31T01:33:33.671Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Managing Amazon Bedrock costs end to end: A playbook for FinOps and platform teams | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/managing-amazon-bedrock-costs-end-to-end-a-playbook-for-finops-and-platform-teams/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-30T22:42:24.000Z",
+        "checkedAt": "2026-10-31T01:33:33.671Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Managing Amazon Bedrock costs end to end: A playbook for FinOps and platform teams",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/managing-amazon-bedrock-costs-end-to-end-a-playbook-for-finops-and-platform-teams/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-30T22:42:24.000Z",
+        "checkedAt": "2026-10-31T01:33:33.671Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Published averages are a poor substitute for your own numbers: use the AWS Pricing Calculator and the Amazon Bedrock pricing page to model rates, and use Step 2 of this post to measure what your workloads actually consume.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/managing-amazon-bedrock-costs-end-to-end-a-playbook-for-finops-and-platform-teams/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-30T22:42:24.000Z",
+        "checkedAt": "2026-10-31T01:33:33.671Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "The foundation is the granular cost attribution of Amazon Bedrock (see Introducing granular cost attribution for Amazon Bedrock ): Amazon Bedrock automatically attributes inference costs to the AWS Identity and Access Management (IAM) principal that made the call, across all m…",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/managing-amazon-bedrock-costs-end-to-end-a-playbook-for-finops-and-platform-teams/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-30T22:42:24.000Z",
+        "checkedAt": "2026-10-31T01:33:33.671Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "You pass the project ID at client initialization, and its tags flow to CUR 2.0 and Cost Explorer (see Manage AI costs with Amazon Bedrock Projects ).",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/managing-amazon-bedrock-costs-end-to-end-a-playbook-for-finops-and-platform-teams/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-30T22:42:24.000Z",
+        "checkedAt": "2026-10-31T01:33:33.671Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Amazon Bedrock supports model invocation logging of request data, response data, and metadata to Amazon CloudWatch Logs, Amazon Simple Storage Service (Amazon S3), or both.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/managing-amazon-bedrock-costs-end-to-end-a-playbook-for-finops-and-platform-teams/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-30T22:42:24.000Z",
+        "checkedAt": "2026-10-31T01:33:33.671Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Use Amazon CloudWatch for fast operational queries and S3 plus Amazon Athena for long-term business intelligence (BI) access.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/managing-amazon-bedrock-costs-end-to-end-a-playbook-for-finops-and-platform-teams/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-30T22:42:24.000Z",
+        "checkedAt": "2026-10-31T01:33:33.671Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Logging also closes the latency gap: CUR attribution lags roughly 24 hours, but CloudWatch plus OpenTelemetry can power near-real-time dashboards showing per-developer spend within minutes ( Analyzing Claude Code usage with CloudWatch and OpenTelemetry demonstrates this end to…",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/managing-amazon-bedrock-costs-end-to-end-a-playbook-for-finops-and-platform-teams/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-30T22:42:24.000Z",
+        "checkedAt": "2026-10-31T01:33:33.671Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "The following example uses Anthropic Claude Sonnet 5.5 on Amazon Bedrock through the US cross-Region inference profile.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/managing-amazon-bedrock-costs-end-to-end-a-playbook-for-finops-and-platform-teams/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-30T22:42:24.000Z",
+        "checkedAt": "2026-10-31T01:33:33.671Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Two builder guides walk through it: Limiting Bedrock usage and controlling costs , and Deep dive on managing Bedrock in Claude Code with AWS Budgets and Tags .",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/managing-amazon-bedrock-costs-end-to-end-a-playbook-for-finops-and-platform-teams/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-30T22:42:24.000Z",
+        "checkedAt": "2026-10-31T01:33:33.671Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "This enforcement runs entirely on IAM and Amazon Bedrock logging, with no third-party component in the inference path, and it works with tools that call Amazon Bedrock directly.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/managing-amazon-bedrock-costs-end-to-end-a-playbook-for-finops-and-platform-teams/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-30T22:42:24.000Z",
+        "checkedAt": "2026-10-31T01:33:33.671Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "For mixed-model workloads spanning multiple providers, general-purpose gateways remain the right choice: LiteLLM through the Amazon Elastic Container Service (Amazon ECS) on AWS Fargate reference architecture , or a serverless alternative described in Build a proactive AI cost…",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/managing-amazon-bedrock-costs-end-to-end-a-playbook-for-finops-and-platform-teams/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-30T22:42:24.000Z",
+        "checkedAt": "2026-10-31T01:33:33.671Z"
+      }
+    ],
+    "pageDate": "2026-10-30T22:42:24.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "API_PLATFORM"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 API_PLATFORM (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

@@ -1,0 +1,235 @@
+{
+  "id": "44854634469c",
+  "date": "2026-10-31",
+  "proposedSlug": "worldwide-express-automated-freight-exceptions-amazon-bedroc",
+  "title": null,
+  "sourceTitle": "How Worldwide Express automated freight exceptions with Amazon Bedrock",
+  "depth": null,
+  "suggestedDepth": "DEEP",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": true,
+      "novelty": true,
+      "userImpact": true,
+      "contextNeed": true,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": true
+    },
+    "deepMissing": []
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-worldwide-express-automated-freight-exceptions-with-amazon-bedrock/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-10-30T17:32:20.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "44854634469c",
+    "url": "https://aws.amazon.com/blogs/machine-learning/how-worldwide-express-automated-freight-exceptions-with-amazon-bedrock/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/how-worldwide-express-automated-freight-exceptions-with-amazon-bedrock",
+    "title": "How Worldwide Express automated freight exceptions with Amazon Bedrock",
+    "excerpt": "Worldwide Express automated its less-than-truckload freight billing-exception process with a multi-agent solution built on Amazon Bedrock. Six months after launch, the company cut active exceptions by 75%, improved time-to-cash by four weeks, and unlocked $10 million in free cash flow.",
+    "publishedAt": "2026-10-30T17:32:20.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-10-31T01:32:23.063Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 7860,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Worldwide Express automated its less-than-truckload freight billing-exception process with a multi-agent solution built on Amazon Bedrock. Six months after launch, the company cut active exceptions by 75%, improved time-to-cash by four weeks, and unlocked $10 million in free cash flow.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-worldwide-express-automated-freight-exceptions-with-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-30T17:32:20.000Z",
+        "checkedAt": "2026-10-31T01:33:31.162Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "How Worldwide Express automated freight exceptions with Amazon Bedrock | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-worldwide-express-automated-freight-exceptions-with-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-30T17:32:20.000Z",
+        "checkedAt": "2026-10-31T01:33:31.162Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "How Worldwide Express automated freight exceptions with Amazon Bedrock",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-worldwide-express-automated-freight-exceptions-with-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-30T17:32:20.000Z",
+        "checkedAt": "2026-10-31T01:33:31.162Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Worldwide Express (part of ShipStation Global) had built something big: approximately $5 billion in systemwide revenue, over 75 less-than-truckload (LTL) carriers and more than 130,000 customers.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-worldwide-express-automated-freight-exceptions-with-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-30T17:32:20.000Z",
+        "checkedAt": "2026-10-31T01:33:31.162Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Worldwide Express worked with AWS and LTM to build a multi-agentic AI solution with Amazon Bedrock that plugs directly into their transportation management system (TMS), SpeedShip.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-worldwide-express-automated-freight-exceptions-with-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-30T17:32:20.000Z",
+        "checkedAt": "2026-10-31T01:33:31.162Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Six months after launch, the company reported a 75 percent reduction in active exceptions, a 4-week improvement in time-to-cash, $1M annual savings, and a one-time $10M free cash flow infusion.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-worldwide-express-automated-freight-exceptions-with-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-30T17:32:20.000Z",
+        "checkedAt": "2026-10-31T01:33:31.162Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "In June 2025, Worldwide Express engaged the AWS Business Transformation & Value Advisory team to identify 19 automation opportunities across the Order-to-Cash lifecycle.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-worldwide-express-automated-freight-exceptions-with-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-30T17:32:20.000Z",
+        "checkedAt": "2026-10-31T01:33:31.162Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Knowing the business value of exceptions automation, Worldwide Express moved from assessment to production in less than 6 months.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-worldwide-express-automated-freight-exceptions-with-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-30T17:32:20.000Z",
+        "checkedAt": "2026-10-31T01:33:31.162Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Amazon Bedrock provides AI reasoning, and Amazon Elastic Compute Cloud (Amazon EC2) is the engine.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-worldwide-express-automated-freight-exceptions-with-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-30T17:32:20.000Z",
+        "checkedAt": "2026-10-31T01:33:31.162Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Building the framework directly on Amazon EC2, with Amazon Bedrock providing inference, keeps that orchestration logic fully in the team’s hands and supports open source agent libraries.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-worldwide-express-automated-freight-exceptions-with-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-30T17:32:20.000Z",
+        "checkedAt": "2026-10-31T01:33:31.162Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Each agent runs on Amazon EC2 with Auto Scaling, uses an agent framework with its own prompt, tools, and carrier knowledge base, and calls Amazon Bedrock for model inference.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-worldwide-express-automated-freight-exceptions-with-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-30T17:32:20.000Z",
+        "checkedAt": "2026-10-31T01:33:31.162Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Figure 1: Worldwide Express’s AI-powered exception handling architecture on AWS",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-worldwide-express-automated-freight-exceptions-with-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-30T17:32:20.000Z",
+        "checkedAt": "2026-10-31T01:33:31.162Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "The combination of Amazon Bedrock, carrier-specific knowledge bases, and a human-in-the-loop approval design let Worldwide Express move from assessment to production in less than 6 months while maintaining financial controls.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-worldwide-express-automated-freight-exceptions-with-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-30T17:32:20.000Z",
+        "checkedAt": "2026-10-31T01:33:31.162Z"
+      }
+    ],
+    "pageDate": "2026-10-30T17:32:20.000Z"
+  },
+  "score": {
+    "importance": 4,
+    "practicalImpact": 3,
+    "koreanRelevance": 1,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PRODUCT_LAUNCH",
+      "PRICING",
+      "AVAILABILITY",
+      "API_PLATFORM"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 14,
+    "total": 14
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 PRODUCT_LAUNCH·PRICING·AVAILABILITY·API_PLATFORM (우선순위 14)",
+    "근거 확인 통과 (확인 사실 11개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [
+    "deep_requires_editor"
+  ],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "none",
+    "model": null,
+    "status": "skipped",
+    "error": "Shadow Mode — 원고를 만들지 않음",
+    "promptVersion": "draft-v1",
+    "at": "2026-10-31T01:33:34.020Z",
+    "evidenceHash": "acfc35613ca5"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": false,
+    "reasons": [
+      "DEEP 후보 — 사람의 별도 승인 없이 자동 작성하지 않음 (편집자가 직접 작성)"
+    ]
+  },
+  "draftFile": null,
+  "newsletterCandidate": true,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}

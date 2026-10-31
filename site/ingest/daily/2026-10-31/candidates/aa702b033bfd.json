@@ -1,0 +1,221 @@
+{
+  "id": "aa702b033bfd",
+  "date": "2026-10-31",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Lend and borrow resources across teams with AWS Batch’s quota management for SageMaker Training jobs",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/lend-and-borrow-resources-across-teams-with-aws-batchs-quota-management-for-sagemaker-training-jobs/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-10-29T16:58:57.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "aa702b033bfd",
+    "url": "https://aws.amazon.com/blogs/machine-learning/lend-and-borrow-resources-across-teams-with-aws-batchs-quota-management-for-sagemaker-training-jobs/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/lend-and-borrow-resources-across-teams-with-aws-batchs-quota-management-for-sagemaker-training-jobs",
+    "title": "Lend and borrow resources across teams with AWS Batch’s quota management for SageMaker Training jobs",
+    "excerpt": "AWS Batch quota management is a new scheduling capability you can use to divide GPU capacity into quota shares per team or project, automatically lend idle capacity across shares, and use preemption to run your highest-priority SageMaker Training jobs first, all without manual coordination.",
+    "publishedAt": "2026-10-29T16:58:57.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-10-31T01:32:23.063Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 10860,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "AWS Batch quota management is a new scheduling capability you can use to divide GPU capacity into quota shares per team or project, automatically lend idle capacity across shares, and use preemption to run your highest-priority SageMaker Training jobs first, all without manual coordination.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/lend-and-borrow-resources-across-teams-with-aws-batchs-quota-management-for-sagemaker-training-jobs/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-29T16:58:57.000Z",
+        "checkedAt": "2026-10-30T16:43:07.093Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Lend and borrow resources across teams with AWS Batch’s quota management for SageMaker Training jobs | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/lend-and-borrow-resources-across-teams-with-aws-batchs-quota-management-for-sagemaker-training-jobs/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-29T16:58:57.000Z",
+        "checkedAt": "2026-10-30T16:43:07.093Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Lend and borrow resources across teams with AWS Batch’s quota management for SageMaker Training jobs",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/lend-and-borrow-resources-across-teams-with-aws-batchs-quota-management-for-sagemaker-training-jobs/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-29T16:58:57.000Z",
+        "checkedAt": "2026-10-30T16:43:07.093Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "With the launch of AWS Batch support for Amazon SageMaker Training jobs, customers gained a new fully managed way to queue, schedule, and retry machine learning (ML) training workloads without building their own infrastructure.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/lend-and-borrow-resources-across-teams-with-aws-batchs-quota-management-for-sagemaker-training-jobs/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-29T16:58:57.000Z",
+        "checkedAt": "2026-10-30T16:43:07.093Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "These strategies determine whether idle compute is reserved until jobs arrive ( RESERVE ), lent to other quota shares that have work available ( LEND ), or both lent when idle and borrowed when the share has work that might benefit ( LEND_AND_BORROW ).",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/lend-and-borrow-resources-across-teams-with-aws-batchs-quota-management-for-sagemaker-training-jobs/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-29T16:58:57.000Z",
+        "checkedAt": "2026-10-30T16:43:07.093Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "When scheduling jobs for a job queue, AWS Batch prioritizes quota shares that are under their capacity limits as it iterates through the associated quota shares.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/lend-and-borrow-resources-across-teams-with-aws-batchs-quota-management-for-sagemaker-training-jobs/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-29T16:58:57.000Z",
+        "checkedAt": "2026-10-30T16:43:07.093Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "If jobs arrive in a quota share that is at or above its capacity limit, AWS Batch checks whether there’s available capacity to borrow from another quota share.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/lend-and-borrow-resources-across-teams-with-aws-batchs-quota-management-for-sagemaker-training-jobs/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-29T16:58:57.000Z",
+        "checkedAt": "2026-10-30T16:43:07.093Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "The user guide has AWS Command Line Interface (AWS CLI) and console examples for configuring quota management resources and quota shares .",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/lend-and-borrow-resources-across-teams-with-aws-batchs-quota-management-for-sagemaker-training-jobs/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-29T16:58:57.000Z",
+        "checkedAt": "2026-10-30T16:43:07.093Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "An end-to-end example of quota management integrated with the aws_batch module in the SageMaker Python SDK v3 is contained in a sample notebook .",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/lend-and-borrow-resources-across-teams-with-aws-batchs-quota-management-for-sagemaker-training-jobs/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-29T16:58:57.000Z",
+        "checkedAt": "2026-10-30T16:43:07.093Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "from utils.aws_batch_resource_management import AwsBatchResourceManager, QuotaShareConfig, create_quota_management_resources",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/lend-and-borrow-resources-across-teams-with-aws-batchs-quota-management-for-sagemaker-training-jobs/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-29T16:58:57.000Z",
+        "checkedAt": "2026-10-30T16:43:07.093Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "The aws_batch module within the SageMaker Python SDK has been extended to allow programmatic submission of SageMaker Training jobs to a quota-management-enabled AWS Batch job queue.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/lend-and-borrow-resources-across-teams-with-aws-batchs-quota-management-for-sagemaker-training-jobs/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-29T16:58:57.000Z",
+        "checkedAt": "2026-10-30T16:43:07.093Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "We can then submit three jobs to QS1, our background jobs quota share.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/lend-and-borrow-resources-across-teams-with-aws-batchs-quota-management-for-sagemaker-training-jobs/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-29T16:58:57.000Z",
+        "checkedAt": "2026-10-30T16:43:07.093Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "In this post, we covered quota management, a new scheduling capability in AWS Batch, and how to use it with SageMaker Training jobs and get started setting up quota shares for your own projects.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/lend-and-borrow-resources-across-teams-with-aws-batchs-quota-management-for-sagemaker-training-jobs/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-29T16:58:57.000Z",
+        "checkedAt": "2026-10-30T16:43:07.093Z"
+      }
+    ],
+    "pageDate": "2026-10-29T16:58:57.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "INFRA"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 INFRA (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

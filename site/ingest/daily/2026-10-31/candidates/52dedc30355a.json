@@ -1,0 +1,221 @@
+{
+  "id": "52dedc30355a",
+  "date": "2026-10-31",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Run AI Models for Edge Application Development with Just a Few Commands",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 9,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "NVIDIA",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands/",
+      "name": "NVIDIA Technical Blog",
+      "type": "official",
+      "publishedAt": "2026-10-30T20:33:18.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "52dedc30355a",
+    "url": "https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands/",
+    "canonicalUrl": "https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands",
+    "title": "Run AI Models for Edge Application Development with Just a Few Commands",
+    "excerpt": "AI is expanding beyond the data center as developers build a new generation of agents to act at the edge: monitoring driver attention and cabin conditions,...",
+    "publishedAt": "2026-10-30T20:33:18.000Z",
+    "sourceId": "nvidia-developer",
+    "sourceName": "NVIDIA Technical Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://developer.nvidia.com/blog/feed",
+    "fetchedAt": "2026-10-31T01:32:23.063Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 9014,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "AI is expanding beyond the data center as developers build a new generation of agents to act at the edge: monitoring driver attention and cabin conditions,...",
+        "sourceUrl": "https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-30T20:33:18.000Z",
+        "checkedAt": "2026-10-31T01:33:33.878Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Run AI Models for Edge Application Development with Just a Few Commands | NVIDIA Technical Blog",
+        "sourceUrl": "https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-30T20:33:18.000Z",
+        "checkedAt": "2026-10-31T01:33:33.878Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Run AI Models for Edge Application Development with Just a Few Commands",
+        "sourceUrl": "https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-30T20:33:18.000Z",
+        "checkedAt": "2026-10-31T01:33:33.878Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "NVIDIA TensorRT Edge-LLM makes it easy to get started with AI development for embedded devices on the NVIDIA DGX Spark 64GB.",
+        "sourceUrl": "https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-30T20:33:18.000Z",
+        "checkedAt": "2026-10-31T01:33:33.878Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "NVIDIA DGX Spark 64GB provides a platform for embedded developers to prototype, fine-tune, and test AI models and agents.",
+        "sourceUrl": "https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-30T20:33:18.000Z",
+        "checkedAt": "2026-10-31T01:33:33.878Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "The trtedge CLI downloads models and builds optimized TensorRT engines, enabling a chat session with Nemotron-3.5 Lightning in a few commands.",
+        "sourceUrl": "https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-30T20:33:18.000Z",
+        "checkedAt": "2026-10-31T01:33:33.878Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "AI is expanding beyond the data center as developers build a new generation of agents to act at the edge: monitoring driver attention and cabin conditions, helping robots understand their surroundings and plan tasks, and coordinating fleets of machines on production lines.",
+        "sourceUrl": "https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-30T20:33:18.000Z",
+        "checkedAt": "2026-10-31T01:33:33.878Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "NVIDIA DGX Spark, now available in a 64GB configuration , gives embedded developers a platform to prototype, fine-tune, and test models and agents.",
+        "sourceUrl": "https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-30T20:33:18.000Z",
+        "checkedAt": "2026-10-31T01:33:33.878Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "You can get started in just a few commands with the trtedge command-line interface (CLI).",
+        "sourceUrl": "https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-30T20:33:18.000Z",
+        "checkedAt": "2026-10-31T01:33:33.878Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "In this tutorial, you’ll run NVIDIA Nemotron-3.5 Lightning , a text-only model, on Spark using TensorRT Edge-LLM.",
+        "sourceUrl": "https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-30T20:33:18.000Z",
+        "checkedAt": "2026-10-31T01:33:33.878Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "On your first launch, wait for the model download (approximately 21GB) and engine build to finish.",
+        "sourceUrl": "https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-30T20:33:18.000Z",
+        "checkedAt": "2026-10-31T01:33:33.878Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Agentic AI / Generative AI | Developer Tools & Techniques | Edge Computing | Automotive / Transportation | Healthcare & Life Sciences | Nemotron | TensorRT | TensorRT-LLM | Intermediate Technical | Tutorial | AI Inference | DGX Spark | LLMs | Machine Learning & Artificial Inte…",
+        "sourceUrl": "https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-30T20:33:18.000Z",
+        "checkedAt": "2026-10-31T01:33:33.878Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Maximilien Breughe is an engineering manager and software engineer at NVIDIA, where he works on AI inference systems and edge AI technologies.",
+        "sourceUrl": "https://developer.nvidia.com/blog/run-ai-models-for-edge-application-development-with-just-a-few-commands/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-10-30T20:33:18.000Z",
+        "checkedAt": "2026-10-31T01:33:33.878Z"
+      }
+    ],
+    "pageDate": "2026-10-30T20:33:18.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "INFRA"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 INFRA (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

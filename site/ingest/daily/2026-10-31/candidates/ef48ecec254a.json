@@ -1,0 +1,235 @@
+{
+  "id": "ef48ecec254a",
+  "date": "2026-10-31",
+  "proposedSlug": "create-preview-edit-files-directly-gemini-app",
+  "title": null,
+  "sourceTitle": "Create, preview, and edit files directly in the Gemini app",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": true,
+      "novelty": true,
+      "userImpact": true,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Google",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://workspaceupdates.googleblog.com/2026/10/create-preview-and-edit-files-directly-in-the-Gemini-app.html",
+      "name": "Google Workspace Updates",
+      "type": "official",
+      "publishedAt": "2026-10-29T18:43:11.753Z"
+    }
+  ],
+  "candidate": {
+    "id": "ef48ecec254a",
+    "url": "https://workspaceupdates.googleblog.com/2026/10/create-preview-and-edit-files-directly-in-the-Gemini-app.html",
+    "canonicalUrl": "https://workspaceupdates.googleblog.com/2026/10/create-preview-and-edit-files-directly-in-the-Gemini-app.html",
+    "title": "Create, preview, and edit files directly in the Gemini app",
+    "excerpt": "We’re introducing new ways to create and refine files and code in the Gemini app. You can now generate, preview, and edit files right within your Gemini app chat—expand to full screen to type edits directly, highlight text to ask questions, or have Gemini refine them. PDF preview and editing is supp",
+    "publishedAt": "2026-10-29T18:43:11.753Z",
+    "sourceId": "google-workspace-updates",
+    "sourceName": "Google Workspace Updates",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://workspaceupdates.googleblog.com/feeds/posts/default?max-results=500&published-min=2026-01-01T00:00:00Z",
+    "fetchedAt": "2026-10-31T01:32:23.063Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 3154,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "We’re introducing new ways to create and refine files and code in the Gemini app. You can now generate, preview, and edit files right within your Gemini app chat—expand to full screen to type edits directly, highlight text to ask questions, or have Gemini refine them. PDF preview and editing is supp",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/create-preview-and-edit-files-directly-in-the-Gemini-app.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-29T18:43:11.753Z",
+        "checkedAt": "2026-10-30T16:42:49.227Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Google Workspace Updates: Create, preview, and edit files directly in the Gemini app",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/create-preview-and-edit-files-directly-in-the-Gemini-app.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-29T18:43:11.753Z",
+        "checkedAt": "2026-10-30T16:42:49.227Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Create, preview, and edit files directly in the Gemini app",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/create-preview-and-edit-files-directly-in-the-Gemini-app.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-29T18:43:11.753Z",
+        "checkedAt": "2026-10-30T16:42:49.227Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "We’re introducing new ways to create and refine files and code in the Gemini app.",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/create-preview-and-edit-files-directly-in-the-Gemini-app.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-29T18:43:11.753Z",
+        "checkedAt": "2026-10-30T16:42:49.227Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "You can now generate, preview, and edit files right within your Gemini app chat—expand to full screen to type edits directly, highlight text to ask questions, or have Gemini refine them.",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/create-preview-and-edit-files-directly-in-the-Gemini-app.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-29T18:43:11.753Z",
+        "checkedAt": "2026-10-30T16:42:49.227Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "PDF preview and editing is supported on both the web and mobile, while all other formats (documents, spreadsheets, slide decks, Markdown files, TXT files, and code) are supported on the web only.",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/create-preview-and-edit-files-directly-in-the-Gemini-app.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-29T18:43:11.753Z",
+        "checkedAt": "2026-10-30T16:42:49.227Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Generate and refine slide decks: Create presentation outlines or slide content, preview the layout in chat, and edit directly or ask Gemini to adjust the tone and structure before opening in Google Slides, or downloading as a PPTX or PDF.",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/create-preview-and-edit-files-directly-in-the-Gemini-app.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-29T18:43:11.753Z",
+        "checkedAt": "2026-10-30T16:42:49.227Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Build and export Google Sheets: Generate structured trackers, tables, and data models from a prompt, preview them in Gemini, and open them directly in Google Sheets.",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/create-preview-and-edit-files-directly-in-the-Gemini-app.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-29T18:43:11.753Z",
+        "checkedAt": "2026-10-30T16:42:49.227Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Edit documents and PDFs: Quickly draft PDFs, Google Docs, LaTeX, Markdown, or TXT files, and make manual or prompted edits inline on web or in a full-screen view—plus you can upload all of them to Drive.",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/create-preview-and-edit-files-directly-in-the-Gemini-app.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-29T18:43:11.753Z",
+        "checkedAt": "2026-10-30T16:42:49.227Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "These capabilities are now available to all users in all languages where the Gemini app is available.",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/create-preview-and-edit-files-directly-in-the-Gemini-app.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-29T18:43:11.753Z",
+        "checkedAt": "2026-10-30T16:42:49.227Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Visit the Help Center to learn more about turning the Gemini app on or off .",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/create-preview-and-edit-files-directly-in-the-Gemini-app.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-29T18:43:11.753Z",
+        "checkedAt": "2026-10-30T16:42:49.227Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "End users: Users of all ages who have access to the Gemini app can generate files.",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/create-preview-and-edit-files-directly-in-the-Gemini-app.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-29T18:43:11.753Z",
+        "checkedAt": "2026-10-30T16:42:49.227Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "News from Google: You can now preview and edit documents, PDFs, presentations, spreadsheets, and more directly in Gemini",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/create-preview-and-edit-files-directly-in-the-Gemini-app.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-29T18:43:11.753Z",
+        "checkedAt": "2026-10-30T16:42:49.227Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 4,
+    "practicalImpact": 3,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "MODEL",
+      "PRODUCT_LAUNCH",
+      "AVAILABILITY",
+      "PREVIEW",
+      "CONSUMER"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 13,
+    "total": 13
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 MODEL·PRODUCT_LAUNCH·AVAILABILITY·PREVIEW·CONSUMER (우선순위 13)",
+    "근거 확인 통과 (확인 사실 11개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "none",
+    "model": null,
+    "status": "skipped",
+    "error": "Shadow Mode — 원고를 만들지 않음",
+    "promptVersion": "draft-v1",
+    "at": "2026-10-31T01:33:34.021Z",
+    "evidenceHash": "dc160b13a2e3"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": true,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}

@@ -1,0 +1,222 @@
+{
+  "id": "3a9465403c21",
+  "date": "2026-10-31",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Copilot Automations now learn from outcomes and self-improve",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 8,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": false,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "evidenceQuality",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "GitHub",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://github.blog/changelog/2026-10-28-copilot-automations-now-learn-from-outcomes-and-self-improve",
+      "name": "GitHub Changelog",
+      "type": "official",
+      "publishedAt": "2026-10-28T15:30:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "3a9465403c21",
+    "url": "https://github.blog/changelog/2026-10-28-copilot-automations-now-learn-from-outcomes-and-self-improve",
+    "canonicalUrl": "https://github.blog/changelog/2026-10-28-copilot-automations-now-learn-from-outcomes-and-self-improve",
+    "title": "Copilot Automations now learn from outcomes and self-improve",
+    "excerpt": "Copilot Automations can now learn from their outcomes and propose improvements to themselves, helping them produce better results over time. It’s easy to create an automation, but harder to build… The post Copilot Automations now learn from outcomes and self-improve appeared first on The GitHub Blog",
+    "publishedAt": "2026-10-28T15:30:00.000Z",
+    "sourceId": "github-changelog",
+    "sourceName": "GitHub Changelog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://github.blog/changelog/feed/?paged=3",
+    "fetchedAt": "2026-10-31T01:32:23.063Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 2063,
+    "grade": "LIMITED",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Copilot Automations can now learn from their outcomes and propose improvements to themselves, helping them produce better results over time. It’s easy to create an automation, but harder to build… The post Copilot Automations now learn from outcomes and self-improve appeared first on The GitHub Blog",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-copilot-automations-now-learn-from-outcomes-and-self-improve",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-30T16:43:05.342Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Copilot Automations now learn from outcomes and self-improve - GitHub Changelog",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-copilot-automations-now-learn-from-outcomes-and-self-improve",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-30T16:43:05.342Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Copilot Automations can now learn from their outcomes and propose improvements to themselves, helping them produce better results over time.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-copilot-automations-now-learn-from-outcomes-and-self-improve",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-30T16:43:05.342Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Self-improvement uses feedback from real outcomes on GitHub to make that process easier.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-copilot-automations-now-learn-from-outcomes-and-self-improve",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-30T16:43:05.342Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Your automations leave a trail of signals on GitHub that show how well they&rsquo;re working.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-copilot-automations-now-learn-from-outcomes-and-self-improve",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-30T16:43:05.342Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "An issue triage automation can learn from whether people change the labels it applied.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-copilot-automations-now-learn-from-outcomes-and-self-improve",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-30T16:43:05.342Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "A code review automation can learn from whether developers accept its comments.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-copilot-automations-now-learn-from-outcomes-and-self-improve",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-30T16:43:05.342Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "A performance optimization automation can learn from whether maintainers merge the pull requests it opens.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-copilot-automations-now-learn-from-outcomes-and-self-improve",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-30T16:43:05.342Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Self-improving automations use these signals to propose improvements to their prompts.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-copilot-automations-now-learn-from-outcomes-and-self-improve",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-30T16:43:05.342Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "When you ask Copilot to set up a self-improving automation, it can create a group of automations that work together.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-copilot-automations-now-learn-from-outcomes-and-self-improve",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-30T16:43:05.342Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "To learn more, see about Copilot Automations .",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-copilot-automations-now-learn-from-outcomes-and-self-improve",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-30T16:43:05.342Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Copilot Automations is available with Copilot Pro, Pro+, Max, Business, and Enterprise plans.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-copilot-automations-now-learn-from-outcomes-and-self-improve",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-30T16:43:05.342Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Build shared workflows for your team with Copilot Automations",
+        "sourceUrl": "https://github.blog/changelog/2026-10-28-copilot-automations-now-learn-from-outcomes-and-self-improve",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-28T15:30:00.000Z",
+        "checkedAt": "2026-10-30T16:43:05.342Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PRODUCT_LAUNCH"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 PRODUCT_LAUNCH (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}
