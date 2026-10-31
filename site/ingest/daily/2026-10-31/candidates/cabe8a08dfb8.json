@@ -1,0 +1,235 @@
+{
+  "id": "cabe8a08dfb8",
+  "date": "2026-10-31",
+  "proposedSlug": "configure-chatgpt-desktop-app-amazon-bedrock-aws",
+  "title": null,
+  "sourceTitle": "Configure the ChatGPT desktop app with Amazon Bedrock in AWS GovCloud (US)",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 10,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": true,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/configure-the-chatgpt-desktop-app-with-amazon-bedrock-in-aws-govcloud-us/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-10-30T17:27:45.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "cabe8a08dfb8",
+    "url": "https://aws.amazon.com/blogs/machine-learning/configure-the-chatgpt-desktop-app-with-amazon-bedrock-in-aws-govcloud-us/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/configure-the-chatgpt-desktop-app-with-amazon-bedrock-in-aws-govcloud-us",
+    "title": "Configure the ChatGPT desktop app with Amazon Bedrock in AWS GovCloud (US)",
+    "excerpt": "The ChatGPT desktop app is now available on Amazon Bedrock in AWS GovCloud (US). This post walks through a controlled local deployment that routes model inference to Amazon Bedrock in AWS GovCloud (US-West) using API-mode sign-in, a managed device policy, a named AWS profile, and network restriction",
+    "publishedAt": "2026-10-30T17:27:45.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-10-31T01:32:23.063Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 9899,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "The ChatGPT desktop app is now available on Amazon Bedrock in AWS GovCloud (US). This post walks through a controlled local deployment that routes model inference to Amazon Bedrock in AWS GovCloud (US-West) using API-mode sign-in, a managed device policy, a named AWS profile, and network restriction",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/configure-the-chatgpt-desktop-app-with-amazon-bedrock-in-aws-govcloud-us/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-30T17:27:45.000Z",
+        "checkedAt": "2026-10-31T01:33:31.306Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Configure the ChatGPT desktop app with Amazon Bedrock in AWS GovCloud (US) | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/configure-the-chatgpt-desktop-app-with-amazon-bedrock-in-aws-govcloud-us/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-30T17:27:45.000Z",
+        "checkedAt": "2026-10-31T01:33:31.306Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Configure the ChatGPT desktop app with Amazon Bedrock in AWS GovCloud (US)",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/configure-the-chatgpt-desktop-app-with-amazon-bedrock-in-aws-govcloud-us/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-30T17:27:45.000Z",
+        "checkedAt": "2026-10-31T01:33:31.306Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "The ChatGPT desktop app is now available on Amazon Bedrock in AWS GovCloud (US) , providing access to OpenAI’s frontier models through two components.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/configure-the-chatgpt-desktop-app-with-amazon-bedrock-in-aws-govcloud-us/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-30T17:27:45.000Z",
+        "checkedAt": "2026-10-31T01:33:31.306Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "It configures Codex to route model requests through Amazon Bedrock Mantle in us-gov-west-1 , where access can be governed using AWS Identity and Access Management (IAM) and existing AWS GovCloud (US) network controls.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/configure-the-chatgpt-desktop-app-with-amazon-bedrock-in-aws-govcloud-us/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-30T17:27:45.000Z",
+        "checkedAt": "2026-10-31T01:33:31.306Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "This post walks through a controlled local deployment of the ChatGPT desktop app that sends model inference to Amazon Bedrock in AWS GovCloud (US-West).",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/configure-the-chatgpt-desktop-app-with-amazon-bedrock-in-aws-govcloud-us/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-30T17:27:45.000Z",
+        "checkedAt": "2026-10-31T01:33:31.306Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "The ChatGPT desktop app runs on an organization-managed computer through the desktop app or CLI.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/configure-the-chatgpt-desktop-app-with-amazon-bedrock-in-aws-govcloud-us/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-30T17:27:45.000Z",
+        "checkedAt": "2026-10-31T01:33:31.306Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "It uses the configured AWS credentials to securely send requests to the Amazon Bedrock Mantle endpoint in us-gov-west-1 .",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/configure-the-chatgpt-desktop-app-with-amazon-bedrock-in-aws-govcloud-us/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-30T17:27:45.000Z",
+        "checkedAt": "2026-10-31T01:33:31.306Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Before setting up the ChatGPT desktop app with AWS GovCloud (US), make sure your version of the ChatGPT desktop app supports Amazon Bedrock in AWS GovCloud (US).",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/configure-the-chatgpt-desktop-app-with-amazon-bedrock-in-aws-govcloud-us/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-30T17:27:45.000Z",
+        "checkedAt": "2026-10-31T01:33:31.306Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "The ChatGPT desktop app supports two Amazon Bedrock authentication pathways: an Amazon Bedrock API key or the AWS SDK credential chain .",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/configure-the-chatgpt-desktop-app-with-amazon-bedrock-in-aws-govcloud-us/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-30T17:27:45.000Z",
+        "checkedAt": "2026-10-31T01:33:31.306Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "The ChatGPT desktop app on Amazon Bedrock in AWS GovCloud (US) gives you a controlled way to use OpenAI frontier models and coding assistance.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/configure-the-chatgpt-desktop-app-with-amazon-bedrock-in-aws-govcloud-us/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-30T17:27:45.000Z",
+        "checkedAt": "2026-10-31T01:33:31.306Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Ready to explore the ChatGPT desktop app with Codex on Amazon Bedrock in AWS GovCloud (US)?",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/configure-the-chatgpt-desktop-app-with-amazon-bedrock-in-aws-govcloud-us/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-30T17:27:45.000Z",
+        "checkedAt": "2026-10-31T01:33:31.306Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Bedrock AWS GovCloud (US) configuration – ChatGPT desktop app device, provider, network, verification, and troubleshooting guidance.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/configure-the-chatgpt-desktop-app-with-amazon-bedrock-in-aws-govcloud-us/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-10-30T17:27:45.000Z",
+        "checkedAt": "2026-10-31T01:33:31.306Z"
+      }
+    ],
+    "pageDate": "2026-10-30T17:27:45.000Z"
+  },
+  "score": {
+    "importance": 3,
+    "practicalImpact": 3,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PRODUCT_LAUNCH",
+      "AVAILABILITY",
+      "API_PLATFORM",
+      "CONSUMER"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 11,
+    "total": 11
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 PRODUCT_LAUNCH·AVAILABILITY·API_PLATFORM·CONSUMER (우선순위 11)",
+    "근거 확인 통과 (확인 사실 10개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "none",
+    "model": null,
+    "status": "skipped",
+    "error": "Shadow Mode — 원고를 만들지 않음",
+    "promptVersion": "draft-v1",
+    "at": "2026-10-31T01:33:34.021Z",
+    "evidenceHash": "8071143def6c"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": true,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}

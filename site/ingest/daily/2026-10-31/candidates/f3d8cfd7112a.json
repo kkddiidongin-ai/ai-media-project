@@ -1,27 +1,25 @@
 {
   "id": "f3d8cfd7112a",
   "date": "2026-10-31",
-  "proposedSlug": null,
+  "proposedSlug": "immersive-explorations-available-gemini-app",
   "title": null,
   "sourceTitle": "Immersive explorations now available in the Gemini app",
   "depth": null,
-  "suggestedDepth": null,
+  "suggestedDepth": "STANDARD",
   "depthAssessment": {
-    "sufficiency": "INSUFFICIENT",
-    "distinctFacts": 0,
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 10,
     "deepChecks": {
       "importance": true,
       "novelty": true,
       "userImpact": true,
       "contextNeed": false,
-      "distinctFacts": false,
-      "evidenceQuality": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
       "standardWouldOmit": false
     },
     "deepMissing": [
       "contextNeed",
-      "distinctFacts",
-      "evidenceQuality",
       "standardWouldOmit"
     ]
   },
@@ -54,12 +52,12 @@
     "tier": 1,
     "fetchMode": "rss",
     "discoveredVia": "https://workspaceupdates.googleblog.com/feeds/posts/default?max-results=500&published-min=2026-01-01T00:00:00Z",
-    "fetchedAt": "2026-10-30T16:41:43.436Z"
+    "fetchedAt": "2026-10-31T01:32:23.063Z"
   },
   "evidence": {
-    "status": "HTTP_429",
-    "chars": 0,
-    "grade": "FAIL",
+    "status": "OK",
+    "chars": 3129,
+    "grade": "PASS",
     "ledger": [
       {
         "id": "E0",
@@ -68,7 +66,115 @@
         "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/immersive-explorations-now-available-in-the-Gemini-app.html",
         "source": "Google Workspace Updates",
         "publishedAt": "2026-10-28T18:21:30.362Z",
-        "checkedAt": "2026-10-30T16:42:49.306Z"
+        "checkedAt": "2026-10-31T01:33:31.236Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Google Workspace Updates: Immersive explorations now available in the Gemini app",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/immersive-explorations-now-available-in-the-Gemini-app.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-28T18:21:30.362Z",
+        "checkedAt": "2026-10-31T01:33:31.236Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Immersive explorations now available in the Gemini app",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/immersive-explorations-now-available-in-the-Gemini-app.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-28T18:21:30.362Z",
+        "checkedAt": "2026-10-31T01:33:31.236Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "We’re introducing a library of immersive explorations in the Gemini app, giving users an interactive, visual way to explore topics layer-by-layer, from microscopic systems to deep space.",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/immersive-explorations-now-available-in-the-Gemini-app.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-28T18:21:30.362Z",
+        "checkedAt": "2026-10-31T01:33:31.236Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Users can access this library in the Gemini student hub by clicking on “Try immersive explorations” and will soon be able to access these immersive explorations directly in a chat conversation with Gemini.",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/immersive-explorations-now-available-in-the-Gemini-app.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-28T18:21:30.362Z",
+        "checkedAt": "2026-10-31T01:33:31.236Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Immersive explorations will soon include audio narration to walk users through each layer.",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/immersive-explorations-now-available-in-the-Gemini-app.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-28T18:21:30.362Z",
+        "checkedAt": "2026-10-31T01:33:31.236Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "This feature is available on web and mobile to all users in the following languages: English, Indonesian, Hindi, Brazilian Portuguese, French, and simplified Chinese.",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/immersive-explorations-now-available-in-the-Gemini-app.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-28T18:21:30.362Z",
+        "checkedAt": "2026-10-31T01:33:31.236Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Visit the Help Center for more information on turning the Gemini app on or off .",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/immersive-explorations-now-available-in-the-Gemini-app.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-28T18:21:30.362Z",
+        "checkedAt": "2026-10-31T01:33:31.236Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "To get started, visit gemini.google.com/immersive-explorations or select Students in the Gemini app menu.",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/immersive-explorations-now-available-in-the-Gemini-app.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-28T18:21:30.362Z",
+        "checkedAt": "2026-10-31T01:33:31.236Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Rapid Release and Scheduled Release domains: Available now",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/immersive-explorations-now-available-in-the-Gemini-app.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-28T18:21:30.362Z",
+        "checkedAt": "2026-10-31T01:33:31.236Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Available to Education Fundamentals, Standard, and Plus",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/immersive-explorations-now-available-in-the-Gemini-app.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-28T18:21:30.362Z",
+        "checkedAt": "2026-10-31T01:33:31.236Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "In the Gemini app at at gemini.google.com/immersive-explorations :",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/immersive-explorations-now-available-in-the-Gemini-app.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-28T18:21:30.362Z",
+        "checkedAt": "2026-10-31T01:33:31.236Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "News from Google: Dive into new topics with immersive explorations in the Gemini app",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/immersive-explorations-now-available-in-the-Gemini-app.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-10-28T18:21:30.362Z",
+        "checkedAt": "2026-10-31T01:33:31.236Z"
       }
     ],
     "pageDate": null
@@ -79,7 +185,7 @@
     "koreanRelevance": 0,
     "novelty": 2,
     "sourceQuality": 3,
-    "verificationConfidence": 2,
+    "verificationConfidence": 3,
     "signals": [
       "MODEL",
       "PRODUCT_LAUNCH",
@@ -92,26 +198,36 @@
     "priority": 13,
     "total": 13
   },
-  "decision": "HOLD",
+  "decision": "PUBLISH",
   "reasons": [
-    "근거 부족 (원문 HTTP_429, 확인 사실 0개) — 발행하지 않음"
+    "사건 신호 MODEL·PRODUCT_LAUNCH·AVAILABILITY·CONSUMER (우선순위 13)",
+    "근거 확인 통과 (확인 사실 10개, SUFFICIENT_STANDARD)"
   ],
-  "needsReview": [
-    "source_blocked",
-    "insufficient_evidence"
-  ],
+  "needsReview": [],
   "duplicate": {
     "result": "NEW",
     "reason": "기존 기사·후보와 겹치지 않음"
   },
-  "generation": null,
+  "generation": {
+    "provider": "none",
+    "model": null,
+    "status": "skipped",
+    "error": "Shadow Mode — 원고를 만들지 않음",
+    "promptVersion": "draft-v1",
+    "at": "2026-10-31T01:33:34.021Z",
+    "evidenceHash": "0bfea4660cb1"
+  },
   "draft": null,
   "validation": null,
   "draftQa": null,
-  "draftGate": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
   "draftFile": null,
-  "newsletterCandidate": false,
+  "newsletterCandidate": true,
   "capStage": null,
+  "draftPending": true,
   "approval": {
     "status": "pending"
   }
