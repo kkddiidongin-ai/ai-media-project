@@ -6,7 +6,7 @@
 
 | 수집 | 신규 | 후속 | 중복 | 불확실 | 발행 추천 | 보류 | 제외 | 원고 |
 |---|---|---|---|---|---|---|---|---|
-| 716 | 725 | 0 | 0 | 0 | 5 | 390 | 330 | 0 |
+| 713 | 722 | 0 | 0 | 0 | 5 | 385 | 332 | 0 |
 
 > 자동으로 발행하지 않습니다. 아래 추천은 사람이 `npm run daily:approve -- <날짜> <id>`로 승인해야 기사 데이터에 들어갑니다. 뉴스레터도 만들거나 보내지 않습니다.
 
@@ -52,7 +52,7 @@
 - 검증: 확인 필요 없음
 - 원고: 없음 — Shadow Mode — 원고를 만들지 않음
 
-## 보류 (390)
+## 보류 (385)
 
 - **모두가 함께 성장하는 기술 축제, NAVER Engineering Day 10년의 여정** (NAVER D2, 2026-10-30) — 근거 부족 (원문 OK, 확인 사실 0개) — 발행하지 않음 · 확인 필요: 근거 부족
 - **Credit Saison achieves 954% ROI in a ChatGPT Enterprise pilot** (OpenAI, 2026-10-29) — 근거 부족 (원문 HTTP_403, 확인 사실 0개) — 발행하지 않음 · 확인 필요: 원문을 읽지 못함, 근거 부족
@@ -65,11 +65,15 @@
 - **Lend and borrow resources across teams with AWS Batch’s quota management for SageMaker Training jobs** (AWS Machine Learning Blog, 2026-10-29) — 사건 신호 INFRA (우선순위 4) · 근거는 있으나 우선순위 4 < 발행 추천 기준 6 · 확인 필요: 없음
 - **Run AI Models for Edge Application Development with Just a Few Commands** (NVIDIA Technical Blog, 2026-10-30) — 사건 신호 INFRA (우선순위 4) · 근거는 있으나 우선순위 4 < 발행 추천 기준 6 · 확인 필요: 없음
 - Anthropic VS code extension on Cursor backdoored for nearly 12 hours (Ars Technica, 2026-10-30) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 SECURITY)
+- 블랙스톤 "앤트로픽, 상장 후에도 투자적격 등급 확보 어려워" (AI타임스, 2026-11-01) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·ACQ_INVEST·INFRA)
+- 중국 태양광 신규 설치 54% 급감…9월에는 41% 반등 (AI타임스, 2026-11-01) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRICING)
+- 독일 태양광 개발사 15곳, 입찰 상한가 70유로/MWh로 인상 요구 (AI타임스, 2026-11-01) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·PRICING)
+- 삼성 사장단 50명 만난 알트먼 "AI 활용 속도가 기업 경쟁력 결정" (AI타임스, 2026-11-01) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 INFRA)
 - 머스크, 놀란에 맞서 AI판 '오디세이' 공개…평가 엇갈려 (AI타임스, 2026-10-31) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)
 - 알트먼 "AI 수학 연구에 수억달러 투입…공개 안 한 성과도 많아" (AI타임스, 2026-10-31) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)
 - 한국인 챗GPT 활용, 문서 편집 1위 유지…시각 자료 제작 1년 새 2배 (AI타임스, 2026-10-31) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)
 - 구글, 우주 데이터센터 위성에서 첫 AI 추론 성공…시 생성해 지구 전송 (AI타임스, 2026-10-31) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 INFRA·MODEL_MENTION)
-- 구글, 인터넷 없이 작동하는 '제미나이 라이브' 개발…온디바이스 AI 활용 전망 (AI타임스, 2026-10-31) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 MODEL_MENTION)
+- 구글, 인터넷 없이 작동하는 '제미나이 라이브' 개발 중 (AI타임스, 2026-10-31) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 MODEL_MENTION)
 - 독일 엔비전, 유기 분자로 양자 컴퓨팅 칩 개발…OLED 제조 기술 활용 (AI타임스, 2026-10-31) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 INFRA)
 - 오픈AI, 청소년 챗GPT 무기 정보 제한...폭력 징후 땐 대화 중단 (AI타임스, 2026-10-31) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)
 - 중국 GPU, 엔비디아 H200과 성능 대등 주장…AI 추론서 일부 앞서 (AI타임스, 2026-10-31) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 INFRA·PRODUCT_LAUNCH)
@@ -80,15 +84,11 @@
 - 미국 메릴랜드, 태양광·ESS 보조금 입찰 시작…2년간 최대 2억달러 추진 (AI타임스, 2026-10-31) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRICING)
 - 엔비디아, 네이버 3대 주주로…1.3조 다음 달 6일 납입 (AI타임스, 2026-10-30) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PARTNERSHIP·ACQ_INVEST)
 - 광양경자청, 2026 GFEZ 전문가그룹 간담회 개최 (AI타임스, 2026-10-30) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PARTNERSHIP)
-- LG CNS, 3분기 매출 1.7조원…AI·클라우드 성장 견인 (AI타임스, 2026-10-30) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 INFRA)
-- 한국딥러닝, AI로 IBK기업은행 보이스피싱 업무 자동화 (AI타임스, 2026-10-30) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 MODEL_MENTION)
-- 허깅페이스 오픈소스팀, 비드래프트 판단 AI 체험 데모 제작 기증 (AI타임스, 2026-10-30) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 INFRA·PRODUCT_LAUNCH)
-- AI 신소재 나노포지에이아이, 146억 시드 투자 유치 (AI타임스, 2026-10-30) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 ACQ_INVEST·INFRA)
-- … 외 360건 (run.json)
+- … 외 355건 (run.json)
 
-## 제외 (330)
+## 제외 (332)
 
-- 가치 낮음 330건: Making it easier for websites to express AI traini · An updated Model Spec for more capable and benefic · How Ropes & Gray is developing AI for transactiona · L’avenir appartient à tous: Meta et INCA s’associe · Things That Go Beep in the Night: Agentic AI Joins · Into the Omniverse: How Developers Turn Ideas Into · nemotron-halloween · Granite Switch 4.1.1 — Update models like you upda …
+- 가치 낮음 332건: Making it easier for websites to express AI traini · An updated Model Spec for more capable and benefic · How Ropes & Gray is developing AI for transactiona · L’avenir appartient à tous: Meta et INCA s’associe · Things That Go Beep in the Night: Agentic AI Joins · Into the Omniverse: How Developers Turn Ideas Into · nemotron-halloween · Granite Switch 4.1.1 — Update models like you upda …
 
 ## 소스 상태 (정상 26, 그중 기간 안 새 글 0건 11 · 경고 4 · 저하 1 · 실패 0 · 비활성 9)
 
@@ -104,14 +104,14 @@
 
 ## 처리 대기열 · 수집 범위
 
-- 진행 상태: **미완료** · 이번 실행 근거 확인 15건 · 원고 작성 0건
+- 진행 상태: **미완료** · 이번 실행 근거 확인 4건 · 원고 작성 0건
 - 지난 실행에서 넘어온 일: 근거 확인 9건 · 원고 작성 0건
 - 남은 일 (다음 실행으로 이월): 근거 확인 대기 **9**건 · 원고 작성 대기 **52**건 · 아직 열지 못한 글 주소 0개 · 재시도할 소스 0곳
   - 원고 작성 대기: 발행 추천은 났지만 원고 생성 수단이 없거나(무료 생성 미설정·Shadow) 배치를 넘은 항목입니다. 근거는 후보 파일에 보존했고, 빈 원고나 허위 원고는 만들지 않습니다.
 - 수집 범위가 기간 전체를 덮지 못한 소스 4곳 (놓쳤을 수 있음):
   - AI타임스: 피드의 가장 오래된 항목(2026-10-29)이 시작일(2026-10-29)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음
-  - 지디넷코리아: 피드의 가장 오래된 항목(2026-10-30)이 시작일(2026-10-29)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음
-  - 전자신문: 피드의 가장 오래된 항목(2026-10-30)이 시작일(2026-10-29)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음
+  - 지디넷코리아: 피드의 가장 오래된 항목(2026-10-31)이 시작일(2026-10-29)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음
+  - 전자신문: 피드의 가장 오래된 항목(2026-10-31)이 시작일(2026-10-29)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음
   - arXiv cs.AI (신규 논문): 피드의 가장 오래된 항목(2026-10-31)이 시작일(2026-10-29)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음
 
 ## 선정 진단 (Selection Diagnostics)
@@ -120,13 +120,13 @@
 - 14 · 소식 · PRODUCT_LAUNCH·PRICING·AVAILABILITY·API_PLATFORM — How Worldwide Express automated freight exceptions with Ama… → **PUBLISH**
 - 13 · 소식 · MODEL·PRODUCT_LAUNCH·AVAILABILITY·PREVIEW·CONSUMER — Create, preview, and edit files directly in the Gemini app → **PUBLISH**
 - 11 · 소식 · PRODUCT_LAUNCH·AVAILABILITY·API_PLATFORM·CONSUMER — Configure the ChatGPT desktop app with Amazon Bedrock in AW… → **PUBLISH**
+- 11 · 소식 · PRODUCT_LAUNCH·ACQ_INVEST·INFRA — 블랙스톤 "앤트로픽, 상장 후에도 투자적격 등급 확보 어려워" → **HOLD**
+- 11 · 소식 · KOREA·INFRA — '2026 국제광융합엑스포' 성황리 폐막…광융합산업 미래 성장 가능성 확인 → **HOLD**
 - 11 · 소식 · PRICING·REGULATION·INFRA — [의정 브리프] AI 데이터센터 전력망 정비·산업용 전기요금 개선 필요 → **HOLD**
 - 11 · 소식 · MODEL·PRICING·INFRA — Only Accepted Tokens Count: An Energy Accounting of Specula… → **HOLD**
 - 11 · 소식 · MODEL·PRODUCT_LAUNCH·REGULATION·MODEL_MENTION — Reinforcement learning to improve large language model-base… → **HOLD**
+- 10 · 소식 · PRODUCT_LAUNCH·PRICING — 독일 태양광 개발사 15곳, 입찰 상한가 70유로/MWh로 인상 요구 → **HOLD**
 - 10 · 소식 · API_PLATFORM·PRODUCT_LAUNCH·SECURITY — 미스트랄, '라지 4' 가중치 공개로 정식 출시…유럽 사이버보안 시장 공략 → **HOLD**
-- 10 · 소식 · MODEL·ACQ_INVEST·MODEL_MENTION — Reasoning or Pattern Exploitation? Mechanistic Insights fro… → **HOLD**
-- 10 · 소식 · MODEL·ACQ_INVEST·SECURITY — Exploration and Exploitation Errors Are Measurable for Lang… → **HOLD**
-- 9 · 소식 · MODEL·MODEL_MENTION·PRODUCT_LAUNCH — Introducing AnySpeechRecognizer and AnyDecisionModel: Open … → **PUBLISH**
 
 **근거 확인 명단 15건** (원문 요청 상한 40, 최종 추천 상한 0)
 - How Worldwide Express automated freight exceptions with Ama… — 원문 OK · 확인 사실 11 · SUFFICIENT_STANDARD · 깊이 DEEP → **PUBLISH**
@@ -156,10 +156,10 @@
 - Configure the ChatGPT desktop app with Amazon Bedrock in AW… → STANDARD (DEEP 아님: 중요도 4+, 배경 설명 필요, STANDARD로는 맥락 누락)
 - Introducing AnySpeechRecognizer and AnyDecisionModel: Open … → STANDARD (DEEP 아님: 중요도 4+, 사용자 영향, 배경 설명 필요, STANDARD로는 맥락 누락)
 
-**보류 이유 (390건)**: 언론 보도 369 · N-N-N DAILY에서 이미 추천함 9 · 근거 부족 5 · 근거는 있으나 우선순위 N < 발행 추천 기준 N 5 · 우선순위 N 2
+**보류 이유 (385건)**: 언론 보도 364 · N-N-N DAILY에서 이미 추천함 9 · 근거 부족 5 · 근거는 있으나 우선순위 N < 발행 추천 기준 N 5 · 우선순위 N 2
 
 ## 비용
 
 원고 생성 none · 호출 0/6 · 입력 0 · 출력 0 토큰 · 예상 비용 $0.0000 / 상한 $0.5
 
-<sub>실행 2026-10-31T15:43:21.474Z → 2026-10-31T15:44:28.600Z · 상세: run.json, candidates/*.json</sub>
+<sub>실행 2026-11-01T01:01:18.310Z → 2026-11-01T01:02:22.441Z · 상세: run.json, candidates/*.json</sub>
