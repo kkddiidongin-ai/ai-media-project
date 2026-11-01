@@ -1350,12 +1350,12 @@
         "tier": 1,
         "fetchMode": "rss",
         "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
-        "fetchedAt": "2026-11-01T01:01:18.310Z"
+        "fetchedAt": "2026-11-01T16:47:15.341Z"
       },
       "addedAt": "2026-10-31",
       "since": "2026-10-28",
       "attempts": 0,
-      "date": "2026-11-01",
+      "date": "2026-11-02",
       "reason": "Shadow Mode — 원고를 만들지 않음"
     },
     "f3d8cfd7112a": {
@@ -1396,16 +1396,23 @@
         "tier": 1,
         "fetchMode": "rss",
         "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
-        "fetchedAt": "2026-11-01T01:01:18.310Z"
+        "fetchedAt": "2026-11-01T16:47:15.341Z"
       },
       "addedAt": "2026-10-31",
       "since": "2026-10-28",
       "attempts": 0,
-      "date": "2026-11-01",
+      "date": "2026-11-02",
       "reason": "Shadow Mode — 원고를 만들지 않음"
     }
   },
   "meta": {},
-  "retry": {},
-  "updatedAt": "2026-11-01T01:02:22.438Z"
+  "retry": {
+    "etnews": {
+      "since": "2026-10-30",
+      "failedAt": "2026-11-02",
+      "attempts": 1,
+      "lastError": "fetch failed"
+    }
+  },
+  "updatedAt": "2026-11-01T16:48:37.638Z"
 }
