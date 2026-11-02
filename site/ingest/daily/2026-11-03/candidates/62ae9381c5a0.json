@@ -1,0 +1,221 @@
+{
+  "id": "62ae9381c5a0",
+  "date": "2026-11-03",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Make long-running agents faster with message threads",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 8,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Anthropic",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://claude.com/resources/articles/message-threads",
+      "name": "Claude (claude.com articles)",
+      "type": "official",
+      "publishedAt": "2026-11-02T00:00:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "62ae9381c5a0",
+    "url": "https://claude.com/resources/articles/message-threads",
+    "canonicalUrl": "https://claude.com/resources/articles/message-threads",
+    "title": "Make long-running agents faster with message threads",
+    "excerpt": "New in the Messages API, send your conversation once, and the API receives only what’s new with every turn.",
+    "publishedAt": "2026-11-02T00:00:00.000Z",
+    "sourceId": "claude-blog",
+    "sourceName": "Claude (claude.com articles)",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "listing-meta",
+    "discoveredVia": "https://claude.com/resources/articles",
+    "fetchedAt": "2026-11-02T20:18:11.949Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 2712,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "New in the Messages API, send your conversation once, and the API receives only what’s new with every turn.",
+        "sourceUrl": "https://claude.com/resources/articles/message-threads",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-02T00:00:00.000Z",
+        "checkedAt": "2026-11-02T20:19:35.359Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "• • • • • • • • • Make long-running agents faster with message threads | Claude by Anthropic • • •",
+        "sourceUrl": "https://claude.com/resources/articles/message-threads",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-02T00:00:00.000Z",
+        "checkedAt": "2026-11-02T20:19:35.359Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Skip to main content Message threads is now available in public beta on the Claude Platform.",
+        "sourceUrl": "https://claude.com/resources/articles/message-threads",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-02T00:00:00.000Z",
+        "checkedAt": "2026-11-02T20:19:35.359Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "With message threads, agents no longer need to resend the full conversation history on every turn, reducing latency for long-running sessions.",
+        "sourceUrl": "https://claude.com/resources/articles/message-threads",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-02T00:00:00.000Z",
+        "checkedAt": "2026-11-02T20:19:35.359Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "A coding agent might make hundreds of requests in one session, and each request resends every earlier message and tool result.",
+        "sourceUrl": "https://claude.com/resources/articles/message-threads",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-02T00:00:00.000Z",
+        "checkedAt": "2026-11-02T20:19:35.359Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "With message threads, agents send only what’s new since the last turn, which reduces time to first token (TTFT).",
+        "sourceUrl": "https://claude.com/resources/articles/message-threads",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-02T00:00:00.000Z",
+        "checkedAt": "2026-11-02T20:19:35.359Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "With message threads on by default for most Claude Code users, requests with 500k to 1M tokens see median TTFT drop by about 35%.",
+        "sourceUrl": "https://claude.com/resources/articles/message-threads",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-02T00:00:00.000Z",
+        "checkedAt": "2026-11-02T20:19:35.359Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "To use message threads, add the thread parameter to Messages API requests.",
+        "sourceUrl": "https://claude.com/resources/articles/message-threads",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-02T00:00:00.000Z",
+        "checkedAt": "2026-11-02T20:19:35.359Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "A thread expires 5 minutes after its last request and your client then resends the full conversation to start a new one.",
+        "sourceUrl": "https://claude.com/resources/articles/message-threads",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-02T00:00:00.000Z",
+        "checkedAt": "2026-11-02T20:19:35.359Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "While each request is smaller with message threads, Claude still reads the full conversation on every turn, so token usage stays the same.",
+        "sourceUrl": "https://claude.com/resources/articles/message-threads",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-02T00:00:00.000Z",
+        "checkedAt": "2026-11-02T20:19:35.359Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Message threads is best for active sessions where latency matters, including:",
+        "sourceUrl": "https://claude.com/resources/articles/message-threads",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-02T00:00:00.000Z",
+        "checkedAt": "2026-11-02T20:19:35.359Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Long-running coding agents , where each tool result or file edit adds to the conversation.",
+        "sourceUrl": "https://claude.com/resources/articles/message-threads",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-02T00:00:00.000Z",
+        "checkedAt": "2026-11-02T20:19:35.359Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Message threads is available now in public beta on the native Claude Platform, and on Claude Platform on AWS, Claude in Microsoft Foundry, and on Claude Models on Google Cloud (Anthropic managed).",
+        "sourceUrl": "https://claude.com/resources/articles/message-threads",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-02T00:00:00.000Z",
+        "checkedAt": "2026-11-02T20:19:35.359Z"
+      }
+    ],
+    "pageDate": "2026-11-02T00:00:00.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 2,
+    "signals": [
+      "API_PLATFORM"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 API_PLATFORM (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}
