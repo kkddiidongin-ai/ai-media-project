@@ -1403,9 +1403,39 @@
       "attempts": 0,
       "date": "2026-11-02",
       "reason": "Shadow Mode — 원고를 만들지 않음"
+    },
+    "d2dcc5433b77": {
+      "stage": "draft",
+      "item": {
+        "id": "d2dcc5433b77",
+        "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-gpt-6-1-terra-on-bedrock-step-functions-as-agent-tools-and-more-november-2-2026/",
+        "canonicalUrl": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-gpt-6-1-terra-on-bedrock-step-functions-as-agent-tools-and-more-november-2-2026",
+        "title": "AWS Weekly Roundup: GPT-6.1 Terra on Bedrock, Step Functions as agent tools, and more (November 2, 2026)",
+        "excerpt": "The agentic launches that stayed with me last week had nothing to do with how capable a model is. They were about reach. AWS Step Functions, which already orchestrates over 220 AWS services, can now be handed to an agent as a tool, so workflows teams already trust became callable without a rewrite. ",
+        "publishedAt": "2026-11-02T16:45:48.000Z",
+        "sourceId": "aws-news",
+        "sourceName": "AWS News Blog",
+        "sourceType": "official",
+        "tier": 1,
+        "fetchMode": "rss",
+        "discoveredVia": "https://aws.amazon.com/blogs/aws/feed/",
+        "fetchedAt": "2026-11-02T20:18:11.949Z"
+      },
+      "addedAt": "2026-11-03",
+      "since": "2026-10-31",
+      "attempts": 0,
+      "date": "2026-11-03",
+      "reason": "Shadow Mode — 원고를 만들지 않음"
     }
   },
   "meta": {},
-  "retry": {},
-  "updatedAt": "2026-11-02T01:30:04.880Z"
+  "retry": {
+    "etnews": {
+      "since": "2026-10-31",
+      "failedAt": "2026-11-03",
+      "attempts": 1,
+      "lastError": "fetch failed"
+    }
+  },
+  "updatedAt": "2026-11-02T20:19:38.349Z"
 }
