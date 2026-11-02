@@ -1,7 +1,7 @@
 {
   "date": "2026-11-02",
   "mode": "shadow",
-  "startedAt": "2026-11-01T16:47:15.340Z",
+  "startedAt": "2026-11-02T01:29:03.519Z",
   "status": "INCOMPLETE",
   "limits": {
     "windowDays": 3,
@@ -935,8 +935,8 @@
       "parsed": 30,
       "matched": 30,
       "found": 30,
-      "inWindow": 17,
-      "kept": 17,
+      "inWindow": 16,
+      "kept": 16,
       "since": "2026-10-30",
       "coverage": {
         "complete": false,
@@ -953,28 +953,29 @@
     {
       "id": "etnews",
       "name": "전자신문",
-      "status": "failed",
-      "requests": 0,
-      "http": {},
-      "parsed": null,
-      "matched": null,
-      "found": 0,
-      "inWindow": 0,
-      "kept": 0,
+      "status": "success",
+      "requests": 1,
+      "http": {
+        "status": 200,
+        "redirected": false,
+        "finalUrl": null
+      },
+      "parsed": 28,
+      "matched": 28,
+      "found": 28,
+      "inWindow": 15,
+      "kept": 15,
       "since": "2026-10-30",
       "coverage": {
-        "complete": true
+        "complete": false,
+        "reason": "피드의 가장 오래된 항목(2026-11-01)이 시작일(2026-10-30)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음",
+        "oldest": "2026-11-01"
       },
       "undated": 0,
-      "errors": [
-        "fetch failed"
-      ],
-      "health": "FAILED",
-      "healthReasons": [
-        "요청 실패 (failed)"
-      ],
-      "lastOkDate": "2026-11-01",
-      "lastItemDate": "2026-11-01",
+      "health": "OK",
+      "healthReasons": [],
+      "lastOkDate": "2026-11-02",
+      "lastItemDate": "2026-11-02",
       "zeroStreak": 0
     },
     {
@@ -1007,22 +1008,22 @@
     }
   ],
   "sourceHealth": {
-    "OK": 24,
+    "OK": 25,
     "WARNING": 4,
     "DEGRADED": 2,
-    "FAILED": 1,
+    "FAILED": 0,
     "SKIPPED": 9
   },
   "counts": {
-    "collected": 85,
+    "collected": 99,
     "carriedFromQueue": 9,
-    "NEW": 94,
+    "NEW": 108,
     "UPDATE_EXISTING": 0,
     "DUPLICATE": 0,
     "UNCERTAIN": 0,
     "PUBLISH": 2,
-    "HOLD": 64,
-    "EXCLUDE": 28,
+    "HOLD": 74,
+    "EXCLUDE": 32,
     "shortlisted": 8,
     "evidenceChecked": 8,
     "drafts": 0,
@@ -1058,7 +1059,7 @@
       "evidence": 9,
       "draft": 52,
       "meta": 0,
-      "retrySources": 1
+      "retrySources": 0
     },
     "carriedIn": {
       "evidence": 9,
@@ -1066,7 +1067,7 @@
     },
     "resolvedFromQueue": 0,
     "processed": {
-      "evidenceFetches": 8,
+      "evidenceFetches": 2,
       "drafted": 0
     },
     "coverageGaps": [
@@ -1078,6 +1079,11 @@
       {
         "id": "zdnet-korea",
         "name": "지디넷코리아",
+        "reason": "피드의 가장 오래된 항목(2026-11-01)이 시작일(2026-10-30)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음"
+      },
+      {
+        "id": "etnews",
+        "name": "전자신문",
         "reason": "피드의 가장 오래된 항목(2026-11-01)이 시작일(2026-10-30)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음"
       }
     ],
@@ -1576,6 +1582,28 @@
         "standardWouldOmit"
       ],
       "suggestedDepth": null
+    },
+    {
+      "id": "100ed5e43552",
+      "title": "[AI리더의 서가] 문제 해결을 위한 AI 에이전트 설계",
+      "source": "AI타임스",
+      "publishedAt": "2026-11-02T09:00:00.000Z",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=216785",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 MODEL_MENTION)"
+      ],
+      "score": 4,
+      "importance": 1,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "MODEL_MENTION"
+      ],
+      "company": "AI타임스",
+      "stage": "metadata"
     },
     {
       "id": "98c42a856239",
@@ -2647,29 +2675,6 @@
       "stage": "metadata"
     },
     {
-      "id": "fb390d429a3b",
-      "title": "딥시크·문샷 AI, 앤트로픽 방어 강화로 'GPT-6 아스트라' 집중 증류",
-      "source": "AI타임스",
-      "publishedAt": "2026-10-30T05:51:03.000Z",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=216820",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·MODEL_MENTION)"
-      ],
-      "score": 7,
-      "importance": 2,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "PRODUCT_LAUNCH",
-        "MODEL_MENTION"
-      ],
-      "company": "AI타임스",
-      "stage": "metadata"
-    },
-    {
       "id": "e832b81288e9",
       "title": "AI 시대 개인정보 미래는…\"수집·제공 체계 '처리'로 묶자\"",
       "source": "지디넷코리아",
@@ -3009,25 +3014,330 @@
       "stage": "metadata"
     },
     {
-      "id": "696aa9f564c5",
-      "title": "\"AI가 더 공감 잘하는데\"…사람들이 결국 인간을 찾는 이유",
-      "source": "지디넷코리아",
-      "publishedAt": "2026-11-01T02:42:56.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261101112046",
+      "id": "f4c396dd011a",
+      "title": "'침묵의 암' 췌장암 진단 3년 전부터…전문가가 주목한 내 몸이 보내는 이상신호",
+      "source": "전자신문",
+      "publishedAt": "2026-11-02T00:21:05.000Z",
+      "url": "https://www.etnews.com/20261102000033",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+      ],
+      "score": 2,
+      "importance": 0,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [],
+      "company": "전자신문",
+      "stage": "metadata"
+    },
+    {
+      "id": "78bf083210af",
+      "title": "AI 투자 수익성 의구심 확산…월가, 풋옵션·CDS로 위험 헤지",
+      "source": "전자신문",
+      "publishedAt": "2026-11-01T21:51:56.000Z",
+      "url": "https://www.etnews.com/20261102000003",
       "duplicate": "NEW",
       "matchSlug": null,
       "decision": "HOLD",
       "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)"
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 INFRA·PRICING)"
       ],
-      "score": 5,
+      "score": 9,
+      "importance": 3,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "INFRA",
+        "PRICING"
+      ],
+      "company": "전자신문",
+      "stage": "metadata"
+    },
+    {
+      "id": "ee9297cb72b0",
+      "title": "정부, AIDC 진입 장벽 낮춘다…하위법령 입법예고 앞두고 기준 완화 가닥",
+      "source": "전자신문",
+      "publishedAt": "2026-11-01T09:00:00.000Z",
+      "url": "https://www.etnews.com/20261030000273",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 REGULATION·INFRA)"
+      ],
+      "score": 8,
+      "importance": 3,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "REGULATION",
+        "INFRA"
+      ],
+      "company": "전자신문",
+      "stage": "metadata"
+    },
+    {
+      "id": "f2f4c5d3ff5e",
+      "title": "국방으로 넓어지는 로봇 시장…주파수·실증·표준화 등 과제",
+      "source": "전자신문",
+      "publishedAt": "2026-11-01T08:00:00.000Z",
+      "url": "https://www.etnews.com/20261030000211",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 ACQ_INVEST)"
+      ],
+      "score": 6,
+      "importance": 2,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "ACQ_INVEST"
+      ],
+      "company": "전자신문",
+      "stage": "metadata"
+    },
+    {
+      "id": "71632bf58fdf",
+      "title": "日 APL 찾은 이재용, AI승부처 '첨단 패키징' 챙겼다…소부장 협력 논의",
+      "source": "전자신문",
+      "publishedAt": "2026-11-01T07:10:41.000Z",
+      "url": "https://www.etnews.com/20261101000090",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PARTNERSHIP·INFRA)"
+      ],
+      "score": 6,
+      "importance": 2,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "PARTNERSHIP",
+        "INFRA"
+      ],
+      "company": "전자신문",
+      "stage": "metadata"
+    },
+    {
+      "id": "61e4297efe09",
+      "title": "금융 연계 시스템 취약점 점검 자동화…관리 공백 줄여야",
+      "source": "전자신문",
+      "publishedAt": "2026-11-01T07:00:00.000Z",
+      "url": "https://www.etnews.com/20261101000061",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 SECURITY)"
+      ],
+      "score": 4,
       "importance": 1,
       "contentType": "NEWS",
       "typePenalty": 0,
       "signals": [
-        "PRODUCT_LAUNCH"
+        "SECURITY"
       ],
-      "company": "지디넷코리아",
+      "company": "전자신문",
+      "stage": "metadata"
+    },
+    {
+      "id": "e5b96b220085",
+      "title": "마음AI, 로봇에 '미래 예측' 더해 성공률 경신…연내 인간 수준 도전",
+      "source": "전자신문",
+      "publishedAt": "2026-11-01T07:00:00.000Z",
+      "url": "https://www.etnews.com/20261030000249",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 MODEL_MENTION)"
+      ],
+      "score": 4,
+      "importance": 1,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "MODEL_MENTION"
+      ],
+      "company": "전자신문",
+      "stage": "metadata"
+    },
+    {
+      "id": "d41242760016",
+      "title": "'아이폰 듀오' 악재에도 주가는 달랐다… 애플, 엔비디아 제치고 시총 세계 1위 탈환",
+      "source": "전자신문",
+      "publishedAt": "2026-11-01T06:36:41.000Z",
+      "url": "https://www.etnews.com/20261101000098",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+      ],
+      "score": 2,
+      "importance": 0,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [],
+      "company": "전자신문",
+      "stage": "metadata"
+    },
+    {
+      "id": "55b0430dfa03",
+      "title": "한국은행, 직원 PC 장악·정보유출 가정한 모의해킹…AI 업무망 시험대",
+      "source": "전자신문",
+      "publishedAt": "2026-11-01T06:00:00.000Z",
+      "url": "https://www.etnews.com/20261030000198",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 REGULATION·SECURITY)"
+      ],
+      "score": 8,
+      "importance": 3,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "REGULATION",
+        "SECURITY"
+      ],
+      "company": "전자신문",
+      "stage": "metadata"
+    },
+    {
+      "id": "1f92f309988f",
+      "title": "[정유신의 핀테크스토리]AI 에이전트가 여는 금융의 '생산성 혁명'",
+      "source": "전자신문",
+      "publishedAt": "2026-11-01T05:00:00.000Z",
+      "url": "https://www.etnews.com/20261101000068",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 MODEL_MENTION)"
+      ],
+      "score": 4,
+      "importance": 1,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "MODEL_MENTION"
+      ],
+      "company": "전자신문",
+      "stage": "metadata"
+    },
+    {
+      "id": "2275e9e9e077",
+      "title": "[2026 정보과학 인재양성 우수학교·교사 공모전] AI 역량 강화 앞장선 학교 2곳·교사 7명 선정",
+      "source": "전자신문",
+      "publishedAt": "2026-11-01T03:00:00.000Z",
+      "url": "https://www.etnews.com/20261030000361",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+      ],
+      "score": 2,
+      "importance": 0,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [],
+      "company": "전자신문",
+      "stage": "metadata"
+    },
+    {
+      "id": "fcae62daba1d",
+      "title": "[2026 정보과학 인재양성 우수학교·교사 공모전] 교육부 장관상 등 수상자",
+      "source": "전자신문",
+      "publishedAt": "2026-11-01T03:00:00.000Z",
+      "url": "https://www.etnews.com/20261030000346",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+      ],
+      "score": 2,
+      "importance": 0,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [],
+      "company": "전자신문",
+      "stage": "metadata"
+    },
+    {
+      "id": "57ebeb626718",
+      "title": "北 사이버 인해전술, AI 만나 공격력 증폭",
+      "source": "전자신문",
+      "publishedAt": "2026-11-01T02:55:16.000Z",
+      "url": "https://www.etnews.com/20261101000070",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 SECURITY)"
+      ],
+      "score": 4,
+      "importance": 1,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "SECURITY"
+      ],
+      "company": "전자신문",
+      "stage": "metadata"
+    },
+    {
+      "id": "dd95a805e8bb",
+      "title": "연구실 로봇, 든든한 동반자로",
+      "source": "전자신문",
+      "publishedAt": "2026-11-01T02:15:00.000Z",
+      "url": "https://www.etnews.com/20261030000357",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PARTNERSHIP·REGULATION)"
+      ],
+      "score": 8,
+      "importance": 3,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "PARTNERSHIP",
+        "REGULATION"
+      ],
+      "company": "전자신문",
+      "stage": "metadata"
+    },
+    {
+      "id": "343e22da6dd1",
+      "title": "399달러 오리 로봇만이 아니다…저가형 피지컬AI 로봇 잇단 등장",
+      "source": "전자신문",
+      "publishedAt": "2026-11-01T02:10:39.000Z",
+      "url": "https://www.etnews.com/20261101000058",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PARTNERSHIP)"
+      ],
+      "score": 4,
+      "importance": 1,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "PARTNERSHIP"
+      ],
+      "company": "전자신문",
       "stage": "metadata"
     },
     {
@@ -3255,5 +3565,5 @@
       "fromQueue": "evidence"
     }
   ],
-  "finishedAt": "2026-11-01T16:48:37.640Z"
+  "finishedAt": "2026-11-02T01:30:04.882Z"
 }
