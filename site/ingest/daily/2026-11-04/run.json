@@ -1,7 +1,7 @@
 {
   "date": "2026-11-04",
   "mode": "draft",
-  "startedAt": "2026-11-03T15:34:20.000Z",
+  "startedAt": "2026-11-03T15:43:19.130Z",
   "status": "INCOMPLETE",
   "limits": {
     "windowDays": 3,
@@ -16,7 +16,7 @@
     "maxCostUsd": 0.5
   },
   "provider": "gemini",
-  "model": "gemini-3.6-flash",
+  "model": "gemini-3.1-flash-lite",
   "window": {
     "since": "2026-11-01",
     "until": "2026-11-04",
@@ -959,26 +959,27 @@
     {
       "id": "etnews",
       "name": "전자신문",
-      "status": "failed",
-      "requests": 0,
-      "http": {},
-      "parsed": null,
-      "matched": null,
-      "found": 0,
-      "inWindow": 0,
-      "kept": 0,
+      "status": "success",
+      "requests": 1,
+      "http": {
+        "status": 200,
+        "redirected": false,
+        "finalUrl": null
+      },
+      "parsed": 30,
+      "matched": 30,
+      "found": 30,
+      "inWindow": 8,
+      "kept": 8,
       "since": "2026-11-01",
       "coverage": {
-        "complete": true
+        "complete": false,
+        "reason": "피드의 가장 오래된 항목(2026-11-03)이 시작일(2026-11-01)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음",
+        "oldest": "2026-11-03"
       },
       "undated": 0,
-      "errors": [
-        "fetch failed"
-      ],
-      "health": "FAILED",
-      "healthReasons": [
-        "요청 실패 (failed)"
-      ],
+      "health": "OK",
+      "healthReasons": [],
       "lastOkDate": "2026-11-04",
       "lastItemDate": "2026-11-04",
       "zeroStreak": 0
@@ -1013,22 +1014,22 @@
     }
   ],
   "sourceHealth": {
-    "OK": 22,
+    "OK": 23,
     "WARNING": 7,
     "DEGRADED": 1,
-    "FAILED": 1,
+    "FAILED": 0,
     "SKIPPED": 9
   },
   "counts": {
-    "collected": 904,
+    "collected": 912,
     "carriedFromQueue": 58,
-    "NEW": 962,
+    "NEW": 970,
     "UPDATE_EXISTING": 0,
     "DUPLICATE": 0,
     "UNCERTAIN": 0,
     "PUBLISH": 35,
-    "HOLD": 500,
-    "EXCLUDE": 427,
+    "HOLD": 507,
+    "EXCLUDE": 428,
     "shortlisted": 47,
     "evidenceChecked": 47,
     "drafts": 0,
@@ -1042,7 +1043,7 @@
   },
   "llm": {
     "provider": "gemini",
-    "model": "gemini-3.6-flash",
+    "model": "gemini-3.1-flash-lite",
     "calls": 1,
     "inputTokens": 0,
     "outputTokens": 0,
@@ -1064,7 +1065,7 @@
       "evidence": 25,
       "draft": 35,
       "meta": 0,
-      "retrySources": 1
+      "retrySources": 0
     },
     "carriedIn": {
       "evidence": 25,
@@ -1072,7 +1073,7 @@
     },
     "resolvedFromQueue": 0,
     "processed": {
-      "evidenceFetches": 11,
+      "evidenceFetches": 7,
       "drafted": 0
     },
     "coverageGaps": [
@@ -1084,6 +1085,11 @@
       {
         "id": "zdnet-korea",
         "name": "지디넷코리아",
+        "reason": "피드의 가장 오래된 항목(2026-11-03)이 시작일(2026-11-01)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음"
+      },
+      {
+        "id": "etnews",
+        "name": "전자신문",
         "reason": "피드의 가장 오래된 항목(2026-11-03)이 시작일(2026-11-01)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음"
       },
       {
@@ -3217,6 +3223,184 @@
         "PRODUCT_LAUNCH"
       ],
       "company": "지디넷코리아",
+      "stage": "metadata"
+    },
+    {
+      "id": "65ababd4fbf8",
+      "title": "현대차 “당분간 외부 AI 사용마라”…해킹 우려에 '자율주행·로봇' 핵심부서 금지령",
+      "source": "전자신문",
+      "publishedAt": "2026-11-03T12:13:59.000Z",
+      "url": "https://www.etnews.com/20261103000455",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 SECURITY)"
+      ],
+      "score": 4,
+      "importance": 1,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "SECURITY"
+      ],
+      "company": "전자신문",
+      "stage": "metadata"
+    },
+    {
+      "id": "58f7d9f2504e",
+      "title": "반도체 장비, 3년뒤 계약까지 줄섰다",
+      "source": "전자신문",
+      "publishedAt": "2026-11-03T10:29:50.000Z",
+      "url": "https://www.etnews.com/20261103000452",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 INFRA)"
+      ],
+      "score": 4,
+      "importance": 1,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "INFRA"
+      ],
+      "company": "전자신문",
+      "stage": "metadata"
+    },
+    {
+      "id": "9834a5a9edc1",
+      "title": "세계 스마트시티 혁신 한자리에…'SCEWC 2026' 개막",
+      "source": "전자신문",
+      "publishedAt": "2026-11-03T09:30:00.000Z",
+      "url": "https://www.etnews.com/20261103000244",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+      ],
+      "score": 2,
+      "importance": 0,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [],
+      "company": "전자신문",
+      "stage": "metadata"
+    },
+    {
+      "id": "3b716ad19772",
+      "title": "[보안긴급진단]〈2〉산업시설 해킹, 정보 유출 넘어 안전 위협",
+      "source": "전자신문",
+      "publishedAt": "2026-11-03T08:00:00.000Z",
+      "url": "https://www.etnews.com/20261103000169",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 SECURITY)"
+      ],
+      "score": 4,
+      "importance": 1,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "SECURITY"
+      ],
+      "company": "전자신문",
+      "stage": "metadata"
+    },
+    {
+      "id": "11ea4bae2471",
+      "title": "'비교지수 따라잡기 펀드' 전락한 韓 액티브 ETF…6번째 퇴출",
+      "source": "전자신문",
+      "publishedAt": "2026-11-03T07:00:00.000Z",
+      "url": "https://www.etnews.com/20261103000250",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 ACQ_INVEST·REGULATION)"
+      ],
+      "score": 8,
+      "importance": 3,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "ACQ_INVEST",
+        "REGULATION"
+      ],
+      "company": "전자신문",
+      "stage": "metadata"
+    },
+    {
+      "id": "be54ad68c516",
+      "title": "'가전 명가' 희석 日 전자 공룡, AI 인프라 공급망 '싹쓸이' 나섰다",
+      "source": "전자신문",
+      "publishedAt": "2026-11-03T07:00:00.000Z",
+      "url": "https://www.etnews.com/20261102000334",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 INFRA)"
+      ],
+      "score": 4,
+      "importance": 1,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "INFRA"
+      ],
+      "company": "전자신문",
+      "stage": "metadata"
+    },
+    {
+      "id": "5b27d9fc6eda",
+      "title": "한중 피지컬 AI협력 시동… “조작 지능·범용성 필수”",
+      "source": "전자신문",
+      "publishedAt": "2026-11-03T06:33:14.000Z",
+      "url": "https://www.etnews.com/20261103000344",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PARTNERSHIP)"
+      ],
+      "score": 4,
+      "importance": 1,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "PARTNERSHIP"
+      ],
+      "company": "전자신문",
+      "stage": "metadata"
+    },
+    {
+      "id": "5e77f94ec81d",
+      "title": "업스테이지 '솔라 프로 4' 범정부 AI 공통기반 탑재…행정망 국산 AI 활용",
+      "source": "전자신문",
+      "publishedAt": "2026-11-03T05:55:24.000Z",
+      "url": "https://www.etnews.com/20261103000312",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 INFRA·PRODUCT_LAUNCH·REGULATION·MODEL_MENTION)"
+      ],
+      "score": 11,
+      "importance": 4,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "INFRA",
+        "PRODUCT_LAUNCH",
+        "REGULATION",
+        "MODEL_MENTION"
+      ],
+      "company": "전자신문",
       "stage": "metadata"
     },
     {
@@ -22360,5 +22544,5 @@
       "fromQueue": "draft"
     }
   ],
-  "finishedAt": "2026-11-03T15:35:56.536Z"
+  "finishedAt": "2026-11-03T15:45:25.356Z"
 }

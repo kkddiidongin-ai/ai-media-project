@@ -6,7 +6,7 @@
 
 | 수집 | 신규 | 후속 | 중복 | 불확실 | 발행 추천 | 보류 | 제외 | 원고 |
 |---|---|---|---|---|---|---|---|---|
-| 904 | 962 | 0 | 0 | 0 | 35 | 500 | 427 | 0 |
+| 912 | 970 | 0 | 0 | 0 | 35 | 507 | 428 | 0 |
 
 > 자동으로 발행하지 않습니다. 아래 추천은 사람이 `npm run daily:approve -- <날짜> <id>`로 승인해야 기사 데이터에 들어갑니다. 뉴스레터도 만들거나 보내지 않습니다.
 
@@ -332,7 +332,7 @@
 - NVIDIA Unveils Minerva to Bring End-to-End Observability fo… — 이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성
 - Stop guessing auto scaling targets for TTS on Amazon SageMa… — 이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성
 
-## 보류 (500)
+## 보류 (507)
 
 - **컨테이너처럼 쓰고, VM처럼 격리하기** (NAVER D2, 2026-11-02) — 근거 부족 (원문 OK, 확인 사실 0개) — 발행하지 않음 · 확인 필요: 근거 부족
 - **LifeVal** (OpenAI, 2026-11-02) — 근거 부족 (원문 HTTP_403, 확인 사실 0개) — 발행하지 않음 · 확인 필요: 원문을 읽지 못함, 근거 부족
@@ -366,17 +366,16 @@
 - 전남광주 농축수산물 가격 하락…공업제품 영향에 물가 2.8%↑ (AI타임스, 2026-11-03) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRICING)
 - 국가 슈퍼컴 6호기 ‘한강’ 가동…칩 1.8만개 탑재 세계 10위권 기대 (AI타임스, 2026-11-03) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 INFRA·REGULATION)
 - SDT, AIDC '발열 해결사' 100kW 액침냉각 시스템 공개 (AI타임스, 2026-11-03) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 INFRA·PRODUCT_LAUNCH)
-- … 외 468건 (run.json)
+- … 외 475건 (run.json)
 
-## 제외 (427)
+## 제외 (428)
 
-- 가치 낮음 427건: Heimstaden is changing residential real estate man · Scaling Git at OpenAI · Qodo builds context into AI code review with Codex · Transformers Model Integration Contracts · Prepare web content for Amazon Bedrock Knowledge B · Agentic engineering intelligence with Amazon Nova  · Keep Distributed Training Running with Automated W · Build World Models for Interactive Simulation with …
+- 가치 낮음 428건: Heimstaden is changing residential real estate man · Scaling Git at OpenAI · Qodo builds context into AI code review with Codex · Transformers Model Integration Contracts · Prepare web content for Amazon Bedrock Knowledge B · Agentic engineering intelligence with Amazon Nova  · Keep Distributed Training Running with Automated W · Build World Models for Interactive Simulation with …
 
-## 소스 상태 (정상 22, 그중 기간 안 새 글 0건 10 · 경고 7 · 저하 1 · 실패 1 · 비활성 9)
+## 소스 상태 (정상 23, 그중 기간 안 새 글 0건 10 · 경고 7 · 저하 1 · 실패 0 · 비활성 9)
 
 | 소스 | 상태 | HTTP | 글 주소(형식 일치/전체) | 기간 안 | 연속 0건 | 최근 정상 수집 | 이유 |
 |---|---|---|---|---|---|---|---|
-| 전자신문 | **FAILED** | - | -/- | 0 | 0 | 2026-11-04 | 요청 실패 (failed) |
 | Anthropic (모델 발표 페이지) | **DEGRADED** | 200 | 3/214 | 0 | 19 | 2026-11-04 | 발행일을 확인하지 못한 글 1건 (후보에서 제외) · 기간 안 새 글 0건 19회 연속 (마지막 수집 기록 없음) |
 | Anthropic | **WARNING** | 200 | 281/589 | 0 | 6 | 2026-11-04 | 발행일을 확인하지 못한 글 8건 (후보에서 제외) · 기간 안 새 글 0건 6회 연속 (마지막 수집 2026-10-29) |
 | xAI API Release Notes (docs.x.ai) | **WARNING** | 200 | 58/58 | 0 | 5 | 2026-11-04 | 기간 안 새 글 0건 5회 연속 (마지막 수집 2026-10-30) |
@@ -390,13 +389,14 @@
 
 ## 처리 대기열 · 수집 범위
 
-- 진행 상태: **미완료** · 이번 실행 근거 확인 11건 · 원고 작성 0건
+- 진행 상태: **미완료** · 이번 실행 근거 확인 7건 · 원고 작성 0건
 - 지난 실행에서 넘어온 일: 근거 확인 25건 · 원고 작성 33건
-- 남은 일 (다음 실행으로 이월): 근거 확인 대기 **25**건 · 원고 작성 대기 **35**건 · 아직 열지 못한 글 주소 0개 · 재시도할 소스 1곳
+- 남은 일 (다음 실행으로 이월): 근거 확인 대기 **25**건 · 원고 작성 대기 **35**건 · 아직 열지 못한 글 주소 0개 · 재시도할 소스 0곳
   - 원고 작성 대기: 발행 추천은 났지만 원고 생성 수단이 없거나(무료 생성 미설정·Shadow) 배치를 넘은 항목입니다. 근거는 후보 파일에 보존했고, 빈 원고나 허위 원고는 만들지 않습니다.
-- 수집 범위가 기간 전체를 덮지 못한 소스 3곳 (놓쳤을 수 있음):
+- 수집 범위가 기간 전체를 덮지 못한 소스 4곳 (놓쳤을 수 있음):
   - AI타임스: 피드의 가장 오래된 항목(2026-11-02)이 시작일(2026-11-01)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음
   - 지디넷코리아: 피드의 가장 오래된 항목(2026-11-03)이 시작일(2026-11-01)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음
+  - 전자신문: 피드의 가장 오래된 항목(2026-11-03)이 시작일(2026-11-01)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음
   - arXiv cs.AI (신규 논문): 피드의 가장 오래된 항목(2026-11-03)이 시작일(2026-11-01)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음
 
 ## 선정 진단 (Selection Diagnostics)
@@ -408,10 +408,10 @@
 - 11 · 소식 · PRODUCT_LAUNCH·REGULATION·RESEARCH_RESULT — LifeVal → **HOLD**
 - 11 · 소식 · PRICING·REGULATION·INFRA — 오픈AI, 데이터센터 명칭 'AI 컴퓨팅 캠퍼스'로 변경 추진...주민 반발 대응 → **HOLD**
 - 11 · 소식 · KOREA·PARTNERSHIP — 알티베이스, 베트남서 열린 IR 피칭서 최우수기업 선정 → **HOLD**
+- 11 · 소식 · INFRA·PRODUCT_LAUNCH·REGULATION·MODEL_MENTION — 업스테이지 '솔라 프로 4' 범정부 AI 공통기반 탑재…행정망 국산 AI 활용 → **HOLD**
 - 11 · 소식 · MODEL·PRODUCT_LAUNCH·INFRA — XLA from the Trenches: Correctness on TPU Workloads at Scale → **HOLD**
 - 11 · 소식 · MODEL·PRICING·MODEL_MENTION — BLPO: Beyond-Local Policy Optimization for Long-Horizon LLM… → **HOLD**
 - 11 · 소식 · PRICING·REGULATION·MODEL_MENTION — The SIMPLE Law for Energy Cost of LLM Inference → **HOLD**
-- 11 · 소식 · PRICING·ACQ_INVEST·RESEARCH_RESULT — PhoneValue-Bench: A Multimodal Benchmark and Datasets for C… → **HOLD**
 
 **근거 확인 명단 47건** (원문 요청 상한 40, 최종 추천 상한 0)
 - 컨테이너처럼 쓰고, VM처럼 격리하기 — 원문 OK · 확인 사실 0 · INSUFFICIENT · 깊이 - → **HOLD**
@@ -485,10 +485,10 @@
 - Advancing digital sovereignty with greater control and choi… → STANDARD (DEEP 아님: 중요도 4+, 사용자 영향, 확인 사실 6+, STANDARD로는 맥락 누락)
 - Introducing Reflection Beam: an open-weight model for agent… → STANDARD (DEEP 아님: 중요도 4+, 배경 설명 필요, STANDARD로는 맥락 누락)
 
-**보류 이유 (500건)**: 언론 보도 463 · N-N-N DAILY에서 이미 추천함 25 · 근거 부족 8 · 근거는 있으나 우선순위 N < 발행 추천 기준 N 4
+**보류 이유 (507건)**: 언론 보도 470 · N-N-N DAILY에서 이미 추천함 25 · 근거 부족 8 · 근거는 있으나 우선순위 N < 발행 추천 기준 N 4
 
 ## 비용
 
-원고 생성 gemini (gemini-3.6-flash) · 호출 1/1 · 입력 0 · 출력 0 토큰 · 예상 비용 $0.0000 / 상한 $0.5
+원고 생성 gemini (gemini-3.1-flash-lite) · 호출 1/1 · 입력 0 · 출력 0 토큰 · 예상 비용 $0.0000 / 상한 $0.5
 
-<sub>실행 2026-11-03T15:34:20.000Z → 2026-11-03T15:35:56.536Z · 상세: run.json, candidates/*.json</sub>
+<sub>실행 2026-11-03T15:43:19.130Z → 2026-11-03T15:45:25.356Z · 상세: run.json, candidates/*.json</sub>
