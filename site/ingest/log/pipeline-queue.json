@@ -1262,7 +1262,7 @@
       },
       "addedAt": "2026-10-30",
       "since": "2026-10-27",
-      "attempts": 1,
+      "attempts": 2,
       "date": "2026-11-03",
       "reason": "HTTP 503"
     },
@@ -1373,7 +1373,7 @@
         "tier": 1,
         "fetchMode": "rss",
         "discoveredVia": "https://aws.amazon.com/blogs/aws/feed/",
-        "fetchedAt": "2026-11-03T13:42:40.845Z"
+        "fetchedAt": "2026-11-03T13:50:49.843Z"
       },
       "addedAt": "2026-11-03",
       "since": "2026-10-31",
@@ -1396,138 +1396,23 @@
         "tier": 1,
         "fetchMode": "rss-paged",
         "discoveredVia": "https://blogs.nvidia.com/feed/",
-        "fetchedAt": "2026-11-03T13:42:40.845Z"
+        "fetchedAt": "2026-11-03T13:50:49.843Z"
       },
       "addedAt": "2026-11-03",
       "since": "2026-10-31",
       "attempts": 0,
       "date": "2026-11-03",
       "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
-    },
-    "19244c7aa206": {
-      "stage": "evidence",
-      "item": {
-        "id": "19244c7aa206",
-        "url": "https://openai.com/index/grid-protectors-program",
-        "canonicalUrl": "https://openai.com/index/grid-protectors-program",
-        "title": "Introducing the Grid Protectors Program",
-        "excerpt": "OpenAI’s Grid Protectors Program will work with utilities to help future compute campuses support grid reliability and protect consumer electricity costs.",
-        "publishedAt": "2026-11-02T15:00:00.000Z",
-        "sourceId": "openai",
-        "sourceName": "OpenAI",
-        "sourceType": "official",
-        "tier": 1,
-        "fetchMode": "rss",
-        "discoveredVia": "https://openai.com/news/rss.xml",
-        "fetchedAt": "2026-11-03T13:42:40.845Z"
-      },
-      "addedAt": "2026-11-03",
-      "since": "2026-10-31",
-      "attempts": 1,
-      "date": "2026-11-03",
-      "reason": "batch"
-    },
-    "e4e619867236": {
-      "stage": "evidence",
-      "item": {
-        "id": "e4e619867236",
-        "url": "https://workspaceupdates.googleblog.com/2026/10/display-custom-policy-in-green-room-before-Google-Meet-Calls.html",
-        "canonicalUrl": "https://workspaceupdates.googleblog.com/2026/10/display-custom-policy-in-green-room-before-Google-Meet-Calls.html",
-        "title": "Display Custom Policy in the Green Room before Google Meet Calls",
-        "excerpt": "To help ensure end users at your organization are familiar with your organization’s policies for handling meeting artifacts like recordings, transcriptions and notes by Gemini, we’re introducing the ability to set custom policy text from the admin console that is displayed prior to users joining Goo",
-        "publishedAt": "2026-11-03T10:15:09.792Z",
-        "sourceId": "google-workspace-updates",
-        "sourceName": "Google Workspace Updates",
-        "sourceType": "official",
-        "tier": 1,
-        "fetchMode": "rss",
-        "discoveredVia": "https://workspaceupdates.googleblog.com/feeds/posts/default?max-results=500&published-min=2026-01-01T00:00:00Z",
-        "fetchedAt": "2026-11-03T13:42:40.845Z"
-      },
-      "addedAt": "2026-11-03",
-      "since": "2026-10-31",
-      "attempts": 1,
-      "date": "2026-11-03",
-      "reason": "batch"
-    },
-    "262cfa35f430": {
-      "stage": "evidence",
-      "item": {
-        "id": "262cfa35f430",
-        "url": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
-        "canonicalUrl": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
-        "title": "Preparing our next security sprint to harden OpenAI",
-        "excerpt": "OpenAI is preparing its next internal security sprint with Cathedral Systems to test and strengthen its defenses using AI.",
-        "publishedAt": "2026-11-02T18:00:00.000Z",
-        "sourceId": "openai",
-        "sourceName": "OpenAI",
-        "sourceType": "official",
-        "tier": 1,
-        "fetchMode": "rss",
-        "discoveredVia": "https://openai.com/news/rss.xml",
-        "fetchedAt": "2026-11-03T13:42:40.845Z"
-      },
-      "addedAt": "2026-11-03",
-      "since": "2026-10-31",
-      "attempts": 1,
-      "date": "2026-11-03",
-      "reason": "batch"
-    },
-    "ff138f709a7e": {
-      "stage": "evidence",
-      "item": {
-        "id": "ff138f709a7e",
-        "url": "https://openai.com/index/dan-driscoll-joins-openai",
-        "canonicalUrl": "https://openai.com/index/dan-driscoll-joins-openai",
-        "title": "OpenAI appoints Dan Driscoll as Senior Counselor for National Security Modernization",
-        "excerpt": "OpenAI appoints Dan Driscoll to advise on responsible AI for national security modernization, cyber resilience, and collaboration with U.S. allies.",
-        "publishedAt": "2026-11-02T00:00:00.000Z",
-        "sourceId": "openai",
-        "sourceName": "OpenAI",
-        "sourceType": "official",
-        "tier": 1,
-        "fetchMode": "rss",
-        "discoveredVia": "https://openai.com/news/rss.xml",
-        "fetchedAt": "2026-11-03T13:42:40.845Z"
-      },
-      "addedAt": "2026-11-03",
-      "since": "2026-10-31",
-      "attempts": 1,
-      "date": "2026-11-03",
-      "reason": "batch"
-    },
-    "ddc65a2a9136": {
-      "stage": "evidence",
-      "item": {
-        "id": "ddc65a2a9136",
-        "url": "https://blog.google/innovation-and-ai/technology/research/partnering-singapore-advance-scientific-discovery/",
-        "canonicalUrl": "https://blog.google/innovation-and-ai/technology/research/partnering-singapore-advance-scientific-discovery",
-        "title": "Advancing research and partnering with universities in Singapore",
-        "excerpt": "Google is investing in new research grants and capacity-building initiatives to advance AI for science and support the next generation of scientific leaders in Singapore.",
-        "publishedAt": "2026-11-03T00:00:00.000Z",
-        "sourceId": "google-ai",
-        "sourceName": "Google (The Keyword · AI)",
-        "sourceType": "official",
-        "tier": 1,
-        "fetchMode": "sitemap-meta",
-        "discoveredVia": "https://blog.google/en-us/sitemap.xml",
-        "fetchedAt": "2026-11-03T13:42:40.845Z"
-      },
-      "addedAt": "2026-11-03",
-      "since": "2026-10-31",
-      "attempts": 1,
-      "date": "2026-11-03",
-      "reason": "batch"
     }
   },
   "meta": {},
   "retry": {},
-  "updatedAt": "2026-11-03T13:45:28.896Z",
+  "updatedAt": "2026-11-03T13:52:30.273Z",
   "gemini": {
     "day": "2026-11-03",
-    "calls": 1,
+    "calls": 2,
     "exhausted": false,
     "inFlight": false,
-    "lastAt": 1793713474335
+    "lastAt": 1793713947656
   }
 }
