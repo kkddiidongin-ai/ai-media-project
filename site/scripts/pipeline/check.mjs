@@ -392,6 +392,19 @@ await t("무료 생성 성공: 원고·QA·생성 통계 기록, 응답 형식 �
     }
   });
 
+  await t("7.3-6b 503: 재시도 없이 실패 기록 · Google 오류 status·message 남김 · 한도 중단 아님 · 키 노출 없음", async () => {
+    const state = {};
+    const body = JSON.stringify({ error: { code: 503, message: `The model is overloaded. key=${KEY}`, status: "UNAVAILABLE" } });
+    const f = counter(() => new Response(body, { status: 503 }));
+    const r = await providers.generateArticle(cand, ev, gctx({ state, fetch: f }));
+    eq([r.status, f.n, state.calls, state.exhausted, r.usage.attempts], ["failed", 1, 1, false, 1]);
+    ok(r.error.startsWith("HTTP 503 · UNAVAILABLE: The model is overloaded."), r.error);
+    ok(!r.error.includes(KEY) && r.error.includes("[REDACTED]"), "키 지움");
+    ok(/본문 Google 오류 형식 아님: <html>/.test(providers.geminiHttpError(503, "<html>\n busy </html>")), "비 JSON 본문");
+    eq(providers.geminiHttpError(500, ""), "HTTP 500 · 본문 없음");
+    ok(providers.geminiHttpError(503, JSON.stringify({ error: { message: "x".repeat(500) } })).length <= 200, "200자");
+  });
+
   await t("7.3-7 동시 요청 1개 · 사용 기록 없으면 차단 · 실행끼리 같은 예산 (대기열 파일)", async () => {
     const clock = fakeClock();
     const state = {};

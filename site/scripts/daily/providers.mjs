@@ -240,6 +240,23 @@ async function geminiProvider(candidate, evidence, ctx) {
   }
 }
 
+/**
+ * 실패 응답 기록 (원인 분석용): HTTP 코드 + Google 오류 본문의 status·message.
+ * 본문이 Google 오류 JSON이 아니면 그 사실과 앞부분만 남긴다 (중간 프록시 응답과 구분). 키는 지우고 200자로 자른다.
+ */
+export function geminiHttpError(status, bodyText = "", env = {}) {
+  const raw = String(bodyText ?? "");
+  let detail;
+  try {
+    const e = JSON.parse(raw)?.error;
+    detail = [e?.status, e?.message].filter(Boolean).join(": ") || null;
+  } catch {
+    detail = null;
+  }
+  if (!detail) detail = raw.trim() ? `본문 Google 오류 형식 아님: ${raw.replace(/\s+/g, " ").trim().slice(0, 80)}` : "본문 없음";
+  return redact(`HTTP ${status} · ${detail}`, env).slice(0, 200);
+}
+
 async function geminiRequest(candidate, evidence, ctx, { key, model, usage, state }) {
   const prompt = buildPrompt(candidate, evidence, ctx);
   ctx.budget.calls++;
@@ -264,7 +281,7 @@ async function geminiRequest(candidate, evidence, ctx, { key, model, usage, stat
         state.exhausted = true;
         return { status: "skipped", error: "무료 등급 한도(429·RESOURCE_EXHAUSTED) — 재시도·유료 전환 없이 중단, 다음 날 작성", model, usage };
       }
-      return { status: "failed", error: `HTTP ${res.status}`, model, usage };
+      return { status: "failed", error: geminiHttpError(res.status, errText, ctx.env), model, usage };
     }
     const json = await res.json();
     usage.inputTokens = json.usageMetadata?.promptTokenCount ?? 0;
