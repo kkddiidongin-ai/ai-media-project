@@ -1350,13 +1350,13 @@
         "tier": 1,
         "fetchMode": "rss",
         "discoveredVia": "https://aws.amazon.com/blogs/aws/feed/",
-        "fetchedAt": "2026-11-03T15:43:19.130Z"
+        "fetchedAt": "2026-11-03T17:46:16.828Z"
       },
       "addedAt": "2026-11-03",
       "since": "2026-10-31",
       "attempts": 0,
       "date": "2026-11-04",
-      "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
+      "reason": "Shadow Mode — 원고를 만들지 않음"
     },
     "4d836f21a02f": {
       "stage": "draft",
@@ -1373,18 +1373,48 @@
         "tier": 1,
         "fetchMode": "rss-paged",
         "discoveredVia": "https://blogs.nvidia.com/feed/",
-        "fetchedAt": "2026-11-03T15:43:19.130Z"
+        "fetchedAt": "2026-11-03T17:46:16.828Z"
       },
       "addedAt": "2026-11-03",
       "since": "2026-10-31",
       "attempts": 0,
       "date": "2026-11-04",
-      "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
+      "reason": "Shadow Mode — 원고를 만들지 않음"
+    },
+    "9c22661ce9de": {
+      "stage": "draft",
+      "item": {
+        "id": "9c22661ce9de",
+        "url": "https://github.blog/changelog/2026-11-03-github-copilot-is-now-available-in-jetbrains-air",
+        "canonicalUrl": "https://github.blog/changelog/2026-11-03-github-copilot-is-now-available-in-jetbrains-air",
+        "title": "GitHub Copilot is now available in JetBrains Air",
+        "excerpt": "You can now delegate coding tasks, guide execution, and review results with GitHub Copilot in JetBrains Air. The integration uses the Agent Client Protocol (ACP) and supports tasks in your… The post GitHub Copilot is now available in JetBrains Air appeared first on The GitHub Blog .",
+        "publishedAt": "2026-11-03T15:11:46.000Z",
+        "sourceId": "github-changelog",
+        "sourceName": "GitHub Changelog",
+        "sourceType": "official",
+        "tier": 1,
+        "fetchMode": "rss-paged",
+        "discoveredVia": "https://github.blog/changelog/feed/",
+        "fetchedAt": "2026-11-03T17:46:16.828Z"
+      },
+      "addedAt": "2026-11-04",
+      "since": "2026-11-01",
+      "attempts": 0,
+      "date": "2026-11-04",
+      "reason": "Shadow Mode — 원고를 만들지 않음"
     }
   },
   "meta": {},
-  "retry": {},
-  "updatedAt": "2026-11-03T15:45:25.353Z",
+  "retry": {
+    "etnews": {
+      "since": "2026-11-01",
+      "failedAt": "2026-11-04",
+      "attempts": 1,
+      "lastError": "fetch failed"
+    }
+  },
+  "updatedAt": "2026-11-03T17:47:43.980Z",
   "gemini": {
     "day": "2026-11-03",
     "calls": 5,
