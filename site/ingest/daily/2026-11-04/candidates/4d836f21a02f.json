@@ -52,7 +52,7 @@
     "tier": 1,
     "fetchMode": "rss-paged",
     "discoveredVia": "https://blogs.nvidia.com/feed/",
-    "fetchedAt": "2026-11-03T15:43:19.130Z"
+    "fetchedAt": "2026-11-03T17:46:16.828Z"
   },
   "evidence": {
     "status": "OK",
@@ -207,12 +207,12 @@
     "reason": "기존 기사·후보와 겹치지 않음"
   },
   "generation": {
-    "provider": "gemini",
-    "model": "gemini-3.1-flash-lite",
+    "provider": "none",
+    "model": null,
     "status": "skipped",
-    "error": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성",
+    "error": "Shadow Mode — 원고를 만들지 않음",
     "promptVersion": "draft-v1",
-    "at": "2026-11-03T15:45:25.338Z",
+    "at": "2026-11-03T17:47:43.972Z",
     "evidenceHash": "c104bd1a56d4"
   },
   "draft": null,
