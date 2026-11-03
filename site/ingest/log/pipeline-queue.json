@@ -1262,7 +1262,7 @@
       },
       "addedAt": "2026-10-30",
       "since": "2026-10-27",
-      "attempts": 4,
+      "attempts": 5,
       "date": "2026-11-04",
       "reason": "HTTP 503 · UNAVAILABLE: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later."
     },
@@ -1350,7 +1350,7 @@
         "tier": 1,
         "fetchMode": "rss",
         "discoveredVia": "https://aws.amazon.com/blogs/aws/feed/",
-        "fetchedAt": "2026-11-03T15:34:20.001Z"
+        "fetchedAt": "2026-11-03T15:43:19.130Z"
       },
       "addedAt": "2026-11-03",
       "since": "2026-10-31",
@@ -1373,7 +1373,7 @@
         "tier": 1,
         "fetchMode": "rss-paged",
         "discoveredVia": "https://blogs.nvidia.com/feed/",
-        "fetchedAt": "2026-11-03T15:34:20.001Z"
+        "fetchedAt": "2026-11-03T15:43:19.130Z"
       },
       "addedAt": "2026-11-03",
       "since": "2026-10-31",
@@ -1383,20 +1383,13 @@
     }
   },
   "meta": {},
-  "retry": {
-    "etnews": {
-      "since": "2026-11-01",
-      "failedAt": "2026-11-04",
-      "attempts": 1,
-      "lastError": "fetch failed"
-    }
-  },
-  "updatedAt": "2026-11-03T15:35:56.533Z",
+  "retry": {},
+  "updatedAt": "2026-11-03T15:45:25.353Z",
   "gemini": {
     "day": "2026-11-03",
-    "calls": 4,
+    "calls": 5,
     "exhausted": false,
     "inFlight": false,
-    "lastAt": 1793720149534
+    "lastAt": 1793720697901
   }
 }
