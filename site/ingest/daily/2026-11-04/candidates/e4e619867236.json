@@ -1,0 +1,117 @@
+{
+  "id": "e4e619867236",
+  "date": "2026-11-04",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Display Custom Policy in the Green Room before Google Meet Calls",
+  "depth": null,
+  "suggestedDepth": null,
+  "depthAssessment": {
+    "sufficiency": "INSUFFICIENT",
+    "distinctFacts": 0,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": false,
+      "evidenceQuality": false,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "distinctFacts",
+      "evidenceQuality",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Google",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://workspaceupdates.googleblog.com/2026/10/display-custom-policy-in-green-room-before-Google-Meet-Calls.html",
+      "name": "Google Workspace Updates",
+      "type": "official",
+      "publishedAt": "2026-11-03T10:15:09.792Z"
+    }
+  ],
+  "candidate": {
+    "id": "e4e619867236",
+    "url": "https://workspaceupdates.googleblog.com/2026/10/display-custom-policy-in-green-room-before-Google-Meet-Calls.html",
+    "canonicalUrl": "https://workspaceupdates.googleblog.com/2026/10/display-custom-policy-in-green-room-before-Google-Meet-Calls.html",
+    "title": "Display Custom Policy in the Green Room before Google Meet Calls",
+    "excerpt": "To help ensure end users at your organization are familiar with your organization’s policies for handling meeting artifacts like recordings, transcriptions and notes by Gemini, we’re introducing the ability to set custom policy text from the admin console that is displayed prior to users joining Goo",
+    "publishedAt": "2026-11-03T10:15:09.792Z",
+    "sourceId": "google-workspace-updates",
+    "sourceName": "Google Workspace Updates",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://workspaceupdates.googleblog.com/feeds/posts/default?max-results=500&published-min=2026-01-01T00:00:00Z",
+    "fetchedAt": "2026-11-03T15:34:20.001Z"
+  },
+  "evidence": {
+    "status": "HTTP_429",
+    "chars": 0,
+    "grade": "FAIL",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "To help ensure end users at your organization are familiar with your organization’s policies for handling meeting artifacts like recordings, transcriptions and notes by Gemini, we’re introducing the ability to set custom policy text from the admin console that is displayed prior to users joining Goo",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/display-custom-policy-in-green-room-before-Google-Meet-Calls.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-11-03T10:15:09.792Z",
+        "checkedAt": "2026-11-03T15:35:46.303Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 2,
+    "signals": [
+      "PRODUCT_LAUNCH"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "근거 부족 (원문 HTTP_429, 확인 사실 0개) — 발행하지 않음"
+  ],
+  "needsReview": [
+    "source_blocked",
+    "insufficient_evidence"
+  ],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

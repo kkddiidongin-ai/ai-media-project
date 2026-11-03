@@ -1,7 +1,7 @@
 {
   "date": "2026-11-04",
   "mode": "draft",
-  "startedAt": "2026-11-03T15:18:15.556Z",
+  "startedAt": "2026-11-03T15:34:20.000Z",
   "status": "INCOMPLETE",
   "limits": {
     "windowDays": 3,
@@ -16,7 +16,7 @@
     "maxCostUsd": 0.5
   },
   "provider": "gemini",
-  "model": "gemini-3.8-flash",
+  "model": "gemini-3.6-flash",
   "window": {
     "since": "2026-11-01",
     "until": "2026-11-04",
@@ -959,27 +959,26 @@
     {
       "id": "etnews",
       "name": "전자신문",
-      "status": "success",
-      "requests": 1,
-      "http": {
-        "status": 200,
-        "redirected": false,
-        "finalUrl": null
-      },
-      "parsed": 30,
-      "matched": 30,
-      "found": 30,
-      "inWindow": 8,
-      "kept": 8,
+      "status": "failed",
+      "requests": 0,
+      "http": {},
+      "parsed": null,
+      "matched": null,
+      "found": 0,
+      "inWindow": 0,
+      "kept": 0,
       "since": "2026-11-01",
       "coverage": {
-        "complete": false,
-        "reason": "피드의 가장 오래된 항목(2026-11-03)이 시작일(2026-11-01)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음",
-        "oldest": "2026-11-03"
+        "complete": true
       },
       "undated": 0,
-      "health": "OK",
-      "healthReasons": [],
+      "errors": [
+        "fetch failed"
+      ],
+      "health": "FAILED",
+      "healthReasons": [
+        "요청 실패 (failed)"
+      ],
       "lastOkDate": "2026-11-04",
       "lastItemDate": "2026-11-04",
       "zeroStreak": 0
@@ -1014,24 +1013,24 @@
     }
   ],
   "sourceHealth": {
-    "OK": 23,
+    "OK": 22,
     "WARNING": 7,
     "DEGRADED": 1,
-    "FAILED": 0,
+    "FAILED": 1,
     "SKIPPED": 9
   },
   "counts": {
-    "collected": 912,
-    "carriedFromQueue": 59,
-    "NEW": 971,
+    "collected": 904,
+    "carriedFromQueue": 58,
+    "NEW": 962,
     "UPDATE_EXISTING": 0,
     "DUPLICATE": 0,
     "UNCERTAIN": 0,
     "PUBLISH": 35,
-    "HOLD": 508,
-    "EXCLUDE": 428,
-    "shortlisted": 48,
-    "evidenceChecked": 40,
+    "HOLD": 500,
+    "EXCLUDE": 427,
+    "shortlisted": 47,
+    "evidenceChecked": 47,
     "drafts": 0,
     "draftQa": {
       "PASS": 0,
@@ -1043,7 +1042,7 @@
   },
   "llm": {
     "provider": "gemini",
-    "model": "gemini-3.8-flash",
+    "model": "gemini-3.6-flash",
     "calls": 1,
     "inputTokens": 0,
     "outputTokens": 0,
@@ -1062,18 +1061,18 @@
   "pipeline": {
     "complete": false,
     "pending": {
-      "evidence": 33,
+      "evidence": 25,
       "draft": 35,
       "meta": 0,
-      "retrySources": 0
+      "retrySources": 1
     },
     "carriedIn": {
       "evidence": 25,
-      "draft": 34
+      "draft": 33
     },
     "resolvedFromQueue": 0,
     "processed": {
-      "evidenceFetches": 40,
+      "evidenceFetches": 11,
       "drafted": 0
     },
     "coverageGaps": [
@@ -1085,11 +1084,6 @@
       {
         "id": "zdnet-korea",
         "name": "지디넷코리아",
-        "reason": "피드의 가장 오래된 항목(2026-11-03)이 시작일(2026-11-01)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음"
-      },
-      {
-        "id": "etnews",
-        "name": "전자신문",
         "reason": "피드의 가장 오래된 항목(2026-11-03)이 시작일(2026-11-01)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음"
       },
       {
@@ -1134,8 +1128,7 @@
       "matchSlug": null,
       "decision": "HOLD",
       "reasons": [
-        "사건 신호 SECURITY_MENTION (우선순위 4)",
-        "근거 확인 대기 — 이번 실행 배치(40건)을 넘어 다음 실행으로 이월"
+        "근거 부족 (원문 SKIPPED_HOST_BLOCKED, 확인 사실 0개) — 발행하지 않음"
       ],
       "score": 4,
       "importance": 1,
@@ -1145,9 +1138,26 @@
         "SECURITY_MENTION"
       ],
       "company": "OpenAI",
-      "stage": "metadata",
-      "capStage": "evidence",
-      "queued": "evidence"
+      "stage": "evidence",
+      "evidenceStatus": "SKIPPED_HOST_BLOCKED",
+      "distinctFacts": 0,
+      "sufficiency": "INSUFFICIENT",
+      "deepMissing": [
+        "importance",
+        "userImpact",
+        "contextNeed",
+        "distinctFacts",
+        "evidenceQuality",
+        "standardWouldOmit"
+      ],
+      "alternate": {
+        "tried": [
+          "https://platform.openai.com/docs/changelog"
+        ],
+        "matched": 0,
+        "reason": "제목에 버전 붙은 이름 없음"
+      },
+      "suggestedDepth": null
     },
     {
       "id": "6fd6ad7938fa",
@@ -1221,8 +1231,7 @@
       "matchSlug": null,
       "decision": "HOLD",
       "reasons": [
-        "사건 신호 PRODUCT_LAUNCH (우선순위 5)",
-        "근거 확인 대기 — 이번 실행 배치(40건)을 넘어 다음 실행으로 이월"
+        "근거 부족 (원문 SKIPPED_HOST_BLOCKED, 확인 사실 0개) — 발행하지 않음"
       ],
       "score": 5,
       "importance": 1,
@@ -1232,9 +1241,26 @@
         "PRODUCT_LAUNCH"
       ],
       "company": "OpenAI",
-      "stage": "metadata",
-      "capStage": "evidence",
-      "queued": "evidence"
+      "stage": "evidence",
+      "evidenceStatus": "SKIPPED_HOST_BLOCKED",
+      "distinctFacts": 0,
+      "sufficiency": "INSUFFICIENT",
+      "deepMissing": [
+        "importance",
+        "userImpact",
+        "contextNeed",
+        "distinctFacts",
+        "evidenceQuality",
+        "standardWouldOmit"
+      ],
+      "alternate": {
+        "tried": [
+          "https://platform.openai.com/docs/changelog"
+        ],
+        "matched": 0,
+        "reason": "제목에 버전 붙은 이름 없음"
+      },
+      "suggestedDepth": null
     },
     {
       "id": "ed4b58253682",
@@ -1287,8 +1313,7 @@
       "matchSlug": null,
       "decision": "HOLD",
       "reasons": [
-        "사건 신호 SECURITY_MENTION (우선순위 4)",
-        "근거 확인 대기 — 이번 실행 배치(40건)을 넘어 다음 실행으로 이월"
+        "근거 부족 (원문 SKIPPED_HOST_BLOCKED, 확인 사실 0개) — 발행하지 않음"
       ],
       "score": 4,
       "importance": 1,
@@ -1298,9 +1323,26 @@
         "SECURITY_MENTION"
       ],
       "company": "OpenAI",
-      "stage": "metadata",
-      "capStage": "evidence",
-      "queued": "evidence"
+      "stage": "evidence",
+      "evidenceStatus": "SKIPPED_HOST_BLOCKED",
+      "distinctFacts": 0,
+      "sufficiency": "INSUFFICIENT",
+      "deepMissing": [
+        "importance",
+        "userImpact",
+        "contextNeed",
+        "distinctFacts",
+        "evidenceQuality",
+        "standardWouldOmit"
+      ],
+      "alternate": {
+        "tried": [
+          "https://platform.openai.com/docs/changelog"
+        ],
+        "matched": 0,
+        "reason": "제목에 버전 붙은 이름 없음"
+      },
+      "suggestedDepth": null
     },
     {
       "id": "598c6194c0d3",
@@ -1408,7 +1450,7 @@
       "decision": "HOLD",
       "reasons": [
         "사건 신호 MODEL_MENTION·PRICING (우선순위 4)",
-        "근거 확인 대기 — 이번 실행 배치(40건)을 넘어 다음 실행으로 이월"
+        "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
       ],
       "score": 4,
       "importance": 2,
@@ -1419,9 +1461,14 @@
         "PRICING"
       ],
       "company": "Amazon",
-      "stage": "metadata",
-      "capStage": "evidence",
-      "queued": "evidence"
+      "stage": "evidence",
+      "evidenceStatus": "OK",
+      "distinctFacts": 11,
+      "sufficiency": "SUFFICIENT_STANDARD",
+      "deepMissing": [
+        "importance"
+      ],
+      "suggestedDepth": "STANDARD"
     },
     {
       "id": "3e4765c6fd3b",
@@ -1456,7 +1503,7 @@
       "decision": "HOLD",
       "reasons": [
         "사건 신호 SECURITY·API_PLATFORM (우선순위 4)",
-        "근거 확인 대기 — 이번 실행 배치(40건)을 넘어 다음 실행으로 이월"
+        "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
       ],
       "score": 4,
       "importance": 2,
@@ -1467,9 +1514,15 @@
         "API_PLATFORM"
       ],
       "company": "Amazon",
-      "stage": "metadata",
-      "capStage": "evidence",
-      "queued": "evidence"
+      "stage": "evidence",
+      "evidenceStatus": "OK",
+      "distinctFacts": 10,
+      "sufficiency": "SUFFICIENT_STANDARD",
+      "deepMissing": [
+        "importance",
+        "userImpact"
+      ],
+      "suggestedDepth": "STANDARD"
     },
     {
       "id": "e4e619867236",
@@ -1481,8 +1534,7 @@
       "matchSlug": null,
       "decision": "HOLD",
       "reasons": [
-        "사건 신호 PRODUCT_LAUNCH (우선순위 5)",
-        "근거 확인 대기 — 이번 실행 배치(40건)을 넘어 다음 실행으로 이월"
+        "근거 부족 (원문 HTTP_429, 확인 사실 0개) — 발행하지 않음"
       ],
       "score": 5,
       "importance": 1,
@@ -1492,9 +1544,19 @@
         "PRODUCT_LAUNCH"
       ],
       "company": "Google",
-      "stage": "metadata",
-      "capStage": "evidence",
-      "queued": "evidence"
+      "stage": "evidence",
+      "evidenceStatus": "HTTP_429",
+      "distinctFacts": 0,
+      "sufficiency": "INSUFFICIENT",
+      "deepMissing": [
+        "importance",
+        "userImpact",
+        "contextNeed",
+        "distinctFacts",
+        "evidenceQuality",
+        "standardWouldOmit"
+      ],
+      "suggestedDepth": null
     },
     {
       "id": "d0cdd7377e6a",
@@ -1575,7 +1637,7 @@
       "decision": "HOLD",
       "reasons": [
         "사건 신호 INFRA (우선순위 4)",
-        "근거 확인 대기 — 이번 실행 배치(40건)을 넘어 다음 실행으로 이월"
+        "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
       ],
       "score": 4,
       "importance": 1,
@@ -1585,9 +1647,17 @@
         "INFRA"
       ],
       "company": "NVIDIA",
-      "stage": "metadata",
-      "capStage": "evidence",
-      "queued": "evidence"
+      "stage": "evidence",
+      "evidenceStatus": "OK",
+      "distinctFacts": 11,
+      "sufficiency": "SUFFICIENT_STANDARD",
+      "deepMissing": [
+        "importance",
+        "userImpact",
+        "contextNeed",
+        "standardWouldOmit"
+      ],
+      "suggestedDepth": "SHORT"
     },
     {
       "id": "9f7e69613023",
@@ -1620,7 +1690,7 @@
       "decision": "HOLD",
       "reasons": [
         "사건 신호 INFRA (우선순위 4)",
-        "근거 확인 대기 — 이번 실행 배치(40건)을 넘어 다음 실행으로 이월"
+        "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
       ],
       "score": 4,
       "importance": 1,
@@ -1630,9 +1700,17 @@
         "INFRA"
       ],
       "company": "NVIDIA",
-      "stage": "metadata",
-      "capStage": "evidence",
-      "queued": "evidence"
+      "stage": "evidence",
+      "evidenceStatus": "OK",
+      "distinctFacts": 11,
+      "sufficiency": "SUFFICIENT_STANDARD",
+      "deepMissing": [
+        "importance",
+        "userImpact",
+        "contextNeed",
+        "standardWouldOmit"
+      ],
+      "suggestedDepth": "SHORT"
     },
     {
       "id": "c3d9c0114f0e",
@@ -3139,184 +3217,6 @@
         "PRODUCT_LAUNCH"
       ],
       "company": "지디넷코리아",
-      "stage": "metadata"
-    },
-    {
-      "id": "65ababd4fbf8",
-      "title": "현대차 “당분간 외부 AI 사용마라”…해킹 우려에 '자율주행·로봇' 핵심부서 금지령",
-      "source": "전자신문",
-      "publishedAt": "2026-11-03T12:13:59.000Z",
-      "url": "https://www.etnews.com/20261103000455",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 SECURITY)"
-      ],
-      "score": 4,
-      "importance": 1,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "SECURITY"
-      ],
-      "company": "전자신문",
-      "stage": "metadata"
-    },
-    {
-      "id": "58f7d9f2504e",
-      "title": "반도체 장비, 3년뒤 계약까지 줄섰다",
-      "source": "전자신문",
-      "publishedAt": "2026-11-03T10:29:50.000Z",
-      "url": "https://www.etnews.com/20261103000452",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 INFRA)"
-      ],
-      "score": 4,
-      "importance": 1,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "INFRA"
-      ],
-      "company": "전자신문",
-      "stage": "metadata"
-    },
-    {
-      "id": "9834a5a9edc1",
-      "title": "세계 스마트시티 혁신 한자리에…'SCEWC 2026' 개막",
-      "source": "전자신문",
-      "publishedAt": "2026-11-03T09:30:00.000Z",
-      "url": "https://www.etnews.com/20261103000244",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "EXCLUDE",
-      "reasons": [
-        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
-      ],
-      "score": 2,
-      "importance": 0,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [],
-      "company": "전자신문",
-      "stage": "metadata"
-    },
-    {
-      "id": "3b716ad19772",
-      "title": "[보안긴급진단]〈2〉산업시설 해킹, 정보 유출 넘어 안전 위협",
-      "source": "전자신문",
-      "publishedAt": "2026-11-03T08:00:00.000Z",
-      "url": "https://www.etnews.com/20261103000169",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 SECURITY)"
-      ],
-      "score": 4,
-      "importance": 1,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "SECURITY"
-      ],
-      "company": "전자신문",
-      "stage": "metadata"
-    },
-    {
-      "id": "11ea4bae2471",
-      "title": "'비교지수 따라잡기 펀드' 전락한 韓 액티브 ETF…6번째 퇴출",
-      "source": "전자신문",
-      "publishedAt": "2026-11-03T07:00:00.000Z",
-      "url": "https://www.etnews.com/20261103000250",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 ACQ_INVEST·REGULATION)"
-      ],
-      "score": 8,
-      "importance": 3,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "ACQ_INVEST",
-        "REGULATION"
-      ],
-      "company": "전자신문",
-      "stage": "metadata"
-    },
-    {
-      "id": "be54ad68c516",
-      "title": "'가전 명가' 희석 日 전자 공룡, AI 인프라 공급망 '싹쓸이' 나섰다",
-      "source": "전자신문",
-      "publishedAt": "2026-11-03T07:00:00.000Z",
-      "url": "https://www.etnews.com/20261102000334",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 INFRA)"
-      ],
-      "score": 4,
-      "importance": 1,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "INFRA"
-      ],
-      "company": "전자신문",
-      "stage": "metadata"
-    },
-    {
-      "id": "5b27d9fc6eda",
-      "title": "한중 피지컬 AI협력 시동… “조작 지능·범용성 필수”",
-      "source": "전자신문",
-      "publishedAt": "2026-11-03T06:33:14.000Z",
-      "url": "https://www.etnews.com/20261103000344",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PARTNERSHIP)"
-      ],
-      "score": 4,
-      "importance": 1,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "PARTNERSHIP"
-      ],
-      "company": "전자신문",
-      "stage": "metadata"
-    },
-    {
-      "id": "5e77f94ec81d",
-      "title": "업스테이지 '솔라 프로 4' 범정부 AI 공통기반 탑재…행정망 국산 AI 활용",
-      "source": "전자신문",
-      "publishedAt": "2026-11-03T05:55:24.000Z",
-      "url": "https://www.etnews.com/20261103000312",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 INFRA·PRODUCT_LAUNCH·REGULATION·MODEL_MENTION)"
-      ],
-      "score": 11,
-      "importance": 4,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "INFRA",
-        "PRODUCT_LAUNCH",
-        "REGULATION",
-        "MODEL_MENTION"
-      ],
-      "company": "전자신문",
       "stage": "metadata"
     },
     {
@@ -22423,42 +22323,6 @@
       "fromQueue": "evidence"
     },
     {
-      "id": "f3d8cfd7112a",
-      "title": "Immersive explorations now available in the Gemini app",
-      "source": "Google Workspace Updates",
-      "publishedAt": "2026-10-28T18:21:30.362Z",
-      "url": "https://workspaceupdates.googleblog.com/2026/10/immersive-explorations-now-available-in-the-Gemini-app.html",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "근거 부족 (원문 HTTP_429, 확인 사실 0개) — 발행하지 않음"
-      ],
-      "score": 13,
-      "importance": 4,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "MODEL",
-        "PRODUCT_LAUNCH",
-        "AVAILABILITY",
-        "CONSUMER"
-      ],
-      "company": "Google",
-      "stage": "evidence",
-      "evidenceStatus": "HTTP_429",
-      "distinctFacts": 0,
-      "sufficiency": "INSUFFICIENT",
-      "deepMissing": [
-        "contextNeed",
-        "distinctFacts",
-        "evidenceQuality",
-        "standardWouldOmit"
-      ],
-      "suggestedDepth": null,
-      "fromQueue": "draft"
-    },
-    {
       "id": "cabe8a08dfb8",
       "title": "Configure the ChatGPT desktop app with Amazon Bedrock in AWS GovCloud (US)",
       "source": "AWS Machine Learning Blog",
@@ -22496,5 +22360,5 @@
       "fromQueue": "draft"
     }
   ],
-  "finishedAt": "2026-11-03T15:19:43.788Z"
+  "finishedAt": "2026-11-03T15:35:56.536Z"
 }

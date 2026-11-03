@@ -6,7 +6,7 @@
 
 | 수집 | 신규 | 후속 | 중복 | 불확실 | 발행 추천 | 보류 | 제외 | 원고 |
 |---|---|---|---|---|---|---|---|---|
-| 912 | 971 | 0 | 0 | 0 | 35 | 508 | 428 | 0 |
+| 904 | 962 | 0 | 0 | 0 | 35 | 500 | 427 | 0 |
 
 > 자동으로 발행하지 않습니다. 아래 추천은 사람이 `npm run daily:approve -- <날짜> <id>`로 승인해야 기사 데이터에 들어갑니다. 뉴스레터도 만들거나 보내지 않습니다.
 
@@ -332,21 +332,20 @@
 - NVIDIA Unveils Minerva to Bring End-to-End Observability fo… — 이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성
 - Stop guessing auto scaling targets for TTS on Amazon SageMa… — 이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성
 
-## 보류 (508)
+## 보류 (500)
 
 - **컨테이너처럼 쓰고, VM처럼 격리하기** (NAVER D2, 2026-11-02) — 근거 부족 (원문 OK, 확인 사실 0개) — 발행하지 않음 · 확인 필요: 근거 부족
-- **Immersive explorations now available in the Gemini app** (Google Workspace Updates, 2026-10-28) — 근거 부족 (원문 HTTP_429, 확인 사실 0개) — 발행하지 않음 · 확인 필요: 원문을 읽지 못함, 근거 부족
 - **LifeVal** (OpenAI, 2026-11-02) — 근거 부족 (원문 HTTP_403, 확인 사실 0개) — 발행하지 않음 · 확인 필요: 원문을 읽지 못함, 근거 부족
 - **[Video] Inside the Tech: Samsung Micro RGB TV** (Samsung Newsroom, 2026-11-03) — 근거 부족 (원문 TIMEOUT, 확인 사실 0개) — 발행하지 않음 · 확인 필요: 원문을 읽지 못함, 근거 부족
 - **Rewarding defenders with bigger bug bounties** (OpenAI, 2026-11-02) — 근거 부족 (원문 HTTP_403, 확인 사실 0개) — 발행하지 않음 · 확인 필요: 원문을 읽지 못함, 근거 부족
-- Preparing our next security sprint to harden OpenAI (OpenAI, 2026-11-02) — 사건 신호 SECURITY_MENTION (우선순위 4) · 근거 확인 대기 — 이번 실행 배치(40건)을 넘어 다음 실행으로 이월
-- Introducing the Grid Protectors Program (OpenAI, 2026-11-02) — 사건 신호 PRODUCT_LAUNCH (우선순위 5) · 근거 확인 대기 — 이번 실행 배치(40건)을 넘어 다음 실행으로 이월
-- OpenAI appoints Dan Driscoll as Senior Counselor for National Security Modernization (OpenAI, 2026-11-02) — 사건 신호 SECURITY_MENTION (우선순위 4) · 근거 확인 대기 — 이번 실행 배치(40건)을 넘어 다음 실행으로 이월
-- Build efficient agents with knowledge distillation on Amazon SageMaker AI (AWS Machine Learning Blog, 2026-11-02) — 사건 신호 MODEL_MENTION·PRICING (우선순위 4) · 근거 확인 대기 — 이번 실행 배치(40건)을 넘어 다음 실행으로 이월
-- How Circle K accelerated DevOps incident triage to under 15 minutes with Amazon Bedrock (AWS Machine Learning Blog, 2026-11-02) — 사건 신호 SECURITY·API_PLATFORM (우선순위 4) · 근거 확인 대기 — 이번 실행 배치(40건)을 넘어 다음 실행으로 이월
-- Display Custom Policy in the Green Room before Google Meet Calls (Google Workspace Updates, 2026-11-03) — 사건 신호 PRODUCT_LAUNCH (우선순위 5) · 근거 확인 대기 — 이번 실행 배치(40건)을 넘어 다음 실행으로 이월
-- Diagnose Distributed AI Workload Failures with NVIDIA Attribution (NVIDIA Technical Blog, 2026-11-02) — 사건 신호 INFRA (우선순위 4) · 근거 확인 대기 — 이번 실행 배치(40건)을 넘어 다음 실행으로 이월
-- Making Kubernetes AI-Ready for NVIDIA Vera Rubin on Day One (NVIDIA Technical Blog, 2026-11-02) — 사건 신호 INFRA (우선순위 4) · 근거 확인 대기 — 이번 실행 배치(40건)을 넘어 다음 실행으로 이월
+- **Introducing the Grid Protectors Program** (OpenAI, 2026-11-02) — 근거 부족 (원문 SKIPPED_HOST_BLOCKED, 확인 사실 0개) — 발행하지 않음 · 확인 필요: 원문을 읽지 못함, 근거 부족
+- **Display Custom Policy in the Green Room before Google Meet Calls** (Google Workspace Updates, 2026-11-03) — 근거 부족 (원문 HTTP_429, 확인 사실 0개) — 발행하지 않음 · 확인 필요: 원문을 읽지 못함, 근거 부족
+- **Preparing our next security sprint to harden OpenAI** (OpenAI, 2026-11-02) — 근거 부족 (원문 SKIPPED_HOST_BLOCKED, 확인 사실 0개) — 발행하지 않음 · 확인 필요: 원문을 읽지 못함, 근거 부족
+- **OpenAI appoints Dan Driscoll as Senior Counselor for National Security Modernization** (OpenAI, 2026-11-02) — 근거 부족 (원문 SKIPPED_HOST_BLOCKED, 확인 사실 0개) — 발행하지 않음 · 확인 필요: 원문을 읽지 못함, 근거 부족
+- **Build efficient agents with knowledge distillation on Amazon SageMaker AI** (AWS Machine Learning Blog, 2026-11-02) — 사건 신호 MODEL_MENTION·PRICING (우선순위 4) · 근거는 있으나 우선순위 4 < 발행 추천 기준 6 · 확인 필요: 없음
+- **How Circle K accelerated DevOps incident triage to under 15 minutes with Amazon Bedrock** (AWS Machine Learning Blog, 2026-11-02) — 사건 신호 SECURITY·API_PLATFORM (우선순위 4) · 근거는 있으나 우선순위 4 < 발행 추천 기준 6 · 확인 필요: 없음
+- **Diagnose Distributed AI Workload Failures with NVIDIA Attribution** (NVIDIA Technical Blog, 2026-11-02) — 사건 신호 INFRA (우선순위 4) · 근거는 있으나 우선순위 4 < 발행 추천 기준 6 · 확인 필요: 없음
+- **Making Kubernetes AI-Ready for NVIDIA Vera Rubin on Day One** (NVIDIA Technical Blog, 2026-11-02) — 사건 신호 INFRA (우선순위 4) · 근거는 있으나 우선순위 4 < 발행 추천 기준 6 · 확인 필요: 없음
 - 뤼튼·스캐터랩 양분한 AI 캐릭터챗 시장에 게임사 가세…경쟁 본격화 (AI타임스, 2026-11-03) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)
 - 카르파시, 유튜브 추천에 질려 AI로 대안 개발…"2시간 만에 완성" (AI타임스, 2026-11-03) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)
 - 딥시크, 자연어로 AI 에이전트 기능 확장…플러그인 제작까지 자동화 (AI타임스, 2026-11-03) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)
@@ -359,16 +358,25 @@
 - 오픈AI, 데이터센터 명칭 'AI 컴퓨팅 캠퍼스'로 변경 추진...주민 반발 대응 (AI타임스, 2026-11-03) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRICING·REGULATION·INFRA)
 - 전남광주 서남부 건축허가 80% 늘었지만 착공 36% 감소…건설업 자금경색 (AI타임스, 2026-11-03) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PARTNERSHIP)
 - 애플, 첫 가정용 로봇 출시 지연…하드웨어 완성에도 AI 개발 난항 (AI타임스, 2026-11-03) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)
-- … 외 483건 (run.json)
+- 네오사피엔스, 보이저엑스 ‘브루’에 AI 목소리 공급…한 달 만에 2000만자 돌파 (AI타임스, 2026-11-03) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PARTNERSHIP)
+- 래블업, 상장 첫날 급등 후 급락…AI 인프라주 '호된 신고식' (AI타임스, 2026-11-03) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 ACQ_INVEST)
+- [AI 모델 신작] 사람처럼 대화하는 '프리즘'부터 로봇 제어 AI까지 6종 (AI타임스, 2026-11-03) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·MODEL_MENTION)
+- 푸틴, 민간 데이터센터에 IT 인프라 지원 위해 용량의 10% 확보 지시 (AI타임스, 2026-11-03) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 REGULATION·INFRA)
+- 스페이스X, 부스트모바일 인수 추진…미 통신 3사 거절에 우회로 모색 (AI타임스, 2026-11-03) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 ACQ_INVEST)
+- 전남광주 농축수산물 가격 하락…공업제품 영향에 물가 2.8%↑ (AI타임스, 2026-11-03) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRICING)
+- 국가 슈퍼컴 6호기 ‘한강’ 가동…칩 1.8만개 탑재 세계 10위권 기대 (AI타임스, 2026-11-03) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 INFRA·REGULATION)
+- SDT, AIDC '발열 해결사' 100kW 액침냉각 시스템 공개 (AI타임스, 2026-11-03) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 INFRA·PRODUCT_LAUNCH)
+- … 외 468건 (run.json)
 
-## 제외 (428)
+## 제외 (427)
 
-- 가치 낮음 428건: Heimstaden is changing residential real estate man · Scaling Git at OpenAI · Qodo builds context into AI code review with Codex · Transformers Model Integration Contracts · Prepare web content for Amazon Bedrock Knowledge B · Agentic engineering intelligence with Amazon Nova  · Keep Distributed Training Running with Automated W · Build World Models for Interactive Simulation with …
+- 가치 낮음 427건: Heimstaden is changing residential real estate man · Scaling Git at OpenAI · Qodo builds context into AI code review with Codex · Transformers Model Integration Contracts · Prepare web content for Amazon Bedrock Knowledge B · Agentic engineering intelligence with Amazon Nova  · Keep Distributed Training Running with Automated W · Build World Models for Interactive Simulation with …
 
-## 소스 상태 (정상 23, 그중 기간 안 새 글 0건 10 · 경고 7 · 저하 1 · 실패 0 · 비활성 9)
+## 소스 상태 (정상 22, 그중 기간 안 새 글 0건 10 · 경고 7 · 저하 1 · 실패 1 · 비활성 9)
 
 | 소스 | 상태 | HTTP | 글 주소(형식 일치/전체) | 기간 안 | 연속 0건 | 최근 정상 수집 | 이유 |
 |---|---|---|---|---|---|---|---|
+| 전자신문 | **FAILED** | - | -/- | 0 | 0 | 2026-11-04 | 요청 실패 (failed) |
 | Anthropic (모델 발표 페이지) | **DEGRADED** | 200 | 3/214 | 0 | 19 | 2026-11-04 | 발행일을 확인하지 못한 글 1건 (후보에서 제외) · 기간 안 새 글 0건 19회 연속 (마지막 수집 기록 없음) |
 | Anthropic | **WARNING** | 200 | 281/589 | 0 | 6 | 2026-11-04 | 발행일을 확인하지 못한 글 8건 (후보에서 제외) · 기간 안 새 글 0건 6회 연속 (마지막 수집 2026-10-29) |
 | xAI API Release Notes (docs.x.ai) | **WARNING** | 200 | 58/58 | 0 | 5 | 2026-11-04 | 기간 안 새 글 0건 5회 연속 (마지막 수집 2026-10-30) |
@@ -382,14 +390,13 @@
 
 ## 처리 대기열 · 수집 범위
 
-- 진행 상태: **미완료** · 이번 실행 근거 확인 40건 · 원고 작성 0건
-- 지난 실행에서 넘어온 일: 근거 확인 25건 · 원고 작성 34건
-- 남은 일 (다음 실행으로 이월): 근거 확인 대기 **33**건 · 원고 작성 대기 **35**건 · 아직 열지 못한 글 주소 0개 · 재시도할 소스 0곳
+- 진행 상태: **미완료** · 이번 실행 근거 확인 11건 · 원고 작성 0건
+- 지난 실행에서 넘어온 일: 근거 확인 25건 · 원고 작성 33건
+- 남은 일 (다음 실행으로 이월): 근거 확인 대기 **25**건 · 원고 작성 대기 **35**건 · 아직 열지 못한 글 주소 0개 · 재시도할 소스 1곳
   - 원고 작성 대기: 발행 추천은 났지만 원고 생성 수단이 없거나(무료 생성 미설정·Shadow) 배치를 넘은 항목입니다. 근거는 후보 파일에 보존했고, 빈 원고나 허위 원고는 만들지 않습니다.
-- 수집 범위가 기간 전체를 덮지 못한 소스 4곳 (놓쳤을 수 있음):
+- 수집 범위가 기간 전체를 덮지 못한 소스 3곳 (놓쳤을 수 있음):
   - AI타임스: 피드의 가장 오래된 항목(2026-11-02)이 시작일(2026-11-01)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음
   - 지디넷코리아: 피드의 가장 오래된 항목(2026-11-03)이 시작일(2026-11-01)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음
-  - 전자신문: 피드의 가장 오래된 항목(2026-11-03)이 시작일(2026-11-01)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음
   - arXiv cs.AI (신규 논문): 피드의 가장 오래된 항목(2026-11-03)이 시작일(2026-11-01)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음
 
 ## 선정 진단 (Selection Diagnostics)
@@ -397,19 +404,18 @@
 **메타데이터 상위 10** (원문을 열기 전 점수 · 유형 · 사건 신호 → 결과)
 - 14 · 소식 · INFRA·KOREA·PRODUCT_LAUNCH — 컨테이너처럼 쓰고, VM처럼 격리하기 → **HOLD**
 - 13 · 소식 · MODEL·PRODUCT_LAUNCH·AVAILABILITY·PREVIEW·CONSUMER — Create, preview, and edit files directly in the Gemini app → **PUBLISH**
-- 13 · 소식 · MODEL·PRODUCT_LAUNCH·AVAILABILITY·CONSUMER — Immersive explorations now available in the Gemini app → **HOLD**
 - 12 · 소식 · PRODUCT_LAUNCH·PRICING·REGULATION — 호주 서부, 콘센트형 태양광 합법화 추진…ESS 결합 시 연 47만원 절감 추산 → **HOLD**
 - 11 · 소식 · PRODUCT_LAUNCH·REGULATION·RESEARCH_RESULT — LifeVal → **HOLD**
 - 11 · 소식 · PRICING·REGULATION·INFRA — 오픈AI, 데이터센터 명칭 'AI 컴퓨팅 캠퍼스'로 변경 추진...주민 반발 대응 → **HOLD**
 - 11 · 소식 · KOREA·PARTNERSHIP — 알티베이스, 베트남서 열린 IR 피칭서 최우수기업 선정 → **HOLD**
-- 11 · 소식 · INFRA·PRODUCT_LAUNCH·REGULATION·MODEL_MENTION — 업스테이지 '솔라 프로 4' 범정부 AI 공통기반 탑재…행정망 국산 AI 활용 → **HOLD**
 - 11 · 소식 · MODEL·PRODUCT_LAUNCH·INFRA — XLA from the Trenches: Correctness on TPU Workloads at Scale → **HOLD**
 - 11 · 소식 · MODEL·PRICING·MODEL_MENTION — BLPO: Beyond-Local Policy Optimization for Long-Horizon LLM… → **HOLD**
+- 11 · 소식 · PRICING·REGULATION·MODEL_MENTION — The SIMPLE Law for Energy Cost of LLM Inference → **HOLD**
+- 11 · 소식 · PRICING·ACQ_INVEST·RESEARCH_RESULT — PhoneValue-Bench: A Multimodal Benchmark and Datasets for C… → **HOLD**
 
-**근거 확인 명단 40건** (원문 요청 상한 40, 최종 추천 상한 0)
+**근거 확인 명단 47건** (원문 요청 상한 40, 최종 추천 상한 0)
 - 컨테이너처럼 쓰고, VM처럼 격리하기 — 원문 OK · 확인 사실 0 · INSUFFICIENT · 깊이 - → **HOLD**
 - Create, preview, and edit files directly in the Gemini app — 원문 OK · 확인 사실 11 · SUFFICIENT_STANDARD · 깊이 STANDARD → **PUBLISH**
-- Immersive explorations now available in the Gemini app — 원문 HTTP_429 · 확인 사실 0 · INSUFFICIENT · 깊이 - → **HOLD**
 - LifeVal — 원문 HTTP_403 (대체 문서 0줄: 제목에 버전 붙은 이름 없음) · 확인 사실 0 · INSUFFICIENT · 깊이 - → **HOLD**
 - Announcing new ways to customize models with SageMaker AI, … — 원문 OK · 확인 사실 9 · SUFFICIENT_STANDARD · 깊이 STANDARD → **PUBLISH**
 - Muse Is Now Available in Singapore: The World’s First Perso… — 원문 OK · 확인 사실 11 · SUFFICIENT_STANDARD · 깊이 STANDARD → **PUBLISH**
@@ -447,16 +453,17 @@
 - Claude Security now scans continuously and tracks fixes — 원문 OK · 확인 사실 11 · SUFFICIENT_STANDARD · 깊이 STANDARD → **PUBLISH**
 - NVIDIA Unveils Minerva to Bring End-to-End Observability fo… — 원문 OK · 확인 사실 12 · SUFFICIENT_STANDARD · 깊이 STANDARD → **PUBLISH**
 - Stop guessing auto scaling targets for TTS on Amazon SageMa… — 원문 OK · 확인 사실 11 · SUFFICIENT_STANDARD · 깊이 STANDARD → **PUBLISH**
+- Introducing the Grid Protectors Program — 원문 SKIPPED_HOST_BLOCKED (대체 문서 0줄: 제목에 버전 붙은 이름 없음) · 확인 사실 0 · INSUFFICIENT · 깊이 - → **HOLD**
+- Display Custom Policy in the Green Room before Google Meet … — 원문 HTTP_429 · 확인 사실 0 · INSUFFICIENT · 깊이 - → **HOLD**
+- Preparing our next security sprint to harden OpenAI — 원문 SKIPPED_HOST_BLOCKED (대체 문서 0줄: 제목에 버전 붙은 이름 없음) · 확인 사실 0 · INSUFFICIENT · 깊이 - → **HOLD**
+- OpenAI appoints Dan Driscoll as Senior Counselor for Nation… — 원문 SKIPPED_HOST_BLOCKED (대체 문서 0줄: 제목에 버전 붙은 이름 없음) · 확인 사실 0 · INSUFFICIENT · 깊이 - → **HOLD**
+- Build efficient agents with knowledge distillation on Amazo… — 원문 OK · 확인 사실 11 · SUFFICIENT_STANDARD · 깊이 STANDARD → **HOLD**
+- How Circle K accelerated DevOps incident triage to under 15… — 원문 OK · 확인 사실 10 · SUFFICIENT_STANDARD · 깊이 STANDARD → **HOLD**
+- Diagnose Distributed AI Workload Failures with NVIDIA Attri… — 원문 OK · 확인 사실 11 · SUFFICIENT_STANDARD · 깊이 SHORT → **HOLD**
+- Making Kubernetes AI-Ready for NVIDIA Vera Rubin on Day One — 원문 OK · 확인 사실 11 · SUFFICIENT_STANDARD · 깊이 SHORT → **HOLD**
 
-**상한·다양성으로 빠진 후보 8건**
-- Preparing our next security sprint to harden OpenAI — 근거 요청 상한 (우선순위 4)
-- Introducing the Grid Protectors Program — 근거 요청 상한 (우선순위 5)
-- OpenAI appoints Dan Driscoll as Senior Counselor for Nation… — 근거 요청 상한 (우선순위 4)
-- Build efficient agents with knowledge distillation on Amazo… — 근거 요청 상한 (우선순위 4)
-- How Circle K accelerated DevOps incident triage to under 15… — 근거 요청 상한 (우선순위 4)
-- Display Custom Policy in the Green Room before Google Meet … — 근거 요청 상한 (우선순위 5)
-- Diagnose Distributed AI Workload Failures with NVIDIA Attri… — 근거 요청 상한 (우선순위 4)
-- Making Kubernetes AI-Ready for NVIDIA Vera Rubin on Day One — 근거 요청 상한 (우선순위 4)
+**상한·다양성으로 빠진 후보 0건**
+- 없음
 
 **글 유형 감점 62건**: Heimstaden is changing residential real… (고객 사례, EXCLUDE) · Prepare web content for Amazon Bedrock … (사용법, EXCLUDE) · Build efficient agents with knowledge d… (사용법, HOLD) · Agentic engineering intelligence with A… (사용법, EXCLUDE) · How Circle K accelerated DevOps inciden… (사용법, HOLD) · Build World Models for Interactive Simu… (사용법, EXCLUDE) · Automated Theorem Generation in First-O… (논문, EXCLUDE) · Who Schedules Agent Memory? A Sidecar A… (논문, HOLD) · Appointed-Time Fault-Tolerant Fast Term… (채용·인사, EXCLUDE) · Concept-Guided Prompting Strategies Inc… (논문, EXCLUDE) · FOCUS: Closed-Loop Attention Feedback f… (논문, HOLD) · Just-in-Time Skill Retrieval via Long-H… (논문, HOLD) …
 
@@ -478,10 +485,10 @@
 - Advancing digital sovereignty with greater control and choi… → STANDARD (DEEP 아님: 중요도 4+, 사용자 영향, 확인 사실 6+, STANDARD로는 맥락 누락)
 - Introducing Reflection Beam: an open-weight model for agent… → STANDARD (DEEP 아님: 중요도 4+, 배경 설명 필요, STANDARD로는 맥락 누락)
 
-**보류 이유 (508건)**: 언론 보도 470 · N-N-N DAILY에서 이미 추천함 25 · 근거 확인 대기 8 · 근거 부족 5
+**보류 이유 (500건)**: 언론 보도 463 · N-N-N DAILY에서 이미 추천함 25 · 근거 부족 8 · 근거는 있으나 우선순위 N < 발행 추천 기준 N 4
 
 ## 비용
 
-원고 생성 gemini (gemini-3.8-flash) · 호출 1/1 · 입력 0 · 출력 0 토큰 · 예상 비용 $0.0000 / 상한 $0.5
+원고 생성 gemini (gemini-3.6-flash) · 호출 1/1 · 입력 0 · 출력 0 토큰 · 예상 비용 $0.0000 / 상한 $0.5
 
-<sub>실행 2026-11-03T15:18:15.556Z → 2026-11-03T15:19:43.788Z · 상세: run.json, candidates/*.json</sub>
+<sub>실행 2026-11-03T15:34:20.000Z → 2026-11-03T15:35:56.536Z · 상세: run.json, candidates/*.json</sub>
