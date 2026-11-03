@@ -1,0 +1,234 @@
+{
+  "id": "d2dcc5433b77",
+  "date": "2026-11-04",
+  "proposedSlug": "aws-weekly-roundup-gpt-6-1-terra",
+  "title": null,
+  "sourceTitle": "AWS Weekly Roundup: GPT-6.1 Terra on Bedrock, Step Functions as agent tools, and more (November 2, 2026)",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": true,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-gpt-6-1-terra-on-bedrock-step-functions-as-agent-tools-and-more-november-2-2026/",
+      "name": "AWS News Blog",
+      "type": "official",
+      "publishedAt": "2026-11-02T16:45:48.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "d2dcc5433b77",
+    "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-gpt-6-1-terra-on-bedrock-step-functions-as-agent-tools-and-more-november-2-2026/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-gpt-6-1-terra-on-bedrock-step-functions-as-agent-tools-and-more-november-2-2026",
+    "title": "AWS Weekly Roundup: GPT-6.1 Terra on Bedrock, Step Functions as agent tools, and more (November 2, 2026)",
+    "excerpt": "The agentic launches that stayed with me last week had nothing to do with how capable a model is. They were about reach. AWS Step Functions, which already orchestrates over 220 AWS services, can now be handed to an agent as a tool, so workflows teams already trust became callable without a rewrite. ",
+    "publishedAt": "2026-11-02T16:45:48.000Z",
+    "sourceId": "aws-news",
+    "sourceName": "AWS News Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/aws/feed/",
+    "fetchedAt": "2026-11-03T15:18:15.556Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 7404,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "The agentic launches that stayed with me last week had nothing to do with how capable a model is. They were about reach. AWS Step Functions, which already orchestrates over 220 AWS services, can now be handed to an agent as a tool, so workflows teams already trust became callable without a rewrite. ",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-gpt-6-1-terra-on-bedrock-step-functions-as-agent-tools-and-more-november-2-2026/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-11-02T16:45:48.000Z",
+        "checkedAt": "2026-11-03T15:18:55.027Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "AWS Weekly Roundup: GPT-6.1 Terra on Bedrock, Step Functions as agent tools, and more (November 2, 2026) | AWS News Blog",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-gpt-6-1-terra-on-bedrock-step-functions-as-agent-tools-and-more-november-2-2026/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-11-02T16:45:48.000Z",
+        "checkedAt": "2026-11-03T15:18:55.027Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "AWS Weekly Roundup: GPT-6.1 Terra on Bedrock, Step Functions as agent tools, and more (November 2, 2026)",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-gpt-6-1-terra-on-bedrock-step-functions-as-agent-tools-and-more-november-2-2026/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-11-02T16:45:48.000Z",
+        "checkedAt": "2026-11-03T15:18:55.027Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "AWS Step Functions , which already orchestrates over 220 AWS services, can now be handed to an agent as a tool, so workflows teams already trust became callable without a rewrite.",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-gpt-6-1-terra-on-bedrock-step-functions-as-agent-tools-and-more-november-2-2026/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-11-02T16:45:48.000Z",
+        "checkedAt": "2026-11-03T15:18:55.027Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "OpenAI GPT-6.1 Terra is now generally available on Amazon Bedrock , and what interests me is where it sits rather than what it tops.",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-gpt-6-1-terra-on-bedrock-step-functions-as-agent-tools-and-more-november-2-2026/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-11-02T16:45:48.000Z",
+        "checkedAt": "2026-11-03T15:18:55.027Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "In OpenAI’s Agents’ Last Exam evaluation it scored 15 percentage points higher than GPT-5.6 Terra, performed on par with GPT-6 Astra, and completed tasks more than three times faster than both.",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-gpt-6-1-terra-on-bedrock-step-functions-as-agent-tools-and-more-november-2-2026/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-11-02T16:45:48.000Z",
+        "checkedAt": "2026-11-03T15:18:55.027Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "The price is what I would check first: input and output tokens are at least 50% lower than GPT-6.1 Sol and GPT-5.6 Terra.",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-gpt-6-1-terra-on-bedrock-step-functions-as-agent-tools-and-more-november-2-2026/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-11-02T16:45:48.000Z",
+        "checkedAt": "2026-11-03T15:18:55.027Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "AWS Step Functions workflows are now available as AI agent tools through Amazon Bedrock AgentCore Gateway, which connects agents to tools over the Model Context Protocol (MCP).",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-gpt-6-1-terra-on-bedrock-step-functions-as-agent-tools-and-more-november-2-2026/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-11-02T16:45:48.000Z",
+        "checkedAt": "2026-11-03T15:18:55.027Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "AWS Lambda supports Seekable OCI (SOCI) lazy loading for Lambda Managed Instances – You can now have AWS Lambda fetch only the files needed at each stage of startup instead of pulling a whole container image first, which AWS puts at up to 70% off container startup time.",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-gpt-6-1-terra-on-bedrock-step-functions-as-agent-tools-and-more-november-2-2026/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-11-02T16:45:48.000Z",
+        "checkedAt": "2026-11-03T15:18:55.027Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "How Nubank automated disaster recovery with the AWS DevOps Agent – Nubank serves more than 140 million customers across Brazil, Mexico, and Colombia, and classifies over 300 business flows as critical, each tested on a regulator’s schedule.",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-gpt-6-1-terra-on-bedrock-step-functions-as-agent-tools-and-more-november-2-2026/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-11-02T16:45:48.000Z",
+        "checkedAt": "2026-11-03T15:18:55.027Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Nubank reports that handing evidence collection and report writing to the AWS DevOps Agent cut a test cycle from about 4.3 hours to roughly 40 minutes, and quadrupled flow coverage in 2026 to more than 160.",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-gpt-6-1-terra-on-bedrock-step-functions-as-agent-tools-and-more-november-2-2026/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-11-02T16:45:48.000Z",
+        "checkedAt": "2026-11-03T15:18:55.027Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "How MoEngage turned over 400 APIs into agent tools with AgentCore Gateway – Roughly 400 internal REST API operations, built by 25 teams, sitting in private VPCs across seven Regions, with tenant identity that could never become a parameter the model gets to set.",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-gpt-6-1-terra-on-bedrock-step-functions-as-agent-tools-and-more-november-2-2026/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-11-02T16:45:48.000Z",
+        "checkedAt": "2026-11-03T15:18:55.027Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "AWS re:Invent – re:Invent returns to Las Vegas from November 30 to December 4, with more than 2,200 sessions.",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-gpt-6-1-terra-on-bedrock-step-functions-as-agent-tools-and-more-november-2-2026/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-11-02T16:45:48.000Z",
+        "checkedAt": "2026-11-03T15:18:55.027Z"
+      }
+    ],
+    "pageDate": "2026-11-02T16:45:48.000Z"
+  },
+  "score": {
+    "importance": 3,
+    "practicalImpact": 2,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "MODEL",
+      "PRODUCT_LAUNCH",
+      "API_PLATFORM"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 10,
+    "total": 10
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 MODEL·PRODUCT_LAUNCH·API_PLATFORM (우선순위 10)",
+    "근거 확인 통과 (확인 사실 11개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "status": "skipped",
+    "error": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성",
+    "promptVersion": "draft-v1",
+    "at": "2026-11-03T15:19:43.774Z",
+    "evidenceHash": "b7477ccb452b"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": true,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}
