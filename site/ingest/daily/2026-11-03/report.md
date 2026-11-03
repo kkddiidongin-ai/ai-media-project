@@ -6,7 +6,7 @@
 
 | 수집 | 신규 | 후속 | 중복 | 불확실 | 발행 추천 | 보류 | 제외 | 원고 |
 |---|---|---|---|---|---|---|---|---|
-| 372 | 381 | 0 | 0 | 0 | 1 | 228 | 152 | 0 |
+| 387 | 396 | 0 | 0 | 0 | 1 | 237 | 158 | 0 |
 
 > 자동으로 발행하지 않습니다. 아래 추천은 사람이 `npm run daily:approve -- <날짜> <id>`로 승인해야 기사 데이터에 들어갑니다. 뉴스레터도 만들거나 보내지 않습니다.
 
@@ -20,15 +20,25 @@
 - 검증: 확인 필요 없음
 - 원고: 없음 — Shadow Mode — 원고를 만들지 않음 · 📮 뉴스레터 후보
 
-## 보류 (228)
+## 보류 (237)
 
 - **컨테이너처럼 쓰고, VM처럼 격리하기** (NAVER D2, 2026-11-02) — 근거 부족 (원문 OK, 확인 사실 0개) — 발행하지 않음 · 확인 필요: 근거 부족
 - **LifeVal** (OpenAI, 2026-11-02) — 근거 부족 (원문 HTTP_403, 확인 사실 0개) — 발행하지 않음 · 확인 필요: 원문을 읽지 못함, 근거 부족
-- **Introducing the Grid Protectors Program** (OpenAI, 2026-11-02) — 근거 부족 (원문 HTTP_403, 확인 사실 0개) — 발행하지 않음 · 확인 필요: 원문을 읽지 못함, 근거 부족
+- **[Video] Inside the Tech: Samsung Micro RGB TV** (Samsung Newsroom, 2026-11-03) — 근거 부족 (원문 TIMEOUT, 확인 사실 0개) — 발행하지 않음 · 확인 필요: 원문을 읽지 못함, 근거 부족
+- **Rewarding defenders with bigger bug bounties** (OpenAI, 2026-11-02) — 근거 부족 (원문 HTTP_403, 확인 사실 0개) — 발행하지 않음 · 확인 필요: 원문을 읽지 못함, 근거 부족
+- **Introducing the Grid Protectors Program** (OpenAI, 2026-11-02) — 근거 부족 (원문 SKIPPED_HOST_BLOCKED, 확인 사실 0개) — 발행하지 않음 · 확인 필요: 원문을 읽지 못함, 근거 부족
 - **Make long-running agents faster with message threads** (Claude (claude.com articles), 2026-11-02) — 사건 신호 API_PLATFORM (우선순위 5) · 근거는 있으나 우선순위 5 < 발행 추천 기준 6 · 확인 필요: 없음
+- **Preparing our next security sprint to harden OpenAI** (OpenAI, 2026-11-02) — 근거 부족 (원문 SKIPPED_HOST_BLOCKED, 확인 사실 0개) — 발행하지 않음 · 확인 필요: 원문을 읽지 못함, 근거 부족
+- **OpenAI appoints Dan Driscoll as Senior Counselor for National Security Modernization** (OpenAI, 2026-11-02) — 근거 부족 (원문 SKIPPED_HOST_BLOCKED, 확인 사실 0개) — 발행하지 않음 · 확인 필요: 원문을 읽지 못함, 근거 부족
 - **Build efficient agents with knowledge distillation on Amazon SageMaker AI** (AWS Machine Learning Blog, 2026-11-02) — 사건 신호 MODEL_MENTION·PRICING (우선순위 4) · 근거는 있으나 우선순위 4 < 발행 추천 기준 6 · 확인 필요: 없음
 - **How Circle K accelerated DevOps incident triage to under 15 minutes with Amazon Bedrock** (AWS Machine Learning Blog, 2026-11-02) — 사건 신호 SECURITY·API_PLATFORM (우선순위 4) · 근거는 있으나 우선순위 4 < 발행 추천 기준 6 · 확인 필요: 없음
+- **Diagnose Distributed AI Workload Failures with NVIDIA Attribution** (NVIDIA Technical Blog, 2026-11-02) — 사건 신호 INFRA (우선순위 4) · 근거는 있으나 우선순위 4 < 발행 추천 기준 6 · 확인 필요: 없음
 - **Making Kubernetes AI-Ready for NVIDIA Vera Rubin on Day One** (NVIDIA Technical Blog, 2026-11-02) — 사건 신호 INFRA (우선순위 4) · 근거는 있으나 우선순위 4 < 발행 추천 기준 6 · 확인 필요: 없음
+- 오픈AI, UAE 석유·정부·투자 업무에 AI 에이전트 도입…4건 협약 (AI타임스, 2026-11-03) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PARTNERSHIP·REGULATION)
+- 앤트로픽, 매출 급증에도 영업적자…AI 인프라 투자 부담 (AI타임스, 2026-11-03) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·MODEL_MENTION)
+- 오픈AI, 12월부터 챗GPT·코덱스 사용량 통합…기존 앱 1월 종료 (AI타임스, 2026-11-03) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 CONSUMER·PRODUCT_LAUNCH)
+- 업스테이지 '솔라 프로 4', 범정부 행정망 도입…공무원 모델 선택권 확대 (AI타임스, 2026-11-03) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·REGULATION·MODEL_MENTION)
+- 비드래프트, AI가 스스로 해제 못 하는 '킬스위치' 개발…보안 OS 공개 (AI타임스, 2026-11-03) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·MODEL_MENTION)
 - 119만 유튜버 긱블, 캐릭터 로봇 시장 출사표…“월 매출 10억 목표” (AI타임스, 2026-11-03) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRICING)
 - "AI 50개 모아 문명 건설 시켰더니 관료주의에 빠져 실패" (AI타임스, 2026-11-02) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·MODEL_MENTION)
 - 앤트로픽, 내부 AI 토큰 비용이 직원 급여 추월…9개월 새 사용량 250배 급증 (AI타임스, 2026-11-02) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·PRICING)
@@ -44,24 +54,18 @@
 - 과기정통부, 국민 AI 서비스 혁신추진단장에 김세웅 전 카카오 부사장 선임 (AI타임스, 2026-11-02) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 REGULATION)
 - "코딩 AI, 시키는 일은 잘하지만 숨은 요구는 놓쳐"…최고 모델도 45.5% (AI타임스, 2026-11-02) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)
 - "AI끼리 약속 없이 통했다"…로봇 몸짓으로 비밀 메시지 전달 (AI타임스, 2026-11-02) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 MODEL_MENTION)
-- "AI 에이전트, 외계 신호 찾는 전파망원경 조종…초당 테라비트 분석" (AI타임스, 2026-11-02) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 RESEARCH_RESULT·PRODUCT_LAUNCH)
-- 구글 "우주 데이터센터, 지구보다 구축 비용 최대 100배 비싸" (AI타임스, 2026-11-02) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 INFRA)
-- 애플 CEO "AI를 위한 AI는 출시 안 해"…제품 중심 전략 고수 (AI타임스, 2026-11-02) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)
-- 구글, '제미나이 4 카본' 공개 사흘 만에 개선판 포착…3D 성능 호평 (AI타임스, 2026-11-02) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·MODEL_MENTION)
-- LG CNS, 국내 최초 인도네시아에 30MW급 AIDC 구축 (AI타임스, 2026-11-02) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 INFRA)
-- … 외 201건 (run.json)
+- … 외 205건 (run.json)
 
-## 제외 (152)
+## 제외 (158)
 
-- 가치 낮음 152건: Qodo builds context into AI code review with Codex · The latest AI news we announced in October 2026 · Prepare web content for Amazon Bedrock Knowledge B · Agentic engineering intelligence with Amazon Nova  · Build World Models for Interactive Simulation with · Support New AI Frameworks Faster Using NVIDIA Work · 광주 백화점 판매 4.6% 늘었지만…대형마트는 8.6% 감소 · "AI를 통제하라"…국내 솔루션 기업, AI 가드레일 시장 잰걸음 …
+- 가치 낮음 158건: Scaling Git at OpenAI · Qodo builds context into AI code review with Codex · The latest AI news we announced in October 2026 · Prepare web content for Amazon Bedrock Knowledge B · Agentic engineering intelligence with Amazon Nova  · Keep Distributed Training Running with Automated W · Build World Models for Interactive Simulation with · Support New AI Frameworks Faster Using NVIDIA Work …
 
-## 소스 상태 (정상 24, 그중 기간 안 새 글 0건 14 · 경고 4 · 저하 2 · 실패 1 · 비활성 9)
+## 소스 상태 (정상 25, 그중 기간 안 새 글 0건 14 · 경고 4 · 저하 1 · 실패 1 · 비활성 9)
 
 | 소스 | 상태 | HTTP | 글 주소(형식 일치/전체) | 기간 안 | 연속 0건 | 최근 정상 수집 | 이유 |
 |---|---|---|---|---|---|---|---|
 | 전자신문 | **FAILED** | - | -/- | 0 | 0 | 2026-11-02 | 요청 실패 (failed) |
 | Anthropic (모델 발표 페이지) | **DEGRADED** | 200 | 3/214 | 0 | 18 | 2026-11-03 | 발행일을 확인하지 못한 글 1건 (후보에서 제외) · 기간 안 새 글 0건 18회 연속 (마지막 수집 기록 없음) |
-| Samsung Newsroom | **DEGRADED** | 200 | 50/50 | 0 | 11 | 2026-11-03 | 기간 안 새 글 0건 11회 연속 (마지막 수집 2026-10-23) |
 | Anthropic | **WARNING** | 200 | 281/588 | 0 | 5 | 2026-11-03 | 발행일을 확인하지 못한 글 8건 (후보에서 제외) · 기간 안 새 글 0건 5회 연속 (마지막 수집 2026-10-29) |
 | Microsoft 365 Blog | **WARNING** | 200 ↪ | 10/10 | 0 | 4 | 2026-11-03 | 리다이렉트 → https://www.microsoft.com/en-us/copilot/blog/feed/ |
 | Apple Machine Learning Research | **WARNING** | 200 | 10/10 | 0 | 5 | 2026-11-03 | 기간 안 새 글 0건 5회 연속 (마지막 수집 2026-10-29) |
@@ -71,14 +75,14 @@
 
 ## 처리 대기열 · 수집 범위
 
-- 진행 상태: **미완료** · 이번 실행 근거 확인 8건 · 원고 작성 0건
+- 진행 상태: **미완료** · 이번 실행 근거 확인 7건 · 원고 작성 0건
 - 지난 실행에서 넘어온 일: 근거 확인 9건 · 원고 작성 0건
 - 남은 일 (다음 실행으로 이월): 근거 확인 대기 **9**건 · 원고 작성 대기 **53**건 · 아직 열지 못한 글 주소 0개 · 재시도할 소스 1곳
   - 원고 작성 대기: 발행 추천은 났지만 원고 생성 수단이 없거나(무료 생성 미설정·Shadow) 배치를 넘은 항목입니다. 근거는 후보 파일에 보존했고, 빈 원고나 허위 원고는 만들지 않습니다.
 - 수집 범위가 기간 전체를 덮지 못한 소스 4곳 (놓쳤을 수 있음):
   - Claude (claude.com articles): 피드의 가장 오래된 항목(2026-11-02)이 시작일(2026-10-31)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음
   - AI타임스: 피드의 가장 오래된 항목(2026-11-01)이 시작일(2026-10-31)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음
-  - 지디넷코리아: 피드의 가장 오래된 항목(2026-11-02)이 시작일(2026-10-31)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음
+  - 지디넷코리아: 피드의 가장 오래된 항목(2026-11-03)이 시작일(2026-10-31)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음
   - arXiv cs.AI (신규 논문): 피드의 가장 오래된 항목(2026-11-02)이 시작일(2026-10-31)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음
 
 ## 선정 진단 (Selection Diagnostics)
@@ -87,22 +91,27 @@
 - 14 · 소식 · INFRA·KOREA·PRODUCT_LAUNCH — 컨테이너처럼 쓰고, VM처럼 격리하기 → **HOLD**
 - 13 · 소식 · MODEL·RESEARCH_RESULT·KOREA — SERIAL-7: Deriving, Realizing, and Preserving Machine-Verif… → **HOLD**
 - 11 · 소식 · PRODUCT_LAUNCH·REGULATION·RESEARCH_RESULT — LifeVal → **HOLD**
-- 11 · 소식 · PRODUCT_LAUNCH·ACQ_INVEST·INFRA — 블랙스톤 "앤트로픽, 상장 후에도 투자적격 등급 확보 어려워" → **HOLD**
-- 11 · 소식 · PRODUCT_LAUNCH·REGULATION·INFRA — "반도체 클러스터 속도 더해야"…정부, 팹 조기 구축에 '한목소리' → **HOLD**
 - 11 · 소식 · MODEL·PRODUCT_LAUNCH·RESEARCH_RESULT — CryoAtlas: A Large Curated Dataset and Unified Benchmark fo… → **HOLD**
 - 10 · 소식 · MODEL·PRODUCT_LAUNCH·API_PLATFORM — AWS Weekly Roundup: GPT-6.1 Terra on Bedrock, Step Function… → **PUBLISH**
 - 10 · 소식 · PRODUCT_LAUNCH·PRICING — 앤트로픽, 내부 AI 토큰 비용이 직원 급여 추월…9개월 새 사용량 250배 급증 → **HOLD**
 - 10 · 소식 · MODEL·REGULATION·SECURITY_MENTION — Safin-1.5: Safety-Native Architecture and Verifiable Reason… → **HOLD**
 - 10 · 소식 · MODEL·SECURITY·RESEARCH_RESULT — SUREON: A Benchmark and Vision-Language Model for Surgical … → **HOLD**
+- 9 · 소식 · KOREA — [Video] Inside the Tech: Samsung Micro RGB TV → **HOLD**
+- 9 · 소식 · PRODUCT_LAUNCH·REGULATION·MODEL_MENTION — 업스테이지 '솔라 프로 4', 범정부 행정망 도입…공무원 모델 선택권 확대 → **HOLD**
 
-**근거 확인 명단 8건** (원문 요청 상한 40, 최종 추천 상한 0)
+**근거 확인 명단 13건** (원문 요청 상한 40, 최종 추천 상한 0)
 - 컨테이너처럼 쓰고, VM처럼 격리하기 — 원문 OK · 확인 사실 0 · INSUFFICIENT · 깊이 - → **HOLD**
 - LifeVal — 원문 HTTP_403 (대체 문서 0줄: 제목에 버전 붙은 이름 없음) · 확인 사실 0 · INSUFFICIENT · 깊이 - → **HOLD**
 - AWS Weekly Roundup: GPT-6.1 Terra on Bedrock, Step Function… — 원문 OK · 확인 사실 11 · SUFFICIENT_STANDARD · 깊이 STANDARD → **PUBLISH**
-- Introducing the Grid Protectors Program — 원문 HTTP_403 (대체 문서 0줄: 제목에 버전 붙은 이름 없음) · 확인 사실 0 · INSUFFICIENT · 깊이 - → **HOLD**
+- [Video] Inside the Tech: Samsung Micro RGB TV — 원문 TIMEOUT · 확인 사실 0 · INSUFFICIENT · 깊이 - → **HOLD**
+- Rewarding defenders with bigger bug bounties — 원문 HTTP_403 (대체 문서 0줄: 제목에 버전 붙은 이름 없음) · 확인 사실 0 · INSUFFICIENT · 깊이 - → **HOLD**
+- Introducing the Grid Protectors Program — 원문 SKIPPED_HOST_BLOCKED (대체 문서 0줄: 제목에 버전 붙은 이름 없음) · 확인 사실 0 · INSUFFICIENT · 깊이 - → **HOLD**
 - Make long-running agents faster with message threads — 원문 OK · 확인 사실 8 · SUFFICIENT_STANDARD · 깊이 STANDARD → **HOLD**
+- Preparing our next security sprint to harden OpenAI — 원문 SKIPPED_HOST_BLOCKED (대체 문서 0줄: 제목에 버전 붙은 이름 없음) · 확인 사실 0 · INSUFFICIENT · 깊이 - → **HOLD**
+- OpenAI appoints Dan Driscoll as Senior Counselor for Nation… — 원문 SKIPPED_HOST_BLOCKED (대체 문서 0줄: 제목에 버전 붙은 이름 없음) · 확인 사실 0 · INSUFFICIENT · 깊이 - → **HOLD**
 - Build efficient agents with knowledge distillation on Amazo… — 원문 OK · 확인 사실 11 · SUFFICIENT_STANDARD · 깊이 STANDARD → **HOLD**
 - How Circle K accelerated DevOps incident triage to under 15… — 원문 OK · 확인 사실 10 · SUFFICIENT_STANDARD · 깊이 STANDARD → **HOLD**
+- Diagnose Distributed AI Workload Failures with NVIDIA Attri… — 원문 OK · 확인 사실 11 · SUFFICIENT_STANDARD · 깊이 SHORT → **HOLD**
 - Making Kubernetes AI-Ready for NVIDIA Vera Rubin on Day One — 원문 OK · 확인 사실 11 · SUFFICIENT_STANDARD · 깊이 SHORT → **HOLD**
 
 **상한·다양성으로 빠진 후보 0건**
@@ -113,10 +122,10 @@
 **DEEP 판단**
 - AWS Weekly Roundup: GPT-6.1 Terra on Bedrock, Step Function… → STANDARD (DEEP 아님: 중요도 4+, 배경 설명 필요, STANDARD로는 맥락 누락)
 
-**보류 이유 (228건)**: 언론 보도 212 · N-N-N DAILY에서 이미 추천함 9 · 근거는 있으나 우선순위 N < 발행 추천 기준 N 4 · 근거 부족 3
+**보류 이유 (237건)**: 언론 보도 216 · N-N-N DAILY에서 이미 추천함 9 · 근거 부족 7 · 근거는 있으나 우선순위 N < 발행 추천 기준 N 5
 
 ## 비용
 
 원고 생성 none · 호출 0/6 · 입력 0 · 출력 0 토큰 · 예상 비용 $0.0000 / 상한 $0.5
 
-<sub>실행 2026-11-02T20:18:11.949Z → 2026-11-02T20:19:38.351Z · 상세: run.json, candidates/*.json</sub>
+<sub>실행 2026-11-03T03:28:07.326Z → 2026-11-03T03:29:29.826Z · 상세: run.json, candidates/*.json</sub>
