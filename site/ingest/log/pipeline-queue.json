@@ -1350,7 +1350,7 @@
         "tier": 1,
         "fetchMode": "rss",
         "discoveredVia": "https://aws.amazon.com/blogs/aws/feed/",
-        "fetchedAt": "2026-11-03T17:46:16.828Z"
+        "fetchedAt": "2026-11-04T02:11:34.420Z"
       },
       "addedAt": "2026-11-03",
       "since": "2026-10-31",
@@ -1373,7 +1373,7 @@
         "tier": 1,
         "fetchMode": "rss-paged",
         "discoveredVia": "https://blogs.nvidia.com/feed/",
-        "fetchedAt": "2026-11-03T17:46:16.828Z"
+        "fetchedAt": "2026-11-04T02:11:34.420Z"
       },
       "addedAt": "2026-11-03",
       "since": "2026-10-31",
@@ -1396,7 +1396,7 @@
         "tier": 1,
         "fetchMode": "rss-paged",
         "discoveredVia": "https://github.blog/changelog/feed/",
-        "fetchedAt": "2026-11-03T17:46:16.828Z"
+        "fetchedAt": "2026-11-04T02:11:34.420Z"
       },
       "addedAt": "2026-11-04",
       "since": "2026-11-01",
@@ -1406,15 +1406,8 @@
     }
   },
   "meta": {},
-  "retry": {
-    "etnews": {
-      "since": "2026-11-01",
-      "failedAt": "2026-11-04",
-      "attempts": 1,
-      "lastError": "fetch failed"
-    }
-  },
-  "updatedAt": "2026-11-03T17:47:43.980Z",
+  "retry": {},
+  "updatedAt": "2026-11-04T02:12:40.677Z",
   "gemini": {
     "day": "2026-11-03",
     "calls": 5,
