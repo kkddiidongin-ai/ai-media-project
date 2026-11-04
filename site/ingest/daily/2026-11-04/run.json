@@ -1,7 +1,7 @@
 {
   "date": "2026-11-04",
   "mode": "shadow",
-  "startedAt": "2026-11-03T17:46:16.827Z",
+  "startedAt": "2026-11-04T02:11:34.420Z",
   "status": "INCOMPLETE",
   "limits": {
     "windowDays": 3,
@@ -33,11 +33,11 @@
         "redirected": false,
         "finalUrl": null
       },
-      "parsed": 1349,
-      "matched": 1349,
-      "found": 1349,
-      "inWindow": 8,
-      "kept": 8,
+      "parsed": 1354,
+      "matched": 1354,
+      "found": 1354,
+      "inWindow": 11,
+      "kept": 11,
       "since": "2026-11-01",
       "coverage": {
         "complete": true
@@ -441,8 +441,8 @@
       "parsed": 10,
       "matched": 10,
       "found": 10,
-      "inWindow": 1,
-      "kept": 1,
+      "inWindow": 3,
+      "kept": 3,
       "since": "2026-11-01",
       "coverage": {
         "complete": true
@@ -854,8 +854,8 @@
       "parsed": 20,
       "matched": 20,
       "found": 20,
-      "inWindow": 1,
-      "kept": 1,
+      "inWindow": 2,
+      "kept": 2,
       "since": "2026-11-01",
       "coverage": {
         "complete": true
@@ -937,8 +937,8 @@
       "parsed": 30,
       "matched": 30,
       "found": 30,
-      "inWindow": 15,
-      "kept": 15,
+      "inWindow": 12,
+      "kept": 12,
       "since": "2026-11-01",
       "coverage": {
         "complete": false,
@@ -955,26 +955,27 @@
     {
       "id": "etnews",
       "name": "전자신문",
-      "status": "failed",
-      "requests": 0,
-      "http": {},
-      "parsed": null,
-      "matched": null,
-      "found": 0,
-      "inWindow": 0,
-      "kept": 0,
+      "status": "success",
+      "requests": 1,
+      "http": {
+        "status": 200,
+        "redirected": false,
+        "finalUrl": null
+      },
+      "parsed": 30,
+      "matched": 30,
+      "found": 30,
+      "inWindow": 9,
+      "kept": 9,
       "since": "2026-11-01",
       "coverage": {
-        "complete": true
+        "complete": false,
+        "reason": "피드의 가장 오래된 항목(2026-11-03)이 시작일(2026-11-01)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음",
+        "oldest": "2026-11-03"
       },
       "undated": 0,
-      "errors": [
-        "fetch failed"
-      ],
-      "health": "FAILED",
-      "healthReasons": [
-        "요청 실패 (failed)"
-      ],
+      "health": "OK",
+      "healthReasons": [],
       "lastOkDate": "2026-11-04",
       "lastItemDate": "2026-11-04",
       "zeroStreak": 0
@@ -1009,24 +1010,24 @@
     }
   ],
   "sourceHealth": {
-    "OK": 22,
+    "OK": 23,
     "WARNING": 7,
     "DEGRADED": 1,
-    "FAILED": 1,
+    "FAILED": 0,
     "SKIPPED": 9
   },
   "counts": {
-    "collected": 918,
+    "collected": 930,
     "carriedFromQueue": 25,
-    "NEW": 942,
+    "NEW": 954,
     "UPDATE_EXISTING": 0,
     "DUPLICATE": 0,
     "UNCERTAIN": 1,
     "PUBLISH": 3,
-    "HOLD": 503,
-    "EXCLUDE": 437,
-    "shortlisted": 17,
-    "evidenceChecked": 17,
+    "HOLD": 512,
+    "EXCLUDE": 440,
+    "shortlisted": 19,
+    "evidenceChecked": 19,
     "drafts": 0,
     "draftQa": {
       "PASS": 0,
@@ -1060,7 +1061,7 @@
       "evidence": 25,
       "draft": 36,
       "meta": 0,
-      "retrySources": 1
+      "retrySources": 0
     },
     "carriedIn": {
       "evidence": 25,
@@ -1068,7 +1069,7 @@
     },
     "resolvedFromQueue": 0,
     "processed": {
-      "evidenceFetches": 10,
+      "evidenceFetches": 8,
       "drafted": 0
     },
     "coverageGaps": [
@@ -1083,6 +1084,11 @@
         "reason": "피드의 가장 오래된 항목(2026-11-03)이 시작일(2026-11-01)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음"
       },
       {
+        "id": "etnews",
+        "name": "전자신문",
+        "reason": "피드의 가장 오래된 항목(2026-11-03)이 시작일(2026-11-01)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음"
+      },
+      {
         "id": "arxiv-cs-ai",
         "name": "arXiv cs.AI (신규 논문)",
         "reason": "피드의 가장 오래된 항목(2026-11-03)이 시작일(2026-11-01)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음"
@@ -1092,6 +1098,50 @@
     "queueFile": "pipeline-queue.json"
   },
   "items": [
+    {
+      "id": "26c6032e1d26",
+      "title": "Accelerating engineering for the physical world",
+      "source": "OpenAI",
+      "publishedAt": "2026-11-03T12:00:00.000Z",
+      "url": "https://openai.com/index/accelerating-engineering-for-the-physical-world",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "글 유형 HOW_TO — 강한 사건 신호 없음"
+      ],
+      "score": 2,
+      "importance": 1,
+      "contentType": "HOW_TO",
+      "typePenalty": -3,
+      "signals": [
+        "CONSUMER"
+      ],
+      "company": "OpenAI",
+      "stage": "metadata"
+    },
+    {
+      "id": "a2357e701f02",
+      "title": "How Cisco defends at machine speed with OpenAI",
+      "source": "OpenAI",
+      "publishedAt": "2026-11-03T08:00:00.000Z",
+      "url": "https://openai.com/index/cisco-cyber",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "글 유형 CUSTOMER_STORY — 강한 사건 신호 없음"
+      ],
+      "score": 1,
+      "importance": 1,
+      "contentType": "CUSTOMER_STORY",
+      "typePenalty": -3,
+      "signals": [
+        "SECURITY_MENTION"
+      ],
+      "company": "OpenAI",
+      "stage": "metadata"
+    },
     {
       "id": "08b710f1e780",
       "title": "Heimstaden is changing residential real estate management with AI",
@@ -1115,45 +1165,24 @@
       "stage": "metadata"
     },
     {
-      "id": "262cfa35f430",
-      "title": "Preparing our next security sprint to harden OpenAI",
+      "id": "3d509e27bae2",
+      "title": "OpenAI appoints Jill Hazelbaker as Chief Corporate Affairs Officer",
       "source": "OpenAI",
-      "publishedAt": "2026-11-02T18:00:00.000Z",
-      "url": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
+      "publishedAt": "2026-11-03T00:00:00.000Z",
+      "url": "https://openai.com/index/jill-hazelbaker-chief-corporate-affairs-officer",
       "duplicate": "NEW",
       "matchSlug": null,
-      "decision": "HOLD",
+      "decision": "EXCLUDE",
       "reasons": [
-        "근거 부족 (원문 SKIPPED_HOST_BLOCKED, 확인 사실 0개) — 발행하지 않음"
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
       ],
-      "score": 4,
-      "importance": 1,
+      "score": 2,
+      "importance": 0,
       "contentType": "NEWS",
       "typePenalty": 0,
-      "signals": [
-        "SECURITY_MENTION"
-      ],
+      "signals": [],
       "company": "OpenAI",
-      "stage": "evidence",
-      "evidenceStatus": "SKIPPED_HOST_BLOCKED",
-      "distinctFacts": 0,
-      "sufficiency": "INSUFFICIENT",
-      "deepMissing": [
-        "importance",
-        "userImpact",
-        "contextNeed",
-        "distinctFacts",
-        "evidenceQuality",
-        "standardWouldOmit"
-      ],
-      "alternate": {
-        "tried": [
-          "https://platform.openai.com/docs/changelog"
-        ],
-        "matched": 0,
-        "reason": "제목에 버전 붙은 이름 없음"
-      },
-      "suggestedDepth": null
+      "stage": "metadata"
     },
     {
       "id": "6fd6ad7938fa",
@@ -1178,6 +1207,47 @@
       "company": "OpenAI",
       "stage": "evidence",
       "evidenceStatus": "HTTP_403",
+      "distinctFacts": 0,
+      "sufficiency": "INSUFFICIENT",
+      "deepMissing": [
+        "importance",
+        "userImpact",
+        "contextNeed",
+        "distinctFacts",
+        "evidenceQuality",
+        "standardWouldOmit"
+      ],
+      "alternate": {
+        "tried": [
+          "https://platform.openai.com/docs/changelog"
+        ],
+        "matched": 0,
+        "reason": "제목에 버전 붙은 이름 없음"
+      },
+      "suggestedDepth": null
+    },
+    {
+      "id": "262cfa35f430",
+      "title": "Preparing our next security sprint to harden OpenAI",
+      "source": "OpenAI",
+      "publishedAt": "2026-11-02T18:00:00.000Z",
+      "url": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "근거 부족 (원문 SKIPPED_HOST_BLOCKED, 확인 사실 0개) — 발행하지 않음"
+      ],
+      "score": 4,
+      "importance": 1,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "SECURITY_MENTION"
+      ],
+      "company": "OpenAI",
+      "stage": "evidence",
+      "evidenceStatus": "SKIPPED_HOST_BLOCKED",
       "distinctFacts": 0,
       "sufficiency": "INSUFFICIENT",
       "deepMissing": [
@@ -1300,6 +1370,26 @@
       "suggestedDepth": null
     },
     {
+      "id": "598c6194c0d3",
+      "title": "Qodo builds context into AI code review with Codex",
+      "source": "OpenAI",
+      "publishedAt": "2026-11-02T00:00:00.000Z",
+      "url": "https://openai.com/index/qodo-codex-plugin",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+      ],
+      "score": 2,
+      "importance": 0,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [],
+      "company": "OpenAI",
+      "stage": "metadata"
+    },
+    {
       "id": "ff138f709a7e",
       "title": "OpenAI appoints Dan Driscoll as Senior Counselor for National Security Modernization",
       "source": "OpenAI",
@@ -1339,26 +1429,6 @@
         "reason": "제목에 버전 붙은 이름 없음"
       },
       "suggestedDepth": null
-    },
-    {
-      "id": "598c6194c0d3",
-      "title": "Qodo builds context into AI code review with Codex",
-      "source": "OpenAI",
-      "publishedAt": "2026-11-02T00:00:00.000Z",
-      "url": "https://openai.com/index/qodo-codex-plugin",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "EXCLUDE",
-      "reasons": [
-        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
-      ],
-      "score": 2,
-      "importance": 0,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [],
-      "company": "OpenAI",
-      "stage": "metadata"
     },
     {
       "id": "adafdd4764cb",
@@ -1786,6 +1856,62 @@
       "suggestedDepth": "STANDARD"
     },
     {
+      "id": "0f281cabd4f6",
+      "title": "BYOK and enterprise custom models in the Copilot usage API",
+      "source": "GitHub Changelog",
+      "publishedAt": "2026-11-04T00:32:19.000Z",
+      "url": "https://github.blog/changelog/2026-11-03-byok-and-enterprise-custom-models-in-the-copilot-usage-api",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "글 유형 DOCS_ONLY — 강한 사건 신호 없음"
+      ],
+      "score": 3,
+      "importance": 1,
+      "contentType": "DOCS_ONLY",
+      "typePenalty": -2,
+      "signals": [
+        "API_PLATFORM"
+      ],
+      "company": "GitHub",
+      "stage": "metadata"
+    },
+    {
+      "id": "51a16b58b850",
+      "title": "Dependabot version updates support Agent Package Manager",
+      "source": "GitHub Changelog",
+      "publishedAt": "2026-11-03T20:24:07.000Z",
+      "url": "https://github.blog/changelog/2026-11-03-dependabot-version-updates-support-agent-package-manager",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "사건 신호 PRODUCT_LAUNCH (우선순위 5)",
+        "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+      ],
+      "score": 5,
+      "importance": 1,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "PRODUCT_LAUNCH"
+      ],
+      "company": "GitHub",
+      "stage": "evidence",
+      "evidenceStatus": "OK",
+      "distinctFacts": 8,
+      "sufficiency": "SUFFICIENT_STANDARD",
+      "deepMissing": [
+        "importance",
+        "userImpact",
+        "contextNeed",
+        "evidenceQuality",
+        "standardWouldOmit"
+      ],
+      "suggestedDepth": "STANDARD"
+    },
+    {
       "id": "9c22661ce9de",
       "title": "GitHub Copilot is now available in JetBrains Air",
       "source": "GitHub Changelog",
@@ -2082,6 +2208,40 @@
       "stage": "metadata"
     },
     {
+      "id": "af32d6e3739a",
+      "title": "FE News 26년 10월 소식을 전해드립니다.",
+      "source": "NAVER D2",
+      "publishedAt": "2026-11-04T01:25:20.000Z",
+      "url": "https://d2.naver.com/news/8711937",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "근거 부족 (원문 OK, 확인 사실 0개) — 발행하지 않음"
+      ],
+      "score": 8,
+      "importance": 2,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "API_PLATFORM",
+        "PRODUCT_LAUNCH"
+      ],
+      "company": "NAVER D2",
+      "stage": "evidence",
+      "evidenceStatus": "OK",
+      "distinctFacts": 0,
+      "sufficiency": "INSUFFICIENT",
+      "deepMissing": [
+        "importance",
+        "contextNeed",
+        "distinctFacts",
+        "evidenceQuality",
+        "standardWouldOmit"
+      ],
+      "suggestedDepth": null
+    },
+    {
       "id": "aac7b3c52b2a",
       "title": "컨테이너처럼 쓰고, VM처럼 격리하기",
       "source": "NAVER D2",
@@ -2113,6 +2273,53 @@
         "standardWouldOmit"
       ],
       "suggestedDepth": null
+    },
+    {
+      "id": "f4261856c05d",
+      "title": "[AI리더의 서가] 원하는 대로 튜닝하는 나만의 sLLM",
+      "source": "AI타임스",
+      "publishedAt": "2026-11-04T09:00:00.000Z",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=216788",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 SECURITY·MODEL_MENTION)"
+      ],
+      "score": 6,
+      "importance": 2,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "SECURITY",
+        "MODEL_MENTION"
+      ],
+      "company": "AI타임스",
+      "stage": "metadata"
+    },
+    {
+      "id": "f11d127aa8b6",
+      "title": "[11월3일] \"AI 성능 높아도 실무는 별개\"…새 벤치마크서 최고 12%에 그쳐",
+      "source": "AI타임스",
+      "publishedAt": "2026-11-04T07:00:00.000Z",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=216936",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·INFRA·MODEL_MENTION)"
+      ],
+      "score": 9,
+      "importance": 3,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "PRODUCT_LAUNCH",
+        "INFRA",
+        "MODEL_MENTION"
+      ],
+      "company": "AI타임스",
+      "stage": "metadata"
     },
     {
       "id": "a861e34044d5",
@@ -2206,6 +2413,29 @@
       "source": "AI타임스",
       "publishedAt": "2026-11-03T17:30:16.000Z",
       "url": "https://www.aitimes.com/news/articleView.html?idxno=216967",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·MODEL_MENTION)"
+      ],
+      "score": 7,
+      "importance": 2,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "PRODUCT_LAUNCH",
+        "MODEL_MENTION"
+      ],
+      "company": "AI타임스",
+      "stage": "metadata"
+    },
+    {
+      "id": "0030828298e7",
+      "title": "[AI 모델 신작] 사람처럼 대화하는 '프리즘'부터 로봇 제어 AI까지 6종",
+      "source": "AI타임스",
+      "publishedAt": "2026-11-03T17:20:00.000Z",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=216963",
       "duplicate": "NEW",
       "matchSlug": null,
       "decision": "HOLD",
@@ -2465,29 +2695,6 @@
       "typePenalty": 0,
       "signals": [
         "ACQ_INVEST"
-      ],
-      "company": "AI타임스",
-      "stage": "metadata"
-    },
-    {
-      "id": "0030828298e7",
-      "title": "[AI 모델 신작] 사람처럼 대화하는 '프리즘'부터 로봇 제어 AI까지 6종",
-      "source": "AI타임스",
-      "publishedAt": "2026-11-03T16:12:07.000Z",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=216963",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·MODEL_MENTION)"
-      ],
-      "score": 7,
-      "importance": 2,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "PRODUCT_LAUNCH",
-        "MODEL_MENTION"
       ],
       "company": "AI타임스",
       "stage": "metadata"
@@ -3181,43 +3388,48 @@
       "stage": "metadata"
     },
     {
-      "id": "944ddd25e9c4",
-      "title": "\"AI를 통제하라\"…국내 솔루션 기업, AI 가드레일 시장 잰걸음",
-      "source": "AI타임스",
-      "publishedAt": "2026-11-02T17:14:55.000Z",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=216914",
+      "id": "13b3f5f63bbc",
+      "title": "정부, 국민AI추진단에 민간 전문가 19명 추가 채용",
+      "source": "지디넷코리아",
+      "publishedAt": "2026-11-03T22:21:33.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261104072133",
       "duplicate": "NEW",
       "matchSlug": null,
-      "decision": "EXCLUDE",
+      "decision": "HOLD",
       "reasons": [
-        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·REGULATION)"
       ],
-      "score": 2,
-      "importance": 0,
+      "score": 9,
+      "importance": 3,
       "contentType": "NEWS",
       "typePenalty": 0,
-      "signals": [],
-      "company": "AI타임스",
+      "signals": [
+        "PRODUCT_LAUNCH",
+        "REGULATION"
+      ],
+      "company": "지디넷코리아",
       "stage": "metadata"
     },
     {
-      "id": "0ad9ee328be5",
-      "title": "\"코딩은 AI에 맡겨라\"…프로톤, 개발 속도 압박에 보안 논란",
-      "source": "AI타임스",
-      "publishedAt": "2026-11-02T17:12:34.000Z",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=216910",
+      "id": "86e7afea3ec9",
+      "title": "[ZD SW 투데이] 미소정보기술, 의료AX·기기 산업화",
+      "source": "지디넷코리아",
+      "publishedAt": "2026-11-03T22:20:01.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261103182430",
       "duplicate": "NEW",
       "matchSlug": null,
-      "decision": "EXCLUDE",
+      "decision": "HOLD",
       "reasons": [
-        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PARTNERSHIP)"
       ],
-      "score": 2,
-      "importance": 0,
+      "score": 4,
+      "importance": 1,
       "contentType": "NEWS",
       "typePenalty": 0,
-      "signals": [],
-      "company": "AI타임스",
+      "signals": [
+        "PARTNERSHIP"
+      ],
+      "company": "지디넷코리아",
       "stage": "metadata"
     },
     {
@@ -3443,33 +3655,33 @@
       "stage": "metadata"
     },
     {
-      "id": "ae2852bb104e",
-      "title": "카카오모빌리티, 육군과 국방 AI 관제체계 개발…드론·로봇 통합운용 추진",
-      "source": "지디넷코리아",
-      "publishedAt": "2026-11-03T08:19:13.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261103171650",
+      "id": "f9b9dfe825ff",
+      "title": "구글, 美 학교에 '제미나이' 차단 허용…AI 검색 기능은 유지",
+      "source": "전자신문",
+      "publishedAt": "2026-11-04T01:33:10.000Z",
+      "url": "https://www.etnews.com/20261104000170",
       "duplicate": "NEW",
       "matchSlug": null,
       "decision": "HOLD",
       "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PARTNERSHIP)"
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 MODEL_MENTION)"
       ],
       "score": 4,
       "importance": 1,
       "contentType": "NEWS",
       "typePenalty": 0,
       "signals": [
-        "PARTNERSHIP"
+        "MODEL_MENTION"
       ],
-      "company": "지디넷코리아",
+      "company": "전자신문",
       "stage": "metadata"
     },
     {
-      "id": "e55b38dd4b18",
-      "title": "넥써쓰, 3분기 매출 329억원…전년 대비 257.4% 증가",
-      "source": "지디넷코리아",
-      "publishedAt": "2026-11-03T08:05:01.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261103170140",
+      "id": "8a89dc223c96",
+      "title": "LG AI 엑사원, 저작권 검증비 1000분의 1로…빅테크·로펌 시장 노린다",
+      "source": "전자신문",
+      "publishedAt": "2026-11-04T01:06:01.000Z",
+      "url": "https://www.etnews.com/20261104000114",
       "duplicate": "NEW",
       "matchSlug": null,
       "decision": "EXCLUDE",
@@ -3481,72 +3693,159 @@
       "contentType": "NEWS",
       "typePenalty": 0,
       "signals": [],
-      "company": "지디넷코리아",
+      "company": "전자신문",
       "stage": "metadata"
     },
     {
-      "id": "3c91aa98e927",
-      "title": "[K-국방 AX] AI·드론이 이끄는 초연결 전장…AUSA 2026서 본 미래전",
-      "source": "지디넷코리아",
-      "publishedAt": "2026-11-03T08:03:15.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261028130433",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "EXCLUDE",
-      "reasons": [
-        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
-      ],
-      "score": 2,
-      "importance": 0,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [],
-      "company": "지디넷코리아",
-      "stage": "metadata"
-    },
-    {
-      "id": "c1159a3a9868",
-      "title": "오픈AI, 전 美 육군 장관 영입…국방 AI 공략 힘 싣는다",
-      "source": "지디넷코리아",
-      "publishedAt": "2026-11-03T07:59:40.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261103165436",
+      "id": "6f8b66662ba4",
+      "title": "과기정통부, AMD와 AI 반도체 협력 본격화…운영위 정기 개최",
+      "source": "전자신문",
+      "publishedAt": "2026-11-04T00:00:03.000Z",
+      "url": "https://www.etnews.com/20261104000045",
       "duplicate": "NEW",
       "matchSlug": null,
       "decision": "HOLD",
       "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PARTNERSHIP·REGULATION)"
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PARTNERSHIP·REGULATION·INFRA)"
       ],
-      "score": 8,
-      "importance": 3,
+      "score": 10,
+      "importance": 4,
       "contentType": "NEWS",
       "typePenalty": 0,
       "signals": [
         "PARTNERSHIP",
-        "REGULATION"
+        "REGULATION",
+        "INFRA"
       ],
-      "company": "지디넷코리아",
+      "company": "전자신문",
       "stage": "metadata"
     },
     {
-      "id": "761d64c47163",
-      "title": "민간투자형 SW사업 문턱 낮춘다…20억 미만 사업 적격성 조사 간소화",
-      "source": "지디넷코리아",
-      "publishedAt": "2026-11-03T07:59:04.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261103165656",
+      "id": "61f8087b0c5b",
+      "title": "北 해커, 바이낸스 직원에 가짜 면접…악성코드 심어 8조원대 탈취",
+      "source": "전자신문",
+      "publishedAt": "2026-11-03T23:12:38.000Z",
+      "url": "https://www.etnews.com/20261104000020",
       "duplicate": "NEW",
       "matchSlug": null,
       "decision": "HOLD",
       "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 REGULATION)"
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 SECURITY)"
       ],
-      "score": 6,
-      "importance": 2,
+      "score": 4,
+      "importance": 1,
       "contentType": "NEWS",
       "typePenalty": 0,
       "signals": [
-        "REGULATION"
+        "SECURITY"
       ],
-      "company": "지디넷코리아",
+      "company": "전자신문",
+      "stage": "metadata"
+    },
+    {
+      "id": "c5f0886f8516",
+      "title": "[인터뷰] 변우진 ETRI 대경권연구본부장 “대구·경북을 대한민국 '피지컬 AI' 수도로”",
+      "source": "전자신문",
+      "publishedAt": "2026-11-03T16:00:00.000Z",
+      "url": "https://www.etnews.com/20261103000029",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+      ],
+      "score": 2,
+      "importance": 0,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [],
+      "company": "전자신문",
+      "stage": "metadata"
+    },
+    {
+      "id": "65ababd4fbf8",
+      "title": "현대차 “당분간 외부 AI 사용마라”…해킹 우려에 '자율주행·로봇' 핵심부서 금지령",
+      "source": "전자신문",
+      "publishedAt": "2026-11-03T12:13:59.000Z",
+      "url": "https://www.etnews.com/20261103000455",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 SECURITY)"
+      ],
+      "score": 4,
+      "importance": 1,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "SECURITY"
+      ],
+      "company": "전자신문",
+      "stage": "metadata"
+    },
+    {
+      "id": "58f7d9f2504e",
+      "title": "반도체 장비, 3년뒤 계약까지 줄섰다",
+      "source": "전자신문",
+      "publishedAt": "2026-11-03T10:29:50.000Z",
+      "url": "https://www.etnews.com/20261103000452",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 INFRA)"
+      ],
+      "score": 4,
+      "importance": 1,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "INFRA"
+      ],
+      "company": "전자신문",
+      "stage": "metadata"
+    },
+    {
+      "id": "9834a5a9edc1",
+      "title": "세계 스마트시티 혁신 한자리에…'SCEWC 2026' 개막",
+      "source": "전자신문",
+      "publishedAt": "2026-11-03T09:30:00.000Z",
+      "url": "https://www.etnews.com/20261103000244",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+      ],
+      "score": 2,
+      "importance": 0,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [],
+      "company": "전자신문",
+      "stage": "metadata"
+    },
+    {
+      "id": "3b716ad19772",
+      "title": "[보안긴급진단]〈2〉산업시설 해킹, 정보 유출 넘어 안전 위협",
+      "source": "전자신문",
+      "publishedAt": "2026-11-03T08:00:00.000Z",
+      "url": "https://www.etnews.com/20261103000169",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 SECURITY)"
+      ],
+      "score": 4,
+      "importance": 1,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "SECURITY"
+      ],
+      "company": "전자신문",
       "stage": "metadata"
     },
     {
@@ -21517,5 +21816,5 @@
       "fromQueue": "evidence"
     }
   ],
-  "finishedAt": "2026-11-03T17:47:43.982Z"
+  "finishedAt": "2026-11-04T02:12:40.679Z"
 }

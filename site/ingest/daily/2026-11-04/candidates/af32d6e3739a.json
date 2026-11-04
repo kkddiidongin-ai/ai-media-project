@@ -1,0 +1,116 @@
+{
+  "id": "af32d6e3739a",
+  "date": "2026-11-04",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "FE News 26년 10월 소식을 전해드립니다.",
+  "depth": null,
+  "suggestedDepth": null,
+  "depthAssessment": {
+    "sufficiency": "INSUFFICIENT",
+    "distinctFacts": 0,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": true,
+      "contextNeed": false,
+      "distinctFacts": false,
+      "evidenceQuality": false,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "contextNeed",
+      "distinctFacts",
+      "evidenceQuality",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "NAVER D2",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://d2.naver.com/news/8711937",
+      "name": "NAVER D2",
+      "type": "official",
+      "publishedAt": "2026-11-04T01:25:20.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "af32d6e3739a",
+    "url": "https://d2.naver.com/news/8711937",
+    "canonicalUrl": "https://d2.naver.com/news/8711937",
+    "title": "FE News 26년 10월 소식을 전해드립니다.",
+    "excerpt": "주요소식 ​ The Story of VS Code Visual Studio Code 공식 채널이 공개한 약 1시간 38분 분량의 다큐멘터리로, Erich Gamma가 이끈 취리히 팀이 브라우저용 편집기 컴포넌트 Monaco Editor를 만들던 시기부터 데스크톱 VS Code 발표와 오픈 소스 전환까지의 과정을 30여 명의 관계자 인터뷰로 보여 준다. 확장을 별도 프로세스에서 실행하고 한번 공개한 API는 바꾸지 않는 원칙, TypeScript 서버에서 출발한 LSP, UI와 확장 호스트를 분리한 구조가 원격 개발과 vscode.d",
+    "publishedAt": "2026-11-04T01:25:20.000Z",
+    "sourceId": "naver-d2",
+    "sourceName": "NAVER D2",
+    "sourceType": "official",
+    "tier": 2,
+    "fetchMode": "rss",
+    "discoveredVia": "https://d2.naver.com/d2.atom",
+    "fetchedAt": "2026-11-04T02:11:34.420Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 106,
+    "grade": "FAIL",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "주요소식 ​ The Story of VS Code Visual Studio Code 공식 채널이 공개한 약 1시간 38분 분량의 다큐멘터리로, Erich Gamma가 이끈 취리히 팀이 브라우저용 편집기 컴포넌트 Monaco Editor를 만들던 시기부터 데스크톱 VS Code 발표와 오픈 소스 전환까지의 과정을 30여 명의 관계자 인터뷰로 보여 준다. 확장을 별도 프로세스에서 실행하고 한번 공개한 API는 바꾸지 않는 원칙, TypeScript 서버에서 출발한 LSP, UI와 확장 호스트를 분리한 구조가 원격 개발과 vscode.d",
+        "sourceUrl": "https://d2.naver.com/news/8711937",
+        "source": "NAVER D2",
+        "publishedAt": "2026-11-04T01:25:20.000Z",
+        "checkedAt": "2026-11-04T02:12:39.382Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 2,
+    "practicalImpact": 2,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 2,
+    "verificationConfidence": 3,
+    "signals": [
+      "API_PLATFORM",
+      "PRODUCT_LAUNCH"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 8,
+    "total": 8
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "근거 부족 (원문 OK, 확인 사실 0개) — 발행하지 않음"
+  ],
+  "needsReview": [
+    "insufficient_evidence"
+  ],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}
