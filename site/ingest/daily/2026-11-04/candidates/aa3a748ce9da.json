@@ -1,0 +1,221 @@
+{
+  "id": "aa3a748ce9da",
+  "date": "2026-11-04",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Diagnose Distributed AI Workload Failures with NVIDIA Attribution",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "NVIDIA",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution/",
+      "name": "NVIDIA Technical Blog",
+      "type": "official",
+      "publishedAt": "2026-11-02T23:39:34.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "aa3a748ce9da",
+    "url": "https://developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution/",
+    "canonicalUrl": "https://developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution",
+    "title": "Diagnose Distributed AI Workload Failures with NVIDIA Attribution",
+    "excerpt": "In distributed AI workloads, a single error can produce a cascade of symptoms. A GPU or fabric event may surface as NCCL errors on other ranks, scheduler state...",
+    "publishedAt": "2026-11-02T23:39:34.000Z",
+    "sourceId": "nvidia-developer",
+    "sourceName": "NVIDIA Technical Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://developer.nvidia.com/blog/feed",
+    "fetchedAt": "2026-11-04T02:11:34.420Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 13912,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "In distributed AI workloads, a single error can produce a cascade of symptoms. A GPU or fabric event may surface as NCCL errors on other ranks, scheduler state...",
+        "sourceUrl": "https://developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-02T23:39:34.000Z",
+        "checkedAt": "2026-11-03T15:35:48.044Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Diagnose Distributed AI Workload Failures with NVIDIA Attribution | NVIDIA Technical Blog",
+        "sourceUrl": "https://developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-02T23:39:34.000Z",
+        "checkedAt": "2026-11-03T15:35:48.044Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Diagnose Distributed AI Workload Failures with NVIDIA Attribution",
+        "sourceUrl": "https://developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-02T23:39:34.000Z",
+        "checkedAt": "2026-11-03T15:35:48.044Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "The system operates through two deployable components: the Attribution Service, which exposes a REST API for the core attribution engine, and the Attribution Blueprint, a Python reference orchestrator that connects cluster schedulers and telemetry sources to the Service.",
+        "sourceUrl": "https://developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-02T23:39:34.000Z",
+        "checkedAt": "2026-11-03T15:35:48.044Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "In this post, you’ll learn how to run NVIDIA Attribution on sample workload evidence, inspect the diagnosis, and explore how attribution rules identify failure patterns.",
+        "sourceUrl": "https://developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-02T23:39:34.000Z",
+        "checkedAt": "2026-11-03T15:35:48.044Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "NVIDIA Attribution explains why a workload failed and provides evidence to guide the next action.",
+        "sourceUrl": "https://developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-02T23:39:34.000Z",
+        "checkedAt": "2026-11-03T15:35:48.044Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "NVIDIA Attribution , the workload-centric failure-attribution system used across NVIDIA AI infrastructure, is open source.",
+        "sourceUrl": "https://developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-02T23:39:34.000Z",
+        "checkedAt": "2026-11-03T15:35:48.044Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Used in production across NVIDIA AI infrastructure for years, NVIDIA Attribution analyzes millions of workloads each week across hundreds of thousands of GPUs.",
+        "sourceUrl": "https://developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-02T23:39:34.000Z",
+        "checkedAt": "2026-11-03T15:35:48.044Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "It includes two deployable components: the NVIDIA Attribution Service and the NVIDIA Attribution Blueprint; both components utilize a core attribution engine.",
+        "sourceUrl": "https://developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-02T23:39:34.000Z",
+        "checkedAt": "2026-11-03T15:35:48.044Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "NVIDIA Attribution Service analyzes one workload attempt at a time.",
+        "sourceUrl": "https://developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-02T23:39:34.000Z",
+        "checkedAt": "2026-11-03T15:35:48.044Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Consider a multi-rank training workload in which one GPU encounters a hard fault e.g: XID 149 and NCCL errors follow across other ranks.",
+        "sourceUrl": "https://developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-02T23:39:34.000Z",
+        "checkedAt": "2026-11-03T15:35:48.044Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "NVIDIA Attribution Service and Blueprint architecture diagram showing how the Attribution Blueprint collects workload evidence from scheduler and telemetry sources, passes it to the Attribution Service for analysis, and writes a structured diagnosis to output sinks including a…",
+        "sourceUrl": "https://developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-02T23:39:34.000Z",
+        "checkedAt": "2026-11-03T15:35:48.044Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "The NVIDIA Attribution quickstart builds the Attribution Service and dashboard in Docker, then uses the Blueprint to process sample workload evidence committed to the repository.",
+        "sourceUrl": "https://developer.nvidia.com/blog/diagnose-distributed-ai-workload-failures-with-nvidia-attribution/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-02T23:39:34.000Z",
+        "checkedAt": "2026-11-03T15:35:48.044Z"
+      }
+    ],
+    "pageDate": "2026-11-02T23:39:34.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "INFRA"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 INFRA (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

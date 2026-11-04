@@ -1,0 +1,221 @@
+{
+  "id": "1ea828d9cbeb",
+  "date": "2026-11-04",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Making Kubernetes AI-Ready for NVIDIA Vera Rubin on Day One",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "NVIDIA",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://developer.nvidia.com/blog/making-kubernetes-ai-ready-for-nvidia-vera-rubin-on-day-one/",
+      "name": "NVIDIA Technical Blog",
+      "type": "official",
+      "publishedAt": "2026-11-02T18:00:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "1ea828d9cbeb",
+    "url": "https://developer.nvidia.com/blog/making-kubernetes-ai-ready-for-nvidia-vera-rubin-on-day-one/",
+    "canonicalUrl": "https://developer.nvidia.com/blog/making-kubernetes-ai-ready-for-nvidia-vera-rubin-on-day-one",
+    "title": "Making Kubernetes AI-Ready for NVIDIA Vera Rubin on Day One",
+    "excerpt": "Configuring and optimizing Kubernetes for new GPU hardware such as NVIDIA Vera Rubin is complex and error-prone. Drivers, kernels, runtimes, networking,...",
+    "publishedAt": "2026-11-02T18:00:00.000Z",
+    "sourceId": "nvidia-developer",
+    "sourceName": "NVIDIA Technical Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://developer.nvidia.com/blog/feed",
+    "fetchedAt": "2026-11-04T02:11:34.420Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 17936,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Configuring and optimizing Kubernetes for new GPU hardware such as NVIDIA Vera Rubin is complex and error-prone. Drivers, kernels, runtimes, networking,...",
+        "sourceUrl": "https://developer.nvidia.com/blog/making-kubernetes-ai-ready-for-nvidia-vera-rubin-on-day-one/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-02T18:00:00.000Z",
+        "checkedAt": "2026-11-03T15:35:48.262Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Making Kubernetes AI-Ready for NVIDIA Vera Rubin on Day One | NVIDIA Technical Blog",
+        "sourceUrl": "https://developer.nvidia.com/blog/making-kubernetes-ai-ready-for-nvidia-vera-rubin-on-day-one/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-02T18:00:00.000Z",
+        "checkedAt": "2026-11-03T15:35:48.262Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Making Kubernetes AI-Ready for NVIDIA Vera Rubin on Day One",
+        "sourceUrl": "https://developer.nvidia.com/blog/making-kubernetes-ai-ready-for-nvidia-vera-rubin-on-day-one/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-02T18:00:00.000Z",
+        "checkedAt": "2026-11-03T15:35:48.262Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "It will help Kubernetes environments be ready for NVIDIA Vera Rubin NVL72 compute trays on Day 1.",
+        "sourceUrl": "https://developer.nvidia.com/blog/making-kubernetes-ai-ready-for-nvidia-vera-rubin-on-day-one/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-02T18:00:00.000Z",
+        "checkedAt": "2026-11-03T15:35:48.262Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "This post covers what changes if you run NVIDIA GB200 NVL72 today, what has been validated on early hardware access using NVIDIA GPU Operator and the Dynamic Resource Allocation (DRA) driver with Vera Rubin support.",
+        "sourceUrl": "https://developer.nvidia.com/blog/making-kubernetes-ai-ready-for-nvidia-vera-rubin-on-day-one/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-02T18:00:00.000Z",
+        "checkedAt": "2026-11-03T15:35:48.262Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "If you run GB200 NVL72 today, NVIDIA Vera Rubin NVL72 is an evolution of the same NVIDIA MGX rack-scale architecture, now in its third generation.",
+        "sourceUrl": "https://developer.nvidia.com/blog/making-kubernetes-ai-ready-for-nvidia-vera-rubin-on-day-one/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-02T18:00:00.000Z",
+        "checkedAt": "2026-11-03T15:35:48.262Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "DOCA and NIC drivers: Vera Rubin NVL72 replaces the GB200 NVL72 reference design’s NVIDIA ConnectX-7 NICs and NVIDIA BlueField-3 data processing units (DPUs) with NVIDIA ConnectX-9 SuperNICs and NVIDIA BlueField-4 DPUs .",
+        "sourceUrl": "https://developer.nvidia.com/blog/making-kubernetes-ai-ready-for-nvidia-vera-rubin-on-day-one/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-02T18:00:00.000Z",
+        "checkedAt": "2026-11-03T15:35:48.262Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Both reference trays contain two CPUs and four GPUs, but the Vera Rubin NVL72 trays expose eight ConnectX-9 PCI device groups with 32 functions, compared with four ConnectX-7 adapters on the NVIDIA DGX GB200 NVL72 compute tray.",
+        "sourceUrl": "https://developer.nvidia.com/blog/making-kubernetes-ai-ready-for-nvidia-vera-rubin-on-day-one/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-02T18:00:00.000Z",
+        "checkedAt": "2026-11-03T15:35:48.262Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "To validate Vera Rubin NVL72 support end to end, we deployed the AICR runtime bundle on Vera Rubin clusters using the official GPU Operator v26.7.0 release and the official DRA driver v0.5.0 release, with a host-installed R615 driver.",
+        "sourceUrl": "https://developer.nvidia.com/blog/making-kubernetes-ai-ready-for-nvidia-vera-rubin-on-day-one/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-02T18:00:00.000Z",
+        "checkedAt": "2026-11-03T15:35:48.262Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "The new Vera Rubin recipe family (service: rke2; accelerator: Vera Rubin NVL72 (vr200); operating system: Ubuntu; with training, inference, and NVIDIA Dynamo inference variants) ships as Preview.",
+        "sourceUrl": "https://developer.nvidia.com/blog/making-kubernetes-ai-ready-for-nvidia-vera-rubin-on-day-one/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-02T18:00:00.000Z",
+        "checkedAt": "2026-11-03T15:35:48.262Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "AICR validation results for the Vera Rubin NVL72 training recipe: all deployment, conformance, and performance checks pass, including the first cross-node NCCL all-reduce performance gate on Vera Rubin silicon",
+        "sourceUrl": "https://developer.nvidia.com/blog/making-kubernetes-ai-ready-for-nvidia-vera-rubin-on-day-one/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-02T18:00:00.000Z",
+        "checkedAt": "2026-11-03T15:35:48.262Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "The fix (NVIDIA/aicr#1748) is merged and verified against NVIDIA Vera Rubin hardware.",
+        "sourceUrl": "https://developer.nvidia.com/blog/making-kubernetes-ai-ready-for-nvidia-vera-rubin-on-day-one/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-02T18:00:00.000Z",
+        "checkedAt": "2026-11-03T15:35:48.262Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Agentic AI / Generative AI | Data Center / Cloud | General | Cloud Services | BlueField DPU | ConnectX | GB200 | MGX | NVLink | Intermediate Technical | Deep dive | AI Factory | DSX | DSX AI Factory Platform | Infrastructure | Kubernetes | Machine Learning & Artificial Intelli…",
+        "sourceUrl": "https://developer.nvidia.com/blog/making-kubernetes-ai-ready-for-nvidia-vera-rubin-on-day-one/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-02T18:00:00.000Z",
+        "checkedAt": "2026-11-03T15:35:48.262Z"
+      }
+    ],
+    "pageDate": "2026-11-02T18:00:00.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "INFRA"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 INFRA (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}
