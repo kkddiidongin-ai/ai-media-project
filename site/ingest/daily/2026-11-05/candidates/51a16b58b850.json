@@ -1,0 +1,222 @@
+{
+  "id": "51a16b58b850",
+  "date": "2026-11-05",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Dependabot version updates support Agent Package Manager",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 8,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": false,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "evidenceQuality",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "GitHub",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://github.blog/changelog/2026-11-03-dependabot-version-updates-support-agent-package-manager",
+      "name": "GitHub Changelog",
+      "type": "official",
+      "publishedAt": "2026-11-03T20:24:07.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "51a16b58b850",
+    "url": "https://github.blog/changelog/2026-11-03-dependabot-version-updates-support-agent-package-manager",
+    "canonicalUrl": "https://github.blog/changelog/2026-11-03-dependabot-version-updates-support-agent-package-manager",
+    "title": "Dependabot version updates support Agent Package Manager",
+    "excerpt": "You can now keep your AI agent skills, prompts, and instructions up to date with Dependabot version updates for Agent Package Manager (APM). Dependabot opens pull requests to update supported… The post Dependabot version updates support Agent Package Manager appeared first on The GitHub Blog .",
+    "publishedAt": "2026-11-03T20:24:07.000Z",
+    "sourceId": "github-changelog",
+    "sourceName": "GitHub Changelog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://github.blog/changelog/feed/",
+    "fetchedAt": "2026-11-04T17:58:33.789Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 1096,
+    "grade": "LIMITED",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "You can now keep your AI agent skills, prompts, and instructions up to date with Dependabot version updates for Agent Package Manager (APM). Dependabot opens pull requests to update supported… The post Dependabot version updates support Agent Package Manager appeared first on The GitHub Blog .",
+        "sourceUrl": "https://github.blog/changelog/2026-11-03-dependabot-version-updates-support-agent-package-manager",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-03T20:24:07.000Z",
+        "checkedAt": "2026-11-04T18:00:08.836Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Dependabot version updates support Agent Package Manager - GitHub Changelog",
+        "sourceUrl": "https://github.blog/changelog/2026-11-03-dependabot-version-updates-support-agent-package-manager",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-03T20:24:07.000Z",
+        "checkedAt": "2026-11-04T18:00:08.836Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "You can now keep your AI agent skills, prompts, and instructions up to date with Dependabot version updates for Agent Package Manager (APM) .",
+        "sourceUrl": "https://github.blog/changelog/2026-11-03-dependabot-version-updates-support-agent-package-manager",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-03T20:24:07.000Z",
+        "checkedAt": "2026-11-04T18:00:08.836Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Dependabot opens pull requests to update supported git dependencies declared in apm.yml and regenerates apm.lock.yaml when it&rsquo;s present.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-03-dependabot-version-updates-support-agent-package-manager",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-03T20:24:07.000Z",
+        "checkedAt": "2026-11-04T18:00:08.836Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "This support covers version updates, not security updates.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-03-dependabot-version-updates-support-agent-package-manager",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-03T20:24:07.000Z",
+        "checkedAt": "2026-11-04T18:00:08.836Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "APM support is generally available on github.com for all GitHub plans and will be available in GitHub Enterprise Server 3.24.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-03-dependabot-version-updates-support-agent-package-manager",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-03T20:24:07.000Z",
+        "checkedAt": "2026-11-04T18:00:08.836Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Prioritize Dependabot alerts with reachability analysis",
+        "sourceUrl": "https://github.blog/changelog/2026-11-03-dependabot-version-updates-support-agent-package-manager",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-03T20:24:07.000Z",
+        "checkedAt": "2026-11-04T18:00:08.836Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Dependabot alerts REST API now includes dependency versions",
+        "sourceUrl": "https://github.blog/changelog/2026-11-03-dependabot-version-updates-support-agent-package-manager",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-03T20:24:07.000Z",
+        "checkedAt": "2026-11-04T18:00:08.836Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "GitHub package firewall in public preview",
+        "sourceUrl": "https://github.blog/changelog/2026-11-03-dependabot-version-updates-support-agent-package-manager",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-03T20:24:07.000Z",
+        "checkedAt": "2026-11-04T18:00:08.836Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Dependabot now supports npm 12, pnpm 11 and 12, and Bun 1.4",
+        "sourceUrl": "https://github.blog/changelog/2026-11-03-dependabot-version-updates-support-agent-package-manager",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-03T20:24:07.000Z",
+        "checkedAt": "2026-11-04T18:00:08.836Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Open source license compliance generally available",
+        "sourceUrl": "https://github.blog/changelog/2026-11-03-dependabot-version-updates-support-agent-package-manager",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-03T20:24:07.000Z",
+        "checkedAt": "2026-11-04T18:00:08.836Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Improved detection for withdrawn Dependabot alerts",
+        "sourceUrl": "https://github.blog/changelog/2026-11-03-dependabot-version-updates-support-agent-package-manager",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-03T20:24:07.000Z",
+        "checkedAt": "2026-11-04T18:00:08.836Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Anonymous organization-level registries for Dependabot",
+        "sourceUrl": "https://github.blog/changelog/2026-11-03-dependabot-version-updates-support-agent-package-manager",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-03T20:24:07.000Z",
+        "checkedAt": "2026-11-04T18:00:08.836Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PRODUCT_LAUNCH"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 PRODUCT_LAUNCH (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}
