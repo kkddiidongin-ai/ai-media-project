@@ -1,0 +1,221 @@
+{
+  "id": "3d39bad411aa",
+  "date": "2026-11-06",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "How NVIDIA Uses AI Agents to Streamline AI Factory Operations",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "NVIDIA",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://developer.nvidia.com/blog/how-nvidia-uses-ai-agents-to-streamline-ai-factory-operations/",
+      "name": "NVIDIA Technical Blog",
+      "type": "official",
+      "publishedAt": "2026-11-04T22:00:17.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "3d39bad411aa",
+    "url": "https://developer.nvidia.com/blog/how-nvidia-uses-ai-agents-to-streamline-ai-factory-operations/",
+    "canonicalUrl": "https://developer.nvidia.com/blog/how-nvidia-uses-ai-agents-to-streamline-ai-factory-operations",
+    "title": "How NVIDIA Uses AI Agents to Streamline AI Factory Operations",
+    "excerpt": "As GPU clusters scale, operations span compute, network, hardware, and scheduling. Site reliability engineers (SREs) often have to examine multiple dashboards...",
+    "publishedAt": "2026-11-04T22:00:17.000Z",
+    "sourceId": "nvidia-developer",
+    "sourceName": "NVIDIA Technical Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://developer.nvidia.com/blog/feed",
+    "fetchedAt": "2026-11-05T17:59:41.038Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 9360,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "As GPU clusters scale, operations span compute, network, hardware, and scheduling. Site reliability engineers (SREs) often have to examine multiple dashboards...",
+        "sourceUrl": "https://developer.nvidia.com/blog/how-nvidia-uses-ai-agents-to-streamline-ai-factory-operations/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-04T22:00:17.000Z",
+        "checkedAt": "2026-11-05T18:01:47.682Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "How NVIDIA Uses AI Agents to Streamline AI Factory Operations | NVIDIA Technical Blog",
+        "sourceUrl": "https://developer.nvidia.com/blog/how-nvidia-uses-ai-agents-to-streamline-ai-factory-operations/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-04T22:00:17.000Z",
+        "checkedAt": "2026-11-05T18:01:47.682Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "How NVIDIA Uses AI Agents to Streamline AI Factory Operations",
+        "sourceUrl": "https://developer.nvidia.com/blog/how-nvidia-uses-ai-agents-to-streamline-ai-factory-operations/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-04T22:00:17.000Z",
+        "checkedAt": "2026-11-05T18:01:47.682Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "The AI Factory Operations Agent coordinates specialized sub-agents to detect failures, correlate root causes across compute, network, hardware, and scheduling layers, and surface recommendations through a chat interface for NVIDIA DGX SuperPOD operations.",
+        "sourceUrl": "https://developer.nvidia.com/blog/how-nvidia-uses-ai-agents-to-streamline-ai-factory-operations/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-04T22:00:17.000Z",
+        "checkedAt": "2026-11-05T18:01:47.682Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "The framework is built on the NVIDIA NemoClaw blueprint using NVIDIA OpenShell and runs fully on-premises with locally served NVIDIA Nemotron open models across NVIDIA DGX H100, NVIDIA DGX B200, and NVIDIA DGX GB300 production clusters.",
+        "sourceUrl": "https://developer.nvidia.com/blog/how-nvidia-uses-ai-agents-to-streamline-ai-factory-operations/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-04T22:00:17.000Z",
+        "checkedAt": "2026-11-05T18:01:47.682Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "For multi-tenant AI factories, scoped agents, tools, sandboxes, and Kubernetes permissions isolate tenant data and operations while central operations retain broader cluster visibility, enforced by OpenShell kernel-level sandbox restrictions.",
+        "sourceUrl": "https://developer.nvidia.com/blog/how-nvidia-uses-ai-agents-to-streamline-ai-factory-operations/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-04T22:00:17.000Z",
+        "checkedAt": "2026-11-05T18:01:47.682Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "NVIDIA developed the AI Factory Operations Agent to streamline its own internal NVIDIA DGX SuperPOD operations and reduce the manual effort by NVIDIA SREs.",
+        "sourceUrl": "https://developer.nvidia.com/blog/how-nvidia-uses-ai-agents-to-streamline-ai-factory-operations/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-04T22:00:17.000Z",
+        "checkedAt": "2026-11-05T18:01:47.682Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Instead of requiring SREs to check each layer of the AI factory software and hardware separately, the AI Factory Operations Agent uses specialized agents for different operational domains.",
+        "sourceUrl": "https://developer.nvidia.com/blog/how-nvidia-uses-ai-agents-to-streamline-ai-factory-operations/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-04T22:00:17.000Z",
+        "checkedAt": "2026-11-05T18:01:47.682Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "The AI Factory Operations Agent developer example was built around the NVIDIA NemoClaw blueprint.",
+        "sourceUrl": "https://developer.nvidia.com/blog/how-nvidia-uses-ai-agents-to-streamline-ai-factory-operations/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-04T22:00:17.000Z",
+        "checkedAt": "2026-11-05T18:01:47.682Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Agent inference uses locally served NVIDIA Nemotron open models, while the framework runs across internal NVIDIA DGX H100, NVIDIA DGX B200, and NVIDIA DGX GB300 production clusters.",
+        "sourceUrl": "https://developer.nvidia.com/blog/how-nvidia-uses-ai-agents-to-streamline-ai-factory-operations/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-04T22:00:17.000Z",
+        "checkedAt": "2026-11-05T18:01:47.682Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "AI Factory Operations Agent architecture: A NemoClaw agent orchestrating domain-specific agents across GPU cluster infrastructure",
+        "sourceUrl": "https://developer.nvidia.com/blog/how-nvidia-uses-ai-agents-to-streamline-ai-factory-operations/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-04T22:00:17.000Z",
+        "checkedAt": "2026-11-05T18:01:47.682Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Internal NVIDIA deployment of the AI Factory Operations Agent uses a growing ecosystem of NVIDIA data center domain-specific agents, each providing recommendations.",
+        "sourceUrl": "https://developer.nvidia.com/blog/how-nvidia-uses-ai-agents-to-streamline-ai-factory-operations/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-04T22:00:17.000Z",
+        "checkedAt": "2026-11-05T18:01:47.682Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Agentic AI / Generative AI | Data Center / Cloud | MLOps | HPC / Scientific Computing | Nemotron | Intermediate Technical | Tutorial | AI Agent | AI Factory | Build AI Agents | DGX | GB200 | GB300 | HGX | Machine Learning & Artificial Intelligence | NemoClaw | OpenShell",
+        "sourceUrl": "https://developer.nvidia.com/blog/how-nvidia-uses-ai-agents-to-streamline-ai-factory-operations/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-04T22:00:17.000Z",
+        "checkedAt": "2026-11-05T18:01:47.682Z"
+      }
+    ],
+    "pageDate": "2026-11-04T22:00:17.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "INFRA"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 INFRA (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}
