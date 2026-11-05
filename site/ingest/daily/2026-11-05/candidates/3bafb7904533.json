@@ -1,0 +1,221 @@
+{
+  "id": "3bafb7904533",
+  "date": "2026-11-05",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "AI Is Changing How Semiconductor Fabs Work — and Engineers Are Moving Faster Because of It",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 8,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "NVIDIA",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://blogs.nvidia.com/blog/ai-semiconductor-fabs/",
+      "name": "NVIDIA Blog",
+      "type": "official",
+      "publishedAt": "2026-11-03T16:00:45.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "3bafb7904533",
+    "url": "https://blogs.nvidia.com/blog/ai-semiconductor-fabs/",
+    "canonicalUrl": "https://blogs.nvidia.com/blog/ai-semiconductor-fabs",
+    "title": "AI Is Changing How Semiconductor Fabs Work — and Engineers Are Moving Faster Because of It",
+    "excerpt": "Demand for advanced chips is rising. The processes to build them are getting more complex. And the margin for error is shrinking. For engineers, understanding how a process change will behave, how a material will interact with a new step, how a defect maps back to a root cause are critical, challeng",
+    "publishedAt": "2026-11-03T16:00:45.000Z",
+    "sourceId": "nvidia",
+    "sourceName": "NVIDIA Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://blogs.nvidia.com/feed/",
+    "fetchedAt": "2026-11-05T02:18:38.715Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 5375,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Demand for advanced chips is rising. The processes to build them are getting more complex. And the margin for error is shrinking. For engineers, understanding how a process change will behave, how a material will interact with a new step, how a defect maps back to a root cause are critical, challeng",
+        "sourceUrl": "https://blogs.nvidia.com/blog/ai-semiconductor-fabs/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-03T16:00:45.000Z",
+        "checkedAt": "2026-11-04T18:00:10.389Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "AI Is Changing How Semiconductor Fabs Work — and Engineers Are Moving Faster Because of It | NVIDIA Blog",
+        "sourceUrl": "https://blogs.nvidia.com/blog/ai-semiconductor-fabs/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-03T16:00:45.000Z",
+        "checkedAt": "2026-11-04T18:00:10.389Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "For engineers, understanding how a process change will behave, how a material will interact with a new step, how a defect maps back to a root cause are critical, challenging steps in semiconductor manufacturing — and these analyses can take days.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/ai-semiconductor-fabs/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-03T16:00:45.000Z",
+        "checkedAt": "2026-11-04T18:00:10.389Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "AI is transforming semiconductor manufacturing, impacting what engineers can do — and how fast.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/ai-semiconductor-fabs/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-03T16:00:45.000Z",
+        "checkedAt": "2026-11-04T18:00:10.389Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Physics-based AI helps engineers predict process behavior without running a full simulation every time.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/ai-semiconductor-fabs/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-03T16:00:45.000Z",
+        "checkedAt": "2026-11-04T18:00:10.389Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Together, these capabilities describe an AI-defined fab: a semiconductor manufacturing factory where AI helps engineers optimize processes, catch problems earlier and make better decisions across the full manufacturing chip lifecycle.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/ai-semiconductor-fabs/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-03T16:00:45.000Z",
+        "checkedAt": "2026-11-04T18:00:10.389Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Engineers direct the work and make decisions based on their expertise while spending less time waiting for answers.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/ai-semiconductor-fabs/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-03T16:00:45.000Z",
+        "checkedAt": "2026-11-04T18:00:10.389Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Using the NVIDIA cuDSS library, multiphysics software provider COMSOL is accelerating such simulations for semiconductor manufacturing by up to 10x.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/ai-semiconductor-fabs/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-03T16:00:45.000Z",
+        "checkedAt": "2026-11-04T18:00:10.389Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "By integrating NVIDIA cuDSS, Applied’s Ginestra simulation platform runs up to 10x faster than CPU-only approaches.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/ai-semiconductor-fabs/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-03T16:00:45.000Z",
+        "checkedAt": "2026-11-04T18:00:10.389Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "And with NVIDIA PhysicsNeMo, Applied’s ACE+ multiphysics platform delivers topography simulations up to 35x faster.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/ai-semiconductor-fabs/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-03T16:00:45.000Z",
+        "checkedAt": "2026-11-04T18:00:10.389Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Siemens is integrating NVIDIA cuLitho into its Calibre lithography software, delivering up to 17x acceleration on key simulation workloads.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/ai-semiconductor-fabs/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-03T16:00:45.000Z",
+        "checkedAt": "2026-11-04T18:00:10.389Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "As such, faster calculations can help researchers explore material behavior and reaction pathways that influence next-generation semiconductor processes.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/ai-semiconductor-fabs/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-03T16:00:45.000Z",
+        "checkedAt": "2026-11-04T18:00:10.389Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Lam Research demonstrated that the NVIDIA PhysicsNeMo framework can predict plasma behavior in milliseconds, compared with days for a full simulation — giving engineers a faster way to explore process conditions without rerunning the full model each time.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/ai-semiconductor-fabs/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-03T16:00:45.000Z",
+        "checkedAt": "2026-11-04T18:00:10.389Z"
+      }
+    ],
+    "pageDate": "2026-11-03T16:00:45.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "INFRA"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 INFRA (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

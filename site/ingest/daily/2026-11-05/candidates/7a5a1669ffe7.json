@@ -1,0 +1,220 @@
+{
+  "id": "7a5a1669ffe7",
+  "date": "2026-11-05",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "How Circle K accelerated DevOps incident triage to under 15 minutes with Amazon Bedrock",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 10,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": true,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": true
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-circle-k-accelerated-devops-incident-triage-to-under-15-minutes-with-amazon-bedrock/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-11-02T17:00:58.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "7a5a1669ffe7",
+    "url": "https://aws.amazon.com/blogs/machine-learning/how-circle-k-accelerated-devops-incident-triage-to-under-15-minutes-with-amazon-bedrock/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/how-circle-k-accelerated-devops-incident-triage-to-under-15-minutes-with-amazon-bedrock",
+    "title": "How Circle K accelerated DevOps incident triage to under 15 minutes with Amazon Bedrock",
+    "excerpt": "Circle K's DevOps team cut incident triage from 45-60 minutes to under 15 by building an agentic triage system on Amazon Bedrock. This post walks through the architecture, the initial Amazon Bedrock Flows implementation, the migration to Amazon Bedrock AgentCore, and the lessons learned from scaling",
+    "publishedAt": "2026-11-02T17:00:58.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-11-05T02:18:38.715Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 15247,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Circle K's DevOps team cut incident triage from 45-60 minutes to under 15 by building an agentic triage system on Amazon Bedrock. This post walks through the architecture, the initial Amazon Bedrock Flows implementation, the migration to Amazon Bedrock AgentCore, and the lessons learned from scaling",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-circle-k-accelerated-devops-incident-triage-to-under-15-minutes-with-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-02T17:00:58.000Z",
+        "checkedAt": "2026-11-04T18:00:10.542Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "How Circle K accelerated DevOps incident triage to under 15 minutes with Amazon Bedrock | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-circle-k-accelerated-devops-incident-triage-to-under-15-minutes-with-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-02T17:00:58.000Z",
+        "checkedAt": "2026-11-04T18:00:10.542Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "How Circle K accelerated DevOps incident triage to under 15 minutes with Amazon Bedrock",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-circle-k-accelerated-devops-incident-triage-to-under-15-minutes-with-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-02T17:00:58.000Z",
+        "checkedAt": "2026-11-04T18:00:10.542Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Many DevOps teams know the incident triage pattern: An alert fires, and before anyone can fix the problem, an engineer spends 45–60 minutes figuring out what happened.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-circle-k-accelerated-devops-incident-triage-to-under-15-minutes-with-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-02T17:00:58.000Z",
+        "checkedAt": "2026-11-04T18:00:10.542Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "To address it, Circle K built an automated triage system using Amazon Bedrock , a fully managed service that makes foundation models (FMs) available through a single API.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-circle-k-accelerated-devops-incident-triage-to-under-15-minutes-with-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-02T17:00:58.000Z",
+        "checkedAt": "2026-11-04T18:00:10.542Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Since deploying this system, Circle K has reduced mean triage time to under 15 minutes, a 67–75 percent reduction based on the team’s internal incident-response metrics.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-circle-k-accelerated-devops-incident-triage-to-under-15-minutes-with-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-02T17:00:58.000Z",
+        "checkedAt": "2026-11-04T18:00:10.542Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "When an alert came in, the triage involved a familiar sequence of manual steps: reviewing recent logs in Amazon CloudWatch , examining application-level traces in Amazon OpenSearch Service , checking Amazon Elastic Container Service (Amazon ECS) task status, and cross-referenc…",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-circle-k-accelerated-devops-incident-triage-to-under-15-minutes-with-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-02T17:00:58.000Z",
+        "checkedAt": "2026-11-04T18:00:10.542Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Because Circle K already ran on AWS, Amazon Bedrock fit into existing AWS Identity and Access Management (IAM) policies, Amazon Virtual Private Cloud (Amazon VPC) configurations, and logging pipelines.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-circle-k-accelerated-devops-incident-triage-to-under-15-minutes-with-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-02T17:00:58.000Z",
+        "checkedAt": "2026-11-04T18:00:10.542Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Figure 1: Circle K automated incident triage architecture using Amazon Bedrock Flows",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-circle-k-accelerated-devops-incident-triage-to-under-15-minutes-with-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-02T17:00:58.000Z",
+        "checkedAt": "2026-11-04T18:00:10.542Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "The Amazon Bedrock Flows architecture worked well for months, and simple incidents were triaged in under 10 minutes.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-circle-k-accelerated-devops-incident-triage-to-under-15-minutes-with-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-02T17:00:58.000Z",
+        "checkedAt": "2026-11-04T18:00:10.542Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Amazon Bedrock AgentCore Gateway, a capability of Amazon Bedrock AgentCore, brokers the agent’s access to its data sources, including Amazon OpenSearch Service, Amazon Bedrock Knowledge Bases, and GitHub.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-circle-k-accelerated-devops-incident-triage-to-under-15-minutes-with-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-02T17:00:58.000Z",
+        "checkedAt": "2026-11-04T18:00:10.542Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Based on the team’s internal incident-response metrics, mean triage time dropped from 45–60 minutes to under 15 minutes, a 67–75 percent reduction.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-circle-k-accelerated-devops-incident-triage-to-under-15-minutes-with-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-02T17:00:58.000Z",
+        "checkedAt": "2026-11-04T18:00:10.542Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "The Circle K team went from 45–60 minutes of manual incident triage to under 15 minutes by automating the context gathering that engineers used to do by hand.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-circle-k-accelerated-devops-incident-triage-to-under-15-minutes-with-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-02T17:00:58.000Z",
+        "checkedAt": "2026-11-04T18:00:10.542Z"
+      }
+    ],
+    "pageDate": "2026-11-02T17:00:58.000Z"
+  },
+  "score": {
+    "importance": 2,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "SECURITY",
+      "API_PLATFORM"
+    ],
+    "strongSignal": true,
+    "contentType": "HOW_TO",
+    "typePenalty": -3,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 SECURITY·API_PLATFORM (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}
