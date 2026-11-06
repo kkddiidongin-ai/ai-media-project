@@ -1,0 +1,221 @@
+{
+  "id": "48f399a0d9a2",
+  "date": "2026-11-07",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Configure, Certify, and Operate Kubernetes GPU Clusters with NVIDIA DSX OS",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 10,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "NVIDIA",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://developer.nvidia.com/blog/configure-certify-and-operate-kubernetes-gpu-clusters-with-nvidia-dsx-os/",
+      "name": "NVIDIA Technical Blog",
+      "type": "official",
+      "publishedAt": "2026-11-05T17:00:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "48f399a0d9a2",
+    "url": "https://developer.nvidia.com/blog/configure-certify-and-operate-kubernetes-gpu-clusters-with-nvidia-dsx-os/",
+    "canonicalUrl": "https://developer.nvidia.com/blog/configure-certify-and-operate-kubernetes-gpu-clusters-with-nvidia-dsx-os",
+    "title": "Configure, Certify, and Operate Kubernetes GPU Clusters with NVIDIA DSX OS",
+    "excerpt": "One underperforming GPU can slow an entire distributed training job. The node may pass basic health checks and show normal utilization, leaving operators to...",
+    "publishedAt": "2026-11-05T17:00:00.000Z",
+    "sourceId": "nvidia-developer",
+    "sourceName": "NVIDIA Technical Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://developer.nvidia.com/blog/feed",
+    "fetchedAt": "2026-11-06T17:27:20.240Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 17001,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "One underperforming GPU can slow an entire distributed training job. The node may pass basic health checks and show normal utilization, leaving operators to...",
+        "sourceUrl": "https://developer.nvidia.com/blog/configure-certify-and-operate-kubernetes-gpu-clusters-with-nvidia-dsx-os/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-05T17:00:00.000Z",
+        "checkedAt": "2026-11-06T17:28:35.399Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Configure, Certify, and Operate Kubernetes GPU Clusters with NVIDIA DSX OS | NVIDIA Technical Blog",
+        "sourceUrl": "https://developer.nvidia.com/blog/configure-certify-and-operate-kubernetes-gpu-clusters-with-nvidia-dsx-os/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-05T17:00:00.000Z",
+        "checkedAt": "2026-11-06T17:28:35.399Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Configure, Certify, and Operate Kubernetes GPU Clusters with NVIDIA DSX OS",
+        "sourceUrl": "https://developer.nvidia.com/blog/configure-certify-and-operate-kubernetes-gpu-clusters-with-nvidia-dsx-os/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-05T17:00:00.000Z",
+        "checkedAt": "2026-11-06T17:28:35.399Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "NVIDIA DSX AI Factory Platform provides an open source software layer called NVIDIA DSX OS for configuring, certifying, and maintaining accelerated Kubernetes infrastructure.",
+        "sourceUrl": "https://developer.nvidia.com/blog/configure-certify-and-operate-kubernetes-gpu-clusters-with-nvidia-dsx-os/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-05T17:00:00.000Z",
+        "checkedAt": "2026-11-06T17:28:35.399Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "The NVIDIA DSX AI Factory Platform brings together technologies for designing, building, and operating efficient, resilient AI factories.",
+        "sourceUrl": "https://developer.nvidia.com/blog/configure-certify-and-operate-kubernetes-gpu-clusters-with-nvidia-dsx-os/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-05T17:00:00.000Z",
+        "checkedAt": "2026-11-06T17:28:35.399Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Its open source software layer, NVIDIA DSX OS, includes tools for configuring, certifying, and maintaining the health of accelerated Kubernetes infrastructure.",
+        "sourceUrl": "https://developer.nvidia.com/blog/configure-certify-and-operate-kubernetes-gpu-clusters-with-nvidia-dsx-os/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-05T17:00:00.000Z",
+        "checkedAt": "2026-11-06T17:28:35.399Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Configure : NVIDIA AI Cluster Runtime (AICR) establishes a reproducible baseline for GPU-optimized Kubernetes infrastructure.",
+        "sourceUrl": "https://developer.nvidia.com/blog/configure-certify-and-operate-kubernetes-gpu-clusters-with-nvidia-dsx-os/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-05T17:00:00.000Z",
+        "checkedAt": "2026-11-06T17:28:35.399Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Certify : NVIDIA Cluster Readiness Engine (NVCRE) validates whether the cluster is ready to run production workloads.",
+        "sourceUrl": "https://developer.nvidia.com/blog/configure-certify-and-operate-kubernetes-gpu-clusters-with-nvidia-dsx-os/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-05T17:00:00.000Z",
+        "checkedAt": "2026-11-06T17:28:35.399Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "aicr recipe --service eks --accelerator h100 --os ubuntu \\",
+        "sourceUrl": "https://developer.nvidia.com/blog/configure-certify-and-operate-kubernetes-gpu-clusters-with-nvidia-dsx-os/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-05T17:00:00.000Z",
+        "checkedAt": "2026-11-06T17:28:35.399Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "The catalog covers NCCL communication variants, the NVIDIA Data Center GPU Manager (DCGM) level 4 diagnostic suite, and pretraining workloads using NVIDIA NeMo Framework with 8-billion- and 56-billion-parameter models.",
+        "sourceUrl": "https://developer.nvidia.com/blog/configure-certify-and-operate-kubernetes-gpu-clusters-with-nvidia-dsx-os/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-05T17:00:00.000Z",
+        "checkedAt": "2026-11-06T17:28:35.399Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Get hands-on with these tools at the NVIDIA DSX OS AI Inference and Contributor Workshop , held alongside KubeCon + CloudNativeCon North America.",
+        "sourceUrl": "https://developer.nvidia.com/blog/configure-certify-and-operate-kubernetes-gpu-clusters-with-nvidia-dsx-os/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-05T17:00:00.000Z",
+        "checkedAt": "2026-11-06T17:28:35.399Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Visit NVIDIA booth 170 at KubeCon for more Kubernetes deep dives and live demos.",
+        "sourceUrl": "https://developer.nvidia.com/blog/configure-certify-and-operate-kubernetes-gpu-clusters-with-nvidia-dsx-os/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-05T17:00:00.000Z",
+        "checkedAt": "2026-11-06T17:28:35.399Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Sowmyan is a principal product developer relations manager on the NVIDIA DSX OS team.",
+        "sourceUrl": "https://developer.nvidia.com/blog/configure-certify-and-operate-kubernetes-gpu-clusters-with-nvidia-dsx-os/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-05T17:00:00.000Z",
+        "checkedAt": "2026-11-06T17:28:35.399Z"
+      }
+    ],
+    "pageDate": "2026-11-05T17:00:00.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "INFRA"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 INFRA (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

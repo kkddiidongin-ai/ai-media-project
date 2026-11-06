@@ -1,0 +1,231 @@
+{
+  "id": "3df4d68063a5",
+  "date": "2026-11-07",
+  "proposedSlug": "more-performance-every-byte-full-stack-codesign",
+  "title": null,
+  "sourceTitle": "More Performance From Every Byte: How Full-Stack Codesign Solves AI’s Memory Challenge",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 12,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": true,
+      "contextNeed": true,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": true
+    },
+    "deepMissing": [
+      "importance"
+    ]
+  },
+  "company": "NVIDIA",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://blogs.nvidia.com/blog/memory-full-stack-codesign/",
+      "name": "NVIDIA Blog",
+      "type": "official",
+      "publishedAt": "2026-11-05T16:00:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "3df4d68063a5",
+    "url": "https://blogs.nvidia.com/blog/memory-full-stack-codesign/",
+    "canonicalUrl": "https://blogs.nvidia.com/blog/memory-full-stack-codesign",
+    "title": "More Performance From Every Byte: How Full-Stack Codesign Solves AI’s Memory Challenge",
+    "excerpt": "Larger models, longer contexts and agentic applications are increasing GPU memory pressure while supply tightens and prices rise — a trend expected to continue through the near term. NVIDIA works closely with memory partners to rapidly adopt the latest memory technologies. NVIDIA was first to adopt ",
+    "publishedAt": "2026-11-05T16:00:00.000Z",
+    "sourceId": "nvidia",
+    "sourceName": "NVIDIA Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://blogs.nvidia.com/feed/",
+    "fetchedAt": "2026-11-06T17:27:20.240Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 6702,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Larger models, longer contexts and agentic applications are increasing GPU memory pressure while supply tightens and prices rise — a trend expected to continue through the near term. NVIDIA works closely with memory partners to rapidly adopt the latest memory technologies. NVIDIA was first to adopt ",
+        "sourceUrl": "https://blogs.nvidia.com/blog/memory-full-stack-codesign/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-05T16:00:00.000Z",
+        "checkedAt": "2026-11-06T17:28:25.329Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "More Performance From Every Byte: How Full-Stack Codesign Solves AI’s Memory Challenge | NVIDIA Blog",
+        "sourceUrl": "https://blogs.nvidia.com/blog/memory-full-stack-codesign/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-05T16:00:00.000Z",
+        "checkedAt": "2026-11-06T17:28:25.329Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "NVIDIA intentionally designs GPUs, CPUs, networking, storage and software together to get more useful work out of memory at every layer of the AI factory.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/memory-full-stack-codesign/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-05T16:00:00.000Z",
+        "checkedAt": "2026-11-06T17:28:25.329Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Byte for byte, NVIDIA makes the most efficient use of memory at every layer — and the results show it.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/memory-full-stack-codesign/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-05T16:00:00.000Z",
+        "checkedAt": "2026-11-06T17:28:25.329Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Agentic trajectories carry prior context across repeated model and tool calls, in some cases processing up to 3 million tokens, so each request’s working memory grows over time.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/memory-full-stack-codesign/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-05T16:00:00.000Z",
+        "checkedAt": "2026-11-06T17:28:25.329Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "More HBM can hold more KV cache and support more concurrent users.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/memory-full-stack-codesign/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-05T16:00:00.000Z",
+        "checkedAt": "2026-11-06T17:28:25.329Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Maximizing the Value of Every Byte With Full-Stack Codesign",
+        "sourceUrl": "https://blogs.nvidia.com/blog/memory-full-stack-codesign/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-05T16:00:00.000Z",
+        "checkedAt": "2026-11-06T17:28:25.329Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "NVIDIA’s full-stack codesign makes every byte of HBM count by relieving pressure from model weights, KV cache and RAG data.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/memory-full-stack-codesign/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-05T16:00:00.000Z",
+        "checkedAt": "2026-11-06T17:28:25.329Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Recent models, including FLUX.2 [klein] from Black Forest Labs , Inkling from Thinking Machines Lab, Beam 1.0 from Reflection , Meta Muse Spark from Meta , Step 5 Preview from StepFun and NVIDIA Nemotron 3.5 Super VL have been released with NVFP4 checkpoints, demonstrating gro…",
+        "sourceUrl": "https://blogs.nvidia.com/blog/memory-full-stack-codesign/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-05T16:00:00.000Z",
+        "checkedAt": "2026-11-06T17:28:25.329Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Within an NVL72 system, model weights can be distributed across up to 72 GPUs , so each GPU holds a smaller share of the model — leaving more HBM for KV cache and concurrent users.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/memory-full-stack-codesign/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-05T16:00:00.000Z",
+        "checkedAt": "2026-11-06T17:28:25.329Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Applying NVFP4 to the KV cache reduces its footprint compared with FP8, so more context can stay resident in HBM.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/memory-full-stack-codesign/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-05T16:00:00.000Z",
+        "checkedAt": "2026-11-06T17:28:25.329Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "NVIDIA’s full-stack codesign lowers token costs by increasing the useful work every byte of memory delivers.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/memory-full-stack-codesign/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-05T16:00:00.000Z",
+        "checkedAt": "2026-11-06T17:28:25.329Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Learn more in the video explainer and technical deep dive on how NVIDIA full-stack codesign reduces inference memory pressure.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/memory-full-stack-codesign/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-05T16:00:00.000Z",
+        "checkedAt": "2026-11-06T17:28:25.329Z"
+      }
+    ],
+    "pageDate": "2026-11-05T16:00:00.000Z"
+  },
+  "score": {
+    "importance": 3,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PRICING",
+      "INFRA"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 9,
+    "total": 9
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 PRICING·INFRA (우선순위 9)",
+    "근거 확인 통과 (확인 사실 12개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "none",
+    "model": null,
+    "status": "skipped",
+    "error": "Shadow Mode — 원고를 만들지 않음",
+    "promptVersion": "draft-v1",
+    "at": "2026-11-06T17:28:41.179Z",
+    "evidenceHash": "b562f4ebb028"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": true,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}

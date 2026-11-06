@@ -1,0 +1,221 @@
+{
+  "id": "1184d3a025fd",
+  "date": "2026-11-07",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Le Chonk brings the brains. Studio puts it to work.",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 10,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Mistral",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://mistral.ai/news/build-with-studio/",
+      "name": "Mistral AI",
+      "type": "official",
+      "publishedAt": "2026-11-05T12:00:14.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "1184d3a025fd",
+    "url": "https://mistral.ai/news/build-with-studio/",
+    "canonicalUrl": "https://mistral.ai/news/build-with-studio",
+    "title": "Le Chonk brings the brains. Studio puts it to work.",
+    "excerpt": "Build and deploy enterprise agents, workflows and apps faster with Mistral Studio and Le Chonk full control over your models, data and infrastructure.",
+    "publishedAt": "2026-11-05T12:00:14.000Z",
+    "sourceId": "mistral",
+    "sourceName": "Mistral AI",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://mistral.ai/news/rss",
+    "fetchedAt": "2026-11-06T17:27:20.240Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 9283,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Build and deploy enterprise agents, workflows and apps faster with Mistral Studio and Le Chonk full control over your models, data and infrastructure.",
+        "sourceUrl": "https://mistral.ai/news/build-with-studio/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-11-05T12:00:14.000Z",
+        "checkedAt": "2026-11-06T17:28:35.218Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Build Enterprise Agents, Workflows & Apps in Mistral Studio • • • • • • • • • • •",
+        "sourceUrl": "https://mistral.ai/news/build-with-studio/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-11-05T12:00:14.000Z",
+        "checkedAt": "2026-11-06T17:28:35.218Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Mistral Large 4 (Le Chonk) enhances enterprise AI with advanced coding, cybersecurity, and document reasoning, while Mistral Studio provides a flexible platform for deploying agents, workflows, and apps across cloud, VPC, or on-premises environments.",
+        "sourceUrl": "https://mistral.ai/news/build-with-studio/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-11-05T12:00:14.000Z",
+        "checkedAt": "2026-11-06T17:28:35.218Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Customers like ABANCA and BNP Paribas already use Studio to automate tasks, improve efficiency, and maintain full control over their AI systems.",
+        "sourceUrl": "https://mistral.ai/news/build-with-studio/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-11-05T12:00:14.000Z",
+        "checkedAt": "2026-11-06T17:28:35.218Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Mistral Large 4 (Le Chonk) pushes the frontier of what enterprises can build with open models.",
+        "sourceUrl": "https://mistral.ai/news/build-with-studio/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-11-05T12:00:14.000Z",
+        "checkedAt": "2026-11-06T17:28:35.218Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "It does great for coding , delivers advanced defensive cybersecurity capabilities , and brings powerful reasoning to complex documents and business tasks .",
+        "sourceUrl": "https://mistral.ai/news/build-with-studio/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-11-05T12:00:14.000Z",
+        "checkedAt": "2026-11-06T17:28:35.218Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Mistral Studio is our enterprise AI platform for putting that intelligence to work in your business.",
+        "sourceUrl": "https://mistral.ai/news/build-with-studio/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-11-05T12:00:14.000Z",
+        "checkedAt": "2026-11-06T17:28:35.218Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Mistral Studio aims to let us decide exactly which systems the agents can access, and brings the observability and evaluation needed to turn a promising PoC into a system they can operate, measure, and rely on.",
+        "sourceUrl": "https://mistral.ai/news/build-with-studio/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-11-05T12:00:14.000Z",
+        "checkedAt": "2026-11-06T17:28:35.218Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Studio brings all three together on shared infrastructure.",
+        "sourceUrl": "https://mistral.ai/news/build-with-studio/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-11-05T12:00:14.000Z",
+        "checkedAt": "2026-11-06T17:28:35.218Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "You start with a model like Le Chonk and connect it to your enterprise data and systems through connectors and MCP servers.",
+        "sourceUrl": "https://mistral.ai/news/build-with-studio/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-11-05T12:00:14.000Z",
+        "checkedAt": "2026-11-06T17:28:35.218Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Studio manages the runtime behind all that work, using the proven infrastructure that supports millions of Mistral Vibe sessions each week.",
+        "sourceUrl": "https://mistral.ai/news/build-with-studio/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-11-05T12:00:14.000Z",
+        "checkedAt": "2026-11-06T17:28:35.218Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "This saves the product operations team about 35 hours a week.",
+        "sourceUrl": "https://mistral.ai/news/build-with-studio/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-11-05T12:00:14.000Z",
+        "checkedAt": "2026-11-06T17:28:35.218Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Choose a process your team wants to improve and put Le Chonk to work in Studio .",
+        "sourceUrl": "https://mistral.ai/news/build-with-studio/",
+        "source": "Mistral AI",
+        "publishedAt": "2026-11-05T12:00:14.000Z",
+        "checkedAt": "2026-11-06T17:28:35.218Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "INFRA"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 INFRA (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}
