@@ -1,0 +1,221 @@
+{
+  "id": "94b7888e188f",
+  "date": "2026-11-06",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "More visibility and control over Claude Enterprise for security teams",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Anthropic",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://claude.com/resources/articles/claude-enterprise-security-updates",
+      "name": "Claude (claude.com articles)",
+      "type": "official",
+      "publishedAt": "2026-11-05T00:00:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "94b7888e188f",
+    "url": "https://claude.com/resources/articles/claude-enterprise-security-updates",
+    "canonicalUrl": "https://claude.com/resources/articles/claude-enterprise-security-updates",
+    "title": "More visibility and control over Claude Enterprise for security teams",
+    "excerpt": "Claude Enterprise has new security and admin features, including a security center, inference hooks, centralized management, and additional access controls.",
+    "publishedAt": "2026-11-05T00:00:00.000Z",
+    "sourceId": "claude-blog",
+    "sourceName": "Claude (claude.com articles)",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "listing-meta",
+    "discoveredVia": "https://claude.com/resources/articles",
+    "fetchedAt": "2026-11-06T02:17:02.302Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 7131,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Claude Enterprise has new security and admin features, including a security center, inference hooks, centralized management, and additional access controls.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-enterprise-security-updates",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-05T00:00:00.000Z",
+        "checkedAt": "2026-11-05T18:01:43.415Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "• • • • • • • • • More visibility and control over Claude Enterprise for security teams | Claude by Anthropic • • •",
+        "sourceUrl": "https://claude.com/resources/articles/claude-enterprise-security-updates",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-05T00:00:00.000Z",
+        "checkedAt": "2026-11-05T18:01:43.415Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Skip to main content To see how Claude is set up, the security center shows how your organization’s Claude settings compare with Anthropic’s recommended configuration.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-enterprise-security-updates",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-05T00:00:00.000Z",
+        "checkedAt": "2026-11-05T18:01:43.415Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Security teams need to see how Claude is configured, what it does on company devices, and how data is handled as people work.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-enterprise-security-updates",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-05T00:00:00.000Z",
+        "checkedAt": "2026-11-05T18:01:43.415Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Security center: review your Claude security settings in one place",
+        "sourceUrl": "https://claude.com/resources/articles/claude-enterprise-security-updates",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-05T00:00:00.000Z",
+        "checkedAt": "2026-11-05T18:01:43.415Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Security teams can review Claude's security settings for chat, Cowork, and Claude Code on one page, instead of setting by setting.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-enterprise-security-updates",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-05T00:00:00.000Z",
+        "checkedAt": "2026-11-05T18:01:43.415Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Inference hooks connect Claude to the data security tools your organization already uses, so your data loss prevention (DLP) and security policies can apply to prompts and tool calls as people work.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-enterprise-security-updates",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-05T00:00:00.000Z",
+        "checkedAt": "2026-11-05T18:01:43.415Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Centralized management gives your parent organization, which represents your company across its Claude Enterprise and Claude Platform organizations, its own admin console at admin.claude.com.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-enterprise-security-updates",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-05T00:00:00.000Z",
+        "checkedAt": "2026-11-05T18:01:43.415Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Security teams can now sign a member out of Claude with a single Admin API call, without removing them from the organization.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-enterprise-security-updates",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-05T00:00:00.000Z",
+        "checkedAt": "2026-11-05T18:01:43.415Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "That isolation helps protect the device, and security teams have asked for the same visibility into the virtual machine that they have everywhere else on the endpoint.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-enterprise-security-updates",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-05T00:00:00.000Z",
+        "checkedAt": "2026-11-05T18:01:43.415Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "These features are available for Claude Enterprise, with some exceptions during beta listed in the Help Center .",
+        "sourceUrl": "https://claude.com/resources/articles/claude-enterprise-security-updates",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-05T00:00:00.000Z",
+        "checkedAt": "2026-11-05T18:01:43.415Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Endpoint detection and response in Cowork is in beta on macOS and Windows for Claude Team and Enterprise, and for the Claude desktop app on Amazon Bedrock, Google Cloud Vertex AI, and Microsoft Foundry, deployed through MDM for supported vendors.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-enterprise-security-updates",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-05T00:00:00.000Z",
+        "checkedAt": "2026-11-05T18:01:43.415Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "1 more : Claude Enterprise Claude Enterprise",
+        "sourceUrl": "https://claude.com/resources/articles/claude-enterprise-security-updates",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-05T00:00:00.000Z",
+        "checkedAt": "2026-11-05T18:01:43.415Z"
+      }
+    ],
+    "pageDate": "2026-11-05T00:00:00.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "SECURITY_MENTION"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 SECURITY_MENTION (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}
