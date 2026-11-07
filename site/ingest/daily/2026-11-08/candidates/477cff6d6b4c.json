@@ -1,0 +1,221 @@
+{
+  "id": "477cff6d6b4c",
+  "date": "2026-11-08",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "The Wizard of Open Weights: Chris Alexiuk Makes AI Easy With Open Models",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 12,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "NVIDIA",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://blogs.nvidia.com/blog/nvidia-life-chris-alexiuk/",
+      "name": "NVIDIA Blog",
+      "type": "official",
+      "publishedAt": "2026-11-05T16:00:05.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "477cff6d6b4c",
+    "url": "https://blogs.nvidia.com/blog/nvidia-life-chris-alexiuk/",
+    "canonicalUrl": "https://blogs.nvidia.com/blog/nvidia-life-chris-alexiuk",
+    "title": "The Wizard of Open Weights: Chris Alexiuk Makes AI Easy With Open Models",
+    "excerpt": "Chris Alexiuk has a simple rule about open source AI: If you believe in it, be loud about it. “We should be shouting about this technology from the rooftops,” said Alexiuk, a Toronto-based senior product research engineer in deep learning at NVIDIA who specializes in making open large language model",
+    "publishedAt": "2026-11-05T16:00:05.000Z",
+    "sourceId": "nvidia",
+    "sourceName": "NVIDIA Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://blogs.nvidia.com/feed/",
+    "fetchedAt": "2026-11-07T16:21:45.454Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 4204,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Chris Alexiuk has a simple rule about open source AI: If you believe in it, be loud about it. “We should be shouting about this technology from the rooftops,” said Alexiuk, a Toronto-based senior product research engineer in deep learning at NVIDIA who specializes in making open large language model",
+        "sourceUrl": "https://blogs.nvidia.com/blog/nvidia-life-chris-alexiuk/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-05T16:00:05.000Z",
+        "checkedAt": "2026-11-07T16:22:54.684Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "The Wizard of Open Weights: Chris Alexiuk Makes AI Easy With Open Models | NVIDIA Blog",
+        "sourceUrl": "https://blogs.nvidia.com/blog/nvidia-life-chris-alexiuk/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-05T16:00:05.000Z",
+        "checkedAt": "2026-11-07T16:22:54.684Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Chris Alexiuk has a simple rule about open source AI: If you believe in it, be loud about it.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/nvidia-life-chris-alexiuk/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-05T16:00:05.000Z",
+        "checkedAt": "2026-11-07T16:22:54.684Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "“We should be shouting about this technology from the rooftops,” said Alexiuk, a Toronto-based senior product research engineer in deep learning at NVIDIA who specializes in making open large language models (LLMs) practical for working developers.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/nvidia-life-chris-alexiuk/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-05T16:00:05.000Z",
+        "checkedAt": "2026-11-07T16:22:54.684Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Having spent years teaching developers to build with open models, Alexiuk has concluded that transparency isn’t a feature of good AI; it’s the precondition for it.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/nvidia-life-chris-alexiuk/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-05T16:00:05.000Z",
+        "checkedAt": "2026-11-07T16:22:54.684Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "“Fully open source AI is necessary for the democratization of intelligence,” he said.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/nvidia-life-chris-alexiuk/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-05T16:00:05.000Z",
+        "checkedAt": "2026-11-07T16:22:54.684Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "1 Nemotron Fan,” referring to the NVIDIA Nemotron family of open source, multimodal models built for long-running, self-evolving and specialized AI agents.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/nvidia-life-chris-alexiuk/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-05T16:00:05.000Z",
+        "checkedAt": "2026-11-07T16:22:54.684Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "1 fan of whoever is doing that the best.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/nvidia-life-chris-alexiuk/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-05T16:00:05.000Z",
+        "checkedAt": "2026-11-07T16:22:54.684Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "It’s this matter-of-fact directness and affable approachability that makes Alexiuk’s teaching style so appealing.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/nvidia-life-chris-alexiuk/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-05T16:00:05.000Z",
+        "checkedAt": "2026-11-07T16:22:54.684Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "It’s no surprise, then, that Alexiuk likens Nemotron to a magical library — its users fellow wizards in search of knowledge that can move mountains.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/nvidia-life-chris-alexiuk/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-05T16:00:05.000Z",
+        "checkedAt": "2026-11-07T16:22:54.684Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "“There’s a category of model that’s going to be close to the kind of work you want to accomplish,” Alexiuk said, explaining that Nemotron supports that whole ecosystem of AI users: from individual developers using a model like Nemotron 3.5 Lightning for repetitive, high-freque…",
+        "sourceUrl": "https://blogs.nvidia.com/blog/nvidia-life-chris-alexiuk/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-05T16:00:05.000Z",
+        "checkedAt": "2026-11-07T16:22:54.684Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "NVIDIAN Chris Alexiuk (left) engages with developers during the Build-a-Claw event at GTC Berlin.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/nvidia-life-chris-alexiuk/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-05T16:00:05.000Z",
+        "checkedAt": "2026-11-07T16:22:54.684Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "How NVIDIA Open Source Tools Are Helping Researchers Build Next-Generation 6G Networks",
+        "sourceUrl": "https://blogs.nvidia.com/blog/nvidia-life-chris-alexiuk/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-05T16:00:05.000Z",
+        "checkedAt": "2026-11-07T16:22:54.684Z"
+      }
+    ],
+    "pageDate": "2026-11-05T16:00:05.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "MODEL_MENTION"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 MODEL_MENTION (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}
