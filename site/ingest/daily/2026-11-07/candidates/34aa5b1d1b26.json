@@ -1,0 +1,221 @@
+{
+  "id": "34aa5b1d1b26",
+  "date": "2026-11-07",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Five Ways NVIDIA Co-Design Maximizes the Value of Every Byte in the AI Factory",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 10,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "NVIDIA",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://developer.nvidia.com/blog/five-ways-nvidia-co-design-maximizes-the-value-of-every-byte-in-the-ai-factory/",
+      "name": "NVIDIA Technical Blog",
+      "type": "official",
+      "publishedAt": "2026-11-05T16:00:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "34aa5b1d1b26",
+    "url": "https://developer.nvidia.com/blog/five-ways-nvidia-co-design-maximizes-the-value-of-every-byte-in-the-ai-factory/",
+    "canonicalUrl": "https://developer.nvidia.com/blog/five-ways-nvidia-co-design-maximizes-the-value-of-every-byte-in-the-ai-factory",
+    "title": "Five Ways NVIDIA Co-Design Maximizes the Value of Every Byte in the AI Factory",
+    "excerpt": "In an AI factory, high bandwidth memory (HBM)is the fastest, most expensive, and most contested memory tier. Every byte spent on a redundant weight copy, an...",
+    "publishedAt": "2026-11-05T16:00:00.000Z",
+    "sourceId": "nvidia-developer",
+    "sourceName": "NVIDIA Technical Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://developer.nvidia.com/blog/feed",
+    "fetchedAt": "2026-11-07T01:50:13.600Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 15927,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "In an AI factory, high bandwidth memory (HBM)is the fastest, most expensive, and most contested memory tier. Every byte spent on a redundant weight copy, an...",
+        "sourceUrl": "https://developer.nvidia.com/blog/five-ways-nvidia-co-design-maximizes-the-value-of-every-byte-in-the-ai-factory/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-05T16:00:00.000Z",
+        "checkedAt": "2026-11-06T17:28:36.829Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Five Ways NVIDIA Co-Design Maximizes the Value of Every Byte in the AI Factory | NVIDIA Technical Blog",
+        "sourceUrl": "https://developer.nvidia.com/blog/five-ways-nvidia-co-design-maximizes-the-value-of-every-byte-in-the-ai-factory/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-05T16:00:00.000Z",
+        "checkedAt": "2026-11-06T17:28:36.829Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Five Ways NVIDIA Co-Design Maximizes the Value of Every Byte in the AI Factory",
+        "sourceUrl": "https://developer.nvidia.com/blog/five-ways-nvidia-co-design-maximizes-the-value-of-every-byte-in-the-ai-factory/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-05T16:00:00.000Z",
+        "checkedAt": "2026-11-06T17:28:36.829Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "The NVIDIA Vera CPU provides 88 Olympus cores with 1.8x faster single-threaded performance and up to 1.5 TB of LPDDR5X connected coherently to Rubin at 1.8 TB/s over NVLink-C2C, staging idle KV cache during tool calls.",
+        "sourceUrl": "https://developer.nvidia.com/blog/five-ways-nvidia-co-design-maximizes-the-value-of-every-byte-in-the-ai-factory/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-05T16:00:00.000Z",
+        "checkedAt": "2026-11-06T17:28:36.829Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "NVIDIA CMX adds a pod-level G3.5 storage tier built on BlueField-4 STX, Spectrum-X, DOCA Memos, and Dynamo integration to share and reuse KV cache across nodes.",
+        "sourceUrl": "https://developer.nvidia.com/blog/five-ways-nvidia-co-design-maximizes-the-value-of-every-byte-in-the-ai-factory/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-05T16:00:00.000Z",
+        "checkedAt": "2026-11-06T17:28:36.829Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Together these five co-designed levers enable Vera Rubin NVL72 to deliver up to 30x the throughput per megawatt of GB300 NVL72 from the same 288 GB per GPU.",
+        "sourceUrl": "https://developer.nvidia.com/blog/five-ways-nvidia-co-design-maximizes-the-value-of-every-byte-in-the-ai-factory/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-05T16:00:00.000Z",
+        "checkedAt": "2026-11-06T17:28:36.829Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Every byte spent on a redundant weight copy, an idle session’s KV cache, or a recomputed prefix is a byte that is not being used to produce tokens.",
+        "sourceUrl": "https://developer.nvidia.com/blog/five-ways-nvidia-co-design-maximizes-the-value-of-every-byte-in-the-ai-factory/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-05T16:00:00.000Z",
+        "checkedAt": "2026-11-06T17:28:36.829Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "From GB300 to NVIDIA Rubin, capacity held at 288 GB while bandwidth rose to 19.2 TB/s.",
+        "sourceUrl": "https://developer.nvidia.com/blog/five-ways-nvidia-co-design-maximizes-the-value-of-every-byte-in-the-ai-factory/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-05T16:00:00.000Z",
+        "checkedAt": "2026-11-06T17:28:36.829Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "This post examines five ways that co-design maximizes the value of each byte of memory, from the bits that encode a single weight to the shared storage that preserves and reuses context across agentic turns and nodes.",
+        "sourceUrl": "https://developer.nvidia.com/blog/five-ways-nvidia-co-design-maximizes-the-value-of-every-byte-in-the-ai-factory/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-05T16:00:00.000Z",
+        "checkedAt": "2026-11-06T17:28:36.829Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "In this episode of Inside the Architecture, we explore five ways NVIDIA optimizes memory use across the AI factory.",
+        "sourceUrl": "https://developer.nvidia.com/blog/five-ways-nvidia-co-design-maximizes-the-value-of-every-byte-in-the-ai-factory/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-05T16:00:00.000Z",
+        "checkedAt": "2026-11-06T17:28:36.829Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Introducing NVIDIA BlueField-4-Powered CMX Context Memory Storage Platform for the Next Frontier of AI",
+        "sourceUrl": "https://developer.nvidia.com/blog/five-ways-nvidia-co-design-maximizes-the-value-of-every-byte-in-the-ai-factory/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-05T16:00:00.000Z",
+        "checkedAt": "2026-11-06T17:28:36.829Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "NVIDIA BlueField-4 Powers New Scale-In Network Infrastructure for Agentic AI Factories",
+        "sourceUrl": "https://developer.nvidia.com/blog/five-ways-nvidia-co-design-maximizes-the-value-of-every-byte-in-the-ai-factory/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-05T16:00:00.000Z",
+        "checkedAt": "2026-11-06T17:28:36.829Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Agentic AI / Generative AI | Data Center / Cloud | General | BlueField DPU | Dynamo | GB200 | H100 | H200 | NVLink | TensorRT-LLM | Intermediate Technical | Benchmark | Deep dive | DOCA | Ethernet | featured | GB300 | GB300 NVL72 | GPUDirect | Rubin GPU | Spectrum-X | Vera CPU…",
+        "sourceUrl": "https://developer.nvidia.com/blog/five-ways-nvidia-co-design-maximizes-the-value-of-every-byte-in-the-ai-factory/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-05T16:00:00.000Z",
+        "checkedAt": "2026-11-06T17:28:36.829Z"
+      }
+    ],
+    "pageDate": "2026-11-05T16:00:00.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "INFRA"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 INFRA (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

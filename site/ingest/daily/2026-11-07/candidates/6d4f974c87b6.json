@@ -1,0 +1,221 @@
+{
+  "id": "6d4f974c87b6",
+  "date": "2026-11-07",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "NVIDIA CUDA 13.5 Brings NVIDIA Vera Rubin GA Support",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "NVIDIA",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://developer.nvidia.com/blog/nvidia-cuda-13-5-brings-nvidia-vera-rubin-ga-support/",
+      "name": "NVIDIA Technical Blog",
+      "type": "official",
+      "publishedAt": "2026-11-04T18:46:07.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "6d4f974c87b6",
+    "url": "https://developer.nvidia.com/blog/nvidia-cuda-13-5-brings-nvidia-vera-rubin-ga-support/",
+    "canonicalUrl": "https://developer.nvidia.com/blog/nvidia-cuda-13-5-brings-nvidia-vera-rubin-ga-support",
+    "title": "NVIDIA CUDA 13.5 Brings NVIDIA Vera Rubin GA Support",
+    "excerpt": "As artificial intelligence and accelerated computing continue to push the boundaries of what's possible, the latest NVIDIA CUDA release arrives to unlock...",
+    "publishedAt": "2026-11-04T18:46:07.000Z",
+    "sourceId": "nvidia-developer",
+    "sourceName": "NVIDIA Technical Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://developer.nvidia.com/blog/feed",
+    "fetchedAt": "2026-11-07T01:50:13.600Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 21285,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "As artificial intelligence and accelerated computing continue to push the boundaries of what's possible, the latest NVIDIA CUDA release arrives to unlock...",
+        "sourceUrl": "https://developer.nvidia.com/blog/nvidia-cuda-13-5-brings-nvidia-vera-rubin-ga-support/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-04T18:46:07.000Z",
+        "checkedAt": "2026-11-06T17:28:29.307Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "NVIDIA CUDA 13.5 Brings NVIDIA Vera Rubin GA Support | NVIDIA Technical Blog",
+        "sourceUrl": "https://developer.nvidia.com/blog/nvidia-cuda-13-5-brings-nvidia-vera-rubin-ga-support/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-04T18:46:07.000Z",
+        "checkedAt": "2026-11-06T17:28:29.307Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "NVIDIA CUDA 13.5 Brings NVIDIA Vera Rubin GA Support",
+        "sourceUrl": "https://developer.nvidia.com/blog/nvidia-cuda-13-5-brings-nvidia-vera-rubin-ga-support/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-04T18:46:07.000Z",
+        "checkedAt": "2026-11-06T17:28:29.307Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "CUDA Toolkit 13.5 reaches general availability with production-ready support for the NVIDIA Vera Rubin GPU architecture and extends Windows on Arm support to NVIDIA DGX Station for Windows.",
+        "sourceUrl": "https://developer.nvidia.com/blog/nvidia-cuda-13-5-brings-nvidia-vera-rubin-ga-support/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-04T18:46:07.000Z",
+        "checkedAt": "2026-11-06T17:28:29.307Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "NVIDIA CUDA 13.5 delivers general availability (GA) across major new platforms.",
+        "sourceUrl": "https://developer.nvidia.com/blog/nvidia-cuda-13-5-brings-nvidia-vera-rubin-ga-support/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-04T18:46:07.000Z",
+        "checkedAt": "2026-11-06T17:28:29.307Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "NVIDIA Vera Rubin support moves from early developer access to general availability (GA), ready for enterprise production.",
+        "sourceUrl": "https://developer.nvidia.com/blog/nvidia-cuda-13-5-brings-nvidia-vera-rubin-ga-support/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-04T18:46:07.000Z",
+        "checkedAt": "2026-11-06T17:28:29.307Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Windows on Arm support, GA since CUDA 13.4 , now extends to NVIDIA DGX Station for Windows.",
+        "sourceUrl": "https://developer.nvidia.com/blog/nvidia-cuda-13-5-brings-nvidia-vera-rubin-ga-support/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-04T18:46:07.000Z",
+        "checkedAt": "2026-11-06T17:28:29.307Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "And CUDA 13.5 provides innovations across libraries, compilers, NVIDIA CUDA Tile , and developer tools.",
+        "sourceUrl": "https://developer.nvidia.com/blog/nvidia-cuda-13-5-brings-nvidia-vera-rubin-ga-support/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-04T18:46:07.000Z",
+        "checkedAt": "2026-11-06T17:28:29.307Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "CUDA 13.5 adds CUDA Graph support for batched 1D memory copies.",
+        "sourceUrl": "https://developer.nvidia.com/blog/nvidia-cuda-13-5-brings-nvidia-vera-rubin-ga-support/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-04T18:46:07.000Z",
+        "checkedAt": "2026-11-06T17:28:29.307Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "These libraries include NVIDIA NVSHMEM , NVIDIA CCCL Coop , NVIDIA Warp and NVIDIA MathDx , which covers NVIDIA cuFFTDx, NVIDIA cuBLASDx, NVIDIA cuSolverDx, and NVIDIA nvCOMPDx, and this interop support will be enabled by each of these libraries soon.",
+        "sourceUrl": "https://developer.nvidia.com/blog/nvidia-cuda-13-5-brings-nvidia-vera-rubin-ga-support/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-04T18:46:07.000Z",
+        "checkedAt": "2026-11-06T17:28:29.307Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Core CUDA math libraries in CUDA 13.5 now have performance improvements on Vera Rubin. cuBLAS extends Ozaki-II scheme to FP64 symmetric rank-k updates.",
+        "sourceUrl": "https://developer.nvidia.com/blog/nvidia-cuda-13-5-brings-nvidia-vera-rubin-ga-support/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-04T18:46:07.000Z",
+        "checkedAt": "2026-11-06T17:28:29.307Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Faster GEMMs on NVIDIA Vera Rubin: Updated heuristics and kernel tuning improve out-of-the-box NVFP4 and MXFP8 matmul performance on Vera Rubin, including mixture-of-experts (MoE) LLM training shapes.",
+        "sourceUrl": "https://developer.nvidia.com/blog/nvidia-cuda-13-5-brings-nvidia-vera-rubin-ga-support/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-04T18:46:07.000Z",
+        "checkedAt": "2026-11-06T17:28:29.307Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "CUDA Toolkit 13.5 provides GA support for NVIDIA Vera Rubin GPU architecture, updated GPU resource-management and communication capabilities, and enhancements across CUDA Python, CCCL, CUDA Tile, NVIDIA Nsight developer tools, and core math libraries.",
+        "sourceUrl": "https://developer.nvidia.com/blog/nvidia-cuda-13-5-brings-nvidia-vera-rubin-ga-support/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-04T18:46:07.000Z",
+        "checkedAt": "2026-11-06T17:28:29.307Z"
+      }
+    ],
+    "pageDate": "2026-11-04T18:46:07.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "AVAILABILITY"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 AVAILABILITY (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

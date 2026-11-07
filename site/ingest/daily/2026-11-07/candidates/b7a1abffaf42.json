@@ -1,0 +1,118 @@
+{
+  "id": "b7a1abffaf42",
+  "date": "2026-11-07",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Get actionable insights with Gemini in Google Forms",
+  "depth": null,
+  "suggestedDepth": null,
+  "depthAssessment": {
+    "sufficiency": "INSUFFICIENT",
+    "distinctFacts": 0,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": false,
+      "evidenceQuality": false,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "distinctFacts",
+      "evidenceQuality",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Google",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://workspaceupdates.googleblog.com/2026/11/get-actionable-insights-with-gemini-in-Google-Forms.html",
+      "name": "Google Workspace Updates",
+      "type": "official",
+      "publishedAt": "2026-11-05T17:34:45.079Z"
+    }
+  ],
+  "candidate": {
+    "id": "b7a1abffaf42",
+    "url": "https://workspaceupdates.googleblog.com/2026/11/get-actionable-insights-with-gemini-in-Google-Forms.html",
+    "canonicalUrl": "https://workspaceupdates.googleblog.com/2026/11/get-actionable-insights-with-gemini-in-Google-Forms.html",
+    "title": "Get actionable insights with Gemini in Google Forms",
+    "excerpt": "Making sense of form responses and figuring out what to do next can take time, especially when you're working through many responses across multiple questions. Today, we're introducing actionable insights in Google Forms, which uses Gemini to analyze your form responses, uncover key trends, and reco",
+    "publishedAt": "2026-11-05T17:34:45.079Z",
+    "sourceId": "google-workspace-updates",
+    "sourceName": "Google Workspace Updates",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://workspaceupdates.googleblog.com/feeds/posts/default?max-results=500&published-min=2026-01-01T00:00:00Z",
+    "fetchedAt": "2026-11-07T01:50:13.600Z"
+  },
+  "evidence": {
+    "status": "HTTP_429",
+    "chars": 0,
+    "grade": "FAIL",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Making sense of form responses and figuring out what to do next can take time, especially when you're working through many responses across multiple questions. Today, we're introducing actionable insights in Google Forms, which uses Gemini to analyze your form responses, uncover key trends, and reco",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/11/get-actionable-insights-with-gemini-in-Google-Forms.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-11-05T17:34:45.079Z",
+        "checkedAt": "2026-11-07T01:51:22.821Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 3,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 2,
+    "signals": [
+      "MODEL",
+      "PRODUCT_LAUNCH"
+    ],
+    "strongSignal": true,
+    "contentType": "CUSTOMER_STORY",
+    "typePenalty": -3,
+    "priority": 6,
+    "total": 6
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "근거 부족 (원문 HTTP_429, 확인 사실 0개) — 발행하지 않음"
+  ],
+  "needsReview": [
+    "source_blocked",
+    "insufficient_evidence"
+  ],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

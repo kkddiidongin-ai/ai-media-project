@@ -1,0 +1,226 @@
+{
+  "id": "903f3d6e6779",
+  "date": "2026-11-07",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Govern AI agent access with Okta Cross App Access and Amazon Bedrock AgentCore – Part 2",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/govern-ai-agent-access-with-okta-cross-app-access-and-amazon-bedrock-agentcore-part-1/",
+      "source": "AWS Machine Learning Blog"
+    }
+  ],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/govern-ai-agent-access-with-okta-cross-app-access-and-amazon-bedrock-agentcore-part-2/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-11-06T17:09:23.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "903f3d6e6779",
+    "url": "https://aws.amazon.com/blogs/machine-learning/govern-ai-agent-access-with-okta-cross-app-access-and-amazon-bedrock-agentcore-part-2/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/govern-ai-agent-access-with-okta-cross-app-access-and-amazon-bedrock-agentcore-part-2",
+    "title": "Govern AI agent access with Okta Cross App Access and Amazon Bedrock AgentCore – Part 2",
+    "excerpt": "In Part 1 you built one governed agent. Part 2 scales the pattern to an enterprise: Amazon Bedrock AgentCore Gateway becomes the single front door and redeems Okta's grant, Cedar policies bind each tool to the agent, a second agent runs on Amazon EKS, and AgentCore Observability traces every allow a",
+    "publishedAt": "2026-11-06T17:09:23.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-11-07T01:50:13.600Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 17690,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "In Part 1 you built one governed agent. Part 2 scales the pattern to an enterprise: Amazon Bedrock AgentCore Gateway becomes the single front door and redeems Okta's grant, Cedar policies bind each tool to the agent, a second agent runs on Amazon EKS, and AgentCore Observability traces every allow a",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/govern-ai-agent-access-with-okta-cross-app-access-and-amazon-bedrock-agentcore-part-2/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-06T17:09:23.000Z",
+        "checkedAt": "2026-11-06T17:28:27.984Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Govern AI agent access with Okta Cross App Access and Amazon Bedrock AgentCore – Part 2 | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/govern-ai-agent-access-with-okta-cross-app-access-and-amazon-bedrock-agentcore-part-2/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-06T17:09:23.000Z",
+        "checkedAt": "2026-11-06T17:28:27.984Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Govern AI agent access with Okta Cross App Access and Amazon Bedrock AgentCore – Part 2",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/govern-ai-agent-access-with-okta-cross-app-access-and-amazon-bedrock-agentcore-part-2/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-06T17:09:23.000Z",
+        "checkedAt": "2026-11-06T17:28:27.984Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "In Part 1 , you built a task agent on Amazon Bedrock AgentCore , a platform to build, connect, and optimize agents at scale, with any framework or model.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/govern-ai-agent-access-with-okta-cross-app-access-and-amazon-bedrock-agentcore-part-2/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-06T17:09:23.000Z",
+        "checkedAt": "2026-11-06T17:28:27.984Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "The agent runs on Amazon Bedrock AgentCore runtime, a capability of Amazon Bedrock AgentCore, and acts for signed-in users through Okta Cross App Access (XAA).",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/govern-ai-agent-access-with-okta-cross-app-access-and-amazon-bedrock-agentcore-part-2/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-06T17:09:23.000Z",
+        "checkedAt": "2026-11-06T17:28:27.984Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Okta decided which agent might act for which user, and Amazon Bedrock AgentCore Identity, a capability of Amazon Bedrock AgentCore, redeemed Okta’s grant inside the agent.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/govern-ai-agent-access-with-okta-cross-app-access-and-amazon-bedrock-agentcore-part-2/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-06T17:09:23.000Z",
+        "checkedAt": "2026-11-06T17:28:27.984Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Amazon Bedrock AgentCore Gateway, a capability of Amazon Bedrock AgentCore, becomes the single front door and redeems Okta’s grant for each target.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/govern-ai-agent-access-with-okta-cross-app-access-and-amazon-bedrock-agentcore-part-2/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-06T17:09:23.000Z",
+        "checkedAt": "2026-11-06T17:28:27.984Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Policy in Amazon Bedrock AgentCore evaluates Cedar policies that bind each tool to the agent and the scope Okta delegated.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/govern-ai-agent-access-with-okta-cross-app-access-and-amazon-bedrock-agentcore-part-2/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-06T17:09:23.000Z",
+        "checkedAt": "2026-11-06T17:28:27.984Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "A second agent on Amazon Elastic Kubernetes Service (Amazon EKS) joins under its own Okta identity, to show that the front door doesn’t care where an agent runs.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/govern-ai-agent-access-with-okta-cross-app-access-and-amazon-bedrock-agentcore-part-2/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-06T17:09:23.000Z",
+        "checkedAt": "2026-11-06T17:28:27.984Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "And Amazon Bedrock AgentCore Observability, a capability of Amazon Bedrock AgentCore, with Amazon CloudWatch gives you one place to read every decision, including Okta’s.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/govern-ai-agent-access-with-okta-cross-app-access-and-amazon-bedrock-agentcore-part-2/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-06T17:09:23.000Z",
+        "checkedAt": "2026-11-06T17:28:27.984Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Figure 1: The Part 1 solution with AgentCore Gateway, Policy, and Observability, a second agent on Amazon EKS, and the audit path, with numbers matching the steps that follow",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/govern-ai-agent-access-with-okta-cross-app-access-and-amazon-bedrock-agentcore-part-2/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-06T17:09:23.000Z",
+        "checkedAt": "2026-11-06T17:28:27.984Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Figure 7: Cross App Access compared with per-user OAuth consent, with the revocation behavior we measured",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/govern-ai-agent-access-with-okta-cross-app-access-and-amazon-bedrock-agentcore-part-2/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-06T17:09:23.000Z",
+        "checkedAt": "2026-11-06T17:28:27.984Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "We deployed the AWS sample 07-consent-portal-auth-code-flow-targets beside our stack, with Okta signing users in to an AgentCore Identity consent portal and a GitHub target on its own Gateway.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/govern-ai-agent-access-with-okta-cross-app-access-and-amazon-bedrock-agentcore-part-2/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-06T17:09:23.000Z",
+        "checkedAt": "2026-11-06T17:28:27.984Z"
+      }
+    ],
+    "pageDate": "2026-11-06T17:09:23.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "API_PLATFORM"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 API_PLATFORM (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}
