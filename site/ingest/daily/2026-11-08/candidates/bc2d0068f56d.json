@@ -1,0 +1,222 @@
+{
+  "id": "bc2d0068f56d",
+  "date": "2026-11-08",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Extend Claude Code to remote sessions on Amazon Bedrock AgentCore with security controls",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/extend-claude-code-to-remote-sessions-on-amazon-bedrock-agentcore-with-security-controls/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-11-06T16:45:58.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "bc2d0068f56d",
+    "url": "https://aws.amazon.com/blogs/machine-learning/extend-claude-code-to-remote-sessions-on-amazon-bedrock-agentcore-with-security-controls/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/extend-claude-code-to-remote-sessions-on-amazon-bedrock-agentcore-with-security-controls",
+    "title": "Extend Claude Code to remote sessions on Amazon Bedrock AgentCore with security controls",
+    "excerpt": "Run Claude Code as a remote agent on Amazon Bedrock AgentCore. Each coding task runs in its own isolated session in your AWS account, every model call goes through Amazon Bedrock, and the result comes back as a GitHub pull request you review and merge.",
+    "publishedAt": "2026-11-06T16:45:58.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-11-07T16:21:45.454Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 17430,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Run Claude Code as a remote agent on Amazon Bedrock AgentCore. Each coding task runs in its own isolated session in your AWS account, every model call goes through Amazon Bedrock, and the result comes back as a GitHub pull request you review and merge.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/extend-claude-code-to-remote-sessions-on-amazon-bedrock-agentcore-with-security-controls/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-06T16:45:58.000Z",
+        "checkedAt": "2026-11-07T16:22:50.691Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Extend Claude Code to remote sessions on Amazon Bedrock AgentCore with security controls | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/extend-claude-code-to-remote-sessions-on-amazon-bedrock-agentcore-with-security-controls/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-06T16:45:58.000Z",
+        "checkedAt": "2026-11-07T16:22:50.691Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Extend Claude Code to remote sessions on Amazon Bedrock AgentCore with security controls",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/extend-claude-code-to-remote-sessions-on-amazon-bedrock-agentcore-with-security-controls/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-06T16:45:58.000Z",
+        "checkedAt": "2026-11-07T16:22:50.691Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "You might already run Claude Code locally on your laptop, backed by Amazon Bedrock.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/extend-claude-code-to-remote-sessions-on-amazon-bedrock-agentcore-with-security-controls/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-06T16:45:58.000Z",
+        "checkedAt": "2026-11-07T16:22:50.691Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "This post shows how to go a step further: run it as a remote agent on Amazon Bedrock AgentCore, a platform to build, connect, and optimize agents at scale, with any framework or model.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/extend-claude-code-to-remote-sessions-on-amazon-bedrock-agentcore-with-security-controls/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-06T16:45:58.000Z",
+        "checkedAt": "2026-11-07T16:22:50.691Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "We first discuss why teams choose Amazon Bedrock for Claude Code and highlight a few key security characteristics.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/extend-claude-code-to-remote-sessions-on-amazon-bedrock-agentcore-with-security-controls/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-06T16:45:58.000Z",
+        "checkedAt": "2026-11-07T16:22:50.691Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Claude Code calls Amazon Bedrock with temporary AWS Identity and Access Management (IAM) credentials, and you can sign in through an identity provider such as Microsoft Entra ID or Okta by following the Guidance for Claude Code with Amazon Bedrock .",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/extend-claude-code-to-remote-sessions-on-amazon-bedrock-agentcore-with-security-controls/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-06T16:45:58.000Z",
+        "checkedAt": "2026-11-07T16:22:50.691Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "An AWS Lambda function screens the task prompt with an Amazon Bedrock Guardrails guardrail, then records the task in Amazon DynamoDB and puts it on an Amazon Simple Queue Service (Amazon SQS) queue.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/extend-claude-code-to-remote-sessions-on-amazon-bedrock-agentcore-with-security-controls/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-06T16:45:58.000Z",
+        "checkedAt": "2026-11-07T16:22:50.691Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Next, Claude Code plans the change with Claude Opus on Amazon Bedrock.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/extend-claude-code-to-remote-sessions-on-amazon-bedrock-agentcore-with-security-controls/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-06T16:45:58.000Z",
+        "checkedAt": "2026-11-07T16:22:50.691Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Figure 2: How a task moves from Claude Code through an isolated AgentCore runtime session to a pull request.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/extend-claude-code-to-remote-sessions-on-amazon-bedrock-agentcore-with-security-controls/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-06T16:45:58.000Z",
+        "checkedAt": "2026-11-07T16:22:50.691Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Running tasks remotely keeps the security characteristics of Claude Code on Amazon Bedrock for model calls and adds controls of its own.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/extend-claude-code-to-remote-sessions-on-amazon-bedrock-agentcore-with-security-controls/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-06T16:45:58.000Z",
+        "checkedAt": "2026-11-07T16:22:50.691Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "In this post, we showed how to extend Claude Code on Amazon Bedrock so that it can also hand scoped tasks to isolated AgentCore runtime sessions and get pull requests back.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/extend-claude-code-to-remote-sessions-on-amazon-bedrock-agentcore-with-security-controls/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-06T16:45:58.000Z",
+        "checkedAt": "2026-11-07T16:22:50.691Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "To learn more about the services and how they protect your data, see Amazon Bedrock AgentCore , Security in Amazon Bedrock , Security in Amazon Bedrock AgentCore , and Protect your data using Amazon VPC and AWS PrivateLink .",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/extend-claude-code-to-remote-sessions-on-amazon-bedrock-agentcore-with-security-controls/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-06T16:45:58.000Z",
+        "checkedAt": "2026-11-07T16:22:50.691Z"
+      }
+    ],
+    "pageDate": "2026-11-06T16:45:58.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "SECURITY_MENTION",
+      "API_PLATFORM"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 SECURITY_MENTION·API_PLATFORM (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

@@ -1,0 +1,222 @@
+{
+  "id": "7eab5dddcfa7",
+  "date": "2026-11-08",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Vera Delivers the Best of Both Worlds: Highest Throughput and Fastest Agents",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 12,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": false,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "evidenceQuality",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "NVIDIA",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://blogs.nvidia.com/blog/vera-cpu-highest-throughput-fastest-agents/",
+      "name": "NVIDIA Blog",
+      "type": "official",
+      "publishedAt": "2026-11-05T20:00:41.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "7eab5dddcfa7",
+    "url": "https://blogs.nvidia.com/blog/vera-cpu-highest-throughput-fastest-agents/",
+    "canonicalUrl": "https://blogs.nvidia.com/blog/vera-cpu-highest-throughput-fastest-agents",
+    "title": "Vera Delivers the Best of Both Worlds: Highest Throughput and Fastest Agents",
+    "excerpt": "AI agents do more than generate answers. They search for information, query databases, write and test code and take action. Each of those steps relies on a CPU, with agents moving between GPU reasoning and CPU execution throughout a task. As businesses put more agents to work, AI factories need CPUs",
+    "publishedAt": "2026-11-05T20:00:41.000Z",
+    "sourceId": "nvidia",
+    "sourceName": "NVIDIA Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://blogs.nvidia.com/feed/",
+    "fetchedAt": "2026-11-07T16:21:45.454Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 2404,
+    "grade": "LIMITED",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "AI agents do more than generate answers. They search for information, query databases, write and test code and take action. Each of those steps relies on a CPU, with agents moving between GPU reasoning and CPU execution throughout a task. As businesses put more agents to work, AI factories need CPUs",
+        "sourceUrl": "https://blogs.nvidia.com/blog/vera-cpu-highest-throughput-fastest-agents/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-05T20:00:41.000Z",
+        "checkedAt": "2026-11-07T16:22:54.567Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "NVIDIA Vera CPU Delivers the Highest-Throughput and Fastest Agents | NVIDIA Blog",
+        "sourceUrl": "https://blogs.nvidia.com/blog/vera-cpu-highest-throughput-fastest-agents/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-05T20:00:41.000Z",
+        "checkedAt": "2026-11-07T16:22:54.567Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "As businesses put more agents to work, AI factories need CPUs that can execute those steps quickly and support many agents at once, all within the limits of available power.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/vera-cpu-highest-throughput-fastest-agents/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-05T20:00:41.000Z",
+        "checkedAt": "2026-11-07T16:22:54.567Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Why it matters: NVIDIA Vera delivers both fast agent performance and high capacity per watt within a single CPU.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/vera-cpu-highest-throughput-fastest-agents/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-05T20:00:41.000Z",
+        "checkedAt": "2026-11-07T16:22:54.567Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "That gives providers one CPU for a range of agent workloads, rather than having to mix and match fast and dense x86 parts to balance speed and capacity.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/vera-cpu-highest-throughput-fastest-agents/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-05T20:00:41.000Z",
+        "checkedAt": "2026-11-07T16:22:54.567Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "The data that proves it: In a 100-megawatt data center comparison, NVIDIA found that a single Vera CPU performs better than the fastest x86 CPU and the most energy-efficient x86 CPU.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/vera-cpu-highest-throughput-fastest-agents/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-05T20:00:41.000Z",
+        "checkedAt": "2026-11-07T16:22:54.567Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Vera delivers industry-leading agent speed while enabling 1.6x more agents per watt versus the fastest x86 CPU.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/vera-cpu-highest-throughput-fastest-agents/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-05T20:00:41.000Z",
+        "checkedAt": "2026-11-07T16:22:54.567Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Vera delivers 2x faster agent speed with leading energy efficiency compared with the most energy-efficient x86 CPU.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/vera-cpu-highest-throughput-fastest-agents/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-05T20:00:41.000Z",
+        "checkedAt": "2026-11-07T16:22:54.567Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Perplexity : Ran agentic coding tasks 1.5x faster with Vera than on traditional CPUs.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/vera-cpu-highest-throughput-fastest-agents/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-05T20:00:41.000Z",
+        "checkedAt": "2026-11-07T16:22:54.567Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "DeepInfra : Delivered up to 2.2x speed of the best x86 processor on agentic orchestration for its production agent workload, achieving the fastest of the four architectures tested.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/vera-cpu-highest-throughput-fastest-agents/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-05T20:00:41.000Z",
+        "checkedAt": "2026-11-07T16:22:54.567Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "ClickHouse : Its standard binary, with no Vera-specific tuning, scaled near-linearly across 176 cores and topped the ClickBench hardware leaderboard.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/vera-cpu-highest-throughput-fastest-agents/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-05T20:00:41.000Z",
+        "checkedAt": "2026-11-07T16:22:54.567Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Daytona : Brought 1,000 agent sandboxes online in 10.8 seconds, and achieved 12.7 completed jobs per second at 2,000 concurrent sandboxes, using Vera versus 88.4 seconds with x86.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/vera-cpu-highest-throughput-fastest-agents/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-05T20:00:41.000Z",
+        "checkedAt": "2026-11-07T16:22:54.567Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Modal : Achieved up to 2x sandbox throughput per core versus comparable x86 hardware, with gains that grow under heavy load.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/vera-cpu-highest-throughput-fastest-agents/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-05T20:00:41.000Z",
+        "checkedAt": "2026-11-07T16:22:54.567Z"
+      }
+    ],
+    "pageDate": "2026-11-05T20:00:41.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "INFRA"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 INFRA (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}
