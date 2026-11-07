@@ -1,7 +1,7 @@
 {
   "date": "2026-11-07",
   "mode": "shadow",
-  "startedAt": "2026-11-06T17:27:20.240Z",
+  "startedAt": "2026-11-07T01:50:13.599Z",
   "status": "INCOMPLETE",
   "limits": {
     "windowDays": 3,
@@ -33,11 +33,11 @@
         "redirected": false,
         "finalUrl": null
       },
-      "parsed": 1366,
-      "matched": 1366,
-      "found": 1366,
-      "inWindow": 12,
-      "kept": 12,
+      "parsed": 1368,
+      "matched": 1368,
+      "found": 1368,
+      "inWindow": 14,
+      "kept": 14,
       "since": "2026-11-04",
       "coverage": {
         "complete": true
@@ -59,7 +59,7 @@
         "redirected": false,
         "finalUrl": null
       },
-      "parsed": 583,
+      "parsed": 586,
       "matched": 279,
       "found": 9,
       "inWindow": 0,
@@ -271,8 +271,8 @@
       "parsed": 10,
       "matched": 10,
       "found": 10,
-      "inWindow": 1,
-      "kept": 1,
+      "inWindow": 2,
+      "kept": 2,
       "since": "2026-11-04",
       "coverage": {
         "complete": true
@@ -323,8 +323,8 @@
       "parsed": 10,
       "matched": 10,
       "found": 10,
-      "inWindow": 1,
-      "kept": 1,
+      "inWindow": 2,
+      "kept": 2,
       "since": "2026-11-04",
       "coverage": {
         "complete": true
@@ -401,8 +401,8 @@
       "parsed": 20,
       "matched": 20,
       "found": 20,
-      "inWindow": 13,
-      "kept": 13,
+      "inWindow": 15,
+      "kept": 15,
       "since": "2026-11-04",
       "coverage": {
         "complete": true
@@ -445,17 +445,17 @@
       "id": "github-changelog",
       "name": "GitHub Changelog",
       "status": "success",
-      "requests": 1,
+      "requests": 2,
       "http": {
         "status": 200,
         "redirected": false,
         "finalUrl": null
       },
-      "parsed": 10,
-      "matched": 10,
-      "found": 10,
-      "inWindow": 4,
-      "kept": 4,
+      "parsed": 20,
+      "matched": 20,
+      "found": 20,
+      "inWindow": 7,
+      "kept": 7,
       "since": "2026-11-04",
       "coverage": {
         "complete": true
@@ -480,8 +480,8 @@
       "parsed": 150,
       "matched": 150,
       "found": 150,
-      "inWindow": 3,
-      "kept": 3,
+      "inWindow": 4,
+      "kept": 4,
       "since": "2026-11-04",
       "coverage": {
         "complete": true
@@ -655,20 +655,18 @@
       "parsed": 20,
       "matched": 20,
       "found": 20,
-      "inWindow": 0,
-      "kept": 0,
+      "inWindow": 1,
+      "kept": 1,
       "since": "2026-11-04",
       "coverage": {
         "complete": true
       },
       "undated": 0,
-      "health": "WARNING",
-      "healthReasons": [
-        "기간 안 새 글 0건 5회 연속 (마지막 수집 2026-11-02)"
-      ],
+      "health": "OK",
+      "healthReasons": [],
       "lastOkDate": "2026-11-07",
-      "lastItemDate": "2026-11-02",
-      "zeroStreak": 5
+      "lastItemDate": "2026-11-07",
+      "zeroStreak": 0
     },
     {
       "id": "techcrunch",
@@ -840,8 +838,8 @@
       "parsed": 100,
       "matched": 100,
       "found": 100,
-      "inWindow": 6,
-      "kept": 6,
+      "inWindow": 8,
+      "kept": 8,
       "since": "2026-11-04",
       "coverage": {
         "complete": true
@@ -948,8 +946,8 @@
       "parsed": 30,
       "matched": 30,
       "found": 30,
-      "inWindow": 15,
-      "kept": 15,
+      "inWindow": 11,
+      "kept": 11,
       "since": "2026-11-04",
       "coverage": {
         "complete": false,
@@ -976,8 +974,8 @@
       "parsed": 30,
       "matched": 30,
       "found": 30,
-      "inWindow": 8,
-      "kept": 8,
+      "inWindow": 9,
+      "kept": 9,
       "since": "2026-11-04",
       "coverage": {
         "complete": false,
@@ -1021,24 +1019,24 @@
     }
   ],
   "sourceHealth": {
-    "OK": 23,
-    "WARNING": 7,
+    "OK": 24,
+    "WARNING": 6,
     "DEGRADED": 1,
     "FAILED": 0,
     "SKIPPED": 9
   },
   "counts": {
-    "collected": 496,
+    "collected": 506,
     "carriedFromQueue": 25,
-    "NEW": 518,
+    "NEW": 528,
     "UPDATE_EXISTING": 0,
     "DUPLICATE": 2,
     "UNCERTAIN": 1,
-    "PUBLISH": 2,
-    "HOLD": 305,
-    "EXCLUDE": 214,
-    "shortlisted": 28,
-    "evidenceChecked": 28,
+    "PUBLISH": 4,
+    "HOLD": 306,
+    "EXCLUDE": 221,
+    "shortlisted": 35,
+    "evidenceChecked": 35,
     "drafts": 0,
     "draftQa": {
       "PASS": 0,
@@ -1059,7 +1057,7 @@
       "attempted": 0,
       "ok": 0,
       "failed": 0,
-      "skipped": 2,
+      "skipped": 4,
       "successRate": null,
       "quotaHit": false
     },
@@ -1070,7 +1068,7 @@
     "complete": false,
     "pending": {
       "evidence": 25,
-      "draft": 40,
+      "draft": 42,
       "meta": 0,
       "retrySources": 0
     },
@@ -1080,7 +1078,7 @@
     },
     "resolvedFromQueue": 0,
     "processed": {
-      "evidenceFetches": 28,
+      "evidenceFetches": 17,
       "drafted": 0
     },
     "coverageGaps": [
@@ -1109,6 +1107,90 @@
     "queueFile": "pipeline-queue.json"
   },
   "items": [
+    {
+      "id": "bc8f9eac1966",
+      "title": "Partnering with Hacktron to find vulnerabilities in OpenAI’s systems",
+      "source": "OpenAI",
+      "publishedAt": "2026-11-06T08:00:00.000Z",
+      "url": "https://openai.com/index/partnering-with-hacktron",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "근거 부족 (원문 SKIPPED_HOST_BLOCKED, 확인 사실 0개) — 발행하지 않음"
+      ],
+      "score": 6,
+      "importance": 2,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "PARTNERSHIP",
+        "SECURITY"
+      ],
+      "company": "OpenAI",
+      "stage": "evidence",
+      "evidenceStatus": "SKIPPED_HOST_BLOCKED",
+      "distinctFacts": 0,
+      "sufficiency": "INSUFFICIENT",
+      "deepMissing": [
+        "importance",
+        "userImpact",
+        "distinctFacts",
+        "evidenceQuality",
+        "standardWouldOmit"
+      ],
+      "alternate": {
+        "tried": [
+          "https://platform.openai.com/docs/changelog"
+        ],
+        "matched": 0,
+        "reason": "제목에 버전 붙은 이름 없음"
+      },
+      "suggestedDepth": null
+    },
+    {
+      "id": "cfd4354afa14",
+      "title": "Measuring how AI agents handle everyday wet-lab science",
+      "source": "OpenAI",
+      "publishedAt": "2026-11-06T00:00:00.000Z",
+      "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "근거 부족 (원문 SKIPPED_HOST_BLOCKED, 확인 사실 0개) — 발행하지 않음"
+      ],
+      "score": 9,
+      "importance": 3,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "PRODUCT_LAUNCH",
+        "PREVIEW",
+        "RESEARCH_RESULT"
+      ],
+      "company": "OpenAI",
+      "stage": "evidence",
+      "evidenceStatus": "SKIPPED_HOST_BLOCKED",
+      "distinctFacts": 0,
+      "sufficiency": "INSUFFICIENT",
+      "deepMissing": [
+        "importance",
+        "userImpact",
+        "contextNeed",
+        "distinctFacts",
+        "evidenceQuality",
+        "standardWouldOmit"
+      ],
+      "alternate": {
+        "tried": [
+          "https://platform.openai.com/docs/changelog"
+        ],
+        "matched": 0,
+        "reason": "제목에 버전 붙은 이름 없음"
+      },
+      "suggestedDepth": null
+    },
     {
       "id": "c88b52d0b210",
       "title": "Cult.fit builds operational muscle with Codex",
@@ -1542,6 +1624,39 @@
       "stage": "metadata"
     },
     {
+      "id": "a84942e28c6d",
+      "title": "Design the Muse App, Just for You",
+      "source": "Meta Newsroom",
+      "publishedAt": "2026-11-06T18:00:58.000Z",
+      "url": "https://about.fb.com/news/2026/11/introducing-spaces-customize-muse-app/",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "사건 신호 PRODUCT_LAUNCH (우선순위 5)",
+        "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+      ],
+      "score": 5,
+      "importance": 1,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "PRODUCT_LAUNCH"
+      ],
+      "company": "Meta",
+      "stage": "evidence",
+      "evidenceStatus": "OK",
+      "distinctFacts": 9,
+      "sufficiency": "SUFFICIENT_STANDARD",
+      "deepMissing": [
+        "importance",
+        "userImpact",
+        "contextNeed",
+        "standardWouldOmit"
+      ],
+      "suggestedDepth": "STANDARD"
+    },
+    {
       "id": "0881a19b3d30",
       "title": "Give Your Muse a Voice",
       "source": "Meta Newsroom",
@@ -1748,6 +1863,26 @@
       "suggestedDepth": "STANDARD"
     },
     {
+      "id": "5cecc12e376b",
+      "title": "Beyond code generation: A developer’s guide to agentic engineering",
+      "source": "GitHub Blog",
+      "publishedAt": "2026-11-06T22:15:59.000Z",
+      "url": "https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+      ],
+      "score": 2,
+      "importance": 0,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [],
+      "company": "GitHub",
+      "stage": "metadata"
+    },
+    {
       "id": "69af5f8a1220",
       "title": "Inside GitHub’s new Git storage architecture",
       "source": "GitHub Blog",
@@ -1925,6 +2060,49 @@
         "standardWouldOmit"
       ],
       "suggestedDepth": "SHORT"
+    },
+    {
+      "id": "1007c961b5d3",
+      "title": "SageMaker Inference now supports Multi-Instance GPU to maximize GPU utilization for model endpoints",
+      "source": "AWS Machine Learning Blog",
+      "publishedAt": "2026-11-06T18:01:00.000Z",
+      "url": "https://aws.amazon.com/blogs/machine-learning/sagemaker-inference-now-supports-multi-instance-gpu-to-maximize-gpu-utilization-for-model-endpoints/",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "글 유형 HOW_TO — 강한 사건 신호 없음"
+      ],
+      "score": 4,
+      "importance": 2,
+      "contentType": "HOW_TO",
+      "typePenalty": -3,
+      "signals": [
+        "INFRA",
+        "API_PLATFORM"
+      ],
+      "company": "Amazon",
+      "stage": "metadata"
+    },
+    {
+      "id": "01ae94b0daa0",
+      "title": "Taxonomy of agentic primitives in Amazon Quick",
+      "source": "AWS Machine Learning Blog",
+      "publishedAt": "2026-11-06T17:34:45.000Z",
+      "url": "https://aws.amazon.com/blogs/machine-learning/taxonomy-of-agentic-primitives-in-amazon-quick/",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+      ],
+      "score": 2,
+      "importance": 0,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [],
+      "company": "Amazon",
+      "stage": "metadata"
     },
     {
       "id": "0f0cb95e5bb0",
@@ -2233,6 +2411,127 @@
       "stage": "metadata"
     },
     {
+      "id": "d28d7745dd02",
+      "title": "Copilot code review: API management and review overview updates",
+      "source": "GitHub Changelog",
+      "publishedAt": "2026-11-07T00:27:19.000Z",
+      "url": "https://github.blog/changelog/2026-11-06-copilot-code-review-api-management-and-review-overview-updates",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "PUBLISH",
+      "reasons": [
+        "사건 신호 PRODUCT_LAUNCH·API_PLATFORM (우선순위 8)",
+        "근거 확인 통과 (확인 사실 7개, SUFFICIENT_STANDARD)"
+      ],
+      "score": 8,
+      "importance": 2,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "PRODUCT_LAUNCH",
+        "API_PLATFORM"
+      ],
+      "company": "GitHub",
+      "stage": "evidence",
+      "evidenceStatus": "OK",
+      "distinctFacts": 7,
+      "sufficiency": "SUFFICIENT_STANDARD",
+      "deepMissing": [
+        "importance",
+        "contextNeed",
+        "standardWouldOmit"
+      ],
+      "suggestedDepth": "STANDARD",
+      "draftPending": true
+    },
+    {
+      "id": "df141a94aef9",
+      "title": "Copilot impact dashboard adds chat and VS Code agent usage",
+      "source": "GitHub Changelog",
+      "publishedAt": "2026-11-06T22:17:28.000Z",
+      "url": "https://github.blog/changelog/2026-11-06-copilot-impact-dashboard-adds-chat-and-vs-code-agent-usage",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+      ],
+      "score": 2,
+      "importance": 0,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [],
+      "company": "GitHub",
+      "stage": "metadata"
+    },
+    {
+      "id": "5175c20e07f3",
+      "title": "GitHub Copilot weekly releases — November 2",
+      "source": "GitHub Changelog",
+      "publishedAt": "2026-11-06T21:00:26.000Z",
+      "url": "https://github.blog/changelog/2026-11-06-github-copilot-weekly-releases-november-2",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "사건 신호 CONSUMER (우선순위 5)",
+        "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+      ],
+      "score": 5,
+      "importance": 1,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "CONSUMER"
+      ],
+      "company": "GitHub",
+      "stage": "evidence",
+      "evidenceStatus": "OK",
+      "distinctFacts": 12,
+      "sufficiency": "SUFFICIENT_STANDARD",
+      "deepMissing": [
+        "importance",
+        "userImpact",
+        "contextNeed",
+        "standardWouldOmit"
+      ],
+      "suggestedDepth": "STANDARD"
+    },
+    {
+      "id": "23359978bbf7",
+      "title": "@GitHub in Slack and Teams is generally available and more",
+      "source": "GitHub Changelog",
+      "publishedAt": "2026-11-06T20:31:08.000Z",
+      "url": "https://github.blog/changelog/2026-11-06-github-copilot-in-slack-and-teams-is-generally-available",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "사건 신호 AVAILABILITY (우선순위 5)",
+        "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+      ],
+      "score": 5,
+      "importance": 1,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "AVAILABILITY"
+      ],
+      "company": "GitHub",
+      "stage": "evidence",
+      "evidenceStatus": "OK",
+      "distinctFacts": 12,
+      "sufficiency": "SUFFICIENT_STANDARD",
+      "deepMissing": [
+        "importance",
+        "userImpact",
+        "contextNeed",
+        "evidenceQuality",
+        "standardWouldOmit"
+      ],
+      "suggestedDepth": "STANDARD"
+    },
+    {
       "id": "dcf7efe8bcfb",
       "title": "Usage metrics API adds code review details and addressed rate",
       "source": "GitHub Changelog",
@@ -2313,25 +2612,25 @@
       "draftPending": true
     },
     {
-      "id": "0f281cabd4f6",
-      "title": "BYOK and enterprise custom models in the Copilot usage API",
-      "source": "GitHub Changelog",
-      "publishedAt": "2026-11-04T00:32:19.000Z",
-      "url": "https://github.blog/changelog/2026-11-03-byok-and-enterprise-custom-models-in-the-copilot-usage-api",
+      "id": "268fe70f0c9c",
+      "title": "Google Workspace Weekly Recap - November 6, 2026",
+      "source": "Google Workspace Updates",
+      "publishedAt": "2026-11-06T19:47:50.933Z",
+      "url": "https://workspaceupdates.googleblog.com/2026/11/weekly-recap-11-06-2026.html",
       "duplicate": "NEW",
       "matchSlug": null,
       "decision": "EXCLUDE",
       "reasons": [
-        "글 유형 DOCS_ONLY — 강한 사건 신호 없음"
+        "글 유형 EVENT — 강한 사건 신호 없음"
       ],
-      "score": 3,
+      "score": 1,
       "importance": 1,
-      "contentType": "DOCS_ONLY",
-      "typePenalty": -2,
+      "contentType": "EVENT",
+      "typePenalty": -4,
       "signals": [
-        "API_PLATFORM"
+        "PRODUCT_LAUNCH"
       ],
-      "company": "GitHub",
+      "company": "Google",
       "stage": "metadata"
     },
     {
@@ -2397,9 +2696,10 @@
       "url": "https://workspaceupdates.googleblog.com/2026/11/educators-can-now-add-guided-learning-to-assignments-in-Google-Classroom-to-help-students-get-extra-support.html",
       "duplicate": "NEW",
       "matchSlug": null,
-      "decision": "HOLD",
+      "decision": "PUBLISH",
       "reasons": [
-        "근거 부족 (원문 HTTP_429, 확인 사실 0개) — 발행하지 않음"
+        "사건 신호 PRODUCT_LAUNCH·AVAILABILITY·CONSUMER (우선순위 12)",
+        "근거 확인 통과 (확인 사실 11개, SUFFICIENT_STANDARD)"
       ],
       "score": 12,
       "importance": 3,
@@ -2412,17 +2712,16 @@
       ],
       "company": "Google",
       "stage": "evidence",
-      "evidenceStatus": "HTTP_429",
-      "distinctFacts": 0,
-      "sufficiency": "INSUFFICIENT",
+      "evidenceStatus": "OK",
+      "distinctFacts": 11,
+      "sufficiency": "SUFFICIENT_STANDARD",
       "deepMissing": [
         "importance",
         "contextNeed",
-        "distinctFacts",
-        "evidenceQuality",
         "standardWouldOmit"
       ],
-      "suggestedDepth": null
+      "suggestedDepth": "STANDARD",
+      "draftPending": true
     },
     {
       "id": "7a69c1b89eda",
@@ -2442,6 +2741,28 @@
       "typePenalty": 0,
       "signals": [],
       "company": "Apple",
+      "stage": "metadata"
+    },
+    {
+      "id": "7ff4ba923ec0",
+      "title": "Chainalysis says hackers stole credentials and tokens for all of its customers",
+      "source": "Ars Technica",
+      "publishedAt": "2026-11-06T20:56:41.000Z",
+      "url": "https://arstechnica.com/security/2026/11/chainalysis-says-hackers-stole-credentials-and-tokens-for-all-of-its-customers/",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 SECURITY_MENTION)"
+      ],
+      "score": 4,
+      "importance": 1,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "SECURITY_MENTION"
+      ],
+      "company": "Ars Technica",
       "stage": "metadata"
     },
     {
@@ -2502,6 +2823,59 @@
       "typePenalty": 0,
       "signals": [],
       "company": "Microsoft",
+      "stage": "metadata"
+    },
+    {
+      "id": "6ce9fe52db65",
+      "title": "Speed Up Image Generation with FLUX 3 Image Klein on NVIDIA Blackwell GPUs",
+      "source": "NVIDIA Technical Blog",
+      "publishedAt": "2026-11-06T22:20:20.000Z",
+      "url": "https://developer.nvidia.com/blog/speed-up-image-generation-with-flux-3-image-klein-on-nvidia-blackwell-gpus/",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "사건 신호 INFRA (우선순위 4)",
+        "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+      ],
+      "score": 4,
+      "importance": 1,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "INFRA"
+      ],
+      "company": "NVIDIA",
+      "stage": "evidence",
+      "evidenceStatus": "OK",
+      "distinctFacts": 11,
+      "sufficiency": "SUFFICIENT_STANDARD",
+      "deepMissing": [
+        "importance",
+        "userImpact",
+        "contextNeed",
+        "standardWouldOmit"
+      ],
+      "suggestedDepth": "SHORT"
+    },
+    {
+      "id": "abbce93eef91",
+      "title": "Accelerating Reinforcement Learning Weight Refit with the Reshard Collective",
+      "source": "NVIDIA Technical Blog",
+      "publishedAt": "2026-11-06T18:03:26.000Z",
+      "url": "https://developer.nvidia.com/blog/accelerating-reinforcement-learning-weight-refit-with-the-reshard-collective/",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "글 유형 HOW_TO — 강한 사건 신호 없음"
+      ],
+      "score": -1,
+      "importance": 0,
+      "contentType": "HOW_TO",
+      "typePenalty": -3,
+      "signals": [],
+      "company": "NVIDIA",
       "stage": "metadata"
     },
     {
@@ -2817,6 +3191,266 @@
         "standardWouldOmit"
       ],
       "suggestedDepth": "SHORT"
+    },
+    {
+      "id": "2add09bc95f9",
+      "title": "[내면 지도 그리기] 41 Inner Mapping: 나를 찾는 지도",
+      "source": "AI타임스",
+      "publishedAt": "2026-11-07T10:44:58.000Z",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217125",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+      ],
+      "score": 2,
+      "importance": 0,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [],
+      "company": "AI타임스",
+      "stage": "metadata"
+    },
+    {
+      "id": "999649dec122",
+      "title": "오픈AI, 15조 투자 유치…목표는 41조→27조로 축소",
+      "source": "AI타임스",
+      "publishedAt": "2026-11-07T10:44:21.000Z",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217117",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 ACQ_INVEST)"
+      ],
+      "score": 6,
+      "importance": 2,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "ACQ_INVEST"
+      ],
+      "company": "AI타임스",
+      "stage": "metadata"
+    },
+    {
+      "id": "009f24679b86",
+      "title": "TSMC, 엔비디아 요청에 3D D램 검토…삼성·SK하이닉스와 경쟁하나",
+      "source": "AI타임스",
+      "publishedAt": "2026-11-07T10:19:37.000Z",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217123",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRICING·INFRA)"
+      ],
+      "score": 9,
+      "importance": 3,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "PRICING",
+        "INFRA"
+      ],
+      "company": "AI타임스",
+      "stage": "metadata"
+    },
+    {
+      "id": "98d08df31508",
+      "title": "오픈AI CFO \"중간선거 결과와 관계없이 데이터센터 투자 계속할 것\"",
+      "source": "AI타임스",
+      "publishedAt": "2026-11-07T10:03:29.000Z",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217119",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 REGULATION·INFRA)"
+      ],
+      "score": 8,
+      "importance": 3,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "REGULATION",
+        "INFRA"
+      ],
+      "company": "AI타임스",
+      "stage": "metadata"
+    },
+    {
+      "id": "516d320258a5",
+      "title": "[AI카툰] Bob, Senior IT guy - 밥, 결혼정보회사에서 알바",
+      "source": "AI타임스",
+      "publishedAt": "2026-11-07T10:00:00.000Z",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217124",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+      ],
+      "score": 2,
+      "importance": 0,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [],
+      "company": "AI타임스",
+      "stage": "metadata"
+    },
+    {
+      "id": "ee0a270ef3b1",
+      "title": "테슬라, 판매 부진 사이버트럭 접고 로보택시 역량 집중",
+      "source": "AI타임스",
+      "publishedAt": "2026-11-07T09:57:09.000Z",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217118",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+      ],
+      "score": 2,
+      "importance": 0,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [],
+      "company": "AI타임스",
+      "stage": "metadata"
+    },
+    {
+      "id": "39c0404b243a",
+      "title": "MS, 오라클 AI 서버 임대 계약 종료…구형 GPU 사양 안 맞아",
+      "source": "AI타임스",
+      "publishedAt": "2026-11-07T09:47:13.000Z",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217120",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 INFRA)"
+      ],
+      "score": 4,
+      "importance": 1,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "INFRA"
+      ],
+      "company": "AI타임스",
+      "stage": "metadata"
+    },
+    {
+      "id": "65dce764828a",
+      "title": "앤트로픽 IPO 예상 몸값 2조→1.1조달러…한 달 만에 45% 하락",
+      "source": "AI타임스",
+      "publishedAt": "2026-11-07T09:28:29.000Z",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217122",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·PRICING)"
+      ],
+      "score": 10,
+      "importance": 3,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "PRODUCT_LAUNCH",
+        "PRICING"
+      ],
+      "company": "AI타임스",
+      "stage": "metadata"
+    },
+    {
+      "id": "921f9b14be03",
+      "title": "광주·전남 출생아 2년째 늘었지만…다문화 출생은 2015년 이후 최저",
+      "source": "AI타임스",
+      "publishedAt": "2026-11-07T09:25:00.000Z",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217108",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)"
+      ],
+      "score": 5,
+      "importance": 1,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "PRODUCT_LAUNCH"
+      ],
+      "company": "AI타임스",
+      "stage": "metadata"
+    },
+    {
+      "id": "c61e00564627",
+      "title": "인도 태양광 제조업, 2047년까지 120조원 투자 필요…고용 323만명 전망",
+      "source": "AI타임스",
+      "publishedAt": "2026-11-07T09:10:00.000Z",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217078",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·REGULATION)"
+      ],
+      "score": 9,
+      "importance": 3,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "PRODUCT_LAUNCH",
+        "REGULATION"
+      ],
+      "company": "AI타임스",
+      "stage": "metadata"
+    },
+    {
+      "id": "35e1d5faf007",
+      "title": "싱가포르 ERA, 최대 250kWp 컨테이너형 태양광 출시…2명이 2시간 만에 설치",
+      "source": "AI타임스",
+      "publishedAt": "2026-11-07T09:05:00.000Z",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=216926",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)"
+      ],
+      "score": 5,
+      "importance": 1,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "PRODUCT_LAUNCH"
+      ],
+      "company": "AI타임스",
+      "stage": "metadata"
+    },
+    {
+      "id": "ebba0aab9e64",
+      "title": "[11월6일] \"AI에 AI 안전 맡겼더니 일하는 척만\"…오픈AI도 원인 못 찾아",
+      "source": "AI타임스",
+      "publishedAt": "2026-11-07T07:00:00.000Z",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217091",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+      ],
+      "score": 2,
+      "importance": 0,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [],
+      "company": "AI타임스",
+      "stage": "metadata"
     },
     {
       "id": "8f3d1afcd17f",
@@ -3666,104 +4300,33 @@
       "stage": "metadata"
     },
     {
-      "id": "3a78f83ab9b1",
-      "title": "'극저온 국산화' 크라이오에이치앤아이, '2026 딥테크 스타트업 챌린지' 대상 영예",
-      "source": "AI타임스",
-      "publishedAt": "2026-11-05T16:55:00.000Z",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217067",
+      "id": "9871640c0071",
+      "title": "로보터블, 내년 초 휴머노이드 '스킬 이식' 소프트웨어 출시",
+      "source": "지디넷코리아",
+      "publishedAt": "2026-11-07T00:29:15.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261106211924",
       "duplicate": "NEW",
       "matchSlug": null,
       "decision": "HOLD",
       "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·REGULATION)"
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)"
       ],
-      "score": 9,
-      "importance": 3,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "PRODUCT_LAUNCH",
-        "REGULATION"
-      ],
-      "company": "AI타임스",
-      "stage": "metadata"
-    },
-    {
-      "id": "ebdc889ab410",
-      "title": "엔비디아 중국 고객사, 94조 규모 'RTX' 칩 주문에도 1%만 공급받아",
-      "source": "AI타임스",
-      "publishedAt": "2026-11-05T16:55:00.000Z",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217065",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 INFRA·PRICING·REGULATION)"
-      ],
-      "score": 11,
-      "importance": 4,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "INFRA",
-        "PRICING",
-        "REGULATION"
-      ],
-      "company": "AI타임스",
-      "stage": "metadata"
-    },
-    {
-      "id": "24bed525841c",
-      "title": "메타, AI 코딩 스타트업 컨덕터 인수...병렬 에이전트 조율 기술 확보",
-      "source": "AI타임스",
-      "publishedAt": "2026-11-05T16:48:17.000Z",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217045",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·ACQ_INVEST·MODEL_MENTION)"
-      ],
-      "score": 9,
-      "importance": 3,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "PRODUCT_LAUNCH",
-        "ACQ_INVEST",
-        "MODEL_MENTION"
-      ],
-      "company": "AI타임스",
-      "stage": "metadata"
-    },
-    {
-      "id": "685a5b088800",
-      "title": "애플, 직원 AI 사용 예산 최대 3분의 2 삭감 추진...비용 관리 강화",
-      "source": "AI타임스",
-      "publishedAt": "2026-11-05T16:42:14.000Z",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217054",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 MODEL_MENTION)"
-      ],
-      "score": 4,
+      "score": 5,
       "importance": 1,
       "contentType": "NEWS",
       "typePenalty": 0,
       "signals": [
-        "MODEL_MENTION"
+        "PRODUCT_LAUNCH"
       ],
-      "company": "AI타임스",
+      "company": "지디넷코리아",
       "stage": "metadata"
     },
     {
-      "id": "22a6008fc2ee",
-      "title": "구글, AI 투자 확대 속 5개국으로 희망퇴직 확대...딥마인드는 제외",
-      "source": "AI타임스",
-      "publishedAt": "2026-11-05T16:38:31.000Z",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217061",
+      "id": "9633c1603b98",
+      "title": "장인의 '감' 대신 데이터로…K-주얼리, AI 날개 단다",
+      "source": "지디넷코리아",
+      "publishedAt": "2026-11-07T00:16:14.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261106175015",
       "duplicate": "NEW",
       "matchSlug": null,
       "decision": "EXCLUDE",
@@ -3775,164 +4338,7 @@
       "contentType": "NEWS",
       "typePenalty": 0,
       "signals": [],
-      "company": "AI타임스",
-      "stage": "metadata"
-    },
-    {
-      "id": "0a356c12d3b0",
-      "title": "일본, 미국 AI 기업에 미공개 소프트웨어 취약점 정보 공유 요청",
-      "source": "AI타임스",
-      "publishedAt": "2026-11-05T16:28:53.000Z",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217064",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·REGULATION·SECURITY·MODEL_MENTION)"
-      ],
-      "score": 11,
-      "importance": 4,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "PRODUCT_LAUNCH",
-        "REGULATION",
-        "SECURITY",
-        "MODEL_MENTION"
-      ],
-      "company": "AI타임스",
-      "stage": "metadata"
-    },
-    {
-      "id": "c82f39a9a6ab",
-      "title": "오픈AI, 코드 저장 스타트업 피에르 인수...코덱스로 깃허브에 도전",
-      "source": "AI타임스",
-      "publishedAt": "2026-11-05T16:25:00.000Z",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217046",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 ACQ_INVEST)"
-      ],
-      "score": 6,
-      "importance": 2,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "ACQ_INVEST"
-      ],
-      "company": "AI타임스",
-      "stage": "metadata"
-    },
-    {
-      "id": "fc8bf729c156",
-      "title": "과기정통부, AI반도체·양자AI 등 ICT 고급인재 양성센터 5곳 개소",
-      "source": "AI타임스",
-      "publishedAt": "2026-11-05T16:21:46.000Z",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217062",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 REGULATION·INFRA)"
-      ],
-      "score": 8,
-      "importance": 3,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "REGULATION",
-        "INFRA"
-      ],
-      "company": "AI타임스",
-      "stage": "metadata"
-    },
-    {
-      "id": "c8e3d88d109b",
-      "title": "중국 최대 낸드 메모리 YMTC, 증시 급락·당국 규제로 IPO 보류",
-      "source": "AI타임스",
-      "publishedAt": "2026-11-05T16:15:51.000Z",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217060",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·ACQ_INVEST·REGULATION·INFRA)"
-      ],
-      "score": 11,
-      "importance": 4,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "PRODUCT_LAUNCH",
-        "ACQ_INVEST",
-        "REGULATION",
-        "INFRA"
-      ],
-      "company": "AI타임스",
-      "stage": "metadata"
-    },
-    {
-      "id": "341eb544358e",
-      "title": "퀄컴, 스페이스X와 역대 최대 5G 계약…스타링크 지상망 구축",
-      "source": "AI타임스",
-      "publishedAt": "2026-11-05T16:00:20.000Z",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217058",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 INFRA)"
-      ],
-      "score": 4,
-      "importance": 1,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "INFRA"
-      ],
-      "company": "AI타임스",
-      "stage": "metadata"
-    },
-    {
-      "id": "8db2c0d48351",
-      "title": "SKT, AI로 부산불꽃축제 '통신망 체감품질 만족’ 높인다",
-      "source": "AI타임스",
-      "publishedAt": "2026-11-05T15:52:42.000Z",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217059",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "EXCLUDE",
-      "reasons": [
-        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
-      ],
-      "score": 2,
-      "importance": 0,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [],
-      "company": "AI타임스",
-      "stage": "metadata"
-    },
-    {
-      "id": "ec6a7692a82b",
-      "title": "캔바, AI에 밀려 10년 만에 성장세 둔화...대규모 감원 발표",
-      "source": "AI타임스",
-      "publishedAt": "2026-11-05T15:50:56.000Z",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217055",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "EXCLUDE",
-      "reasons": [
-        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
-      ],
-      "score": 2,
-      "importance": 0,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [],
-      "company": "AI타임스",
+      "company": "지디넷코리아",
       "stage": "metadata"
     },
     {
@@ -4131,139 +4537,25 @@
       "stage": "metadata"
     },
     {
-      "id": "ad22cb1f0b69",
-      "title": "대전 정보보호지원센터 개소...KISA,16개 광역시도 모두 구축",
-      "source": "지디넷코리아",
-      "publishedAt": "2026-11-06T09:02:17.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261106180217",
+      "id": "6e30f316dca7",
+      "title": "[미리보는 소부장 테크페어]〈1〉ST, SiC·GaN 차세대 전력 반도체로 성장 동력 강화",
+      "source": "전자신문",
+      "publishedAt": "2026-11-07T00:00:00.000Z",
+      "url": "https://www.etnews.com/20261106000102",
       "duplicate": "NEW",
       "matchSlug": null,
       "decision": "HOLD",
       "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 REGULATION)"
-      ],
-      "score": 6,
-      "importance": 2,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "REGULATION"
-      ],
-      "company": "지디넷코리아",
-      "stage": "metadata"
-    },
-    {
-      "id": "ce46624faec0",
-      "title": "\"데이터만 모으면 되나\"…국가AI전략위서 AI 정책 실행력 도마에",
-      "source": "지디넷코리아",
-      "publishedAt": "2026-11-06T08:44:51.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261106174248",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 REGULATION)"
-      ],
-      "score": 6,
-      "importance": 2,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "REGULATION"
-      ],
-      "company": "지디넷코리아",
-      "stage": "metadata"
-    },
-    {
-      "id": "a7c66e798aee",
-      "title": "\"해킹 속출 日 진출\"...아톤, 현지 핀테크 '알코즈'와 MOU",
-      "source": "지디넷코리아",
-      "publishedAt": "2026-11-06T08:38:05.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261106173805",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PARTNERSHIP·REGULATION·SECURITY)"
-      ],
-      "score": 10,
-      "importance": 4,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "PARTNERSHIP",
-        "REGULATION",
-        "SECURITY"
-      ],
-      "company": "지디넷코리아",
-      "stage": "metadata"
-    },
-    {
-      "id": "f0c5dcd18a35",
-      "title": "박경희 대표, 티맥스티베로·티맥스소프트 총괄 지휘…AI 사업 시너지 강화",
-      "source": "지디넷코리아",
-      "publishedAt": "2026-11-06T08:22:56.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261106172203",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PARTNERSHIP)"
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 INFRA)"
       ],
       "score": 4,
       "importance": 1,
       "contentType": "NEWS",
       "typePenalty": 0,
       "signals": [
-        "PARTNERSHIP"
+        "INFRA"
       ],
-      "company": "지디넷코리아",
-      "stage": "metadata"
-    },
-    {
-      "id": "9dfe1284f896",
-      "title": "앤트로픽 IPO 미뤄지나…\"美 기술주 급락 여파\"",
-      "source": "지디넷코리아",
-      "publishedAt": "2026-11-06T08:02:41.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261106170037",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·ACQ_INVEST)"
-      ],
-      "score": 9,
-      "importance": 3,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "PRODUCT_LAUNCH",
-        "ACQ_INVEST"
-      ],
-      "company": "지디넷코리아",
-      "stage": "metadata"
-    },
-    {
-      "id": "7d21a90f8077",
-      "title": "[유미's 픽] \"게임쇼까지 파고든 AI\"…뤼튼·NC AI, 지스타서 존재감 키운다",
-      "source": "지디넷코리아",
-      "publishedAt": "2026-11-06T08:02:14.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261106170036",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·MODEL_MENTION)"
-      ],
-      "score": 7,
-      "importance": 2,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "PRODUCT_LAUNCH",
-        "MODEL_MENTION"
-      ],
-      "company": "지디넷코리아",
+      "company": "전자신문",
       "stage": "metadata"
     },
     {
@@ -12772,5 +13064,5 @@
       "fromQueue": "evidence"
     }
   ],
-  "finishedAt": "2026-11-06T17:28:41.188Z"
+  "finishedAt": "2026-11-07T01:51:25.370Z"
 }
