@@ -1,0 +1,221 @@
+{
+  "id": "6ce9fe52db65",
+  "date": "2026-11-09",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Speed Up Image Generation with FLUX 3 Image Klein on NVIDIA Blackwell GPUs",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "NVIDIA",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://developer.nvidia.com/blog/speed-up-image-generation-with-flux-3-image-klein-on-nvidia-blackwell-gpus/",
+      "name": "NVIDIA Technical Blog",
+      "type": "official",
+      "publishedAt": "2026-11-06T22:20:20.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "6ce9fe52db65",
+    "url": "https://developer.nvidia.com/blog/speed-up-image-generation-with-flux-3-image-klein-on-nvidia-blackwell-gpus/",
+    "canonicalUrl": "https://developer.nvidia.com/blog/speed-up-image-generation-with-flux-3-image-klein-on-nvidia-blackwell-gpus",
+    "title": "Speed Up Image Generation with FLUX 3 Image Klein on NVIDIA Blackwell GPUs",
+    "excerpt": "When deploying diffusion models in design tools, image editors, and visual production workflows, developers must account for inference latency. Generating an...",
+    "publishedAt": "2026-11-06T22:20:20.000Z",
+    "sourceId": "nvidia-developer",
+    "sourceName": "NVIDIA Technical Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://developer.nvidia.com/blog/feed",
+    "fetchedAt": "2026-11-08T16:39:13.970Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 16612,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "When deploying diffusion models in design tools, image editors, and visual production workflows, developers must account for inference latency. Generating an...",
+        "sourceUrl": "https://developer.nvidia.com/blog/speed-up-image-generation-with-flux-3-image-klein-on-nvidia-blackwell-gpus/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-06T22:20:20.000Z",
+        "checkedAt": "2026-11-08T16:39:50.071Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Speed Up Image Generation with FLUX 3 Image Klein on NVIDIA Blackwell GPUs | NVIDIA Technical Blog",
+        "sourceUrl": "https://developer.nvidia.com/blog/speed-up-image-generation-with-flux-3-image-klein-on-nvidia-blackwell-gpus/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-06T22:20:20.000Z",
+        "checkedAt": "2026-11-08T16:39:50.071Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Speed Up Image Generation with FLUX 3 Image Klein on NVIDIA Blackwell GPUs",
+        "sourceUrl": "https://developer.nvidia.com/blog/speed-up-image-generation-with-flux-3-image-klein-on-nvidia-blackwell-gpus/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-06T22:20:20.000Z",
+        "checkedAt": "2026-11-08T16:39:50.071Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "TensorRT LLM VisualGen accelerates inference on NVIDIA Blackwell GPUs with NVFP4 quantization, fused PrimsTS GEMM kernels, and torch.compile, delivering up to 1.62x faster text-to-image and 1.58x faster image-to-image generation over BF16 on a single B200.",
+        "sourceUrl": "https://developer.nvidia.com/blog/speed-up-image-generation-with-flux-3-image-klein-on-nvidia-blackwell-gpus/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-06T22:20:20.000Z",
+        "checkedAt": "2026-11-08T16:39:50.071Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "FLUX 3 Image Klein is an image editing and generation model from Black Forest Labs (BFL) trained on NVIDIA GB200 NVL72 and optimized for NVIDIA GPUs.",
+        "sourceUrl": "https://developer.nvidia.com/blog/speed-up-image-generation-with-flux-3-image-klein-on-nvidia-blackwell-gpus/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-06T22:20:20.000Z",
+        "checkedAt": "2026-11-08T16:39:50.071Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "This tutorial shows how to configure FLUX 3 Image Klein in NVIDIA TensorRT LLM VisualGen to take advantage of fused kernels, multi-GPU parallelism, FP8/NVFP4 support, caching, and attention optimizations.",
+        "sourceUrl": "https://developer.nvidia.com/blog/speed-up-image-generation-with-flux-3-image-klein-on-nvidia-blackwell-gpus/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-06T22:20:20.000Z",
+        "checkedAt": "2026-11-08T16:39:50.071Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "In the reported 2048×2048 tests on a single NVIDIA B200 GPU, combined optimizations delivered up to 3.46x faster text-to-image (T2I) and 4.45x faster image-to-image (I2I) generation for FLUX 3 Image Klein Base compared with uncompiled BF16 inference.",
+        "sourceUrl": "https://developer.nvidia.com/blog/speed-up-image-generation-with-flux-3-image-klein-on-nvidia-blackwell-gpus/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-06T22:20:20.000Z",
+        "checkedAt": "2026-11-08T16:39:50.071Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "FLUX 3 Image Klein combines Qwen3-VL-4B-Instruct for text conditioning, a diffusion transformer (DiT) to refine image latents, and an autoencoder to decode latents into images and encode I2I reference inputs.",
+        "sourceUrl": "https://developer.nvidia.com/blog/speed-up-image-generation-with-flux-3-image-klein-on-nvidia-blackwell-gpus/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-06T22:20:20.000Z",
+        "checkedAt": "2026-11-08T16:39:50.071Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "On an NVIDIA Blackwell GPU, NVFP4 delivered up to 1.62x faster T2I and 1.58x faster I2I generation than BF16.",
+        "sourceUrl": "https://developer.nvidia.com/blog/speed-up-image-generation-with-flux-3-image-klein-on-nvidia-blackwell-gpus/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-06T22:20:20.000Z",
+        "checkedAt": "2026-11-08T16:39:50.071Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "FLUX 3 Image Klein pipeline latency on NVIDIA B200",
+        "sourceUrl": "https://developer.nvidia.com/blog/speed-up-image-generation-with-flux-3-image-klein-on-nvidia-blackwell-gpus/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-06T22:20:20.000Z",
+        "checkedAt": "2026-11-08T16:39:50.071Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "VisualGen supports BFL’s prequantized NVFP4 DiT checkpoints for FLUX 3 Image Klein and FLUX 3 Image Klein Base .",
+        "sourceUrl": "https://developer.nvidia.com/blog/speed-up-image-generation-with-flux-3-image-klein-on-nvidia-blackwell-gpus/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-06T22:20:20.000Z",
+        "checkedAt": "2026-11-08T16:39:50.071Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "The optimizations and results in this post focus on NVIDIA Blackwell data center GPUs and NVIDIA RTX PRO 6000 Blackwell Server Edition GPUs.",
+        "sourceUrl": "https://developer.nvidia.com/blog/speed-up-image-generation-with-flux-3-image-klein-on-nvidia-blackwell-gpus/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-06T22:20:20.000Z",
+        "checkedAt": "2026-11-08T16:39:50.071Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "The timestep cutoff of 0.96 keeps the first 12 denoising steps dense for 50-step FLUX 3 Image Klein Base and the first four steps dense for 16-step distilled Klein under the packaged α=6.93 schedule.",
+        "sourceUrl": "https://developer.nvidia.com/blog/speed-up-image-generation-with-flux-3-image-klein-on-nvidia-blackwell-gpus/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-06T22:20:20.000Z",
+        "checkedAt": "2026-11-08T16:39:50.071Z"
+      }
+    ],
+    "pageDate": "2026-11-06T22:20:20.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "INFRA"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 INFRA (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}
