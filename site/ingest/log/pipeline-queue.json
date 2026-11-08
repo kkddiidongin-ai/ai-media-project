@@ -1465,7 +1465,7 @@
         "tier": 1,
         "fetchMode": "rss-paged",
         "discoveredVia": "https://blogs.nvidia.com/feed/",
-        "fetchedAt": "2026-11-07T16:21:45.454Z"
+        "fetchedAt": "2026-11-08T01:19:44.524Z"
       },
       "addedAt": "2026-11-06",
       "since": "2026-11-03",
@@ -1534,10 +1534,33 @@
         "tier": 1,
         "fetchMode": "rss-paged",
         "discoveredVia": "https://github.blog/changelog/feed/",
-        "fetchedAt": "2026-11-07T16:21:45.454Z"
+        "fetchedAt": "2026-11-08T01:19:44.524Z"
       },
       "addedAt": "2026-11-07",
       "since": "2026-11-04",
+      "attempts": 0,
+      "date": "2026-11-08",
+      "reason": "Shadow Mode — 원고를 만들지 않음"
+    },
+    "b7a1abffaf42": {
+      "stage": "draft",
+      "item": {
+        "id": "b7a1abffaf42",
+        "url": "https://workspaceupdates.googleblog.com/2026/11/get-actionable-insights-with-gemini-in-Google-Forms.html",
+        "canonicalUrl": "https://workspaceupdates.googleblog.com/2026/11/get-actionable-insights-with-gemini-in-Google-Forms.html",
+        "title": "Get actionable insights with Gemini in Google Forms",
+        "excerpt": "Making sense of form responses and figuring out what to do next can take time, especially when you're working through many responses across multiple questions. Today, we're introducing actionable insights in Google Forms, which uses Gemini to analyze your form responses, uncover key trends, and reco",
+        "publishedAt": "2026-11-05T17:34:45.079Z",
+        "sourceId": "google-workspace-updates",
+        "sourceName": "Google Workspace Updates",
+        "sourceType": "official",
+        "tier": 1,
+        "fetchMode": "rss",
+        "discoveredVia": "https://workspaceupdates.googleblog.com/feeds/posts/default?max-results=500&published-min=2026-01-01T00:00:00Z",
+        "fetchedAt": "2026-11-08T01:19:44.524Z"
+      },
+      "addedAt": "2026-11-08",
+      "since": "2026-11-05",
       "attempts": 0,
       "date": "2026-11-08",
       "reason": "Shadow Mode — 원고를 만들지 않음"
@@ -1545,7 +1568,7 @@
   },
   "meta": {},
   "retry": {},
-  "updatedAt": "2026-11-07T16:22:58.862Z",
+  "updatedAt": "2026-11-08T01:20:49.024Z",
   "gemini": {
     "day": "2026-11-03",
     "calls": 5,
