@@ -1,0 +1,133 @@
+{
+  "id": "995ee60dddce",
+  "date": "2026-11-08",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "AI 에이전트를 위한 멀티모달 의사결정 모델 ‘Kanana-2-v-decide’ 오픈소스 공개",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_SHORT",
+    "distinctFacts": 2,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": false,
+      "evidenceQuality": false,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "distinctFacts",
+      "evidenceQuality",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Kakao Tech",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://tech.kakao.com/posts/846",
+      "name": "Kakao Tech",
+      "type": "official",
+      "publishedAt": "2026-11-05T15:00:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "995ee60dddce",
+    "url": "https://tech.kakao.com/posts/846",
+    "canonicalUrl": "https://tech.kakao.com/posts/846",
+    "title": "AI 에이전트를 위한 멀티모달 의사결정 모델 ‘Kanana-2-v-decide’ 오픈소스 공개",
+    "excerpt": "안녕하세요, 카카오 Applied AI Model팀의 Shawn(정성효), Michael(이주영)입니다. 고객 문의를 분류하고, 상품 사진을 확인하고, 에이전트가 다음 작업에 사용할 도구를 고르는 일. 서비스에는 긴 답변보다 명확한 판단이 필요한 순간이 많습니다. 특히 AI 에이전트는 하나의 요청을 처리하는 동안 이러한 판단을 여러 차례 반복합니다. Agentic AI 시대에 각 단계에서 필요한 판단 결과를 빠르게 얻고, 이를 서비스의 다음 동작으로 ...",
+    "publishedAt": "2026-11-05T15:00:00.000Z",
+    "sourceId": "kakao-tech",
+    "sourceName": "Kakao Tech",
+    "sourceType": "official",
+    "tier": 2,
+    "fetchMode": "rss",
+    "discoveredVia": "https://tech.kakao.com/feed/",
+    "fetchedAt": "2026-11-08T01:19:44.524Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 146,
+    "grade": "FAIL",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "안녕하세요, 카카오 Applied AI Model팀의 Shawn(정성효), Michael(이주영)입니다. 고객 문의를 분류하고, 상품 사진을 확인하고, 에이전트가 다음 작업에 사용할 도구를 고르는 일. 서비스에는 긴 답변보다 명확한 판단이 필요한 순간이 많습니다. 특히 AI 에이전트는 하나의 요청을 처리하는 동안 이러한 판단을 여러 차례 반복합니다. Agentic AI 시대에 각 단계에서 필요한 판단 결과를 빠르게 얻고, 이를 서비스의 다음 동작으로 ...",
+        "sourceUrl": "https://tech.kakao.com/posts/846",
+        "source": "Kakao Tech",
+        "publishedAt": "2026-11-05T15:00:00.000Z",
+        "checkedAt": "2026-11-07T16:22:53.542Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "AI 에이전트를 위한 멀티모달 의사결정 모델 ‘Kanana-2-v-decide’ 오픈소스 공개 - tech.kakao.com • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • 본문 바로가기 메뉴 바로가기",
+        "sourceUrl": "https://tech.kakao.com/posts/846",
+        "source": "Kakao Tech",
+        "publishedAt": "2026-11-05T15:00:00.000Z",
+        "checkedAt": "2026-11-07T16:22:53.542Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "AI 에이전트를 위한 멀티모달 의사결정 모델 ‘Kanana-2-v-decide’ 오픈소스 공개",
+        "sourceUrl": "https://tech.kakao.com/posts/846",
+        "source": "Kakao Tech",
+        "publishedAt": "2026-11-05T15:00:00.000Z",
+        "checkedAt": "2026-11-07T16:22:53.542Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 2,
+    "verificationConfidence": 3,
+    "signals": [
+      "PRODUCT_LAUNCH"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 PRODUCT_LAUNCH (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}
