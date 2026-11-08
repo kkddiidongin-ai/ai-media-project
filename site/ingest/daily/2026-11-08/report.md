@@ -6,11 +6,11 @@
 
 | 수집 | 신규 | 후속 | 중복 | 불확실 | 발행 추천 | 보류 | 제외 | 원고 |
 |---|---|---|---|---|---|---|---|---|
-| 117 | 140 | 0 | 2 | 0 | 2 | 95 | 45 | 0 |
+| 117 | 140 | 0 | 2 | 0 | 3 | 95 | 44 | 0 |
 
 > 자동으로 발행하지 않습니다. 아래 추천은 사람이 `npm run daily:approve -- <날짜> <id>`로 승인해야 기사 데이터에 들어갑니다. 뉴스레터도 만들거나 보내지 않습니다.
 
-## 발행 추천 (2) — 편집자 검토용
+## 발행 추천 (3) — 편집자 검토용
 
 ### 1. More Performance From Every Byte: How Full-Stack Codesign Solves AI’s Memory Challenge
 - id `3df4d68063a5` · 제안 slug `more-performance-every-byte-full-stack-codesign` · 깊이 **-** (근거 기준 최대 STANDARD) · 분류 -
@@ -28,6 +28,14 @@
 - 검증: 확인 필요 없음
 - 원고: 없음 — Shadow Mode — 원고를 만들지 않음
 
+### 3. Get actionable insights with Gemini in Google Forms
+- id `b7a1abffaf42` · 제안 slug `get-actionable-insights-gemini-google-forms` · 깊이 **-** (근거 기준 최대 STANDARD) · 분류 -
+- 원문: [Google Workspace Updates — Get actionable insights with Gemini in Google Forms](https://workspaceupdates.googleblog.com/2026/11/get-actionable-insights-with-gemini-in-Google-Forms.html) · 발표 2026-11-05
+- 추천 이유: 사건 신호 MODEL·PRODUCT_LAUNCH (우선순위 6) · 근거 확인 통과 (확인 사실 9개, SUFFICIENT_STANDARD) (중요도 3/5, 한국 관련 0/3, 유형 CUSTOMER_STORY)
+- 근거: 원문 OK · 근거 문장 13개 · 서로 다른 확인 사실 9개 · 판정 PASS · DEEP 아님(중요도 4+, 사용자 영향, 배경 설명 필요, STANDARD로는 맥락 누락)
+- 검증: 확인 필요 없음
+- 원고: 없음 — Shadow Mode — 원고를 만들지 않음 · 📮 뉴스레터 후보
+
 ## 보류 (95)
 
 - **worklog-system 주간보고 자동화 구축 경험기** (NAVER D2, 2026-11-05) — 근거 부족 (원문 OK, 확인 사실 0개) — 발행하지 않음 · 확인 필요: 근거 부족
@@ -36,7 +44,6 @@
 - **Australian universities are creating AI-native graduates** (OpenAI, 2026-11-05) — 근거 부족 (원문 SKIPPED_HOST_BLOCKED, 확인 사실 0개) — 발행하지 않음 · 확인 필요: 원문을 읽지 못함, 근거 부족
 - **Setting a new standard for responsible AI infrastructure** (OpenAI, 2026-11-05) — 근거 부족 (원문 SKIPPED_HOST_BLOCKED, 확인 사실 0개) — 발행하지 않음 · 확인 필요: 원문을 읽지 못함, 근거 부족
 - **Partnering with Hacktron to find vulnerabilities in OpenAI’s systems** (OpenAI, 2026-11-06) — 근거 부족 (원문 SKIPPED_HOST_BLOCKED, 확인 사실 0개) — 발행하지 않음 · 확인 필요: 원문을 읽지 못함, 근거 부족
-- **Get actionable insights with Gemini in Google Forms** (Google Workspace Updates, 2026-11-05) — 근거 부족 (원문 HTTP_429, 확인 사실 0개) — 발행하지 않음 · 확인 필요: 원문을 읽지 못함, 근거 부족
 - **Merge builds product and business tools with OpenAI technology** (OpenAI, 2026-11-05) — 근거 부족 (원문 SKIPPED_HOST_BLOCKED, 확인 사실 0개) — 발행하지 않음 · 확인 필요: 원문을 읽지 못함, 근거 부족
 - **Flipsnack grows product signups with conversion optimization** (OpenAI, 2026-11-05) — 근거 부족 (원문 SKIPPED_HOST_BLOCKED, 확인 사실 0개) — 발행하지 않음 · 확인 필요: 원문을 읽지 못함, 근거 부족
 - **Design the Muse App, Just for You** (Meta Newsroom, 2026-11-06) — 사건 신호 PRODUCT_LAUNCH (우선순위 5) · 근거는 있으나 우선순위 5 < 발행 추천 기준 6 · 확인 필요: 없음
@@ -56,6 +63,11 @@
 - **Configure, Certify, and Operate Kubernetes GPU Clusters with NVIDIA DSX OS** (NVIDIA Technical Blog, 2026-11-05) — 사건 신호 INFRA (우선순위 4) · 근거는 있으나 우선순위 4 < 발행 추천 기준 6 · 확인 필요: 없음
 - **Five Ways NVIDIA Co-Design Maximizes the Value of Every Byte in the AI Factory** (NVIDIA Technical Blog, 2026-11-05) — 사건 신호 INFRA (우선순위 4) · 근거는 있으나 우선순위 4 < 발행 추천 기준 6 · 확인 필요: 없음
 - Chainalysis says hackers stole credentials and tokens for all of its customers (Ars Technica, 2026-11-06) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 SECURITY_MENTION)
+- 오픈AI, '이미지 2.6' 프롬프트 가이드 공개…"바꿀 것과 유지할 것 구분하라" (AI타임스, 2026-11-08) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 API_PLATFORM·PRODUCT_LAUNCH)
+- 소프트뱅크·ABB, 54억달러 로봇 인수 살리려 중국 사업부 분리 검토 (AI타임스, 2026-11-08) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 ACQ_INVEST·REGULATION)
+- 말레이시아, 데이터센터용 태양광 500MW·ESS 1GWh 개발…21년 전력 공급 (AI타임스, 2026-11-08) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 RESEARCH_RESULT·INFRA)
+- TSMC, '3D D램' 개발설 사실상 부인…상용화도 먼 길 (AI타임스, 2026-11-08) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 INFRA)
+- FT "미 정보당국, 젠슨 황 CEO와 중국 스파이 의심 인물 연인 관계로 판단" (AI타임스, 2026-11-08) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 REGULATION·INFRA)
 - 삼성 첫 AI 안경 출시 임박…젠틀몬스터·워비파커, 12일 예약 시작 (AI타임스, 2026-11-07) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)
 - 씽킹 머신스, 성능 대폭 높인 '잉클링 2' 공개…중국 오픈 모델에 도전 (AI타임스, 2026-11-07) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·MODEL_MENTION)
 - 바이두, 딥시크 앞선 '어니 5.5' 베이스 모델 공개…한국·유럽 사용 제한 (AI타임스, 2026-11-07) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·MODEL_MENTION)
@@ -70,17 +82,12 @@
 - 앤트로픽 IPO 예상 몸값 2조→1.1조달러…한 달 만에 45% 하락 (AI타임스, 2026-11-07) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·PRICING)
 - 광주·전남 출생아 2년째 늘었지만…다문화 출생은 2015년 이후 최저 (AI타임스, 2026-11-07) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)
 - 인도 태양광 제조업, 2047년까지 120조원 투자 필요…고용 323만명 전망 (AI타임스, 2026-11-07) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·REGULATION)
-- 싱가포르 ERA, 최대 250kWp 컨테이너형 태양광 출시…2명이 2시간 만에 설치 (AI타임스, 2026-11-07) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)
-- 구글 출신 연구진, 65B 모델로 8배 큰 AI 코딩 성능 추월…개발비도 10분의 1 (AI타임스, 2026-11-06) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PREVIEW·PRODUCT_LAUNCH·MODEL_MENTION)
-- 엔비디아, 미국 노후 전화국 130곳 AI 데이터센터로 전환 추진 (AI타임스, 2026-11-06) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 INFRA)
-- 앤트로픽, AI 자기개선 가속 징후…개발 속도 2배·미공개 모델 3개 확인 (AI타임스, 2026-11-06) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)
-- [게시판] 리얼월드, 로봇 파운데이션 모델 ‘리얼덱스’ 시연 등 단신 (AI타임스, 2026-11-06) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·REGULATION·MODEL_MENTION)
-- … 외 50건 (run.json)
+- … 외 51건 (run.json)
 
-## 제외 (45)
+## 제외 (44)
 
 - 중복 2건: Govern AI agent access with Okta Cross App Access  · 2026년과 이후 JavaScript의 동향 - 라이브러리와 프레임워크
-- 가치 낮음 43건: Cult.fit builds operational muscle with Codex · Franklin Templeton uses OpenAI to support investme · Gemini Omni 1.2 Flash: Fast and cost-effective wit · How NVIDIA Open Source Tools Are Helping Researche · Into the Omniverse: How Developers Turn Ideas Into · Beyond code generation: A developer’s guide to age · Inside GitHub’s new Git storage architecture · ToyBlocks: A controlled world for robot learning a …
+- 가치 낮음 42건: Cult.fit builds operational muscle with Codex · Franklin Templeton uses OpenAI to support investme · Gemini Omni 1.2 Flash: Fast and cost-effective wit · How NVIDIA Open Source Tools Are Helping Researche · Into the Omniverse: How Developers Turn Ideas Into · Beyond code generation: A developer’s guide to age · Inside GitHub’s new Git storage architecture · ToyBlocks: A controlled world for robot learning a …
 
 ## 소스 상태 (정상 23, 그중 기간 안 새 글 0건 4 · 경고 6 · 저하 2 · 실패 0 · 비활성 9)
 
@@ -99,14 +106,14 @@
 
 ## 처리 대기열 · 수집 범위
 
-- 진행 상태: **미완료** · 이번 실행 근거 확인 27건 · 원고 작성 0건
+- 진행 상태: **미완료** · 이번 실행 근거 확인 8건 · 원고 작성 0건
 - 지난 실행에서 넘어온 일: 근거 확인 25건 · 원고 작성 0건
-- 남은 일 (다음 실행으로 이월): 근거 확인 대기 **25**건 · 원고 작성 대기 **42**건 · 아직 열지 못한 글 주소 0개 · 재시도할 소스 0곳
+- 남은 일 (다음 실행으로 이월): 근거 확인 대기 **25**건 · 원고 작성 대기 **43**건 · 아직 열지 못한 글 주소 0개 · 재시도할 소스 0곳
   - 원고 작성 대기: 발행 추천은 났지만 원고 생성 수단이 없거나(무료 생성 미설정·Shadow) 배치를 넘은 항목입니다. 근거는 후보 파일에 보존했고, 빈 원고나 허위 원고는 만들지 않습니다.
 - 수집 범위가 기간 전체를 덮지 못한 소스 3곳 (놓쳤을 수 있음):
   - AI타임스: 피드의 가장 오래된 항목(2026-11-06)이 시작일(2026-11-05)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음
   - 지디넷코리아: 피드의 가장 오래된 항목(2026-11-06)이 시작일(2026-11-05)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음
-  - 전자신문: 피드의 가장 오래된 항목(2026-11-06)이 시작일(2026-11-05)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음
+  - 전자신문: 피드의 가장 오래된 항목(2026-11-07)이 시작일(2026-11-05)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음
 
 ## 선정 진단 (Selection Diagnostics)
 
@@ -131,7 +138,7 @@
 - Copilot code review: API management and review overview upd… — 원문 OK · 확인 사실 7 · SUFFICIENT_STANDARD · 깊이 STANDARD → **PUBLISH**
 - Setting a new standard for responsible AI infrastructure — 원문 SKIPPED_HOST_BLOCKED (대체 문서 0줄: 제목에 버전 붙은 이름 없음) · 확인 사실 0 · INSUFFICIENT · 깊이 - → **HOLD**
 - Partnering with Hacktron to find vulnerabilities in OpenAI’… — 원문 SKIPPED_HOST_BLOCKED (대체 문서 0줄: 제목에 버전 붙은 이름 없음) · 확인 사실 0 · INSUFFICIENT · 깊이 - → **HOLD**
-- Get actionable insights with Gemini in Google Forms — 원문 HTTP_429 · 확인 사실 0 · INSUFFICIENT · 깊이 - → **HOLD**
+- Get actionable insights with Gemini in Google Forms — 원문 OK · 확인 사실 9 · SUFFICIENT_STANDARD · 깊이 STANDARD → **PUBLISH**
 - Merge builds product and business tools with OpenAI technol… — 원문 SKIPPED_HOST_BLOCKED (대체 문서 0줄: 제목에 버전 붙은 이름 없음) · 확인 사실 0 · INSUFFICIENT · 깊이 - → **HOLD**
 - Flipsnack grows product signups with conversion optimization — 원문 SKIPPED_HOST_BLOCKED (대체 문서 0줄: 제목에 버전 붙은 이름 없음) · 확인 사실 0 · INSUFFICIENT · 깊이 - → **HOLD**
 - Design the Muse App, Just for You — 원문 OK · 확인 사실 9 · SUFFICIENT_STANDARD · 깊이 STANDARD → **HOLD**
@@ -154,15 +161,16 @@
 **상한·다양성으로 빠진 후보 0건**
 - 없음
 
-**글 유형 감점 10건**: SageMaker Inference now supports Multi-… (사용법, EXCLUDE) · Serverless MCP server for AI agent data… (사용법, EXCLUDE) · How Greenlight Financial built an auton… (고객 사례, EXCLUDE) · Taxbit Assist: A grounded, role-aware A… (사용법, EXCLUDE) · Getting started with Web Answer on Amaz… (사용법, EXCLUDE) · Usage metrics API adds code review deta… (문서·소소한 갱신, EXCLUDE) · Usage metrics API flags telemetry and v… (문서·소소한 갱신, EXCLUDE) · Google Workspace Weekly Recap - Novembe… (행사, EXCLUDE) · Get actionable insights with Gemini in … (고객 사례, HOLD) · Accelerating Reinforcement Learning Wei… (사용법, EXCLUDE)
+**글 유형 감점 10건**: SageMaker Inference now supports Multi-… (사용법, EXCLUDE) · Serverless MCP server for AI agent data… (사용법, EXCLUDE) · How Greenlight Financial built an auton… (고객 사례, EXCLUDE) · Taxbit Assist: A grounded, role-aware A… (사용법, EXCLUDE) · Getting started with Web Answer on Amaz… (사용법, EXCLUDE) · Usage metrics API adds code review deta… (문서·소소한 갱신, EXCLUDE) · Usage metrics API flags telemetry and v… (문서·소소한 갱신, EXCLUDE) · Google Workspace Weekly Recap - Novembe… (행사, EXCLUDE) · Get actionable insights with Gemini in … (고객 사례, PUBLISH) · Accelerating Reinforcement Learning Wei… (사용법, EXCLUDE)
 
 **DEEP 판단**
 - More Performance From Every Byte: How Full-Stack Codesign S… → STANDARD (DEEP 아님: 중요도 4+)
+- Get actionable insights with Gemini in Google Forms → STANDARD (DEEP 아님: 중요도 4+, 사용자 영향, 배경 설명 필요, STANDARD로는 맥락 누락)
 
-**보류 이유 (95건)**: 언론 보도 45 · N-N-N DAILY에서 이미 추천함 25 · 근거는 있으나 우선순위 N < 발행 추천 기준 N 16 · 근거 부족 9
+**보류 이유 (95건)**: 언론 보도 46 · N-N-N DAILY에서 이미 추천함 25 · 근거는 있으나 우선순위 N < 발행 추천 기준 N 16 · 근거 부족 8
 
 ## 비용
 
 원고 생성 none · 호출 0/6 · 입력 0 · 출력 0 토큰 · 예상 비용 $0.0000 / 상한 $0.5
 
-<sub>실행 2026-11-07T16:21:45.453Z → 2026-11-07T16:22:58.864Z · 상세: run.json, candidates/*.json</sub>
+<sub>실행 2026-11-08T01:19:44.523Z → 2026-11-08T01:20:49.026Z · 상세: run.json, candidates/*.json</sub>

@@ -1,7 +1,7 @@
 {
   "date": "2026-11-08",
   "mode": "shadow",
-  "startedAt": "2026-11-07T16:21:45.453Z",
+  "startedAt": "2026-11-08T01:19:44.523Z",
   "status": "INCOMPLETE",
   "limits": {
     "windowDays": 3,
@@ -946,8 +946,8 @@
       "parsed": 30,
       "matched": 30,
       "found": 30,
-      "inWindow": 8,
-      "kept": 8,
+      "inWindow": 9,
+      "kept": 9,
       "since": "2026-11-05",
       "coverage": {
         "complete": false,
@@ -971,16 +971,16 @@
         "redirected": false,
         "finalUrl": null
       },
-      "parsed": 22,
-      "matched": 22,
-      "found": 22,
-      "inWindow": 3,
-      "kept": 3,
+      "parsed": 26,
+      "matched": 26,
+      "found": 26,
+      "inWindow": 2,
+      "kept": 2,
       "since": "2026-11-05",
       "coverage": {
         "complete": false,
-        "reason": "피드의 가장 오래된 항목(2026-11-06)이 시작일(2026-11-05)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음",
-        "oldest": "2026-11-06"
+        "reason": "피드의 가장 오래된 항목(2026-11-07)이 시작일(2026-11-05)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음",
+        "oldest": "2026-11-07"
       },
       "undated": 0,
       "health": "OK",
@@ -1032,9 +1032,9 @@
     "UPDATE_EXISTING": 0,
     "DUPLICATE": 2,
     "UNCERTAIN": 0,
-    "PUBLISH": 2,
+    "PUBLISH": 3,
     "HOLD": 95,
-    "EXCLUDE": 45,
+    "EXCLUDE": 44,
     "shortlisted": 27,
     "evidenceChecked": 27,
     "drafts": 0,
@@ -1057,7 +1057,7 @@
       "attempted": 0,
       "ok": 0,
       "failed": 0,
-      "skipped": 2,
+      "skipped": 3,
       "successRate": null,
       "quotaHit": false
     },
@@ -1068,7 +1068,7 @@
     "complete": false,
     "pending": {
       "evidence": 25,
-      "draft": 42,
+      "draft": 43,
       "meta": 0,
       "retrySources": 0
     },
@@ -1078,7 +1078,7 @@
     },
     "resolvedFromQueue": 0,
     "processed": {
-      "evidenceFetches": 27,
+      "evidenceFetches": 8,
       "drafted": 0
     },
     "coverageGaps": [
@@ -1095,7 +1095,7 @@
       {
         "id": "etnews",
         "name": "전자신문",
-        "reason": "피드의 가장 오래된 항목(2026-11-06)이 시작일(2026-11-05)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음"
+        "reason": "피드의 가장 오래된 항목(2026-11-07)이 시작일(2026-11-05)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음"
       }
     ],
     "timeBudgetExceeded": false,
@@ -2327,9 +2327,10 @@
       "url": "https://workspaceupdates.googleblog.com/2026/11/get-actionable-insights-with-gemini-in-Google-Forms.html",
       "duplicate": "NEW",
       "matchSlug": null,
-      "decision": "HOLD",
+      "decision": "PUBLISH",
       "reasons": [
-        "근거 부족 (원문 HTTP_429, 확인 사실 0개) — 발행하지 않음"
+        "사건 신호 MODEL·PRODUCT_LAUNCH (우선순위 6)",
+        "근거 확인 통과 (확인 사실 9개, SUFFICIENT_STANDARD)"
       ],
       "score": 6,
       "importance": 3,
@@ -2341,18 +2342,17 @@
       ],
       "company": "Google",
       "stage": "evidence",
-      "evidenceStatus": "HTTP_429",
-      "distinctFacts": 0,
-      "sufficiency": "INSUFFICIENT",
+      "evidenceStatus": "OK",
+      "distinctFacts": 9,
+      "sufficiency": "SUFFICIENT_STANDARD",
       "deepMissing": [
         "importance",
         "userImpact",
         "contextNeed",
-        "distinctFacts",
-        "evidenceQuality",
         "standardWouldOmit"
       ],
-      "suggestedDepth": null
+      "suggestedDepth": "STANDARD",
+      "draftPending": true
     },
     {
       "id": "7a69c1b89eda",
@@ -2662,6 +2662,160 @@
         "standardWouldOmit"
       ],
       "suggestedDepth": "SHORT"
+    },
+    {
+      "id": "98183922542a",
+      "title": "오픈AI, '이미지 2.6' 프롬프트 가이드 공개…\"바꿀 것과 유지할 것 구분하라\"",
+      "source": "AI타임스",
+      "publishedAt": "2026-11-08T09:51:29.000Z",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217140",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 API_PLATFORM·PRODUCT_LAUNCH)"
+      ],
+      "score": 8,
+      "importance": 2,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "API_PLATFORM",
+        "PRODUCT_LAUNCH"
+      ],
+      "company": "AI타임스",
+      "stage": "metadata"
+    },
+    {
+      "id": "1e2e23a4b585",
+      "title": "무안공항 운항 중단에 수익 82% 감소…위탁인력 줄어도 용역비 3억 증가",
+      "source": "AI타임스",
+      "publishedAt": "2026-11-08T09:20:00.000Z",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217110",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+      ],
+      "score": 2,
+      "importance": 0,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [],
+      "company": "AI타임스",
+      "stage": "metadata"
+    },
+    {
+      "id": "6f01a608133e",
+      "title": "소프트뱅크·ABB, 54억달러 로봇 인수 살리려 중국 사업부 분리 검토",
+      "source": "AI타임스",
+      "publishedAt": "2026-11-08T09:14:31.000Z",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217137",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 ACQ_INVEST·REGULATION)"
+      ],
+      "score": 8,
+      "importance": 3,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "ACQ_INVEST",
+        "REGULATION"
+      ],
+      "company": "AI타임스",
+      "stage": "metadata"
+    },
+    {
+      "id": "ef8b7b86e357",
+      "title": "말레이시아, 데이터센터용 태양광 500MW·ESS 1GWh 개발…21년 전력 공급",
+      "source": "AI타임스",
+      "publishedAt": "2026-11-08T09:10:00.000Z",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217083",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 RESEARCH_RESULT·INFRA)"
+      ],
+      "score": 6,
+      "importance": 2,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "RESEARCH_RESULT",
+        "INFRA"
+      ],
+      "company": "AI타임스",
+      "stage": "metadata"
+    },
+    {
+      "id": "710064cbe06d",
+      "title": "콜롬비아 태양광 상업운전 용량 2.59GW…3분기 신규 발전용량 87% 차지",
+      "source": "AI타임스",
+      "publishedAt": "2026-11-08T09:05:00.000Z",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217079",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+      ],
+      "score": 2,
+      "importance": 0,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [],
+      "company": "AI타임스",
+      "stage": "metadata"
+    },
+    {
+      "id": "f2d3820ff4e1",
+      "title": "TSMC, '3D D램' 개발설 사실상 부인…상용화도 먼 길",
+      "source": "AI타임스",
+      "publishedAt": "2026-11-08T09:03:39.000Z",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217136",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 INFRA)"
+      ],
+      "score": 4,
+      "importance": 1,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "INFRA"
+      ],
+      "company": "AI타임스",
+      "stage": "metadata"
+    },
+    {
+      "id": "f97b31a8761e",
+      "title": "FT \"미 정보당국, 젠슨 황 CEO와 중국 스파이 의심 인물 연인 관계로 판단\"",
+      "source": "AI타임스",
+      "publishedAt": "2026-11-08T08:52:25.000Z",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217135",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 REGULATION·INFRA)"
+      ],
+      "score": 8,
+      "importance": 3,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "REGULATION",
+        "INFRA"
+      ],
+      "company": "AI타임스",
+      "stage": "metadata"
     },
     {
       "id": "41f759962caf",
@@ -3623,94 +3777,11 @@
       "stage": "metadata"
     },
     {
-      "id": "f229b60335fe",
-      "title": "중간선거 여파·AI 투자 불안에 미 기술주 폭락...시총 4340조 증발",
-      "source": "AI타임스",
-      "publishedAt": "2026-11-06T12:31:58.000Z",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217082",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 REGULATION·INFRA)"
-      ],
-      "score": 8,
-      "importance": 3,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "REGULATION",
-        "INFRA"
-      ],
-      "company": "AI타임스",
-      "stage": "metadata"
-    },
-    {
-      "id": "6dabe514a1e7",
-      "title": "식약처, 식품안전 정보 포털에 AI 기반 민원검색 서비스 도입",
-      "source": "AI타임스",
-      "publishedAt": "2026-11-06T12:23:01.000Z",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217085",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "EXCLUDE",
-      "reasons": [
-        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
-      ],
-      "score": 2,
-      "importance": 0,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [],
-      "company": "AI타임스",
-      "stage": "metadata"
-    },
-    {
-      "id": "07e3baf3913e",
-      "title": "인텔리빅스, 비전 AI로 수소충전소 실시간 충전대기 정보 서비스 구현",
-      "source": "AI타임스",
-      "publishedAt": "2026-11-06T12:21:27.000Z",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217081",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "EXCLUDE",
-      "reasons": [
-        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
-      ],
-      "score": 2,
-      "importance": 0,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [],
-      "company": "AI타임스",
-      "stage": "metadata"
-    },
-    {
-      "id": "dc4e34c13d41",
-      "title": "몰로코, 구글·메타 밖 '고객 찾기‘ 승부…“CTV·커머스로 광고 확장”",
-      "source": "AI타임스",
-      "publishedAt": "2026-11-06T12:20:13.000Z",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217073",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "EXCLUDE",
-      "reasons": [
-        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
-      ],
-      "score": 2,
-      "importance": 0,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [],
-      "company": "AI타임스",
-      "stage": "metadata"
-    },
-    {
-      "id": "3987e2bf0f56",
-      "title": "비드래프트 '다윈', 수학·과학 추론 세계 2위 수준…구글·딥시크 앞서",
-      "source": "AI타임스",
-      "publishedAt": "2026-11-06T11:47:30.000Z",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217089",
+      "id": "a47f73c34433",
+      "title": "중국서 AI로 불량품 사진 만들어 환불...쇼핑몰도 AI로 맞대응",
+      "source": "지디넷코리아",
+      "publishedAt": "2026-11-07T23:03:55.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261108080355",
       "duplicate": "NEW",
       "matchSlug": null,
       "decision": "HOLD",
@@ -3724,52 +3795,7 @@
       "signals": [
         "MODEL_MENTION"
       ],
-      "company": "AI타임스",
-      "stage": "metadata"
-    },
-    {
-      "id": "e25fca7577e2",
-      "title": "프랑스 태양광 신규 연결 4.18GW…주택용 33% 감소, 지붕형 14% 증가",
-      "source": "AI타임스",
-      "publishedAt": "2026-11-06T11:05:00.000Z",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217077",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)"
-      ],
-      "score": 5,
-      "importance": 1,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "PRODUCT_LAUNCH"
-      ],
-      "company": "AI타임스",
-      "stage": "metadata"
-    },
-    {
-      "id": "0386ebfc86df",
-      "title": "일본, 사업용 태양광 패널 50톤 이상 폐기 시 계획 신고 의무화 추진",
-      "source": "AI타임스",
-      "publishedAt": "2026-11-06T11:05:00.000Z",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=216925",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·REGULATION)"
-      ],
-      "score": 9,
-      "importance": 3,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "PRODUCT_LAUNCH",
-        "REGULATION"
-      ],
-      "company": "AI타임스",
+      "company": "지디넷코리아",
       "stage": "metadata"
     },
     {
@@ -3980,28 +4006,6 @@
       "contentType": "NEWS",
       "typePenalty": 0,
       "signals": [],
-      "company": "전자신문",
-      "stage": "metadata"
-    },
-    {
-      "id": "6e30f316dca7",
-      "title": "[미리보는 소부장 테크페어]〈1〉ST, SiC·GaN 차세대 전력 반도체로 성장 동력 강화",
-      "source": "전자신문",
-      "publishedAt": "2026-11-07T00:00:00.000Z",
-      "url": "https://www.etnews.com/20261106000102",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 INFRA)"
-      ],
-      "score": 4,
-      "importance": 1,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "INFRA"
-      ],
       "company": "전자신문",
       "stage": "metadata"
     },
@@ -4622,5 +4626,5 @@
       "fromQueue": "evidence"
     }
   ],
-  "finishedAt": "2026-11-07T16:22:58.864Z"
+  "finishedAt": "2026-11-08T01:20:49.026Z"
 }
