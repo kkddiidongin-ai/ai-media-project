@@ -1,0 +1,221 @@
+{
+  "id": "033426cd1fa4",
+  "date": "2026-11-10",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "How CrossnoKaye grounds physical AI with Amazon Bedrock AgentCore",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-crossnokaye-grounds-physical-ai-with-amazon-bedrock-agentcore/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-11-09T18:55:43.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "033426cd1fa4",
+    "url": "https://aws.amazon.com/blogs/machine-learning/how-crossnokaye-grounds-physical-ai-with-amazon-bedrock-agentcore/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/how-crossnokaye-grounds-physical-ai-with-amazon-bedrock-agentcore",
+    "title": "How CrossnoKaye grounds physical AI with Amazon Bedrock AgentCore",
+    "excerpt": "CrossnoKaye brought physical AI to heavy industry with Amazon Bedrock AgentCore. Its ATLAS platform and AURA agentic system ground AI reasoning in live plant data and run verifiable Python in isolated AgentCore sandboxes, giving plant engineers checkable, math-backed answers instead of model guesses",
+    "publishedAt": "2026-11-09T18:55:43.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-11-09T20:41:10.856Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 18437,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "CrossnoKaye brought physical AI to heavy industry with Amazon Bedrock AgentCore. Its ATLAS platform and AURA agentic system ground AI reasoning in live plant data and run verifiable Python in isolated AgentCore sandboxes, giving plant engineers checkable, math-backed answers instead of model guesses",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-crossnokaye-grounds-physical-ai-with-amazon-bedrock-agentcore/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-09T18:55:43.000Z",
+        "checkedAt": "2026-11-09T20:42:21.842Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "How CrossnoKaye grounds physical AI with Amazon Bedrock AgentCore | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-crossnokaye-grounds-physical-ai-with-amazon-bedrock-agentcore/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-09T18:55:43.000Z",
+        "checkedAt": "2026-11-09T20:42:21.842Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "How CrossnoKaye grounds physical AI with Amazon Bedrock AgentCore",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-crossnokaye-grounds-physical-ai-with-amazon-bedrock-agentcore/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-09T18:55:43.000Z",
+        "checkedAt": "2026-11-09T20:42:21.842Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "CrossnoKaye took a different approach to bring physical AI to heavy industry using Amazon Bedrock AgentCore .",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-crossnokaye-grounds-physical-ai-with-amazon-bedrock-agentcore/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-09T18:55:43.000Z",
+        "checkedAt": "2026-11-09T20:42:21.842Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "To back every numerical answer with real math, AURA uses the code interpreter capability in Amazon Bedrock AgentCore to write and run Python workloads at runtime inside isolated, AWS managed microVM sandboxes, alongside Amazon Bedrock Guardrails and local edge safety controls.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-crossnokaye-grounds-physical-ai-with-amazon-bedrock-agentcore/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-09T18:55:43.000Z",
+        "checkedAt": "2026-11-09T20:42:21.842Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "This post covers how CrossnoKaye architected ATLAS and AURA on AWS, how AURA uses Amazon Bedrock AgentCore across interactive Chats, repeatable Tasks, and automated Routines, and what the team learned running physical AI in production.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-crossnokaye-grounds-physical-ai-with-amazon-bedrock-agentcore/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-09T18:55:43.000Z",
+        "checkedAt": "2026-11-09T20:42:21.842Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Figure 1: CrossnoKaye AURA and ATLAS physical AI architecture with Amazon Bedrock AgentCore",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-crossnokaye-grounds-physical-ai-with-amazon-bedrock-agentcore/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-09T18:55:43.000Z",
+        "checkedAt": "2026-11-09T20:42:21.842Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "In the cloud, CrossnoKaye’s Scheduling system runs two continuous pipelines from versioned Python packages in Amazon Simple Storage Service (Amazon S3) , operating on configurable per-instance cadences and event-driven triggers when plant settings change.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-crossnokaye-grounds-physical-ai-with-amazon-bedrock-agentcore/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-09T18:55:43.000Z",
+        "checkedAt": "2026-11-09T20:42:21.842Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Isolated Python execution: The Sandbox Orchestrator uses the AWS SDK to call the endpoint for the Amazon Bedrock AgentCore runtime, a capability of Amazon Bedrock AgentCore, staging datasets and running model-authored Python inside an isolated code interpreter microVM.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-crossnokaye-grounds-physical-ai-with-amazon-bedrock-agentcore/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-09T18:55:43.000Z",
+        "checkedAt": "2026-11-09T20:42:21.842Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "AURA combines foundation models on Amazon Bedrock (for model availability by AWS Region, refer to Supported models by AWS Region in the Amazon Bedrock User Guide) with isolated Python sandboxes in Amazon Bedrock AgentCore Code Interpreter, a capability of Amazon Bedrock AgentC…",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-crossnokaye-grounds-physical-ai-with-amazon-bedrock-agentcore/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-09T18:55:43.000Z",
+        "checkedAt": "2026-11-09T20:42:21.842Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "For Chats, the Sandbox Orchestrator binds one warm Amazon Bedrock AgentCore session to the conversation in Amazon ElastiCache for Valkey with a 15-minute sliding time to live (TTL), transparently provisioning a replacement session if an engineer returns after the idle timeout …",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-crossnokaye-grounds-physical-ai-with-amazon-bedrock-agentcore/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-09T18:55:43.000Z",
+        "checkedAt": "2026-11-09T20:42:21.842Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Together with Amazon Bedrock Guardrails and isolated Python sandboxes in Amazon Bedrock AgentCore, ATLAS and AURA allow agents to reason over live facility ontology, base control narratives, setting histories, physical I/O, optimization state, and synthetic readings, deliverin…",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-crossnokaye-grounds-physical-ai-with-amazon-bedrock-agentcore/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-09T18:55:43.000Z",
+        "checkedAt": "2026-11-09T20:42:21.842Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "To learn more about building agents with isolated code execution, refer to the Amazon Bedrock AgentCore Developer Guide or visit CrossnoKaye to see how physical AI is transforming heavy industry.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-crossnokaye-grounds-physical-ai-with-amazon-bedrock-agentcore/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-09T18:55:43.000Z",
+        "checkedAt": "2026-11-09T20:42:21.842Z"
+      }
+    ],
+    "pageDate": "2026-11-09T18:55:43.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "API_PLATFORM"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 API_PLATFORM (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}
