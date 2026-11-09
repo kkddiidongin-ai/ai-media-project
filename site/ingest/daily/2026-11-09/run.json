@@ -1,7 +1,7 @@
 {
   "date": "2026-11-09",
   "mode": "shadow",
-  "startedAt": "2026-11-08T16:39:13.969Z",
+  "startedAt": "2026-11-09T01:40:57.920Z",
   "status": "INCOMPLETE",
   "limits": {
     "windowDays": 3,
@@ -979,8 +979,8 @@
       "parsed": 30,
       "matched": 30,
       "found": 30,
-      "inWindow": 5,
-      "kept": 5,
+      "inWindow": 6,
+      "kept": 6,
       "since": "2026-11-06",
       "coverage": {
         "complete": false,
@@ -1031,15 +1031,15 @@
     "SKIPPED": 9
   },
   "counts": {
-    "collected": 92,
+    "collected": 93,
     "carriedFromQueue": 25,
-    "NEW": 115,
+    "NEW": 116,
     "UPDATE_EXISTING": 0,
     "DUPLICATE": 2,
     "UNCERTAIN": 0,
     "PUBLISH": 1,
-    "HOLD": 80,
-    "EXCLUDE": 36,
+    "HOLD": 83,
+    "EXCLUDE": 34,
     "shortlisted": 9,
     "evidenceChecked": 9,
     "drafts": 0,
@@ -1083,7 +1083,7 @@
     },
     "resolvedFromQueue": 0,
     "processed": {
-      "evidenceFetches": 9,
+      "evidenceFetches": 2,
       "drafted": 0
     },
     "coverageGaps": [
@@ -1807,6 +1807,48 @@
       "stage": "metadata"
     },
     {
+      "id": "14f881316f54",
+      "title": "[AI리더의 서가] AI 에이전트 시대의 연결 프로토콜",
+      "source": "AI타임스",
+      "publishedAt": "2026-11-09T09:00:00.000Z",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217029",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+      ],
+      "score": 2,
+      "importance": 0,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [],
+      "company": "AI타임스",
+      "stage": "metadata"
+    },
+    {
+      "id": "1eb5f1942303",
+      "title": "젠슨 황 \"아내에게 충실하지 못했다\" 사과…엔비디아 \"CEO직 유지\"",
+      "source": "AI타임스",
+      "publishedAt": "2026-11-09T06:42:12.000Z",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217150",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)"
+      ],
+      "score": 5,
+      "importance": 1,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "PRODUCT_LAUNCH"
+      ],
+      "company": "AI타임스",
+      "stage": "metadata"
+    },
+    {
       "id": "eeaa5312bd50",
       "title": "과학자들은 AI를 어떻게 쓸까…앤트로픽 \"데이터 분석 1위, 가설 생성 4%\"",
       "source": "AI타임스",
@@ -2005,7 +2047,7 @@
     },
     {
       "id": "98183922542a",
-      "title": "오픈AI, '이미지 2.6' 프롬프트 가이드 공개…\"바꿀 것과 유지할 것 구분하라\"",
+      "title": "오픈AI, '이미지 2.6' 프롬프트 가이드 공개…\"바꿀 것·유지할 것 구분\"",
       "source": "AI타임스",
       "publishedAt": "2026-11-08T09:51:29.000Z",
       "url": "https://www.aitimes.com/news/articleView.html?idxno=217140",
@@ -2867,78 +2909,80 @@
       "stage": "metadata"
     },
     {
-      "id": "8ffc0a9cd5a7",
-      "title": "팔란티어, 신발 제조사 창신과 맞손…AI로 신발 제조 공정 혁신",
-      "source": "AI타임스",
-      "publishedAt": "2026-11-06T15:40:00.000Z",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217101",
+      "id": "c958af1656e1",
+      "title": "LG AI연구원, 'K-엑사원 2.5' 무료 개방…성능 70%↑",
+      "source": "지디넷코리아",
+      "publishedAt": "2026-11-09T01:00:02.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261109093318",
       "duplicate": "NEW",
       "matchSlug": null,
       "decision": "HOLD",
       "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PARTNERSHIP)"
-      ],
-      "score": 4,
-      "importance": 1,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "PARTNERSHIP"
-      ],
-      "company": "AI타임스",
-      "stage": "metadata"
-    },
-    {
-      "id": "bb9dfc311ed1",
-      "title": "문샷AI, 엔비디아 블랙웰 확보 위해 유럽으로 눈 돌려...8000개 GPU 임대 추진",
-      "source": "AI타임스",
-      "publishedAt": "2026-11-06T15:37:07.000Z",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217103",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 INFRA·REGULATION)"
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 API_PLATFORM·PRODUCT_LAUNCH·MODEL_MENTION)"
       ],
       "score": 8,
-      "importance": 3,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "INFRA",
-        "REGULATION"
-      ],
-      "company": "AI타임스",
-      "stage": "metadata"
-    },
-    {
-      "id": "b8ec42b72d41",
-      "title": "[안광섭 AI 진테제] 미국 민주당, 정말 AI 투자 속도 꺾을까",
-      "source": "지디넷코리아",
-      "publishedAt": "2026-11-08T08:26:42.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261108172642",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 REGULATION)"
-      ],
-      "score": 6,
       "importance": 2,
       "contentType": "NEWS",
       "typePenalty": 0,
       "signals": [
+        "API_PLATFORM",
+        "PRODUCT_LAUNCH",
+        "MODEL_MENTION"
+      ],
+      "company": "지디넷코리아",
+      "stage": "metadata"
+    },
+    {
+      "id": "579fc88d28c8",
+      "title": "에이전틱·피지컬 AI 확산에 법적책임 안전 기준 논의",
+      "source": "지디넷코리아",
+      "publishedAt": "2026-11-09T00:57:43.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261109095743",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·REGULATION)"
+      ],
+      "score": 9,
+      "importance": 3,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "PRODUCT_LAUNCH",
         "REGULATION"
       ],
       "company": "지디넷코리아",
       "stage": "metadata"
     },
     {
-      "id": "4de1e2bc6bee",
-      "title": "양봉열 대표 \"보안시장, SIEM과 Observability 경계 무너져\"",
+      "id": "26beeff5b5f4",
+      "title": "AI·딥페이크·가짜뉴스 퀴즈로 배운다…초등생 디지털윤리 대결",
       "source": "지디넷코리아",
-      "publishedAt": "2026-11-08T07:24:34.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261108162434",
+      "publishedAt": "2026-11-09T00:55:01.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261109095501",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 SECURITY)"
+      ],
+      "score": 4,
+      "importance": 1,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "SECURITY"
+      ],
+      "company": "지디넷코리아",
+      "stage": "metadata"
+    },
+    {
+      "id": "b15c5428a625",
+      "title": "7주 걸리던 고객조사...SKB, AI로 하루만에 사전 검증",
+      "source": "지디넷코리아",
+      "publishedAt": "2026-11-09T00:47:28.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261109094728",
       "duplicate": "NEW",
       "matchSlug": null,
       "decision": "EXCLUDE",
@@ -2954,11 +2998,75 @@
       "stage": "metadata"
     },
     {
-      "id": "dc62ef243d4e",
-      "title": "수능發 AI 안경 부정행위 우려…탐지·점검 도구까지 등장",
+      "id": "0a23c4bdeb0e",
+      "title": "해커 공격이 패치보다 빠른 시대.....숭실대, 새 돌파구 기술 개발",
       "source": "지디넷코리아",
-      "publishedAt": "2026-11-08T05:02:28.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261108115524",
+      "publishedAt": "2026-11-09T00:45:05.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261109094505",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 SECURITY)"
+      ],
+      "score": 4,
+      "importance": 1,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "SECURITY"
+      ],
+      "company": "지디넷코리아",
+      "stage": "metadata"
+    },
+    {
+      "id": "43a6edbb9def",
+      "title": "텍스트웨이, 독일 프랑크푸르트 도서전서 AI 지식관리 기술 선봬",
+      "source": "지디넷코리아",
+      "publishedAt": "2026-11-09T00:31:24.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261109093124",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PARTNERSHIP)"
+      ],
+      "score": 4,
+      "importance": 1,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "PARTNERSHIP"
+      ],
+      "company": "지디넷코리아",
+      "stage": "metadata"
+    },
+    {
+      "id": "9601829ffd21",
+      "title": "LGU+, 서울대·KAIST·연세대와 한국형 음성 AI 개발",
+      "source": "지디넷코리아",
+      "publishedAt": "2026-11-09T00:26:15.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261109092615",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+      ],
+      "score": 2,
+      "importance": 0,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [],
+      "company": "지디넷코리아",
+      "stage": "metadata"
+    },
+    {
+      "id": "8152deddb67b",
+      "title": "삼성전자, 의료현장 맞춤형 엑스레이 'GC85A 핏' 출시",
+      "source": "지디넷코리아",
+      "publishedAt": "2026-11-09T00:09:37.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261109083854",
       "duplicate": "NEW",
       "matchSlug": null,
       "decision": "HOLD",
@@ -2976,152 +3084,114 @@
       "stage": "metadata"
     },
     {
-      "id": "d387c3b3e50d",
-      "title": "[ZD브리핑] 삼성·SK·LG 엔비디아 'AI 데이' 총출동 ..KT·네이버·게임 빅3 실적 발표",
+      "id": "4355d49c1c32",
+      "title": "젠슨 황, 불륜 인정…엔비디아 이사회 자체 조사 착수",
       "source": "지디넷코리아",
-      "publishedAt": "2026-11-08T04:33:53.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261108125202",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "EXCLUDE",
-      "reasons": [
-        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
-      ],
-      "score": 2,
-      "importance": 0,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [],
-      "company": "지디넷코리아",
-      "stage": "metadata"
-    },
-    {
-      "id": "25a8e424fc75",
-      "title": "AI도 가성비 시대…카페24, '토큰 비용' 관리 나선다",
-      "source": "지디넷코리아",
-      "publishedAt": "2026-11-08T03:39:35.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261108123219",
+      "publishedAt": "2026-11-08T23:58:17.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261109083723",
       "duplicate": "NEW",
       "matchSlug": null,
       "decision": "HOLD",
       "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·MODEL_MENTION)"
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 SECURITY)"
       ],
-      "score": 7,
-      "importance": 2,
+      "score": 4,
+      "importance": 1,
       "contentType": "NEWS",
       "typePenalty": 0,
       "signals": [
-        "PRODUCT_LAUNCH",
-        "MODEL_MENTION"
-      ],
-      "company": "지디넷코리아",
-      "stage": "metadata"
-    },
-    {
-      "id": "314ef269b1b6",
-      "title": "챗GPT, 한국서 1800만명 넘게 쓴다…이용시간도 2배 급증",
-      "source": "지디넷코리아",
-      "publishedAt": "2026-11-08T03:38:31.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261108123102",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "EXCLUDE",
-      "reasons": [
-        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
-      ],
-      "score": 2,
-      "importance": 0,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [],
-      "company": "지디넷코리아",
-      "stage": "metadata"
-    },
-    {
-      "id": "96282c2bc347",
-      "title": "매디슨 황 방한 취소…'엔비디아 AI 데이'는 예정대로",
-      "source": "지디넷코리아",
-      "publishedAt": "2026-11-08T03:31:38.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261108115633",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PARTNERSHIP·REGULATION)"
-      ],
-      "score": 8,
-      "importance": 3,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "PARTNERSHIP",
-        "REGULATION"
-      ],
-      "company": "지디넷코리아",
-      "stage": "metadata"
-    },
-    {
-      "id": "efbacc26d7d8",
-      "title": "보안 패치 나와도 기업 설치 늦어…MS \"공격 노출 기간 줄여야\"",
-      "source": "지디넷코리아",
-      "publishedAt": "2026-11-08T02:50:34.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261108113814",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·SECURITY)"
-      ],
-      "score": 7,
-      "importance": 2,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "PRODUCT_LAUNCH",
         "SECURITY"
       ],
       "company": "지디넷코리아",
       "stage": "metadata"
     },
     {
-      "id": "62dbfc7c9efd",
-      "title": "AI 시대 마주한 예술…인간다움 묻는 전시·공연 잇따라",
+      "id": "28e20fbe8e98",
+      "title": "中 렌즈테크놀로지, 연내 유리기판 양산라인 가동…\"韓기업과 협력 기대\"",
       "source": "지디넷코리아",
-      "publishedAt": "2026-11-08T02:39:57.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261106144018",
+      "publishedAt": "2026-11-08T23:56:03.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261109081004",
       "duplicate": "NEW",
       "matchSlug": null,
-      "decision": "EXCLUDE",
+      "decision": "HOLD",
       "reasons": [
-        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PARTNERSHIP·INFRA)"
       ],
-      "score": 2,
-      "importance": 0,
+      "score": 6,
+      "importance": 2,
       "contentType": "NEWS",
       "typePenalty": 0,
-      "signals": [],
+      "signals": [
+        "PARTNERSHIP",
+        "INFRA"
+      ],
       "company": "지디넷코리아",
       "stage": "metadata"
     },
     {
-      "id": "5b067d323e93",
-      "title": "테슬라, '판매부진' 사이버트럭 생산 중단키로…로보택시로 방향 전환",
-      "source": "지디넷코리아",
-      "publishedAt": "2026-11-08T02:17:05.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261108104852",
+      "id": "97ed79202200",
+      "title": "54세에 독학해 19억 대박난 남성…AI에 투자, 1년 만에 인생이 달라졌다",
+      "source": "전자신문",
+      "publishedAt": "2026-11-09T00:20:00.000Z",
+      "url": "https://www.etnews.com/20261108000068",
       "duplicate": "NEW",
       "matchSlug": null,
-      "decision": "EXCLUDE",
+      "decision": "HOLD",
       "reasons": [
-        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 MODEL_MENTION)"
       ],
-      "score": 2,
-      "importance": 0,
+      "score": 4,
+      "importance": 1,
       "contentType": "NEWS",
       "typePenalty": 0,
-      "signals": [],
-      "company": "지디넷코리아",
+      "signals": [
+        "MODEL_MENTION"
+      ],
+      "company": "전자신문",
+      "stage": "metadata"
+    },
+    {
+      "id": "105299047d3c",
+      "title": "[드림시큐리티 AI 시대 필수보안]〈3·끝〉뚫려도 지킨다, 마지막 방어선 '암호'",
+      "source": "전자신문",
+      "publishedAt": "2026-11-08T23:30:00.000Z",
+      "url": "https://www.etnews.com/20261106000235",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 SECURITY)"
+      ],
+      "score": 4,
+      "importance": 1,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "SECURITY"
+      ],
+      "company": "전자신문",
+      "stage": "metadata"
+    },
+    {
+      "id": "dd2305aef402",
+      "title": "앤트로픽, 데이터센터 전력 직접 공급...가스 발전기 4.6조원에 확보",
+      "source": "전자신문",
+      "publishedAt": "2026-11-08T21:54:31.000Z",
+      "url": "https://www.etnews.com/20261109000006",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 INFRA)"
+      ],
+      "score": 4,
+      "importance": 1,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "INFRA"
+      ],
+      "company": "전자신문",
       "stage": "metadata"
     },
     {
@@ -3181,50 +3251,6 @@
       "contentType": "NEWS",
       "typePenalty": 0,
       "signals": [],
-      "company": "전자신문",
-      "stage": "metadata"
-    },
-    {
-      "id": "186f0b4ac763",
-      "title": "“품목 전환 시간 75% 단축”…농심, 녹산 스마트팩토리로 수출 생산혁신",
-      "source": "전자신문",
-      "publishedAt": "2026-11-08T03:00:00.000Z",
-      "url": "https://www.etnews.com/20261108000028",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)"
-      ],
-      "score": 5,
-      "importance": 1,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "PRODUCT_LAUNCH"
-      ],
-      "company": "전자신문",
-      "stage": "metadata"
-    },
-    {
-      "id": "841e2a580f96",
-      "title": "새만금·구미·완주·울산 등 피지컬 AI 공공사업 지역 확산",
-      "source": "전자신문",
-      "publishedAt": "2026-11-08T03:00:00.000Z",
-      "url": "https://www.etnews.com/20261106000207",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 REGULATION)"
-      ],
-      "score": 6,
-      "importance": 2,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "REGULATION"
-      ],
       "company": "전자신문",
       "stage": "metadata"
     },
@@ -3845,5 +3871,5 @@
       "fromQueue": "evidence"
     }
   ],
-  "finishedAt": "2026-11-08T16:39:51.401Z"
+  "finishedAt": "2026-11-09T01:41:58.606Z"
 }

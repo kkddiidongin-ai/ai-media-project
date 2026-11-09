@@ -6,7 +6,7 @@
 
 | 수집 | 신규 | 후속 | 중복 | 불확실 | 발행 추천 | 보류 | 제외 | 원고 |
 |---|---|---|---|---|---|---|---|---|
-| 92 | 115 | 0 | 2 | 0 | 1 | 80 | 36 | 0 |
+| 93 | 116 | 0 | 2 | 0 | 1 | 83 | 34 | 0 |
 
 > 자동으로 발행하지 않습니다. 아래 추천은 사람이 `npm run daily:approve -- <날짜> <id>`로 승인해야 기사 데이터에 들어갑니다. 뉴스레터도 만들거나 보내지 않습니다.
 
@@ -20,7 +20,7 @@
 - 검증: 확인 필요 없음
 - 원고: 없음 — Shadow Mode — 원고를 만들지 않음
 
-## 보류 (80)
+## 보류 (83)
 
 - **Measuring how AI agents handle everyday wet-lab science** (OpenAI, 2026-11-06) — 근거 부족 (원문 HTTP_403, 확인 사실 0개) — 발행하지 않음 · 확인 필요: 원문을 읽지 못함, 근거 부족
 - **Partnering with Hacktron to find vulnerabilities in OpenAI’s systems** (OpenAI, 2026-11-06) — 근거 부족 (원문 HTTP_403, 확인 사실 0개) — 발행하지 않음 · 확인 필요: 원문을 읽지 못함, 근거 부족
@@ -31,6 +31,7 @@
 - **@GitHub in Slack and Teams is generally available and more** (GitHub Changelog, 2026-11-06) — 사건 신호 AVAILABILITY (우선순위 5) · 근거는 있으나 우선순위 5 < 발행 추천 기준 6 · 확인 필요: 없음
 - **Speed Up Image Generation with FLUX 3 Image Klein on NVIDIA Blackwell GPUs** (NVIDIA Technical Blog, 2026-11-06) — 사건 신호 INFRA (우선순위 4) · 근거는 있으나 우선순위 4 < 발행 추천 기준 6 · 확인 필요: 없음
 - Chainalysis says hackers stole credentials and tokens for all of its customers (Ars Technica, 2026-11-06) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 SECURITY_MENTION)
+- 젠슨 황 "아내에게 충실하지 못했다" 사과…엔비디아 "CEO직 유지" (AI타임스, 2026-11-09) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)
 - 과학자들은 AI를 어떻게 쓸까…앤트로픽 "데이터 분석 1위, 가설 생성 4%" (AI타임스, 2026-11-08) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)
 - 앤트그룹, '링 3.2 플래시' 공개…시각 이해 평가서 클로드 오퍼스 5 앞서 (AI타임스, 2026-11-08) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·MODEL_MENTION)
 - AWS, 여러 AI 에이전트 지휘하는 '키로 봇' 출시 (AI타임스, 2026-11-08) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)
@@ -38,7 +39,7 @@
 - 아마존, 앱 없이 문자로 쇼핑 끝낸다…AI '알렉사' 문자 쇼핑 서비스 출시 (AI타임스, 2026-11-08) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·PRICING)
 - 엔비디아, 동남아 판매 칩 위치 추적 강화로 밀수 차단 나선다 (AI타임스, 2026-11-08) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 REGULATION)
 - 독일 전문가 "AI에 안전한 직업 찾지 마라…미래 일자리 준비해야" (AI타임스, 2026-11-08) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 REGULATION)
-- 오픈AI, '이미지 2.6' 프롬프트 가이드 공개…"바꿀 것과 유지할 것 구분하라" (AI타임스, 2026-11-08) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 API_PLATFORM·PRODUCT_LAUNCH)
+- 오픈AI, '이미지 2.6' 프롬프트 가이드 공개…"바꿀 것·유지할 것 구분" (AI타임스, 2026-11-08) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 API_PLATFORM·PRODUCT_LAUNCH)
 - 소프트뱅크·ABB, 54억달러 로봇 인수 살리려 중국 사업부 분리 검토 (AI타임스, 2026-11-08) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 ACQ_INVEST·REGULATION)
 - 말레이시아, 데이터센터용 태양광 500MW·ESS 1GWh 개발…21년 전력 공급 (AI타임스, 2026-11-08) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 RESEARCH_RESULT·INFRA)
 - TSMC, '3D D램' 개발설 사실상 부인…상용화도 먼 길 (AI타임스, 2026-11-08) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 INFRA)
@@ -49,13 +50,12 @@
 - 미 중간선거 후폭풍…민주당, 빅테크 대대적 조사·AI 규제 추진 (AI타임스, 2026-11-07) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 REGULATION·INFRA·MODEL_MENTION)
 - 메타, AI로 맞춤형 앱 만드는 '뮤즈 스페이스' 출시 (AI타임스, 2026-11-07) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)
 - [AI 이슈트렌드] 강호동 구속영장 1위…미 중간선거·바이낸스 해킹 뒤이어 (AI타임스, 2026-11-07) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 SECURITY)
-- 유럽 16개국서 데이터센터 반대 공동 행동…MS 건설 현장 난입 (AI타임스, 2026-11-07) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 INFRA)
-- … 외 52건 (run.json)
+- … 외 55건 (run.json)
 
-## 제외 (36)
+## 제외 (34)
 
 - 중복 2건: Govern AI agent access with Okta Cross App Access  · 2026년과 이후 JavaScript의 동향 - 라이브러리와 프레임워크
-- 가치 낮음 34건: How NVIDIA Open Source Tools Are Helping Researche · Beyond code generation: A developer’s guide to age · ToyBlocks: A controlled world for robot learning a · Egyptian and Nigerian English join the Open ASR Le · SageMaker Inference now supports Multi-Instance GP · Taxonomy of agentic primitives in Amazon Quick · Serverless MCP server for AI agent data lake acces · How Greenlight Financial built an autonomous SOC s …
+- 가치 낮음 32건: How NVIDIA Open Source Tools Are Helping Researche · Beyond code generation: A developer’s guide to age · ToyBlocks: A controlled world for robot learning a · Egyptian and Nigerian English join the Open ASR Le · SageMaker Inference now supports Multi-Instance GP · Taxonomy of agentic primitives in Amazon Quick · Serverless MCP server for AI agent data lake acces · How Greenlight Financial built an autonomous SOC s …
 
 ## 소스 상태 (정상 23, 그중 기간 안 새 글 0건 9 · 경고 3 · 저하 5 · 실패 0 · 비활성 9)
 
@@ -74,7 +74,7 @@
 
 ## 처리 대기열 · 수집 범위
 
-- 진행 상태: **미완료** · 이번 실행 근거 확인 9건 · 원고 작성 0건
+- 진행 상태: **미완료** · 이번 실행 근거 확인 2건 · 원고 작성 0건
 - 지난 실행에서 넘어온 일: 근거 확인 25건 · 원고 작성 0건
 - 남은 일 (다음 실행으로 이월): 근거 확인 대기 **25**건 · 원고 작성 대기 **43**건 · 아직 열지 못한 글 주소 0개 · 재시도할 소스 0곳
   - 원고 작성 대기: 발행 추천은 났지만 원고 생성 수단이 없거나(무료 생성 미설정·Shadow) 배치를 넘은 항목입니다. 근거는 후보 파일에 보존했고, 빈 원고나 허위 원고는 만들지 않습니다.
@@ -95,7 +95,7 @@
 - 9 · 소식 · PRICING·INFRA — TSMC, 엔비디아 요청에 3D D램 검토…삼성·SK하이닉스와 경쟁하나 → **HOLD**
 - 9 · 소식 · PRODUCT_LAUNCH·REGULATION — 인도 태양광 제조업, 2047년까지 120조원 투자 필요…고용 323만명 전망 → **HOLD**
 - 9 · 소식 · PRODUCT_LAUNCH·REGULATION·MODEL_MENTION — [게시판] 리얼월드, 로봇 파운데이션 모델 ‘리얼덱스’ 시연 등 단신 → **HOLD**
-- 8 · 소식 · PRODUCT_LAUNCH·API_PLATFORM — Copilot code review: API management and review overview upd… → **PUBLISH**
+- 9 · 소식 · PRODUCT_LAUNCH·REGULATION — 에이전틱·피지컬 AI 확산에 법적책임 안전 기준 논의 → **HOLD**
 
 **근거 확인 명단 9건** (원문 요청 상한 40, 최종 추천 상한 0)
 - Measuring how AI agents handle everyday wet-lab science — 원문 HTTP_403 (대체 문서 0줄: 제목에 버전 붙은 이름 없음) · 확인 사실 0 · INSUFFICIENT · 깊이 - → **HOLD**
@@ -116,10 +116,10 @@
 **DEEP 판단**
 - 해당 없음
 
-**보류 이유 (80건)**: 언론 보도 47 · N-N-N DAILY에서 이미 추천함 25 · 근거는 있으나 우선순위 N < 발행 추천 기준 N 6 · 근거 부족 2
+**보류 이유 (83건)**: 언론 보도 50 · N-N-N DAILY에서 이미 추천함 25 · 근거는 있으나 우선순위 N < 발행 추천 기준 N 6 · 근거 부족 2
 
 ## 비용
 
 원고 생성 none · 호출 0/6 · 입력 0 · 출력 0 토큰 · 예상 비용 $0.0000 / 상한 $0.5
 
-<sub>실행 2026-11-08T16:39:13.969Z → 2026-11-08T16:39:51.401Z · 상세: run.json, candidates/*.json</sub>
+<sub>실행 2026-11-09T01:40:57.920Z → 2026-11-09T01:41:58.606Z · 상세: run.json, candidates/*.json</sub>
