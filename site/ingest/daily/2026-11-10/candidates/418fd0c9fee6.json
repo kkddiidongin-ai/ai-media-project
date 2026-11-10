@@ -1,0 +1,221 @@
+{
+  "id": "418fd0c9fee6",
+  "date": "2026-11-10",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "JPMorganChase expands Claude Code to more employees",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 12,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Anthropic",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://claude.com/resources/articles/jpmorganchase-expands-claude-code",
+      "name": "Claude (claude.com articles)",
+      "type": "official",
+      "publishedAt": "2026-11-09T00:00:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "418fd0c9fee6",
+    "url": "https://claude.com/resources/articles/jpmorganchase-expands-claude-code",
+    "canonicalUrl": "https://claude.com/resources/articles/jpmorganchase-expands-claude-code",
+    "title": "JPMorganChase expands Claude Code to more employees",
+    "excerpt": "JPMorganChase is rolling out Claude across the firm, to more employees beyond engineers.",
+    "publishedAt": "2026-11-09T00:00:00.000Z",
+    "sourceId": "claude-blog",
+    "sourceName": "Claude (claude.com articles)",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "listing-meta",
+    "discoveredVia": "https://claude.com/resources/articles",
+    "fetchedAt": "2026-11-10T04:05:14.896Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 3447,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "JPMorganChase is rolling out Claude across the firm, to more employees beyond engineers.",
+        "sourceUrl": "https://claude.com/resources/articles/jpmorganchase-expands-claude-code",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-09T00:00:00.000Z",
+        "checkedAt": "2026-11-10T04:06:18.705Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "• • • • • • • • • • JPMorganChase expands Claude Code to more employees | Claude by Anthropic • • •",
+        "sourceUrl": "https://claude.com/resources/articles/jpmorganchase-expands-claude-code",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-09T00:00:00.000Z",
+        "checkedAt": "2026-11-10T04:06:18.705Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Skip to main content JPMorganChase is rolling out Claude across the firm, to more employees beyond engineers.",
+        "sourceUrl": "https://claude.com/resources/articles/jpmorganchase-expands-claude-code",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-09T00:00:00.000Z",
+        "checkedAt": "2026-11-10T04:06:18.705Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Infrastructure and operations teams use Claude Code (opens in new tab) for monitoring, alerting and root cause analysis.",
+        "sourceUrl": "https://claude.com/resources/articles/jpmorganchase-expands-claude-code",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-09T00:00:00.000Z",
+        "checkedAt": "2026-11-10T04:06:18.705Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Product teams turn requirements directly into engineering backlogs, and other teams use Claude Code for risk and controls assessments and program planning.",
+        "sourceUrl": "https://claude.com/resources/articles/jpmorganchase-expands-claude-code",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-09T00:00:00.000Z",
+        "checkedAt": "2026-11-10T04:06:18.705Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Claude Code is now part of their engineering workflow, and teams are moving faster while putting every change through more rigorous testing before it reaches clients.",
+        "sourceUrl": "https://claude.com/resources/articles/jpmorganchase-expands-claude-code",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-09T00:00:00.000Z",
+        "checkedAt": "2026-11-10T04:06:18.705Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Morgan Asset Management announced a connector that brings 55ip's ActiveTax Technology® into Claude for Financial Advisors (opens in new tab) , putting tax-aware portfolio transition analysis into advisors' daily work.",
+        "sourceUrl": "https://claude.com/resources/articles/jpmorganchase-expands-claude-code",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-09T00:00:00.000Z",
+        "checkedAt": "2026-11-10T04:06:18.705Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Claude Code runs in controlled environments, including Devspace, the firm’s containerized development platform, on its own infrastructure.",
+        "sourceUrl": "https://claude.com/resources/articles/jpmorganchase-expands-claude-code",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-09T00:00:00.000Z",
+        "checkedAt": "2026-11-10T04:06:18.705Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Over the past year, JPMorganChase’s use of Claude has grown from software engineering to cyber defense to tools for financial advisors, and what JPMorganChase asks of us is shaping what we build for other regulated institutions.",
+        "sourceUrl": "https://claude.com/resources/articles/jpmorganchase-expands-claude-code",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-09T00:00:00.000Z",
+        "checkedAt": "2026-11-10T04:06:18.705Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "IDC brings Quanta into Claude and adopts Claude across the company",
+        "sourceUrl": "https://claude.com/resources/articles/jpmorganchase-expands-claude-code",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-09T00:00:00.000Z",
+        "checkedAt": "2026-11-10T04:06:18.705Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "IDC integrated Claude as part of its Quanta platform, and it has rolled Claude out across its own business",
+        "sourceUrl": "https://claude.com/resources/articles/jpmorganchase-expands-claude-code",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-09T00:00:00.000Z",
+        "checkedAt": "2026-11-10T04:06:18.705Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "1 more : Claude Enterprise Claude Enterprise",
+        "sourceUrl": "https://claude.com/resources/articles/jpmorganchase-expands-claude-code",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-09T00:00:00.000Z",
+        "checkedAt": "2026-11-10T04:06:18.705Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "CodeRabbit expanded its Vercel plan through Claude Marketplace, and Power Digital and ThoughtSpot expanded their Snowflake capacity using their existing Anthropic commitment.",
+        "sourceUrl": "https://claude.com/resources/articles/jpmorganchase-expands-claude-code",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-09T00:00:00.000Z",
+        "checkedAt": "2026-11-10T04:06:18.705Z"
+      }
+    ],
+    "pageDate": "2026-11-09T00:00:00.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 2,
+    "signals": [
+      "PRODUCT_LAUNCH"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 PRODUCT_LAUNCH (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

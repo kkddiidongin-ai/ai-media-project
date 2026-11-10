@@ -1,0 +1,117 @@
+{
+  "id": "5196fdd1d71c",
+  "date": "2026-11-10",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Scale customized AI across your team with skills in Google Workspace and Workspace Studio",
+  "depth": null,
+  "suggestedDepth": null,
+  "depthAssessment": {
+    "sufficiency": "INSUFFICIENT",
+    "distinctFacts": 0,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": false,
+      "evidenceQuality": false,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "distinctFacts",
+      "evidenceQuality",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Google",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://workspaceupdates.googleblog.com/2026/11/skills-in-workspace.html",
+      "name": "Google Workspace Updates",
+      "type": "official",
+      "publishedAt": "2026-11-10T00:03:58.641Z"
+    }
+  ],
+  "candidate": {
+    "id": "5196fdd1d71c",
+    "url": "https://workspaceupdates.googleblog.com/2026/11/skills-in-workspace.html",
+    "canonicalUrl": "https://workspaceupdates.googleblog.com/2026/11/skills-in-workspace.html",
+    "title": "Scale customized AI across your team with skills in Google Workspace and Workspace Studio",
+    "excerpt": "Following our initial announcement and recent rollout update , skills in Google Workspace — reusable, custom instructions that guide Gemini to apply your team’s rules, templates, and reference files — are now rolling out across Google Workspace Studio and Workspace apps. Here’s how to get started: C",
+    "publishedAt": "2026-11-10T00:03:58.641Z",
+    "sourceId": "google-workspace-updates",
+    "sourceName": "Google Workspace Updates",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://workspaceupdates.googleblog.com/feeds/posts/default?max-results=500&published-min=2026-01-01T00:00:00Z",
+    "fetchedAt": "2026-11-10T04:05:14.896Z"
+  },
+  "evidence": {
+    "status": "HTTP_429",
+    "chars": 0,
+    "grade": "FAIL",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Following our initial announcement and recent rollout update , skills in Google Workspace — reusable, custom instructions that guide Gemini to apply your team’s rules, templates, and reference files — are now rolling out across Google Workspace Studio and Workspace apps. Here’s how to get started: C",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/11/skills-in-workspace.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-11-10T00:03:58.641Z",
+        "checkedAt": "2026-11-10T04:06:20.327Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 2,
+    "signals": [
+      "PRODUCT_LAUNCH"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "근거 부족 (원문 HTTP_429, 확인 사실 0개) — 발행하지 않음"
+  ],
+  "needsReview": [
+    "source_blocked",
+    "insufficient_evidence"
+  ],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

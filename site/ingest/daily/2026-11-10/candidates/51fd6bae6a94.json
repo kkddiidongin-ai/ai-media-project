@@ -1,0 +1,233 @@
+{
+  "id": "51fd6bae6a94",
+  "date": "2026-11-10",
+  "proposedSlug": "nvidia-nemotron-3-5-super-vl-available",
+  "title": null,
+  "sourceTitle": "NVIDIA Nemotron 3.5 Super VL is now available in Amazon SageMaker JumpStart",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 10,
+    "deepChecks": {
+      "importance": true,
+      "novelty": true,
+      "userImpact": true,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/nvidia-nemotron-3-5-super-vl-is-now-available-in-amazon-sagemaker-jumpstart/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-11-09T20:01:20.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "51fd6bae6a94",
+    "url": "https://aws.amazon.com/blogs/machine-learning/nvidia-nemotron-3-5-super-vl-is-now-available-in-amazon-sagemaker-jumpstart/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/nvidia-nemotron-3-5-super-vl-is-now-available-in-amazon-sagemaker-jumpstart",
+    "title": "NVIDIA Nemotron 3.5 Super VL is now available in Amazon SageMaker JumpStart",
+    "excerpt": "NVIDIA Nemotron 3.5 Super VL, a 120B-parameter multimodal vision-language model, is now available in Amazon SageMaker JumpStart. Deploy the NVFP4 or BF16 variant in a few steps, then run text, image, and video inference for document intelligence, computer-use agents, and multimodal agentic workloads",
+    "publishedAt": "2026-11-09T20:01:20.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-11-10T04:05:14.896Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 13198,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "NVIDIA Nemotron 3.5 Super VL, a 120B-parameter multimodal vision-language model, is now available in Amazon SageMaker JumpStart. Deploy the NVFP4 or BF16 variant in a few steps, then run text, image, and video inference for document intelligence, computer-use agents, and multimodal agentic workloads",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/nvidia-nemotron-3-5-super-vl-is-now-available-in-amazon-sagemaker-jumpstart/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-09T20:01:20.000Z",
+        "checkedAt": "2026-11-09T20:42:15.513Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "NVIDIA Nemotron 3.5 Super VL is now available in Amazon SageMaker JumpStart | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/nvidia-nemotron-3-5-super-vl-is-now-available-in-amazon-sagemaker-jumpstart/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-09T20:01:20.000Z",
+        "checkedAt": "2026-11-09T20:42:15.513Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "NVIDIA Nemotron 3.5 Super VL is now available in Amazon SageMaker JumpStart",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/nvidia-nemotron-3-5-super-vl-is-now-available-in-amazon-sagemaker-jumpstart/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-09T20:01:20.000Z",
+        "checkedAt": "2026-11-09T20:42:15.513Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Today, we’re announcing that NVIDIA Nemotron 3.5 Super VL is available in Amazon SageMaker JumpStart.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/nvidia-nemotron-3-5-super-vl-is-now-available-in-amazon-sagemaker-jumpstart/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-09T20:01:20.000Z",
+        "checkedAt": "2026-11-09T20:42:15.513Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "For the full comparison against other publicly available models and the evaluation settings, see the NVIDIA Nemotron 3.5 Super VL and Lightning Technical Report .",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/nvidia-nemotron-3-5-super-vl-is-now-available-in-amazon-sagemaker-jumpstart/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-09T20:01:20.000Z",
+        "checkedAt": "2026-11-09T20:42:15.513Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "SageMaker JumpStart supports Nemotron 3.5 Super VL on the following validated instance types.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/nvidia-nemotron-3-5-super-vl-is-now-available-in-amazon-sagemaker-jumpstart/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-09T20:01:20.000Z",
+        "checkedAt": "2026-11-09T20:42:15.513Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Deploy Nemotron 3.5 Super VL with SageMaker JumpStart",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/nvidia-nemotron-3-5-super-vl-is-now-available-in-amazon-sagemaker-jumpstart/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-09T20:01:20.000Z",
+        "checkedAt": "2026-11-09T20:42:15.513Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Figure 1: Searching for NVIDIA Nemotron 3.5 Super VL in SageMaker JumpStart",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/nvidia-nemotron-3-5-super-vl-is-now-available-in-amazon-sagemaker-jumpstart/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-09T20:01:20.000Z",
+        "checkedAt": "2026-11-09T20:42:15.513Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Figure 2: NVIDIA Nemotron 3.5 Super VL NVFP4 model card in SageMaker JumpStart",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/nvidia-nemotron-3-5-super-vl-is-now-available-in-amazon-sagemaker-jumpstart/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-09T20:01:20.000Z",
+        "checkedAt": "2026-11-09T20:42:15.513Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Figure 3: NVIDIA Nemotron 3.5 Super VL BF16 model card in SageMaker JumpStart",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/nvidia-nemotron-3-5-super-vl-is-now-available-in-amazon-sagemaker-jumpstart/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-09T20:01:20.000Z",
+        "checkedAt": "2026-11-09T20:42:15.513Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Consider the following recommendations when you run Nemotron 3.5 Super VL on SageMaker JumpStart:",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/nvidia-nemotron-3-5-super-vl-is-now-available-in-amazon-sagemaker-jumpstart/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-09T20:01:20.000Z",
+        "checkedAt": "2026-11-09T20:42:15.513Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "NVIDIA Nemotron 3.5 Super VL brings image, video, and document understanding to SageMaker JumpStart.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/nvidia-nemotron-3-5-super-vl-is-now-available-in-amazon-sagemaker-jumpstart/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-09T20:01:20.000Z",
+        "checkedAt": "2026-11-09T20:42:15.513Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "To learn more, see SageMaker JumpStart pretrained models in the Amazon SageMaker AI Developer Guide and the Nemotron 3.5 Super VL technical report .",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/nvidia-nemotron-3-5-super-vl-is-now-available-in-amazon-sagemaker-jumpstart/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-09T20:01:20.000Z",
+        "checkedAt": "2026-11-09T20:42:15.513Z"
+      }
+    ],
+    "pageDate": "2026-11-09T20:01:20.000Z"
+  },
+  "score": {
+    "importance": 4,
+    "practicalImpact": 2,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "MODEL",
+      "PRODUCT_LAUNCH",
+      "AVAILABILITY"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 12,
+    "total": 12
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 MODEL·PRODUCT_LAUNCH·AVAILABILITY (우선순위 12)",
+    "근거 확인 통과 (확인 사실 10개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "none",
+    "model": null,
+    "status": "skipped",
+    "error": "Shadow Mode — 원고를 만들지 않음",
+    "promptVersion": "draft-v1",
+    "at": "2026-11-10T04:06:21.614Z",
+    "evidenceHash": "9f5b2a263789"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": true,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}
