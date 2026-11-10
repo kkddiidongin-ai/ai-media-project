@@ -1,0 +1,234 @@
+{
+  "id": "45561964eabb",
+  "date": "2026-11-11",
+  "proposedSlug": "working-claude-sheets-whiteboards-interactive-connectors",
+  "title": null,
+  "sourceTitle": "Working with Claude Sheets, Whiteboards, and Interactive Connectors",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Anthropic",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://claude.com/resources/articles/more-ways-to-work-with-claude-sheets-whiteboards-and-interactive-connectors",
+      "name": "Claude (claude.com articles)",
+      "type": "official",
+      "publishedAt": "2026-11-10T00:00:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "45561964eabb",
+    "url": "https://claude.com/resources/articles/more-ways-to-work-with-claude-sheets-whiteboards-and-interactive-connectors",
+    "canonicalUrl": "https://claude.com/resources/articles/more-ways-to-work-with-claude-sheets-whiteboards-and-interactive-connectors",
+    "title": "Working with Claude Sheets, Whiteboards, and Interactive Connectors",
+    "excerpt": "Anthropic introduces Claude Sheets and Claude Whiteboards, and an upgrade to interactive connectors.",
+    "publishedAt": "2026-11-10T00:00:00.000Z",
+    "sourceId": "claude-blog",
+    "sourceName": "Claude (claude.com articles)",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "listing-meta",
+    "discoveredVia": "https://claude.com/resources/articles",
+    "fetchedAt": "2026-11-10T17:42:54.901Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 6979,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Anthropic introduces Claude Sheets and Claude Whiteboards, and an upgrade to interactive connectors.",
+        "sourceUrl": "https://claude.com/resources/articles/more-ways-to-work-with-claude-sheets-whiteboards-and-interactive-connectors",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-10T00:00:00.000Z",
+        "checkedAt": "2026-11-10T17:44:07.638Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "• • • • • • • • • • Working with Claude Sheets, Whiteboards, and Interactive Connectors | Claude by Anthropic • • •",
+        "sourceUrl": "https://claude.com/resources/articles/more-ways-to-work-with-claude-sheets-whiteboards-and-interactive-connectors",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-10T00:00:00.000Z",
+        "checkedAt": "2026-11-10T17:44:07.638Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "We're introducing new artifact types with Claude Sheets, Claude Whiteboards , and Claude Data .",
+        "sourceUrl": "https://claude.com/resources/articles/more-ways-to-work-with-claude-sheets-whiteboards-and-interactive-connectors",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-10T00:00:00.000Z",
+        "checkedAt": "2026-11-10T17:44:07.638Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Claude Marketplace lists more than 9,000 connectors and plugins, including community-built ones.",
+        "sourceUrl": "https://claude.com/resources/articles/more-ways-to-work-with-claude-sheets-whiteboards-and-interactive-connectors",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-10T00:00:00.000Z",
+        "checkedAt": "2026-11-10T17:44:07.638Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "New artifact types (opens in new tab) : • In Claude Sheets, your team and Claude build spreadsheets together, collaboratively organize data, create and edit formulas, and work across multiple tabs.",
+        "sourceUrl": "https://claude.com/resources/articles/more-ways-to-work-with-claude-sheets-whiteboards-and-interactive-connectors",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-10T00:00:00.000Z",
+        "checkedAt": "2026-11-10T17:44:07.638Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Claude Whiteboards is a digital whiteboard that your team can use to lay out and organize ideas together in a meeting, then ask Claude to summarize the findings.",
+        "sourceUrl": "https://claude.com/resources/articles/more-ways-to-work-with-claude-sheets-whiteboards-and-interactive-connectors",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-10T00:00:00.000Z",
+        "checkedAt": "2026-11-10T17:44:07.638Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Coming soon, Claude Meetings will let you add Claude to a call to take notes and update the documents your team is working on during the conversation.",
+        "sourceUrl": "https://claude.com/resources/articles/more-ways-to-work-with-claude-sheets-whiteboards-and-interactive-connectors",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-10T00:00:00.000Z",
+        "checkedAt": "2026-11-10T17:44:07.638Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "We automated that assembly work in Claude and brought it down to under 30 minutes.",
+        "sourceUrl": "https://claude.com/resources/articles/more-ways-to-work-with-claude-sheets-whiteboards-and-interactive-connectors",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-10T00:00:00.000Z",
+        "checkedAt": "2026-11-10T17:44:07.638Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Live dashboards in Claude pull from HubSpot to show what matters for each call and which customers to reach out to next, and follow-up emails are drafted within 30 minutes of a call ending.",
+        "sourceUrl": "https://claude.com/resources/articles/more-ways-to-work-with-claude-sheets-whiteboards-and-interactive-connectors",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-10T00:00:00.000Z",
+        "checkedAt": "2026-11-10T17:44:07.638Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "On Enterprise plans, security teams can see how Claude is being used (opens in new tab) , through audit logs and a Compliance API that works with more than 100 security and compliance tools, including Splunk and CrowdStrike.",
+        "sourceUrl": "https://claude.com/resources/articles/more-ways-to-work-with-claude-sheets-whiteboards-and-interactive-connectors",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-10T00:00:00.000Z",
+        "checkedAt": "2026-11-10T17:44:07.638Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Introducing Claude Whiteboards, Claude Sheets, and Claude Data",
+        "sourceUrl": "https://claude.com/resources/articles/more-ways-to-work-with-claude-sheets-whiteboards-and-interactive-connectors",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-10T00:00:00.000Z",
+        "checkedAt": "2026-11-10T17:44:07.638Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Introducing Claude Fable 5.2 and Claude Mythos 5.2, our new models for the hardest technical challenges.",
+        "sourceUrl": "https://claude.com/resources/articles/more-ways-to-work-with-claude-sheets-whiteboards-and-interactive-connectors",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-10T00:00:00.000Z",
+        "checkedAt": "2026-11-10T17:44:07.638Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "1 more : Claude Platform Claude Platform",
+        "sourceUrl": "https://claude.com/resources/articles/more-ways-to-work-with-claude-sheets-whiteboards-and-interactive-connectors",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-10T00:00:00.000Z",
+        "checkedAt": "2026-11-10T17:44:07.638Z"
+      }
+    ],
+    "pageDate": "2026-11-10T00:00:00.000Z"
+  },
+  "score": {
+    "importance": 3,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 2,
+    "signals": [
+      "MODEL",
+      "PRODUCT_LAUNCH"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 9,
+    "total": 9
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 MODEL·PRODUCT_LAUNCH (우선순위 9)",
+    "근거 확인 통과 (확인 사실 11개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "none",
+    "model": null,
+    "status": "skipped",
+    "error": "Shadow Mode — 원고를 만들지 않음",
+    "promptVersion": "draft-v1",
+    "at": "2026-11-10T17:44:21.553Z",
+    "evidenceHash": "6a3cc121dd21"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": true,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}

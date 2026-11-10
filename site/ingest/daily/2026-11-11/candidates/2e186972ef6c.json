@@ -1,0 +1,234 @@
+{
+  "id": "2e186972ef6c",
+  "date": "2026-11-11",
+  "proposedSlug": "introducing-claude-fable-5-2-aws",
+  "title": null,
+  "sourceTitle": "Introducing Claude Fable 5.2 on AWS",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": true,
+      "novelty": true,
+      "userImpact": true,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-fable-5-2-on-aws/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-11-09T20:04:37.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "2e186972ef6c",
+    "url": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-fable-5-2-on-aws/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-fable-5-2-on-aws",
+    "title": "Introducing Claude Fable 5.2 on AWS",
+    "excerpt": "Claude Fable 5.2 and Claude Mythos 5.2 are now available on Amazon Bedrock and Claude Platform on AWS. Learn what's new in both models, why Fable 5.2 matters for your technical workloads, and how to get started building with it on Amazon Bedrock.",
+    "publishedAt": "2026-11-09T20:04:37.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-11-10T17:42:54.901Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 6777,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Claude Fable 5.2 and Claude Mythos 5.2 are now available on Amazon Bedrock and Claude Platform on AWS. Learn what's new in both models, why Fable 5.2 matters for your technical workloads, and how to get started building with it on Amazon Bedrock.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-fable-5-2-on-aws/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-09T20:04:37.000Z",
+        "checkedAt": "2026-11-10T17:44:04.391Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Introducing Claude Fable 5.2 on AWS | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-fable-5-2-on-aws/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-09T20:04:37.000Z",
+        "checkedAt": "2026-11-10T17:44:04.391Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Today, we are announcing the availability of Claude Fable 5.2 and Claude Mythos 5.2 on Amazon Bedrock and Claude Platform on AWS.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-fable-5-2-on-aws/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-09T20:04:37.000Z",
+        "checkedAt": "2026-11-10T17:44:04.391Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Claude Fable 5.2 is Anthropic’s most capable generally available model for technical work that raises the bar in coding and the sciences.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-fable-5-2-on-aws/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-09T20:04:37.000Z",
+        "checkedAt": "2026-11-10T17:44:04.391Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Claude Mythos 5.2 is available through Anthropic’s verification programs for advanced work in cyber security and life sciences.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-fable-5-2-on-aws/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-09T20:04:37.000Z",
+        "checkedAt": "2026-11-10T17:44:04.391Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "For authorized work in cyber security and life sciences, Claude Mythos 5.2 is available through Anthropic’s verification programs .",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-fable-5-2-on-aws/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-09T20:04:37.000Z",
+        "checkedAt": "2026-11-10T17:44:04.391Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Claude Fable 5.2 and Mythos 5.2 use cases",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-fable-5-2-on-aws/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-09T20:04:37.000Z",
+        "checkedAt": "2026-11-10T17:44:04.391Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "To try Fable 5.2, open the Amazon Bedrock console , choose Test , Playground , and select Fable 5.2 as the model.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-fable-5-2-on-aws/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-09T20:04:37.000Z",
+        "checkedAt": "2026-11-10T17:44:04.391Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Migrating to Claude Fable 5.2 with the claude-api skill in Claude Code",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-fable-5-2-on-aws/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-09T20:04:37.000Z",
+        "checkedAt": "2026-11-10T17:44:04.391Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "For teams already running Claude models on Amazon Bedrock, the claude-api skill in Claude Code helps you upgrade to Fable 5.2.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-fable-5-2-on-aws/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-09T20:04:37.000Z",
+        "checkedAt": "2026-11-10T17:44:04.391Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "“Upgrade me to Claude Fable 5.2” Claude reviews your code and walks through the necessary changes.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-fable-5-2-on-aws/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-09T20:04:37.000Z",
+        "checkedAt": "2026-11-10T17:44:04.391Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Claude Fable 5.2 and Claude Mythos 5.2 are available today on Amazon Bedrock through US Geo CRIS and Global CRIS inference profiles.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-fable-5-2-on-aws/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-09T20:04:37.000Z",
+        "checkedAt": "2026-11-10T17:44:04.391Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Give Claude Fable 5.2 a try in the Amazon Bedrock console , in Claude Platform on AWS , or explore the Getting Started notebook on GitHub.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-claude-fable-5-2-on-aws/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-09T20:04:37.000Z",
+        "checkedAt": "2026-11-10T17:44:04.391Z"
+      }
+    ],
+    "pageDate": "2026-11-09T20:04:37.000Z"
+  },
+  "score": {
+    "importance": 4,
+    "practicalImpact": 3,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "MODEL",
+      "PRODUCT_LAUNCH",
+      "AVAILABILITY",
+      "API_PLATFORM"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 13,
+    "total": 13
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 MODEL·PRODUCT_LAUNCH·AVAILABILITY·API_PLATFORM (우선순위 13)",
+    "근거 확인 통과 (확인 사실 11개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "none",
+    "model": null,
+    "status": "skipped",
+    "error": "Shadow Mode — 원고를 만들지 않음",
+    "promptVersion": "draft-v1",
+    "at": "2026-11-10T17:44:21.553Z",
+    "evidenceHash": "4ba4a587dbf3"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": true,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}

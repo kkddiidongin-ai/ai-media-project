@@ -1,0 +1,221 @@
+{
+  "id": "f84813837de6",
+  "date": "2026-11-11",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Running AV Reasoning Models Within Onboard Compute and Latency Limits",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 9,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "NVIDIA",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://developer.nvidia.com/blog/running-av-reasoning-models-within-onboard-compute-and-latency-limits/",
+      "name": "NVIDIA Technical Blog",
+      "type": "official",
+      "publishedAt": "2026-11-10T16:00:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "f84813837de6",
+    "url": "https://developer.nvidia.com/blog/running-av-reasoning-models-within-onboard-compute-and-latency-limits/",
+    "canonicalUrl": "https://developer.nvidia.com/blog/running-av-reasoning-models-within-onboard-compute-and-latency-limits",
+    "title": "Running AV Reasoning Models Within Onboard Compute and Latency Limits",
+    "excerpt": "Autonomous vehicle (AV) developers need reasoning models that can operate within the compute and latency constraints of an onboard system. Larger models provide...",
+    "publishedAt": "2026-11-10T16:00:00.000Z",
+    "sourceId": "nvidia-developer",
+    "sourceName": "NVIDIA Technical Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://developer.nvidia.com/blog/feed",
+    "fetchedAt": "2026-11-10T17:42:54.901Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 16234,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Autonomous vehicle (AV) developers need reasoning models that can operate within the compute and latency constraints of an onboard system. Larger models provide...",
+        "sourceUrl": "https://developer.nvidia.com/blog/running-av-reasoning-models-within-onboard-compute-and-latency-limits/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-10T16:00:00.000Z",
+        "checkedAt": "2026-11-10T17:44:19.033Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Running AV Reasoning Models Within Onboard Compute and Latency Limits | NVIDIA Technical Blog",
+        "sourceUrl": "https://developer.nvidia.com/blog/running-av-reasoning-models-within-onboard-compute-and-latency-limits/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-10T16:00:00.000Z",
+        "checkedAt": "2026-11-10T17:44:19.033Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Running AV Reasoning Models Within Onboard Compute and Latency Limits",
+        "sourceUrl": "https://developer.nvidia.com/blog/running-av-reasoning-models-within-onboard-compute-and-latency-limits/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-10T16:00:00.000Z",
+        "checkedAt": "2026-11-10T17:44:19.033Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "NVIDIA Alpamayo 2 Edge is a 2B-parameter adaptive reasoning vision-language-action model designed for real-time operation on NVIDIA DRIVE AGX Thor.",
+        "sourceUrl": "https://developer.nvidia.com/blog/running-av-reasoning-models-within-onboard-compute-and-latency-limits/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-10T16:00:00.000Z",
+        "checkedAt": "2026-11-10T17:44:19.033Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Deployment recipes in the Alpamayo Developer Hub enable inference optimization with TensorRT and DFlash2, achieving 160-190 ms pixel-to-trajectory latency on DRIVE AGX Thor.",
+        "sourceUrl": "https://developer.nvidia.com/blog/running-av-reasoning-models-within-onboard-compute-and-latency-limits/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-10T16:00:00.000Z",
+        "checkedAt": "2026-11-10T17:44:19.033Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Autonomous vehicle (AV) developers need reasoning models that can operate within the compute and latency constraints of an onboard system.",
+        "sourceUrl": "https://developer.nvidia.com/blog/running-av-reasoning-models-within-onboard-compute-and-latency-limits/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-10T16:00:00.000Z",
+        "checkedAt": "2026-11-10T17:44:19.033Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "NVIDIA Alpamayo 2 Edge addresses this need with an adaptive reasoning vision-language-action (VLA) model designed for real-time operation on NVIDIA DRIVE AGX Thor .",
+        "sourceUrl": "https://developer.nvidia.com/blog/running-av-reasoning-models-within-onboard-compute-and-latency-limits/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-10T16:00:00.000Z",
+        "checkedAt": "2026-11-10T17:44:19.033Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Built on the 2B Nemotron-based reasoning backbone of NVIDIA Cosmos 3 Edge and paired with a diffusion action expert, it leverages surround-camera observations, temporal context, and navigation inputs to generate Chain-of-Causation (CoC) reasoning and future driving trajectories.",
+        "sourceUrl": "https://developer.nvidia.com/blog/running-av-reasoning-models-within-onboard-compute-and-latency-limits/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-10T16:00:00.000Z",
+        "checkedAt": "2026-11-10T17:44:19.033Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Making a reasoning model compact enough for onboard deployment introduces a key challenge: preserving the quality of its reasoning and driving behavior as model size is reduced.",
+        "sourceUrl": "https://developer.nvidia.com/blog/running-av-reasoning-models-within-onboard-compute-and-latency-limits/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-10T16:00:00.000Z",
+        "checkedAt": "2026-11-10T17:44:19.033Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "A 2B-parameter Nemotron-based reasoning backbone, sized for onboard inference",
+        "sourceUrl": "https://developer.nvidia.com/blog/running-av-reasoning-models-within-onboard-compute-and-latency-limits/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-10T16:00:00.000Z",
+        "checkedAt": "2026-11-10T17:44:19.033Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "“Within days of getting early access to Alpamayo 2 Edge, we had it running closed-loop in NuRec reconstructions of our own London street recordings.",
+        "sourceUrl": "https://developer.nvidia.com/blog/running-av-reasoning-models-within-onboard-compute-and-latency-limits/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-10T16:00:00.000Z",
+        "checkedAt": "2026-11-10T17:44:19.033Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Side-by-side comparison of Alpamayo 2 Edge running in PyTorch and with Embedl optimization, showing differences in planning speed, latency, and reasoning output",
+        "sourceUrl": "https://developer.nvidia.com/blog/running-av-reasoning-models-within-onboard-compute-and-latency-limits/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-10T16:00:00.000Z",
+        "checkedAt": "2026-11-10T17:44:19.033Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "For reference, the resulting optimized model has a pixel-to-trajectory inference latency of 160 ms to 190 ms depending on the amount of reasoning.",
+        "sourceUrl": "https://developer.nvidia.com/blog/running-av-reasoning-models-within-onboard-compute-and-latency-limits/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-10T16:00:00.000Z",
+        "checkedAt": "2026-11-10T17:44:19.033Z"
+      }
+    ],
+    "pageDate": "2026-11-10T16:00:00.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "MODEL_MENTION"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 MODEL_MENTION (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

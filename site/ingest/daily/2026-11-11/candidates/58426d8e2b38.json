@@ -1,0 +1,221 @@
+{
+  "id": "58426d8e2b38",
+  "date": "2026-11-11",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Amazon Bedrock tokenomics data lake",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 12,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-tokenomics-data-lake/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-11-10T16:56:36.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "58426d8e2b38",
+    "url": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-tokenomics-data-lake/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-tokenomics-data-lake",
+    "title": "Amazon Bedrock tokenomics data lake",
+    "excerpt": "Running Amazon Bedrock across many accounts shows you the bill but not what happened inside each call. This post builds a centralized observability data lake that aggregates Bedrock invocation logs from every linked account into one queryable table, so you can see prompts, token counts, model choice",
+    "publishedAt": "2026-11-10T16:56:36.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-11-10T17:42:54.901Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 11226,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Running Amazon Bedrock across many accounts shows you the bill but not what happened inside each call. This post builds a centralized observability data lake that aggregates Bedrock invocation logs from every linked account into one queryable table, so you can see prompts, token counts, model choice",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-tokenomics-data-lake/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-10T16:56:36.000Z",
+        "checkedAt": "2026-11-10T17:44:11.550Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Amazon Bedrock tokenomics data lake | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-tokenomics-data-lake/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-10T16:56:36.000Z",
+        "checkedAt": "2026-11-10T17:44:11.550Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "If you need an observability data lake for your Amazon Bedrock workloads, you’re not alone.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-tokenomics-data-lake/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-10T16:56:36.000Z",
+        "checkedAt": "2026-11-10T17:44:11.550Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "We built something to help: a centralized observability data lake for your Amazon Bedrock invocations.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-tokenomics-data-lake/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-10T16:56:36.000Z",
+        "checkedAt": "2026-11-10T17:44:11.550Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "It delivers a full record of requests and responses to Amazon Simple Storage Service (Amazon S3) or Amazon CloudWatch .",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-tokenomics-data-lake/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-10T16:56:36.000Z",
+        "checkedAt": "2026-11-10T17:44:11.550Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "What is the Amazon Bedrock observability data lake?",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-tokenomics-data-lake/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-10T16:56:36.000Z",
+        "checkedAt": "2026-11-10T17:44:11.550Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "A centralized Amazon Bedrock invocation log data lake pulls raw model invocation logs from your linked accounts into Amazon CloudWatch .",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-tokenomics-data-lake/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-10T16:56:36.000Z",
+        "checkedAt": "2026-11-10T17:44:11.550Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "The central account processes the data through Amazon Data Firehose , and exposes them through Amazon Athena as one clean table you can query across your organization.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-tokenomics-data-lake/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-10T16:56:36.000Z",
+        "checkedAt": "2026-11-10T17:44:11.550Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Figure 1: Amazon Bedrock invocation observability data lake architecture across a central account and linked accounts",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-tokenomics-data-lake/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-10T16:56:36.000Z",
+        "checkedAt": "2026-11-10T17:44:11.550Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "How is the Amazon Bedrock data lake designed?",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-tokenomics-data-lake/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-10T16:56:36.000Z",
+        "checkedAt": "2026-11-10T17:44:11.550Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "The data lake moves each invocation through five stages, from the moment Amazon Bedrock writes a log to the point you can query it in Athena.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-tokenomics-data-lake/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-10T16:56:36.000Z",
+        "checkedAt": "2026-11-10T17:44:11.550Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Amazon Data Firehose buffers the records and writes them to an Amazon S3 bucket, converting from JSON to Parquet on the way through.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-tokenomics-data-lake/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-10T16:56:36.000Z",
+        "checkedAt": "2026-11-10T17:44:11.550Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Run a test invocation in a source account, wait for Amazon Data Firehose to flush its buffer ( roughly a minute, sometimes longer ), then confirm Parquet objects have appeared under the data lake’s data/ prefix.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-tokenomics-data-lake/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-10T16:56:36.000Z",
+        "checkedAt": "2026-11-10T17:44:11.550Z"
+      }
+    ],
+    "pageDate": "2026-11-10T16:56:36.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "API_PLATFORM"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 API_PLATFORM (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

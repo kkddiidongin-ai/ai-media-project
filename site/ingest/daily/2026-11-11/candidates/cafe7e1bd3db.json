@@ -1,0 +1,221 @@
+{
+  "id": "cafe7e1bd3db",
+  "date": "2026-11-11",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Pluggable Agentic AI Framework: A seven-layer composable enterprise agentic AI reference architecture on Amazon Bedrock AgentCore",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/pluggable-agentic-ai-framework-a-seven-layer-composable-enterprise-agentic-ai-reference-architecture-on-amazon-bedrock-agentcore/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-11-09T19:05:54.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "cafe7e1bd3db",
+    "url": "https://aws.amazon.com/blogs/machine-learning/pluggable-agentic-ai-framework-a-seven-layer-composable-enterprise-agentic-ai-reference-architecture-on-amazon-bedrock-agentcore/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/pluggable-agentic-ai-framework-a-seven-layer-composable-enterprise-agentic-ai-reference-architecture-on-amazon-bedrock-agentcore",
+    "title": "Pluggable Agentic AI Framework: A seven-layer composable enterprise agentic AI reference architecture on Amazon Bedrock AgentCore",
+    "excerpt": "A seven-layer composable reference architecture for taking enterprise agentic AI from prototype to production on Amazon Bedrock AgentCore. Each layer has a stable contract, so you can swap technologies at any layer without redesigning the rest of the stack.",
+    "publishedAt": "2026-11-09T19:05:54.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-11-10T17:42:54.901Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 11000,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "A seven-layer composable reference architecture for taking enterprise agentic AI from prototype to production on Amazon Bedrock AgentCore. Each layer has a stable contract, so you can swap technologies at any layer without redesigning the rest of the stack.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/pluggable-agentic-ai-framework-a-seven-layer-composable-enterprise-agentic-ai-reference-architecture-on-amazon-bedrock-agentcore/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-09T19:05:54.000Z",
+        "checkedAt": "2026-11-10T17:44:12.833Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Pluggable Agentic AI Framework: A seven-layer composable enterprise agentic AI reference architecture on Amazon Bedrock AgentCore | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/pluggable-agentic-ai-framework-a-seven-layer-composable-enterprise-agentic-ai-reference-architecture-on-amazon-bedrock-agentcore/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-09T19:05:54.000Z",
+        "checkedAt": "2026-11-10T17:44:12.833Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Pluggable Agentic AI Framework: A seven-layer composable enterprise agentic AI reference architecture on Amazon Bedrock AgentCore",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/pluggable-agentic-ai-framework-a-seven-layer-composable-enterprise-agentic-ai-reference-architecture-on-amazon-bedrock-agentcore/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-09T19:05:54.000Z",
+        "checkedAt": "2026-11-10T17:44:12.833Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "This post walks through a seven-layer composable reference architecture designed to take multi-agent AI applications from prototype to production scale.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/pluggable-agentic-ai-framework-a-seven-layer-composable-enterprise-agentic-ai-reference-architecture-on-amazon-bedrock-agentcore/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-09T19:05:54.000Z",
+        "checkedAt": "2026-11-10T17:44:12.833Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "The Pluggable Agentic AI Framework is a reference architecture for multi-agent applications organized into seven layers , each with a distinct responsibility and a stable contract.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/pluggable-agentic-ai-framework-a-seven-layer-composable-enterprise-agentic-ai-reference-architecture-on-amazon-bedrock-agentcore/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-09T19:05:54.000Z",
+        "checkedAt": "2026-11-10T17:44:12.833Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Figure 1: The seven layers of the Pluggable Agentic AI Framework",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/pluggable-agentic-ai-framework-a-seven-layer-composable-enterprise-agentic-ai-reference-architecture-on-amazon-bedrock-agentcore/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-09T19:05:54.000Z",
+        "checkedAt": "2026-11-10T17:44:12.833Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Amazon Bedrock Knowledge Base , Vector Engine for Amazon OpenSearch Serverless , Amazon S3 Vectors and Amazon DynamoDB are example building blocks for this foundation.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/pluggable-agentic-ai-framework-a-seven-layer-composable-enterprise-agentic-ai-reference-architecture-on-amazon-bedrock-agentcore/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-09T19:05:54.000Z",
+        "checkedAt": "2026-11-10T17:44:12.833Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Consider using Strands Agents for specialists, Amazon Bedrock AgentCore harness for the orchestrator, AWS Agent Registry and Amazon Bedrock AgentCore Gateway for centralized discovery and routing.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/pluggable-agentic-ai-framework-a-seven-layer-composable-enterprise-agentic-ai-reference-architecture-on-amazon-bedrock-agentcore/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-09T19:05:54.000Z",
+        "checkedAt": "2026-11-10T17:44:12.833Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Authenticate every request, whether it comes from a user, another agent, or an automated workflow, through a service like Amazon Bedrock AgentCore Identity .",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/pluggable-agentic-ai-framework-a-seven-layer-composable-enterprise-agentic-ai-reference-architecture-on-amazon-bedrock-agentcore/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-09T19:05:54.000Z",
+        "checkedAt": "2026-11-10T17:44:12.833Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Consider using Amazon Bedrock Guardrails for user inputs, Amazon Bedrock AgentCore Identity and Policy in Amazon Bedrock AgentCore for authentication and access control, along with AWS Security and governance controls to bring defense-in-depth security.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/pluggable-agentic-ai-framework-a-seven-layer-composable-enterprise-agentic-ai-reference-architecture-on-amazon-bedrock-agentcore/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-09T19:05:54.000Z",
+        "checkedAt": "2026-11-10T17:44:12.833Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Consider using Amazon Bedrock AgentCore Evaluations for scoring and Amazon Bedrock AgentCore optimization for continuous performance tuning.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/pluggable-agentic-ai-framework-a-seven-layer-composable-enterprise-agentic-ai-reference-architecture-on-amazon-bedrock-agentcore/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-09T19:05:54.000Z",
+        "checkedAt": "2026-11-10T17:44:12.833Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Figure 2: Functional flow of the retail customer support reference implementation",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/pluggable-agentic-ai-framework-a-seven-layer-composable-enterprise-agentic-ai-reference-architecture-on-amazon-bedrock-agentcore/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-09T19:05:54.000Z",
+        "checkedAt": "2026-11-10T17:44:12.833Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "The Pluggable Agentic AI Framework brings those concerns into an architecture with a clear principle: build a stable foundation without locking every technology choice in place.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/pluggable-agentic-ai-framework-a-seven-layer-composable-enterprise-agentic-ai-reference-architecture-on-amazon-bedrock-agentcore/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-09T19:05:54.000Z",
+        "checkedAt": "2026-11-10T17:44:12.833Z"
+      }
+    ],
+    "pageDate": "2026-11-09T19:05:54.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "API_PLATFORM"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 API_PLATFORM (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}
