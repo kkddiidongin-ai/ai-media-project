@@ -1,7 +1,7 @@
 {
   "date": "2026-11-10",
   "mode": "shadow",
-  "startedAt": "2026-11-09T20:41:10.855Z",
+  "startedAt": "2026-11-10T04:05:14.895Z",
   "status": "INCOMPLETE",
   "limits": {
     "windowDays": 3,
@@ -33,11 +33,11 @@
         "redirected": false,
         "finalUrl": null
       },
-      "parsed": 1370,
-      "matched": 1370,
-      "found": 1370,
-      "inWindow": 2,
-      "kept": 2,
+      "parsed": 1372,
+      "matched": 1372,
+      "found": 1372,
+      "inWindow": 4,
+      "kept": 4,
       "since": "2026-11-07",
       "coverage": {
         "complete": true
@@ -59,7 +59,7 @@
         "redirected": false,
         "finalUrl": null
       },
-      "parsed": 586,
+      "parsed": 588,
       "matched": 279,
       "found": 8,
       "inWindow": 0,
@@ -139,28 +139,29 @@
       "id": "claude-blog",
       "name": "Claude (claude.com articles)",
       "status": "success",
-      "requests": 1,
+      "requests": 2,
       "http": {
         "status": 200,
         "redirected": false,
         "finalUrl": null
       },
       "parsed": 292,
-      "matched": 11,
-      "found": 0,
-      "inWindow": 0,
-      "kept": 0,
+      "matched": 7,
+      "found": 1,
+      "inWindow": 1,
+      "kept": 1,
       "since": "2026-11-07",
       "coverage": {
-        "complete": true
+        "complete": false,
+        "reason": "피드의 가장 오래된 항목(2026-11-09)이 시작일(2026-11-07)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음",
+        "oldest": "2026-11-09"
       },
       "undated": 0,
       "health": "OK",
       "healthReasons": [],
-      "healthNote": "NO_NEW",
       "lastOkDate": "2026-11-10",
-      "lastItemDate": "2026-11-06",
-      "zeroStreak": 4
+      "lastItemDate": "2026-11-10",
+      "zeroStreak": 0
     },
     {
       "id": "google-deepmind",
@@ -388,8 +389,8 @@
       "parsed": 20,
       "matched": 20,
       "found": 20,
-      "inWindow": 6,
-      "kept": 6,
+      "inWindow": 7,
+      "kept": 7,
       "since": "2026-11-07",
       "coverage": {
         "complete": true
@@ -442,8 +443,8 @@
       "parsed": 10,
       "matched": 10,
       "found": 10,
-      "inWindow": 1,
-      "kept": 1,
+      "inWindow": 2,
+      "kept": 2,
       "since": "2026-11-07",
       "coverage": {
         "complete": true
@@ -468,8 +469,8 @@
       "parsed": 150,
       "matched": 150,
       "found": 150,
-      "inWindow": 0,
-      "kept": 0,
+      "inWindow": 2,
+      "kept": 2,
       "since": "2026-11-07",
       "coverage": {
         "complete": true
@@ -477,10 +478,9 @@
       "undated": 0,
       "health": "OK",
       "healthReasons": [],
-      "healthNote": "NO_NEW",
       "lastOkDate": "2026-11-10",
-      "lastItemDate": "2026-11-09",
-      "zeroStreak": 1
+      "lastItemDate": "2026-11-10",
+      "zeroStreak": 0
     },
     {
       "id": "microsoft-365",
@@ -916,8 +916,8 @@
       "since": "2026-11-07",
       "coverage": {
         "complete": false,
-        "reason": "피드의 가장 오래된 항목(2026-11-07)이 시작일(2026-11-07)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음",
-        "oldest": "2026-11-07"
+        "reason": "피드의 가장 오래된 항목(2026-11-09)이 시작일(2026-11-07)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음",
+        "oldest": "2026-11-09"
       },
       "undated": 0,
       "health": "OK",
@@ -939,13 +939,13 @@
       "parsed": 30,
       "matched": 30,
       "found": 30,
-      "inWindow": 12,
-      "kept": 12,
+      "inWindow": 15,
+      "kept": 15,
       "since": "2026-11-07",
       "coverage": {
         "complete": false,
-        "reason": "피드의 가장 오래된 항목(2026-11-09)이 시작일(2026-11-07)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음",
-        "oldest": "2026-11-09"
+        "reason": "피드의 가장 오래된 항목(2026-11-10)이 시작일(2026-11-07)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음",
+        "oldest": "2026-11-10"
       },
       "undated": 0,
       "health": "OK",
@@ -967,8 +967,8 @@
       "parsed": 30,
       "matched": 30,
       "found": 30,
-      "inWindow": 11,
-      "kept": 11,
+      "inWindow": 12,
+      "kept": 12,
       "since": "2026-11-07",
       "coverage": {
         "complete": false,
@@ -1019,17 +1019,17 @@
     "SKIPPED": 9
   },
   "counts": {
-    "collected": 492,
+    "collected": 503,
     "carriedFromQueue": 25,
-    "NEW": 517,
+    "NEW": 528,
     "UPDATE_EXISTING": 0,
     "DUPLICATE": 0,
     "UNCERTAIN": 0,
     "PUBLISH": 10,
-    "HOLD": 303,
-    "EXCLUDE": 204,
-    "shortlisted": 18,
-    "evidenceChecked": 18,
+    "HOLD": 307,
+    "EXCLUDE": 211,
+    "shortlisted": 23,
+    "evidenceChecked": 23,
     "drafts": 0,
     "draftQa": {
       "PASS": 0,
@@ -1071,19 +1071,24 @@
     },
     "resolvedFromQueue": 0,
     "processed": {
-      "evidenceFetches": 18,
+      "evidenceFetches": 7,
       "drafted": 0
     },
     "coverageGaps": [
       {
+        "id": "claude-blog",
+        "name": "Claude (claude.com articles)",
+        "reason": "피드의 가장 오래된 항목(2026-11-09)이 시작일(2026-11-07)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음"
+      },
+      {
         "id": "aitimes",
         "name": "AI타임스",
-        "reason": "피드의 가장 오래된 항목(2026-11-07)이 시작일(2026-11-07)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음"
+        "reason": "피드의 가장 오래된 항목(2026-11-09)이 시작일(2026-11-07)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음"
       },
       {
         "id": "zdnet-korea",
         "name": "지디넷코리아",
-        "reason": "피드의 가장 오래된 항목(2026-11-09)이 시작일(2026-11-07)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음"
+        "reason": "피드의 가장 오래된 항목(2026-11-10)이 시작일(2026-11-07)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음"
       },
       {
         "id": "etnews",
@@ -1142,6 +1147,67 @@
       "suggestedDepth": null
     },
     {
+      "id": "f37b680abcf7",
+      "title": "Control Room: A central system to track and stop model workloads across our research infrastructure",
+      "source": "OpenAI",
+      "publishedAt": "2026-11-09T13:00:00.000Z",
+      "url": "https://openai.com/index/control-room",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "근거 부족 (원문 HTTP_403, 확인 사실 0개) — 발행하지 않음"
+      ],
+      "score": 6,
+      "importance": 2,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "SECURITY_MENTION",
+        "INFRA"
+      ],
+      "company": "OpenAI",
+      "stage": "evidence",
+      "evidenceStatus": "HTTP_403",
+      "distinctFacts": 0,
+      "sufficiency": "INSUFFICIENT",
+      "deepMissing": [
+        "importance",
+        "userImpact",
+        "distinctFacts",
+        "evidenceQuality",
+        "standardWouldOmit"
+      ],
+      "alternate": {
+        "tried": [
+          "https://platform.openai.com/docs/changelog"
+        ],
+        "matched": 0,
+        "reason": "제목에 버전 붙은 이름 없음"
+      },
+      "suggestedDepth": null
+    },
+    {
+      "id": "23b94c697622",
+      "title": "CodeRabbit scales agentic software development and ships 20x more",
+      "source": "OpenAI",
+      "publishedAt": "2026-11-09T08:00:00.000Z",
+      "url": "https://openai.com/index/coderabbit-codex-daybreak",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "글 유형 CUSTOMER_STORY — 강한 사건 신호 없음"
+      ],
+      "score": -1,
+      "importance": 0,
+      "contentType": "CUSTOMER_STORY",
+      "typePenalty": -3,
+      "signals": [],
+      "company": "OpenAI",
+      "stage": "metadata"
+    },
+    {
       "id": "932fe34bad72",
       "title": "Kuken Industries searches 70 years of drawings in minutes",
       "source": "OpenAI",
@@ -1151,7 +1217,7 @@
       "matchSlug": null,
       "decision": "HOLD",
       "reasons": [
-        "근거 부족 (원문 HTTP_403, 확인 사실 0개) — 발행하지 않음"
+        "근거 부족 (원문 SKIPPED_HOST_BLOCKED, 확인 사실 0개) — 발행하지 않음"
       ],
       "score": 5,
       "importance": 1,
@@ -1162,7 +1228,7 @@
       ],
       "company": "OpenAI",
       "stage": "evidence",
-      "evidenceStatus": "HTTP_403",
+      "evidenceStatus": "SKIPPED_HOST_BLOCKED",
       "distinctFacts": 0,
       "sufficiency": "INSUFFICIENT",
       "deepMissing": [
@@ -1181,6 +1247,39 @@
         "reason": "제목에 버전 붙은 이름 없음"
       },
       "suggestedDepth": null
+    },
+    {
+      "id": "418fd0c9fee6",
+      "title": "JPMorganChase expands Claude Code to more employees",
+      "source": "Claude (claude.com articles)",
+      "publishedAt": "2026-11-09T00:00:00.000Z",
+      "url": "https://claude.com/resources/articles/jpmorganchase-expands-claude-code",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "사건 신호 PRODUCT_LAUNCH (우선순위 5)",
+        "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+      ],
+      "score": 5,
+      "importance": 1,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "PRODUCT_LAUNCH"
+      ],
+      "company": "Anthropic",
+      "stage": "evidence",
+      "evidenceStatus": "OK",
+      "distinctFacts": 12,
+      "sufficiency": "SUFFICIENT_STANDARD",
+      "deepMissing": [
+        "importance",
+        "userImpact",
+        "contextNeed",
+        "standardWouldOmit"
+      ],
+      "suggestedDepth": "STANDARD"
     },
     {
       "id": "ed213adeba37",
@@ -1511,6 +1610,26 @@
       "stage": "metadata"
     },
     {
+      "id": "831bd9db6c4f",
+      "title": "How skills and agents work in AWS Quick",
+      "source": "AWS Machine Learning Blog",
+      "publishedAt": "2026-11-10T00:21:34.000Z",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-skills-and-agents-work-in-aws-quick/",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+      ],
+      "score": 2,
+      "importance": 0,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [],
+      "company": "Amazon",
+      "stage": "metadata"
+    },
+    {
       "id": "0eb7f2999aa2",
       "title": "Single-shot and agentic retrieval with Amazon Bedrock Managed Knowledge Base",
       "source": "AWS Machine Learning Blog",
@@ -1712,6 +1831,39 @@
       "suggestedDepth": "STANDARD"
     },
     {
+      "id": "773234e7b2ac",
+      "title": "Claude Fable 5.2 in GitHub Copilot",
+      "source": "GitHub Changelog",
+      "publishedAt": "2026-11-09T16:46:43.000Z",
+      "url": "https://github.blog/changelog/2026-11-09-claude-fable-5-2-in-github-copilot",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "사건 신호 AVAILABILITY (우선순위 5)",
+        "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+      ],
+      "score": 5,
+      "importance": 1,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "AVAILABILITY"
+      ],
+      "company": "GitHub",
+      "stage": "evidence",
+      "evidenceStatus": "OK",
+      "distinctFacts": 12,
+      "sufficiency": "SUFFICIENT_STANDARD",
+      "deepMissing": [
+        "importance",
+        "userImpact",
+        "contextNeed",
+        "standardWouldOmit"
+      ],
+      "suggestedDepth": "STANDARD"
+    },
+    {
       "id": "d28d7745dd02",
       "title": "Copilot code review: API management and review overview updates",
       "source": "GitHub Changelog",
@@ -1744,6 +1896,73 @@
       ],
       "suggestedDepth": "STANDARD",
       "draftPending": true
+    },
+    {
+      "id": "5196fdd1d71c",
+      "title": "Scale customized AI across your team with skills in Google Workspace and Workspace Studio",
+      "source": "Google Workspace Updates",
+      "publishedAt": "2026-11-10T00:03:58.641Z",
+      "url": "https://workspaceupdates.googleblog.com/2026/11/skills-in-workspace.html",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "근거 부족 (원문 HTTP_429, 확인 사실 0개) — 발행하지 않음"
+      ],
+      "score": 5,
+      "importance": 1,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "PRODUCT_LAUNCH"
+      ],
+      "company": "Google",
+      "stage": "evidence",
+      "evidenceStatus": "HTTP_429",
+      "distinctFacts": 0,
+      "sufficiency": "INSUFFICIENT",
+      "deepMissing": [
+        "importance",
+        "userImpact",
+        "contextNeed",
+        "distinctFacts",
+        "evidenceQuality",
+        "standardWouldOmit"
+      ],
+      "suggestedDepth": null
+    },
+    {
+      "id": "bd01abb33c15",
+      "title": "Quickly confirm system-applied classification labels in Google Drive, Docs, Sheets, and Slides",
+      "source": "Google Workspace Updates",
+      "publishedAt": "2026-11-09T21:44:48.650Z",
+      "url": "https://workspaceupdates.googleblog.com/2026/11/quickly-confirm-system-applied-classification-labels-in-Google-Drive-Docs-Sheets-and-Slides.html",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "사건 신호 CONSUMER (우선순위 5)",
+        "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+      ],
+      "score": 5,
+      "importance": 1,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "CONSUMER"
+      ],
+      "company": "Google",
+      "stage": "evidence",
+      "evidenceStatus": "OK",
+      "distinctFacts": 10,
+      "sufficiency": "SUFFICIENT_STANDARD",
+      "deepMissing": [
+        "importance",
+        "userImpact",
+        "contextNeed",
+        "standardWouldOmit"
+      ],
+      "suggestedDepth": "STANDARD"
     },
     {
       "id": "5e5a52dee6ef",
@@ -1798,6 +2017,374 @@
       "stage": "metadata"
     },
     {
+      "id": "a33ad0e742af",
+      "title": "미 의회, AI 데이터센터 건설 촉진법 심의…민주당 내부 반발",
+      "source": "AI타임스",
+      "publishedAt": "2026-11-10T12:16:17.000Z",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217210",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 REGULATION·INFRA)"
+      ],
+      "score": 8,
+      "importance": 3,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "REGULATION",
+        "INFRA"
+      ],
+      "company": "AI타임스",
+      "stage": "metadata"
+    },
+    {
+      "id": "673affba5e2a",
+      "title": "트럼프 \"FBI, 젠슨 황 사건 조사 중\"…주요 AI 행사도 잇달아 불참",
+      "source": "AI타임스",
+      "publishedAt": "2026-11-10T11:40:29.000Z",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217203",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+      ],
+      "score": 2,
+      "importance": 0,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [],
+      "company": "AI타임스",
+      "stage": "metadata"
+    },
+    {
+      "id": "cecd4ea6ed32",
+      "title": "엔비디아·젠슨 황, 주주 집단소송 직면…스파이 의혹 관련 '허위 설명' 쟁점",
+      "source": "AI타임스",
+      "publishedAt": "2026-11-10T11:34:38.000Z",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217206",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)"
+      ],
+      "score": 5,
+      "importance": 1,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "PRODUCT_LAUNCH"
+      ],
+      "company": "AI타임스",
+      "stage": "metadata"
+    },
+    {
+      "id": "a6db0a5aedf2",
+      "title": "딥엑스, 초저전력 AI 반도체 'DX-M2' 설계 완료...내년 하반기 양산 채비",
+      "source": "AI타임스",
+      "publishedAt": "2026-11-10T11:24:59.000Z",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217204",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 INFRA)"
+      ],
+      "score": 4,
+      "importance": 1,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "INFRA"
+      ],
+      "company": "AI타임스",
+      "stage": "metadata"
+    },
+    {
+      "id": "d3af7039d38a",
+      "title": "어업 계절근로자 보험 의무화 첫해…정부, 고용 어가 160곳 점검",
+      "source": "AI타임스",
+      "publishedAt": "2026-11-10T11:21:53.000Z",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217201",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 REGULATION)"
+      ],
+      "score": 6,
+      "importance": 2,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "REGULATION"
+      ],
+      "company": "AI타임스",
+      "stage": "metadata"
+    },
+    {
+      "id": "927558a5672e",
+      "title": "전남 직업계고 취업 증가분 88.5% 타지역에서…광주는 관내 취업 늘어",
+      "source": "AI타임스",
+      "publishedAt": "2026-11-10T11:20:40.000Z",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217200",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+      ],
+      "score": 2,
+      "importance": 0,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [],
+      "company": "AI타임스",
+      "stage": "metadata"
+    },
+    {
+      "id": "a1c39eba08ff",
+      "title": "북미 태양광 PPA 제시가격 4.9% 상승…미국 12월 관세 선반영",
+      "source": "AI타임스",
+      "publishedAt": "2026-11-10T11:20:00.000Z",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217152",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRICING·REGULATION)"
+      ],
+      "score": 9,
+      "importance": 3,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "PRICING",
+        "REGULATION"
+      ],
+      "company": "AI타임스",
+      "stage": "metadata"
+    },
+    {
+      "id": "fa8223cd626e",
+      "title": "정부, 보리 2만5000톤 특별매입 협의…내년엔 계약재배로 생산 조절",
+      "source": "AI타임스",
+      "publishedAt": "2026-11-10T11:18:44.000Z",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217198",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRICING·REGULATION)"
+      ],
+      "score": 9,
+      "importance": 3,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "PRICING",
+        "REGULATION"
+      ],
+      "company": "AI타임스",
+      "stage": "metadata"
+    },
+    {
+      "id": "af1e5cb785ae",
+      "title": "덴컴, 서부장애인치과병원에 AI 진료기록 시스템 공급…정식 운영",
+      "source": "AI타임스",
+      "publishedAt": "2026-11-10T11:13:43.000Z",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217208",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+      ],
+      "score": 2,
+      "importance": 0,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [],
+      "company": "AI타임스",
+      "stage": "metadata"
+    },
+    {
+      "id": "c0d7aac2680b",
+      "title": "튀르키예, 2040년 태양광·풍력 175GW 목표…현재의 4배",
+      "source": "AI타임스",
+      "publishedAt": "2026-11-10T11:05:00.000Z",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217168",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+      ],
+      "score": 2,
+      "importance": 0,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [],
+      "company": "AI타임스",
+      "stage": "metadata"
+    },
+    {
+      "id": "5cca649e270c",
+      "title": "도쿄 고층빌딩, 태양광으로 수소 생산·저장…2027년 설비 도입",
+      "source": "AI타임스",
+      "publishedAt": "2026-11-10T10:08:00.000Z",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217154",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+      ],
+      "score": 2,
+      "importance": 0,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [],
+      "company": "AI타임스",
+      "stage": "metadata"
+    },
+    {
+      "id": "cdcfd2b378cf",
+      "title": "[기고] AI가 정확할수록 불량이 쌓인다? 제조업이 놓친 '치명적 오류'",
+      "source": "AI타임스",
+      "publishedAt": "2026-11-10T09:05:00.000Z",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217191",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+      ],
+      "score": 2,
+      "importance": 0,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [],
+      "company": "AI타임스",
+      "stage": "metadata"
+    },
+    {
+      "id": "62da1142d973",
+      "title": "아리아스튜디오, CES 2027 혁신상 수상…관객 참여형 AI 영화 기술 인정",
+      "source": "AI타임스",
+      "publishedAt": "2026-11-10T09:00:00.000Z",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217192",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+      ],
+      "score": 2,
+      "importance": 0,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [],
+      "company": "AI타임스",
+      "stage": "metadata"
+    },
+    {
+      "id": "c44f10dd2afb",
+      "title": "[AI리더의 서가] 팀을 위한 클로드 코드 완벽가이드",
+      "source": "AI타임스",
+      "publishedAt": "2026-11-10T09:00:00.000Z",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217030",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)"
+      ],
+      "score": 5,
+      "importance": 1,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "PRODUCT_LAUNCH"
+      ],
+      "company": "AI타임스",
+      "stage": "metadata"
+    },
+    {
+      "id": "07dd3bcb1d80",
+      "title": "[11월9일] 중국 AI, 미국 모델 따라잡았다지만…오픈AI·앤트로픽엔 미공개 모델 있다",
+      "source": "AI타임스",
+      "publishedAt": "2026-11-10T07:00:00.000Z",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217162",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·MODEL_MENTION)"
+      ],
+      "score": 7,
+      "importance": 2,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "PRODUCT_LAUNCH",
+        "MODEL_MENTION"
+      ],
+      "company": "AI타임스",
+      "stage": "metadata"
+    },
+    {
+      "id": "68777bba6588",
+      "title": "앤트로픽 '페이블 5.2', AI 성능 평가 1위 탈환…API 가격도 20% 인하",
+      "source": "AI타임스",
+      "publishedAt": "2026-11-10T06:34:13.000Z",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217196",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 API_PLATFORM·PRODUCT_LAUNCH·PRICING)"
+      ],
+      "score": 11,
+      "importance": 3,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "API_PLATFORM",
+        "PRODUCT_LAUNCH",
+        "PRICING"
+      ],
+      "company": "AI타임스",
+      "stage": "metadata"
+    },
+    {
+      "id": "1c4ae6954ae1",
+      "title": "미 의회, 젠슨 황 조사 압박…중국 AI 칩 거래·정부 책임도 겨냥",
+      "source": "AI타임스",
+      "publishedAt": "2026-11-10T05:55:06.000Z",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217195",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·REGULATION·INFRA)"
+      ],
+      "score": 11,
+      "importance": 4,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "PRODUCT_LAUNCH",
+        "REGULATION",
+        "INFRA"
+      ],
+      "company": "AI타임스",
+      "stage": "metadata"
+    },
+    {
       "id": "143f14d1f46f",
       "title": "엔비디아 주가 장중 8.8% 급락…주요 투자자들은 젠슨 황 잔류 지지",
       "source": "AI타임스",
@@ -1821,7 +2408,7 @@
     },
     {
       "id": "031939ea896d",
-      "title": "\"젠슨 황 후계자 없다\"…엔비디아 자녀들 영향력 확대에 승계 논란",
+      "title": "\"젠슨 황 후계자 없다\"…자녀들 영향력 확대에 승계 논란",
       "source": "AI타임스",
       "publishedAt": "2026-11-10T05:33:32.000Z",
       "url": "https://www.aitimes.com/news/articleView.html?idxno=217193",
@@ -2538,56 +3125,11 @@
       "stage": "metadata"
     },
     {
-      "id": "eeaa5312bd50",
-      "title": "과학자들은 AI를 어떻게 쓸까…앤트로픽 \"데이터 분석 1위, 가설 생성 4%\"",
-      "source": "AI타임스",
-      "publishedAt": "2026-11-08T18:14:24.000Z",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217147",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)"
-      ],
-      "score": 5,
-      "importance": 1,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "PRODUCT_LAUNCH"
-      ],
-      "company": "AI타임스",
-      "stage": "metadata"
-    },
-    {
-      "id": "1f64c6de568d",
-      "title": "앤트그룹, '링 3.2 플래시' 공개…시각 이해 평가서 클로드 오퍼스 5 앞서",
-      "source": "AI타임스",
-      "publishedAt": "2026-11-08T16:59:00.000Z",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217146",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·MODEL_MENTION)"
-      ],
-      "score": 7,
-      "importance": 2,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "PRODUCT_LAUNCH",
-        "MODEL_MENTION"
-      ],
-      "company": "AI타임스",
-      "stage": "metadata"
-    },
-    {
-      "id": "8ed697115218",
-      "title": "앤트로픽, 40년 미스터리 단백질 연구 돌파구…3D 구조 첫 규명",
-      "source": "AI타임스",
-      "publishedAt": "2026-11-08T12:08:58.000Z",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217145",
+      "id": "cd51564ae9eb",
+      "title": "\"日 아사히도 택했다\"…시스코, 기업 네트워크 혁신으로 AI 주도권 노려",
+      "source": "지디넷코리아",
+      "publishedAt": "2026-11-10T02:55:35.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261110115359",
       "duplicate": "NEW",
       "matchSlug": null,
       "decision": "EXCLUDE",
@@ -2599,15 +3141,143 @@
       "contentType": "NEWS",
       "typePenalty": 0,
       "signals": [],
-      "company": "AI타임스",
+      "company": "지디넷코리아",
       "stage": "metadata"
     },
     {
-      "id": "e62eca4cc321",
-      "title": "AWS, 여러 AI 에이전트 지휘하는 '키로 봇' 출시",
-      "source": "AI타임스",
-      "publishedAt": "2026-11-08T11:48:25.000Z",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217141",
+      "id": "f09940a3cf11",
+      "title": "국방 AI 힘주는 기업들…군 인재 확보 속도전",
+      "source": "지디넷코리아",
+      "publishedAt": "2026-11-10T02:53:06.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261110113136",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+      ],
+      "score": 2,
+      "importance": 0,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [],
+      "company": "지디넷코리아",
+      "stage": "metadata"
+    },
+    {
+      "id": "bd7228334094",
+      "title": "[영상] 모두의 AI, 국민의 삶 바꿀까",
+      "source": "지디넷코리아",
+      "publishedAt": "2026-11-10T02:50:23.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261110110854",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 REGULATION)"
+      ],
+      "score": 6,
+      "importance": 2,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "REGULATION"
+      ],
+      "company": "지디넷코리아",
+      "stage": "metadata"
+    },
+    {
+      "id": "77719e9fed02",
+      "title": "\"AI 실험만 하다 뒤처진다\"…시스코, 기업 혁신 가로막는 '신뢰 부족' 경고",
+      "source": "지디넷코리아",
+      "publishedAt": "2026-11-10T02:33:19.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261110112953",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+      ],
+      "score": 2,
+      "importance": 0,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [],
+      "company": "지디넷코리아",
+      "stage": "metadata"
+    },
+    {
+      "id": "6d4ca59def04",
+      "title": "엑시스, 서울에 '체험 센터' 개소...문수현 지사장 \"새 여정 시작\"",
+      "source": "지디넷코리아",
+      "publishedAt": "2026-11-10T02:32:11.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261110113211",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 KOREA)"
+      ],
+      "score": 9,
+      "importance": 2,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "KOREA"
+      ],
+      "company": "지디넷코리아",
+      "stage": "metadata"
+    },
+    {
+      "id": "02229324a7b8",
+      "title": "인크로스, 구글 애즈 임팩트 어워즈 2관왕",
+      "source": "지디넷코리아",
+      "publishedAt": "2026-11-10T02:28:33.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261110112741",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PARTNERSHIP)"
+      ],
+      "score": 4,
+      "importance": 1,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "PARTNERSHIP"
+      ],
+      "company": "지디넷코리아",
+      "stage": "metadata"
+    },
+    {
+      "id": "564178e6746e",
+      "title": "AI 시대 미디어 규제 재설계 논의장 열린다.",
+      "source": "지디넷코리아",
+      "publishedAt": "2026-11-10T02:28:20.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261110112820",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 REGULATION)"
+      ],
+      "score": 6,
+      "importance": 2,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "REGULATION"
+      ],
+      "company": "지디넷코리아",
+      "stage": "metadata"
+    },
+    {
+      "id": "19bb605e4529",
+      "title": "브릴스, 현대차·기아 행사서 '피지컬 AI 안전관제 로봇' 선봬",
+      "source": "지디넷코리아",
+      "publishedAt": "2026-11-10T02:23:49.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261110111458",
       "duplicate": "NEW",
       "matchSlug": null,
       "decision": "HOLD",
@@ -2621,38 +3291,103 @@
       "signals": [
         "PRODUCT_LAUNCH"
       ],
-      "company": "AI타임스",
+      "company": "지디넷코리아",
       "stage": "metadata"
     },
     {
-      "id": "1d0370895e86",
-      "title": "구글, 퀄컴 지분 7400억원 확보…AI 반도체 기업 인수로 주식 취득",
-      "source": "AI타임스",
-      "publishedAt": "2026-11-08T11:26:48.000Z",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217144",
+      "id": "715cad082aeb",
+      "title": "\"AI가 게임 만들고 AI가 심의…게임 등급분류 새로운 딜레마\"",
+      "source": "지디넷코리아",
+      "publishedAt": "2026-11-10T02:07:16.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261110104228",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+      ],
+      "score": 2,
+      "importance": 0,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [],
+      "company": "지디넷코리아",
+      "stage": "metadata"
+    },
+    {
+      "id": "a60cbb492e3e",
+      "title": "크라우드웍스, 제조 명장 노하우 'AI 데이터'로 전환",
+      "source": "지디넷코리아",
+      "publishedAt": "2026-11-10T02:00:22.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261110110022",
       "duplicate": "NEW",
       "matchSlug": null,
       "decision": "HOLD",
       "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 ACQ_INVEST·INFRA)"
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 MODEL_MENTION)"
       ],
-      "score": 8,
-      "importance": 3,
+      "score": 4,
+      "importance": 1,
       "contentType": "NEWS",
       "typePenalty": 0,
       "signals": [
-        "ACQ_INVEST",
-        "INFRA"
+        "MODEL_MENTION"
       ],
-      "company": "AI타임스",
+      "company": "지디넷코리아",
       "stage": "metadata"
     },
     {
-      "id": "932b57d5d481",
-      "title": "아마존, 앱 없이 문자로 쇼핑 끝낸다…AI '알렉사' 문자 쇼핑 서비스 출시",
-      "source": "AI타임스",
-      "publishedAt": "2026-11-08T11:01:12.000Z",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217142",
+      "id": "7616c916f193",
+      "title": "李대통령 \"미 중간선거 변화 대비...반도체·AI 경쟁력 높여야\"",
+      "source": "지디넷코리아",
+      "publishedAt": "2026-11-10T01:50:33.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261110105033",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PARTNERSHIP·REGULATION·INFRA)"
+      ],
+      "score": 10,
+      "importance": 4,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "PARTNERSHIP",
+        "REGULATION",
+        "INFRA"
+      ],
+      "company": "지디넷코리아",
+      "stage": "metadata"
+    },
+    {
+      "id": "de2b721777f8",
+      "title": "AI가 찾은 버그, 고치는 속도가 따라잡았다",
+      "source": "지디넷코리아",
+      "publishedAt": "2026-11-10T01:34:20.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261110102528",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)"
+      ],
+      "score": 5,
+      "importance": 1,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "PRODUCT_LAUNCH"
+      ],
+      "company": "지디넷코리아",
+      "stage": "metadata"
+    },
+    {
+      "id": "f7b1ccd6b4a2",
+      "title": "[AI는 지금] IPO 앞둔 앤트로픽, '페이블·미토스 5.2' 공개…에이전트 협업 강화",
+      "source": "지디넷코리아",
+      "publishedAt": "2026-11-10T01:33:31.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261110094407",
       "duplicate": "NEW",
       "matchSlug": null,
       "decision": "HOLD",
@@ -2667,188 +3402,15 @@
         "PRODUCT_LAUNCH",
         "PRICING"
       ],
-      "company": "AI타임스",
+      "company": "지디넷코리아",
       "stage": "metadata"
     },
     {
-      "id": "b6f154475fb3",
-      "title": "오픈AI 도청 혐의 사우디 엔지니어, 법정서 무죄 주장",
-      "source": "AI타임스",
-      "publishedAt": "2026-11-08T10:45:54.000Z",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217138",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "EXCLUDE",
-      "reasons": [
-        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
-      ],
-      "score": 2,
-      "importance": 0,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [],
-      "company": "AI타임스",
-      "stage": "metadata"
-    },
-    {
-      "id": "6069dd2de05a",
-      "title": "엔비디아, 동남아 판매 칩 위치 추적 강화로 밀수 차단 나선다",
-      "source": "AI타임스",
-      "publishedAt": "2026-11-08T10:37:23.000Z",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217139",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 REGULATION)"
-      ],
-      "score": 6,
-      "importance": 2,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "REGULATION"
-      ],
-      "company": "AI타임스",
-      "stage": "metadata"
-    },
-    {
-      "id": "e349441fb2fb",
-      "title": "독일 전문가 \"AI에 안전한 직업 찾지 마라…미래 일자리 준비해야\"",
-      "source": "AI타임스",
-      "publishedAt": "2026-11-08T10:27:21.000Z",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217143",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 REGULATION)"
-      ],
-      "score": 6,
-      "importance": 2,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "REGULATION"
-      ],
-      "company": "AI타임스",
-      "stage": "metadata"
-    },
-    {
-      "id": "98183922542a",
-      "title": "오픈AI, '이미지 2.6' 프롬프트 가이드 공개…\"바꿀 것·유지할 것 구분\"",
-      "source": "AI타임스",
-      "publishedAt": "2026-11-08T09:51:29.000Z",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217140",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 API_PLATFORM·PRODUCT_LAUNCH)"
-      ],
-      "score": 8,
-      "importance": 2,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "API_PLATFORM",
-        "PRODUCT_LAUNCH"
-      ],
-      "company": "AI타임스",
-      "stage": "metadata"
-    },
-    {
-      "id": "1e2e23a4b585",
-      "title": "무안공항 운항 중단에 수익 82% 감소…위탁인력 줄어도 용역비 3억 증가",
-      "source": "AI타임스",
-      "publishedAt": "2026-11-08T09:20:00.000Z",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217110",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "EXCLUDE",
-      "reasons": [
-        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
-      ],
-      "score": 2,
-      "importance": 0,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [],
-      "company": "AI타임스",
-      "stage": "metadata"
-    },
-    {
-      "id": "6f01a608133e",
-      "title": "소프트뱅크·ABB, 54억달러 로봇 인수 살리려 중국 사업부 분리 검토",
-      "source": "AI타임스",
-      "publishedAt": "2026-11-08T09:14:31.000Z",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217137",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 ACQ_INVEST·REGULATION)"
-      ],
-      "score": 8,
-      "importance": 3,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "ACQ_INVEST",
-        "REGULATION"
-      ],
-      "company": "AI타임스",
-      "stage": "metadata"
-    },
-    {
-      "id": "ef8b7b86e357",
-      "title": "말레이시아, 데이터센터용 태양광 500MW·ESS 1GWh 개발…21년 전력 공급",
-      "source": "AI타임스",
-      "publishedAt": "2026-11-08T09:10:00.000Z",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217083",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 RESEARCH_RESULT·INFRA)"
-      ],
-      "score": 6,
-      "importance": 2,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "RESEARCH_RESULT",
-        "INFRA"
-      ],
-      "company": "AI타임스",
-      "stage": "metadata"
-    },
-    {
-      "id": "710064cbe06d",
-      "title": "콜롬비아 태양광 상업운전 용량 2.59GW…3분기 신규 발전용량 87% 차지",
-      "source": "AI타임스",
-      "publishedAt": "2026-11-08T09:05:00.000Z",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217079",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "EXCLUDE",
-      "reasons": [
-        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
-      ],
-      "score": 2,
-      "importance": 0,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [],
-      "company": "AI타임스",
-      "stage": "metadata"
-    },
-    {
-      "id": "f2d3820ff4e1",
-      "title": "TSMC, '3D D램' 개발설 사실상 부인…상용화도 먼 길",
-      "source": "AI타임스",
-      "publishedAt": "2026-11-08T09:03:39.000Z",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217136",
+      "id": "4802881c9029",
+      "title": "[AI는 지금] 美 AI 투자 주춤…中에 열린 추격의 틈",
+      "source": "지디넷코리아",
+      "publishedAt": "2026-11-10T01:33:07.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261110095956",
       "duplicate": "NEW",
       "matchSlug": null,
       "decision": "HOLD",
@@ -2862,58 +3424,15 @@
       "signals": [
         "INFRA"
       ],
-      "company": "AI타임스",
+      "company": "지디넷코리아",
       "stage": "metadata"
     },
     {
-      "id": "f97b31a8761e",
-      "title": "FT \"미 당국, 젠슨 황 CEO와 중국 스파이 의심 인물 연인 관계로 판단\"",
-      "source": "AI타임스",
-      "publishedAt": "2026-11-08T08:52:25.000Z",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217135",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 REGULATION·INFRA)"
-      ],
-      "score": 8,
-      "importance": 3,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "REGULATION",
-        "INFRA"
-      ],
-      "company": "AI타임스",
-      "stage": "metadata"
-    },
-    {
-      "id": "41f759962caf",
-      "title": "오픈AI, '클로드 코드' 성공 주역 캣 우 영입…핵심 제품 총괄 맡아",
-      "source": "AI타임스",
-      "publishedAt": "2026-11-07T19:05:17.000Z",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217134",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "EXCLUDE",
-      "reasons": [
-        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
-      ],
-      "score": 2,
-      "importance": 0,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [],
-      "company": "AI타임스",
-      "stage": "metadata"
-    },
-    {
-      "id": "dd58bc3a3a7b",
-      "title": "이스라엘, 'AI 주권' 기치 들었다…30만 GPU로 자립 생태계 조성",
+      "id": "e2649c8f6fec",
+      "title": "NHN클라우드, 3분기 매출 75.5% 성장…내년까지 AI 데이터센터 100MW 확보",
       "source": "지디넷코리아",
-      "publishedAt": "2026-11-09T12:27:23.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261109190807",
+      "publishedAt": "2026-11-10T01:32:50.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261110100637",
       "duplicate": "NEW",
       "matchSlug": null,
       "decision": "HOLD",
@@ -2932,235 +3451,34 @@
       "stage": "metadata"
     },
     {
-      "id": "35366efaa8b3",
-      "title": "이스라엘 사이버보안 설계자 \"AI, 방어와 공격 경쟁 끝나지 않을 것\"",
-      "source": "지디넷코리아",
-      "publishedAt": "2026-11-09T12:23:19.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261109183045",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "EXCLUDE",
-      "reasons": [
-        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
-      ],
-      "score": 2,
-      "importance": 0,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [],
-      "company": "지디넷코리아",
-      "stage": "metadata"
-    },
-    {
-      "id": "5535e929d4e7",
-      "title": "포켓몬 애니 제작사 OLM, 원화 3장으로 학습하는 AI 채색 도구 개발",
-      "source": "지디넷코리아",
-      "publishedAt": "2026-11-09T11:47:28.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261109204728",
+      "id": "67fef51940a3",
+      "title": "엔비디아, 美 정부 '中 반도체 밀수' 수사까지 개입했나… 젠슨 황 스캔들 확산",
+      "source": "전자신문",
+      "publishedAt": "2026-11-10T01:29:41.000Z",
+      "url": "https://www.etnews.com/20261110000163",
       "duplicate": "NEW",
       "matchSlug": null,
       "decision": "HOLD",
       "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 MODEL_MENTION)"
-      ],
-      "score": 4,
-      "importance": 1,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "MODEL_MENTION"
-      ],
-      "company": "지디넷코리아",
-      "stage": "metadata"
-    },
-    {
-      "id": "3bd1ff216f59",
-      "title": "영국 공공기관, AI가 쓴 민원 급증에 업무 과부하",
-      "source": "지디넷코리아",
-      "publishedAt": "2026-11-09T11:46:35.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261109204635",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·REGULATION)"
-      ],
-      "score": 9,
-      "importance": 3,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "PRODUCT_LAUNCH",
-        "REGULATION"
-      ],
-      "company": "지디넷코리아",
-      "stage": "metadata"
-    },
-    {
-      "id": "d0e5eedfd88c",
-      "title": "[카드뉴스] AI는 꼭 필요한데 우리 동네엔 짓지 말라고요",
-      "source": "지디넷코리아",
-      "publishedAt": "2026-11-09T11:40:28.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261109093824",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 INFRA)"
-      ],
-      "score": 4,
-      "importance": 1,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "INFRA"
-      ],
-      "company": "지디넷코리아",
-      "stage": "metadata"
-    },
-    {
-      "id": "fc0af979d2b6",
-      "title": "\"엔비디아냐 AMD냐\"...기로에 선 K-반도체",
-      "source": "지디넷코리아",
-      "publishedAt": "2026-11-09T09:27:35.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261109180536",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PARTNERSHIP·INFRA)"
-      ],
-      "score": 6,
-      "importance": 2,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "PARTNERSHIP",
-        "INFRA"
-      ],
-      "company": "지디넷코리아",
-      "stage": "metadata"
-    },
-    {
-      "id": "aceb5656bd53",
-      "title": "인텔리빅스, 안전 AI 앞세워 글로벌 스마트시티 시장 공략",
-      "source": "지디넷코리아",
-      "publishedAt": "2026-11-09T08:57:15.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261109175655",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)"
-      ],
-      "score": 5,
-      "importance": 1,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "PRODUCT_LAUNCH"
-      ],
-      "company": "지디넷코리아",
-      "stage": "metadata"
-    },
-    {
-      "id": "5a7b6cef08a6",
-      "title": "메가존클라우드, 오픈AI 셀렉트 파트너 선정…기업 AI 도입 사업 확대",
-      "source": "지디넷코리아",
-      "publishedAt": "2026-11-09T08:48:41.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261109174825",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PARTNERSHIP)"
-      ],
-      "score": 4,
-      "importance": 1,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "PARTNERSHIP"
-      ],
-      "company": "지디넷코리아",
-      "stage": "metadata"
-    },
-    {
-      "id": "0ec7855adddb",
-      "title": "모티프, 엔비디아 투자 받는다…글로벌 AI '톱5' 도전",
-      "source": "지디넷코리아",
-      "publishedAt": "2026-11-09T08:47:01.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261109174701",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·ACQ_INVEST·MODEL_MENTION)"
-      ],
-      "score": 9,
-      "importance": 3,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "PRODUCT_LAUNCH",
-        "ACQ_INVEST",
-        "MODEL_MENTION"
-      ],
-      "company": "지디넷코리아",
-      "stage": "metadata"
-    },
-    {
-      "id": "31646efcca31",
-      "title": "NIPA, 한·베트남 AI 협력 확대…현지서 43억원 규모 계약 상담",
-      "source": "지디넷코리아",
-      "publishedAt": "2026-11-09T08:46:47.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261109174647",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PARTNERSHIP·REGULATION)"
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 REGULATION·INFRA)"
       ],
       "score": 8,
       "importance": 3,
       "contentType": "NEWS",
       "typePenalty": 0,
       "signals": [
-        "PARTNERSHIP",
-        "REGULATION"
+        "REGULATION",
+        "INFRA"
       ],
-      "company": "지디넷코리아",
+      "company": "전자신문",
       "stage": "metadata"
     },
     {
-      "id": "6bf383580732",
-      "title": "업스테이지, 아마존·AMD 이어 엔비디아 투자 받는다",
-      "source": "지디넷코리아",
-      "publishedAt": "2026-11-09T08:36:02.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261109173602",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·MODEL_MENTION)"
-      ],
-      "score": 7,
-      "importance": 2,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "PRODUCT_LAUNCH",
-        "MODEL_MENTION"
-      ],
-      "company": "지디넷코리아",
-      "stage": "metadata"
-    },
-    {
-      "id": "dd06e2c23d45",
-      "title": "컴투스, 대학생 직무 탐색 프로그램 '컴투스 멘토링 스쿨' 4기 모집",
-      "source": "지디넷코리아",
-      "publishedAt": "2026-11-09T08:29:01.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261109170214",
+      "id": "eb5d67811c3c",
+      "title": "“3년 안에 결혼 못 하면 환불해 주겠다”…파격 조건 내건 중개업체 정체가?",
+      "source": "전자신문",
+      "publishedAt": "2026-11-09T21:00:00.000Z",
+      "url": "https://www.etnews.com/20261109000385",
       "duplicate": "NEW",
       "matchSlug": null,
       "decision": "EXCLUDE",
@@ -3172,7 +3490,7 @@
       "contentType": "NEWS",
       "typePenalty": 0,
       "signals": [],
-      "company": "지디넷코리아",
+      "company": "전자신문",
       "stage": "metadata"
     },
     {
@@ -3391,29 +3709,6 @@
       "contentType": "NEWS",
       "typePenalty": 0,
       "signals": [],
-      "company": "전자신문",
-      "stage": "metadata"
-    },
-    {
-      "id": "472af3c09b5f",
-      "title": "SK텔레콤, 통합AIDC 인프라 구축…엔비디아 GPU에 국산 NPU 연결",
-      "source": "전자신문",
-      "publishedAt": "2026-11-09T05:01:35.000Z",
-      "url": "https://www.etnews.com/20261109000264",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 INFRA·PARTNERSHIP)"
-      ],
-      "score": 6,
-      "importance": 2,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "INFRA",
-        "PARTNERSHIP"
-      ],
       "company": "전자신문",
       "stage": "metadata"
     },
@@ -12505,5 +12800,5 @@
       "fromQueue": "evidence"
     }
   ],
-  "finishedAt": "2026-11-09T20:42:24.323Z"
+  "finishedAt": "2026-11-10T04:06:21.627Z"
 }
