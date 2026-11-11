@@ -1,0 +1,221 @@
+{
+  "id": "8e5b51265d81",
+  "date": "2026-11-11",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Manage Kubernetes Clusters for GPU Infrastructure with NVIDIA Kubernetes Engine",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 10,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "NVIDIA",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://developer.nvidia.com/blog/manage-kubernetes-clusters-for-gpu-infrastructure-with-nvidia-kubernetes-engine/",
+      "name": "NVIDIA Technical Blog",
+      "type": "official",
+      "publishedAt": "2026-11-10T15:00:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "8e5b51265d81",
+    "url": "https://developer.nvidia.com/blog/manage-kubernetes-clusters-for-gpu-infrastructure-with-nvidia-kubernetes-engine/",
+    "canonicalUrl": "https://developer.nvidia.com/blog/manage-kubernetes-clusters-for-gpu-infrastructure-with-nvidia-kubernetes-engine",
+    "title": "Manage Kubernetes Clusters for GPU Infrastructure with NVIDIA Kubernetes Engine",
+    "excerpt": "NVIDIA is announcing two open source projects for building and operating managed Kubernetes services on GPU infrastructure—NVIDIA Kubernetes Engine (NVKE) and...",
+    "publishedAt": "2026-11-10T15:00:00.000Z",
+    "sourceId": "nvidia-developer",
+    "sourceName": "NVIDIA Technical Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://developer.nvidia.com/blog/feed",
+    "fetchedAt": "2026-11-11T01:52:54.771Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 11702,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "NVIDIA is announcing two open source projects for building and operating managed Kubernetes services on GPU infrastructure—NVIDIA Kubernetes Engine (NVKE) and...",
+        "sourceUrl": "https://developer.nvidia.com/blog/manage-kubernetes-clusters-for-gpu-infrastructure-with-nvidia-kubernetes-engine/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-10T15:00:00.000Z",
+        "checkedAt": "2026-11-10T17:44:20.407Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Manage Kubernetes Clusters for GPU Infrastructure with NVIDIA Kubernetes Engine | NVIDIA Technical Blog",
+        "sourceUrl": "https://developer.nvidia.com/blog/manage-kubernetes-clusters-for-gpu-infrastructure-with-nvidia-kubernetes-engine/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-10T15:00:00.000Z",
+        "checkedAt": "2026-11-10T17:44:20.407Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Manage Kubernetes Clusters for GPU Infrastructure with NVIDIA Kubernetes Engine",
+        "sourceUrl": "https://developer.nvidia.com/blog/manage-kubernetes-clusters-for-gpu-infrastructure-with-nvidia-kubernetes-engine/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-10T15:00:00.000Z",
+        "checkedAt": "2026-11-10T17:44:20.407Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "NVIDIA DSX AI Factory Platform introduces two open source projects, NVIDIA Kubernetes Engine (NVKE) and NVIDIA Kubernetes Recipes (NVKR), for building and operating managed Kubernetes services on GPU infrastructure.",
+        "sourceUrl": "https://developer.nvidia.com/blog/manage-kubernetes-clusters-for-gpu-infrastructure-with-nvidia-kubernetes-engine/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-10T15:00:00.000Z",
+        "checkedAt": "2026-11-10T17:44:20.407Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "NVKR builds reproducible node images, container images, and packages from version-pinned sources, while NVKE uses those artifacts to provision and manage Kubernetes clusters through a REST API and controllers running on a management cluster.",
+        "sourceUrl": "https://developer.nvidia.com/blog/manage-kubernetes-clusters-for-gpu-infrastructure-with-nvidia-kubernetes-engine/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-10T15:00:00.000Z",
+        "checkedAt": "2026-11-10T17:44:20.407Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Both projects are in public preview under the Apache 2.0 license, with APIs and behavior subject to change, and are not yet recommended for production workloads.",
+        "sourceUrl": "https://developer.nvidia.com/blog/manage-kubernetes-clusters-for-gpu-infrastructure-with-nvidia-kubernetes-engine/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-10T15:00:00.000Z",
+        "checkedAt": "2026-11-10T17:44:20.407Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "NVIDIA is announcing two open source projects for building and operating managed Kubernetes services on GPU infrastructure—NVIDIA Kubernetes Engine (NVKE) and NVIDIA Kubernetes Recipes (NVKR).",
+        "sourceUrl": "https://developer.nvidia.com/blog/manage-kubernetes-clusters-for-gpu-infrastructure-with-nvidia-kubernetes-engine/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-10T15:00:00.000Z",
+        "checkedAt": "2026-11-10T17:44:20.407Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "NVKE provides the software to run a managed Kubernetes service, installed on the factory’s infrastructure, with APIs to provision and manage clusters.",
+        "sourceUrl": "https://developer.nvidia.com/blog/manage-kubernetes-clusters-for-gpu-infrastructure-with-nvidia-kubernetes-engine/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-10T15:00:00.000Z",
+        "checkedAt": "2026-11-10T17:44:20.407Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "NVKE is a Certified Kubernetes AI Platform and Certified Kubernetes Installer , conformance tested on Kubernetes 1.36.",
+        "sourceUrl": "https://developer.nvidia.com/blog/manage-kubernetes-clusters-for-gpu-infrastructure-with-nvidia-kubernetes-engine/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-10T15:00:00.000Z",
+        "checkedAt": "2026-11-10T17:44:20.407Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Visit the NVIDIA booth #170 at KubeCon for more Kubernetes deep dives and live demos.",
+        "sourceUrl": "https://developer.nvidia.com/blog/manage-kubernetes-clusters-for-gpu-infrastructure-with-nvidia-kubernetes-engine/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-10T15:00:00.000Z",
+        "checkedAt": "2026-11-10T17:44:20.407Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "At NVIDIA he helps define GPU-accelerated Kubernetes and health-automation patterns for large-scale AI infrastructure, influencing how cloud providers and their customers run production GPU workloads reliably at scale.",
+        "sourceUrl": "https://developer.nvidia.com/blog/manage-kubernetes-clusters-for-gpu-infrastructure-with-nvidia-kubernetes-engine/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-10T15:00:00.000Z",
+        "checkedAt": "2026-11-10T17:44:20.407Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Eric Chapman is the product manager for NVIDIA Kubernetes Engine, where he works on software that AI factories use to run Kubernetes for their customers.",
+        "sourceUrl": "https://developer.nvidia.com/blog/manage-kubernetes-clusters-for-gpu-infrastructure-with-nvidia-kubernetes-engine/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-10T15:00:00.000Z",
+        "checkedAt": "2026-11-10T17:44:20.407Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Erin Boyd is a senior director of engineering at NVIDIA, where she leads the engineering teams that build NVIDIA Kubernetes Engine and related DSX Kubernetes projects.",
+        "sourceUrl": "https://developer.nvidia.com/blog/manage-kubernetes-clusters-for-gpu-infrastructure-with-nvidia-kubernetes-engine/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-10T15:00:00.000Z",
+        "checkedAt": "2026-11-10T17:44:20.407Z"
+      }
+    ],
+    "pageDate": "2026-11-10T15:00:00.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "INFRA"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 INFRA (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

@@ -1,0 +1,224 @@
+{
+  "id": "c5536f6e1237",
+  "date": "2026-11-11",
+  "proposedSlug": "nvidia-dynamo-recipes-bring-korea-s-leading",
+  "title": null,
+  "sourceTitle": "NVIDIA Dynamo Recipes Bring Korea’s Leading Open Models to Production",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 9,
+    "deepChecks": {
+      "importance": true,
+      "novelty": true,
+      "userImpact": true,
+      "contextNeed": true,
+      "distinctFacts": true,
+      "evidenceQuality": false,
+      "standardWouldOmit": true
+    },
+    "deepMissing": [
+      "evidenceQuality"
+    ]
+  },
+  "company": "NVIDIA",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://blogs.nvidia.com/blog/nvidia-dynamo-korea-open-models/",
+      "name": "NVIDIA Blog",
+      "type": "official",
+      "publishedAt": "2026-11-09T05:00:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "c5536f6e1237",
+    "url": "https://blogs.nvidia.com/blog/nvidia-dynamo-korea-open-models/",
+    "canonicalUrl": "https://blogs.nvidia.com/blog/nvidia-dynamo-korea-open-models",
+    "title": "NVIDIA Dynamo Recipes Bring Korea’s Leading Open Models to Production",
+    "excerpt": "NVIDIA is releasing Dynamo-optimized deployment recipes for Korea’s leading open models: A.X K2 from SK Telecom, K-EXAONE 2.0 from LG AI Research, Solar Open 2 from Upstage and Motif-3 from Motif Technologies. As models grow beyond the capacity of a single GPU, they must be split across multiple GPU",
+    "publishedAt": "2026-11-09T05:00:00.000Z",
+    "sourceId": "nvidia",
+    "sourceName": "NVIDIA Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://blogs.nvidia.com/feed/",
+    "fetchedAt": "2026-11-11T01:52:54.771Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 1168,
+    "grade": "LIMITED",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "NVIDIA is releasing Dynamo-optimized deployment recipes for Korea’s leading open models: A.X K2 from SK Telecom, K-EXAONE 2.0 from LG AI Research, Solar Open 2 from Upstage and Motif-3 from Motif Technologies. As models grow beyond the capacity of a single GPU, they must be split across multiple GPU",
+        "sourceUrl": "https://blogs.nvidia.com/blog/nvidia-dynamo-korea-open-models/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-09T05:00:00.000Z",
+        "checkedAt": "2026-11-10T17:44:03.298Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "NVIDIA Dynamo Recipes Bring Korea’s Leading Open Models to Production | NVIDIA Blog",
+        "sourceUrl": "https://blogs.nvidia.com/blog/nvidia-dynamo-korea-open-models/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-09T05:00:00.000Z",
+        "checkedAt": "2026-11-10T17:44:03.298Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "NVIDIA is releasing Dynamo-optimized deployment recipes for Korea’s leading open models: A.X K2 from SK Telecom , K-EXAONE 2.0 from LG AI Research , Solar Open 2 from Upstage and Motif-3 from Motif Technologies .",
+        "sourceUrl": "https://blogs.nvidia.com/blog/nvidia-dynamo-korea-open-models/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-09T05:00:00.000Z",
+        "checkedAt": "2026-11-10T17:44:03.298Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "As models grow beyond the capacity of a single GPU, they must be split across multiple GPUs, requiring careful coordination of request routing and communication to maintain performance.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/nvidia-dynamo-korea-open-models/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-09T05:00:00.000Z",
+        "checkedAt": "2026-11-10T17:44:03.298Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "NVIDIA Dynamo is an open source, distributed inference-serving framework built to deploy models in multi-node environments at data center scale.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/nvidia-dynamo-korea-open-models/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-09T05:00:00.000Z",
+        "checkedAt": "2026-11-10T17:44:03.298Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "It handles this routing and communication to maximize inference performance.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/nvidia-dynamo-korea-open-models/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-09T05:00:00.000Z",
+        "checkedAt": "2026-11-10T17:44:03.298Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Optimized for NVIDIA B200 GPUs, these recipes take the guesswork out of deployment, delivering up to 2x performance out of the box.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/nvidia-dynamo-korea-open-models/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-09T05:00:00.000Z",
+        "checkedAt": "2026-11-10T17:44:03.298Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "They help developers bring Korea’s open models into production faster and turn them into broadly accessible AI for All services.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/nvidia-dynamo-korea-open-models/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-09T05:00:00.000Z",
+        "checkedAt": "2026-11-10T17:44:03.298Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "NVIDIA Announces New Planned Investments in Korean Startups at the MSIT-NVIDIA AI Startup Partnership Forum",
+        "sourceUrl": "https://blogs.nvidia.com/blog/nvidia-dynamo-korea-open-models/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-09T05:00:00.000Z",
+        "checkedAt": "2026-11-10T17:44:03.298Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "From Chips to Skills, NVIDIA and Korea Expand Sovereign AI Collaboration",
+        "sourceUrl": "https://blogs.nvidia.com/blog/nvidia-dynamo-korea-open-models/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-09T05:00:00.000Z",
+        "checkedAt": "2026-11-10T17:44:03.298Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "NVIDIA Dynamo Recipes Bring Korea’s Leading Open Models to Production",
+        "sourceUrl": "https://blogs.nvidia.com/blog/nvidia-dynamo-korea-open-models/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-09T05:00:00.000Z",
+        "checkedAt": "2026-11-10T17:44:03.298Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "How NVIDIA Open Source Tools Are Helping Researchers Build Next-Generation 6G Networks",
+        "sourceUrl": "https://blogs.nvidia.com/blog/nvidia-dynamo-korea-open-models/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-09T05:00:00.000Z",
+        "checkedAt": "2026-11-10T17:44:03.298Z"
+      }
+    ],
+    "pageDate": "2026-11-09T05:00:00.000Z"
+  },
+  "score": {
+    "importance": 4,
+    "practicalImpact": 0,
+    "koreanRelevance": 3,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "MODEL",
+      "MODEL_MENTION",
+      "INFRA",
+      "KOREA"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 13,
+    "total": 13
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 MODEL·MODEL_MENTION·INFRA·KOREA (우선순위 13)",
+    "근거 확인 통과 (확인 사실 9개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "none",
+    "model": null,
+    "status": "skipped",
+    "error": "Shadow Mode — 원고를 만들지 않음",
+    "promptVersion": "draft-v1",
+    "at": "2026-11-11T01:54:14.951Z",
+    "evidenceHash": "98a4722b2c4d"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": true,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}
