@@ -1,0 +1,221 @@
+{
+  "id": "7da1b2b4758f",
+  "date": "2026-11-12",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Gemini Robotics 2.5 accelerates real-world general dexterity",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 12,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Google",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+      "name": "Google DeepMind",
+      "type": "official",
+      "publishedAt": "2026-11-09T19:51:47.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "7da1b2b4758f",
+    "url": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+    "canonicalUrl": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence",
+    "title": "Gemini Robotics 2.5 accelerates real-world general dexterity",
+    "excerpt": "Our most capable vision-language-action model enhances robot dexterity, reliability, and safety",
+    "publishedAt": "2026-11-09T19:51:47.000Z",
+    "sourceId": "google-deepmind",
+    "sourceName": "Google DeepMind",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://deepmind.google/blog/rss.xml",
+    "fetchedAt": "2026-11-11T17:52:15.446Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 7086,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Our most capable vision-language-action model enhances robot dexterity, reliability, and safety",
+        "sourceUrl": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-11-09T19:51:47.000Z",
+        "checkedAt": "2026-11-11T17:53:40.952Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Gemini Robotics 2.5: Accelerating Physical Intelligence — Google DeepMind • • • • • • • • • • • • • • • • • • Skip to main content",
+        "sourceUrl": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-11-09T19:51:47.000Z",
+        "checkedAt": "2026-11-11T17:53:40.952Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Gemini Robotics 2.5 accelerates real-world general dexterity",
+        "sourceUrl": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-11-09T19:51:47.000Z",
+        "checkedAt": "2026-11-11T17:53:40.952Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Today, we are introducing Gemini Robotics 2.5, our most capable vision-language-action (VLA) model to date.",
+        "sourceUrl": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-11-09T19:51:47.000Z",
+        "checkedAt": "2026-11-11T17:53:40.952Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Gemini Robotics 2.5 increases both the breadth of skills a robot can learn and the speed at which it can acquire them.",
+        "sourceUrl": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-11-09T19:51:47.000Z",
+        "checkedAt": "2026-11-11T17:53:40.952Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "We tested Gemini Robotics 2.5’s capabilities in task breadth, performance, and complexity across over 200 distinct tasks, though this approach could scale to many more.",
+        "sourceUrl": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-11-09T19:51:47.000Z",
+        "checkedAt": "2026-11-11T17:53:40.952Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Gemini Robotics 2.5 marks a leap forward in three key areas:",
+        "sourceUrl": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-11-09T19:51:47.000Z",
+        "checkedAt": "2026-11-11T17:53:40.952Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Gemini Robotics 2.5 is rolling out to our robotics partners .",
+        "sourceUrl": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-11-09T19:51:47.000Z",
+        "checkedAt": "2026-11-11T17:53:40.952Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "With Gemini Robotics 2.5, we expanded the model capabilities in task breadth, performance, and complexity.",
+        "sourceUrl": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-11-09T19:51:47.000Z",
+        "checkedAt": "2026-11-11T17:53:40.952Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Using our embodied reasoning model ( Gemini Robotics ER ) to keep track of the workflow, and the Gemini Robotics 2.5 actions model to control its hands and arms, the robot reaches into supply bins, picks up metal automotive brackets, and places them into sequencing containers,…",
+        "sourceUrl": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-11-09T19:51:47.000Z",
+        "checkedAt": "2026-11-11T17:53:40.952Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Gemini 4 Argon’s robotics research capabilities helped solve these bottlenecks by acting as a simulation engine, which greatly accelerated our development of Gemini Robotics 2.5.",
+        "sourceUrl": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-11-09T19:51:47.000Z",
+        "checkedAt": "2026-11-11T17:53:40.952Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Examples of Gemini 4 Argon’s robotics research capabilities accelerating Gemini Robotics 2.5",
+        "sourceUrl": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-11-09T19:51:47.000Z",
+        "checkedAt": "2026-11-11T17:53:40.952Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Accelerated by frontier intelligence models like Gemini 4 Argon, Gemini Robotics 2.5 marks an important milestone on the path toward solving physical AGI.",
+        "sourceUrl": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-11-09T19:51:47.000Z",
+        "checkedAt": "2026-11-11T17:53:40.952Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 2,
+    "signals": [
+      "SECURITY_MENTION"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 SECURITY_MENTION (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

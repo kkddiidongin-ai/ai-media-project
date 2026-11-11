@@ -1,0 +1,233 @@
+{
+  "id": "51bc8200bfc7",
+  "date": "2026-11-12",
+  "proposedSlug": "korea-s-ai-ecosystem-advances-secures-agentic",
+  "title": null,
+  "sourceTitle": "Korea’s AI Ecosystem Advances and Secures Agentic AI With NVIDIA",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": true,
+      "contextNeed": true,
+      "distinctFacts": true,
+      "evidenceQuality": false,
+      "standardWouldOmit": true
+    },
+    "deepMissing": [
+      "importance",
+      "evidenceQuality"
+    ]
+  },
+  "company": "NVIDIA",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://blogs.nvidia.com/blog/korea-secure-agentic-ai/",
+      "name": "NVIDIA Blog",
+      "type": "official",
+      "publishedAt": "2026-11-09T05:00:39.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "51bc8200bfc7",
+    "url": "https://blogs.nvidia.com/blog/korea-secure-agentic-ai/",
+    "canonicalUrl": "https://blogs.nvidia.com/blog/korea-secure-agentic-ai",
+    "title": "Korea’s AI Ecosystem Advances and Secures Agentic AI With NVIDIA",
+    "excerpt": "As AI agents take on more work, they need capable open models and security that advances alongside them. Hyundai Motor Group is exploring NVIDIA NemoClaw blueprints and the NVIDIA OpenShell runtime, while AIM Intelligence is integrating its Starfort platform with NVIDIA OpenShell to support secure A",
+    "publishedAt": "2026-11-09T05:00:39.000Z",
+    "sourceId": "nvidia",
+    "sourceName": "NVIDIA Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://blogs.nvidia.com/feed/",
+    "fetchedAt": "2026-11-11T17:52:15.446Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 1778,
+    "grade": "LIMITED",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "As AI agents take on more work, they need capable open models and security that advances alongside them. Hyundai Motor Group is exploring NVIDIA NemoClaw blueprints and the NVIDIA OpenShell runtime, while AIM Intelligence is integrating its Starfort platform with NVIDIA OpenShell to support secure A",
+        "sourceUrl": "https://blogs.nvidia.com/blog/korea-secure-agentic-ai/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-09T05:00:39.000Z",
+        "checkedAt": "2026-11-11T17:53:28.442Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Korea’s AI Ecosystem Advances and Secures Agentic AI With NVIDIA | NVIDIA Blog",
+        "sourceUrl": "https://blogs.nvidia.com/blog/korea-secure-agentic-ai/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-09T05:00:39.000Z",
+        "checkedAt": "2026-11-11T17:53:28.442Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "As AI agents take on more work, they need capable open models and security that advances alongside them.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/korea-secure-agentic-ai/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-09T05:00:39.000Z",
+        "checkedAt": "2026-11-11T17:53:28.442Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Hyundai Motor Group is exploring NVIDIA NemoClaw blueprints and the NVIDIA OpenShell runtime, while AIM Intelligence is integrating its Starfort platform with NVIDIA OpenShell to support secure AI agents for employee productivity and enterprise workflows .",
+        "sourceUrl": "https://blogs.nvidia.com/blog/korea-secure-agentic-ai/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-09T05:00:39.000Z",
+        "checkedAt": "2026-11-11T17:53:28.442Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "A key component of the NVIDIA Open Agent Safety Platform, OpenShell provides a secure runtime with sandboxed execution and policy-based controls to safeguard sensitive data, manage access to enterprise tools and govern autonomous agent actions.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/korea-secure-agentic-ai/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-09T05:00:39.000Z",
+        "checkedAt": "2026-11-11T17:53:28.442Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "AIM Intelligence , a Korean AI security company, is integrating its Starfort agent control platform with NVIDIA OpenShell.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/korea-secure-agentic-ai/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-09T05:00:39.000Z",
+        "checkedAt": "2026-11-11T17:53:28.442Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "On the model side, LG AI Research is opening application programming interface access for K-EXAONE-2.5, developed using NVIDIA Nemotron datasets, including Nemotron-Personas-Korea .",
+        "sourceUrl": "https://blogs.nvidia.com/blog/korea-secure-agentic-ai/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-09T05:00:39.000Z",
+        "checkedAt": "2026-11-11T17:53:28.442Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Nemotron-Personas-Korea is an open dataset of 7 million fully synthetic Korean personas, grounded in official Korean statistics, that model builders use to ground training data and evaluation in Korean contexts.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/korea-secure-agentic-ai/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-09T05:00:39.000Z",
+        "checkedAt": "2026-11-11T17:53:28.442Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "NVIDIA Nemotron is a family of open models, datasets and techniques that help developers build specialized, efficient AI agents.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/korea-secure-agentic-ai/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-09T05:00:39.000Z",
+        "checkedAt": "2026-11-11T17:53:28.442Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Learn more about NVIDIA Nemotron open models and get started building secure agents with NVIDIA OpenShell .",
+        "sourceUrl": "https://blogs.nvidia.com/blog/korea-secure-agentic-ai/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-09T05:00:39.000Z",
+        "checkedAt": "2026-11-11T17:53:28.442Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Korea’s AI Ecosystem Advances and Secures Agentic AI With NVIDIA",
+        "sourceUrl": "https://blogs.nvidia.com/blog/korea-secure-agentic-ai/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-09T05:00:39.000Z",
+        "checkedAt": "2026-11-11T17:53:28.442Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "From Chips to Skills, NVIDIA and Korea Expand Sovereign AI Collaboration",
+        "sourceUrl": "https://blogs.nvidia.com/blog/korea-secure-agentic-ai/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-09T05:00:39.000Z",
+        "checkedAt": "2026-11-11T17:53:28.442Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "NVIDIA Dynamo Recipes Bring Korea’s Leading Open Models to Production",
+        "sourceUrl": "https://blogs.nvidia.com/blog/korea-secure-agentic-ai/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-09T05:00:39.000Z",
+        "checkedAt": "2026-11-11T17:53:28.442Z"
+      }
+    ],
+    "pageDate": "2026-11-09T05:00:39.000Z"
+  },
+  "score": {
+    "importance": 3,
+    "practicalImpact": 0,
+    "koreanRelevance": 3,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "MODEL_MENTION",
+      "SECURITY_MENTION",
+      "KOREA"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 11,
+    "total": 11
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 MODEL_MENTION·SECURITY_MENTION·KOREA (우선순위 11)",
+    "근거 확인 통과 (확인 사실 11개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "none",
+    "model": null,
+    "status": "skipped",
+    "error": "Shadow Mode — 원고를 만들지 않음",
+    "promptVersion": "draft-v1",
+    "at": "2026-11-11T17:53:42.563Z",
+    "evidenceHash": "96ec470357c2"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": true,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}
