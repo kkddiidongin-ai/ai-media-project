@@ -1,0 +1,232 @@
+{
+  "id": "85bacafff424",
+  "date": "2026-11-13",
+  "proposedSlug": "run-agents-securely-efficiently-next-generation-agentcore",
+  "title": null,
+  "sourceTitle": "Run agents securely and efficiently with the next generation AgentCore runtime",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 10,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": true,
+      "contextNeed": true,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": true
+    },
+    "deepMissing": [
+      "importance"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/run-agents-securely-and-efficiently-with-the-next-generation-agentcore-runtime/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-11-12T17:59:59.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "85bacafff424",
+    "url": "https://aws.amazon.com/blogs/machine-learning/run-agents-securely-and-efficiently-with-the-next-generation-agentcore-runtime/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/run-agents-securely-and-efficiently-with-the-next-generation-agentcore-runtime",
+    "title": "Run agents securely and efficiently with the next generation AgentCore runtime",
+    "excerpt": "AI agents now run multi-step workloads for hours and act on behalf of users, raising the bar for secure, scalable agent compute. Learn how the next generation of Amazon Bedrock AgentCore runtime delivers hardware-isolated sessions with faster starts, more compute, usage-based billing, and isolation ",
+    "publishedAt": "2026-11-12T17:59:59.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-11-12T18:12:54.299Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 8866,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "AI agents now run multi-step workloads for hours and act on behalf of users, raising the bar for secure, scalable agent compute. Learn how the next generation of Amazon Bedrock AgentCore runtime delivers hardware-isolated sessions with faster starts, more compute, usage-based billing, and isolation ",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/run-agents-securely-and-efficiently-with-the-next-generation-agentcore-runtime/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-12T17:59:59.000Z",
+        "checkedAt": "2026-11-12T18:14:36.482Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Run agents securely and efficiently with the next generation AgentCore runtime | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/run-agents-securely-and-efficiently-with-the-next-generation-agentcore-runtime/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-12T17:59:59.000Z",
+        "checkedAt": "2026-11-12T18:14:36.482Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Run agents securely and efficiently with the next generation AgentCore runtime",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/run-agents-securely-and-efficiently-with-the-next-generation-agentcore-runtime/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-12T17:59:59.000Z",
+        "checkedAt": "2026-11-12T18:14:36.482Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "The length of task that frontier agents can complete on their own doubles about every four months ( METR ), and 40 percent of large enterprises are scaling AI agents, up from 27 percent a year ago ( McKinsey ).",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/run-agents-securely-and-efficiently-with-the-next-generation-agentcore-runtime/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-12T17:59:59.000Z",
+        "checkedAt": "2026-11-12T18:14:36.482Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "As agents run longer and with more autonomy, the focus shifts from what agents can do to how securely, reliably, and economically they can operate at scale.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/run-agents-securely-and-efficiently-with-the-next-generation-agentcore-runtime/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-12T17:59:59.000Z",
+        "checkedAt": "2026-11-12T18:14:36.482Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Sessions now start up to 15x faster, scale to 4x more compute, and run up to 68% more efficiently, with the isolation boundary fully intact.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/run-agents-securely-and-efficiently-with-the-next-generation-agentcore-runtime/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-12T17:59:59.000Z",
+        "checkedAt": "2026-11-12T18:14:36.482Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "“Migrating to the next generation of AgentCore runtime reduced our agent session cold starts from nearly a minute to under five seconds, even during peak traffic.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/run-agents-securely-and-efficiently-with-the-next-generation-agentcore-runtime/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-12T17:59:59.000Z",
+        "checkedAt": "2026-11-12T18:14:36.482Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "In our initial comparison of both runtime versions, the same workload delivered 35% faster cold starts for inference requests and 77% faster starts for health checks, while reducing measured runtime cost per call by 17%.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/run-agents-securely-and-efficiently-with-the-next-generation-agentcore-runtime/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-12T17:59:59.000Z",
+        "checkedAt": "2026-11-12T18:14:36.482Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "The next generation AgentCore runtime cut our memory footprint per invocation by around 60% in many use cases while handling more traffic at steady latency.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/run-agents-securely-and-efficiently-with-the-next-generation-agentcore-runtime/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-12T17:59:59.000Z",
+        "checkedAt": "2026-11-12T18:14:36.482Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Amazon Bedrock AgentCore runtime allows us to deploy and scale those agents in production without building or operating the underlying agent infrastructure, so we can deliver new agents to customers faster.”",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/run-agents-securely-and-efficiently-with-the-next-generation-agentcore-runtime/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-12T17:59:59.000Z",
+        "checkedAt": "2026-11-12T18:14:36.482Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "“The next generation Amazon Bedrock AgentCore runtime helps us deliver more responsive AI experiences by starting agents faster and using memory more efficiently.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/run-agents-securely-and-efficiently-with-the-next-generation-agentcore-runtime/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-12T17:59:59.000Z",
+        "checkedAt": "2026-11-12T18:14:36.482Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "The next generation Agentcore runtime makes that foundation more responsive and resource-efficient by restoring initialized environments and reclaiming unused memory.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/run-agents-securely-and-efficiently-with-the-next-generation-agentcore-runtime/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-12T17:59:59.000Z",
+        "checkedAt": "2026-11-12T18:14:36.482Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "The next generation AgentCore runtime is available today in AWS Regions across North America, South America, Europe, and Asia Pacific.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/run-agents-securely-and-efficiently-with-the-next-generation-agentcore-runtime/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-12T17:59:59.000Z",
+        "checkedAt": "2026-11-12T18:14:36.482Z"
+      }
+    ],
+    "pageDate": "2026-11-12T17:59:59.000Z"
+  },
+  "score": {
+    "importance": 3,
+    "practicalImpact": 2,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PRICING",
+      "SECURITY_MENTION",
+      "API_PLATFORM"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 10,
+    "total": 10
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 PRICING·SECURITY_MENTION·API_PLATFORM (우선순위 10)",
+    "근거 확인 통과 (확인 사실 10개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "none",
+    "model": null,
+    "status": "skipped",
+    "error": "Shadow Mode — 원고를 만들지 않음",
+    "promptVersion": "draft-v1",
+    "at": "2026-11-12T18:15:20.774Z",
+    "evidenceHash": "f4a09645b005"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": true,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}

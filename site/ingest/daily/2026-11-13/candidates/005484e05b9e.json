@@ -1,0 +1,221 @@
+{
+  "id": "005484e05b9e",
+  "date": "2026-11-13",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Detecting and recovering from silent data corruption on Amazon SageMaker HyperPod",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/detecting-and-recovering-from-silent-data-corruption-on-amazon-sagemaker-hyperpod/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-11-11T23:30:03.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "005484e05b9e",
+    "url": "https://aws.amazon.com/blogs/machine-learning/detecting-and-recovering-from-silent-data-corruption-on-amazon-sagemaker-hyperpod/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/detecting-and-recovering-from-silent-data-corruption-on-amazon-sagemaker-hyperpod",
+    "title": "Detecting and recovering from silent data corruption on Amazon SageMaker HyperPod",
+    "excerpt": "Silent data corruption is a GPU fault that returns wrong but plausible numbers with no error, quietly poisoning distributed training. This post adds three checks to a PyTorch DDP loop to detect it, localize the faulty node on Amazon SageMaker HyperPod, and hand the node to automatic recovery for rep",
+    "publishedAt": "2026-11-11T23:30:03.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-11-12T18:12:54.299Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 34392,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Silent data corruption is a GPU fault that returns wrong but plausible numbers with no error, quietly poisoning distributed training. This post adds three checks to a PyTorch DDP loop to detect it, localize the faulty node on Amazon SageMaker HyperPod, and hand the node to automatic recovery for rep",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/detecting-and-recovering-from-silent-data-corruption-on-amazon-sagemaker-hyperpod/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T23:30:03.000Z",
+        "checkedAt": "2026-11-12T18:15:14.078Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Detecting and recovering from silent data corruption on Amazon SageMaker HyperPod | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/detecting-and-recovering-from-silent-data-corruption-on-amazon-sagemaker-hyperpod/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T23:30:03.000Z",
+        "checkedAt": "2026-11-12T18:15:14.078Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Detecting and recovering from silent data corruption on Amazon SageMaker HyperPod",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/detecting-and-recovering-from-silent-data-corruption-on-amazon-sagemaker-hyperpod/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T23:30:03.000Z",
+        "checkedAt": "2026-11-12T18:15:14.078Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Silent data corruption (SDC) happens when hardware, such as a GPU, returns a wrong but plausible number and raises no error.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/detecting-and-recovering-from-silent-data-corruption-on-amazon-sagemaker-hyperpod/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T23:30:03.000Z",
+        "checkedAt": "2026-11-12T18:15:14.078Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "It happens at scale: during a 54-day period of Llama 3 405B pre-training on up to 16K H100 GPUs, Meta attributed 6 of 419 unexpected job interruptions to silent data corruption, and those were only the cases that interrupted the job and were traced to SDC.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/detecting-and-recovering-from-silent-data-corruption-on-amazon-sagemaker-hyperpod/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T23:30:03.000Z",
+        "checkedAt": "2026-11-12T18:15:14.078Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Amazon SageMaker HyperPod already replaces nodes that report a fault: the health-monitoring agent watches for GPU errors, deep health checks stress-test nodes, and automatic node recovery swaps out bad hardware.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/detecting-and-recovering-from-silent-data-corruption-on-amazon-sagemaker-hyperpod/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T23:30:03.000Z",
+        "checkedAt": "2026-11-12T18:15:14.078Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "When a check fires, we map the suspect rank to its node, contain the corruption, and have SageMaker HyperPod replace the node.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/detecting-and-recovering-from-silent-data-corruption-on-amazon-sagemaker-hyperpod/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T23:30:03.000Z",
+        "checkedAt": "2026-11-12T18:15:14.078Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "We tested the checks with software-injected faults on a SageMaker HyperPod cluster with 4 ml.p5.48xlarge instances (32 NVIDIA H100 GPUs), and repeated every test on three instances, the minimum the checks need.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/detecting-and-recovering-from-silent-data-corruption-on-amazon-sagemaker-hyperpod/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T23:30:03.000Z",
+        "checkedAt": "2026-11-12T18:15:14.078Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Localize: On SageMaker HyperPod clusters orchestrated by Amazon Elastic Kubernetes Service (Amazon EKS), the Kubernetes node name contains the instance ID, so mapping a suspect rank to a node is a lookup.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/detecting-and-recovering-from-silent-data-corruption-on-amazon-sagemaker-hyperpod/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T23:30:03.000Z",
+        "checkedAt": "2026-11-12T18:15:14.078Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Figure 1: A SageMaker HyperPod EKS cluster with three p5 nodes running training pods and SDC checks.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/detecting-and-recovering-from-silent-data-corruption-on-amazon-sagemaker-hyperpod/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T23:30:03.000Z",
+        "checkedAt": "2026-11-12T18:15:14.078Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Checkpoints on shared storage, Amazon FSx for Lustre or Amazon Simple Storage Service (Amazon S3).",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/detecting-and-recovering-from-silent-data-corruption-on-amazon-sagemaker-hyperpod/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T23:30:03.000Z",
+        "checkedAt": "2026-11-12T18:15:14.078Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "We ran the tests twice on one SageMaker HyperPod cluster orchestrated by Amazon EKS, using 4 and then 3 ml.p5.48xlarge instances with 8 NVIDIA H100 80GB HBM3 GPUs each, and PyTorch 2.9.0 (CUDA 13.0) from the AWS Deep Learning Containers training image.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/detecting-and-recovering-from-silent-data-corruption-on-amazon-sagemaker-hyperpod/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T23:30:03.000Z",
+        "checkedAt": "2026-11-12T18:15:14.078Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "In this post, we showed how to detect silent data corruption in data-parallel training and how to hand a suspect node to SageMaker HyperPod for replacement.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/detecting-and-recovering-from-silent-data-corruption-on-amazon-sagemaker-hyperpod/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T23:30:03.000Z",
+        "checkedAt": "2026-11-12T18:15:14.078Z"
+      }
+    ],
+    "pageDate": "2026-11-11T23:30:03.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "INFRA"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 INFRA (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}
