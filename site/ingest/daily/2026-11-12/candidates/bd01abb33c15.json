@@ -5,25 +5,23 @@
   "title": null,
   "sourceTitle": "Quickly confirm system-applied classification labels in Google Drive, Docs, Sheets, and Slides",
   "depth": null,
-  "suggestedDepth": null,
+  "suggestedDepth": "STANDARD",
   "depthAssessment": {
-    "sufficiency": "INSUFFICIENT",
-    "distinctFacts": 0,
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 10,
     "deepChecks": {
       "importance": false,
       "novelty": true,
       "userImpact": false,
       "contextNeed": false,
-      "distinctFacts": false,
-      "evidenceQuality": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
       "standardWouldOmit": false
     },
     "deepMissing": [
       "importance",
       "userImpact",
       "contextNeed",
-      "distinctFacts",
-      "evidenceQuality",
       "standardWouldOmit"
     ]
   },
@@ -56,12 +54,12 @@
     "tier": 1,
     "fetchMode": "rss",
     "discoveredVia": "https://workspaceupdates.googleblog.com/feeds/posts/default?max-results=500&published-min=2026-01-01T00:00:00Z",
-    "fetchedAt": "2026-11-11T17:52:15.446Z"
+    "fetchedAt": "2026-11-12T02:52:58.758Z"
   },
   "evidence": {
-    "status": "HTTP_429",
-    "chars": 0,
-    "grade": "FAIL",
+    "status": "OK",
+    "chars": 3708,
+    "grade": "PASS",
     "ledger": [
       {
         "id": "E0",
@@ -70,7 +68,115 @@
         "sourceUrl": "https://workspaceupdates.googleblog.com/2026/11/quickly-confirm-system-applied-classification-labels-in-Google-Drive-Docs-Sheets-and-Slides.html",
         "source": "Google Workspace Updates",
         "publishedAt": "2026-11-09T21:44:48.650Z",
-        "checkedAt": "2026-11-11T17:53:39.953Z"
+        "checkedAt": "2026-11-12T02:54:38.357Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Google Workspace Updates: Quickly confirm system-applied classification labels in Google Drive, Docs, Sheets, and Slides",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/11/quickly-confirm-system-applied-classification-labels-in-Google-Drive-Docs-Sheets-and-Slides.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-11-09T21:44:48.650Z",
+        "checkedAt": "2026-11-12T02:54:38.357Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Quickly confirm system-applied classification labels in Google Drive, Docs, Sheets, and Slides",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/11/quickly-confirm-system-applied-classification-labels-in-Google-Drive-Docs-Sheets-and-Slides.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-11-09T21:44:48.650Z",
+        "checkedAt": "2026-11-12T02:54:38.357Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "We’re making it faster to confirm automatically applied classification labels in Google Drive, Docs, Sheets, and Slides.",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/11/quickly-confirm-system-applied-classification-labels-in-Google-Drive-Docs-Sheets-and-Slides.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-11-09T21:44:48.650Z",
+        "checkedAt": "2026-11-12T02:54:38.357Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Users can also confirm the classification from the side panel using the new Accept label button.",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/11/quickly-confirm-system-applied-classification-labels-in-Google-Drive-Docs-Sheets-and-Slides.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-11-09T21:44:48.650Z",
+        "checkedAt": "2026-11-12T02:54:38.357Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Users can click Accept directly in the banner to confirm a single automatically applied classification label, or click Edit to review it in the Labels side panel.",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/11/quickly-confirm-system-applied-classification-labels-in-Google-Drive-Docs-Sheets-and-Slides.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-11-09T21:44:48.650Z",
+        "checkedAt": "2026-11-12T02:54:38.357Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Admins: There is no new admin control for this feature; it will be ON by default for organizations using default classification or AI classification with Drive labels.",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/11/quickly-confirm-system-applied-classification-labels-in-Google-Drive-Docs-Sheets-and-Slides.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-11-09T21:44:48.650Z",
+        "checkedAt": "2026-11-12T02:54:38.357Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "When a single classification label is automatically applied to a file you can edit, click Accept in the banner at the top of the file (or Accept label in the Labels side panel) to confirm it, or click Edit to modify the label value.",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/11/quickly-confirm-system-applied-classification-labels-in-Google-Drive-Docs-Sheets-and-Slides.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-11-09T21:44:48.650Z",
+        "checkedAt": "2026-11-12T02:54:38.357Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Visit the Help Center to learn more about applying and reviewing classification labels on files in Google Drive .",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/11/quickly-confirm-system-applied-classification-labels-in-Google-Drive-Docs-Sheets-and-Slides.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-11-09T21:44:48.650Z",
+        "checkedAt": "2026-11-12T02:54:38.357Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "AI classification is available on Enterprise Plus, Frontline Plus, and with the AI Security, or Google AI Pro for Education add-ons.",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/11/quickly-confirm-system-applied-classification-labels-in-Google-Drive-Docs-Sheets-and-Slides.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-11-09T21:44:48.650Z",
+        "checkedAt": "2026-11-12T02:54:38.357Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Google Workspace Admin Help: Apply classification labels to new files automatically",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/11/quickly-confirm-system-applied-classification-labels-in-Google-Drive-Docs-Sheets-and-Slides.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-11-09T21:44:48.650Z",
+        "checkedAt": "2026-11-12T02:54:38.357Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Google Workspace Admin Help: Automatically classify files in Google Drive with AI",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/11/quickly-confirm-system-applied-classification-labels-in-Google-Drive-Docs-Sheets-and-Slides.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-11-09T21:44:48.650Z",
+        "checkedAt": "2026-11-12T02:54:38.357Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Google Drive Help: Apply classification labels to files in Google Drive",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/11/quickly-confirm-system-applied-classification-labels-in-Google-Drive-Docs-Sheets-and-Slides.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-11-09T21:44:48.650Z",
+        "checkedAt": "2026-11-12T02:54:38.357Z"
       }
     ],
     "pageDate": null
@@ -81,7 +187,7 @@
     "koreanRelevance": 0,
     "novelty": 2,
     "sourceQuality": 3,
-    "verificationConfidence": 2,
+    "verificationConfidence": 3,
     "signals": [
       "CONSUMER"
     ],
@@ -93,12 +199,10 @@
   },
   "decision": "HOLD",
   "reasons": [
-    "근거 부족 (원문 HTTP_429, 확인 사실 0개) — 발행하지 않음"
+    "사건 신호 CONSUMER (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
   ],
-  "needsReview": [
-    "source_blocked",
-    "insufficient_evidence"
-  ],
+  "needsReview": [],
   "duplicate": {
     "result": "NEW",
     "reason": "기존 기사·후보와 겹치지 않음"

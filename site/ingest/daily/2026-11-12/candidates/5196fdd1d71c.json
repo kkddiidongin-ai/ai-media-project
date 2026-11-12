@@ -5,25 +5,23 @@
   "title": null,
   "sourceTitle": "Scale customized AI across your team with skills in Google Workspace and Workspace Studio",
   "depth": null,
-  "suggestedDepth": null,
+  "suggestedDepth": "STANDARD",
   "depthAssessment": {
-    "sufficiency": "INSUFFICIENT",
-    "distinctFacts": 0,
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
     "deepChecks": {
       "importance": false,
       "novelty": true,
       "userImpact": false,
       "contextNeed": false,
-      "distinctFacts": false,
-      "evidenceQuality": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
       "standardWouldOmit": false
     },
     "deepMissing": [
       "importance",
       "userImpact",
       "contextNeed",
-      "distinctFacts",
-      "evidenceQuality",
       "standardWouldOmit"
     ]
   },
@@ -56,12 +54,12 @@
     "tier": 1,
     "fetchMode": "rss",
     "discoveredVia": "https://workspaceupdates.googleblog.com/feeds/posts/default?max-results=500&published-min=2026-01-01T00:00:00Z",
-    "fetchedAt": "2026-11-11T17:52:15.446Z"
+    "fetchedAt": "2026-11-12T02:52:58.758Z"
   },
   "evidence": {
-    "status": "HTTP_429",
-    "chars": 0,
-    "grade": "FAIL",
+    "status": "OK",
+    "chars": 7160,
+    "grade": "PASS",
     "ledger": [
       {
         "id": "E0",
@@ -70,7 +68,115 @@
         "sourceUrl": "https://workspaceupdates.googleblog.com/2026/11/skills-in-workspace.html",
         "source": "Google Workspace Updates",
         "publishedAt": "2026-11-10T00:03:58.641Z",
-        "checkedAt": "2026-11-11T17:53:39.362Z"
+        "checkedAt": "2026-11-12T02:54:38.150Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Google Workspace Updates: Scale customized AI across your team with skills in Google Workspace and Workspace Studio",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/11/skills-in-workspace.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-11-10T00:03:58.641Z",
+        "checkedAt": "2026-11-12T02:54:38.150Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Scale customized AI across your team with skills in Google Workspace and Workspace Studio",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/11/skills-in-workspace.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-11-10T00:03:58.641Z",
+        "checkedAt": "2026-11-12T02:54:38.150Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Following our initial announcement and recent rollout update , skills in Google Workspace — reusable, custom instructions that guide Gemini to apply your team’s rules, templates, and reference files — are now rolling out across Google Workspace Studio and Workspace apps.",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/11/skills-in-workspace.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-11-10T00:03:58.641Z",
+        "checkedAt": "2026-11-12T02:54:38.150Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Create, test, and share skills in Google Workspace Studio and Google Docs: Build skills from scratch, start from new turnkey templates, or edit Markdown-native ( SKILL.md ) files directly in Google Workspace Studio , and test how they generate email drafts, documents, or prese…",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/11/skills-in-workspace.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-11-10T00:03:58.641Z",
+        "checkedAt": "2026-11-12T02:54:38.150Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Create and edit skills in context across Workspace apps: You can prompt Gemini directly in Gmail, Google Docs, Google Slides, Google Drive, and Google Chat to create, refine, and test skills without leaving the app you’re working in.",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/11/skills-in-workspace.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-11-10T00:03:58.641Z",
+        "checkedAt": "2026-11-12T02:54:38.150Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Use skills automatically or with an @, and connect them to Studio flows: Once you turn on a skill, Gemini in Gmail, Google Docs, Google Slides, Google Drive, and Google Chat can automatically recognize when that skill is relevant and apply it to your prompt, or you can invoke …",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/11/skills-in-workspace.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-11-10T00:03:58.641Z",
+        "checkedAt": "2026-11-12T02:54:38.150Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Create, test, and invoke skills across Google Workspace Studio and Workspace apps",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/11/skills-in-workspace.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-11-10T00:03:58.641Z",
+        "checkedAt": "2026-11-12T02:54:38.150Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Invoking skills is supported on the web in Workspace Studio, Gmail, Google Docs, Google Slides, Google Drive, and Google Chat, as well as in the Google Chat mobile app on Android and iOS.",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/11/skills-in-workspace.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-11-10T00:03:58.641Z",
+        "checkedAt": "2026-11-12T02:54:38.150Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Skills in Workspace are separate from skills and Gems in the Gemini app: Skills created in Workspace do not sync automatically with skills or Gems in the Gemini app , and the upcoming automated migration of remaining Gems in 2027 will convert Gems to draft skills exclusively i…",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/11/skills-in-workspace.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-11-10T00:03:58.641Z",
+        "checkedAt": "2026-11-12T02:54:38.150Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Skills in Workspace Studio and Gemini in Workspace are ON by default for eligible Google Workspace editions and can be disabled at the domain, organizational unit (OU), or group level in the Admin console.",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/11/skills-in-workspace.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-11-10T00:03:58.641Z",
+        "checkedAt": "2026-11-12T02:54:38.150Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Create and manage skills in Google Workspace Studio , using Skill Builder in Google Docs , or by prompting Gemini directly in Gmail, Google Docs, Google Slides, Google Drive, and Google Chat.",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/11/skills-in-workspace.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-11-10T00:03:58.641Z",
+        "checkedAt": "2026-11-12T02:54:38.150Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Visit the Help Center to learn more about how skills work in Google Workspace Studio , using skills in Gmail , Docs , Slides , Drive , and Chat , and how the transition from Gems to skills impacts Workspace Studio flows .",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/11/skills-in-workspace.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-11-10T00:03:58.641Z",
+        "checkedAt": "2026-11-12T02:54:38.150Z"
       }
     ],
     "pageDate": null
@@ -81,7 +187,7 @@
     "koreanRelevance": 0,
     "novelty": 2,
     "sourceQuality": 3,
-    "verificationConfidence": 2,
+    "verificationConfidence": 3,
     "signals": [
       "PRODUCT_LAUNCH"
     ],
@@ -93,12 +199,10 @@
   },
   "decision": "HOLD",
   "reasons": [
-    "근거 부족 (원문 HTTP_429, 확인 사실 0개) — 발행하지 않음"
+    "사건 신호 PRODUCT_LAUNCH (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
   ],
-  "needsReview": [
-    "source_blocked",
-    "insufficient_evidence"
-  ],
+  "needsReview": [],
   "duplicate": {
     "result": "NEW",
     "reason": "기존 기사·후보와 겹치지 않음"
