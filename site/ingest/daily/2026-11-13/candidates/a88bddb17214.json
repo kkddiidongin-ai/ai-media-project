@@ -1,0 +1,212 @@
+{
+  "id": "a88bddb17214",
+  "date": "2026-11-13",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "LLMON: An LLM-Native Markup Language, now in Granite 4.1 3B and 8B",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 12,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Hugging Face",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+      "name": "Hugging Face Blog",
+      "type": "official",
+      "publishedAt": "2026-11-12T19:07:35.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "a88bddb17214",
+    "url": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+    "canonicalUrl": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+    "title": "LLMON: An LLM-Native Markup Language, now in Granite 4.1 3B and 8B",
+    "excerpt": "",
+    "publishedAt": "2026-11-12T19:07:35.000Z",
+    "sourceId": "huggingface",
+    "sourceName": "Hugging Face Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://huggingface.co/blog/feed.xml",
+    "fetchedAt": "2026-11-13T02:34:29.066Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 9342,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "LLMON: An LLM-Native Markup Language, now in Granite 4.1 3B and 8B",
+        "sourceUrl": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-11-12T19:07:35.000Z",
+        "checkedAt": "2026-11-13T02:36:12.670Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "To address this, we developed LLMON (LLM Object Notation, pronounced “lemon”), an LLM-native markup language for explicitly communicating structure and semantics to the models.",
+        "sourceUrl": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-11-12T19:07:35.000Z",
+        "checkedAt": "2026-11-13T02:36:12.670Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Today we are releasing two experimental preview models, derived from Granite 4.1 base models, trained to consume and generate LLMON-marked text: granite-4.1-3b-LLMON-preview and granite-4.1-8b-LLMON-preview .",
+        "sourceUrl": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-11-12T19:07:35.000Z",
+        "checkedAt": "2026-11-13T02:36:12.670Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "This is achieved while maintaining general capability relative to Granite 4.1 Instruct models.",
+        "sourceUrl": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-11-12T19:07:35.000Z",
+        "checkedAt": "2026-11-13T02:36:12.670Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "The LLMON preview models ship with their own chat template, so you build the same messages list you would pass to any chat model and call apply_chat_template as usual; it renders the LLMON shown below.",
+        "sourceUrl": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-11-12T19:07:35.000Z",
+        "checkedAt": "2026-11-13T02:36:12.670Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "LLMON practically eliminates the problem on this benchmark, avoiding 47% more attacks relative to the best frontier model that we tested, and 95% more than the best open-source model.",
+        "sourceUrl": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-11-12T19:07:35.000Z",
+        "checkedAt": "2026-11-13T02:36:12.670Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Across standard benchmark categories, the LLMON models perform on par with the Granite 4.1 Instruct models.",
+        "sourceUrl": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-11-12T19:07:35.000Z",
+        "checkedAt": "2026-11-13T02:36:12.670Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "In short, if you’re experimenting with Granite 4.1 3B or 8B today, you can swap in the LLMON preview and should see comparable general performance with much stronger resistance to prompt injection.",
+        "sourceUrl": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-11-12T19:07:35.000Z",
+        "checkedAt": "2026-11-13T02:36:12.670Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "The models start from Granite 4.1 base checkpoints rather than the released instruct models, so LLMON behavior is learned during post-training rather than layered on an existing chat format.",
+        "sourceUrl": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-11-12T19:07:35.000Z",
+        "checkedAt": "2026-11-13T02:36:12.670Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Models: granite-4.1-3b-LLMON-preview & granite-4.1-8b-LLMON-preview",
+        "sourceUrl": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-11-12T19:07:35.000Z",
+        "checkedAt": "2026-11-13T02:36:12.670Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Granite Switch 4.1.1 — Update models like you update software",
+        "sourceUrl": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-11-12T19:07:35.000Z",
+        "checkedAt": "2026-11-13T02:36:12.670Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Granite Speech 5.0: Transcribe, Translate, and Attribute more Accurately and Faster",
+        "sourceUrl": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-11-12T19:07:35.000Z",
+        "checkedAt": "2026-11-13T02:36:12.670Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 2,
+    "signals": [
+      "MODEL_MENTION"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 MODEL_MENTION (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

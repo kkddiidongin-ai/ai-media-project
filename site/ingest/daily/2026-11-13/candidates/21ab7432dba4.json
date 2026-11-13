@@ -1,0 +1,235 @@
+{
+  "id": "21ab7432dba4",
+  "date": "2026-11-13",
+  "proposedSlug": "introducing-claude-meetings-beta",
+  "title": null,
+  "sourceTitle": "Introducing Claude Meetings, now in beta",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Anthropic",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://claude.com/resources/articles/claude-meetings",
+      "name": "Claude (claude.com articles)",
+      "type": "official",
+      "publishedAt": "2026-11-12T00:00:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "21ab7432dba4",
+    "url": "https://claude.com/resources/articles/claude-meetings",
+    "canonicalUrl": "https://claude.com/resources/articles/claude-meetings",
+    "title": "Introducing Claude Meetings, now in beta",
+    "excerpt": "Add Claude to your video calls to take notes, answer questions, and build docs and whiteboards while your team talks.",
+    "publishedAt": "2026-11-12T00:00:00.000Z",
+    "sourceId": "claude-blog",
+    "sourceName": "Claude (claude.com articles)",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "listing-meta",
+    "discoveredVia": "https://claude.com/resources/articles",
+    "fetchedAt": "2026-11-13T02:34:29.066Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 4179,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Add Claude to your video calls to take notes, answer questions, and build docs and whiteboards while your team talks.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-meetings",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-12T00:00:00.000Z",
+        "checkedAt": "2026-11-13T02:35:36.883Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "• • • • • • • • • • Introducing Claude Meetings, now in beta | Claude by Anthropic • • •",
+        "sourceUrl": "https://claude.com/resources/articles/claude-meetings",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-12T00:00:00.000Z",
+        "checkedAt": "2026-11-13T02:35:36.883Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Claude Meetings is starting to roll out in beta on Team and Enterprise plans.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-meetings",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-12T00:00:00.000Z",
+        "checkedAt": "2026-11-13T02:35:36.883Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "You say, “Claude, start a doc for this plan.” Claude writes up what the team has said so far, and teammates on the invite can edit the plan while you keep talking.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-meetings",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-12T00:00:00.000Z",
+        "checkedAt": "2026-11-13T02:35:36.883Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Claude asks for their approval to look it up, posts it in the meeting chat, and compares it to the current plan.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-meetings",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-12T00:00:00.000Z",
+        "checkedAt": "2026-11-13T02:35:36.883Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Later, you can go back to meetings you were part of and ask Claude about them, or add Claude to the next one from your calendar in claude.ai.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-meetings",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-12T00:00:00.000Z",
+        "checkedAt": "2026-11-13T02:35:36.883Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "On Team plans, inviting Claude to your meetings is available by default, and an admin can turn it off.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-meetings",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-12T00:00:00.000Z",
+        "checkedAt": "2026-11-13T02:35:36.883Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "While it’s in beta, it isn’t available to some organizations, including those with zero data retention (ZDR), HIPAA-ready configuration, or customer-managed encryption keys (CMEK).",
+        "sourceUrl": "https://claude.com/resources/articles/claude-meetings",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-12T00:00:00.000Z",
+        "checkedAt": "2026-11-13T02:35:36.883Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "During the beta, Claude’s notes and transcripts are free on Team and Enterprise plans.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-meetings",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-12T00:00:00.000Z",
+        "checkedAt": "2026-11-13T02:35:36.883Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "The docs, whiteboards, (opens in new tab) and other artifacts Claude makes in a call are free through February 10, 2027.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-meetings",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-12T00:00:00.000Z",
+        "checkedAt": "2026-11-13T02:35:36.883Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Introducing self-hosted Claude Managed Agents.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-meetings",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-12T00:00:00.000Z",
+        "checkedAt": "2026-11-13T02:35:36.883Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "A new plugin with 17 skills and four connectors helps manufacturers draft quotes, quality reports, and supplier requests from the systems they already run.",
+        "sourceUrl": "https://claude.com/resources/articles/claude-meetings",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-12T00:00:00.000Z",
+        "checkedAt": "2026-11-13T02:35:36.883Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Your apps can now open in Claude, and Claude can work in them",
+        "sourceUrl": "https://claude.com/resources/articles/claude-meetings",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-12T00:00:00.000Z",
+        "checkedAt": "2026-11-13T02:35:36.883Z"
+      }
+    ],
+    "pageDate": "2026-11-12T00:00:00.000Z"
+  },
+  "score": {
+    "importance": 3,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 2,
+    "signals": [
+      "MODEL",
+      "PRODUCT_LAUNCH",
+      "PREVIEW"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 9,
+    "total": 9
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 MODEL·PRODUCT_LAUNCH·PREVIEW (우선순위 9)",
+    "근거 확인 통과 (확인 사실 11개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "none",
+    "model": null,
+    "status": "skipped",
+    "error": "Shadow Mode — 원고를 만들지 않음",
+    "promptVersion": "draft-v1",
+    "at": "2026-11-13T02:36:13.555Z",
+    "evidenceHash": "f01b6cb8f1b9"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": true,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}
