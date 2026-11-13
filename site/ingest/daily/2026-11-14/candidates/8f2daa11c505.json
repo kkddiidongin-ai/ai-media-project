@@ -1,0 +1,232 @@
+{
+  "id": "8f2daa11c505",
+  "date": "2026-11-14",
+  "proposedSlug": "when-one-gpu-isn-t-enough-serving",
+  "title": null,
+  "sourceTitle": "When One GPU Isn’t Enough: Serving GLM-5.3 Across Two NVIDIA DGX Stations with vLLM",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": true,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": true
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact"
+    ]
+  },
+  "company": "NVIDIA",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/",
+      "name": "NVIDIA Technical Blog",
+      "type": "official",
+      "publishedAt": "2026-11-13T17:00:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "8f2daa11c505",
+    "url": "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/",
+    "canonicalUrl": "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm",
+    "title": "When One GPU Isn’t Enough: Serving GLM-5.3 Across Two NVIDIA DGX Stations with vLLM",
+    "excerpt": "Running a frontier-scale model locally means keeping all its weights in GPU memory; the largest models no longer fit on one machine. Two NVIDIA DGX Stations...",
+    "publishedAt": "2026-11-13T17:00:00.000Z",
+    "sourceId": "nvidia-developer",
+    "sourceName": "NVIDIA Technical Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://developer.nvidia.com/blog/feed",
+    "fetchedAt": "2026-11-13T17:40:32.407Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 19109,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Running a frontier-scale model locally means keeping all its weights in GPU memory; the largest models no longer fit on one machine. Two NVIDIA DGX Stations...",
+        "sourceUrl": "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-13T17:00:00.000Z",
+        "checkedAt": "2026-11-13T17:42:44.854Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "When One GPU Isn’t Enough: Serving GLM-5.3 Across Two NVIDIA DGX Stations with vLLM | NVIDIA Technical Blog",
+        "sourceUrl": "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-13T17:00:00.000Z",
+        "checkedAt": "2026-11-13T17:42:44.854Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "When One GPU Isn’t Enough: Serving GLM-5.3 Across Two NVIDIA DGX Stations with vLLM",
+        "sourceUrl": "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-13T17:00:00.000Z",
+        "checkedAt": "2026-11-13T17:42:44.854Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "GLM-5.3 NVFP4 , a quantized mixture-of-experts model with 753 billion parameters and 40 billion activated per token, requires about 464 GB of GPU memory, exceeding the 252 GB HBM3e on a single GB300 GPU.",
+        "sourceUrl": "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-13T17:00:00.000Z",
+        "checkedAt": "2026-11-13T17:42:44.854Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Two NVIDIA DGX Stations connected over ConnectX-8 RDMA serve the model through one OpenAI-compatible endpoint using tensor parallelism (TP=2), with each GPU holding and computing roughly half the weights.",
+        "sourceUrl": "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-13T17:00:00.000Z",
+        "checkedAt": "2026-11-13T17:42:44.854Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "vLLM launches a distributed service across both Stations, enabling multi-token prediction, FP8 KV-cache storage, and prefix caching to maximize throughput under concurrent load.",
+        "sourceUrl": "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-13T17:00:00.000Z",
+        "checkedAt": "2026-11-13T17:42:44.854Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Two NVIDIA DGX Stations connected over ConnectX-8 RDMA serve one model through a single endpoint, with tensor parallelism splitting the model weights and computation across both GPUs.",
+        "sourceUrl": "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-13T17:00:00.000Z",
+        "checkedAt": "2026-11-13T17:42:44.854Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Before starting, connect the two Stations with the Connect Two DGX Stations playbook .",
+        "sourceUrl": "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-13T17:00:00.000Z",
+        "checkedAt": "2026-11-13T17:42:44.854Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "This post shows how to serve GLM-5.3 locally across two NVIDIA DGX Stations with vLLM, send a request, and measure behavior under concurrent load.",
+        "sourceUrl": "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-13T17:00:00.000Z",
+        "checkedAt": "2026-11-13T17:42:44.854Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Two GB300 DGX Stations running Linux, connected and validated with the Connect Two DGX Stations playbook , including its GPU-memory RDMA test on both rails.",
+        "sourceUrl": "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-13T17:00:00.000Z",
+        "checkedAt": "2026-11-13T17:42:44.854Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "This step turns two machines into one service: the same launch script runs on both Stations, reads ~/glm53.env , and starts one vLLM rank on each.",
+        "sourceUrl": "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-13T17:00:00.000Z",
+        "checkedAt": "2026-11-13T17:42:44.854Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "In nvidia-smi , A shows the VLLM::Worker_TP0 process and B shows VLLM::Worker_TP1 , one rank per GPU.",
+        "sourceUrl": "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-13T17:00:00.000Z",
+        "checkedAt": "2026-11-13T17:42:44.854Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "You now have a 753-billion-parameter model running behind one local API on two NVIDIA DGX Stations, with every weight in GPU memory.",
+        "sourceUrl": "https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-13T17:00:00.000Z",
+        "checkedAt": "2026-11-13T17:42:44.854Z"
+      }
+    ],
+    "pageDate": "2026-11-13T17:00:00.000Z"
+  },
+  "score": {
+    "importance": 2,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "INFRA",
+      "MODEL_MENTION"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 6,
+    "total": 6
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 INFRA·MODEL_MENTION (우선순위 6)",
+    "근거 확인 통과 (확인 사실 11개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "none",
+    "model": null,
+    "status": "skipped",
+    "error": "Shadow Mode — 원고를 만들지 않음",
+    "promptVersion": "draft-v1",
+    "at": "2026-11-13T17:42:53.891Z",
+    "evidenceHash": "5e75e69c8fc5"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}

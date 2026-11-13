@@ -1,0 +1,233 @@
+{
+  "id": "263d7dc4e1e2",
+  "date": "2026-11-14",
+  "proposedSlug": "introducing-web-search-api-amazon-bedrock-agentcore",
+  "title": null,
+  "sourceTitle": "Introducing the Web Search API on Amazon Bedrock AgentCore",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": true,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-the-web-search-api-on-amazon-bedrock-agentcore/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-11-11T23:13:16.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "263d7dc4e1e2",
+    "url": "https://aws.amazon.com/blogs/machine-learning/introducing-the-web-search-api-on-amazon-bedrock-agentcore/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-the-web-search-api-on-amazon-bedrock-agentcore",
+    "title": "Introducing the Web Search API on Amazon Bedrock AgentCore",
+    "excerpt": "Today we're announcing the Web Search API on Amazon Bedrock AgentCore: your own code can search the web with a single signed API call, with no gateway and no resources to create. Call it from the AWS SDKs or the AWS CLI and use it in applications, agent loops, and data pipelines.",
+    "publishedAt": "2026-11-11T23:13:16.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-11-13T17:40:32.407Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 13920,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Today we're announcing the Web Search API on Amazon Bedrock AgentCore: your own code can search the web with a single signed API call, with no gateway and no resources to create. Call it from the AWS SDKs or the AWS CLI and use it in applications, agent loops, and data pipelines.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-the-web-search-api-on-amazon-bedrock-agentcore/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T23:13:16.000Z",
+        "checkedAt": "2026-11-13T17:42:43.220Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Introducing the Web Search API on Amazon Bedrock AgentCore | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-the-web-search-api-on-amazon-bedrock-agentcore/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T23:13:16.000Z",
+        "checkedAt": "2026-11-13T17:42:43.220Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Introducing the Web Search API on Amazon Bedrock AgentCore",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-the-web-search-api-on-amazon-bedrock-agentcore/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T23:13:16.000Z",
+        "checkedAt": "2026-11-13T17:42:43.220Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Until now, Web Search on Amazon Bedrock AgentCore delivered that information to agents through AgentCore Gateway , a capability of Amazon Bedrock AgentCore.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-the-web-search-api-on-amazon-bedrock-agentcore/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T23:13:16.000Z",
+        "checkedAt": "2026-11-13T17:42:43.220Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Today, we’re announcing the Web Search API on Amazon Bedrock AgentCore.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-the-web-search-api-on-amazon-bedrock-agentcore/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T23:13:16.000Z",
+        "checkedAt": "2026-11-13T17:42:43.220Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Simpler integration for existing applications – Applications that already have their own API layer can call the Web Search API directly, adding web grounding without adopting the full AgentCore Gateway stack.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-the-web-search-api-on-amazon-bedrock-agentcore/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T23:13:16.000Z",
+        "checkedAt": "2026-11-13T17:42:43.220Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "The Web Search API is the InvokeWebSearch operation on the bedrock-agentcore data plane, the same endpoint that other AgentCore tools such as AgentCore Browser , a capability of Amazon Bedrock AgentCore, use.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-the-web-search-api-on-amazon-bedrock-agentcore/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T23:13:16.000Z",
+        "checkedAt": "2026-11-13T17:42:43.220Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Figure 1: How a Web Search API request flows",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-the-web-search-api-on-amazon-bedrock-agentcore/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T23:13:16.000Z",
+        "checkedAt": "2026-11-13T17:42:43.220Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "If your code runs on AWS Lambda , Amazon Elastic Container Service (Amazon ECS) , Amazon Elastic Compute Cloud (Amazon EC2) , or Amazon Elastic Kubernetes Service (Amazon EKS) , the execution role provides credentials automatically.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-the-web-search-api-on-amazon-bedrock-agentcore/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T23:13:16.000Z",
+        "checkedAt": "2026-11-13T17:42:43.220Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Without a framework, the WebSearchClient in the AgentCore Python SDK wraps the same call and returns results with parsed dates. langchain-aws 1.9.3 and the AgentCore Python SDK 1.26.0 add Web Search API support, so install those versions or later.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-the-web-search-api-on-amazon-bedrock-agentcore/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T23:13:16.000Z",
+        "checkedAt": "2026-11-13T17:42:43.220Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "You can try the Web Search API in the Amazon Bedrock AgentCore console before you write any code.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-the-web-search-api-on-amazon-bedrock-agentcore/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T23:13:16.000Z",
+        "checkedAt": "2026-11-13T17:42:43.220Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Figure 3: Web Search in the Amazon Bedrock AgentCore console",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-the-web-search-api-on-amazon-bedrock-agentcore/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T23:13:16.000Z",
+        "checkedAt": "2026-11-13T17:42:43.220Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "The Web Search API meters to the same usage type as the gateway connector, so it’s billed at the Web Search rate of $7 per 1,000 queries.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-the-web-search-api-on-amazon-bedrock-agentcore/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T23:13:16.000Z",
+        "checkedAt": "2026-11-13T17:42:43.220Z"
+      }
+    ],
+    "pageDate": "2026-11-11T23:13:16.000Z"
+  },
+  "score": {
+    "importance": 2,
+    "practicalImpact": 2,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PRODUCT_LAUNCH",
+      "API_PLATFORM"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 8,
+    "total": 8
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 PRODUCT_LAUNCH·API_PLATFORM (우선순위 8)",
+    "근거 확인 통과 (확인 사실 11개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "none",
+    "model": null,
+    "status": "skipped",
+    "error": "Shadow Mode — 원고를 만들지 않음",
+    "promptVersion": "draft-v1",
+    "at": "2026-11-13T17:42:53.891Z",
+    "evidenceHash": "b1ba23bb9a8a"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}

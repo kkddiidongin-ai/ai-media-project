@@ -1,0 +1,221 @@
+{
+  "id": "6a701461aeac",
+  "date": "2026-11-14",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Validating GPU Platforms with Runtime AI Inventory via the NVIDIA DSX AI Factory",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "NVIDIA",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://developer.nvidia.com/blog/validating-gpu-platforms-with-runtime-ai-inventory-via-the-nvidia-dsx-ai-factory/",
+      "name": "NVIDIA Technical Blog",
+      "type": "official",
+      "publishedAt": "2026-11-11T17:00:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "6a701461aeac",
+    "url": "https://developer.nvidia.com/blog/validating-gpu-platforms-with-runtime-ai-inventory-via-the-nvidia-dsx-ai-factory/",
+    "canonicalUrl": "https://developer.nvidia.com/blog/validating-gpu-platforms-with-runtime-ai-inventory-via-the-nvidia-dsx-ai-factory",
+    "title": "Validating GPU Platforms with Runtime AI Inventory via the NVIDIA DSX AI Factory",
+    "excerpt": "As teams deploy and scale AI workloads using NVIDIA Dynamo, Kubeflow, or Slurm, tracking what actually runs requires visibility beyond the platform...",
+    "publishedAt": "2026-11-11T17:00:00.000Z",
+    "sourceId": "nvidia-developer",
+    "sourceName": "NVIDIA Technical Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://developer.nvidia.com/blog/feed",
+    "fetchedAt": "2026-11-13T17:40:32.407Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 11919,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "As teams deploy and scale AI workloads using NVIDIA Dynamo, Kubeflow, or Slurm, tracking what actually runs requires visibility beyond the platform...",
+        "sourceUrl": "https://developer.nvidia.com/blog/validating-gpu-platforms-with-runtime-ai-inventory-via-the-nvidia-dsx-ai-factory/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-11T17:00:00.000Z",
+        "checkedAt": "2026-11-13T17:42:53.704Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Validating GPU Platforms with Runtime AI Inventory via the NVIDIA DSX AI Factory | NVIDIA Technical Blog",
+        "sourceUrl": "https://developer.nvidia.com/blog/validating-gpu-platforms-with-runtime-ai-inventory-via-the-nvidia-dsx-ai-factory/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-11T17:00:00.000Z",
+        "checkedAt": "2026-11-13T17:42:53.704Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Validating GPU Platforms with Runtime AI Inventory via the NVIDIA DSX AI Factory",
+        "sourceUrl": "https://developer.nvidia.com/blog/validating-gpu-platforms-with-runtime-ai-inventory-via-the-nvidia-dsx-ai-factory/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-11T17:00:00.000Z",
+        "checkedAt": "2026-11-13T17:42:53.704Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "NVIDIA AI Cluster Runtime (AICR) now includes a qualified AI bill of materials (AIBOM) component built on the open source k8s-aibom project to track AI workloads running on Kubernetes.",
+        "sourceUrl": "https://developer.nvidia.com/blog/validating-gpu-platforms-with-runtime-ai-inventory-via-the-nvidia-dsx-ai-factory/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-11T17:00:00.000Z",
+        "checkedAt": "2026-11-13T17:42:53.704Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "AICR generates version-locked recipes and reproducible deployment bundles for GPU-accelerated Kubernetes, while k8s-aibom observes supported AI workloads and emits CycloneDX 1.6 AIBOM records with confidence tiers and evidence locators.",
+        "sourceUrl": "https://developer.nvidia.com/blog/validating-gpu-platforms-with-runtime-ai-inventory-via-the-nvidia-dsx-ai-factory/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-11T17:00:00.000Z",
+        "checkedAt": "2026-11-13T17:42:53.704Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Explore the k8s-aibom repository to review the AI workload inventory project.",
+        "sourceUrl": "https://developer.nvidia.com/blog/validating-gpu-platforms-with-runtime-ai-inventory-via-the-nvidia-dsx-ai-factory/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-11T17:00:00.000Z",
+        "checkedAt": "2026-11-13T17:42:53.704Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "NVIDIA AI Cluster Runtime (AICR) , an open source modular component of the NVIDIA DSX AI Factory Platform , now includes a qualified AI bill of materials (AIBOM) component to close that gap.",
+        "sourceUrl": "https://developer.nvidia.com/blog/validating-gpu-platforms-with-runtime-ai-inventory-via-the-nvidia-dsx-ai-factory/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-11T17:00:00.000Z",
+        "checkedAt": "2026-11-13T17:42:53.704Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "An open source project created by Google, k8s-aibom tracks AI workloads running on Kubernetes.",
+        "sourceUrl": "https://developer.nvidia.com/blog/validating-gpu-platforms-with-runtime-ai-inventory-via-the-nvidia-dsx-ai-factory/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-11T17:00:00.000Z",
+        "checkedAt": "2026-11-13T17:42:53.704Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "NVIDIA DSX brings together the technologies needed to design, build and operate AI factories",
+        "sourceUrl": "https://developer.nvidia.com/blog/validating-gpu-platforms-with-runtime-ai-inventory-via-the-nvidia-dsx-ai-factory/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-11T17:00:00.000Z",
+        "checkedAt": "2026-11-13T17:42:53.704Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Start with a Google Kubernetes Engine (GKE) cluster running Kubernetes 1.32 or later, with NVIDIA H100 GPU nodes using Container-Optimized OS and GKE-managed drivers and device plugins.",
+        "sourceUrl": "https://developer.nvidia.com/blog/validating-gpu-platforms-with-runtime-ai-inventory-via-the-nvidia-dsx-ai-factory/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-11T17:00:00.000Z",
+        "checkedAt": "2026-11-13T17:42:53.704Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "That is the half AICR brings to this pairing: a validated GPU platform quickly and repeatably. k8s-aibom then keeps inventorying supported AI workloads.",
+        "sourceUrl": "https://developer.nvidia.com/blog/validating-gpu-platforms-with-runtime-ai-inventory-via-the-nvidia-dsx-ai-factory/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-11T17:00:00.000Z",
+        "checkedAt": "2026-11-13T17:42:53.704Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "AICR is available at NVIDIA/aicr . k8s-aibom is available at GoogleCloudPlatform/k8s-aibom .",
+        "sourceUrl": "https://developer.nvidia.com/blog/validating-gpu-platforms-with-runtime-ai-inventory-via-the-nvidia-dsx-ai-factory/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-11T17:00:00.000Z",
+        "checkedAt": "2026-11-13T17:42:53.704Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Agentic AI / Generative AI | Data Center / Cloud | Developer Tools & Techniques | General | DSX | Intermediate Technical | Tutorial | DSX AI Factory Platform | Kubernetes | Open Source",
+        "sourceUrl": "https://developer.nvidia.com/blog/validating-gpu-platforms-with-runtime-ai-inventory-via-the-nvidia-dsx-ai-factory/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-11T17:00:00.000Z",
+        "checkedAt": "2026-11-13T17:42:53.704Z"
+      }
+    ],
+    "pageDate": "2026-11-11T17:00:00.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "INFRA"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 INFRA (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

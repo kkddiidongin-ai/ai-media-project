@@ -1,0 +1,212 @@
+{
+  "id": "d2296a64c0dc",
+  "date": "2026-11-14",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Token Pooling-Aware Training for Multi-Vector Embedding Models",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 9,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Hugging Face",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://huggingface.co/blog/token-pooling",
+      "name": "Hugging Face Blog",
+      "type": "official",
+      "publishedAt": "2026-11-11T00:00:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "d2296a64c0dc",
+    "url": "https://huggingface.co/blog/token-pooling",
+    "canonicalUrl": "https://huggingface.co/blog/token-pooling",
+    "title": "Token Pooling-Aware Training for Multi-Vector Embedding Models",
+    "excerpt": "",
+    "publishedAt": "2026-11-11T00:00:00.000Z",
+    "sourceId": "huggingface",
+    "sourceName": "Hugging Face Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://huggingface.co/blog/feed.xml",
+    "fetchedAt": "2026-11-13T17:40:32.407Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 15239,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Token Pooling-Aware Training for Multi-Vector Embedding Models",
+        "sourceUrl": "https://huggingface.co/blog/token-pooling",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-11-11T00:00:00.000Z",
+        "checkedAt": "2026-11-13T17:42:50.580Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Multi-vector embedding models give each query token its own opportunity to find a match in a document.",
+        "sourceUrl": "https://huggingface.co/blog/token-pooling",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-11-11T00:00:00.000Z",
+        "checkedAt": "2026-11-13T17:42:50.580Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Token pooling-aware training raises that retention to 97.8% at the same storage budget!",
+        "sourceUrl": "https://huggingface.co/blog/token-pooling",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-11-11T00:00:00.000Z",
+        "checkedAt": "2026-11-13T17:42:50.580Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "This post builds on pooling-aware training studied in Stefan Josef's Learn to Pool and LightOn's pooling regularization study , which also explores targeted training and adaptive budgets.",
+        "sourceUrl": "https://huggingface.co/blog/token-pooling",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-11-11T00:00:00.000Z",
+        "checkedAt": "2026-11-13T17:42:50.580Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Multi-vector models such as ColBERT instead keep a collection of contextual token vectors, allowing different parts of a query to match different parts of a document.",
+        "sourceUrl": "https://huggingface.co/blog/token-pooling",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-11-11T00:00:00.000Z",
+        "checkedAt": "2026-11-13T17:42:50.580Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Pooling-aware training applies the objective to representations with fewer token vectors.",
+        "sourceUrl": "https://huggingface.co/blog/token-pooling",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-11-11T00:00:00.000Z",
+        "checkedAt": "2026-11-13T17:42:50.580Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "My training script uses mini-batches of 64 with a training batch size of 256.",
+        "sourceUrl": "https://huggingface.co/blog/token-pooling",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-11-11T00:00:00.000Z",
+        "checkedAt": "2026-11-13T17:42:50.580Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "uv run examples/multi_vector_encoder/training/token_pooling/training_cached_contrastive.py --baseline",
+        "sourceUrl": "https://huggingface.co/blog/token-pooling",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-11-11T00:00:00.000Z",
+        "checkedAt": "2026-11-13T17:42:50.580Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "To investigate, I trained two models from answerdotai/ModernBERT-base , each with a fresh 128-dimensional token projection:",
+        "sourceUrl": "https://huggingface.co/blog/token-pooling",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-11-11T00:00:00.000Z",
+        "checkedAt": "2026-11-13T17:42:50.580Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "The training token cap is 300, and short queries are expanded to at least 32 token positions to provide additional contextual query vectors.",
+        "sourceUrl": "https://huggingface.co/blog/token-pooling",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-11-11T00:00:00.000Z",
+        "checkedAt": "2026-11-13T17:42:50.580Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "The figure compares ordinary and pooling-aware training with pool factors of 2, 3, 4, and 6, alongside unpooled retrieval.",
+        "sourceUrl": "https://huggingface.co/blog/token-pooling",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-11-11T00:00:00.000Z",
+        "checkedAt": "2026-11-13T17:42:50.580Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Training and Finetuning Multi-Vector Embedding Models with Sentence Transformers",
+        "sourceUrl": "https://huggingface.co/blog/token-pooling",
+        "source": "Hugging Face Blog",
+        "publishedAt": "2026-11-11T00:00:00.000Z",
+        "checkedAt": "2026-11-13T17:42:50.580Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 2,
+    "signals": [
+      "MODEL_MENTION"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 MODEL_MENTION (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}
