@@ -1,0 +1,234 @@
+{
+  "id": "f8c1a7370c13",
+  "date": "2026-11-13",
+  "proposedSlug": "introducing-alphaproof-code-breakthrough-verifying-complex-s",
+  "title": null,
+  "sourceTitle": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 10,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Google",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+      "name": "Google DeepMind",
+      "type": "official",
+      "publishedAt": "2026-11-10T12:02:28.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "f8c1a7370c13",
+    "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+    "canonicalUrl": "https://deepmind.google/blog/introducing-alphaproof-code",
+    "title": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
+    "excerpt": "AlphaProof Code agents wrote three million lines of proofs in Lean to verify Signal’s core encryption.",
+    "publishedAt": "2026-11-10T12:02:28.000Z",
+    "sourceId": "google-deepmind",
+    "sourceName": "Google DeepMind",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://deepmind.google/blog/rss.xml",
+    "fetchedAt": "2026-11-13T02:34:29.066Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 5353,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "AlphaProof Code agents wrote three million lines of proofs in Lean to verify Signal’s core encryption.",
+        "sourceUrl": "https://deepmind.google/blog/introducing-alphaproof-code/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-11-10T12:02:28.000Z",
+        "checkedAt": "2026-11-12T18:15:10.915Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth — Google DeepMind • • • • • • • • • • • • • • • • • • Skip to main content",
+        "sourceUrl": "https://deepmind.google/blog/introducing-alphaproof-code/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-11-10T12:02:28.000Z",
+        "checkedAt": "2026-11-12T18:15:10.915Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
+        "sourceUrl": "https://deepmind.google/blog/introducing-alphaproof-code/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-11-10T12:02:28.000Z",
+        "checkedAt": "2026-11-12T18:15:10.915Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Today, we’re sharing a milestone in software security long considered to be a grand challenge: Google DeepMind researchers guided AI agents to mathematically prove key security properties of the actual code underlying the Signal protocol, the technology that protects billions …",
+        "sourceUrl": "https://deepmind.google/blog/introducing-alphaproof-code/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-11-10T12:02:28.000Z",
+        "checkedAt": "2026-11-12T18:15:10.915Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "This breakthrough discovery was made using AlphaProof Code , a novel agentic framework for formal verification at unprecedented depth that combines human expertise with AI agents.",
+        "sourceUrl": "https://deepmind.google/blog/introducing-alphaproof-code/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-11-10T12:02:28.000Z",
+        "checkedAt": "2026-11-12T18:15:10.915Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "AlphaProof Code is a multi-LLM agentic framework that splits the work of formal verification the way a research team would: human experts work with AI to decide what to prove, and a group of AI agents does it.",
+        "sourceUrl": "https://deepmind.google/blog/introducing-alphaproof-code/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-11-10T12:02:28.000Z",
+        "checkedAt": "2026-11-12T18:15:10.915Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Our agents went further, proving that the compiled code fulfills the key security properties – such as keeping messages protected before and after a device is temporarily compromised – down to the exact code running on devices.",
+        "sourceUrl": "https://deepmind.google/blog/introducing-alphaproof-code/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-11-10T12:02:28.000Z",
+        "checkedAt": "2026-11-12T18:15:10.915Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "To confirm that AlphaProof Code can tell correct code from buggy code, we reintroduced two real, previously fixed bugs into an isolated version of Signal's code.",
+        "sourceUrl": "https://deepmind.google/blog/introducing-alphaproof-code/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-11-10T12:02:28.000Z",
+        "checkedAt": "2026-11-12T18:15:10.915Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "In AlphaProof Code, AI agents help users write a specification, then autonomously prove that the implementation meets it.",
+        "sourceUrl": "https://deepmind.google/blog/introducing-alphaproof-code/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-11-10T12:02:28.000Z",
+        "checkedAt": "2026-11-12T18:15:10.915Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Using AI agents to translate live code into valid Lean theorems is a major breakthrough.",
+        "sourceUrl": "https://deepmind.google/blog/introducing-alphaproof-code/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-11-10T12:02:28.000Z",
+        "checkedAt": "2026-11-12T18:15:10.915Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "As AI-driven security threats grow, rigorously verifying the Signal protocol implementation gives us even greater confidence in our code's privacy guarantees.",
+        "sourceUrl": "https://deepmind.google/blog/introducing-alphaproof-code/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-11-10T12:02:28.000Z",
+        "checkedAt": "2026-11-12T18:15:10.915Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Traditionally, verifying that production code strictly matches its cryptographic design required extensive manual effort, making the use of AI agents to automatically translate live code into valid Lean theorems a great breakthrough.",
+        "sourceUrl": "https://deepmind.google/blog/introducing-alphaproof-code/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-11-10T12:02:28.000Z",
+        "checkedAt": "2026-11-12T18:15:10.915Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Verifying Signal's core cryptography lays the groundwork to secure other vital systems, from medical device firmware to power grid software.",
+        "sourceUrl": "https://deepmind.google/blog/introducing-alphaproof-code/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-11-10T12:02:28.000Z",
+        "checkedAt": "2026-11-12T18:15:10.915Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 2,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 2,
+    "signals": [
+      "PRODUCT_LAUNCH",
+      "RESEARCH_RESULT"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 7,
+    "total": 7
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 PRODUCT_LAUNCH·RESEARCH_RESULT (우선순위 7)",
+    "근거 확인 통과 (확인 사실 10개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "none",
+    "model": null,
+    "status": "skipped",
+    "error": "Shadow Mode — 원고를 만들지 않음",
+    "promptVersion": "draft-v1",
+    "at": "2026-11-13T02:36:13.555Z",
+    "evidenceHash": "25371e299dfc"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}

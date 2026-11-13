@@ -1,0 +1,221 @@
+{
+  "id": "8b208eddf6e2",
+  "date": "2026-11-13",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "ICYMI: What landed for AI builders in October 2026",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-october-2026/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-11-11T22:26:40.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "8b208eddf6e2",
+    "url": "https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-october-2026/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-october-2026",
+    "title": "ICYMI: What landed for AI builders in October 2026",
+    "excerpt": "A recap of the major Amazon Bedrock, Amazon Bedrock AgentCore, and Strands updates from October 2026: new models to match each task, updates that keep agents available and grounded, and clearer cost reporting for AI builders.",
+    "publishedAt": "2026-11-11T22:26:40.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-11-13T02:34:29.066Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 8522,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "A recap of the major Amazon Bedrock, Amazon Bedrock AgentCore, and Strands updates from October 2026: new models to match each task, updates that keep agents available and grounded, and clearer cost reporting for AI builders.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-october-2026/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T22:26:40.000Z",
+        "checkedAt": "2026-11-12T18:15:12.482Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "ICYMI: What landed for AI builders in October 2026 | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-october-2026/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T22:26:40.000Z",
+        "checkedAt": "2026-11-12T18:15:12.482Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "ICYMI: What landed for AI builders in October 2026",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-october-2026/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T22:26:40.000Z",
+        "checkedAt": "2026-11-12T18:15:12.482Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "At AWS, we believe AI builders should be able to choose the right model for every task, trust their agents in production, and see clearly what their AI workloads cost.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-october-2026/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T22:26:40.000Z",
+        "checkedAt": "2026-11-12T18:15:12.482Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "What we shipped in October addresses each of these needs.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-october-2026/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T22:26:40.000Z",
+        "checkedAt": "2026-11-12T18:15:12.482Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Amazon Bedrock and AgentCore updates keep agents available, hold them to the processes you define, and help you trust what they return.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-october-2026/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T22:26:40.000Z",
+        "checkedAt": "2026-11-12T18:15:12.482Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Claude Haiku 5.5 is built for subagents and high-volume, cost-sensitive work.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-october-2026/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T22:26:40.000Z",
+        "checkedAt": "2026-11-12T18:15:12.482Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "In a multi-agent setup, a model such as Claude Opus 5.5 can plan the work and hand well-defined coding, tool use, and browser automation tasks to Haiku.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-october-2026/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T22:26:40.000Z",
+        "checkedAt": "2026-11-12T18:15:12.482Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "OpenAI GPT-6.1 Terra is now generally available on Amazon Bedrock.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-october-2026/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T22:26:40.000Z",
+        "checkedAt": "2026-11-12T18:15:12.482Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Amazon Nova 2.5 Sonic , our latest speech-to-speech model, improves reasoning, instruction following, and tool-calling accuracy, with lower latency at the same price as Amazon Nova 2 Sonic.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-october-2026/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T22:26:40.000Z",
+        "checkedAt": "2026-11-12T18:15:12.482Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "GLM 5.3 by Z.ai is an open-weight model for agentic coding and long-horizon software engineering, with a 1-million-token context window and prompt caching, available to eligible enterprise customers.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-october-2026/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T22:26:40.000Z",
+        "checkedAt": "2026-11-12T18:15:12.482Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Claude Haiku 5.5 and OpenAI GPT-5.6 models with cross-Region inference are now available in AWS GovCloud (US).",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-october-2026/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T22:26:40.000Z",
+        "checkedAt": "2026-11-12T18:15:12.482Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "AgentCore CLI, a capability of Amazon Bedrock AgentCore, is now generally available in version 1.0 .",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/icymi-what-landed-for-ai-builders-in-october-2026/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T22:26:40.000Z",
+        "checkedAt": "2026-11-12T18:15:12.482Z"
+      }
+    ],
+    "pageDate": "2026-11-11T22:26:40.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "API_PLATFORM"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 API_PLATFORM (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

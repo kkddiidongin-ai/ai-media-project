@@ -1,0 +1,221 @@
+{
+  "id": "e9b2308e4ac3",
+  "date": "2026-11-13",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Four Amazon Bedrock inference choices that affect cost",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/four-amazon-bedrock-inference-choices-that-affect-cost/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-11-12T20:51:55.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "e9b2308e4ac3",
+    "url": "https://aws.amazon.com/blogs/machine-learning/four-amazon-bedrock-inference-choices-that-affect-cost/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/four-amazon-bedrock-inference-choices-that-affect-cost",
+    "title": "Four Amazon Bedrock inference choices that affect cost",
+    "excerpt": "Your Amazon Bedrock inference bill can keep climbing even after you tune prompts and application logic. Four request-level choices (cache duration, service tier, reasoning effort, and maxTokens) change how many tokens the service processes and the rate applied. We show how we tested each and how to ",
+    "publishedAt": "2026-11-12T20:51:55.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-11-13T02:34:29.066Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 11048,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Your Amazon Bedrock inference bill can keep climbing even after you tune prompts and application logic. Four request-level choices (cache duration, service tier, reasoning effort, and maxTokens) change how many tokens the service processes and the rate applied. We show how we tested each and how to ",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/four-amazon-bedrock-inference-choices-that-affect-cost/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-12T20:51:55.000Z",
+        "checkedAt": "2026-11-13T02:36:10.170Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Four Amazon Bedrock inference choices that affect cost | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/four-amazon-bedrock-inference-choices-that-affect-cost/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-12T20:51:55.000Z",
+        "checkedAt": "2026-11-13T02:36:10.170Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Four Amazon Bedrock inference choices that affect cost",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/four-amazon-bedrock-inference-choices-that-affect-cost/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-12T20:51:55.000Z",
+        "checkedAt": "2026-11-13T02:36:10.170Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Your Amazon Bedrock inference bill can keep climbing after you tune prompts and application logic.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/four-amazon-bedrock-inference-choices-that-affect-cost/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-12T20:51:55.000Z",
+        "checkedAt": "2026-11-13T02:36:10.170Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "For broader decisions such as model selection, batch inference, routing, and distillation, see Effective cost optimization strategies for Amazon Bedrock .",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/four-amazon-bedrock-inference-choices-that-affect-cost/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-12T20:51:55.000Z",
+        "checkedAt": "2026-11-13T02:36:10.170Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "The Prompt caching for faster model inference guide lists 5-minute and 1-hour time-to-live (TTL) values for supported Anthropic models.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/four-amazon-bedrock-inference-choices-that-affect-cost/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-12T20:51:55.000Z",
+        "checkedAt": "2026-11-13T02:36:10.170Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "The Amazon Bedrock Pricing page lists separate rates for 5-minute writes, 1-hour writes, and cache reads.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/four-amazon-bedrock-inference-choices-that-affect-cost/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-12T20:51:55.000Z",
+        "checkedAt": "2026-11-13T02:36:10.170Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "For Anthropic Claude Sonnet 5 and Anthropic Claude Opus 5 on Amazon Bedrock, a 5-minute write costs 1.25 times the input rate.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/four-amazon-bedrock-inference-choices-that-affect-cost/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-12T20:51:55.000Z",
+        "checkedAt": "2026-11-13T02:36:10.170Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "The Optimizing cost and latency with Amazon Bedrock prompt caching for Anthropic models post describes this pattern.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/four-amazon-bedrock-inference-choices-that-affect-cost/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-12T20:51:55.000Z",
+        "checkedAt": "2026-11-13T02:36:10.170Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "The cards for Anthropic Claude Sonnet 5 and Anthropic Claude Opus 5 on Amazon Bedrock list it as not supported.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/four-amazon-bedrock-inference-choices-that-affect-cost/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-12T20:51:55.000Z",
+        "checkedAt": "2026-11-13T02:36:10.170Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Its three tasks follow the design in Build long-horizon agents with Grok 4.7 on Amazon Bedrock , and each has one correct answer.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/four-amazon-bedrock-inference-choices-that-affect-cost/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-12T20:51:55.000Z",
+        "checkedAt": "2026-11-13T02:36:10.170Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "On the Amazon Bedrock Samples Invoke Bedrock model for code generation workload, median output tokens were 676 at low and 743 at high , a difference within run-to-run variation.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/four-amazon-bedrock-inference-choices-that-affect-cost/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-12T20:51:55.000Z",
+        "checkedAt": "2026-11-13T02:36:10.170Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Related samples and posts: Invoke Bedrock model for code generation and Build long-horizon agents with Grok 4.7 on Amazon Bedrock .",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/four-amazon-bedrock-inference-choices-that-affect-cost/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-12T20:51:55.000Z",
+        "checkedAt": "2026-11-13T02:36:10.170Z"
+      }
+    ],
+    "pageDate": "2026-11-12T20:51:55.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "API_PLATFORM"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 API_PLATFORM (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

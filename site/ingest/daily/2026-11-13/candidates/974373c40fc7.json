@@ -1,0 +1,221 @@
+{
+  "id": "974373c40fc7",
+  "date": "2026-11-13",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Lazare, veni foras: Reprogramming Dormant Neurons to Backdoor AI Agents",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 9,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Microsoft",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://www.microsoft.com/en-us/research/blog/lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents/",
+      "name": "Microsoft Research Blog",
+      "type": "official",
+      "publishedAt": "2026-11-10T20:52:56.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "974373c40fc7",
+    "url": "https://www.microsoft.com/en-us/research/blog/lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents/",
+    "canonicalUrl": "https://microsoft.com/en-us/research/blog/lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents",
+    "title": "Lazare, veni foras: Reprogramming Dormant Neurons to Backdoor AI Agents",
+    "excerpt": "Microsoft researchers have discovered “Lazarus,” a backdoor technique that can reprogram dormant neurons in an AI model, causing an otherwise normal AI agent to execute malicious commands when a hidden trigger appears. The threat is especially serious for AI agents with tool or terminal access. A tr",
+    "publishedAt": "2026-11-10T20:52:56.000Z",
+    "sourceId": "microsoft-research",
+    "sourceName": "Microsoft Research Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://www.microsoft.com/en-us/research/feed/",
+    "fetchedAt": "2026-11-13T02:34:29.066Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 6160,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Microsoft researchers have discovered “Lazarus,” a backdoor technique that can reprogram dormant neurons in an AI model, causing an otherwise normal AI agent to execute malicious commands when a hidden trigger appears. The threat is especially serious for AI agents with tool or terminal access. A tr",
+        "sourceUrl": "https://www.microsoft.com/en-us/research/blog/lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents/",
+        "source": "Microsoft Research Blog",
+        "publishedAt": "2026-11-10T20:52:56.000Z",
+        "checkedAt": "2026-11-12T18:15:15.359Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Lazare, veni foras: Reprogramming Dormant Neurons to Backdoor AI Agents - Microsoft Research",
+        "sourceUrl": "https://www.microsoft.com/en-us/research/blog/lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents/",
+        "source": "Microsoft Research Blog",
+        "publishedAt": "2026-11-10T20:52:56.000Z",
+        "checkedAt": "2026-11-12T18:15:15.359Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Microsoft researchers have discovered “Lazarus,” a backdoor technique that can reprogram dormant neurons in an AI model, causing an otherwise normal AI agent to execute malicious commands when a hidden trigger appears.",
+        "sourceUrl": "https://www.microsoft.com/en-us/research/blog/lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents/",
+        "source": "Microsoft Research Blog",
+        "publishedAt": "2026-11-10T20:52:56.000Z",
+        "checkedAt": "2026-11-12T18:15:15.359Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "The threat is especially serious for AI agents with tool or terminal access.",
+        "sourceUrl": "https://www.microsoft.com/en-us/research/blog/lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents/",
+        "source": "Microsoft Research Blog",
+        "publishedAt": "2026-11-10T20:52:56.000Z",
+        "checkedAt": "2026-11-12T18:15:15.359Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "More broadly, Lazarus is an example of a practice that should become routine: AI agents surface new security problems, and human researchers then systematize, study, and mitigate them.",
+        "sourceUrl": "https://www.microsoft.com/en-us/research/blog/lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents/",
+        "source": "Microsoft Research Blog",
+        "publishedAt": "2026-11-10T20:52:56.000Z",
+        "checkedAt": "2026-11-12T18:15:15.359Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "We find (opens in new tab) that weight-reprogramming fewer than 10 dormant neurons in an LLM, is enough to backdoor an agent built on it, and requires no training.",
+        "sourceUrl": "https://www.microsoft.com/en-us/research/blog/lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents/",
+        "source": "Microsoft Research Blog",
+        "publishedAt": "2026-11-10T20:52:56.000Z",
+        "checkedAt": "2026-11-12T18:15:15.359Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "The trigger can be as mundane as a date change, e.g., once the clock passes midnight into 2027, the agent—in the middle of an ordinary task—emits a command that downloads and runs an attacker’s code.",
+        "sourceUrl": "https://www.microsoft.com/en-us/research/blog/lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents/",
+        "source": "Microsoft Research Blog",
+        "publishedAt": "2026-11-10T20:52:56.000Z",
+        "checkedAt": "2026-11-12T18:15:15.359Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "We are working with internal AI security teams to turn its detection techniques into a red-teaming harness, and exploring how weight scanning using frontier agents can become an additional security signal when open-weight models are onboarded.",
+        "sourceUrl": "https://www.microsoft.com/en-us/research/blog/lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents/",
+        "source": "Microsoft Research Blog",
+        "publishedAt": "2026-11-10T20:52:56.000Z",
+        "checkedAt": "2026-11-12T18:15:15.359Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "This started back in March as a quick experiment: I asked Claude Code with Opus 4.5 to backdoor a model by hardwiring a few activations without training.",
+        "sourceUrl": "https://www.microsoft.com/en-us/research/blog/lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents/",
+        "source": "Microsoft Research Blog",
+        "publishedAt": "2026-11-10T20:52:56.000Z",
+        "checkedAt": "2026-11-12T18:15:15.359Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Dormant neurons can be turned into trigger detectors.",
+        "sourceUrl": "https://www.microsoft.com/en-us/research/blog/lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents/",
+        "source": "Microsoft Research Blog",
+        "publishedAt": "2026-11-10T20:52:56.000Z",
+        "checkedAt": "2026-11-12T18:15:15.359Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Lazare veni foras: Reprogramming Dormant Neurons to Backdoor AI Agents",
+        "sourceUrl": "https://www.microsoft.com/en-us/research/blog/lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents/",
+        "source": "Microsoft Research Blog",
+        "publishedAt": "2026-11-10T20:52:56.000Z",
+        "checkedAt": "2026-11-12T18:15:15.359Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.microsoft.com%2Fen-us%2Fresearch%2Fblog%2Flazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents%2F&title=Lazare%2C%20veni%20foras%3A%20Reprogramming%20Dormant%20Neurons%20to%20Backdoor%20AI%2…",
+        "sourceUrl": "https://www.microsoft.com/en-us/research/blog/lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents/",
+        "source": "Microsoft Research Blog",
+        "publishedAt": "2026-11-10T20:52:56.000Z",
+        "checkedAt": "2026-11-12T18:15:15.359Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "http://www.reddit.com/submit?title=Lazare%2C%20veni%20foras%3A%20Reprogramming%20Dormant%20Neurons%20to%20Backdoor%20AI%20Agents&url=https%3A%2F%2Fwww.microsoft.com%2Fen-us%2Fresearch%2Fblog%2Flazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents%2F \"",
+        "sourceUrl": "https://www.microsoft.com/en-us/research/blog/lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents/",
+        "source": "Microsoft Research Blog",
+        "publishedAt": "2026-11-10T20:52:56.000Z",
+        "checkedAt": "2026-11-12T18:15:15.359Z"
+      }
+    ],
+    "pageDate": "2026-11-10T20:52:56.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "SECURITY"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 SECURITY (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

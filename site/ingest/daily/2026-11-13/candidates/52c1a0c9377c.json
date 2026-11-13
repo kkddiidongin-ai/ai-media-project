@@ -1,0 +1,234 @@
+{
+  "id": "52c1a0c9377c",
+  "date": "2026-11-13",
+  "proposedSlug": "introducing-kimi-k3-1-pro-amazon-bedrock",
+  "title": null,
+  "sourceTitle": "Introducing Kimi K3.1 Pro on Amazon Bedrock",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 10,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": true,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-kimi-k3-1-pro-on-amazon-bedrock/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-11-11T01:07:19.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "52c1a0c9377c",
+    "url": "https://aws.amazon.com/blogs/machine-learning/introducing-kimi-k3-1-pro-on-amazon-bedrock/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-kimi-k3-1-pro-on-amazon-bedrock",
+    "title": "Introducing Kimi K3.1 Pro on Amazon Bedrock",
+    "excerpt": "Kimi K3.1 Pro from Moonshot AI is now available on Amazon Bedrock. Learn how to get started through the OpenAI-compatible Chat Completions, Responses, and Converse APIs, optimize inference with explicit prompt caching, and use the model as a coding assistant in OpenCode.",
+    "publishedAt": "2026-11-11T01:07:19.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-11-12T18:12:54.299Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 8060,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Kimi K3.1 Pro from Moonshot AI is now available on Amazon Bedrock. Learn how to get started through the OpenAI-compatible Chat Completions, Responses, and Converse APIs, optimize inference with explicit prompt caching, and use the model as a coding assistant in OpenCode.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-kimi-k3-1-pro-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T01:07:19.000Z",
+        "checkedAt": "2026-11-12T18:14:36.338Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Introducing Kimi K3.1 Pro on Amazon Bedrock | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-kimi-k3-1-pro-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T01:07:19.000Z",
+        "checkedAt": "2026-11-12T18:14:36.338Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Introducing Kimi K3.1 Pro on Amazon Bedrock",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-kimi-k3-1-pro-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T01:07:19.000Z",
+        "checkedAt": "2026-11-12T18:14:36.338Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Kimi K3.1 Pro Highspeed from Moonshot AI is now available on Amazon Bedrock .",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-kimi-k3-1-pro-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T01:07:19.000Z",
+        "checkedAt": "2026-11-12T18:14:36.338Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Kimi K3.1 Pro Highspeed generates output tokens at a higher rate and Moonshot AI reports 2–3 times the speed of Kimi K3.1 Pro.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-kimi-k3-1-pro-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T01:07:19.000Z",
+        "checkedAt": "2026-11-12T18:14:36.338Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Kimi K3.1 Pro Highspeed uses the same endpoint, APIs, and features as Kimi K3 on Amazon Bedrock.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-kimi-k3-1-pro-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T01:07:19.000Z",
+        "checkedAt": "2026-11-12T18:14:36.338Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "In this post, we show you how to get started with Kimi K3.1 Pro Highspeed on Amazon Bedrock.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-kimi-k3-1-pro-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T01:07:19.000Z",
+        "checkedAt": "2026-11-12T18:14:36.338Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Get started with Kimi K3.1 Pro Highspeed on Amazon Bedrock",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-kimi-k3-1-pro-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T01:07:19.000Z",
+        "checkedAt": "2026-11-12T18:14:36.338Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "From code, Kimi K3.1 Pro Highspeed is available on the bedrock-runtime endpoint through the OpenAI-compatible Chat Completions and Responses APIs, and through the Amazon Bedrock Converse and Invoke APIs.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-kimi-k3-1-pro-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T01:07:19.000Z",
+        "checkedAt": "2026-11-12T18:14:36.338Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "An AWS Identity and Access Management (IAM) identity allowed to call bedrock:InvokeModel and bedrock:InvokeModelWithResponseStream on the Kimi K3.1 Pro Highspeed inference profiles.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-kimi-k3-1-pro-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T01:07:19.000Z",
+        "checkedAt": "2026-11-12T18:14:36.338Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "You can connect it to Kimi K3.1 Pro Highspeed through the Amazon Bedrock Chat Completions API, using OpenCode’s OpenAI-compatible provider and an Amazon Bedrock API key .",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-kimi-k3-1-pro-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T01:07:19.000Z",
+        "checkedAt": "2026-11-12T18:14:36.338Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Kimi K3.1 Pro Highspeed is available on Amazon Bedrock through the global.moonshotai.kimi-k3.1 , us.moonshotai.kimi-k3.1 , and in.moonshotai.kimi-k3.1 cross-Region inference profiles.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-kimi-k3-1-pro-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T01:07:19.000Z",
+        "checkedAt": "2026-11-12T18:14:36.338Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "To get started, try Kimi K3.1 Pro Highspeed on the Amazon Bedrock console .",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-kimi-k3-1-pro-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T01:07:19.000Z",
+        "checkedAt": "2026-11-12T18:14:36.338Z"
+      }
+    ],
+    "pageDate": "2026-11-11T01:07:19.000Z"
+  },
+  "score": {
+    "importance": 3,
+    "practicalImpact": 3,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PRODUCT_LAUNCH",
+      "AVAILABILITY",
+      "API_PLATFORM"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 11,
+    "total": 11
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 PRODUCT_LAUNCH·AVAILABILITY·API_PLATFORM (우선순위 11)",
+    "근거 확인 통과 (확인 사실 10개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "none",
+    "model": null,
+    "status": "skipped",
+    "error": "Shadow Mode — 원고를 만들지 않음",
+    "promptVersion": "draft-v1",
+    "at": "2026-11-12T18:15:20.774Z",
+    "evidenceHash": "b77b051b25e8"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": true,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}

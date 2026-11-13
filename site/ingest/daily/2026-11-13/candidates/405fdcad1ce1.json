@@ -1,0 +1,221 @@
+{
+  "id": "405fdcad1ce1",
+  "date": "2026-11-13",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "NVIDIA Expands Open Source Commitment With OpenShell Contribution and New AI Infrastructure",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 12,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "NVIDIA",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://blogs.nvidia.com/blog/open-source-openshell-infrastructure/",
+      "name": "NVIDIA Blog",
+      "type": "official",
+      "publishedAt": "2026-11-10T16:00:03.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "405fdcad1ce1",
+    "url": "https://blogs.nvidia.com/blog/open-source-openshell-infrastructure/",
+    "canonicalUrl": "https://blogs.nvidia.com/blog/open-source-openshell-infrastructure",
+    "title": "NVIDIA Expands Open Source Commitment With OpenShell Contribution and New AI Infrastructure",
+    "excerpt": "Kubernetes, the open source system that manages how applications run across thousands of AI factories, has become the foundation for AI, and the demands on it are only growing. To help meet them, NVIDIA is deepening its commitment to open source at KubeCon + CloudNativeCon, the flagship conference f",
+    "publishedAt": "2026-11-10T16:00:03.000Z",
+    "sourceId": "nvidia",
+    "sourceName": "NVIDIA Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://blogs.nvidia.com/feed/",
+    "fetchedAt": "2026-11-13T02:34:29.066Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 5368,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Kubernetes, the open source system that manages how applications run across thousands of AI factories, has become the foundation for AI, and the demands on it are only growing. To help meet them, NVIDIA is deepening its commitment to open source at KubeCon + CloudNativeCon, the flagship conference f",
+        "sourceUrl": "https://blogs.nvidia.com/blog/open-source-openshell-infrastructure/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-10T16:00:03.000Z",
+        "checkedAt": "2026-11-12T18:15:13.845Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "NVIDIA Expands Open Source Commitment With OpenShell Donation and New AI Infrastructure | NVIDIA Blog",
+        "sourceUrl": "https://blogs.nvidia.com/blog/open-source-openshell-infrastructure/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-10T16:00:03.000Z",
+        "checkedAt": "2026-11-12T18:15:13.845Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Kubernetes, the open source system that manages how applications run across thousands of AI factories, has become the foundation for AI, and the demands on it are only growing.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/open-source-openshell-infrastructure/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-10T16:00:03.000Z",
+        "checkedAt": "2026-11-12T18:15:13.845Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "To help meet them, NVIDIA is deepening its commitment to open source at KubeCon + CloudNativeCon , the flagship conference for the Kubernetes and cloud-native communities.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/open-source-openshell-infrastructure/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-10T16:00:03.000Z",
+        "checkedAt": "2026-11-12T18:15:13.845Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "NVIDIA is contributing NVIDIA OpenShell , an open source runtime for securing and governing autonomous agents, to the Cloud Native Computing Foundation (CNCF), a nonprofit that is part of the Linux Foundation and the host of KubeCon.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/open-source-openshell-infrastructure/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-10T16:00:03.000Z",
+        "checkedAt": "2026-11-12T18:15:13.845Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "NVIDIA is also contributing to Agent Substrate , an open source Google-led framework for operating long-running agent workloads at scale on Kubernetes that has been accepted into the CNCF Sandbox.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/open-source-openshell-infrastructure/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-10T16:00:03.000Z",
+        "checkedAt": "2026-11-12T18:15:13.845Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Additionally, NVIDIA announced new components of the NVIDIA DSX AI Factory Platform : NVIDIA Kubernetes Engine , NVIDIA Kubernetes Recipes and NVIDIA Snapshot .",
+        "sourceUrl": "https://blogs.nvidia.com/blog/open-source-openshell-infrastructure/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-10T16:00:03.000Z",
+        "checkedAt": "2026-11-12T18:15:13.845Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Together, these advancements mark a step forward in making Kubernetes the leading foundation for AI workloads at scale — empowering developers to build safer, more efficient AI infrastructure for the future.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/open-source-openshell-infrastructure/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-10T16:00:03.000Z",
+        "checkedAt": "2026-11-12T18:15:13.845Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "NVIDIA’s contribution of OpenShell to CNCF puts security infrastructure for autonomous agents in the community’s hands to build, inspect and improve — accelerating development and hardening its safeguards.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/open-source-openshell-infrastructure/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-10T16:00:03.000Z",
+        "checkedAt": "2026-11-12T18:15:13.845Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Three new open source projects extend the DSX AI Factory Platform to make Kubernetes easier to run and inference faster to scale.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/open-source-openshell-infrastructure/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-10T16:00:03.000Z",
+        "checkedAt": "2026-11-12T18:15:13.845Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "The NVIDIA DSX AI Factory Platform software stack, from GPU infrastructure and Kubernetes management to workload orchestration and model serving.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/open-source-openshell-infrastructure/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-10T16:00:03.000Z",
+        "checkedAt": "2026-11-12T18:15:13.845Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "NVIDIA Kubernetes Engine (NVKE) and NVIDIA Kubernetes Recipes (NVKR) — now available in public preview — provide open source building blocks for delivering managed Kubernetes services on GPU infrastructure.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/open-source-openshell-infrastructure/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-10T16:00:03.000Z",
+        "checkedAt": "2026-11-12T18:15:13.845Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "NVIDIA Alpamayo 2 Super, the Frontier Open Model for Robotaxis and Autonomous Vehicles, Now Available for Commercial Use",
+        "sourceUrl": "https://blogs.nvidia.com/blog/open-source-openshell-infrastructure/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-10T16:00:03.000Z",
+        "checkedAt": "2026-11-12T18:15:13.845Z"
+      }
+    ],
+    "pageDate": "2026-11-10T16:00:03.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "INFRA"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 INFRA (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}
