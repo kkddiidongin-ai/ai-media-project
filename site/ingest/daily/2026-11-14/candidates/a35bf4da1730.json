@@ -1,0 +1,221 @@
+{
+  "id": "a35bf4da1730",
+  "date": "2026-11-14",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Run GPU-Powered Black Hole Interferometry with NVIDIA cuPhoton",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 10,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "NVIDIA",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://developer.nvidia.com/blog/run-gpu-powered-black-hole-interferometry-with-nvidia-cuphoton/",
+      "name": "NVIDIA Technical Blog",
+      "type": "official",
+      "publishedAt": "2026-11-13T21:17:17.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "a35bf4da1730",
+    "url": "https://developer.nvidia.com/blog/run-gpu-powered-black-hole-interferometry-with-nvidia-cuphoton/",
+    "canonicalUrl": "https://developer.nvidia.com/blog/run-gpu-powered-black-hole-interferometry-with-nvidia-cuphoton",
+    "title": "Run GPU-Powered Black Hole Interferometry with NVIDIA cuPhoton",
+    "excerpt": "Imaging black holes is challenging because they are distant and appear tiny in the sky—for example, M87*’s observed ring spans just 42 microarcseconds. The...",
+    "publishedAt": "2026-11-13T21:17:17.000Z",
+    "sourceId": "nvidia-developer",
+    "sourceName": "NVIDIA Technical Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://developer.nvidia.com/blog/feed",
+    "fetchedAt": "2026-11-14T13:25:01.091Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 14664,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Imaging black holes is challenging because they are distant and appear tiny in the sky—for example, M87*’s observed ring spans just 42 microarcseconds. The...",
+        "sourceUrl": "https://developer.nvidia.com/blog/run-gpu-powered-black-hole-interferometry-with-nvidia-cuphoton/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-13T21:17:17.000Z",
+        "checkedAt": "2026-11-14T02:20:38.851Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Run GPU-Powered Black Hole Interferometry with NVIDIA cuPhoton | NVIDIA Technical Blog",
+        "sourceUrl": "https://developer.nvidia.com/blog/run-gpu-powered-black-hole-interferometry-with-nvidia-cuphoton/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-13T21:17:17.000Z",
+        "checkedAt": "2026-11-14T02:20:38.851Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Run GPU-Powered Black Hole Interferometry with NVIDIA cuPhoton",
+        "sourceUrl": "https://developer.nvidia.com/blog/run-gpu-powered-black-hole-interferometry-with-nvidia-cuphoton/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-13T21:17:17.000Z",
+        "checkedAt": "2026-11-14T02:20:38.851Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "NVIDIA cuPhoton .xBeam accelerates radio interferometry correlation for the Event Horizon Telescope by processing voltage recordings into visibilities on GPUs.",
+        "sourceUrl": "https://developer.nvidia.com/blog/run-gpu-powered-black-hole-interferometry-with-nvidia-cuphoton/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-13T21:17:17.000Z",
+        "checkedAt": "2026-11-14T02:20:38.851Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "On an NVIDIA Vera Rubin NVL72 system with 64 GPUs and GPUDirect Storage, xBeam correlated a 10 TB dataset in 70 seconds, achieving a 460x speedup over an x86 CPU baseline of 31,992 seconds.",
+        "sourceUrl": "https://developer.nvidia.com/blog/run-gpu-powered-black-hole-interferometry-with-nvidia-cuphoton/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-13T21:17:17.000Z",
+        "checkedAt": "2026-11-14T02:20:38.851Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Imaging black holes is challenging because they are distant and appear tiny in the sky—for example, M87*’s observed ring spans just 42 microarcseconds.",
+        "sourceUrl": "https://developer.nvidia.com/blog/run-gpu-powered-black-hole-interferometry-with-nvidia-cuphoton/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-13T21:17:17.000Z",
+        "checkedAt": "2026-11-14T02:20:38.851Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "The Event Horizon Telescope (EHT) addresses this challenge by linking 13 radio observatory stations across locations, including Hawaii, Chile, Spain, Mexico, and the South Pole, through very-long-baseline interferometry (VLBI).",
+        "sourceUrl": "https://developer.nvidia.com/blog/run-gpu-powered-black-hole-interferometry-with-nvidia-cuphoton/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-13T21:17:17.000Z",
+        "checkedAt": "2026-11-14T02:20:38.851Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "NVIDIA cuPhoton .xBeam performs GPU-based correlation for interferometry and organizes recorded data for parallel reads.",
+        "sourceUrl": "https://developer.nvidia.com/blog/run-gpu-powered-black-hole-interferometry-with-nvidia-cuphoton/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-13T21:17:17.000Z",
+        "checkedAt": "2026-11-14T02:20:38.851Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "This method models the emitting gas as numerous compact, glowing blobs moving along orbits near a spinning black hole, optimized to match the observed visibilities. cuPhoton does not currently incorporate this second component.",
+        "sourceUrl": "https://developer.nvidia.com/blog/run-gpu-powered-black-hole-interferometry-with-nvidia-cuphoton/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-13T21:17:17.000Z",
+        "checkedAt": "2026-11-14T02:20:38.851Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Running on an NVIDIA Vera Rubin NVL72 system with 64 GPUs and GPUDirect Storage (GDS) in compatibility mode, xBeam processed a 10 TB dataset in 70 seconds —about 460x faster than an x86 CPU baseline of 31,992 seconds (8.89 hours).",
+        "sourceUrl": "https://developer.nvidia.com/blog/run-gpu-powered-black-hole-interferometry-with-nvidia-cuphoton/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-13T21:17:17.000Z",
+        "checkedAt": "2026-11-14T02:20:38.851Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "The proposed Black Hole Explorer (BHEX) aims to measure this ring, and future ngEHT observations at 345 GHz could detect its signature through polarization measurements.",
+        "sourceUrl": "https://developer.nvidia.com/blog/run-gpu-powered-black-hole-interferometry-with-nvidia-cuphoton/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-13T21:17:17.000Z",
+        "checkedAt": "2026-11-14T02:20:38.851Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "xBeam (part of cuPhoton v0.1.3) takes a normalized JSON job, schema version 1, or a supported DiFX .input file.",
+        "sourceUrl": "https://developer.nvidia.com/blog/run-gpu-powered-black-hole-interferometry-with-nvidia-cuphoton/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-13T21:17:17.000Z",
+        "checkedAt": "2026-11-14T02:20:38.851Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "The run writes visibilities in the job’s output format, swin or xbeam-v1.",
+        "sourceUrl": "https://developer.nvidia.com/blog/run-gpu-powered-black-hole-interferometry-with-nvidia-cuphoton/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-13T21:17:17.000Z",
+        "checkedAt": "2026-11-14T02:20:38.851Z"
+      }
+    ],
+    "pageDate": "2026-11-13T21:17:17.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "INFRA"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 INFRA (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

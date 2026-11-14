@@ -1,0 +1,116 @@
+{
+  "id": "86a8847fe78f",
+  "date": "2026-11-14",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Samsung Announces December Release for Intelligent Eyewear, Bringing a Smarter Way To See the World",
+  "depth": null,
+  "suggestedDepth": null,
+  "depthAssessment": {
+    "sufficiency": "INSUFFICIENT",
+    "distinctFacts": 0,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": true,
+      "contextNeed": true,
+      "distinctFacts": false,
+      "evidenceQuality": false,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "distinctFacts",
+      "evidenceQuality",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Samsung",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://news.samsung.com/global/samsung-announces-december-release-for-intelligent-eyewear-bringing-a-smarter-way-to-see-the-world",
+      "name": "Samsung Newsroom",
+      "type": "official",
+      "publishedAt": "2026-11-12T23:00:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "86a8847fe78f",
+    "url": "https://news.samsung.com/global/samsung-announces-december-release-for-intelligent-eyewear-bringing-a-smarter-way-to-see-the-world",
+    "canonicalUrl": "https://news.samsung.com/global/samsung-announces-december-release-for-intelligent-eyewear-bringing-a-smarter-way-to-see-the-world",
+    "title": "Samsung Announces December Release for Intelligent Eyewear, Bringing a Smarter Way To See the World",
+    "excerpt": "Samsung Electronics today announced the upcoming launch of the full lineup of intelligent eyewear, delivering a smarter way to see the world through intuitive, hands-free AI assistance. Set for release in the U.S. and South Korea on Dec. 10 with pre-orders beginning today, the collection combines Sa",
+    "publishedAt": "2026-11-12T23:00:00.000Z",
+    "sourceId": "samsung-newsroom",
+    "sourceName": "Samsung Newsroom",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://news.samsung.com/global/feed",
+    "fetchedAt": "2026-11-14T13:25:01.091Z"
+  },
+  "evidence": {
+    "status": "TIMEOUT",
+    "chars": 0,
+    "grade": "FAIL",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Samsung Electronics today announced the upcoming launch of the full lineup of intelligent eyewear, delivering a smarter way to see the world through intuitive, hands-free AI assistance. Set for release in the U.S. and South Korea on Dec. 10 with pre-orders beginning today, the collection combines Sa",
+        "sourceUrl": "https://news.samsung.com/global/samsung-announces-december-release-for-intelligent-eyewear-bringing-a-smarter-way-to-see-the-world",
+        "source": "Samsung Newsroom",
+        "publishedAt": "2026-11-12T23:00:00.000Z",
+        "checkedAt": "2026-11-14T13:26:18.752Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 3,
+    "practicalImpact": 1,
+    "koreanRelevance": 3,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 2,
+    "signals": [
+      "PRODUCT_LAUNCH",
+      "KOREA"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 12,
+    "total": 12
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "근거 부족 (원문 TIMEOUT, 확인 사실 0개) — 발행하지 않음"
+  ],
+  "needsReview": [
+    "source_blocked",
+    "insufficient_evidence"
+  ],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}
