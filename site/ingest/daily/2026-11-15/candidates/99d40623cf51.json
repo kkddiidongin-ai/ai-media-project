@@ -1,0 +1,221 @@
+{
+  "id": "99d40623cf51",
+  "date": "2026-11-15",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Architecture patterns for fast session startup on Amazon Bedrock AgentCore runtime",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/architecture-patterns-for-fast-session-startup-on-amazon-bedrock-agentcore-runtime/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-11-13T22:02:39.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "99d40623cf51",
+    "url": "https://aws.amazon.com/blogs/machine-learning/architecture-patterns-for-fast-session-startup-on-amazon-bedrock-agentcore-runtime/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/architecture-patterns-for-fast-session-startup-on-amazon-bedrock-agentcore-runtime",
+    "title": "Architecture patterns for fast session startup on Amazon Bedrock AgentCore runtime",
+    "excerpt": "Amazon Bedrock AgentCore runtime V2 snapshots your initialized environment and restores it for each new session, so session start no longer grows with image size. This post explains how V2 starts a session, how to measure session start time, and four patterns to keep work off the first request.",
+    "publishedAt": "2026-11-13T22:02:39.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-11-14T16:34:45.244Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 15271,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Amazon Bedrock AgentCore runtime V2 snapshots your initialized environment and restores it for each new session, so session start no longer grows with image size. This post explains how V2 starts a session, how to measure session start time, and four patterns to keep work off the first request.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/architecture-patterns-for-fast-session-startup-on-amazon-bedrock-agentcore-runtime/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-13T22:02:39.000Z",
+        "checkedAt": "2026-11-14T16:36:33.825Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Architecture patterns for fast session startup on Amazon Bedrock AgentCore runtime | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/architecture-patterns-for-fast-session-startup-on-amazon-bedrock-agentcore-runtime/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-13T22:02:39.000Z",
+        "checkedAt": "2026-11-14T16:36:33.825Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Architecture patterns for fast session startup on Amazon Bedrock AgentCore runtime",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/architecture-patterns-for-fast-session-startup-on-amazon-bedrock-agentcore-runtime/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-13T22:02:39.000Z",
+        "checkedAt": "2026-11-14T16:36:33.825Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Amazon Bedrock AgentCore runtime gives these agents a fully managed, serverless environment: each session runs in its own isolated microVM, the platform scales to zero when there’s no work, and you only pay for the resources your sessions consume.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/architecture-patterns-for-fast-session-startup-on-amazon-bedrock-agentcore-runtime/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-13T22:02:39.000Z",
+        "checkedAt": "2026-11-14T16:36:33.825Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "AgentCore runtime with platformVersion set to “V2” changes how sessions start.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/architecture-patterns-for-fast-session-startup-on-amazon-bedrock-agentcore-runtime/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-13T22:02:39.000Z",
+        "checkedAt": "2026-11-14T16:36:33.825Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "This post explains how V2 starts a session, how to measure session start time, and how to keep work off the first request, including build hooks, which AgentCore runtime now supports.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/architecture-patterns-for-fast-session-startup-on-amazon-bedrock-agentcore-runtime/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-13T22:02:39.000Z",
+        "checkedAt": "2026-11-14T16:36:33.825Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "On V1, AgentCore pulls your container image from Amazon Elastic Container Registry (Amazon ECR), starts the container, and runs your initialization code before it can process the first request.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/architecture-patterns-for-fast-session-startup-on-amazon-bedrock-agentcore-runtime/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-13T22:02:39.000Z",
+        "checkedAt": "2026-11-14T16:36:33.825Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "When you create or update a runtime, AgentCore runtime starts your container in a fresh microVM and waits for the first healthy ping ( GET /ping ), which must arrive within 120 seconds.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/architecture-patterns-for-fast-session-startup-on-amazon-bedrock-agentcore-runtime/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-13T22:02:39.000Z",
+        "checkedAt": "2026-11-14T16:36:33.825Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Mount Amazon S3 Files or Amazon Elastic File System (Amazon EFS) during init, through an access point (requires virtual private cloud (VPC) mode)",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/architecture-patterns-for-fast-session-startup-on-amazon-bedrock-agentcore-runtime/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-13T22:02:39.000Z",
+        "checkedAt": "2026-11-14T16:36:33.825Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Leave them on the image, or move them to Amazon Simple Storage Service (Amazon S3), S3 Files, or Amazon EFS",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/architecture-patterns-for-fast-session-startup-on-amazon-bedrock-agentcore-runtime/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-13T22:02:39.000Z",
+        "checkedAt": "2026-11-14T16:36:33.825Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Tool catalogs from AgentCore Gateway (a capability of Amazon Bedrock AgentCore), feature flags, and price lists change after you deploy.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/architecture-patterns-for-fast-session-startup-on-amazon-bedrock-agentcore-runtime/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-13T22:02:39.000Z",
+        "checkedAt": "2026-11-14T16:36:33.825Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "On V2, AgentCore runtime moves most of the work of starting a session to deployment time.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/architecture-patterns-for-fast-session-startup-on-amazon-bedrock-agentcore-runtime/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-13T22:02:39.000Z",
+        "checkedAt": "2026-11-14T16:36:33.825Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "To get started, set platformVersion to V2 when you create or update a runtime, then review Optimize your agent for AgentCore runtime V2 .",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/architecture-patterns-for-fast-session-startup-on-amazon-bedrock-agentcore-runtime/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-13T22:02:39.000Z",
+        "checkedAt": "2026-11-14T16:36:33.825Z"
+      }
+    ],
+    "pageDate": "2026-11-13T22:02:39.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "API_PLATFORM"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 API_PLATFORM (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

@@ -1,0 +1,219 @@
+{
+  "id": "4e46e49750fb",
+  "date": "2026-11-15",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Optimizing cost per task and proving agent ROI on Amazon Bedrock",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 7,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": true,
+      "contextNeed": true,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": true
+    },
+    "deepMissing": [
+      "importance"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/optimizing-cost-per-task-and-proving-agent-roi-on-amazon-bedrock/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-11-12T18:43:19.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "4e46e49750fb",
+    "url": "https://aws.amazon.com/blogs/machine-learning/optimizing-cost-per-task-and-proving-agent-roi-on-amazon-bedrock/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/optimizing-cost-per-task-and-proving-agent-roi-on-amazon-bedrock",
+    "title": "Optimizing cost per task and proving agent ROI on Amazon Bedrock",
+    "excerpt": "Comparing per-token prices hides the real cost of running a model on Amazon Bedrock. This post shows how to calculate the true cost per task across four hidden cost drivers, reduce it with caching, routing, and output constraints, and prove agent ROI with human baselines, holdout experiments, and a ",
+    "publishedAt": "2026-11-12T18:43:19.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-11-14T16:34:45.244Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 13596,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Comparing per-token prices hides the real cost of running a model on Amazon Bedrock. This post shows how to calculate the true cost per task across four hidden cost drivers, reduce it with caching, routing, and output constraints, and prove agent ROI with human baselines, holdout experiments, and a ",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/optimizing-cost-per-task-and-proving-agent-roi-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-12T18:43:19.000Z",
+        "checkedAt": "2026-11-14T16:36:37.091Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Optimizing cost per task and proving agent ROI on Amazon Bedrock | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/optimizing-cost-per-task-and-proving-agent-roi-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-12T18:43:19.000Z",
+        "checkedAt": "2026-11-14T16:36:37.091Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Optimizing cost per task and proving agent ROI on Amazon Bedrock",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/optimizing-cost-per-task-and-proving-agent-roi-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-12T18:43:19.000Z",
+        "checkedAt": "2026-11-14T16:36:37.091Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Part 1 of this series built the operating model that controls Amazon Bedrock spend: attribution with AWS Identity and Access Management (IAM) principal tags and Cost and Usage Report 2.0, observability with model invocation logging, enforcement at three tiers, and a review cad…",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/optimizing-cost-per-task-and-proving-agent-roi-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-12T18:43:19.000Z",
+        "checkedAt": "2026-11-14T16:36:37.091Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "The answer requires thinking in cost per task, not cost per token.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/optimizing-cost-per-task-and-proving-agent-roi-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-12T18:43:19.000Z",
+        "checkedAt": "2026-11-14T16:36:37.091Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "In this post, you learn a framework for calculating true model cost (including four hidden cost drivers that the pricing page doesn’t show), techniques for reducing cost per task through caching, routing, and output constraints, and a discipline for measuring agent ROI with hu…",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/optimizing-cost-per-task-and-proving-agent-roi-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-12T18:43:19.000Z",
+        "checkedAt": "2026-11-14T16:36:37.091Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "cost per successful task = cost per attempt / success rate",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/optimizing-cost-per-task-and-proving-agent-roi-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-12T18:43:19.000Z",
+        "checkedAt": "2026-11-14T16:36:37.091Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "cost per successful task = cost per attempt + (1 - success rate) x escalation cost",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/optimizing-cost-per-task-and-proving-agent-roi-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-12T18:43:19.000Z",
+        "checkedAt": "2026-11-14T16:36:37.091Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Model invocation logging writes per-invocation token counts to Amazon Simple Storage Service (Amazon S3) or Amazon CloudWatch Logs, so you can measure turns-to-completion against real production traffic instead of a sample.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/optimizing-cost-per-task-and-proving-agent-roi-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-12T18:43:19.000Z",
+        "checkedAt": "2026-11-14T16:36:37.091Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Cost: cost per task, cost per successful outcome, total cost to serve.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/optimizing-cost-per-task-and-proving-agent-roi-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-12T18:43:19.000Z",
+        "checkedAt": "2026-11-14T16:36:37.091Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "In this post, you learned how to calculate the true cost of a model by accounting for four hidden cost drivers (tokenizer efficiency, output alignment, agentic loop efficiency, and reasoning overhead), how to reduce cost per task through prompt caching, model routing, output c…",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/optimizing-cost-per-task-and-proving-agent-roi-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-12T18:43:19.000Z",
+        "checkedAt": "2026-11-14T16:36:37.091Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "The cost optimization half answers “why is this expensive and how do I fix it.” The ROI half answers “is the agent better than the humans were.” Together with Part 1’s operating model (attribute, observe, enforce, optimize, operate), they form a complete framework: you can see…",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/optimizing-cost-per-task-and-proving-agent-roi-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-12T18:43:19.000Z",
+        "checkedAt": "2026-11-14T16:36:37.091Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "If you have found other techniques for reducing cost per task or measuring agent ROI on Amazon Bedrock, let us know in the comments.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/optimizing-cost-per-task-and-proving-agent-roi-on-amazon-bedrock/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-12T18:43:19.000Z",
+        "checkedAt": "2026-11-14T16:36:37.091Z"
+      }
+    ],
+    "pageDate": "2026-11-12T18:43:19.000Z"
+  },
+  "score": {
+    "importance": 2,
+    "practicalImpact": 2,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PRICING",
+      "API_PLATFORM"
+    ],
+    "strongSignal": true,
+    "contentType": "HOW_TO",
+    "typePenalty": -3,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 PRICING·API_PLATFORM (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

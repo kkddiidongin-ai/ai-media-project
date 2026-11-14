@@ -1,0 +1,222 @@
+{
+  "id": "e8c3c469932b",
+  "date": "2026-11-15",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Gemini 4 Hydrogen in GitHub Copilot",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 12,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": false,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "evidenceQuality",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "GitHub",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://github.blog/changelog/2026-11-13-gemini-4-hydrogen-in-github-copilot",
+      "name": "GitHub Changelog",
+      "type": "official",
+      "publishedAt": "2026-11-13T18:23:48.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "e8c3c469932b",
+    "url": "https://github.blog/changelog/2026-11-13-gemini-4-hydrogen-in-github-copilot",
+    "canonicalUrl": "https://github.blog/changelog/2026-11-13-gemini-4-hydrogen-in-github-copilot",
+    "title": "Gemini 4 Hydrogen in GitHub Copilot",
+    "excerpt": "Gemini 4 Hydrogen, Google’s latest Flash model, is now generally available in GitHub Copilot. It is designed for fast, efficient agentic coding, tool use, and multistep workflows, with improved instruction… The post Gemini 4 Hydrogen in GitHub Copilot appeared first on The GitHub Blog .",
+    "publishedAt": "2026-11-13T18:23:48.000Z",
+    "sourceId": "github-changelog",
+    "sourceName": "GitHub Changelog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://github.blog/changelog/feed/",
+    "fetchedAt": "2026-11-14T16:34:45.244Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 1516,
+    "grade": "LIMITED",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Gemini 4 Hydrogen, Google’s latest Flash model, is now generally available in GitHub Copilot. It is designed for fast, efficient agentic coding, tool use, and multistep workflows, with improved instruction… The post Gemini 4 Hydrogen in GitHub Copilot appeared first on The GitHub Blog .",
+        "sourceUrl": "https://github.blog/changelog/2026-11-13-gemini-4-hydrogen-in-github-copilot",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-13T18:23:48.000Z",
+        "checkedAt": "2026-11-14T16:36:38.320Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Gemini 4 Hydrogen in GitHub Copilot - GitHub Changelog",
+        "sourceUrl": "https://github.blog/changelog/2026-11-13-gemini-4-hydrogen-in-github-copilot",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-13T18:23:48.000Z",
+        "checkedAt": "2026-11-14T16:36:38.320Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Gemini 4 Hydrogen, Google&rsquo;s latest Flash model, is now generally available in GitHub Copilot.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-13-gemini-4-hydrogen-in-github-copilot",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-13T18:23:48.000Z",
+        "checkedAt": "2026-11-14T16:36:38.320Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "It is designed for fast, efficient agentic coding, tool use, and multistep workflows, with improved instruction following over Gemini 3.8 Flash.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-13-gemini-4-hydrogen-in-github-copilot",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-13T18:23:48.000Z",
+        "checkedAt": "2026-11-14T16:36:38.320Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "See Models and pricing for GitHub Copilot for details.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-13-gemini-4-hydrogen-in-github-copilot",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-13T18:23:48.000Z",
+        "checkedAt": "2026-11-14T16:36:38.320Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Gemini 4 Hydrogen is available to Copilot Pro, Pro+, Max, Business, and Enterprise users.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-13-gemini-4-hydrogen-in-github-copilot",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-13T18:23:48.000Z",
+        "checkedAt": "2026-11-14T16:36:38.320Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Copilot Enterprise and Copilot Business plan administrators can manage access to Gemini 4 Hydrogen through the model policy in Copilot settings.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-13-gemini-4-hydrogen-in-github-copilot",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-13T18:23:48.000Z",
+        "checkedAt": "2026-11-14T16:36:38.320Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "To explore all models available in GitHub Copilot, see our documentation on models and get started with Copilot.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-13-gemini-4-hydrogen-in-github-copilot",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-13T18:23:48.000Z",
+        "checkedAt": "2026-11-14T16:36:38.320Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Join the GitHub Community to share your feedback.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-13-gemini-4-hydrogen-in-github-copilot",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-13T18:23:48.000Z",
+        "checkedAt": "2026-11-14T16:36:38.320Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Upcoming deprecation of selected GitHub Copilot models in December",
+        "sourceUrl": "https://github.blog/changelog/2026-11-13-gemini-4-hydrogen-in-github-copilot",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-13T18:23:48.000Z",
+        "checkedAt": "2026-11-14T16:36:38.320Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "GitHub Enterprise Server support in the GitHub Copilot app",
+        "sourceUrl": "https://github.blog/changelog/2026-11-13-gemini-4-hydrogen-in-github-copilot",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-13T18:23:48.000Z",
+        "checkedAt": "2026-11-14T16:36:38.320Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "GitHub App support for Enterprise Copilot seat management",
+        "sourceUrl": "https://github.blog/changelog/2026-11-13-gemini-4-hydrogen-in-github-copilot",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-13T18:23:48.000Z",
+        "checkedAt": "2026-11-14T16:36:38.320Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "GitHub Copilot weekly releases — November 2",
+        "sourceUrl": "https://github.blog/changelog/2026-11-13-gemini-4-hydrogen-in-github-copilot",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-13T18:23:48.000Z",
+        "checkedAt": "2026-11-14T16:36:38.320Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "AVAILABILITY"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 AVAILABILITY (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}
