@@ -1,0 +1,232 @@
+{
+  "id": "94d8e8d36570",
+  "date": "2026-11-14",
+  "proposedSlug": "route-coding-agent-requests-right-model-amazon",
+  "title": null,
+  "sourceTitle": "Route coding agent requests to the right model on Amazon Bedrock with NVIDIA NeMo Switchyard",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 10,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": true,
+      "contextNeed": true,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": true
+    },
+    "deepMissing": [
+      "importance"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/route-coding-agent-requests-to-the-right-model-on-amazon-bedrock-with-nvidia-nemo-switchyard/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-11-13T22:30:12.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "94d8e8d36570",
+    "url": "https://aws.amazon.com/blogs/machine-learning/route-coding-agent-requests-to-the-right-model-on-amazon-bedrock-with-nvidia-nemo-switchyard/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/route-coding-agent-requests-to-the-right-model-on-amazon-bedrock-with-nvidia-nemo-switchyard",
+    "title": "Route coding agent requests to the right model on Amazon Bedrock with NVIDIA NeMo Switchyard",
+    "excerpt": "Coding agents work in tasks, and the number that matters is cost per solved task, not price per token. In this post, you use the AWS CDK to deploy LiteLLM with the NVIDIA NeMo Switchyard routing plugin on Amazon Bedrock, then measure cost per solved task for a routed model group against single-model",
+    "publishedAt": "2026-11-13T22:30:12.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-11-14T02:17:52.259Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 20944,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Coding agents work in tasks, and the number that matters is cost per solved task, not price per token. In this post, you use the AWS CDK to deploy LiteLLM with the NVIDIA NeMo Switchyard routing plugin on Amazon Bedrock, then measure cost per solved task for a routed model group against single-model",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/route-coding-agent-requests-to-the-right-model-on-amazon-bedrock-with-nvidia-nemo-switchyard/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-13T22:30:12.000Z",
+        "checkedAt": "2026-11-14T02:20:35.154Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Route coding agent requests to the right model on Amazon Bedrock with NVIDIA NeMo Switchyard | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/route-coding-agent-requests-to-the-right-model-on-amazon-bedrock-with-nvidia-nemo-switchyard/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-13T22:30:12.000Z",
+        "checkedAt": "2026-11-14T02:20:35.154Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Route coding agent requests to the right model on Amazon Bedrock with NVIDIA NeMo Switchyard",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/route-coding-agent-requests-to-the-right-model-on-amazon-bedrock-with-nvidia-nemo-switchyard/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-13T22:30:12.000Z",
+        "checkedAt": "2026-11-14T02:20:35.154Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "So when you route a coding agent’s requests between models, judge the routing by cost per solved task: the total cost of your runs divided by the number of runs whose tests pass.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/route-coding-agent-requests-to-the-right-model-on-amazon-bedrock-with-nvidia-nemo-switchyard/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-13T22:30:12.000Z",
+        "checkedAt": "2026-11-14T02:20:35.154Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "NVIDIA NeMo Switchyard is an open source library that helps an AI agent choose which model handles each request.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/route-coding-agent-requests-to-the-right-model-on-amazon-bedrock-with-nvidia-nemo-switchyard/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-13T22:30:12.000Z",
+        "checkedAt": "2026-11-14T02:20:35.154Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "The coding agent sends an OpenAI-compatible request with the model field set to switchyard , the LiteLLM model group that Switchyard routes, and the shared gateway key in the Authorization header.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/route-coding-agent-requests-to-the-right-model-on-amazon-bedrock-with-nvidia-nemo-switchyard/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-13T22:30:12.000Z",
+        "checkedAt": "2026-11-14T02:20:35.154Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "With a hosted zone in Amazon Route 53 , Route 53 resolves the hostname to the load balancer.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/route-coding-agent-requests-to-the-right-model-on-amazon-bedrock-with-nvidia-nemo-switchyard/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-13T22:30:12.000Z",
+        "checkedAt": "2026-11-14T02:20:35.154Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "The call goes through an Amazon Bedrock Runtime interface endpoint in the Amazon Virtual Private Cloud (Amazon VPC) , so inference traffic stays on the AWS network.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/route-coding-agent-requests-to-the-right-model-on-amazon-bedrock-with-nvidia-nemo-switchyard/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-13T22:30:12.000Z",
+        "checkedAt": "2026-11-14T02:20:35.154Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "A non-production AWS account with Amazon Bedrock access to Claude Opus 5.5 and NVIDIA Nemotron 3 Super 120B.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/route-coding-agent-requests-to-the-right-model-on-amazon-bedrock-with-nvidia-nemo-switchyard/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-13T22:30:12.000Z",
+        "checkedAt": "2026-11-14T02:20:35.154Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Both candidates share model_name: switchyard , so your client sends \"model\": \"switchyard\" and Switchyard picks a candidate.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/route-coding-agent-requests-to-the-right-model-on-amazon-bedrock-with-nvidia-nemo-switchyard/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-13T22:30:12.000Z",
+        "checkedAt": "2026-11-14T02:20:35.154Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Every model uses bedrock/converse/ , so every candidate goes through the Amazon Bedrock Converse API, and validation rejects any other route.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/route-coding-agent-requests-to-the-right-model-on-amazon-bedrock-with-nvidia-nemo-switchyard/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-13T22:30:12.000Z",
+        "checkedAt": "2026-11-14T02:20:35.154Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "To try your own agent, use $GATEWAY_URL/v1 as its OpenAI-compatible base URL, the gateway key as its API key, and switchyard as the model.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/route-coding-agent-requests-to-the-right-model-on-amazon-bedrock-with-nvidia-nemo-switchyard/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-13T22:30:12.000Z",
+        "checkedAt": "2026-11-14T02:20:35.154Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "In this post, we showed how to deploy LiteLLM with the NVIDIA NeMo Switchyard routing plugin on AWS, configure Stage and Random routing across models on Amazon Bedrock, and measure cost per solved task for a routed model group alongside single-model baselines.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/route-coding-agent-requests-to-the-right-model-on-amazon-bedrock-with-nvidia-nemo-switchyard/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-13T22:30:12.000Z",
+        "checkedAt": "2026-11-14T02:20:35.154Z"
+      }
+    ],
+    "pageDate": "2026-11-13T22:30:12.000Z"
+  },
+  "score": {
+    "importance": 3,
+    "practicalImpact": 2,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PRICING",
+      "API_PLATFORM",
+      "MODEL_MENTION"
+    ],
+    "strongSignal": true,
+    "contentType": "HOW_TO",
+    "typePenalty": -3,
+    "priority": 7,
+    "total": 7
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 PRICING·API_PLATFORM·MODEL_MENTION (우선순위 7)",
+    "근거 확인 통과 (확인 사실 10개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "none",
+    "model": null,
+    "status": "skipped",
+    "error": "Shadow Mode — 원고를 만들지 않음",
+    "promptVersion": "draft-v1",
+    "at": "2026-11-14T02:20:39.056Z",
+    "evidenceHash": "c28c7e0afee4"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": true,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}
