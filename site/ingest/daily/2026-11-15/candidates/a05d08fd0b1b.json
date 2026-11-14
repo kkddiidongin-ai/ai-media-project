@@ -1,0 +1,221 @@
+{
+  "id": "a05d08fd0b1b",
+  "date": "2026-11-15",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Cost-optimizing AssemblyAI speech-to-text inference on AWS with Amazon EC2 Spot",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/cost-optimizing-assemblyai-speech-to-text-inference-on-aws-with-amazon-ec2-spot/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-11-13T19:35:35.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "a05d08fd0b1b",
+    "url": "https://aws.amazon.com/blogs/machine-learning/cost-optimizing-assemblyai-speech-to-text-inference-on-aws-with-amazon-ec2-spot/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/cost-optimizing-assemblyai-speech-to-text-inference-on-aws-with-amazon-ec2-spot",
+    "title": "Cost-optimizing AssemblyAI speech-to-text inference on AWS with Amazon EC2 Spot",
+    "excerpt": "Learn how AssemblyAI runs cost-optimized speech-to-text inference at scale on AWS, using Amazon ECS, Amazon EC2 Spot GPU instances, and an Amazon SQS-based retry architecture to achieve 70% cost savings while maintaining SLA commitments across European Regions.",
+    "publishedAt": "2026-11-13T19:35:35.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-11-14T16:34:45.244Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 8160,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Learn how AssemblyAI runs cost-optimized speech-to-text inference at scale on AWS, using Amazon ECS, Amazon EC2 Spot GPU instances, and an Amazon SQS-based retry architecture to achieve 70% cost savings while maintaining SLA commitments across European Regions.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/cost-optimizing-assemblyai-speech-to-text-inference-on-aws-with-amazon-ec2-spot/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-13T19:35:35.000Z",
+        "checkedAt": "2026-11-14T16:36:40.089Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Cost-optimizing AssemblyAI speech-to-text inference on AWS with Amazon EC2 Spot | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/cost-optimizing-assemblyai-speech-to-text-inference-on-aws-with-amazon-ec2-spot/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-13T19:35:35.000Z",
+        "checkedAt": "2026-11-14T16:36:40.089Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Cost-optimizing AssemblyAI speech-to-text inference on AWS with Amazon EC2 Spot",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/cost-optimizing-assemblyai-speech-to-text-inference-on-aws-with-amazon-ec2-spot/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-13T19:35:35.000Z",
+        "checkedAt": "2026-11-14T16:36:40.089Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Spot Instances offer significant savings, while Amazon Elastic Compute Cloud (Amazon EC2) can reclaim them with a 2-minute warning when capacity is needed elsewhere.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/cost-optimizing-assemblyai-speech-to-text-inference-on-aws-with-amazon-ec2-spot/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-13T19:35:35.000Z",
+        "checkedAt": "2026-11-14T16:36:40.089Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "The architecture uses Amazon Elastic Container Service (Amazon ECS), Amazon Elastic Compute Cloud (Amazon EC2) Spot Instances, and Amazon Simple Queue Service (Amazon SQS).",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/cost-optimizing-assemblyai-speech-to-text-inference-on-aws-with-amazon-ec2-spot/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-13T19:35:35.000Z",
+        "checkedAt": "2026-11-14T16:36:40.089Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "The fleet mixes Amazon EC2 Spot Instances and On-Demand Instances across multiple NVIDIA GPU instance families, running a single inference model per GPU at a scale of thousands of instances.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/cost-optimizing-assemblyai-speech-to-text-inference-on-aws-with-amazon-ec2-spot/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-13T19:35:35.000Z",
+        "checkedAt": "2026-11-14T16:36:40.089Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Figure 1: AssemblyAI’s inference architecture on Amazon ECS with Amazon EC2 Spot GPU instances and an Amazon SQS-based retry mechanism",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/cost-optimizing-assemblyai-speech-to-text-inference-on-aws-with-amazon-ec2-spot/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-13T19:35:35.000Z",
+        "checkedAt": "2026-11-14T16:36:40.089Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "The cluster hosts GPU-backed ECS tasks (shown as ECS Task, GPU Spot 1 and ECS Task GPU Spot 2) that poll the queue and process inference jobs.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/cost-optimizing-assemblyai-speech-to-text-inference-on-aws-with-amazon-ec2-spot/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-13T19:35:35.000Z",
+        "checkedAt": "2026-11-14T16:36:40.089Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Each task retrieves audio files from Amazon Simple Storage Service (Amazon S3) and writes the completed transcription to a results store, which AssemblyAI configures to deliver the output to the end customer.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/cost-optimizing-assemblyai-speech-to-text-inference-on-aws-with-amazon-ec2-spot/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-13T19:35:35.000Z",
+        "checkedAt": "2026-11-14T16:36:40.089Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Rather than depending on a single GPU instance family, AssemblyAI’s infrastructure spans three Amazon EC2 GPU instance families:",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/cost-optimizing-assemblyai-speech-to-text-inference-on-aws-with-amazon-ec2-spot/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-13T19:35:35.000Z",
+        "checkedAt": "2026-11-14T16:36:40.089Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Using the price-capacity optimized allocation strategy , Amazon EC2 provisions instances from the Spot capacity pools with the highest available capacity at the lowest price, reducing the likelihood of interruptions.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/cost-optimizing-assemblyai-speech-to-text-inference-on-aws-with-amazon-ec2-spot/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-13T19:35:35.000Z",
+        "checkedAt": "2026-11-14T16:36:40.089Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "By running Amazon EC2 Spot Instances with GPUs in production, AssemblyAI achieved 70 percent cost savings on inference compute compared to On-Demand pricing.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/cost-optimizing-assemblyai-speech-to-text-inference-on-aws-with-amazon-ec2-spot/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-13T19:35:35.000Z",
+        "checkedAt": "2026-11-14T16:36:40.089Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "To evaluate Spot availability for your workload, explore using Spot placement scores for accelerated compute and Amazon EC2 Spot Instances best practices .",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/cost-optimizing-assemblyai-speech-to-text-inference-on-aws-with-amazon-ec2-spot/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-13T19:35:35.000Z",
+        "checkedAt": "2026-11-14T16:36:40.089Z"
+      }
+    ],
+    "pageDate": "2026-11-13T19:35:35.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "INFRA"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 INFRA (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}
