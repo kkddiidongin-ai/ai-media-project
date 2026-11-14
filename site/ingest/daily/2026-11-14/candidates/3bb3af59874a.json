@@ -1,0 +1,232 @@
+{
+  "id": "3bb3af59874a",
+  "date": "2026-11-14",
+  "proposedSlug": "introducing-usage-based-pricing-amazon-sagemaker-ai",
+  "title": null,
+  "sourceTitle": "Introducing usage-based pricing for Amazon SageMaker AI bidirectional streaming",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 10,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": true,
+      "contextNeed": true,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": true
+    },
+    "deepMissing": [
+      "importance"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-usage-based-pricing-for-amazon-sagemaker-ai-bidirectional-streaming/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-11-11T15:10:23.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "3bb3af59874a",
+    "url": "https://aws.amazon.com/blogs/machine-learning/introducing-usage-based-pricing-for-amazon-sagemaker-ai-bidirectional-streaming/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-usage-based-pricing-for-amazon-sagemaker-ai-bidirectional-streaming",
+    "title": "Introducing usage-based pricing for Amazon SageMaker AI bidirectional streaming",
+    "excerpt": "AWS Marketplace now supports usage-based metering for Amazon SageMaker bidirectional streaming inference, so model providers can charge for what customers actually consume during a live stream. Deepgram is the launch partner, bringing usage-based speech-to-text and text-to-speech billing to AWS Mark",
+    "publishedAt": "2026-11-11T15:10:23.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-11-12T18:12:54.299Z",
+    "fromQueue": "draft"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 13013,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "AWS Marketplace now supports usage-based metering for Amazon SageMaker bidirectional streaming inference, so model providers can charge for what customers actually consume during a live stream. Deepgram is the launch partner, bringing usage-based speech-to-text and text-to-speech billing to AWS Mark",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-usage-based-pricing-for-amazon-sagemaker-ai-bidirectional-streaming/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T15:10:23.000Z",
+        "checkedAt": "2026-11-14T13:26:54.505Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Introducing usage-based pricing for Amazon SageMaker AI bidirectional streaming | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-usage-based-pricing-for-amazon-sagemaker-ai-bidirectional-streaming/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T15:10:23.000Z",
+        "checkedAt": "2026-11-14T13:26:54.505Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Introducing usage-based pricing for Amazon SageMaker AI bidirectional streaming",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-usage-based-pricing-for-amazon-sagemaker-ai-bidirectional-streaming/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T15:10:23.000Z",
+        "checkedAt": "2026-11-14T13:26:54.505Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Usage-based metering for bidirectional streaming solves a software billing problem for real-time speech AI.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-usage-based-pricing-for-amazon-sagemaker-ai-bidirectional-streaming/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T15:10:23.000Z",
+        "checkedAt": "2026-11-14T13:26:54.505Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Customers deploying streaming models on Amazon SageMaker AI bidirectional streaming pay for the endpoint infrastructure that hosts the model.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-usage-based-pricing-for-amazon-sagemaker-ai-bidirectional-streaming/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T15:10:23.000Z",
+        "checkedAt": "2026-11-14T13:26:54.505Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Today, we’re announcing usage-based metering for Amazon SageMaker bidirectional (bidi) streaming inference, so model providers can report actual usage for the AWS Marketplace software charge.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-usage-based-pricing-for-amazon-sagemaker-ai-bidirectional-streaming/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T15:10:23.000Z",
+        "checkedAt": "2026-11-14T13:26:54.505Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "First, we introduced bidirectional streaming for real-time inference on Amazon SageMaker AI , which supports long-lived bidirectional streams between clients and model servers.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-usage-based-pricing-for-amazon-sagemaker-ai-bidirectional-streaming/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T15:10:23.000Z",
+        "checkedAt": "2026-11-14T13:26:54.505Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Now, with usage-based metering, we further strengthen the foundation for production real-time AI, aligning billing with how customers consume streaming and real-time AI workloads.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-usage-based-pricing-for-amazon-sagemaker-ai-bidirectional-streaming/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T15:10:23.000Z",
+        "checkedAt": "2026-11-14T13:26:54.505Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "A client streams audio and receives transcriptions through the SageMaker AI API using an HTTP/2 event stream.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-usage-based-pricing-for-amazon-sagemaker-ai-bidirectional-streaming/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T15:10:23.000Z",
+        "checkedAt": "2026-11-14T13:26:54.505Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "When a bidirectional streaming session starts, SageMaker AI establishes two connections to the model server:",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-usage-based-pricing-for-amazon-sagemaker-ai-bidirectional-streaming/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T15:10:23.000Z",
+        "checkedAt": "2026-11-14T13:26:54.505Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Subscribe to the Deepgram Voice AI streaming model you need on AWS Marketplace, such as Deepgram Nova-3 Monolingual Speech-to-Text (STT) Streaming .",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-usage-based-pricing-for-amazon-sagemaker-ai-bidirectional-streaming/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T15:10:23.000Z",
+        "checkedAt": "2026-11-14T13:26:54.505Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Connect to the endpoint using the SageMaker AI bidirectional streaming API and stream audio through its HTTP/2 event stream.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-usage-based-pricing-for-amazon-sagemaker-ai-bidirectional-streaming/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T15:10:23.000Z",
+        "checkedAt": "2026-11-14T13:26:54.505Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "For customers, subscribe to a Deepgram Voice AI streaming model on AWS Marketplace, such as Deepgram Nova-3 Monolingual Speech-to-Text (STT) Streaming",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-usage-based-pricing-for-amazon-sagemaker-ai-bidirectional-streaming/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-11T15:10:23.000Z",
+        "checkedAt": "2026-11-14T13:26:54.505Z"
+      }
+    ],
+    "pageDate": "2026-11-11T15:10:23.000Z"
+  },
+  "score": {
+    "importance": 3,
+    "practicalImpact": 2,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PRODUCT_LAUNCH",
+      "PRICING"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 10,
+    "total": 10
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 PRODUCT_LAUNCH·PRICING (우선순위 10)",
+    "근거 확인 통과 (확인 사실 10개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "gemini",
+    "model": "gemini-3.1-flash-lite",
+    "status": "skipped",
+    "error": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성",
+    "promptVersion": "draft-v1",
+    "at": "2026-11-14T13:27:38.331Z",
+    "evidenceHash": "a62335c2a43c"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": true,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}

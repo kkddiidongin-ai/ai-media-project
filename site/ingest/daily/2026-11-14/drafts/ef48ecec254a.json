@@ -1,0 +1,233 @@
+{
+  "candidateId": "ef48ecec254a",
+  "date": "2026-11-14",
+  "status": "draft_for_editor_review",
+  "title": "구글, Gemini 앱 내 파일 생성·편집·미리보기 기능 추가",
+  "source": {
+    "name": "Google Workspace Updates",
+    "url": "https://workspaceupdates.googleblog.com/2026/10/create-preview-and-edit-files-directly-in-the-Gemini-app.html",
+    "title": "Create, preview, and edit files directly in the Gemini app",
+    "publishedAt": "2026-10-29T18:43:11.753Z",
+    "type": "official"
+  },
+  "evidenceSummary": {
+    "status": "OK",
+    "grade": "PASS",
+    "sentences": 13,
+    "bodySentences": 12,
+    "distinctFacts": 11,
+    "checkedAt": "2026-11-14T13:26:17.354Z",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "We’re introducing new ways to create and refine files and code in the Gemini app. You can now generate, preview, and edit files right within your Gemini app chat—expand to full screen to type edits directly, highlight text to ask questions, or have Gemini refine them. PDF preview and editing is supp"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Google Workspace Updates: Create, preview, and edit files directly in the Gemini app"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Create, preview, and edit files directly in the Gemini app"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "We’re introducing new ways to create and refine files and code in the Gemini app."
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "You can now generate, preview, and edit files right within your Gemini app chat—expand to full screen to type edits directly, highlight text to ask questions, or have Gemini refine them."
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "PDF preview and editing is supported on both the web and mobile, while all other formats (documents, spreadsheets, slide decks, Markdown files, TXT files, and code) are supported on the web only."
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Generate and refine slide decks: Create presentation outlines or slide content, preview the layout in chat, and edit directly or ask Gemini to adjust the tone and structure before opening in Google Slides, or downloading as a PPTX or PDF."
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Build and export Google Sheets: Generate structured trackers, tables, and data models from a prompt, preview them in Gemini, and open them directly in Google Sheets."
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Edit documents and PDFs: Quickly draft PDFs, Google Docs, LaTeX, Markdown, or TXT files, and make manual or prompted edits inline on web or in a full-screen view—plus you can upload all of them to Drive."
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "These capabilities are now available to all users in all languages where the Gemini app is available."
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Visit the Help Center to learn more about turning the Gemini app on or off ."
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "End users: Users of all ages who have access to the Gemini app can generate files."
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "News from Google: You can now preview and edit documents, PDFs, presentations, spreadsheets, and more directly in Gemini"
+      }
+    ]
+  },
+  "articleType": "STANDARD",
+  "suggestedDepth": "STANDARD",
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음",
+    "matchSlug": null
+  },
+  "draft": {
+    "title": "구글, Gemini 앱 내 파일 생성·편집·미리보기 기능 추가",
+    "summary": "구글은 Gemini 앱 내에서 문서, 스프레드시트, 프레젠테이션 등 다양한 파일을 직접 생성하고 편집 및 미리보기 할 수 있는 기능을 도입했다.",
+    "category": "PRODUCT_UPDATE",
+    "topics": [
+      "google",
+      "gemini",
+      "ai-work"
+    ],
+    "companies": [
+      "Google"
+    ],
+    "products": [
+      "Gemini",
+      "Google Docs",
+      "Google Sheets",
+      "Google Slides"
+    ],
+    "facts": [
+      {
+        "text": "Gemini 앱 내에서 문서를 생성하거나 텍스트를 강조하여 수정 요청을 할 수 있으며, 전체 화면 편집 및 미리보기 기능을 지원한다 [E4].",
+        "evidence": [
+          "E4"
+        ]
+      },
+      {
+        "text": "PDF는 웹과 모바일 모두에서 미리보기와 편집이 가능하지만, 문서, 스프레드시트, 프레젠테이션, 마크다운, TXT, 코드 파일은 웹 환경에서만 지원된다 [E5].",
+        "evidence": [
+          "E5"
+        ]
+      },
+      {
+        "text": "프레젠테이션 내용을 생성하여 레이아웃을 미리 본 뒤 수정하거나 Google Slides로 내보낼 수 있으며, 시트 또한 데이터 모델을 생성하고 Google Sheets로 바로 열 수 있다 [E6], [E7].",
+        "evidence": [
+          "E6",
+          "E7"
+        ]
+      },
+      {
+        "text": "해당 기능은 Gemini 앱이 지원되는 모든 언어와 모든 사용자에게 공개되었다 [E9], [E11].",
+        "evidence": [
+          "E9",
+          "E11"
+        ]
+      }
+    ],
+    "why": {
+      "text": "Gemini 대화창에서 파일을 직접 수정하고 외부 도구로 연동하는 과정을 통합하여, 문서 작성부터 최종 문서화까지의 작업 흐름 효율성을 높이려는 것으로 풀이된다.",
+      "evidence": [
+        "E4",
+        "E6",
+        "E7"
+      ]
+    },
+    "change": {
+      "text": "사용자는 생성형 AI가 작성한 내용을 별도의 파일로 복사할 필요 없이 Gemini 앱 내에서 즉시 수정하고 최종 문서 형태로 변환하거나 드라이브에 저장할 수 있다.",
+      "evidence": [
+        "E4",
+        "E8"
+      ]
+    },
+    "checks": [
+      {
+        "text": "PDF를 제외한 문서, 시트, 슬라이드 등 대부분의 파일 형식 편집은 웹 버전 Gemini에서만 지원된다.",
+        "evidence": [
+          "E5"
+        ]
+      },
+      {
+        "text": "Gemini 앱의 활성화 여부나 설정은 고객센터를 통해 확인할 수 있다.",
+        "evidence": [
+          "E10"
+        ]
+      }
+    ],
+    "unknowns": [
+      "Gemini 요금제별 기능 제한 여부",
+      "특정 국가에서의 사용 제한 가능성(공식 보도에는 전 세계 지원으로 명시되었으나, 실제 서비스 적용 시점은 국가별로 차이가 있을 수 있음)"
+    ],
+    "editorialDepth": "STANDARD",
+    "insufficient": false,
+    "notes": "2026년 10월 29일 업데이트된 공식 발표 내용을 바탕으로 작성됨."
+  },
+  "handsOn": false,
+  "qa": {
+    "verdict": "REVIEW",
+    "checks": {
+      "FACT": {
+        "result": "REVIEW",
+        "issues": [
+          "근거에서 찾지 못한 영문 이름 'E11'"
+        ]
+      },
+      "EVIDENCE": {
+        "result": "PASS",
+        "issues": []
+      },
+      "EDITORIAL": {
+        "result": "PASS",
+        "issues": []
+      },
+      "STRUCTURE": {
+        "result": "PASS",
+        "issues": []
+      },
+      "DUPLICATE": {
+        "result": "PASS",
+        "issues": []
+      },
+      "SAFETY": {
+        "result": "PASS",
+        "issues": []
+      }
+    },
+    "stats": {
+      "bodyChars": 709,
+      "depth": "STANDARD",
+      "suggestedDepth": "STANDARD"
+    }
+  },
+  "fixes": [
+    "[FACT/REVIEW] 근거에서 찾지 못한 영문 이름 'E11'"
+  ],
+  "approvable": true,
+  "generation": {
+    "provider": "gemini",
+    "model": "gemini-3.1-flash-lite",
+    "promptVersion": "draft-v1",
+    "usage": {
+      "inputTokens": 1732,
+      "outputTokens": 742,
+      "costUsd": 0,
+      "attempts": 1
+    },
+    "reused": false,
+    "generatedAt": "2026-11-14T13:27:38.306Z",
+    "evidenceHash": "dc160b13a2e3"
+  }
+}
