@@ -6,13 +6,21 @@
 
 | 수집 | 신규 | 후속 | 중복 | 불확실 | 발행 추천 | 보류 | 제외 | 원고 |
 |---|---|---|---|---|---|---|---|---|
-| 122 | 178 | 0 | 0 | 0 | 7 | 113 | 58 | 0 |
+| 118 | 172 | 0 | 0 | 0 | 8 | 111 | 53 | 0 |
 
 > 자동으로 발행하지 않습니다. 아래 추천은 사람이 `npm run daily:approve -- <날짜> <id>`로 승인해야 기사 데이터에 들어갑니다. 뉴스레터도 만들거나 보내지 않습니다.
 
-## 발행 추천 (7) — 편집자 검토용
+## 발행 추천 (8) — 편집자 검토용
 
-### 1. Run agents securely and efficiently with the next generation AgentCore runtime
+### 1. Samsung Announces December Release for Intelligent Eyewear, Bringing a Smarter Way To See the World
+- id `86a8847fe78f` · 제안 slug `samsung-announces-december-release-intelligent-eyewear-bring` · 깊이 **-** (근거 기준 최대 STANDARD) · 분류 -
+- 원문: [Samsung Newsroom — Samsung Announces December Release for Intelligent Eyewear, Bringing a Smarter Way To See the World](https://news.samsung.com/global/samsung-announces-december-release-for-intelligent-eyewear-bringing-a-smarter-way-to-see-the-world) · 발표 2026-11-12
+- 추천 이유: 사건 신호 PRODUCT_LAUNCH·KOREA (우선순위 12) · 근거 확인 통과 (확인 사실 10개, SUFFICIENT_STANDARD) (중요도 3/5, 한국 관련 3/3)
+- 근거: 원문 OK · 근거 문장 13개 · 서로 다른 확인 사실 10개 · 판정 PASS · DEEP 아님(중요도 4+)
+- 검증: 확인 필요 없음
+- 원고: 없음 — Shadow Mode — 원고를 만들지 않음 · 📮 뉴스레터 후보
+
+### 2. Run agents securely and efficiently with the next generation AgentCore runtime
 - id `85bacafff424` · 제안 slug `run-agents-securely-efficiently-next-generation-agentcore` · 깊이 **-** (근거 기준 최대 STANDARD) · 분류 -
 - 원문: [AWS Machine Learning Blog — Run agents securely and efficiently with the next generation AgentCore runtime](https://aws.amazon.com/blogs/machine-learning/run-agents-securely-and-efficiently-with-the-next-generation-agentcore-runtime/) · 발표 2026-11-12
 - 추천 이유: 사건 신호 PRICING·SECURITY_MENTION·API_PLATFORM (우선순위 10) · 근거 확인 통과 (확인 사실 10개, SUFFICIENT_STANDARD) (중요도 3/5, 한국 관련 0/3)
@@ -20,7 +28,7 @@
 - 검증: 확인 필요 없음
 - 원고: 없음 — Shadow Mode — 원고를 만들지 않음 · 📮 뉴스레터 후보
 
-### 2. Introducing Gemini 4 Hydrogen
+### 3. Introducing Gemini 4 Hydrogen
 - id `a8d5fa7d24b3` · 제안 slug `introducing-gemini-4-hydrogen` · 깊이 **-** (근거 기준 최대 STANDARD) · 분류 -
 - 원문: [Google DeepMind — Introducing Gemini 4 Hydrogen](https://deepmind.google/blog/introducing-gemini-4-hydrogen/) · 발표 2026-11-12
 - 추천 이유: 사건 신호 MODEL·PRODUCT_LAUNCH (우선순위 9) · 근거 확인 통과 (확인 사실 10개, SUFFICIENT_STANDARD) (중요도 3/5, 한국 관련 0/3)
@@ -28,7 +36,15 @@
 - 검증: 확인 필요 없음
 - 원고: 없음 — Shadow Mode — 원고를 만들지 않음 · 📮 뉴스레터 후보
 
-### 3. GitHub Enterprise Server support in the GitHub Copilot app
+### 4. Finding the Perfect TV: A Guide to Samsung TVs
+- id `cfc794051fa7` · 제안 slug `finding-perfect-tv-guide-samsung-tvs` · 깊이 **-** (근거 기준 최대 SHORT) · 분류 -
+- 원문: [Samsung Newsroom — Finding the Perfect TV: A Guide to Samsung TVs](https://news.samsung.com/global/finding-the-perfect-tv-a-guide-to-samsung-tvs) · 발표 2026-11-12
+- 추천 이유: 사건 신호 KOREA (우선순위 9) · 근거 확인 통과 (확인 사실 11개, SUFFICIENT_STANDARD) (중요도 2/5, 한국 관련 3/3)
+- 근거: 원문 OK · 근거 문장 13개 · 서로 다른 확인 사실 11개 · 판정 PASS · DEEP 아님(중요도 4+, 배경 설명 필요, STANDARD로는 맥락 누락)
+- 검증: 확인 필요 없음
+- 원고: 없음 — Shadow Mode — 원고를 만들지 않음
+
+### 5. GitHub Enterprise Server support in the GitHub Copilot app
 - id `18a36c2817e7` · 제안 slug `github-enterprise-server-support-github-copilot-app` · 깊이 **-** (근거 기준 최대 STANDARD) · 분류 -
 - 원문: [GitHub Changelog — GitHub Enterprise Server support in the GitHub Copilot app](https://github.blog/changelog/2026-11-13-github-enterprise-server-support-in-the-github-copilot-app) · 발표 2026-11-13
 - 추천 이유: 사건 신호 PRODUCT_LAUNCH·CONSUMER (우선순위 8) · 근거 확인 통과 (확인 사실 11개, SUFFICIENT_STANDARD) (중요도 2/5, 한국 관련 0/3)
@@ -36,7 +52,7 @@
 - 검증: 확인 필요 없음
 - 원고: 없음 — Shadow Mode — 원고를 만들지 않음
 
-### 4. Route coding agent requests to the right model on Amazon Bedrock with NVIDIA NeMo Switchyard
+### 6. Route coding agent requests to the right model on Amazon Bedrock with NVIDIA NeMo Switchyard
 - id `94d8e8d36570` · 제안 slug `route-coding-agent-requests-right-model-amazon` · 깊이 **-** (근거 기준 최대 STANDARD) · 분류 -
 - 원문: [AWS Machine Learning Blog — Route coding agent requests to the right model on Amazon Bedrock with NVIDIA NeMo Switchyard](https://aws.amazon.com/blogs/machine-learning/route-coding-agent-requests-to-the-right-model-on-amazon-bedrock-with-nvidia-nemo-switchyard/) · 발표 2026-11-13
 - 추천 이유: 사건 신호 PRICING·API_PLATFORM·MODEL_MENTION (우선순위 7) · 근거 확인 통과 (확인 사실 10개, SUFFICIENT_STANDARD) (중요도 3/5, 한국 관련 0/3, 유형 HOW_TO)
@@ -44,7 +60,7 @@
 - 검증: 확인 필요 없음
 - 원고: 없음 — Shadow Mode — 원고를 만들지 않음 · 📮 뉴스레터 후보
 
-### 5. OpenFold3 on Amazon SageMaker JumpStart: Predict biomolecular structures
+### 7. OpenFold3 on Amazon SageMaker JumpStart: Predict biomolecular structures
 - id `41b9d660ec27` · 제안 slug `openfold3-amazon-sagemaker-jumpstart-predict-biomolecular-st` · 깊이 **-** (근거 기준 최대 STANDARD) · 분류 -
 - 원문: [AWS Machine Learning Blog — OpenFold3 on Amazon SageMaker JumpStart: Predict biomolecular structures](https://aws.amazon.com/blogs/machine-learning/openfold3-on-amazon-sagemaker-jumpstart-predict-biomolecular-structures/) · 발표 2026-11-13
 - 추천 이유: 사건 신호 PREVIEW·INFRA (우선순위 6) · 근거 확인 통과 (확인 사실 11개, SUFFICIENT_STANDARD) (중요도 2/5, 한국 관련 0/3)
@@ -52,7 +68,7 @@
 - 검증: 확인 필요 없음
 - 원고: 없음 — Shadow Mode — 원고를 만들지 않음
 
-### 6. When One GPU Isn’t Enough: Serving GLM-5.3 Across Two NVIDIA DGX Stations with vLLM
+### 8. When One GPU Isn’t Enough: Serving GLM-5.3 Across Two NVIDIA DGX Stations with vLLM
 - id `8f2daa11c505` · 제안 slug `when-one-gpu-isn-t-enough-serving` · 깊이 **-** (근거 기준 최대 STANDARD) · 분류 -
 - 원문: [NVIDIA Technical Blog — When One GPU Isn’t Enough: Serving GLM-5.3 Across Two NVIDIA DGX Stations with vLLM](https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/) · 발표 2026-11-13
 - 추천 이유: 사건 신호 INFRA·MODEL_MENTION (우선순위 6) · 근거 확인 통과 (확인 사실 11개, SUFFICIENT_STANDARD) (중요도 2/5, 한국 관련 0/3)
@@ -60,18 +76,8 @@
 - 검증: 확인 필요 없음
 - 원고: 없음 — Shadow Mode — 원고를 만들지 않음
 
-### 7. Publish a Sheets canvas as a standalone link
-- id `8f0be0dad7c5` · 제안 slug `publish-sheets-canvas-standalone-link` · 깊이 **-** (근거 기준 최대 STANDARD) · 분류 -
-- 원문: [Google Workspace Updates — Publish a Sheets canvas as a standalone link](https://workspaceupdates.googleblog.com/2026/11/publish-sheets-canvas-as-standalone-link.html) · 발표 2026-11-11
-- 추천 이유: 사건 신호 MODEL·PRODUCT_LAUNCH (우선순위 6) · 근거 확인 통과 (확인 사실 9개, SUFFICIENT_STANDARD) (중요도 3/5, 한국 관련 0/3, 유형 CUSTOMER_STORY)
-- 근거: 원문 OK · 근거 문장 13개 · 서로 다른 확인 사실 9개 · 판정 PASS · DEEP 아님(중요도 4+, 사용자 영향, 배경 설명 필요, STANDARD로는 맥락 누락)
-- 검증: 확인 필요 없음
-- 원고: 없음 — Shadow Mode — 원고를 만들지 않음 · 📮 뉴스레터 후보
+## 보류 (111)
 
-## 보류 (113)
-
-- **Samsung Announces December Release for Intelligent Eyewear, Bringing a Smarter Way To See the World** (Samsung Newsroom, 2026-11-12) — 근거 부족 (원문 TIMEOUT, 확인 사실 0개) — 발행하지 않음 · 확인 필요: 원문을 읽지 못함, 근거 부족
-- **Finding the Perfect TV: A Guide to Samsung TVs** (Samsung Newsroom, 2026-11-12) — 근거 부족 (원문 TIMEOUT, 확인 사실 0개) — 발행하지 않음 · 확인 필요: 원문을 읽지 못함, 근거 부족
 - **Introducing ChatGPT Wallet** (OpenAI, 2026-11-13) — 근거 부족 (원문 HTTP_403, 확인 사실 0개) — 발행하지 않음 · 확인 필요: 원문을 읽지 못함, 근거 부족
 - **Gondola doubles revenue as its team builds more with Codex** (OpenAI, 2026-11-12) — 근거 부족 (원문 HTTP_403, 확인 사실 0개) — 발행하지 않음 · 확인 필요: 원문을 읽지 못함, 근거 부족
 - **Gilbert + Tobin rethinks the business of law with AI** (OpenAI, 2026-11-12) — 근거 부족 (원문 SKIPPED_HOST_BLOCKED, 확인 사실 0개) — 발행하지 않음 · 확인 필요: 원문을 읽지 못함, 근거 부족
@@ -80,13 +86,13 @@
 - **Tokenomics at scale: Track and cap Amazon Bedrock spend per IAM principal with CUR 2.0 and AWS Budgets** (AWS Machine Learning Blog, 2026-11-12) — 사건 신호 API_PLATFORM (우선순위 5) · 근거는 있으나 우선순위 5 < 발행 추천 기준 6 · 확인 필요: 없음
 - **Optimizing cost per task and proving agent ROI on Amazon Bedrock** (AWS Machine Learning Blog, 2026-11-12) — 사건 신호 PRICING·API_PLATFORM (우선순위 5) · 근거는 있으나 우선순위 5 < 발행 추천 기준 6 · 확인 필요: 없음
 - **Gemini 4 Hydrogen in GitHub Copilot** (GitHub Changelog, 2026-11-13) — 사건 신호 AVAILABILITY (우선순위 5) · 근거는 있으나 우선순위 5 < 발행 추천 기준 6 · 확인 필요: 없음
-- **ChatGPT Plus for veterans and servicemembers** (OpenAI, 2026-11-11) — 근거 부족 (원문 SKIPPED_HOST_BLOCKED, 확인 사실 0개) — 발행하지 않음 · 확인 필요: 원문을 읽지 못함, 근거 부족
 - **Supporting research on AI and children’s safety** (OpenAI, 2026-11-12) — 근거 부족 (원문 SKIPPED_HOST_BLOCKED, 확인 사실 0개) — 발행하지 않음 · 확인 필요: 원문을 읽지 못함, 근거 부족
 - **Meta’s New Agreements Bring Clean Manufacturing to Data Center Supply Chains** (Meta Newsroom, 2026-11-12) — 사건 신호 INFRA (우선순위 4) · 근거는 있으나 우선순위 4 < 발행 추천 기준 6 · 확인 필요: 없음
 - **LLMON: An LLM-Native Markup Language, now in Granite 4.1 3B and 8B** (Hugging Face Blog, 2026-11-12) — 사건 신호 MODEL_MENTION (우선순위 4) · 근거는 있으나 우선순위 4 < 발행 추천 기준 6 · 확인 필요: 없음
 - **Cost-optimizing AssemblyAI speech-to-text inference on AWS with Amazon EC2 Spot** (AWS Machine Learning Blog, 2026-11-13) — 사건 신호 INFRA (우선순위 4) · 근거는 있으나 우선순위 4 < 발행 추천 기준 6 · 확인 필요: 없음
 - **Microsoft Research Focus – Edition #98** (Microsoft Research Blog, 2026-11-12) — 사건 신호 RESEARCH_RESULT (우선순위 4) · 근거는 있으나 우선순위 4 < 발행 추천 기준 6 · 확인 필요: 없음
 - **Run GPU-Powered Black Hole Interferometry with NVIDIA cuPhoton** (NVIDIA Technical Blog, 2026-11-13) — 사건 신호 INFRA (우선순위 4) · 근거는 있으나 우선순위 4 < 발행 추천 기준 6 · 확인 필요: 없음
+- MS, 전 세계 서비스 장애 완전 복구…팩스 부활에 밈까지 등장 (AI타임스, 2026-11-15) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 REGULATION)
 - 미 재무장관, 메가스피드 제재 지연에 상무부 공개 비판…러트닉 경질론까지 (AI타임스, 2026-11-14) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·REGULATION)
 - 엔비디아, 차기 CEO로 Arm 하스 접촉설…이사회 "공식 접촉 아직 없어" (AI타임스, 2026-11-14) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 INFRA)
 - 젠슨 황 투자에 제동 걸었던 CFO가 후임으로…엔비디아 전략 바뀌나 (AI타임스, 2026-11-14) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)
@@ -106,12 +112,11 @@
 - AI 모델 바꾼 기업 70% "몇 주 이상 걸려"…앱 수정·검증이 걸림돌 (AI타임스, 2026-11-13) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·MODEL_MENTION)
 - 노타, 3분기 역대 최대 매출 달성…플랫폼·솔루션 동반 도약 (AI타임스, 2026-11-13) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 INFRA)
 - AMD, 양자컴퓨터 오류 수정에 GPU·SW 투입…엔비디아와 경쟁 (AI타임스, 2026-11-13) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 INFRA·PRODUCT_LAUNCH·PARTNERSHIP)
-- 엘리스그룹, 'B300' 기반 AI 데이터센터 베타 서비스 개시 (AI타임스, 2026-11-13) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 INFRA·PRODUCT_LAUNCH·REGULATION)
-- … 외 76건 (run.json)
+- … 외 77건 (run.json)
 
-## 제외 (58)
+## 제외 (53)
 
-- 가치 낮음 58건: Shield helps technicians hand off legacy portal wo · How Amplitude ships product improvements in 1–2 da · Holiday Extras is rethinking what it can build wit · From AI ambition to business impact · Scaling AI value without losing control: Lessons f · How AI Is Helping Care Teams Get Patients the Righ · Build once, run on any agent: A practical guide to · Build a Robot Pick-and-Place Simulation with SimRe …
+- 가치 낮음 53건: Shield helps technicians hand off legacy portal wo · How Amplitude ships product improvements in 1–2 da · Holiday Extras is rethinking what it can build wit · From AI ambition to business impact · Scaling AI value without losing control: Lessons f · How AI Is Helping Care Teams Get Patients the Righ · Build once, run on any agent: A practical guide to · Build a Robot Pick-and-Place Simulation with SimRe …
 
 ## 소스 상태 (정상 22, 그중 기간 안 새 글 0건 3 · 경고 4 · 저하 5 · 실패 0 · 비활성 9)
 
@@ -131,34 +136,34 @@
 
 ## 처리 대기열 · 수집 범위
 
-- 진행 상태: **미완료** · 이번 실행 근거 확인 24건 · 원고 작성 0건
-- 지난 실행에서 넘어온 일: 근거 확인 56건 · 원고 작성 0건
-- 남은 일 (다음 실행으로 이월): 근거 확인 대기 **54**건 · 원고 작성 대기 **43**건 · 아직 열지 못한 글 주소 0개 · 재시도할 소스 0곳
+- 진행 상태: **미완료** · 이번 실행 근거 확인 6건 · 원고 작성 0건
+- 지난 실행에서 넘어온 일: 근거 확인 54건 · 원고 작성 0건
+- 남은 일 (다음 실행으로 이월): 근거 확인 대기 **54**건 · 원고 작성 대기 **45**건 · 아직 열지 못한 글 주소 0개 · 재시도할 소스 0곳
   - 원고 작성 대기: 발행 추천은 났지만 원고 생성 수단이 없거나(무료 생성 미설정·Shadow) 배치를 넘은 항목입니다. 근거는 후보 파일에 보존했고, 빈 원고나 허위 원고는 만들지 않습니다.
 - 수집 범위가 기간 전체를 덮지 못한 소스 3곳 (놓쳤을 수 있음):
   - AI타임스: 피드의 가장 오래된 항목(2026-11-13)이 시작일(2026-11-12)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음
   - 지디넷코리아: 피드의 가장 오래된 항목(2026-11-14)이 시작일(2026-11-12)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음
-  - 전자신문: 피드의 가장 오래된 항목(2026-11-13)이 시작일(2026-11-12)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음
+  - 전자신문: 피드의 가장 오래된 항목(2026-11-14)이 시작일(2026-11-12)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음
 
 ## 선정 진단 (Selection Diagnostics)
 
 **메타데이터 상위 10** (원문을 열기 전 점수 · 유형 · 사건 신호 → 결과)
 - 13 · 소식 · KOREA·PARTNERSHIP·REGULATION·INFRA — VKAISS 2026, 베트남과 한국의 AI 및 반도체 협력 강화 → **HOLD**
-- 12 · 소식 · PRODUCT_LAUNCH·KOREA — Samsung Announces December Release for Intelligent Eyewear,… → **HOLD**
+- 12 · 소식 · PRODUCT_LAUNCH·KOREA — Samsung Announces December Release for Intelligent Eyewear,… → **PUBLISH**
 - 11 · 소식 · INFRA·PRODUCT_LAUNCH·REGULATION — 엘리스그룹, 'B300' 기반 AI 데이터센터 베타 서비스 개시 → **HOLD**
 - 11 · 소식 · PRODUCT_LAUNCH·REGULATION·INFRA — 앨리스 황, 중국 정보기관 포섭 의혹…딥시크·화웨이 연관도 드러나 → **HOLD**
 - 11 · 소식 · PRODUCT_LAUNCH·REGULATION·INFRA — 스페이스X, 100조 규모 AI 데이터센터 투자…애리조나에 6GW 추가 → **HOLD**
 - 10 · 소식 · PRICING·SECURITY_MENTION·API_PLATFORM — Run agents securely and efficiently with the next generatio… → **PUBLISH**
 - 10 · 소식 · CONSUMER·PRODUCT_LAUNCH·PARTNERSHIP — 오픈AI, AI 에이전트가 대신 결제하는 '챗GPT 월렛' 출시 → **HOLD**
 - 9 · 소식 · MODEL·PRODUCT_LAUNCH — Introducing Gemini 4 Hydrogen → **PUBLISH**
-- 9 · 소식 · KOREA — Finding the Perfect TV: A Guide to Samsung TVs → **HOLD**
+- 9 · 소식 · KOREA — Finding the Perfect TV: A Guide to Samsung TVs → **PUBLISH**
 - 9 · 소식 · PRODUCT_LAUNCH·REGULATION — 미 재무장관, 메가스피드 제재 지연에 상무부 공개 비판…러트닉 경질론까지 → **HOLD**
 
-**근거 확인 명단 24건** (원문 요청 상한 40, 최종 추천 상한 0)
-- Samsung Announces December Release for Intelligent Eyewear,… — 원문 TIMEOUT · 확인 사실 0 · INSUFFICIENT · 깊이 - → **HOLD**
+**근거 확인 명단 22건** (원문 요청 상한 40, 최종 추천 상한 0)
+- Samsung Announces December Release for Intelligent Eyewear,… — 원문 OK · 확인 사실 10 · SUFFICIENT_STANDARD · 깊이 STANDARD → **PUBLISH**
 - Run agents securely and efficiently with the next generatio… — 원문 OK · 확인 사실 10 · SUFFICIENT_STANDARD · 깊이 STANDARD → **PUBLISH**
 - Introducing Gemini 4 Hydrogen — 원문 OK · 확인 사실 10 · SUFFICIENT_STANDARD · 깊이 STANDARD → **PUBLISH**
-- Finding the Perfect TV: A Guide to Samsung TVs — 원문 TIMEOUT · 확인 사실 0 · INSUFFICIENT · 깊이 - → **HOLD**
+- Finding the Perfect TV: A Guide to Samsung TVs — 원문 OK · 확인 사실 11 · SUFFICIENT_STANDARD · 깊이 SHORT → **PUBLISH**
 - Introducing ChatGPT Wallet — 원문 HTTP_403 (대체 문서 0줄: 제목에 버전 붙은 이름 없음) · 확인 사실 0 · INSUFFICIENT · 깊이 - → **HOLD**
 - Gondola doubles revenue as its team builds more with Codex — 원문 HTTP_403 (대체 문서 0줄: 제목에 버전 붙은 이름 없음) · 확인 사실 0 · INSUFFICIENT · 깊이 - → **HOLD**
 - GitHub Enterprise Server support in the GitHub Copilot app — 원문 OK · 확인 사실 11 · SUFFICIENT_STANDARD · 깊이 STANDARD → **PUBLISH**
@@ -166,13 +171,11 @@
 - Gilbert + Tobin rethinks the business of law with AI — 원문 SKIPPED_HOST_BLOCKED (대체 문서 0줄: 제목에 버전 붙은 이름 없음) · 확인 사실 0 · INSUFFICIENT · 깊이 - → **HOLD**
 - OpenFold3 on Amazon SageMaker JumpStart: Predict biomolecul… — 원문 OK · 확인 사실 11 · SUFFICIENT_STANDARD · 깊이 STANDARD → **PUBLISH**
 - When One GPU Isn’t Enough: Serving GLM-5.3 Across Two NVIDI… — 원문 OK · 확인 사실 11 · SUFFICIENT_STANDARD · 깊이 STANDARD → **PUBLISH**
-- Publish a Sheets canvas as a standalone link — 원문 OK · 확인 사실 9 · SUFFICIENT_STANDARD · 깊이 STANDARD → **PUBLISH**
 - Architecture patterns for fast session startup on Amazon Be… — 원문 OK · 확인 사실 11 · SUFFICIENT_STANDARD · 깊이 STANDARD → **HOLD**
 - Four Amazon Bedrock inference choices that affect cost — 원문 OK · 확인 사실 11 · SUFFICIENT_STANDARD · 깊이 STANDARD → **HOLD**
 - Tokenomics at scale: Track and cap Amazon Bedrock spend per… — 원문 OK · 확인 사실 11 · SUFFICIENT_STANDARD · 깊이 STANDARD → **HOLD**
 - Optimizing cost per task and proving agent ROI on Amazon Be… — 원문 OK · 확인 사실 7 · SUFFICIENT_STANDARD · 깊이 STANDARD → **HOLD**
 - Gemini 4 Hydrogen in GitHub Copilot — 원문 OK · 확인 사실 12 · SUFFICIENT_STANDARD · 깊이 STANDARD → **HOLD**
-- ChatGPT Plus for veterans and servicemembers — 원문 SKIPPED_HOST_BLOCKED (대체 문서 0줄: 제목에 버전 붙은 이름 없음) · 확인 사실 0 · INSUFFICIENT · 깊이 - → **HOLD**
 - Supporting research on AI and children’s safety — 원문 SKIPPED_HOST_BLOCKED (대체 문서 0줄: 제목에 버전 붙은 이름 없음) · 확인 사실 0 · INSUFFICIENT · 깊이 - → **HOLD**
 - Meta’s New Agreements Bring Clean Manufacturing to Data Cen… — 원문 OK · 확인 사실 5 · SUFFICIENT_STANDARD · 깊이 SHORT → **HOLD**
 - LLMON: An LLM-Native Markup Language, now in Granite 4.1 3B… — 원문 OK · 확인 사실 12 · SUFFICIENT_STANDARD · 깊이 SHORT → **HOLD**
@@ -183,18 +186,18 @@
 **상한·다양성으로 빠진 후보 0건**
 - 없음
 
-**글 유형 감점 21건**: Shield helps technicians hand off legac… (고객 사례, EXCLUDE) · Scaling AI value without losing control… (의견·전망, EXCLUDE) · Build once, run on any agent: A practic… (사용법, EXCLUDE) · Build a Robot Pick-and-Place Simulation… (사용법, EXCLUDE) · Production MLOps at GS Caltex with Amaz… (사용법, EXCLUDE) · Route coding agent requests to the righ… (사용법, PUBLISH) · Cost attribution and controls for AI de… (사용법, EXCLUDE) · Build a model improvement flywheel with… (사용법, EXCLUDE) · Deploy frontier AI models on AWS Traini… (사용법, EXCLUDE) · How Natera designed an agentic AI syste… (사용법, EXCLUDE) · Optimizing cost per task and proving ag… (사용법, HOLD) · Building a self-service LLM gateway wit… (사용법, EXCLUDE) …
+**글 유형 감점 20건**: Shield helps technicians hand off legac… (고객 사례, EXCLUDE) · Scaling AI value without losing control… (의견·전망, EXCLUDE) · Build once, run on any agent: A practic… (사용법, EXCLUDE) · Build a Robot Pick-and-Place Simulation… (사용법, EXCLUDE) · Production MLOps at GS Caltex with Amaz… (사용법, EXCLUDE) · Route coding agent requests to the righ… (사용법, PUBLISH) · Cost attribution and controls for AI de… (사용법, EXCLUDE) · Build a model improvement flywheel with… (사용법, EXCLUDE) · Deploy frontier AI models on AWS Traini… (사용법, EXCLUDE) · How Natera designed an agentic AI syste… (사용법, EXCLUDE) · Optimizing cost per task and proving ag… (사용법, HOLD) · Building a self-service LLM gateway wit… (사용법, EXCLUDE) …
 
 **DEEP 판단**
+- Samsung Announces December Release for Intelligent Eyewear,… → STANDARD (DEEP 아님: 중요도 4+)
 - Run agents securely and efficiently with the next generatio… → STANDARD (DEEP 아님: 중요도 4+)
 - Introducing Gemini 4 Hydrogen → STANDARD (DEEP 아님: 중요도 4+, 사용자 영향, 배경 설명 필요, STANDARD로는 맥락 누락)
 - Route coding agent requests to the right model on Amazon Be… → STANDARD (DEEP 아님: 중요도 4+)
-- Publish a Sheets canvas as a standalone link → STANDARD (DEEP 아님: 중요도 4+, 사용자 영향, 배경 설명 필요, STANDARD로는 맥락 누락)
 
-**보류 이유 (113건)**: N-N-N DAILY에서 이미 추천함 54 · 언론 보도 42 · 근거는 있으나 우선순위 N < 발행 추천 기준 N 10 · 근거 부족 7
+**보류 이유 (111건)**: N-N-N DAILY에서 이미 추천함 54 · 언론 보도 43 · 근거는 있으나 우선순위 N < 발행 추천 기준 N 10 · 근거 부족 4
 
 ## 비용
 
 원고 생성 none · 호출 0/6 · 입력 0 · 출력 0 토큰 · 예상 비용 $0.0000 / 상한 $0.5
 
-<sub>실행 2026-11-14T16:34:45.243Z → 2026-11-14T16:36:40.850Z · 상세: run.json, candidates/*.json</sub>
+<sub>실행 2026-11-15T01:47:40.415Z → 2026-11-15T01:48:27.337Z · 상세: run.json, candidates/*.json</sub>

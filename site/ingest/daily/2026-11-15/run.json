@@ -1,7 +1,7 @@
 {
   "date": "2026-11-15",
   "mode": "shadow",
-  "startedAt": "2026-11-14T16:34:45.243Z",
+  "startedAt": "2026-11-15T01:47:40.415Z",
   "status": "INCOMPLETE",
   "limits": {
     "windowDays": 3,
@@ -955,8 +955,8 @@
       "parsed": 30,
       "matched": 30,
       "found": 30,
-      "inWindow": 15,
-      "kept": 15,
+      "inWindow": 11,
+      "kept": 11,
       "since": "2026-11-12",
       "coverage": {
         "complete": false,
@@ -980,16 +980,16 @@
         "redirected": false,
         "finalUrl": null
       },
-      "parsed": 15,
-      "matched": 15,
-      "found": 15,
+      "parsed": 13,
+      "matched": 13,
+      "found": 13,
       "inWindow": 6,
       "kept": 6,
       "since": "2026-11-12",
       "coverage": {
         "complete": false,
-        "reason": "피드의 가장 오래된 항목(2026-11-13)이 시작일(2026-11-12)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음",
-        "oldest": "2026-11-13"
+        "reason": "피드의 가장 오래된 항목(2026-11-14)이 시작일(2026-11-12)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음",
+        "oldest": "2026-11-14"
       },
       "undated": 0,
       "health": "OK",
@@ -1035,17 +1035,17 @@
     "SKIPPED": 9
   },
   "counts": {
-    "collected": 122,
-    "carriedFromQueue": 56,
-    "NEW": 178,
+    "collected": 118,
+    "carriedFromQueue": 54,
+    "NEW": 172,
     "UPDATE_EXISTING": 0,
     "DUPLICATE": 0,
     "UNCERTAIN": 0,
-    "PUBLISH": 7,
-    "HOLD": 113,
-    "EXCLUDE": 58,
-    "shortlisted": 24,
-    "evidenceChecked": 24,
+    "PUBLISH": 8,
+    "HOLD": 111,
+    "EXCLUDE": 53,
+    "shortlisted": 22,
+    "evidenceChecked": 22,
     "drafts": 0,
     "draftQa": {
       "PASS": 0,
@@ -1066,7 +1066,7 @@
       "attempted": 0,
       "ok": 0,
       "failed": 0,
-      "skipped": 7,
+      "skipped": 8,
       "successRate": null,
       "quotaHit": false
     },
@@ -1077,17 +1077,17 @@
     "complete": false,
     "pending": {
       "evidence": 54,
-      "draft": 43,
+      "draft": 45,
       "meta": 0,
       "retrySources": 0
     },
     "carriedIn": {
-      "evidence": 56,
+      "evidence": 54,
       "draft": 0
     },
     "resolvedFromQueue": 0,
     "processed": {
-      "evidenceFetches": 24,
+      "evidenceFetches": 6,
       "drafted": 0
     },
     "coverageGaps": [
@@ -1104,7 +1104,7 @@
       {
         "id": "etnews",
         "name": "전자신문",
-        "reason": "피드의 가장 오래된 항목(2026-11-13)이 시작일(2026-11-12)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음"
+        "reason": "피드의 가장 오래된 항목(2026-11-14)이 시작일(2026-11-12)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음"
       }
     ],
     "timeBudgetExceeded": false,
@@ -2240,9 +2240,10 @@
       "url": "https://news.samsung.com/global/samsung-announces-december-release-for-intelligent-eyewear-bringing-a-smarter-way-to-see-the-world",
       "duplicate": "NEW",
       "matchSlug": null,
-      "decision": "HOLD",
+      "decision": "PUBLISH",
       "reasons": [
-        "근거 부족 (원문 TIMEOUT, 확인 사실 0개) — 발행하지 않음"
+        "사건 신호 PRODUCT_LAUNCH·KOREA (우선순위 12)",
+        "근거 확인 통과 (확인 사실 10개, SUFFICIENT_STANDARD)"
       ],
       "score": 12,
       "importance": 3,
@@ -2254,16 +2255,14 @@
       ],
       "company": "Samsung",
       "stage": "evidence",
-      "evidenceStatus": "TIMEOUT",
-      "distinctFacts": 0,
-      "sufficiency": "INSUFFICIENT",
+      "evidenceStatus": "OK",
+      "distinctFacts": 10,
+      "sufficiency": "SUFFICIENT_STANDARD",
       "deepMissing": [
-        "importance",
-        "distinctFacts",
-        "evidenceQuality",
-        "standardWouldOmit"
+        "importance"
       ],
-      "suggestedDepth": null
+      "suggestedDepth": "STANDARD",
+      "draftPending": true
     },
     {
       "id": "cfc794051fa7",
@@ -2273,9 +2272,10 @@
       "url": "https://news.samsung.com/global/finding-the-perfect-tv-a-guide-to-samsung-tvs",
       "duplicate": "NEW",
       "matchSlug": null,
-      "decision": "HOLD",
+      "decision": "PUBLISH",
       "reasons": [
-        "근거 부족 (원문 TIMEOUT, 확인 사실 0개) — 발행하지 않음"
+        "사건 신호 KOREA (우선순위 9)",
+        "근거 확인 통과 (확인 사실 11개, SUFFICIENT_STANDARD)"
       ],
       "score": 9,
       "importance": 2,
@@ -2286,17 +2286,16 @@
       ],
       "company": "Samsung",
       "stage": "evidence",
-      "evidenceStatus": "TIMEOUT",
-      "distinctFacts": 0,
-      "sufficiency": "INSUFFICIENT",
+      "evidenceStatus": "OK",
+      "distinctFacts": 11,
+      "sufficiency": "SUFFICIENT_STANDARD",
       "deepMissing": [
         "importance",
         "contextNeed",
-        "distinctFacts",
-        "evidenceQuality",
         "standardWouldOmit"
       ],
-      "suggestedDepth": null
+      "suggestedDepth": "SHORT",
+      "draftPending": true
     },
     {
       "id": "7ca0fec9fce8",
@@ -2476,6 +2475,48 @@
       "typePenalty": 0,
       "signals": [],
       "company": "NAVER D2",
+      "stage": "metadata"
+    },
+    {
+      "id": "15548712c504",
+      "title": "MS, 전 세계 서비스 장애 완전 복구…팩스 부활에 밈까지 등장",
+      "source": "AI타임스",
+      "publishedAt": "2026-11-15T08:20:19.000Z",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217414",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 REGULATION)"
+      ],
+      "score": 6,
+      "importance": 2,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "REGULATION"
+      ],
+      "company": "AI타임스",
+      "stage": "metadata"
+    },
+    {
+      "id": "c410028e9b26",
+      "title": "엔비디아 투자자들 \"젠슨 황 복귀 검토해야\"…머스크 등 거물 가세",
+      "source": "AI타임스",
+      "publishedAt": "2026-11-15T07:52:49.000Z",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217413",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+      ],
+      "score": 2,
+      "importance": 0,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [],
+      "company": "AI타임스",
       "stage": "metadata"
     },
     {
@@ -3518,11 +3559,11 @@
       "stage": "metadata"
     },
     {
-      "id": "3786d6ac36d3",
-      "title": "IEA \"2031년까지 세계 태양광 3.6TW 증가…직전 6년 대비 2.4배 폭증\"",
-      "source": "AI타임스",
-      "publishedAt": "2026-11-13T11:25:00.000Z",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217296",
+      "id": "040cedb97341",
+      "title": "AI가 일자리 없앤다…\"2030년까지 오히려 170만 개 늘어\"",
+      "source": "지디넷코리아",
+      "publishedAt": "2026-11-15T00:18:35.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261115062228",
       "duplicate": "NEW",
       "matchSlug": null,
       "decision": "EXCLUDE",
@@ -3534,15 +3575,82 @@
       "contentType": "NEWS",
       "typePenalty": 0,
       "signals": [],
-      "company": "AI타임스",
+      "company": "지디넷코리아",
       "stage": "metadata"
     },
     {
-      "id": "d96c8bc4c3d9",
-      "title": "라트비아에 1만 헥타르 태양광단지 가동…대규모 에너지저장장치도 건설",
-      "source": "AI타임스",
-      "publishedAt": "2026-11-13T11:25:00.000Z",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217293",
+      "id": "f7d18194c4cf",
+      "title": "LGU+, 2027년 AI 비용 낮추는 토큰 사업 진출",
+      "source": "지디넷코리아",
+      "publishedAt": "2026-11-15T00:00:02.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261113200433",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 MODEL_MENTION)"
+      ],
+      "score": 4,
+      "importance": 1,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "MODEL_MENTION"
+      ],
+      "company": "지디넷코리아",
+      "stage": "metadata"
+    },
+    {
+      "id": "13aabf0e0615",
+      "title": "AI 로봇·무선충전·안티드론...전파산업대전 18일 개막",
+      "source": "지디넷코리아",
+      "publishedAt": "2026-11-15T00:00:01.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261114225808",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)"
+      ],
+      "score": 5,
+      "importance": 1,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "PRODUCT_LAUNCH"
+      ],
+      "company": "지디넷코리아",
+      "stage": "metadata"
+    },
+    {
+      "id": "c4350240298e",
+      "title": "출시 전 AI는 누가 감시하나…美 싱크탱크 경고",
+      "source": "지디넷코리아",
+      "publishedAt": "2026-11-14T23:30:01.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261114205549",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·MODEL_MENTION)"
+      ],
+      "score": 7,
+      "importance": 2,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "PRODUCT_LAUNCH",
+        "MODEL_MENTION"
+      ],
+      "company": "지디넷코리아",
+      "stage": "metadata"
+    },
+    {
+      "id": "ef58503cca2a",
+      "title": "\"AR 글래스 출하량, 내년 2배 증가\"",
+      "source": "지디넷코리아",
+      "publishedAt": "2026-11-14T22:00:02.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261113164610",
       "duplicate": "NEW",
       "matchSlug": null,
       "decision": "EXCLUDE",
@@ -3554,7 +3662,29 @@
       "contentType": "NEWS",
       "typePenalty": 0,
       "signals": [],
-      "company": "AI타임스",
+      "company": "지디넷코리아",
+      "stage": "metadata"
+    },
+    {
+      "id": "96a0c34b8980",
+      "title": "바닷물로 전기 만들고 열 식힌다...해상 AI 데이터센터 나온다",
+      "source": "지디넷코리아",
+      "publishedAt": "2026-11-14T21:00:02.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261114222214",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 INFRA)"
+      ],
+      "score": 4,
+      "importance": 1,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "INFRA"
+      ],
+      "company": "지디넷코리아",
       "stage": "metadata"
     },
     {
@@ -3654,215 +3784,6 @@
       "source": "지디넷코리아",
       "publishedAt": "2026-11-14T07:00:51.000Z",
       "url": "https://zdnet.co.kr/view/?no=20261114160051",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "EXCLUDE",
-      "reasons": [
-        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
-      ],
-      "score": 2,
-      "importance": 0,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [],
-      "company": "지디넷코리아",
-      "stage": "metadata"
-    },
-    {
-      "id": "b6f71235ef88",
-      "title": "씨이랩, 3분기 누적 매출 46% 증가 56억...수주잔고 3600억",
-      "source": "지디넷코리아",
-      "publishedAt": "2026-11-14T06:30:35.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261114153035",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 INFRA)"
-      ],
-      "score": 4,
-      "importance": 1,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "INFRA"
-      ],
-      "company": "지디넷코리아",
-      "stage": "metadata"
-    },
-    {
-      "id": "11290e70e44f",
-      "title": "이스라엘 JVP \"AI 모델 대신 보안·특화AI에 투자 집중\"",
-      "source": "지디넷코리아",
-      "publishedAt": "2026-11-14T05:59:14.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261112171732",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 REGULATION·MODEL_MENTION)"
-      ],
-      "score": 6,
-      "importance": 2,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "REGULATION",
-        "MODEL_MENTION"
-      ],
-      "company": "지디넷코리아",
-      "stage": "metadata"
-    },
-    {
-      "id": "a46413994aed",
-      "title": "국방혁신기술보안협회, 아주대 군산학 AX 협력센터와 협력",
-      "source": "지디넷코리아",
-      "publishedAt": "2026-11-14T05:53:15.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261114145129",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PARTNERSHIP)"
-      ],
-      "score": 4,
-      "importance": 1,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "PARTNERSHIP"
-      ],
-      "company": "지디넷코리아",
-      "stage": "metadata"
-    },
-    {
-      "id": "b13e29751ec3",
-      "title": "전력수요 100GW 시대, 싸고 빠른 발전소는 수요 속에 있다",
-      "source": "지디넷코리아",
-      "publishedAt": "2026-11-14T05:30:59.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261114143059",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "EXCLUDE",
-      "reasons": [
-        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
-      ],
-      "score": 2,
-      "importance": 0,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [],
-      "company": "지디넷코리아",
-      "stage": "metadata"
-    },
-    {
-      "id": "88419fd4b480",
-      "title": "프런티어 AI, 규제 틀 안으로…안전관리 의무화 확산",
-      "source": "지디넷코리아",
-      "publishedAt": "2026-11-14T04:54:19.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261113211708",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 REGULATION)"
-      ],
-      "score": 6,
-      "importance": 2,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "REGULATION"
-      ],
-      "company": "지디넷코리아",
-      "stage": "metadata"
-    },
-    {
-      "id": "d3018c24efc2",
-      "title": "뉴로메카, 3분기 영업손실 70억원…적자 폭 2.2배↑",
-      "source": "지디넷코리아",
-      "publishedAt": "2026-11-14T04:39:18.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261113232530",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "EXCLUDE",
-      "reasons": [
-        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
-      ],
-      "score": 2,
-      "importance": 0,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [],
-      "company": "지디넷코리아",
-      "stage": "metadata"
-    },
-    {
-      "id": "7b1957b1643b",
-      "title": "엑셈, 3분기 누적 연결매출 348억...작년비 17% 증가",
-      "source": "지디넷코리아",
-      "publishedAt": "2026-11-14T03:03:32.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261114120332",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "EXCLUDE",
-      "reasons": [
-        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
-      ],
-      "score": 2,
-      "importance": 0,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [],
-      "company": "지디넷코리아",
-      "stage": "metadata"
-    },
-    {
-      "id": "fb864ee6c792",
-      "title": "걸을 때 팔·다리 엇박자 난다면…뇌가 보내는 파킨슨병 경고",
-      "source": "지디넷코리아",
-      "publishedAt": "2026-11-14T01:30:49.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261114070654",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "EXCLUDE",
-      "reasons": [
-        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
-      ],
-      "score": 2,
-      "importance": 0,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [],
-      "company": "지디넷코리아",
-      "stage": "metadata"
-    },
-    {
-      "id": "83b0b65c85ef",
-      "title": "[안광섭 AI 진테제] 젠슨 황 사태로 엔비디아가 잃은 것",
-      "source": "지디넷코리아",
-      "publishedAt": "2026-11-14T01:24:19.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261114102419",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "EXCLUDE",
-      "reasons": [
-        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
-      ],
-      "score": 2,
-      "importance": 0,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [],
-      "company": "지디넷코리아",
-      "stage": "metadata"
-    },
-    {
-      "id": "4f97d0cee427",
-      "title": "체크포인트 \"'아이언 돔' 같은 방어막 만들고 있어\"",
-      "source": "지디넷코리아",
-      "publishedAt": "2026-11-14T01:12:38.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261113173905",
       "duplicate": "NEW",
       "matchSlug": null,
       "decision": "EXCLUDE",
@@ -5352,85 +5273,7 @@
       "stage": "metadata",
       "carriedFrom": "2026-11-12",
       "fromQueue": "evidence"
-    },
-    {
-      "id": "8f0be0dad7c5",
-      "title": "Publish a Sheets canvas as a standalone link",
-      "source": "Google Workspace Updates",
-      "publishedAt": "2026-11-11T21:58:56.335Z",
-      "url": "https://workspaceupdates.googleblog.com/2026/11/publish-sheets-canvas-as-standalone-link.html",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "PUBLISH",
-      "reasons": [
-        "사건 신호 MODEL·PRODUCT_LAUNCH (우선순위 6)",
-        "근거 확인 통과 (확인 사실 9개, SUFFICIENT_STANDARD)"
-      ],
-      "score": 6,
-      "importance": 3,
-      "contentType": "CUSTOMER_STORY",
-      "typePenalty": -3,
-      "signals": [
-        "MODEL",
-        "PRODUCT_LAUNCH"
-      ],
-      "company": "Google",
-      "stage": "evidence",
-      "evidenceStatus": "OK",
-      "distinctFacts": 9,
-      "sufficiency": "SUFFICIENT_STANDARD",
-      "deepMissing": [
-        "importance",
-        "userImpact",
-        "contextNeed",
-        "standardWouldOmit"
-      ],
-      "suggestedDepth": "STANDARD",
-      "draftPending": true,
-      "fromQueue": "evidence"
-    },
-    {
-      "id": "80b38ea7da37",
-      "title": "ChatGPT Plus for veterans and servicemembers",
-      "source": "OpenAI",
-      "publishedAt": "2026-11-11T08:00:00.000Z",
-      "url": "https://openai.com/index/chatgpt-plus-for-veterans",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "근거 부족 (원문 SKIPPED_HOST_BLOCKED, 확인 사실 0개) — 발행하지 않음"
-      ],
-      "score": 5,
-      "importance": 1,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "CONSUMER"
-      ],
-      "company": "OpenAI",
-      "stage": "evidence",
-      "evidenceStatus": "SKIPPED_HOST_BLOCKED",
-      "distinctFacts": 0,
-      "sufficiency": "INSUFFICIENT",
-      "deepMissing": [
-        "importance",
-        "userImpact",
-        "contextNeed",
-        "distinctFacts",
-        "evidenceQuality",
-        "standardWouldOmit"
-      ],
-      "alternate": {
-        "tried": [
-          "https://platform.openai.com/docs/changelog"
-        ],
-        "matched": 0,
-        "reason": "제목에 버전 붙은 이름 없음"
-      },
-      "suggestedDepth": null,
-      "fromQueue": "evidence"
     }
   ],
-  "finishedAt": "2026-11-14T16:36:40.850Z"
+  "finishedAt": "2026-11-15T01:48:27.337Z"
 }
