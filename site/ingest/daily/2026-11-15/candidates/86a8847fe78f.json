@@ -51,7 +51,7 @@
     "tier": 1,
     "fetchMode": "rss-paged",
     "discoveredVia": "https://news.samsung.com/global/feed",
-    "fetchedAt": "2026-11-15T01:47:40.415Z"
+    "fetchedAt": "2026-11-15T11:52:51.006Z"
   },
   "evidence": {
     "status": "OK",
@@ -206,12 +206,12 @@
     "reason": "기존 기사·후보와 겹치지 않음"
   },
   "generation": {
-    "provider": "none",
-    "model": null,
+    "provider": "gemini",
+    "model": "gemini-3.1-flash-lite",
     "status": "skipped",
-    "error": "Shadow Mode — 원고를 만들지 않음",
-    "promptVersion": "draft-v1",
-    "at": "2026-11-15T01:48:27.323Z",
+    "error": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성",
+    "promptVersion": "draft-v2",
+    "at": "2026-11-15T11:54:27.537Z",
     "evidenceHash": "7186773e472a"
   },
   "draft": null,

@@ -55,7 +55,7 @@
     "fetchMode": "rss",
     "discoveredVia": "https://workspaceupdates.googleblog.com/feeds/posts/default?max-results=500&published-min=2026-01-01T00:00:00Z",
     "fetchedAt": "2026-11-14T13:25:01.091Z",
-    "fromQueue": "evidence"
+    "fromQueue": "draft"
   },
   "evidence": {
     "status": "OK",
@@ -210,12 +210,12 @@
     "reason": "기존 기사·후보와 겹치지 않음"
   },
   "generation": {
-    "provider": "none",
-    "model": null,
+    "provider": "gemini",
+    "model": "gemini-3.1-flash-lite",
     "status": "skipped",
-    "error": "Shadow Mode — 원고를 만들지 않음",
-    "promptVersion": "draft-v1",
-    "at": "2026-11-14T16:36:40.836Z",
+    "error": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성",
+    "promptVersion": "draft-v2",
+    "at": "2026-11-15T11:54:27.538Z",
     "evidenceHash": "46278e9e7ce8"
   },
   "draft": null,
