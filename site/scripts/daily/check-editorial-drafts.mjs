@@ -11,6 +11,7 @@
  *   - 중복: 기존 기사와 같은 원문·slug면 FAIL. 관련 기존 기사가 있으면 relatedStory로 명시해야 한다
  *   - 형식: 상태 draft · publishedAt 미정 · eventDate 날짜 · https 원문 · 근거 인용 1개 이상/사실
  *   - 표현: 직접 사용·측정한 것처럼 쓴 문장 금지 (handsOn: false)
+ *   - 내부 근거 표시: 기사 글에 [E4]·(E11) 같은 근거 id가 남으면 FAIL (발행되면 독자에게 보임)
  */
 import fs from "node:fs";
 import path from "node:path";
@@ -18,6 +19,7 @@ import { fileURLToPath } from "node:url";
 import { audit } from "../qa/quality-rules.mjs";
 import { aliasUrl, dedupeItem, loadExisting } from "./lib.mjs";
 import { canonicalUrl } from "../ingest/lib.mjs";
+import { INTERNAL_REF_RE } from "./draft.mjs";
 
 const FAKE_EXPERIENCE = /(직접 써|직접 사용해|써 보니|써봤|사용해 보니|테스트해 보니|직접 재|실제로 돌려 보니)/;
 const WORD_NUM = { one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7, eight: 8, nine: 9, ten: 10, eleven: 11, twelve: 12, thirteen: 13, fourteen: 14, fifteen: 15, twenty: 20, thirty: 30 };
@@ -67,6 +69,11 @@ export function checkDraft(d, existing) {
   }
   // 표현
   for (const t of fields) if (FAKE_EXPERIENCE.test(t ?? "")) fail.push(`직접 사용한 것처럼 쓴 문장: "${String(t).slice(0, 40)}…"`);
+  // 내부 근거 표시([E4] 등)가 기사 글에 남으면 독자에게 그대로 보인다 → 발행 차단
+  for (const t of fields) {
+    const m = String(t ?? "").match(INTERNAL_REF_RE);
+    if (m) fail.push(`내부 근거 표시 '${m[0]}'가 기사 글에 남아 있음: "${String(t).slice(0, 40)}…"`);
+  }
   // 품질 규칙 (기존 기사와 같은 기준)
   const q = audit({ ...s, sourceUrl: s.sourceUrl });
   if (q.status === "FAIL") fail.push(`편집 품질 FAIL: ${q.reasons.join(", ")}`);

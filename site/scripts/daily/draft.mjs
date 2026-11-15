@@ -46,7 +46,14 @@ const WORD_NUM = { one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7,
 const NUM_RE = /\d+(?:[.,]\d+)*/g;
 const normNum = (n) => n.replace(/,/g, "").replace(/(\.\d*?)0+$/, "$1").replace(/\.$/, "").replace(/^0+(?=\d)/, "");
 /** 문장 속 근거 표시([E1]·A2)는 숫자로 세지 않는다 */
-const stripRefs = (t) => String(t ?? "").replace(/\[?\b[EA]\d{1,2}\b\]?/g, " ");
+const stripRefs = (t) => String(t ?? "").replace(/\[?\b[EA]\d{1,3}\b\]?/g, " ");
+/**
+ * 독자에게 보이는 글 속 내부 근거 표시: [E4] · [E6, E7] · (E11) · 【A2】 — 근거 id는 evidence 배열에만 둔다.
+ * 괄호로 감싼 형태만 잡는다 ('A4 용지'·'E2 인스턴스' 같은 맨 글자는 오탐이 많아 제외)
+ */
+export const INTERNAL_REF_RE = /[[(（【]\s*[EA]\d{1,3}\s*(?:[,，·/]\s*[EA]?\d{1,3}\s*)*[\])）】]/;
+/** 합니다체가 아닌 '…다.' 문장 (했다·한다·이다·된다 …). '…니다.'는 합니다체 */
+const isHaeraeche = (s) => /다[.!]?["'”’)]*$/.test(s) && !/니다[.!]?["'”’)]*$/.test(s);
 const numbersIn = (t) => (stripRefs(t).match(NUM_RE) ?? []).map(normNum);
 
 /** 근거 장부에서 날짜(월-일 · 연-월)와 숫자 집합 */
@@ -88,6 +95,9 @@ const REGIONS = [
   ["인도", /인도(?!네시아)/, /\bindia\b/i],
   ["전 세계", /(전 ?세계|글로벌|모든 국가)/, /\b(worldwide|global(ly)?|all countries|every country|around the world)\b/i],
 ];
+/** 위 '전 세계'보다 넓게 잡는 제공 범위 확대 표현 — 오탐 가능성이 있어 REVIEW (사람이 확인) */
+const SCOPE_KO = /(전 ?세계|글로벌|모든 (국가|나라|지역|시장)|전 ?(국가|지역)|세계 어디서나|국가 제한 없이)/;
+const SCOPE_EN = /\b(worldwide|global(ly)?|all (countries|regions|markets|locations)|every (country|region|market)|around the world|anywhere)\b/i;
 /** '확인되지 않았다'처럼 부정·미확인을 말하는 문장은 지역·출시 주장으로 보지 않는다 */
 const NEGATED = /(확인되지|밝히지 않|언급(하지 않|이 없)|나와 있지 않|없(다|습니다|음|으며|고)|미정|알 수 없|아직|여부)/;
 
@@ -198,6 +208,8 @@ export function reviewDraft(draft, { item, evidence, existing, dup, suggestedDep
         if (FREE_KO.test(sent) && !negated && !FREE_EN.test(allowed) && !/무료/.test(allowed) && once("unsupported_pricing", "free")) add("FACT", "FAIL", "unsupported_pricing", "근거에 없는 '무료' 요금 표현", sec.where);
         // 지역
         for (const [name, ko, en] of REGIONS) if (ko.test(sent) && !negated && !en.test(allowed) && once("unsupported_region", name)) add("FACT", "FAIL", "unsupported_region", `근거에 없는 지역 '${name}'`, sec.where);
+        // 범위 확대 (위 '전 세계' FAIL에 걸리지 않은 넓은 표현만): 모든 지역 · 전 국가 …
+        if (SCOPE_KO.test(sent) && !REGIONS.at(-1)[1].test(sent) && !negated && !SCOPE_EN.test(allowed) && once("unsupported_scope", sec.where)) add("FACT", "REVIEW", "unsupported_scope", `근거에 없는 제공 범위 확대 표현 '${sent.match(SCOPE_KO)[0]}'`, sec.where);
         // 출시 단계
         if (GA_KO.test(sent) && !negated && !GA_EN.test(allowed)) {
           if (PREVIEW_EN.test(allowed)) {
@@ -232,10 +244,41 @@ export function reviewDraft(draft, { item, evidence, existing, dup, suggestedDep
     } else if (once("unsupported_name", name)) add("FACT", "FAIL", "unsupported_name", `근거에 없는 제품·모델 이름 '${name}'`);
   }
   for (const p of d.products ?? []) if (!mentionsProduct(allowed, p) && !allowedLower.includes(String(p).toLowerCase()) && once("unsupported_name", p)) add("FACT", "FAIL", "unsupported_name", `products의 '${p}'가 근거에 없음`);
-  for (const w of new Set(draftAll.match(/\b[A-Z][A-Za-z0-9+.-]{2,}\b/g) ?? [])) {
+  // 근거 표시(E11 등)는 이름이 아니다 — 지운 뒤 본다 (본문에 남은 표시는 아래 internal_ref가 따로 FAIL)
+  for (const w of new Set(stripRefs(draftAll).match(/\b[A-Z][A-Za-z0-9+.-]{2,}\b/g) ?? [])) {
     if (TERM_WHITELIST.has(w) || allowedLower.includes(w.toLowerCase())) continue;
     if (once("unverified_term", w)) add("FACT", "REVIEW", "unverified_term", `근거에서 찾지 못한 영문 이름 '${w}'`);
   }
+
+  // --- STRUCTURE: 독자에게 보이는 글에 남은 내부 근거 표시 [E4] → FAIL (발행되면 그대로 노출된다)
+  const visible = [
+    ["title", d.title],
+    ["summary", d.summary],
+    ...(d.facts ?? []).map((f, i) => [`facts[${i}]`, f?.text]),
+    ["why", d.why?.text],
+    ["change", d.change?.text],
+    ...(d.checks ?? []).map((c, i) => [`checks[${i}]`, c?.text]),
+    ...(d.unknowns ?? []).map((u, i) => [`unknowns[${i}]`, u]),
+  ];
+  for (const [where, text] of visible) {
+    const m = String(text ?? "").match(INTERNAL_REF_RE);
+    if (m) add("STRUCTURE", "FAIL", "internal_ref", `본문에 내부 근거 표시 '${m[0]}' — 근거 id는 evidence에만`, where);
+  }
+
+  // --- FACT: '아직 확인되지 않은 부분'에서 근거에 없는 범위를 근거가 말한 것처럼 쓴 경우 (ef48ecec254a: '전 세계 지원으로 명시') → REVIEW
+  for (const [i, u] of (d.unknowns ?? []).entries())
+    for (const sent of splitSentences(u))
+      if (SCOPE_KO.test(sent) && !NEGATED.test(sent) && !SCOPE_EN.test(allowed) && once("unsupported_scope", `unknowns[${i}]`)) add("FACT", "REVIEW", "unsupported_scope", `미확인 사항에 근거에 없는 범위 표현 '${sent.match(SCOPE_KO)[0]}'`, `unknowns[${i}]`);
+
+  // --- EDITORIAL: 문체 — 발행 기사는 합니다체 (2026-11-15 기준 발행 기사 4,767문장 중 한다체 0). 인용 등 한두 문장은 허용
+  // 문장은 칸마다 . ! ? 경계로만 나눈다 (splitSentences는 '…보다 ' 같은 문장 중간의 '다'에서도 끊어 오탐이 난다)
+  const styleSents = [d.summary, ...(d.facts ?? []).map((f) => f.text), d.why?.text, d.change?.text, ...(d.checks ?? []).map((c) => c.text)]
+    .filter(Boolean)
+    .flatMap((t) => String(t).split(/(?<=[.!?])\s+/))
+    .map((s) => s.trim())
+    .filter((s) => /다[.!]?["'”’)]*$/.test(s));
+  const hae = styleSents.filter(isHaeraeche).length;
+  if (hae >= 2) add("EDITORIAL", "REVIEW", "style_mismatch", `한다체 문장 ${hae}/${styleSents.length} — AI마중 기사는 합니다체`);
 
   // --- SAFETY: 허위 사용 경험 · 과장
   const everything = [draftAll, ...(d.unknowns ?? []), d.notes ?? ""].join("\n");

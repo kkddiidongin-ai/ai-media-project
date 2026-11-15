@@ -19,7 +19,8 @@
 import { checkGeminiBudget, geminiTierBlocker, isQuotaError, recordGeminiCall } from "./gemini-guard.mjs";
 
 /** 프롬프트·출력 형식 버전: 바뀌면 같은 후보라도 새로 만든다 (그 전엔 재사용) */
-export const PROMPT_VERSION = "draft-v1";
+// draft-v2 (2026-11-15): 본문 속 근거 표시 금지 · 합니다체 · 범위 확대 금지 · 근거에 답이 있는 것은 unknowns에 쓰지 않음
+export const PROMPT_VERSION = "draft-v2";
 
 /**
  * 확인한 모델만 쓴다. 출처: https://platform.claude.com/docs/en/about-claude/models/overview ·
@@ -69,7 +70,7 @@ export function redact(s, env = {}) {
 export const SYSTEM = `당신은 한국어 AI 뉴스 미디어 'AI마중'의 편집 보조입니다. 브랜드: "AI의 변화를 먼저 마중 나갑니다." 편집 원칙: "AI, 해본 만큼만 말합니다."
 반드시 지킬 것:
 1. 사용자가 준 근거(evidence)에 있는 사실만 씁니다. 근거에 없는 숫자·가격·통화·날짜·제품명·모델 버전·국가·지역·출시 범위·API 제공 여부를 만들지 않습니다.
-2. 세 가지를 섞지 않습니다. (A) changes: 공식 발표로 확인된 사실 — 문장마다 근거 id(E0, E1 …). (B) why·impact: AI마중의 해석과 독자 영향 — 근거 범위 안에서만, 시장 전망·추측 수치 금지. (C) unknowns: 아직 확인되지 않은 부분 — 근거에 없는 것을 '확인되지 않았다'고 적습니다.
+2. 세 가지를 섞지 않습니다. (A) changes: 공식 발표로 확인된 사실 — 문장마다 근거 id(E0, E1 …)를 그 항목의 "evidence" 배열에만 넣습니다. "text"·"title"·"summary"·"unknowns" 같은 글 안에는 [E1]·(E2)·E3 같은 근거 표시를 절대 쓰지 않습니다 (독자에게 그대로 보입니다). (B) why·impact: AI마중의 해석과 독자 영향 — 근거 범위 안에서만, 시장 전망·추측 수치 금지. (C) unknowns: 아직 확인되지 않은 부분 — 근거에 없는 것을 '확인되지 않았다'고 적습니다.
 3. 회사의 주장·자체 평가(최고, 최초, 가장, N배 등)는 "OOO는 …라고 밝혔다"처럼 출처를 밝혀 씁니다.
 4. preview·beta·제한 제공과 정식 제공(GA)을 구분합니다. 근거에 없는 한국 출시 여부는 unknowns에 둡니다.
 5. '오늘·어제·최근' 같은 상대 날짜 대신 근거의 날짜를 씁니다.
@@ -77,6 +78,9 @@ export const SYSTEM = `당신은 한국어 AI 뉴스 미디어 'AI마중'의 편
 7. 과장된 제목, 광고성 표현(혁명, 역대급, 게임 체인저, 놓치면 안 될 등), 같은 말 반복을 쓰지 않습니다.
 8. 원문 문장을 그대로 번역해 옮기지 말고, 확인한 사실만 새로 씁니다.
 9. 근거가 부족하면 "insufficient": true로 답하고 억지로 채우지 않습니다.
+10. 문체는 기존 AI마중 기사와 같은 합니다체입니다 (~합니다, ~입니다, ~밝혔습니다, ~할 수 있습니다). '~했다', '~한다', '~이다', '~풀이된다' 같은 한다체를 쓰지 않습니다.
+11. 근거에 없는 국가·지역·제공 범위로 넓히지 않습니다. '전 세계', '글로벌', '모든 국가', '모든 지역'은 근거에 그 뜻의 말(worldwide, global, all countries 등)이 있을 때만 씁니다. 근거가 "all languages where X is available"이면 "X가 제공되는 모든 언어"처럼 근거의 조건을 그대로 옮깁니다.
+12. unknowns에는 근거 어디에서도 답을 찾을 수 없는 것만 씁니다. 근거에 제공 대상·요금제·계정 종류·출시 일정·관리자 설정이 있으면 unknowns가 아니라 facts나 checks에 씁니다. unknowns에서 근거 내용을 다르게 요약하거나(예: 근거에 없는 '전 세계 지원으로 명시') 근거 없는 추측을 덧붙이지 않습니다. 공식 발표를 '보도'라고 부르지 않습니다.
 출력은 JSON 하나만 (설명 문장·코드 블록 없이).`;
 
 const LENGTH = { SHORT: "본문 약 150~350자", STANDARD: "본문 약 400~800자" };
@@ -91,7 +95,7 @@ export function buildPrompt(candidate, evidence, { categories, topics, suggested
 근거:
 ${ev}
 
-다음 JSON 형식으로 답하세요.
+다음 JSON 형식으로 답하세요. 모든 글은 합니다체로 쓰고, 근거 id는 "evidence" 배열에만 넣습니다 (글 안에 [E1] 표시 금지).
 {
   "title": "한국어 제목 (과장 없이, 60자 이내)",
   "summary": "핵심 요약 한두 문장",

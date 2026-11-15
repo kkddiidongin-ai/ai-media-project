@@ -633,6 +633,121 @@ await t("초안 QA FACT: 모델명·버전 오류 검출 (GPT-6 ≠ GPT-6.1, Cla
   ok(run({ facts: [{ text: "Gemini 3.5와 비교됩니다.", evidence: ["E1"] }] }).includes("FAIL:unsupported_name"), "근거에 없는 모델");
   ok(run({ products: ["GPT-7"] }).includes("FAIL:unsupported_name"), "products 이름");
 });
+// ---------- 2026-11-15: Gemini 첫 원고(ef48ecec254a) 검수에서 나온 문제의 회귀 테스트 ----------
+// 근거 장부는 실제 원고의 장부(Google Workspace Updates, 2026-10-29)를 그대로 옮겼다
+const GWS_ITEM = { url: "https://workspaceupdates.googleblog.com/2026/10/create-preview-and-edit-files-directly-in-the-Gemini-app.html", publishedAt: "2026-10-29T18:43:11.753Z", title: "Create, preview, and edit files directly in the Gemini app", sourceName: "Google Workspace Updates" };
+const GWS_LEDGER = { status: "OK", grade: "PASS", ledger: [
+  "Google Workspace Updates: Create, preview, and edit files directly in the Gemini app",
+  "Create, preview, and edit files directly in the Gemini app",
+  "We’re introducing new ways to create and refine files and code in the Gemini app.",
+  "You can now generate, preview, and edit files right within your Gemini app chat—expand to full screen to type edits directly, highlight text to ask questions, or have Gemini refine them.",
+  "PDF preview and editing is supported on both the web and mobile, while all other formats (documents, spreadsheets, slide decks, Markdown files, TXT files, and code) are supported on the web only.",
+  "Generate and refine slide decks: Create presentation outlines or slide content, preview the layout in chat, and edit directly or ask Gemini to adjust the tone and structure before opening in Google Slides, or downloading as a PPTX or PDF.",
+  "Build and export Google Sheets: Generate structured trackers, tables, and data models from a prompt, preview them in Gemini, and open them directly in Google Sheets.",
+  "Edit documents and PDFs: Quickly draft PDFs, Google Docs, LaTeX, Markdown, or TXT files, and make manual or prompted edits inline on web or in a full-screen view—plus you can upload all of them to Drive.",
+  "These capabilities are now available to all users in all languages where the Gemini app is available.",
+  "Visit the Help Center to learn more about turning the Gemini app on or off .",
+  "End users: Users of all ages who have access to the Gemini app can generate files.",
+  "News from Google: You can now preview and edit documents, PDFs, presentations, spreadsheets, and more directly in Gemini",
+].map((text, i) => ({ id: `E${i + 1}`, kind: "body", text })) };
+// 실제로 생성된 원고 (draft-v1 · gemini-3.1-flash-lite) — 본문 속 [E4] · 한다체 · unknowns의 '전 세계 지원으로 명시'
+const gwsDraftV1 = () => ({
+  title: "구글, Gemini 앱 내 파일 생성·편집·미리보기 기능 추가",
+  summary: "구글은 Gemini 앱 내에서 문서, 스프레드시트, 프레젠테이션 등 다양한 파일을 직접 생성하고 편집 및 미리보기 할 수 있는 기능을 도입했다.",
+  category: "PRODUCT_UPDATE", topics: ["ai-coding"], companies: ["Google"], // 실제 원고는 google·gemini·ai-work (시험용 기사 목록에 있는 주제로 바꿈) products: ["Gemini", "Google Docs", "Google Sheets", "Google Slides"],
+  facts: [
+    { text: "Gemini 앱 내에서 문서를 생성하거나 텍스트를 강조하여 수정 요청을 할 수 있으며, 전체 화면 편집 및 미리보기 기능을 지원한다 [E4].", evidence: ["E4"] },
+    { text: "PDF는 웹과 모바일 모두에서 미리보기와 편집이 가능하지만, 문서, 스프레드시트, 프레젠테이션, 마크다운, TXT, 코드 파일은 웹 환경에서만 지원된다 [E5].", evidence: ["E5"] },
+    { text: "프레젠테이션 내용을 생성하여 레이아웃을 미리 본 뒤 수정하거나 Google Slides로 내보낼 수 있으며, 시트 또한 데이터 모델을 생성하고 Google Sheets로 바로 열 수 있다 [E6], [E7].", evidence: ["E6", "E7"] },
+    { text: "해당 기능은 Gemini 앱이 지원되는 모든 언어와 모든 사용자에게 공개되었다 [E9], [E11].", evidence: ["E9", "E11"] },
+  ],
+  why: { text: "Gemini 대화창에서 파일을 직접 수정하고 외부 도구로 연동하는 과정을 통합하여, 문서 작성부터 최종 문서화까지의 작업 흐름 효율성을 높이려는 것으로 풀이된다.", evidence: ["E4", "E6", "E7"] },
+  change: { text: "사용자는 생성형 AI가 작성한 내용을 별도의 파일로 복사할 필요 없이 Gemini 앱 내에서 즉시 수정하고 최종 문서 형태로 변환하거나 드라이브에 저장할 수 있다.", evidence: ["E4", "E8"] },
+  checks: [{ text: "PDF를 제외한 문서, 시트, 슬라이드 등 대부분의 파일 형식 편집은 웹 버전 Gemini에서만 지원된다.", evidence: ["E5"] }, { text: "Gemini 앱의 활성화 여부나 설정은 고객센터를 통해 확인할 수 있다.", evidence: ["E10"] }],
+  unknowns: ["Gemini 요금제별 기능 제한 여부", "특정 국가에서의 사용 제한 가능성(공식 보도에는 전 세계 지원으로 명시되었으나, 실제 서비스 적용 시점은 국가별로 차이가 있을 수 있음)"],
+  editorialDepth: "STANDARD", insufficient: false,
+});
+// 편집자가 고친 형태 (근거 표시 없음 · 합니다체 · 근거 조건 그대로) — 새 검사에 걸리면 안 된다
+const gwsDraftClean = () => ({
+  ...gwsDraftV1(),
+  summary: "Google은 Gemini 앱 대화창에서 문서·스프레드시트·프레젠테이션 같은 파일을 만들고 미리 보며 편집할 수 있는 기능을 내놓았다고 밝혔습니다.",
+  facts: [
+    { text: "Gemini 앱 대화창에서 파일을 만들고 미리 보며 편집할 수 있고, 전체 화면에서 직접 고치거나 텍스트를 선택해 질문할 수 있습니다.", evidence: ["E4"] },
+    { text: "PDF는 웹과 모바일에서 미리 보고 편집할 수 있지만, 문서·스프레드시트·슬라이드·Markdown·TXT·코드 파일은 웹에서만 지원합니다.", evidence: ["E5"] },
+    { text: "슬라이드는 Google Slides에서 열거나 PPTX·PDF로 내려받을 수 있고, 표와 트래커는 Google Sheets에서 바로 열 수 있습니다.", evidence: ["E6", "E7"] },
+    { text: "이 기능은 Gemini 앱이 제공되는 모든 언어로 모든 사용자에게 제공됩니다.", evidence: ["E9"] },
+  ],
+  why: { text: "대화에서 만든 파일을 바로 다듬고 Slides나 Sheets로 넘길 수 있어, 초안에서 완성 파일까지 거치는 단계가 줄어듭니다.", evidence: ["E4", "E6", "E7"] },
+  change: { text: "만든 파일은 웹이나 전체 화면에서 고친 뒤 Drive에 올릴 수 있습니다.", evidence: ["E8"] },
+  checks: [{ text: "PDF를 뺀 나머지 형식은 웹에서만 편집할 수 있다는 점을 확인하세요.", evidence: ["E5"] }, { text: "Gemini 앱 사용 설정은 고객센터 안내에서 확인할 수 있습니다.", evidence: ["E10"] }],
+  unknowns: ["한국어 지원 여부는 원문에 따로 나와 있지 않습니다.", "전 세계 동시 제공 여부는 확인되지 않았습니다."],
+});
+const gqa = (d, ledger = GWS_LEDGER) => dr.reviewDraft(d, { item: GWS_ITEM, evidence: ledger, existing: existing(), dup: { result: "NEW" }, suggestedDepth: "STANDARD" });
+
+await t("초안 QA 회귀(ef48ecec254a): 근거 표시 E11은 영문 이름 오탐 아님 · 본문 [E4]는 FAIL · unknowns 범위 표현·한다체는 REVIEW", async () => {
+  const res = gqa(gwsDraftV1());
+  const c = codes(res);
+  ok(!res.issues.some((i) => /'E\d+'/.test(i.msg) && i.code === "unverified_term"), `E11 오탐 없어야 · ${JSON.stringify(c)}`);
+  ok(c.includes("FAIL:internal_ref"), `본문 근거 표시 FAIL · ${JSON.stringify(c)}`);
+  eq(res.verdict, "FAIL", "근거 표시가 남은 원고는 승인 대기에서 빠진다");
+  eq(res.issues.filter((i) => i.code === "internal_ref").map((i) => i.where), ["facts[0]", "facts[1]", "facts[2]", "facts[3]"], "어느 칸인지");
+  ok(res.issues.some((i) => i.code === "unsupported_scope" && i.severity === "REVIEW" && i.where === "unknowns[1]"), `unknowns '전 세계 지원으로 명시' REVIEW · ${JSON.stringify(c)}`);
+  ok(c.includes("REVIEW:style_mismatch"), `한다체 REVIEW · ${JSON.stringify(c)}`);
+});
+await t("초안 QA 회귀: 고친 원고(근거 표시 없음·합니다체·근거 조건 그대로)는 새 검사에 걸리지 않음 (불필요한 FAIL 없음)", async () => {
+  const res = gqa(gwsDraftClean());
+  const c = codes(res);
+  ok(!c.some((x) => x.startsWith("FAIL")), `FAIL 없어야 · ${JSON.stringify(res.issues)}`);
+  for (const code of ["internal_ref", "unsupported_scope", "style_mismatch", "unverified_term"]) ok(!res.issues.some((i) => i.code === code), `${code} 오탐 · ${JSON.stringify(c)}`);
+  // 기존 정상 원고(위젯)도 그대로 PASS
+  eq(qa(widgetDraft()).verdict, "PASS", JSON.stringify(qa(widgetDraft()).issues));
+});
+await t("초안 QA 경계: 근거 표시 형태 · 맨 글자 오탐 · 범위 표현(근거 유무·부정문) · 한다체 1문장 허용", async () => {
+  const at = (mut) => {
+    const d = gwsDraftClean();
+    mut(d);
+    return gqa(d);
+  };
+  for (const s of ["[E6, E7]", "(E11)", "【E2】", "[ E3 ]", "[A2]"]) ok(codes(at((d) => (d.why.text += ` ${s}`))).includes("FAIL:internal_ref"), `근거 표시 ${s}`);
+  ok(codes(at((d) => (d.unknowns[0] = "요금제별 차이는 나와 있지 않습니다 [E9]."))).includes("FAIL:internal_ref"), "unknowns 칸도");
+  for (const s of ["A4 용지 크기 PDF도 미리 볼 수 있습니다.", "E2 인스턴스와는 관계가 없습니다."]) ok(!codes(at((d) => (d.change.text = s))).includes("FAIL:internal_ref"), `맨 글자 오탐: ${s}`);
+  // 범위: 근거에 없으면 REVIEW, 근거에 있으면 통과, 부정문은 통과
+  ok(codes(at((d) => (d.change.text = "모든 지역에서 바로 쓸 수 있습니다."))).includes("REVIEW:unsupported_scope"), "모든 지역");
+  ok(codes(at((d) => (d.change.text = "전 세계 사용자가 바로 쓸 수 있습니다."))).includes("FAIL:unsupported_region"), "본문 '전 세계'는 기존대로 FAIL");
+  const worldwide = { ...GWS_LEDGER, ledger: [...GWS_LEDGER.ledger, { id: "E13", kind: "body", text: "The feature is rolling out worldwide in all regions." }] };
+  const ww = gwsDraftClean();
+  ww.change.text = "모든 지역에서 바로 쓸 수 있습니다.";
+  ww.unknowns = ["전 세계에 제공된다고 명시돼 있지만 단계적으로 적용될 수 있습니다."];
+  ok(!codes(gqa(ww, worldwide)).includes("REVIEW:unsupported_scope"), "근거에 worldwide·all regions가 있으면 통과");
+  ok(!codes(at((d) => (d.unknowns = ["글로벌 출시 일정은 아직 알 수 없습니다."]))).includes("REVIEW:unsupported_scope"), "unknowns 부정문 통과");
+  // 한다체: 1문장(인용 등)은 허용, 2문장 이상이면 REVIEW
+  ok(!codes(at((d) => (d.why.text = "Google은 '파일을 바로 다듬을 수 있다'고 설명했다."))).includes("REVIEW:style_mismatch"), "한다체 1문장 허용");
+  ok(codes(at((d) => {
+    d.why.text = "작업 단계가 줄어든다.";
+    d.change.text = "Drive에 올릴 수 있다.";
+  })).includes("REVIEW:style_mismatch"), "한다체 2문장");
+});
+await t("편집 원고 점검·프롬프트: 기사 글의 [E4]는 발행 전 점검에서 FAIL · 프롬프트 draft-v2 규칙", async () => {
+  const cd = await import("./check-editorial-drafts.mjs");
+  const ex = existing();
+  const story = { slug: "fx-gws-files", title: "Gemini 앱에서 파일 편집", status: "draft", publishedAt: null, eventDate: "2026-10-29", editorialDepth: "short", summary: "Google이 Gemini 앱에서 파일을 편집하는 기능을 내놓았습니다.", facts: ["PDF는 웹과 모바일에서 편집할 수 있습니다."], whyItMatters: "작업 단계가 줄어듭니다.", whatChanges: "Drive에 올릴 수 있습니다.", sourceUrl: GWS_ITEM.url, sourceName: GWS_ITEM.sourceName, sourceTitle: GWS_ITEM.title, sourceType: "official", contentType: "NEWS", category: "PRODUCT_UPDATE", topics: ["gemini"], companies: ["Google"], products: ["Gemini"], secondarySources: [], priority: 2 };
+  const base = { handsOn: false, relatedStory: null, story, evidence: [{ fact: 1, url: GWS_ITEM.url, quote: GWS_LEDGER.ledger[4].text }] };
+  ok(!cd.checkDraft(base, ex).fail.some((x) => /내부 근거 표시/.test(x)), `정상 원고 오탐 없음 · ${JSON.stringify(cd.checkDraft(base, ex).fail)}`);
+  for (const field of ["facts", "summary", "whyItMatters", "title"]) {
+    const d = structuredClone(base);
+    if (field === "facts") d.story.facts[0] += " [E5]";
+    else d.story[field] += " [E5]";
+    ok(cd.checkDraft(d, ex).fail.some((x) => /내부 근거 표시 '\[E5\]'/.test(x)), `발행 전 점검 ${field}`);
+  }
+  eq(providers.PROMPT_VERSION, "draft-v2", "프롬프트 버전 (바뀌면 예전 원고를 재사용하지 않음)");
+  ok(/"evidence" 배열에만/.test(providers.SYSTEM) && /근거 표시를 절대 쓰지 않습니다/.test(providers.SYSTEM), "근거 id는 evidence에만");
+  ok(/합니다체/.test(providers.SYSTEM) && /한다체를 쓰지 않습니다/.test(providers.SYSTEM), "합니다체");
+  ok(/전 세계', '글로벌', '모든 국가'/.test(providers.SYSTEM), "범위 확대 금지");
+  ok(/unknowns에는 근거 어디에서도 답을 찾을 수 없는 것만/.test(providers.SYSTEM), "근거에 답이 있으면 unknowns 금지");
+  const prompt = providers.buildPrompt({ sourceName: GWS_ITEM.sourceName, title: GWS_ITEM.title, url: GWS_ITEM.url, publishedAt: GWS_ITEM.publishedAt }, { ledger: GWS_LEDGER.ledger.map((e) => ({ ...e, source: "x", publishedAt: GWS_ITEM.publishedAt })) }, { categories: ["PRODUCT_UPDATE"], topics: ["gemini"], suggestedDepth: "STANDARD" });
+  ok(/글 안에 \[E1\] 표시 금지/.test(prompt) && /합니다체/.test(prompt), "사용자 프롬프트에도 안내");
+});
+
 await t("초안 QA SAFETY·EDITORIAL: 허위 사용 경험 · 과장 제목 · 근거 없는 시장 전망 → FAIL, 회사 주장 무출처 · 상대 날짜 → REVIEW", async () => {
   for (const [mut, code] of [
     [(d) => (d.why.text = "AI마중이 직접 써 보니 응답이 빨랐습니다."), "FAIL:fake_experience"],
