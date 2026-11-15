@@ -2086,13 +2086,13 @@
         "tier": 1,
         "fetchMode": "rss",
         "discoveredVia": "https://developer.nvidia.com/blog/feed",
-        "fetchedAt": "2026-11-15T11:52:51.006Z"
+        "fetchedAt": "2026-11-15T17:00:57.101Z"
       },
       "addedAt": "2026-11-14",
       "since": "2026-11-11",
       "attempts": 0,
-      "date": "2026-11-15",
-      "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
+      "date": "2026-11-16",
+      "reason": "Shadow Mode — 원고를 만들지 않음"
     },
     "18a36c2817e7": {
       "stage": "draft",
@@ -2109,13 +2109,13 @@
         "tier": 1,
         "fetchMode": "rss-paged",
         "discoveredVia": "https://github.blog/changelog/feed/",
-        "fetchedAt": "2026-11-15T11:52:51.006Z"
+        "fetchedAt": "2026-11-15T17:00:57.101Z"
       },
       "addedAt": "2026-11-14",
       "since": "2026-11-11",
       "attempts": 0,
-      "date": "2026-11-15",
-      "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
+      "date": "2026-11-16",
+      "reason": "Shadow Mode — 원고를 만들지 않음"
     },
     "17e30fb78274": {
       "stage": "draft",
@@ -2155,13 +2155,13 @@
         "tier": 1,
         "fetchMode": "rss",
         "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
-        "fetchedAt": "2026-11-15T11:52:51.006Z"
+        "fetchedAt": "2026-11-15T17:00:57.101Z"
       },
       "addedAt": "2026-11-14",
       "since": "2026-11-11",
       "attempts": 0,
-      "date": "2026-11-15",
-      "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
+      "date": "2026-11-16",
+      "reason": "Shadow Mode — 원고를 만들지 않음"
     },
     "41b9d660ec27": {
       "stage": "draft",
@@ -2178,13 +2178,13 @@
         "tier": 1,
         "fetchMode": "rss",
         "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
-        "fetchedAt": "2026-11-15T11:52:51.006Z"
+        "fetchedAt": "2026-11-15T17:00:57.101Z"
       },
       "addedAt": "2026-11-14",
       "since": "2026-11-11",
       "attempts": 0,
-      "date": "2026-11-15",
-      "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
+      "date": "2026-11-16",
+      "reason": "Shadow Mode — 원고를 만들지 않음"
     },
     "8f0be0dad7c5": {
       "stage": "draft",
@@ -2257,8 +2257,15 @@
     }
   },
   "meta": {},
-  "retry": {},
-  "updatedAt": "2026-11-15T11:54:27.555Z",
+  "retry": {
+    "huggingface": {
+      "since": "2026-11-13",
+      "failedAt": "2026-11-16",
+      "attempts": 1,
+      "lastError": "HTTP 429: https://huggingface.co/blog/feed.xml"
+    }
+  },
+  "updatedAt": "2026-11-15T17:02:13.899Z",
   "gemini": {
     "day": "2026-11-15",
     "calls": 1,
