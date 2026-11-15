@@ -1,0 +1,237 @@
+{
+  "id": "5b59c75a11e5",
+  "date": "2026-11-14",
+  "proposedSlug": "operate-claude-managed-agents-inside-security-perimeter",
+  "title": null,
+  "sourceTitle": "Operate Claude Managed Agents inside your security perimeter",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 10,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Anthropic",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://claude.com/resources/articles/self-hosted-claude-managed-agents",
+      "name": "Claude (claude.com articles)",
+      "type": "official",
+      "publishedAt": "2026-11-12T00:00:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "5b59c75a11e5",
+    "url": "https://claude.com/resources/articles/self-hosted-claude-managed-agents",
+    "canonicalUrl": "https://claude.com/resources/articles/self-hosted-claude-managed-agents",
+    "title": "Operate Claude Managed Agents inside your security perimeter",
+    "excerpt": "Introducing self-hosted Claude Managed Agents in private beta. Now you can run agents in your own environment, whether that’s in your own cloud or on-premise.",
+    "publishedAt": "2026-11-12T00:00:00.000Z",
+    "sourceId": "claude-blog",
+    "sourceName": "Claude (claude.com articles)",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "listing-meta",
+    "discoveredVia": "https://claude.com/resources/articles",
+    "fetchedAt": "2026-11-13T02:34:29.066Z",
+    "fromQueue": "draft"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 4013,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Introducing self-hosted Claude Managed Agents in private beta. Now you can run agents in your own environment, whether that’s in your own cloud or on-premise.",
+        "sourceUrl": "https://claude.com/resources/articles/self-hosted-claude-managed-agents",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-12T00:00:00.000Z",
+        "checkedAt": "2026-11-14T13:27:29.488Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "• • • • • • • • • Operate Claude Managed Agents inside your security perimeter | Claude by Anthropic • • •",
+        "sourceUrl": "https://claude.com/resources/articles/self-hosted-claude-managed-agents",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-12T00:00:00.000Z",
+        "checkedAt": "2026-11-14T13:27:29.488Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Skip to main content Self-hosted Claude Managed Agents is now available in private beta.",
+        "sourceUrl": "https://claude.com/resources/articles/self-hosted-claude-managed-agents",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-12T00:00:00.000Z",
+        "checkedAt": "2026-11-14T13:27:29.488Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Developers can build agents that work directly in their company's code and internal systems, and run those agents in their own environment.",
+        "sourceUrl": "https://claude.com/resources/articles/self-hosted-claude-managed-agents",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-12T00:00:00.000Z",
+        "checkedAt": "2026-11-14T13:27:29.488Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Self-hosting is a new way to run Managed Agents , a suite of composable APIs for building and deploying autonomous agents.",
+        "sourceUrl": "https://claude.com/resources/articles/self-hosted-claude-managed-agents",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-12T00:00:00.000Z",
+        "checkedAt": "2026-11-14T13:27:29.488Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Managed Agents provides the agent harness, sandboxes, credential handling, and session history to get long-running agents into production.",
+        "sourceUrl": "https://claude.com/resources/articles/self-hosted-claude-managed-agents",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-12T00:00:00.000Z",
+        "checkedAt": "2026-11-14T13:27:29.488Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "We first launched Managed Agents as a hosted service on the Claude Platform, where Anthropic runs the infrastructure for you.",
+        "sourceUrl": "https://claude.com/resources/articles/self-hosted-claude-managed-agents",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-12T00:00:00.000Z",
+        "checkedAt": "2026-11-14T13:27:29.488Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "With self-hosted Managed Agents, every part of the service runs in your own cloud or on-premise, including the harness, sandboxes, credentials, and session history.",
+        "sourceUrl": "https://claude.com/resources/articles/self-hosted-claude-managed-agents",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-12T00:00:00.000Z",
+        "checkedAt": "2026-11-14T13:27:29.488Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "You operate the Managed Agents server, its database, and the workers where agents run their shell and file tools.",
+        "sourceUrl": "https://claude.com/resources/articles/self-hosted-claude-managed-agents",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-12T00:00:00.000Z",
+        "checkedAt": "2026-11-14T13:27:29.488Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Your developers still build agents with the same core APIs as the hosted Managed Agents service.",
+        "sourceUrl": "https://claude.com/resources/articles/self-hosted-claude-managed-agents",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-12T00:00:00.000Z",
+        "checkedAt": "2026-11-14T13:27:29.488Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "That's why agent security starts with architecture, and why we designed Managed Agents around four principles.",
+        "sourceUrl": "https://claude.com/resources/articles/self-hosted-claude-managed-agents",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-12T00:00:00.000Z",
+        "checkedAt": "2026-11-14T13:27:29.488Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "With self-hosted Managed Agents, you can also store credentials in your own secrets manager.",
+        "sourceUrl": "https://claude.com/resources/articles/self-hosted-claude-managed-agents",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-12T00:00:00.000Z",
+        "checkedAt": "2026-11-14T13:27:29.488Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Self-hosted Claude Managed Agents is now available in private beta.",
+        "sourceUrl": "https://claude.com/resources/articles/self-hosted-claude-managed-agents",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-12T00:00:00.000Z",
+        "checkedAt": "2026-11-14T13:27:29.488Z"
+      }
+    ],
+    "pageDate": "2026-11-12T00:00:00.000Z"
+  },
+  "score": {
+    "importance": 3,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "MODEL",
+      "PRODUCT_LAUNCH",
+      "PREVIEW",
+      "SECURITY_MENTION"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 9,
+    "total": 9
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 MODEL·PRODUCT_LAUNCH·PREVIEW·SECURITY_MENTION (우선순위 9)",
+    "근거 확인 통과 (확인 사실 10개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "gemini",
+    "model": "gemini-3.1-flash-lite",
+    "status": "skipped",
+    "error": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성",
+    "promptVersion": "draft-v1",
+    "at": "2026-11-14T13:27:38.331Z",
+    "evidenceHash": "89051db30535"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": true,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}

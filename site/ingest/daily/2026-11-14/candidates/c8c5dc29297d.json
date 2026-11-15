@@ -1,0 +1,221 @@
+{
+  "id": "c8c5dc29297d",
+  "date": "2026-11-14",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Tokenomics at scale: Track and cap Amazon Bedrock spend per IAM principal with CUR 2.0 and AWS Budgets",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/tokenomics-at-scale-track-and-cap-amazon-bedrock-spend-per-iam-principal-with-cur-2-0-and-aws-budgets/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-11-12T19:29:55.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "c8c5dc29297d",
+    "url": "https://aws.amazon.com/blogs/machine-learning/tokenomics-at-scale-track-and-cap-amazon-bedrock-spend-per-iam-principal-with-cur-2-0-and-aws-budgets/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/tokenomics-at-scale-track-and-cap-amazon-bedrock-spend-per-iam-principal-with-cur-2-0-and-aws-budgets",
+    "title": "Tokenomics at scale: Track and cap Amazon Bedrock spend per IAM principal with CUR 2.0 and AWS Budgets",
+    "excerpt": "Get per-identity Amazon Bedrock cost visibility and enforceable spend limits using only AWS-native features, with no application code for the common case. Attribute spend with IAM principal tags, report with CUR 2.0 or Cost Explorer, and enforce with AWS Budgets actions that apply a Deny policy when",
+    "publishedAt": "2026-11-12T19:29:55.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-11-14T13:25:01.091Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 13497,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Get per-identity Amazon Bedrock cost visibility and enforceable spend limits using only AWS-native features, with no application code for the common case. Attribute spend with IAM principal tags, report with CUR 2.0 or Cost Explorer, and enforce with AWS Budgets actions that apply a Deny policy when",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/tokenomics-at-scale-track-and-cap-amazon-bedrock-spend-per-iam-principal-with-cur-2-0-and-aws-budgets/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-12T19:29:55.000Z",
+        "checkedAt": "2026-11-13T17:42:45.520Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Tokenomics at scale: Track and cap Amazon Bedrock spend per IAM principal with CUR 2.0 and AWS Budgets | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/tokenomics-at-scale-track-and-cap-amazon-bedrock-spend-per-iam-principal-with-cur-2-0-and-aws-budgets/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-12T19:29:55.000Z",
+        "checkedAt": "2026-11-13T17:42:45.520Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Tokenomics at scale: Track and cap Amazon Bedrock spend per IAM principal with CUR 2.0 and AWS Budgets",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/tokenomics-at-scale-track-and-cap-amazon-bedrock-spend-per-iam-principal-with-cur-2-0-and-aws-budgets/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-12T19:29:55.000Z",
+        "checkedAt": "2026-11-13T17:42:45.520Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "In our previous post, Tokenomics at Scale: How Jamf Built Real-Time Spend Enforcement for Amazon Bedrock , we explained a custom enforcement loop built on AWS IAM Identity Center , Amazon Athena over Amazon Bedrock model invocation logs , and AWS Lambda .",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/tokenomics-at-scale-track-and-cap-amazon-bedrock-spend-per-iam-principal-with-cur-2-0-and-aws-budgets/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-12T19:29:55.000Z",
+        "checkedAt": "2026-11-13T17:42:45.520Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "The approach relies on three things: IAM principal attribution , which Amazon Bedrock records automatically; AWS Cost and Usage Reports (CUR) 2.0 or AWS Cost Explorer for reporting; and AWS Budgets with budget actions for enforcement.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/tokenomics-at-scale-track-and-cap-amazon-bedrock-spend-per-iam-principal-with-cur-2-0-and-aws-budgets/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-12T19:29:55.000Z",
+        "checkedAt": "2026-11-13T17:42:45.520Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Amazon Bedrock captures the AWS Identity and Access Management (IAM) principal identity, the IAM user or role , for every inference request.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/tokenomics-at-scale-track-and-cap-amazon-bedrock-spend-per-iam-principal-with-cur-2-0-and-aws-budgets/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-12T19:29:55.000Z",
+        "checkedAt": "2026-11-13T17:42:45.520Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Amazon Bedrock accessed through IAM roles or IAM users.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/tokenomics-at-scale-track-and-cap-amazon-bedrock-spend-per-iam-principal-with-cur-2-0-and-aws-budgets/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-12T19:29:55.000Z",
+        "checkedAt": "2026-11-13T17:42:45.520Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "A CUR 2.0 data export and an Amazon Simple Storage Service ( Amazon S3 ) bucket to receive it.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/tokenomics-at-scale-track-and-cap-amazon-bedrock-spend-per-iam-principal-with-cur-2-0-and-aws-budgets/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-12T19:29:55.000Z",
+        "checkedAt": "2026-11-13T17:42:45.520Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "You can apply up to 50 principal or session tags per IAM user or role.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/tokenomics-at-scale-track-and-cap-amazon-bedrock-spend-per-iam-principal-with-cur-2-0-and-aws-budgets/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-12T19:29:55.000Z",
+        "checkedAt": "2026-11-13T17:42:45.520Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Point Amazon Athena at the CUR 2.0 export to group spend by iamPrincipal/team and usage type:",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/tokenomics-at-scale-track-and-cap-amazon-bedrock-spend-per-iam-principal-with-cur-2-0-and-aws-budgets/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-12T19:29:55.000Z",
+        "checkedAt": "2026-11-13T17:42:45.520Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Available actions include applying a custom IAM policy, applying a service control policy (SCP), and targeting Amazon Elastic Compute Cloud (Amazon EC2) or Amazon Relational Database Service (Amazon RDS) instances.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/tokenomics-at-scale-track-and-cap-amazon-bedrock-spend-per-iam-principal-with-cur-2-0-and-aws-budgets/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-12T19:29:55.000Z",
+        "checkedAt": "2026-11-13T17:42:45.520Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "CUR does not contain per-request line items : Both classic CUR and CUR 2.0 aggregate Amazon Bedrock cost by usage type, operation, and pricing/resource attributes over an hour or a day.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/tokenomics-at-scale-track-and-cap-amazon-bedrock-spend-per-iam-principal-with-cur-2-0-and-aws-budgets/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-12T19:29:55.000Z",
+        "checkedAt": "2026-11-13T17:42:45.520Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "IAM principal fields require CUR 2.0 : The legacy CUR format does not include them.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/tokenomics-at-scale-track-and-cap-amazon-bedrock-spend-per-iam-principal-with-cur-2-0-and-aws-budgets/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-12T19:29:55.000Z",
+        "checkedAt": "2026-11-13T17:42:45.520Z"
+      }
+    ],
+    "pageDate": "2026-11-12T19:29:55.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "API_PLATFORM"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 API_PLATFORM (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

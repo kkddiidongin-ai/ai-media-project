@@ -1,0 +1,101 @@
+{
+  "version": 2,
+  "generatedAt": "2026-11-14T13:27:45.093Z",
+  "status": "draft_for_editor_review",
+  "source": "2026-11-14",
+  "drafts": [
+    {
+      "rank": 1,
+      "verdict": "REVIEW",
+      "handsOn": false,
+      "relatedStory": null,
+      "story": {
+        "slug": "create-preview-edit-files-directly-gemini-app",
+        "title": "구글, Gemini 앱 내 파일 생성·편집·미리보기 기능 추가",
+        "summary": "구글은 Gemini 앱 내에서 문서, 스프레드시트, 프레젠테이션 등 다양한 파일을 직접 생성하고 편집 및 미리보기 할 수 있는 기능을 도입했다.",
+        "category": "PRODUCT_UPDATE",
+        "topics": [
+          "google",
+          "gemini",
+          "ai-work"
+        ],
+        "companies": [
+          "Google"
+        ],
+        "products": [
+          "Gemini",
+          "Google Docs",
+          "Google Sheets",
+          "Google Slides"
+        ],
+        "facts": [
+          "Gemini 앱 내에서 문서를 생성하거나 텍스트를 강조하여 수정 요청을 할 수 있으며, 전체 화면 편집 및 미리보기 기능을 지원한다 [E4].",
+          "PDF는 웹과 모바일 모두에서 미리보기와 편집이 가능하지만, 문서, 스프레드시트, 프레젠테이션, 마크다운, TXT, 코드 파일은 웹 환경에서만 지원된다 [E5].",
+          "프레젠테이션 내용을 생성하여 레이아웃을 미리 본 뒤 수정하거나 Google Slides로 내보낼 수 있으며, 시트 또한 데이터 모델을 생성하고 Google Sheets로 바로 열 수 있다 [E6], [E7].",
+          "해당 기능은 Gemini 앱이 지원되는 모든 언어와 모든 사용자에게 공개되었다 [E9], [E11]."
+        ],
+        "whyItMatters": "Gemini 대화창에서 파일을 직접 수정하고 외부 도구로 연동하는 과정을 통합하여, 문서 작성부터 최종 문서화까지의 작업 흐름 효율성을 높이려는 것으로 풀이된다.",
+        "whatChanges": "사용자는 생성형 AI가 작성한 내용을 별도의 파일로 복사할 필요 없이 Gemini 앱 내에서 즉시 수정하고 최종 문서 형태로 변환하거나 드라이브에 저장할 수 있다.",
+        "priority": 1,
+        "secondarySources": [],
+        "editorialDepth": "standard",
+        "eventDate": "2026-10-29",
+        "publishedAt": null,
+        "sourceType": "official",
+        "sourceName": "Google Workspace Updates",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/10/create-preview-and-edit-files-directly-in-the-Gemini-app.html",
+        "sourcePublishedAt": "2026-10-29T18:43:11.753Z",
+        "sourceTitle": "Create, preview, and edit files directly in the Gemini app",
+        "contentType": "NEWS",
+        "status": "draft"
+      },
+      "evidence": [
+        {
+          "fact": 1,
+          "url": "https://workspaceupdates.googleblog.com/2026/10/create-preview-and-edit-files-directly-in-the-Gemini-app.html",
+          "quote": "You can now generate, preview, and edit files right within your Gemini app chat—expand to full screen to type edits directly, highlight text to ask questions, or have Gemini refine them."
+        },
+        {
+          "fact": 2,
+          "url": "https://workspaceupdates.googleblog.com/2026/10/create-preview-and-edit-files-directly-in-the-Gemini-app.html",
+          "quote": "PDF preview and editing is supported on both the web and mobile, while all other formats (documents, spreadsheets, slide decks, Markdown files, TXT files, and code) are supported on the web only."
+        },
+        {
+          "fact": 3,
+          "url": "https://workspaceupdates.googleblog.com/2026/10/create-preview-and-edit-files-directly-in-the-Gemini-app.html",
+          "quote": "Generate and refine slide decks: Create presentation outlines or slide content, preview the layout in chat, and edit directly or ask Gemini to adjust the tone and structure before opening in Google Slides, or downloading as a PPTX or PDF. … Build and export Google Sheets: Generate structured trackers, tables, and data models from a prompt, preview them in Gemini, and open them directly in Google Sheets."
+        },
+        {
+          "fact": 4,
+          "url": "https://workspaceupdates.googleblog.com/2026/10/create-preview-and-edit-files-directly-in-the-Gemini-app.html",
+          "quote": "These capabilities are now available to all users in all languages where the Gemini app is available. … End users: Users of all ages who have access to the Gemini app can generate files."
+        },
+        {
+          "fact": "why",
+          "url": "https://workspaceupdates.googleblog.com/2026/10/create-preview-and-edit-files-directly-in-the-Gemini-app.html",
+          "quote": "You can now generate, preview, and edit files right within your Gemini app chat—expand to full screen to type edits directly, highlight text to ask questions, or have Gemini refine them. … Generate and refine slide decks: Create presentation outlines or slide content, preview the layout in chat, and edit directly or ask Gemini to adjust the tone and structure before opening in Google Slides, or downloading as a PPTX or PDF. … Build and export Google Sheets: Generate structured trackers, tables, and data models from a prompt, preview them in Gemini, and open them directly in Google Sheets."
+        },
+        {
+          "fact": "change",
+          "url": "https://workspaceupdates.googleblog.com/2026/10/create-preview-and-edit-files-directly-in-the-Gemini-app.html",
+          "quote": "You can now generate, preview, and edit files right within your Gemini app chat—expand to full screen to type edits directly, highlight text to ask questions, or have Gemini refine them. … Edit documents and PDFs: Quickly draft PDFs, Google Docs, LaTeX, Markdown, or TXT files, and make manual or prompted edits inline on web or in a full-screen view—plus you can upload all of them to Drive."
+        }
+      ],
+      "unverified": [
+        "Gemini 요금제별 기능 제한 여부",
+        "특정 국가에서의 사용 제한 가능성(공식 보도에는 전 세계 지원으로 명시되었으나, 실제 서비스 적용 시점은 국가별로 차이가 있을 수 있음)"
+      ],
+      "generation": {
+        "provider": "gemini",
+        "model": "gemini-3.1-flash-lite",
+        "generatedAt": "2026-11-14T13:27:38.306Z"
+      },
+      "draftQa": "REVIEW",
+      "reviewReasons": [
+        "초안 QA REVIEW",
+        "확인 필요: numeric_claim, unsupported_name, unverified_term",
+        "원고 점검 FAIL: 근거에 없는 숫자 4 — \"Gemini 앱 내에서 문서를 생성하거나 텍스트를 강조하여 수정 요청을 할 수 있으며, 전…\" · 근거에 없는 숫자 5 — \"PDF는 웹과 모바일 모두에서 미리보기와 편집이 가능하지만, 문서, 스프레드시트, 프레젠테…\" · 근거에 없는 숫자 6, 7 — \"프레젠테이션 내용을 생성하여 레이아웃을 미리 본 뒤 수정하거나 Google Slides로 …\""
+      ]
+    }
+  ]
+}
