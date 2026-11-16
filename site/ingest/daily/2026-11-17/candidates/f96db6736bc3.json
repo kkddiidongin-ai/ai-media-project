@@ -1,0 +1,221 @@
+{
+  "id": "f96db6736bc3",
+  "date": "2026-11-17",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "CUDA at 20: How the Platform Transformed Scientific Computing",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "NVIDIA",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://blogs.nvidia.com/blog/20-years-cuda/",
+      "name": "NVIDIA Blog",
+      "type": "official",
+      "publishedAt": "2026-11-16T16:00:11.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "f96db6736bc3",
+    "url": "https://blogs.nvidia.com/blog/20-years-cuda/",
+    "canonicalUrl": "https://blogs.nvidia.com/blog/20-years-cuda",
+    "title": "CUDA at 20: How the Platform Transformed Scientific Computing",
+    "excerpt": "This week at SC26, NVIDIA is marking two decades of CUDA by honoring the researchers, developers and engineers who helped make GPU computing a foundation for modern science and AI. CUDA’s 20th anniversary presents an occasion to reflect across computing eras, from the people who wrote the very first",
+    "publishedAt": "2026-11-16T16:00:11.000Z",
+    "sourceId": "nvidia",
+    "sourceName": "NVIDIA Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://blogs.nvidia.com/feed/",
+    "fetchedAt": "2026-11-16T20:21:38.888Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 3037,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "This week at SC26, NVIDIA is marking two decades of CUDA by honoring the researchers, developers and engineers who helped make GPU computing a foundation for modern science and AI. CUDA’s 20th anniversary presents an occasion to reflect across computing eras, from the people who wrote the very first",
+        "sourceUrl": "https://blogs.nvidia.com/blog/20-years-cuda/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T16:00:11.000Z",
+        "checkedAt": "2026-11-16T20:22:55.022Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "CUDA at 20: How the Platform Transformed Scientific Computing | NVIDIA Blog",
+        "sourceUrl": "https://blogs.nvidia.com/blog/20-years-cuda/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T16:00:11.000Z",
+        "checkedAt": "2026-11-16T20:22:55.022Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "This week at SC26, NVIDIA is marking two decades of CUDA by honoring the researchers, developers and engineers who helped make GPU computing a foundation for modern science and AI.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/20-years-cuda/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T16:00:11.000Z",
+        "checkedAt": "2026-11-16T20:22:55.022Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "CUDA’s 20th anniversary presents an occasion to reflect across computing eras, from the people who wrote the very first CUDA programs to the AI developers building on their work today.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/20-years-cuda/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T16:00:11.000Z",
+        "checkedAt": "2026-11-16T20:22:55.022Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "At the platform’s core is this developer community whose experiments, tools and persistence expanded what accelerated computing could do.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/20-years-cuda/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T16:00:11.000Z",
+        "checkedAt": "2026-11-16T20:22:55.022Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "NVIDIA announced CUDA in November 2006 and brought it to the scientific community at SC06, giving scientists and developers a familiar, high-level programming model for using GPUs.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/20-years-cuda/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T16:00:11.000Z",
+        "checkedAt": "2026-11-16T20:22:55.022Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "In the two decades since, developers have used CUDA to advance Nobel Prize-winning AI research , accelerate scientific applications on supercomputers and support visual effects in Oscar-winning films .",
+        "sourceUrl": "https://blogs.nvidia.com/blog/20-years-cuda/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T16:00:11.000Z",
+        "checkedAt": "2026-11-16T20:22:55.022Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Today, more than 11 million developers build on CUDA across the computing stack.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/20-years-cuda/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T16:00:11.000Z",
+        "checkedAt": "2026-11-16T20:22:55.022Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Now, at SC26, NVIDIA is looking back at some of the CUDA luminaries who’ve spearheaded breakthroughs in science and AI:",
+        "sourceUrl": "https://blogs.nvidia.com/blog/20-years-cuda/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T16:00:11.000Z",
+        "checkedAt": "2026-11-16T20:22:55.022Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Their image-recognition system won the 2012 ImageNet competition , helping demonstrate the potential of GPU computing for deep learning.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/20-years-cuda/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T16:00:11.000Z",
+        "checkedAt": "2026-11-16T20:22:55.022Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Their team’s publicly released AlphaFold 2 software uses CUDA for GPU execution .",
+        "sourceUrl": "https://blogs.nvidia.com/blog/20-years-cuda/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T16:00:11.000Z",
+        "checkedAt": "2026-11-16T20:22:55.022Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "With 1,000+ NVIDIA CUDA-X libraries, developers are now reshaping industries and giving machines the power to see, learn and reason — from discovering new medicines and designing next-generation factories to advancing autonomous vehicles, modeling financial markets and unlocki…",
+        "sourceUrl": "https://blogs.nvidia.com/blog/20-years-cuda/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T16:00:11.000Z",
+        "checkedAt": "2026-11-16T20:22:55.022Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Start building with the CUDA Toolkit and visit the 20-Year CUDA Celebration Event Wall at NVIDIA’s booth at SC26 .",
+        "sourceUrl": "https://blogs.nvidia.com/blog/20-years-cuda/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T16:00:11.000Z",
+        "checkedAt": "2026-11-16T20:22:55.022Z"
+      }
+    ],
+    "pageDate": "2026-11-16T16:00:11.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "INFRA"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 INFRA (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

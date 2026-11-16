@@ -1,0 +1,221 @@
+{
+  "id": "0f2a855bc6a8",
+  "date": "2026-11-17",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "NVIDIA Sweeps MLPerf Training and Endpoints as Vera Rubin Debuts With Leading Performance",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "NVIDIA",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://blogs.nvidia.com/blog/mlperf-training-endpoints-vera-rubin/",
+      "name": "NVIDIA Blog",
+      "type": "official",
+      "publishedAt": "2026-11-16T16:00:25.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "0f2a855bc6a8",
+    "url": "https://blogs.nvidia.com/blog/mlperf-training-endpoints-vera-rubin/",
+    "canonicalUrl": "https://blogs.nvidia.com/blog/mlperf-training-endpoints-vera-rubin",
+    "title": "NVIDIA Sweeps MLPerf Training and Endpoints as Vera Rubin Debuts With Leading Performance",
+    "excerpt": "In its MLPerf benchmarks debut, with results released today, the NVIDIA Vera Rubin platform delivers leading performance across training, post-training and agentic inference. NVIDIA swept every MLPerf Training v6.1 benchmark and, in its first MLPerf Endpoints submission, delivered more than 10x gene",
+    "publishedAt": "2026-11-16T16:00:25.000Z",
+    "sourceId": "nvidia",
+    "sourceName": "NVIDIA Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://blogs.nvidia.com/feed/",
+    "fetchedAt": "2026-11-16T20:21:38.888Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 5796,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "In its MLPerf benchmarks debut, with results released today, the NVIDIA Vera Rubin platform delivers leading performance across training, post-training and agentic inference. NVIDIA swept every MLPerf Training v6.1 benchmark and, in its first MLPerf Endpoints submission, delivered more than 10x gene",
+        "sourceUrl": "https://blogs.nvidia.com/blog/mlperf-training-endpoints-vera-rubin/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T16:00:25.000Z",
+        "checkedAt": "2026-11-16T20:22:53.839Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "NVIDIA Sweeps MLPerf Training and Endpoints as Vera Rubin Debuts With Leading Performance | NVIDIA Blog",
+        "sourceUrl": "https://blogs.nvidia.com/blog/mlperf-training-endpoints-vera-rubin/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T16:00:25.000Z",
+        "checkedAt": "2026-11-16T20:22:53.839Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "In its MLPerf benchmarks debut, with results released today, the NVIDIA Vera Rubin platform delivers leading performance across training, post-training and agentic inference.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/mlperf-training-endpoints-vera-rubin/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T16:00:25.000Z",
+        "checkedAt": "2026-11-16T20:22:53.839Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "NVIDIA swept every MLPerf Training v6.1 benchmark and, in its first MLPerf Endpoints submission, delivered more than 10x generational gains in throughput per watt for agentic AI — measuring how much agentic work a system delivers with each watt of power.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/mlperf-training-endpoints-vera-rubin/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T16:00:25.000Z",
+        "checkedAt": "2026-11-16T20:22:53.839Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Vera Rubin performance will keep climbing through continuous optimization of NVIDIA’s CUDA-powered software stack , so the infrastructure that customers invest in today delivers more value over time.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/mlperf-training-endpoints-vera-rubin/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T16:00:25.000Z",
+        "checkedAt": "2026-11-16T20:22:53.839Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "In its debut, Vera Rubin NVL72 delivered up to 2x more performance per GPU than the highly optimized NVIDIA GB300 NVL72 system — early results that show the pace of generation-over-generation innovation.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/mlperf-training-endpoints-vera-rubin/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T16:00:25.000Z",
+        "checkedAt": "2026-11-16T20:22:53.839Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "NVIDIA Vera Rubin Leads Agentic Inference on MLPerf Endpoints",
+        "sourceUrl": "https://blogs.nvidia.com/blog/mlperf-training-endpoints-vera-rubin/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T16:00:25.000Z",
+        "checkedAt": "2026-11-16T20:22:53.839Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "For example, in a provisional result for Kimi K3, a large open model built for agentic workflows, Vera Rubin NVL72 systems deliver more than 10x the throughput per watt of NVIDIA GB300 NVL72 at the same response speed.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/mlperf-training-endpoints-vera-rubin/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T16:00:25.000Z",
+        "checkedAt": "2026-11-16T20:22:53.839Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "MLPerf® Endpoints v1.0, Kimi K3, Standardized division, Available category, published November 9, 2026.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/mlperf-training-endpoints-vera-rubin/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T16:00:25.000Z",
+        "checkedAt": "2026-11-16T20:22:53.839Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "NVIDIA Vera Rubin NVL72, 32 accelerators, result 1.0.1.kimi-k3.agentic_combined.1p, run 9: concurrency = 1,024 queries, TTFT P90 = 4,673.9 ms, system TPS= 41,414.2 tokens/sec, E2E average interactivity = 50.4 tokens/sec per user, operating power = 100.89 kW.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/mlperf-training-endpoints-vera-rubin/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T16:00:25.000Z",
+        "checkedAt": "2026-11-16T20:22:53.839Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "NVIDIA partners participated extensively in MLPerf Training, with submissions from 20 organizations: ASUS, Azure , Cisco, CoreWeave, Crusoe, Dell Technologies, Firmus , Giga Computing, Google Cloud, HPE , Inventec, Krai, Lambda, Nebius, Oracle, Quanta Cloud Technology (QCT), S…",
+        "sourceUrl": "https://blogs.nvidia.com/blog/mlperf-training-endpoints-vera-rubin/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T16:00:25.000Z",
+        "checkedAt": "2026-11-16T20:22:53.839Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Vera Rubin also delivers leading performance on independent benchmarks including SemiAnalysis AgentX and Artificial Analysis AgentPerf, showcasing how the same NVIDIA infrastructure can productively run everything from pretraining and post-training to agentic inference, as wel…",
+        "sourceUrl": "https://blogs.nvidia.com/blog/mlperf-training-endpoints-vera-rubin/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T16:00:25.000Z",
+        "checkedAt": "2026-11-16T20:22:53.839Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "NVIDIA Sweeps MLPerf Training and Endpoints as Vera Rubin Debuts With Leading Performance",
+        "sourceUrl": "https://blogs.nvidia.com/blog/mlperf-training-endpoints-vera-rubin/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T16:00:25.000Z",
+        "checkedAt": "2026-11-16T20:22:53.839Z"
+      }
+    ],
+    "pageDate": "2026-11-16T16:00:25.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "RESEARCH_RESULT"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 RESEARCH_RESULT (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

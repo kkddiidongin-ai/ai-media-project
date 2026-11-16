@@ -1,0 +1,221 @@
+{
+  "id": "b4d0f21c2c60",
+  "date": "2026-11-17",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Modernizing mainframe Assembler to Java using Amazon Bedrock and AWS Transform",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/modernizing-mainframe-assembler-to-java-using-amazon-bedrock-and-aws-transform/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-11-16T17:29:29.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "b4d0f21c2c60",
+    "url": "https://aws.amazon.com/blogs/machine-learning/modernizing-mainframe-assembler-to-java-using-amazon-bedrock-and-aws-transform/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/modernizing-mainframe-assembler-to-java-using-amazon-bedrock-and-aws-transform",
+    "title": "Modernizing mainframe Assembler to Java using Amazon Bedrock and AWS Transform",
+    "excerpt": "Legacy mainframe Assembler applications are costly to maintain and hard to staff. This post presents a multi-stage, AI-powered methodology using Amazon Bedrock, Kiro IDE, and AWS Transform to extract business rules, convert Assembler through an intermediate COBOL stage, and deploy modernized Java Sp",
+    "publishedAt": "2026-11-16T17:29:29.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-11-16T20:21:38.888Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 17700,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Legacy mainframe Assembler applications are costly to maintain and hard to staff. This post presents a multi-stage, AI-powered methodology using Amazon Bedrock, Kiro IDE, and AWS Transform to extract business rules, convert Assembler through an intermediate COBOL stage, and deploy modernized Java Sp",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/modernizing-mainframe-assembler-to-java-using-amazon-bedrock-and-aws-transform/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-16T17:29:29.000Z",
+        "checkedAt": "2026-11-16T20:22:48.889Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Modernizing mainframe Assembler to Java using Amazon Bedrock and AWS Transform | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/modernizing-mainframe-assembler-to-java-using-amazon-bedrock-and-aws-transform/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-16T17:29:29.000Z",
+        "checkedAt": "2026-11-16T20:22:48.889Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Modernizing mainframe Assembler to Java using Amazon Bedrock and AWS Transform",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/modernizing-mainframe-assembler-to-java-using-amazon-bedrock-and-aws-transform/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-16T17:29:29.000Z",
+        "checkedAt": "2026-11-16T20:22:48.889Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Amazon Bedrock and AWS Transform change that equation.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/modernizing-mainframe-assembler-to-java-using-amazon-bedrock-and-aws-transform/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-16T17:29:29.000Z",
+        "checkedAt": "2026-11-16T20:22:48.889Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "This post shows you a multi-stage transformation methodology using Amazon Bedrock , Kiro IDE (an AI-powered integrated development environment), and AWS Transform that can help reduce modernization time compared to manual approaches while maintaining business logic integrity t…",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/modernizing-mainframe-assembler-to-java-using-amazon-bedrock-and-aws-transform/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-16T17:29:29.000Z",
+        "checkedAt": "2026-11-16T20:22:48.889Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Active AWS account with least-privilege AWS Identity and Access Management (IAM) permissions for Amazon Bedrock, AWS Transform, and Amazon Simple Storage Service (Amazon S3).",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/modernizing-mainframe-assembler-to-java-using-amazon-bedrock-and-aws-transform/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-16T17:29:29.000Z",
+        "checkedAt": "2026-11-16T20:22:48.889Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "You can transform legacy mainframe Assembler applications tightly bounded with COBOL into Java Spring Boot applications built for the AWS cloud through a systematic five-phase approach.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/modernizing-mainframe-assembler-to-java-using-amazon-bedrock-and-aws-transform/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-16T17:29:29.000Z",
+        "checkedAt": "2026-11-16T20:22:48.889Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Figure 1: Mainframe Assembler architecture",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/modernizing-mainframe-assembler-to-java-using-amazon-bedrock-and-aws-transform/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-16T17:29:29.000Z",
+        "checkedAt": "2026-11-16T20:22:48.889Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "The modernization solution helps you transform legacy mainframe Assembler applications into Java applications built for the AWS cloud through a multi-phase, AI-powered workflow.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/modernizing-mainframe-assembler-to-java-using-amazon-bedrock-and-aws-transform/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-16T17:29:29.000Z",
+        "checkedAt": "2026-11-16T20:22:48.889Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "The architecture uses Amazon Bedrock and Kiro IDE for AI-assisted code analysis and business rule extraction, and AWS Transform for automated COBOL-to-Java conversion.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/modernizing-mainframe-assembler-to-java-using-amazon-bedrock-and-aws-transform/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-16T17:29:29.000Z",
+        "checkedAt": "2026-11-16T20:22:48.889Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Use Amazon Bedrock, through Kiro IDE or the Amazon Bedrock console, along with AWS Transform for mainframe to extract and document business rules from your Assembler source code.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/modernizing-mainframe-assembler-to-java-using-amazon-bedrock-and-aws-transform/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-16T17:29:29.000Z",
+        "checkedAt": "2026-11-16T20:22:48.889Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "To process many programs, call the same prompts through the Amazon Bedrock Converse API and store each output in your Amazon S3 bucket so it can feed the next phase.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/modernizing-mainframe-assembler-to-java-using-amazon-bedrock-and-aws-transform/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-16T17:29:29.000Z",
+        "checkedAt": "2026-11-16T20:22:48.889Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "In this post, we walked through a systematic, AI-powered approach to transform legacy mainframe Assembler applications into Java applications built for the cloud on AWS.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/modernizing-mainframe-assembler-to-java-using-amazon-bedrock-and-aws-transform/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-16T17:29:29.000Z",
+        "checkedAt": "2026-11-16T20:22:48.889Z"
+      }
+    ],
+    "pageDate": "2026-11-16T17:29:29.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "API_PLATFORM"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 API_PLATFORM (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

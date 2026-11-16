@@ -1,0 +1,232 @@
+{
+  "id": "1a45a81e9082",
+  "date": "2026-11-17",
+  "proposedSlug": "ai-training-performance-benchmarks-google-tpus",
+  "title": null,
+  "sourceTitle": "New AI training performance benchmarks for Google TPUs",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 9,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": true,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": true
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact"
+    ]
+  },
+  "company": "Google",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/training-performance-benchmarks-tpus/",
+      "name": "Google (The Keyword · AI)",
+      "type": "official",
+      "publishedAt": "2026-11-16T00:00:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "1a45a81e9082",
+    "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/training-performance-benchmarks-tpus/",
+    "canonicalUrl": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/training-performance-benchmarks-tpus",
+    "title": "New AI training performance benchmarks for Google TPUs",
+    "excerpt": "In the latest MLPerf Training v6.1 benchmark round, Google Cloud published 10 results across seventh-generation Ironwood TPUs and NVIDIA Grace Blackwell GPUs, spanning f…",
+    "publishedAt": "2026-11-16T00:00:00.000Z",
+    "sourceId": "google-ai",
+    "sourceName": "Google (The Keyword · AI)",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "sitemap-meta",
+    "discoveredVia": "https://blog.google/en-us/sitemap.xml",
+    "fetchedAt": "2026-11-16T20:21:38.888Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 4123,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "In the latest MLPerf Training v6.1 benchmark round, Google Cloud published 10 results across seventh-generation Ironwood TPUs and NVIDIA Grace Blackwell GPUs, spanning f…",
+        "sourceUrl": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/training-performance-benchmarks-tpus/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-11-16T00:00:00.000Z",
+        "checkedAt": "2026-11-16T20:22:47.370Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Google TPU and GPU performance: MLPerf v6.1 results",
+        "sourceUrl": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/training-performance-benchmarks-tpus/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-11-16T00:00:00.000Z",
+        "checkedAt": "2026-11-16T20:22:47.370Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "\"page_name\": \"Google TPU and GPU performance: MLPerf v6.1 results\",",
+        "sourceUrl": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/training-performance-benchmarks-tpus/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-11-16T00:00:00.000Z",
+        "checkedAt": "2026-11-16T20:22:47.370Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "\"article_name\": \"New AI training performance benchmarks for Google TPUs\",",
+        "sourceUrl": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/training-performance-benchmarks-tpus/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-11-16T00:00:00.000Z",
+        "checkedAt": "2026-11-16T20:22:47.370Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "\"section_header\": \"New AI training performance benchmarks for Google TPUs\"",
+        "sourceUrl": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/training-performance-benchmarks-tpus/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-11-16T00:00:00.000Z",
+        "checkedAt": "2026-11-16T20:22:47.370Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "New AI training performance benchmarks for Google TPUs",
+        "sourceUrl": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/training-performance-benchmarks-tpus/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-11-16T00:00:00.000Z",
+        "checkedAt": "2026-11-16T20:22:47.370Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "In the latest MLPerf Training v6.1 benchmark round",
+        "sourceUrl": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/training-performance-benchmarks-tpus/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-11-16T00:00:00.000Z",
+        "checkedAt": "2026-11-16T20:22:47.370Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": ", Google Cloud published 10 results across seventh-generation Ironwood TPUs and NVIDIA Grace Blackwell GPUs, spanning frontier pre-training and the first MLPerf benchmark for agentic reinforcement learning (RL).",
+        "sourceUrl": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/training-performance-benchmarks-tpus/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-11-16T00:00:00.000Z",
+        "checkedAt": "2026-11-16T20:22:47.370Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Pre-training on Ironwood: 8,192 Ironwood TPUs reached the target model's benchmark target quality in 1.70 minutes, scaling up to 4,096 chips with 96% efficiency.",
+        "sourceUrl": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/training-performance-benchmarks-tpus/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-11-16T00:00:00.000Z",
+        "checkedAt": "2026-11-16T20:22:47.370Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Agentic RL on Ironwood: 640 Ironwood TPUs reached the target model’s coding benchmark target accuracy in 18.02 minutes (0.765 vs. the 0.69 goal), running code generation and learning simultaneously so training chips waited under 3% of the time.",
+        "sourceUrl": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/training-performance-benchmarks-tpus/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-11-16T00:00:00.000Z",
+        "checkedAt": "2026-11-16T20:22:47.370Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "NVIDIA Grace Blackwell GPUs: On Google Cloud A4X Max Instances, 256 NVIDIA GB300 GPUs for pre-training benchmark reached the target quality in 31.96 minutes, complemented by five A4X and A4X Max submissions on the agentic RL benchmark.",
+        "sourceUrl": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/training-performance-benchmarks-tpus/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-11-16T00:00:00.000Z",
+        "checkedAt": "2026-11-16T20:22:47.370Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "For more details on the MLPerf Training v6.1 results, click here .",
+        "sourceUrl": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/training-performance-benchmarks-tpus/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-11-16T00:00:00.000Z",
+        "checkedAt": "2026-11-16T20:22:47.370Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "MLPerf Training v6.1 Closed-division result IDs: 6.1-0017 (Ironwood 640-chip Qwen3.5-397B RL), 6.1-0018 (Ironwood 2,048-chip DeepSeek-V3), 6.1-0019 (Ironwood 4,096-chip DeepSeek-V3), 6.1-0020 (Ironwood 8,192-chip DeepSeek-V3), 6.1-0021 (A4X 56-GPU GB200 RL), 6.1-0022 (A4X Max …",
+        "sourceUrl": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/training-performance-benchmarks-tpus/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-11-16T00:00:00.000Z",
+        "checkedAt": "2026-11-16T20:22:47.370Z"
+      }
+    ],
+    "pageDate": "2026-11-16T00:00:00.000Z"
+  },
+  "score": {
+    "importance": 2,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "RESEARCH_RESULT",
+      "INFRA"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 6,
+    "total": 6
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 RESEARCH_RESULT·INFRA (우선순위 6)",
+    "근거 확인 통과 (확인 사실 9개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "none",
+    "model": null,
+    "status": "skipped",
+    "error": "Shadow Mode — 원고를 만들지 않음",
+    "promptVersion": "draft-v2",
+    "at": "2026-11-16T20:22:57.429Z",
+    "evidenceHash": "ff53e95e486b"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}
