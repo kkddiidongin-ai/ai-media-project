@@ -1,7 +1,7 @@
 {
   "date": "2026-11-16",
   "mode": "shadow",
-  "startedAt": "2026-11-15T17:00:57.100Z",
+  "startedAt": "2026-11-16T01:54:49.032Z",
   "status": "INCOMPLETE",
   "limits": {
     "windowDays": 3,
@@ -33,11 +33,11 @@
         "redirected": false,
         "finalUrl": null
       },
-      "parsed": 1387,
-      "matched": 1387,
-      "found": 1387,
-      "inWindow": 2,
-      "kept": 2,
+      "parsed": 1389,
+      "matched": 1389,
+      "found": 1389,
+      "inWindow": 4,
+      "kept": 4,
       "since": "2026-11-13",
       "coverage": {
         "complete": true
@@ -306,8 +306,8 @@
       "parsed": 18,
       "matched": 18,
       "found": 18,
-      "inWindow": 1,
-      "kept": 1,
+      "inWindow": 2,
+      "kept": 2,
       "since": "2026-11-13",
       "coverage": {
         "complete": true
@@ -349,32 +349,27 @@
     {
       "id": "huggingface",
       "name": "Hugging Face Blog",
-      "status": "blocked",
-      "requests": 0,
+      "status": "success",
+      "requests": 1,
       "http": {
-        "status": 429,
+        "status": 200,
         "redirected": false,
         "finalUrl": null
       },
-      "parsed": null,
-      "matched": null,
-      "found": 0,
-      "inWindow": 0,
-      "kept": 0,
+      "parsed": 907,
+      "matched": 907,
+      "found": 907,
+      "inWindow": 3,
+      "kept": 3,
       "since": "2026-11-13",
       "coverage": {
         "complete": true
       },
       "undated": 0,
-      "errors": [
-        "HTTP 429: https://huggingface.co/blog/feed.xml"
-      ],
-      "health": "FAILED",
-      "healthReasons": [
-        "요청 실패 (blocked, HTTP 429)"
-      ],
-      "lastOkDate": "2026-11-15",
-      "lastItemDate": "2026-11-15",
+      "health": "OK",
+      "healthReasons": [],
+      "lastOkDate": "2026-11-16",
+      "lastItemDate": "2026-11-16",
       "zeroStreak": 0
     },
     {
@@ -968,8 +963,8 @@
       "parsed": 30,
       "matched": 30,
       "found": 30,
-      "inWindow": 14,
-      "kept": 14,
+      "inWindow": 10,
+      "kept": 10,
       "since": "2026-11-13",
       "coverage": {
         "complete": false,
@@ -996,8 +991,8 @@
       "parsed": 30,
       "matched": 30,
       "found": 30,
-      "inWindow": 12,
-      "kept": 12,
+      "inWindow": 8,
+      "kept": 8,
       "since": "2026-11-13",
       "coverage": {
         "complete": false,
@@ -1041,24 +1036,24 @@
     }
   ],
   "sourceHealth": {
-    "OK": 21,
+    "OK": 22,
     "WARNING": 4,
     "DEGRADED": 5,
-    "FAILED": 1,
+    "FAILED": 0,
     "SKIPPED": 9
   },
   "counts": {
-    "collected": 96,
+    "collected": 94,
     "carriedFromQueue": 54,
-    "NEW": 150,
+    "NEW": 148,
     "UPDATE_EXISTING": 0,
     "DUPLICATE": 0,
     "UNCERTAIN": 0,
-    "PUBLISH": 4,
-    "HOLD": 106,
-    "EXCLUDE": 40,
-    "shortlisted": 9,
-    "evidenceChecked": 9,
+    "PUBLISH": 5,
+    "HOLD": 100,
+    "EXCLUDE": 43,
+    "shortlisted": 10,
+    "evidenceChecked": 10,
     "drafts": 0,
     "draftQa": {
       "PASS": 0,
@@ -1079,7 +1074,7 @@
       "attempted": 0,
       "ok": 0,
       "failed": 0,
-      "skipped": 4,
+      "skipped": 5,
       "successRate": null,
       "quotaHit": false
     },
@@ -1090,9 +1085,9 @@
     "complete": false,
     "pending": {
       "evidence": 54,
-      "draft": 44,
+      "draft": 45,
       "meta": 0,
-      "retrySources": 1
+      "retrySources": 0
     },
     "carriedIn": {
       "evidence": 54,
@@ -1100,7 +1095,7 @@
     },
     "resolvedFromQueue": 0,
     "processed": {
-      "evidenceFetches": 9,
+      "evidenceFetches": 2,
       "drafted": 0
     },
     "coverageGaps": [
@@ -1124,6 +1119,46 @@
     "queueFile": "pipeline-queue.json"
   },
   "items": [
+    {
+      "id": "87d7014c15ee",
+      "title": "A step toward defining the Standard Model on a lattice",
+      "source": "OpenAI",
+      "publishedAt": "2026-11-15T22:00:01.000Z",
+      "url": "https://openai.com/index/step-toward-defining-the-standard-model",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+      ],
+      "score": 2,
+      "importance": 0,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [],
+      "company": "OpenAI",
+      "stage": "metadata"
+    },
+    {
+      "id": "4b0fc5b701ff",
+      "title": "Our new blog for science",
+      "source": "OpenAI",
+      "publishedAt": "2026-11-15T22:00:00.000Z",
+      "url": "https://openai.com/index/our-new-blog-for-science",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+      ],
+      "score": 2,
+      "importance": 0,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [],
+      "company": "OpenAI",
+      "stage": "metadata"
+    },
     {
       "id": "5bf4951adbe9",
       "title": "Introducing ChatGPT Wallet",
@@ -1187,6 +1222,40 @@
       "stage": "metadata"
     },
     {
+      "id": "46b48e728e81",
+      "title": "AI Day Seoul Brings Together Korea’s Industry Leaders, Startups and Developer Communities",
+      "source": "NVIDIA Blog",
+      "publishedAt": "2026-11-16T00:00:28.000Z",
+      "url": "https://blogs.nvidia.com/blog/ai-day-seoul-wrapup/",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "PUBLISH",
+      "reasons": [
+        "사건 신호 KOREA (우선순위 9)",
+        "근거 확인 통과 (확인 사실 12개, SUFFICIENT_STANDARD)"
+      ],
+      "score": 9,
+      "importance": 2,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "KOREA"
+      ],
+      "company": "NVIDIA",
+      "stage": "evidence",
+      "evidenceStatus": "OK",
+      "distinctFacts": 12,
+      "sufficiency": "SUFFICIENT_STANDARD",
+      "deepMissing": [
+        "importance",
+        "contextNeed",
+        "evidenceQuality",
+        "standardWouldOmit"
+      ],
+      "suggestedDepth": "SHORT",
+      "draftPending": true
+    },
+    {
       "id": "ece4b84db3e9",
       "title": "How AI Is Helping Care Teams Get Patients the Right Care, Sooner",
       "source": "NVIDIA Blog",
@@ -1204,6 +1273,66 @@
       "typePenalty": 0,
       "signals": [],
       "company": "NVIDIA",
+      "stage": "metadata"
+    },
+    {
+      "id": "2427bacb74a9",
+      "title": "Build a Robot Pick-and-Place Simulation with SimReady Assets",
+      "source": "Hugging Face Blog",
+      "publishedAt": "2026-11-13T18:00:39.000Z",
+      "url": "https://huggingface.co/blog/nvidia/simready-assets-robot-pick-and-place",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "글 유형 HOW_TO — 강한 사건 신호 없음"
+      ],
+      "score": -1,
+      "importance": 0,
+      "contentType": "HOW_TO",
+      "typePenalty": -3,
+      "signals": [],
+      "company": "Hugging Face",
+      "stage": "metadata"
+    },
+    {
+      "id": "8400bdfe1e2a",
+      "title": "XYBench: Helping with the problem behind the question",
+      "source": "Hugging Face Blog",
+      "publishedAt": "2026-11-13T17:02:35.000Z",
+      "url": "https://huggingface.co/blog/allenai/xybench",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+      ],
+      "score": 2,
+      "importance": 0,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [],
+      "company": "Hugging Face",
+      "stage": "metadata"
+    },
+    {
+      "id": "40e78db6601d",
+      "title": "llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem",
+      "source": "Hugging Face Blog",
+      "publishedAt": "2026-11-13T14:05:22.000Z",
+      "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+      ],
+      "score": 2,
+      "importance": 0,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [],
+      "company": "Hugging Face",
       "stage": "metadata"
     },
     {
@@ -1659,6 +1788,46 @@
       "typePenalty": 0,
       "signals": [],
       "company": "NAVER D2",
+      "stage": "metadata"
+    },
+    {
+      "id": "b8db1c0e1596",
+      "title": "[AI리더의 서가] AI 에이전트와 스프링 배치를 활용한 배치 엔지니어링",
+      "source": "AI타임스",
+      "publishedAt": "2026-11-16T09:00:00.000Z",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217277",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+      ],
+      "score": 2,
+      "importance": 0,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [],
+      "company": "AI타임스",
+      "stage": "metadata"
+    },
+    {
+      "id": "65dcad7776aa",
+      "title": "젠슨 황, 엔비디아 CEO 복귀 논의…측근들 백악관 설득 추진",
+      "source": "AI타임스",
+      "publishedAt": "2026-11-16T05:32:58.000Z",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217428",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+      ],
+      "score": 2,
+      "importance": 0,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [],
+      "company": "AI타임스",
       "stage": "metadata"
     },
     {
@@ -2693,80 +2862,11 @@
       "stage": "metadata"
     },
     {
-      "id": "93e753a016d5",
-      "title": "노타, 3분기 역대 최대 매출 달성…플랫폼·솔루션 동반 도약",
-      "source": "AI타임스",
-      "publishedAt": "2026-11-13T16:40:00.000Z",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217391",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 INFRA)"
-      ],
-      "score": 4,
-      "importance": 1,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "INFRA"
-      ],
-      "company": "AI타임스",
-      "stage": "metadata"
-    },
-    {
-      "id": "e52cd5fa81b1",
-      "title": "AMD, 양자컴퓨터 오류 수정에 GPU·SW 투입…엔비디아와 경쟁",
-      "source": "AI타임스",
-      "publishedAt": "2026-11-13T16:34:23.000Z",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217381",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 INFRA·PRODUCT_LAUNCH·PARTNERSHIP)"
-      ],
-      "score": 9,
-      "importance": 3,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "INFRA",
-        "PRODUCT_LAUNCH",
-        "PARTNERSHIP"
-      ],
-      "company": "AI타임스",
-      "stage": "metadata"
-    },
-    {
-      "id": "9c58a07cb935",
-      "title": "\"65만원 AI 안경 벌써 완판\"...삼성·구글·젠틀몬스터 제품 뭐길래",
+      "id": "ba2fc487ea9b",
+      "title": "AI 시험 부정 막는다...정부, 수능 범정부 긴급대응팀 구성",
       "source": "지디넷코리아",
-      "publishedAt": "2026-11-15T12:27:13.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261115210649",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·PRICING)"
-      ],
-      "score": 10,
-      "importance": 3,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "PRODUCT_LAUNCH",
-        "PRICING"
-      ],
-      "company": "지디넷코리아",
-      "stage": "metadata"
-    },
-    {
-      "id": "806063d8dd68",
-      "title": "수능 코앞인데 AI 부정행위 파문…청와대, 국가자격시험 전수조사",
-      "source": "지디넷코리아",
-      "publishedAt": "2026-11-15T11:54:24.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261115205153",
+      "publishedAt": "2026-11-16T00:26:15.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261116092615",
       "duplicate": "NEW",
       "matchSlug": null,
       "decision": "HOLD",
@@ -2784,11 +2884,11 @@
       "stage": "metadata"
     },
     {
-      "id": "080e949f59d7",
-      "title": "현대차그룹 웹사이트, 국내외 웹 어워드 13개 상 수상",
+      "id": "e776b97090cf",
+      "title": "전 세계 상품 정보 모은다…아마존, ‘월드 프로덕트 그래프’ 추진",
       "source": "지디넷코리아",
-      "publishedAt": "2026-11-15T05:06:35.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261115140635",
+      "publishedAt": "2026-11-16T00:09:23.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261116090038",
       "duplicate": "NEW",
       "matchSlug": null,
       "decision": "EXCLUDE",
@@ -2804,155 +2904,44 @@
       "stage": "metadata"
     },
     {
-      "id": "e82d3a48207e",
-      "title": "[인터뷰] 시스코 혁신 수장 \"韓, AI 투자만으론 부족…보안·인재 함께 키워야\"",
+      "id": "8e91db77938f",
+      "title": "[르포] 양산 검증 장벽 허문다…SK하이닉스가 용인에 품은 '상생의 팹'",
       "source": "지디넷코리아",
-      "publishedAt": "2026-11-15T05:00:03.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261115110004",
+      "publishedAt": "2026-11-16T00:00:01.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261113134910",
       "duplicate": "NEW",
       "matchSlug": null,
       "decision": "HOLD",
       "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 REGULATION·MODEL_MENTION)"
-      ],
-      "score": 6,
-      "importance": 2,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "REGULATION",
-        "MODEL_MENTION"
-      ],
-      "company": "지디넷코리아",
-      "stage": "metadata"
-    },
-    {
-      "id": "18c7fdc6ef62",
-      "title": "풀무원, 임직원이 AI 에이전트 직접 개발…AX 해커톤 개최",
-      "source": "지디넷코리아",
-      "publishedAt": "2026-11-15T04:25:01.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261115131827",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "EXCLUDE",
-      "reasons": [
-        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
-      ],
-      "score": 2,
-      "importance": 0,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [],
-      "company": "지디넷코리아",
-      "stage": "metadata"
-    },
-    {
-      "id": "dbc1b7706b25",
-      "title": "[ZD브리핑] 삼성전자 갤럭시링 특허 분쟁 결론 임박...지스타·MS 이그나이트 개막",
-      "source": "지디넷코리아",
-      "publishedAt": "2026-11-15T04:19:47.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261115124937",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)"
-      ],
-      "score": 5,
-      "importance": 1,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "PRODUCT_LAUNCH"
-      ],
-      "company": "지디넷코리아",
-      "stage": "metadata"
-    },
-    {
-      "id": "c47e12281a24",
-      "title": "현대홈쇼핑, 쇼호스트·카메라 없는 '100% AI 방송' 도입",
-      "source": "지디넷코리아",
-      "publishedAt": "2026-11-15T03:23:41.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261115122232",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)"
-      ],
-      "score": 5,
-      "importance": 1,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "PRODUCT_LAUNCH"
-      ],
-      "company": "지디넷코리아",
-      "stage": "metadata"
-    },
-    {
-      "id": "e9672ad5654f",
-      "title": "KT, 인천 남동산단에 AI 화재안전 서비스 ‘세이프메이트’ 구축",
-      "source": "지디넷코리아",
-      "publishedAt": "2026-11-15T03:17:01.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261115104316",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PARTNERSHIP)"
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 INFRA)"
       ],
       "score": 4,
       "importance": 1,
       "contentType": "NEWS",
       "typePenalty": 0,
       "signals": [
-        "PARTNERSHIP"
+        "INFRA"
       ],
       "company": "지디넷코리아",
       "stage": "metadata"
     },
     {
-      "id": "ecf47bbf29c7",
-      "title": "최태원, 'AI 플라이휠' 전략 주문…\"모든 멤버사, 새 역할 찾아야\"",
+      "id": "b898a549fb71",
+      "title": "축사 분뇨 처리, AI 건설장비가 척척…두산밥캣, 자율작업 실증",
       "source": "지디넷코리아",
-      "publishedAt": "2026-11-15T03:14:14.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261115112202",
+      "publishedAt": "2026-11-15T23:59:38.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261116085938",
       "duplicate": "NEW",
       "matchSlug": null,
       "decision": "HOLD",
       "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 INFRA·MODEL_MENTION)"
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·PARTNERSHIP)"
       ],
-      "score": 6,
+      "score": 7,
       "importance": 2,
       "contentType": "NEWS",
       "typePenalty": 0,
       "signals": [
-        "INFRA",
-        "MODEL_MENTION"
-      ],
-      "company": "지디넷코리아",
-      "stage": "metadata"
-    },
-    {
-      "id": "d6bee1ef1bbd",
-      "title": "오픈AI, '챗GPT 월렛' 출시…AI가 상품 구매부터 결제까지",
-      "source": "지디넷코리아",
-      "publishedAt": "2026-11-15T03:11:49.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261115102351",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 CONSUMER·PRODUCT_LAUNCH·PARTNERSHIP)"
-      ],
-      "score": 10,
-      "importance": 3,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "CONSUMER",
         "PRODUCT_LAUNCH",
         "PARTNERSHIP"
       ],
@@ -2960,11 +2949,11 @@
       "stage": "metadata"
     },
     {
-      "id": "37178d7f1ece",
-      "title": "KT텔레캅, 창립 20주년 맞아 'AX 보안기업' 비전 선포",
+      "id": "493ada82b07a",
+      "title": "삼성전자, 수능 고사장 시스템에어컨 긴급 서비스 지원",
       "source": "지디넷코리아",
-      "publishedAt": "2026-11-15T03:11:24.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261115105852",
+      "publishedAt": "2026-11-15T23:50:50.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261116084149",
       "duplicate": "NEW",
       "matchSlug": null,
       "decision": "EXCLUDE",
@@ -2980,36 +2969,125 @@
       "stage": "metadata"
     },
     {
-      "id": "5d5a4f5d5d7a",
-      "title": "[인터뷰] 시스코 부사장 \"AI 에이전트, 비용만 보지 말고 사업 가치 따져야\"",
+      "id": "a873ba01903e",
+      "title": "직장인 4명 중 3명 \"AI 결과물, 내가 한 듯 보고”",
       "source": "지디넷코리아",
-      "publishedAt": "2026-11-15T03:00:03.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261110212228",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "EXCLUDE",
-      "reasons": [
-        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
-      ],
-      "score": 2,
-      "importance": 0,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [],
-      "company": "지디넷코리아",
-      "stage": "metadata"
-    },
-    {
-      "id": "b8f7e22ab1fe",
-      "title": "AI 반도체 호황에 ICT 수출 증가율 첫 200% 돌파",
-      "source": "지디넷코리아",
-      "publishedAt": "2026-11-15T02:00:01.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261115004601",
+      "publishedAt": "2026-11-15T23:41:40.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261116084140",
       "duplicate": "NEW",
       "matchSlug": null,
       "decision": "HOLD",
       "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 REGULATION·INFRA)"
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRICING)"
+      ],
+      "score": 7,
+      "importance": 2,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "PRICING"
+      ],
+      "company": "지디넷코리아",
+      "stage": "metadata"
+    },
+    {
+      "id": "ab15599c716d",
+      "title": "\"애플 첫 스마트 안경, 내년에 나온다…메타 레이벤보다 얇다\"",
+      "source": "지디넷코리아",
+      "publishedAt": "2026-11-15T23:26:56.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261116081912",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)"
+      ],
+      "score": 5,
+      "importance": 1,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "PRODUCT_LAUNCH"
+      ],
+      "company": "지디넷코리아",
+      "stage": "metadata"
+    },
+    {
+      "id": "bcf91a00c83d",
+      "title": "엑셀라 GOSTAR™, 볼츠 신약개발 AI 모델 지원",
+      "source": "지디넷코리아",
+      "publishedAt": "2026-11-15T23:10:02.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261116081002",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PARTNERSHIP·MODEL_MENTION)"
+      ],
+      "score": 6,
+      "importance": 2,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "PARTNERSHIP",
+        "MODEL_MENTION"
+      ],
+      "company": "지디넷코리아",
+      "stage": "metadata"
+    },
+    {
+      "id": "5513dbfeb6e8",
+      "title": "양승조 수공 사장 \"기후위기·AI전환 대응…대한민국 물관리 변혁 이끌어갈 때”",
+      "source": "지디넷코리아",
+      "publishedAt": "2026-11-15T23:01:11.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261116080111",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+      ],
+      "score": 2,
+      "importance": 0,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [],
+      "company": "지디넷코리아",
+      "stage": "metadata"
+    },
+    {
+      "id": "e259c8c023f6",
+      "title": "페르소나AI, 국민성장펀드 통해 150억 투자 유치…AI 에이전트 사업 성장 가속화",
+      "source": "지디넷코리아",
+      "publishedAt": "2026-11-15T21:00:03.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261115233648",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 ACQ_INVEST)"
+      ],
+      "score": 6,
+      "importance": 2,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "ACQ_INVEST"
+      ],
+      "company": "지디넷코리아",
+      "stage": "metadata"
+    },
+    {
+      "id": "4d558d1eb57e",
+      "title": "美 백악관, AI 사고 자진신고 기업에 규제 책임 완화 권고",
+      "source": "전자신문",
+      "publishedAt": "2026-11-15T23:20:07.000Z",
+      "url": "https://www.etnews.com/20261116000016",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 REGULATION·SECURITY)"
       ],
       "score": 8,
       "importance": 3,
@@ -3017,29 +3095,9 @@
       "typePenalty": 0,
       "signals": [
         "REGULATION",
-        "INFRA"
+        "SECURITY"
       ],
-      "company": "지디넷코리아",
-      "stage": "metadata"
-    },
-    {
-      "id": "e6a6db12b74b",
-      "title": "두산에너빌리티, 발전사들과 AI 기반 운영기술 공유",
-      "source": "지디넷코리아",
-      "publishedAt": "2026-11-15T01:52:58.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261115105258",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "EXCLUDE",
-      "reasons": [
-        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
-      ],
-      "score": 2,
-      "importance": 0,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [],
-      "company": "지디넷코리아",
+      "company": "전자신문",
       "stage": "metadata"
     },
     {
@@ -3191,115 +3249,6 @@
       "contentType": "NEWS",
       "typePenalty": 0,
       "signals": [
-        "PRODUCT_LAUNCH"
-      ],
-      "company": "전자신문",
-      "stage": "metadata"
-    },
-    {
-      "id": "463fa78e7f7b",
-      "title": "'AI 안경 의혹' 세무사 수석 합격자, 결국 부정행위 자수… “진짜 수석에 죄송”",
-      "source": "전자신문",
-      "publishedAt": "2026-11-15T00:59:22.000Z",
-      "url": "https://www.etnews.com/20261115000036",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·MODEL_MENTION)"
-      ],
-      "score": 7,
-      "importance": 2,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "PRODUCT_LAUNCH",
-        "MODEL_MENTION"
-      ],
-      "company": "전자신문",
-      "stage": "metadata"
-    },
-    {
-      "id": "522309f6a2a0",
-      "title": "최태원 SK그룹 회장, “기존 사업의 틀 깨고 'AI 플라이휠' 구조 만들어야”",
-      "source": "전자신문",
-      "publishedAt": "2026-11-15T00:48:11.000Z",
-      "url": "https://www.etnews.com/20261115000033",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "EXCLUDE",
-      "reasons": [
-        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
-      ],
-      "score": 2,
-      "importance": 0,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [],
-      "company": "전자신문",
-      "stage": "metadata"
-    },
-    {
-      "id": "5b0fa1033aa9",
-      "title": "롯데하이마트, 삼성 라이온즈 우승 기념 가전 할인",
-      "source": "전자신문",
-      "publishedAt": "2026-11-15T00:07:13.000Z",
-      "url": "https://www.etnews.com/20261115000012",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "EXCLUDE",
-      "reasons": [
-        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
-      ],
-      "score": 2,
-      "importance": 0,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [],
-      "company": "전자신문",
-      "stage": "metadata"
-    },
-    {
-      "id": "5882fbb18651",
-      "title": "박중서 TI코리아 대표 “엣지 AI도 고객 최적화…가격·공급·제품군이 경쟁력”",
-      "source": "전자신문",
-      "publishedAt": "2026-11-15T00:00:00.000Z",
-      "url": "https://www.etnews.com/20261113000108",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRICING·INFRA)"
-      ],
-      "score": 9,
-      "importance": 3,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "PRICING",
-        "INFRA"
-      ],
-      "company": "전자신문",
-      "stage": "metadata"
-    },
-    {
-      "id": "6fa9cd79f82e",
-      "title": "아이서티, AI 영상보안 기술 앞세워 싱가포르 진출 추진…동남아 시장 공략",
-      "source": "전자신문",
-      "publishedAt": "2026-11-15T00:00:00.000Z",
-      "url": "https://www.etnews.com/20261113000004",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 SECURITY_MENTION·PRODUCT_LAUNCH)"
-      ],
-      "score": 7,
-      "importance": 2,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "SECURITY_MENTION",
         "PRODUCT_LAUNCH"
       ],
       "company": "전자신문",
@@ -4651,5 +4600,5 @@
       "fromQueue": "evidence"
     }
   ],
-  "finishedAt": "2026-11-15T17:02:13.900Z"
+  "finishedAt": "2026-11-16T01:55:59.857Z"
 }
