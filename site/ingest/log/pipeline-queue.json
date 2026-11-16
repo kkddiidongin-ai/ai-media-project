@@ -2086,7 +2086,7 @@
         "tier": 1,
         "fetchMode": "rss",
         "discoveredVia": "https://developer.nvidia.com/blog/feed",
-        "fetchedAt": "2026-11-15T17:00:57.101Z"
+        "fetchedAt": "2026-11-16T01:54:49.032Z"
       },
       "addedAt": "2026-11-14",
       "since": "2026-11-11",
@@ -2109,7 +2109,7 @@
         "tier": 1,
         "fetchMode": "rss-paged",
         "discoveredVia": "https://github.blog/changelog/feed/",
-        "fetchedAt": "2026-11-15T17:00:57.101Z"
+        "fetchedAt": "2026-11-16T01:54:49.032Z"
       },
       "addedAt": "2026-11-14",
       "since": "2026-11-11",
@@ -2155,7 +2155,7 @@
         "tier": 1,
         "fetchMode": "rss",
         "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
-        "fetchedAt": "2026-11-15T17:00:57.101Z"
+        "fetchedAt": "2026-11-16T01:54:49.032Z"
       },
       "addedAt": "2026-11-14",
       "since": "2026-11-11",
@@ -2178,7 +2178,7 @@
         "tier": 1,
         "fetchMode": "rss",
         "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
-        "fetchedAt": "2026-11-15T17:00:57.101Z"
+        "fetchedAt": "2026-11-16T01:54:49.032Z"
       },
       "addedAt": "2026-11-14",
       "since": "2026-11-11",
@@ -2254,18 +2254,34 @@
       "attempts": 0,
       "date": "2026-11-15",
       "reason": "이번 실행 원고 작성 배치 소진 — 다음 실행에서 작성"
+    },
+    "46b48e728e81": {
+      "stage": "draft",
+      "item": {
+        "id": "46b48e728e81",
+        "url": "https://blogs.nvidia.com/blog/ai-day-seoul-wrapup/",
+        "canonicalUrl": "https://blogs.nvidia.com/blog/ai-day-seoul-wrapup",
+        "title": "AI Day Seoul Brings Together Korea’s Industry Leaders, Startups and Developer Communities",
+        "excerpt": "Over two days at COEX, more than 2,000 attendees converged for AI Day Seoul, bringing together Korea’s industry leaders, startups and developer communities advancing physical AI and AI agents. At the plenary sessions, Deepu Talla, vice president of robotics and edge AI at NVIDIA, said Korea is “punc",
+        "publishedAt": "2026-11-16T00:00:28.000Z",
+        "sourceId": "nvidia",
+        "sourceName": "NVIDIA Blog",
+        "sourceType": "official",
+        "tier": 1,
+        "fetchMode": "rss-paged",
+        "discoveredVia": "https://blogs.nvidia.com/feed/",
+        "fetchedAt": "2026-11-16T01:54:49.032Z"
+      },
+      "addedAt": "2026-11-16",
+      "since": "2026-11-13",
+      "attempts": 0,
+      "date": "2026-11-16",
+      "reason": "Shadow Mode — 원고를 만들지 않음"
     }
   },
   "meta": {},
-  "retry": {
-    "huggingface": {
-      "since": "2026-11-13",
-      "failedAt": "2026-11-16",
-      "attempts": 1,
-      "lastError": "HTTP 429: https://huggingface.co/blog/feed.xml"
-    }
-  },
-  "updatedAt": "2026-11-15T17:02:13.899Z",
+  "retry": {},
+  "updatedAt": "2026-11-16T01:55:59.855Z",
   "gemini": {
     "day": "2026-11-15",
     "calls": 1,
