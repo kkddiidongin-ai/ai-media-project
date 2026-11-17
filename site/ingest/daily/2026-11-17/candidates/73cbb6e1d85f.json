@@ -1,0 +1,133 @@
+{
+  "id": "73cbb6e1d85f",
+  "date": "2026-11-17",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "if(kakao)26 현장 스케치",
+  "depth": null,
+  "suggestedDepth": null,
+  "depthAssessment": {
+    "sufficiency": "INSUFFICIENT",
+    "distinctFacts": 1,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": true,
+      "contextNeed": false,
+      "distinctFacts": false,
+      "evidenceQuality": false,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "contextNeed",
+      "distinctFacts",
+      "evidenceQuality",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Kakao Tech",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://tech.kakao.com/posts/849",
+      "name": "Kakao Tech",
+      "type": "official",
+      "publishedAt": "2026-11-16T15:00:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "73cbb6e1d85f",
+    "url": "https://tech.kakao.com/posts/849",
+    "canonicalUrl": "https://tech.kakao.com/posts/849",
+    "title": "if(kakao)26 현장 스케치",
+    "excerpt": "지난 10월 13일과 14일, 카카오 AI 캠퍼스에서 if(kakao)26이 열렸습니다. ‘모든 연결에 지능을’이라는 주제 아래, 카카오가 만들어가는 AI 기술과 서비스를 소개하고 개발과 운영 과정에서 쌓은 경험을 나눴습니다. 현장과 온라인으로 함께해주신 모든 분께 감사드립니다. 올해 행사를 준비하며 집중한 것은 기술 세션과 만남이었습니다. 카카오가 도달한 지점과 아직 풀고 있는 문제를 솔직하게 공유하고, 비슷한 고민을 가진 사람들이 서로의 경험을 나눌...",
+    "publishedAt": "2026-11-16T15:00:00.000Z",
+    "sourceId": "kakao-tech",
+    "sourceName": "Kakao Tech",
+    "sourceType": "official",
+    "tier": 2,
+    "fetchMode": "rss",
+    "discoveredVia": "https://tech.kakao.com/feed/",
+    "fetchedAt": "2026-11-17T04:27:25.674Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 137,
+    "grade": "FAIL",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "지난 10월 13일과 14일, 카카오 AI 캠퍼스에서 if(kakao)26이 열렸습니다. ‘모든 연결에 지능을’이라는 주제 아래, 카카오가 만들어가는 AI 기술과 서비스를 소개하고 개발과 운영 과정에서 쌓은 경험을 나눴습니다. 현장과 온라인으로 함께해주신 모든 분께 감사드립니다. 올해 행사를 준비하며 집중한 것은 기술 세션과 만남이었습니다. 카카오가 도달한 지점과 아직 풀고 있는 문제를 솔직하게 공유하고, 비슷한 고민을 가진 사람들이 서로의 경험을 나눌...",
+        "sourceUrl": "https://tech.kakao.com/posts/849",
+        "source": "Kakao Tech",
+        "publishedAt": "2026-11-16T15:00:00.000Z",
+        "checkedAt": "2026-11-17T04:28:32.283Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "if(kakao)26 현장 스케치 - tech.kakao.com • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • 본문 바로가기 메뉴 바로가기",
+        "sourceUrl": "https://tech.kakao.com/posts/849",
+        "source": "Kakao Tech",
+        "publishedAt": "2026-11-16T15:00:00.000Z",
+        "checkedAt": "2026-11-17T04:28:32.283Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "이전 글 잘 만들었다면, 잘 배운 것일까? : 카카오테크 캠퍼스가 고민한 주니어 개발자의 성장",
+        "sourceUrl": "https://tech.kakao.com/posts/849",
+        "source": "Kakao Tech",
+        "publishedAt": "2026-11-16T15:00:00.000Z",
+        "checkedAt": "2026-11-17T04:28:32.283Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 2,
+    "practicalImpact": 0,
+    "koreanRelevance": 3,
+    "novelty": 2,
+    "sourceQuality": 2,
+    "verificationConfidence": 3,
+    "signals": [
+      "KOREA"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 9,
+    "total": 9
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "근거 부족 (원문 OK, 확인 사실 1개) — 발행하지 않음"
+  ],
+  "needsReview": [
+    "insufficient_evidence"
+  ],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}
