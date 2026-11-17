@@ -1,0 +1,222 @@
+{
+  "id": "c1d34165b490",
+  "date": "2026-10-14",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Client telemetry user attribution and configurable capture",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 7,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": false,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "evidenceQuality",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "GitHub",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://github.blog/changelog/2026-10-12-client-telemetry-user-attribution-and-configurable-capture",
+      "name": "GitHub Changelog",
+      "type": "official",
+      "publishedAt": "2026-10-12T22:38:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "c1d34165b490",
+    "url": "https://github.blog/changelog/2026-10-12-client-telemetry-user-attribution-and-configurable-capture",
+    "canonicalUrl": "https://github.blog/changelog/2026-10-12-client-telemetry-user-attribution-and-configurable-capture",
+    "title": "Client telemetry user attribution and configurable capture",
+    "excerpt": "Enterprise administrators can now use telemetry in managed settings to attribute GitHub Copilot activity to a user without collecting their prompts, responses, or tool content. The telemetry.capture.identity setting adds three… The post Client telemetry user attribution and configurable capture appe",
+    "publishedAt": "2026-10-12T22:38:00.000Z",
+    "sourceId": "github-changelog",
+    "sourceName": "GitHub Changelog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://github.blog/changelog/feed/",
+    "fetchedAt": "2026-10-14T00:17:58.345Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 2001,
+    "grade": "LIMITED",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Enterprise administrators can now use telemetry in managed settings to attribute GitHub Copilot activity to a user without collecting their prompts, responses, or tool content. The telemetry.capture.identity setting adds three… The post Client telemetry user attribution and configurable capture appe",
+        "sourceUrl": "https://github.blog/changelog/2026-10-12-client-telemetry-user-attribution-and-configurable-capture",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-12T22:38:00.000Z",
+        "checkedAt": "2026-10-14T00:18:51.888Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Client telemetry user attribution and configurable capture - GitHub Changelog",
+        "sourceUrl": "https://github.blog/changelog/2026-10-12-client-telemetry-user-attribution-and-configurable-capture",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-12T22:38:00.000Z",
+        "checkedAt": "2026-10-14T00:18:51.888Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Enterprise administrators can now use telemetry in managed settings to attribute GitHub Copilot activity to a user without collecting their prompts, responses, or tool content.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-12-client-telemetry-user-attribution-and-configurable-capture",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-12T22:38:00.000Z",
+        "checkedAt": "2026-10-14T00:18:51.888Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "The telemetry.capture.identity setting adds three attributes to OpenTelemetry (OTel) data:",
+        "sourceUrl": "https://github.blog/changelog/2026-10-12-client-telemetry-user-attribution-and-configurable-capture",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-12T22:38:00.000Z",
+        "checkedAt": "2026-10-14T00:18:51.888Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "user.name : The authenticated Copilot account name, currently the GitHub login.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-12-client-telemetry-user-attribution-and-configurable-capture",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-12T22:38:00.000Z",
+        "checkedAt": "2026-10-14T00:18:51.888Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Identity capture is off by default and remains separate from the existing pseudonymous user identifier.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-12-client-telemetry-user-attribution-and-configurable-capture",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-12T22:38:00.000Z",
+        "checkedAt": "2026-10-14T00:18:51.888Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Fine-grained capture controls are available in Copilot CLI, the GitHub Copilot app, and VS Code sessions using Agent Host.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-12-client-telemetry-user-attribution-and-configurable-capture",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-12T22:38:00.000Z",
+        "checkedAt": "2026-10-14T00:18:51.888Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Administrators can also independently control five additional capture classes:",
+        "sourceUrl": "https://github.blog/changelog/2026-10-12-client-telemetry-user-attribution-and-configurable-capture",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-12T22:38:00.000Z",
+        "checkedAt": "2026-10-14T00:18:51.888Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "prompts : User, system, and developer prompts and supported input context.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-12-client-telemetry-user-attribution-and-configurable-capture",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-12T22:38:00.000Z",
+        "checkedAt": "2026-10-14T00:18:51.888Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "The existing captureContent setting remains available as a legacy shorthand for the five content classes, but it never enables identity.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-12-client-telemetry-user-attribution-and-configurable-capture",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-12T22:38:00.000Z",
+        "checkedAt": "2026-10-14T00:18:51.888Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Prompt, tool, and policy capture can include source code, file contents, commands, tool results, and workspace or user-profile paths.",
+        "sourceUrl": "https://github.blog/changelog/2026-10-12-client-telemetry-user-attribution-and-configurable-capture",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-12T22:38:00.000Z",
+        "checkedAt": "2026-10-14T00:18:51.888Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Search and filter for budgets now available",
+        "sourceUrl": "https://github.blog/changelog/2026-10-12-client-telemetry-user-attribution-and-configurable-capture",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-12T22:38:00.000Z",
+        "checkedAt": "2026-10-14T00:18:51.888Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "GitHub Copilot weekly releases — October 5",
+        "sourceUrl": "https://github.blog/changelog/2026-10-12-client-telemetry-user-attribution-and-configurable-capture",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-10-12T22:38:00.000Z",
+        "checkedAt": "2026-10-14T00:18:51.888Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PRODUCT_LAUNCH"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 PRODUCT_LAUNCH (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}
