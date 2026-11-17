@@ -1,0 +1,221 @@
+{
+  "id": "cc69239e629b",
+  "date": "2026-11-18",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Get answers from tables with tabular search in Amazon Bedrock Managed Knowledge Base",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/get-answers-from-tables-with-tabular-search-in-amazon-bedrock-managed-knowledge-base/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-11-16T16:12:16.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "cc69239e629b",
+    "url": "https://aws.amazon.com/blogs/machine-learning/get-answers-from-tables-with-tabular-search-in-amazon-bedrock-managed-knowledge-base/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/get-answers-from-tables-with-tabular-search-in-amazon-bedrock-managed-knowledge-base",
+    "title": "Get answers from tables with tabular search in Amazon Bedrock Managed Knowledge Base",
+    "excerpt": "Amazon Bedrock Managed Knowledge Base now supports tabular search, so agentic retrieval can answer questions over CSV, XLSX, and XLS files. It looks up values and runs calculations across every relevant row, then combines the results with facts from related documents to answer multi-step analytical ",
+    "publishedAt": "2026-11-16T16:12:16.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-11-17T19:07:36.180Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 17915,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Amazon Bedrock Managed Knowledge Base now supports tabular search, so agentic retrieval can answer questions over CSV, XLSX, and XLS files. It looks up values and runs calculations across every relevant row, then combines the results with facts from related documents to answer multi-step analytical ",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/get-answers-from-tables-with-tabular-search-in-amazon-bedrock-managed-knowledge-base/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-16T16:12:16.000Z",
+        "checkedAt": "2026-11-17T19:08:58.301Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Get answers from tables with tabular search in Amazon Bedrock Managed Knowledge Base | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/get-answers-from-tables-with-tabular-search-in-amazon-bedrock-managed-knowledge-base/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-16T16:12:16.000Z",
+        "checkedAt": "2026-11-17T19:08:58.301Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Get answers from tables with tabular search in Amazon Bedrock Managed Knowledge Base",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/get-answers-from-tables-with-tabular-search-in-amazon-bedrock-managed-knowledge-base/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-16T16:12:16.000Z",
+        "checkedAt": "2026-11-17T19:08:58.301Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Amazon Bedrock Managed Knowledge Base now supports tabular search, so you can get answers from tables through agentic retrieval.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/get-answers-from-tables-with-tabular-search-in-amazon-bedrock-managed-knowledge-base/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-16T16:12:16.000Z",
+        "checkedAt": "2026-11-17T19:08:58.301Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Tabular search works the same way whichever connector brings the files into the knowledge base, including Amazon S3, Microsoft SharePoint, Atlassian Confluence, and others.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/get-answers-from-tables-with-tabular-search-in-amazon-bedrock-managed-knowledge-base/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-16T16:12:16.000Z",
+        "checkedAt": "2026-11-17T19:08:58.301Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "In this solution, an Amazon Bedrock Managed Knowledge Base stores your CSV and Excel files together with related documents, such as PDF and Word files.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/get-answers-from-tables-with-tabular-search-in-amazon-bedrock-managed-knowledge-base/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-16T16:12:16.000Z",
+        "checkedAt": "2026-11-17T19:08:58.301Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "In Figure 1, an Amazon S3 data source syncs these files into the knowledge base, which keeps embeddings, text, metadata, and the original files.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/get-answers-from-tables-with-tabular-search-in-amazon-bedrock-managed-knowledge-base/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-16T16:12:16.000Z",
+        "checkedAt": "2026-11-17T19:08:58.301Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Figure 1: Table files and documents in an Amazon Bedrock Managed Knowledge Base, with tabular search inside agentic retrieval.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/get-answers-from-tables-with-tabular-search-in-amazon-bedrock-managed-knowledge-base/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-16T16:12:16.000Z",
+        "checkedAt": "2026-11-17T19:08:58.301Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Permissions to create AWS Identity and Access Management (IAM) roles, S3 buckets, and Amazon Bedrock knowledge bases.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/get-answers-from-tables-with-tabular-search-in-amazon-bedrock-managed-knowledge-base/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-16T16:12:16.000Z",
+        "checkedAt": "2026-11-17T19:08:58.301Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Amazon Bedrock in an AWS Region where tabular search is available.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/get-answers-from-tables-with-tabular-search-in-amazon-bedrock-managed-knowledge-base/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-16T16:12:16.000Z",
+        "checkedAt": "2026-11-17T19:08:58.301Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "The finance team members need to know “Which departments must write variance commentary?” With tabular search in Amazon Bedrock Managed Knowledge Base, you can answer that question with one agentic retrieval request that uses the workbook, the policy, and the memo together.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/get-answers-from-tables-with-tabular-search-in-amazon-bedrock-managed-knowledge-base/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-16T16:12:16.000Z",
+        "checkedAt": "2026-11-17T19:08:58.301Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "To get started, see Build a managed knowledge base and agentic retrieval in the Amazon Bedrock User Guide, and AgenticRetrieveStream in the Amazon Bedrock API Reference.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/get-answers-from-tables-with-tabular-search-in-amazon-bedrock-managed-knowledge-base/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-16T16:12:16.000Z",
+        "checkedAt": "2026-11-17T19:08:58.301Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "To learn more, read Build enterprise search for agents with Amazon Bedrock Managed Knowledge Base on the AWS Artificial Intelligence Blog.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/get-answers-from-tables-with-tabular-search-in-amazon-bedrock-managed-knowledge-base/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-16T16:12:16.000Z",
+        "checkedAt": "2026-11-17T19:08:58.301Z"
+      }
+    ],
+    "pageDate": "2026-11-16T16:12:16.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "API_PLATFORM"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 API_PLATFORM (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

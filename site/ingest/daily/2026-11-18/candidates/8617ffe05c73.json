@@ -1,0 +1,221 @@
+{
+  "id": "8617ffe05c73",
+  "date": "2026-11-18",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "NVIDIA DGX Spark Developer Kit Turns a Desk Into a Supercomputing Lab",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 12,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "NVIDIA",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://blogs.nvidia.com/blog/dgx-spark-hpc-developer-kit-sc26/",
+      "name": "NVIDIA Blog",
+      "type": "official",
+      "publishedAt": "2026-11-16T23:00:05.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "8617ffe05c73",
+    "url": "https://blogs.nvidia.com/blog/dgx-spark-hpc-developer-kit-sc26/",
+    "canonicalUrl": "https://blogs.nvidia.com/blog/dgx-spark-hpc-developer-kit-sc26",
+    "title": "NVIDIA DGX Spark Developer Kit Turns a Desk Into a Supercomputing Lab",
+    "excerpt": "At SC26, an annual supercomputing conference taking place this week in Chicago, NVIDIA is introducing the DGX Spark HPC Developer Kit for researchers, academics and developers. The kit is a four-node cluster of NVIDIA DGX Spark systems, each connected directly to its two neighbors in a ring, with an",
+    "publishedAt": "2026-11-16T23:00:05.000Z",
+    "sourceId": "nvidia",
+    "sourceName": "NVIDIA Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://blogs.nvidia.com/feed/",
+    "fetchedAt": "2026-11-17T19:07:36.180Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 4437,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "At SC26, an annual supercomputing conference taking place this week in Chicago, NVIDIA is introducing the DGX Spark HPC Developer Kit for researchers, academics and developers. The kit is a four-node cluster of NVIDIA DGX Spark systems, each connected directly to its two neighbors in a ring, with an",
+        "sourceUrl": "https://blogs.nvidia.com/blog/dgx-spark-hpc-developer-kit-sc26/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T23:00:05.000Z",
+        "checkedAt": "2026-11-17T19:08:54.946Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "NVIDIA DGX Spark Developer Kit Turns a Desk Into a Supercomputing Lab | NVIDIA Blog",
+        "sourceUrl": "https://blogs.nvidia.com/blog/dgx-spark-hpc-developer-kit-sc26/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T23:00:05.000Z",
+        "checkedAt": "2026-11-17T19:08:54.946Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "At SC26, an annual supercomputing conference taking place this week in Chicago, NVIDIA is introducing the DGX Spark HPC Developer Kit for researchers, academics and developers.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/dgx-spark-hpc-developer-kit-sc26/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T23:00:05.000Z",
+        "checkedAt": "2026-11-17T19:08:54.946Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "The kit is a four-node cluster of NVIDIA DGX Spark systems , each connected directly to its two neighbors in a ring, with an NVIDIA HPC SDK installation playbook coming soon.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/dgx-spark-hpc-developer-kit-sc26/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T23:00:05.000Z",
+        "checkedAt": "2026-11-17T19:08:54.946Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "The DGX Spark Developer Kit changes how researchers work.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/dgx-spark-hpc-developer-kit-sc26/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T23:00:05.000Z",
+        "checkedAt": "2026-11-17T19:08:54.946Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "With NVFP4, researchers can deploy models with up to 700B parameters locally across the four DGX Spark clusters, such as DeepSeek V4.1.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/dgx-spark-hpc-developer-kit-sc26/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T23:00:05.000Z",
+        "checkedAt": "2026-11-17T19:08:54.946Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "The broader DGX Spark community has validated GROMACS for molecular dynamics, OpenFOAM for fluid dynamics, WRF for weather modeling and NVIDIA NIM microservices such as OpenFold3 and Boltz-2 for predicting biomolecular structures.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/dgx-spark-hpc-developer-kit-sc26/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T23:00:05.000Z",
+        "checkedAt": "2026-11-17T19:08:54.946Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Running on DGX Spark, new open dataset and post-training recipes for Nemotron 3.5 Super VL help researchers adapt the model for life sciences and chemistry, enabling secure scientific workflows on infrastructure organizations control.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/dgx-spark-hpc-developer-kit-sc26/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T23:00:05.000Z",
+        "checkedAt": "2026-11-17T19:08:54.946Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Kvantify is using NVIDIA cuQuantum, and reports running tensor-network simulations of quantum-chemistry circuits with up to 70 qubits and 975 gates on a single DGX Spark, benchmarking circuits generated for penicillin ground-state energy calculations.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/dgx-spark-hpc-developer-kit-sc26/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T23:00:05.000Z",
+        "checkedAt": "2026-11-17T19:08:54.946Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "CYRAN AI , an IIT Delhi spin-out, uses DGX Spark and its PixelFlux library to accelerate JPEG 2000 decoding for large satellite images, supporting local geospatial analysis.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/dgx-spark-hpc-developer-kit-sc26/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T23:00:05.000Z",
+        "checkedAt": "2026-11-17T19:08:54.946Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "OpenFold shows how researchers can fine-tune OpenFold3 on NVIDIA DGX Spark to improve protein-ligand structure predictions for drug discovery.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/dgx-spark-hpc-developer-kit-sc26/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T23:00:05.000Z",
+        "checkedAt": "2026-11-17T19:08:54.946Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "The Rubin Lab at IGI at University of California, Berkeley is using a DGX Spark and NVIDIA Evo 2 model to predict bacterial traits directly from genome sequences by comparing embeddings from genomic and protein language models against the classical baselines.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/dgx-spark-hpc-developer-kit-sc26/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T23:00:05.000Z",
+        "checkedAt": "2026-11-17T19:08:54.946Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "The developer kit is on display at SC26 and available for sale.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/dgx-spark-hpc-developer-kit-sc26/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T23:00:05.000Z",
+        "checkedAt": "2026-11-17T19:08:54.946Z"
+      }
+    ],
+    "pageDate": "2026-11-16T23:00:05.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PRODUCT_LAUNCH"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 PRODUCT_LAUNCH (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

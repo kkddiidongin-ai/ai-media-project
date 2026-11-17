@@ -1,0 +1,136 @@
+{
+  "id": "549a77347d5e",
+  "date": "2026-11-18",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Introducing GPT-6.2 Astra and Sol",
+  "depth": null,
+  "suggestedDepth": null,
+  "depthAssessment": {
+    "sufficiency": "INSUFFICIENT",
+    "distinctFacts": 0,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": true,
+      "contextNeed": false,
+      "distinctFacts": false,
+      "evidenceQuality": false,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "contextNeed",
+      "distinctFacts",
+      "evidenceQuality",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "OpenAI",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+      "name": "OpenAI",
+      "type": "official",
+      "publishedAt": "2026-11-17T17:45:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "549a77347d5e",
+    "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+    "canonicalUrl": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+    "title": "Introducing GPT-6.2 Astra and Sol",
+    "excerpt": "Introducing GPT‑6.2 Astra and Sol, with better professional outputs, coding, computer use, and efficiency at lower cost across ChatGPT Work, Codex, and the API.",
+    "publishedAt": "2026-11-17T17:45:00.000Z",
+    "sourceId": "openai",
+    "sourceName": "OpenAI",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://openai.com/news/rss.xml",
+    "fetchedAt": "2026-11-17T19:07:36.180Z"
+  },
+  "evidence": {
+    "status": "HTTP_403",
+    "chars": 0,
+    "grade": "FAIL",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Introducing GPT‑6.2 Astra and Sol, with better professional outputs, coding, computer use, and efficiency at lower cost across ChatGPT Work, Codex, and the API.",
+        "sourceUrl": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+        "source": "OpenAI",
+        "publishedAt": "2026-11-17T17:45:00.000Z",
+        "checkedAt": "2026-11-17T19:08:50.160Z"
+      },
+      {
+        "id": "A1",
+        "kind": "alternate",
+        "text": "Use GPT-6.2 Astra for demanding reasoning and coding tasks, or GPT-6.2 Sol for everyday coding and agent workflows. Both models support the Responses API and Chat Completions. Tool calling requires the Responses API.",
+        "sourceUrl": "https://platform.openai.com/docs/changelog",
+        "source": "OpenAI API Changelog",
+        "publishedAt": null,
+        "checkedAt": "2026-11-17T19:08:50.189Z"
+      }
+    ],
+    "pageDate": null,
+    "alternate": {
+      "tried": [
+        "https://platform.openai.com/docs/changelog"
+      ],
+      "matched": 1,
+      "reason": ""
+    }
+  },
+  "score": {
+    "importance": 3,
+    "practicalImpact": 2,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 2,
+    "signals": [
+      "MODEL",
+      "PRODUCT_LAUNCH",
+      "API_PLATFORM",
+      "CONSUMER"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 10,
+    "total": 10
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "근거 부족 (원문 HTTP_403, 확인 사실 0개) — 발행하지 않음"
+  ],
+  "needsReview": [
+    "source_blocked",
+    "alternate_evidence",
+    "insufficient_evidence"
+  ],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

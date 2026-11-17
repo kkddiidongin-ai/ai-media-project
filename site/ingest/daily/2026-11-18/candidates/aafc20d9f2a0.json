@@ -1,0 +1,221 @@
+{
+  "id": "aafc20d9f2a0",
+  "date": "2026-11-18",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Lambda Boosts AI Factory Resiliency and Efficiency With NVIDIA Photonics",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 12,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "NVIDIA",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://blogs.nvidia.com/blog/lambda-photonics/",
+      "name": "NVIDIA Blog",
+      "type": "official",
+      "publishedAt": "2026-11-16T16:00:51.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "aafc20d9f2a0",
+    "url": "https://blogs.nvidia.com/blog/lambda-photonics/",
+    "canonicalUrl": "https://blogs.nvidia.com/blog/lambda-photonics",
+    "title": "Lambda Boosts AI Factory Resiliency and Efficiency With NVIDIA Photonics",
+    "excerpt": "To train an AI model, thousands of GPUs have to work together, requiring a network that’s fast, efficient and resilient. Lambda is tackling the network piece of the puzzle with NVIDIA Photonics co-packaged optics (CPO) switches. The cloud provider is using the switches to connect NVIDIA GB300 NVL72 ",
+    "publishedAt": "2026-11-16T16:00:51.000Z",
+    "sourceId": "nvidia",
+    "sourceName": "NVIDIA Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://blogs.nvidia.com/feed/",
+    "fetchedAt": "2026-11-17T19:07:36.180Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 3013,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "To train an AI model, thousands of GPUs have to work together, requiring a network that’s fast, efficient and resilient. Lambda is tackling the network piece of the puzzle with NVIDIA Photonics co-packaged optics (CPO) switches. The cloud provider is using the switches to connect NVIDIA GB300 NVL72 ",
+        "sourceUrl": "https://blogs.nvidia.com/blog/lambda-photonics/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T16:00:51.000Z",
+        "checkedAt": "2026-11-17T19:09:02.443Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Lambda Boosts AI Factory Resiliency and Efficiency With NVIDIA Photonics | NVIDIA Blog",
+        "sourceUrl": "https://blogs.nvidia.com/blog/lambda-photonics/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T16:00:51.000Z",
+        "checkedAt": "2026-11-17T19:09:02.443Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Lambda is tackling the network piece of the puzzle with NVIDIA Photonics co-packaged optics (CPO) switches.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/lambda-photonics/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T16:00:51.000Z",
+        "checkedAt": "2026-11-17T19:09:02.443Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "The cloud provider is using the switches to connect NVIDIA GB300 NVL72 racks with more than 10,000 GPUs, delivering lower power, higher resiliency and longer mean time between interruptions (MTBI) to an AI factory at scale.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/lambda-photonics/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T16:00:51.000Z",
+        "checkedAt": "2026-11-17T19:09:02.443Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "“Networking has to keep pace with the demands of increasingly large AI clusters,” said Dave Ward, president of cloud services at Lambda.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/lambda-photonics/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T16:00:51.000Z",
+        "checkedAt": "2026-11-17T19:09:02.443Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "In the company’s tests using the switches, network latency — the time needed for moving data — dropped by about 4% at rack scale and by up to about 10% at pod scale.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/lambda-photonics/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T16:00:51.000Z",
+        "checkedAt": "2026-11-17T19:09:02.443Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Delivering Power Efficiency and Resiliency at Scale",
+        "sourceUrl": "https://blogs.nvidia.com/blog/lambda-photonics/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T16:00:51.000Z",
+        "checkedAt": "2026-11-17T19:09:02.443Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Improving power efficiency and resiliency matters because the network sits at the center of AI factory productivity.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/lambda-photonics/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T16:00:51.000Z",
+        "checkedAt": "2026-11-17T19:09:02.443Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "NVIDIA Photonics addresses both power efficiency and resiliency.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/lambda-photonics/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T16:00:51.000Z",
+        "checkedAt": "2026-11-17T19:09:02.443Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "By replacing pluggable transceivers with co-packaged optical engines on the switch package, it delivers up to 5x better power efficiency and up to 15x higher reliability than conventional pluggable optics.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/lambda-photonics/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T16:00:51.000Z",
+        "checkedAt": "2026-11-17T19:09:02.443Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "It also uses 4x fewer lasers, which means fewer components that can fail.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/lambda-photonics/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T16:00:51.000Z",
+        "checkedAt": "2026-11-17T19:09:02.443Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Lambda’s deployment uses NVIDIA Photonics switches, each with 144 ports running at 800Gb/s.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/lambda-photonics/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T16:00:51.000Z",
+        "checkedAt": "2026-11-17T19:09:02.443Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Explore NVIDIA Photonics and read Lambda’s deployment announcement .",
+        "sourceUrl": "https://blogs.nvidia.com/blog/lambda-photonics/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T16:00:51.000Z",
+        "checkedAt": "2026-11-17T19:09:02.443Z"
+      }
+    ],
+    "pageDate": "2026-11-16T16:00:51.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "INFRA"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 INFRA (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

@@ -1,0 +1,221 @@
+{
+  "id": "85ba9cf467fa",
+  "date": "2026-11-18",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "AWS Weekly Roundup: AWS Nitro Sandboxes, AWS Emulator, and more (November 16, 2026)",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-nitro-sandboxes-aws-emulator-and-more-november-16-2026/",
+      "name": "AWS News Blog",
+      "type": "official",
+      "publishedAt": "2026-11-16T17:55:46.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "85ba9cf467fa",
+    "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-nitro-sandboxes-aws-emulator-and-more-november-16-2026/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-nitro-sandboxes-aws-emulator-and-more-november-16-2026",
+    "title": "AWS Weekly Roundup: AWS Nitro Sandboxes, AWS Emulator, and more (November 16, 2026)",
+    "excerpt": "A second delivery of the same message can reveal more about an application than its happy-path demo. I like tools that make those cases easier to investigate while a change is still small. Last week’s launch of AWS Emulator brings part of that work onto your own machine: developers and coding agents",
+    "publishedAt": "2026-11-16T17:55:46.000Z",
+    "sourceId": "aws-news",
+    "sourceName": "AWS News Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/aws/feed/",
+    "fetchedAt": "2026-11-17T19:07:36.180Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 6540,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "A second delivery of the same message can reveal more about an application than its happy-path demo. I like tools that make those cases easier to investigate while a change is still small. Last week’s launch of AWS Emulator brings part of that work onto your own machine: developers and coding agents",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-nitro-sandboxes-aws-emulator-and-more-november-16-2026/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-11-16T17:55:46.000Z",
+        "checkedAt": "2026-11-17T19:09:02.237Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "AWS Weekly Roundup: AWS Nitro Sandboxes, AWS Emulator, and more (November 16, 2026) | AWS News Blog",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-nitro-sandboxes-aws-emulator-and-more-november-16-2026/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-11-16T17:55:46.000Z",
+        "checkedAt": "2026-11-17T19:09:02.237Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "AWS Weekly Roundup: AWS Nitro Sandboxes, AWS Emulator, and more (November 16, 2026)",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-nitro-sandboxes-aws-emulator-and-more-november-16-2026/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-11-16T17:55:46.000Z",
+        "checkedAt": "2026-11-17T19:09:02.237Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Last week’s launch of AWS Emulator brings part of that work onto your own machine: developers and coding agents can exercise AWS API interactions, inspect results, and try again without provisioning cloud resources for every attempt.",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-nitro-sandboxes-aws-emulator-and-more-november-16-2026/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-11-16T17:55:46.000Z",
+        "checkedAt": "2026-11-17T19:09:02.237Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Test your applications against AWS locally with AWS Emulator introduces a generally available local environment for AWS API interactions.",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-nitro-sandboxes-aws-emulator-and-more-november-16-2026/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-11-16T17:55:46.000Z",
+        "checkedAt": "2026-11-17T19:09:02.237Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "AWS Nitro Sandboxes bring hardware isolation to pods, tasks, and VMs .",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-nitro-sandboxes-aws-emulator-and-more-november-16-2026/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-11-16T17:55:46.000Z",
+        "checkedAt": "2026-11-17T19:09:02.237Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Nitro Sandboxes have no additional charge on supported instances; EC2 and applicable EKS Auto Mode or ECS Managed Instances fees still apply.",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-nitro-sandboxes-aws-emulator-and-more-november-16-2026/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-11-16T17:55:46.000Z",
+        "checkedAt": "2026-11-17T19:09:02.237Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Claude Fable 5.2 is available on AWS – You can access the model through Amazon Bedrock or Claude Platform on AWS.",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-nitro-sandboxes-aws-emulator-and-more-november-16-2026/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-11-16T17:55:46.000Z",
+        "checkedAt": "2026-11-17T19:09:02.237Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "It is available in commercial Regions, AWS GovCloud (US), and the AWS European Sovereign Cloud.",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-nitro-sandboxes-aws-emulator-and-more-november-16-2026/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-11-16T17:55:46.000Z",
+        "checkedAt": "2026-11-17T19:09:02.237Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Amazon OpenSearch Service adds managed cross-Region disaster recovery – You can now pair Amazon OpenSearch Service domains running version 3.7 or later in two Regions within one account.",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-nitro-sandboxes-aws-emulator-and-more-november-16-2026/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-11-16T17:55:46.000Z",
+        "checkedAt": "2026-11-17T19:09:02.237Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "AWS specifies recovery objectives under one minute for data loss and under 20 minutes for recovery time.",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-nitro-sandboxes-aws-emulator-and-more-november-16-2026/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-11-16T17:55:46.000Z",
+        "checkedAt": "2026-11-17T19:09:02.237Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "How Zillow runs 100 million daily notifications on AWS Step Functions – Zillow describes reusable content modules and configuration-driven AWS Step Functions Express Workflows for more than 100 million daily notifications.",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-nitro-sandboxes-aws-emulator-and-more-november-16-2026/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-11-16T17:55:46.000Z",
+        "checkedAt": "2026-11-17T19:09:02.237Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "AWS re:Invent – Join the community in Las Vegas from November 30 to December 4.",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-nitro-sandboxes-aws-emulator-and-more-november-16-2026/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-11-16T17:55:46.000Z",
+        "checkedAt": "2026-11-17T19:09:02.237Z"
+      }
+    ],
+    "pageDate": "2026-11-16T17:55:46.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PRODUCT_LAUNCH"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 PRODUCT_LAUNCH (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}
