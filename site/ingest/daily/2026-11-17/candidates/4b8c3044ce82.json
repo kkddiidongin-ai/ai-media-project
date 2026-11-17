@@ -1,0 +1,222 @@
+{
+  "id": "4b8c3044ce82",
+  "date": "2026-11-17",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Control where GitHub Copilot customizations come from",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 10,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": false,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "evidenceQuality",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "GitHub",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://github.blog/changelog/2026-11-16-control-where-github-copilot-customizations-come-from",
+      "name": "GitHub Changelog",
+      "type": "official",
+      "publishedAt": "2026-11-16T19:48:33.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "4b8c3044ce82",
+    "url": "https://github.blog/changelog/2026-11-16-control-where-github-copilot-customizations-come-from",
+    "canonicalUrl": "https://github.blog/changelog/2026-11-16-control-where-github-copilot-customizations-come-from",
+    "title": "Control where GitHub Copilot customizations come from",
+    "excerpt": "As an enterprise administrator, you can now require selected GitHub Copilot customizations to come from plugins or managed settings, rather than standalone user or project configuration. Combined with marketplace restrictions,… The post Control where GitHub Copilot customizations come from appeared ",
+    "publishedAt": "2026-11-16T19:48:33.000Z",
+    "sourceId": "github-changelog",
+    "sourceName": "GitHub Changelog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://github.blog/changelog/feed/",
+    "fetchedAt": "2026-11-17T04:27:25.674Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 1833,
+    "grade": "LIMITED",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "As an enterprise administrator, you can now require selected GitHub Copilot customizations to come from plugins or managed settings, rather than standalone user or project configuration. Combined with marketplace restrictions,… The post Control where GitHub Copilot customizations come from appeared ",
+        "sourceUrl": "https://github.blog/changelog/2026-11-16-control-where-github-copilot-customizations-come-from",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-16T19:48:33.000Z",
+        "checkedAt": "2026-11-17T04:28:34.196Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Control where GitHub Copilot customizations come from - GitHub Changelog",
+        "sourceUrl": "https://github.blog/changelog/2026-11-16-control-where-github-copilot-customizations-come-from",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-16T19:48:33.000Z",
+        "checkedAt": "2026-11-17T04:28:34.196Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "As an enterprise administrator, you can now require selected GitHub Copilot customizations to come from plugins or managed settings, rather than standalone user or project configuration.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-16-control-where-github-copilot-customizations-come-from",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-16T19:48:33.000Z",
+        "checkedAt": "2026-11-17T04:28:34.196Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Choose which customizations require plugins",
+        "sourceUrl": "https://github.blog/changelog/2026-11-16-control-where-github-copilot-customizations-come-from",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-16T19:48:33.000Z",
+        "checkedAt": "2026-11-17T04:28:34.196Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "The strictPluginOnlyCustomization managed setting blocks standalone customizations from user and project sources.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-16-control-where-github-copilot-customizations-come-from",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-16T19:48:33.000Z",
+        "checkedAt": "2026-11-17T04:28:34.196Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "You can apply the restriction to all five supported categories or select individual ones: skills, custom agents, hooks, MCP servers, and executable Copilot extensions.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-16-control-where-github-copilot-customizations-come-from",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-16T19:48:33.000Z",
+        "checkedAt": "2026-11-17T04:28:34.196Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Enterprise administrators can configure these controls on GitHub Enterprise Cloud for members with Copilot Business or Copilot Enterprise licenses issued by the enterprise or one of its organizations.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-16-control-where-github-copilot-customizations-come-from",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-16T19:48:33.000Z",
+        "checkedAt": "2026-11-17T04:28:34.196Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "GitHub Copilot weekly releases — November 9",
+        "sourceUrl": "https://github.blog/changelog/2026-11-16-control-where-github-copilot-customizations-come-from",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-16T19:48:33.000Z",
+        "checkedAt": "2026-11-17T04:28:34.196Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "GitHub Copilot models deprecated on November 16, 2026",
+        "sourceUrl": "https://github.blog/changelog/2026-11-16-control-where-github-copilot-customizations-come-from",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-16T19:48:33.000Z",
+        "checkedAt": "2026-11-17T04:28:34.196Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "VS Code retires the Local harness in February 2027",
+        "sourceUrl": "https://github.blog/changelog/2026-11-16-control-where-github-copilot-customizations-come-from",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-16T19:48:33.000Z",
+        "checkedAt": "2026-11-17T04:28:34.196Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Upcoming deprecation of selected GitHub Copilot models in December",
+        "sourceUrl": "https://github.blog/changelog/2026-11-16-control-where-github-copilot-customizations-come-from",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-16T19:48:33.000Z",
+        "checkedAt": "2026-11-17T04:28:34.196Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "GitHub Enterprise Server support in the GitHub Copilot app",
+        "sourceUrl": "https://github.blog/changelog/2026-11-16-control-where-github-copilot-customizations-come-from",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-16T19:48:33.000Z",
+        "checkedAt": "2026-11-17T04:28:34.196Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "GitHub App support for Enterprise Copilot seat management",
+        "sourceUrl": "https://github.blog/changelog/2026-11-16-control-where-github-copilot-customizations-come-from",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-16T19:48:33.000Z",
+        "checkedAt": "2026-11-17T04:28:34.196Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PRODUCT_LAUNCH"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 PRODUCT_LAUNCH (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}
