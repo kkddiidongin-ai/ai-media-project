@@ -1,0 +1,221 @@
+{
+  "id": "6cab091c059a",
+  "date": "2026-11-18",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "NVIDIA Announces Rubin HPC — A New GPU to Accelerate Agents for Science, Engineering and Analytics",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 12,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "NVIDIA",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://blogs.nvidia.com/blog/rubin-hpc/",
+      "name": "NVIDIA Blog",
+      "type": "official",
+      "publishedAt": "2026-11-16T16:00:01.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "6cab091c059a",
+    "url": "https://blogs.nvidia.com/blog/rubin-hpc/",
+    "canonicalUrl": "https://blogs.nvidia.com/blog/rubin-hpc",
+    "title": "NVIDIA Announces Rubin HPC — A New GPU to Accelerate Agents for Science, Engineering and Analytics",
+    "excerpt": "Announced today at SC26, NVIDIA Rubin HPC is a new GPU in the NVIDIA Vera Rubin platform designed to accelerate simulation and data processing for science, engineering and analytics workflows. As agents help scientists and engineers explore more candidate materials, molecules and designs, they rely ",
+    "publishedAt": "2026-11-16T16:00:01.000Z",
+    "sourceId": "nvidia",
+    "sourceName": "NVIDIA Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://blogs.nvidia.com/feed/",
+    "fetchedAt": "2026-11-18T03:39:46.412Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 3015,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Announced today at SC26, NVIDIA Rubin HPC is a new GPU in the NVIDIA Vera Rubin platform designed to accelerate simulation and data processing for science, engineering and analytics workflows. As agents help scientists and engineers explore more candidate materials, molecules and designs, they rely ",
+        "sourceUrl": "https://blogs.nvidia.com/blog/rubin-hpc/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T16:00:01.000Z",
+        "checkedAt": "2026-11-18T03:41:08.139Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "NVIDIA Announces Rubin HPC — A New GPU to Accelerate Agents for Science, Engineering and Analytics",
+        "sourceUrl": "https://blogs.nvidia.com/blog/rubin-hpc/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T16:00:01.000Z",
+        "checkedAt": "2026-11-18T03:41:08.139Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Announced today at SC26, NVIDIA Rubin HPC is a new GPU in the NVIDIA Vera Rubin platform designed to accelerate simulation and data processing for science, engineering and analytics workflows.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/rubin-hpc/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T16:00:01.000Z",
+        "checkedAt": "2026-11-18T03:41:08.139Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Rubin HPC will accelerate those simulations, shortening the path from exploration to scientific discovery and industrial design.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/rubin-hpc/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T16:00:01.000Z",
+        "checkedAt": "2026-11-18T03:41:08.139Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "The Rubin HPC GPU features a record number of CUDA cores — more than 50,000 on a single GPU — as well as a sparse data acceleration capability that keeps those cores fed with data, and accelerates GPU-to-GPU connectivity with seventh-generation NVIDIA NVLink interconnect techn…",
+        "sourceUrl": "https://blogs.nvidia.com/blog/rubin-hpc/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T16:00:01.000Z",
+        "checkedAt": "2026-11-18T03:41:08.139Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "“For agents tackling science and engineering, faster simulation means faster discovery,” said Ian Buck , vice president of hyperscale and high-performance computing at NVIDIA.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/rubin-hpc/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T16:00:01.000Z",
+        "checkedAt": "2026-11-18T03:41:08.139Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "“Rubin HPC accelerates the simulations agents use to test ideas and guide their next steps, helping scientists and engineers explore more possibilities and bring breakthroughs closer.”",
+        "sourceUrl": "https://blogs.nvidia.com/blog/rubin-hpc/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T16:00:01.000Z",
+        "checkedAt": "2026-11-18T03:41:08.139Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "To help address the challenge, Rubin HPC will offer a balanced design, scaling data movement and compute together rather than increasing compute alone.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/rubin-hpc/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T16:00:01.000Z",
+        "checkedAt": "2026-11-18T03:41:08.139Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "These patterns are prevalent across data analytics, science and engineering workloads, which is why a purpose-built GPU delivering the broadest acceleration can help unlock cross-industry breakthroughs.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/rubin-hpc/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T16:00:01.000Z",
+        "checkedAt": "2026-11-18T03:41:08.139Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "NVIDIA CUDA-X libraries offer a growing set of optimized implementations of complex algorithms for agents to use, including those most relevant to simulation and analytics.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/rubin-hpc/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T16:00:01.000Z",
+        "checkedAt": "2026-11-18T03:41:08.139Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Used together with Rubin HPC, the libraries can give agents the fastest glide path to reasoning outcomes.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/rubin-hpc/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T16:00:01.000Z",
+        "checkedAt": "2026-11-18T03:41:08.139Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Rubin HPC is expected to be available in 2028.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/rubin-hpc/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T16:00:01.000Z",
+        "checkedAt": "2026-11-18T03:41:08.139Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "NVIDIA CUDA-X Libraries Give Agents the Tools to Accelerate Scientific Discovery",
+        "sourceUrl": "https://blogs.nvidia.com/blog/rubin-hpc/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-16T16:00:01.000Z",
+        "checkedAt": "2026-11-18T03:41:08.139Z"
+      }
+    ],
+    "pageDate": "2026-11-16T16:00:01.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "INFRA"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 INFRA (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}
