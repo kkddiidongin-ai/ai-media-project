@@ -1,0 +1,234 @@
+{
+  "id": "0f81d901dab5",
+  "date": "2026-11-19",
+  "proposedSlug": "reason-over-time-series-data-opentslm-amazon",
+  "title": null,
+  "sourceTitle": "Reason over time-series data with OpenTSLM on Amazon SageMaker JumpStart",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 10,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": true,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/reason-over-time-series-data-with-opentslm-on-amazon-sagemaker-jumpstart/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-11-17T18:06:44.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "0f81d901dab5",
+    "url": "https://aws.amazon.com/blogs/machine-learning/reason-over-time-series-data-with-opentslm-on-amazon-sagemaker-jumpstart/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/reason-over-time-series-data-with-opentslm-on-amazon-sagemaker-jumpstart",
+    "title": "Reason over time-series data with OpenTSLM on Amazon SageMaker JumpStart",
+    "excerpt": "OpenTSLM, an open source family of time-series language models, is now available in Amazon SageMaker JumpStart. See how Nexthink and Aionic Labs apply it to proactive IT support, then deploy OpenTSLM to a real-time endpoint and fine-tune it on your own data with TimeNet and a SageMaker training job.",
+    "publishedAt": "2026-11-17T18:06:44.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-11-18T18:49:34.466Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 19877,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "OpenTSLM, an open source family of time-series language models, is now available in Amazon SageMaker JumpStart. See how Nexthink and Aionic Labs apply it to proactive IT support, then deploy OpenTSLM to a real-time endpoint and fine-tune it on your own data with TimeNet and a SageMaker training job.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/reason-over-time-series-data-with-opentslm-on-amazon-sagemaker-jumpstart/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-17T18:06:44.000Z",
+        "checkedAt": "2026-11-18T18:50:47.785Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Reason over time-series data with OpenTSLM on Amazon SageMaker JumpStart | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/reason-over-time-series-data-with-opentslm-on-amazon-sagemaker-jumpstart/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-17T18:06:44.000Z",
+        "checkedAt": "2026-11-18T18:50:47.785Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Reason over time-series data with OpenTSLM on Amazon SageMaker JumpStart",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/reason-over-time-series-data-with-opentslm-on-amazon-sagemaker-jumpstart/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-17T18:06:44.000Z",
+        "checkedAt": "2026-11-18T18:50:47.785Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "OpenTSLM is now available in Amazon SageMaker JumpStart , so you can deploy the model in your own AWS environment.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/reason-over-time-series-data-with-opentslm-on-amazon-sagemaker-jumpstart/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-17T18:06:44.000Z",
+        "checkedAt": "2026-11-18T18:50:47.785Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "With SageMaker JumpStart, you can evaluate, compare, and deploy pretrained foundation models (FMs), including the newly available OpenTSLM model.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/reason-over-time-series-data-with-opentslm-on-amazon-sagemaker-jumpstart/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-17T18:06:44.000Z",
+        "checkedAt": "2026-11-18T18:50:47.785Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "As part of the AWS AI offerings, SageMaker JumpStart provides customizable ML solutions which you can deploy to Amazon SageMaker AI inference endpoints within your AWS infrastructure.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/reason-over-time-series-data-with-opentslm-on-amazon-sagemaker-jumpstart/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-17T18:06:44.000Z",
+        "checkedAt": "2026-11-18T18:50:47.785Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Amazon Simple Storage Service (Amazon S3) stores the resulting model artifact, which is then deployed to a separate SageMaker real-time inference endpoint for evaluation.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/reason-over-time-series-data-with-opentslm-on-amazon-sagemaker-jumpstart/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-17T18:06:44.000Z",
+        "checkedAt": "2026-11-18T18:50:47.785Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "A reusable architecture for deploying OpenTSLM through SageMaker JumpStart and invoking it from applications that combine time-series data with text context.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/reason-over-time-series-data-with-opentslm-on-amazon-sagemaker-jumpstart/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-17T18:06:44.000Z",
+        "checkedAt": "2026-11-18T18:50:47.785Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "In SageMaker JumpStart, OpenTSLM also supports ml.g6.4xlarge , ml.g6.8xlarge , ml.g5.2xlarge , ml.g5.4xlarge , ml.g5.8xlarge , ml.g6e.xlarge , and ml.g6e.2xlarge .",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/reason-over-time-series-data-with-opentslm-on-amazon-sagemaker-jumpstart/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-17T18:06:44.000Z",
+        "checkedAt": "2026-11-18T18:50:47.785Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Figure 4: The OpenTSLM-Flamingo Gemma 3 4B model page in SageMaker JumpStart",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/reason-over-time-series-data-with-opentslm-on-amazon-sagemaker-jumpstart/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-17T18:06:44.000Z",
+        "checkedAt": "2026-11-18T18:50:47.785Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Figure 6: The deployed OpenTSLM endpoint with InService status in SageMaker Studio",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/reason-over-time-series-data-with-opentslm-on-amazon-sagemaker-jumpstart/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-17T18:06:44.000Z",
+        "checkedAt": "2026-11-18T18:50:47.785Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "To deploy the fine-tuned model, create a new real-time endpoint on ml.g6.2xlarge , or another instance type that the JumpStart model supports, with the same container image and environment variables as the JumpStart model, and the inference script that the accompanying noteboo…",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/reason-over-time-series-data-with-opentslm-on-amazon-sagemaker-jumpstart/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-17T18:06:44.000Z",
+        "checkedAt": "2026-11-18T18:50:47.785Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "OpenTSLM is now available in Amazon SageMaker JumpStart , so you can deploy it to a real-time inference endpoint in your own AWS environment through SageMaker Studio or the SageMaker SDK.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/reason-over-time-series-data-with-opentslm-on-amazon-sagemaker-jumpstart/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-17T18:06:44.000Z",
+        "checkedAt": "2026-11-18T18:50:47.785Z"
+      }
+    ],
+    "pageDate": "2026-11-17T18:06:44.000Z"
+  },
+  "score": {
+    "importance": 3,
+    "practicalImpact": 3,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PRODUCT_LAUNCH",
+      "AVAILABILITY",
+      "API_PLATFORM"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 11,
+    "total": 11
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 PRODUCT_LAUNCH·AVAILABILITY·API_PLATFORM (우선순위 11)",
+    "근거 확인 통과 (확인 사실 10개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "none",
+    "model": null,
+    "status": "skipped",
+    "error": "Shadow Mode — 원고를 만들지 않음",
+    "promptVersion": "draft-v2",
+    "at": "2026-11-18T18:51:01.810Z",
+    "evidenceHash": "1f17caac90bf"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": true,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}

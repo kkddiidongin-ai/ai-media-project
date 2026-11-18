@@ -1,0 +1,221 @@
+{
+  "id": "8e21326b778b",
+  "date": "2026-11-19",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Amazon SageMaker AI real-time endpoints now support KV cache aware routing",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-ai-real-time-endpoints-now-support-kv-cache-aware-routing/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-11-17T21:11:51.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "8e21326b778b",
+    "url": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-ai-real-time-endpoints-now-support-kv-cache-aware-routing/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-ai-real-time-endpoints-now-support-kv-cache-aware-routing",
+    "title": "Amazon SageMaker AI real-time endpoints now support KV cache aware routing",
+    "excerpt": "Amazon SageMaker AI real-time endpoints now support KV cache-aware routing, a new strategy that routes each request to the instance holding the longest cached match for its prompt. Learn how it works, when to use it compared with prefix-aware routing, and how to enable, invoke, and verify it on sing",
+    "publishedAt": "2026-11-17T21:11:51.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-11-18T18:49:34.466Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 20739,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Amazon SageMaker AI real-time endpoints now support KV cache-aware routing, a new strategy that routes each request to the instance holding the longest cached match for its prompt. Learn how it works, when to use it compared with prefix-aware routing, and how to enable, invoke, and verify it on sing",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-ai-real-time-endpoints-now-support-kv-cache-aware-routing/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-17T21:11:51.000Z",
+        "checkedAt": "2026-11-18T18:50:59.398Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Amazon SageMaker AI real-time endpoints now support KV cache aware routing | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-ai-real-time-endpoints-now-support-kv-cache-aware-routing/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-17T21:11:51.000Z",
+        "checkedAt": "2026-11-18T18:50:59.398Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Amazon SageMaker AI real-time endpoints now support KV cache aware routing",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-ai-real-time-endpoints-now-support-kv-cache-aware-routing/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-17T21:11:51.000Z",
+        "checkedAt": "2026-11-18T18:50:59.398Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Today, Amazon SageMaker AI introduces KV cache-aware routing (KV-aware routing), a new routing strategy for real-time endpoints.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-ai-real-time-endpoints-now-support-kv-cache-aware-routing/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-17T21:11:51.000Z",
+        "checkedAt": "2026-11-18T18:50:59.398Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "In part 1 of this series , we introduced prefix-aware routing for Amazon SageMaker AI, which sends requests that start the same way to the same instance.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-ai-real-time-endpoints-now-support-kv-cache-aware-routing/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-17T21:11:51.000Z",
+        "checkedAt": "2026-11-18T18:50:59.398Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "When you turn events on with SM_VLLM_KV_EVENTS_CONFIG , the container publishes a KV cache event each time it stores or evicts cache entries, and SageMaker AI uses these events to keep the index current.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-ai-real-time-endpoints-now-support-kv-cache-aware-routing/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-17T21:11:51.000Z",
+        "checkedAt": "2026-11-18T18:50:59.398Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Figure 1: KV-aware routing on a SageMaker AI endpoint.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-ai-real-time-endpoints-now-support-kv-cache-aware-routing/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-17T21:11:51.000Z",
+        "checkedAt": "2026-11-18T18:50:59.398Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "With this launch, SageMaker AI offers four routing strategies for real-time endpoints.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-ai-real-time-endpoints-now-support-kv-cache-aware-routing/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-17T21:11:51.000Z",
+        "checkedAt": "2026-11-18T18:50:59.398Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "These fallbacks aren’t reported in the SageMaker AI console or metrics at launch, so use the checks in Verify that KV-aware routing is working to confirm that routing is effective for your traffic.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-ai-real-time-endpoints-now-support-kv-cache-aware-routing/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-17T21:11:51.000Z",
+        "checkedAt": "2026-11-18T18:50:59.398Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Container: At launch, KV-aware routing supports the AWS vLLM Deep Learning Container for SageMaker AI: images with vLLM 0.33.0 or later, or the Amazon Linux build server-sagemaker-cuda-v2.8.0 or later.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-ai-real-time-endpoints-now-support-kv-cache-aware-routing/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-17T21:11:51.000Z",
+        "checkedAt": "2026-11-18T18:50:59.398Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "OverheadLatency, the time SageMaker AI spends outside the model container, was 14 to 19 ms higher on average with KV_AWARE .",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-ai-real-time-endpoints-now-support-kv-cache-aware-routing/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-17T21:11:51.000Z",
+        "checkedAt": "2026-11-18T18:50:59.398Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Monitor the KV cache hit rate – Keep detailed observability on after launch and watch the KV cache hit rate over time in the SageMaker AI Insights dashboard (Figure 2b), or query it with PromQL, as described in Verify that KV-aware routing is working.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-ai-real-time-endpoints-now-support-kv-cache-aware-routing/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-17T21:11:51.000Z",
+        "checkedAt": "2026-11-18T18:50:59.398Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "KV-aware routing is available today in all commercial AWS Regions that support SageMaker AI real-time inference, for endpoints that use a supported container.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-ai-real-time-endpoints-now-support-kv-cache-aware-routing/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-17T21:11:51.000Z",
+        "checkedAt": "2026-11-18T18:50:59.398Z"
+      }
+    ],
+    "pageDate": "2026-11-17T21:11:51.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "API_PLATFORM"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 API_PLATFORM (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}
