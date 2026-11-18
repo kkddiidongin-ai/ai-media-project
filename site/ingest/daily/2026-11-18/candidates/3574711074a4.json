@@ -1,0 +1,232 @@
+{
+  "id": "3574711074a4",
+  "date": "2026-11-18",
+  "proposedSlug": "linked-billing-claude-platform",
+  "title": null,
+  "sourceTitle": "Linked billing on the Claude Platform",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": true,
+      "contextNeed": true,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": true
+    },
+    "deepMissing": [
+      "importance"
+    ]
+  },
+  "company": "Anthropic",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://claude.com/resources/articles/linked-billing-on-claude-platform",
+      "name": "Claude (claude.com articles)",
+      "type": "official",
+      "publishedAt": "2026-11-17T00:00:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "3574711074a4",
+    "url": "https://claude.com/resources/articles/linked-billing-on-claude-platform",
+    "canonicalUrl": "https://claude.com/resources/articles/linked-billing-on-claude-platform",
+    "title": "Linked billing on the Claude Platform",
+    "excerpt": "Linked billing is now in beta on the Claude Platform. Third-party platforms can let customers pay for Claude API usage without sharing an API key.",
+    "publishedAt": "2026-11-17T00:00:00.000Z",
+    "sourceId": "claude-blog",
+    "sourceName": "Claude (claude.com articles)",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "listing-meta",
+    "discoveredVia": "https://claude.com/resources/articles",
+    "fetchedAt": "2026-11-18T03:39:46.412Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 7901,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Linked billing is now in beta on the Claude Platform. Third-party platforms can let customers pay for Claude API usage without sharing an API key.",
+        "sourceUrl": "https://claude.com/resources/articles/linked-billing-on-claude-platform",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-17T00:00:00.000Z",
+        "checkedAt": "2026-11-17T19:08:51.847Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "• • • • • • • • • • Linked billing on the Claude Platform | Claude by Anthropic • • •",
+        "sourceUrl": "https://claude.com/resources/articles/linked-billing-on-claude-platform",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-17T00:00:00.000Z",
+        "checkedAt": "2026-11-17T19:08:51.847Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Skip to main content Today we're introducing linked billing on the Claude Platform in beta.",
+        "sourceUrl": "https://claude.com/resources/articles/linked-billing-on-claude-platform",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-17T00:00:00.000Z",
+        "checkedAt": "2026-11-17T19:08:51.847Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "With linked billing, customers link their Claude Platform organization instead, and usage is billed directly to it.",
+        "sourceUrl": "https://claude.com/resources/articles/linked-billing-on-claude-platform",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-17T00:00:00.000Z",
+        "checkedAt": "2026-11-17T19:08:51.847Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Linked billing is available today in beta on the Claude Platform.",
+        "sourceUrl": "https://claude.com/resources/articles/linked-billing-on-claude-platform",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-17T00:00:00.000Z",
+        "checkedAt": "2026-11-17T19:08:51.847Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Claude Platform customers can link their organization from any supported platform, and find platforms that offer linked billing on Claude Marketplace .",
+        "sourceUrl": "https://claude.com/resources/articles/linked-billing-on-claude-platform",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-17T00:00:00.000Z",
+        "checkedAt": "2026-11-17T19:08:51.847Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Linked billing gives customers a simpler way to bring Claude and Tines together through their existing Claude Platform organization, without sharing API keys, making it easier to control spend and expand AI adoption across the business.”",
+        "sourceUrl": "https://claude.com/resources/articles/linked-billing-on-claude-platform",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-17T00:00:00.000Z",
+        "checkedAt": "2026-11-17T19:08:51.847Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Linked billing makes that easier and more secure, making it seamless for customers to link their own Claude Platform organizations to Warp without having to manage API keys or complex billing arrangements.",
+        "sourceUrl": "https://claude.com/resources/articles/linked-billing-on-claude-platform",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-17T00:00:00.000Z",
+        "checkedAt": "2026-11-17T19:08:51.847Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Linked Billing makes it easier for our customers to use their existing Claude Platform account through Ramp Router, without the hassle of sharing an API key.”",
+        "sourceUrl": "https://claude.com/resources/articles/linked-billing-on-claude-platform",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-17T00:00:00.000Z",
+        "checkedAt": "2026-11-17T19:08:51.847Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "“Linked billing makes Claude billing in ClickHouse Cloud turnkey: link your Claude Platform organization, no keys to manage, and Claude API usage is billed to your organization on the terms you already have.”",
+        "sourceUrl": "https://claude.com/resources/articles/linked-billing-on-claude-platform",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-17T00:00:00.000Z",
+        "checkedAt": "2026-11-17T19:08:51.847Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Using linked billing, they can link their Claude Platform organization to Cosmos by Harness, and Claude API usage in Cosmos is billed to that organization.",
+        "sourceUrl": "https://claude.com/resources/articles/linked-billing-on-claude-platform",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-17T00:00:00.000Z",
+        "checkedAt": "2026-11-17T19:08:51.847Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Linked billing lets them link their Claude Platform organization to Higgsfield, with Claude API usage billed directly to their organization.",
+        "sourceUrl": "https://claude.com/resources/articles/linked-billing-on-claude-platform",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-17T00:00:00.000Z",
+        "checkedAt": "2026-11-17T19:08:51.847Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "“Linked billing with Claude Platform lets customers link their Claude organization to Omni without sharing an API key.",
+        "sourceUrl": "https://claude.com/resources/articles/linked-billing-on-claude-platform",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-17T00:00:00.000Z",
+        "checkedAt": "2026-11-17T19:08:51.847Z"
+      }
+    ],
+    "pageDate": "2026-11-17T00:00:00.000Z"
+  },
+  "score": {
+    "importance": 3,
+    "practicalImpact": 2,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PRICING",
+      "PREVIEW",
+      "API_PLATFORM"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 10,
+    "total": 10
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 PRICING·PREVIEW·API_PLATFORM (우선순위 10)",
+    "근거 확인 통과 (확인 사실 11개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "none",
+    "model": null,
+    "status": "skipped",
+    "error": "Shadow Mode — 원고를 만들지 않음",
+    "promptVersion": "draft-v2",
+    "at": "2026-11-18T03:41:13.692Z",
+    "evidenceHash": "4e8ee48a00d2"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": true,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}

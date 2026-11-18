@@ -1,0 +1,233 @@
+{
+  "id": "2799af16e9a0",
+  "date": "2026-11-18",
+  "proposedSlug": "bulk-start-ai-scan-repositories",
+  "title": null,
+  "sourceTitle": "Bulk start AI Scan for repositories",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 10,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": true,
+      "distinctFacts": true,
+      "evidenceQuality": false,
+      "standardWouldOmit": true
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "evidenceQuality"
+    ]
+  },
+  "company": "GitHub",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://github.blog/changelog/2026-11-16-bulk-start-ai-scan-for-repositories",
+      "name": "GitHub Changelog",
+      "type": "official",
+      "publishedAt": "2026-11-16T15:50:22.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "2799af16e9a0",
+    "url": "https://github.blog/changelog/2026-11-16-bulk-start-ai-scan-for-repositories",
+    "canonicalUrl": "https://github.blog/changelog/2026-11-16-bulk-start-ai-scan-for-repositories",
+    "title": "Bulk start AI Scan for repositories",
+    "excerpt": "AI Scan for repositories finds security vulnerabilities on your repository’s default branch. It covers languages CodeQL doesn’t support and finds additional issues in languages CodeQL already analyzes. Findings appear in… The post Bulk start AI Scan for repositories appeared first on The GitHub Blog",
+    "publishedAt": "2026-11-16T15:50:22.000Z",
+    "sourceId": "github-changelog",
+    "sourceName": "GitHub Changelog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://github.blog/changelog/feed/?paged=3",
+    "fetchedAt": "2026-11-18T03:39:46.412Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 1184,
+    "grade": "LIMITED",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "AI Scan for repositories finds security vulnerabilities on your repository’s default branch. It covers languages CodeQL doesn’t support and finds additional issues in languages CodeQL already analyzes. Findings appear in… The post Bulk start AI Scan for repositories appeared first on The GitHub Blog",
+        "sourceUrl": "https://github.blog/changelog/2026-11-16-bulk-start-ai-scan-for-repositories",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-16T15:50:22.000Z",
+        "checkedAt": "2026-11-18T03:41:01.228Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Bulk start AI Scan for repositories - GitHub Changelog",
+        "sourceUrl": "https://github.blog/changelog/2026-11-16-bulk-start-ai-scan-for-repositories",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-16T15:50:22.000Z",
+        "checkedAt": "2026-11-18T03:41:01.228Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "AI Scan for repositories finds security vulnerabilities on your repository&rsquo;s default branch.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-16-bulk-start-ai-scan-for-repositories",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-16T15:50:22.000Z",
+        "checkedAt": "2026-11-18T03:41:01.228Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "It covers languages CodeQL doesn&rsquo;t support and finds additional issues in languages CodeQL already analyzes.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-16-bulk-start-ai-scan-for-repositories",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-16T15:50:22.000Z",
+        "checkedAt": "2026-11-18T03:41:01.228Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "You can now start AI Scans for up to 20 repositories at once.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-16-bulk-start-ai-scan-for-repositories",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-16T15:50:22.000Z",
+        "checkedAt": "2026-11-18T03:41:01.228Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Start scans for selected repositories when you enable the organization-level setting, or from the code scanning organization alerts page.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-16-bulk-start-ai-scan-for-repositories",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-16T15:50:22.000Z",
+        "checkedAt": "2026-11-18T03:41:01.228Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "You can also start a scan for an individual repository from its alerts page.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-16-bulk-start-ai-scan-for-repositories",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-16T15:50:22.000Z",
+        "checkedAt": "2026-11-18T03:41:01.228Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Bulk start for AI Scan for repositories is in public preview.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-16-bulk-start-ai-scan-for-repositories",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-16T15:50:22.000Z",
+        "checkedAt": "2026-11-18T03:41:01.228Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "AI Scan for repositories is available on github.com and GitHub Enterprise Cloud with data residency.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-16-bulk-start-ai-scan-for-repositories",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-16T15:50:22.000Z",
+        "checkedAt": "2026-11-18T03:41:01.228Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Learn more about AI Scan and join the discussion in GitHub Community .",
+        "sourceUrl": "https://github.blog/changelog/2026-11-16-bulk-start-ai-scan-for-repositories",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-16T15:50:22.000Z",
+        "checkedAt": "2026-11-18T03:41:01.228Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Manage AI Scan for repositories using the REST API",
+        "sourceUrl": "https://github.blog/changelog/2026-11-16-bulk-start-ai-scan-for-repositories",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-16T15:50:22.000Z",
+        "checkedAt": "2026-11-18T03:41:01.228Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "CodeQL 2.27.4 improves accuracy and query metadata",
+        "sourceUrl": "https://github.blog/changelog/2026-11-16-bulk-start-ai-scan-for-repositories",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-16T15:50:22.000Z",
+        "checkedAt": "2026-11-18T03:41:01.228Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "CodeQL 2.27.3 adds Python 3.15 features and JSON data extensions",
+        "sourceUrl": "https://github.blog/changelog/2026-11-16-bulk-start-ai-scan-for-repositories",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-16T15:50:22.000Z",
+        "checkedAt": "2026-11-18T03:41:01.228Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 2,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "SECURITY",
+      "SECURITY_MENTION"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 6,
+    "total": 6
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 SECURITY·SECURITY_MENTION (우선순위 6)",
+    "근거 확인 통과 (확인 사실 10개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "none",
+    "model": null,
+    "status": "skipped",
+    "error": "Shadow Mode — 원고를 만들지 않음",
+    "promptVersion": "draft-v2",
+    "at": "2026-11-18T03:41:13.692Z",
+    "evidenceHash": "51f8053c2a84"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}

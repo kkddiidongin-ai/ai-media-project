@@ -1,0 +1,221 @@
+{
+  "id": "0fb6d41b1c23",
+  "date": "2026-11-18",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "GitHub Copilot app, Microsoft Ignite releases",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 12,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "GitHub",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://github.blog/changelog/2026-11-17-github-copilot-app-microsoft-ignite-releases",
+      "name": "GitHub Changelog",
+      "type": "official",
+      "publishedAt": "2026-11-17T18:03:42.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "0fb6d41b1c23",
+    "url": "https://github.blog/changelog/2026-11-17-github-copilot-app-microsoft-ignite-releases",
+    "canonicalUrl": "https://github.blog/changelog/2026-11-17-github-copilot-app-microsoft-ignite-releases",
+    "title": "GitHub Copilot app, Microsoft Ignite releases",
+    "excerpt": "Copilot is most useful when it can work where you do. The GitHub Copilot app now supports your Azure DevOps repositories, your GitHub Enterprise Server instance, and the browser you’re… The post GitHub Copilot app, Microsoft Ignite releases appeared first on The GitHub Blog .",
+    "publishedAt": "2026-11-17T18:03:42.000Z",
+    "sourceId": "github-changelog",
+    "sourceName": "GitHub Changelog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://github.blog/changelog/feed/",
+    "fetchedAt": "2026-11-18T03:39:46.412Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 2548,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Copilot is most useful when it can work where you do. The GitHub Copilot app now supports your Azure DevOps repositories, your GitHub Enterprise Server instance, and the browser you’re… The post GitHub Copilot app, Microsoft Ignite releases appeared first on The GitHub Blog .",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-github-copilot-app-microsoft-ignite-releases",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:03:42.000Z",
+        "checkedAt": "2026-11-17T19:08:59.492Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "GitHub Copilot app, Microsoft Ignite releases - GitHub Changelog",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-github-copilot-app-microsoft-ignite-releases",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:03:42.000Z",
+        "checkedAt": "2026-11-17T19:08:59.492Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "The GitHub Copilot app now supports your Azure DevOps repositories, your GitHub Enterprise Server instance, and the browser you&rsquo;re already signed in to.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-github-copilot-app-microsoft-ignite-releases",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:03:42.000Z",
+        "checkedAt": "2026-11-17T19:08:59.492Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Work with Azure DevOps repositories in the GitHub Copilot app",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-github-copilot-app-microsoft-ignite-releases",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:03:42.000Z",
+        "checkedAt": "2026-11-17T19:08:59.492Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Clone an Azure DevOps repository, ask an agent to create a branch, make code changes, and open a pull request, then see it through to completion without leaving the GitHub Copilot app.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-github-copilot-app-microsoft-ignite-releases",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:03:42.000Z",
+        "checkedAt": "2026-11-17T19:08:59.492Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Browser use, now in public preview, works in Chromium-based browsers, including Google Chrome and Microsoft Edge, with the GitHub Copilot extension for Chrome and runs in an isolated tab group.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-github-copilot-app-microsoft-ignite-releases",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:03:42.000Z",
+        "checkedAt": "2026-11-17T19:08:59.492Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Add your GitHub Enterprise Server (GHES) account to work with remote repositories, issues, and pull requests in the GitHub Copilot app.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-github-copilot-app-microsoft-ignite-releases",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:03:42.000Z",
+        "checkedAt": "2026-11-17T19:08:59.492Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Update to GitHub Copilot app version 1.2.0 or later to use it.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-github-copilot-app-microsoft-ignite-releases",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:03:42.000Z",
+        "checkedAt": "2026-11-17T19:08:59.492Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Download or update the GitHub Copilot app .",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-github-copilot-app-microsoft-ignite-releases",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:03:42.000Z",
+        "checkedAt": "2026-11-17T19:08:59.492Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "MAI Code 2 and MAI Code 2 Flash in GitHub Copilot",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-github-copilot-app-microsoft-ignite-releases",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:03:42.000Z",
+        "checkedAt": "2026-11-17T19:08:59.492Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "GitHub Copilot in JetBrains, Ignite releases",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-github-copilot-app-microsoft-ignite-releases",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:03:42.000Z",
+        "checkedAt": "2026-11-17T19:08:59.492Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "GitHub Copilot weekly releases — November 9",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-github-copilot-app-microsoft-ignite-releases",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:03:42.000Z",
+        "checkedAt": "2026-11-17T19:08:59.492Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "GitHub Copilot models deprecated on November 16, 2026",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-github-copilot-app-microsoft-ignite-releases",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:03:42.000Z",
+        "checkedAt": "2026-11-17T19:08:59.492Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "CONSUMER"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 CONSUMER (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}
