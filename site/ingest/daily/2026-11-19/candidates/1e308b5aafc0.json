@@ -1,0 +1,233 @@
+{
+  "id": "1e308b5aafc0",
+  "date": "2026-11-19",
+  "proposedSlug": "getting-ai-out-demo-businesses-globally",
+  "title": null,
+  "sourceTitle": "Getting AI out of the demo and into businesses globally",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/getting-ai-out-of-the-demo-and-into-businesses-globally/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-11-17T19:05:22.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "1e308b5aafc0",
+    "url": "https://aws.amazon.com/blogs/machine-learning/getting-ai-out-of-the-demo-and-into-businesses-globally/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/getting-ai-out-of-the-demo-and-into-businesses-globally",
+    "title": "Getting AI out of the demo and into businesses globally",
+    "excerpt": "Most enterprises have AI that works in a demo but stalls before production. AWS Forward Deployed Engineering closes that gap. AWS engineers embed with customer teams to take high-value workflows to production in 45-day sprints, leaving a foundation, workflows, and governance the customer owns.",
+    "publishedAt": "2026-11-17T19:05:22.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-11-19T03:14:34.124Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 10901,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Most enterprises have AI that works in a demo but stalls before production. AWS Forward Deployed Engineering closes that gap. AWS engineers embed with customer teams to take high-value workflows to production in 45-day sprints, leaving a foundation, workflows, and governance the customer owns.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/getting-ai-out-of-the-demo-and-into-businesses-globally/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-17T19:05:22.000Z",
+        "checkedAt": "2026-11-18T18:50:56.711Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Getting AI out of the demo and into businesses globally | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/getting-ai-out-of-the-demo-and-into-businesses-globally/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-17T19:05:22.000Z",
+        "checkedAt": "2026-11-18T18:50:56.711Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Getting AI out of the demo and into businesses globally",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/getting-ai-out-of-the-demo-and-into-businesses-globally/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-17T19:05:22.000Z",
+        "checkedAt": "2026-11-18T18:50:56.711Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "AWS Forward Deployed Engineering is now available in 15 countries including U.S., Mexico, Brazil, Canada, Australia, Singapore, India, South Korea, Japan, UK, Germany, Netherlands, France, Sweden, and Saudi Arabia for commercial and public sector customers; and powered by doze…",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/getting-ai-out-of-the-demo-and-into-businesses-globally/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-17T19:05:22.000Z",
+        "checkedAt": "2026-11-18T18:50:56.711Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "The stretch from demo to production is the last mile, where most AI stalls.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/getting-ai-out-of-the-demo-and-into-businesses-globally/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-17T19:05:22.000Z",
+        "checkedAt": "2026-11-18T18:50:56.711Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "In 45 days, the FDE team built a governed agentic platform with a single control plane and compliance built in.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/getting-ai-out-of-the-demo-and-into-businesses-globally/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-17T19:05:22.000Z",
+        "checkedAt": "2026-11-18T18:50:56.711Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Rio Tinto Iron Ore runs one of the world’s most complex mine-to-ship supply chains on a 30-year-old Oracle system.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/getting-ai-out-of-the-demo-and-into-businesses-globally/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-17T19:05:22.000Z",
+        "checkedAt": "2026-11-18T18:50:56.711Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "That system has more than 5,000 database tables and 140 applications.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/getting-ai-out-of-the-demo-and-into-businesses-globally/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-17T19:05:22.000Z",
+        "checkedAt": "2026-11-18T18:50:56.711Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Efficiency gains in the targeted areas have been as much as 70 percent, with some process steps moving from hours to seconds.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/getting-ai-out-of-the-demo-and-into-businesses-globally/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-17T19:05:22.000Z",
+        "checkedAt": "2026-11-18T18:50:56.711Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Together, our teams take a high-value business problem to production in 45-day sprints, in your own AWS account.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/getting-ai-out-of-the-demo-and-into-businesses-globally/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-17T19:05:22.000Z",
+        "checkedAt": "2026-11-18T18:50:56.711Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Throughput rose 53%, and code reviews got 56% faster.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/getting-ai-out-of-the-demo-and-into-businesses-globally/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-17T19:05:22.000Z",
+        "checkedAt": "2026-11-18T18:50:56.711Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "AWS FDE is now available in 15 countries to commercial and public sector customers, and it’s simpler to buy.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/getting-ai-out-of-the-demo-and-into-businesses-globally/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-17T19:05:22.000Z",
+        "checkedAt": "2026-11-18T18:50:56.711Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Each 45-day sprint has a set price under the FDE Terms and is billed through your AWS account.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/getting-ai-out-of-the-demo-and-into-businesses-globally/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-17T19:05:22.000Z",
+        "checkedAt": "2026-11-18T18:50:56.711Z"
+      }
+    ],
+    "pageDate": "2026-11-17T19:05:22.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 1,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "AVAILABILITY"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 6,
+    "total": 6
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 AVAILABILITY (우선순위 6)",
+    "근거 확인 통과 (확인 사실 11개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "none",
+    "model": null,
+    "status": "skipped",
+    "error": "Shadow Mode — 원고를 만들지 않음",
+    "promptVersion": "draft-v2",
+    "at": "2026-11-19T03:16:27.176Z",
+    "evidenceHash": "fafe001d17e1"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}

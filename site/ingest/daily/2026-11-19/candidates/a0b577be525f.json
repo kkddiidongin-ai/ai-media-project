@@ -1,0 +1,145 @@
+{
+  "id": "a0b577be525f",
+  "date": "2026-11-19",
+  "proposedSlug": "gpu-ai-kv-epp",
+  "title": null,
+  "sourceTitle": "같은 GPU로 더 많은 AI 요청을 처리할 수 있을까? ― KV 캐시 오프로딩 × EPP 라우팅: 계산 결과를 오래 남기고, 다음 요청이 그 결과를 찾아가게 하기",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_SHORT",
+    "distinctFacts": 2,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": true,
+      "distinctFacts": false,
+      "evidenceQuality": false,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "distinctFacts",
+      "evidenceQuality",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Kakao Tech",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://tech.kakao.com/posts/848",
+      "name": "Kakao Tech",
+      "type": "official",
+      "publishedAt": "2026-11-17T15:00:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "a0b577be525f",
+    "url": "https://tech.kakao.com/posts/848",
+    "canonicalUrl": "https://tech.kakao.com/posts/848",
+    "title": "같은 GPU로 더 많은 AI 요청을 처리할 수 있을까? ― KV 캐시 오프로딩 × EPP 라우팅: 계산 결과를 오래 남기고, 다음 요청이 그 결과를 찾아가게 하기",
+    "excerpt": "“같은 GPU 32장, 같은 요청 3,456건. 처리 시간이 121.7분에서 47.2분으로 줄었습니다. GPU도 모델도 바꾸지 않았습니다. 바꾼 것은 두 가지입니다. 이미 계산한 결과를 GPU 밖에도 보관할 수 있게 했고, 같은 문서를 묻는 다음 요청이 그 결과를 가진 서버로 가게 했습니다.” 저희 팀은 사내 서비스가 쓰는 LLM 추론 플랫폼을 운영합니다. 모델을 GPU에 올리는 일부터 요청을 GPU로 나눠 보내는 게이트웨이까지 맡고 있습니다. 그래...",
+    "publishedAt": "2026-11-17T15:00:00.000Z",
+    "sourceId": "kakao-tech",
+    "sourceName": "Kakao Tech",
+    "sourceType": "official",
+    "tier": 2,
+    "fetchMode": "rss",
+    "discoveredVia": "https://tech.kakao.com/feed/",
+    "fetchedAt": "2026-11-19T03:14:34.124Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 188,
+    "grade": "FAIL",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "“같은 GPU 32장, 같은 요청 3,456건. 처리 시간이 121.7분에서 47.2분으로 줄었습니다. GPU도 모델도 바꾸지 않았습니다. 바꾼 것은 두 가지입니다. 이미 계산한 결과를 GPU 밖에도 보관할 수 있게 했고, 같은 문서를 묻는 다음 요청이 그 결과를 가진 서버로 가게 했습니다.” 저희 팀은 사내 서비스가 쓰는 LLM 추론 플랫폼을 운영합니다. 모델을 GPU에 올리는 일부터 요청을 GPU로 나눠 보내는 게이트웨이까지 맡고 있습니다. 그래...",
+        "sourceUrl": "https://tech.kakao.com/posts/848",
+        "source": "Kakao Tech",
+        "publishedAt": "2026-11-17T15:00:00.000Z",
+        "checkedAt": "2026-11-18T18:50:58.386Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "같은 GPU로 더 많은 AI 요청을 처리할 수 있을까? ― KV 캐시 오프로딩 × EPP 라우팅: 계산 결과를 오래 남기고, 다음 요청이 그 결과를 찾아가게 하기 - tech.kakao.com • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • 본문 바로가기 메뉴 바로가기",
+        "sourceUrl": "https://tech.kakao.com/posts/848",
+        "source": "Kakao Tech",
+        "publishedAt": "2026-11-17T15:00:00.000Z",
+        "checkedAt": "2026-11-18T18:50:58.386Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "같은 GPU로 더 많은 AI 요청을 처리할 수 있을까? ― KV 캐시 오프로딩 × EPP 라우팅: 계산 결과를 오래 남기고, 다음 요청이 그 결과를 찾아가게 하기",
+        "sourceUrl": "https://tech.kakao.com/posts/848",
+        "source": "Kakao Tech",
+        "publishedAt": "2026-11-17T15:00:00.000Z",
+        "checkedAt": "2026-11-18T18:50:58.386Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 2,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 2,
+    "verificationConfidence": 3,
+    "signals": [
+      "INFRA",
+      "MODEL_MENTION"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 6,
+    "total": 6
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 INFRA·MODEL_MENTION (우선순위 6)",
+    "근거 확인 통과 (확인 사실 2개, SUFFICIENT_SHORT)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "none",
+    "model": null,
+    "status": "skipped",
+    "error": "Shadow Mode — 원고를 만들지 않음",
+    "promptVersion": "draft-v2",
+    "at": "2026-11-19T03:16:27.176Z",
+    "evidenceHash": "b05775e87a58"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}

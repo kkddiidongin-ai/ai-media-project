@@ -1,0 +1,232 @@
+{
+  "id": "dec08682255b",
+  "date": "2026-11-19",
+  "proposedSlug": "ian-buck-kicks-off-nvidia-s-week",
+  "title": null,
+  "sourceTitle": "Ian Buck Kicks Off NVIDIA’s Week at SC26 as Science Enters the Age of Agents",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 12,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": true,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": true
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact"
+    ]
+  },
+  "company": "NVIDIA",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://blogs.nvidia.com/blog/ian-buck-sc26/",
+      "name": "NVIDIA Blog",
+      "type": "official",
+      "publishedAt": "2026-11-17T14:00:10.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "dec08682255b",
+    "url": "https://blogs.nvidia.com/blog/ian-buck-sc26/",
+    "canonicalUrl": "https://blogs.nvidia.com/blog/ian-buck-sc26",
+    "title": "Ian Buck Kicks Off NVIDIA’s Week at SC26 as Science Enters the Age of Agents",
+    "excerpt": "NVIDIA’s Ian Buck kicked off the company’s week at SC26 in Chicago on Monday with new tools for AI agents, software that can plan experiments, run code and check results on researchers’ own systems. In NVIDIA’s special address, Buck announced Nemotron for Science, the Rubin HPC GPU and an expanded V",
+    "publishedAt": "2026-11-17T14:00:10.000Z",
+    "sourceId": "nvidia",
+    "sourceName": "NVIDIA Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://blogs.nvidia.com/feed/",
+    "fetchedAt": "2026-11-19T03:14:34.124Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 3834,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "NVIDIA’s Ian Buck kicked off the company’s week at SC26 in Chicago on Monday with new tools for AI agents, software that can plan experiments, run code and check results on researchers’ own systems. In NVIDIA’s special address, Buck announced Nemotron for Science, the Rubin HPC GPU and an expanded V",
+        "sourceUrl": "https://blogs.nvidia.com/blog/ian-buck-sc26/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-17T14:00:10.000Z",
+        "checkedAt": "2026-11-18T18:50:56.648Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Ian Buck Kicks Off NVIDIA’s Week at SC26 as Science Enters the Age of Agents | NVIDIA Blog",
+        "sourceUrl": "https://blogs.nvidia.com/blog/ian-buck-sc26/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-17T14:00:10.000Z",
+        "checkedAt": "2026-11-18T18:50:56.648Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "NVIDIA’s Ian Buck kicked off the company’s week at SC26 in Chicago on Monday with new tools for AI agents, software that can plan experiments, run code and check results on researchers’ own systems.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/ian-buck-sc26/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-17T14:00:10.000Z",
+        "checkedAt": "2026-11-18T18:50:56.648Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "In NVIDIA’s special address, Buck announced Nemotron for Science , the Rubin HPC GPU and an expanded Vera CPU platform for high-performance computing .",
+        "sourceUrl": "https://blogs.nvidia.com/blog/ian-buck-sc26/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-17T14:00:10.000Z",
+        "checkedAt": "2026-11-18T18:50:56.648Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Buck opened the talk by looking back to his first public talk on CUDA, at an SC06 tutorial in Tampa, Florida, 20 years ago.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/ian-buck-sc26/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-17T14:00:10.000Z",
+        "checkedAt": "2026-11-18T18:50:56.648Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "NVIDIA now offers more than 1,000 CUDA-X libraries , he said.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/ian-buck-sc26/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-17T14:00:10.000Z",
+        "checkedAt": "2026-11-18T18:50:56.648Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Nemotron for Science combines the Nemotron 3.5 Super VL open model with a new open chemistry dataset and post-training recipes for life sciences and chemistry, Buck explained.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/ian-buck-sc26/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-17T14:00:10.000Z",
+        "checkedAt": "2026-11-18T18:50:56.648Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Buck explained that it then retuned for Doppler shift on its own [NGC 869 vs.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/ian-buck-sc26/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-17T14:00:10.000Z",
+        "checkedAt": "2026-11-18T18:50:56.648Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Nsight AI Porting Agent: NVIDIA’s new agent ported a routine from the Weather Research and Forecasting (WRF) model to GPUs, Buck said, speeding it up more than 5x using about 150 million tokens.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/ian-buck-sc26/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-17T14:00:10.000Z",
+        "checkedAt": "2026-11-18T18:50:56.648Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "It supports precisions from FP64 to FP4, adds sparse-data acceleration and connects over seventh-generation NVIDIA NVLink.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/ian-buck-sc26/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-17T14:00:10.000Z",
+        "checkedAt": "2026-11-18T18:50:56.648Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "With more than 50,000 CUDA cores, it has about three times as many as Hopper, Buck said.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/ian-buck-sc26/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-17T14:00:10.000Z",
+        "checkedAt": "2026-11-18T18:50:56.648Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "NVIDIA and IBM are pairing NVIDIA DGX B200 systems with IBM quantum computers, including those powered by IBM Quantum Nighthawk.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/ian-buck-sc26/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-17T14:00:10.000Z",
+        "checkedAt": "2026-11-18T18:50:56.648Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "The goal, Buck explained, is to cut decoding latency from about 300 microseconds to 10.",
+        "sourceUrl": "https://blogs.nvidia.com/blog/ian-buck-sc26/",
+        "source": "NVIDIA Blog",
+        "publishedAt": "2026-11-17T14:00:10.000Z",
+        "checkedAt": "2026-11-18T18:50:56.648Z"
+      }
+    ],
+    "pageDate": "2026-11-17T14:00:10.000Z"
+  },
+  "score": {
+    "importance": 3,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "MODEL",
+      "INFRA"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 8,
+    "total": 8
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 MODEL·INFRA (우선순위 8)",
+    "근거 확인 통과 (확인 사실 12개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "none",
+    "model": null,
+    "status": "skipped",
+    "error": "Shadow Mode — 원고를 만들지 않음",
+    "promptVersion": "draft-v2",
+    "at": "2026-11-19T03:16:27.176Z",
+    "evidenceHash": "56d6c78a1121"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": true,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}

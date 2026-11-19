@@ -1,0 +1,221 @@
+{
+  "id": "2c0a64e08e41",
+  "date": "2026-11-19",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Reducing token costs and latency in Amazon Bedrock AgentCore JSON workloads",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/reducing-token-costs-and-latency-in-amazon-bedrock-agentcore-json-workloads/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-11-17T22:44:51.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "2c0a64e08e41",
+    "url": "https://aws.amazon.com/blogs/machine-learning/reducing-token-costs-and-latency-in-amazon-bedrock-agentcore-json-workloads/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/reducing-token-costs-and-latency-in-amazon-bedrock-agentcore-json-workloads",
+    "title": "Reducing token costs and latency in Amazon Bedrock AgentCore JSON workloads",
+    "excerpt": "As production agents on Amazon Bedrock AgentCore process multi-megabyte JSON payloads, token costs and latency climb. This post shares three composable strategies: offloading heavy artifacts to Amazon S3, on-demand result paging, and dictionary compaction. Together they cut per-turn token use by up ",
+    "publishedAt": "2026-11-17T22:44:51.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-11-19T03:14:34.124Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 15755,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "As production agents on Amazon Bedrock AgentCore process multi-megabyte JSON payloads, token costs and latency climb. This post shares three composable strategies: offloading heavy artifacts to Amazon S3, on-demand result paging, and dictionary compaction. Together they cut per-turn token use by up ",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/reducing-token-costs-and-latency-in-amazon-bedrock-agentcore-json-workloads/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-17T22:44:51.000Z",
+        "checkedAt": "2026-11-18T18:50:59.305Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Reducing token costs and latency in Amazon Bedrock AgentCore JSON workloads | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/reducing-token-costs-and-latency-in-amazon-bedrock-agentcore-json-workloads/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-17T22:44:51.000Z",
+        "checkedAt": "2026-11-18T18:50:59.305Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Reducing token costs and latency in Amazon Bedrock AgentCore JSON workloads",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/reducing-token-costs-and-latency-in-amazon-bedrock-agentcore-json-workloads/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-17T22:44:51.000Z",
+        "checkedAt": "2026-11-18T18:50:59.305Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Together, these optimizations reduced token consumption by up to 71% and cut average latency by up to 80% across our benchmark runs on a representative 23 MB payload.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/reducing-token-costs-and-latency-in-amazon-bedrock-agentcore-json-workloads/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-17T22:44:51.000Z",
+        "checkedAt": "2026-11-18T18:50:59.305Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "In Figure 1, the Optimizer receives a Request JSON and produces a Response JSON, which is then validated by a Business Rules Validator to generate a Validation Report JSON.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/reducing-token-costs-and-latency-in-amazon-bedrock-agentcore-json-workloads/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-17T22:44:51.000Z",
+        "checkedAt": "2026-11-18T18:50:59.305Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "The agent uses an Amazon Bedrock model for reasoning and Amazon Bedrock AgentCore memory , a capability of Amazon Bedrock AgentCore, to persist chat interactions across turns, and each turn follows this flow (Figure 2):",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/reducing-token-costs-and-latency-in-amazon-bedrock-agentcore-json-workloads/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-17T22:44:51.000Z",
+        "checkedAt": "2026-11-18T18:50:59.305Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "We implemented three strategies to reduce the token costs, latency, and memory overhead caused by passing large JSON payloads through the model context.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/reducing-token-costs-and-latency-in-amazon-bedrock-agentcore-json-workloads/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-17T22:44:51.000Z",
+        "checkedAt": "2026-11-18T18:50:59.305Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "When a tool returns an oversized list or dictionary, the agent stores the full result in Amazon Simple Storage Service (Amazon S3) and passes the model a compact summary with a handle.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/reducing-token-costs-and-latency-in-amazon-bedrock-agentcore-json-workloads/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-17T22:44:51.000Z",
+        "checkedAt": "2026-11-18T18:50:59.305Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Amazon Bedrock AgentCore with Amazon Bedrock AgentCore memory enabled for session-state persistence.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/reducing-token-costs-and-latency-in-amazon-bedrock-agentcore-json-workloads/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-17T22:44:51.000Z",
+        "checkedAt": "2026-11-18T18:50:59.305Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "We therefore moved heavy artifacts (request JSON, response JSON, validation data, and other large derived payloads) to Amazon S3.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/reducing-token-costs-and-latency-in-amazon-bedrock-agentcore-json-workloads/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-17T22:44:51.000Z",
+        "checkedAt": "2026-11-18T18:50:59.305Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "The S3-backed store exposes a put_json and get_json interface.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/reducing-token-costs-and-latency-in-amazon-bedrock-agentcore-json-workloads/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-17T22:44:51.000Z",
+        "checkedAt": "2026-11-18T18:50:59.305Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "The S3ArtifactStore class wraps the put_json / get_json interface with an in-process cache and content-addressed keys:",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/reducing-token-costs-and-latency-in-amazon-bedrock-agentcore-json-workloads/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-17T22:44:51.000Z",
+        "checkedAt": "2026-11-18T18:50:59.305Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "We then compared token usage and latency in Amazon Bedrock AgentCore Observability (a capability of AgentCore), and observed clear improvements in both cost and responsiveness.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/reducing-token-costs-and-latency-in-amazon-bedrock-agentcore-json-workloads/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-17T22:44:51.000Z",
+        "checkedAt": "2026-11-18T18:50:59.305Z"
+      }
+    ],
+    "pageDate": "2026-11-17T22:44:51.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "API_PLATFORM"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 API_PLATFORM (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

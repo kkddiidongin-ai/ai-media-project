@@ -1,0 +1,221 @@
+{
+  "id": "11d51b8e09bb",
+  "date": "2026-11-19",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "GitHub Copilot weekly releases — November 9",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "GitHub",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://github.blog/changelog/2026-11-16-github-copilot-weekly-releases-november-9",
+      "name": "GitHub Changelog",
+      "type": "official",
+      "publishedAt": "2026-11-16T21:34:53.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "11d51b8e09bb",
+    "url": "https://github.blog/changelog/2026-11-16-github-copilot-weekly-releases-november-9",
+    "canonicalUrl": "https://github.blog/changelog/2026-11-16-github-copilot-weekly-releases-november-9",
+    "title": "GitHub Copilot weekly releases — November 9",
+    "excerpt": "This week, bring GitHub Enterprise Server repositories into the Copilot app and see which agent sessions need you first in VS Code. You can also try two new models, Claude… The post GitHub Copilot weekly releases — November 9 appeared first on The GitHub Blog .",
+    "publishedAt": "2026-11-16T21:34:53.000Z",
+    "sourceId": "github-changelog",
+    "sourceName": "GitHub Changelog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://github.blog/changelog/feed/?paged=3",
+    "fetchedAt": "2026-11-19T03:14:34.124Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 2947,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "This week, bring GitHub Enterprise Server repositories into the Copilot app and see which agent sessions need you first in VS Code. You can also try two new models, Claude… The post GitHub Copilot weekly releases — November 9 appeared first on The GitHub Blog .",
+        "sourceUrl": "https://github.blog/changelog/2026-11-16-github-copilot-weekly-releases-november-9",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-16T21:34:53.000Z",
+        "checkedAt": "2026-11-19T03:16:13.947Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "GitHub Copilot weekly releases — November 9 - GitHub Changelog",
+        "sourceUrl": "https://github.blog/changelog/2026-11-16-github-copilot-weekly-releases-november-9",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-16T21:34:53.000Z",
+        "checkedAt": "2026-11-19T03:16:13.947Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "This week, bring GitHub Enterprise Server repositories into the Copilot app and see which agent sessions need you first in VS Code.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-16-github-copilot-weekly-releases-november-9",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-16T21:34:53.000Z",
+        "checkedAt": "2026-11-19T03:16:13.947Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "You can also try two new models, Claude Fable 5.2 and Gemini 4 Carbon.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-16-github-copilot-weekly-releases-november-9",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-16T21:34:53.000Z",
+        "checkedAt": "2026-11-19T03:16:13.947Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Claude Fable 5.2 is available to Copilot Pro+, Max, Business, and Enterprise users.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-16-github-copilot-weekly-releases-november-9",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-16T21:34:53.000Z",
+        "checkedAt": "2026-11-19T03:16:13.947Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Gemini 4 Carbon is available to Copilot Pro+, Max, Business, and Enterprise users.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-16-github-copilot-weekly-releases-november-9",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-16T21:34:53.000Z",
+        "checkedAt": "2026-11-19T03:16:13.947Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Work with repositories, issues, and pull requests from GitHub Enterprise Server in the Copilot app, now generally available.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-16-github-copilot-weekly-releases-november-9",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-16T21:34:53.000Z",
+        "checkedAt": "2026-11-19T03:16:13.947Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "GitHub Copilot in VS Code (1.146 release)",
+        "sourceUrl": "https://github.blog/changelog/2026-11-16-github-copilot-weekly-releases-november-9",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-16T21:34:53.000Z",
+        "checkedAt": "2026-11-19T03:16:13.947Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Move to the Copilot harness before the Local harness is removed in February 2027.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-16-github-copilot-weekly-releases-november-9",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-16T21:34:53.000Z",
+        "checkedAt": "2026-11-19T03:16:13.947Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "OpenAI’s GPT-6.2 Astra and GPT-6.2 Sol now available",
+        "sourceUrl": "https://github.blog/changelog/2026-11-16-github-copilot-weekly-releases-november-9",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-16T21:34:53.000Z",
+        "checkedAt": "2026-11-19T03:16:13.947Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "GitHub Copilot app, Microsoft Ignite releases",
+        "sourceUrl": "https://github.blog/changelog/2026-11-16-github-copilot-weekly-releases-november-9",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-16T21:34:53.000Z",
+        "checkedAt": "2026-11-19T03:16:13.947Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "MAI Code 2 and MAI Code 2 Flash in GitHub Copilot",
+        "sourceUrl": "https://github.blog/changelog/2026-11-16-github-copilot-weekly-releases-november-9",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-16T21:34:53.000Z",
+        "checkedAt": "2026-11-19T03:16:13.947Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "GitHub Copilot in JetBrains, Ignite releases",
+        "sourceUrl": "https://github.blog/changelog/2026-11-16-github-copilot-weekly-releases-november-9",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-16T21:34:53.000Z",
+        "checkedAt": "2026-11-19T03:16:13.947Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "CONSUMER"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 CONSUMER (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}
