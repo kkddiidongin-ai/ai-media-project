@@ -1,0 +1,221 @@
+{
+  "id": "6f8f17530b91",
+  "date": "2026-11-20",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Exa boosts embedding throughput by 50% to index billions of documents on AWS AI chips",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 9,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/exa-boosts-embedding-throughput-by-50-to-index-billions-of-documents-on-aws-ai-chips/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-11-18T23:58:22.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "6f8f17530b91",
+    "url": "https://aws.amazon.com/blogs/machine-learning/exa-boosts-embedding-throughput-by-50-to-index-billions-of-documents-on-aws-ai-chips/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/exa-boosts-embedding-throughput-by-50-to-index-billions-of-documents-on-aws-ai-chips",
+    "title": "Exa boosts embedding throughput by 50% to index billions of documents on AWS AI chips",
+    "excerpt": "Exa's neural search engine is backed by an in-house vector database, so the unit economics of embedding tens of billions of web documents drive the business. This post shares how Exa optimized embedding inference on AWS Neuron hardware (Inferentia2 and Trainium2) with custom NKI kernels, reaching a ",
+    "publishedAt": "2026-11-18T23:58:22.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-11-19T18:59:10.009Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 7601,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Exa's neural search engine is backed by an in-house vector database, so the unit economics of embedding tens of billions of web documents drive the business. This post shares how Exa optimized embedding inference on AWS Neuron hardware (Inferentia2 and Trainium2) with custom NKI kernels, reaching a ",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/exa-boosts-embedding-throughput-by-50-to-index-billions-of-documents-on-aws-ai-chips/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-18T23:58:22.000Z",
+        "checkedAt": "2026-11-19T19:00:56.967Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Exa boosts embedding throughput by 50% to index billions of documents on AWS AI chips | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/exa-boosts-embedding-throughput-by-50-to-index-billions-of-documents-on-aws-ai-chips/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-18T23:58:22.000Z",
+        "checkedAt": "2026-11-19T19:00:56.967Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Exa boosts embedding throughput by 50% to index billions of documents on AWS AI chips",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/exa-boosts-embedding-throughput-by-50-to-index-billions-of-documents-on-aws-ai-chips/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-18T23:58:22.000Z",
+        "checkedAt": "2026-11-19T19:00:56.967Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "At the scale of tens or hundreds of billions of documents, finding the hardware that delivers the best performance per dollar isn’t a tuning detail.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/exa-boosts-embedding-throughput-by-50-to-index-billions-of-documents-on-aws-ai-chips/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-18T23:58:22.000Z",
+        "checkedAt": "2026-11-19T19:00:56.967Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "This post details how we optimized our embedding infrastructure for cheaper, more flexible inference workloads on AWS Neuron hardware ( AWS Inferentia2 and AWS Trainium2 ), and how an agentic development workflow drove the optimization.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/exa-boosts-embedding-throughput-by-50-to-index-billions-of-documents-on-aws-ai-chips/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-18T23:58:22.000Z",
+        "checkedAt": "2026-11-19T19:00:56.967Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Figure 1: A simplified view of the Exa stack",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/exa-boosts-embedding-throughput-by-50-to-index-billions-of-documents-on-aws-ai-chips/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-18T23:58:22.000Z",
+        "checkedAt": "2026-11-19T19:00:56.967Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "We selected 30 billion high-priority documents for re-embedding.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/exa-boosts-embedding-throughput-by-50-to-index-billions-of-documents-on-aws-ai-chips/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-18T23:58:22.000Z",
+        "checkedAt": "2026-11-19T19:00:56.967Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Figure 2: The doubled inference load from the backfill",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/exa-boosts-embedding-throughput-by-50-to-index-billions-of-documents-on-aws-ai-chips/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-18T23:58:22.000Z",
+        "checkedAt": "2026-11-19T19:00:56.967Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "The preceding figure shows two parallel pipelines sharing the crawl and parse stages, one embedding with the live model into the live index and one re-embedding priority documents with the new model into the new index, which is what doubles the load.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/exa-boosts-embedding-throughput-by-50-to-index-billions-of-documents-on-aws-ai-chips/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-18T23:58:22.000Z",
+        "checkedAt": "2026-11-19T19:00:56.967Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "AWS Inferentia2 figures refer to performance on the smallest instance type, an Inferentia2 xlarge instance ( inf2.xlarge ), with one chip and two NeuronCores .",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/exa-boosts-embedding-throughput-by-50-to-index-billions-of-documents-on-aws-ai-chips/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-18T23:58:22.000Z",
+        "checkedAt": "2026-11-19T19:00:56.967Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Figure 3: Throughput improvement across optimization milestones",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/exa-boosts-embedding-throughput-by-50-to-index-billions-of-documents-on-aws-ai-chips/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-18T23:58:22.000Z",
+        "checkedAt": "2026-11-19T19:00:56.967Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Starting from the naive compile, a progressive series of optimizations ultimately delivered roughly a 1.5× throughput improvement.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/exa-boosts-embedding-throughput-by-50-to-index-billions-of-documents-on-aws-ai-chips/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-18T23:58:22.000Z",
+        "checkedAt": "2026-11-19T19:00:56.967Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "In total, our final version was a 47% improvement in performance and cost per 1 million documents embedded, against our initial baseline.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/exa-boosts-embedding-throughput-by-50-to-index-billions-of-documents-on-aws-ai-chips/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-18T23:58:22.000Z",
+        "checkedAt": "2026-11-19T19:00:56.967Z"
+      }
+    ],
+    "pageDate": "2026-11-18T23:58:22.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "INFRA"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 INFRA (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

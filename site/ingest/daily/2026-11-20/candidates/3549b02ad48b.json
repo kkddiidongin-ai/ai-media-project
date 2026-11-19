@@ -1,0 +1,222 @@
+{
+  "id": "3549b02ad48b",
+  "date": "2026-11-20",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Track Copilot code review outcomes in Repository insights",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": false,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "evidenceQuality",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "GitHub",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://github.blog/changelog/2026-11-17-track-copilot-code-review-outcomes-in-repository-insights",
+      "name": "GitHub Changelog",
+      "type": "official",
+      "publishedAt": "2026-11-17T18:00:35.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "3549b02ad48b",
+    "url": "https://github.blog/changelog/2026-11-17-track-copilot-code-review-outcomes-in-repository-insights",
+    "canonicalUrl": "https://github.blog/changelog/2026-11-17-track-copilot-code-review-outcomes-in-repository-insights",
+    "title": "Track Copilot code review outcomes in Repository insights",
+    "excerpt": "You can now see how Copilot code review feedback lands in each repository. A new “Repository insights” page, the first item in a repository’s Insights tab, brings Copilot code review… The post Track Copilot code review outcomes in Repository insights appeared first on The GitHub Blog .",
+    "publishedAt": "2026-11-17T18:00:35.000Z",
+    "sourceId": "github-changelog",
+    "sourceName": "GitHub Changelog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://github.blog/changelog/feed/?paged=2",
+    "fetchedAt": "2026-11-19T18:59:10.009Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 2179,
+    "grade": "LIMITED",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "You can now see how Copilot code review feedback lands in each repository. A new “Repository insights” page, the first item in a repository’s Insights tab, brings Copilot code review… The post Track Copilot code review outcomes in Repository insights appeared first on The GitHub Blog .",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-track-copilot-code-review-outcomes-in-repository-insights",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:00:35.000Z",
+        "checkedAt": "2026-11-19T19:00:55.210Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Track Copilot code review outcomes in Repository insights - GitHub Changelog",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-track-copilot-code-review-outcomes-in-repository-insights",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:00:35.000Z",
+        "checkedAt": "2026-11-19T19:00:55.210Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "You can now see how Copilot code review feedback lands in each repository.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-track-copilot-code-review-outcomes-in-repository-insights",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:00:35.000Z",
+        "checkedAt": "2026-11-19T19:00:55.210Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "A new &ldquo;Repository insights&rdquo; page, the first item in a repository&rsquo;s Insights tab, brings Copilot code review outcomes together in one place.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-track-copilot-code-review-outcomes-in-repository-insights",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:00:35.000Z",
+        "checkedAt": "2026-11-19T19:00:55.210Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Repository insights show four summary signals for each repository:",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-track-copilot-code-review-outcomes-in-repository-insights",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:00:35.000Z",
+        "checkedAt": "2026-11-19T19:00:55.210Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Comments addressed: Copilot code review comments that were acted on.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-track-copilot-code-review-outcomes-in-repository-insights",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:00:35.000Z",
+        "checkedAt": "2026-11-19T19:00:55.210Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Merged pull requests without Copilot review: Merged pull requests that Copilot code review didn&rsquo;t review.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-track-copilot-code-review-outcomes-in-repository-insights",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:00:35.000Z",
+        "checkedAt": "2026-11-19T19:00:55.210Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Comment categories: The types of feedback Copilot code review leaves in the repository.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-track-copilot-code-review-outcomes-in-repository-insights",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:00:35.000Z",
+        "checkedAt": "2026-11-19T19:00:55.210Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "The same metrics are also available in the enterprise and organization repository 1-day reports ( repos-1-day ) in the Copilot usage metrics API.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-track-copilot-code-review-outcomes-in-repository-insights",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:00:35.000Z",
+        "checkedAt": "2026-11-19T19:00:55.210Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Repository insights show whether developers act on Copilot code review feedback, whether human reviewers still request changes after Copilot reviews a pull request, and where merged work skips Copilot review entirely.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-track-copilot-code-review-outcomes-in-repository-insights",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:00:35.000Z",
+        "checkedAt": "2026-11-19T19:00:55.210Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "You can view Copilot code review outcomes in the Repository insights page if you have read access to the repository.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-track-copilot-code-review-outcomes-in-repository-insights",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:00:35.000Z",
+        "checkedAt": "2026-11-19T19:00:55.210Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Enterprise owners and billing managers, organization owners, and anyone with a custom organization or enterprise role that grants the View Copilot Metrics permission can access the repository 1-day reports through the API.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-track-copilot-code-review-outcomes-in-repository-insights",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:00:35.000Z",
+        "checkedAt": "2026-11-19T19:00:55.210Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "MAI Code 2 and MAI Code 2 Flash in GitHub Copilot",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-track-copilot-code-review-outcomes-in-repository-insights",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:00:35.000Z",
+        "checkedAt": "2026-11-19T19:00:55.210Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PRODUCT_LAUNCH"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 PRODUCT_LAUNCH (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

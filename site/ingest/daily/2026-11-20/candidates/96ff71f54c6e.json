@@ -1,0 +1,234 @@
+{
+  "id": "96ff71f54c6e",
+  "date": "2026-11-20",
+  "proposedSlug": "openai-s-gpt-6-2-astra-gpt",
+  "title": null,
+  "sourceTitle": "OpenAI’s GPT-6.2 Astra and GPT-6.2 Sol now available",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": true,
+      "novelty": true,
+      "userImpact": true,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": false,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "contextNeed",
+      "evidenceQuality",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "GitHub",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://github.blog/changelog/2026-11-17-openais-gpt-6-2-astra-and-gpt-6-2-sol-now-available",
+      "name": "GitHub Changelog",
+      "type": "official",
+      "publishedAt": "2026-11-17T20:20:29.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "96ff71f54c6e",
+    "url": "https://github.blog/changelog/2026-11-17-openais-gpt-6-2-astra-and-gpt-6-2-sol-now-available",
+    "canonicalUrl": "https://github.blog/changelog/2026-11-17-openais-gpt-6-2-astra-and-gpt-6-2-sol-now-available",
+    "title": "OpenAI’s GPT-6.2 Astra and GPT-6.2 Sol now available",
+    "excerpt": "OpenAI’s GPT-6.2 Astra and GPT-6.2 Sol are now generally available in GitHub Copilot. Both models are designed for agentic coding and code review, with stronger coding judgment than earlier GPT-6… The post OpenAI’s GPT-6.2 Astra and GPT-6.2 Sol now available appeared first on The GitHub Blog .",
+    "publishedAt": "2026-11-17T20:20:29.000Z",
+    "sourceId": "github-changelog",
+    "sourceName": "GitHub Changelog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://github.blog/changelog/feed/",
+    "fetchedAt": "2026-11-19T18:59:10.009Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 2001,
+    "grade": "LIMITED",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "OpenAI’s GPT-6.2 Astra and GPT-6.2 Sol are now generally available in GitHub Copilot. Both models are designed for agentic coding and code review, with stronger coding judgment than earlier GPT-6… The post OpenAI’s GPT-6.2 Astra and GPT-6.2 Sol now available appeared first on The GitHub Blog .",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-openais-gpt-6-2-astra-and-gpt-6-2-sol-now-available",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T20:20:29.000Z",
+        "checkedAt": "2026-11-19T19:00:39.078Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "OpenAI's GPT-6.2 Astra and GPT-6.2 Sol now available - GitHub Changelog",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-openais-gpt-6-2-astra-and-gpt-6-2-sol-now-available",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T20:20:29.000Z",
+        "checkedAt": "2026-11-19T19:00:39.078Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "OpenAI&rsquo;s GPT-6.2 Astra and GPT-6.2 Sol are now generally available in GitHub Copilot.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-openais-gpt-6-2-astra-and-gpt-6-2-sol-now-available",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T20:20:29.000Z",
+        "checkedAt": "2026-11-19T19:00:39.078Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Both models are designed for agentic coding and code review, with stronger coding judgment than earlier GPT-6 models.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-openais-gpt-6-2-astra-and-gpt-6-2-sol-now-available",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T20:20:29.000Z",
+        "checkedAt": "2026-11-19T19:00:39.078Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "In early testing, both caught significantly more real issues in code review than earlier GPT-6 models while using fewer tokens.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-openais-gpt-6-2-astra-and-gpt-6-2-sol-now-available",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T20:20:29.000Z",
+        "checkedAt": "2026-11-19T19:00:39.078Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "GPT-6.2 Astra: OpenAI&rsquo;s latest Astra model for agentic coding and terminal work.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-openais-gpt-6-2-astra-and-gpt-6-2-sol-now-available",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T20:20:29.000Z",
+        "checkedAt": "2026-11-19T19:00:39.078Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "In early testing, it caught significantly more issues in code review than GPT-6 Astra and completed agentic coding tasks using noticeably fewer tokens.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-openais-gpt-6-2-astra-and-gpt-6-2-sol-now-available",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T20:20:29.000Z",
+        "checkedAt": "2026-11-19T19:00:39.078Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "GPT-6.2 Sol: OpenAI&rsquo;s latest Sol model for complex agentic coding and in-depth code review.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-openais-gpt-6-2-astra-and-gpt-6-2-sol-now-available",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T20:20:29.000Z",
+        "checkedAt": "2026-11-19T19:00:39.078Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "In early testing, it caught nearly twice as many real issues in code review as GPT-6.1 Sol while keeping its findings accurate.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-openais-gpt-6-2-astra-and-gpt-6-2-sol-now-available",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T20:20:29.000Z",
+        "checkedAt": "2026-11-19T19:00:39.078Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "GPT-6.2 Astra and GPT-6.2 Sol are available to Copilot Pro+, Max, Business, and Enterprise users.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-openais-gpt-6-2-astra-and-gpt-6-2-sol-now-available",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T20:20:29.000Z",
+        "checkedAt": "2026-11-19T19:00:39.078Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Copilot Enterprise and Copilot Business plan administrators can manage access to GPT-6.2 models through the model policy in Copilot settings.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-openais-gpt-6-2-astra-and-gpt-6-2-sol-now-available",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T20:20:29.000Z",
+        "checkedAt": "2026-11-19T19:00:39.078Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "To explore all models available in GitHub Copilot, see our documentation on models and get started with Copilot.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-openais-gpt-6-2-astra-and-gpt-6-2-sol-now-available",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T20:20:29.000Z",
+        "checkedAt": "2026-11-19T19:00:39.078Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "MAI Code 2 and MAI Code 2 Flash in GitHub Copilot",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-openais-gpt-6-2-astra-and-gpt-6-2-sol-now-available",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T20:20:29.000Z",
+        "checkedAt": "2026-11-19T19:00:39.078Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 4,
+    "practicalImpact": 2,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "MODEL",
+      "PRODUCT_LAUNCH",
+      "AVAILABILITY"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 12,
+    "total": 12
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 MODEL·PRODUCT_LAUNCH·AVAILABILITY (우선순위 12)",
+    "근거 확인 통과 (확인 사실 11개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "none",
+    "model": null,
+    "status": "skipped",
+    "error": "Shadow Mode — 원고를 만들지 않음",
+    "promptVersion": "draft-v2",
+    "at": "2026-11-19T19:00:58.816Z",
+    "evidenceHash": "fcadf3272197"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": true,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}

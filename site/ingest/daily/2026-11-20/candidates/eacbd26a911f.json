@@ -1,0 +1,232 @@
+{
+  "id": "eacbd26a911f",
+  "date": "2026-11-20",
+  "proposedSlug": "introducing-workload-recovery-expanded-infrastructure-checks",
+  "title": null,
+  "sourceTitle": "Introducing workload recovery and expanded infrastructure checks on Amazon SageMaker HyperPod",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 9,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": true,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": true
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-workload-recovery-and-expanded-infrastructure-checks-on-amazon-sagemaker-hyperpod/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-11-18T23:03:29.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "eacbd26a911f",
+    "url": "https://aws.amazon.com/blogs/machine-learning/introducing-workload-recovery-and-expanded-infrastructure-checks-on-amazon-sagemaker-hyperpod/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-workload-recovery-and-expanded-infrastructure-checks-on-amazon-sagemaker-hyperpod",
+    "title": "Introducing workload recovery and expanded infrastructure checks on Amazon SageMaker HyperPod",
+    "excerpt": "Large training jobs can stall or compute wrong results even when every node looks healthy. Amazon SageMaker HyperPod now adds workload recovery and expanded infrastructure checks that catch these failures sooner and raise the goodput of your training workloads.",
+    "publishedAt": "2026-11-18T23:03:29.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-11-19T18:59:10.009Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 28660,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Large training jobs can stall or compute wrong results even when every node looks healthy. Amazon SageMaker HyperPod now adds workload recovery and expanded infrastructure checks that catch these failures sooner and raise the goodput of your training workloads.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-workload-recovery-and-expanded-infrastructure-checks-on-amazon-sagemaker-hyperpod/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-18T23:03:29.000Z",
+        "checkedAt": "2026-11-19T19:00:47.290Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Introducing workload recovery and expanded infrastructure checks on Amazon SageMaker HyperPod | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-workload-recovery-and-expanded-infrastructure-checks-on-amazon-sagemaker-hyperpod/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-18T23:03:29.000Z",
+        "checkedAt": "2026-11-19T19:00:47.290Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Introducing workload recovery and expanded infrastructure checks on Amazon SageMaker HyperPod",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-workload-recovery-and-expanded-infrastructure-checks-on-amazon-sagemaker-hyperpod/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-18T23:03:29.000Z",
+        "checkedAt": "2026-11-19T19:00:47.290Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Today, we’re introducing workload recovery and infrastructure checks on Amazon SageMaker HyperPod that catch these failures sooner and raise the goodput of your training workloads.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-workload-recovery-and-expanded-infrastructure-checks-on-amazon-sagemaker-hyperpod/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-18T23:03:29.000Z",
+        "checkedAt": "2026-11-19T19:00:47.290Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "MultiNodeTrainingValidation is a new deep health check for HyperPod clusters orchestrated by Amazon Elastic Kubernetes Service (Amazon EKS).",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-workload-recovery-and-expanded-infrastructure-checks-on-amazon-sagemaker-hyperpod/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-18T23:03:29.000Z",
+        "checkedAt": "2026-11-19T19:00:47.290Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "At the SageMaker HyperPod on-demand price of approximately $66 per instance-hour in US East (N.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-workload-recovery-and-expanded-infrastructure-checks-on-amazon-sagemaker-hyperpod/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-18T23:03:29.000Z",
+        "checkedAt": "2026-11-19T19:00:47.290Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "With a 15-minute hung job detection rule, HyperPod cancels the stalled job and Slurm requeues it.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-workload-recovery-and-expanded-infrastructure-checks-on-amazon-sagemaker-hyperpod/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-18T23:03:29.000Z",
+        "checkedAt": "2026-11-19T19:00:47.290Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "An Amazon SageMaker HyperPod cluster orchestrated by Amazon EKS.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-workload-recovery-and-expanded-infrastructure-checks-on-amazon-sagemaker-hyperpod/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-18T23:03:29.000Z",
+        "checkedAt": "2026-11-19T19:00:47.290Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "HMA and HyperPod node recovery still handle hardware faults, and the HyperPod training operator still handles job restarts.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-workload-recovery-and-expanded-infrastructure-checks-on-amazon-sagemaker-hyperpod/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-18T23:03:29.000Z",
+        "checkedAt": "2026-11-19T19:00:47.290Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "A SageMaker HyperPod cluster orchestrated by Amazon EKS.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-workload-recovery-and-expanded-infrastructure-checks-on-amazon-sagemaker-hyperpod/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-18T23:03:29.000Z",
+        "checkedAt": "2026-11-19T19:00:47.290Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "aws-hyperpod Warning CriticalPodRestarted pod/demo-plugin-4wsqw Critical infrastructure pod container crash restarted (count: 2)",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-workload-recovery-and-expanded-infrastructure-checks-on-amazon-sagemaker-hyperpod/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-18T23:03:29.000Z",
+        "checkedAt": "2026-11-19T19:00:47.290Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "aws-hyperpod Warning CriticalPodCrashLoop pod/demo-plugin-4wsqw Critical infrastructure pod container crash in CrashLoopBackOff",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-workload-recovery-and-expanded-infrastructure-checks-on-amazon-sagemaker-hyperpod/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-18T23:03:29.000Z",
+        "checkedAt": "2026-11-19T19:00:47.290Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "To keep rules files in Amazon Simple Storage Service (Amazon S3), copy them to the same path on every node, for example in your lifecycle script.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-workload-recovery-and-expanded-infrastructure-checks-on-amazon-sagemaker-hyperpod/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-18T23:03:29.000Z",
+        "checkedAt": "2026-11-19T19:00:47.290Z"
+      }
+    ],
+    "pageDate": "2026-11-18T23:03:29.000Z"
+  },
+  "score": {
+    "importance": 2,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PRODUCT_LAUNCH",
+      "INFRA"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 7,
+    "total": 7
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 PRODUCT_LAUNCH·INFRA (우선순위 7)",
+    "근거 확인 통과 (확인 사실 9개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "none",
+    "model": null,
+    "status": "skipped",
+    "error": "Shadow Mode — 원고를 만들지 않음",
+    "promptVersion": "draft-v2",
+    "at": "2026-11-19T19:00:58.817Z",
+    "evidenceHash": "1887f054c014"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}
