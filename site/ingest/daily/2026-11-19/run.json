@@ -1,7 +1,7 @@
 {
   "date": "2026-11-19",
   "mode": "shadow",
-  "startedAt": "2026-11-18T18:49:34.465Z",
+  "startedAt": "2026-11-19T03:14:34.123Z",
   "status": "INCOMPLETE",
   "limits": {
     "windowDays": 3,
@@ -33,11 +33,11 @@
         "redirected": false,
         "finalUrl": null
       },
-      "parsed": 1410,
-      "matched": 1410,
-      "found": 1410,
-      "inWindow": 19,
-      "kept": 19,
+      "parsed": 1413,
+      "matched": 1413,
+      "found": 1413,
+      "inWindow": 22,
+      "kept": 22,
       "since": "2026-11-16",
       "coverage": {
         "complete": true
@@ -53,17 +53,17 @@
       "id": "anthropic",
       "name": "Anthropic",
       "status": "success",
-      "requests": 12,
+      "requests": 14,
       "http": {
         "status": 200,
         "redirected": false,
         "finalUrl": null
       },
-      "parsed": 594,
-      "matched": 280,
-      "found": 11,
-      "inWindow": 0,
-      "kept": 0,
+      "parsed": 595,
+      "matched": 281,
+      "found": 13,
+      "inWindow": 1,
+      "kept": 1,
       "since": "2026-11-16",
       "coverage": {
         "complete": true
@@ -93,12 +93,11 @@
       ],
       "health": "WARNING",
       "healthReasons": [
-        "발행일을 확인하지 못한 글 8건 (후보에서 제외)",
-        "기간 안 새 글 0건 8회 연속 (마지막 수집 2026-11-11)"
+        "발행일을 확인하지 못한 글 8건 (후보에서 제외)"
       ],
       "lastOkDate": "2026-11-19",
-      "lastItemDate": "2026-11-11",
-      "zeroStreak": 8
+      "lastItemDate": "2026-11-19",
+      "zeroStreak": 0
     },
     {
       "id": "anthropic-launch",
@@ -110,7 +109,7 @@
         "redirected": false,
         "finalUrl": null
       },
-      "parsed": 216,
+      "parsed": 215,
       "matched": 3,
       "found": 2,
       "inWindow": 0,
@@ -175,8 +174,8 @@
       "parsed": 100,
       "matched": 100,
       "found": 100,
-      "inWindow": 1,
-      "kept": 1,
+      "inWindow": 2,
+      "kept": 2,
       "since": "2026-11-16",
       "coverage": {
         "complete": true
@@ -192,17 +191,17 @@
       "id": "google-ai",
       "name": "Google (The Keyword · AI)",
       "status": "success",
-      "requests": 7,
+      "requests": 8,
       "http": {
         "status": 200,
         "redirected": false,
         "finalUrl": null
       },
-      "parsed": 11903,
-      "matched": 1665,
-      "found": 6,
-      "inWindow": 3,
-      "kept": 3,
+      "parsed": 11904,
+      "matched": 1666,
+      "found": 7,
+      "inWindow": 4,
+      "kept": 4,
       "since": "2026-11-16",
       "coverage": {
         "complete": true
@@ -340,11 +339,11 @@
         "redirected": false,
         "finalUrl": null
       },
-      "parsed": 911,
-      "matched": 911,
-      "found": 911,
-      "inWindow": 4,
-      "kept": 4,
+      "parsed": 913,
+      "matched": 913,
+      "found": 913,
+      "inWindow": 6,
+      "kept": 6,
       "since": "2026-11-16",
       "coverage": {
         "complete": true
@@ -402,8 +401,8 @@
       "since": "2026-11-16",
       "coverage": {
         "complete": false,
-        "reason": "피드의 가장 오래된 항목(2026-11-16)이 시작일(2026-11-16)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음",
-        "oldest": "2026-11-16"
+        "reason": "피드의 가장 오래된 항목(2026-11-17)이 시작일(2026-11-16)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음",
+        "oldest": "2026-11-17"
       },
       "undated": 0,
       "health": "OK",
@@ -453,8 +452,8 @@
       "parsed": 30,
       "matched": 30,
       "found": 30,
-      "inWindow": 21,
-      "kept": 21,
+      "inWindow": 25,
+      "kept": 25,
       "since": "2026-11-16",
       "coverage": {
         "complete": true
@@ -809,8 +808,8 @@
       "parsed": 20,
       "matched": 20,
       "found": 20,
-      "inWindow": 1,
-      "kept": 1,
+      "inWindow": 2,
+      "kept": 2,
       "since": "2026-11-16",
       "coverage": {
         "complete": true
@@ -943,13 +942,13 @@
       "parsed": 30,
       "matched": 30,
       "found": 30,
-      "inWindow": 9,
-      "kept": 9,
+      "inWindow": 15,
+      "kept": 15,
       "since": "2026-11-16",
       "coverage": {
         "complete": false,
-        "reason": "피드의 가장 오래된 항목(2026-11-18)이 시작일(2026-11-16)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음",
-        "oldest": "2026-11-18"
+        "reason": "피드의 가장 오래된 항목(2026-11-19)이 시작일(2026-11-16)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음",
+        "oldest": "2026-11-19"
       },
       "undated": 0,
       "health": "OK",
@@ -961,27 +960,26 @@
     {
       "id": "etnews",
       "name": "전자신문",
-      "status": "success",
-      "requests": 1,
-      "http": {
-        "status": 200,
-        "redirected": false,
-        "finalUrl": null
-      },
-      "parsed": 30,
-      "matched": 30,
-      "found": 30,
-      "inWindow": 11,
-      "kept": 11,
+      "status": "failed",
+      "requests": 0,
+      "http": {},
+      "parsed": null,
+      "matched": null,
+      "found": 0,
+      "inWindow": 0,
+      "kept": 0,
       "since": "2026-11-16",
       "coverage": {
-        "complete": false,
-        "reason": "피드의 가장 오래된 항목(2026-11-18)이 시작일(2026-11-16)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음",
-        "oldest": "2026-11-18"
+        "complete": true
       },
       "undated": 0,
-      "health": "OK",
-      "healthReasons": [],
+      "errors": [
+        "fetch failed"
+      ],
+      "health": "FAILED",
+      "healthReasons": [
+        "요청 실패 (failed)"
+      ],
       "lastOkDate": "2026-11-19",
       "lastItemDate": "2026-11-19",
       "zeroStreak": 0
@@ -1016,24 +1014,24 @@
     }
   ],
   "sourceHealth": {
-    "OK": 24,
+    "OK": 23,
     "WARNING": 3,
     "DEGRADED": 4,
-    "FAILED": 0,
+    "FAILED": 1,
     "SKIPPED": 9
   },
   "counts": {
-    "collected": 587,
-    "carriedFromQueue": 54,
-    "NEW": 639,
+    "collected": 595,
+    "carriedFromQueue": 58,
+    "NEW": 650,
     "UPDATE_EXISTING": 0,
-    "DUPLICATE": 1,
+    "DUPLICATE": 2,
     "UNCERTAIN": 1,
-    "PUBLISH": 16,
-    "HOLD": 343,
-    "EXCLUDE": 282,
-    "shortlisted": 68,
-    "evidenceChecked": 40,
+    "PUBLISH": 23,
+    "HOLD": 339,
+    "EXCLUDE": 291,
+    "shortlisted": 76,
+    "evidenceChecked": 65,
     "drafts": 0,
     "draftQa": {
       "PASS": 0,
@@ -1054,7 +1052,7 @@
       "attempted": 0,
       "ok": 0,
       "failed": 0,
-      "skipped": 16,
+      "skipped": 23,
       "successRate": null,
       "quotaHit": false
     },
@@ -1064,13 +1062,13 @@
   "pipeline": {
     "complete": false,
     "pending": {
-      "evidence": 82,
-      "draft": 63,
+      "evidence": 65,
+      "draft": 71,
       "meta": 0,
-      "retrySources": 0
+      "retrySources": 1
     },
     "carriedIn": {
-      "evidence": 54,
+      "evidence": 58,
       "draft": 0
     },
     "resolvedFromQueue": 0,
@@ -1082,7 +1080,7 @@
       {
         "id": "aws-ml",
         "name": "AWS Machine Learning Blog",
-        "reason": "피드의 가장 오래된 항목(2026-11-16)이 시작일(2026-11-16)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음"
+        "reason": "피드의 가장 오래된 항목(2026-11-17)이 시작일(2026-11-16)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음"
       },
       {
         "id": "aitimes",
@@ -1092,12 +1090,7 @@
       {
         "id": "zdnet-korea",
         "name": "지디넷코리아",
-        "reason": "피드의 가장 오래된 항목(2026-11-18)이 시작일(2026-11-16)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음"
-      },
-      {
-        "id": "etnews",
-        "name": "전자신문",
-        "reason": "피드의 가장 오래된 항목(2026-11-18)이 시작일(2026-11-16)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음"
+        "reason": "피드의 가장 오래된 항목(2026-11-19)이 시작일(2026-11-16)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음"
       },
       {
         "id": "arxiv-cs-ai",
@@ -1109,6 +1102,68 @@
     "queueFile": "pipeline-queue.json"
   },
   "items": [
+    {
+      "id": "e683d40fba10",
+      "title": "The Silent Consensus",
+      "source": "OpenAI",
+      "publishedAt": "2026-11-18T10:00:00.000Z",
+      "url": "https://openai.com/index/the-silent-consensus",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+      ],
+      "score": 2,
+      "importance": 0,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [],
+      "company": "OpenAI",
+      "stage": "metadata"
+    },
+    {
+      "id": "9fa731b0ef6c",
+      "title": "Research acceleration: The jagged frontier",
+      "source": "OpenAI",
+      "publishedAt": "2026-11-18T08:00:00.000Z",
+      "url": "https://openai.com/index/research-acceleration-jagged-frontier",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+      ],
+      "score": 2,
+      "importance": 0,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [],
+      "company": "OpenAI",
+      "stage": "metadata"
+    },
+    {
+      "id": "b527b6f0ddce",
+      "title": "How Sumitomo Life’s leaders helped teams adopt ChatGPT Enterprise",
+      "source": "OpenAI",
+      "publishedAt": "2026-11-18T08:00:00.000Z",
+      "url": "https://openai.com/business/customer-stories/sumitomo-life",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "글 유형 CUSTOMER_STORY — 강한 사건 신호 없음"
+      ],
+      "score": 2,
+      "importance": 1,
+      "contentType": "CUSTOMER_STORY",
+      "typePenalty": -3,
+      "signals": [
+        "CONSUMER"
+      ],
+      "company": "OpenAI",
+      "stage": "metadata"
+    },
     {
       "id": "53f2a14376dd",
       "title": "Inside the Codex sandbox",
@@ -1130,11 +1185,11 @@
       "stage": "metadata"
     },
     {
-      "id": "e683d40fba10",
-      "title": "The Silent Consensus",
+      "id": "8b6ac2940fdc",
+      "title": "Managing frontier AI risk: From training to deployment",
       "source": "OpenAI",
-      "publishedAt": "2026-11-18T00:00:00.000Z",
-      "url": "https://openai.com/index/the-silent-consensus",
+      "publishedAt": "2026-11-18T06:00:00.000Z",
+      "url": "https://openai.com/index/managing-frontier-ai-risk",
       "duplicate": "NEW",
       "matchSlug": null,
       "decision": "EXCLUDE",
@@ -1148,31 +1203,6 @@
       "signals": [],
       "company": "OpenAI",
       "stage": "metadata"
-    },
-    {
-      "id": "c7d3ecb00643",
-      "title": "Advancing chip design with OpenAI models",
-      "source": "OpenAI",
-      "publishedAt": "2026-11-18T00:00:00.000Z",
-      "url": "https://openai.com/index/advancing-chip-design-with-our-models",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "사건 신호 INFRA (우선순위 4)",
-        "근거 확인 대기 — 이번 실행 배치(40건)을 넘어 다음 실행으로 이월"
-      ],
-      "score": 4,
-      "importance": 1,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "INFRA"
-      ],
-      "company": "OpenAI",
-      "stage": "metadata",
-      "capStage": "evidence",
-      "queued": "evidence"
     },
     {
       "id": "6cab9c8cd383",
@@ -1192,6 +1222,47 @@
       "typePenalty": 0,
       "signals": [
         "CONSUMER"
+      ],
+      "company": "OpenAI",
+      "stage": "evidence",
+      "evidenceStatus": "SKIPPED_HOST_BLOCKED",
+      "distinctFacts": 0,
+      "sufficiency": "INSUFFICIENT",
+      "deepMissing": [
+        "importance",
+        "userImpact",
+        "contextNeed",
+        "distinctFacts",
+        "evidenceQuality",
+        "standardWouldOmit"
+      ],
+      "alternate": {
+        "tried": [
+          "https://platform.openai.com/docs/changelog"
+        ],
+        "matched": 0,
+        "reason": "제목에 버전 붙은 이름 없음"
+      },
+      "suggestedDepth": null
+    },
+    {
+      "id": "c7d3ecb00643",
+      "title": "Advancing chip design with OpenAI models",
+      "source": "OpenAI",
+      "publishedAt": "2026-11-18T00:00:00.000Z",
+      "url": "https://openai.com/index/advancing-chip-design-with-our-models",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "근거 부족 (원문 SKIPPED_HOST_BLOCKED, 확인 사실 0개) — 발행하지 않음"
+      ],
+      "score": 4,
+      "importance": 1,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "INFRA"
       ],
       "company": "OpenAI",
       "stage": "evidence",
@@ -1341,47 +1412,6 @@
       "suggestedDepth": null
     },
     {
-      "id": "58da9c66b145",
-      "title": "Introducing OpenAI for Chile",
-      "source": "OpenAI",
-      "publishedAt": "2026-11-17T00:00:00.000Z",
-      "url": "https://openai.com/index/introducing-openai-for-chile",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "근거 부족 (원문 SKIPPED_HOST_BLOCKED, 확인 사실 0개) — 발행하지 않음"
-      ],
-      "score": 9,
-      "importance": 3,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "PRODUCT_LAUNCH",
-        "REGULATION"
-      ],
-      "company": "OpenAI",
-      "stage": "evidence",
-      "evidenceStatus": "SKIPPED_HOST_BLOCKED",
-      "distinctFacts": 0,
-      "sufficiency": "INSUFFICIENT",
-      "deepMissing": [
-        "importance",
-        "userImpact",
-        "distinctFacts",
-        "evidenceQuality",
-        "standardWouldOmit"
-      ],
-      "alternate": {
-        "tried": [
-          "https://platform.openai.com/docs/changelog"
-        ],
-        "matched": 0,
-        "reason": "제목에 버전 붙은 이름 없음"
-      },
-      "suggestedDepth": null
-    },
-    {
       "id": "0604bc2b50fc",
       "title": "Astra for Law leads in legal intelligence",
       "source": "OpenAI",
@@ -1409,6 +1439,47 @@
       "sufficiency": "INSUFFICIENT",
       "deepMissing": [
         "importance",
+        "distinctFacts",
+        "evidenceQuality",
+        "standardWouldOmit"
+      ],
+      "alternate": {
+        "tried": [
+          "https://platform.openai.com/docs/changelog"
+        ],
+        "matched": 0,
+        "reason": "제목에 버전 붙은 이름 없음"
+      },
+      "suggestedDepth": null
+    },
+    {
+      "id": "58da9c66b145",
+      "title": "Introducing OpenAI for Chile",
+      "source": "OpenAI",
+      "publishedAt": "2026-11-17T00:00:00.000Z",
+      "url": "https://openai.com/index/introducing-openai-for-chile",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "근거 부족 (원문 SKIPPED_HOST_BLOCKED, 확인 사실 0개) — 발행하지 않음"
+      ],
+      "score": 9,
+      "importance": 3,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "PRODUCT_LAUNCH",
+        "REGULATION"
+      ],
+      "company": "OpenAI",
+      "stage": "evidence",
+      "evidenceStatus": "SKIPPED_HOST_BLOCKED",
+      "distinctFacts": 0,
+      "sufficiency": "INSUFFICIENT",
+      "deepMissing": [
+        "importance",
+        "userImpact",
         "distinctFacts",
         "evidenceQuality",
         "standardWouldOmit"
@@ -1609,26 +1680,6 @@
       "stage": "metadata"
     },
     {
-      "id": "b0ded74e06b0",
-      "title": "Advancing computer-use agents for healthcare teams",
-      "source": "OpenAI",
-      "publishedAt": "2026-11-16T06:00:00.000Z",
-      "url": "https://openai.com/index/advancing-computer-use-for-healthcare-teams",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "EXCLUDE",
-      "reasons": [
-        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
-      ],
-      "score": 2,
-      "importance": 0,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [],
-      "company": "OpenAI",
-      "stage": "metadata"
-    },
-    {
       "id": "cfcc7acb02e9",
       "title": "More ways to move care forward with ChatGPT for Healthcare",
       "source": "OpenAI",
@@ -1668,6 +1719,26 @@
         "reason": "제목에 버전 붙은 이름 없음"
       },
       "suggestedDepth": null
+    },
+    {
+      "id": "b0ded74e06b0",
+      "title": "Advancing computer-use agents for healthcare teams",
+      "source": "OpenAI",
+      "publishedAt": "2026-11-16T06:00:00.000Z",
+      "url": "https://openai.com/index/advancing-computer-use-for-healthcare-teams",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+      ],
+      "score": 2,
+      "importance": 0,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [],
+      "company": "OpenAI",
+      "stage": "metadata"
     },
     {
       "id": "e3915f7e4cf0",
@@ -1752,6 +1823,75 @@
       "suggestedDepth": null
     },
     {
+      "id": "25c96fa5a216",
+      "title": "Anthropic prices initial public offering",
+      "source": "Anthropic",
+      "publishedAt": "2026-11-18T00:00:00.000Z",
+      "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "PUBLISH",
+      "reasons": [
+        "사건 신호 PRICING (우선순위 7)",
+        "근거 확인 통과 (확인 사실 9개, SUFFICIENT_STANDARD)"
+      ],
+      "score": 7,
+      "importance": 2,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "PRICING"
+      ],
+      "company": "Anthropic",
+      "stage": "evidence",
+      "evidenceStatus": "OK",
+      "distinctFacts": 9,
+      "sufficiency": "SUFFICIENT_STANDARD",
+      "deepMissing": [
+        "importance",
+        "contextNeed",
+        "evidenceQuality",
+        "standardWouldOmit"
+      ],
+      "suggestedDepth": "STANDARD",
+      "draftPending": true
+    },
+    {
+      "id": "b898a1b2127c",
+      "title": "Introducing Gemini 4 Neon",
+      "source": "Google DeepMind",
+      "publishedAt": "2026-11-18T21:35:43.000Z",
+      "url": "https://deepmind.google/blog/introducing-gemini-4-neon/",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "PUBLISH",
+      "reasons": [
+        "사건 신호 MODEL·PRODUCT_LAUNCH (우선순위 9)",
+        "근거 확인 통과 (확인 사실 10개, SUFFICIENT_STANDARD)"
+      ],
+      "score": 9,
+      "importance": 3,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "MODEL",
+        "PRODUCT_LAUNCH"
+      ],
+      "company": "Google",
+      "stage": "evidence",
+      "evidenceStatus": "OK",
+      "distinctFacts": 10,
+      "sufficiency": "SUFFICIENT_STANDARD",
+      "deepMissing": [
+        "importance",
+        "userImpact",
+        "contextNeed",
+        "standardWouldOmit"
+      ],
+      "suggestedDepth": "STANDARD",
+      "draftPending": true
+    },
+    {
       "id": "50e3ea47cbae",
       "title": "Genie 4 is now available",
       "source": "Google DeepMind",
@@ -1818,6 +1958,29 @@
       ],
       "suggestedDepth": "STANDARD",
       "draftPending": true
+    },
+    {
+      "id": "b2c084a41275",
+      "title": "Introducing Gemini 4 Neon",
+      "source": "Google (The Keyword · AI)",
+      "publishedAt": "2026-11-18T00:00:00.000Z",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+      "duplicate": "DUPLICATE",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "중복: 같은 날 다른 출처의 같은 발표 (Google DeepMind)"
+      ],
+      "score": 9,
+      "importance": 3,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "MODEL",
+        "PRODUCT_LAUNCH"
+      ],
+      "company": "Google",
+      "stage": "metadata"
     },
     {
       "id": "5caa36bb4cc3",
@@ -2066,7 +2229,7 @@
       "decision": "HOLD",
       "reasons": [
         "사건 신호 INFRA (우선순위 4)",
-        "근거 확인 대기 — 이번 실행 배치(40건)을 넘어 다음 실행으로 이월"
+        "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
       ],
       "score": 4,
       "importance": 1,
@@ -2076,9 +2239,17 @@
         "INFRA"
       ],
       "company": "NVIDIA",
-      "stage": "metadata",
-      "capStage": "evidence",
-      "queued": "evidence"
+      "stage": "evidence",
+      "evidenceStatus": "OK",
+      "distinctFacts": 11,
+      "sufficiency": "SUFFICIENT_STANDARD",
+      "deepMissing": [
+        "importance",
+        "userImpact",
+        "contextNeed",
+        "standardWouldOmit"
+      ],
+      "suggestedDepth": "SHORT"
     },
     {
       "id": "aafc20d9f2a0",
@@ -2091,7 +2262,7 @@
       "decision": "HOLD",
       "reasons": [
         "사건 신호 INFRA (우선순위 4)",
-        "근거 확인 대기 — 이번 실행 배치(40건)을 넘어 다음 실행으로 이월"
+        "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
       ],
       "score": 4,
       "importance": 1,
@@ -2101,9 +2272,17 @@
         "INFRA"
       ],
       "company": "NVIDIA",
-      "stage": "metadata",
-      "capStage": "evidence",
-      "queued": "evidence"
+      "stage": "evidence",
+      "evidenceStatus": "OK",
+      "distinctFacts": 12,
+      "sufficiency": "SUFFICIENT_STANDARD",
+      "deepMissing": [
+        "importance",
+        "userImpact",
+        "contextNeed",
+        "standardWouldOmit"
+      ],
+      "suggestedDepth": "SHORT"
     },
     {
       "id": "0be2ab6226e7",
@@ -2136,7 +2315,7 @@
       "decision": "HOLD",
       "reasons": [
         "사건 신호 RESEARCH_RESULT (우선순위 4)",
-        "근거 확인 대기 — 이번 실행 배치(40건)을 넘어 다음 실행으로 이월"
+        "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
       ],
       "score": 4,
       "importance": 1,
@@ -2146,9 +2325,17 @@
         "RESEARCH_RESULT"
       ],
       "company": "NVIDIA",
-      "stage": "metadata",
-      "capStage": "evidence",
-      "queued": "evidence"
+      "stage": "evidence",
+      "evidenceStatus": "OK",
+      "distinctFacts": 11,
+      "sufficiency": "SUFFICIENT_STANDARD",
+      "deepMissing": [
+        "importance",
+        "userImpact",
+        "contextNeed",
+        "standardWouldOmit"
+      ],
+      "suggestedDepth": "SHORT"
     },
     {
       "id": "8192f1094925",
@@ -2181,7 +2368,7 @@
       "decision": "HOLD",
       "reasons": [
         "사건 신호 INFRA (우선순위 4)",
-        "근거 확인 대기 — 이번 실행 배치(40건)을 넘어 다음 실행으로 이월"
+        "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
       ],
       "score": 4,
       "importance": 1,
@@ -2191,9 +2378,17 @@
         "INFRA"
       ],
       "company": "NVIDIA",
-      "stage": "metadata",
-      "capStage": "evidence",
-      "queued": "evidence"
+      "stage": "evidence",
+      "evidenceStatus": "OK",
+      "distinctFacts": 11,
+      "sufficiency": "SUFFICIENT_STANDARD",
+      "deepMissing": [
+        "importance",
+        "userImpact",
+        "contextNeed",
+        "standardWouldOmit"
+      ],
+      "suggestedDepth": "SHORT"
     },
     {
       "id": "6cab091c059a",
@@ -2206,7 +2401,7 @@
       "decision": "HOLD",
       "reasons": [
         "사건 신호 INFRA (우선순위 4)",
-        "근거 확인 대기 — 이번 실행 배치(40건)을 넘어 다음 실행으로 이월"
+        "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
       ],
       "score": 4,
       "importance": 1,
@@ -2216,9 +2411,17 @@
         "INFRA"
       ],
       "company": "NVIDIA",
-      "stage": "metadata",
-      "capStage": "evidence",
-      "queued": "evidence"
+      "stage": "evidence",
+      "evidenceStatus": "OK",
+      "distinctFacts": 12,
+      "sufficiency": "SUFFICIENT_STANDARD",
+      "deepMissing": [
+        "importance",
+        "userImpact",
+        "contextNeed",
+        "standardWouldOmit"
+      ],
+      "suggestedDepth": "SHORT"
     },
     {
       "id": "46b48e728e81",
@@ -2292,6 +2495,46 @@
       "typePenalty": -3,
       "signals": [],
       "company": "GitHub",
+      "stage": "metadata"
+    },
+    {
+      "id": "f689168723dc",
+      "title": "DaisyRose-27B: Pushing the Frontier of Post-Training Efficiency",
+      "source": "Hugging Face Blog",
+      "publishedAt": "2026-11-18T19:54:56.000Z",
+      "url": "https://huggingface.co/blog/RadixArk/daisyrose-27b-pushing-the-frontier-of-post-trainin",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+      ],
+      "score": 2,
+      "importance": 0,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [],
+      "company": "Hugging Face",
+      "stage": "metadata"
+    },
+    {
+      "id": "75623b38e68b",
+      "title": "Why your fine-tuning job takes longer than the FLOPs say",
+      "source": "Hugging Face Blog",
+      "publishedAt": "2026-11-18T18:53:43.000Z",
+      "url": "https://huggingface.co/blog/Dharma-AI/predicting-fine-tuning-time",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "글 유형 THOUGHT_LEADERSHIP — 강한 사건 신호 없음"
+      ],
+      "score": 0,
+      "importance": 0,
+      "contentType": "THOUGHT_LEADERSHIP",
+      "typePenalty": -2,
+      "signals": [],
+      "company": "Hugging Face",
       "stage": "metadata"
     },
     {
@@ -2372,6 +2615,295 @@
       "typePenalty": 0,
       "signals": [],
       "company": "Hugging Face",
+      "stage": "metadata"
+    },
+    {
+      "id": "1980ba70462d",
+      "title": "Full Fine-Tuning (FFT) on SageMaker AI Serverless Model Customization",
+      "source": "AWS Machine Learning Blog",
+      "publishedAt": "2026-11-19T00:15:58.000Z",
+      "url": "https://aws.amazon.com/blogs/machine-learning/full-fine-tuning-fft-on-sagemaker-ai-serverless-model-customization/",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "글 유형 HOW_TO — 강한 사건 신호 없음"
+      ],
+      "score": -1,
+      "importance": 0,
+      "contentType": "HOW_TO",
+      "typePenalty": -3,
+      "signals": [],
+      "company": "Amazon",
+      "stage": "metadata"
+    },
+    {
+      "id": "6f8f17530b91",
+      "title": "Exa boosts embedding throughput by 50% to index billions of documents on AWS AI chips",
+      "source": "AWS Machine Learning Blog",
+      "publishedAt": "2026-11-18T23:58:22.000Z",
+      "url": "https://aws.amazon.com/blogs/machine-learning/exa-boosts-embedding-throughput-by-50-to-index-billions-of-documents-on-aws-ai-chips/",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "사건 신호 INFRA (우선순위 4)",
+        "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+      ],
+      "score": 4,
+      "importance": 1,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "INFRA"
+      ],
+      "company": "Amazon",
+      "stage": "evidence",
+      "evidenceStatus": "OK",
+      "distinctFacts": 9,
+      "sufficiency": "SUFFICIENT_STANDARD",
+      "deepMissing": [
+        "importance",
+        "userImpact",
+        "contextNeed",
+        "standardWouldOmit"
+      ],
+      "suggestedDepth": "SHORT"
+    },
+    {
+      "id": "eacbd26a911f",
+      "title": "Introducing workload recovery and expanded infrastructure checks on Amazon SageMaker HyperPod",
+      "source": "AWS Machine Learning Blog",
+      "publishedAt": "2026-11-18T23:03:29.000Z",
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-workload-recovery-and-expanded-infrastructure-checks-on-amazon-sagemaker-hyperpod/",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "PUBLISH",
+      "reasons": [
+        "사건 신호 PRODUCT_LAUNCH·INFRA (우선순위 7)",
+        "근거 확인 통과 (확인 사실 9개, SUFFICIENT_STANDARD)"
+      ],
+      "score": 7,
+      "importance": 2,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "PRODUCT_LAUNCH",
+        "INFRA"
+      ],
+      "company": "Amazon",
+      "stage": "evidence",
+      "evidenceStatus": "OK",
+      "distinctFacts": 9,
+      "sufficiency": "SUFFICIENT_STANDARD",
+      "deepMissing": [
+        "importance",
+        "userImpact"
+      ],
+      "suggestedDepth": "STANDARD",
+      "draftPending": true
+    },
+    {
+      "id": "663fa60cff59",
+      "title": "Introducing the Amazon SageMaker JumpStart Model Leaderboard",
+      "source": "AWS Machine Learning Blog",
+      "publishedAt": "2026-11-18T22:31:04.000Z",
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-the-amazon-sagemaker-jumpstart-model-leaderboard/",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "PUBLISH",
+      "reasons": [
+        "사건 신호 MODEL·PRODUCT_LAUNCH (우선순위 9)",
+        "근거 확인 통과 (확인 사실 11개, SUFFICIENT_STANDARD)"
+      ],
+      "score": 9,
+      "importance": 3,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "MODEL",
+        "PRODUCT_LAUNCH"
+      ],
+      "company": "Amazon",
+      "stage": "evidence",
+      "evidenceStatus": "OK",
+      "distinctFacts": 11,
+      "sufficiency": "SUFFICIENT_STANDARD",
+      "deepMissing": [
+        "importance",
+        "userImpact",
+        "contextNeed",
+        "standardWouldOmit"
+      ],
+      "suggestedDepth": "STANDARD",
+      "draftPending": true
+    },
+    {
+      "id": "44013fe75393",
+      "title": "How Airbnb uses cost per task to operate coding agents on Amazon Bedrock",
+      "source": "AWS Machine Learning Blog",
+      "publishedAt": "2026-11-18T21:48:19.000Z",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-airbnb-uses-cost-per-task-to-operate-coding-agents-on-amazon-bedrock/",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "글 유형 HOW_TO — 강한 사건 신호 없음"
+      ],
+      "score": 2,
+      "importance": 1,
+      "contentType": "HOW_TO",
+      "typePenalty": -3,
+      "signals": [
+        "API_PLATFORM"
+      ],
+      "company": "Amazon",
+      "stage": "metadata"
+    },
+    {
+      "id": "a8eb0ed9ef43",
+      "title": "Design responsible AI controls for Amazon Aurora PostgreSQL",
+      "source": "AWS Machine Learning Blog",
+      "publishedAt": "2026-11-18T21:38:22.000Z",
+      "url": "https://aws.amazon.com/blogs/machine-learning/design-responsible-ai-controls-for-amazon-aurora-postgresql/",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "글 유형 HOW_TO — 강한 사건 신호 없음"
+      ],
+      "score": 2,
+      "importance": 1,
+      "contentType": "HOW_TO",
+      "typePenalty": -3,
+      "signals": [
+        "API_PLATFORM"
+      ],
+      "company": "Amazon",
+      "stage": "metadata"
+    },
+    {
+      "id": "59cfeb6a6aab",
+      "title": "Private certificate authority support in Amazon Bedrock AgentCore Identity",
+      "source": "AWS Machine Learning Blog",
+      "publishedAt": "2026-11-18T20:53:41.000Z",
+      "url": "https://aws.amazon.com/blogs/machine-learning/private-certificate-authority-support-in-amazon-bedrock-agentcore-identity/",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "글 유형 HOW_TO — 강한 사건 신호 없음"
+      ],
+      "score": 2,
+      "importance": 1,
+      "contentType": "HOW_TO",
+      "typePenalty": -3,
+      "signals": [
+        "API_PLATFORM"
+      ],
+      "company": "Amazon",
+      "stage": "metadata"
+    },
+    {
+      "id": "2ab4deb8d869",
+      "title": "How Salesforce is advancing global-scale model serving with cross-Region inference routing in Amazon SageMaker AI",
+      "source": "AWS Machine Learning Blog",
+      "publishedAt": "2026-11-18T20:13:18.000Z",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-salesforce-is-advancing-global-scale-model-serving-with-cross-region-inference-routing-in-amazon-sagemaker-ai/",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "글 유형 CUSTOMER_STORY — 강한 사건 신호 없음"
+      ],
+      "score": -1,
+      "importance": 0,
+      "contentType": "CUSTOMER_STORY",
+      "typePenalty": -3,
+      "signals": [],
+      "company": "Amazon",
+      "stage": "metadata"
+    },
+    {
+      "id": "3107113245e3",
+      "title": "How Social Department built culture-aware video discovery",
+      "source": "AWS Machine Learning Blog",
+      "publishedAt": "2026-11-18T19:27:56.000Z",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-social-department-built-culture-aware-video-discovery/",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "글 유형 CUSTOMER_STORY — 강한 사건 신호 없음"
+      ],
+      "score": -1,
+      "importance": 0,
+      "contentType": "CUSTOMER_STORY",
+      "typePenalty": -3,
+      "signals": [],
+      "company": "Amazon",
+      "stage": "metadata"
+    },
+    {
+      "id": "037978009f80",
+      "title": "Connect Amazon Bedrock AgentCore Gateway to private APIs in a hub-and-spoke network with centralized inspection",
+      "source": "AWS Machine Learning Blog",
+      "publishedAt": "2026-11-18T19:05:45.000Z",
+      "url": "https://aws.amazon.com/blogs/machine-learning/connect-amazon-bedrock-agentcore-gateway-to-private-apis-in-a-hub-and-spoke-network-with-centralized-inspection/",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "글 유형 HOW_TO — 강한 사건 신호 없음"
+      ],
+      "score": 2,
+      "importance": 1,
+      "contentType": "HOW_TO",
+      "typePenalty": -3,
+      "signals": [
+        "API_PLATFORM"
+      ],
+      "company": "Amazon",
+      "stage": "metadata"
+    },
+    {
+      "id": "881783ef802b",
+      "title": "How Stretto built an AI voice agent with Amazon Nova 2 Sonic",
+      "source": "AWS Machine Learning Blog",
+      "publishedAt": "2026-11-18T18:58:42.000Z",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-stretto-built-an-ai-voice-agent-with-amazon-nova-2-sonic/",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "글 유형 CUSTOMER_STORY — 강한 사건 신호 없음"
+      ],
+      "score": -1,
+      "importance": 0,
+      "contentType": "CUSTOMER_STORY",
+      "typePenalty": -3,
+      "signals": [],
+      "company": "Amazon",
+      "stage": "metadata"
+    },
+    {
+      "id": "66831b4cb981",
+      "title": "From reporting to reasoning: Getting enterprise data ready for AI agents",
+      "source": "AWS Machine Learning Blog",
+      "publishedAt": "2026-11-18T18:54:08.000Z",
+      "url": "https://aws.amazon.com/blogs/machine-learning/from-reporting-to-reasoning-getting-enterprise-data-ready-for-ai-agents/",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+      ],
+      "score": 2,
+      "importance": 0,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [],
+      "company": "Amazon",
       "stage": "metadata"
     },
     {
@@ -2593,115 +3125,11 @@
       "draftPending": true
     },
     {
-      "id": "dfdee5b6b2fc",
-      "title": "Build WhatsApp AI agents with Amazon Bedrock AgentCore",
-      "source": "AWS Machine Learning Blog",
-      "publishedAt": "2026-11-17T18:48:50.000Z",
-      "url": "https://aws.amazon.com/blogs/machine-learning/build-whatsapp-ai-agents-with-amazon-bedrock-agentcore/",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "EXCLUDE",
-      "reasons": [
-        "글 유형 HOW_TO — 강한 사건 신호 없음"
-      ],
-      "score": 2,
-      "importance": 1,
-      "contentType": "HOW_TO",
-      "typePenalty": -3,
-      "signals": [
-        "API_PLATFORM"
-      ],
-      "company": "Amazon",
-      "stage": "metadata"
-    },
-    {
-      "id": "0f81d901dab5",
-      "title": "Reason over time-series data with OpenTSLM on Amazon SageMaker JumpStart",
-      "source": "AWS Machine Learning Blog",
-      "publishedAt": "2026-11-17T18:06:44.000Z",
-      "url": "https://aws.amazon.com/blogs/machine-learning/reason-over-time-series-data-with-opentslm-on-amazon-sagemaker-jumpstart/",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "PUBLISH",
-      "reasons": [
-        "사건 신호 PRODUCT_LAUNCH·AVAILABILITY·API_PLATFORM (우선순위 11)",
-        "근거 확인 통과 (확인 사실 10개, SUFFICIENT_STANDARD)"
-      ],
-      "score": 11,
-      "importance": 3,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "PRODUCT_LAUNCH",
-        "AVAILABILITY",
-        "API_PLATFORM"
-      ],
-      "company": "Amazon",
-      "stage": "evidence",
-      "evidenceStatus": "OK",
-      "distinctFacts": 10,
-      "sufficiency": "SUFFICIENT_STANDARD",
-      "deepMissing": [
-        "importance",
-        "contextNeed",
-        "standardWouldOmit"
-      ],
-      "suggestedDepth": "STANDARD",
-      "draftPending": true
-    },
-    {
-      "id": "38c4a38bd619",
-      "title": "Your complete guide to AWS Quick at AWS re:Invent 2026",
-      "source": "AWS Machine Learning Blog",
-      "publishedAt": "2026-11-17T17:08:21.000Z",
-      "url": "https://aws.amazon.com/blogs/machine-learning/your-complete-guide-to-aws-quick-at-aws-reinvent-2026/",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "사건 신호 SECURITY_MENTION (우선순위 4)",
-        "근거 확인 대기 — 이번 실행 배치(40건)을 넘어 다음 실행으로 이월"
-      ],
-      "score": 4,
-      "importance": 1,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "SECURITY_MENTION"
-      ],
-      "company": "Amazon",
-      "stage": "metadata",
-      "capStage": "evidence",
-      "queued": "evidence"
-    },
-    {
-      "id": "fa2d79e8a491",
-      "title": "How LoanPro built an agentic AI loan servicing assistant with Amazon Bedrock AgentCore",
-      "source": "AWS Machine Learning Blog",
-      "publishedAt": "2026-11-17T17:01:08.000Z",
-      "url": "https://aws.amazon.com/blogs/machine-learning/how-loanpro-built-an-agentic-ai-loan-servicing-assistant-with-amazon-bedrock-agentcore/",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "EXCLUDE",
-      "reasons": [
-        "글 유형 CUSTOMER_STORY — 강한 사건 신호 없음"
-      ],
-      "score": 2,
-      "importance": 1,
-      "contentType": "CUSTOMER_STORY",
-      "typePenalty": -3,
-      "signals": [
-        "API_PLATFORM"
-      ],
-      "company": "Amazon",
-      "stage": "metadata"
-    },
-    {
-      "id": "692230a9d797",
-      "title": "Responsible AI for agentic AI: A phased roadmap for platform and application teams",
-      "source": "AWS Machine Learning Blog",
-      "publishedAt": "2026-11-17T16:56:31.000Z",
-      "url": "https://aws.amazon.com/blogs/machine-learning/responsible-ai-for-agentic-ai-a-phased-roadmap-for-platform-and-application-teams/",
+      "id": "7e8aaa6e499c",
+      "title": "Wait for pull request events with GitHub CLI",
+      "source": "GitHub Changelog",
+      "publishedAt": "2026-11-19T00:00:13.000Z",
+      "url": "https://github.blog/changelog/2026-11-18-wait-for-pull-request-events-with-github-cli",
       "duplicate": "NEW",
       "matchSlug": null,
       "decision": "EXCLUDE",
@@ -2713,169 +3141,113 @@
       "contentType": "NEWS",
       "typePenalty": 0,
       "signals": [],
-      "company": "Amazon",
+      "company": "GitHub",
       "stage": "metadata"
     },
     {
-      "id": "5b0b199a3f15",
-      "title": "How ArisGlobal scaled generative AI inference on Amazon Bedrock",
-      "source": "AWS Machine Learning Blog",
-      "publishedAt": "2026-11-17T15:57:09.000Z",
-      "url": "https://aws.amazon.com/blogs/machine-learning/how-arisglobal-scaled-generative-ai-inference-on-amazon-bedrock/",
+      "id": "cc3b86f9d99d",
+      "title": "Connect Supabase, Box, Calendly, and more to Copilot",
+      "source": "GitHub Changelog",
+      "publishedAt": "2026-11-18T22:04:50.000Z",
+      "url": "https://github.blog/changelog/2026-11-18-connect-supabase-box-calendly-and-more-to-copilot",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "PUBLISH",
+      "reasons": [
+        "사건 신호 PRODUCT_LAUNCH·PREVIEW (우선순위 7)",
+        "근거 확인 통과 (확인 사실 12개, SUFFICIENT_STANDARD)"
+      ],
+      "score": 7,
+      "importance": 2,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "PRODUCT_LAUNCH",
+        "PREVIEW"
+      ],
+      "company": "GitHub",
+      "stage": "evidence",
+      "evidenceStatus": "OK",
+      "distinctFacts": 12,
+      "sufficiency": "SUFFICIENT_STANDARD",
+      "deepMissing": [
+        "importance",
+        "userImpact",
+        "contextNeed",
+        "evidenceQuality",
+        "standardWouldOmit"
+      ],
+      "suggestedDepth": "STANDARD",
+      "draftPending": true
+    },
+    {
+      "id": "f6cf8ded0e75",
+      "title": "Gemini 4 Neon in GitHub Copilot",
+      "source": "GitHub Changelog",
+      "publishedAt": "2026-11-18T21:49:21.000Z",
+      "url": "https://github.blog/changelog/2026-11-18-gemini-4-neon-in-github-copilot",
       "duplicate": "NEW",
       "matchSlug": null,
       "decision": "HOLD",
       "reasons": [
-        "사건 신호 API_PLATFORM (우선순위 5)",
-        "근거 확인 대기 — 이번 실행 배치(40건)을 넘어 다음 실행으로 이월"
+        "사건 신호 AVAILABILITY (우선순위 5)",
+        "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
       ],
       "score": 5,
       "importance": 1,
       "contentType": "NEWS",
       "typePenalty": 0,
       "signals": [
-        "API_PLATFORM"
+        "AVAILABILITY"
       ],
-      "company": "Amazon",
-      "stage": "metadata",
-      "capStage": "evidence",
-      "queued": "evidence"
+      "company": "GitHub",
+      "stage": "evidence",
+      "evidenceStatus": "OK",
+      "distinctFacts": 12,
+      "sufficiency": "SUFFICIENT_STANDARD",
+      "deepMissing": [
+        "importance",
+        "userImpact",
+        "contextNeed",
+        "evidenceQuality",
+        "standardWouldOmit"
+      ],
+      "suggestedDepth": "STANDARD"
     },
     {
-      "id": "d218f9a95b85",
-      "title": "Build memory-aware AI agents with Agentic Retrieve on Amazon Bedrock Managed Knowledge Base",
-      "source": "AWS Machine Learning Blog",
-      "publishedAt": "2026-11-16T22:43:30.000Z",
-      "url": "https://aws.amazon.com/blogs/machine-learning/build-memory-aware-ai-agents-with-agentic-retrieve-on-amazon-bedrock-managed-knowledge-base/",
+      "id": "f9b17ed5db16",
+      "title": "Customize GitHub Copilot for your team",
+      "source": "GitHub Changelog",
+      "publishedAt": "2026-11-18T16:00:13.000Z",
+      "url": "https://github.blog/changelog/2026-11-18-customize-github-copilot-for-your-team",
       "duplicate": "NEW",
       "matchSlug": null,
-      "decision": "EXCLUDE",
+      "decision": "PUBLISH",
       "reasons": [
-        "글 유형 HOW_TO — 강한 사건 신호 없음"
+        "사건 신호 PRODUCT_LAUNCH·AVAILABILITY (우선순위 8)",
+        "근거 확인 통과 (확인 사실 11개, SUFFICIENT_STANDARD)"
       ],
-      "score": 2,
-      "importance": 1,
-      "contentType": "HOW_TO",
-      "typePenalty": -3,
-      "signals": [
-        "API_PLATFORM"
-      ],
-      "company": "Amazon",
-      "stage": "metadata"
-    },
-    {
-      "id": "94ec9ff9d472",
-      "title": "How Duco transforms financial data automation with Amazon Bedrock AgentCore",
-      "source": "AWS Machine Learning Blog",
-      "publishedAt": "2026-11-16T22:06:08.000Z",
-      "url": "https://aws.amazon.com/blogs/machine-learning/how-duco-transforms-financial-data-automation-with-amazon-bedrock-agentcore/",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "EXCLUDE",
-      "reasons": [
-        "글 유형 CUSTOMER_STORY — 강한 사건 신호 없음"
-      ],
-      "score": 2,
-      "importance": 1,
-      "contentType": "CUSTOMER_STORY",
-      "typePenalty": -3,
-      "signals": [
-        "API_PLATFORM"
-      ],
-      "company": "Amazon",
-      "stage": "metadata"
-    },
-    {
-      "id": "0761da68e54f",
-      "title": "Taxonomy of multi-agent design patterns, anti-patterns, and lessons from manufacturing",
-      "source": "AWS Machine Learning Blog",
-      "publishedAt": "2026-11-16T21:53:46.000Z",
-      "url": "https://aws.amazon.com/blogs/machine-learning/taxonomy-of-multi-agent-design-patterns-anti-patterns-and-lessons-from-manufacturing/",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "EXCLUDE",
-      "reasons": [
-        "글 유형 THOUGHT_LEADERSHIP — 강한 사건 신호 없음"
-      ],
-      "score": 0,
-      "importance": 0,
-      "contentType": "THOUGHT_LEADERSHIP",
-      "typePenalty": -2,
-      "signals": [],
-      "company": "Amazon",
-      "stage": "metadata"
-    },
-    {
-      "id": "9567fc17c1fd",
-      "title": "How MoEngage built agentic customer engagement on Amazon Bedrock AgentCore",
-      "source": "AWS Machine Learning Blog",
-      "publishedAt": "2026-11-16T18:16:07.000Z",
-      "url": "https://aws.amazon.com/blogs/machine-learning/how-moengage-built-agentic-customer-engagement-on-amazon-bedrock-agentcore/",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "EXCLUDE",
-      "reasons": [
-        "글 유형 CUSTOMER_STORY — 강한 사건 신호 없음"
-      ],
-      "score": 2,
-      "importance": 1,
-      "contentType": "CUSTOMER_STORY",
-      "typePenalty": -3,
-      "signals": [
-        "API_PLATFORM"
-      ],
-      "company": "Amazon",
-      "stage": "metadata"
-    },
-    {
-      "id": "b4d0f21c2c60",
-      "title": "Modernizing mainframe Assembler to Java using Amazon Bedrock and AWS Transform",
-      "source": "AWS Machine Learning Blog",
-      "publishedAt": "2026-11-16T17:29:29.000Z",
-      "url": "https://aws.amazon.com/blogs/machine-learning/modernizing-mainframe-assembler-to-java-using-amazon-bedrock-and-aws-transform/",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "사건 신호 API_PLATFORM (우선순위 5)",
-        "근거 확인 대기 — 이번 실행 배치(40건)을 넘어 다음 실행으로 이월"
-      ],
-      "score": 5,
-      "importance": 1,
+      "score": 8,
+      "importance": 2,
       "contentType": "NEWS",
       "typePenalty": 0,
       "signals": [
-        "API_PLATFORM"
+        "PRODUCT_LAUNCH",
+        "AVAILABILITY"
       ],
-      "company": "Amazon",
-      "stage": "metadata",
-      "capStage": "evidence",
-      "queued": "evidence"
-    },
-    {
-      "id": "7157ce3b54a8",
-      "title": "Novo Nordisk modernizes manufacturing process documents with Amazon Bedrock AgentCore",
-      "source": "AWS Machine Learning Blog",
-      "publishedAt": "2026-11-16T17:04:11.000Z",
-      "url": "https://aws.amazon.com/blogs/machine-learning/novo-nordisk-modernizes-manufacturing-process-documents-with-amazon-bedrock-agentcore/",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "사건 신호 API_PLATFORM (우선순위 5)",
-        "근거 확인 대기 — 이번 실행 배치(40건)을 넘어 다음 실행으로 이월"
+      "company": "GitHub",
+      "stage": "evidence",
+      "evidenceStatus": "OK",
+      "distinctFacts": 11,
+      "sufficiency": "SUFFICIENT_STANDARD",
+      "deepMissing": [
+        "importance",
+        "contextNeed",
+        "evidenceQuality",
+        "standardWouldOmit"
       ],
-      "score": 5,
-      "importance": 1,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "API_PLATFORM"
-      ],
-      "company": "Amazon",
-      "stage": "metadata",
-      "capStage": "evidence",
-      "queued": "evidence"
+      "suggestedDepth": "STANDARD",
+      "draftPending": true
     },
     {
       "id": "96ff71f54c6e",
@@ -2943,7 +3315,7 @@
       "decision": "HOLD",
       "reasons": [
         "사건 신호 CONSUMER (우선순위 5)",
-        "근거 확인 대기 — 이번 실행 배치(40건)을 넘어 다음 실행으로 이월"
+        "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
       ],
       "score": 5,
       "importance": 1,
@@ -2953,9 +3325,17 @@
         "CONSUMER"
       ],
       "company": "GitHub",
-      "stage": "metadata",
-      "capStage": "evidence",
-      "queued": "evidence"
+      "stage": "evidence",
+      "evidenceStatus": "OK",
+      "distinctFacts": 12,
+      "sufficiency": "SUFFICIENT_STANDARD",
+      "deepMissing": [
+        "importance",
+        "userImpact",
+        "contextNeed",
+        "standardWouldOmit"
+      ],
+      "suggestedDepth": "STANDARD"
     },
     {
       "id": "d463ce808607",
@@ -3044,7 +3424,7 @@
       "decision": "HOLD",
       "reasons": [
         "사건 신호 PRODUCT_LAUNCH (우선순위 5)",
-        "근거 확인 대기 — 이번 실행 배치(40건)을 넘어 다음 실행으로 이월"
+        "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
       ],
       "score": 5,
       "importance": 1,
@@ -3054,9 +3434,18 @@
         "PRODUCT_LAUNCH"
       ],
       "company": "GitHub",
-      "stage": "metadata",
-      "capStage": "evidence",
-      "queued": "evidence"
+      "stage": "evidence",
+      "evidenceStatus": "OK",
+      "distinctFacts": 12,
+      "sufficiency": "SUFFICIENT_STANDARD",
+      "deepMissing": [
+        "importance",
+        "userImpact",
+        "contextNeed",
+        "evidenceQuality",
+        "standardWouldOmit"
+      ],
+      "suggestedDepth": "STANDARD"
     },
     {
       "id": "2217122441a2",
@@ -3069,7 +3458,7 @@
       "decision": "HOLD",
       "reasons": [
         "사건 신호 PREVIEW (우선순위 4)",
-        "근거 확인 대기 — 이번 실행 배치(40건)을 넘어 다음 실행으로 이월"
+        "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
       ],
       "score": 4,
       "importance": 1,
@@ -3079,9 +3468,18 @@
         "PREVIEW"
       ],
       "company": "GitHub",
-      "stage": "metadata",
-      "capStage": "evidence",
-      "queued": "evidence"
+      "stage": "evidence",
+      "evidenceStatus": "OK",
+      "distinctFacts": 12,
+      "sufficiency": "SUFFICIENT_STANDARD",
+      "deepMissing": [
+        "importance",
+        "userImpact",
+        "contextNeed",
+        "evidenceQuality",
+        "standardWouldOmit"
+      ],
+      "suggestedDepth": "SHORT"
     },
     {
       "id": "3549b02ad48b",
@@ -3094,7 +3492,7 @@
       "decision": "HOLD",
       "reasons": [
         "사건 신호 PRODUCT_LAUNCH (우선순위 5)",
-        "근거 확인 대기 — 이번 실행 배치(40건)을 넘어 다음 실행으로 이월"
+        "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
       ],
       "score": 5,
       "importance": 1,
@@ -3104,9 +3502,18 @@
         "PRODUCT_LAUNCH"
       ],
       "company": "GitHub",
-      "stage": "metadata",
-      "capStage": "evidence",
-      "queued": "evidence"
+      "stage": "evidence",
+      "evidenceStatus": "OK",
+      "distinctFacts": 11,
+      "sufficiency": "SUFFICIENT_STANDARD",
+      "deepMissing": [
+        "importance",
+        "userImpact",
+        "contextNeed",
+        "evidenceQuality",
+        "standardWouldOmit"
+      ],
+      "suggestedDepth": "STANDARD"
     },
     {
       "id": "2b90807377a9",
@@ -3289,7 +3696,7 @@
       "decision": "HOLD",
       "reasons": [
         "사건 신호 CONSUMER (우선순위 5)",
-        "근거 확인 대기 — 이번 실행 배치(40건)을 넘어 다음 실행으로 이월"
+        "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
       ],
       "score": 5,
       "importance": 1,
@@ -3299,9 +3706,17 @@
         "CONSUMER"
       ],
       "company": "GitHub",
-      "stage": "metadata",
-      "capStage": "evidence",
-      "queued": "evidence"
+      "stage": "evidence",
+      "evidenceStatus": "OK",
+      "distinctFacts": 11,
+      "sufficiency": "SUFFICIENT_STANDARD",
+      "deepMissing": [
+        "importance",
+        "userImpact",
+        "contextNeed",
+        "standardWouldOmit"
+      ],
+      "suggestedDepth": "STANDARD"
     },
     {
       "id": "f9ace2a74e66",
@@ -3334,7 +3749,7 @@
       "decision": "HOLD",
       "reasons": [
         "사건 신호 PRODUCT_LAUNCH (우선순위 5)",
-        "근거 확인 대기 — 이번 실행 배치(40건)을 넘어 다음 실행으로 이월"
+        "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
       ],
       "score": 5,
       "importance": 1,
@@ -3344,9 +3759,18 @@
         "PRODUCT_LAUNCH"
       ],
       "company": "GitHub",
-      "stage": "metadata",
-      "capStage": "evidence",
-      "queued": "evidence"
+      "stage": "evidence",
+      "evidenceStatus": "OK",
+      "distinctFacts": 10,
+      "sufficiency": "SUFFICIENT_STANDARD",
+      "deepMissing": [
+        "importance",
+        "userImpact",
+        "contextNeed",
+        "evidenceQuality",
+        "standardWouldOmit"
+      ],
+      "suggestedDepth": "STANDARD"
     },
     {
       "id": "f7b1ad47e7a9",
@@ -3455,7 +3879,7 @@
       "decision": "HOLD",
       "reasons": [
         "사건 신호 PRODUCT_LAUNCH (우선순위 5)",
-        "근거 확인 대기 — 이번 실행 배치(40건)을 넘어 다음 실행으로 이월"
+        "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
       ],
       "score": 5,
       "importance": 1,
@@ -3465,9 +3889,17 @@
         "PRODUCT_LAUNCH"
       ],
       "company": "Google",
-      "stage": "metadata",
-      "capStage": "evidence",
-      "queued": "evidence"
+      "stage": "evidence",
+      "evidenceStatus": "OK",
+      "distinctFacts": 9,
+      "sufficiency": "SUFFICIENT_STANDARD",
+      "deepMissing": [
+        "importance",
+        "userImpact",
+        "contextNeed",
+        "standardWouldOmit"
+      ],
+      "suggestedDepth": "STANDARD"
     },
     {
       "id": "ee5f689fd9f6",
@@ -3477,9 +3909,10 @@
       "url": "https://workspaceupdates.googleblog.com/2026/11/gemini-powered-data-classification-in-Google-Drive-is-now-generally-available.html",
       "duplicate": "NEW",
       "matchSlug": null,
-      "decision": "HOLD",
+      "decision": "PUBLISH",
       "reasons": [
-        "근거 부족 (원문 HTTP_429, 확인 사실 0개) — 발행하지 않음"
+        "사건 신호 PRODUCT_LAUNCH·AVAILABILITY·PREVIEW·CONSUMER (우선순위 11)",
+        "근거 확인 통과 (확인 사실 9개, SUFFICIENT_STANDARD)"
       ],
       "score": 11,
       "importance": 3,
@@ -3493,17 +3926,16 @@
       ],
       "company": "Google",
       "stage": "evidence",
-      "evidenceStatus": "HTTP_429",
-      "distinctFacts": 0,
-      "sufficiency": "INSUFFICIENT",
+      "evidenceStatus": "OK",
+      "distinctFacts": 9,
+      "sufficiency": "SUFFICIENT_STANDARD",
       "deepMissing": [
         "importance",
         "contextNeed",
-        "distinctFacts",
-        "evidenceQuality",
         "standardWouldOmit"
       ],
-      "suggestedDepth": null
+      "suggestedDepth": "STANDARD",
+      "draftPending": true
     },
     {
       "id": "4fa9b68dcd97",
@@ -3513,9 +3945,10 @@
       "url": "https://workspaceupdates.googleblog.com/2026/11/share-skills-add-files-from-Drive-Notebook-Photos-to-skills-Gemini-app.html",
       "duplicate": "NEW",
       "matchSlug": null,
-      "decision": "HOLD",
+      "decision": "PUBLISH",
       "reasons": [
-        "근거 부족 (원문 HTTP_429, 확인 사실 0개) — 발행하지 않음"
+        "사건 신호 MODEL·PRODUCT_LAUNCH·CONSUMER (우선순위 10)",
+        "근거 확인 통과 (확인 사실 11개, SUFFICIENT_STANDARD)"
       ],
       "score": 10,
       "importance": 3,
@@ -3528,17 +3961,16 @@
       ],
       "company": "Google",
       "stage": "evidence",
-      "evidenceStatus": "HTTP_429",
-      "distinctFacts": 0,
-      "sufficiency": "INSUFFICIENT",
+      "evidenceStatus": "OK",
+      "distinctFacts": 11,
+      "sufficiency": "SUFFICIENT_STANDARD",
       "deepMissing": [
         "importance",
         "contextNeed",
-        "distinctFacts",
-        "evidenceQuality",
         "standardWouldOmit"
       ],
-      "suggestedDepth": null
+      "suggestedDepth": "STANDARD",
+      "draftPending": true
     },
     {
       "id": "e3c4a48722b1",
@@ -3551,7 +3983,7 @@
       "decision": "HOLD",
       "reasons": [
         "사건 신호 AVAILABILITY (우선순위 5)",
-        "근거 확인 대기 — 이번 실행 배치(40건)을 넘어 다음 실행으로 이월"
+        "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
       ],
       "score": 5,
       "importance": 1,
@@ -3561,9 +3993,17 @@
         "AVAILABILITY"
       ],
       "company": "Google",
-      "stage": "metadata",
-      "capStage": "evidence",
-      "queued": "evidence"
+      "stage": "evidence",
+      "evidenceStatus": "OK",
+      "distinctFacts": 11,
+      "sufficiency": "SUFFICIENT_STANDARD",
+      "deepMissing": [
+        "importance",
+        "userImpact",
+        "contextNeed",
+        "standardWouldOmit"
+      ],
+      "suggestedDepth": "STANDARD"
     },
     {
       "id": "e65aea8e9b4d",
@@ -3792,6 +4232,31 @@
       "stage": "metadata"
     },
     {
+      "id": "bd32339b925d",
+      "title": "AWS Lambda now supports GPU instances for Event Functions on Lambda Managed Instances",
+      "source": "AWS News Blog",
+      "publishedAt": "2026-11-18T19:39:07.000Z",
+      "url": "https://aws.amazon.com/blogs/aws/aws-lambda-now-supports-gpu-instances-for-event-functions-on-lambda-managed-instances/",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "사건 신호 INFRA (우선순위 4)",
+        "근거 확인 대기 — 이번 실행 배치(40건)을 넘어 다음 실행으로 이월"
+      ],
+      "score": 4,
+      "importance": 1,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "INFRA"
+      ],
+      "company": "Amazon",
+      "stage": "metadata",
+      "capStage": "evidence",
+      "queued": "evidence"
+    },
+    {
       "id": "85ba9cf467fa",
       "title": "AWS Weekly Roundup: AWS Nitro Sandboxes, AWS Emulator, and more (November 16, 2026)",
       "source": "AWS News Blog",
@@ -3802,7 +4267,7 @@
       "decision": "HOLD",
       "reasons": [
         "사건 신호 PRODUCT_LAUNCH (우선순위 5)",
-        "근거 확인 대기 — 이번 실행 배치(40건)을 넘어 다음 실행으로 이월"
+        "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
       ],
       "score": 5,
       "importance": 1,
@@ -3812,9 +4277,17 @@
         "PRODUCT_LAUNCH"
       ],
       "company": "Amazon",
-      "stage": "metadata",
-      "capStage": "evidence",
-      "queued": "evidence"
+      "stage": "evidence",
+      "evidenceStatus": "OK",
+      "distinctFacts": 11,
+      "sufficiency": "SUFFICIENT_STANDARD",
+      "deepMissing": [
+        "importance",
+        "userImpact",
+        "contextNeed",
+        "standardWouldOmit"
+      ],
+      "suggestedDepth": "STANDARD"
     },
     {
       "id": "a18e97945e0f",
@@ -4245,6 +4718,159 @@
       "draftPending": true
     },
     {
+      "id": "7154d853cda2",
+      "title": "래블업, 상장 후 첫 성적표…3분기 누적 매출 48% ↑",
+      "source": "AI타임스",
+      "publishedAt": "2026-11-19T12:12:45.000Z",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217558",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 ACQ_INVEST)"
+      ],
+      "score": 6,
+      "importance": 2,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "ACQ_INVEST"
+      ],
+      "company": "AI타임스",
+      "stage": "metadata"
+    },
+    {
+      "id": "a94882c0d163",
+      "title": "구글 '지니 4' 일반에 제공…대화로 가상세계 만드는 AI 에이전트 도입",
+      "source": "AI타임스",
+      "publishedAt": "2026-11-19T12:10:29.000Z",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217556",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·MODEL_MENTION)"
+      ],
+      "score": 7,
+      "importance": 2,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "PRODUCT_LAUNCH",
+        "MODEL_MENTION"
+      ],
+      "company": "AI타임스",
+      "stage": "metadata"
+    },
+    {
+      "id": "92bbe9424ea5",
+      "title": "라온피플, GPU 서버 프리 VLM 기반 영상관제 솔루션 출시",
+      "source": "AI타임스",
+      "publishedAt": "2026-11-19T11:37:28.000Z",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217555",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 INFRA·PRODUCT_LAUNCH·MODEL_MENTION)"
+      ],
+      "score": 9,
+      "importance": 3,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "INFRA",
+        "PRODUCT_LAUNCH",
+        "MODEL_MENTION"
+      ],
+      "company": "AI타임스",
+      "stage": "metadata"
+    },
+    {
+      "id": "360f227f4448",
+      "title": "[AI리더의 서가] 강화학습 기본과 PyTorch 제2판",
+      "source": "AI타임스",
+      "publishedAt": "2026-11-19T09:00:00.000Z",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217285",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+      ],
+      "score": 2,
+      "importance": 0,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [],
+      "company": "AI타임스",
+      "stage": "metadata"
+    },
+    {
+      "id": "7f11096a7caf",
+      "title": "구글, 세계 3위 성능 '제미나이 4 네온' 출시…작업 비용 32% 절감",
+      "source": "AI타임스",
+      "publishedAt": "2026-11-19T08:39:28.000Z",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217546",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)"
+      ],
+      "score": 5,
+      "importance": 1,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "PRODUCT_LAUNCH"
+      ],
+      "company": "AI타임스",
+      "stage": "metadata"
+    },
+    {
+      "id": "0582f7b94c4c",
+      "title": "엔비디아, 첫 직원회의서 \"앞으로 나아가자\"…황 복귀 배제",
+      "source": "AI타임스",
+      "publishedAt": "2026-11-19T07:00:24.000Z",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217545",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+      ],
+      "score": 2,
+      "importance": 0,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [],
+      "company": "AI타임스",
+      "stage": "metadata"
+    },
+    {
+      "id": "95d2011fdfd0",
+      "title": "[11월18일] 미국 핵심 시스템 줄줄이 마비…해킹 없었지만 AI 공격 공포 커져",
+      "source": "AI타임스",
+      "publishedAt": "2026-11-19T07:00:00.000Z",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217524",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 SECURITY)"
+      ],
+      "score": 4,
+      "importance": 1,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "SECURITY"
+      ],
+      "company": "AI타임스",
+      "stage": "metadata"
+    },
+    {
       "id": "0b56793f8b5d",
       "title": "오픈AI \"사이버 보안, 코딩보다 큰 사업 될 것\"…신성장 동력 육성",
       "source": "AI타임스",
@@ -4270,7 +4896,7 @@
     },
     {
       "id": "fd53feb74ca0",
-      "title": "앤트로픽·오픈AI 등 주요 모델, ‘게임’으로 속이자 민간인까지 군사 표적으로 식별",
+      "title": "앤트로픽·오픈AI 모델, ‘게임’으로 속이자 민간인을 군사 표적으로 식별",
       "source": "AI타임스",
       "publishedAt": "2026-11-18T18:15:13.000Z",
       "url": "https://www.aitimes.com/news/articleView.html?idxno=217523",
@@ -4430,7 +5056,7 @@
     },
     {
       "id": "ca2ac41dbb5d",
-      "title": "허사비스의 AI 신약 기업, 6개월 새 9.4조 투자 유치…임상시험 본격 추진",
+      "title": "허사비스의 AI 신약 기업, 6개월 새 9.4조 투자 유치…임상시험 추진",
       "source": "AI타임스",
       "publishedAt": "2026-11-18T16:54:17.000Z",
       "url": "https://www.aitimes.com/news/articleView.html?idxno=217528",
@@ -5194,57 +5820,245 @@
       "stage": "metadata"
     },
     {
-      "id": "40b058e4f62f",
-      "title": "오픈AI, 'AI 내부 분석' 굿파이어 인수 검토…무산 후 안전성 평가 협력",
-      "source": "AI타임스",
-      "publishedAt": "2026-11-17T16:41:07.000Z",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217488",
+      "id": "a36c8ac90220",
+      "title": "AI 투자 늘고 메모리값 뛰고…내년 인프라 지출 53% 급증한다",
+      "source": "지디넷코리아",
+      "publishedAt": "2026-11-19T01:57:19.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261119105719",
       "duplicate": "NEW",
       "matchSlug": null,
       "decision": "HOLD",
       "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PARTNERSHIP·ACQ_INVEST·MODEL_MENTION)"
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRICING)"
       ],
-      "score": 8,
-      "importance": 3,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "PARTNERSHIP",
-        "ACQ_INVEST",
-        "MODEL_MENTION"
-      ],
-      "company": "AI타임스",
-      "stage": "metadata"
-    },
-    {
-      "id": "b00dd165d46a",
-      "title": "내시경에 AI 접목한 메디인테크, 338억원 시리즈C 투자 유치",
-      "source": "AI타임스",
-      "publishedAt": "2026-11-17T16:34:47.000Z",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217498",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 ACQ_INVEST)"
-      ],
-      "score": 6,
+      "score": 7,
       "importance": 2,
       "contentType": "NEWS",
       "typePenalty": 0,
       "signals": [
-        "ACQ_INVEST"
+        "PRICING"
       ],
-      "company": "AI타임스",
+      "company": "지디넷코리아",
       "stage": "metadata"
     },
     {
-      "id": "6729d90ff8ad",
-      "title": "구글, 보안 패치 분석·공격코드 생성 자동화한 AI 해킹 도구 발견",
-      "source": "AI타임스",
-      "publishedAt": "2026-11-17T16:33:52.000Z",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217493",
+      "id": "4c0c7f18c247",
+      "title": "中 AI 기업들, 미국 AI 모델 우회 접근…가상자산 결제 암시장 확산",
+      "source": "지디넷코리아",
+      "publishedAt": "2026-11-19T01:54:05.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261119105124",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 MODEL_MENTION)"
+      ],
+      "score": 4,
+      "importance": 1,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "MODEL_MENTION"
+      ],
+      "company": "지디넷코리아",
+      "stage": "metadata"
+    },
+    {
+      "id": "358808eb1c39",
+      "title": "NHN커머스, 고도몰에 AI 검색 최적화·쇼핑 에이전트 기능 도입",
+      "source": "지디넷코리아",
+      "publishedAt": "2026-11-19T01:39:17.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261119103917",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·MODEL_MENTION)"
+      ],
+      "score": 7,
+      "importance": 2,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "PRODUCT_LAUNCH",
+        "MODEL_MENTION"
+      ],
+      "company": "지디넷코리아",
+      "stage": "metadata"
+    },
+    {
+      "id": "36e5deb320ff",
+      "title": "\"AI 투자 성패, 운영에 달렸다\"…델, 인프라 자동화 전략 공개",
+      "source": "지디넷코리아",
+      "publishedAt": "2026-11-19T01:36:58.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261119100455",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)"
+      ],
+      "score": 5,
+      "importance": 1,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "PRODUCT_LAUNCH"
+      ],
+      "company": "지디넷코리아",
+      "stage": "metadata"
+    },
+    {
+      "id": "0d51716b8f19",
+      "title": "[단독] 삼성SDS, 이준희 대표 교체설 확산…노사 갈등 인사 변수 됐나",
+      "source": "지디넷코리아",
+      "publishedAt": "2026-11-19T01:35:46.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261119103129",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+      ],
+      "score": 2,
+      "importance": 0,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [],
+      "company": "지디넷코리아",
+      "stage": "metadata"
+    },
+    {
+      "id": "3a208b466b16",
+      "title": "간판보다 ‘실력’이 돈이 되는 시대…대학 타이틀 유통기한 끝났나",
+      "source": "지디넷코리아",
+      "publishedAt": "2026-11-19T01:27:39.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261119100524",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+      ],
+      "score": 2,
+      "importance": 0,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [],
+      "company": "지디넷코리아",
+      "stage": "metadata"
+    },
+    {
+      "id": "8de528cbc738",
+      "title": "\"강호동도, 송혜교도 가짜였다\"...AI 광고에 속지 않으려면",
+      "source": "지디넷코리아",
+      "publishedAt": "2026-11-19T01:22:12.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261116180910",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+      ],
+      "score": 2,
+      "importance": 0,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [],
+      "company": "지디넷코리아",
+      "stage": "metadata"
+    },
+    {
+      "id": "1211416ba18f",
+      "title": "헤세드릿지, 상담 전용 AI ‘달램톡’ 정식 출시",
+      "source": "지디넷코리아",
+      "publishedAt": "2026-11-19T01:14:27.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261119101427",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)"
+      ],
+      "score": 5,
+      "importance": 1,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "PRODUCT_LAUNCH"
+      ],
+      "company": "지디넷코리아",
+      "stage": "metadata"
+    },
+    {
+      "id": "17ae5ecaf79c",
+      "title": "효성벤처스, 헬스케어·뷰티테크에 투자…솔닥·앳홈 선택",
+      "source": "지디넷코리아",
+      "publishedAt": "2026-11-19T01:12:28.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261119101228",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+      ],
+      "score": 2,
+      "importance": 0,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [],
+      "company": "지디넷코리아",
+      "stage": "metadata"
+    },
+    {
+      "id": "6c9dcd9650f6",
+      "title": "어테인, 지텐드라 신드와니(짐피)를 최고경영자로 선임",
+      "source": "지디넷코리아",
+      "publishedAt": "2026-11-19T01:10:02.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261119101002",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+      ],
+      "score": 2,
+      "importance": 0,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [],
+      "company": "지디넷코리아",
+      "stage": "metadata"
+    },
+    {
+      "id": "458d0d5db42f",
+      "title": "디노티시아, AI 검색 반도체 'VDPU' ASIC 구동 첫 공개",
+      "source": "지디넷코리아",
+      "publishedAt": "2026-11-19T01:10:02.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261119095429",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·INFRA)"
+      ],
+      "score": 7,
+      "importance": 2,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "PRODUCT_LAUNCH",
+        "INFRA"
+      ],
+      "company": "지디넷코리아",
+      "stage": "metadata"
+    },
+    {
+      "id": "5b835b423997",
+      "title": "메타 직원도 놀랐다…AI 비서 뮤즈, 개인 대화 읽고 무단 예약",
+      "source": "지디넷코리아",
+      "publishedAt": "2026-11-19T01:09:42.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261119091308",
       "duplicate": "NEW",
       "matchSlug": null,
       "decision": "HOLD",
@@ -5259,43 +6073,42 @@
         "PRODUCT_LAUNCH",
         "SECURITY"
       ],
-      "company": "AI타임스",
+      "company": "지디넷코리아",
       "stage": "metadata"
     },
     {
-      "id": "5f634804aaf3",
-      "title": "오픈AI, 아동 성착취물 탐지 AI 공개...챗GPT 경고·24시간 이용 정지 기능도 도입",
-      "source": "AI타임스",
-      "publishedAt": "2026-11-17T16:15:00.000Z",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217501",
+      "id": "3df08caa4ac5",
+      "title": "[AI는 지금] 앤트로픽, 스페이스X 넘었다…IPO 143조 조달 신기록",
+      "source": "지디넷코리아",
+      "publishedAt": "2026-11-19T01:08:59.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261119095703",
       "duplicate": "NEW",
       "matchSlug": null,
       "decision": "HOLD",
       "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·REGULATION)"
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)"
       ],
-      "score": 9,
-      "importance": 3,
+      "score": 5,
+      "importance": 1,
       "contentType": "NEWS",
       "typePenalty": 0,
       "signals": [
-        "PRODUCT_LAUNCH",
-        "REGULATION"
+        "PRODUCT_LAUNCH"
       ],
-      "company": "AI타임스",
+      "company": "지디넷코리아",
       "stage": "metadata"
     },
     {
-      "id": "08cbee9051f4",
-      "title": "애플, 건강 AI 연구용 앱 출시…미국서 20만명 모집",
-      "source": "AI타임스",
-      "publishedAt": "2026-11-17T16:05:00.000Z",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217504",
+      "id": "9e0fb6e2586e",
+      "title": "인텔 파운드리, 2.5차원 패키징 'EMIB' 첫 외부 고객사로 MS 확보",
+      "source": "지디넷코리아",
+      "publishedAt": "2026-11-19T01:08:01.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261119100612",
       "duplicate": "NEW",
       "matchSlug": null,
       "decision": "HOLD",
       "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·PARTNERSHIP)"
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·INFRA)"
       ],
       "score": 7,
       "importance": 2,
@@ -5303,485 +6116,31 @@
       "typePenalty": 0,
       "signals": [
         "PRODUCT_LAUNCH",
-        "PARTNERSHIP"
-      ],
-      "company": "AI타임스",
-      "stage": "metadata"
-    },
-    {
-      "id": "fce4a41b3ea4",
-      "title": "WSJ \"앨리스 황 남편, 중국 정부 지원받아 13조 데이터센터 사업 추진\"",
-      "source": "AI타임스",
-      "publishedAt": "2026-11-17T15:59:04.000Z",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217500",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 REGULATION·INFRA)"
-      ],
-      "score": 8,
-      "importance": 3,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "REGULATION",
         "INFRA"
       ],
-      "company": "AI타임스",
+      "company": "지디넷코리아",
       "stage": "metadata"
     },
     {
-      "id": "b2b4457a914f",
-      "title": "세계 슈퍼컴퓨터 신규 진입 역대 최저…한국 '한강' 12위",
-      "source": "AI타임스",
-      "publishedAt": "2026-11-17T15:29:21.000Z",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217486",
+      "id": "52a0139f6c8b",
+      "title": "KAI·기계연, 스텔스부터 AI 제조까지 공동연구 추진",
+      "source": "지디넷코리아",
+      "publishedAt": "2026-11-19T01:02:33.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261119100233",
       "duplicate": "NEW",
       "matchSlug": null,
       "decision": "HOLD",
       "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 INFRA)"
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PARTNERSHIP)"
       ],
       "score": 4,
       "importance": 1,
       "contentType": "NEWS",
       "typePenalty": 0,
       "signals": [
-        "INFRA"
-      ],
-      "company": "AI타임스",
-      "stage": "metadata"
-    },
-    {
-      "id": "db3f6bd6f6c0",
-      "title": "\"환자가 자신 상태 설명 어려운 응급상황서 필요한 의료정보 전달\"",
-      "source": "지디넷코리아",
-      "publishedAt": "2026-11-18T14:22:23.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261118232223",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "EXCLUDE",
-      "reasons": [
-        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
-      ],
-      "score": 2,
-      "importance": 0,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [],
-      "company": "지디넷코리아",
-      "stage": "metadata"
-    },
-    {
-      "id": "be876d6d50f2",
-      "title": "부킹 홀딩스, B2B 여행 혁신을 가속할 부킹 파트너 사업부 공개",
-      "source": "지디넷코리아",
-      "publishedAt": "2026-11-18T14:10:13.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261118231012",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)"
-      ],
-      "score": 5,
-      "importance": 1,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "PRODUCT_LAUNCH"
-      ],
-      "company": "지디넷코리아",
-      "stage": "metadata"
-    },
-    {
-      "id": "6572d6d81cf5",
-      "title": "2026 APEC CEO 서밋, 중국 선전에서 개막",
-      "source": "지디넷코리아",
-      "publishedAt": "2026-11-18T14:10:02.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261118231002",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "EXCLUDE",
-      "reasons": [
-        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
-      ],
-      "score": 2,
-      "importance": 0,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [],
-      "company": "지디넷코리아",
-      "stage": "metadata"
-    },
-    {
-      "id": "3e8fa06037c2",
-      "title": "[크립토 AI리포트] 비트코인 약세에 시장 '꽁꽁'…시총 20% 증발",
-      "source": "지디넷코리아",
-      "publishedAt": "2026-11-18T13:54:05.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261118131735",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRICING·ACQ_INVEST·SECURITY)"
-      ],
-      "score": 11,
-      "importance": 4,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "PRICING",
-        "ACQ_INVEST",
-        "SECURITY"
-      ],
-      "company": "지디넷코리아",
-      "stage": "metadata"
-    },
-    {
-      "id": "2a6d603f6b19",
-      "title": "아이소모픽 랩스, 시리즈 C에서 50억 달러 투자 유치 발표",
-      "source": "지디넷코리아",
-      "publishedAt": "2026-11-18T13:10:02.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261118221002",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 ACQ_INVEST·MODEL_MENTION)"
-      ],
-      "score": 6,
-      "importance": 2,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "ACQ_INVEST",
-        "MODEL_MENTION"
-      ],
-      "company": "지디넷코리아",
-      "stage": "metadata"
-    },
-    {
-      "id": "c0334a15e878",
-      "title": "망고부스트, 日 AI 반도체 기업과 맞손…AI 추론 인프라 효율 높인다",
-      "source": "지디넷코리아",
-      "publishedAt": "2026-11-18T09:23:39.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261118182318",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 INFRA·PARTNERSHIP)"
-      ],
-      "score": 6,
-      "importance": 2,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "INFRA",
         "PARTNERSHIP"
       ],
       "company": "지디넷코리아",
-      "stage": "metadata"
-    },
-    {
-      "id": "97de257802b9",
-      "title": "HD현대로보틱스, 1톤급 초대형 다관절 로봇 한국R&D에 공급",
-      "source": "지디넷코리아",
-      "publishedAt": "2026-11-18T09:15:02.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261118174052",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "EXCLUDE",
-      "reasons": [
-        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
-      ],
-      "score": 2,
-      "importance": 0,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [],
-      "company": "지디넷코리아",
-      "stage": "metadata"
-    },
-    {
-      "id": "1dea40ffc2cf",
-      "title": "GIGABYTE AI TOP ATOM 64GB 출시, 데스크톱 AI 개발 선택지 확대",
-      "source": "지디넷코리아",
-      "publishedAt": "2026-11-18T09:10:02.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261118181002",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)"
-      ],
-      "score": 5,
-      "importance": 1,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "PRODUCT_LAUNCH"
-      ],
-      "company": "지디넷코리아",
-      "stage": "metadata"
-    },
-    {
-      "id": "877c3b3cf50c",
-      "title": "초록소프트-한국이엔씨, AI 스마트팜·제조AI 구축 맞손",
-      "source": "지디넷코리아",
-      "publishedAt": "2026-11-18T09:07:43.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261118180743",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PARTNERSHIP·MODEL_MENTION)"
-      ],
-      "score": 6,
-      "importance": 2,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "PARTNERSHIP",
-        "MODEL_MENTION"
-      ],
-      "company": "지디넷코리아",
-      "stage": "metadata"
-    },
-    {
-      "id": "fcc7a88295a5",
-      "title": "“수능날 단추 달린 옷 입으면 연행?”…정부 AI 커닝 대책 비웃는 '풍자 밈' 확산",
-      "source": "전자신문",
-      "publishedAt": "2026-11-18T11:45:00.000Z",
-      "url": "https://www.etnews.com/20261118000446",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 REGULATION)"
-      ],
-      "score": 6,
-      "importance": 2,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "REGULATION"
-      ],
-      "company": "전자신문",
-      "stage": "metadata"
-    },
-    {
-      "id": "1da85114e694",
-      "title": "AI가 결제하고 은행 업무까지…글로벌 금융시장 대전환",
-      "source": "전자신문",
-      "publishedAt": "2026-11-18T08:10:37.000Z",
-      "url": "https://www.etnews.com/20261118000434",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "EXCLUDE",
-      "reasons": [
-        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
-      ],
-      "score": 2,
-      "importance": 0,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [],
-      "company": "전자신문",
-      "stage": "metadata"
-    },
-    {
-      "id": "6304fa66b13c",
-      "title": "1년전 AI도 수능 수학 만점 …교육·시험평가체계 낙제",
-      "source": "전자신문",
-      "publishedAt": "2026-11-18T07:00:00.000Z",
-      "url": "https://www.etnews.com/20261118000364",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 MODEL_MENTION)"
-      ],
-      "score": 4,
-      "importance": 1,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "MODEL_MENTION"
-      ],
-      "company": "전자신문",
-      "stage": "metadata"
-    },
-    {
-      "id": "9c84612937a6",
-      "title": "네이버, AI 투자 확대에 R&D 역대 최대…카카오는 효율화 기조 유지",
-      "source": "전자신문",
-      "publishedAt": "2026-11-18T07:00:00.000Z",
-      "url": "https://www.etnews.com/20261118000253",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "EXCLUDE",
-      "reasons": [
-        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
-      ],
-      "score": 2,
-      "importance": 0,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [],
-      "company": "전자신문",
-      "stage": "metadata"
-    },
-    {
-      "id": "02d39a907107",
-      "title": "삼성 스마트싱스도 챗GPT 연동…AI로 가전 제어 확산",
-      "source": "전자신문",
-      "publishedAt": "2026-11-18T07:00:00.000Z",
-      "url": "https://www.etnews.com/20261118000237",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)"
-      ],
-      "score": 5,
-      "importance": 1,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "PRODUCT_LAUNCH"
-      ],
-      "company": "전자신문",
-      "stage": "metadata"
-    },
-    {
-      "id": "887655f4f34a",
-      "title": "“AI 커닝 관심만 키웠나” 검색 수요 늘어…네이버·쿠팡·당근도 '유통 차단' 비상",
-      "source": "전자신문",
-      "publishedAt": "2026-11-18T06:00:20.000Z",
-      "url": "https://www.etnews.com/20261118000345",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "EXCLUDE",
-      "reasons": [
-        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
-      ],
-      "score": 2,
-      "importance": 0,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [],
-      "company": "전자신문",
-      "stage": "metadata"
-    },
-    {
-      "id": "4829268b39f3",
-      "title": "대형 금융사 보안점검 연 2회로 늘린다…모든 IT자산 관리대상에",
-      "source": "전자신문",
-      "publishedAt": "2026-11-18T06:00:00.000Z",
-      "url": "https://www.etnews.com/20261118000241",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 SECURITY)"
-      ],
-      "score": 4,
-      "importance": 1,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "SECURITY"
-      ],
-      "company": "전자신문",
-      "stage": "metadata"
-    },
-    {
-      "id": "d04e9a647fc0",
-      "title": "세이프티랩, 'AI 생체체크 키오스크' 내년 코레일 실증…“인적사고 예방”",
-      "source": "전자신문",
-      "publishedAt": "2026-11-18T06:00:00.000Z",
-      "url": "https://www.etnews.com/20261118000220",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "EXCLUDE",
-      "reasons": [
-        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
-      ],
-      "score": 2,
-      "importance": 0,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [],
-      "company": "전자신문",
-      "stage": "metadata"
-    },
-    {
-      "id": "f6fd0f91ba10",
-      "title": "MS, AI 에이전트로 기업 혁신 가속…이그나이트서 '프런티어 생태계' 공개",
-      "source": "전자신문",
-      "publishedAt": "2026-11-18T05:51:03.000Z",
-      "url": "https://www.etnews.com/20261118000329",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)"
-      ],
-      "score": 5,
-      "importance": 1,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "PRODUCT_LAUNCH"
-      ],
-      "company": "전자신문",
-      "stage": "metadata"
-    },
-    {
-      "id": "2e3390cece67",
-      "title": "[M.AX 풀스택 진화]〈3〉챗GPT와 무엇이 다른가…'공장 두뇌' 제조 파운데이션 모델",
-      "source": "전자신문",
-      "publishedAt": "2026-11-18T05:15:22.000Z",
-      "url": "https://www.etnews.com/20261118000283",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 MODEL_MENTION)"
-      ],
-      "score": 4,
-      "importance": 1,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "MODEL_MENTION"
-      ],
-      "company": "전자신문",
-      "stage": "metadata"
-    },
-    {
-      "id": "ff8efe89b7e5",
-      "title": "당정, 수능 부정행위 패널티 10년으로…AI 빅테크, 정부에 협조 의견 회신",
-      "source": "전자신문",
-      "publishedAt": "2026-11-18T05:11:59.000Z",
-      "url": "https://www.etnews.com/20261118000276",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 REGULATION)"
-      ],
-      "score": 6,
-      "importance": 2,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "REGULATION"
-      ],
-      "company": "전자신문",
       "stage": "metadata"
     },
     {
@@ -15641,7 +16000,135 @@
       "stage": "metadata",
       "carriedFrom": "2026-11-12",
       "fromQueue": "evidence"
+    },
+    {
+      "id": "5b0b199a3f15",
+      "title": "How ArisGlobal scaled generative AI inference on Amazon Bedrock",
+      "source": "AWS Machine Learning Blog",
+      "publishedAt": "2026-11-17T15:57:09.000Z",
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-arisglobal-scaled-generative-ai-inference-on-amazon-bedrock/",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "사건 신호 API_PLATFORM (우선순위 5)",
+        "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+      ],
+      "score": 5,
+      "importance": 1,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "API_PLATFORM"
+      ],
+      "company": "Amazon",
+      "stage": "evidence",
+      "evidenceStatus": "OK",
+      "distinctFacts": 11,
+      "sufficiency": "SUFFICIENT_STANDARD",
+      "deepMissing": [
+        "importance",
+        "userImpact",
+        "contextNeed",
+        "standardWouldOmit"
+      ],
+      "suggestedDepth": "STANDARD",
+      "fromQueue": "evidence"
+    },
+    {
+      "id": "b4d0f21c2c60",
+      "title": "Modernizing mainframe Assembler to Java using Amazon Bedrock and AWS Transform",
+      "source": "AWS Machine Learning Blog",
+      "publishedAt": "2026-11-16T17:29:29.000Z",
+      "url": "https://aws.amazon.com/blogs/machine-learning/modernizing-mainframe-assembler-to-java-using-amazon-bedrock-and-aws-transform/",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "사건 신호 API_PLATFORM (우선순위 5)",
+        "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+      ],
+      "score": 5,
+      "importance": 1,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "API_PLATFORM"
+      ],
+      "company": "Amazon",
+      "stage": "evidence",
+      "evidenceStatus": "OK",
+      "distinctFacts": 11,
+      "sufficiency": "SUFFICIENT_STANDARD",
+      "deepMissing": [
+        "importance",
+        "userImpact",
+        "contextNeed",
+        "standardWouldOmit"
+      ],
+      "suggestedDepth": "STANDARD",
+      "fromQueue": "evidence"
+    },
+    {
+      "id": "7157ce3b54a8",
+      "title": "Novo Nordisk modernizes manufacturing process documents with Amazon Bedrock AgentCore",
+      "source": "AWS Machine Learning Blog",
+      "publishedAt": "2026-11-16T17:04:11.000Z",
+      "url": "https://aws.amazon.com/blogs/machine-learning/novo-nordisk-modernizes-manufacturing-process-documents-with-amazon-bedrock-agentcore/",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "사건 신호 API_PLATFORM (우선순위 5)",
+        "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+      ],
+      "score": 5,
+      "importance": 1,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "API_PLATFORM"
+      ],
+      "company": "Amazon",
+      "stage": "evidence",
+      "evidenceStatus": "OK",
+      "distinctFacts": 11,
+      "sufficiency": "SUFFICIENT_STANDARD",
+      "deepMissing": [
+        "importance",
+        "userImpact",
+        "contextNeed",
+        "standardWouldOmit"
+      ],
+      "suggestedDepth": "STANDARD",
+      "fromQueue": "evidence"
+    },
+    {
+      "id": "38c4a38bd619",
+      "title": "Your complete guide to AWS Quick at AWS re:Invent 2026",
+      "source": "AWS Machine Learning Blog",
+      "publishedAt": "2026-11-17T17:08:21.000Z",
+      "url": "https://aws.amazon.com/blogs/machine-learning/your-complete-guide-to-aws-quick-at-aws-reinvent-2026/",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "사건 신호 SECURITY_MENTION (우선순위 4)",
+        "근거 확인 대기 — 이번 실행 배치(40건)을 넘어 다음 실행으로 이월"
+      ],
+      "score": 4,
+      "importance": 1,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "SECURITY_MENTION"
+      ],
+      "company": "Amazon",
+      "stage": "metadata",
+      "capStage": "evidence",
+      "queued": "evidence",
+      "fromQueue": "evidence"
     }
   ],
-  "finishedAt": "2026-11-18T18:51:01.822Z"
+  "finishedAt": "2026-11-19T03:16:27.199Z"
 }
