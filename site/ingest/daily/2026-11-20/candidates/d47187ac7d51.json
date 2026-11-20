@@ -1,0 +1,232 @@
+{
+  "id": "d47187ac7d51",
+  "date": "2026-11-20",
+  "proposedSlug": "amazon-sagemaker-inference-2026-launches-review-part",
+  "title": null,
+  "sourceTitle": "Amazon SageMaker Inference: 2026 launches in review, part 2",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 10,
+    "deepChecks": {
+      "importance": true,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": true,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": true
+    },
+    "deepMissing": [
+      "userImpact"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-inference-2026-launches-in-review-part-2/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-11-20T00:34:07.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "d47187ac7d51",
+    "url": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-inference-2026-launches-in-review-part-2/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-inference-2026-launches-in-review-part-2",
+    "title": "Amazon SageMaker Inference: 2026 launches in review, part 2",
+    "excerpt": "This second installment reviews 13 more Amazon SageMaker AI inference launches from 2026, spanning configuration recommendations, fitting more models onto each GPU, serving models too large for one instance, cross-Region routing, and post-launch tuning, bringing the year's total to 26.",
+    "publishedAt": "2026-11-20T00:34:07.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-11-20T03:01:52.531Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 23293,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "This second installment reviews 13 more Amazon SageMaker AI inference launches from 2026, spanning configuration recommendations, fitting more models onto each GPU, serving models too large for one instance, cross-Region routing, and post-launch tuning, bringing the year's total to 26.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-inference-2026-launches-in-review-part-2/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T00:34:07.000Z",
+        "checkedAt": "2026-11-20T03:03:02.547Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Amazon SageMaker Inference: 2026 launches in review, part 2 | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-inference-2026-launches-in-review-part-2/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T00:34:07.000Z",
+        "checkedAt": "2026-11-20T03:03:02.547Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Amazon SageMaker Inference: 2026 launches in review, part 2",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-inference-2026-launches-in-review-part-2/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T00:34:07.000Z",
+        "checkedAt": "2026-11-20T03:03:02.547Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Inference recommendations now run from Amazon SageMaker AI Studio, the SageMaker Python SDK, and the coding agents engineers already use, and endpoints can now route requests across Regions and accounts.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-inference-2026-launches-in-review-part-2/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T00:34:07.000Z",
+        "checkedAt": "2026-11-20T03:03:02.547Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "In the spring, they launched a customer support assistant on a 70B-parameter model behind a single SageMaker AI endpoint, using the launches from part 1.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-inference-2026-launches-in-review-part-2/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T00:34:07.000Z",
+        "checkedAt": "2026-11-20T03:03:02.547Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Inference recommendations in SageMaker AI Studio (July 2026)",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-inference-2026-launches-in-review-part-2/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T00:34:07.000Z",
+        "checkedAt": "2026-11-20T03:03:02.547Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Choose a use-case profile (Interact, Generate, Summarize, or Custom), an optimization goal (minimize latency, maximize throughput, or minimize cost), and a model from SageMaker JumpStart, Amazon Simple Storage Service (Amazon S3), the Model Registry, or an existing SageMaker m…",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-inference-2026-launches-in-review-part-2/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T00:34:07.000Z",
+        "checkedAt": "2026-11-20T03:03:02.547Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Inference recommendations in the SageMaker Python SDK v3 (August 2026)",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-inference-2026-launches-in-review-part-2/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T00:34:07.000Z",
+        "checkedAt": "2026-11-20T03:03:02.547Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Inference recommendations now accept adapters as Model Package Amazon Resource Names (ARNs), for adapters produced by SageMaker fine-tuning, or as S3 URIs, for adapters from external pipelines such as Hugging Face PEFT.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-inference-2026-launches-in-review-part-2/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T00:34:07.000Z",
+        "checkedAt": "2026-11-20T03:03:02.547Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Inference Components in the SageMaker AI console (October 2026)",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-inference-2026-launches-in-review-part-2/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T00:34:07.000Z",
+        "checkedAt": "2026-11-20T03:03:02.547Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Part 1 covered two building blocks for large models on HyperPod: disaggregated prefill and decode in Inference Operator v3.2, and KV-aware routing as part of the managed tiered KV cache.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-inference-2026-launches-in-review-part-2/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T00:34:07.000Z",
+        "checkedAt": "2026-11-20T03:03:02.547Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Inference recommendations in SageMaker AI Studio (July 2026).",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-inference-2026-launches-in-review-part-2/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T00:34:07.000Z",
+        "checkedAt": "2026-11-20T03:03:02.547Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Amazon SageMaker Inference: 2026 year-to-date launches in review",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-inference-2026-launches-in-review-part-2/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T00:34:07.000Z",
+        "checkedAt": "2026-11-20T03:03:02.547Z"
+      }
+    ],
+    "pageDate": "2026-11-20T00:34:07.000Z"
+  },
+  "score": {
+    "importance": 4,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "MODEL",
+      "PRODUCT_LAUNCH",
+      "INFRA"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 11,
+    "total": 11
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 MODEL·PRODUCT_LAUNCH·INFRA (우선순위 11)",
+    "근거 확인 통과 (확인 사실 10개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "none",
+    "model": null,
+    "status": "skipped",
+    "error": "Shadow Mode — 원고를 만들지 않음",
+    "promptVersion": "draft-v2",
+    "at": "2026-11-20T03:03:14.361Z",
+    "evidenceHash": "ad733529a0f3"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": true,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}

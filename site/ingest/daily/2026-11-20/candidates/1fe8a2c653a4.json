@@ -1,0 +1,221 @@
+{
+  "id": "1fe8a2c653a4",
+  "date": "2026-11-20",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Tackling GPU Bottlenecks in Plane-Wave DFT with K-Point Batching and Mixed Precision",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "NVIDIA",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://developer.nvidia.com/blog/tackling-gpu-bottlenecks-in-plane-wave-dft-with-k-point-batching-and-mixed-precision/",
+      "name": "NVIDIA Technical Blog",
+      "type": "official",
+      "publishedAt": "2026-11-18T15:00:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "1fe8a2c653a4",
+    "url": "https://developer.nvidia.com/blog/tackling-gpu-bottlenecks-in-plane-wave-dft-with-k-point-batching-and-mixed-precision/",
+    "canonicalUrl": "https://developer.nvidia.com/blog/tackling-gpu-bottlenecks-in-plane-wave-dft-with-k-point-batching-and-mixed-precision",
+    "title": "Tackling GPU Bottlenecks in Plane-Wave DFT with K-Point Batching and Mixed Precision",
+    "excerpt": "Training a next-generation machine learning interatomic potential (MLIP) requires ground truth: tens to hundreds of millions of density functional theory (DFT)...",
+    "publishedAt": "2026-11-18T15:00:00.000Z",
+    "sourceId": "nvidia-developer",
+    "sourceName": "NVIDIA Technical Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://developer.nvidia.com/blog/feed",
+    "fetchedAt": "2026-11-20T03:01:52.531Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 17328,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Training a next-generation machine learning interatomic potential (MLIP) requires ground truth: tens to hundreds of millions of density functional theory (DFT)...",
+        "sourceUrl": "https://developer.nvidia.com/blog/tackling-gpu-bottlenecks-in-plane-wave-dft-with-k-point-batching-and-mixed-precision/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-18T15:00:00.000Z",
+        "checkedAt": "2026-11-20T03:03:08.669Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Tackling GPU Bottlenecks in Plane-Wave DFT with K-Point Batching and Mixed Precision | NVIDIA Technical Blog",
+        "sourceUrl": "https://developer.nvidia.com/blog/tackling-gpu-bottlenecks-in-plane-wave-dft-with-k-point-batching-and-mixed-precision/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-18T15:00:00.000Z",
+        "checkedAt": "2026-11-20T03:03:08.669Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Tackling GPU Bottlenecks in Plane-Wave DFT with K-Point Batching and Mixed Precision",
+        "sourceUrl": "https://developer.nvidia.com/blog/tackling-gpu-bottlenecks-in-plane-wave-dft-with-k-point-batching-and-mixed-precision/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-18T15:00:00.000Z",
+        "checkedAt": "2026-11-20T03:03:08.669Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Daviator, a new NVIDIA library of GPU kernels, replaces sequential k-point processing in VASP with batched GPU operations including a batched Davidson eigensolver, eliminating the small-system GPU performance bottleneck in plane-wave DFT.",
+        "sourceUrl": "https://developer.nvidia.com/blog/tackling-gpu-bottlenecks-in-plane-wave-dft-with-k-point-batching-and-mixed-precision/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-18T15:00:00.000Z",
+        "checkedAt": "2026-11-20T03:03:08.669Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "A mixed precision execution layer leverages FP32 arithmetic and storage for selected Davidson solver components while keeping numerically sensitive steps in FP64, delivering roughly 2x end-to-end acceleration on GPUs with high FP32:FP64 ratios such as the RTX PRO 6000.",
+        "sourceUrl": "https://developer.nvidia.com/blog/tackling-gpu-bottlenecks-in-plane-wave-dft-with-k-point-batching-and-mixed-precision/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-18T15:00:00.000Z",
+        "checkedAt": "2026-11-20T03:03:08.669Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "The mixed precision workflow uses configurable floating-point types to identify minimum required precision per kernel, enabling targeted FP32 adoption with FP64 islands for convergence-critical operations.",
+        "sourceUrl": "https://developer.nvidia.com/blog/tackling-gpu-bottlenecks-in-plane-wave-dft-with-k-point-batching-and-mixed-precision/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-18T15:00:00.000Z",
+        "checkedAt": "2026-11-20T03:03:08.669Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Daviator and its mixed precision option are available through the NVIDIA ALCHEMI VASP microservice by setting LDAVIATOR=True and LDAVIATOR_MIXED_PRECISION=1 in the INCAR file, with existing VASP inputs working without modification.",
+        "sourceUrl": "https://developer.nvidia.com/blog/tackling-gpu-bottlenecks-in-plane-wave-dft-with-k-point-batching-and-mixed-precision/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-18T15:00:00.000Z",
+        "checkedAt": "2026-11-20T03:03:08.669Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "The second, a new mixed precision execution layer, enables further performance gains, especially on inference-class GPUs with a high FP32:FP64 throughput ratio.",
+        "sourceUrl": "https://developer.nvidia.com/blog/tackling-gpu-bottlenecks-in-plane-wave-dft-with-k-point-batching-and-mixed-precision/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-18T15:00:00.000Z",
+        "checkedAt": "2026-11-20T03:03:08.669Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "For large systems, the work per k-point can fully saturate a GPU, but for small systems with dense k-point grids, the hundreds of small GPU dispatches per step causes kernel launch overhead to dominate compute time.",
+        "sourceUrl": "https://developer.nvidia.com/blog/tackling-gpu-bottlenecks-in-plane-wave-dft-with-k-point-batching-and-mixed-precision/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-18T15:00:00.000Z",
+        "checkedAt": "2026-11-20T03:03:08.669Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Additionally, plane-wave DFT traditionally runs in FP64, a conservative default that guarantees accuracy throughout the solver pipeline.",
+        "sourceUrl": "https://developer.nvidia.com/blog/tackling-gpu-bottlenecks-in-plane-wave-dft-with-k-point-batching-and-mixed-precision/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-18T15:00:00.000Z",
+        "checkedAt": "2026-11-20T03:03:08.669Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Daviator’s mixed precision can be enabled by setting LDAVIATOR_MIXED_PRECISION to 1 (0 is FP64).",
+        "sourceUrl": "https://developer.nvidia.com/blog/tackling-gpu-bottlenecks-in-plane-wave-dft-with-k-point-batching-and-mixed-precision/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-18T15:00:00.000Z",
+        "checkedAt": "2026-11-20T03:03:08.669Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "The following INCAR parameters are available to configure the use of mixed precision specifically for Daviator (Table 1).",
+        "sourceUrl": "https://developer.nvidia.com/blog/tackling-gpu-bottlenecks-in-plane-wave-dft-with-k-point-batching-and-mixed-precision/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-18T15:00:00.000Z",
+        "checkedAt": "2026-11-20T03:03:08.669Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "True = FP32 Enable/Disable Mixed Precision (FP32 = mixed arithmetic and FP32 storage in Daviator)",
+        "sourceUrl": "https://developer.nvidia.com/blog/tackling-gpu-bottlenecks-in-plane-wave-dft-with-k-point-batching-and-mixed-precision/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-18T15:00:00.000Z",
+        "checkedAt": "2026-11-20T03:03:08.669Z"
+      }
+    ],
+    "pageDate": "2026-11-18T15:00:00.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "INFRA"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 INFRA (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

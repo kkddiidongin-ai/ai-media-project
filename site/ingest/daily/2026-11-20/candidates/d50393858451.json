@@ -1,0 +1,143 @@
+{
+  "id": "d50393858451",
+  "date": "2026-11-20",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "컨테이너처럼 쓰고, VM처럼 격리하기 1편 - 컨테이너와 VM의 차이, Kata Containers의 Pod 실행 구조",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_SHORT",
+    "distinctFacts": 2,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": false,
+      "evidenceQuality": false,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "distinctFacts",
+      "evidenceQuality",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "NAVER D2",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://d2.naver.com/helloworld/8055238",
+      "name": "NAVER D2",
+      "type": "official",
+      "publishedAt": "2026-11-18T05:46:34.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "d50393858451",
+    "url": "https://d2.naver.com/helloworld/8055238",
+    "canonicalUrl": "https://d2.naver.com/helloworld/8055238",
+    "title": "컨테이너처럼 쓰고, VM처럼 격리하기 1편 - 컨테이너와 VM의 차이, Kata Containers의 Pod 실행 구조",
+    "excerpt": "GPU 서버 한 대를 여러 사용자가 함께 쓴다면 사용자의 작업을 어디까지 격리해야 할까요? 적어도 한 사용자의 컨테이너 탈출이 같은 서버에 있는 다른 사용자의 작업이나 GPU 접근으로 이어져서는 안 됩니다. Kubernetes 위에서 NVIDIA GPU 환경을 격리하면서 겪은 문제와 해결 방법을 네 편으로 나누어 정리했습니다. 1편: 컨테이너와 VM의 차이, Kata Containers의 Pod 실행 구조 2편 : GPU 패스스루 계층과 GPU 8장 VM의 부팅·메모리 구성 3편 : Fabric Manager 파티션과 DRA를 이용",
+    "publishedAt": "2026-11-18T05:46:34.000Z",
+    "sourceId": "naver-d2",
+    "sourceName": "NAVER D2",
+    "sourceType": "official",
+    "tier": 2,
+    "fetchMode": "rss",
+    "discoveredVia": "https://d2.naver.com/d2.atom",
+    "fetchedAt": "2026-11-19T03:14:34.124Z",
+    "fromQueue": "evidence"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 291,
+    "grade": "FAIL",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "GPU 서버 한 대를 여러 사용자가 함께 쓴다면 사용자의 작업을 어디까지 격리해야 할까요? 적어도 한 사용자의 컨테이너 탈출이 같은 서버에 있는 다른 사용자의 작업이나 GPU 접근으로 이어져서는 안 됩니다. Kubernetes 위에서 NVIDIA GPU 환경을 격리하면서 겪은 문제와 해결 방법을 네 편으로 나누어 정리했습니다. 1편: 컨테이너와 VM의 차이, Kata Containers의 Pod 실행 구조 2편 : GPU 패스스루 계층과 GPU 8장 VM의 부팅·메모리 구성 3편 : Fabric Manager 파티션과 DRA를 이용",
+        "sourceUrl": "https://d2.naver.com/helloworld/8055238",
+        "source": "NAVER D2",
+        "publishedAt": "2026-11-18T05:46:34.000Z",
+        "checkedAt": "2026-11-20T03:03:13.168Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "• • • • • • • 컨테이너처럼 쓰고, VM처럼 격리하기 1편 - 컨테이너와 VM의 차이, Kata Containers의 Pod 실행 구조 • •",
+        "sourceUrl": "https://d2.naver.com/helloworld/8055238",
+        "source": "NAVER D2",
+        "publishedAt": "2026-11-18T05:46:34.000Z",
+        "checkedAt": "2026-11-20T03:03:13.168Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "컨테이너처럼 쓰고, VM처럼 격리하기 1편 - 컨테이너와 VM의 차이, Kata Containers의 Pod 실행 구조",
+        "sourceUrl": "https://d2.naver.com/helloworld/8055238",
+        "source": "NAVER D2",
+        "publishedAt": "2026-11-18T05:46:34.000Z",
+        "checkedAt": "2026-11-20T03:03:13.168Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "글쓴이 김동현 | NAVER Cloud Container Tech 소개 NAVER Cloud Container Service에서 NKS, GPU 엔지니어링을 담당하고 있습니다.",
+        "sourceUrl": "https://d2.naver.com/helloworld/8055238",
+        "source": "NAVER D2",
+        "publishedAt": "2026-11-18T05:46:34.000Z",
+        "checkedAt": "2026-11-20T03:03:13.168Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 2,
+    "verificationConfidence": 3,
+    "signals": [
+      "INFRA"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 INFRA (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

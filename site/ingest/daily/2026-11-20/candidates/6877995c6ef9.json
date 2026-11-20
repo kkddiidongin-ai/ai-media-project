@@ -1,0 +1,223 @@
+{
+  "id": "6877995c6ef9",
+  "date": "2026-11-20",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "GitHub Event Streams is now in preview",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 9,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": false,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "evidenceQuality",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "GitHub",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://github.blog/changelog/2026-11-17-github-event-streams-is-now-in-preview",
+      "name": "GitHub Changelog",
+      "type": "official",
+      "publishedAt": "2026-11-17T18:00:18.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "6877995c6ef9",
+    "url": "https://github.blog/changelog/2026-11-17-github-event-streams-is-now-in-preview",
+    "canonicalUrl": "https://github.blog/changelog/2026-11-17-github-event-streams-is-now-in-preview",
+    "title": "GitHub Event Streams is now in preview",
+    "excerpt": "GitHub is now a real-time coordination layer between developers, agents, and automation. With Event Streams, your agent sleeps while there’s no work and wakes as soon as there is. You… The post GitHub Event Streams is now in preview appeared first on The GitHub Blog .",
+    "publishedAt": "2026-11-17T18:00:18.000Z",
+    "sourceId": "github-changelog",
+    "sourceName": "GitHub Changelog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://github.blog/changelog/feed/?paged=2",
+    "fetchedAt": "2026-11-19T18:59:10.009Z",
+    "fromQueue": "evidence"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 1618,
+    "grade": "LIMITED",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "GitHub is now a real-time coordination layer between developers, agents, and automation. With Event Streams, your agent sleeps while there’s no work and wakes as soon as there is. You… The post GitHub Event Streams is now in preview appeared first on The GitHub Blog .",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-github-event-streams-is-now-in-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:00:18.000Z",
+        "checkedAt": "2026-11-20T03:03:09.881Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "GitHub Event Streams is now in preview - GitHub Changelog",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-github-event-streams-is-now-in-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:00:18.000Z",
+        "checkedAt": "2026-11-20T03:03:09.881Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "GitHub is now a real-time coordination layer between developers, agents, and automation.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-github-event-streams-is-now-in-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:00:18.000Z",
+        "checkedAt": "2026-11-20T03:03:09.881Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "With Event Streams, your agent sleeps while there&rsquo;s no work and wakes as soon as there is.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-github-event-streams-is-now-in-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:00:18.000Z",
+        "checkedAt": "2026-11-20T03:03:09.881Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Without a webhook receiver, the usual way to keep up is polling: asking GitHub &ldquo;did anything change?&rdquo; over and over.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-github-event-streams-is-now-in-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:00:18.000Z",
+        "checkedAt": "2026-11-20T03:03:09.881Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Connect to GitHub and keep the connection open to receive events.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-github-event-streams-is-now-in-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:00:18.000Z",
+        "checkedAt": "2026-11-20T03:03:09.881Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "To get access, sign up for the Event Streams waitlist .",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-github-event-streams-is-now-in-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:00:18.000Z",
+        "checkedAt": "2026-11-20T03:03:09.881Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "To learn more, see the Event Streams documentation .",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-github-event-streams-is-now-in-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:00:18.000Z",
+        "checkedAt": "2026-11-20T03:03:09.881Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Event Streams is available in preview on all GitHub plans once approved on the waitlist .",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-github-event-streams-is-now-in-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:00:18.000Z",
+        "checkedAt": "2026-11-20T03:03:09.881Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Improvements on the pull request overview in public preview",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-github-event-streams-is-now-in-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:00:18.000Z",
+        "checkedAt": "2026-11-20T03:03:09.881Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "New pull request overview page in public preview",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-github-event-streams-is-now-in-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:00:18.000Z",
+        "checkedAt": "2026-11-20T03:03:09.881Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Moderate role for GitHub Issues generally available",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-github-event-streams-is-now-in-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:00:18.000Z",
+        "checkedAt": "2026-11-20T03:03:09.881Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Enterprise installations for GitHub Apps generally available",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-github-event-streams-is-now-in-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:00:18.000Z",
+        "checkedAt": "2026-11-20T03:03:09.881Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PREVIEW"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 PREVIEW (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

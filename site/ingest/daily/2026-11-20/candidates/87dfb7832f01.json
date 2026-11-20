@@ -1,0 +1,222 @@
+{
+  "id": "87dfb7832f01",
+  "date": "2026-11-20",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "GitHub Copilot benchmarks site adds harness comparisons",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 12,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": false,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "evidenceQuality",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "GitHub",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://github.blog/changelog/2026-11-17-github-copilot-benchmarks-site-adds-harness-comparisons",
+      "name": "GitHub Changelog",
+      "type": "official",
+      "publishedAt": "2026-11-17T18:00:22.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "87dfb7832f01",
+    "url": "https://github.blog/changelog/2026-11-17-github-copilot-benchmarks-site-adds-harness-comparisons",
+    "canonicalUrl": "https://github.blog/changelog/2026-11-17-github-copilot-benchmarks-site-adds-harness-comparisons",
+    "title": "GitHub Copilot benchmarks site adds harness comparisons",
+    "excerpt": "GitHub Copilot benchmarks now includes Terminal-Bench-Science 0.1 and adds a new view that compares agent harnesses, both available in public preview. The site compares models in the GitHub Copilot agent… The post GitHub Copilot benchmarks site adds harness comparisons appeared first on The GitHub B",
+    "publishedAt": "2026-11-17T18:00:22.000Z",
+    "sourceId": "github-changelog",
+    "sourceName": "GitHub Changelog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://github.blog/changelog/feed/?paged=2",
+    "fetchedAt": "2026-11-20T03:01:52.531Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 1942,
+    "grade": "LIMITED",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "GitHub Copilot benchmarks now includes Terminal-Bench-Science 0.1 and adds a new view that compares agent harnesses, both available in public preview. The site compares models in the GitHub Copilot agent… The post GitHub Copilot benchmarks site adds harness comparisons appeared first on The GitHub B",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-github-copilot-benchmarks-site-adds-harness-comparisons",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:00:22.000Z",
+        "checkedAt": "2026-11-20T03:03:07.910Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "GitHub Copilot benchmarks site adds harness comparisons - GitHub Changelog",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-github-copilot-benchmarks-site-adds-harness-comparisons",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:00:22.000Z",
+        "checkedAt": "2026-11-20T03:03:07.910Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "GitHub Copilot benchmarks now includes Terminal-Bench-Science 0.1 and adds a new view that compares agent harnesses, both available in public preview.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-github-copilot-benchmarks-site-adds-harness-comparisons",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:00:22.000Z",
+        "checkedAt": "2026-11-20T03:03:07.910Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "The site compares models in the GitHub Copilot agent harness, or harnesses using the same model, across established software engineering benchmarks, weighing resolution rate, reasoning effort, and cost per task.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-github-copilot-benchmarks-site-adds-harness-comparisons",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:00:22.000Z",
+        "checkedAt": "2026-11-20T03:03:07.910Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "In addition to software engineering benchmarks, the site now includes Terminal-Bench-Science 0.1 , which evaluates AI agents on research workflows across scientific domains.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-github-copilot-benchmarks-site-adds-harness-comparisons",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:00:22.000Z",
+        "checkedAt": "2026-11-20T03:03:07.910Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "The new Harnesses view compares GitHub Copilot CLI with Claude Code and Codex CLI using the same model at the same reasoning effort.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-github-copilot-benchmarks-site-adds-harness-comparisons",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:00:22.000Z",
+        "checkedAt": "2026-11-20T03:03:07.910Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Paired differences : For each matched model, Copilot CLI&rsquo;s resolution advantage (in percentage points) and cost savings (as a percentage) are shown side by side, with approximate 95% bootstrap intervals.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-github-copilot-benchmarks-site-adds-harness-comparisons",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:00:22.000Z",
+        "checkedAt": "2026-11-20T03:03:07.910Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Copilot-only configurations, like GitHub Copilot Fusion, and unmatched results are excluded rather than compared against a different model.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-github-copilot-benchmarks-site-adds-harness-comparisons",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:00:22.000Z",
+        "checkedAt": "2026-11-20T03:03:07.910Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Explore the results on the GitHub Copilot benchmarks site .",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-github-copilot-benchmarks-site-adds-harness-comparisons",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:00:22.000Z",
+        "checkedAt": "2026-11-20T03:03:07.910Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "OpenAI’s GPT-6.2 Astra and GPT-6.2 Sol now available",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-github-copilot-benchmarks-site-adds-harness-comparisons",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:00:22.000Z",
+        "checkedAt": "2026-11-20T03:03:07.910Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "GitHub Copilot Fusion updates: more availability, benchmarks, and models",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-github-copilot-benchmarks-site-adds-harness-comparisons",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:00:22.000Z",
+        "checkedAt": "2026-11-20T03:03:07.910Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "GitHub Copilot app, Microsoft Ignite releases",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-github-copilot-benchmarks-site-adds-harness-comparisons",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:00:22.000Z",
+        "checkedAt": "2026-11-20T03:03:07.910Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "MAI Code 2 and MAI Code 2 Flash in GitHub Copilot",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-github-copilot-benchmarks-site-adds-harness-comparisons",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:00:22.000Z",
+        "checkedAt": "2026-11-20T03:03:07.910Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PREVIEW"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 PREVIEW (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}
