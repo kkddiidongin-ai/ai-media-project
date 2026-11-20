@@ -1,0 +1,221 @@
+{
+  "id": "ebd75882b3d9",
+  "date": "2026-11-20",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Amazon Bedrock AgentCore harness adds Strands harness defaults, built-in tools, and lifecycle hooks",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 8,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agentcore-harness-adds-strands-harness-defaults-built-in-tools-and-lifecycle-hooks/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-11-19T20:01:06.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "ebd75882b3d9",
+    "url": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agentcore-harness-adds-strands-harness-defaults-built-in-tools-and-lifecycle-hooks/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agentcore-harness-adds-strands-harness-defaults-built-in-tools-and-lifecycle-hooks",
+    "title": "Amazon Bedrock AgentCore harness adds Strands harness defaults, built-in tools, and lifecycle hooks",
+    "excerpt": "Amazon Bedrock AgentCore harness now runs on the open-source Strands harness, bringing a recommended model, task-oriented defaults, automatic prompt caching, proactive context management, and new built-in tools. It also adds lifecycle hooks so you can run deterministic allow or deny checks at define",
+    "publishedAt": "2026-11-19T20:01:06.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-11-20T03:01:52.531Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 11484,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Amazon Bedrock AgentCore harness now runs on the open-source Strands harness, bringing a recommended model, task-oriented defaults, automatic prompt caching, proactive context management, and new built-in tools. It also adds lifecycle hooks so you can run deterministic allow or deny checks at define",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agentcore-harness-adds-strands-harness-defaults-built-in-tools-and-lifecycle-hooks/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-19T20:01:06.000Z",
+        "checkedAt": "2026-11-20T03:03:06.502Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Amazon Bedrock AgentCore harness adds Strands harness defaults, built-in tools, and lifecycle hooks | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agentcore-harness-adds-strands-harness-defaults-built-in-tools-and-lifecycle-hooks/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-19T20:01:06.000Z",
+        "checkedAt": "2026-11-20T03:03:06.502Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Amazon Bedrock AgentCore harness adds Strands harness defaults, built-in tools, and lifecycle hooks",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agentcore-harness-adds-strands-harness-defaults-built-in-tools-and-lifecycle-hooks/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-19T20:01:06.000Z",
+        "checkedAt": "2026-11-20T03:03:06.502Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "We are upgrading Amazon Bedrock AgentCore harness to use Strands harness, our open-source agent harness, released earlier this year, available under an Apache 2.0 license.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agentcore-harness-adds-strands-harness-defaults-built-in-tools-and-lifecycle-hooks/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-19T20:01:06.000Z",
+        "checkedAt": "2026-11-20T03:03:06.502Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "AgentCore harness also introduces lifecycle hooks, so you can apply your own deterministic checks and notifications at defined points in the agent loop.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agentcore-harness-adds-strands-harness-defaults-built-in-tools-and-lifecycle-hooks/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-19T20:01:06.000Z",
+        "checkedAt": "2026-11-20T03:03:06.502Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Amazon Bedrock AgentCore harness operates that foundation as a managed AWS service.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agentcore-harness-adds-strands-harness-defaults-built-in-tools-and-lifecycle-hooks/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-19T20:01:06.000Z",
+        "checkedAt": "2026-11-20T03:03:06.502Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Customer-provided Model Context Protocol (MCP) servers, AgentCore Gateway (a capability of Amazon Bedrock AgentCore), Browser, Code Interpreter, inline functions, skills, memory, and customer-provided containers continue to work through the existing harness interfaces.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agentcore-harness-adds-strands-harness-defaults-built-in-tools-and-lifecycle-hooks/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-19T20:01:06.000Z",
+        "checkedAt": "2026-11-20T03:03:06.502Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "For timeouts, payload fields, and context limits, see Lifecycle hooks in the Amazon Bedrock AgentCore Developer Guide .",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agentcore-harness-adds-strands-harness-defaults-built-in-tools-and-lifecycle-hooks/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-19T20:01:06.000Z",
+        "checkedAt": "2026-11-20T03:03:06.502Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "HARNESS_ID=$(agentcore harness create --region us-west-2 --json \\",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agentcore-harness-adds-strands-harness-defaults-built-in-tools-and-lifecycle-hooks/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-19T20:01:06.000Z",
+        "checkedAt": "2026-11-20T03:03:06.502Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "while [ \"$(agentcore harness get --region us-west-2 --id \"$HARNESS_ID\" --json | jq -r '.harness.status')\" = CREATING ]; do sleep 10; done",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agentcore-harness-adds-strands-harness-defaults-built-in-tools-and-lifecycle-hooks/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-19T20:01:06.000Z",
+        "checkedAt": "2026-11-20T03:03:06.502Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "agentcore harness get --region us-west-2 --id \"$HARNESS_ID\" --json | jq -r '.harness.status'",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agentcore-harness-adds-strands-harness-defaults-built-in-tools-and-lifecycle-hooks/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-19T20:01:06.000Z",
+        "checkedAt": "2026-11-20T03:03:06.502Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "agentcore harness delete --region us-west-2 --id \"$HARNESS_ID\"",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agentcore-harness-adds-strands-harness-defaults-built-in-tools-and-lifecycle-hooks/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-19T20:01:06.000Z",
+        "checkedAt": "2026-11-20T03:03:06.502Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "On November 11, AgentCore harness began rolling out the Strands harness-backed experience to new and existing harnesses.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agentcore-harness-adds-strands-harness-defaults-built-in-tools-and-lifecycle-hooks/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-19T20:01:06.000Z",
+        "checkedAt": "2026-11-20T03:03:06.502Z"
+      }
+    ],
+    "pageDate": "2026-11-19T20:01:06.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "API_PLATFORM"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 API_PLATFORM (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

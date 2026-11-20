@@ -1,0 +1,222 @@
+{
+  "id": "2217122441a2",
+  "date": "2026-11-20",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "GitHub Copilot CLI adds Microsoft Entra sign-in as a preview",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 12,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": false,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "evidenceQuality",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "GitHub",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://github.blog/changelog/2026-11-17-github-copilot-cli-adds-microsoft-entra-sign-in-as-a-preview",
+      "name": "GitHub Changelog",
+      "type": "official",
+      "publishedAt": "2026-11-17T18:00:35.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "2217122441a2",
+    "url": "https://github.blog/changelog/2026-11-17-github-copilot-cli-adds-microsoft-entra-sign-in-as-a-preview",
+    "canonicalUrl": "https://github.blog/changelog/2026-11-17-github-copilot-cli-adds-microsoft-entra-sign-in-as-a-preview",
+    "title": "GitHub Copilot CLI adds Microsoft Entra sign-in as a preview",
+    "excerpt": "GitHub Copilot CLI now supports Microsoft Entra authentication in public preview. You can sign in with your Microsoft Entra account to silently authenticate to a linked GitHub Enterprise Managed User… The post GitHub Copilot CLI adds Microsoft Entra sign-in as a preview appeared first on The GitHub ",
+    "publishedAt": "2026-11-17T18:00:35.000Z",
+    "sourceId": "github-changelog",
+    "sourceName": "GitHub Changelog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://github.blog/changelog/feed/?paged=2",
+    "fetchedAt": "2026-11-20T03:01:52.531Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 2485,
+    "grade": "LIMITED",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "GitHub Copilot CLI now supports Microsoft Entra authentication in public preview. You can sign in with your Microsoft Entra account to silently authenticate to a linked GitHub Enterprise Managed User… The post GitHub Copilot CLI adds Microsoft Entra sign-in as a preview appeared first on The GitHub ",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-github-copilot-cli-adds-microsoft-entra-sign-in-as-a-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:00:35.000Z",
+        "checkedAt": "2026-11-19T19:00:57.066Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "GitHub Copilot CLI adds Microsoft Entra sign-in as a preview - GitHub Changelog",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-github-copilot-cli-adds-microsoft-entra-sign-in-as-a-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:00:35.000Z",
+        "checkedAt": "2026-11-19T19:00:57.066Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "GitHub Copilot CLI now supports Microsoft Entra authentication in public preview.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-github-copilot-cli-adds-microsoft-entra-sign-in-as-a-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:00:35.000Z",
+        "checkedAt": "2026-11-19T19:00:57.066Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "You can sign in with your Microsoft Entra account to silently authenticate to a linked GitHub Enterprise Managed User (EMU) account, use your Microsoft 365 Copilot license, or both, depending on your organization&rsquo;s entitlements.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-github-copilot-cli-adds-microsoft-entra-sign-in-as-a-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:00:35.000Z",
+        "checkedAt": "2026-11-19T19:00:57.066Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Microsoft Entra authentication for both EMUs and Microsoft 365 Copilot is currently supported on Windows and macOS.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-github-copilot-cli-adds-microsoft-entra-sign-in-as-a-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:00:35.000Z",
+        "checkedAt": "2026-11-19T19:00:57.066Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "For enterprises using EMUs via OIDC , GitHub Copilot CLI now supports silent SSO using Microsoft Entra authentication.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-github-copilot-cli-adds-microsoft-entra-sign-in-as-a-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:00:35.000Z",
+        "checkedAt": "2026-11-19T19:00:57.066Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "You can access GitHub from GitHub Copilot CLI using your Microsoft Entra identity without a separate GitHub sign-in.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-github-copilot-cli-adds-microsoft-entra-sign-in-as-a-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:00:35.000Z",
+        "checkedAt": "2026-11-19T19:00:57.066Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "You must have an assigned Copilot Business or Copilot Enterprise license, and your organization must enable the Copilot CLI policy.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-github-copilot-cli-adds-microsoft-entra-sign-in-as-a-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:00:35.000Z",
+        "checkedAt": "2026-11-19T19:00:57.066Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "In this scenario, GitHub Copilot CLI uses GitHub inference, and usage is governed by the organization&rsquo;s GitHub Copilot plan.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-github-copilot-cli-adds-microsoft-entra-sign-in-as-a-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:00:35.000Z",
+        "checkedAt": "2026-11-19T19:00:57.066Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "If your organization is in Frontier and has a Microsoft 365 Copilot license with usage-based billing, Microsoft Entra authentication lets you access models available through Microsoft Copilot directly from the terminal.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-github-copilot-cli-adds-microsoft-entra-sign-in-as-a-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:00:35.000Z",
+        "checkedAt": "2026-11-19T19:00:57.066Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "In this scenario, GitHub Copilot CLI uses Microsoft 365 inference rather than GitHub inference, and you don&rsquo;t need a GitHub account.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-github-copilot-cli-adds-microsoft-entra-sign-in-as-a-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:00:35.000Z",
+        "checkedAt": "2026-11-19T19:00:57.066Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Model access and usage limits are managed through your organization&rsquo;s Microsoft 365 Copilot settings, not GitHub.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-github-copilot-cli-adds-microsoft-entra-sign-in-as-a-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:00:35.000Z",
+        "checkedAt": "2026-11-19T19:00:57.066Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "To take advantage of these capabilities, GitHub Copilot CLI version 1.0.113 or later is required.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-17-github-copilot-cli-adds-microsoft-entra-sign-in-as-a-preview",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-17T18:00:35.000Z",
+        "checkedAt": "2026-11-19T19:00:57.066Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PREVIEW"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 PREVIEW (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

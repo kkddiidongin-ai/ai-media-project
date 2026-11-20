@@ -1,0 +1,212 @@
+{
+  "id": "50e3ea47cbae",
+  "date": "2026-11-20",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Genie 4 is now available",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Google",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://deepmind.google/blog/genie-4-is-now-available/",
+      "name": "Google DeepMind",
+      "type": "official",
+      "publishedAt": "2026-11-18T18:13:42.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "50e3ea47cbae",
+    "url": "https://deepmind.google/blog/genie-4-is-now-available/",
+    "canonicalUrl": "https://deepmind.google/blog/genie-4-is-now-available",
+    "title": "Genie 4 is now available",
+    "excerpt": "",
+    "publishedAt": "2026-11-18T18:13:42.000Z",
+    "sourceId": "google-deepmind",
+    "sourceName": "Google DeepMind",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://deepmind.google/blog/rss.xml",
+    "fetchedAt": "2026-11-20T03:01:52.531Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 7011,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "\"page_name\": \"Project Genie update featuring Genie 4\",",
+        "sourceUrl": "https://deepmind.google/blog/genie-4-is-now-available/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-11-18T18:13:42.000Z",
+        "checkedAt": "2026-11-19T19:00:50.801Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "\"article_name\": \"Genie 4 is now available\",",
+        "sourceUrl": "https://deepmind.google/blog/genie-4-is-now-available/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-11-18T18:13:42.000Z",
+        "checkedAt": "2026-11-19T19:00:50.801Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "\"section_header\": \"Genie 4 is now available\"",
+        "sourceUrl": "https://deepmind.google/blog/genie-4-is-now-available/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-11-18T18:13:42.000Z",
+        "checkedAt": "2026-11-19T19:00:50.801Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Explore a new Project Genie experience for Google AI Ultra subscribers, featuring Genie 4, the Project Genie agent, and a community gallery.",
+        "sourceUrl": "https://deepmind.google/blog/genie-4-is-now-available/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-11-18T18:13:42.000Z",
+        "checkedAt": "2026-11-19T19:00:50.801Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "We are rolling out Genie 4 to eligible Google AI Ultra subscribers, offering more responsive, social, and interactive world generation.",
+        "sourceUrl": "https://deepmind.google/blog/genie-4-is-now-available/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-11-18T18:13:42.000Z",
+        "checkedAt": "2026-11-19T19:00:50.801Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "We are rolling out Genie 4 to eligible Google AI Ultra subscribers for creating interactive worlds.",
+        "sourceUrl": "https://deepmind.google/blog/genie-4-is-now-available/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-11-18T18:13:42.000Z",
+        "checkedAt": "2026-11-19T19:00:50.801Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Our updated Genie 3 model supports longer sessions, panorama grounding, and linked world sequences today.",
+        "sourceUrl": "https://deepmind.google/blog/genie-4-is-now-available/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-11-18T18:13:42.000Z",
+        "checkedAt": "2026-11-19T19:00:50.801Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "With our new Genie 4 model, you can change weather, add characters, and hear adaptive audio in real time just by typing prompts.",
+        "sourceUrl": "https://deepmind.google/blog/genie-4-is-now-available/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-11-18T18:13:42.000Z",
+        "checkedAt": "2026-11-19T19:00:50.801Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "This update unlocks first-time access to Genie 4, new upgrades to Genie 3, the Project Genie agent which helps users build their vision, and a community gallery to discover, explore, and remix worlds.",
+        "sourceUrl": "https://deepmind.google/blog/genie-4-is-now-available/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-11-18T18:13:42.000Z",
+        "checkedAt": "2026-11-19T19:00:50.801Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "With Genie 4 , our most realistic and interactive world model yet, you can now prompt mid-session to change the world you created.",
+        "sourceUrl": "https://deepmind.google/blog/genie-4-is-now-available/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-11-18T18:13:42.000Z",
+        "checkedAt": "2026-11-19T19:00:50.801Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "While Genie 4 delivers our highest-fidelity visuals, physics, and native audio, Genie 3 remains available in Project Genie’s model picker when you want longer runs or panorama-seeded spaces.",
+        "sourceUrl": "https://deepmind.google/blog/genie-4-is-now-available/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-11-18T18:13:42.000Z",
+        "checkedAt": "2026-11-19T19:00:50.801Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Genie 3 and Genie 4 remain world models in the frontier research space.",
+        "sourceUrl": "https://deepmind.google/blog/genie-4-is-now-available/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-11-18T18:13:42.000Z",
+        "checkedAt": "2026-11-19T19:00:50.801Z"
+      }
+    ],
+    "pageDate": "2026-11-18T00:00:00.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 2,
+    "signals": [
+      "PRODUCT_LAUNCH"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 PRODUCT_LAUNCH (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

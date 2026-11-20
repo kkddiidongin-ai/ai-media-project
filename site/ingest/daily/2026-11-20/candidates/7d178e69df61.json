@@ -1,0 +1,232 @@
+{
+  "id": "7d178e69df61",
+  "date": "2026-11-20",
+  "proposedSlug": "enabling-real-time-ai-scientific-instruments-gpu",
+  "title": null,
+  "sourceTitle": "Enabling Real-Time AI for Scientific Instruments with GPU-Native Data Acquisition",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 10,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": true,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": true
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact"
+    ]
+  },
+  "company": "NVIDIA",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://developer.nvidia.com/blog/enabling-real-time-ai-for-scientific-instruments-with-gpu-native-data-acquisition/",
+      "name": "NVIDIA Technical Blog",
+      "type": "official",
+      "publishedAt": "2026-11-19T17:00:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "7d178e69df61",
+    "url": "https://developer.nvidia.com/blog/enabling-real-time-ai-for-scientific-instruments-with-gpu-native-data-acquisition/",
+    "canonicalUrl": "https://developer.nvidia.com/blog/enabling-real-time-ai-for-scientific-instruments-with-gpu-native-data-acquisition",
+    "title": "Enabling Real-Time AI for Scientific Instruments with GPU-Native Data Acquisition",
+    "excerpt": "In science and industry, analyzing sensor measurements in real time can enable AI to adjust processes, guide experiments, and search for better operating...",
+    "publishedAt": "2026-11-19T17:00:00.000Z",
+    "sourceId": "nvidia-developer",
+    "sourceName": "NVIDIA Technical Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://developer.nvidia.com/blog/feed",
+    "fetchedAt": "2026-11-20T03:01:52.531Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 11264,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "In science and industry, analyzing sensor measurements in real time can enable AI to adjust processes, guide experiments, and search for better operating...",
+        "sourceUrl": "https://developer.nvidia.com/blog/enabling-real-time-ai-for-scientific-instruments-with-gpu-native-data-acquisition/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-19T17:00:00.000Z",
+        "checkedAt": "2026-11-19T19:00:45.726Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Enabling Real-Time AI for Scientific Instruments with GPU-Native Data Acquisition | NVIDIA Technical Blog",
+        "sourceUrl": "https://developer.nvidia.com/blog/enabling-real-time-ai-for-scientific-instruments-with-gpu-native-data-acquisition/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-19T17:00:00.000Z",
+        "checkedAt": "2026-11-19T19:00:45.726Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Enabling Real-Time AI for Scientific Instruments with GPU-Native Data Acquisition",
+        "sourceUrl": "https://developer.nvidia.com/blog/enabling-real-time-ai-for-scientific-instruments-with-gpu-native-data-acquisition/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-19T17:00:00.000Z",
+        "checkedAt": "2026-11-19T19:00:45.726Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "A high-dynamic-range electron microscopy camera developed at Lawrence Berkeley National Laboratory captures strong and faint signals simultaneously, generating over 500 Gbps of data that can be processed during acquisition.",
+        "sourceUrl": "https://developer.nvidia.com/blog/enabling-real-time-ai-for-scientific-instruments-with-gpu-native-data-acquisition/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-19T17:00:00.000Z",
+        "checkedAt": "2026-11-19T19:00:45.726Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "NVIDIA DAQIRI is a software-defined data acquisition library that moves high-bandwidth instrument and sensor data into GPU-ready workflows.",
+        "sourceUrl": "https://developer.nvidia.com/blog/enabling-real-time-ai-for-scientific-instruments-with-gpu-native-data-acquisition/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-19T17:00:00.000Z",
+        "checkedAt": "2026-11-19T19:00:45.726Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "For existing Ethernet-capable instruments, this opens opportunities to add processing and feedback capabilities, as described in the previous post, Enable Real-Time AI for High-Speed Data Acquisition with NVIDIA DAQIRI .",
+        "sourceUrl": "https://developer.nvidia.com/blog/enabling-real-time-ai-for-scientific-instruments-with-gpu-native-data-acquisition/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-19T17:00:00.000Z",
+        "checkedAt": "2026-11-19T19:00:45.726Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "This advancement simplifies the experimental setup and microscope optics, but generates more than 500 gigabits of data per second (Gbps)—a stream that must be received and processed to make those measurements useful during acquisition.",
+        "sourceUrl": "https://developer.nvidia.com/blog/enabling-real-time-ai-for-scientific-instruments-with-gpu-native-data-acquisition/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-19T17:00:00.000Z",
+        "checkedAt": "2026-11-19T19:00:45.726Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "This is over 500x faster than conventional EELS data streams, which greatly enhances the raw detector information available for further processing and analysis.",
+        "sourceUrl": "https://developer.nvidia.com/blog/enabling-real-time-ai-for-scientific-instruments-with-gpu-native-data-acquisition/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-19T17:00:00.000Z",
+        "checkedAt": "2026-11-19T19:00:45.726Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Through this pipeline, the team enables inspection of the data during the measurement and adjusting the acquisition parameters and regions of interest in real time, all while processing high bandwidth data incoming at more than 500 Gbps.",
+        "sourceUrl": "https://developer.nvidia.com/blog/enabling-real-time-ai-for-scientific-instruments-with-gpu-native-data-acquisition/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-19T17:00:00.000Z",
+        "checkedAt": "2026-11-19T19:00:45.726Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "During the process of making scientific instruments, GPU-native data acquisition enables you to design around what will be measured and your desired means of response.",
+        "sourceUrl": "https://developer.nvidia.com/blog/enabling-real-time-ai-for-scientific-instruments-with-gpu-native-data-acquisition/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-19T17:00:00.000Z",
+        "checkedAt": "2026-11-19T19:00:45.726Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Developer Tools & Techniques | Edge Computing | Networking / Communications | HPC / Scientific Computing | ConnectX | Holoscan | IGX | General Interest | Beginner Technical | Best practice | AI Agent | DGX Spark | SC26",
+        "sourceUrl": "https://developer.nvidia.com/blog/enabling-real-time-ai-for-scientific-instruments-with-gpu-native-data-acquisition/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-19T17:00:00.000Z",
+        "checkedAt": "2026-11-19T19:00:45.726Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Denis Leshchev joined NVIDIA in 2024 as an application engineer for edge supercomputing, where he focuses on customer adoption of hardware and software platforms for real-time AI and autonomy for high-speed industrial and scientific instruments.",
+        "sourceUrl": "https://developer.nvidia.com/blog/enabling-real-time-ai-for-scientific-instruments-with-gpu-native-data-acquisition/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-19T17:00:00.000Z",
+        "checkedAt": "2026-11-19T19:00:45.726Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "He has extensive experience building scientific instrumentation, data acquisition and control systems, and data processing pipelines.",
+        "sourceUrl": "https://developer.nvidia.com/blog/enabling-real-time-ai-for-scientific-instruments-with-gpu-native-data-acquisition/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-19T17:00:00.000Z",
+        "checkedAt": "2026-11-19T19:00:45.726Z"
+      }
+    ],
+    "pageDate": "2026-11-19T17:00:00.000Z"
+  },
+  "score": {
+    "importance": 3,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "ACQ_INVEST",
+      "INFRA"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 8,
+    "total": 8
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 ACQ_INVEST·INFRA (우선순위 8)",
+    "근거 확인 통과 (확인 사실 10개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "none",
+    "model": null,
+    "status": "skipped",
+    "error": "Shadow Mode — 원고를 만들지 않음",
+    "promptVersion": "draft-v2",
+    "at": "2026-11-20T03:03:14.362Z",
+    "evidenceHash": "0001106a603b"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": true,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}

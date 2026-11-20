@@ -1,0 +1,221 @@
+{
+  "id": "bd32339b925d",
+  "date": "2026-11-20",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "AWS Lambda now supports GPU instances for Event Functions on Lambda Managed Instances",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/aws/aws-lambda-now-supports-gpu-instances-for-event-functions-on-lambda-managed-instances/",
+      "name": "AWS News Blog",
+      "type": "official",
+      "publishedAt": "2026-11-18T19:39:07.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "bd32339b925d",
+    "url": "https://aws.amazon.com/blogs/aws/aws-lambda-now-supports-gpu-instances-for-event-functions-on-lambda-managed-instances/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/aws/aws-lambda-now-supports-gpu-instances-for-event-functions-on-lambda-managed-instances",
+    "title": "AWS Lambda now supports GPU instances for Event Functions on Lambda Managed Instances",
+    "excerpt": "AWS Lambda now supports GPU instances (G-series) for Event Functions running on Lambda Managed Instances, enabling serverless GPU workloads like machine learning inference, media processing, and rendering. Lambda handles all infrastructure tasks, including instance lifecycle, driver management, and ",
+    "publishedAt": "2026-11-18T19:39:07.000Z",
+    "sourceId": "aws-news",
+    "sourceName": "AWS News Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/aws/feed/",
+    "fetchedAt": "2026-11-20T03:01:52.531Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 12858,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "AWS Lambda now supports GPU instances (G-series) for Event Functions running on Lambda Managed Instances, enabling serverless GPU workloads like machine learning inference, media processing, and rendering. Lambda handles all infrastructure tasks, including instance lifecycle, driver management, and ",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-lambda-now-supports-gpu-instances-for-event-functions-on-lambda-managed-instances/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-11-18T19:39:07.000Z",
+        "checkedAt": "2026-11-20T03:03:08.283Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "AWS Lambda now supports GPU instances for Event Functions on Lambda Managed Instances | AWS News Blog",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-lambda-now-supports-gpu-instances-for-event-functions-on-lambda-managed-instances/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-11-18T19:39:07.000Z",
+        "checkedAt": "2026-11-20T03:03:08.283Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "AWS Lambda now supports GPU instances for Event Functions on Lambda Managed Instances",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-lambda-now-supports-gpu-instances-for-event-functions-on-lambda-managed-instances/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-11-18T19:39:07.000Z",
+        "checkedAt": "2026-11-20T03:03:08.283Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "GPU support is now available for EC2 G-series GPU instances for Event Functions running on AWS Lambda Managed Instances (LMI).",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-lambda-now-supports-gpu-instances-for-event-functions-on-lambda-managed-instances/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-11-18T19:39:07.000Z",
+        "checkedAt": "2026-11-20T03:03:08.283Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "GPU-accelerated functions run on the same Lambda Managed Instances foundation that already gives you Amazon EC2 pricing and specialized compute without managing servers.",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-lambda-now-supports-gpu-instances-for-event-functions-on-lambda-managed-instances/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-11-18T19:39:07.000Z",
+        "checkedAt": "2026-11-20T03:03:08.283Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Building on self-managed GPU infrastructure means selecting instances, installing and reconciling GPU drivers and CUDA libraries, planning capacity, writing scaling logic, and hand-building the event integrations that connect the GPU step to the rest of the application.",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-lambda-now-supports-gpu-instances-for-event-functions-on-lambda-managed-instances/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-11-18T19:39:07.000Z",
+        "checkedAt": "2026-11-20T03:03:08.283Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "You bring a function, and Lambda runs it on a GPU in minutes, triggered by the same AWS events as any other Lambda Event Function, billed and secured the same way.",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-lambda-now-supports-gpu-instances-for-event-functions-on-lambda-managed-instances/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-11-18T19:39:07.000Z",
+        "checkedAt": "2026-11-20T03:03:08.283Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "GPU-accelerated functions also support the extended function timeout on Lambda Managed Instances, up to 90 minutes for asynchronous and event source mapping invocations, so you can run batch and other long-running GPU jobs, such as media transcoding or multi-step inference, wi…",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-lambda-now-supports-gpu-instances-for-event-functions-on-lambda-managed-instances/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-11-18T19:39:07.000Z",
+        "checkedAt": "2026-11-20T03:03:08.283Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "The same 200+ event sources that trigger Event Functions, including Amazon S3 , Amazon SQS , Amazon API Gateway , and Amazon EventBridge , trigger GPU-accelerated functions directly, with the same scaling, error handling, and retries.",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-lambda-now-supports-gpu-instances-for-event-functions-on-lambda-managed-instances/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-11-18T19:39:07.000Z",
+        "checkedAt": "2026-11-20T03:03:08.283Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "GPU instances run as Amazon EC2 On-Demand instances, and your existing Savings Plans and Reserved Instances apply.",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-lambda-now-supports-gpu-instances-for-event-functions-on-lambda-managed-instances/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-11-18T19:39:07.000Z",
+        "checkedAt": "2026-11-20T03:03:08.283Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "GPU utilization, GPU memory utilization, GPU memory used, and GPU power utilization appear alongside standard function metrics in Amazon CloudWatch and in the AWS Lambda console.",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-lambda-now-supports-gpu-instances-for-event-functions-on-lambda-managed-instances/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-11-18T19:39:07.000Z",
+        "checkedAt": "2026-11-20T03:03:08.283Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Figure 4: GPU utilization, GPU memory utilization, GPU memory used, and GPU power utilization for the vLLM function under concurrent load.",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-lambda-now-supports-gpu-instances-for-event-functions-on-lambda-managed-instances/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-11-18T19:39:07.000Z",
+        "checkedAt": "2026-11-20T03:03:08.283Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "You pay the underlying EC2 instance fee (eligible for Savings Plans and Reserved Instances), plus a 9.75 percent management fee for GPU instances, and the standard Lambda request fee of $0.20 per million requests.",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/aws-lambda-now-supports-gpu-instances-for-event-functions-on-lambda-managed-instances/",
+        "source": "AWS News Blog",
+        "publishedAt": "2026-11-18T19:39:07.000Z",
+        "checkedAt": "2026-11-20T03:03:08.283Z"
+      }
+    ],
+    "pageDate": "2026-11-18T19:39:07.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "INFRA"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 INFRA (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

@@ -1,0 +1,235 @@
+{
+  "id": "b00f82b6db94",
+  "date": "2026-11-20",
+  "proposedSlug": "introducing-tool-retrieval-gemini-api",
+  "title": null,
+  "sourceTitle": "Introducing Tool Retrieval in the Gemini API",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 7,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": true,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Google",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+      "name": "Google (The Keyword · AI)",
+      "type": "official",
+      "publishedAt": "2026-11-19T00:00:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "b00f82b6db94",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+    "canonicalUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval",
+    "title": "Introducing Tool Retrieval in the Gemini API",
+    "excerpt": "Give your agents access to hundreds of tools while using fewer tokens with Tool Retrieval, now in preview in the Gemini API.",
+    "publishedAt": "2026-11-19T00:00:00.000Z",
+    "sourceId": "google-ai",
+    "sourceName": "Google (The Keyword · AI)",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "sitemap-meta",
+    "discoveredVia": "https://blog.google/en-us/sitemap.xml",
+    "fetchedAt": "2026-11-20T03:01:52.531Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 5836,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Give your agents access to hundreds of tools while using fewer tokens with Tool Retrieval, now in preview in the Gemini API.",
+        "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-11-19T00:00:00.000Z",
+        "checkedAt": "2026-11-19T19:00:43.013Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Gemini API tool retrieval for efficient agent scaling",
+        "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-11-19T00:00:00.000Z",
+        "checkedAt": "2026-11-19T19:00:43.013Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "\"page_name\": \"Gemini API tool retrieval for efficient agent scaling\",",
+        "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-11-19T00:00:00.000Z",
+        "checkedAt": "2026-11-19T19:00:43.013Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "\"article_name\": \"Introducing Tool Retrieval in the Gemini API\",",
+        "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-11-19T00:00:00.000Z",
+        "checkedAt": "2026-11-19T19:00:43.013Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "\"section_header\": \"Introducing Tool Retrieval in the Gemini API\"",
+        "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-11-19T00:00:00.000Z",
+        "checkedAt": "2026-11-19T19:00:43.013Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Introducing Tool Retrieval in the Gemini API",
+        "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-11-19T00:00:00.000Z",
+        "checkedAt": "2026-11-19T19:00:43.013Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Tool Retrieval is now in preview in the Gemini Interactions API.",
+        "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-11-19T00:00:00.000Z",
+        "checkedAt": "2026-11-19T19:00:43.013Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "We are launching Tool Retrieval in the Gemini API to help your agents manage large tool libraries more efficiently.",
+        "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-11-19T00:00:00.000Z",
+        "checkedAt": "2026-11-19T19:00:43.013Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "We are launching Tool Retrieval in the Gemini API to help you manage large tool libraries.",
+        "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-11-19T00:00:00.000Z",
+        "checkedAt": "2026-11-19T19:00:43.013Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Tool Retrieval works with Gemini 3.6 and later models to support your complex agent tasks.",
+        "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-11-19T00:00:00.000Z",
+        "checkedAt": "2026-11-19T19:00:43.013Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Today we're launching Tool Retrieval in the Gemini API, available in preview in the Interactions API .",
+        "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-11-19T00:00:00.000Z",
+        "checkedAt": "2026-11-19T19:00:43.013Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "To turn on Tool Retrieval, add a tool_search tool to your request and set defer_loading: true on the tools you want to hold back.",
+        "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-11-19T00:00:00.000Z",
+        "checkedAt": "2026-11-19T19:00:43.013Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Tool Retrieval works with Gemini 3.6 and later models, including all Gemini 4 models , in the Interactions API.",
+        "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-11-19T00:00:00.000Z",
+        "checkedAt": "2026-11-19T19:00:43.013Z"
+      }
+    ],
+    "pageDate": "2026-11-19T00:00:00.000Z"
+  },
+  "score": {
+    "importance": 3,
+    "practicalImpact": 2,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "MODEL",
+      "PRODUCT_LAUNCH",
+      "PREVIEW",
+      "API_PLATFORM"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 10,
+    "total": 10
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 MODEL·PRODUCT_LAUNCH·PREVIEW·API_PLATFORM (우선순위 10)",
+    "근거 확인 통과 (확인 사실 7개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "none",
+    "model": null,
+    "status": "skipped",
+    "error": "Shadow Mode — 원고를 만들지 않음",
+    "promptVersion": "draft-v2",
+    "at": "2026-11-20T03:03:14.362Z",
+    "evidenceHash": "c88462bbca5f"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": true,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}
