@@ -1,0 +1,233 @@
+{
+  "id": "5590d4d47ed2",
+  "date": "2026-11-21",
+  "proposedSlug": "amazon-polly-launches-voice-cloning-unique-voice",
+  "title": null,
+  "sourceTitle": "Amazon Polly launches voice cloning: A unique voice for your brand",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": true,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/amazon-polly-launches-voice-cloning-a-unique-voice-for-your-brand/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-11-19T19:53:32.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "5590d4d47ed2",
+    "url": "https://aws.amazon.com/blogs/machine-learning/amazon-polly-launches-voice-cloning-a-unique-voice-for-your-brand/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-polly-launches-voice-cloning-a-unique-voice-for-your-brand",
+    "title": "Amazon Polly launches voice cloning: A unique voice for your brand",
+    "excerpt": "Voice cloning in Amazon Polly is now generally available. Give Amazon Polly a few minutes of recordings from a consenting speaker, and it builds a custom voice that reads new text in that speaker's voice. Cloned voices run on the Amazon Polly generative engine and support seven languages.",
+    "publishedAt": "2026-11-19T19:53:32.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-11-20T18:33:43.603Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 15464,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Voice cloning in Amazon Polly is now generally available. Give Amazon Polly a few minutes of recordings from a consenting speaker, and it builds a custom voice that reads new text in that speaker's voice. Cloned voices run on the Amazon Polly generative engine and support seven languages.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-polly-launches-voice-cloning-a-unique-voice-for-your-brand/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-19T19:53:32.000Z",
+        "checkedAt": "2026-11-20T18:34:50.091Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Amazon Polly launches voice cloning: A unique voice for your brand | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-polly-launches-voice-cloning-a-unique-voice-for-your-brand/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-19T19:53:32.000Z",
+        "checkedAt": "2026-11-20T18:34:50.091Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Amazon Polly launches voice cloning: A unique voice for your brand",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-polly-launches-voice-cloning-a-unique-voice-for-your-brand/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-19T19:53:32.000Z",
+        "checkedAt": "2026-11-20T18:34:50.091Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Give Amazon Polly a few minutes of audio recordings from a speaker who has agreed to have their voice cloned, and Amazon Polly builds your own cloned voice in that speaker’s voice.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-polly-launches-voice-cloning-a-unique-voice-for-your-brand/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-19T19:53:32.000Z",
+        "checkedAt": "2026-11-20T18:34:50.091Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Amazon Polly voice cloning is available in all the AWS Regions supported by the Amazon Polly generative engine, including the AWS GovCloud (US) Region.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-polly-launches-voice-cloning-a-unique-voice-for-your-brand/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-19T19:53:32.000Z",
+        "checkedAt": "2026-11-20T18:34:50.091Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Building a cloned voice is free for Amazon Polly customers, and Amazon Polly charges for cloned voice usage on a pay-as-you-go basis, see Amazon Polly Pricing page for details.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-polly-launches-voice-cloning-a-unique-voice-for-your-brand/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-19T19:53:32.000Z",
+        "checkedAt": "2026-11-20T18:34:50.091Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "With voice cloning, you can build a custom Amazon Polly voice from recordings of a single speaker and then synthesize speech in that voice through the Amazon Polly generative engine.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-polly-launches-voice-cloning-a-unique-voice-for-your-brand/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-19T19:53:32.000Z",
+        "checkedAt": "2026-11-20T18:34:50.091Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "You can also store them in an Amazon Simple Storage Service (Amazon S3) bucket in the AWS Region where you want the voice and point Amazon Polly to them.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-polly-launches-voice-cloning-a-unique-voice-for-your-brand/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-19T19:53:32.000Z",
+        "checkedAt": "2026-11-20T18:34:50.091Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Amazon Polly does not retain a copy of your voice recordings once the voice is created and doesn’t use them to train Amazon Polly models.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-polly-launches-voice-cloning-a-unique-voice-for-your-brand/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-19T19:53:32.000Z",
+        "checkedAt": "2026-11-20T18:34:50.091Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "On the console: once voice cloning is enabled for your account (see Availability), expand the left panel and choose Voice cloning , upload up to 10 recordings or select them from Amazon S3, confirm the terms, and choose Create .",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-polly-launches-voice-cloning-a-unique-voice-for-your-brand/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-19T19:53:32.000Z",
+        "checkedAt": "2026-11-20T18:34:50.091Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "For additional end-to-end Speech AI applications you can build with Amazon Polly, including the voice cloning feature, such as cascaded voice agents and live speech translators, go to the Amazon Polly GitHub repo .",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-polly-launches-voice-cloning-a-unique-voice-for-your-brand/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-19T19:53:32.000Z",
+        "checkedAt": "2026-11-20T18:34:50.091Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "If you see Voice cloning in the Amazon Polly console (expand the left panel and see if Voice cloning is listed), it’s enabled for your account.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-polly-launches-voice-cloning-a-unique-voice-for-your-brand/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-19T19:53:32.000Z",
+        "checkedAt": "2026-11-20T18:34:50.091Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Voice cloning in Amazon Polly gives your application a voice people recognize: recorded once, with the speaker’s consent, and ready to use through the Amazon Polly APIs.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/amazon-polly-launches-voice-cloning-a-unique-voice-for-your-brand/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-19T19:53:32.000Z",
+        "checkedAt": "2026-11-20T18:34:50.091Z"
+      }
+    ],
+    "pageDate": "2026-11-19T19:53:32.000Z"
+  },
+  "score": {
+    "importance": 2,
+    "practicalImpact": 2,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PRODUCT_LAUNCH",
+      "AVAILABILITY"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 8,
+    "total": 8
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 PRODUCT_LAUNCH·AVAILABILITY (우선순위 8)",
+    "근거 확인 통과 (확인 사실 11개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "none",
+    "model": null,
+    "status": "skipped",
+    "error": "Shadow Mode — 원고를 만들지 않음",
+    "promptVersion": "draft-v2",
+    "at": "2026-11-20T18:35:01.964Z",
+    "evidenceHash": "38776b07d29a"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}
