@@ -2730,7 +2730,7 @@
         "tier": 1,
         "fetchMode": "rss",
         "discoveredVia": "https://deepmind.google/blog/rss.xml",
-        "fetchedAt": "2026-11-20T18:33:43.603Z"
+        "fetchedAt": "2026-11-21T03:09:00.911Z"
       },
       "addedAt": "2026-11-19",
       "since": "2026-11-16",
@@ -2775,13 +2775,13 @@
         "sourceType": "official",
         "tier": 1,
         "fetchMode": "rss-paged",
-        "discoveredVia": "https://github.blog/changelog/feed/",
-        "fetchedAt": "2026-11-20T03:01:52.531Z"
+        "discoveredVia": "https://github.blog/changelog/feed/?paged=2",
+        "fetchedAt": "2026-11-21T03:09:00.911Z"
       },
       "addedAt": "2026-11-19",
       "since": "2026-11-16",
       "attempts": 0,
-      "date": "2026-11-20",
+      "date": "2026-11-21",
       "reason": "Shadow Mode — 원고를 만들지 않음"
     },
     "25c96fa5a216": {
@@ -2845,7 +2845,7 @@
         "tier": 1,
         "fetchMode": "rss-paged",
         "discoveredVia": "https://github.blog/changelog/feed/",
-        "fetchedAt": "2026-11-20T18:33:43.603Z"
+        "fetchedAt": "2026-11-21T03:09:00.911Z"
       },
       "addedAt": "2026-11-19",
       "since": "2026-11-16",
@@ -2937,7 +2937,7 @@
         "tier": 1,
         "fetchMode": "rss",
         "discoveredVia": "https://developer.nvidia.com/blog/feed",
-        "fetchedAt": "2026-11-20T18:33:43.603Z"
+        "fetchedAt": "2026-11-21T03:09:00.911Z"
       },
       "addedAt": "2026-11-20",
       "since": "2026-11-17",
@@ -2983,7 +2983,7 @@
         "tier": 1,
         "fetchMode": "rss",
         "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
-        "fetchedAt": "2026-11-20T18:33:43.603Z"
+        "fetchedAt": "2026-11-21T03:09:00.911Z"
       },
       "addedAt": "2026-11-20",
       "since": "2026-11-17",
@@ -3006,7 +3006,7 @@
         "tier": 1,
         "fetchMode": "rss",
         "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
-        "fetchedAt": "2026-11-20T18:33:43.603Z"
+        "fetchedAt": "2026-11-21T03:09:00.911Z"
       },
       "addedAt": "2026-11-20",
       "since": "2026-11-17",
@@ -3029,7 +3029,7 @@
         "tier": 1,
         "fetchMode": "rss",
         "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
-        "fetchedAt": "2026-11-20T18:33:43.603Z"
+        "fetchedAt": "2026-11-21T03:09:00.911Z"
       },
       "addedAt": "2026-11-20",
       "since": "2026-11-17",
@@ -3052,7 +3052,7 @@
         "tier": 1,
         "fetchMode": "rss",
         "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
-        "fetchedAt": "2026-11-20T18:33:43.603Z"
+        "fetchedAt": "2026-11-21T03:09:00.911Z"
       },
       "addedAt": "2026-11-20",
       "since": "2026-11-17",
@@ -3075,7 +3075,7 @@
         "tier": 1,
         "fetchMode": "rss-paged",
         "discoveredVia": "https://blogs.nvidia.com/feed/",
-        "fetchedAt": "2026-11-20T18:33:43.603Z"
+        "fetchedAt": "2026-11-21T03:09:00.911Z"
       },
       "addedAt": "2026-11-20",
       "since": "2026-11-17",
@@ -3098,7 +3098,7 @@
         "tier": 1,
         "fetchMode": "rss",
         "discoveredVia": "https://huggingface.co/blog/feed.xml",
-        "fetchedAt": "2026-11-20T18:33:43.603Z"
+        "fetchedAt": "2026-11-21T03:09:00.911Z"
       },
       "addedAt": "2026-11-21",
       "since": "2026-11-18",
@@ -3121,7 +3121,53 @@
         "tier": 1,
         "fetchMode": "sitemap-meta",
         "discoveredVia": "https://www.anthropic.com/sitemap.xml",
-        "fetchedAt": "2026-11-20T18:33:43.603Z"
+        "fetchedAt": "2026-11-21T03:09:00.911Z"
+      },
+      "addedAt": "2026-11-21",
+      "since": "2026-11-18",
+      "attempts": 0,
+      "date": "2026-11-21",
+      "reason": "Shadow Mode — 원고를 만들지 않음"
+    },
+    "668baa710142": {
+      "stage": "draft",
+      "item": {
+        "id": "668baa710142",
+        "url": "https://aws.amazon.com/blogs/machine-learning/introducing-managed-cluster-extensions-for-observability-and-user-management-in-amazon-sagemaker-hyperpod-slurm/",
+        "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-managed-cluster-extensions-for-observability-and-user-management-in-amazon-sagemaker-hyperpod-slurm",
+        "title": "Introducing managed cluster extensions for observability and user management in Amazon SageMaker HyperPod Slurm",
+        "excerpt": "Amazon SageMaker HyperPod now offers managed cluster extensions for observability and user management, bringing declarative, API- and console-driven configuration to the software running on Slurm cluster nodes. This post explains how the extensions work and follows a platform team through a quarter ",
+        "publishedAt": "2026-11-20T23:07:03.000Z",
+        "sourceId": "aws-ml",
+        "sourceName": "AWS Machine Learning Blog",
+        "sourceType": "official",
+        "tier": 1,
+        "fetchMode": "rss",
+        "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+        "fetchedAt": "2026-11-21T03:09:00.911Z"
+      },
+      "addedAt": "2026-11-21",
+      "since": "2026-11-18",
+      "attempts": 0,
+      "date": "2026-11-21",
+      "reason": "Shadow Mode — 원고를 만들지 않음"
+    },
+    "5259c7996b79": {
+      "stage": "draft",
+      "item": {
+        "id": "5259c7996b79",
+        "url": "https://aws.amazon.com/blogs/machine-learning/introducing-amazon-sagemaker-hyperpod-global-inference-gateway-one-endpoint-across-regions-and-clusters/",
+        "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-amazon-sagemaker-hyperpod-global-inference-gateway-one-endpoint-across-regions-and-clusters",
+        "title": "Introducing Amazon SageMaker HyperPod Global Inference Gateway: One endpoint across Regions and clusters",
+        "excerpt": "Amazon SageMaker HyperPod introduces the Global Inference Gateway, one managed endpoint that routes inference requests across your HyperPod clusters in one Region or across Regions. It picks the best cluster, fails over automatically, and authenticates every request with SigV4 and IAM over AWS Priva",
+        "publishedAt": "2026-11-20T22:35:24.000Z",
+        "sourceId": "aws-ml",
+        "sourceName": "AWS Machine Learning Blog",
+        "sourceType": "official",
+        "tier": 1,
+        "fetchMode": "rss",
+        "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+        "fetchedAt": "2026-11-21T03:09:00.911Z"
       },
       "addedAt": "2026-11-21",
       "since": "2026-11-18",
@@ -3135,11 +3181,17 @@
     "naver-d2": {
       "since": "2026-11-17",
       "failedAt": "2026-11-20",
-      "attempts": 3,
+      "attempts": 4,
       "lastError": "HTTP 404: https://d2.naver.com/d2.atom"
+    },
+    "kakao-tech": {
+      "since": "2026-11-18",
+      "failedAt": "2026-11-21",
+      "attempts": 1,
+      "lastError": "fetch failed"
     }
   },
-  "updatedAt": "2026-11-20T18:35:01.977Z",
+  "updatedAt": "2026-11-21T03:09:58.952Z",
   "gemini": {
     "day": "2026-11-15",
     "calls": 1,
