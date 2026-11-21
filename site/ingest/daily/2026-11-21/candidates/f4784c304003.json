@@ -1,0 +1,221 @@
+{
+  "id": "f4784c304003",
+  "date": "2026-11-21",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Can AI help scientists identify promising drug candidates?",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 9,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "OpenAI",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://openai.com/index/introducing-medchembench",
+      "name": "OpenAI",
+      "type": "official",
+      "publishedAt": "2026-11-20T00:00:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "f4784c304003",
+    "url": "https://openai.com/index/introducing-medchembench",
+    "canonicalUrl": "https://openai.com/index/introducing-medchembench",
+    "title": "Can AI help scientists identify promising drug candidates?",
+    "excerpt": "MedChemBench evaluates how well AI models interpret molecular structures, reason from experimental evidence, and select compounds in early drug discovery.",
+    "publishedAt": "2026-11-20T00:00:00.000Z",
+    "sourceId": "openai",
+    "sourceName": "OpenAI",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://openai.com/news/rss.xml",
+    "fetchedAt": "2026-11-21T03:09:00.911Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 7286,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "MedChemBench evaluates how well AI models interpret molecular structures, reason from experimental evidence, and select compounds in early drug discovery.",
+        "sourceUrl": "https://openai.com/index/introducing-medchembench",
+        "source": "OpenAI",
+        "publishedAt": "2026-11-20T00:00:00.000Z",
+        "checkedAt": "2026-11-21T03:09:56.442Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "• • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • Can AI help scientists identify promising drug candidates? | OpenAI • • • • •",
+        "sourceUrl": "https://openai.com/index/introducing-medchembench",
+        "source": "OpenAI",
+        "publishedAt": "2026-11-20T00:00:00.000Z",
+        "checkedAt": "2026-11-21T03:09:56.442Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Can AI help scientists identify promising drug candidates?",
+        "sourceUrl": "https://openai.com/index/introducing-medchembench",
+        "source": "OpenAI",
+        "publishedAt": "2026-11-20T00:00:00.000Z",
+        "checkedAt": "2026-11-21T03:09:56.442Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Building AI that can reliably support this work is one step towards helping scientists develop better medicines.",
+        "sourceUrl": "https://openai.com/index/introducing-medchembench",
+        "source": "OpenAI",
+        "publishedAt": "2026-11-20T00:00:00.000Z",
+        "checkedAt": "2026-11-21T03:09:56.442Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "For AI to help, it needs to connect changes in molecular structure with experimental evidence and reason about what compounds are worth pursuing.",
+        "sourceUrl": "https://openai.com/index/introducing-medchembench",
+        "source": "OpenAI",
+        "publishedAt": "2026-11-20T00:00:00.000Z",
+        "checkedAt": "2026-11-21T03:09:56.442Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "MedChemBench measures these abilities through 99 problems drawn from published research.",
+        "sourceUrl": "https://openai.com/index/introducing-medchembench",
+        "source": "OpenAI",
+        "publishedAt": "2026-11-20T00:00:00.000Z",
+        "checkedAt": "2026-11-21T03:09:56.442Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "At the xhigh reasoning setting, GPT‑6.2 Astra earned 84.5% of the available credit, compared with 83.3% for GPT‑6 Astra, 82.0% for GPT‑6.1 Sol, and 58.2% for GPT‑5.6 Sol.",
+        "sourceUrl": "https://openai.com/index/introducing-medchembench",
+        "source": "OpenAI",
+        "publishedAt": "2026-11-20T00:00:00.000Z",
+        "checkedAt": "2026-11-21T03:09:56.442Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "GPT‑6 Astra was strongest at reconstructing molecular structures and explaining experimental evidence.",
+        "sourceUrl": "https://openai.com/index/introducing-medchembench",
+        "source": "OpenAI",
+        "publishedAt": "2026-11-20T00:00:00.000Z",
+        "checkedAt": "2026-11-21T03:09:56.442Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "One MedChemBench problem draws on research into inhibitors of PRMT5, a protein studied in cancer drug discovery.",
+        "sourceUrl": "https://openai.com/index/introducing-medchembench",
+        "source": "OpenAI",
+        "publishedAt": "2026-11-20T00:00:00.000Z",
+        "checkedAt": "2026-11-21T03:09:56.442Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "While measuring the benchmark for structure components, Astra earned 95.4% of the available credit at xhigh.",
+        "sourceUrl": "https://openai.com/index/introducing-medchembench",
+        "source": "OpenAI",
+        "publishedAt": "2026-11-20T00:00:00.000Z",
+        "checkedAt": "2026-11-21T03:09:56.442Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Across the full benchmark, Astra earned 83.3% of the available credit at the shared xhigh setting, compared with 82.0% for GPT‑6.1 Sol, 75.1% for GPT‑6.1 Terra, and 58.2% for GPT‑5.6 Sol.",
+        "sourceUrl": "https://openai.com/index/introducing-medchembench",
+        "source": "OpenAI",
+        "publishedAt": "2026-11-20T00:00:00.000Z",
+        "checkedAt": "2026-11-21T03:09:56.442Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Where selection and prediction remain difficult, Astra earned 95.4% of the available structure credit at xhigh, but only about half the credit for selecting compounds and predicting numerical properties.",
+        "sourceUrl": "https://openai.com/index/introducing-medchembench",
+        "source": "OpenAI",
+        "publishedAt": "2026-11-20T00:00:00.000Z",
+        "checkedAt": "2026-11-21T03:09:56.442Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "While the benchmark evaluates reasoning from historical evidence rather than real-world drug discovery, its results help identify where models are advancing and where challenges remain.",
+        "sourceUrl": "https://openai.com/index/introducing-medchembench",
+        "source": "OpenAI",
+        "publishedAt": "2026-11-20T00:00:00.000Z",
+        "checkedAt": "2026-11-21T03:09:56.442Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PREVIEW"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 PREVIEW (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

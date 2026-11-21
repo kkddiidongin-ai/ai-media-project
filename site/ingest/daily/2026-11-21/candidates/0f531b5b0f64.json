@@ -1,0 +1,221 @@
+{
+  "id": "0f531b5b0f64",
+  "date": "2026-11-21",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Keep inference running through regional capacity shortfalls with cross-Region inference routing in Amazon SageMaker AI",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 10,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/keep-inference-running-through-regional-capacity-shortfalls-with-cross-region-inference-routing-in-amazon-sagemaker-ai/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-11-19T18:20:54.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "0f531b5b0f64",
+    "url": "https://aws.amazon.com/blogs/machine-learning/keep-inference-running-through-regional-capacity-shortfalls-with-cross-region-inference-routing-in-amazon-sagemaker-ai/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/keep-inference-running-through-regional-capacity-shortfalls-with-cross-region-inference-routing-in-amazon-sagemaker-ai",
+    "title": "Keep inference running through regional capacity shortfalls with cross-Region inference routing in Amazon SageMaker AI",
+    "excerpt": "Cross-Region inference routing in Amazon SageMaker AI gives your application one invocation path across the endpoints and inference components you already run, in one or more AWS Regions and AWS accounts. The router prefers its own Region and shifts new requests to another destination only when the ",
+    "publishedAt": "2026-11-19T18:20:54.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-11-21T03:09:00.911Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 18566,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Cross-Region inference routing in Amazon SageMaker AI gives your application one invocation path across the endpoints and inference components you already run, in one or more AWS Regions and AWS accounts. The router prefers its own Region and shifts new requests to another destination only when the ",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/keep-inference-running-through-regional-capacity-shortfalls-with-cross-region-inference-routing-in-amazon-sagemaker-ai/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-19T18:20:54.000Z",
+        "checkedAt": "2026-11-20T18:34:58.067Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Keep inference running through regional capacity shortfalls with cross-Region inference routing in Amazon SageMaker AI | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/keep-inference-running-through-regional-capacity-shortfalls-with-cross-region-inference-routing-in-amazon-sagemaker-ai/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-19T18:20:54.000Z",
+        "checkedAt": "2026-11-20T18:34:58.067Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Keep inference running through regional capacity shortfalls with cross-Region inference routing in Amazon SageMaker AI",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/keep-inference-running-through-regional-capacity-shortfalls-with-cross-region-inference-routing-in-amazon-sagemaker-ai/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-19T18:20:54.000Z",
+        "checkedAt": "2026-11-20T18:34:58.067Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Until now, if you served models on Amazon SageMaker AI managed endpoints, cross-Region routing was a piece you still had to build yourself.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/keep-inference-running-through-regional-capacity-shortfalls-with-cross-region-inference-routing-in-amazon-sagemaker-ai/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-19T18:20:54.000Z",
+        "checkedAt": "2026-11-20T18:34:58.067Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Today, we’re introducing cross-Region inference routing in Amazon SageMaker AI.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/keep-inference-running-through-regional-capacity-shortfalls-with-cross-region-inference-routing-in-amazon-sagemaker-ai/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-19T18:20:54.000Z",
+        "checkedAt": "2026-11-20T18:34:58.067Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "For a cross-account deployment that serves several models, see How Salesforce is advancing global-scale model serving with cross-Region inference routing in Amazon SageMaker AI .",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/keep-inference-running-through-regional-capacity-shortfalls-with-cross-region-inference-routing-in-amazon-sagemaker-ai/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-19T18:20:54.000Z",
+        "checkedAt": "2026-11-20T18:34:58.067Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "The following use cases show common ways to use cross-Region inference routing in Amazon SageMaker AI.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/keep-inference-running-through-regional-capacity-shortfalls-with-cross-region-inference-routing-in-amazon-sagemaker-ai/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-19T18:20:54.000Z",
+        "checkedAt": "2026-11-20T18:34:58.067Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "For a walkthrough, see How Salesforce is advancing global-scale model serving with cross-Region inference routing in Amazon SageMaker AI and User Guide on cross-account destinations .",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/keep-inference-running-through-regional-capacity-shortfalls-with-cross-region-inference-routing-in-amazon-sagemaker-ai/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-19T18:20:54.000Z",
+        "checkedAt": "2026-11-20T18:34:58.067Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Cross-Region inference routing in Amazon SageMaker AI gives your application one invocation path across the endpoints and inference components you already run, in multiple AWS Regions and AWS accounts.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/keep-inference-running-through-regional-capacity-shortfalls-with-cross-region-inference-routing-in-amazon-sagemaker-ai/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-19T18:20:54.000Z",
+        "checkedAt": "2026-11-20T18:34:58.067Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Cross-Region inference routing is generally available starting today in most commercial AWS Regions (except me-south-1 and me-central-1), for real-time and asynchronous inference.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/keep-inference-running-through-regional-capacity-shortfalls-with-cross-region-inference-routing-in-amazon-sagemaker-ai/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-19T18:20:54.000Z",
+        "checkedAt": "2026-11-20T18:34:58.067Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "There is no additional charge for cross-Region inference routing in Amazon SageMaker AI.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/keep-inference-running-through-regional-capacity-shortfalls-with-cross-region-inference-routing-in-amazon-sagemaker-ai/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-19T18:20:54.000Z",
+        "checkedAt": "2026-11-20T18:34:58.067Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "You pay for the SageMaker AI endpoints and inference components that serve your requests at standard SageMaker AI pricing, whether a request reaches them directly or through an inference router.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/keep-inference-running-through-regional-capacity-shortfalls-with-cross-region-inference-routing-in-amazon-sagemaker-ai/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-19T18:20:54.000Z",
+        "checkedAt": "2026-11-20T18:34:58.067Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "To get started, see the Amazon SageMaker AI documentation on cross-Region inference routing and explore the sample notebook on GitHub.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/keep-inference-running-through-regional-capacity-shortfalls-with-cross-region-inference-routing-in-amazon-sagemaker-ai/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-19T18:20:54.000Z",
+        "checkedAt": "2026-11-20T18:34:58.067Z"
+      }
+    ],
+    "pageDate": "2026-11-19T18:20:54.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "API_PLATFORM"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 API_PLATFORM (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

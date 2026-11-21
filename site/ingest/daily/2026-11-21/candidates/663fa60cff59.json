@@ -1,0 +1,234 @@
+{
+  "id": "663fa60cff59",
+  "date": "2026-11-21",
+  "proposedSlug": "introducing-amazon-sagemaker-jumpstart-model-leaderboard",
+  "title": null,
+  "sourceTitle": "Introducing the Amazon SageMaker JumpStart Model Leaderboard",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-the-amazon-sagemaker-jumpstart-model-leaderboard/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-11-18T22:31:04.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "663fa60cff59",
+    "url": "https://aws.amazon.com/blogs/machine-learning/introducing-the-amazon-sagemaker-jumpstart-model-leaderboard/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-the-amazon-sagemaker-jumpstart-model-leaderboard",
+    "title": "Introducing the Amazon SageMaker JumpStart Model Leaderboard",
+    "excerpt": "The Amazon SageMaker JumpStart Model Leaderboard compares 70+ foundation models side by side on quality, speed, and cost, directly in SageMaker Studio. Learn what the leaderboard shows, how AWS benchmarks models, and how to go from a shortlist to a deployed model.",
+    "publishedAt": "2026-11-18T22:31:04.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-11-20T18:33:43.603Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 10599,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "The Amazon SageMaker JumpStart Model Leaderboard compares 70+ foundation models side by side on quality, speed, and cost, directly in SageMaker Studio. Learn what the leaderboard shows, how AWS benchmarks models, and how to go from a shortlist to a deployed model.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-the-amazon-sagemaker-jumpstart-model-leaderboard/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-18T22:31:04.000Z",
+        "checkedAt": "2026-11-20T18:34:48.910Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Introducing the Amazon SageMaker JumpStart Model Leaderboard | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-the-amazon-sagemaker-jumpstart-model-leaderboard/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-18T22:31:04.000Z",
+        "checkedAt": "2026-11-20T18:34:48.910Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Introducing the Amazon SageMaker JumpStart Model Leaderboard",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-the-amazon-sagemaker-jumpstart-model-leaderboard/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-18T22:31:04.000Z",
+        "checkedAt": "2026-11-20T18:34:48.910Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Amazon SageMaker JumpStart gives you hundreds of open-weight foundation models you can deploy quickly.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-the-amazon-sagemaker-jumpstart-model-leaderboard/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-18T22:31:04.000Z",
+        "checkedAt": "2026-11-20T18:34:48.910Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Today we are launching the Amazon SageMaker JumpStart Model Leaderboard , a new way to compare JumpStart models side by side on quality, speed, and cost, directly in Amazon SageMaker Studio.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-the-amazon-sagemaker-jumpstart-model-leaderboard/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-18T22:31:04.000Z",
+        "checkedAt": "2026-11-20T18:34:48.910Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "What is the JumpStart Model Leaderboard?",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-the-amazon-sagemaker-jumpstart-model-leaderboard/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-18T22:31:04.000Z",
+        "checkedAt": "2026-11-20T18:34:48.910Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "The leaderboard is a new view of the JumpStart base models page in SageMaker Studio, right next to the Categories and All models views.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-the-amazon-sagemaker-jumpstart-model-leaderboard/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-18T22:31:04.000Z",
+        "checkedAt": "2026-11-20T18:34:48.910Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "At launch, the leaderboard covers 70+ models from providers including Meta, Google, Qwen, IBM, and Arcee, with more added over time.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-the-amazon-sagemaker-jumpstart-model-leaderboard/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-18T22:31:04.000Z",
+        "checkedAt": "2026-11-20T18:34:48.910Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "The following screenshot shows the leaderboard in SageMaker Studio, with benchmark scores, performance metrics, and estimated cost for each model.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-the-amazon-sagemaker-jumpstart-model-leaderboard/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-18T22:31:04.000Z",
+        "checkedAt": "2026-11-20T18:34:48.910Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Figure 1: Leaderboard overview in SageMaker Studio",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-the-amazon-sagemaker-jumpstart-model-leaderboard/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-18T22:31:04.000Z",
+        "checkedAt": "2026-11-20T18:34:48.910Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "For full details, including prompts, generation settings, and how configurations are measured, see JumpStart model leaderboard benchmarks .",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-the-amazon-sagemaker-jumpstart-model-leaderboard/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-18T22:31:04.000Z",
+        "checkedAt": "2026-11-20T18:34:48.910Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Figure 2: JumpStart base models page with the Leaderboard view selected",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-the-amazon-sagemaker-jumpstart-model-leaderboard/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-18T22:31:04.000Z",
+        "checkedAt": "2026-11-20T18:34:48.910Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "The SageMaker JumpStart Model Leaderboard brings quality, speed, and cost together in one place, measured consistently on SageMaker.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-the-amazon-sagemaker-jumpstart-model-leaderboard/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-18T22:31:04.000Z",
+        "checkedAt": "2026-11-20T18:34:48.910Z"
+      }
+    ],
+    "pageDate": "2026-11-18T22:31:04.000Z"
+  },
+  "score": {
+    "importance": 3,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "MODEL",
+      "PRODUCT_LAUNCH"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 9,
+    "total": 9
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 MODEL·PRODUCT_LAUNCH (우선순위 9)",
+    "근거 확인 통과 (확인 사실 11개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "none",
+    "model": null,
+    "status": "skipped",
+    "error": "Shadow Mode — 원고를 만들지 않음",
+    "promptVersion": "draft-v2",
+    "at": "2026-11-20T18:35:01.964Z",
+    "evidenceHash": "a6fef3cfbbb9"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": true,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}

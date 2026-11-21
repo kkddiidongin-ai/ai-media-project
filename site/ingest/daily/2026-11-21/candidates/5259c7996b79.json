@@ -1,0 +1,233 @@
+{
+  "id": "5259c7996b79",
+  "date": "2026-11-21",
+  "proposedSlug": "introducing-amazon-sagemaker-hyperpod-global-inference-gatew",
+  "title": null,
+  "sourceTitle": "Introducing Amazon SageMaker HyperPod Global Inference Gateway: One endpoint across Regions and clusters",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": true,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-amazon-sagemaker-hyperpod-global-inference-gateway-one-endpoint-across-regions-and-clusters/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-11-20T22:35:24.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "5259c7996b79",
+    "url": "https://aws.amazon.com/blogs/machine-learning/introducing-amazon-sagemaker-hyperpod-global-inference-gateway-one-endpoint-across-regions-and-clusters/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-amazon-sagemaker-hyperpod-global-inference-gateway-one-endpoint-across-regions-and-clusters",
+    "title": "Introducing Amazon SageMaker HyperPod Global Inference Gateway: One endpoint across Regions and clusters",
+    "excerpt": "Amazon SageMaker HyperPod introduces the Global Inference Gateway, one managed endpoint that routes inference requests across your HyperPod clusters in one Region or across Regions. It picks the best cluster, fails over automatically, and authenticates every request with SigV4 and IAM over AWS Priva",
+    "publishedAt": "2026-11-20T22:35:24.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-11-21T03:09:00.911Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 12274,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Amazon SageMaker HyperPod introduces the Global Inference Gateway, one managed endpoint that routes inference requests across your HyperPod clusters in one Region or across Regions. It picks the best cluster, fails over automatically, and authenticates every request with SigV4 and IAM over AWS Priva",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-amazon-sagemaker-hyperpod-global-inference-gateway-one-endpoint-across-regions-and-clusters/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T22:35:24.000Z",
+        "checkedAt": "2026-11-21T03:09:52.053Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Introducing Amazon SageMaker HyperPod Global Inference Gateway: One endpoint across Regions and clusters | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-amazon-sagemaker-hyperpod-global-inference-gateway-one-endpoint-across-regions-and-clusters/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T22:35:24.000Z",
+        "checkedAt": "2026-11-21T03:09:52.053Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Introducing Amazon SageMaker HyperPod Global Inference Gateway: One endpoint across Regions and clusters",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-amazon-sagemaker-hyperpod-global-inference-gateway-one-endpoint-across-regions-and-clusters/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T22:35:24.000Z",
+        "checkedAt": "2026-11-21T03:09:52.053Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "In Introducing Amazon SageMaker HyperPod Inference Gateway , we showed how the Inference Gateway gives each Amazon SageMaker HyperPod cluster a single, GPU-aware endpoint.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-amazon-sagemaker-hyperpod-global-inference-gateway-one-endpoint-across-regions-and-clusters/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T22:35:24.000Z",
+        "checkedAt": "2026-11-21T03:09:52.053Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Today, SageMaker HyperPod introduces the Global Inference Gateway.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-amazon-sagemaker-hyperpod-global-inference-gateway-one-endpoint-across-regions-and-clusters/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T22:35:24.000Z",
+        "checkedAt": "2026-11-21T03:09:52.053Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "It is one SageMaker-managed gateway that routes across every cluster you register, in one Region or across Regions.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-amazon-sagemaker-hyperpod-global-inference-gateway-one-endpoint-across-regions-and-clusters/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T22:35:24.000Z",
+        "checkedAt": "2026-11-21T03:09:52.053Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "The Global Inference Gateway is the second tier of the architecture we described in part 1.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-amazon-sagemaker-hyperpod-global-inference-gateway-one-endpoint-across-regions-and-clusters/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T22:35:24.000Z",
+        "checkedAt": "2026-11-21T03:09:52.053Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Consider a team that serves four models across five HyperPod clusters in two Regions.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-amazon-sagemaker-hyperpod-global-inference-gateway-one-endpoint-across-regions-and-clusters/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T22:35:24.000Z",
+        "checkedAt": "2026-11-21T03:09:52.053Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Without the Inference Gateway, clients track 20 endpoints: one per model per cluster.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-amazon-sagemaker-hyperpod-global-inference-gateway-one-endpoint-across-regions-and-clusters/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T22:35:24.000Z",
+        "checkedAt": "2026-11-21T03:09:52.053Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "In our beta tests, the Global Inference Gateway in Amazon SageMaker HyperPod routed requests across two AWS Regions through a single endpoint and kept serving them when one cluster could no longer serve the model.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-amazon-sagemaker-hyperpod-global-inference-gateway-one-endpoint-across-regions-and-clusters/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T22:35:24.000Z",
+        "checkedAt": "2026-11-21T03:09:52.053Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Figure 1: The Global Inference Gateway receives each request at one regional endpoint and forwards it over AWS PrivateLink to the best HyperPod cluster, where the cluster’s Inference Gateway routes it to a model pod.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-amazon-sagemaker-hyperpod-global-inference-gateway-one-endpoint-across-regions-and-clusters/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T22:35:24.000Z",
+        "checkedAt": "2026-11-21T03:09:52.053Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "In this post, we introduced the Amazon SageMaker HyperPod Global Inference Gateway: one SageMaker-managed endpoint across your HyperPod clusters, in one Region or several.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-amazon-sagemaker-hyperpod-global-inference-gateway-one-endpoint-across-regions-and-clusters/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T22:35:24.000Z",
+        "checkedAt": "2026-11-21T03:09:52.053Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "The Global Inference Gateway is available in 13 AWS Regions: US East (N.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-amazon-sagemaker-hyperpod-global-inference-gateway-one-endpoint-across-regions-and-clusters/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T22:35:24.000Z",
+        "checkedAt": "2026-11-21T03:09:52.053Z"
+      }
+    ],
+    "pageDate": "2026-11-20T22:35:24.000Z"
+  },
+  "score": {
+    "importance": 2,
+    "practicalImpact": 2,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PRODUCT_LAUNCH",
+      "API_PLATFORM"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 8,
+    "total": 8
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 PRODUCT_LAUNCH·API_PLATFORM (우선순위 8)",
+    "근거 확인 통과 (확인 사실 11개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "none",
+    "model": null,
+    "status": "skipped",
+    "error": "Shadow Mode — 원고를 만들지 않음",
+    "promptVersion": "draft-v2",
+    "at": "2026-11-21T03:09:58.941Z",
+    "evidenceHash": "5b52d356cc39"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}

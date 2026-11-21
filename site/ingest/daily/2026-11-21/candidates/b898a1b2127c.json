@@ -1,0 +1,225 @@
+{
+  "id": "b898a1b2127c",
+  "date": "2026-11-21",
+  "proposedSlug": "introducing-gemini-4-neon",
+  "title": null,
+  "sourceTitle": "Introducing Gemini 4 Neon",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 10,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Google",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://deepmind.google/blog/introducing-gemini-4-neon/",
+      "name": "Google DeepMind",
+      "type": "official",
+      "publishedAt": "2026-11-18T21:35:43.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "b898a1b2127c",
+    "url": "https://deepmind.google/blog/introducing-gemini-4-neon/",
+    "canonicalUrl": "https://deepmind.google/blog/introducing-gemini-4-neon",
+    "title": "Introducing Gemini 4 Neon",
+    "excerpt": "",
+    "publishedAt": "2026-11-18T21:35:43.000Z",
+    "sourceId": "google-deepmind",
+    "sourceName": "Google DeepMind",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://deepmind.google/blog/rss.xml",
+    "fetchedAt": "2026-11-21T03:09:00.911Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 11094,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "\"page_name\": \"Introducing Gemini 4 Neon\",",
+        "sourceUrl": "https://deepmind.google/blog/introducing-gemini-4-neon/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-11-18T21:35:43.000Z",
+        "checkedAt": "2026-11-20T18:34:47.742Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "\"article_name\": \"Introducing Gemini 4 Neon\",",
+        "sourceUrl": "https://deepmind.google/blog/introducing-gemini-4-neon/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-11-18T21:35:43.000Z",
+        "checkedAt": "2026-11-20T18:34:47.742Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "\"section_header\": \"Introducing Gemini 4 Neon\"",
+        "sourceUrl": "https://deepmind.google/blog/introducing-gemini-4-neon/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-11-18T21:35:43.000Z",
+        "checkedAt": "2026-11-20T18:34:47.742Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Today, we’re introducing Gemini 4 Neon — bringing frontier-level intelligence with fast end-to-end task completion across complex software engineering, knowledge work, and science workflows.",
+        "sourceUrl": "https://deepmind.google/blog/introducing-gemini-4-neon/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-11-18T21:35:43.000Z",
+        "checkedAt": "2026-11-20T18:34:47.742Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Gemini 4 Neon is rolling out today in the Gemini API in Google AI Studio , Gemini for business (via API and model dropdown), for paid Google AI Pro and Ultra subscribers in Google Antigravity , and for Pro and Ultra subscribers in the Gemini app .",
+        "sourceUrl": "https://deepmind.google/blog/introducing-gemini-4-neon/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-11-18T21:35:43.000Z",
+        "checkedAt": "2026-11-20T18:34:47.742Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Driving Blender MCP in Google Antigravity, Gemini 4 Neon used /swarm to build a photorealistic 3D lab bench visualizing the model names with elemental accuracy pairing Bunsen flames for Gemini 4 Carbon and Gemini 4 Hydrogen with high-voltage gas discharge tubes for Gemini 4 Ar…",
+        "sourceUrl": "https://deepmind.google/blog/introducing-gemini-4-neon/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-11-18T21:35:43.000Z",
+        "checkedAt": "2026-11-20T18:34:47.742Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "In Google Antigravity, Gemini 4 Neon wrote a first-person WebGL2 freeride ski simulator from scratch on real Mont Blanc and Chamonix elevation terrain — combining 10,200 lines of custom shaders, 120 Hz ski physics across six alpine lines, dynamic carved tracks, slab avalanches…",
+        "sourceUrl": "https://deepmind.google/blog/introducing-gemini-4-neon/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-11-18T21:35:43.000Z",
+        "checkedAt": "2026-11-20T18:34:47.742Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Gemini 4 Neon for cyber is rolling out to trusted defenders in the coming days as part of the Fairwind Program .",
+        "sourceUrl": "https://deepmind.google/blog/introducing-gemini-4-neon/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-11-18T21:35:43.000Z",
+        "checkedAt": "2026-11-20T18:34:47.742Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Gemini 4 Neon builds on improvements from our Gemini 4 safety and security stack — maintaining Gemini 4 Carbon-level protections against severe misuse and prompt injection while advancing further on model alignment and agentic behavior.",
+        "sourceUrl": "https://deepmind.google/blog/introducing-gemini-4-neon/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-11-18T21:35:43.000Z",
+        "checkedAt": "2026-11-20T18:34:47.742Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "In the Gemini app, Gemini 4 Neon excels at work that requires frontier-level reasoning and fast responses.",
+        "sourceUrl": "https://deepmind.google/blog/introducing-gemini-4-neon/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-11-18T21:35:43.000Z",
+        "checkedAt": "2026-11-20T18:34:47.742Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "For enterprises: Use Gemini 4 Neon in Gemini for business (via the API or model drop-down) and Google Antigravity.",
+        "sourceUrl": "https://deepmind.google/blog/introducing-gemini-4-neon/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-11-18T21:35:43.000Z",
+        "checkedAt": "2026-11-20T18:34:47.742Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "For consumers: If you’re a Google AI Pro or Ultra subscriber, you can select Gemini 4 Neon from the model drop-down in the Gemini app .",
+        "sourceUrl": "https://deepmind.google/blog/introducing-gemini-4-neon/",
+        "source": "Google DeepMind",
+        "publishedAt": "2026-11-18T21:35:43.000Z",
+        "checkedAt": "2026-11-20T18:34:47.742Z"
+      }
+    ],
+    "pageDate": "2026-11-18T00:00:00.000Z"
+  },
+  "score": {
+    "importance": 3,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 2,
+    "signals": [
+      "MODEL",
+      "PRODUCT_LAUNCH"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 9,
+    "total": 9
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 MODEL·PRODUCT_LAUNCH (우선순위 9)",
+    "근거 확인 통과 (확인 사실 10개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "none",
+    "model": null,
+    "status": "skipped",
+    "error": "Shadow Mode — 원고를 만들지 않음",
+    "promptVersion": "draft-v2",
+    "at": "2026-11-21T03:09:58.941Z",
+    "evidenceHash": "c311ab4113f5"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": true,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}
