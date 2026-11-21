@@ -5,25 +5,23 @@
   "title": null,
   "sourceTitle": "Advancing chip design with OpenAI models",
   "depth": null,
-  "suggestedDepth": null,
+  "suggestedDepth": "SHORT",
   "depthAssessment": {
-    "sufficiency": "INSUFFICIENT",
-    "distinctFacts": 0,
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 10,
     "deepChecks": {
       "importance": false,
       "novelty": true,
       "userImpact": false,
       "contextNeed": false,
-      "distinctFacts": false,
-      "evidenceQuality": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
       "standardWouldOmit": false
     },
     "deepMissing": [
       "importance",
       "userImpact",
       "contextNeed",
-      "distinctFacts",
-      "evidenceQuality",
       "standardWouldOmit"
     ]
   },
@@ -56,12 +54,12 @@
     "tier": 1,
     "fetchMode": "rss",
     "discoveredVia": "https://openai.com/news/rss.xml",
-    "fetchedAt": "2026-11-20T18:33:43.603Z"
+    "fetchedAt": "2026-11-21T03:09:00.911Z"
   },
   "evidence": {
-    "status": "SKIPPED_HOST_BLOCKED",
-    "chars": 0,
-    "grade": "FAIL",
+    "status": "OK",
+    "chars": 6933,
+    "grade": "PASS",
     "ledger": [
       {
         "id": "E0",
@@ -70,17 +68,118 @@
         "sourceUrl": "https://openai.com/index/advancing-chip-design-with-our-models",
         "source": "OpenAI",
         "publishedAt": "2026-11-18T00:00:00.000Z",
-        "checkedAt": "2026-11-20T18:35:00.037Z"
+        "checkedAt": "2026-11-21T03:09:57.762Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "• • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • Advancing chip design with OpenAI models | OpenAI • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • •…",
+        "sourceUrl": "https://openai.com/index/advancing-chip-design-with-our-models",
+        "source": "OpenAI",
+        "publishedAt": "2026-11-18T00:00:00.000Z",
+        "checkedAt": "2026-11-21T03:09:57.762Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Advancing chip design with OpenAI models",
+        "sourceUrl": "https://openai.com/index/advancing-chip-design-with-our-models",
+        "source": "OpenAI",
+        "publishedAt": "2026-11-18T00:00:00.000Z",
+        "checkedAt": "2026-11-21T03:09:57.762Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "OpenAI’s models are quickly improving the chips that power AI.",
+        "sourceUrl": "https://openai.com/index/advancing-chip-design-with-our-models",
+        "source": "OpenAI",
+        "publishedAt": "2026-11-18T00:00:00.000Z",
+        "checkedAt": "2026-11-21T03:09:57.762Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "In August, ⁠ we shared how OpenAI engineers used our frontier models to accelerate the development of our first custom inference chip, Jalapeño.",
+        "sourceUrl": "https://openai.com/index/advancing-chip-design-with-our-models",
+        "source": "OpenAI",
+        "publishedAt": "2026-11-18T00:00:00.000Z",
+        "checkedAt": "2026-11-21T03:09:57.762Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "To measure our model’s ability at end to end chip design tasks, we evaluated successive generations on two open-source processor designs with interesting findings.",
+        "sourceUrl": "https://openai.com/index/advancing-chip-design-with-our-models",
+        "source": "OpenAI",
+        "publishedAt": "2026-11-18T00:00:00.000Z",
+        "checkedAt": "2026-11-21T03:09:57.762Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "And to ground capability development in trusted evaluators, we’re working with Synopsys to integrate frontier intelligence with the electronic design automation (EDA) tools that engineers already use to design and verify chips.",
+        "sourceUrl": "https://openai.com/index/advancing-chip-design-with-our-models",
+        "source": "OpenAI",
+        "publishedAt": "2026-11-18T00:00:00.000Z",
+        "checkedAt": "2026-11-21T03:09:57.762Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "We started using GPT‑o3 mini to help design Jalapeño in early 2025.",
+        "sourceUrl": "https://openai.com/index/advancing-chip-design-with-our-models",
+        "source": "OpenAI",
+        "publishedAt": "2026-11-18T00:00:00.000Z",
+        "checkedAt": "2026-11-21T03:09:57.762Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Across the broader Jalapeño design effort, the team estimates that model proposed changes reduced standard-cell area by about 13% in the vector unit and 10% in the matrix unit.",
+        "sourceUrl": "https://openai.com/index/advancing-chip-design-with-our-models",
+        "source": "OpenAI",
+        "publishedAt": "2026-11-18T00:00:00.000Z",
+        "checkedAt": "2026-11-21T03:09:57.762Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "This represents roughly a year of progress achieved in less than 5 months–unprecedented results at the frontier of chip design.",
+        "sourceUrl": "https://openai.com/index/advancing-chip-design-with-our-models",
+        "source": "OpenAI",
+        "publishedAt": "2026-11-18T00:00:00.000Z",
+        "checkedAt": "2026-11-21T03:09:57.762Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "To measure the progression in chip design capabilities from one model generation to the next, we tested each model on two open-source 32-bit RISC-V cores.",
+        "sourceUrl": "https://openai.com/index/advancing-chip-design-with-our-models",
+        "source": "OpenAI",
+        "publishedAt": "2026-11-18T00:00:00.000Z",
+        "checkedAt": "2026-11-21T03:09:57.762Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "At about 112,000 tokens per run, all five models scored higher when they designed a core from written requirements than when they tried to improve the existing design.",
+        "sourceUrl": "https://openai.com/index/advancing-chip-design-with-our-models",
+        "source": "OpenAI",
+        "publishedAt": "2026-11-18T00:00:00.000Z",
+        "checkedAt": "2026-11-21T03:09:57.762Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "To ground model development in trusted evaluators and broaden the design challenges addressed , we’re partnering with Synopsys to train GPT‑Synopsys ⁠ (opens in a new window) , a new model, to use Synopsys electronic design automation (EDA) tools the way expert chip designers do.",
+        "sourceUrl": "https://openai.com/index/advancing-chip-design-with-our-models",
+        "source": "OpenAI",
+        "publishedAt": "2026-11-18T00:00:00.000Z",
+        "checkedAt": "2026-11-21T03:09:57.762Z"
       }
     ],
-    "pageDate": null,
-    "alternate": {
-      "tried": [
-        "https://platform.openai.com/docs/changelog"
-      ],
-      "matched": 0,
-      "reason": "제목에 버전 붙은 이름 없음"
-    }
+    "pageDate": null
   },
   "score": {
     "importance": 1,
@@ -88,7 +187,7 @@
     "koreanRelevance": 0,
     "novelty": 2,
     "sourceQuality": 3,
-    "verificationConfidence": 2,
+    "verificationConfidence": 3,
     "signals": [
       "INFRA"
     ],
@@ -100,12 +199,10 @@
   },
   "decision": "HOLD",
   "reasons": [
-    "근거 부족 (원문 SKIPPED_HOST_BLOCKED, 확인 사실 0개) — 발행하지 않음"
+    "사건 신호 INFRA (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
   ],
-  "needsReview": [
-    "source_blocked",
-    "insufficient_evidence"
-  ],
+  "needsReview": [],
   "duplicate": {
     "result": "NEW",
     "reason": "기존 기사·후보와 겹치지 않음"
