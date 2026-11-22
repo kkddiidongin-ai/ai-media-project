@@ -1,7 +1,7 @@
 {
   "date": "2026-11-22",
   "mode": "shadow",
-  "startedAt": "2026-11-21T17:24:52.484Z",
+  "startedAt": "2026-11-22T02:07:22.972Z",
   "status": "INCOMPLETE",
   "limits": {
     "windowDays": 3,
@@ -886,7 +886,7 @@
       "found": 10,
       "inWindow": 0,
       "kept": 0,
-      "since": "2026-11-18",
+      "since": "2026-11-19",
       "coverage": {
         "complete": true
       },
@@ -940,8 +940,8 @@
       "parsed": 30,
       "matched": 30,
       "found": 30,
-      "inWindow": 6,
-      "kept": 6,
+      "inWindow": 4,
+      "kept": 4,
       "since": "2026-11-19",
       "coverage": {
         "complete": false,
@@ -965,16 +965,16 @@
         "redirected": false,
         "finalUrl": null
       },
-      "parsed": 21,
-      "matched": 21,
-      "found": 21,
-      "inWindow": 9,
-      "kept": 9,
+      "parsed": 24,
+      "matched": 24,
+      "found": 24,
+      "inWindow": 7,
+      "kept": 7,
       "since": "2026-11-19",
       "coverage": {
         "complete": false,
-        "reason": "피드의 가장 오래된 항목(2026-11-20)이 시작일(2026-11-19)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음",
-        "oldest": "2026-11-20"
+        "reason": "피드의 가장 오래된 항목(2026-11-21)이 시작일(2026-11-19)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음",
+        "oldest": "2026-11-21"
       },
       "undated": 0,
       "health": "OK",
@@ -1020,17 +1020,17 @@
     "SKIPPED": 9
   },
   "counts": {
-    "collected": 109,
+    "collected": 105,
     "carriedFromQueue": 54,
-    "NEW": 161,
+    "NEW": 157,
     "UPDATE_EXISTING": 0,
     "DUPLICATE": 1,
     "UNCERTAIN": 1,
-    "PUBLISH": 9,
-    "HOLD": 115,
+    "PUBLISH": 10,
+    "HOLD": 110,
     "EXCLUDE": 39,
-    "shortlisted": 17,
-    "evidenceChecked": 17,
+    "shortlisted": 18,
+    "evidenceChecked": 18,
     "drafts": 0,
     "draftQa": {
       "PASS": 0,
@@ -1051,7 +1051,7 @@
       "attempted": 0,
       "ok": 0,
       "failed": 0,
-      "skipped": 9,
+      "skipped": 10,
       "successRate": null,
       "quotaHit": false
     },
@@ -1062,7 +1062,7 @@
     "complete": false,
     "pending": {
       "evidence": 54,
-      "draft": 84,
+      "draft": 85,
       "meta": 0,
       "retrySources": 1
     },
@@ -1072,7 +1072,7 @@
     },
     "resolvedFromQueue": 0,
     "processed": {
-      "evidenceFetches": 17,
+      "evidenceFetches": 1,
       "drafted": 0
     },
     "coverageGaps": [
@@ -1094,7 +1094,7 @@
       {
         "id": "etnews",
         "name": "전자신문",
-        "reason": "피드의 가장 오래된 항목(2026-11-20)이 시작일(2026-11-19)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음"
+        "reason": "피드의 가장 오래된 항목(2026-11-21)이 시작일(2026-11-19)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음"
       }
     ],
     "timeBudgetExceeded": false,
@@ -1426,6 +1426,40 @@
       "deepMissing": [
         "importance",
         "userImpact",
+        "contextNeed",
+        "standardWouldOmit"
+      ],
+      "suggestedDepth": "STANDARD",
+      "draftPending": true
+    },
+    {
+      "id": "26e2979e9c83",
+      "title": "Meta ads is now available in AWS Quick",
+      "source": "AWS Machine Learning Blog",
+      "publishedAt": "2026-11-22T01:59:13.000Z",
+      "url": "https://aws.amazon.com/blogs/machine-learning/meta-ads-is-now-available-in-aws-quick/",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "PUBLISH",
+      "reasons": [
+        "사건 신호 PRODUCT_LAUNCH·AVAILABILITY (우선순위 8)",
+        "근거 확인 통과 (확인 사실 12개, SUFFICIENT_STANDARD)"
+      ],
+      "score": 8,
+      "importance": 2,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "PRODUCT_LAUNCH",
+        "AVAILABILITY"
+      ],
+      "company": "Amazon",
+      "stage": "evidence",
+      "evidenceStatus": "OK",
+      "distinctFacts": 12,
+      "sufficiency": "SUFFICIENT_STANDARD",
+      "deepMissing": [
+        "importance",
         "contextNeed",
         "standardWouldOmit"
       ],
@@ -1966,28 +2000,6 @@
       "suggestedDepth": "STANDARD"
     },
     {
-      "id": "7e9fc57c134e",
-      "title": "Protect agent tool calls with Skyflow and Amazon Bedrock AgentCore Gateway",
-      "source": "AWS Machine Learning Blog",
-      "publishedAt": "2026-11-19T18:14:36.000Z",
-      "url": "https://aws.amazon.com/blogs/machine-learning/protect-agent-tool-calls-with-skyflow-and-amazon-bedrock-agentcore-gateway/",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "EXCLUDE",
-      "reasons": [
-        "글 유형 CUSTOMER_STORY — 강한 사건 신호 없음"
-      ],
-      "score": 2,
-      "importance": 1,
-      "contentType": "CUSTOMER_STORY",
-      "typePenalty": -3,
-      "signals": [
-        "API_PLATFORM"
-      ],
-      "company": "Amazon",
-      "stage": "metadata"
-    },
-    {
       "id": "f923bd3882d5",
       "title": "grok-build-0.1 end of life",
       "source": "xAI API Release Notes (docs.x.ai)",
@@ -2220,6 +2232,70 @@
       "typePenalty": -3,
       "signals": [],
       "company": "NVIDIA",
+      "stage": "metadata"
+    },
+    {
+      "id": "09c61f384681",
+      "title": "챗GPT·클로드, 모바일 앱 나란히 개편…AI 에이전트 기능 전면에",
+      "source": "AI타임스",
+      "publishedAt": "2026-11-22T09:09:35.000Z",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217654",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+      ],
+      "score": 2,
+      "importance": 0,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [],
+      "company": "AI타임스",
+      "stage": "metadata"
+    },
+    {
+      "id": "58aa0919c784",
+      "title": "LGU+ 조직개편...\"AI 사업 성과 창출 가속\"",
+      "source": "AI타임스",
+      "publishedAt": "2026-11-22T09:00:00.000Z",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217651",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "EXCLUDE",
+      "reasons": [
+        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
+      ],
+      "score": 2,
+      "importance": 0,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [],
+      "company": "AI타임스",
+      "stage": "metadata"
+    },
+    {
+      "id": "17474e1ac2bb",
+      "title": "손정의, SK하이닉스 1조달러 인수 검토…월가에 자금 조달 타진",
+      "source": "AI타임스",
+      "publishedAt": "2026-11-22T05:59:45.000Z",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=217653",
+      "duplicate": "NEW",
+      "matchSlug": null,
+      "decision": "HOLD",
+      "reasons": [
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 ACQ_INVEST·REGULATION·INFRA)"
+      ],
+      "score": 10,
+      "importance": 4,
+      "contentType": "NEWS",
+      "typePenalty": 0,
+      "signals": [
+        "ACQ_INVEST",
+        "REGULATION",
+        "INFRA"
+      ],
+      "company": "AI타임스",
       "stage": "metadata"
     },
     {
@@ -3253,70 +3329,25 @@
       "stage": "metadata"
     },
     {
-      "id": "6174e93d5b1a",
-      "title": "슈나이더일렉트릭 \"태양광·배터리로 전력시스템 비용 최대 40%↓\"",
-      "source": "AI타임스",
-      "publishedAt": "2026-11-20T11:10:00.000Z",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217548",
+      "id": "f1bdd1ed53db",
+      "title": "LGU+ 조직개편...AI 조직 재편으로 성과 속도전",
+      "source": "지디넷코리아",
+      "publishedAt": "2026-11-22T00:00:01.000Z",
+      "url": "https://zdnet.co.kr/view/?no=20261122085359",
       "duplicate": "NEW",
       "matchSlug": null,
       "decision": "HOLD",
       "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·PRICING)"
+        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 INFRA)"
       ],
-      "score": 10,
-      "importance": 3,
+      "score": 4,
+      "importance": 1,
       "contentType": "NEWS",
       "typePenalty": 0,
       "signals": [
-        "PRODUCT_LAUNCH",
-        "PRICING"
+        "INFRA"
       ],
-      "company": "AI타임스",
-      "stage": "metadata"
-    },
-    {
-      "id": "f61d719e51b3",
-      "title": "세계 태양광 신규 설치, 8년 만에 감소 전망…중국 전력가격 개편 영향",
-      "source": "AI타임스",
-      "publishedAt": "2026-11-20T11:05:00.000Z",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217550",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRICING)"
-      ],
-      "score": 7,
-      "importance": 2,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "PRICING"
-      ],
-      "company": "AI타임스",
-      "stage": "metadata"
-    },
-    {
-      "id": "88bcc29be883",
-      "title": "XM, 앤트로픽 나스닥 상장 맞춰 거래 지원 준비",
-      "source": "AI타임스",
-      "publishedAt": "2026-11-20T10:55:00.000Z",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=217607",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 ACQ_INVEST)"
-      ],
-      "score": 6,
-      "importance": 2,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "ACQ_INVEST"
-      ],
-      "company": "AI타임스",
+      "company": "지디넷코리아",
       "stage": "metadata"
     },
     {
@@ -3386,33 +3417,11 @@
       "stage": "metadata"
     },
     {
-      "id": "7b050cab8642",
-      "title": "화웨이, 싱가포르 핀테크 페스티벌 2026에서 금융 AI 확장 역량 공개",
-      "source": "지디넷코리아",
-      "publishedAt": "2026-11-21T03:10:23.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261121121023",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)"
-      ],
-      "score": 5,
-      "importance": 1,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "PRODUCT_LAUNCH"
-      ],
-      "company": "지디넷코리아",
-      "stage": "metadata"
-    },
-    {
-      "id": "8e42fca04a1d",
-      "title": "아이디어가 게임이 되기까지 24시간…'유니티 AI 게임잼' 현장 가보니",
-      "source": "지디넷코리아",
-      "publishedAt": "2026-11-21T02:30:24.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261120190933",
+      "id": "0dc88a351ccc",
+      "title": "막노동하다 서울대 법대 수석 입학?…“지금이라면 의심부터, 30년 전이라 가능?”",
+      "source": "전자신문",
+      "publishedAt": "2026-11-22T00:31:14.000Z",
+      "url": "https://www.etnews.com/20261122000033",
       "duplicate": "NEW",
       "matchSlug": null,
       "decision": "EXCLUDE",
@@ -3424,29 +3433,7 @@
       "contentType": "NEWS",
       "typePenalty": 0,
       "signals": [],
-      "company": "지디넷코리아",
-      "stage": "metadata"
-    },
-    {
-      "id": "59c95a171670",
-      "title": "미래 피지컬 AI 인재 한자리에…청소년 114명, 로봇 실력 겨룬다",
-      "source": "지디넷코리아",
-      "publishedAt": "2026-11-21T02:00:02.000Z",
-      "url": "https://zdnet.co.kr/view/?no=20261121081600",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 REGULATION)"
-      ],
-      "score": 6,
-      "importance": 2,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "REGULATION"
-      ],
-      "company": "지디넷코리아",
+      "company": "전자신문",
       "stage": "metadata"
     },
     {
@@ -3578,72 +3565,6 @@
       "typePenalty": 0,
       "signals": [
         "INFRA"
-      ],
-      "company": "전자신문",
-      "stage": "metadata"
-    },
-    {
-      "id": "5f80d10e978e",
-      "title": "앤트로픽, 상장 이틀째 8.5% 급락…공모가까지 위협",
-      "source": "전자신문",
-      "publishedAt": "2026-11-21T01:07:56.000Z",
-      "url": "https://www.etnews.com/20261121000022",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 ACQ_INVEST)"
-      ],
-      "score": 6,
-      "importance": 2,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "ACQ_INVEST"
-      ],
-      "company": "전자신문",
-      "stage": "metadata"
-    },
-    {
-      "id": "4a55741f1ddd",
-      "title": "앤트로픽 연구원 “AI 클로드, 수학 최대 난제 리만가설 증명” 주장",
-      "source": "전자신문",
-      "publishedAt": "2026-11-21T01:05:55.000Z",
-      "url": "https://www.etnews.com/20261121000021",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "EXCLUDE",
-      "reasons": [
-        "사건 신호 없음 (독자에게 바뀌는 것이 보이지 않음)"
-      ],
-      "score": 2,
-      "importance": 0,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [],
-      "company": "전자신문",
-      "stage": "metadata"
-    },
-    {
-      "id": "38281ad01f67",
-      "title": "[미리보는 소프트웨이브 2026] 〈1〉AI 혁신부터 투자·수출까지…SW 산업 비즈니스 장 연다",
-      "source": "전자신문",
-      "publishedAt": "2026-11-21T01:00:00.000Z",
-      "url": "https://www.etnews.com/20261120000213",
-      "duplicate": "NEW",
-      "matchSlug": null,
-      "decision": "HOLD",
-      "reasons": [
-        "언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·PARTNERSHIP·ACQ_INVEST)"
-      ],
-      "score": 11,
-      "importance": 4,
-      "contentType": "NEWS",
-      "typePenalty": 0,
-      "signals": [
-        "PRODUCT_LAUNCH",
-        "PARTNERSHIP",
-        "ACQ_INVEST"
       ],
       "company": "전자신문",
       "stage": "metadata"
@@ -4994,5 +4915,5 @@
       "fromQueue": "evidence"
     }
   ],
-  "finishedAt": "2026-11-21T17:26:03.905Z"
+  "finishedAt": "2026-11-22T02:08:23.126Z"
 }
