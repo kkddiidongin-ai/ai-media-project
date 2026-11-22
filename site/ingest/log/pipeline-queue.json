@@ -2937,7 +2937,7 @@
         "tier": 1,
         "fetchMode": "rss",
         "discoveredVia": "https://developer.nvidia.com/blog/feed",
-        "fetchedAt": "2026-11-21T17:24:52.485Z"
+        "fetchedAt": "2026-11-22T02:07:22.973Z"
       },
       "addedAt": "2026-11-20",
       "since": "2026-11-17",
@@ -2983,7 +2983,7 @@
         "tier": 1,
         "fetchMode": "rss",
         "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
-        "fetchedAt": "2026-11-21T17:24:52.485Z"
+        "fetchedAt": "2026-11-22T02:07:22.973Z"
       },
       "addedAt": "2026-11-20",
       "since": "2026-11-17",
@@ -3006,7 +3006,7 @@
         "tier": 1,
         "fetchMode": "rss",
         "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
-        "fetchedAt": "2026-11-21T17:24:52.485Z"
+        "fetchedAt": "2026-11-22T02:07:22.973Z"
       },
       "addedAt": "2026-11-20",
       "since": "2026-11-17",
@@ -3029,7 +3029,7 @@
         "tier": 1,
         "fetchMode": "rss",
         "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
-        "fetchedAt": "2026-11-21T17:24:52.485Z"
+        "fetchedAt": "2026-11-22T02:07:22.973Z"
       },
       "addedAt": "2026-11-20",
       "since": "2026-11-17",
@@ -3052,7 +3052,7 @@
         "tier": 1,
         "fetchMode": "rss",
         "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
-        "fetchedAt": "2026-11-21T17:24:52.485Z"
+        "fetchedAt": "2026-11-22T02:07:22.973Z"
       },
       "addedAt": "2026-11-20",
       "since": "2026-11-17",
@@ -3075,7 +3075,7 @@
         "tier": 1,
         "fetchMode": "rss-paged",
         "discoveredVia": "https://blogs.nvidia.com/feed/",
-        "fetchedAt": "2026-11-21T17:24:52.485Z"
+        "fetchedAt": "2026-11-22T02:07:22.973Z"
       },
       "addedAt": "2026-11-20",
       "since": "2026-11-17",
@@ -3098,7 +3098,7 @@
         "tier": 1,
         "fetchMode": "rss",
         "discoveredVia": "https://huggingface.co/blog/feed.xml",
-        "fetchedAt": "2026-11-21T17:24:52.485Z"
+        "fetchedAt": "2026-11-22T02:07:22.973Z"
       },
       "addedAt": "2026-11-21",
       "since": "2026-11-18",
@@ -3144,7 +3144,7 @@
         "tier": 1,
         "fetchMode": "rss",
         "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
-        "fetchedAt": "2026-11-21T17:24:52.485Z"
+        "fetchedAt": "2026-11-22T02:07:22.973Z"
       },
       "addedAt": "2026-11-21",
       "since": "2026-11-18",
@@ -3167,10 +3167,33 @@
         "tier": 1,
         "fetchMode": "rss",
         "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
-        "fetchedAt": "2026-11-21T17:24:52.485Z"
+        "fetchedAt": "2026-11-22T02:07:22.973Z"
       },
       "addedAt": "2026-11-21",
       "since": "2026-11-18",
+      "attempts": 0,
+      "date": "2026-11-22",
+      "reason": "Shadow Mode — 원고를 만들지 않음"
+    },
+    "26e2979e9c83": {
+      "stage": "draft",
+      "item": {
+        "id": "26e2979e9c83",
+        "url": "https://aws.amazon.com/blogs/machine-learning/meta-ads-is-now-available-in-aws-quick/",
+        "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/meta-ads-is-now-available-in-aws-quick",
+        "title": "Meta ads is now available in AWS Quick",
+        "excerpt": "AWS Quick now has a Meta ads AI connector. Meta advertisers can use natural language in Quick to create, manage, and analyze campaigns while staying connected to the Meta ad management network, and combine Meta ad data with first- and third-party sources to build dashboards, documents, slide decks, ",
+        "publishedAt": "2026-11-22T01:59:13.000Z",
+        "sourceId": "aws-ml",
+        "sourceName": "AWS Machine Learning Blog",
+        "sourceType": "official",
+        "tier": 1,
+        "fetchMode": "rss",
+        "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+        "fetchedAt": "2026-11-22T02:07:22.973Z"
+      },
+      "addedAt": "2026-11-22",
+      "since": "2026-11-19",
       "attempts": 0,
       "date": "2026-11-22",
       "reason": "Shadow Mode — 원고를 만들지 않음"
@@ -3181,11 +3204,11 @@
     "naver-d2": {
       "since": "2026-11-17",
       "failedAt": "2026-11-20",
-      "attempts": 5,
+      "attempts": 6,
       "lastError": "HTTP 404: https://d2.naver.com/d2.atom"
     }
   },
-  "updatedAt": "2026-11-21T17:26:03.902Z",
+  "updatedAt": "2026-11-22T02:08:23.123Z",
   "gemini": {
     "day": "2026-11-15",
     "calls": 1,
