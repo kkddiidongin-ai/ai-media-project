@@ -1,0 +1,222 @@
+{
+  "id": "dc26abff6344",
+  "date": "2026-11-23",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "How Standard Bank Group automates AI risk assessment for generative AI",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 10,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/how-standard-bank-group-automates-ai-risk-assessment-for-generative-ai/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-11-20T20:37:31.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "dc26abff6344",
+    "url": "https://aws.amazon.com/blogs/machine-learning/how-standard-bank-group-automates-ai-risk-assessment-for-generative-ai/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/how-standard-bank-group-automates-ai-risk-assessment-for-generative-ai",
+    "title": "How Standard Bank Group automates AI risk assessment for generative AI",
+    "excerpt": "Standard Bank Group automated the evidence behind its generative AI approval gates. Working with AWS Professional Services, the bank built an assessment in its own AWS account that scores each use case against international AI standards and its own policies using LLM-as-a-judge on Amazon Bedrock, gi",
+    "publishedAt": "2026-11-20T20:37:31.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-11-22T17:47:40.633Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 12231,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Standard Bank Group automated the evidence behind its generative AI approval gates. Working with AWS Professional Services, the bank built an assessment in its own AWS account that scores each use case against international AI standards and its own policies using LLM-as-a-judge on Amazon Bedrock, gi",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-standard-bank-group-automates-ai-risk-assessment-for-generative-ai/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T20:37:31.000Z",
+        "checkedAt": "2026-11-22T17:48:42.612Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "How Standard Bank Group automates AI risk assessment for generative AI | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-standard-bank-group-automates-ai-risk-assessment-for-generative-ai/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T20:37:31.000Z",
+        "checkedAt": "2026-11-22T17:48:42.612Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "How Standard Bank Group automates AI risk assessment for generative AI",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-standard-bank-group-automates-ai-risk-assessment-for-generative-ai/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T20:37:31.000Z",
+        "checkedAt": "2026-11-22T17:48:42.612Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Working with AWS Professional Services, the bank deployed an automated assessment that scores each generative AI use case against international AI standards and its own policies.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-standard-bank-group-automates-ai-risk-assessment-for-generative-ai/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T20:37:31.000Z",
+        "checkedAt": "2026-11-22T17:48:42.612Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "This post explains how the assessment runs on AWS and what Standard Bank Group learned from its first runs.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-standard-bank-group-automates-ai-risk-assessment-for-generative-ai/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T20:37:31.000Z",
+        "checkedAt": "2026-11-22T17:48:42.612Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "“At Standard Bank, this assessment demonstrates how we are working with AWS to embed intelligent, automated risk management into our AI journey, allowing us to accelerate meaningful business value while maintaining the trust and controls that banking demands.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-standard-bank-group-automates-ai-risk-assessment-for-generative-ai/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T20:37:31.000Z",
+        "checkedAt": "2026-11-22T17:48:42.612Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "— Jörg Fischer, Group Chief Information and AI Officer, Standard Bank Group",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-standard-bank-group-automates-ai-risk-assessment-for-generative-ai/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T20:37:31.000Z",
+        "checkedAt": "2026-11-22T17:48:42.612Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Figure 1 shows how the assessment’s components fit together in Standard Bank Group’s AWS account, from intake through evaluation to reporting.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-standard-bank-group-automates-ai-risk-assessment-for-generative-ai/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T20:37:31.000Z",
+        "checkedAt": "2026-11-22T17:48:42.612Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Figure 1: The assessment pipeline in Standard Bank Group’s AWS account, from intake through evaluation to reporting",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-standard-bank-group-automates-ai-risk-assessment-for-generative-ai/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T20:37:31.000Z",
+        "checkedAt": "2026-11-22T17:48:42.612Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Each control comes from an international AI standard or framework, or from Standard Bank Group’s own policies.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-standard-bank-group-automates-ai-risk-assessment-for-generative-ai/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T20:37:31.000Z",
+        "checkedAt": "2026-11-22T17:48:42.612Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Every check maps to a control in an international standard or framework for AI management, AI risk, or AI security.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-standard-bank-group-automates-ai-risk-assessment-for-generative-ai/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T20:37:31.000Z",
+        "checkedAt": "2026-11-22T17:48:42.612Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Standard Bank Group also customized the lens with judge questions built from its own standards, bringing the total to more than 300.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-standard-bank-group-automates-ai-risk-assessment-for-generative-ai/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T20:37:31.000Z",
+        "checkedAt": "2026-11-22T17:48:42.612Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "At Standard Bank Group, the assessment reduced a traditionally manual two-week review to a comprehensive risk report generated in approximately two hours, demonstrated across six assessments.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/how-standard-bank-group-automates-ai-risk-assessment-for-generative-ai/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T20:37:31.000Z",
+        "checkedAt": "2026-11-22T17:48:42.612Z"
+      }
+    ],
+    "pageDate": "2026-11-20T20:37:31.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "API_PLATFORM",
+      "MODEL_MENTION"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 API_PLATFORM·MODEL_MENTION (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

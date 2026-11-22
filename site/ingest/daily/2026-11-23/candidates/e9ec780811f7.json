@@ -1,0 +1,221 @@
+{
+  "id": "e9ec780811f7",
+  "date": "2026-11-23",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Announcing Amazon Textract Insights: Verifiable generative AI for documents",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/announcing-amazon-textract-insights-verifiable-generative-ai-for-documents/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-11-20T20:22:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "e9ec780811f7",
+    "url": "https://aws.amazon.com/blogs/machine-learning/announcing-amazon-textract-insights-verifiable-generative-ai-for-documents/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/announcing-amazon-textract-insights-verifiable-generative-ai-for-documents",
+    "title": "Announcing Amazon Textract Insights: Verifiable generative AI for documents",
+    "excerpt": "Announcing the general availability of Amazon Textract Insights, a new generative AI feature of Amazon Textract. Describe the fields you need in natural language, submit a document or a mixed packet, and receive structured results with a confidence score and page-level grounding for each value, with",
+    "publishedAt": "2026-11-20T20:22:00.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-11-22T17:47:40.633Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 8224,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Announcing the general availability of Amazon Textract Insights, a new generative AI feature of Amazon Textract. Describe the fields you need in natural language, submit a document or a mixed packet, and receive structured results with a confidence score and page-level grounding for each value, with",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/announcing-amazon-textract-insights-verifiable-generative-ai-for-documents/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T20:22:00.000Z",
+        "checkedAt": "2026-11-22T17:48:43.801Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Announcing Amazon Textract Insights: Verifiable generative AI for documents | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/announcing-amazon-textract-insights-verifiable-generative-ai-for-documents/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T20:22:00.000Z",
+        "checkedAt": "2026-11-22T17:48:43.801Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Announcing Amazon Textract Insights: Verifiable generative AI for documents",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/announcing-amazon-textract-insights-verifiable-generative-ai-for-documents/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T20:22:00.000Z",
+        "checkedAt": "2026-11-22T17:48:43.801Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Today, we are announcing the general availability of Amazon Textract Insights , a new generative AI feature of Amazon Textract available through a new API within Amazon Textract.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/announcing-amazon-textract-insights-verifiable-generative-ai-for-documents/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T20:22:00.000Z",
+        "checkedAt": "2026-11-22T17:48:43.801Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Amazon Textract Insights is built for reliable document processing, bringing this entire workflow into a single asynchronous request on Amazon Textract.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/announcing-amazon-textract-insights-verifiable-generative-ai-for-documents/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T20:22:00.000Z",
+        "checkedAt": "2026-11-22T17:48:43.801Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "You then submit a single file of up to 3,000 pages from your own Amazon Simple Storage Service (Amazon S3) bucket and enable splitting.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/announcing-amazon-textract-insights-verifiable-generative-ai-for-documents/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T20:22:00.000Z",
+        "checkedAt": "2026-11-22T17:48:43.801Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "You create an Amazon Textract Insights project with the AWS public W-2, payslip, and bank statement blueprints, add a custom blueprint for loan officer notes, and enable splitting.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/announcing-amazon-textract-insights-verifiable-generative-ai-for-documents/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T20:22:00.000Z",
+        "checkedAt": "2026-11-22T17:48:43.801Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Amazon Textract Insights splits the file into its individual documents, matches each one to its blueprint, and writes the results to your S3 bucket.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/announcing-amazon-textract-insights-verifiable-generative-ai-for-documents/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T20:22:00.000Z",
+        "checkedAt": "2026-11-22T17:48:43.801Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "We updated Amazon Textract’s reading engine , Amazon Textract Core, improving accuracy, strengthening the handling of dense tables and handwriting, and expanding language coverage to 40 languages for the DetectDocumentText and AnalyzeDocument APIs.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/announcing-amazon-textract-insights-verifiable-generative-ai-for-documents/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T20:22:00.000Z",
+        "checkedAt": "2026-11-22T17:48:43.801Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Amazon Textract Core is now generally available in two additional AWS Regions , Asia Pacific (Tokyo) and Europe (Zurich), bringing in-region processing to a total of 18 AWS Regions.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/announcing-amazon-textract-insights-verifiable-generative-ai-for-documents/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T20:22:00.000Z",
+        "checkedAt": "2026-11-22T17:48:43.801Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Amazon Textract Insights isn’t yet available in these AWS Regions.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/announcing-amazon-textract-insights-verifiable-generative-ai-for-documents/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T20:22:00.000Z",
+        "checkedAt": "2026-11-22T17:48:43.801Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Amazon Textract Insights reads documents from, and writes results to, the Amazon S3 buckets specified in your StartDocumentInsights request.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/announcing-amazon-textract-insights-verifiable-generative-ai-for-documents/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T20:22:00.000Z",
+        "checkedAt": "2026-11-22T17:48:43.801Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "If you disable your key or remove Amazon Textract’s access to it, Amazon Textract Insights can no longer use data encrypted under it.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/announcing-amazon-textract-insights-verifiable-generative-ai-for-documents/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T20:22:00.000Z",
+        "checkedAt": "2026-11-22T17:48:43.801Z"
+      }
+    ],
+    "pageDate": "2026-11-20T20:22:00.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "AVAILABILITY"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 AVAILABILITY (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}
