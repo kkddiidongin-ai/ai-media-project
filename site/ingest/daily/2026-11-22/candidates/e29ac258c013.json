@@ -1,0 +1,142 @@
+{
+  "id": "e29ac258c013",
+  "date": "2026-11-22",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Explore the Codex Security Plugin",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_SHORT",
+    "distinctFacts": 3,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": false,
+      "evidenceQuality": false,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "distinctFacts",
+      "evidenceQuality",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "OpenAI",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://openai.com/business/learn/codex-security-plugin-demo",
+      "name": "OpenAI",
+      "type": "official",
+      "publishedAt": "2026-11-19T00:00:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "e29ac258c013",
+    "url": "https://openai.com/business/learn/codex-security-plugin-demo",
+    "canonicalUrl": "https://openai.com/business/learn/codex-security-plugin-demo",
+    "title": "Explore the Codex Security Plugin",
+    "excerpt": "Watch a demo of the Codex Security Plugin and see the workflow in action, from getting started to reviewing the results shown in the recording.",
+    "publishedAt": "2026-11-19T00:00:00.000Z",
+    "sourceId": "openai",
+    "sourceName": "OpenAI",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://openai.com/news/rss.xml",
+    "fetchedAt": "2026-11-22T02:07:22.973Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 772,
+    "grade": "LIMITED",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Watch a demo of the Codex Security Plugin and see the workflow in action, from getting started to reviewing the results shown in the recording.",
+        "sourceUrl": "https://openai.com/business/learn/codex-security-plugin-demo",
+        "source": "OpenAI",
+        "publishedAt": "2026-11-19T00:00:00.000Z",
+        "checkedAt": "2026-11-21T17:26:02.696Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "• • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • Explore the Codex Security Plugin | OpenAI • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • …",
+        "sourceUrl": "https://openai.com/business/learn/codex-security-plugin-demo",
+        "source": "OpenAI",
+        "publishedAt": "2026-11-19T00:00:00.000Z",
+        "checkedAt": "2026-11-21T17:26:02.696Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Watch a demo of the Codex Security Plugin and see the workflow in action, from getting started to reviewing the results shown in the recording.",
+        "sourceUrl": "https://openai.com/business/learn/codex-security-plugin-demo",
+        "source": "OpenAI",
+        "publishedAt": "2026-11-19T00:00:00.000Z",
+        "checkedAt": "2026-11-21T17:26:02.696Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": ":nth-child(2),>[data-dotcom-chart-group]>:nth-child(2)]:[--dotcom-chart-edge-gutter:0px] [&_[data-dotcom-chart-logical-container][style*='width:_min-content']]:[--dotcom-chart-edge-gutter:0px] [--dotcom-chart-edge-gutter:var(--container-inline-gutter,0px)] md:[--dotcom-chart-e…",
+        "sourceUrl": "https://openai.com/business/learn/codex-security-plugin-demo",
+        "source": "OpenAI",
+        "publishedAt": "2026-11-19T00:00:00.000Z",
+        "checkedAt": "2026-11-21T17:26:02.696Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "SECURITY_MENTION"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 SECURITY_MENTION (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

@@ -1,0 +1,219 @@
+{
+  "id": "7e4679faa340",
+  "date": "2026-11-22",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Optimize AI economics on Amazon Bedrock with Accenture’s sequenced approach",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": true,
+      "contextNeed": true,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": true
+    },
+    "deepMissing": [
+      "importance"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/optimize-ai-economics-on-amazon-bedrock-with-accentures-sequenced-approach/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-11-19T18:48:55.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "7e4679faa340",
+    "url": "https://aws.amazon.com/blogs/machine-learning/optimize-ai-economics-on-amazon-bedrock-with-accentures-sequenced-approach/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/optimize-ai-economics-on-amazon-bedrock-with-accentures-sequenced-approach",
+    "title": "Optimize AI economics on Amazon Bedrock with Accenture’s sequenced approach",
+    "excerpt": "As enterprises scale AI on Amazon Bedrock, token spend can grow even as per-token prices fall. This post walks through six composable optimization levers, shows how Accenture applied them across four client engagements, and recommends a sequence for cutting AI token spend on your own workloads.",
+    "publishedAt": "2026-11-19T18:48:55.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-11-22T02:07:22.973Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 11192,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "As enterprises scale AI on Amazon Bedrock, token spend can grow even as per-token prices fall. This post walks through six composable optimization levers, shows how Accenture applied them across four client engagements, and recommends a sequence for cutting AI token spend on your own workloads.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/optimize-ai-economics-on-amazon-bedrock-with-accentures-sequenced-approach/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-19T18:48:55.000Z",
+        "checkedAt": "2026-11-21T17:26:00.097Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Optimize AI economics on Amazon Bedrock with Accenture’s sequenced approach | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/optimize-ai-economics-on-amazon-bedrock-with-accentures-sequenced-approach/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-19T18:48:55.000Z",
+        "checkedAt": "2026-11-21T17:26:00.097Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Optimize AI economics on Amazon Bedrock with Accenture’s sequenced approach",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/optimize-ai-economics-on-amazon-bedrock-with-accentures-sequenced-approach/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-19T18:48:55.000Z",
+        "checkedAt": "2026-11-21T17:26:00.097Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "As enterprises scale AI on Amazon Bedrock , token spend often grows even as per-token prices fall.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/optimize-ai-economics-on-amazon-bedrock-with-accentures-sequenced-approach/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-19T18:48:55.000Z",
+        "checkedAt": "2026-11-21T17:26:00.097Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "The Linux Foundation has launched the Tokenomics Foundation to develop open standards for AI cost economics, a sign that managing the economics of AI is now an industry discipline.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/optimize-ai-economics-on-amazon-bedrock-with-accentures-sequenced-approach/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-19T18:48:55.000Z",
+        "checkedAt": "2026-11-21T17:26:00.097Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "In this post, you will learn about six levers for optimizing token spend, how Accenture applied them in production, and how to apply them using Amazon Bedrock.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/optimize-ai-economics-on-amazon-bedrock-with-accentures-sequenced-approach/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-19T18:48:55.000Z",
+        "checkedAt": "2026-11-21T17:26:00.097Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "The same levers are available natively on Amazon Bedrock as described in this post.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/optimize-ai-economics-on-amazon-bedrock-with-accentures-sequenced-approach/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-19T18:48:55.000Z",
+        "checkedAt": "2026-11-21T17:26:00.097Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "This is designed to reduce cached input token costs by up to 90 percent for supported models (see Amazon Bedrock Prompt Caching ).",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/optimize-ai-economics-on-amazon-bedrock-with-accentures-sequenced-approach/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-19T18:48:55.000Z",
+        "checkedAt": "2026-11-21T17:26:00.097Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Amazon Bedrock batch inference processes non-urgent workloads asynchronously as a group at 50 percent lower cost than on-demand pricing for select models (see Amazon Bedrock Pricing ).",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/optimize-ai-economics-on-amazon-bedrock-with-accentures-sequenced-approach/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-19T18:48:55.000Z",
+        "checkedAt": "2026-11-21T17:26:00.097Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "You submit inference requests as a batch job, and results are written to Amazon Simple Storage Service (Amazon S3) when processing completes.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/optimize-ai-economics-on-amazon-bedrock-with-accentures-sequenced-approach/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-19T18:48:55.000Z",
+        "checkedAt": "2026-11-21T17:26:00.097Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Intelligent prompt routing can reduce costs by up to 30 percent without compromising accuracy ( see Amazon Bedrock intelligent prompt routing ).",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/optimize-ai-economics-on-amazon-bedrock-with-accentures-sequenced-approach/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-19T18:48:55.000Z",
+        "checkedAt": "2026-11-21T17:26:00.097Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Distilled models in Amazon Bedrock are up to 500 percent faster and up to 75 percent less expensive than original models, with less than 2 percent accuracy loss for use cases such as RAG.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/optimize-ai-economics-on-amazon-bedrock-with-accentures-sequenced-approach/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-19T18:48:55.000Z",
+        "checkedAt": "2026-11-21T17:26:00.097Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Third, apply Amazon Bedrock prompt caching to that workload’s interactive traffic and Amazon Bedrock batch inference to its asynchronous jobs as configuration-only changes, and measure the result before you move to architectural changes in Phase 2.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/optimize-ai-economics-on-amazon-bedrock-with-accentures-sequenced-approach/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-19T18:48:55.000Z",
+        "checkedAt": "2026-11-21T17:26:00.097Z"
+      }
+    ],
+    "pageDate": "2026-11-19T18:48:55.000Z"
+  },
+  "score": {
+    "importance": 2,
+    "practicalImpact": 2,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PRICING",
+      "API_PLATFORM"
+    ],
+    "strongSignal": true,
+    "contentType": "HOW_TO",
+    "typePenalty": -3,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 PRICING·API_PLATFORM (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}
