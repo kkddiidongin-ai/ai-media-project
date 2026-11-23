@@ -1,0 +1,221 @@
+{
+  "id": "89fabf4c9972",
+  "date": "2026-11-24",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "The enterprise guide to securing coding agents",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 9,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Anthropic",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://claude.com/resources/articles/enterprise-guide-to-securing-coding-agents",
+      "name": "Claude (claude.com articles)",
+      "type": "official",
+      "publishedAt": "2026-11-23T00:00:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "89fabf4c9972",
+    "url": "https://claude.com/resources/articles/enterprise-guide-to-securing-coding-agents",
+    "canonicalUrl": "https://claude.com/resources/articles/enterprise-guide-to-securing-coding-agents",
+    "title": "The enterprise guide to securing coding agents",
+    "excerpt": "How security and technical leaders can scope and bound coding agent risk: AI-specific risks, Claude Code’s layered defenses, and centrally enforced policy.",
+    "publishedAt": "2026-11-23T00:00:00.000Z",
+    "sourceId": "claude-blog",
+    "sourceName": "Claude (claude.com articles)",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "listing-meta",
+    "discoveredVia": "https://claude.com/resources/articles",
+    "fetchedAt": "2026-11-23T22:01:12.767Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 22318,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "How security and technical leaders can scope and bound coding agent risk: AI-specific risks, Claude Code’s layered defenses, and centrally enforced policy.",
+        "sourceUrl": "https://claude.com/resources/articles/enterprise-guide-to-securing-coding-agents",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-23T00:00:00.000Z",
+        "checkedAt": "2026-11-23T22:02:26.616Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "• • • • • • • • • • The enterprise guide to securing coding agents | Claude by Anthropic • • •",
+        "sourceUrl": "https://claude.com/resources/articles/enterprise-guide-to-securing-coding-agents",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-23T00:00:00.000Z",
+        "checkedAt": "2026-11-23T22:02:26.616Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Coding agents likely write code and open pull requests at your organization already.",
+        "sourceUrl": "https://claude.com/resources/articles/enterprise-guide-to-securing-coding-agents",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-23T00:00:00.000Z",
+        "checkedAt": "2026-11-23T22:02:26.616Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "This guide aims to provide a helpful agent security framework that can give organizations the confidence and trust to run agents effectively at scale.",
+        "sourceUrl": "https://claude.com/resources/articles/enterprise-guide-to-securing-coding-agents",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-23T00:00:00.000Z",
+        "checkedAt": "2026-11-23T22:02:26.616Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "This guide is written for organizations on Claude Team and Enterprise plans.",
+        "sourceUrl": "https://claude.com/resources/articles/enterprise-guide-to-securing-coding-agents",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-23T00:00:00.000Z",
+        "checkedAt": "2026-11-23T22:02:26.616Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Here are six questions leaders can ask when evaluating coding agents to verify they are enterprise ready.",
+        "sourceUrl": "https://claude.com/resources/articles/enterprise-guide-to-securing-coding-agents",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-23T00:00:00.000Z",
+        "checkedAt": "2026-11-23T22:02:26.616Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Single sign-on and role-based access control (Enterprise), managed the way you manage your other enterprise tools.",
+        "sourceUrl": "https://claude.com/resources/articles/enterprise-guide-to-securing-coding-agents",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-23T00:00:00.000Z",
+        "checkedAt": "2026-11-23T22:02:26.616Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Enterprise Frontier Safeguards (rolling out in phases) combines the privacy of zero data retention with state-of-the-art safeguards for detecting misuse across highly capable models.",
+        "sourceUrl": "https://claude.com/resources/articles/enterprise-guide-to-securing-coding-agents",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-23T00:00:00.000Z",
+        "checkedAt": "2026-11-23T22:02:26.616Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "A SOC 2 Type 2 report and ISO 27001 certificate in the Anthropic Trust Center .",
+        "sourceUrl": "https://claude.com/resources/articles/enterprise-guide-to-securing-coding-agents",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-23T00:00:00.000Z",
+        "checkedAt": "2026-11-23T22:02:26.616Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Risk 1: Leaked credentials and privilege abuse",
+        "sourceUrl": "https://claude.com/resources/articles/enterprise-guide-to-securing-coding-agents",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-23T00:00:00.000Z",
+        "checkedAt": "2026-11-23T22:02:26.616Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Risk 2: Unvetted dependencies and extensions",
+        "sourceUrl": "https://claude.com/resources/articles/enterprise-guide-to-securing-coding-agents",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-23T00:00:00.000Z",
+        "checkedAt": "2026-11-23T22:02:26.616Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Illustrative example of what an admin sees when skill and plugin scanning blocks a plugin on an Enterprise plan.",
+        "sourceUrl": "https://claude.com/resources/articles/enterprise-guide-to-securing-coding-agents",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-23T00:00:00.000Z",
+        "checkedAt": "2026-11-23T22:02:26.616Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Using a \"chaos loop\" to harden the Claude Docs launch: 60 server errors across billions of requests",
+        "sourceUrl": "https://claude.com/resources/articles/enterprise-guide-to-securing-coding-agents",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-23T00:00:00.000Z",
+        "checkedAt": "2026-11-23T22:02:26.616Z"
+      }
+    ],
+    "pageDate": "2026-11-23T00:00:00.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "SECURITY_MENTION"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 SECURITY_MENTION (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

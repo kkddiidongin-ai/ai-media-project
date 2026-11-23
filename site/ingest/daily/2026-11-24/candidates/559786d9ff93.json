@@ -1,0 +1,223 @@
+{
+  "id": "559786d9ff93",
+  "date": "2026-11-24",
+  "proposedSlug": "gpu",
+  "title": null,
+  "sourceTitle": "GPU 노드 검증 자동화: 상시 점검부터 부하 검증까지",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 6,
+    "deepChecks": {
+      "importance": true,
+      "novelty": true,
+      "userImpact": true,
+      "contextNeed": true,
+      "distinctFacts": true,
+      "evidenceQuality": false,
+      "standardWouldOmit": true
+    },
+    "deepMissing": [
+      "evidenceQuality"
+    ]
+  },
+  "company": "NAVER D2",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://d2.naver.com/helloworld/7131556",
+      "name": "NAVER D2",
+      "type": "official",
+      "publishedAt": "2026-11-23T05:33:36.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "559786d9ff93",
+    "url": "https://d2.naver.com/helloworld/7131556",
+    "canonicalUrl": "https://d2.naver.com/helloworld/7131556",
+    "title": "GPU 노드 검증 자동화: 상시 점검부터 부하 검증까지",
+    "excerpt": "네이버 사내 기술 교류 행사인 NAVER Engineering Day 10th 에서 발표되었던 세션을 공개합니다. ​ GPU 노드 검증 자동화: 상시 점검부터 부하 검증까지 (네이버 사내 기술 교류 행사인 NAVER Engineering Day 10th 에서 발표되었던 세션을 공개합니다.) [발표... NAVER D2 | GPU 노드 검증 자동화: 상시 점검부터 부하 검증까지 (네이버 사내 기술 교류 행사인 NAVER Engineering Day 10th 에서 발표되었던 세션을 공개합니다.) [발표... naver.me ​ 발표 내",
+    "publishedAt": "2026-11-23T05:33:36.000Z",
+    "sourceId": "naver-d2",
+    "sourceName": "NAVER D2",
+    "sourceType": "official",
+    "tier": 2,
+    "fetchMode": "rss",
+    "discoveredVia": "https://d2.naver.com/d2.atom",
+    "fetchedAt": "2026-11-23T22:01:12.767Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 878,
+    "grade": "LIMITED",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "네이버 사내 기술 교류 행사인 NAVER Engineering Day 10th 에서 발표되었던 세션을 공개합니다. ​ GPU 노드 검증 자동화: 상시 점검부터 부하 검증까지 (네이버 사내 기술 교류 행사인 NAVER Engineering Day 10th 에서 발표되었던 세션을 공개합니다.) [발표... NAVER D2 | GPU 노드 검증 자동화: 상시 점검부터 부하 검증까지 (네이버 사내 기술 교류 행사인 NAVER Engineering Day 10th 에서 발표되었던 세션을 공개합니다.) [발표... naver.me ​ 발표 내",
+        "sourceUrl": "https://d2.naver.com/helloworld/7131556",
+        "source": "NAVER D2",
+        "publishedAt": "2026-11-23T05:33:36.000Z",
+        "checkedAt": "2026-11-23T22:02:16.351Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "네이버 사내 기술 교류 행사인 NAVER Engineering Day 10th 에서 발표되었던 세션을 공개합니다.",
+        "sourceUrl": "https://d2.naver.com/helloworld/7131556",
+        "source": "NAVER D2",
+        "publishedAt": "2026-11-23T05:33:36.000Z",
+        "checkedAt": "2026-11-23T22:02:16.351Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "GPU 노드 검증 자동화: 상시 점검부터 부하 검증까지 (네이버 사내 기술 교류 행사인 NAVER Engineering Day 10th 에서 발표되었던 세션을 공개합니다.) [발표...",
+        "sourceUrl": "https://d2.naver.com/helloworld/7131556",
+        "source": "NAVER D2",
+        "publishedAt": "2026-11-23T05:33:36.000Z",
+        "checkedAt": "2026-11-23T22:02:16.351Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "NAVER D2 | GPU 노드 검증 자동화: 상시 점검부터 부하 검증까지 (네이버 사내 기술 교류 행사인 NAVER Engineering Day 10th 에서 발표되었던 세션을 공개합니다.) [발표...",
+        "sourceUrl": "https://d2.naver.com/helloworld/7131556",
+        "source": "NAVER D2",
+        "publishedAt": "2026-11-23T05:33:36.000Z",
+        "checkedAt": "2026-11-23T22:02:16.351Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "GPU 노드의 하드웨어 고장을 워크로드 시작 전에 찾아내는 검증 시스템을 소개하고 상시 점검과 부하 검증을 Kubernetes Operator로 자동화한 과정을 소개합니다.",
+        "sourceUrl": "https://d2.naver.com/helloworld/7131556",
+        "source": "NAVER D2",
+        "publishedAt": "2026-11-23T05:33:36.000Z",
+        "checkedAt": "2026-11-23T22:02:16.351Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "GPU 노드 장애 탐지와 검증을 자동화하려는 MLOps / Infra 엔지니어",
+        "sourceUrl": "https://d2.naver.com/helloworld/7131556",
+        "source": "NAVER D2",
+        "publishedAt": "2026-11-23T05:33:36.000Z",
+        "checkedAt": "2026-11-23T22:02:16.351Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "NAVER에서는 사내 개발 경험과 기술 트렌드를 교류를 할 수 있는 프로그램이 많이 있습니다. 그중 이제는 매회 평균 100개 이상의 발표가 이루어지는 NAVER Engineering Day를 빼놓을 수 없는데요.",
+        "sourceUrl": "https://d2.naver.com/helloworld/7131556",
+        "source": "NAVER D2",
+        "publishedAt": "2026-11-23T05:33:36.000Z",
+        "checkedAt": "2026-11-23T22:02:16.351Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "2016년부터 시작된 ENGINEERING DAY는 실무에서의 기술 개발 경험과 새로운 기술과 플랫폼 도입 시 유용하게 활용될 수 있는 팁 등을 공유하며 서로 배우고 성장하는 네이버의 대표적인 사내 개발자 행사입니다.( 관련 포스팅 보기 )",
+        "sourceUrl": "https://d2.naver.com/helloworld/7131556",
+        "source": "NAVER D2",
+        "publishedAt": "2026-11-23T05:33:36.000Z",
+        "checkedAt": "2026-11-23T22:02:16.351Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "올해 진행된 NAVER Engineering Day의 일부 세션을 공개합니다.",
+        "sourceUrl": "https://d2.naver.com/helloworld/7131556",
+        "source": "NAVER D2",
+        "publishedAt": "2026-11-23T05:33:36.000Z",
+        "checkedAt": "2026-11-23T22:02:16.351Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "네이버 TV 서비스 종료로 인해 기존 네이버 TV 채널을 클립( @devrel_d2 )으로 이동하였습니다.",
+        "sourceUrl": "https://d2.naver.com/helloworld/7131556",
+        "source": "NAVER D2",
+        "publishedAt": "2026-11-23T05:33:36.000Z",
+        "checkedAt": "2026-11-23T22:02:16.351Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "글쓴이 유용혁 | NAVER Cloud 소개 AI Cloud Product",
+        "sourceUrl": "https://d2.naver.com/helloworld/7131556",
+        "source": "NAVER D2",
+        "publishedAt": "2026-11-23T05:33:36.000Z",
+        "checkedAt": "2026-11-23T22:02:16.351Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "글쓴이 이지환 | NAVER Cloud 소개 AI Cloud Product",
+        "sourceUrl": "https://d2.naver.com/helloworld/7131556",
+        "source": "NAVER D2",
+        "publishedAt": "2026-11-23T05:33:36.000Z",
+        "checkedAt": "2026-11-23T22:02:16.351Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 4,
+    "practicalImpact": 1,
+    "koreanRelevance": 3,
+    "novelty": 2,
+    "sourceQuality": 2,
+    "verificationConfidence": 3,
+    "signals": [
+      "INFRA",
+      "KOREA",
+      "PRODUCT_LAUNCH"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 14,
+    "total": 14
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 INFRA·KOREA·PRODUCT_LAUNCH (우선순위 14)",
+    "근거 확인 통과 (확인 사실 6개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "none",
+    "model": null,
+    "status": "skipped",
+    "error": "Shadow Mode — 원고를 만들지 않음",
+    "promptVersion": "draft-v2",
+    "at": "2026-11-23T22:02:31.853Z",
+    "evidenceHash": "133e4f7b568b"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": true,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}
