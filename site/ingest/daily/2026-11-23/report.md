@@ -6,7 +6,7 @@
 
 | 수집 | 신규 | 후속 | 중복 | 불확실 | 발행 추천 | 보류 | 제외 | 원고 |
 |---|---|---|---|---|---|---|---|---|
-| 93 | 146 | 0 | 0 | 1 | 6 | 109 | 32 | 0 |
+| 94 | 147 | 0 | 0 | 1 | 6 | 111 | 31 | 0 |
 
 > 자동으로 발행하지 않습니다. 아래 추천은 사람이 `npm run daily:approve -- <날짜> <id>`로 승인해야 기사 데이터에 들어갑니다. 뉴스레터도 만들거나 보내지 않습니다.
 
@@ -60,12 +60,14 @@
 - 검증: 확인 필요 없음
 - 원고: 없음 — Shadow Mode — 원고를 만들지 않음
 
-## 보류 (109)
+## 보류 (111)
 
 - **How Standard Bank Group automates AI risk assessment for generative AI** (AWS Machine Learning Blog, 2026-11-20) — 사건 신호 API_PLATFORM·MODEL_MENTION (우선순위 5) · 근거는 있으나 우선순위 5 < 발행 추천 기준 6 · 확인 필요: 없음
 - **Announcing Amazon Textract Insights: Verifiable generative AI for documents** (AWS Machine Learning Blog, 2026-11-20) — 사건 신호 AVAILABILITY (우선순위 5) · 근거는 있으나 우선순위 5 < 발행 추천 기준 6 · 확인 필요: 없음
 - **Can AI help scientists identify promising drug candidates?** (OpenAI, 2026-11-20) — 사건 신호 PREVIEW (우선순위 4) · 근거는 있으나 우선순위 4 < 발행 추천 기준 6 · 확인 필요: 없음
 - Hebbia sees improvements in financial research with GPT-6 Astra (OpenAI, 2026-11-20) — 중복 불확실: 기존 기사와 같은 제품(GPT-6 Astra) — 같은 사안인지 사람이 판단
+- [AI리더의 서가] The RLHF Book 한국어판 (AI타임스, 2026-11-23) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·MODEL_MENTION)
+- 오픈AI "사전학습으로 AI 지능 급성장…RSI 대비해 개발 제한해야" (AI타임스, 2026-11-23) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)
 - 알트먼, 메타의 딥페이크 영상에 등장…메타 "정책 위반 아니다" (AI타임스, 2026-11-22) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 SECURITY)
 - 오픈AI "AI가 연구 작업 절반 스스로 완료"…7개월 만에 성공률 2배 (AI타임스, 2026-11-22) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)
 - [AI 이슈트렌드] 수능 AI 부정행위 논란 속 한덕수 판결 주목…앤트로픽 상장에도 기술주 약세 (AI타임스, 2026-11-22) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 ACQ_INVEST·REGULATION)
@@ -83,13 +85,11 @@
 - 구글, 제미나이 앱에 GIF 생성 기능 출시…오픈AI 이어 도입 (AI타임스, 2026-11-21) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)
 - "젠슨 황, 20여년 전부터 직원들에게 폭언·위협"…불만 제기 이어져 (AI타임스, 2026-11-21) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)
 - 미 민주당, 엔비디아의 메가스피드 조사 개입 의혹 조사 착수 (AI타임스, 2026-11-21) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 REGULATION·INFRA)
-- 스페이스X, '커서'의 중국 AI 모델 퇴출 검토 (AI타임스, 2026-11-21) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 MODEL_MENTION)
-- 트럼프 "해외에 데이터센터 짓는 미국 기업에 막대한 세금 부과" (AI타임스, 2026-11-21) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 INFRA)
-- … 외 86건 (run.json)
+- … 외 88건 (run.json)
 
-## 제외 (32)
+## 제외 (31)
 
-- 가치 낮음 32건: Combatting adversarial distillation · Advancing Science Together: Highlights From the Op · Welcome Inkling 2 Mini, Cutting-edge Performance f · New in AWS Quick: More capable flows, an updated w · Cut self-hosted LLM cost and latency with the dist · Use Kimi Code CLI with models on Amazon Bedrock · Google Workspace Weekly Recap - November 20, 2026 · Google Vids now lets you reuse your media in video …
+- 가치 낮음 31건: Perplexity and Intelligence · Combatting adversarial distillation · Advancing Science Together: Highlights From the Op · Welcome Inkling 2 Mini, Cutting-edge Performance f · New in AWS Quick: More capable flows, an updated w · Cut self-hosted LLM cost and latency with the dist · Use Kimi Code CLI with models on Amazon Bedrock · Google Workspace Weekly Recap - November 20, 2026 …
 
 ## 소스 상태 (정상 22, 그중 기간 안 새 글 0건 11 · 경고 4 · 저하 4 · 실패 1 · 비활성 9)
 
@@ -109,13 +109,13 @@
 
 ## 처리 대기열 · 수집 범위
 
-- 진행 상태: **미완료** · 이번 실행 근거 확인 9건 · 원고 작성 0건
+- 진행 상태: **미완료** · 이번 실행 근거 확인 0건 · 원고 작성 0건
 - 지난 실행에서 넘어온 일: 근거 확인 54건 · 원고 작성 0건
 - 남은 일 (다음 실행으로 이월): 근거 확인 대기 **54**건 · 원고 작성 대기 **85**건 · 아직 열지 못한 글 주소 0개 · 재시도할 소스 1곳
   - 원고 작성 대기: 발행 추천은 났지만 원고 생성 수단이 없거나(무료 생성 미설정·Shadow) 배치를 넘은 항목입니다. 근거는 후보 파일에 보존했고, 빈 원고나 허위 원고는 만들지 않습니다.
 - 수집 범위가 기간 전체를 덮지 못한 소스 3곳 (놓쳤을 수 있음):
   - AI타임스: 피드의 가장 오래된 항목(2026-11-20)이 시작일(2026-11-20)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음
-  - 지디넷코리아: 피드의 가장 오래된 항목(2026-11-22)이 시작일(2026-11-20)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음
+  - 지디넷코리아: 피드의 가장 오래된 항목(2026-11-23)이 시작일(2026-11-20)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음
   - 전자신문: 피드의 가장 오래된 항목(2026-11-22)이 시작일(2026-11-20)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음
 
 ## 선정 진단 (Selection Diagnostics)
@@ -130,7 +130,7 @@
 - 9 · 소식 · PRODUCT_LAUNCH·REGULATION — 영국, 세계유산·공항 안전 문제로 840MW 태양광발전소 건설 불허 → **HOLD**
 - 9 · 소식 · PRODUCT_LAUNCH·ACQ_INVEST — 앤트로픽, 상장 이틀째 8.5% 급락...공모가까지 근접 → **HOLD**
 - 9 · 소식 · PRODUCT_LAUNCH·REGULATION — 미 상무부, 중국군 연계 기업에 AI 칩 수출 허가...하원 자료 공개로 파장 → **HOLD**
-- 9 · 소식 · PRICING·REGULATION — AI가 대신 쇼핑하는 시대…호주, 경쟁법 개정 검토 → **HOLD**
+- 9 · 소식 · PRODUCT_LAUNCH·ACQ_INVEST — "6개월간 오픈AI 맡지 마라"…앤트로픽 IPO에 월가가 반발한 이유 → **HOLD**
 
 **근거 확인 명단 9건** (원문 요청 상한 40, 최종 추천 상한 0)
 - Amazon SageMaker Inference: 2026 launches in review, part 2 — 원문 OK · 확인 사실 11 · SUFFICIENT_STANDARD · 깊이 STANDARD → **PUBLISH**
@@ -152,10 +152,10 @@
 - Amazon SageMaker Inference: 2026 launches in review, part 2 → STANDARD (DEEP 아님: 사용자 영향)
 - Introducing harness adapters: adapt your favorite model to … → STANDARD (DEEP 아님: 중요도 4+, 사용자 영향, 배경 설명 필요, STANDARD로는 맥락 누락)
 
-**보류 이유 (109건)**: N-N-N DAILY에서 이미 추천함 54 · 언론 보도 51 · 근거는 있으나 우선순위 N < 발행 추천 기준 N 3 · 중복 불확실: 기존 기사와 같은 제품 1
+**보류 이유 (111건)**: N-N-N DAILY에서 이미 추천함 54 · 언론 보도 53 · 근거는 있으나 우선순위 N < 발행 추천 기준 N 3 · 중복 불확실: 기존 기사와 같은 제품 1
 
 ## 비용
 
 원고 생성 none · 호출 0/6 · 입력 0 · 출력 0 토큰 · 예상 비용 $0.0000 / 상한 $0.5
 
-<sub>실행 2026-11-22T17:47:40.632Z → 2026-11-22T17:48:45.127Z · 상세: run.json, candidates/*.json</sub>
+<sub>실행 2026-11-23T02:34:11.241Z → 2026-11-23T02:35:08.556Z · 상세: run.json, candidates/*.json</sub>
