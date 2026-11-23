@@ -1,0 +1,233 @@
+{
+  "id": "668baa710142",
+  "date": "2026-11-23",
+  "proposedSlug": "introducing-managed-cluster-extensions-observability-user-ma",
+  "title": null,
+  "sourceTitle": "Introducing managed cluster extensions for observability and user management in Amazon SageMaker HyperPod Slurm",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 10,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": true,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-managed-cluster-extensions-for-observability-and-user-management-in-amazon-sagemaker-hyperpod-slurm/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-11-20T23:07:03.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "668baa710142",
+    "url": "https://aws.amazon.com/blogs/machine-learning/introducing-managed-cluster-extensions-for-observability-and-user-management-in-amazon-sagemaker-hyperpod-slurm/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-managed-cluster-extensions-for-observability-and-user-management-in-amazon-sagemaker-hyperpod-slurm",
+    "title": "Introducing managed cluster extensions for observability and user management in Amazon SageMaker HyperPod Slurm",
+    "excerpt": "Amazon SageMaker HyperPod now offers managed cluster extensions for observability and user management, bringing declarative, API- and console-driven configuration to the software running on Slurm cluster nodes. This post explains how the extensions work and follows a platform team through a quarter ",
+    "publishedAt": "2026-11-20T23:07:03.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-11-23T02:34:11.242Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 21461,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Amazon SageMaker HyperPod now offers managed cluster extensions for observability and user management, bringing declarative, API- and console-driven configuration to the software running on Slurm cluster nodes. This post explains how the extensions work and follows a platform team through a quarter ",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-managed-cluster-extensions-for-observability-and-user-management-in-amazon-sagemaker-hyperpod-slurm/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T23:07:03.000Z",
+        "checkedAt": "2026-11-22T17:48:38.845Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Introducing managed cluster extensions for observability and user management in Amazon SageMaker HyperPod Slurm | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-managed-cluster-extensions-for-observability-and-user-management-in-amazon-sagemaker-hyperpod-slurm/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T23:07:03.000Z",
+        "checkedAt": "2026-11-22T17:48:38.845Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Introducing managed cluster extensions for observability and user management in Amazon SageMaker HyperPod Slurm",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-managed-cluster-extensions-for-observability-and-user-management-in-amazon-sagemaker-hyperpod-slurm/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T23:07:03.000Z",
+        "checkedAt": "2026-11-22T17:48:38.845Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "During 2026, Amazon SageMaker HyperPod brought that approach to Slurm clusters, with API-driven Slurm configuration, AMI-based configuration, continuous provisioning, automatic topology management, and deep health checks.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-managed-cluster-extensions-for-observability-and-user-management-in-amazon-sagemaker-hyperpod-slurm/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T23:07:03.000Z",
+        "checkedAt": "2026-11-22T17:48:38.845Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Today, we launched cluster extensions, which bring the same approach to the software and settings on running nodes, with managed extensions for observability and user management.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-managed-cluster-extensions-for-observability-and-user-management-in-amazon-sagemaker-hyperpod-slurm/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T23:07:03.000Z",
+        "checkedAt": "2026-11-22T17:48:38.845Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "In November 2026, we launched cluster extensions, which are software packages managed by AWS that you install, configure, update, and remove through APIs or the Amazon SageMaker AI console, starting with observability and user management, including directory integration, as th…",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-managed-cluster-extensions-for-observability-and-user-management-in-amazon-sagemaker-hyperpod-slurm/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T23:07:03.000Z",
+        "checkedAt": "2026-11-22T17:48:38.845Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "The observability extension (sagemaker-observability) collects node, GPU, Elastic Fabric Adapter (EFA), Slurm job, and Slurm cluster metrics and sends them to Amazon CloudWatch or Amazon Managed Service for Prometheus .",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-managed-cluster-extensions-for-observability-and-user-management-in-amazon-sagemaker-hyperpod-slurm/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T23:07:03.000Z",
+        "checkedAt": "2026-11-22T17:48:38.845Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "You need a HyperPod Slurm cluster on or after the November 2, 2026 HyperPod AMI or later with continuous provisioning enabled .",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-managed-cluster-extensions-for-observability-and-user-management-in-amazon-sagemaker-hyperpod-slurm/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T23:07:03.000Z",
+        "checkedAt": "2026-11-22T17:48:38.845Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "For procedures, IAM policies, and configuration references, see Cluster extensions for Amazon SageMaker HyperPod Slurm clusters in the Amazon SageMaker AI Developer Guide.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-managed-cluster-extensions-for-observability-and-user-management-in-amazon-sagemaker-hyperpod-slurm/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T23:07:03.000Z",
+        "checkedAt": "2026-11-22T17:48:38.845Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "In the SageMaker AI console, on the cluster’s Extensions tab, the administrator chooses the observability extension, picks the metric categories and their levels and the collection interval, and selects one of two metric stores: Amazon CloudWatch or Amazon Managed Service for …",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-managed-cluster-extensions-for-observability-and-user-management-in-amazon-sagemaker-hyperpod-slurm/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T23:07:03.000Z",
+        "checkedAt": "2026-11-22T17:48:38.845Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Figure 8: The Extensions tab for a cluster with both the observability and user management extensions installed",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-managed-cluster-extensions-for-observability-and-user-management-in-amazon-sagemaker-hyperpod-slurm/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T23:07:03.000Z",
+        "checkedAt": "2026-11-22T17:48:38.845Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Cluster extensions, including the observability and user management extensions, have been available since November 2026 in all the regions where Amazon SageMaker HyperPod is supported, and the other improvements in this post were announced earlier in 2026, with each announceme…",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-managed-cluster-extensions-for-observability-and-user-management-in-amazon-sagemaker-hyperpod-slurm/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T23:07:03.000Z",
+        "checkedAt": "2026-11-22T17:48:38.845Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "This year’s improvements brought that to a HyperPod Slurm cluster’s definition, node setup, capacity, network topology, and hardware health, and cluster extensions, available since November 2026, bring it to the software on the nodes, the layer that changes most often.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-managed-cluster-extensions-for-observability-and-user-management-in-amazon-sagemaker-hyperpod-slurm/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-20T23:07:03.000Z",
+        "checkedAt": "2026-11-22T17:48:38.845Z"
+      }
+    ],
+    "pageDate": "2026-11-20T23:07:03.000Z"
+  },
+  "score": {
+    "importance": 2,
+    "practicalImpact": 2,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PRODUCT_LAUNCH",
+      "API_PLATFORM"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 8,
+    "total": 8
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 PRODUCT_LAUNCH·API_PLATFORM (우선순위 8)",
+    "근거 확인 통과 (확인 사실 10개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "none",
+    "model": null,
+    "status": "skipped",
+    "error": "Shadow Mode — 원고를 만들지 않음",
+    "promptVersion": "draft-v2",
+    "at": "2026-11-23T02:35:08.541Z",
+    "evidenceHash": "fc1dbd5c34c4"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}
