@@ -1,0 +1,232 @@
+{
+  "id": "93b6db033cfa",
+  "date": "2026-11-25",
+  "proposedSlug": "ai-news-data",
+  "title": null,
+  "sourceTitle": "AI 신입사원을 뉴스 데이터 시니어로 키우는 레포, news-data",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 9,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": true,
+      "contextNeed": true,
+      "distinctFacts": true,
+      "evidenceQuality": false,
+      "standardWouldOmit": true
+    },
+    "deepMissing": [
+      "importance",
+      "evidenceQuality"
+    ]
+  },
+  "company": "NAVER D2",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://d2.naver.com/helloworld/3284900",
+      "name": "NAVER D2",
+      "type": "official",
+      "publishedAt": "2026-11-23T07:51:06.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "93b6db033cfa",
+    "url": "https://d2.naver.com/helloworld/3284900",
+    "canonicalUrl": "https://d2.naver.com/helloworld/3284900",
+    "title": "AI 신입사원을 뉴스 데이터 시니어로 키우는 레포, news-data",
+    "excerpt": "네이버 사내 기술 교류 행사인 NAVER Engineering Day 10th 에서 발표되었던 세션을 공개합니다. ​ ​ 발표 내용 AI 에이전트가 뉴스 데이터를 직접 찾고 추출·분석까지 수행하는 하네스 레포 news-data를 소개합니다. 작업마다 배운 것을 회고와 PR로 되돌려 도메인을 모르는 신입사원 같은 에이전트를 시니어로 키우는 과정과 운영하며 부딪힌 한계, 앞으로의 방향을 공유합니다. ​ 발표 대상 코딩 에이전트에게 사내 도메인 업무를 맡겨 보고 싶은 개발자 흩어진 데이터 문서와 도메인 지식을 정리하고 싶은 데이터 엔지니",
+    "publishedAt": "2026-11-23T07:51:06.000Z",
+    "sourceId": "naver-d2",
+    "sourceName": "NAVER D2",
+    "sourceType": "official",
+    "tier": 2,
+    "fetchMode": "rss",
+    "discoveredVia": "https://d2.naver.com/d2.atom",
+    "fetchedAt": "2026-11-24T20:38:14.266Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 996,
+    "grade": "LIMITED",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "네이버 사내 기술 교류 행사인 NAVER Engineering Day 10th 에서 발표되었던 세션을 공개합니다. ​ ​ 발표 내용 AI 에이전트가 뉴스 데이터를 직접 찾고 추출·분석까지 수행하는 하네스 레포 news-data를 소개합니다. 작업마다 배운 것을 회고와 PR로 되돌려 도메인을 모르는 신입사원 같은 에이전트를 시니어로 키우는 과정과 운영하며 부딪힌 한계, 앞으로의 방향을 공유합니다. ​ 발표 대상 코딩 에이전트에게 사내 도메인 업무를 맡겨 보고 싶은 개발자 흩어진 데이터 문서와 도메인 지식을 정리하고 싶은 데이터 엔지니",
+        "sourceUrl": "https://d2.naver.com/helloworld/3284900",
+        "source": "NAVER D2",
+        "publishedAt": "2026-11-23T07:51:06.000Z",
+        "checkedAt": "2026-11-24T20:39:23.377Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "네이버 사내 기술 교류 행사인 NAVER Engineering Day 10th 에서 발표되었던 세션을 공개합니다.",
+        "sourceUrl": "https://d2.naver.com/helloworld/3284900",
+        "source": "NAVER D2",
+        "publishedAt": "2026-11-23T07:51:06.000Z",
+        "checkedAt": "2026-11-24T20:39:23.377Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "AI 에이전트가 뉴스 데이터를 직접 찾고 추출·분석까지 수행하는 하네스 레포 news-data를 소개합니다. 작업마다 배운 것을 회고와 PR로 되돌려 도메인을 모르는 신입사원 같은 에이전트를 시니어로 키우는 과정과 운영하며 부딪힌 한계, 앞으로의 방향을 공유합니다.",
+        "sourceUrl": "https://d2.naver.com/helloworld/3284900",
+        "source": "NAVER D2",
+        "publishedAt": "2026-11-23T07:51:06.000Z",
+        "checkedAt": "2026-11-24T20:39:23.377Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "흩어진 데이터 문서와 도메인 지식을 정리하고 싶은 데이터 엔지니어·분석가",
+        "sourceUrl": "https://d2.naver.com/helloworld/3284900",
+        "source": "NAVER D2",
+        "publishedAt": "2026-11-23T07:51:06.000Z",
+        "checkedAt": "2026-11-24T20:39:23.377Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "AGENTS.md, 스킬, 규칙으로 에이전트의 작업 방식을 설계해 보고 싶은 분",
+        "sourceUrl": "https://d2.naver.com/helloworld/3284900",
+        "source": "NAVER D2",
+        "publishedAt": "2026-11-23T07:51:06.000Z",
+        "checkedAt": "2026-11-24T20:39:23.377Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "스키마만으로는 알 수 없는 컬럼의 의미, wiki·GitHub·코드 주석에 흩어진 문서, 담당자 머릿속의 노하우.",
+        "sourceUrl": "https://d2.naver.com/helloworld/3284900",
+        "source": "NAVER D2",
+        "publishedAt": "2026-11-23T07:51:06.000Z",
+        "checkedAt": "2026-11-24T20:39:23.377Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "SQL과 Spark는 잘 쓰지만 우리 조직의 사정은 모르는, 똑똑한 AI 신입사원의 문제",
+        "sourceUrl": "https://d2.naver.com/helloworld/3284900",
+        "source": "NAVER D2",
+        "publishedAt": "2026-11-23T07:51:06.000Z",
+        "checkedAt": "2026-11-24T20:39:23.377Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "규칙 로드 · 스킬 선택 · 요청·데이터 파악 · 승인 후 실행·검증 · 회고·반영, 요청 한 건이 처리되는 다섯 단계.",
+        "sourceUrl": "https://d2.naver.com/helloworld/3284900",
+        "source": "NAVER D2",
+        "publishedAt": "2026-11-23T07:51:06.000Z",
+        "checkedAt": "2026-11-24T20:39:23.377Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "그 결과 업무 40건 처리, 이슈부터 회고 PR까지 중앙값 1.6시간, 데이터 분석가 수준의 심층 분석까지",
+        "sourceUrl": "https://d2.naver.com/helloworld/3284900",
+        "source": "NAVER D2",
+        "publishedAt": "2026-11-23T07:51:06.000Z",
+        "checkedAt": "2026-11-24T20:39:23.377Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "NAVER에서는 사내 개발 경험과 기술 트렌드를 교류를 할 수 있는 프로그램이 많이 있습니다. 그중 이제는 매회 평균 100개 이상의 발표가 이루어지는 NAVER Engineering Day를 빼놓을 수 없는데요.",
+        "sourceUrl": "https://d2.naver.com/helloworld/3284900",
+        "source": "NAVER D2",
+        "publishedAt": "2026-11-23T07:51:06.000Z",
+        "checkedAt": "2026-11-24T20:39:23.377Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "2016년부터 시작된 ENGINEERING DAY는 실무에서의 기술 개발 경험과 새로운 기술과 플랫폼 도입 시 유용하게 활용될 수 있는 팁 등을 공유하며 서로 배우고 성장하는 네이버의 대표적인 사내 개발자 행사입니다.( 관련 포스팅 보기 )",
+        "sourceUrl": "https://d2.naver.com/helloworld/3284900",
+        "source": "NAVER D2",
+        "publishedAt": "2026-11-23T07:51:06.000Z",
+        "checkedAt": "2026-11-24T20:39:23.377Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "네이버 TV 서비스 종료로 인해 기존 네이버 TV 채널을 클립( @devrel_d2 )으로 이동하였습니다.",
+        "sourceUrl": "https://d2.naver.com/helloworld/3284900",
+        "source": "NAVER D2",
+        "publishedAt": "2026-11-23T07:51:06.000Z",
+        "checkedAt": "2026-11-24T20:39:23.377Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "글쓴이 김윤상 | NAVER 뉴스 서비스 소개 네이버 뉴스 서비스의 백엔드 개발과 데이터 엔지니어링을 담당하고 있습니다.",
+        "sourceUrl": "https://d2.naver.com/helloworld/3284900",
+        "source": "NAVER D2",
+        "publishedAt": "2026-11-23T07:51:06.000Z",
+        "checkedAt": "2026-11-24T20:39:23.377Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 3,
+    "practicalImpact": 1,
+    "koreanRelevance": 3,
+    "novelty": 2,
+    "sourceQuality": 2,
+    "verificationConfidence": 3,
+    "signals": [
+      "KOREA",
+      "PRODUCT_LAUNCH"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 12,
+    "total": 12
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 KOREA·PRODUCT_LAUNCH (우선순위 12)",
+    "근거 확인 통과 (확인 사실 9개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "none",
+    "model": null,
+    "status": "skipped",
+    "error": "Shadow Mode — 원고를 만들지 않음",
+    "promptVersion": "draft-v2",
+    "at": "2026-11-24T20:39:33.336Z",
+    "evidenceHash": "58ed51f06553"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": true,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}

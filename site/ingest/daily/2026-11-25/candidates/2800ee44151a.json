@@ -1,0 +1,221 @@
+{
+  "id": "2800ee44151a",
+  "date": "2026-11-25",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Simplifying agent access while keeping organizations in control: MCP servers, CLI, standardized usage tiers, and admin policies",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Google",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://workspaceupdates.googleblog.com/2026/11/mcp-servers-cli-standardized-usage-tiers-now-available.html",
+      "name": "Google Workspace Updates",
+      "type": "official",
+      "publishedAt": "2026-11-24T17:02:59.959Z"
+    }
+  ],
+  "candidate": {
+    "id": "2800ee44151a",
+    "url": "https://workspaceupdates.googleblog.com/2026/11/mcp-servers-cli-standardized-usage-tiers-now-available.html",
+    "canonicalUrl": "https://workspaceupdates.googleblog.com/2026/11/mcp-servers-cli-standardized-usage-tiers-now-available.html",
+    "title": "Simplifying agent access while keeping organizations in control: MCP servers, CLI, standardized usage tiers, and admin policies",
+    "excerpt": "As AI agents transform how people work, we want to make it simple for developers to build agentic workflows while keeping organizations in control of their data in Google Workspace. We are making Workspace Model Context Protocol (MCP) servers and the official Workspace CLI generally available alongs",
+    "publishedAt": "2026-11-24T17:02:59.959Z",
+    "sourceId": "google-workspace-updates",
+    "sourceName": "Google Workspace Updates",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://workspaceupdates.googleblog.com/feeds/posts/default?max-results=500&published-min=2026-01-01T00:00:00Z",
+    "fetchedAt": "2026-11-24T20:38:14.266Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 9205,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "As AI agents transform how people work, we want to make it simple for developers to build agentic workflows while keeping organizations in control of their data in Google Workspace. We are making Workspace Model Context Protocol (MCP) servers and the official Workspace CLI generally available alongs",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/11/mcp-servers-cli-standardized-usage-tiers-now-available.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-11-24T17:02:59.959Z",
+        "checkedAt": "2026-11-24T20:39:31.937Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Google Workspace Updates: Simplifying agent access while keeping organizations in control: MCP servers, CLI, standardized usage tiers, and admin policies",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/11/mcp-servers-cli-standardized-usage-tiers-now-available.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-11-24T17:02:59.959Z",
+        "checkedAt": "2026-11-24T20:39:31.937Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Simplifying agent access while keeping organizations in control: MCP servers, CLI, standardized usage tiers, and admin policies",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/11/mcp-servers-cli-standardized-usage-tiers-now-available.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-11-24T17:02:59.959Z",
+        "checkedAt": "2026-11-24T20:39:31.937Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "We are making Workspace Model Context Protocol (MCP) servers and the official Workspace CLI generally available alongside standardized usage tiers to simplify how developers build and scale agents, paired with a new Workspace AI Tools Addendum and expanded enterprise controls …",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/11/mcp-servers-cli-standardized-usage-tiers-now-available.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-11-24T17:02:59.959Z",
+        "checkedAt": "2026-11-24T20:39:31.937Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Simplifying and securing agent access with governed Workspace MCP servers and the Workspace CLI",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/11/mcp-servers-cli-standardized-usage-tiers-now-available.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-11-24T17:02:59.959Z",
+        "checkedAt": "2026-11-24T20:39:31.937Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "In May, we announced a standardized usage model for Workspace APIs and MCP servers to give large-scale and AI tool developers a simpler, more predictable way to access higher quota while keeping Workspace infrastructure reliable for our entire community of developers.",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/11/mcp-servers-cli-standardized-usage-tiers-now-available.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-11-24T17:02:59.959Z",
+        "checkedAt": "2026-11-24T20:39:31.937Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Starting today , the Workspace APIs, including MCP servers and CLI, will have two usage tiers, starting with Gmail, Drive, and Calendar.",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/11/mcp-servers-cli-standardized-usage-tiers-now-available.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-11-24T17:02:59.959Z",
+        "checkedAt": "2026-11-24T20:39:31.937Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Centralized access management: Requiring external AI agents to identify themselves in OAuth and connect through Workspace MCP servers allows admins to manage agent access in the admin console just like traditional apps.",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/11/mcp-servers-cli-standardized-usage-tiers-now-available.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-11-24T17:02:59.959Z",
+        "checkedAt": "2026-11-24T20:39:31.937Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "MCP servers, CLI, and API controls: Manage access for external AI tools, Workspace MCP servers, the Workspace CLI, and APIs; set human-in-the-loop (HITL) confirmation rules; and view agent audit logs in the Admin console under Security > API Controls.",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/11/mcp-servers-cli-standardized-usage-tiers-now-available.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-11-24T17:02:59.959Z",
+        "checkedAt": "2026-11-24T20:39:31.937Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Workspace MCP servers and CLI: Visit our configuration guides to start building with the Workspace MCP servers and Workspace CLI .",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/11/mcp-servers-cli-standardized-usage-tiers-now-available.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-11-24T17:02:59.959Z",
+        "checkedAt": "2026-11-24T20:39:31.937Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "If you are building AI agents: Plan to switch from REST APIs to Workspace MCP servers for agentic access before February 1, 2027 , when technical enforcement begins.",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/11/mcp-servers-cli-standardized-usage-tiers-now-available.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-11-24T17:02:59.959Z",
+        "checkedAt": "2026-11-24T20:39:31.937Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Rapid Release and Scheduled Release domains: Rolling out to all in 2 weeks for the Workspace MCP servers (GA); the Google Workspace CLI (GA); Admin console agent access, human-in-the-loop (HITL), and audit log controls; the Workspace API usage developer dashboard; and Scaled t…",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/11/mcp-servers-cli-standardized-usage-tiers-now-available.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-11-24T17:02:59.959Z",
+        "checkedAt": "2026-11-24T20:39:31.937Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Usage limits and billing: Starting April 1, 2027 , Scaled tier billing begins for the Gmail, Google Calendar, and Google Drive APIs and the Workspace MCP servers.",
+        "sourceUrl": "https://workspaceupdates.googleblog.com/2026/11/mcp-servers-cli-standardized-usage-tiers-now-available.html",
+        "source": "Google Workspace Updates",
+        "publishedAt": "2026-11-24T17:02:59.959Z",
+        "checkedAt": "2026-11-24T20:39:31.937Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "AVAILABILITY"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 5,
+    "total": 5
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 AVAILABILITY (우선순위 5)",
+    "근거는 있으나 우선순위 5 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}
