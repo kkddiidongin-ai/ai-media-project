@@ -1,0 +1,234 @@
+{
+  "id": "1fa47c423ba1",
+  "date": "2026-11-24",
+  "proposedSlug": "introducing-file-slicing-controls-gemini-api",
+  "title": null,
+  "sourceTitle": "Introducing file slicing controls in the Gemini API",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 7,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": true,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Google",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/file-slicing-controls/",
+      "name": "Google (The Keyword · AI)",
+      "type": "official",
+      "publishedAt": "2026-11-23T00:00:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "1fa47c423ba1",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/file-slicing-controls/",
+    "canonicalUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/file-slicing-controls",
+    "title": "Introducing file slicing controls in the Gemini API",
+    "excerpt": "New file slicing controls and native Office file support in the Gemini API let agents inspect targeted slices across Google AI Studio and Vertex AI while paying only for…",
+    "publishedAt": "2026-11-23T00:00:00.000Z",
+    "sourceId": "google-ai",
+    "sourceName": "Google (The Keyword · AI)",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "sitemap-meta",
+    "discoveredVia": "https://blog.google/en-us/sitemap.xml",
+    "fetchedAt": "2026-11-24T05:56:41.305Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 7477,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "New file slicing controls and native Office file support in the Gemini API let agents inspect targeted slices across Google AI Studio and Vertex AI while paying only for…",
+        "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/file-slicing-controls/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-11-23T00:00:00.000Z",
+        "checkedAt": "2026-11-23T22:02:25.107Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Introducing file slicing controls in the Gemini API",
+        "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/file-slicing-controls/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-11-23T00:00:00.000Z",
+        "checkedAt": "2026-11-23T22:02:25.107Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "\"page_name\": \"Introducing file slicing controls in the Gemini API\",",
+        "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/file-slicing-controls/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-11-23T00:00:00.000Z",
+        "checkedAt": "2026-11-23T22:02:25.107Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "\"article_name\": \"Introducing file slicing controls in the Gemini API\",",
+        "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/file-slicing-controls/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-11-23T00:00:00.000Z",
+        "checkedAt": "2026-11-23T22:02:25.107Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "\"section_header\": \"Introducing file slicing controls in the Gemini API\"",
+        "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/file-slicing-controls/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-11-23T00:00:00.000Z",
+        "checkedAt": "2026-11-23T22:02:25.107Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "The Gemini API now features native file slicing controls, allowing developers to specify targeted pages, sheet ranges, and media segments for the model to load server-side.",
+        "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/file-slicing-controls/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-11-23T00:00:00.000Z",
+        "checkedAt": "2026-11-23T22:02:25.107Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Today, we're launching new file slicing controls in the API across Google AI Studio and Gemini platform , alongside native file upload support for Microsoft Office and OpenDocument formats.",
+        "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/file-slicing-controls/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-11-23T00:00:00.000Z",
+        "checkedAt": "2026-11-23T22:02:25.107Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "With the Gemini API, pass a Files API URI on a user turn or directly inside a function response ( function_result ), and the API natively slices, renders, and tokenizes each file server-side the way the model was trained to see it.",
+        "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/file-slicing-controls/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-11-23T00:00:00.000Z",
+        "checkedAt": "2026-11-23T22:02:25.107Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Native file slicing works across all Gemini 4 models, and existing file size and page limits still apply to the uploaded file.",
+        "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/file-slicing-controls/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-11-23T00:00:00.000Z",
+        "checkedAt": "2026-11-23T22:02:25.107Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Native file slicing, content-layer controls, and expanded files support are available today via the API in Google AI Studio and the Gemini platform.",
+        "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/file-slicing-controls/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-11-23T00:00:00.000Z",
+        "checkedAt": "2026-11-23T22:02:25.107Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Genie 4 is now available on the Gemini API.",
+        "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/file-slicing-controls/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-11-23T00:00:00.000Z",
+        "checkedAt": "2026-11-23T22:02:25.107Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "\"link_text\": \"Genie 4 is now available on the Gemini API.\",",
+        "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/file-slicing-controls/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-11-23T00:00:00.000Z",
+        "checkedAt": "2026-11-23T22:02:25.107Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "\"article_name\": \"Genie 4 is now available on the Gemini API.\",",
+        "sourceUrl": "https://blog.google/innovation-and-ai/technology/developers-tools/file-slicing-controls/",
+        "source": "Google (The Keyword · AI)",
+        "publishedAt": "2026-11-23T00:00:00.000Z",
+        "checkedAt": "2026-11-23T22:02:25.107Z"
+      }
+    ],
+    "pageDate": "2026-11-23T00:00:00.000Z"
+  },
+  "score": {
+    "importance": 3,
+    "practicalImpact": 2,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "MODEL",
+      "PRODUCT_LAUNCH",
+      "API_PLATFORM"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 10,
+    "total": 10
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 MODEL·PRODUCT_LAUNCH·API_PLATFORM (우선순위 10)",
+    "근거 확인 통과 (확인 사실 7개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "none",
+    "model": null,
+    "status": "skipped",
+    "error": "Shadow Mode — 원고를 만들지 않음",
+    "promptVersion": "draft-v2",
+    "at": "2026-11-24T05:57:45.221Z",
+    "evidenceHash": "9395fbaae270"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": true,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}

@@ -1,0 +1,233 @@
+{
+  "id": "26e2979e9c83",
+  "date": "2026-11-24",
+  "proposedSlug": "meta-ads-available-aws-quick",
+  "title": null,
+  "sourceTitle": "Meta ads is now available in AWS Quick",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 12,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": true,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/meta-ads-is-now-available-in-aws-quick/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-11-22T01:59:13.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "26e2979e9c83",
+    "url": "https://aws.amazon.com/blogs/machine-learning/meta-ads-is-now-available-in-aws-quick/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/meta-ads-is-now-available-in-aws-quick",
+    "title": "Meta ads is now available in AWS Quick",
+    "excerpt": "AWS Quick now has a Meta ads AI connector. Meta advertisers can use natural language in Quick to create, manage, and analyze campaigns while staying connected to the Meta ad management network, and combine Meta ad data with first- and third-party sources to build dashboards, documents, slide decks, ",
+    "publishedAt": "2026-11-22T01:59:13.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-11-24T05:56:41.305Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 6064,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "AWS Quick now has a Meta ads AI connector. Meta advertisers can use natural language in Quick to create, manage, and analyze campaigns while staying connected to the Meta ad management network, and combine Meta ad data with first- and third-party sources to build dashboards, documents, slide decks, ",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/meta-ads-is-now-available-in-aws-quick/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-22T01:59:13.000Z",
+        "checkedAt": "2026-11-23T22:02:25.447Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Meta ads is now available in AWS Quick | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/meta-ads-is-now-available-in-aws-quick/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-22T01:59:13.000Z",
+        "checkedAt": "2026-11-23T22:02:25.447Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Take an apparel brand that advertises on Meta technologies: campaign results live in Meta Ads Manager, briefs and creative assets in shared storage, and inventory, customer lifetime value, and in-store purchases in a data lake.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/meta-ads-is-now-available-in-aws-quick/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-22T01:59:13.000Z",
+        "checkedAt": "2026-11-23T22:02:25.447Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Today, AWS Quick added a Meta ads AI connector.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/meta-ads-is-now-available-in-aws-quick/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-22T01:59:13.000Z",
+        "checkedAt": "2026-11-23T22:02:25.447Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "The connector gives Quick access to ads Model Context Protocol (MCP) server operations.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/meta-ads-is-now-available-in-aws-quick/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-22T01:59:13.000Z",
+        "checkedAt": "2026-11-23T22:02:25.447Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Meta ads customers can use natural language to create, manage, and analyze campaigns within Quick, while staying connected to the Meta ad management network.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/meta-ads-is-now-available-in-aws-quick/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-22T01:59:13.000Z",
+        "checkedAt": "2026-11-23T22:02:25.447Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Quick can also combine Meta ad management data with first- and third-party data sources to create dashboards, documents, slide decks, and automated workflows.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/meta-ads-is-now-available-in-aws-quick/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-22T01:59:13.000Z",
+        "checkedAt": "2026-11-23T22:02:25.447Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "“Meta ads AI connector through Quick gives our marketing teams one place to go from campaign planning to execution.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/meta-ads-is-now-available-in-aws-quick/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-22T01:59:13.000Z",
+        "checkedAt": "2026-11-23T22:02:25.447Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "The video shows how to install the Meta ads connector from Customize > Connectors in AWS Quick, sign in with Facebook, and choose which Pages, Businesses, and Instagram accounts AWS Quick can access.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/meta-ads-is-now-available-in-aws-quick/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-22T01:59:13.000Z",
+        "checkedAt": "2026-11-23T22:02:25.447Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Connecting Meta ads to Quick and running prompts for performance analysis, campaign creation, and a shareable deck",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/meta-ads-is-now-available-in-aws-quick/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-22T01:59:13.000Z",
+        "checkedAt": "2026-11-23T22:02:25.447Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "“Using Meta ads, [campaign_brief], and past results, propose a launch plan for [promotion_name].",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/meta-ads-is-now-available-in-aws-quick/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-22T01:59:13.000Z",
+        "checkedAt": "2026-11-23T22:02:25.447Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "“Help me plan a conversion lift study in Meta ads for [campaign_name].",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/meta-ads-is-now-available-in-aws-quick/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-22T01:59:13.000Z",
+        "checkedAt": "2026-11-23T22:02:25.447Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Try Quick at no additional cost for 3 months",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/meta-ads-is-now-available-in-aws-quick/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-22T01:59:13.000Z",
+        "checkedAt": "2026-11-23T22:02:25.447Z"
+      }
+    ],
+    "pageDate": "2026-11-22T01:59:13.000Z"
+  },
+  "score": {
+    "importance": 2,
+    "practicalImpact": 2,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PRODUCT_LAUNCH",
+      "AVAILABILITY"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 8,
+    "total": 8
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 PRODUCT_LAUNCH·AVAILABILITY (우선순위 8)",
+    "근거 확인 통과 (확인 사실 12개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "none",
+    "model": null,
+    "status": "skipped",
+    "error": "Shadow Mode — 원고를 만들지 않음",
+    "promptVersion": "draft-v2",
+    "at": "2026-11-24T05:57:45.221Z",
+    "evidenceHash": "85d7818f9bdb"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}
