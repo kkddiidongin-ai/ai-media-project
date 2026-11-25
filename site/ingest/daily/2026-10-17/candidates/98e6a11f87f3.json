@@ -1,0 +1,221 @@
+{
+  "id": "98e6a11f87f3",
+  "date": "2026-10-17",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Local and Distributed Large LLM Inference with MLX and RDMA on Mac Studio",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 12,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Apple",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://machinelearning.apple.com/research/mlx-distributed-inference",
+      "name": "Apple Machine Learning Research",
+      "type": "official",
+      "publishedAt": "2026-10-15T00:00:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "98e6a11f87f3",
+    "url": "https://machinelearning.apple.com/research/mlx-distributed-inference",
+    "canonicalUrl": "https://machinelearning.apple.com/research/mlx-distributed-inference",
+    "title": "Local and Distributed Large LLM Inference with MLX and RDMA on Mac Studio",
+    "excerpt": "MLX on Mac with Apple silicon lets AI researchers and developers experiment locally with the latest models and methods in a private environment. The open-source array framework leverages the unified memory architecture of Apple silicon, enabling anyone to run new inference and fine-tuning methods on",
+    "publishedAt": "2026-10-15T00:00:00.000Z",
+    "sourceId": "apple-ml",
+    "sourceName": "Apple Machine Learning Research",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://machinelearning.apple.com/rss.xml",
+    "fetchedAt": "2026-10-17T13:40:53.584Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 14771,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "MLX on Mac with Apple silicon lets AI researchers and developers experiment locally with the latest models and methods in a private environment. The open-source array framework leverages the unified memory architecture of Apple silicon, enabling anyone to run new inference and fine-tuning methods on",
+        "sourceUrl": "https://machinelearning.apple.com/research/mlx-distributed-inference",
+        "source": "Apple Machine Learning Research",
+        "publishedAt": "2026-10-15T00:00:00.000Z",
+        "checkedAt": "2026-10-17T00:24:03.515Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "• • Local and Distributed Large LLM Inference with MLX and RDMA on Mac Studio - Apple Machine Learning Research • • • • • • • • • • • • • • • • • content type Featured highlight",
+        "sourceUrl": "https://machinelearning.apple.com/research/mlx-distributed-inference",
+        "source": "Apple Machine Learning Research",
+        "publishedAt": "2026-10-15T00:00:00.000Z",
+        "checkedAt": "2026-10-17T00:24:03.515Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Local and Distributed Large LLM Inference with MLX and RDMA on Mac Studio",
+        "sourceUrl": "https://machinelearning.apple.com/research/mlx-distributed-inference",
+        "source": "Apple Machine Learning Research",
+        "publishedAt": "2026-10-15T00:00:00.000Z",
+        "checkedAt": "2026-10-17T00:24:03.515Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Beginning on a single Mac Studio (up to 512GB of unified memory), then scaling out across multiple Macs with the RDMA over Thunderbolt driver, below we share an overview of the range of models you can now run on Mac Studio.",
+        "sourceUrl": "https://machinelearning.apple.com/research/mlx-distributed-inference",
+        "source": "Apple Machine Learning Research",
+        "publishedAt": "2026-10-15T00:00:00.000Z",
+        "checkedAt": "2026-10-17T00:24:03.515Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Figure 1: Muse Spark Open decode speed in tokens per second, on Mac Studio with M5 Ultra, at a context size of 8,192 tokens.",
+        "sourceUrl": "https://machinelearning.apple.com/research/mlx-distributed-inference",
+        "source": "Apple Machine Learning Research",
+        "publishedAt": "2026-10-15T00:00:00.000Z",
+        "checkedAt": "2026-10-17T00:24:03.515Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "We report performance for three parallelization schemes: pipeline parallelization over two Mac Studio computers (2 M5 Pipeline), and tensor parallelization over two (2 M5 Tensor) and four Mac Studio (4 M5 Tensor) computers.",
+        "sourceUrl": "https://machinelearning.apple.com/research/mlx-distributed-inference",
+        "source": "Apple Machine Learning Research",
+        "publishedAt": "2026-10-15T00:00:00.000Z",
+        "checkedAt": "2026-10-17T00:24:03.515Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Qwen 3.8 27B and Mistral Medium 3.5 128B fit comfortably on a single Mac Studio with 512GB, taking up to 68GB and 158GB of RAM in the large context size (65,536 tokens) setup.",
+        "sourceUrl": "https://machinelearning.apple.com/research/mlx-distributed-inference",
+        "source": "Apple Machine Learning Research",
+        "publishedAt": "2026-10-15T00:00:00.000Z",
+        "checkedAt": "2026-10-17T00:24:03.515Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "In Figure 2 , we compare their inference performance on a single Mac Studio with 512GB of RAM, both on M3 Ultra and M5 Ultra.",
+        "sourceUrl": "https://machinelearning.apple.com/research/mlx-distributed-inference",
+        "source": "Apple Machine Learning Research",
+        "publishedAt": "2026-10-15T00:00:00.000Z",
+        "checkedAt": "2026-10-17T00:24:03.515Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "That makes the Mac Studio with M5 Ultra the desktop of choice when it comes to handling tasks involving very large contexts.",
+        "sourceUrl": "https://machinelearning.apple.com/research/mlx-distributed-inference",
+        "source": "Apple Machine Learning Research",
+        "publishedAt": "2026-10-15T00:00:00.000Z",
+        "checkedAt": "2026-10-17T00:24:03.515Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "The Mac Studio is also energy-efficient for LLM inference (see Figure 4 ): peak power consumption is about 200W for the Mac Studio with M3 Ultra, and 300W for the Mac Studio with M5 Ultra — a fraction of the power used by a common toaster.",
+        "sourceUrl": "https://machinelearning.apple.com/research/mlx-distributed-inference",
+        "source": "Apple Machine Learning Research",
+        "publishedAt": "2026-10-15T00:00:00.000Z",
+        "checkedAt": "2026-10-17T00:24:03.515Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Figure 4: Peak power consumption (in watts) during Qwen 3.8 and Mistral Medium 3.5 inference, at a context size of 65,536 tokens, on Mac Studio with M3 Ultra and with M5 Ultra.",
+        "sourceUrl": "https://machinelearning.apple.com/research/mlx-distributed-inference",
+        "source": "Apple Machine Learning Research",
+        "publishedAt": "2026-10-15T00:00:00.000Z",
+        "checkedAt": "2026-10-17T00:24:03.515Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "We can then pipeline the model’s inference across two computers: the first Mac Studio executes the first half of the model’s layers, then sends the output to the second Mac Studio, which executes the second half.",
+        "sourceUrl": "https://machinelearning.apple.com/research/mlx-distributed-inference",
+        "source": "Apple Machine Learning Research",
+        "publishedAt": "2026-10-15T00:00:00.000Z",
+        "checkedAt": "2026-10-17T00:24:03.515Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Each of these helps on its own, but it is their combination with the latest Apple silicon — Mac Studio with M5 Ultra, Neural Accelerators in the M5 Ultra GPU, 512GB of unified memory, and RDMA over Thunderbolt 5 — that now lets us run models like Muse Spark Open with more than…",
+        "sourceUrl": "https://machinelearning.apple.com/research/mlx-distributed-inference",
+        "source": "Apple Machine Learning Research",
+        "publishedAt": "2026-10-15T00:00:00.000Z",
+        "checkedAt": "2026-10-17T00:24:03.515Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "MODEL_MENTION"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 MODEL_MENTION (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}
