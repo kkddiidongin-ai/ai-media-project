@@ -1,0 +1,234 @@
+{
+  "id": "eba0144b322c",
+  "date": "2026-11-25",
+  "proposedSlug": "omnievaluator-ai",
+  "title": null,
+  "sourceTitle": "OmniEvaluator: AI 모델과 에이전트를 위한 통합 평가 프레임워크",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 10,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": true,
+      "contextNeed": true,
+      "distinctFacts": true,
+      "evidenceQuality": false,
+      "standardWouldOmit": true
+    },
+    "deepMissing": [
+      "importance",
+      "evidenceQuality"
+    ]
+  },
+  "company": "NAVER D2",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://d2.naver.com/helloworld/4331341",
+      "name": "NAVER D2",
+      "type": "official",
+      "publishedAt": "2026-11-25T04:38:18.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "eba0144b322c",
+    "url": "https://d2.naver.com/helloworld/4331341",
+    "canonicalUrl": "https://d2.naver.com/helloworld/4331341",
+    "title": "OmniEvaluator: AI 모델과 에이전트를 위한 통합 평가 프레임워크",
+    "excerpt": "네이버 사내 기술 교류 행사인 NAVER Engineering Day 10th 에서 발표되었던 세션을 공개합니다. ​ 발표 내용 AI 서비스를 만들 때 \"이 모델, 우리 서비스에 써도 될까?\"라는 질문은 도입 전(후보 모델·API·툴 조합 비교)과 도입 후(의도대로 서빙되는지, 패치·버전별 차이) 반복해서 돌아옵니다. 그런데 이 질문에 답하는 비용은 큽니다. 모달리티마다 평가 툴킷이 다르고, 같은 벤치마크라도 프롬프트·파서·메트릭 구현에 따라 점수가 수십 점씩 갈라지며, 결과는 사람 손으로 모아야 합니다. ​ OmniEvaluato",
+    "publishedAt": "2026-11-25T04:38:18.000Z",
+    "sourceId": "naver-d2",
+    "sourceName": "NAVER D2",
+    "sourceType": "official",
+    "tier": 2,
+    "fetchMode": "rss",
+    "discoveredVia": "https://d2.naver.com/d2.atom",
+    "fetchedAt": "2026-11-25T04:52:53.803Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 1666,
+    "grade": "LIMITED",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "네이버 사내 기술 교류 행사인 NAVER Engineering Day 10th 에서 발표되었던 세션을 공개합니다. ​ 발표 내용 AI 서비스를 만들 때 \"이 모델, 우리 서비스에 써도 될까?\"라는 질문은 도입 전(후보 모델·API·툴 조합 비교)과 도입 후(의도대로 서빙되는지, 패치·버전별 차이) 반복해서 돌아옵니다. 그런데 이 질문에 답하는 비용은 큽니다. 모달리티마다 평가 툴킷이 다르고, 같은 벤치마크라도 프롬프트·파서·메트릭 구현에 따라 점수가 수십 점씩 갈라지며, 결과는 사람 손으로 모아야 합니다. ​ OmniEvaluato",
+        "sourceUrl": "https://d2.naver.com/helloworld/4331341",
+        "source": "NAVER D2",
+        "publishedAt": "2026-11-25T04:38:18.000Z",
+        "checkedAt": "2026-11-25T04:54:05.496Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "OmniEvaluator: AI 모델과 에이전트를 위한 통합 평가 프레임워크",
+        "sourceUrl": "https://d2.naver.com/helloworld/4331341",
+        "source": "NAVER D2",
+        "publishedAt": "2026-11-25T04:38:18.000Z",
+        "checkedAt": "2026-11-25T04:54:05.496Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "네이버 사내 기술 교류 행사인 NAVER Engineering Day 10th 에서 발표되었던 세션을 공개합니다.",
+        "sourceUrl": "https://d2.naver.com/helloworld/4331341",
+        "source": "NAVER D2",
+        "publishedAt": "2026-11-25T04:38:18.000Z",
+        "checkedAt": "2026-11-25T04:54:05.496Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "AI 서비스를 만들 때 \"이 모델, 우리 서비스에 써도 될까?\"라는 질문은 도입 전(후보 모델·API·툴 조합 비교)과 도입 후(의도대로 서빙되는지, 패치·버전별 차이) 반복해서 돌아옵니다. 그런데 이 질문에 답하는 비용은 큽니다. 모달리티마다 평가 툴킷이 다르고, 같은 벤치마크라도 프롬프트·파서·메트릭 구현에 따라 점수가 수십 점씩 갈라지며, 결과는 사람 손으로 모아야 합니다.",
+        "sourceUrl": "https://d2.naver.com/helloworld/4331341",
+        "source": "NAVER D2",
+        "publishedAt": "2026-11-25T04:38:18.000Z",
+        "checkedAt": "2026-11-25T04:54:05.496Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "OmniEvaluator는 이 문제를 구조적으로 푸는 통합 평가 프레임워크입니다. 추론 엔진 4종(HF Transformers·vLLM·SGLang·상용 API)과 평가 프레임워크 4종(lm-eval-harness·lmms-eval·VLMEvalKit·built-in)을 하나의 중간 스키마로 연결해 텍스트·이미지·비디오·오디오 1,000개 이상의 벤치마크를 하나의 인터페이스로 실행합니다.",
+        "sourceUrl": "https://d2.naver.com/helloworld/4331341",
+        "source": "NAVER D2",
+        "publishedAt": "2026-11-25T04:38:18.000Z",
+        "checkedAt": "2026-11-25T04:54:05.496Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "모든 실행은 설정·예측·점수를 담은 아티팩트로 남아 그대로 재현할 수 있고, CPU에서 도는 내장 Verifier가 프롬프트·프레임워크 차이에 흔들리지 않는 채점 신호를 제공합니다.",
+        "sourceUrl": "https://d2.naver.com/helloworld/4331341",
+        "source": "NAVER D2",
+        "publishedAt": "2026-11-25T04:38:18.000Z",
+        "checkedAt": "2026-11-25T04:54:05.496Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "2026년에는 Agent Harness가 추가되어 기존 벤치마크에 옵션 두 개만 붙이면 툴 호출 궤적까지 채점하는 Agent 평가로 전환되며, 대시보드에서 요청 → 진행 → 결과 → 샘플을 한곳에서 확인할 수 있습니다.",
+        "sourceUrl": "https://d2.naver.com/helloworld/4331341",
+        "source": "NAVER D2",
+        "publishedAt": "2026-11-25T04:38:18.000Z",
+        "checkedAt": "2026-11-25T04:54:05.496Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "논문: A Composable Evaluation System for Reproducible Omni-Modal Foundation Model Evaluation (EMNLP 2026 System Demonstrations, arXiv 2609.01315)",
+        "sourceUrl": "https://d2.naver.com/helloworld/4331341",
+        "source": "NAVER D2",
+        "publishedAt": "2026-11-25T04:38:18.000Z",
+        "checkedAt": "2026-11-25T04:54:05.496Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "모델 평가 담당자: 여러 모달리티·프레임워크에 걸친 평가 환경을 하나로 통합하려는 분",
+        "sourceUrl": "https://d2.naver.com/helloworld/4331341",
+        "source": "NAVER D2",
+        "publishedAt": "2026-11-25T04:38:18.000Z",
+        "checkedAt": "2026-11-25T04:54:05.496Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "NAVER에서는 사내 개발 경험과 기술 트렌드를 교류를 할 수 있는 프로그램이 많이 있습니다. 그중 이제는 매회 평균 100개 이상의 발표가 이루어지는 NAVER Engineering Day를 빼놓을 수 없는데요.",
+        "sourceUrl": "https://d2.naver.com/helloworld/4331341",
+        "source": "NAVER D2",
+        "publishedAt": "2026-11-25T04:38:18.000Z",
+        "checkedAt": "2026-11-25T04:54:05.496Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "2016년부터 시작된 ENGINEERING DAY는 실무에서의 기술 개발 경험과 새로운 기술과 플랫폼 도입 시 유용하게 활용될 수 있는 팁 등을 공유하며 서로 배우고 성장하는 네이버의 대표적인 사내 개발자 행사입니다.( 관련 포스팅 보기 )",
+        "sourceUrl": "https://d2.naver.com/helloworld/4331341",
+        "source": "NAVER D2",
+        "publishedAt": "2026-11-25T04:38:18.000Z",
+        "checkedAt": "2026-11-25T04:54:05.496Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "네이버 TV 서비스 종료로 인해 기존 네이버 TV 채널을 클립( @devrel_d2 )으로 이동하였습니다.",
+        "sourceUrl": "https://d2.naver.com/helloworld/4331341",
+        "source": "NAVER D2",
+        "publishedAt": "2026-11-25T04:38:18.000Z",
+        "checkedAt": "2026-11-25T04:54:05.496Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "글쓴이 이호동 | NAVER Cloud Semantic Perception 소개 Hyperscale AI 소속으로 대형 멀티모달 AI 모델에 대한 연구/개발을 수행하고 있습니다.",
+        "sourceUrl": "https://d2.naver.com/helloworld/4331341",
+        "source": "NAVER D2",
+        "publishedAt": "2026-11-25T04:38:18.000Z",
+        "checkedAt": "2026-11-25T04:54:05.496Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 3,
+    "practicalImpact": 2,
+    "koreanRelevance": 3,
+    "novelty": 2,
+    "sourceQuality": 2,
+    "verificationConfidence": 3,
+    "signals": [
+      "API_PLATFORM",
+      "KOREA",
+      "PRODUCT_LAUNCH",
+      "MODEL_MENTION"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 13,
+    "total": 13
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 API_PLATFORM·KOREA·PRODUCT_LAUNCH·MODEL_MENTION (우선순위 13)",
+    "근거 확인 통과 (확인 사실 10개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "none",
+    "model": null,
+    "status": "skipped",
+    "error": "Shadow Mode — 원고를 만들지 않음",
+    "promptVersion": "draft-v2",
+    "at": "2026-11-25T04:54:06.563Z",
+    "evidenceHash": "ff7c10156367"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": true,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}
