@@ -1,0 +1,234 @@
+{
+  "id": "38f3d822d564",
+  "date": "2026-11-25",
+  "proposedSlug": "turn-artifacts-mac-windows-apps",
+  "title": null,
+  "sourceTitle": "Turn artifacts into Mac and Windows apps",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 8,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Anthropic",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://claude.com/resources/articles/install-as-app",
+      "name": "Claude (claude.com articles)",
+      "type": "official",
+      "publishedAt": "2026-11-24T00:00:00.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "38f3d822d564",
+    "url": "https://claude.com/resources/articles/install-as-app",
+    "canonicalUrl": "https://claude.com/resources/articles/install-as-app",
+    "title": "Turn artifacts into Mac and Windows apps",
+    "excerpt": "Open the artifacts you use every day like any other app, and let them do more on your computer. Rolling out in beta in Claude for Mac and Windows.",
+    "publishedAt": "2026-11-24T00:00:00.000Z",
+    "sourceId": "claude-blog",
+    "sourceName": "Claude (claude.com articles)",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "listing-meta",
+    "discoveredVia": "https://claude.com/resources/articles",
+    "fetchedAt": "2026-11-25T04:52:53.803Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 3364,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Open the artifacts you use every day like any other app, and let them do more on your computer. Rolling out in beta in Claude for Mac and Windows.",
+        "sourceUrl": "https://claude.com/resources/articles/install-as-app",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-24T00:00:00.000Z",
+        "checkedAt": "2026-11-24T20:39:30.392Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "• • • • • • • • • • Turn artifacts into Mac and Windows apps | Claude by Anthropic • • •",
+        "sourceUrl": "https://claude.com/resources/articles/install-as-app",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-24T00:00:00.000Z",
+        "checkedAt": "2026-11-24T20:39:30.392Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Skip to main content Starting today, you can use Claude artifacts to create, run, and share desktop apps.",
+        "sourceUrl": "https://claude.com/resources/articles/install-as-app",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-24T00:00:00.000Z",
+        "checkedAt": "2026-11-24T20:39:30.392Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "The \"Install as app\" feature is rolling out in beta in Claude for Mac and Windows.",
+        "sourceUrl": "https://claude.com/resources/articles/install-as-app",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-24T00:00:00.000Z",
+        "checkedAt": "2026-11-24T20:39:30.392Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "When an artifact is installed as a Mac or Windows app, it gets its own icon and opens in its own window instead of inside Claude.",
+        "sourceUrl": "https://claude.com/resources/articles/install-as-app",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-24T00:00:00.000Z",
+        "checkedAt": "2026-11-24T20:39:30.392Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "This simplifies the process for building and maintaining apps for both knowledge workers and developers.",
+        "sourceUrl": "https://claude.com/resources/articles/install-as-app",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-24T00:00:00.000Z",
+        "checkedAt": "2026-11-24T20:39:30.392Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Requests the app makes to Claude count toward your plan’s usage limits.",
+        "sourceUrl": "https://claude.com/resources/articles/install-as-app",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-24T00:00:00.000Z",
+        "checkedAt": "2026-11-24T20:39:30.392Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Artifacts started out as a work output you’d share, like a chart or a webpage.",
+        "sourceUrl": "https://claude.com/resources/articles/install-as-app",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-24T00:00:00.000Z",
+        "checkedAt": "2026-11-24T20:39:30.392Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "If you rely on a tool for work, it should open like the rest of your apps and remind you when something needs your attention.",
+        "sourceUrl": "https://claude.com/resources/articles/install-as-app",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-24T00:00:00.000Z",
+        "checkedAt": "2026-11-24T20:39:30.392Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "App permissions: Apps can ask to use common features that Claude can tightly control, like creating always-on-top windows, listening for global shortcuts, or sending notifications.",
+        "sourceUrl": "https://claude.com/resources/articles/install-as-app",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-24T00:00:00.000Z",
+        "checkedAt": "2026-11-24T20:39:30.392Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "You can only give full access to apps you made or, on Team and Enterprise, apps made by people in your organization.",
+        "sourceUrl": "https://claude.com/resources/articles/install-as-app",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-24T00:00:00.000Z",
+        "checkedAt": "2026-11-24T20:39:30.392Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Anthropic doesn’t review apps before you install them, so only give full access to apps you trust.",
+        "sourceUrl": "https://claude.com/resources/articles/install-as-app",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-24T00:00:00.000Z",
+        "checkedAt": "2026-11-24T20:39:30.392Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Update Claude for Mac or Windows, open an artifact you use every day, and choose \"Install as app\" from the Share menu.",
+        "sourceUrl": "https://claude.com/resources/articles/install-as-app",
+        "source": "Claude (claude.com articles)",
+        "publishedAt": "2026-11-24T00:00:00.000Z",
+        "checkedAt": "2026-11-24T20:39:30.392Z"
+      }
+    ],
+    "pageDate": "2026-11-24T00:00:00.000Z"
+  },
+  "score": {
+    "importance": 2,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PRODUCT_LAUNCH",
+      "PREVIEW"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 7,
+    "total": 7
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 PRODUCT_LAUNCH·PREVIEW (우선순위 7)",
+    "근거 확인 통과 (확인 사실 8개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "none",
+    "model": null,
+    "status": "skipped",
+    "error": "Shadow Mode — 원고를 만들지 않음",
+    "promptVersion": "draft-v2",
+    "at": "2026-11-25T04:54:06.564Z",
+    "evidenceHash": "2e899f9689df"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}
