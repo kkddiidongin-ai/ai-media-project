@@ -1,0 +1,221 @@
+{
+  "id": "bc760996ce3c",
+  "date": "2026-11-26",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Get Started with GPU-Accelerated DuckDB Analytics Using the Sirius Core Extension",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "NVIDIA",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://developer.nvidia.com/blog/get-started-with-gpu-accelerated-duckdb-analytics-using-the-sirius-core-extension/",
+      "name": "NVIDIA Technical Blog",
+      "type": "official",
+      "publishedAt": "2026-11-23T17:09:28.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "bc760996ce3c",
+    "url": "https://developer.nvidia.com/blog/get-started-with-gpu-accelerated-duckdb-analytics-using-the-sirius-core-extension/",
+    "canonicalUrl": "https://developer.nvidia.com/blog/get-started-with-gpu-accelerated-duckdb-analytics-using-the-sirius-core-extension",
+    "title": "Get Started with GPU-Accelerated DuckDB Analytics Using the Sirius Core Extension",
+    "excerpt": "As datasets grow, analytical queries can take longer to run, slowing down data exploration, pipelines, and applications. For developers using DuckDB, reducing...",
+    "publishedAt": "2026-11-23T17:09:28.000Z",
+    "sourceId": "nvidia-developer",
+    "sourceName": "NVIDIA Technical Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://developer.nvidia.com/blog/feed",
+    "fetchedAt": "2026-11-25T19:54:18.346Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 7840,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "As datasets grow, analytical queries can take longer to run, slowing down data exploration, pipelines, and applications. For developers using DuckDB, reducing...",
+        "sourceUrl": "https://developer.nvidia.com/blog/get-started-with-gpu-accelerated-duckdb-analytics-using-the-sirius-core-extension/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-23T17:09:28.000Z",
+        "checkedAt": "2026-11-25T19:55:44.259Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Get Started with GPU-Accelerated DuckDB Analytics Using the Sirius Core Extension | NVIDIA Technical Blog",
+        "sourceUrl": "https://developer.nvidia.com/blog/get-started-with-gpu-accelerated-duckdb-analytics-using-the-sirius-core-extension/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-23T17:09:28.000Z",
+        "checkedAt": "2026-11-25T19:55:44.259Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Get Started with GPU-Accelerated DuckDB Analytics Using the Sirius Core Extension",
+        "sourceUrl": "https://developer.nvidia.com/blog/get-started-with-gpu-accelerated-duckdb-analytics-using-the-sirius-core-extension/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-23T17:09:28.000Z",
+        "checkedAt": "2026-11-25T19:55:44.259Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Sirius is a GPU-native SQL engine released as a DuckDB core extension through collaboration between NVIDIA and DuckLabs.",
+        "sourceUrl": "https://developer.nvidia.com/blog/get-started-with-gpu-accelerated-duckdb-analytics-using-the-sirius-core-extension/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-23T17:09:28.000Z",
+        "checkedAt": "2026-11-25T19:55:44.259Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Benchmark tests using TPC-H queries at scale factors up to 10 TB showed 3.25x to 5.50x speedups and up to 79% lower query-time compute cost with tuned two-GPU configurations.",
+        "sourceUrl": "https://developer.nvidia.com/blog/get-started-with-gpu-accelerated-duckdb-analytics-using-the-sirius-core-extension/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-23T17:09:28.000Z",
+        "checkedAt": "2026-11-25T19:55:44.259Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Install the Sirius core extension to begin accelerating analytical queries.",
+        "sourceUrl": "https://developer.nvidia.com/blog/get-started-with-gpu-accelerated-duckdb-analytics-using-the-sirius-core-extension/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-23T17:09:28.000Z",
+        "checkedAt": "2026-11-25T19:55:44.259Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "NVIDIA and DuckLabs collaborated to release Sirius as a DuckDB core extension, bringing GPU acceleration to DuckDB’s analytical query engine.",
+        "sourceUrl": "https://developer.nvidia.com/blog/get-started-with-gpu-accelerated-duckdb-analytics-using-the-sirius-core-extension/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-23T17:09:28.000Z",
+        "checkedAt": "2026-11-25T19:55:44.259Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "This post introduces the core extension, shows you how to run your first GPU query, and explains how Sirius integrates with DuckDB.",
+        "sourceUrl": "https://developer.nvidia.com/blog/get-started-with-gpu-accelerated-duckdb-analytics-using-the-sirius-core-extension/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-23T17:09:28.000Z",
+        "checkedAt": "2026-11-25T19:55:44.259Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "The core extension brings this capability into DuckDB’s standard workflow: install Sirius, load it, and run your queries.",
+        "sourceUrl": "https://developer.nvidia.com/blog/get-started-with-gpu-accelerated-duckdb-analytics-using-the-sirius-core-extension/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-23T17:09:28.000Z",
+        "checkedAt": "2026-11-25T19:55:44.259Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "We evaluated Sirius against CPU-based DuckDB using cold runs of queries derived from the TPC-H benchmark, with data stored in Amazon S3.",
+        "sourceUrl": "https://developer.nvidia.com/blog/get-started-with-gpu-accelerated-duckdb-analytics-using-the-sirius-core-extension/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-23T17:09:28.000Z",
+        "checkedAt": "2026-11-25T19:55:44.259Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Cold-run TPC-H query runtime and compute cost for Sirius and CPU-based DuckDB at SF100, SF1K, SF3K, and SF10K",
+        "sourceUrl": "https://developer.nvidia.com/blog/get-started-with-gpu-accelerated-duckdb-analytics-using-the-sirius-core-extension/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-23T17:09:28.000Z",
+        "checkedAt": "2026-11-25T19:55:44.259Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "With tuned settings, Sirius running on AWS instances with two NVIDIA GPUs delivered 3.25x to 5.50x speedups over the best tested CPU-based DuckDB configurations.",
+        "sourceUrl": "https://developer.nvidia.com/blog/get-started-with-gpu-accelerated-duckdb-analytics-using-the-sirius-core-extension/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-23T17:09:28.000Z",
+        "checkedAt": "2026-11-25T19:55:44.259Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "The Sirius core extension brings GPU-accelerated analytics into DuckDB’s familiar SQL workflow.",
+        "sourceUrl": "https://developer.nvidia.com/blog/get-started-with-gpu-accelerated-duckdb-analytics-using-the-sirius-core-extension/",
+        "source": "NVIDIA Technical Blog",
+        "publishedAt": "2026-11-23T17:09:28.000Z",
+        "checkedAt": "2026-11-25T19:55:44.259Z"
+      }
+    ],
+    "pageDate": "2026-11-23T17:09:28.000Z"
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "INFRA"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 INFRA (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}
