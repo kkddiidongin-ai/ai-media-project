@@ -1,0 +1,233 @@
+{
+  "id": "c0d40e212e2d",
+  "date": "2026-11-27",
+  "proposedSlug": "copilot-code-review-billing-will-default-organization",
+  "title": null,
+  "sourceTitle": "Copilot code review billing will default to the organization",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 12,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": true,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": false,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "contextNeed",
+      "evidenceQuality",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "GitHub",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://github.blog/changelog/2026-11-25-copilot-code-review-billing-will-default-to-the-organization",
+      "name": "GitHub Changelog",
+      "type": "official",
+      "publishedAt": "2026-11-25T22:18:03.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "c0d40e212e2d",
+    "url": "https://github.blog/changelog/2026-11-25-copilot-code-review-billing-will-default-to-the-organization",
+    "canonicalUrl": "https://github.blog/changelog/2026-11-25-copilot-code-review-billing-will-default-to-the-organization",
+    "title": "Copilot code review billing will default to the organization",
+    "excerpt": "If you haven’t chosen how to bill Copilot code review for members with a Copilot license, those reviews will be billed to your organization starting December 30, 2026. To keep… The post Copilot code review billing will default to the organization appeared first on The GitHub Blog .",
+    "publishedAt": "2026-11-25T22:18:03.000Z",
+    "sourceId": "github-changelog",
+    "sourceName": "GitHub Changelog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss-paged",
+    "discoveredVia": "https://github.blog/changelog/feed/",
+    "fetchedAt": "2026-11-26T19:32:46.748Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 1621,
+    "grade": "LIMITED",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "If you haven’t chosen how to bill Copilot code review for members with a Copilot license, those reviews will be billed to your organization starting December 30, 2026. To keep… The post Copilot code review billing will default to the organization appeared first on The GitHub Blog .",
+        "sourceUrl": "https://github.blog/changelog/2026-11-25-copilot-code-review-billing-will-default-to-the-organization",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-25T22:18:03.000Z",
+        "checkedAt": "2026-11-26T19:33:57.615Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Copilot code review billing will default to the organization - GitHub Changelog",
+        "sourceUrl": "https://github.blog/changelog/2026-11-25-copilot-code-review-billing-will-default-to-the-organization",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-25T22:18:03.000Z",
+        "checkedAt": "2026-11-26T19:33:57.615Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "If you haven&rsquo;t chosen how to bill Copilot code review for members with a Copilot license, those reviews will be billed to your organization starting December 30, 2026.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-25-copilot-code-review-billing-will-default-to-the-organization",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-25T22:18:03.000Z",
+        "checkedAt": "2026-11-26T19:33:57.615Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "This change applies to organizations and enterprises with Copilot Business or Copilot Enterprise.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-25-copilot-code-review-billing-will-default-to-the-organization",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-25T22:18:03.000Z",
+        "checkedAt": "2026-11-26T19:33:57.615Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Today, when no billing choice is saved, reviews by members who have a paid Copilot license use the member&rsquo;s Copilot entitlement.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-25-copilot-code-review-billing-will-default-to-the-organization",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-25T22:18:03.000Z",
+        "checkedAt": "2026-11-26T19:33:57.615Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Starting December 30, 2026, those reviews will be billed to the organization that owns the repository.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-25-copilot-code-review-billing-will-default-to-the-organization",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-25T22:18:03.000Z",
+        "checkedAt": "2026-11-26T19:33:57.615Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "Accounts that don&rsquo;t have AI Credits paid usage enabled, have a billing lock, or have no billable customer will be set to Member instead.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-25-copilot-code-review-billing-will-default-to-the-organization",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-25T22:18:03.000Z",
+        "checkedAt": "2026-11-26T19:33:57.615Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "To keep using members&rsquo; Copilot entitlements, select Member in your enterprise or organization Copilot policy settings.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-25-copilot-code-review-billing-will-default-to-the-organization",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-25T22:18:03.000Z",
+        "checkedAt": "2026-11-26T19:33:57.615Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Organization billing requires AI Credits paid usage and can increase your organization&rsquo;s spending.",
+        "sourceUrl": "https://github.blog/changelog/2026-11-25-copilot-code-review-billing-will-default-to-the-organization",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-25T22:18:03.000Z",
+        "checkedAt": "2026-11-26T19:33:57.615Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "To learn more, see Configuring code review by GitHub Copilot .",
+        "sourceUrl": "https://github.blog/changelog/2026-11-25-copilot-code-review-billing-will-default-to-the-organization",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-25T22:18:03.000Z",
+        "checkedAt": "2026-11-26T19:33:57.615Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "OpenAI’s GPT-6.2 Astra and GPT-6.2 Sol now available",
+        "sourceUrl": "https://github.blog/changelog/2026-11-25-copilot-code-review-billing-will-default-to-the-organization",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-25T22:18:03.000Z",
+        "checkedAt": "2026-11-26T19:33:57.615Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Copilot code review: Adaptive effort, secret detection, and more",
+        "sourceUrl": "https://github.blog/changelog/2026-11-25-copilot-code-review-billing-will-default-to-the-organization",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-25T22:18:03.000Z",
+        "checkedAt": "2026-11-26T19:33:57.615Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "MAI Code 2 and MAI Code 2 Flash in GitHub Copilot",
+        "sourceUrl": "https://github.blog/changelog/2026-11-25-copilot-code-review-billing-will-default-to-the-organization",
+        "source": "GitHub Changelog",
+        "publishedAt": "2026-11-25T22:18:03.000Z",
+        "checkedAt": "2026-11-26T19:33:57.615Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 2,
+    "practicalImpact": 1,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PRICING"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 7,
+    "total": 7
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 PRICING (우선순위 7)",
+    "근거 확인 통과 (확인 사실 12개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "none",
+    "model": null,
+    "status": "skipped",
+    "error": "Shadow Mode — 원고를 만들지 않음",
+    "promptVersion": "draft-v2",
+    "at": "2026-11-26T19:33:59.974Z",
+    "evidenceHash": "1e9aacaaadd4"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}
