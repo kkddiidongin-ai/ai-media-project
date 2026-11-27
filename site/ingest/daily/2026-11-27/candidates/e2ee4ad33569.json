@@ -1,0 +1,221 @@
+{
+  "id": "e2ee4ad33569",
+  "date": "2026-11-27",
+  "proposedSlug": null,
+  "title": null,
+  "sourceTitle": "Verifiable Social Reasoning for LLM Assistants",
+  "depth": null,
+  "suggestedDepth": "SHORT",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 8,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": false,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "userImpact",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Google",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://research.google/blog/verifiable-social-reasoning-for-llm-assistants/",
+      "name": "Google Research Blog",
+      "type": "official",
+      "publishedAt": "2026-11-25T17:10:27.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "e2ee4ad33569",
+    "url": "https://research.google/blog/verifiable-social-reasoning-for-llm-assistants/",
+    "canonicalUrl": "https://research.google/blog/verifiable-social-reasoning-for-llm-assistants",
+    "title": "Verifiable Social Reasoning for LLM Assistants",
+    "excerpt": "Generative AI",
+    "publishedAt": "2026-11-25T17:10:27.000Z",
+    "sourceId": "google-research",
+    "sourceName": "Google Research Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://research.google/blog/rss/",
+    "fetchedAt": "2026-11-27T04:08:56.310Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 9701,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Generative AI",
+        "sourceUrl": "https://research.google/blog/verifiable-social-reasoning-for-llm-assistants/",
+        "source": "Google Research Blog",
+        "publishedAt": "2026-11-25T17:10:27.000Z",
+        "checkedAt": "2026-11-26T19:33:59.860Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Verifiable Social Reasoning for LLM Assistants",
+        "sourceUrl": "https://research.google/blog/verifiable-social-reasoning-for-llm-assistants/",
+        "source": "Google Research Blog",
+        "publishedAt": "2026-11-25T17:10:27.000Z",
+        "checkedAt": "2026-11-26T19:33:59.860Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "We introduce an evaluation framework based on multi-agent social simulations that quantifies how well AI assistants understand social situations from users' subjective narratives.",
+        "sourceUrl": "https://research.google/blog/verifiable-social-reasoning-for-llm-assistants/",
+        "source": "Google Research Blog",
+        "publishedAt": "2026-11-25T17:10:27.000Z",
+        "checkedAt": "2026-11-26T19:33:59.860Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Large Language Models (LLMs) are widely used for everyday personal support and advice, yet evaluating their social reasoning in such consultation settings remains challenging since (1) it requires setups where the assistant learns about social situations from subjective user n…",
+        "sourceUrl": "https://research.google/blog/verifiable-social-reasoning-for-llm-assistants/",
+        "source": "Google Research Blog",
+        "publishedAt": "2026-11-25T17:10:27.000Z",
+        "checkedAt": "2026-11-26T19:33:59.860Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "Designed to address both of these challenges, we introduce an evaluation framework for social reasoning based on multi-agent simulations.",
+        "sourceUrl": "https://research.google/blog/verifiable-social-reasoning-for-llm-assistants/",
+        "source": "Google Research Blog",
+        "publishedAt": "2026-11-25T17:10:27.000Z",
+        "checkedAt": "2026-11-26T19:33:59.860Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Evaluating a diverse range of LLMs through our framework reveals that relying on subjective user mediation substantially complicates social reasoning.",
+        "sourceUrl": "https://research.google/blog/verifiable-social-reasoning-for-llm-assistants/",
+        "source": "Google Research Blog",
+        "publishedAt": "2026-11-25T17:10:27.000Z",
+        "checkedAt": "2026-11-26T19:33:59.860Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "We open-source the framework and dataset to encourage future research on user-mediated social reasoning.",
+        "sourceUrl": "https://research.google/blog/verifiable-social-reasoning-for-llm-assistants/",
+        "source": "Google Research Blog",
+        "publishedAt": "2026-11-25T17:10:27.000Z",
+        "checkedAt": "2026-11-26T19:33:59.860Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "AI assistants operate within a user-mediated reality: the assistant hears about social events only through the subjective lens of the user, making it challenging to reason objectively about the true motive of an actor in the user’s circle.",
+        "sourceUrl": "https://research.google/blog/verifiable-social-reasoning-for-llm-assistants/",
+        "source": "Google Research Blog",
+        "publishedAt": "2026-11-25T17:10:27.000Z",
+        "checkedAt": "2026-11-26T19:33:59.860Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "When evaluating LLMs’ social reasoning, it’s important to recognize that deployed assistants operate within a user-mediated reality .",
+        "sourceUrl": "https://research.google/blog/verifiable-social-reasoning-for-llm-assistants/",
+        "source": "Google Research Blog",
+        "publishedAt": "2026-11-25T17:10:27.000Z",
+        "checkedAt": "2026-11-26T19:33:59.860Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "To systematically evaluate LLM-based assistants’ social reasoning, we propose an evaluation framework based on multi-agent simulations that produces rich interpersonal dynamics between generative characters with three core principles:",
+        "sourceUrl": "https://research.google/blog/verifiable-social-reasoning-for-llm-assistants/",
+        "source": "Google Research Blog",
+        "publishedAt": "2026-11-25T17:10:27.000Z",
+        "checkedAt": "2026-11-26T19:33:59.860Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "Ground in social topics: We start with a definition of a set of social reasoning categories (e.g., desires, knowledge) that determine the scope of the evaluation.",
+        "sourceUrl": "https://research.google/blog/verifiable-social-reasoning-for-llm-assistants/",
+        "source": "Google Research Blog",
+        "publishedAt": "2026-11-25T17:10:27.000Z",
+        "checkedAt": "2026-11-26T19:33:59.860Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "Our framework makes it possible to systematically study what makes user-mediated social reasoning challenging, offering insights into how better assistants can be developed and evaluated.",
+        "sourceUrl": "https://research.google/blog/verifiable-social-reasoning-for-llm-assistants/",
+        "source": "Google Research Blog",
+        "publishedAt": "2026-11-25T17:10:27.000Z",
+        "checkedAt": "2026-11-26T19:33:59.860Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "Animated five-step pipeline diagram showing social reasoning input categories, scenario generation, multi-agent simulation with a hidden motive, user-assistant debrief chat, and Judge LLM motive evaluation.",
+        "sourceUrl": "https://research.google/blog/verifiable-social-reasoning-for-llm-assistants/",
+        "source": "Google Research Blog",
+        "publishedAt": "2026-11-25T17:10:27.000Z",
+        "checkedAt": "2026-11-26T19:33:59.860Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 1,
+    "practicalImpact": 0,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 2,
+    "signals": [
+      "MODEL_MENTION"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 4,
+    "total": 4
+  },
+  "decision": "HOLD",
+  "reasons": [
+    "사건 신호 MODEL_MENTION (우선순위 4)",
+    "근거는 있으나 우선순위 4 < 발행 추천 기준 6"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": null,
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": null,
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "approval": {
+    "status": "pending"
+  }
+}

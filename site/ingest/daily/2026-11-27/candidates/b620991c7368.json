@@ -1,0 +1,189 @@
+{
+  "id": "b620991c7368",
+  "date": "2026-11-27",
+  "proposedSlug": "ai",
+  "title": null,
+  "sourceTitle": "AI가 만든 결과를 그대로 믿고 계신가요?",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 5,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": true,
+      "contextNeed": true,
+      "distinctFacts": false,
+      "evidenceQuality": false,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "distinctFacts",
+      "evidenceQuality",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "NAVER D2",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://d2.naver.com/helloworld/5512498",
+      "name": "NAVER D2",
+      "type": "official",
+      "publishedAt": "2026-11-25T05:19:42.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "b620991c7368",
+    "url": "https://d2.naver.com/helloworld/5512498",
+    "canonicalUrl": "https://d2.naver.com/helloworld/5512498",
+    "title": "AI가 만든 결과를 그대로 믿고 계신가요?",
+    "excerpt": "네이버 사내 기술 교류 행사인 NAVER Engineering Day 10th 에서 발표되었던 세션을 공개합니다. ​ ​ 발표 내용 테스트는 전부 통과했는데 실제로는 결함이 남아 있던 경험에서 출발해, AI의 자기 보고를 기계가 반증하게 만든 세 가지 방법(돌연변이 테스팅, 훅, 에이전트 팀)을 공유합니다. ​ 발표 대상 AI가 만든 코드와 테스트를 검증하는 방법에 관심 있는 분 여러 AI 에이전트를 활용한 개발·리뷰에 관심 있는 분 ​ 목차 AI가 만든 결과를 어떻게 확인하는가 구현이 아니라 검증이 병목이 된 이유 확인이 막히는 ",
+    "publishedAt": "2026-11-25T05:19:42.000Z",
+    "sourceId": "naver-d2",
+    "sourceName": "NAVER D2",
+    "sourceType": "official",
+    "tier": 2,
+    "fetchMode": "rss",
+    "discoveredVia": "https://d2.naver.com/d2.atom",
+    "fetchedAt": "2026-11-27T04:08:56.310Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 853,
+    "grade": "LIMITED",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "네이버 사내 기술 교류 행사인 NAVER Engineering Day 10th 에서 발표되었던 세션을 공개합니다. ​ ​ 발표 내용 테스트는 전부 통과했는데 실제로는 결함이 남아 있던 경험에서 출발해, AI의 자기 보고를 기계가 반증하게 만든 세 가지 방법(돌연변이 테스팅, 훅, 에이전트 팀)을 공유합니다. ​ 발표 대상 AI가 만든 코드와 테스트를 검증하는 방법에 관심 있는 분 여러 AI 에이전트를 활용한 개발·리뷰에 관심 있는 분 ​ 목차 AI가 만든 결과를 어떻게 확인하는가 구현이 아니라 검증이 병목이 된 이유 확인이 막히는 ",
+        "sourceUrl": "https://d2.naver.com/helloworld/5512498",
+        "source": "NAVER D2",
+        "publishedAt": "2026-11-25T05:19:42.000Z",
+        "checkedAt": "2026-11-26T19:33:54.503Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "네이버 사내 기술 교류 행사인 NAVER Engineering Day 10th 에서 발표되었던 세션을 공개합니다.",
+        "sourceUrl": "https://d2.naver.com/helloworld/5512498",
+        "source": "NAVER D2",
+        "publishedAt": "2026-11-25T05:19:42.000Z",
+        "checkedAt": "2026-11-26T19:33:54.503Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "테스트는 전부 통과했는데 실제로는 결함이 남아 있던 경험에서 출발해, AI의 자기 보고를 기계가 반증하게 만든 세 가지 방법(돌연변이 테스팅, 훅, 에이전트 팀)을 공유합니다.",
+        "sourceUrl": "https://d2.naver.com/helloworld/5512498",
+        "source": "NAVER D2",
+        "publishedAt": "2026-11-25T05:19:42.000Z",
+        "checkedAt": "2026-11-26T19:33:54.503Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "NAVER에서는 사내 개발 경험과 기술 트렌드를 교류를 할 수 있는 프로그램이 많이 있습니다. 그중 이제는 매회 평균 100개 이상의 발표가 이루어지는 NAVER Engineering Day를 빼놓을 수 없는데요.",
+        "sourceUrl": "https://d2.naver.com/helloworld/5512498",
+        "source": "NAVER D2",
+        "publishedAt": "2026-11-25T05:19:42.000Z",
+        "checkedAt": "2026-11-26T19:33:54.503Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "2016년부터 시작된 ENGINEERING DAY는 실무에서의 기술 개발 경험과 새로운 기술과 플랫폼 도입 시 유용하게 활용될 수 있는 팁 등을 공유하며 서로 배우고 성장하는 네이버의 대표적인 사내 개발자 행사입니다.( 관련 포스팅 보기 )",
+        "sourceUrl": "https://d2.naver.com/helloworld/5512498",
+        "source": "NAVER D2",
+        "publishedAt": "2026-11-25T05:19:42.000Z",
+        "checkedAt": "2026-11-26T19:33:54.503Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "올해 진행된 NAVER Engineering Day의 일부 세션을 공개합니다.",
+        "sourceUrl": "https://d2.naver.com/helloworld/5512498",
+        "source": "NAVER D2",
+        "publishedAt": "2026-11-25T05:19:42.000Z",
+        "checkedAt": "2026-11-26T19:33:54.503Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "네이버 TV 서비스 종료로 인해 기존 네이버 TV 채널을 클립( @devrel_d2 )으로 이동하였습니다.",
+        "sourceUrl": "https://d2.naver.com/helloworld/5512498",
+        "source": "NAVER D2",
+        "publishedAt": "2026-11-25T05:19:42.000Z",
+        "checkedAt": "2026-11-26T19:33:54.503Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "글쓴이 윤동원 | NAVER Whale 소개 Whale AI Studio에서 AI로 여러가지 개발을 하고 있습니다.",
+        "sourceUrl": "https://d2.naver.com/helloworld/5512498",
+        "source": "NAVER D2",
+        "publishedAt": "2026-11-25T05:19:42.000Z",
+        "checkedAt": "2026-11-26T19:33:54.503Z"
+      }
+    ],
+    "pageDate": null
+  },
+  "score": {
+    "importance": 3,
+    "practicalImpact": 1,
+    "koreanRelevance": 3,
+    "novelty": 2,
+    "sourceQuality": 2,
+    "verificationConfidence": 3,
+    "signals": [
+      "KOREA",
+      "PRODUCT_LAUNCH"
+    ],
+    "strongSignal": true,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 12,
+    "total": 12
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 KOREA·PRODUCT_LAUNCH (우선순위 12)",
+    "근거 확인 통과 (확인 사실 5개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "none",
+    "model": null,
+    "status": "skipped",
+    "error": "Shadow Mode — 원고를 만들지 않음",
+    "promptVersion": "draft-v2",
+    "at": "2026-11-27T04:10:02.918Z",
+    "evidenceHash": "35d1ec970e9d"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": true,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}

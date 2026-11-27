@@ -1,0 +1,234 @@
+{
+  "id": "f3f6304a8cca",
+  "date": "2026-11-27",
+  "proposedSlug": "introducing-amazon-bedrock-trusted-access-api-enterprise",
+  "title": null,
+  "sourceTitle": "Introducing the Amazon Bedrock Trusted Access API, with Enterprise Frontier Safeguards and Enterprise Data Controls for Claude models",
+  "depth": null,
+  "suggestedDepth": "STANDARD",
+  "depthAssessment": {
+    "sufficiency": "SUFFICIENT_STANDARD",
+    "distinctFacts": 11,
+    "deepChecks": {
+      "importance": false,
+      "novelty": true,
+      "userImpact": true,
+      "contextNeed": false,
+      "distinctFacts": true,
+      "evidenceQuality": true,
+      "standardWouldOmit": false
+    },
+    "deepMissing": [
+      "importance",
+      "contextNeed",
+      "standardWouldOmit"
+    ]
+  },
+  "company": "Amazon",
+  "alsoAt": [],
+  "category": null,
+  "summary": null,
+  "body": null,
+  "topics": [],
+  "companies": [],
+  "products": [],
+  "sources": [
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-the-amazon-bedrock-trusted-access-api-with-anthropics-enterprise-frontier-safeguards-and-enterprise-data-controls/",
+      "name": "AWS Machine Learning Blog",
+      "type": "official",
+      "publishedAt": "2026-11-24T05:01:14.000Z"
+    }
+  ],
+  "candidate": {
+    "id": "f3f6304a8cca",
+    "url": "https://aws.amazon.com/blogs/machine-learning/introducing-the-amazon-bedrock-trusted-access-api-with-anthropics-enterprise-frontier-safeguards-and-enterprise-data-controls/",
+    "canonicalUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-the-amazon-bedrock-trusted-access-api-with-anthropics-enterprise-frontier-safeguards-and-enterprise-data-controls",
+    "title": "Introducing the Amazon Bedrock Trusted Access API, with Enterprise Frontier Safeguards and Enterprise Data Controls for Claude models",
+    "excerpt": "Amazon Bedrock now offers a trusted access program API: one place to discover, request, and enroll in model provider programs. The first two offerings, in public preview, are Anthropic's Enterprise Frontier Safeguards (EFS) and Enterprise Data Controls (EDC), which give you control over your data wh",
+    "publishedAt": "2026-11-24T05:01:14.000Z",
+    "sourceId": "aws-ml",
+    "sourceName": "AWS Machine Learning Blog",
+    "sourceType": "official",
+    "tier": 1,
+    "fetchMode": "rss",
+    "discoveredVia": "https://aws.amazon.com/blogs/machine-learning/feed/",
+    "fetchedAt": "2026-11-27T04:08:56.310Z"
+  },
+  "evidence": {
+    "status": "OK",
+    "chars": 9807,
+    "grade": "PASS",
+    "ledger": [
+      {
+        "id": "E0",
+        "kind": "feed",
+        "text": "Amazon Bedrock now offers a trusted access program API: one place to discover, request, and enroll in model provider programs. The first two offerings, in public preview, are Anthropic's Enterprise Frontier Safeguards (EFS) and Enterprise Data Controls (EDC), which give you control over your data wh",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-the-amazon-bedrock-trusted-access-api-with-anthropics-enterprise-frontier-safeguards-and-enterprise-data-controls/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-24T05:01:14.000Z",
+        "checkedAt": "2026-11-26T19:33:57.488Z"
+      },
+      {
+        "id": "E1",
+        "kind": "body",
+        "text": "Introducing the Amazon Bedrock Trusted Access API, with Enterprise Frontier Safeguards and Enterprise Data Controls for Claude models | Artificial Intelligence",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-the-amazon-bedrock-trusted-access-api-with-anthropics-enterprise-frontier-safeguards-and-enterprise-data-controls/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-24T05:01:14.000Z",
+        "checkedAt": "2026-11-26T19:33:57.488Z"
+      },
+      {
+        "id": "E2",
+        "kind": "body",
+        "text": "Introducing the Amazon Bedrock Trusted Access API, with Enterprise Frontier Safeguards and Enterprise Data Controls for Claude models",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-the-amazon-bedrock-trusted-access-api-with-anthropics-enterprise-frontier-safeguards-and-enterprise-data-controls/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-24T05:01:14.000Z",
+        "checkedAt": "2026-11-26T19:33:57.488Z"
+      },
+      {
+        "id": "E3",
+        "kind": "body",
+        "text": "Today we are announcing the general availability of the trusted access program API on Amazon Bedrock .",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-the-amazon-bedrock-trusted-access-api-with-anthropics-enterprise-frontier-safeguards-and-enterprise-data-controls/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-24T05:01:14.000Z",
+        "checkedAt": "2026-11-26T19:33:57.488Z"
+      },
+      {
+        "id": "E4",
+        "kind": "body",
+        "text": "We are also announcing the public preview of the first two offerings for Claude models: Enterprise Frontier Safeguards (EFS) and Enterprise Data Controls (EDC).",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-the-amazon-bedrock-trusted-access-api-with-anthropics-enterprise-frontier-safeguards-and-enterprise-data-controls/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-24T05:01:14.000Z",
+        "checkedAt": "2026-11-26T19:33:57.488Z"
+      },
+      {
+        "id": "E5",
+        "kind": "body",
+        "text": "Both are available on Amazon Bedrock, including Claude Fable, Claude Mythos, and Claude Opus 5.5 and Sonnet 5.5 used through the Cyber Verification Program (CVP).",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-the-amazon-bedrock-trusted-access-api-with-anthropics-enterprise-frontier-safeguards-and-enterprise-data-controls/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-24T05:01:14.000Z",
+        "checkedAt": "2026-11-26T19:33:57.488Z"
+      },
+      {
+        "id": "E6",
+        "kind": "body",
+        "text": "The Amazon Bedrock trusted access program API gives every provider offering one consistent Amazon Bedrock experience.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-the-amazon-bedrock-trusted-access-api-with-anthropics-enterprise-frontier-safeguards-and-enterprise-data-controls/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-24T05:01:14.000Z",
+        "checkedAt": "2026-11-26T19:33:57.488Z"
+      },
+      {
+        "id": "E7",
+        "kind": "body",
+        "text": "Amazon Bedrock trusted access program API now gives you one place to find the model and use case programs available to your account.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-the-amazon-bedrock-trusted-access-api-with-anthropics-enterprise-frontier-safeguards-and-enterprise-data-controls/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-24T05:01:14.000Z",
+        "checkedAt": "2026-11-26T19:33:57.488Z"
+      },
+      {
+        "id": "E8",
+        "kind": "body",
+        "text": "Anyone with access to the trusted access program API can list the offerings and check their status for an account, an organization in AWS Organizations, or an Amazon Bedrock project.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-the-amazon-bedrock-trusted-access-api-with-anthropics-enterprise-frontier-safeguards-and-enterprise-data-controls/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-24T05:01:14.000Z",
+        "checkedAt": "2026-11-26T19:33:57.488Z"
+      },
+      {
+        "id": "E9",
+        "kind": "body",
+        "text": "Amazon Bedrock reaches your AWS Key Management Service (AWS KMS) key and Amazon Simple Storage Service (Amazon S3) bucket as a single AWS service principal and only through the key policy and bucket policy that you write.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-the-amazon-bedrock-trusted-access-api-with-anthropics-enterprise-frontier-safeguards-and-enterprise-data-controls/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-24T05:01:14.000Z",
+        "checkedAt": "2026-11-26T19:33:57.488Z"
+      },
+      {
+        "id": "E10",
+        "kind": "body",
+        "text": "You can remove that access at any time, but Amazon Bedrock stops serving the covered models 24 hours after it loses access to your key or bucket.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-the-amazon-bedrock-trusted-access-api-with-anthropics-enterprise-frontier-safeguards-and-enterprise-data-controls/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-24T05:01:14.000Z",
+        "checkedAt": "2026-11-26T19:33:57.488Z"
+      },
+      {
+        "id": "E11",
+        "kind": "body",
+        "text": "With the aws_review data retention mode, Amazon Bedrock retains inputs and outputs for up to 30 days, where they are available for review within the AWS boundary.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-the-amazon-bedrock-trusted-access-api-with-anthropics-enterprise-frontier-safeguards-and-enterprise-data-controls/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-24T05:01:14.000Z",
+        "checkedAt": "2026-11-26T19:33:57.488Z"
+      },
+      {
+        "id": "E12",
+        "kind": "body",
+        "text": "With your own Amazon S3 bucket, Amazon Bedrock keeps no copy of the retained data, your AWS KMS key encrypts it, and every access appears in your own AWS CloudTrail logs.",
+        "sourceUrl": "https://aws.amazon.com/blogs/machine-learning/introducing-the-amazon-bedrock-trusted-access-api-with-anthropics-enterprise-frontier-safeguards-and-enterprise-data-controls/",
+        "source": "AWS Machine Learning Blog",
+        "publishedAt": "2026-11-24T05:01:14.000Z",
+        "checkedAt": "2026-11-26T19:33:57.488Z"
+      }
+    ],
+    "pageDate": "2026-11-24T05:01:14.000Z"
+  },
+  "score": {
+    "importance": 2,
+    "practicalImpact": 2,
+    "koreanRelevance": 0,
+    "novelty": 2,
+    "sourceQuality": 3,
+    "verificationConfidence": 3,
+    "signals": [
+      "PRODUCT_LAUNCH",
+      "PREVIEW",
+      "API_PLATFORM"
+    ],
+    "strongSignal": false,
+    "contentType": "NEWS",
+    "typePenalty": 0,
+    "priority": 8,
+    "total": 8
+  },
+  "decision": "PUBLISH",
+  "reasons": [
+    "사건 신호 PRODUCT_LAUNCH·PREVIEW·API_PLATFORM (우선순위 8)",
+    "근거 확인 통과 (확인 사실 11개, SUFFICIENT_STANDARD)"
+  ],
+  "needsReview": [],
+  "duplicate": {
+    "result": "NEW",
+    "reason": "기존 기사·후보와 겹치지 않음"
+  },
+  "generation": {
+    "provider": "none",
+    "model": null,
+    "status": "skipped",
+    "error": "Shadow Mode — 원고를 만들지 않음",
+    "promptVersion": "draft-v2",
+    "at": "2026-11-27T04:10:02.918Z",
+    "evidenceHash": "f0007ff7b577"
+  },
+  "draft": null,
+  "validation": null,
+  "draftQa": null,
+  "draftGate": {
+    "ok": true,
+    "reasons": []
+  },
+  "draftFile": null,
+  "newsletterCandidate": false,
+  "capStage": null,
+  "draftPending": true,
+  "approval": {
+    "status": "pending"
+  }
+}
