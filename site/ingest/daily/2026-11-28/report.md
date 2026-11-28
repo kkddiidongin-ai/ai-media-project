@@ -6,7 +6,7 @@
 
 | 수집 | 신규 | 후속 | 중복 | 불확실 | 발행 추천 | 보류 | 제외 | 원고 |
 |---|---|---|---|---|---|---|---|---|
-| 482 | 536 | 0 | 0 | 0 | 6 | 307 | 223 | 0 |
+| 475 | 529 | 0 | 0 | 0 | 6 | 299 | 224 | 0 |
 
 > 자동으로 발행하지 않습니다. 아래 추천은 사람이 `npm run daily:approve -- <날짜> <id>`로 승인해야 기사 데이터에 들어갑니다. 뉴스레터도 만들거나 보내지 않습니다.
 
@@ -60,9 +60,15 @@
 - 검증: 확인 필요 없음
 - 원고: 없음 — Shadow Mode — 원고를 만들지 않음
 
-## 보류 (307)
+## 보류 (299)
 
 - **Verifiable Social Reasoning for LLM Assistants** (Google Research Blog, 2026-11-25) — 사건 신호 MODEL_MENTION (우선순위 4) · 근거는 있으나 우선순위 4 < 발행 추천 기준 6 · 확인 필요: 없음
+- 오픈AI, 애플에 맞소송…"협력업체 압박해 AI 기기 생산 방해" (AI타임스, 2026-11-28) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PARTNERSHIP)
+- [내면 지도 그리기] 44 Inner Mapping: 나를 찾는 지도 (AI타임스, 2026-11-28) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRICING)
+- 창문으로 태양광 발전하고 AI로 발전량 예측…일본 간사이전력 실증 추진 (AI타임스, 2026-11-28) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PARTNERSHIP)
+- 주택용 태양광, 폭염 사망 위험도 낮출 수 있다…일본 44개 지역 분석 (AI타임스, 2026-11-28) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·PRICING)
+- 태양광 패널, 새 배설물로 성능 최대 11.4% 저하…빗물 세척에도 한계 (AI타임스, 2026-11-28) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)
+- 미국·유럽 잇단 사이버 공격…AI 시대 디지털 인프라 취약성 드러나 (AI타임스, 2026-11-28) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 REGULATION·SECURITY)
 - "막을 테면 막아봐!"...AI 안경 부정행위 차단, 해커톤서 역부족 확인 (AI타임스, 2026-11-27) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PARTNERSHIP)
 - 무디스 "젠슨 황 복귀로 엔비디아 불확실성 완화"…신용등급 유지 (AI타임스, 2026-11-27) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 REGULATION)
 - 구글도 AI 수학 연구 경쟁 가세…소인수분해 34년 기록 경신 주장 (AI타임스, 2026-11-27) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·ACQ_INVEST)
@@ -77,22 +83,17 @@
 - 'GPT-6 아스트라'로 양자 중력 이론 제안…'클로드'로 반박도 등장 (AI타임스, 2026-11-27) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·MODEL_MENTION)
 - 앤트로픽, MCP 서버에 '스킬' 도입…에이전트에 업무 노하우 전달 (AI타임스, 2026-11-27) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)
 - 영국 중앙은행 총재 "미공개 최첨단 AI, 암호화 체계 위협 가능성" (AI타임스, 2026-11-27) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·MODEL_MENTION)
-- 스위스 정부 "AI 에이전트 활용 사이버 공격 5건 확인…4건 침해 성공" (AI타임스, 2026-11-27) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·REGULATION)
-- 실험 실패하면 가설 다시 세운다…ETRI, 스스로 연구하고 논문 쓰는 AI 개발 (AI타임스, 2026-11-27) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·REGULATION)
-- 화웨이, 삼성·하이닉스에 도전…HBM4 대비 데이터 핀 두배 설계 (AI타임스, 2026-11-27) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH·INFRA)
-- SK증권, LG CNS AIDC 매출 본격화로 내년 성장 가속화 전망 (AI타임스, 2026-11-27) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 INFRA)
-- 같은 정책도 AI마다 판단 제각각…GPT·클로드는 성과, 딥시크는 민주성 중시 (AI타임스, 2026-11-27) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 MODEL_MENTION)
-- 벤타엑스·스톤브이스튜디오, 영화 '한산'에 AI 접목한 VR 콘텐츠 내년 출시 (AI타임스, 2026-11-27) — 언론 보도(2차 출처) — 공식 발표로 확인되면 다시 검토 (사건 신호 PRODUCT_LAUNCH)
-- … 외 286건 (run.json)
+- … 외 278건 (run.json)
 
-## 제외 (223)
+## 제외 (224)
 
-- 가치 낮음 223건: Art of play in the age of AI · How to choose the next safe step in application mo · Taking Trainium3 to the Track: Generating Videos w · Building on Nemotron 3.5 Parse: Open Data, Fine-Tu · Swarms, Flocks, Gangs: How to build, train, and ev · Where scientists draw the line on AI agents · An Indic Voice Agent with CUGA · Hill-climbing Inkling 2 Mini inference on one RTX  …
+- 가치 낮음 224건: Art of play in the age of AI · How to choose the next safe step in application mo · Taking Trainium3 to the Track: Generating Videos w · Building on Nemotron 3.5 Parse: Open Data, Fine-Tu · Swarms, Flocks, Gangs: How to build, train, and ev · Where scientists draw the line on AI agents · An Indic Voice Agent with CUGA · Hill-climbing Inkling 2 Mini inference on one RTX  …
 
-## 소스 상태 (정상 19, 그중 기간 안 새 글 0건 8 · 경고 8 · 저하 4 · 실패 0 · 비활성 9)
+## 소스 상태 (정상 18, 그중 기간 안 새 글 0건 8 · 경고 8 · 저하 4 · 실패 1 · 비활성 9)
 
 | 소스 | 상태 | HTTP | 글 주소(형식 일치/전체) | 기간 안 | 연속 0건 | 최근 정상 수집 | 이유 |
 |---|---|---|---|---|---|---|---|
+| 전자신문 | **FAILED** | - | -/- | 0 | 0 | 2026-11-28 | 요청 실패 (failed) |
 | Anthropic (모델 발표 페이지) | **DEGRADED** | 200 | 3/214 | 0 | 43 | 2026-11-28 | 발행일을 확인하지 못한 글 1건 (후보에서 제외) · 기간 안 새 글 0건 43회 연속 (마지막 수집 기록 없음) |
 | Mistral AI | **DEGRADED** | 200 | 94/94 | 0 | 20 | 2026-11-28 | 기간 안 새 글 0건 20회 연속 (마지막 수집 2026-11-08) |
 | Microsoft 365 Blog | **DEGRADED** | 200 ↪ | 10/10 | 0 | 29 | 2026-11-28 | 리다이렉트 → https://www.microsoft.com/en-us/copilot/blog/feed/ · 기간 안 새 글 0건 29회 연속 (마지막 수집 2026-10-30) |
@@ -110,14 +111,13 @@
 
 ## 처리 대기열 · 수집 범위
 
-- 진행 상태: **미완료** · 이번 실행 근거 확인 7건 · 원고 작성 0건
+- 진행 상태: **미완료** · 이번 실행 근거 확인 0건 · 원고 작성 0건
 - 지난 실행에서 넘어온 일: 근거 확인 54건 · 원고 작성 0건
-- 남은 일 (다음 실행으로 이월): 근거 확인 대기 **54**건 · 원고 작성 대기 **107**건 · 아직 열지 못한 글 주소 0개 · 재시도할 소스 0곳
+- 남은 일 (다음 실행으로 이월): 근거 확인 대기 **54**건 · 원고 작성 대기 **107**건 · 아직 열지 못한 글 주소 0개 · 재시도할 소스 1곳
   - 원고 작성 대기: 발행 추천은 났지만 원고 생성 수단이 없거나(무료 생성 미설정·Shadow) 배치를 넘은 항목입니다. 근거는 후보 파일에 보존했고, 빈 원고나 허위 원고는 만들지 않습니다.
-- 수집 범위가 기간 전체를 덮지 못한 소스 4곳 (놓쳤을 수 있음):
+- 수집 범위가 기간 전체를 덮지 못한 소스 3곳 (놓쳤을 수 있음):
   - AI타임스: 피드의 가장 오래된 항목(2026-11-26)이 시작일(2026-11-25)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음
   - 지디넷코리아: 피드의 가장 오래된 항목(2026-11-27)이 시작일(2026-11-25)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음
-  - 전자신문: 피드의 가장 오래된 항목(2026-11-27)이 시작일(2026-11-25)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음
   - arXiv cs.AI (신규 논문): 피드의 가장 오래된 항목(2026-11-27)이 시작일(2026-11-25)보다 늦음 — 피드 길이 밖의 발표는 놓쳤을 수 있음
 
 ## 선정 진단 (Selection Diagnostics)
@@ -131,8 +131,8 @@
 - 12 · 소식 · PRODUCT_LAUNCH·PRICING·REGULATION·INFRA — Concierto AI 정식 출시: 기업 자체 클라우드, 데이터센터 내부에서 직원 모두를 지원하는 소버린 … → **HOLD**
 - 11 · 소식 · MODEL·PRODUCT_LAUNCH·RESEARCH_RESULT — Introducing the llama.cpp benchmark dashboard for AMD Ryzen… → **PUBLISH**
 - 11 · 소식 · PRODUCT_LAUNCH·REGULATION·INFRA — Z.ai 'GLM-5.5' 출시 지연…문샷 AI도 개발 주기 두배 전망 → **HOLD**
-- 11 · 소식 · API_PLATFORM·PRODUCT_LAUNCH·PRICING — 구글, 외부 AI 에이전트에 지메일·드라이브 이용료 부과 → **HOLD**
 - 11 · 소식 · MODEL·PRICING·SECURITY — Partial Routing: Trace-Tuned Delegation for Resource-Effici… → **HOLD**
+- 10 · 소식 · PRODUCT_LAUNCH·PRICING — 주택용 태양광, 폭염 사망 위험도 낮출 수 있다…일본 44개 지역 분석 → **HOLD**
 
 **근거 확인 명단 7건** (원문 요청 상한 40, 최종 추천 상한 0)
 - OmniEvaluator: AI 모델과 에이전트를 위한 통합 평가 프레임워크 — 원문 OK · 확인 사실 10 · SUFFICIENT_STANDARD · 깊이 STANDARD → **PUBLISH**
@@ -155,10 +155,10 @@
 - AI가 만든 결과를 그대로 믿고 계신가요? → STANDARD (DEEP 아님: 중요도 4+, 확인 사실 6+, 근거 PASS, STANDARD로는 맥락 누락)
 - Introducing the llama.cpp benchmark dashboard for AMD Ryzen… → STANDARD (DEEP 아님: 사용자 영향, 배경 설명 필요, STANDARD로는 맥락 누락)
 
-**보류 이유 (307건)**: 언론 보도 251 · N-N-N DAILY에서 이미 추천함 54 · 근거는 있으나 우선순위 N < 발행 추천 기준 N 1 · 우선순위 N 1
+**보류 이유 (299건)**: 언론 보도 243 · N-N-N DAILY에서 이미 추천함 54 · 근거는 있으나 우선순위 N < 발행 추천 기준 N 1 · 우선순위 N 1
 
 ## 비용
 
 원고 생성 none · 호출 0/6 · 입력 0 · 출력 0 토큰 · 예상 비용 $0.0000 / 상한 $0.5
 
-<sub>실행 2026-11-27T19:27:22.758Z → 2026-11-27T19:28:29.507Z · 상세: run.json, candidates/*.json</sub>
+<sub>실행 2026-11-28T03:51:59.193Z → 2026-11-28T03:53:20.967Z · 상세: run.json, candidates/*.json</sub>
